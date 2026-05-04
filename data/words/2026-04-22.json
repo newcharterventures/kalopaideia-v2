@@ -1,0 +1,136 @@
+{
+  "date": "2026-04-22",
+  "generated_at": "2026-04-22T11:00:02.132Z",
+  "languages": {
+    "latin": {
+      "word": "sēcēdō",
+      "transliteration": "",
+      "pronunciation": "say-KAY-doh",
+      "ipa": "/seːˈkeː.doː/",
+      "part_of_speech": "verb, 3rd conj.",
+      "meaning": "to withdraw, go apart, secede",
+      "forms": "sēcēdō, sēcēdere, sēcessī, sēcessum; present participle sēcēdēns; perfect sēcessī",
+      "etymology": "From sē- (apart, aside) + cēdō (to go, yield). The prefix sē-/sēd- indicates separation, appearing also in sēparō and sēmoveo.",
+      "literary_context": "Livy uses this verb repeatedly in his account of the secession of the plebs to the Mons Sacer in 494 BC, the foundational moment of the conflict of the orders that shaped the Roman Republic.",
+      "usage_example": "Plēbs ad sacrum montem sēcessit armāta. — The plebs seceded in arms to the sacred mountain.",
+      "did_you_know": "The political term 'secession' derives directly from this Latin verb, preserving its ancient meaning of withdrawal from a larger body, just as the Roman plebeians literally withdrew from the city to gain political leverage against the patricians.",
+      "tokens": {
+        "input_tokens": 570,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 350,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Latin"
+    },
+    "greek": {
+      "word": "ἀτασθαλία",
+      "transliteration": "atasthalia",
+      "pronunciation": "ah-tas-thah-LEE-ah",
+      "ipa": "/a.tas.tʰa.ˈli.a/",
+      "part_of_speech": "noun, fem.",
+      "meaning": "reckless folly, wanton outrage, moral blindness",
+      "forms": "ἀτασθαλίη (Ionic), gen. ἀτασθαλίας, dat. ἀτασθαλίᾳ, acc. ἀτασθαλίαν; plural ἀτασθαλίαι",
+      "etymology": "From ἀ- (privative) + τάσσω (to order, arrange), suggesting a state of being 'without order' or 'against proper arrangement.' The form shows an abstract noun suffix -ία added to the stem ἀτασθαλ-.",
+      "literary_context": "Homer uses this word in the opening of the Odyssey when describing how Odysseus's companions perished through their own ἀτασθαλίαι by slaughtering the cattle of Helios, despite warnings. The term appears again when Zeus attributes human suffering not to the gods but to mortals' own reckless transgression.",
+      "usage_example": "σφῇσιν ἀτασθαλίῃσιν ὑπὲρ μόρον ἄλγε' ἔπασχον. — They suffered woes beyond their lot through their own reckless folly.",
+      "did_you_know": "Homer distinguishes ἀτασθαλία from mere ignorance or error: it implies willful transgression against divine or natural order. The word appears strategically in both the Iliad and Odyssey to mark moments when mortals consciously choose disaster despite clear warnings.",
+      "tokens": {
+        "input_tokens": 582,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 489,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Ancient Greek"
+    },
+    "french": {
+      "word": "gouffre",
+      "transliteration": "",
+      "pronunciation": "GOO-fruh",
+      "ipa": "/ɡufʁ/",
+      "part_of_speech": "noun, masc.",
+      "meaning": "abyss, chasm, gulf",
+      "forms": "singular: gouffre; plural: gouffres",
+      "etymology": "From Latin *colpus* (blow, gulf), itself from Greek κόλπος (kolpos, bosom, gulf). The modern French form developed through Old French *golfre* with metathesis of the liquid consonant.",
+      "literary_context": "Baudelaire uses *gouffre* repeatedly in *Les Fleurs du mal*, most notably in the poem \"Le Gouffre\" where Pascal's terror before the infinite void becomes a psychological precipice threatening both action and sleep.",
+      "usage_example": "Pascal avait son gouffre, avec lui se mouvant. — Pascal had his abyss, moving with him.",
+      "did_you_know": "The word's Greek origin in *kolpos* (originally meaning a fold of cloth, then by extension a bay or gulf) reflects the ancient conception of chasms as concave spaces that could swallow things whole, a notion Baudelaire exploited for psychological horror.",
+      "tokens": {
+        "input_tokens": 568,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 324,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "French"
+    },
+    "german": {
+      "word": "Gelassenheit",
+      "transliteration": "",
+      "pronunciation": "geh-LAHS-sen-hite",
+      "ipa": "/ɡəˈlasənhaɪt/",
+      "part_of_speech": "noun, fem.",
+      "meaning": "serenity, composure, releasement",
+      "forms": "die Gelassenheit (no plural); genitive: der Gelassenheit",
+      "etymology": "From the verb 'gelassen' (calm, composed), past participle of 'lassen' (to let, to leave). Related to Old High German 'lāzan' and ultimately Proto-Germanic *lētaną. The suffix '-heit' forms abstract nouns denoting state or quality.",
+      "literary_context": "Heidegger's late essay 'Gelassenheit' (1959) transforms this common German word into a technical philosophical term denoting a meditative openness and release from calculative thinking, positioned against modern technological domination. Meister Eckhart used the Middle High German form 'gelāzenheit' in his mystical writings to describe the soul's detachment from worldly concerns.",
+      "usage_example": "Die wahre Gelassenheit ist nicht Gleichgültigkeit, sondern höchste Aufmerksamkeit. — True serenity is not indifference, but highest attentiveness.",
+      "did_you_know": "Heidegger deliberately chose this old mystical term to recuperate a non-metaphysical stance toward Being, drawing on Eckhart's medieval theology to critique Western philosophy's willful domination of beings through representational thinking.",
+      "tokens": {
+        "input_tokens": 585,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 410,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "German"
+    },
+    "oldenglish": {
+      "word": "meodosetla",
+      "transliteration": "meodosetla",
+      "pronunciation": "MEH-oh-doh-SET-lah",
+      "ipa": "/ˈme.o.doˌset.la/",
+      "part_of_speech": "noun, masc.",
+      "meaning": "mead-bench, seat in the mead-hall",
+      "forms": "nom. meodosetl/meodosetla, gen. meodosetles, dat. meodosetle, acc. meodosetl; plural meodosetlas",
+      "etymology": "Compound of 'meodu' (mead, honey-drink) + 'setl' (seat, bench). The element 'meodu' derives from Proto-Germanic *meduz, cognate with Greek μέθυ (methu), referring to the fermented honey beverage. 'Setl' comes from Proto-Germanic *setlaz (seat), related to 'sittan' (to sit).",
+      "literary_context": "The word appears in Beowulf (line 5) in the phrase 'monegum mægþum meodosetla ofteah,' describing how Scyld Scefing deprived many tribes of their mead-benches, signifying his conquest and their loss of hall-fellowship and sovereignty.",
+      "usage_example": "Se cyning gesæt on his meodosetle and dælde gold his þegnum. — The king sat on his mead-bench and distributed gold to his thanes.",
+      "did_you_know": "The mead-bench represented more than furniture: it symbolized a warrior's place in the social hierarchy of the hall. To be deprived of one's meodosetl meant exile from the community, one of the worst fates in Anglo-Saxon culture, as reflected in elegiac poems like The Wanderer.",
+      "tokens": {
+        "input_tokens": 584,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 459,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Old English"
+    }
+  }
+}

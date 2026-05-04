@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kalopaideia</title>
+<meta name="description" content="A classical-languages primer and daily word." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<!-- Favicons + PWA -->
+<link rel="icon" type="image/png" sizes="32x32" href="/paideia/img/favicon-32.png?v=1777151780" />
+<link rel="icon" type="image/png" sizes="16x16" href="/paideia/img/favicon-16.png?v=1777151780" />
+<link rel="shortcut icon" href="/paideia/img/favicon.ico?v=1777151780" />
+<link rel="apple-touch-icon" sizes="180x180" href="/paideia/img/icon-180.png?v=1777151780" />
+<link rel="apple-touch-icon" sizes="152x152" href="/paideia/img/icon-152.png?v=1777151780" />
+<link rel="apple-touch-icon" sizes="120x120" href="/paideia/img/icon-120.png?v=1777151780" />
+<link rel="manifest" href="/paideia/manifest.webmanifest?v=1777151780" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-title" content="Kalopaideia" />
+<meta name="theme-color" content="#1a1410" />
+<link rel="stylesheet" href="/paideia/styles.css?v=1777668400" />
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-top">
+    <span class="smallcaps"><a href="/paideia/" style="color:inherit">Home</a></span>
+    <span class="smallcaps" id="lang-label">—</span>
+    <span class="smallcaps">&nbsp;</span>
+  </div>
+  <h1 class="title"><a href="/paideia/" aria-label="Kalopaideia home">Kalopaideia</a></h1>
+  <div class="subtitle" id="lang-subtitle">Loading…</div>
+  <nav class="nav">
+    <a href="/paideia/latin">Latin</a>
+    <a href="/paideia/greek">Greek</a>
+    <a href="/paideia/french">French</a>
+    <a href="/paideia/german">German</a>
+    <a href="/paideia/oldenglish">Old English</a>
+    <a href="/paideia/about.html">About</a>
+  </nav>
+</header>
+
+<main class="language-main">
+  <!-- Primer panel at top -->
+  <section id="primer" class="primer-panel" style="display:none">
+    <div class="primer-tabs">
+      <button class="primer-tab active" data-tab="alphabet">Alphabet &amp; Pronunciation</button>
+      <button class="primer-tab" data-tab="grammar">Grammar</button>
+      <button class="primer-tab" data-tab="numbers">Numbers</button>
+      <button class="primer-tab" data-tab="library">Library</button>
+    </div>
+
+    <div class="primer-content" id="primer-overview"></div>
+
+    <div class="primer-pane" id="pane-alphabet">
+      <h3 class="pane-heading">Alphabet &amp; Pronunciation</h3>
+      <div id="alphabet-grid" class="alphabet-grid"></div>
+      <h4 class="pane-subheading">Key Pronunciation Rules</h4>
+      <ul id="pron-notes" class="pron-notes"></ul>
+    </div>
+
+    <div class="primer-pane" id="pane-grammar" style="display:none">
+      <h3 class="pane-heading">Grammar Overview</h3>
+      <div id="grammar-content"></div>
+    </div>
+
+    <div class="primer-pane" id="pane-numbers" style="display:none">
+      <h3 class="pane-heading">Numbers</h3>
+      <div id="numbers-content"></div>
+    </div>
+
+    <div class="primer-pane" id="pane-library" style="display:none"></div>
+  </section>
+
+  <!-- Daily word + archive -->
+  <section class="words-section">
+    <h2 class="words-heading">Daily Words, Newest First</h2>
+    <div id="entries" class="lang-entries">
+      <div class="center">Loading daily words…</div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="foot-inner">
+    <div class="foot-title">Kalopaideia</div>
+    <p>A daily word from each classical tradition.</p>
+    <p class="foot-copyright">
+      © 2026 New Charter Ventures &middot; All rights reserved
+      &middot; <a href="/paideia/about.html">About</a>
+      &middot; <a href="/paideia/contact.html">Contact</a>
+      &middot; <a href="/paideia/terms.html">Terms</a>
+    </p>
+  </div>
+</footer>
+
+<script src="/paideia/pronunciation.js?v=1777566229"></script>
+<script src="/paideia/letter-phonetics.js?v=1777566229"></script>
+<script src="/paideia/language.js?v=1777566229"></script>
+</body>
+</html>

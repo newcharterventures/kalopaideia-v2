@@ -1,0 +1,22 @@
+{
+  "date": "2026-04-18",
+  "generated_at": "2026-04-24T07:30:01.911813+00:00",
+  "backfilled_at": "2026-04-24T07:30:01.911822+00:00",
+  "backfill_source": "paideia_archive.json + @LatinateGame X timeline",
+  "languages": {
+    "greek": {
+      "word": "ἡδονή",
+      "transliteration": "hēdonē",
+      "pronunciation": "hay-doh-NAY",
+      "ipa": "/hɛː.do.ˈnɛː/",
+      "part_of_speech": "noun, feminine",
+      "meaning": "Pleasure",
+      "forms": "First declension feminine. Singular: ἡδονή, ἡδονῆς, ἡδονῇ, ἡδονήν. Plural: ἡδοναί, ἡδονῶν, ἡδοναῖς, ἡδονάς.",
+      "etymology": "From ἡδύς (hay-DEES) 'sweet'. The root ἡδ- (HAYD) connects sweetness with enjoyment across Indo-European languages. English descendants: Hedonism (pursuit of pleasure), Hedonistic (pleasure-seeking), Hedonic (relating to pleasure), Anhedonia (inability to feel pleasure).",
+      "literary_context": "Aristotle, Nicomachean Ethics 1.5",
+      "usage_example": "τὴν ἡδονὴν ἀγαθὸν εἶναι φαίνεται — Pleasure appears to be good",
+      "did_you_know": "Ancient Greeks distinguished between κίνησις (KEE-nay-sis) 'kinetic pleasure' (active enjoyment like sex or food) and κατάστημα (kah-TAHS-tay-mah) 'katastematic pleasure' (static contentment like peace of mind). Epicurus argued that katastematic pleasures were superior because they lasted longer and didn't lead to pain.",
+      "display": "Ancient Greek"
+    }
+  }
+}

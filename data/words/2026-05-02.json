@@ -1,0 +1,136 @@
+{
+  "date": "2026-05-02",
+  "generated_at": "2026-05-02T11:00:01.602Z",
+  "languages": {
+    "latin": {
+      "word": "contumācia",
+      "transliteration": "",
+      "pronunciation": "kon-too-MAH-kee-ah",
+      "ipa": "/kon.tuːˈmaː.ki.a/",
+      "part_of_speech": "noun, fem.",
+      "meaning": "stubborn defiance, obstinacy, insolence toward authority",
+      "forms": "contumācia, contumāciae (f., 1st decl.); abl. sing. contumāciā",
+      "etymology": "From contumāx (stubborn, defiant), itself from con- (intensive) + tumeō (to swell), suggesting a swelling up against authority. Related to tumor (swelling, pride).",
+      "literary_context": "Livy uses contumacia repeatedly in Ab Urbe Condita to describe the defiant spirit of Rome's enemies and rebellious plebeians. Tacitus employs it in the Annals to characterize the fatal obstinacy of those who resist imperial power.",
+      "usage_example": "Propter contumāciam suam in exsilium missus est. — On account of his defiance he was sent into exile.",
+      "did_you_know": "The word captures a quintessentially Roman anxiety: resistance to legitimate authority was seen as both a moral failing and a political danger, yet Roman historians also admired contumacia when displayed by their own ancestors against foreign tyrants.",
+      "tokens": {
+        "input_tokens": 626,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 352,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Latin"
+    },
+    "greek": {
+      "word": "μῆτις",
+      "transliteration": "mētis",
+      "pronunciation": "MAY-tis",
+      "ipa": "/mɛ̂ːtis/",
+      "part_of_speech": "noun, fem.",
+      "meaning": "cunning intelligence, practical wisdom, craft",
+      "forms": "nom. sing. μῆτις, gen. μήτιος or μήτεως, acc. μῆτιν; no plural in classical usage",
+      "etymology": "From Proto-Indo-European *meh₁- (to measure, consider). Personified as Μῆτις, the Titaness of wisdom and first wife of Zeus in Hesiod's Theogony.",
+      "literary_context": "In Homer's Odyssey, Odysseus is repeatedly called πολύμητις (polymētis, 'of many counsels'), emphasizing his characteristic cunning intelligence. The word distinguishes practical, adaptive cleverness from theoretical wisdom (σοφία).",
+      "usage_example": "Ὀδυσσεὺς μήτιδι νίκησε τὸν Κύκλωπα. — Odysseus conquered the Cyclops by cunning.",
+      "did_you_know": "Athena swallowed Metis while pregnant with Athena, whom Zeus then bore from his own head, thus absorbing the quality of μῆτις into himself and symbolically preventing the birth of a son who might overthrow him.",
+      "tokens": {
+        "input_tokens": 672,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 383,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Ancient Greek"
+    },
+    "french": {
+      "word": "frimas",
+      "transliteration": "",
+      "pronunciation": "free-MAH",
+      "ipa": "/fʁi.ma/",
+      "part_of_speech": "noun, masc. pl.",
+      "meaning": "hoarfrost, rime; wintry frost or mist",
+      "forms": "Usually plural. Singular: frimas (same form). From Old French fremat, past participle of fremer 'to frost over'.",
+      "etymology": "From Old French fremat, variant of frumer, related to Vulgar Latin *frīmāre 'to cover with frost,' derived from Latin brūma 'winter solstice, winter.' The b/f alternation occurred in popular Latin pronunciation.",
+      "literary_context": "Racine uses this word in Athalie to evoke desolation and divine wrath: the harsh frimas accompanying scenes of abandonment contrasts with the warmth of faith. Hugo deploys it repeatedly in Les Contemplations to figure mortality and the chill of grief.",
+      "usage_example": "Les frimas de décembre blanchissaient les toits du village. — The December frosts whitened the village rooftops.",
+      "did_you_know": "Though frimas technically denotes frozen dew or light frost, French poets expanded its range to suggest any wintry bleakness or the coldness of death, making it a favorite in elegiac verse where winter symbolizes loss.",
+      "tokens": {
+        "input_tokens": 606,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 355,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "French"
+    },
+    "german": {
+      "word": "Verschwendung",
+      "transliteration": "",
+      "pronunciation": "fehr-SHVEN-doong",
+      "ipa": "/fɛɐ̯ˈʃvɛndʊŋ/",
+      "part_of_speech": "noun, fem.",
+      "meaning": "squandering, wasteful expenditure, prodigality",
+      "forms": "die Verschwendung; gen. der Verschwendung; pl. die Verschwendungen (rare in plural)",
+      "etymology": "From the verb verschwenden (to squander, waste), itself from Middle High German verswenden (to disappear, vanish), with the prefix ver- intensifying schwenden (to diminish, waste away). The noun suffix -ung marks the action or result.",
+      "literary_context": "Goethe employs Verschwendung in Faust Part II to describe the Emperor's fiscal recklessness, where Mephistopheles introduces paper money and the court indulges in extravagant spending that prefigures ruin.",
+      "usage_example": "Die Verschwendung der kostbaren Jahre seiner Jugend konnte er nie wieder gutmachen. — The squandering of the precious years of his youth he could never make good again.",
+      "did_you_know": "Nietzsche praised a certain Verschwendung of energy as necessary for creativity, contrasting the life-affirming excess of the artist with the miserly hoarding instinct of mere survival.",
+      "tokens": {
+        "input_tokens": 643,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 371,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "German"
+    },
+    "oldenglish": {
+      "word": "goldwine",
+      "transliteration": "goldwine",
+      "pronunciation": "GOLD-wih-neh",
+      "ipa": "/ˈɡold.wi.ne/",
+      "part_of_speech": "noun, masc.",
+      "meaning": "gold-friend, generous lord, patron",
+      "forms": "nom. sg. goldwine; gen. sg. goldwines; dat. sg. goldwine; acc. sg. goldwine; nom. pl. goldwinas",
+      "etymology": "Compound of 'gold' (gold) + 'wine' (friend). The second element derives from Proto-Germanic *winiz, cognate with Latin venus. The compound reflects the Germanic comitatus ideal wherein a lord's generosity binds retainers to him.",
+      "literary_context": "The word appears in The Wanderer, where the exile laments the loss of his goldwine, the generous lord who once gave him treasures and protection in the hall. This epithet encapsulates the reciprocal bond between lord and thane central to heroic poetry.",
+      "usage_example": "Hwær cwom mearg? Hwær cwom mago? Hwær cwom maþþumgyfa? — Where has the horse gone? Where the young man? Where the treasure-giver?",
+      "did_you_know": "The term goldwine illustrates how Old English poetry frequently defined relationships through material exchange; a lord proved his worth by distributing gold rings and weapons, creating bonds stronger than kinship.",
+      "tokens": {
+        "input_tokens": 644,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 379,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Old English"
+    }
+  }
+}

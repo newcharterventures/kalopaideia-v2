@@ -1,0 +1,370 @@
+[
+  {
+    "date": "2026-04-21",
+    "at": "2026-04-21T01:29:43.343Z",
+    "results": {
+      "latin": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"text\":\"nefandus — unspeakable, abominable, impious\\nsay: neh-FAHN-doos\\n\\nVirgil uses nefandus repeatedly in the Aeneid to describe unspeakable crimes and horrors, most notably when Aeneas recalls the nefandum bellum (unspeakable war) of Troy and the nefanda fames (unspeakable hung...\",\n    \"edit_history_tweet_ids\":[\n      \"2046400955445313609\"\n    ],\n    \"id\":\"2046400955445313609\"\n  }\n}\n"
+      },
+      "greek": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"edit_history_tweet_ids\":[\n      \"2046400956946841719\"\n    ],\n    \"text\":\"νόστος — homecoming, return journey\\n(nostos)\\nsay: NOS-tos\\n\\nThe word appears throughout Homer's Odyssey as the central theme of Odysseus's ten-year journey home from Troy.\",\n    \"id\":\"2046400956946841719\"\n  }\n}\n"
+      },
+      "french": {
+        "skipped": true
+      },
+      "german": {
+        "skipped": true
+      },
+      "oldenglish": {
+        "skipped": true
+      }
+    }
+  },
+  {
+    "date": "2026-04-21",
+    "at": "2026-04-21T11:01:32.744Z",
+    "results": {
+      "latin": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"id\":\"2046544860769882525\",\n    \"text\":\"trucidō — to slaughter, massacre, butcher cruelly\\nsay: troo-KEE-doh\\n\\nCicero uses trucidō repeatedly in his Catilinarian orations to describe the conspiracy's intended massacre of senators and Roman citizens.\",\n    \"edit_history_tweet_ids\":[\n      \"2046544860769882525\"\n    ]\n  }\n}\n"
+      },
+      "greek": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"id\":\"2046544861633864085\",\n    \"text\":\"ἀρετή — excellence, virtue, moral goodness\\n(aretē)\\nsay: ah-reh-TAY\\n\\nCentral to Homeric ethics, ἀρετή appears throughout the Iliad as martial excellence, notably when Achilles must choose between a long inglorious life and brief glory.\",\n    \"edit_history_tweet_ids\":[\n      \"2046544861633864085\"\n    ]\n  }\n}\n"
+      },
+      "french": {
+        "skipped": true
+      },
+      "german": {
+        "skipped": true
+      },
+      "oldenglish": {
+        "skipped": true
+      }
+    }
+  },
+  {
+    "date": "2026-04-22",
+    "at": "2026-04-22T11:01:38.181Z",
+    "results": {
+      "latin": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"text\":\"sēcēdō — to withdraw, go apart, secede\\nsay: say-KAY-doh\\n\\nLivy uses this verb repeatedly in his account of the secession of the plebs to the Mons Sacer in 494 BC, the foundational moment of the conflict of the orders that shaped the Roman Republic.\",\n    \"edit_history_tweet_ids\":[\n      \"2046907271452459029\"\n    ],\n    \"id\":\"2046907271452459029\"\n  }\n}\n"
+      },
+      "greek": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"edit_history_tweet_ids\":[\n      \"2046907272282964213\"\n    ],\n    \"id\":\"2046907272282964213\",\n    \"text\":\"ἀτασθαλία — reckless folly, wanton outrage, moral blindness\\n(atasthalia)\\nsay: ah-tas-thah-LEE-ah\\n\\nHomer uses this word in the opening of the Odyssey when describing how Odysseus's companions perished through their own ἀτασθαλίαι by slaughtering the cattle of Helios, despi...\"\n  }\n}\n"
+      },
+      "french": {
+        "skipped": true
+      },
+      "german": {
+        "skipped": true
+      },
+      "oldenglish": {
+        "skipped": true
+      }
+    }
+  },
+  {
+    "date": "2026-04-23",
+    "at": "2026-04-23T11:01:37.109Z",
+    "results": {
+      "latin": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"text\":\"lūdibrium — mockery, derision, plaything, object of scorn\\nsay: loo-DIB-ree-um\\n\\nTacitus uses lūdibrium in the Annals (15.44) when describing Nero's persecution of Christians, who were made a 'ludibrium' through grotesque public executions.\",\n    \"edit_history_tweet_ids\":[\n      \"2047269654779896170\"\n    ],\n    \"id\":\"2047269654779896170\"\n  }\n}\n"
+      },
+      "greek": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"edit_history_tweet_ids\":[\n      \"2047269655702630827\"\n    ],\n    \"text\":\"πένθος — grief, mourning, lamentation\\n(penthos)\\nsay: PEN-thos\\n\\nIn Sophocles' Antigone, Creon speaks of πένθος when describing the grief that has overwhelmed his household after the deaths of Antigone, Haemon, and Eurydice.\",\n    \"id\":\"2047269655702630827\"\n  }\n}\n"
+      },
+      "french": {
+        "skipped": true
+      },
+      "german": {
+        "skipped": true
+      },
+      "oldenglish": {
+        "skipped": true
+      }
+    }
+  },
+  {
+    "date": "2026-04-24",
+    "at": "2026-04-24T06:47:07.711Z",
+    "results": {
+      "latin": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"id\":\"2047567998177677572\",\n    \"edit_history_tweet_ids\":[\n      \"2047567998177677572\"\n    ],\n    \"text\":\"tergiversor — to turn one's back, to evade, to equivocate\\nt · e · r · g · i · v · e · r · s · o · r\\nsay: ter-gee-VER-sor\\n\\nCicero employs this verb in Pro Cluentio to describe witnesses who equivocate or shift their testimony, exposing the rhetorical tactic of deliberate e...\"\n  }\n}\n"
+      },
+      "greek": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"id\":\"2047567999016616278\",\n    \"edit_history_tweet_ids\":[\n      \"2047567999016616278\"\n    ],\n    \"text\":\"ἀλήθεια — truth, truthfulness, unconcealment\\nἀ · λ · ή · θ · ε · ι · α\\n(alētheia)\\nsay: ah-LAY-thay-ah\\n\\nCentral to Plato's Republic (Book VII, the Allegory of the Cave), where the philosopher ascends from shadow to alētheia, perceiving the Forms themselves rather than mere...\"\n  }\n}\n"
+      },
+      "french": {
+        "skipped": true
+      },
+      "german": {
+        "skipped": true
+      },
+      "oldenglish": {
+        "skipped": true
+      }
+    }
+  },
+  {
+    "date": "2026-04-24",
+    "at": "2026-04-24T11:01:42.120Z",
+    "results": {
+      "latin": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"edit_history_tweet_ids\":[\n      \"2047632063012974778\"\n    ],\n    \"id\":\"2047632063012974778\",\n    \"text\":\"praeceps — headlong, steep, hasty, reckless\\np · r · a · e · c · e · p · s\\nsay: PRIE-keps\\n\\nVirgil uses praeceps repeatedly in the Aeneid to describe violent motion and passion.\"\n  }\n}\n"
+      },
+      "greek": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"edit_history_tweet_ids\":[\n      \"2047632063893770703\"\n    ],\n    \"text\":\"δίκη — justice, right, lawsuit, penalty, custom\\nδ · ί · κ · η\\n(dikē)\\nsay: DEE-kay\\n\\nHesiod in Works and Days presents Δίκη as a personified goddess, daughter of Zeus, who reports human injustices to her father.\",\n    \"id\":\"2047632063893770703\"\n  }\n}\n"
+      },
+      "french": {
+        "skipped": true
+      },
+      "german": {
+        "skipped": true
+      },
+      "oldenglish": {
+        "skipped": true
+      }
+    }
+  },
+  {
+    "date": "2026-04-25",
+    "at": "2026-04-25T11:04:17.427Z",
+    "results": {
+      "latin": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"id\":\"2047995102295925097\",\n    \"text\":\"callidus — clever, cunning, shrewd, crafty\\nc · a · l · l · i · d · u · s\\nsay: KAL-lih-doos\\n\\nHorace employs callidus in Satires 1.3 to describe someone skilled at concealing faults, playing on the word's dual sense of admirable cleverness and morally ambiguous cunning.\",\n    \"edit_history_tweet_ids\":[\n      \"2047995102295925097\"\n    ]\n  }\n}\n"
+      },
+      "greek": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"id\":\"2047995103843610844\",\n    \"edit_history_tweet_ids\":[\n      \"2047995103843610844\"\n    ],\n    \"text\":\"ἀνάγκη — necessity, constraint, compulsion, fate\\nἀ · ν · ά · γ · κ · η\\n(anankē)\\nsay: ah-NAHN-kay\\n\\nAeschylus in Prometheus Bound depicts Prometheus bound by ἀνάγκη, declaring that necessity is stronger than even the gods.\"\n  }\n}\n"
+      },
+      "french": {
+        "skipped": true
+      },
+      "german": {
+        "skipped": true
+      },
+      "oldenglish": {
+        "skipped": true
+      }
+    }
+  },
+  {
+    "date": "2026-04-26",
+    "at": "2026-04-26T11:57:04.506Z",
+    "results": {
+      "latin": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"edit_history_tweet_ids\":[\n      \"2048370773815853541\"\n    ],\n    \"id\":\"2048370773815853541\",\n    \"text\":\"obstrepō — to make a noise against, to drown out with clamor, to interrupt noisily\\no · b · s · t · r · e · p · ō\\nsay: ob-STREP-oh\\n\\nHorace uses obstrepō in Odes 3.7, where he writes of waves roaring against the shore.\"\n  }\n}\n"
+      },
+      "greek": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"id\":\"2048370775388782910\",\n    \"edit_history_tweet_ids\":[\n      \"2048370775388782910\"\n    ],\n    \"text\":\"ἀπάτη — deception, fraud, guile\\nἀ · π · ά · τ · η\\n(apátē)\\nsay: ah-PAH-tay\\n\\nHesiod personifies Apate as one of the dark offspring of Night (Nyx) in the Theogony, listing her among Deception's siblings like Strife and Doom.\"\n  }\n}\n"
+      },
+      "french": {
+        "skipped": true
+      },
+      "german": {
+        "skipped": true
+      },
+      "oldenglish": {
+        "skipped": true
+      }
+    }
+  },
+  {
+    "date": "2026-04-27",
+    "at": "2026-04-27T11:01:45.981Z",
+    "results": {
+      "latin": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"id\":\"2048719243470917655\",\n    \"text\":\"lūbricus — slippery, smooth; treacherous, deceitful; morally slippery, uncertain\\nl · ū · b · r · i · c · u · s\\nsay: LOO-bree-kus\\n\\nOvid uses lūbricus in the Metamorphoses to describe the snake into which Cadmus transforms, emphasizing its smooth, gliding motion.\",\n    \"edit_history_tweet_ids\":[\n      \"2048719243470917655\"\n    ]\n  }\n}\n"
+      },
+      "greek": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"text\":\"ὕβρις — violent arrogance, insolent pride, outrage against the gods or mortals\\nὕ · β · ρ · ι · ς\\n(hybris)\\nsay: HEW-bris\\n\\nAeschylus uses ὕβρις throughout the Oresteia as the root cause of the house of Atreus's downfall, particularly in Agamemnon when the chorus warns that ...\",\n    \"id\":\"2048719244330774984\",\n    \"edit_history_tweet_ids\":[\n      \"2048719244330774984\"\n    ]\n  }\n}\n"
+      },
+      "french": {
+        "skipped": true
+      },
+      "german": {
+        "skipped": true
+      },
+      "oldenglish": {
+        "skipped": true
+      }
+    }
+  },
+  {
+    "date": "2026-04-28",
+    "at": "2026-04-28T11:01:40.524Z",
+    "results": {
+      "latin": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"edit_history_tweet_ids\":[\n      \"2049081606946566492\"\n    ],\n    \"id\":\"2049081606946566492\",\n    \"text\":\"lūcubrātiō — night work, study by lamplight; a literary work composed at night\\nl · ū · c · u · b · r · ā · t · i · ō\\nsay: loo-koo-BRAH-tee-oh\\n\\nCicero uses lūcubrātiō in his philosophical works to describe the nocturnal intellectual labors that produced his treatises, part...\"\n  }\n}\n"
+      },
+      "greek": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"edit_history_tweet_ids\":[\n      \"2049081608636871039\"\n    ],\n    \"text\":\"ἀμηχανία — helplessness, want of means, perplexity\\nἀ · μ · η · χ · α · ν · ί · α\\n(amēchanía)\\nsay: ah-may-kha-NEE-ah\\n\\nThucydides uses ἀμηχανία to describe the helpless desperation of the Athenians during the plague (2.51), when neither medical skill nor human resource coul...\",\n    \"id\":\"2049081608636871039\"\n  }\n}\n"
+      },
+      "french": {
+        "skipped": true
+      },
+      "german": {
+        "skipped": true
+      },
+      "oldenglish": {
+        "skipped": true
+      }
+    }
+  },
+  {
+    "date": "2026-04-29",
+    "at": "2026-04-29T11:01:36.231Z",
+    "results": {
+      "latin": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"edit_history_tweet_ids\":[\n      \"2049443977527431462\"\n    ],\n    \"text\":\"maeror — deep grief, mourning, sorrow\\nm · a · e · r · o · r\\nsay: MY-rohr\\n\\nVirgil uses maeror powerfully in the Aeneid (Book 4) when describing Dido's overwhelming grief after Aeneas announces his departure: the word captures the queen's profound emotional devastation that...\",\n    \"id\":\"2049443977527431462\"\n  }\n}\n"
+      },
+      "greek": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"id\":\"2049443978508919284\",\n    \"text\":\"σωφροσύνη — soundness of mind, moderation, self-control, temperance\\nσ · ω · φ · ρ · ο · σ · ύ · ν · η\\n(sōphrosunē)\\nsay: so-fro-SUE-nay\\n\\nPlato elevates σωφροσύνη to one of the four cardinal virtues in the Republic, defining it as the harmony and agreement between the ratio...\",\n    \"edit_history_tweet_ids\":[\n      \"2049443978508919284\"\n    ]\n  }\n}\n"
+      },
+      "french": {
+        "skipped": true
+      },
+      "german": {
+        "skipped": true
+      },
+      "oldenglish": {
+        "skipped": true
+      }
+    }
+  },
+  {
+    "date": "2026-04-30",
+    "at": "2026-04-30T11:01:38.329Z",
+    "results": {
+      "latin": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"text\":\"perennis — lasting through the year; everlasting, perpetual, unceasing\\np · e · r · e · n · n · i · s\\nsay: peh-REN-nis\\n\\nHorace uses perennis in his famous claim of poetic immortality: 'Exegi monumentum aere perennius' (I have built a monument more lasting than bronze) in O...\",\n    \"edit_history_tweet_ids\":[\n      \"2049806374977122781\"\n    ],\n    \"id\":\"2049806374977122781\"\n  }\n}\n"
+      },
+      "greek": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"text\":\"ἀναγνώρισις — recognition, discovery, revelation of identity\\nἀ · ν · α · γ · ν · ώ · ρ · ι · σ · ι · ς\\n(anagnōrisis)\\nsay: ah-nag-NOH-ree-sis\\n\\nAristotle in the Poetics defines ἀναγνώρισις as a change from ignorance to knowledge, producing friendship or enmity in those dest...\",\n    \"edit_history_tweet_ids\":[\n      \"2049806375815930259\"\n    ],\n    \"id\":\"2049806375815930259\"\n  }\n}\n"
+      },
+      "french": {
+        "skipped": true
+      },
+      "german": {
+        "skipped": true
+      },
+      "oldenglish": {
+        "skipped": true
+      }
+    }
+  },
+  {
+    "date": "2026-05-01",
+    "at": "2026-05-01T11:01:39.756Z",
+    "results": {
+      "latin": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"id\":\"2050168768244924611\",\n    \"text\":\"mendācium — a lie, falsehood, untruth\\nm · e · n · d · ā · c · i · u · m\\nsay: men-DAH-kee-oom\\n\\nCicero employs mendācium repeatedly in De Officiis when discussing the moral boundaries of deception, arguing that mendācium is always contrary to nature and justice.\",\n    \"edit_history_tweet_ids\":[\n      \"2050168768244924611\"\n    ]\n  }\n}\n"
+      },
+      "greek": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"edit_history_tweet_ids\":[\n      \"2050168769750663543\"\n    ],\n    \"id\":\"2050168769750663543\",\n    \"text\":\"περιπέτεια — reversal of fortune, sudden change of circumstances\\nπ · ε · ρ · ι · π · έ · τ · ε · ι · α\\n(peripeteia)\\nsay: peh-ree-PEH-tay-ah\\n\\nAristotle defines περιπέτεια in the Poetics (1452a) as one of the essential elements of tragic plot structure, the moment when acti...\"\n  }\n}\n"
+      },
+      "french": {
+        "skipped": true
+      },
+      "german": {
+        "skipped": true
+      },
+      "oldenglish": {
+        "skipped": true
+      }
+    }
+  },
+  {
+    "date": "2026-05-02",
+    "at": "2026-05-02T11:01:33.992Z",
+    "results": {
+      "latin": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"text\":\"contumācia — stubborn defiance, obstinacy, insolence toward authority\\nc · o · n · t · u · m · ā · c · i · a\\nsay: kon-too-MAH-kee-ah\\n\\nLivy uses contumacia repeatedly in Ab Urbe Condita to describe the defiant spirit of Rome's enemies and rebellious plebeians.\",\n    \"edit_history_tweet_ids\":[\n      \"2050531132521779411\"\n    ],\n    \"id\":\"2050531132521779411\"\n  }\n}\n"
+      },
+      "greek": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"id\":\"2050531133419295096\",\n    \"edit_history_tweet_ids\":[\n      \"2050531133419295096\"\n    ],\n    \"text\":\"μῆτις — cunning intelligence, practical wisdom, craft\\nμ · ῆ · τ · ι · ς\\n(mētis)\\nsay: MAY-tis\\n\\nIn Homer's Odyssey, Odysseus is repeatedly called πολύμητις (polymētis, 'of many counsels'), emphasizing his characteristic cunning intelligence.\"\n  }\n}\n"
+      },
+      "french": {
+        "skipped": true
+      },
+      "german": {
+        "skipped": true
+      },
+      "oldenglish": {
+        "skipped": true
+      }
+    }
+  },
+  {
+    "date": "2026-05-03",
+    "at": "2026-05-03T11:01:38.983Z",
+    "results": {
+      "latin": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"text\":\"saevitia — fierceness, cruelty, savagery\\ns · a · e · v · i · t · i · a\\nsay: sigh-WIT-ee-ah\\n\\nTacitus uses saevitia repeatedly in the Annales to characterize the tyrannical cruelty of Tiberius and Nero, making it a keynote term for imperial excess.\",\n    \"edit_history_tweet_ids\":[\n      \"2050893541279162715\"\n    ],\n    \"id\":\"2050893541279162715\"\n  }\n}\n"
+      },
+      "greek": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"id\":\"2050893542185226739\",\n    \"text\":\"ἀπορία — perplexity, being at a loss, philosophical puzzle\\nἀ · π · ο · ρ · ί · α\\n(aporia)\\nsay: ah-poh-REE-ah\\n\\nPlato employs ἀπορία throughout his dialogues as the state of productive confusion that Socrates induces in his interlocutors, most famously in the Meno where the...\",\n    \"edit_history_tweet_ids\":[\n      \"2050893542185226739\"\n    ]\n  }\n}\n"
+      },
+      "french": {
+        "skipped": true
+      },
+      "german": {
+        "skipped": true
+      },
+      "oldenglish": {
+        "skipped": true
+      }
+    }
+  },
+  {
+    "date": "2026-05-04",
+    "at": "2026-05-04T11:01:32.927Z",
+    "results": {
+      "latin": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"text\":\"supercilium — eyebrow; pride, haughtiness, arrogance\\ns · u · p · e · r · c · i · l · i · u · m\\nsay: soo-per-KIL-ee-um\\n\\nHorace uses supercilium in Ars Poetica (line 386) when warning against the severe critic who frowns at everything: those who judge poetry with excessive ...\",\n    \"id\":\"2051255903760851349\",\n    \"edit_history_tweet_ids\":[\n      \"2051255903760851349\"\n    ]\n  }\n}\n"
+      },
+      "greek": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"text\":\"ἀταραξία — freedom from disturbance; tranquility of mind; imperturbability\\nἀ · τ · α · ρ · α · ξ · ί · α\\n(ataraxia)\\nsay: ah-tah-rahk-SEE-ah\\n\\nThough the term appears in Classical prose, it became central to Hellenistic philosophy, particularly in Epicurean and Skeptic thou...\",\n    \"id\":\"2051255904700391879\",\n    \"edit_history_tweet_ids\":[\n      \"2051255904700391879\"\n    ]\n  }\n}\n"
+      },
+      "french": {
+        "skipped": true
+      },
+      "german": {
+        "skipped": true
+      },
+      "oldenglish": {
+        "skipped": true
+      }
+    }
+  }
+]

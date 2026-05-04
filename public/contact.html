@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact · Kalopaideia</title>
+<meta name="description" content="Send a note to the editors of Kalopaideia." />
+<link rel="icon" href="/paideia/img/favicon.ico" />
+<link rel="apple-touch-icon" href="/paideia/img/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Kalopaideia" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&family=Noto+Serif:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/paideia/styles.css?v=1777668400" />
+</head>
+<body class="contact-page">
+
+<header class="masthead">
+  <h1 class="title"><a href="/paideia/" aria-label="Kalopaideia home">Kalopaideia</a></h1>
+  <div class="meta meta-row">
+    <span class="meta-label">Contact the Editors</span>
+  </div>
+</header>
+
+<main class="contact-body">
+  <article>
+    <p class="contact-intro">
+      Send us a note. We read every message. For corrections, suggestions,
+      questions about a word, or anything else &mdash; we&rsquo;d like to
+      hear from you.
+    </p>
+
+    <form id="contact-form" class="contact-form" novalidate>
+      <div class="field">
+        <label for="contact-name">Your name</label>
+        <input type="text" id="contact-name" name="name" required autocomplete="name" />
+      </div>
+
+      <div class="field">
+        <label for="contact-email">Your email</label>
+        <input type="email" id="contact-email" name="email" required autocomplete="email" />
+      </div>
+
+      <div class="field">
+        <label for="contact-subject">Subject</label>
+        <input type="text" id="contact-subject" name="subject" required />
+      </div>
+
+      <div class="field">
+        <label for="contact-message">Message</label>
+        <textarea id="contact-message" name="message" rows="8" required></textarea>
+      </div>
+
+      <!-- Honeypot for spambots: real users won't see this; bots will fill it. -->
+      <div class="field hp-field" aria-hidden="true">
+        <label for="contact-website">Website (leave blank)</label>
+        <input type="text" id="contact-website" name="website" tabindex="-1" autocomplete="off" />
+      </div>
+
+      <button type="submit" class="contact-submit">Submit</button>
+
+      <p class="contact-status" id="contact-status" role="status" aria-live="polite"></p>
+    </form>
+
+    <p class="contact-direct">
+      You may also write directly to
+      <a href="mailto:info@newcharterventures.com">info@newcharterventures.com</a>.
+    </p>
+  </article>
+</main>
+
+<footer class="foot">
+  <div class="foot-inner">
+    <div class="foot-title">Kalopaideia</div>
+    <p>A daily word from each classical tradition.</p>
+    <p class="foot-copyright">
+      © 2026 New Charter Ventures &middot; All rights reserved
+      &middot; <a href="/paideia/about.html">About</a>
+      &middot; <a href="/paideia/contact.html">Contact</a>
+      &middot; <a href="/paideia/terms.html">Terms</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var form = document.getElementById('contact-form');
+  var status = document.getElementById('contact-status');
+  if (!form) return;
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    status.className = 'contact-status';
+    status.textContent = 'Sending\u2026';
+    var data = {
+      name:    form.elements.name.value.trim(),
+      email:   form.elements.email.value.trim(),
+      subject: form.elements.subject.value.trim(),
+      message: form.elements.message.value.trim(),
+      website: form.elements.website.value, // honeypot
+    };
+    if (!data.name || !data.email || !data.subject || !data.message) {
+      status.className = 'contact-status err';
+      status.textContent = 'Please fill in all fields.';
+      return;
+    }
+    fetch('/paideia/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    })
+      .then(function (r) {
+        if (r.ok) return r.json();
+        return r.json().then(function (j) { throw new Error(j.error || 'Send failed.'); });
+      })
+      .then(function () {
+        status.className = 'contact-status ok';
+        status.textContent = 'Sent. Thank you \u2014 we\u2019ll be in touch.';
+        form.reset();
+      })
+      .catch(function (err) {
+        status.className = 'contact-status err';
+        status.textContent = err.message || 'Send failed. Please try again or write to info@newcharterventures.com.';
+      });
+  });
+})();
+</script>
+
+</body>
+</html>

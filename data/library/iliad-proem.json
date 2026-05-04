@@ -1,0 +1,30 @@
+{
+  "id": "iliad-proem",
+  "language": "greek",
+  "title": "Iliad, Book I — Proem & Opening Quarrel",
+  "author": "Homer",
+  "date": "c. 8th century BCE",
+  "meter": "Dactylic hexameter",
+  "translator": "Samuel Butler",
+  "translator_date": "1898",
+  "license": "Public domain",
+  "source_notes": "Greek text from Monro & Allen (Oxford); English translation by Samuel Butler, 1898.",
+  "reading_notes": "The proem (lines 1-7) names the wrath of Achilles as the theme. Then Homer turns to the narrative proper: a priest of Apollo, Chryses, comes to the Achaean camp to ransom his captured daughter Chryseis. Agamemnon refuses insultingly. Chryses prays to Apollo, who sends a plague.",
+  "status": "open",
+  "lines": [
+    { "n": 1, "original": "μῆνιν ἄειδε, θεά, Πηληϊάδεω Ἀχιλῆος", "english": "Sing, O goddess, the anger of Achilles son of Peleus,", "gloss": "μῆνιν = 'wrath, anger' (accusative, object of ἄειδε); ἄειδε = 'sing!' (imperative); θεά = 'goddess' (vocative, the Muse); Πηληϊάδεω = 'of the son of Peleus' (genitive); Ἀχιλῆος = 'of Achilles' (genitive)." },
+    { "n": 2, "original": "οὐλομένην, ἣ μυρί᾽ Ἀχαιοῖς ἄλγε᾽ ἔθηκε,", "english": "that brought countless ills upon the Achaeans.", "gloss": "οὐλομένην = 'destructive, accursed' (accusative, modifies μῆνιν); ἣ = 'which' (nominative feminine); μυρί᾽ = 'countless' (accusative plural); Ἀχαιοῖς = 'upon the Achaeans' (dative plural); ἄλγε᾽ = 'sorrows' (accusative plural); ἔθηκε = 'placed' (aorist of τίθημι)." },
+    { "n": 3, "original": "πολλὰς δ᾽ ἰφθίμους ψυχὰς Ἄϊδι προΐαψεν", "english": "Many a brave soul did it send hurrying down to Hades,", "gloss": "πολλὰς = 'many' (accusative plural feminine); δ᾽ = 'and'; ἰφθίμους = 'mighty, valiant'; ψυχὰς = 'souls' (accusative plural); Ἄϊδι = 'to Hades' (dative); προΐαψεν = 'sent forth, hurled' (aorist)." },
+    { "n": 4, "original": "ἡρώων, αὐτοὺς δὲ ἑλώρια τεῦχε κύνεσσιν", "english": "and many a hero did it yield a prey to dogs", "gloss": "ἡρώων = 'of heroes' (genitive plural); αὐτοὺς = 'them' (accusative); δὲ = 'and'; ἑλώρια = 'spoils, prey' (accusative plural); τεῦχε = 'made' (imperfect of τεύχω); κύνεσσιν = 'to dogs' (dative plural)." },
+    { "n": 5, "original": "οἰωνοῖσί τε πᾶσι, Διὸς δ᾽ ἐτελείετο βουλή,", "english": "and vultures, for so were the counsels of Jove fulfilled", "gloss": "οἰωνοῖσί = 'to birds of prey' (dative plural); τε = 'and'; πᾶσι = 'all' (dative plural); Διὸς = 'of Zeus' (genitive); δ᾽ = 'and'; ἐτελείετο = 'was being accomplished' (imperfect passive of τελείω); βουλή = 'plan, will' (nominative)." },
+    { "n": 6, "original": "ἐξ οὗ δὴ τὰ πρῶτα διαστήτην ἐρίσαντε", "english": "from the day on which the son of Atreus, king of men,", "gloss": "ἐξ οὗ = 'from which (time)' (relative); δὴ = 'indeed'; τὰ πρῶτα = 'at first' (adverbial); διαστήτην = 'stood apart' (aorist dual of διΐστημι); ἐρίσαντε = 'having quarreled' (aorist participle, dual)." },
+    { "n": 7, "original": "Ἀτρεΐδης τε ἄναξ ἀνδρῶν καὶ δῖος Ἀχιλλεύς.", "english": "and great Achilles, first fell out with one another.", "gloss": "Ἀτρεΐδης = 'son of Atreus' (Agamemnon, nominative); τε ... καὶ = 'both ... and'; ἄναξ = 'lord' (nominative); ἀνδρῶν = 'of men' (genitive plural); δῖος = 'divine' (nominative); Ἀχιλλεύς = 'Achilles'." },
+    { "n": 8, "original": "τίς τ᾽ ἄρ σφωε θεῶν ἔριδι ξυνέηκε μάχεσθαι;", "english": "And which of the gods set them to contend in such strife?", "gloss": "τίς = 'who?' (nominative); τ᾽ ἄρ = 'then' (particles); σφωε = 'them two' (accusative dual); θεῶν = 'of the gods' (genitive plural); ἔριδι = 'in strife' (dative); ξυνέηκε = 'set together, provoked' (aorist of συνίημι); μάχεσθαι = 'to fight' (infinitive)." },
+    { "n": 9, "original": "Λητοῦς καὶ Διὸς υἱός· ὁ γὰρ βασιλῆϊ χολωθεὶς", "english": "The son of Leto and Zeus; for he, angry with the king,", "gloss": "Λητοῦς = 'of Leto' (genitive); καὶ = 'and'; Διὸς = 'of Zeus' (genitive); υἱός = 'son' (nominative, i.e., Apollo); ὁ = 'he'; γὰρ = 'for'; βασιλῆϊ = 'at the king' (dative); χολωθεὶς = 'having been angered' (aorist passive participle)." },
+    { "n": 10, "original": "νοῦσον ἀνὰ στρατὸν ὄρσε κακήν, ὀλέκοντο δὲ λαοί,", "english": "sent a foul plague through the host, and the people began to die,", "gloss": "νοῦσον = 'plague, disease' (accusative); ἀνὰ = 'up through' (prep. + accusative); στρατὸν = 'army' (accusative); ὄρσε = 'stirred up' (aorist of ὄρνυμι); κακήν = 'evil, foul' (accusative feminine); ὀλέκοντο = 'were perishing' (imperfect middle); λαοί = 'peoples' (nominative plural)." },
+    { "n": 11, "original": "οὕνεκα τὸν Χρύσην ἠτίμασεν ἀρητῆρα", "english": "because the son of Atreus had dishonored Chryses his priest,", "gloss": "οὕνεκα = 'because'; τὸν Χρύσην = 'Chryses' (accusative); ἠτίμασεν = 'dishonored' (aorist of ἀτιμάζω); ἀρητῆρα = 'priest' (accusative)." },
+    { "n": 12, "original": "Ἀτρεΐδης· ὁ γὰρ ἦλθε θοὰς ἐπὶ νῆας Ἀχαιῶν", "english": "son of Atreus. For he had come to the Achaeans' swift ships", "gloss": "Ἀτρεΐδης = '(the) son of Atreus' (nominative); ὁ = 'he' (Chryses); γὰρ = 'for'; ἦλθε = 'came' (aorist of ἔρχομαι); θοὰς = 'swift' (accusative plural); ἐπὶ = 'to' (prep. + accusative); νῆας = 'ships' (accusative plural); Ἀχαιῶν = 'of the Achaeans' (genitive plural)." },
+    { "n": 13, "original": "λυσόμενός τε θύγατρα φέρων τ᾽ ἀπερείσι᾽ ἄποινα,", "english": "to ransom his daughter, bringing boundless ransom,", "gloss": "λυσόμενός = 'to ransom' (future middle participle); τε = 'and'; θύγατρα = 'daughter' (accusative); φέρων = 'bringing' (nominative participle); ἀπερείσι᾽ = 'boundless, unmeasured' (accusative plural); ἄποινα = 'ransom' (accusative plural neuter)." },
+    { "n": 14, "original": "στέμμα τ᾽ ἔχων ἐν χερσὶν ἑκηβόλου Ἀπόλλωνος", "english": "holding in his hand the wreath of Apollo the far-darter", "gloss": "στέμμα = 'wreath, fillet' (accusative); τ᾽ = 'and'; ἔχων = 'holding' (nominative participle); ἐν χερσὶν = 'in his hands' (dative plural of χείρ); ἑκηβόλου = 'far-shooting' (genitive, epithet of Apollo); Ἀπόλλωνος = 'of Apollo' (genitive)." }
+  ]
+}

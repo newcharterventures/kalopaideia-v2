@@ -1,0 +1,22 @@
+{
+  "id": "ronsard-mignonne",
+  "language": "french",
+  "title": "Mignonne, allons voir si la rose (first stanza)",
+  "author": "Pierre de Ronsard",
+  "date": "1553",
+  "meter": "Octosyllabic",
+  "translator": "Andrew Lang",
+  "translator_date": "1888",
+  "license": "Public domain",
+  "source_notes": "Renaissance French original; translation by Andrew Lang, 1888.",
+  "reading_notes": "Ronsard's famous carpe-diem ode. A young man invites his beloved to look at a rose, which by evening has lost its petals — an emblem of her own vanishing youth. Note Renaissance French spellings: 'qui ce matin avoit desclose' preserves older forms of avait and déclose.",
+  "status": "open",
+  "lines": [
+    { "n": 1, "original": "Mignonne, allons voir si la rose", "english": "Sweetheart, let us go see if the rose", "gloss": "Mignonne = 'sweetheart, little darling' (vocative); allons = 'let us go' (1st plural imperative of aller); voir = 'to see' (infinitive); si = 'whether, if'; la rose = 'the rose' (nominative)." },
+    { "n": 2, "original": "Qui ce matin avoit desclose", "english": "Which this morning had unfolded", "gloss": "Qui = 'which' (relative); ce matin = 'this morning'; avoit = 'had' (archaic for avait, imperfect of avoir); desclose = 'opened, unfolded' (archaic past participle of déclore; feminine)." },
+    { "n": 3, "original": "Sa robe de pourpre au soleil,", "english": "Her robe of purple to the sun,", "gloss": "Sa = 'her' (feminine possessive); robe = 'robe, dress'; de pourpre = 'of purple' (genitive of material); au soleil = 'to the sun' (à + le; dative of direction)." },
+    { "n": 4, "original": "A point perdu ceste vesprée,", "english": "Has not lost this evening", "gloss": "A point perdu = 'has not lost' (perfect of perdre with archaic point negation); ceste = 'this' (archaic for cette, feminine); vesprée = 'evening' (archaic for vêprée)." },
+    { "n": 5, "original": "Les plis de sa robe pourprée,", "english": "The folds of her purple gown,", "gloss": "Les plis = 'the folds' (nominative plural); de sa robe = 'of her gown'; pourprée = 'purple-colored' (feminine adjective agreeing with robe)." },
+    { "n": 6, "original": "Et son teint au vostre pareil.", "english": "And her hue so like thine own.", "gloss": "Et = 'and'; son teint = 'her hue, complexion'; au vostre pareil = 'equal to yours' (archaic vostre for vôtre; dative + predicate)." }
+  ]
+}

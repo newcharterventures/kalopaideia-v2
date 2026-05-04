@@ -1,0 +1,818 @@
+{
+  "overview": "Old English (Anglo-Saxon) is the earliest recorded form of the English language, spoken and written in England from approximately 450 to 1150 CE. The literary corpus includes heroic poetry (Beowulf), religious verse (The Dream of the Rood), elegies (The Wanderer, The Seafarer), and prose works by Ælfric and the Anglo-Saxon Chronicle. Studying Old English provides direct access to the Germanic roots of English and reveals the synthetic morphological system that modern English has largely shed.",
+  "alphabet": [
+    {
+      "char": "a",
+      "name": "a",
+      "ipa": "ɑ / æ",
+      "approximation": "like 'a' in 'father' or 'a' in 'cat'",
+      "notes": "Short /æ/ or long /ɑː/. Length typically marked by macron in modern editions (ā = long)."
+    },
+    {
+      "char": "æ",
+      "name": "ash",
+      "ipa": "æ / æː",
+      "approximation": "like 'a' in 'cat'",
+      "notes": "Distinct phoneme, short or long (ǣ). Not a digraph but a single letter descended from Latin ligature."
+    },
+    {
+      "char": "b",
+      "name": "bē",
+      "ipa": "b",
+      "approximation": "like 'b' in 'bet'",
+      "notes": ""
+    },
+    {
+      "char": "c",
+      "name": "cē",
+      "ipa": "k / tʃ",
+      "approximation": "like 'k' in 'keep' or 'ch' in 'church'",
+      "notes": "Palatalized to [tʃ] before front vowels (i, e, æ) and after front vowels before t. Otherwise [k]."
+    },
+    {
+      "char": "d",
+      "name": "dē",
+      "ipa": "d",
+      "approximation": "like 'd' in 'dog'",
+      "notes": ""
+    },
+    {
+      "char": "ð",
+      "name": "eth",
+      "ipa": "θ / ð",
+      "approximation": "like 'th' in 'thing' or 'this'",
+      "notes": "Used interchangeably with þ (thorn) in manuscripts. Voiced [ð] between vowels, voiceless [θ] elsewhere. Distribution not phonemic."
+    },
+    {
+      "char": "e",
+      "name": "e",
+      "ipa": "e / eː",
+      "approximation": "like 'e' in 'met' (short) or 'a' in 'gate' (long)",
+      "notes": "Short [e] or long [eː]. Long e is a close-mid vowel."
+    },
+    {
+      "char": "f",
+      "name": "ef",
+      "ipa": "f / v",
+      "approximation": "like 'f' in 'fat' or 'v' in 'vat'",
+      "notes": "Voiceless [f] initially and finally; voiced [v] between vowels."
+    },
+    {
+      "char": "g",
+      "name": "gē",
+      "ipa": "ɡ / j / ɣ",
+      "approximation": "like 'g' in 'go', 'y' in 'yes', or a guttural fricative",
+      "notes": "Palatalized to [j] before/after front vowels. Fricative [ɣ] between back vowels. Stop [ɡ] initially and after n."
+    },
+    {
+      "char": "h",
+      "name": "hā",
+      "ipa": "h / x",
+      "approximation": "like 'h' in 'hat' or 'ch' in Scottish 'loch'",
+      "notes": "Voiceless glottal [h] initially; velar fricative [x] after back vowels, palatal [ç] after front vowels."
+    },
+    {
+      "char": "i",
+      "name": "i",
+      "ipa": "i / iː",
+      "approximation": "like 'i' in 'sit' (short) or 'ee' in 'see' (long)",
+      "notes": "Short [i] or long [iː]."
+    },
+    {
+      "char": "l",
+      "name": "el",
+      "ipa": "l",
+      "approximation": "like 'l' in 'let'",
+      "notes": ""
+    },
+    {
+      "char": "m",
+      "name": "em",
+      "ipa": "m",
+      "approximation": "like 'm' in 'met'",
+      "notes": ""
+    },
+    {
+      "char": "n",
+      "name": "en",
+      "ipa": "n",
+      "approximation": "like 'n' in 'net'",
+      "notes": ""
+    },
+    {
+      "char": "o",
+      "name": "o",
+      "ipa": "o / oː",
+      "approximation": "like 'o' in 'hot' (short) or 'o' in 'note' (long)",
+      "notes": "Short [o] or long [oː]."
+    },
+    {
+      "char": "p",
+      "name": "pē",
+      "ipa": "p",
+      "approximation": "like 'p' in 'pet'",
+      "notes": ""
+    },
+    {
+      "char": "r",
+      "name": "er",
+      "ipa": "r",
+      "approximation": "trilled 'r'",
+      "notes": "Alveolar trill [r], not the modern English approximant."
+    },
+    {
+      "char": "s",
+      "name": "es",
+      "ipa": "s / z",
+      "approximation": "like 's' in 'sit' or 'z' in 'zero'",
+      "notes": "Voiceless [s] initially and finally; voiced [z] between vowels."
+    },
+    {
+      "char": "t",
+      "name": "tē",
+      "ipa": "t",
+      "approximation": "like 't' in 'top'",
+      "notes": ""
+    },
+    {
+      "char": "þ",
+      "name": "thorn",
+      "ipa": "θ / ð",
+      "approximation": "like 'th' in 'thing' or 'this'",
+      "notes": "Used interchangeably with ð. Voiced [ð] between vowels, voiceless [θ] elsewhere."
+    },
+    {
+      "char": "u",
+      "name": "u",
+      "ipa": "u / uː",
+      "approximation": "like 'u' in 'put' (short) or 'oo' in 'food' (long)",
+      "notes": "Short [u] or long [uː]."
+    },
+    {
+      "char": "ƿ",
+      "name": "wynn",
+      "ipa": "w",
+      "approximation": "like 'w' in 'wet'",
+      "notes": "Replaced by 'w' (double-u) in later manuscripts and modern editions. Runic origin."
+    },
+    {
+      "char": "w",
+      "name": "wen",
+      "ipa": "w",
+      "approximation": "like 'w' in 'wet'",
+      "notes": "Modern replacement for runic ƿ (wynn). Standard in modern editions of Old English texts."
+    },
+    {
+      "char": "x",
+      "name": "ex",
+      "ipa": "ks",
+      "approximation": "like 'x' in 'box'",
+      "notes": "Rare; primarily in Latin loanwords."
+    },
+    {
+      "char": "y",
+      "name": "y",
+      "ipa": "y / yː",
+      "approximation": "like German 'ü' in 'über'",
+      "notes": "Front rounded vowel, short [y] or long [yː]. Not a consonant in Old English."
+    },
+    {
+      "char": "ȝ",
+      "name": "yogh",
+      "ipa": "ɡ / j / ɣ",
+      "approximation": "variant form of 'g'",
+      "notes": "Later scribal form of insular g, used primarily in Middle English manuscripts. In Old English contexts, represents same sounds as g."
+    }
+  ],
+  "pronunciation_notes": [
+    "Vowel length is phonemic and must be distinguished; macrons in modern editions (ā, ē, etc.) mark long vowels, which take roughly twice the duration of short vowels.",
+    "The letters c and g are palatalized before and after front vowels (i, e, æ): 'cild' (child) has [tʃ], 'cyning' (king) has [k] then [j], 'gē' (you) has [j].",
+    "The letters f, s, and þ/ð are voiced between vowels: 'ofer' has [v], 'rīsan' has [z], 'oþer' has [ð].",
+    "Double consonants are geminate (held longer): 'biddan' has a long [dd], distinct from 'bidan' with short [d].",
+    "Initial h before l, n, r represents a voiceless version of the following consonant: 'hlāf' (loaf) has voiceless [l̥], 'hring' (ring) has voiceless [r̥].",
+    "Diphthongs ea, eo, ie, and io are genuine diphthongs in Old English, not digraphs for single vowels; ea approximates [æɑ], eo approximates [eo]."
+  ],
+  "grammar": {
+    "noun_system": "Old English nouns inflect for three genders (masculine, feminine, neuter), two numbers (singular, plural), and four cases (nominative, accusative, genitive, dative). An instrumental case survives in some paradigms but merges with dative by the classical period. Gender is grammatical, not semantic, and must be memorized for each noun.",
+    "declensions": [
+      {
+        "name": "a-stem (masculine)",
+        "description": "The most common masculine declension, descended from Proto-Germanic a-stem nouns. Example: 'stān' (stone).",
+        "paradigm": {
+          "sg": {
+            "nom": "stān",
+            "acc": "stān",
+            "gen": "stānes",
+            "dat": "stāne"
+          },
+          "pl": {
+            "nom": "stānas",
+            "acc": "stānas",
+            "gen": "stāna",
+            "dat": "stānum"
+          }
+        }
+      },
+      {
+        "name": "ō-stem (feminine)",
+        "description": "The most common feminine declension. Example: 'giefu' (gift).",
+        "paradigm": {
+          "sg": {
+            "nom": "giefu",
+            "acc": "giefe",
+            "gen": "giefe",
+            "dat": "giefe"
+          },
+          "pl": {
+            "nom": "giefa/giefe",
+            "acc": "giefa/giefe",
+            "gen": "giefa/giefena",
+            "dat": "giefum"
+          }
+        }
+      },
+      {
+        "name": "a-stem (neuter)",
+        "description": "Neuter a-stems differ from masculine a-stems in nominative and accusative plural. Example: 'scip' (ship).",
+        "paradigm": {
+          "sg": {
+            "nom": "scip",
+            "acc": "scip",
+            "gen": "scipes",
+            "dat": "scipe"
+          },
+          "pl": {
+            "nom": "scipu",
+            "acc": "scipu",
+            "gen": "scipa",
+            "dat": "scipum"
+          }
+        }
+      },
+      {
+        "name": "n-stem (weak)",
+        "description": "Weak declension applies to all three genders. Characterized by -n- throughout most of paradigm. Example: 'guma' (man, masculine).",
+        "paradigm": {
+          "sg": {
+            "nom": "guma",
+            "acc": "guman",
+            "gen": "guman",
+            "dat": "guman"
+          },
+          "pl": {
+            "nom": "guman",
+            "acc": "guman",
+            "gen": "gumena",
+            "dat": "gumum"
+          }
+        }
+      }
+    ],
+    "verb_system": "Old English verbs are divided into strong verbs (forming preterite by ablaut, inherited vowel gradation) and weak verbs (forming preterite with a dental suffix -d-/-t-). Verbs inflect for two tenses (present, preterite), three moods (indicative, subjunctive, imperative), two numbers, and person in present and preterite indicative. Strong verbs are further classified into seven ablaut classes.",
+    "conjugations": [
+      {
+        "name": "Strong verb class I",
+        "description": "Ablaut pattern ī - ā - i - i. Example: 'rīdan' (to ride).",
+        "paradigm": {
+          "infinitive": "rīdan",
+          "present_indicative": {
+            "1s": "rīde",
+            "2s": "rītst/rīdest",
+            "3s": "rītt/rīdeþ",
+            "pl": "rīdaþ"
+          },
+          "preterite_indicative": {
+            "1s": "rād",
+            "2s": "ride",
+            "3s": "rād",
+            "pl": "ridon"
+          },
+          "present_subjunctive": {
+            "sg": "rīde",
+            "pl": "rīden"
+          },
+          "preterite_subjunctive": {
+            "sg": "ride",
+            "pl": "riden"
+          },
+          "imperative": {
+            "sg": "rīd",
+            "pl": "rīdaþ"
+          },
+          "participles": {
+            "present": "rīdende",
+            "past": "riden"
+          }
+        }
+      },
+      {
+        "name": "Weak verb class I",
+        "description": "Forms preterite with -d- suffix and typically causes i-mutation of root vowel in present. Example: 'dēman' (to judge).",
+        "paradigm": {
+          "infinitive": "dēman",
+          "present_indicative": {
+            "1s": "dēme",
+            "2s": "dēmst/dēmest",
+            "3s": "dēmþ/dēmeþ",
+            "pl": "dēmaþ"
+          },
+          "preterite_indicative": {
+            "1s": "dēmde",
+            "2s": "dēmdest",
+            "3s": "dēmde",
+            "pl": "dēmdon"
+          },
+          "present_subjunctive": {
+            "sg": "dēme",
+            "pl": "dēmen"
+          },
+          "preterite_subjunctive": {
+            "sg": "dēmde",
+            "pl": "dēmden"
+          },
+          "imperative": {
+            "sg": "dēm",
+            "pl": "dēmaþ"
+          },
+          "participles": {
+            "present": "dēmende",
+            "past": "dēmed"
+          }
+        }
+      },
+      {
+        "name": "Strong verb class III",
+        "description": "Ablaut pattern with nasal/liquid + consonant. Example: 'helpan' (to help), pattern e - æ - u - o.",
+        "paradigm": {
+          "infinitive": "helpan",
+          "present_indicative": {
+            "1s": "helpe",
+            "2s": "hilpst/hilpest",
+            "3s": "hilpþ/hilpeþ",
+            "pl": "helpaþ"
+          },
+          "preterite_indicative": {
+            "1s": "healp",
+            "2s": "hulpe",
+            "3s": "healp",
+            "pl": "hulpon"
+          },
+          "present_subjunctive": {
+            "sg": "helpe",
+            "pl": "helpen"
+          },
+          "preterite_subjunctive": {
+            "sg": "hulpe",
+            "pl": "hulpen"
+          },
+          "imperative": {
+            "sg": "help",
+            "pl": "helpaþ"
+          },
+          "participles": {
+            "present": "helpende",
+            "past": "holpen"
+          }
+        }
+      }
+    ],
+    "reference": {
+      "title": "Grammar Reference Card",
+      "description": "Quick reference for grammatical terminology",
+      "sections": [
+        {
+          "category": "Cases",
+          "terms": [
+            {
+              "term": "Nominative",
+              "definition": "Subject of the verb. The 'who' or 'what' doing the action."
+            },
+            {
+              "term": "Accusative",
+              "definition": "Direct object. The 'what' or 'whom' receiving the action."
+            },
+            {
+              "term": "Genitive",
+              "definition": "Possession or description ('of'). Shows ownership."
+            },
+            {
+              "term": "Dative",
+              "definition": "Indirect object ('to' or 'for'). The recipient of an action."
+            }
+          ]
+        },
+        {
+          "category": "Number",
+          "terms": [
+            {
+              "term": "Singular",
+              "definition": "One person or thing."
+            },
+            {
+              "term": "Plural",
+              "definition": "More than one person or thing."
+            }
+          ]
+        },
+        {
+          "category": "Gender",
+          "terms": [
+            {
+              "term": "Masculine (m.)",
+              "definition": "Grammatical gender. Articles: se (nom.), þone (acc.)."
+            },
+            {
+              "term": "Feminine (f.)",
+              "definition": "Grammatical gender. Articles: sēo (nom.), þā (acc.)."
+            },
+            {
+              "term": "Neuter (n.)",
+              "definition": "Grammatical gender. Articles: þæt (nom./acc.)."
+            }
+          ]
+        },
+        {
+          "category": "Declensions",
+          "terms": [
+            {
+              "term": "Strong Declension",
+              "definition": "Nouns with thematic vowel endings (a-stems, ō-stems, i-stems, u-stems)."
+            },
+            {
+              "term": "Weak Declension",
+              "definition": "Nouns with -n endings (n-stems). Example: nama 'name'."
+            }
+          ]
+        },
+        {
+          "category": "Tenses",
+          "terms": [
+            {
+              "term": "Present",
+              "definition": "Action happening now or habitually. 'I bind' = ic binde."
+            },
+            {
+              "term": "Preterite (Past)",
+              "definition": "Action in the past. 'I bound' = ic band."
+            }
+          ]
+        },
+        {
+          "category": "Mood",
+          "terms": [
+            {
+              "term": "Indicative",
+              "definition": "States facts or asks questions."
+            },
+            {
+              "term": "Subjunctive",
+              "definition": "Expresses possibility, wish, or hypothetical situations."
+            },
+            {
+              "term": "Imperative",
+              "definition": "Gives commands. 'Bind!' = bind (sg.), bindaþ (pl.)."
+            }
+          ]
+        },
+        {
+          "category": "Verb Classes",
+          "terms": [
+            {
+              "term": "Strong Verbs",
+              "definition": "Form past tense by vowel change (ablaut). Example: bindan → band → bundon."
+            },
+            {
+              "term": "Weak Verbs",
+              "definition": "Form past tense with dental suffix (-de/-te). Example: lufian → lufode 'to love'."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "reading_list": [
+    "The Battle of Maldon (simple syntax, narrative verse, historical context accessible)",
+    "Cædmon's Hymn (nine lines, liturgical, foundational to Old English literary tradition)",
+    "The Dream of the Rood (religious vision poem, moderate vocabulary, first-person narration from Cross)",
+    "The Wanderer (elegy, more complex syntax, theological conclusion, moderate length)",
+    "The Seafarer (elegy, dense imagery, hermit spirituality, requires attention to caesura and kennings)",
+    "Riddles from the Exeter Book (varied difficulty, playful, good for building vocabulary in concrete domains)",
+    "Beowulf, lines 1-1250 (Grendel episode: narrative foundation, formulaic diction, genealogies)",
+    "Beowulf, lines 1251-2199 (Grendel's mother, lake descent, complex digressions)",
+    "Beowulf, lines 2200-3182 (dragon episode, elegiac tone, dense retrospectives and tragic structure)",
+    "The Battle of Brunanburh (verse chronicle, complex historical allusions, panegyric register)"
+  ],
+  "display": "Old English",
+  "generated_at": "2026-04-21T06:29:19.868Z",
+  "numbers": {
+    "overview": "Old English numbers from 1 to 3 decline for case, gender, and number like adjectives. The language distinguishes three genders (masculine, feminine, neuter) in number words. Numbers above three are generally indeclinable or have limited inflection.",
+    "cardinals": [
+      {
+        "value": 0,
+        "word": "nāwiht",
+        "ipa": "ˈnɑː.wixt",
+        "pronunciation": "NAH-wiht",
+        "note": "literally 'no thing'; zero concept not native to Old English"
+      },
+      {
+        "value": 1,
+        "word": "ān",
+        "ipa": "ɑːn",
+        "pronunciation": "AHN",
+        "note": "declines like strong adjective; m. ān, f. ānu, n. ān (nom.)"
+      },
+      {
+        "value": 2,
+        "word": "twēġen",
+        "ipa": "ˈtweː.jen",
+        "pronunciation": "TWAY-yen",
+        "note": "m. twēġen, f. twā, n. tū/twā; declines for case"
+      },
+      {
+        "value": 3,
+        "word": "þrīe",
+        "ipa": "ˈθriː.e",
+        "pronunciation": "THREE-eh",
+        "note": "m. þrīe, f. þrēo, n. þrēo; declines for case"
+      },
+      {
+        "value": 4,
+        "word": "fēower",
+        "ipa": "ˈfeː.o.wer",
+        "pronunciation": "FAY-oh-wer",
+        "note": "indeclinable"
+      },
+      {
+        "value": 5,
+        "word": "fīf",
+        "ipa": "fiːf",
+        "pronunciation": "FEEF",
+        "note": "indeclinable"
+      },
+      {
+        "value": 6,
+        "word": "siex",
+        "ipa": "siks",
+        "pronunciation": "SIKS",
+        "note": "indeclinable"
+      },
+      {
+        "value": 7,
+        "word": "seofon",
+        "ipa": "ˈse.o.von",
+        "pronunciation": "SEH-oh-von",
+        "note": "indeclinable"
+      },
+      {
+        "value": 8,
+        "word": "eahta",
+        "ipa": "ˈæɑx.tɑ",
+        "pronunciation": "EAH-tah",
+        "note": "indeclinable"
+      },
+      {
+        "value": 9,
+        "word": "niġon",
+        "ipa": "ˈni.jon",
+        "pronunciation": "NIH-yon",
+        "note": "indeclinable"
+      },
+      {
+        "value": 10,
+        "word": "tīen",
+        "ipa": "tiːen",
+        "pronunciation": "TEE-en",
+        "note": "indeclinable"
+      },
+      {
+        "value": 11,
+        "word": "endleofan",
+        "ipa": "ˈend.le.o.vɑn",
+        "pronunciation": "END-leh-oh-van",
+        "note": "literally 'one left' (after ten)"
+      },
+      {
+        "value": 12,
+        "word": "twelf",
+        "ipa": "twelf",
+        "pronunciation": "TWELF",
+        "note": "literally 'two left'"
+      },
+      {
+        "value": 13,
+        "word": "þrēotīene",
+        "ipa": "ˈθreː.o.tiː.ne",
+        "pronunciation": "THRAY-oh-tee-neh",
+        "note": "three + ten"
+      },
+      {
+        "value": 14,
+        "word": "fēowertīene",
+        "ipa": "ˈfeː.o.wer.tiː.ne",
+        "pronunciation": "FAY-oh-wer-tee-neh",
+        "note": "four + ten"
+      },
+      {
+        "value": 15,
+        "word": "fīftīene",
+        "ipa": "ˈfiːf.tiː.ne",
+        "pronunciation": "FEEF-tee-neh",
+        "note": "five + ten"
+      },
+      {
+        "value": 16,
+        "word": "siextīene",
+        "ipa": "ˈsiks.tiː.ne",
+        "pronunciation": "SIKS-tee-neh",
+        "note": "six + ten"
+      },
+      {
+        "value": 17,
+        "word": "seofontīene",
+        "ipa": "ˈse.o.von.tiː.ne",
+        "pronunciation": "SEH-oh-von-tee-neh",
+        "note": "seven + ten"
+      },
+      {
+        "value": 18,
+        "word": "eahtatīene",
+        "ipa": "ˈæɑx.tɑ.tiː.ne",
+        "pronunciation": "EAH-tah-tee-neh",
+        "note": "eight + ten"
+      },
+      {
+        "value": 19,
+        "word": "niġontīene",
+        "ipa": "ˈni.jon.tiː.ne",
+        "pronunciation": "NIH-yon-tee-neh",
+        "note": "nine + ten"
+      },
+      {
+        "value": 20,
+        "word": "twēntiġ",
+        "ipa": "ˈtweːn.tij",
+        "pronunciation": "TWAYN-tih",
+        "note": "literally 'two tens'"
+      },
+      {
+        "value": 30,
+        "word": "þrītiġ",
+        "ipa": "ˈθriː.tij",
+        "pronunciation": "THREE-tih",
+        "note": "three tens"
+      },
+      {
+        "value": 40,
+        "word": "fēowertiġ",
+        "ipa": "ˈfeː.o.wer.tij",
+        "pronunciation": "FAY-oh-wer-tih",
+        "note": "four tens"
+      },
+      {
+        "value": 50,
+        "word": "fīftiġ",
+        "ipa": "ˈfiːf.tij",
+        "pronunciation": "FEEF-tih",
+        "note": "five tens"
+      },
+      {
+        "value": 60,
+        "word": "siextiġ",
+        "ipa": "ˈsiks.tij",
+        "pronunciation": "SIKS-tih",
+        "note": "six tens"
+      },
+      {
+        "value": 70,
+        "word": "hundseofontiġ",
+        "ipa": "ˈhund.se.o.von.tij",
+        "pronunciation": "HUND-seh-oh-von-tih",
+        "note": "hundred-seventy (literally)"
+      },
+      {
+        "value": 80,
+        "word": "hundeahtatig",
+        "ipa": "ˈhund.æɑx.tɑ.tij",
+        "pronunciation": "HUND-eah-tah-tih",
+        "note": "hundred-eighty"
+      },
+      {
+        "value": 90,
+        "word": "hundniġontiġ",
+        "ipa": "ˈhund.ni.jon.tij",
+        "pronunciation": "HUND-nih-yon-tih",
+        "note": "hundred-ninety"
+      },
+      {
+        "value": 100,
+        "word": "hund",
+        "ipa": "hund",
+        "pronunciation": "HUND",
+        "note": "also hundred, hund-tēontiġ; can mean 100 or 120 (long hundred)"
+      },
+      {
+        "value": 1000,
+        "word": "þūsend",
+        "ipa": "ˈθuː.send",
+        "pronunciation": "THOO-send",
+        "note": "neuter noun"
+      },
+      {
+        "value": 1000000,
+        "word": "þūsend þūsenda",
+        "ipa": "ˈθuː.send ˈθuː.sen.dɑ",
+        "pronunciation": "THOO-send THOO-sen-dah",
+        "note": "thousand of thousands; million concept not native"
+      }
+    ],
+    "ordinals": [
+      {
+        "rank": 1,
+        "word": "forma",
+        "ipa": "ˈfor.mɑ",
+        "pronunciation": "FOR-mah",
+        "meaning": "first",
+        "note": "weak adjective; also ǣrest 'first, earliest'"
+      },
+      {
+        "rank": 2,
+        "word": "ōþer",
+        "ipa": "ˈoː.θer",
+        "pronunciation": "OH-ther",
+        "meaning": "second/other",
+        "note": "declines as adjective; can mean 'second' or 'other'"
+      },
+      {
+        "rank": 3,
+        "word": "þridda",
+        "ipa": "ˈθrid.dɑ",
+        "pronunciation": "THRID-dah",
+        "meaning": "third",
+        "note": "weak adjective"
+      },
+      {
+        "rank": 4,
+        "word": "fēorþa",
+        "ipa": "ˈfeː.or.θɑ",
+        "pronunciation": "FAY-or-thah",
+        "meaning": "fourth",
+        "note": "weak adjective"
+      },
+      {
+        "rank": 5,
+        "word": "fīfta",
+        "ipa": "ˈfiːf.tɑ",
+        "pronunciation": "FEEF-tah",
+        "meaning": "fifth",
+        "note": "weak adjective"
+      },
+      {
+        "rank": 6,
+        "word": "siexta",
+        "ipa": "ˈsiks.tɑ",
+        "pronunciation": "SIKS-tah",
+        "meaning": "sixth",
+        "note": "weak adjective"
+      },
+      {
+        "rank": 7,
+        "word": "seofoþa",
+        "ipa": "ˈse.o.vo.θɑ",
+        "pronunciation": "SEH-oh-voh-thah",
+        "meaning": "seventh",
+        "note": "weak adjective"
+      },
+      {
+        "rank": 8,
+        "word": "eahtoþa",
+        "ipa": "ˈæɑx.to.θɑ",
+        "pronunciation": "EAH-toh-thah",
+        "meaning": "eighth",
+        "note": "weak adjective"
+      },
+      {
+        "rank": 9,
+        "word": "niġoþa",
+        "ipa": "ˈni.jo.θɑ",
+        "pronunciation": "NIH-yoh-thah",
+        "meaning": "ninth",
+        "note": "weak adjective"
+      },
+      {
+        "rank": 10,
+        "word": "tēoþa",
+        "ipa": "ˈteː.o.θɑ",
+        "pronunciation": "TAY-oh-thah",
+        "meaning": "tenth",
+        "note": "weak adjective"
+      }
+    ],
+    "teaching_notes": [
+      "The numbers ān, twēġen, and þrīe decline fully for case and show gender distinctions in the nominative: masculine twēġen, feminine twā, neuter tū for 'two'.",
+      "Numbers from 70 to 90 incorporate hund- as a prefix, creating forms like hundseofontiġ (70). This pattern reflects an older Germanic counting system.",
+      "The word hund can mean either 100 (decimal) or 120 (the 'long hundred' or duodecimal reckoning), depending on context and period.",
+      "Ordinal numbers are weak adjectives and decline accordingly, taking weak adjective endings that vary by case, gender, and number.",
+      "Compound numbers from 21 to 99 are formed by placing the unit before the ten with 'and': e.g., ān and twēntiġ (21), literally 'one and twenty'."
+    ]
+  }
+}

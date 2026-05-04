@@ -1,0 +1,136 @@
+{
+  "date": "2026-04-29",
+  "generated_at": "2026-04-29T11:00:01.745Z",
+  "languages": {
+    "latin": {
+      "word": "maeror",
+      "transliteration": "",
+      "pronunciation": "MY-rohr",
+      "ipa": "ˈmae̯.rɔr",
+      "part_of_speech": "noun, masc.",
+      "meaning": "deep grief, mourning, sorrow",
+      "forms": "maeror, maeroris (3rd declension); nom. maeror, gen. maeroris, dat. maerori, acc. maerorem, abl. maerore",
+      "etymology": "From the verb maereō (to mourn, grieve), from Proto-Italic *maizēō, related to maestus (sad, mournful). The root suggests a physical manifestation of grief.",
+      "literary_context": "Virgil uses maeror powerfully in the Aeneid (Book 4) when describing Dido's overwhelming grief after Aeneas announces his departure: the word captures the queen's profound emotional devastation that ultimately leads to her suicide.",
+      "usage_example": "Ingenti maeror civitātem occupāvit post mortem ducis. — Deep grief seized the city after the death of the leader.",
+      "did_you_know": "Maeror differs from dolor (pain) and luctus (formal mourning) by emphasizing the internal, consuming nature of grief. Cicero distinguishes it as the emotion that wastes away the soul, while luctus refers to the outward observance of loss.",
+      "tokens": {
+        "input_tokens": 614,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 365,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Latin"
+    },
+    "greek": {
+      "word": "σωφροσύνη",
+      "transliteration": "sōphrosunē",
+      "pronunciation": "so-fro-SUE-nay",
+      "ipa": "/sɔː.pʰro.syː.nɛː/",
+      "part_of_speech": "noun, fem.",
+      "meaning": "soundness of mind, moderation, self-control, temperance",
+      "forms": "σωφροσύνη, σωφροσύνης, σωφροσύνῃ, σωφροσύνην (1st declension). Plural rare.",
+      "etymology": "From σώφρων (sōphrōn, 'of sound mind') + -σύνη (abstract noun suffix). σώφρων itself compounds σῶς/σόος ('safe, sound') + φρήν ('mind, heart').",
+      "literary_context": "Plato elevates σωφροσύνη to one of the four cardinal virtues in the Republic, defining it as the harmony and agreement between the rational and appetitive parts of the soul. Thucydides contrasts it with the reckless ambition that drives Athens toward disaster in Sicily.",
+      "usage_example": "ἡ σωφροσύνη ἀρίστη τῶν ἀρετῶν ἐστιν. — Temperance is the best of the virtues.",
+      "did_you_know": "In the Charmides, Plato presents an entire dialogue examining σωφροσύνη, proposing and rejecting multiple definitions before leaving the question provocatively open, making it perhaps the most philosophically scrutinized virtue in classical thought.",
+      "tokens": {
+        "input_tokens": 644,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 436,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Ancient Greek"
+    },
+    "french": {
+      "word": "cygne",
+      "transliteration": "",
+      "pronunciation": "SEEN-yuh",
+      "ipa": "/siɲ/",
+      "part_of_speech": "noun, masc.",
+      "meaning": "swan",
+      "forms": "singular: cygne; plural: cygnes",
+      "etymology": "From Latin ciconia (stork), though the current form shows influence from Latin cygnus (swan), itself from Greek κύκνος (kuknos). The modern French form emerged in Old French as cisne, later cigne, finally cygne by the 16th century with learned re-Latinization.",
+      "literary_context": "Mallarmé's sonnet 'Le vierge, le vivace et le bel aujourd'hui' centers on a swan trapped in frozen ice, symbol of the poet unable to escape sterile perfection. The cygne also appears in Baudelaire's 'Le Cygne' from Les Fleurs du mal, where the exiled swan becomes emblem of loss and displacement in modern Paris.",
+      "usage_example": "Le cygne, prisonnier du lac gelé, bat vainement des ailes. — The swan, prisoner of the frozen lake, beats its wings in vain.",
+      "did_you_know": "Mallarmé exploited the homophony between cygne (swan) and signe (sign) to layer his symbolist poetry with double meanings, making the trapped swan both literal bird and metaphor for the inadequacy of poetic language to capture ideal beauty.",
+      "tokens": {
+        "input_tokens": 596,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 380,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "French"
+    },
+    "german": {
+      "word": "Geworfenheit",
+      "transliteration": "",
+      "pronunciation": "geh-VOR-fen-hite",
+      "ipa": "/ɡəˈvɔʁfn̩haɪt/",
+      "part_of_speech": "noun, fem.",
+      "meaning": "thrownness; the condition of being thrown into existence without choice",
+      "forms": "die Geworfenheit (nom.), der Geworfenheit (gen.), der Geworfenheit (dat.), die Geworfenheit (acc.); no plural",
+      "etymology": "From geworfen (past participle of werfen 'to throw') + -heit (abstract noun suffix). Coined by Martin Heidegger in Sein und Zeit (1927) to describe the existential condition of finding oneself already in a world not of one's choosing.",
+      "literary_context": "Heidegger uses Geworfenheit in Sein und Zeit to articulate the fundamental facticity of Dasein: we are always already thrown into a historical situation, mood, and set of possibilities we did not select.",
+      "usage_example": "Die Geworfenheit des Menschen bedeutet, dass er sich immer schon in einer Welt vorfindet. — The thrownness of man means that he always already finds himself in a world.",
+      "did_you_know": "Heidegger pairs Geworfenheit with Entwurf (projection), creating a tension: we are thrown into circumstances beyond our control, yet we project ourselves toward future possibilities, capturing the dual character of human existence.",
+      "tokens": {
+        "input_tokens": 626,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 394,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "German"
+    },
+    "oldenglish": {
+      "word": "gīfstōl",
+      "transliteration": "gifstol",
+      "pronunciation": "YEEF-stohl",
+      "ipa": "ˈjiːf.stoːl",
+      "part_of_speech": "noun, masc.",
+      "meaning": "throne, gift-seat, judgment seat",
+      "forms": "nom. sg. gīfstōl; acc. sg. gīfstōl; gen. sg. gīfstōles; dat. sg. gīfstōle; nom. pl. gīfstōlas",
+      "etymology": "Compound of gīfu 'gift' (from Proto-Germanic *gebō) and stōl 'seat, throne' (from Latin stōlus via Proto-Germanic *stōlaz). The throne is conceived as the place from which a lord distributes gifts to his retainers, central to the Germanic comitatus ideal.",
+      "literary_context": "The word appears in Beowulf, line 168, where the poet describes how Grendel haunts Heorot but cannot approach the gīfstōl because of divine protection. This emphasizes the sacred nature of the royal throne as both political center and ritual gift-giving site.",
+      "usage_example": "Ne hē þone gīfstōl grētan mōste. — He could not approach the gift-throne.",
+      "did_you_know": "The gīfstōl embodies the reciprocal relationship between Anglo-Saxon lords and warriors: the king gives treasure from his throne, and warriors give loyalty and martial service in return. Grendel's exclusion from the gīfstōl marks him as utterly outside human society.",
+      "tokens": {
+        "input_tokens": 625,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 421,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Old English"
+    }
+  }
+}

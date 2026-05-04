@@ -1,0 +1,24 @@
+{
+  "id": "heine-lorelei",
+  "language": "german",
+  "title": "Die Lorelei (first two stanzas)",
+  "author": "Heinrich Heine",
+  "date": "1824",
+  "meter": "Ballad quatrains, alternating iambic tetrameter / trimeter",
+  "translator": "Mark Twain",
+  "translator_date": "1880",
+  "license": "Public domain",
+  "source_notes": "From 'Buch der Lieder' (1827). English translation by Mark Twain, published in 'A Tramp Abroad', 1880.",
+  "reading_notes": "Heine reworks the Rhine legend of a siren on the cliff whose singing lures sailors to wreck. The opening 'Ich weiß nicht...' is among the most quoted lines in German literature. Schumann and Silcher both set it to music; Silcher's version became a national folk-song.",
+  "status": "open",
+  "lines": [
+    { "n": 1, "original": "Ich weiß nicht, was soll es bedeuten,", "english": "I cannot divine what it meaneth,", "gloss": "Ich = 'I' (nominative); weiß = 'know' (1st sg. of wissen); nicht = 'not'; was = 'what' (relative); soll = 'shall, should' (modal); es = 'it'; bedeuten = 'to mean' (infinitive)." },
+    { "n": 2, "original": "Daß ich so traurig bin;", "english": "That I should be so sad;", "gloss": "Daß = 'that' (conjunction); ich = 'I'; so = 'so'; traurig = 'sad'; bin = 'am' (sein)." },
+    { "n": 3, "original": "Ein Märchen aus alten Zeiten,", "english": "A fable of old time haunts me,", "gloss": "Ein Märchen = 'a fairy-tale, legend' (nominative neuter); aus = 'from' (+dative); alten Zeiten = 'old times' (dative plural adjective agreement)." },
+    { "n": 4, "original": "Das kommt mir nicht aus dem Sinn.", "english": "It will not depart from my mind.", "gloss": "Das = 'which' (demonstrative/relative, neuter); kommt = 'comes' (kommen); mir = 'to me' (dative); aus dem Sinn = 'out of the mind' (prep + dative)." },
+    { "n": 5, "original": "Die Luft ist kühl und es dunkelt,", "english": "The air is cool and it darkens,", "gloss": "Die Luft = 'the air' (nominative feminine); ist = 'is'; kühl = 'cool'; und = 'and'; es dunkelt = 'it grows dark' (impersonal use of dunkeln)." },
+    { "n": 6, "original": "Und ruhig fließt der Rhein;", "english": "And calmly flows the Rhine;", "gloss": "Und = 'and'; ruhig = 'calmly'; fließt = 'flows' (fließen); der Rhein = 'the Rhine' (nominative)." },
+    { "n": 7, "original": "Der Gipfel des Berges funkelt,", "english": "The mountain peak glitters", "gloss": "Der Gipfel = 'the peak' (nominative); des Berges = 'of the mountain' (genitive); funkelt = 'sparkles, glitters' (funkeln)." },
+    { "n": 8, "original": "Im Abendsonnenschein.", "english": "In the evening sunshine.", "gloss": "Im = 'in the' (contraction of in dem, dative); Abendsonnenschein = 'evening-sun-shine' (compound noun, masculine dative)." }
+  ]
+}

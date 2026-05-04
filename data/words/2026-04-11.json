@@ -1,0 +1,22 @@
+{
+  "date": "2026-04-11",
+  "generated_at": "2026-04-24T07:30:01.908680+00:00",
+  "backfilled_at": "2026-04-24T07:30:01.908707+00:00",
+  "backfill_source": "paideia_archive.json + @LatinateGame X timeline",
+  "languages": {
+    "greek": {
+      "word": "σοφία",
+      "transliteration": "sophia",
+      "pronunciation": "so-FEE-ah",
+      "ipa": "soˈpʰi.a",
+      "part_of_speech": "noun, feminine, 1st declension",
+      "meaning": "wisdom",
+      "forms": "Nom: σοφία / σοφίαι; Gen: σοφίας / σοφιῶν; Dat: σοφίᾳ / σοφίαις; Acc: σοφίαν / σοφίας",
+      "etymology": "From σοφός (wise) + -ία (abstract noun suffix). English descendants: philosophy (love of wisdom), sophisticated (worldly-wise), sophomore (wise fool, σοφός + μωρός), theosophy (divine wisdom).",
+      "literary_context": "Plato, Republic 476b",
+      "usage_example": "ὁ φιλόσοφος τῆς σοφίας ἐπιθυμητής — The philosopher is a lover of wisdom",
+      "did_you_know": "The Seven Sages of Greece each contributed a maxim to Apollo's temple at Delphi, but 'σοφία' originally meant practical skill - a master craftsman was σοφός. Plato elevated it from technical expertise to philosophical wisdom, forever changing how we understand the word.",
+      "display": "Ancient Greek"
+    }
+  }
+}

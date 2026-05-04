@@ -1,0 +1,60 @@
+{
+  "date": "2026-04-24",
+  "generated_at": "2026-04-24T11:00:53.866Z",
+  "vignettes": {
+    "latin": {
+      "title": "Virgil's Aeneid and Augustus's Rome",
+      "body": "Virgil composed the Aeneid between 29 and 19 BCE, dying before he could complete his final revisions. He reportedly asked his literary executors to burn the manuscript, but Augustus intervened and ordered its publication. The epic's twelve books traced Aeneas from Troy's flames to Italy, establishing Rome's mythic pedigree as heir to both Greek heroism and Trojan piety. Virgil drew on Homer but inverted the Iliad's trajectory: where Achilles chose glory over homecoming, Aeneas abandons Dido and personal happiness for duty to his descendants. The poem provided Augustus with a founding narrative linking his regime to divine destiny through the Julian clan's claimed descent from Aeneas's son Iulus. Virgil read portions to the imperial family; Octavia fainted when he reached the lines mourning her dead son Marcellus in Book 6.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Cristoforo_Majorana_-_Leaf_from_Eclogues%2C_Georgics_and_Aeneid_-_Walters_W40054V_-_Open_Reverse.jpg",
+        "credit": "Cristoforo Majorana / Wikimedia Commons (Public domain)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Cristoforo_Majorana_-_Leaf_from_Eclogues,_Georgics_and_Aeneid_-_Walters_W40054V_-_Open_Reverse.jpg",
+        "width": 768,
+        "height": 1300
+      },
+      "image_query": "Aeneid manuscript illustration"
+    },
+    "greek": {
+      "title": "The Areopagus: Athens' Homicide Court",
+      "body": "Northwest of the Acropolis rises a bare limestone outcrop where Athens tried cases of homicide and impiety. The Areopagus, named for Ares, functioned as a court from at least the seventh century BCE. Defendants and accusers stood in the open air, swearing oaths at adjacent stones called the Stone of Injury and the Stone of Ruthlessness. The court heard only intentional killings, distinguishing them from accidental deaths tried elsewhere. In 462 BCE, Ephialtes stripped the Areopagus of most political powers, leaving it solely as a homicide tribunal. Aeschylus memorialized this hill in the Eumenides, where Athena convenes the first jury to judge Orestes for matricide. The twelve citizen jurors she assembles become the prototype for all Athenian juries. Even in late antiquity, the apostle Paul addressed curious Athenians from this same rock, turning a venue of blood guilt into philosophical debate.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/20101024_Acropolis_panoramic_view_from_Areopagus_hill_Athens_Greece.jpg/1280px-20101024_Acropolis_panoramic_view_from_Areopagus_hill_Athens_Greece.jpg",
+        "credit": "Ggia / Wikimedia Commons (CC BY-SA 3.0)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:20101024_Acropolis_panoramic_view_from_Areopagus_hill_Athens_Greece.jpg",
+        "width": 1200,
+        "height": 392
+      },
+      "image_query": "Areopagus hill Athens"
+    },
+    "french": {
+      "title": "Nerval's Descent into the Palais-Royal",
+      "body": "Gérard de Nerval walked a lobster on a blue ribbon through the gardens of the Palais-Royal in the 1840s, explaining to bewildered onlookers that lobsters were peaceful creatures who knew the secrets of the sea. This was not merely eccentricity. Nerval, born Gérard Labrunie, inhabited a world where dream and waking merged without clear boundary. His 1855 novella Aurélia chronicles his hallucinations as lived experience, not pathology. He translated Goethe's Faust at nineteen, loved the actress Jenny Colon with ruinous intensity, and traveled to the Orient seeking lost mythologies. On a freezing January night in 1855, he was found hanged in the Rue de la Vieille-Lanterne, clutching a manuscript. His Les Chimères, published posthumously, gave French literature twelve sonnets of hermetic brilliance, where Egyptian gods and medieval queens answer to personal anguish in alexandrines of crystalline strangeness.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/G%C3%A9rard_de_Nerval_MET_DP857917.jpg/1280px-G%C3%A9rard_de_Nerval_MET_DP857917.jpg",
+        "credit": "Louis Marcoussis / Wikimedia Commons (CC0)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:G%C3%A9rard_de_Nerval_MET_DP857917.jpg",
+        "width": 1200,
+        "height": 1693
+      },
+      "image_query": "Gérard de Nerval portrait"
+    },
+    "german": {
+      "title": "Heine's Paris Exile and Double Vision",
+      "body": "Heinrich Heine left Germany for Paris in 1831, never to return. From his apartment on the Avenue Matignon, he wrote for both French and German audiences, embodying the Zerrissenheit he diagnosed in his age. His prose masterpiece Die Romantische Schule (1833) dissected German Romanticism with surgical irony while mourning its loss. Heine translated himself, rewrote himself, belonged fully to neither language. When spinal tuberculosis confined him to his 'mattress grave' in 1848, he continued this double work, composing the Romanzero poems that mocked and embraced both German inwardness and French wit. He called himself a 'brave soldier in the war of liberation of humanity,' yet spent hours parsing the difference between German Sehnsucht and French désir. Neither exile nor invalid, neither Romantic nor realist, Heine made his fracture into method.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Works_of_Heinrich_Heine_08.djvu/page1-1280px-Works_of_Heinrich_Heine_08.djvu.jpg",
+        "credit": "Heinrich Heine / Wikimedia Commons (Public domain)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Works_of_Heinrich_Heine_08.djvu",
+        "width": 1200,
+        "height": 1924
+      },
+      "image_query": "Heinrich Heine daguerreotype"
+    },
+    "oldenglish": {
+      "title": "The Sutton Hoo Ship Burial",
+      "body": "In 1939, archaeologists excavated a grave mound at Sutton Hoo in Suffolk and found the impression of an entire ship, 89 feet long, clinker-built with overlapping oak planks. No wood survived in the acidic soil, only the ghost of iron rivets and stained sand outlining the vessel's form. Inside lay a chamber packed with treasure: a gold belt buckle worked with writhing serpents, a helmet with boar and dragon imagery, Byzantine silver bowls. No body remained, but this was likely the grave of Raedwald, East Anglian king who died around 625. The ship itself was never meant to sail again. Warriors had dragged it inland from the River Deben, positioned it in a trench, filled it with grave goods, then buried the whole assembly under earth. The gesture showed what everyone knew: a ship carried a man between worlds.",
+      "image": null,
+      "image_query": "Sutton Hoo ship impression"
+    }
+  }
+}

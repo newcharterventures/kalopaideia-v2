@@ -1,0 +1,852 @@
+{
+  "overview": "Classical Greek, specifically the Attic dialect of the fifth and fourth centuries BCE, is the language of Plato, Thucydides, and the Athenian tragedians. It is essential for reading the foundational texts of Western philosophy, drama, historiography, and oratory in their original form. Mastery of Attic Greek provides access to a literary and intellectual tradition of unparalleled influence.",
+  "alphabet": [
+    {
+      "char": "Α α",
+      "name": "alpha",
+      "ipa": "a aː",
+      "approximation": "like the a in father (short or long)",
+      "notes": "Can be short (ᾰ) or long (ᾱ). Length is lexically determined and marked in pedagogy but not in standard texts."
+    },
+    {
+      "char": "Β β",
+      "name": "beta",
+      "ipa": "b",
+      "approximation": "like b in boy",
+      "notes": ""
+    },
+    {
+      "char": "Γ γ",
+      "name": "gamma",
+      "ipa": "ɡ",
+      "approximation": "like g in go (always hard)",
+      "notes": "Before γ, κ, χ, or ξ, pronounced like ng in sing."
+    },
+    {
+      "char": "Δ δ",
+      "name": "delta",
+      "ipa": "d",
+      "approximation": "like d in dog",
+      "notes": ""
+    },
+    {
+      "char": "Ε ε",
+      "name": "epsilon",
+      "ipa": "e",
+      "approximation": "like e in met",
+      "notes": "Always short."
+    },
+    {
+      "char": "Ζ ζ",
+      "name": "zeta",
+      "ipa": "zd",
+      "approximation": "like sd in wisdom (voiced)",
+      "notes": "Probably a cluster, not a simple fricative in Classical period."
+    },
+    {
+      "char": "Η η",
+      "name": "eta",
+      "ipa": "ɛː",
+      "approximation": "like a in air, but longer",
+      "notes": "Always long. Distinct from epsilon."
+    },
+    {
+      "char": "Θ θ",
+      "name": "theta",
+      "ipa": "tʰ",
+      "approximation": "like t in top with strong aspiration",
+      "notes": "Not the English th sound; an aspirated voiceless stop."
+    },
+    {
+      "char": "Ι ι",
+      "name": "iota",
+      "ipa": "i iː",
+      "approximation": "like i in machine (short or long)",
+      "notes": "Can be short (ῐ) or long (ῑ)."
+    },
+    {
+      "char": "Κ κ",
+      "name": "kappa",
+      "ipa": "k",
+      "approximation": "like k in skin (unaspirated)",
+      "notes": ""
+    },
+    {
+      "char": "Λ λ",
+      "name": "lambda",
+      "ipa": "l",
+      "approximation": "like l in let",
+      "notes": ""
+    },
+    {
+      "char": "Μ μ",
+      "name": "mu",
+      "ipa": "m",
+      "approximation": "like m in man",
+      "notes": ""
+    },
+    {
+      "char": "Ν ν",
+      "name": "nu",
+      "ipa": "n",
+      "approximation": "like n in net",
+      "notes": ""
+    },
+    {
+      "char": "Ξ ξ",
+      "name": "xi",
+      "ipa": "ks",
+      "approximation": "like x in fox",
+      "notes": ""
+    },
+    {
+      "char": "Ο ο",
+      "name": "omicron",
+      "ipa": "o",
+      "approximation": "like o in obey (British short o)",
+      "notes": "Always short."
+    },
+    {
+      "char": "Π π",
+      "name": "pi",
+      "ipa": "p",
+      "approximation": "like p in spin (unaspirated)",
+      "notes": ""
+    },
+    {
+      "char": "Ρ ρ",
+      "name": "rho",
+      "ipa": "r",
+      "approximation": "like trilled r in Spanish",
+      "notes": "Word-initial rho takes rough breathing (ῥ)."
+    },
+    {
+      "char": "Σ σ/ς",
+      "name": "sigma",
+      "ipa": "s",
+      "approximation": "like s in sit",
+      "notes": "ς is used in word-final position; σ elsewhere."
+    },
+    {
+      "char": "Τ τ",
+      "name": "tau",
+      "ipa": "t",
+      "approximation": "like t in stop (unaspirated)",
+      "notes": ""
+    },
+    {
+      "char": "Υ υ",
+      "name": "upsilon",
+      "ipa": "y yː",
+      "approximation": "like French u or German ü (short or long)",
+      "notes": "Can be short (ῠ) or long (ῡ). Not the English sound in 'you'."
+    },
+    {
+      "char": "Φ φ",
+      "name": "phi",
+      "ipa": "pʰ",
+      "approximation": "like p in pot with strong aspiration",
+      "notes": "Not the English f sound; an aspirated voiceless stop."
+    },
+    {
+      "char": "Χ χ",
+      "name": "chi",
+      "ipa": "kʰ",
+      "approximation": "like k in kite with strong aspiration",
+      "notes": "Not the English ch or German/Scottish ch; an aspirated voiceless stop."
+    },
+    {
+      "char": "Ψ ψ",
+      "name": "psi",
+      "ipa": "ps",
+      "approximation": "like ps in lapse",
+      "notes": ""
+    },
+    {
+      "char": "Ω ω",
+      "name": "omega",
+      "ipa": "ɔː",
+      "approximation": "like aw in law, but longer",
+      "notes": "Always long. Distinct from omicron."
+    },
+    {
+      "char": "◌́ ◌̀ ◌͂ ◌̓ ◌̔ ◌̈ ι",
+      "name": "Accents and breathings",
+      "ipa": "tonal accent marks and aspiration markers",
+      "approximation": "pitch and aspiration distinctions",
+      "notes": "The acute (´) marks high pitch on the ultima, penult, or antepenult. The grave (`) replaces the acute on the ultima before another word without intervening punctuation. The circumflex (͂) marks a falling pitch on long vowels or diphthongs of the ultima or penult. Every word beginning with a vowel or rho takes a breathing: smooth ( ̓) for no aspiration, rough ( ̔) for h-sound (transcribed as h). Diaeresis (¨) marks that a vowel does not form a diphthong with a preceding vowel. Iota subscript (ι written under ᾳ ῃ ῳ) represents an etymological iota in long-vowel diphthongs, unpronounced in the Classical period but written as full-size iota (adscript) in capitals (ΑΙ ΗΙ ΩΙ). Accentuation follows complex rules: recessive accent in verbs, persistent accent in nouns and adjectives, with restrictions based on syllable length and position."
+    }
+  ],
+  "pronunciation_notes": [
+    "Vowel length is phonemic: ε and ο are always short; η and ω always long; α, ι, υ can be short or long.",
+    "Diphthongs αι, ει, οι, αυ, ευ, ου, ηυ, ωυ count as single long vowels for accentuation.",
+    "The letters θ, φ, χ represent aspirated voiceless stops (not fricatives): pronounce them with a strong puff of air.",
+    "Breathing marks are mandatory on initial vowels and rho: rough breathing adds an h-sound, smooth breathing indicates no aspiration.",
+    "Accent is primarily a pitch accent: acute is high pitch, circumflex is high-then-falling pitch, grave is mid pitch.",
+    "Consonant clusters are pronounced fully: γγ is ng-g, double consonants are lengthened."
+  ],
+  "grammar": {
+    "noun_system": "Greek nouns decline for three genders (masculine, feminine, neuter), three numbers (singular, dual, plural), and five cases (nominative, genitive, dative, accusative, vocative). The case indicates the syntactic function of the noun in the sentence. Articles, adjectives, and participles agree with their nouns in gender, number, and case.",
+    "declensions": [
+      {
+        "name": "First declension (feminine α-stems)",
+        "description": "Nouns with stems ending in α or η, chiefly feminine. Example: ἡ χώρα 'the country'.",
+        "paradigm": {
+          "singular": {
+            "nominative": "ἡ χώρᾱ",
+            "genitive": "τῆς χώρᾱς",
+            "dative": "τῇ χώρᾳ",
+            "accusative": "τὴν χώρᾱν",
+            "vocative": "ὦ χώρᾱ"
+          },
+          "plural": {
+            "nominative": "αἱ χῶραι",
+            "genitive": "τῶν χωρῶν",
+            "dative": "ταῖς χώραις",
+            "accusative": "τὰς χώρᾱς",
+            "vocative": "ὦ χῶραι"
+          }
+        }
+      },
+      {
+        "name": "Second declension (masculine and neuter ο-stems)",
+        "description": "Nouns with stems ending in ο, masculine and neuter. Example: ὁ λόγος 'the word' (masculine).",
+        "paradigm": {
+          "singular": {
+            "nominative": "ὁ λόγος",
+            "genitive": "τοῦ λόγου",
+            "dative": "τῷ λόγῳ",
+            "accusative": "τὸν λόγον",
+            "vocative": "ὦ λόγε"
+          },
+          "plural": {
+            "nominative": "οἱ λόγοι",
+            "genitive": "τῶν λόγων",
+            "dative": "τοῖς λόγοις",
+            "accusative": "τοὺς λόγους",
+            "vocative": "ὦ λόγοι"
+          }
+        }
+      },
+      {
+        "name": "Third declension (consonant and ι/υ stems)",
+        "description": "Nouns with stems ending in consonants or ι/υ. Highly variable. Example: ὁ πατήρ 'the father' (ρ-stem).",
+        "paradigm": {
+          "singular": {
+            "nominative": "ὁ πατήρ",
+            "genitive": "τοῦ πατρός",
+            "dative": "τῷ πατρί",
+            "accusative": "τὸν πατέρα",
+            "vocative": "ὦ πάτερ"
+          },
+          "plural": {
+            "nominative": "οἱ πατέρες",
+            "genitive": "τῶν πατέρων",
+            "dative": "τοῖς πατράσι(ν)",
+            "accusative": "τοὺς πατέρας",
+            "vocative": "ὦ πατέρες"
+          }
+        }
+      }
+    ],
+    "verb_system": "Greek verbs inflect for six principal parts, generating a rich system of tenses, moods, and voices. The tense-aspect system distinguishes present (imperfective), aorist (perfective), and perfect (stative) aspects. Four moods exist: indicative, subjunctive, optative, imperative. Three voices: active, middle, passive (middle and passive share forms except in aorist and future).",
+    "conjugations": [
+      {
+        "name": "Thematic (ω-conjugation)",
+        "description": "Regular verbs with thematic vowel ο/ε. Example: λύω 'I loosen, I free' (present active indicative).",
+        "paradigm": {
+          "present active indicative": {
+            "1s": "λύω",
+            "2s": "λύεις",
+            "3s": "λύει",
+            "1p": "λύομεν",
+            "2p": "λύετε",
+            "3p": "λύουσι(ν)"
+          },
+          "imperfect active indicative": {
+            "1s": "ἔλυον",
+            "2s": "ἔλυες",
+            "3s": "ἔλυε(ν)",
+            "1p": "ἐλύομεν",
+            "2p": "ἐλύετε",
+            "3p": "ἔλυον"
+          },
+          "aorist active indicative": {
+            "1s": "ἔλυσα",
+            "2s": "ἔλυσας",
+            "3s": "ἔλυσε(ν)",
+            "1p": "ἐλύσαμεν",
+            "2p": "ἐλύσατε",
+            "3p": "ἔλυσαν"
+          },
+          "perfect active indicative": {
+            "1s": "λέλυκα",
+            "2s": "λέλυκας",
+            "3s": "λέλυκε(ν)",
+            "1p": "λελύκαμεν",
+            "2p": "λελύκατε",
+            "3p": "λελύκᾱσι(ν)"
+          }
+        }
+      },
+      {
+        "name": "Athematic (μι-conjugation)",
+        "description": "Verbs without thematic vowel, with root endings. Example: δίδωμι 'I give' (present active indicative).",
+        "paradigm": {
+          "present active indicative": {
+            "1s": "δίδωμι",
+            "2s": "δίδως",
+            "3s": "δίδωσι(ν)",
+            "1p": "δίδομεν",
+            "2p": "δίδοτε",
+            "3p": "διδόᾱσι(ν)"
+          },
+          "imperfect active indicative": {
+            "1s": "ἐδίδουν",
+            "2s": "ἐδίδους",
+            "3s": "ἐδίδου",
+            "1p": "ἐδίδομεν",
+            "2p": "ἐδίδοτε",
+            "3p": "ἐδίδοσαν"
+          },
+          "aorist active indicative": {
+            "1s": "ἔδωκα",
+            "2s": "ἔδωκας",
+            "3s": "ἔδωκε(ν)",
+            "1p": "ἔδομεν",
+            "2p": "ἔδοτε",
+            "3p": "ἔδοσαν"
+          }
+        }
+      }
+    ],
+    "reference": {
+      "title": "Grammar Reference Card",
+      "description": "Quick reference for grammatical terminology",
+      "sections": [
+        {
+          "category": "Cases (Noun & Adjective)",
+          "terms": [
+            {
+              "term": "Nominative",
+              "definition": "Subject of the verb; predicate nominative. The 'who' or 'what' doing the action."
+            },
+            {
+              "term": "Genitive",
+              "definition": "Possession or description ('of'). Shows ownership or relationship."
+            },
+            {
+              "term": "Dative",
+              "definition": "Indirect object ('to' or 'for'). The recipient of an action."
+            },
+            {
+              "term": "Accusative",
+              "definition": "Direct object of the verb. The 'what' or 'whom' receiving the action."
+            },
+            {
+              "term": "Vocative",
+              "definition": "Direct address. Used when calling or speaking to someone."
+            }
+          ]
+        },
+        {
+          "category": "Number",
+          "terms": [
+            {
+              "term": "Singular (sg)",
+              "definition": "One person or thing."
+            },
+            {
+              "term": "Plural (pl)",
+              "definition": "More than one person or thing."
+            },
+            {
+              "term": "Dual",
+              "definition": "Exactly two persons or things (rare, mostly archaic/poetic in Attic)."
+            }
+          ]
+        },
+        {
+          "category": "Gender",
+          "terms": [
+            {
+              "term": "Masculine (m.)",
+              "definition": "Grammatical gender, not biological. Includes many male beings but also inanimate objects."
+            },
+            {
+              "term": "Feminine (f.)",
+              "definition": "Grammatical gender. Includes many female beings but also inanimate objects."
+            },
+            {
+              "term": "Neuter (n.)",
+              "definition": "Neither masculine nor feminine. Often includes things and abstract concepts."
+            }
+          ]
+        },
+        {
+          "category": "Declensions",
+          "terms": [
+            {
+              "term": "Declension",
+              "definition": "A pattern of case endings for nouns and adjectives. Ancient Greek has three declensions."
+            },
+            {
+              "term": "First Declension",
+              "definition": "Mostly feminine nouns in -ā/-ē. Examples: θάλασσα 'sea', τιμή 'honor'."
+            },
+            {
+              "term": "Second Declension",
+              "definition": "Masculine and neuter nouns. Examples: λόγος (m.) 'word', δῶρον (n.) 'gift'."
+            },
+            {
+              "term": "Third Declension",
+              "definition": "Consonant-stem and other varied stems, all genders. Example: πατήρ (m.) 'father', πόλις (f.) 'city'."
+            }
+          ]
+        },
+        {
+          "category": "Tenses (Verb)",
+          "terms": [
+            {
+              "term": "Present",
+              "definition": "Action happening now or habitually. 'I loose', 'I am loosing'."
+            },
+            {
+              "term": "Imperfect",
+              "definition": "Ongoing or repeated action in the past. 'I was loosing', 'I used to loose'."
+            },
+            {
+              "term": "Future",
+              "definition": "Action that will happen. 'I will loose', 'I shall loose'."
+            },
+            {
+              "term": "Aorist",
+              "definition": "Simple past action, viewed as a whole. 'I loosed' (perfective aspect)."
+            },
+            {
+              "term": "Perfect",
+              "definition": "Completed action with present result. 'I have loosed' (state resulting from past action)."
+            },
+            {
+              "term": "Pluperfect",
+              "definition": "Action completed before another past action. 'I had loosed'."
+            },
+            {
+              "term": "Future Perfect",
+              "definition": "Action that will be completed before a future time. 'I will have loosed' (rare)."
+            }
+          ]
+        },
+        {
+          "category": "Person & Number (Verb)",
+          "terms": [
+            {
+              "term": "1st person singular (1s)",
+              "definition": "'I' — the speaker. Example: λύω 'I loose'."
+            },
+            {
+              "term": "2nd person singular (2s)",
+              "definition": "'You' — the person spoken to. Example: λύεις 'you loose'."
+            },
+            {
+              "term": "3rd person singular (3s)",
+              "definition": "'He/she/it' — someone/something else. Example: λύει 'he/she/it looses'."
+            },
+            {
+              "term": "1st person plural (1p)",
+              "definition": "'We' — the speakers. Example: λύομεν 'we loose'."
+            },
+            {
+              "term": "2nd person plural (2p)",
+              "definition": "'You all' — people spoken to. Example: λύετε 'you (pl.) loose'."
+            },
+            {
+              "term": "3rd person plural (3p)",
+              "definition": "'They' — other people/things. Example: λύουσι(ν) 'they loose'."
+            }
+          ]
+        },
+        {
+          "category": "Mood",
+          "terms": [
+            {
+              "term": "Indicative",
+              "definition": "States facts or asks questions. The default mood for statements."
+            },
+            {
+              "term": "Subjunctive",
+              "definition": "Expresses possibility, purpose, exhortation, or doubt. Often in subordinate clauses."
+            },
+            {
+              "term": "Optative",
+              "definition": "Expresses wish, potential, or polite request. 'May I...' or 'I would...'."
+            },
+            {
+              "term": "Imperative",
+              "definition": "Gives commands. 'Loose!' = λῦε (sg.), λύετε (pl.)."
+            }
+          ]
+        },
+        {
+          "category": "Voice",
+          "terms": [
+            {
+              "term": "Active",
+              "definition": "Subject performs the action. 'I loose her.'"
+            },
+            {
+              "term": "Middle",
+              "definition": "Subject acts for/on itself, or the action affects the subject. 'I loose for myself.'"
+            },
+            {
+              "term": "Passive",
+              "definition": "Subject receives the action. 'I am loosed.'"
+            }
+          ]
+        },
+        {
+          "category": "Aspect",
+          "terms": [
+            {
+              "term": "Imperfective",
+              "definition": "Action viewed as ongoing or repeated (present, imperfect tenses)."
+            },
+            {
+              "term": "Perfective (Aorist)",
+              "definition": "Action viewed as a simple event, a whole (aorist tense)."
+            },
+            {
+              "term": "Stative (Perfect)",
+              "definition": "State resulting from a completed action (perfect, pluperfect)."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "reading_list": [
+    "Xenophon, Anabasis I (simple narrative prose, limited vocabulary)",
+    "Lysias, Orations (clear Attic prose, straightforward syntax)",
+    "Plato, Apology and Crito (philosophic dialogue, moderate difficulty)",
+    "Euripides, Medea or Alcestis (tragic verse, more complex vocabulary)",
+    "Herodotus, Histories I (Ionic dialect, episodic narrative)",
+    "Thucydides, History of the Peloponnesian War II (dense historiographic prose)",
+    "Sophocles, Oedipus Tyrannus (tragic verse, linguistic and metrical challenges)",
+    "Plato, Republic (extended philosophic argument, abstract vocabulary)",
+    "Demosthenes, Philippics (complex oratory, periodic structure)",
+    "Aristophanes, Clouds (Old Comedy, colloquial language and lyric meters)"
+  ],
+  "display": "Ancient Greek",
+  "generated_at": "2026-04-21T06:25:34.318Z",
+  "numbers": {
+    "overview": "Ancient Greek cardinals from 5 onwards are indeclinable, but 1-4 decline for case, gender, and number. The numbers 1, 3, and 4 have three genders; 2 has separate forms for masculine/feminine versus neuter. Greek preserves a dual number, though it fell out of common use in later Attic, reflected in οἱ δύο retaining dual associations.",
+    "cardinals": [
+      {
+        "value": 0,
+        "word": "οὐδέν",
+        "ipa": "/uːˈden/",
+        "pronunciation": "oo-DEN",
+        "note": "neuter of οὐδείς; 'nothing' rather than a true zero"
+      },
+      {
+        "value": 1,
+        "word": "εἷς",
+        "ipa": "/hɛːs/",
+        "pronunciation": "HAYS",
+        "note": "masculine nominative; feminine μία, neuter ἕν; declines like demonstratives"
+      },
+      {
+        "value": 2,
+        "word": "δύο",
+        "ipa": "/ˈdyː.o/",
+        "pronunciation": "DYU-o",
+        "note": "indeclinable in Attic; genitive δυοῖν, dative δυοῖν in dual"
+      },
+      {
+        "value": 3,
+        "word": "τρεῖς",
+        "ipa": "/trɛːs/",
+        "pronunciation": "TRAYS",
+        "note": "masculine/feminine nominative; neuter τρία; declines"
+      },
+      {
+        "value": 4,
+        "word": "τέτταρες",
+        "ipa": "/ˈtet.ta.res/",
+        "pronunciation": "TET-ta-res",
+        "note": "masculine/feminine; neuter τέτταρα; declines"
+      },
+      {
+        "value": 5,
+        "word": "πέντε",
+        "ipa": "/ˈpen.te/",
+        "pronunciation": "PEN-te",
+        "note": "indeclinable"
+      },
+      {
+        "value": 6,
+        "word": "ἕξ",
+        "ipa": "/heks/",
+        "pronunciation": "HEKS",
+        "note": "indeclinable"
+      },
+      {
+        "value": 7,
+        "word": "ἑπτά",
+        "ipa": "/hepˈta/",
+        "pronunciation": "hep-TA",
+        "note": "indeclinable"
+      },
+      {
+        "value": 8,
+        "word": "ὀκτώ",
+        "ipa": "/okˈtoː/",
+        "pronunciation": "ok-TOH",
+        "note": "indeclinable"
+      },
+      {
+        "value": 9,
+        "word": "ἐννέα",
+        "ipa": "/enˈne.a/",
+        "pronunciation": "en-NEH-a",
+        "note": "indeclinable"
+      },
+      {
+        "value": 10,
+        "word": "δέκα",
+        "ipa": "/ˈde.ka/",
+        "pronunciation": "DEH-ka",
+        "note": "indeclinable"
+      },
+      {
+        "value": 11,
+        "word": "ἕνδεκα",
+        "ipa": "/ˈhen.de.ka/",
+        "pronunciation": "HEN-de-ka",
+        "note": "indeclinable"
+      },
+      {
+        "value": 12,
+        "word": "δώδεκα",
+        "ipa": "/ˈdoː.de.ka/",
+        "pronunciation": "DOH-de-ka",
+        "note": "indeclinable"
+      },
+      {
+        "value": 13,
+        "word": "τρεῖς καὶ δέκα",
+        "ipa": "/trɛːs kai̯ ˈde.ka/",
+        "pronunciation": "TRAYS kai DEH-ka",
+        "note": "or τρεισκαίδεκα; compound forms vary"
+      },
+      {
+        "value": 14,
+        "word": "τέτταρες καὶ δέκα",
+        "ipa": "/ˈtet.ta.res kai̯ ˈde.ka/",
+        "pronunciation": "TET-ta-res kai DEH-ka",
+        "note": "or τεττaρεσκαίδεκα"
+      },
+      {
+        "value": 15,
+        "word": "πεντεκαίδεκα",
+        "ipa": "/pen.te.kai̯.ˈde.ka/",
+        "pronunciation": "pen-te-kai-DEH-ka",
+        "note": "indeclinable"
+      },
+      {
+        "value": 16,
+        "word": "ἑκκαίδεκα",
+        "ipa": "/hek.kai̯.ˈde.ka/",
+        "pronunciation": "hek-kai-DEH-ka",
+        "note": "indeclinable"
+      },
+      {
+        "value": 17,
+        "word": "ἑπτακαίδεκα",
+        "ipa": "/hep.ta.kai̯.ˈde.ka/",
+        "pronunciation": "hep-ta-kai-DEH-ka",
+        "note": "indeclinable"
+      },
+      {
+        "value": 18,
+        "word": "ὀκτωκαίδεκα",
+        "ipa": "/ok.toː.kai̯.ˈde.ka/",
+        "pronunciation": "ok-toh-kai-DEH-ka",
+        "note": "indeclinable"
+      },
+      {
+        "value": 19,
+        "word": "ἐννεακαίδεκα",
+        "ipa": "/en.ne.a.kai̯.ˈde.ka/",
+        "pronunciation": "en-neh-a-kai-DEH-ka",
+        "note": "indeclinable"
+      },
+      {
+        "value": 20,
+        "word": "εἴκοσι",
+        "ipa": "/ˈeː.ko.si/",
+        "pronunciation": "AY-ko-si",
+        "note": "indeclinable"
+      },
+      {
+        "value": 30,
+        "word": "τριάκοντα",
+        "ipa": "/triˈa.kon.ta/",
+        "pronunciation": "tri-A-kon-ta",
+        "note": "indeclinable"
+      },
+      {
+        "value": 40,
+        "word": "τετταράκοντα",
+        "ipa": "/tet.ta.ˈra.kon.ta/",
+        "pronunciation": "tet-ta-RA-kon-ta",
+        "note": "indeclinable"
+      },
+      {
+        "value": 50,
+        "word": "πεντήκοντα",
+        "ipa": "/pen.ˈteː.kon.ta/",
+        "pronunciation": "pen-TAY-kon-ta",
+        "note": "indeclinable"
+      },
+      {
+        "value": 60,
+        "word": "ἑξήκοντα",
+        "ipa": "/hek.ˈseː.kon.ta/",
+        "pronunciation": "hek-SAY-kon-ta",
+        "note": "indeclinable"
+      },
+      {
+        "value": 70,
+        "word": "ἑβδομήκοντα",
+        "ipa": "/heb.do.ˈmeː.kon.ta/",
+        "pronunciation": "heb-do-MAY-kon-ta",
+        "note": "indeclinable"
+      },
+      {
+        "value": 80,
+        "word": "ὀγδοήκοντα",
+        "ipa": "/og.do.ˈeː.kon.ta/",
+        "pronunciation": "og-do-AY-kon-ta",
+        "note": "indeclinable"
+      },
+      {
+        "value": 90,
+        "word": "ἐνενήκοντα",
+        "ipa": "/e.ne.ˈneː.kon.ta/",
+        "pronunciation": "e-ne-NAY-kon-ta",
+        "note": "indeclinable"
+      },
+      {
+        "value": 100,
+        "word": "ἑκατόν",
+        "ipa": "/he.ka.ˈton/",
+        "pronunciation": "he-ka-TON",
+        "note": "indeclinable"
+      },
+      {
+        "value": 1000,
+        "word": "χίλιοι",
+        "ipa": "/ˈkʰi.li.oi̯/",
+        "pronunciation": "KHI-li-oi",
+        "note": "masculine nominative plural; feminine χίλιαι, neuter χίλια; declines like adjectives"
+      },
+      {
+        "value": 1000000,
+        "word": "μυριάκις μύριοι",
+        "ipa": "/my.ri.ˈa.kis ˈmy.ri.oi̯/",
+        "pronunciation": "mu-ri-A-kis MU-ri-oi",
+        "note": "ten thousand times ten thousand; Greeks counted by μύριοι (10,000)"
+      }
+    ],
+    "ordinals": [
+      {
+        "rank": 1,
+        "word": "πρῶτος",
+        "ipa": "/ˈproː.tos/",
+        "pronunciation": "PROH-tos",
+        "meaning": "first",
+        "note": "declines like regular adjectives; feminine πρώτη, neuter πρῶτον"
+      },
+      {
+        "rank": 2,
+        "word": "δεύτερος",
+        "ipa": "/ˈdeu̯.te.ros/",
+        "pronunciation": "DEU-te-ros",
+        "meaning": "second",
+        "note": "declines like regular adjectives; feminine δευτέρα, neuter δεύτερον"
+      },
+      {
+        "rank": 3,
+        "word": "τρίτος",
+        "ipa": "/ˈtri.tos/",
+        "pronunciation": "TRI-tos",
+        "meaning": "third",
+        "note": "declines like regular adjectives; feminine τρίτη, neuter τρίτον"
+      },
+      {
+        "rank": 4,
+        "word": "τέταρτος",
+        "ipa": "/ˈte.tar.tos/",
+        "pronunciation": "TE-tar-tos",
+        "meaning": "fourth",
+        "note": "declines like regular adjectives; feminine τετάρτη, neuter τέταρτον"
+      },
+      {
+        "rank": 5,
+        "word": "πέμπτος",
+        "ipa": "/ˈpemp.tos/",
+        "pronunciation": "PEMP-tos",
+        "meaning": "fifth",
+        "note": "declines like regular adjectives; feminine πέμπτη, neuter πέμπτον"
+      },
+      {
+        "rank": 6,
+        "word": "ἕκτος",
+        "ipa": "/ˈhek.tos/",
+        "pronunciation": "HEK-tos",
+        "meaning": "sixth",
+        "note": "declines like regular adjectives; feminine ἕκτη, neuter ἕκτον"
+      },
+      {
+        "rank": 7,
+        "word": "ἕβδομος",
+        "ipa": "/ˈheb.do.mos/",
+        "pronunciation": "HEB-do-mos",
+        "meaning": "seventh",
+        "note": "declines like regular adjectives; feminine ἑβδόμη, neuter ἕβδομον"
+      },
+      {
+        "rank": 8,
+        "word": "ὄγδοος",
+        "ipa": "/ˈog.do.os/",
+        "pronunciation": "OG-do-os",
+        "meaning": "eighth",
+        "note": "declines like regular adjectives; feminine ὀγδόη, neuter ὄγδοον"
+      },
+      {
+        "rank": 9,
+        "word": "ἔνατος",
+        "ipa": "/ˈe.na.tos/",
+        "pronunciation": "E-na-tos",
+        "meaning": "ninth",
+        "note": "declines like regular adjectives; feminine ἐνάτη, neuter ἔνατον"
+      },
+      {
+        "rank": 10,
+        "word": "δέκατος",
+        "ipa": "/ˈde.ka.tos/",
+        "pronunciation": "DE-ka-tos",
+        "meaning": "tenth",
+        "note": "declines like regular adjectives; feminine δεκάτη, neuter δέκατον"
+      }
+    ],
+    "teaching_notes": [
+      "Cardinals 1-4 decline for case, gender, and number, agreeing with their nouns. Learn the full paradigms: εἷς μία ἕν, δύο (with dual forms δυοῖν in genitive and dative), τρεῖς τρία, τέτταρες τέτταρα.",
+      "Numbers 5 and above are indeclinable except for χίλιοι (1000) and μύριοι (10,000), which decline as plural adjectives in all three genders.",
+      "Compound numbers from 13-19 can be formed either as separate words (τρεῖς καὶ δέκα) or as single compounds (τρεισκαίδεκα). The compound forms are more common in Attic prose.",
+      "All ordinal numbers are adjectives declining in three genders across all cases. They follow regular first and second declension patterns (πρῶτος -η -ον, δεύτερος -α -ον).",
+      "Greek reckoned large numbers by μύριοι (10,000) rather than by millions. The word μυριάς (myriad) became the base unit for calculations beyond thousands in mathematical and historical texts."
+    ]
+  }
+}

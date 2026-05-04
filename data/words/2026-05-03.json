@@ -1,0 +1,136 @@
+{
+  "date": "2026-05-03",
+  "generated_at": "2026-05-03T11:00:02.216Z",
+  "languages": {
+    "latin": {
+      "word": "saevitia",
+      "transliteration": "",
+      "pronunciation": "sigh-WIT-ee-ah",
+      "ipa": "/sae̯ˈwi.ti.a/",
+      "part_of_speech": "noun, fem.",
+      "meaning": "fierceness, cruelty, savagery",
+      "forms": "saevitia, saevitiae (1st declension); gen. saevitiae, dat. saevitiae, acc. saevitiam, abl. saevitia",
+      "etymology": "From saevus (fierce, cruel, savage) + -itia (noun-forming suffix denoting quality or state). The root saev- connects to Greek σαίνω (to wag the tail, fawn) in its negated sense, suggesting wild, untamed violence.",
+      "literary_context": "Tacitus uses saevitia repeatedly in the Annales to characterize the tyrannical cruelty of Tiberius and Nero, making it a keynote term for imperial excess. Cicero deploys it in the Philippics against Antony's brutal acts.",
+      "usage_example": "Tanta saevitia in suppliciis erat ut multi mortem prae cruciatu optarent. — Such was the cruelty in the punishments that many preferred death to torture.",
+      "did_you_know": "Tacitus pairs saevitia with libido (lust) as the twin vices of despots, creating a rhetorical formula that influenced later political theory about tyranny's psychological roots.",
+      "tokens": {
+        "input_tokens": 631,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 392,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Latin"
+    },
+    "greek": {
+      "word": "ἀπορία",
+      "transliteration": "aporia",
+      "pronunciation": "ah-poh-REE-ah",
+      "ipa": "/a.po.ˈri.a/",
+      "part_of_speech": "noun, fem.",
+      "meaning": "perplexity, being at a loss, philosophical puzzle",
+      "forms": "ἀπορία, ἀπορίας (gen.), ἀπορίᾳ (dat.), ἀπορίαν (acc.); plural ἀπορίαι",
+      "etymology": "From ἄπορος (without passage, impassable), composed of privative ἀ- + πόρος (passage, way, means). The root πόρος derives from πείρω (to pierce, pass through).",
+      "literary_context": "Plato employs ἀπορία throughout his dialogues as the state of productive confusion that Socrates induces in his interlocutors, most famously in the Meno where the slave boy reaches aporia before achieving understanding of geometric truth.",
+      "usage_example": "εἰς ἀπορίαν καθίσταμαι περὶ τούτου τοῦ πράγματος. — I am brought into a state of perplexity concerning this matter.",
+      "did_you_know": "Aporia became a technical term in Platonic dialectic for the necessary stage of confusion that precedes genuine philosophical insight, making intellectual paralysis the gateway to knowledge rather than its opposite.",
+      "tokens": {
+        "input_tokens": 678,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 399,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Ancient Greek"
+    },
+    "french": {
+      "word": "sanglot",
+      "transliteration": "",
+      "pronunciation": "sahn-GLOH",
+      "ipa": "/sɑ̃.ɡlo/",
+      "part_of_speech": "noun, masc.",
+      "meaning": "sob, convulsive catching of breath while weeping",
+      "forms": "sanglot (singular), sanglots (plural)",
+      "etymology": "From Old French sanglout, derived from sangloter 'to sob,' likely from Vulgar Latin *singulare 'to hiccup,' related to Latin singultus 'sob, hiccup.' The nasal sound reflects the physical convulsion of sobbing.",
+      "literary_context": "Verlaine uses this word in his poem 'Chanson d'automne' with the famous opening 'Les sanglots longs / Des violons / De l'automne,' where the long sobs of autumn violins wound the heart with monotonous languor.",
+      "usage_example": "Elle étouffa ses sanglots dans l'oreiller. — She stifled her sobs in the pillow.",
+      "did_you_know": "Verlaine's use of sanglot in 'Chanson d'automne' became so culturally significant that the BBC used the first three lines of this poem as a coded message to the French Resistance on June 1, 1944, to signal the imminent D-Day invasion.",
+      "tokens": {
+        "input_tokens": 609,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 360,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "French"
+    },
+    "german": {
+      "word": "Augenblick",
+      "transliteration": "",
+      "pronunciation": "OW-gen-blik",
+      "ipa": "/ˈaʊ̯ɡn̩ˌblɪk/",
+      "part_of_speech": "noun, masc.",
+      "meaning": "moment, instant; literally 'glance of the eye'",
+      "forms": "der Augenblick, des Augenblick(e)s, die Augenblicke",
+      "etymology": "From Auge (eye) + Blick (glance, look). Calqued from Latin momentum, the compound literalizes the fleeting nature of time as measured by a single ocular movement.",
+      "literary_context": "Goethe's Faust famously wagers his soul on whether he will ever say to any moment (Augenblick): 'Verweile doch! du bist so schön!' — linger, you are so beautiful. The word marks the central dramatic hinge of the entire tragedy.",
+      "usage_example": "Werd ich zum Augenblicke sagen: Verweile doch! du bist so schön! — If I should say to the moment: linger, you are so beautiful!",
+      "did_you_know": "Nietzsche returns obsessively to Goethe's Augenblick in his doctrine of eternal recurrence, asking whether we would will the return of each moment infinitely. The word concentrates the entire existential weight of temporality into a single optical gesture.",
+      "tokens": {
+        "input_tokens": 648,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 391,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "German"
+    },
+    "oldenglish": {
+      "word": "ānmōd",
+      "transliteration": "anmod",
+      "pronunciation": "AHN-moad",
+      "ipa": "/ˈɑːn.moːd/",
+      "part_of_speech": "adjective",
+      "meaning": "resolute, steadfast, unanimous, of one mind",
+      "forms": "Indeclinable or follows strong/weak adjective declension depending on context: ānmōd (nom. sg.), ānmōdne (acc. sg. masc.), ānmōdum (dat. pl.)",
+      "etymology": "From ān 'one' + mōd 'mind, spirit, heart, courage'. Compound expressing unity of purpose or unwavering determination. Related to Modern English 'mood' (from mōd).",
+      "literary_context": "In The Battle of Maldon, the retainers stand ānmōde around their fallen lord Byrhtnoth, showing their resolute loyalty even unto death, embodying the Germanic heroic ideal of comitatus loyalty.",
+      "usage_example": "Hī wǣron ānmōde on þām gefeohte. — They were resolute in the battle.",
+      "did_you_know": "The word ānmōd captures the Germanic heroic ethos where individual wills merge into collective steadfastness, a virtue prized above life itself in warrior culture, making it central to understanding the ethics of Beowulf and the elegiac tradition.",
+      "tokens": {
+        "input_tokens": 648,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 371,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Old English"
+    }
+  }
+}

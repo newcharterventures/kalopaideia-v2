@@ -1,0 +1,1031 @@
+{
+  "overview": "Classical Latin is the literary language of ancient Rome from approximately 100 BCE to 100 CE, the medium of Cicero, Vergil, Ovid, and Caesar. It employs a synthetic morphology with five noun declensions, four verb conjugations, and flexible word order. Mastery of Latin provides direct access to the foundational texts of Western literature, law, philosophy, and science, and illuminates the structure of the Romance languages and English vocabulary.",
+  "alphabet": [
+    {
+      "char": "A a",
+      "name": "ā",
+      "ipa": "[a] / [aː]",
+      "approximation": "short: 'a' in idea; long: 'a' in father",
+      "notes": "Vowel quantity (short vs. long) is phonemic and affects meter and meaning. Long vowels are marked ā in pedagogical texts."
+    },
+    {
+      "char": "B b",
+      "name": "bē",
+      "ipa": "[b]",
+      "approximation": "'b' in boy",
+      "notes": ""
+    },
+    {
+      "char": "C c",
+      "name": "cē",
+      "ipa": "[k]",
+      "approximation": "'k' in keep (always hard, never soft)",
+      "notes": "Classical pronunciation is always velar [k], not the soft [s] or [tʃ] of ecclesiastical or Romance tradition."
+    },
+    {
+      "char": "D d",
+      "name": "dē",
+      "ipa": "[d]",
+      "approximation": "'d' in dog",
+      "notes": ""
+    },
+    {
+      "char": "E e",
+      "name": "ē",
+      "ipa": "[ɛ] / [eː]",
+      "approximation": "short: 'e' in pet; long: 'a' in cake (but pure, not diphthongized)",
+      "notes": "Vowel quantity is phonemic."
+    },
+    {
+      "char": "F f",
+      "name": "ef",
+      "ipa": "[f]",
+      "approximation": "'f' in father",
+      "notes": ""
+    },
+    {
+      "char": "G g",
+      "name": "gē",
+      "ipa": "[ɡ]",
+      "approximation": "'g' in go (always hard)",
+      "notes": ""
+    },
+    {
+      "char": "H h",
+      "name": "hā",
+      "ipa": "[h]",
+      "approximation": "'h' in house",
+      "notes": "Pronounced in Classical Latin; often weakened or lost by the imperial period."
+    },
+    {
+      "char": "I i",
+      "name": "ī",
+      "ipa": "[ɪ] / [iː] (vowel); [j] (consonant)",
+      "approximation": "vowel short: 'i' in bit; long: 'ee' in see; consonant: 'y' in yes",
+      "notes": "Functions as both vowel and consonant (consonantal i often written as j in modern editions). Vowel quantity is phonemic."
+    },
+    {
+      "char": "J j",
+      "name": "jōta",
+      "ipa": "[j]",
+      "approximation": "'y' in yes",
+      "notes": "Modern orthographic convention for consonantal i; not distinguished in classical inscriptions."
+    },
+    {
+      "char": "K k",
+      "name": "kā",
+      "ipa": "[k]",
+      "approximation": "'k' in keep",
+      "notes": "Rare; used only in a few words like Kalendae and Karthago."
+    },
+    {
+      "char": "L l",
+      "name": "el",
+      "ipa": "[l]",
+      "approximation": "'l' in light",
+      "notes": ""
+    },
+    {
+      "char": "M m",
+      "name": "em",
+      "ipa": "[m]",
+      "approximation": "'m' in mother",
+      "notes": "Final -m may have been weakly articulated or nasalized the preceding vowel in verse."
+    },
+    {
+      "char": "N n",
+      "name": "en",
+      "ipa": "[n]",
+      "approximation": "'n' in no",
+      "notes": ""
+    },
+    {
+      "char": "O o",
+      "name": "ō",
+      "ipa": "[ɔ] / [oː]",
+      "approximation": "short: 'o' in pot (British); long: 'o' in note (but pure)",
+      "notes": "Vowel quantity is phonemic."
+    },
+    {
+      "char": "P p",
+      "name": "pē",
+      "ipa": "[p]",
+      "approximation": "'p' in pen",
+      "notes": ""
+    },
+    {
+      "char": "Q q",
+      "name": "qū",
+      "ipa": "[kʷ]",
+      "approximation": "'qu' in quick",
+      "notes": "Always followed by u; together qu represents the labiovelar [kʷ]."
+    },
+    {
+      "char": "R r",
+      "name": "er",
+      "ipa": "[r]",
+      "approximation": "trilled 'r' as in Spanish perro",
+      "notes": "The r was probably an alveolar trill in Classical Latin."
+    },
+    {
+      "char": "S s",
+      "name": "es",
+      "ipa": "[s]",
+      "approximation": "'s' in see (always unvoiced)",
+      "notes": "Always voiceless [s], never [z] as in English 'rose'."
+    },
+    {
+      "char": "T t",
+      "name": "tē",
+      "ipa": "[t]",
+      "approximation": "'t' in top",
+      "notes": "No palatalization; -ti- before vowels is [ti], not [ʃi] or [tsi] as in ecclesiastical pronunciation."
+    },
+    {
+      "char": "U u",
+      "name": "ū",
+      "ipa": "[ʊ] / [uː] (vowel); [w] (consonant)",
+      "approximation": "vowel short: 'u' in put; long: 'oo' in moon; consonant: 'w' in water",
+      "notes": "Functions as both vowel and consonant (consonantal u often written as v in modern editions). Vowel quantity is phonemic."
+    },
+    {
+      "char": "V v",
+      "name": "vē",
+      "ipa": "[w]",
+      "approximation": "'w' in water",
+      "notes": "Modern orthographic convention for consonantal u; pronounced [w], not [v]. Not distinguished from u in classical inscriptions."
+    },
+    {
+      "char": "X x",
+      "name": "ix",
+      "ipa": "[ks]",
+      "approximation": "'x' in axe",
+      "notes": "Represents the cluster [ks]."
+    },
+    {
+      "char": "Y y",
+      "name": "ȳ Graeca",
+      "ipa": "[y] / [yː]",
+      "approximation": "French 'u' in tu; German 'ü' in über",
+      "notes": "Used only in Greek loanwords. A front rounded vowel."
+    },
+    {
+      "char": "Z z",
+      "name": "zēta",
+      "ipa": "[z]",
+      "approximation": "'z' in zone",
+      "notes": "Used only in Greek loanwords."
+    }
+  ],
+  "pronunciation_notes": [
+    "All consonants are pronounced; no silent letters except possibly final -m in verse (nasalizes preceding vowel).",
+    "The diphthongs ae and oe are pronounced [ai̯] ('eye') and [oi̯] ('oy'), not as single vowels.",
+    "Vowel quantity (short vs. long) is phonemic and affects word stress and meaning; long vowels take approximately twice the time to pronounce.",
+    "Stress falls on the penult (second-to-last syllable) if it contains a long vowel or diphthong, or if its vowel is followed by two consonants; otherwise stress falls on the antepenult (third-to-last).",
+    "C and G are always hard ([k] and [ɡ]); consonantal I and V are semivowels ([j] and [w]), not fricatives."
+  ],
+  "grammar": {
+    "noun_system": "Latin nouns are declined for five cases (nominative, genitive, dative, accusative, ablative), two numbers (singular, plural), and three genders (masculine, feminine, neuter). The vocative case exists but is often identical to the nominative except in singular second-declension masculines. Case endings indicate syntactic function (subject, direct object, possession, etc.), permitting flexible word order.",
+    "declensions": [
+      {
+        "name": "First Declension",
+        "description": "Predominantly feminine nouns with stem in -ā. Example: puella, -ae, f. 'girl'.",
+        "paradigm": {
+          "sg": {
+            "nom": "puella",
+            "gen": "puellae",
+            "dat": "puellae",
+            "acc": "puellam",
+            "abl": "puellā",
+            "voc": "puella"
+          },
+          "pl": {
+            "nom": "puellae",
+            "gen": "puellārum",
+            "dat": "puellīs",
+            "acc": "puellās",
+            "abl": "puellīs",
+            "voc": "puellae"
+          }
+        }
+      },
+      {
+        "name": "Second Declension (masculine)",
+        "description": "Masculine and neuter nouns with stem in -o. Example: servus, -ī, m. 'slave, servant'.",
+        "paradigm": {
+          "sg": {
+            "nom": "servus",
+            "gen": "servī",
+            "dat": "servō",
+            "acc": "servum",
+            "abl": "servō",
+            "voc": "serve"
+          },
+          "pl": {
+            "nom": "servī",
+            "gen": "servōrum",
+            "dat": "servīs",
+            "acc": "servōs",
+            "abl": "servīs",
+            "voc": "servī"
+          }
+        }
+      },
+      {
+        "name": "Second Declension (neuter)",
+        "description": "Neuter nouns in -um. Neuters have identical nominative, accusative, and vocative forms; nom./acc./voc. plural always end in -a. Example: dōnum, -ī, n. 'gift'.",
+        "paradigm": {
+          "sg": {
+            "nom": "dōnum",
+            "gen": "dōnī",
+            "dat": "dōnō",
+            "acc": "dōnum",
+            "abl": "dōnō",
+            "voc": "dōnum"
+          },
+          "pl": {
+            "nom": "dōna",
+            "gen": "dōnōrum",
+            "dat": "dōnīs",
+            "acc": "dōna",
+            "abl": "dōnīs",
+            "voc": "dōna"
+          }
+        }
+      },
+      {
+        "name": "Third Declension (consonant-stem)",
+        "description": "Nouns with consonant stems; all three genders. Example: rēx, rēgis, m. 'king'.",
+        "paradigm": {
+          "sg": {
+            "nom": "rēx",
+            "gen": "rēgis",
+            "dat": "rēgī",
+            "acc": "rēgem",
+            "abl": "rēge",
+            "voc": "rēx"
+          },
+          "pl": {
+            "nom": "rēgēs",
+            "gen": "rēgum",
+            "dat": "rēgibus",
+            "acc": "rēgēs",
+            "abl": "rēgibus",
+            "voc": "rēgēs"
+          }
+        }
+      }
+    ],
+    "verb_system": "Latin verbs are conjugated for six tenses (present, imperfect, future, perfect, pluperfect, future perfect), three persons, two numbers, three moods (indicative, subjunctive, imperative), two voices (active, passive), and have infinite forms (infinitives, participles, gerunds, supines). The present, imperfect, and future tenses are built on the present stem; the perfect, pluperfect, and future perfect on the perfect stem.",
+    "conjugations": [
+      {
+        "name": "First Conjugation",
+        "description": "Verbs with present stem in -ā-. Example: amō, amāre, amāvī, amātum 'to love' (active indicative).",
+        "paradigm": {
+          "present": {
+            "1s": "amō",
+            "2s": "amās",
+            "3s": "amat",
+            "1p": "amāmus",
+            "2p": "amātis",
+            "3p": "amant"
+          },
+          "imperfect": {
+            "1s": "amābam",
+            "2s": "amābās",
+            "3s": "amābat",
+            "1p": "amābāmus",
+            "2p": "amābātis",
+            "3p": "amābant"
+          },
+          "future": {
+            "1s": "amābō",
+            "2s": "amābis",
+            "3s": "amābit",
+            "1p": "amābimus",
+            "2p": "amābitis",
+            "3p": "amābunt"
+          },
+          "perfect": {
+            "1s": "amāvī",
+            "2s": "amāvistī",
+            "3s": "amāvit",
+            "1p": "amāvimus",
+            "2p": "amāvistis",
+            "3p": "amāvērunt"
+          },
+          "pluperfect": {
+            "1s": "amāveram",
+            "2s": "amāverās",
+            "3s": "amāverat",
+            "1p": "amāverāmus",
+            "2p": "amāverātis",
+            "3p": "amāverant"
+          },
+          "future_perfect": {
+            "1s": "amāverō",
+            "2s": "amāveris",
+            "3s": "amāverit",
+            "1p": "amāverimus",
+            "2p": "amāveritis",
+            "3p": "amāverint"
+          }
+        }
+      },
+      {
+        "name": "Second Conjugation",
+        "description": "Verbs with present stem in -ē-. Example: moneō, monēre, monuī, monitum 'to warn, advise' (active indicative).",
+        "paradigm": {
+          "present": {
+            "1s": "moneō",
+            "2s": "monēs",
+            "3s": "monet",
+            "1p": "monēmus",
+            "2p": "monētis",
+            "3p": "monent"
+          },
+          "imperfect": {
+            "1s": "monēbam",
+            "2s": "monēbās",
+            "3s": "monēbat",
+            "1p": "monēbāmus",
+            "2p": "monēbātis",
+            "3p": "monēbant"
+          },
+          "future": {
+            "1s": "monēbō",
+            "2s": "monēbis",
+            "3s": "monēbit",
+            "1p": "monēbimus",
+            "2p": "monēbitis",
+            "3p": "monēbunt"
+          },
+          "perfect": {
+            "1s": "monuī",
+            "2s": "monuistī",
+            "3s": "monuit",
+            "1p": "monuimus",
+            "2p": "monuistis",
+            "3p": "monuērunt"
+          },
+          "pluperfect": {
+            "1s": "monueram",
+            "2s": "monuerās",
+            "3s": "monuerat",
+            "1p": "monuerāmus",
+            "2p": "monuerātis",
+            "3p": "monuerant"
+          },
+          "future_perfect": {
+            "1s": "monuerō",
+            "2s": "monueris",
+            "3s": "monuerit",
+            "1p": "monuerimus",
+            "2p": "monueritis",
+            "3p": "monuerint"
+          }
+        }
+      },
+      {
+        "name": "Third Conjugation",
+        "description": "Verbs with consonant or short -i- stem. Example: regō, regere, rēxī, rēctum 'to rule' (active indicative).",
+        "paradigm": {
+          "present": {
+            "1s": "regō",
+            "2s": "regis",
+            "3s": "regit",
+            "1p": "regimus",
+            "2p": "regitis",
+            "3p": "regunt"
+          },
+          "imperfect": {
+            "1s": "regēbam",
+            "2s": "regēbās",
+            "3s": "regēbat",
+            "1p": "regēbāmus",
+            "2p": "regēbātis",
+            "3p": "regēbant"
+          },
+          "future": {
+            "1s": "regam",
+            "2s": "regēs",
+            "3s": "reget",
+            "1p": "regēmus",
+            "2p": "regētis",
+            "3p": "regent"
+          },
+          "perfect": {
+            "1s": "rēxī",
+            "2s": "rēxistī",
+            "3s": "rēxit",
+            "1p": "rēximus",
+            "2p": "rēxistis",
+            "3p": "rēxērunt"
+          },
+          "pluperfect": {
+            "1s": "rēxeram",
+            "2s": "rēxerās",
+            "3s": "rēxerat",
+            "1p": "rēxerāmus",
+            "2p": "rēxerātis",
+            "3p": "rēxerant"
+          },
+          "future_perfect": {
+            "1s": "rēxerō",
+            "2s": "rēxeris",
+            "3s": "rēxerit",
+            "1p": "rēxerimus",
+            "2p": "rēxeritis",
+            "3p": "rēxerint"
+          }
+        }
+      },
+      {
+        "name": "Fourth Conjugation",
+        "description": "Verbs with present stem in -ī-. Example: audiō, audīre, audīvī, audītum 'to hear' (active indicative).",
+        "paradigm": {
+          "present": {
+            "1s": "audiō",
+            "2s": "audīs",
+            "3s": "audit",
+            "1p": "audīmus",
+            "2p": "audītis",
+            "3p": "audiunt"
+          },
+          "imperfect": {
+            "1s": "audiēbam",
+            "2s": "audiēbās",
+            "3s": "audiēbat",
+            "1p": "audiēbāmus",
+            "2p": "audiēbātis",
+            "3p": "audiēbant"
+          },
+          "future": {
+            "1s": "audiam",
+            "2s": "audiēs",
+            "3s": "audiet",
+            "1p": "audiēmus",
+            "2p": "audiētis",
+            "3p": "audient"
+          },
+          "perfect": {
+            "1s": "audīvī",
+            "2s": "audīvistī",
+            "3s": "audīvit",
+            "1p": "audīvimus",
+            "2p": "audīvistis",
+            "3p": "audīvērunt"
+          },
+          "pluperfect": {
+            "1s": "audīveram",
+            "2s": "audīverās",
+            "3s": "audīverat",
+            "1p": "audīverāmus",
+            "2p": "audīverātis",
+            "3p": "audīverant"
+          },
+          "future_perfect": {
+            "1s": "audīverō",
+            "2s": "audīveris",
+            "3s": "audīverit",
+            "1p": "audīverimus",
+            "2p": "audīveritis",
+            "3p": "audīverint"
+          }
+        }
+      }
+    ],
+    "reference": {
+      "title": "Grammar Reference Card",
+      "description": "Quick reference for grammatical terminology",
+      "sections": [
+        {
+          "category": "Cases (Noun)",
+          "terms": [
+            {
+              "term": "Nominative",
+              "definition": "Subject of the verb; predicate nominative. The 'who' or 'what' doing the action."
+            },
+            {
+              "term": "Genitive",
+              "definition": "Possession or description ('of'). Shows ownership or relationship."
+            },
+            {
+              "term": "Dative",
+              "definition": "Indirect object ('to' or 'for'). The recipient of an action."
+            },
+            {
+              "term": "Accusative",
+              "definition": "Direct object of the verb. The 'what' or 'whom' receiving the action."
+            },
+            {
+              "term": "Ablative",
+              "definition": "Separation, means, accompaniment ('by', 'with', 'from'). Expresses manner, means, or place."
+            },
+            {
+              "term": "Vocative",
+              "definition": "Direct address. Used when calling or speaking to someone."
+            }
+          ]
+        },
+        {
+          "category": "Number",
+          "terms": [
+            {
+              "term": "Singular (sg)",
+              "definition": "One person or thing."
+            },
+            {
+              "term": "Plural (pl)",
+              "definition": "More than one person or thing."
+            }
+          ]
+        },
+        {
+          "category": "Gender",
+          "terms": [
+            {
+              "term": "Masculine (m.)",
+              "definition": "Grammatical gender, not biological. Includes many male beings but also inanimate objects."
+            },
+            {
+              "term": "Feminine (f.)",
+              "definition": "Grammatical gender. Includes many female beings but also inanimate objects."
+            },
+            {
+              "term": "Neuter (n.)",
+              "definition": "Neither masculine nor feminine. Often includes things and abstract concepts."
+            }
+          ]
+        },
+        {
+          "category": "Declensions",
+          "terms": [
+            {
+              "term": "Declension",
+              "definition": "A pattern of case endings for nouns. Latin has five declensions, each with characteristic endings."
+            },
+            {
+              "term": "First Declension",
+              "definition": "Nouns with stem in -ā, predominantly feminine. Example: puella, -ae 'girl'."
+            },
+            {
+              "term": "Second Declension",
+              "definition": "Nouns with stem in -o, masculine and neuter. Examples: servus, -ī (m.) 'servant'; dōnum, -ī (n.) 'gift'."
+            },
+            {
+              "term": "Third Declension",
+              "definition": "Consonant-stem and i-stem nouns, all genders. Example: rēx, rēgis (m.) 'king'."
+            },
+            {
+              "term": "Fourth Declension",
+              "definition": "Nouns with stem in -u, mostly masculine. Example: manus, -ūs (f.) 'hand'."
+            },
+            {
+              "term": "Fifth Declension",
+              "definition": "Nouns with stem in -ē, mostly feminine. Example: rēs, reī (f.) 'thing'."
+            }
+          ]
+        },
+        {
+          "category": "Tenses (Verb)",
+          "terms": [
+            {
+              "term": "Present",
+              "definition": "Action happening now or habitually. 'I love', 'I am loving'."
+            },
+            {
+              "term": "Imperfect",
+              "definition": "Ongoing or repeated action in the past. 'I was loving', 'I used to love'."
+            },
+            {
+              "term": "Future",
+              "definition": "Action that will happen. 'I will love', 'I shall love'."
+            },
+            {
+              "term": "Perfect",
+              "definition": "Completed action in the past. 'I loved', 'I have loved'."
+            },
+            {
+              "term": "Pluperfect",
+              "definition": "Action completed before another past action. 'I had loved'."
+            },
+            {
+              "term": "Future Perfect",
+              "definition": "Action that will be completed before a future time. 'I will have loved'."
+            }
+          ]
+        },
+        {
+          "category": "Person & Number (Verb)",
+          "terms": [
+            {
+              "term": "1st person singular (1s)",
+              "definition": "'I' — the speaker. Example: amō 'I love'."
+            },
+            {
+              "term": "2nd person singular (2s)",
+              "definition": "'You' — the person spoken to. Example: amās 'you love'."
+            },
+            {
+              "term": "3rd person singular (3s)",
+              "definition": "'He/she/it' — someone/something else. Example: amat 'he/she/it loves'."
+            },
+            {
+              "term": "1st person plural (1p)",
+              "definition": "'We' — the speakers. Example: amāmus 'we love'."
+            },
+            {
+              "term": "2nd person plural (2p)",
+              "definition": "'You all' — people spoken to. Example: amātis 'you (pl.) love'."
+            },
+            {
+              "term": "3rd person plural (3p)",
+              "definition": "'They' — other people/things. Example: amant 'they love'."
+            }
+          ]
+        },
+        {
+          "category": "Conjugations",
+          "terms": [
+            {
+              "term": "Conjugation",
+              "definition": "A pattern of verb endings. Latin has four regular conjugations plus irregular verbs."
+            },
+            {
+              "term": "First Conjugation",
+              "definition": "Verbs with present stem in -ā-. Example: amō, amāre 'to love'."
+            },
+            {
+              "term": "Second Conjugation",
+              "definition": "Verbs with present stem in -ē-. Example: moneō, monēre 'to warn'."
+            },
+            {
+              "term": "Third Conjugation",
+              "definition": "Verbs with consonant or short -i- stem. Example: regō, regere 'to rule'."
+            },
+            {
+              "term": "Fourth Conjugation",
+              "definition": "Verbs with present stem in -ī-. Example: audiō, audīre 'to hear'."
+            }
+          ]
+        },
+        {
+          "category": "Mood",
+          "terms": [
+            {
+              "term": "Indicative",
+              "definition": "States facts or asks questions. The default mood for statements."
+            },
+            {
+              "term": "Subjunctive",
+              "definition": "Expresses possibility, purpose, wish, or doubt. Often in subordinate clauses."
+            },
+            {
+              "term": "Imperative",
+              "definition": "Gives commands. 'Love!' = amā (sg.), amāte (pl.)."
+            }
+          ]
+        },
+        {
+          "category": "Voice",
+          "terms": [
+            {
+              "term": "Active",
+              "definition": "Subject performs the action. 'I love her.'"
+            },
+            {
+              "term": "Passive",
+              "definition": "Subject receives the action. 'I am loved by her.'"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "reading_list": [
+    "Epitaphs and simple inscriptions (CIL selections)",
+    "Caesar, Bellum Gallicum I-IV",
+    "Catullus, selected carmina (especially 1-11, 85, 101)",
+    "Cicero, In Catilinam I; Pro Archia",
+    "Vergil, Eclogues; Aeneid I-VI",
+    "Ovid, Metamorphoses I, selections",
+    "Horace, Odes and Epodes (selected)",
+    "Livy, Ab Urbe Condita I (selections)",
+    "Tacitus, Agricola; Annales I",
+    "Seneca, Epistulae Morales (selected letters)"
+  ],
+  "display": "Latin",
+  "generated_at": "2026-04-21T06:24:27.378Z",
+  "numbers": {
+    "overview": "Classical Latin cardinal numbers from 1 to 3 decline fully for case, gender, and number, while 4 to 100 are mostly indeclinable adjectives. Hundreds (200, 300, etc.) and multiples of 1000 decline as plural adjectives. Ordinal numbers are regular first/second declension adjectives agreeing with their nouns in case, gender, and number.",
+    "cardinals": [
+      {
+        "value": 0,
+        "word": "nūllus",
+        "ipa": "ˈnuːl.lʊs",
+        "pronunciation": "NOOL-lus",
+        "note": "Declines as first/second declension adjective; means 'none' or 'no'"
+      },
+      {
+        "value": 1,
+        "word": "ūnus",
+        "ipa": "ˈuː.nʊs",
+        "pronunciation": "OO-nus",
+        "note": "Declines like ūnus, ūna, ūnum (gen. ūnīus, dat. ūnī)"
+      },
+      {
+        "value": 2,
+        "word": "duo",
+        "ipa": "ˈdʊ.oː",
+        "pronunciation": "DU-oh",
+        "note": "Declines irregularly: duo, duae, duo (masc., fem., neut.)"
+      },
+      {
+        "value": 3,
+        "word": "trēs",
+        "ipa": "treːs",
+        "pronunciation": "TRACE",
+        "note": "Declines: trēs, trēs, tria (masc., fem., neut.)"
+      },
+      {
+        "value": 4,
+        "word": "quattuor",
+        "ipa": "ˈkʷat.tʊ.ɔr",
+        "pronunciation": "KWAT-tu-or",
+        "note": "Indeclinable"
+      },
+      {
+        "value": 5,
+        "word": "quīnque",
+        "ipa": "ˈkʷiːn.kʷɛ",
+        "pronunciation": "KWEEN-kwe",
+        "note": "Indeclinable"
+      },
+      {
+        "value": 6,
+        "word": "sex",
+        "ipa": "sɛks",
+        "pronunciation": "SEX",
+        "note": "Indeclinable"
+      },
+      {
+        "value": 7,
+        "word": "septem",
+        "ipa": "ˈsɛp.tɛm",
+        "pronunciation": "SEP-tem",
+        "note": "Indeclinable"
+      },
+      {
+        "value": 8,
+        "word": "octō",
+        "ipa": "ˈɔk.toː",
+        "pronunciation": "OCK-toh",
+        "note": "Indeclinable"
+      },
+      {
+        "value": 9,
+        "word": "novem",
+        "ipa": "ˈnɔ.wɛm",
+        "pronunciation": "NO-wem",
+        "note": "Indeclinable"
+      },
+      {
+        "value": 10,
+        "word": "decem",
+        "ipa": "ˈdɛ.kɛm",
+        "pronunciation": "DEH-kem",
+        "note": "Indeclinable"
+      },
+      {
+        "value": 11,
+        "word": "ūndecim",
+        "ipa": "ˈuːn.dɛ.kɪm",
+        "pronunciation": "OON-deh-kim",
+        "note": "Indeclinable"
+      },
+      {
+        "value": 12,
+        "word": "duodecim",
+        "ipa": "dʊ.oːˈdɛ.kɪm",
+        "pronunciation": "du-oh-DEH-kim",
+        "note": "Indeclinable"
+      },
+      {
+        "value": 13,
+        "word": "trēdecim",
+        "ipa": "ˈtreː.dɛ.kɪm",
+        "pronunciation": "TRAY-deh-kim",
+        "note": "Indeclinable"
+      },
+      {
+        "value": 14,
+        "word": "quattuordecim",
+        "ipa": "kʷat.tʊ.ɔrˈdɛ.kɪm",
+        "pronunciation": "kwat-tu-or-DEH-kim",
+        "note": "Indeclinable"
+      },
+      {
+        "value": 15,
+        "word": "quīndecim",
+        "ipa": "ˈkʷiːn.dɛ.kɪm",
+        "pronunciation": "KWEEN-deh-kim",
+        "note": "Indeclinable"
+      },
+      {
+        "value": 16,
+        "word": "sēdecim",
+        "ipa": "ˈseː.dɛ.kɪm",
+        "pronunciation": "SAY-deh-kim",
+        "note": "Indeclinable"
+      },
+      {
+        "value": 17,
+        "word": "septendecim",
+        "ipa": "sɛp.tɛnˈdɛ.kɪm",
+        "pronunciation": "sep-ten-DEH-kim",
+        "note": "Indeclinable"
+      },
+      {
+        "value": 18,
+        "word": "duōdēvīgintī",
+        "ipa": "dʊ.oːˌdeː.wiːˈɡɪn.tiː",
+        "pronunciation": "du-oh-day-wee-GIN-tee",
+        "note": "Indeclinable; literally 'two from twenty'"
+      },
+      {
+        "value": 19,
+        "word": "ūndēvīgintī",
+        "ipa": "uːn.deː.wiːˈɡɪn.tiː",
+        "pronunciation": "oon-day-wee-GIN-tee",
+        "note": "Indeclinable; literally 'one from twenty'"
+      },
+      {
+        "value": 20,
+        "word": "vīgintī",
+        "ipa": "wiːˈɡɪn.tiː",
+        "pronunciation": "wee-GIN-tee",
+        "note": "Indeclinable"
+      },
+      {
+        "value": 30,
+        "word": "trīgintā",
+        "ipa": "triːˈɡɪn.taː",
+        "pronunciation": "tree-GIN-tah",
+        "note": "Indeclinable"
+      },
+      {
+        "value": 40,
+        "word": "quadrāgintā",
+        "ipa": "kʷɑ.draːˈɡɪn.taː",
+        "pronunciation": "kwah-drah-GIN-tah",
+        "note": "Indeclinable"
+      },
+      {
+        "value": 50,
+        "word": "quīnquāgintā",
+        "ipa": "kʷiːn.kʷaːˈɡɪn.taː",
+        "pronunciation": "kween-kwah-GIN-tah",
+        "note": "Indeclinable"
+      },
+      {
+        "value": 60,
+        "word": "sexāgintā",
+        "ipa": "sɛk.saːˈɡɪn.taː",
+        "pronunciation": "sek-sah-GIN-tah",
+        "note": "Indeclinable"
+      },
+      {
+        "value": 70,
+        "word": "septuāgintā",
+        "ipa": "sɛp.tʊ.aːˈɡɪn.taː",
+        "pronunciation": "sep-tu-ah-GIN-tah",
+        "note": "Indeclinable"
+      },
+      {
+        "value": 80,
+        "word": "octōgintā",
+        "ipa": "ɔk.toːˈɡɪn.taː",
+        "pronunciation": "ock-toh-GIN-tah",
+        "note": "Indeclinable"
+      },
+      {
+        "value": 90,
+        "word": "nōnāgintā",
+        "ipa": "noː.naːˈɡɪn.taː",
+        "pronunciation": "noh-nah-GIN-tah",
+        "note": "Indeclinable"
+      },
+      {
+        "value": 100,
+        "word": "centum",
+        "ipa": "ˈkɛn.tʊm",
+        "pronunciation": "KEN-tum",
+        "note": "Indeclinable"
+      },
+      {
+        "value": 1000,
+        "word": "mīlle",
+        "ipa": "ˈmiːl.lɛ",
+        "pronunciation": "MEEL-leh",
+        "note": "Indeclinable singular; plural mīlia declines as neuter i-stem"
+      },
+      {
+        "value": 1000000,
+        "word": "deciēs centēna mīlia",
+        "ipa": "ˈdɛ.ki.eːs kɛnˈteː.nɑ ˈmiː.li.ɑ",
+        "pronunciation": "DEH-ki-ays ken-TAY-na MEE-li-ah",
+        "note": "Literally 'ten times hundred thousands'; Romans had no single word"
+      }
+    ],
+    "ordinals": [
+      {
+        "rank": 1,
+        "word": "prīmus",
+        "ipa": "ˈpriː.mʊs",
+        "pronunciation": "PREE-mus",
+        "meaning": "first",
+        "note": "Declines as first/second declension: prīmus, -a, -um"
+      },
+      {
+        "rank": 2,
+        "word": "secundus",
+        "ipa": "sɛˈkʊn.dʊs",
+        "pronunciation": "seh-KUN-dus",
+        "meaning": "second",
+        "note": "Declines as first/second declension: secundus, -a, -um"
+      },
+      {
+        "rank": 3,
+        "word": "tertius",
+        "ipa": "ˈtɛr.ti.ʊs",
+        "pronunciation": "TER-ti-us",
+        "meaning": "third",
+        "note": "Declines as first/second declension: tertius, -a, -um"
+      },
+      {
+        "rank": 4,
+        "word": "quārtus",
+        "ipa": "ˈkʷaːr.tʊs",
+        "pronunciation": "KWAR-tus",
+        "meaning": "fourth",
+        "note": "Declines as first/second declension: quārtus, -a, -um"
+      },
+      {
+        "rank": 5,
+        "word": "quīntus",
+        "ipa": "ˈkʷiːn.tʊs",
+        "pronunciation": "KWEEN-tus",
+        "meaning": "fifth",
+        "note": "Declines as first/second declension: quīntus, -a, -um"
+      },
+      {
+        "rank": 6,
+        "word": "sextus",
+        "ipa": "ˈsɛks.tʊs",
+        "pronunciation": "SEX-tus",
+        "meaning": "sixth",
+        "note": "Declines as first/second declension: sextus, -a, -um"
+      },
+      {
+        "rank": 7,
+        "word": "septimus",
+        "ipa": "ˈsɛp.tɪ.mʊs",
+        "pronunciation": "SEP-ti-mus",
+        "meaning": "seventh",
+        "note": "Declines as first/second declension: septimus, -a, -um"
+      },
+      {
+        "rank": 8,
+        "word": "octāvus",
+        "ipa": "ɔkˈtaː.wʊs",
+        "pronunciation": "ock-TAH-wus",
+        "meaning": "eighth",
+        "note": "Declines as first/second declension: octāvus, -a, -um"
+      },
+      {
+        "rank": 9,
+        "word": "nōnus",
+        "ipa": "ˈnoː.nʊs",
+        "pronunciation": "NOH-nus",
+        "meaning": "ninth",
+        "note": "Declines as first/second declension: nōnus, -a, -um"
+      },
+      {
+        "rank": 10,
+        "word": "decimus",
+        "ipa": "ˈdɛ.kɪ.mʊs",
+        "pronunciation": "DEH-ki-mus",
+        "meaning": "tenth",
+        "note": "Declines as first/second declension: decimus, -a, -um"
+      }
+    ],
+    "teaching_notes": [
+      "Cardinals 1 to 3 decline fully. Ūnus follows the pronominal declension with genitive ūnīus and dative ūnī across all genders. Duo has separate forms for each gender (duo, duae, duo), and trēs distinguishes masculine/feminine (trēs) from neuter (tria).",
+      "Cardinals 4 through 100 are indeclinable, but hundreds (ducentī, trecentī) and thousands in the plural (mīlia) decline as adjectives or nouns. When expressing thousands, use indeclinable mīlle for 1000, but mīlia (neuter i-stem) for multiples, followed by a partitive genitive.",
+      "Numbers 18 and 19 are often expressed subtractively as duōdēvīgintī ('two from twenty') and ūndēvīgintī ('one from twenty'), though octōdecim and novemdecim also appear. The same subtractive pattern occurs with 28, 29, etc.",
+      "All ordinal numbers are regular first/second declension adjectives and must agree with their nouns in case, gender, and number. They form the basis for many Roman names (Quīntus, Sextus, Decimus).",
+      "Compound numbers are formed by writing the largest unit first, connected by et or simple juxtaposition: vīgintī ūnus (21), centum et ūnus (101). The smaller number can decline if it is 1 to 3: cum duōbus et vīgintī mīlitibus ('with twenty-two soldiers')."
+    ]
+  }
+}

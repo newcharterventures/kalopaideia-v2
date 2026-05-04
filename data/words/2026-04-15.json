@@ -1,0 +1,22 @@
+{
+  "date": "2026-04-15",
+  "generated_at": "2026-04-24T07:30:01.910666+00:00",
+  "backfilled_at": "2026-04-24T07:30:01.910676+00:00",
+  "backfill_source": "paideia_archive.json + @LatinateGame X timeline",
+  "languages": {
+    "greek": {
+      "word": "κόσμος",
+      "transliteration": "kosmos",
+      "pronunciation": "KOS-mos",
+      "ipa": "/ˈkos.mos/",
+      "part_of_speech": "noun, masculine, 2nd declension",
+      "meaning": "Order",
+      "forms": "Singular: κόσμος, κόσμου, κόσμῳ, κόσμον, κόσμε. Plural: κόσμοι, κόσμων, κόσμοις, κόσμους",
+      "etymology": "From root meaning 'to arrange/order'. English descendants: Cosmos (the universe as ordered whole), Cosmetic (relating to beautification/ornament), Cosmopolitan (citizen of the world), Cosmonaut (universe sailor, Russian borrowing). The semantic shift from 'ornament' to 'universe' reflects Greek view of cosmic order. The word originally meant 'arrangement' or 'ornament.'",
+      "literary_context": "Heraclitus, Fragment 30, preserved by Clement of Alexandria",
+      "usage_example": "κόσμον τόνδε, τὸν αὐτὸν ἁπάντων — This cosmos, which is the same for all",
+      "did_you_know": "Ancient Greek women wore elaborate hair ornaments called κόσμοι (KOS-moy) - the same word used for the universe! The connection wasn't coincidental: Greeks saw beauty in both personal adornment and cosmic arrangement, believing the same principles of harmony governed both.",
+      "display": "Ancient Greek"
+    }
+  }
+}

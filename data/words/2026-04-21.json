@@ -1,0 +1,136 @@
+{
+  "date": "2026-04-21",
+  "generated_at": "2026-04-21T11:00:02.015Z",
+  "languages": {
+    "latin": {
+      "word": "trucidō",
+      "transliteration": "",
+      "pronunciation": "troo-KEE-doh",
+      "ipa": "/tru.kiˈdoː/",
+      "part_of_speech": "verb, 1st conj.",
+      "meaning": "to slaughter, massacre, butcher cruelly",
+      "forms": "trucidāre, trucidāvī, trucidātum; present trucidō, trucidās, trucidat; perfect trucidāvī; supine trucidātum",
+      "etymology": "From trux (savage, fierce) + -cīdō (to cut, kill), related to caedō (to cut down, kill). The adjective trux is from Proto-Indo-European *twerk- (to cut).",
+      "literary_context": "Cicero uses trucidō repeatedly in his Catilinarian orations to describe the conspiracy's intended massacre of senators and Roman citizens. Sallust employs it in the Bellum Catilinae to depict Catiline's brutal murders during Sulla's proscriptions.",
+      "usage_example": "Catilina impuros cīvēs trucidāre cōnstituit. — Catiline resolved to slaughter upright citizens.",
+      "did_you_know": "The verb trucidō appears most frequently in contexts of political violence and civil war, making it a signature word of late Republican literature when Romans were killing Romans. Unlike interficere (to kill) or occīdere (to strike down), trucidō emphasizes the savage, wholesale nature of the killing.",
+      "tokens": {
+        "input_tokens": 566,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 394,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Latin"
+    },
+    "greek": {
+      "word": "ἀρετή",
+      "transliteration": "aretē",
+      "pronunciation": "ah-reh-TAY",
+      "ipa": "/a.re.tɛ́ː/",
+      "part_of_speech": "noun, fem.",
+      "meaning": "excellence, virtue, moral goodness",
+      "forms": "ἀρετή (nom. sg.), ἀρετῆς (gen. sg.), ἀρετήν (acc. sg.), ἀρεταί (nom. pl.), ἀρετῶν (gen. pl.), ἀρετάς (acc. pl.)",
+      "etymology": "From ἀρετά, related to ἄριστος (aristos, 'best') and possibly from the root *ar- meaning 'to fit together' or 'to be fitting.' The word denotes the quality of fulfilling one's function perfectly.",
+      "literary_context": "Central to Homeric ethics, ἀρετή appears throughout the Iliad as martial excellence, notably when Achilles must choose between a long inglorious life and brief glory. Plato transforms the concept in the Republic, making it the harmony of soul parts rather than mere battlefield prowess.",
+      "usage_example": "ἡ ἀρετὴ διδακτόν ἐστιν; — Is virtue teachable?",
+      "did_you_know": "The Sophists charged fees to teach ἀρετή, which scandalized traditional Athenians who believed excellence was inherited through noble birth. This debate over whether virtue could be taught became the central question of Plato's Meno and shaped Western educational philosophy.",
+      "tokens": {
+        "input_tokens": 575,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 424,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Ancient Greek"
+    },
+    "french": {
+      "word": "azur",
+      "transliteration": "",
+      "pronunciation": "ah-ZEWR",
+      "ipa": "/a.zyʁ/",
+      "part_of_speech": "noun, masc.",
+      "meaning": "azure, the deep blue of the sky or sea",
+      "forms": "singular: azur; plural: azurs (rarely used in plural)",
+      "etymology": "From Old French azur, borrowed from Medieval Latin azurium, from Arabic lāzaward (لازورد), from Persian lāžward, referring to lapis lazuli, the blue stone.",
+      "literary_context": "Mallarmé uses azur as a central symbol in his poem \"L'Azur\" (1864), where the relentless blue sky represents the unattainable ideal that torments the poet unable to create.",
+      "usage_example": "L'azur triomphe, et je l'entends qui chante dans les cloches. — The azure triumphs, and I hear it singing in the bells.",
+      "did_you_know": "For the Symbolists, azur became more than a color: it embodied the transcendent absolute that both attracts and oppresses the artist, with Mallarmé famously crying out against its sterile perfection.",
+      "tokens": {
+        "input_tokens": 565,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 320,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "French"
+    },
+    "german": {
+      "word": "Dämmerung",
+      "transliteration": "",
+      "pronunciation": "DEM-mer-oong",
+      "ipa": "ˈdɛməʁʊŋ",
+      "part_of_speech": "noun, fem.",
+      "meaning": "twilight, dusk, dawn; a state between light and darkness",
+      "forms": "die Dämmerung, gen. der Dämmerung, pl. die Dämmerungen",
+      "etymology": "From Middle High German 'demerunge', from 'demeren' (to grow dark), related to Old High German 'demar' (twilight). Cognate with Old Norse 'dimma' (darkness). The root connects to the gradual dimming of light.",
+      "literary_context": "Nietzsche uses 'Götzen-Dämmerung' (Twilight of the Idols, 1889) as the title of his late philosophical work, playing on Wagner's 'Götterdämmerung' to suggest the fading of false values. Hölderlin employs the word repeatedly in his hymns to evoke transitional states between divine and mortal realms.",
+      "usage_example": "In der Dämmerung verschwimmen die Grenzen zwischen Traum und Wirklichkeit. — In the twilight the boundaries between dream and reality blur.",
+      "did_you_know": "The word gained philosophical weight through Nietzsche's deliberate wordplay: 'Götzen-Dämmerung' suggests both 'twilight of idols' and their 'dämmer-ung' (stupefaction), exposing false gods as merely dim-witted.",
+      "tokens": {
+        "input_tokens": 579,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 421,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "German"
+    },
+    "oldenglish": {
+      "word": "sceadugenga",
+      "transliteration": "sceadugenga",
+      "pronunciation": "SHEH-ah-doo-GENG-ah",
+      "ipa": "ˈʃæɑ.du.ˌɡeŋ.ɡɑ",
+      "part_of_speech": "noun, masc.",
+      "meaning": "shadow-walker, one who walks in shadows; a nocturnal creature or demon",
+      "forms": "nom. sceadugenga; acc. sceadugengan; gen. sceadugengan; dat. sceadugengan",
+      "etymology": "Compound of sceadu 'shadow' (from Proto-Germanic *skadwaz) + genga 'walker, goer' (from gān 'to go' + agent suffix -a). The first element relates to Latin scutum via shared Indo-European root; the second shares ancestry with Greek βαίνω.",
+      "literary_context": "This word appears in Beowulf (line 703) to describe Grendel as he approaches Heorot at night. The poet uses it to emphasize the monster's nature as a creature of darkness who prowls in the shadows while men sleep.",
+      "usage_example": "Se sceadugenga cōm on niht tō sele. — The shadow-walker came by night to the hall.",
+      "did_you_know": "The Beowulf poet uses compound words like sceadugenga as a kenning-style descriptor to build atmosphere and characterize Grendel without naming him directly, a technique that creates suspense and emphasizes the monster's alien, threatening nature.",
+      "tokens": {
+        "input_tokens": 577,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 423,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Old English"
+    }
+  }
+}

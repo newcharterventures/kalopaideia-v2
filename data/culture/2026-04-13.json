@@ -1,0 +1,18 @@
+{
+  "date": "2026-04-13",
+  "generated_at": "2026-04-24T07:31:57.948Z",
+  "backfilled_at": "2026-04-24T07:31:57.948Z",
+  "vignettes": {
+    "greek": {
+      "title": "The Hoplite's Bronze World",
+      "body": "When Greek citizens marched to war, they brought their own equipment. The hoplite phalanx—that famous wall of bronze and iron—required each man to purchase his helmet, greaves, spear, and the heavy aspis shield. This was no professional army. The farmer who pruned his vines in spring might stand shoulder-to-shoulder with his neighbors by summer, their interlocking shields creating a mobile fortress.\n\nBattle itself was brief and brutal. Armies met on flat ground by mutual agreement, clashing in a shoving match where the front ranks stabbed over their shields while those behind pressed forward. When one line broke, the pursuit began. Most casualties occurred in the rout. By evening, the dead were collected under truce, and the victors set up a trophy—captured armor hung on a pole—before returning to their fields.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Chigi_Painter_-_CVPAP_32_A_3_-_battle_of_phalanxes_-_chariots_and_riders_-_judgement_of_Paris_-_hunting_scenes_-_Roma_MNEVG_22679_-_01.jpg",
+        "credit": "Chigi Painter - CVPAP 32 A 3 - battle of phalanxes - chariots and riders - judgement of Paris - hunting scenes - Roma MNEVG 22679 - 01.jpg — ArchaiOptix",
+        "width": 3417,
+        "height": 4653
+      },
+      "image_query": "hoplite phalanx vase"
+    }
+  }
+}

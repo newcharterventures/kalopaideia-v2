@@ -1,0 +1,78 @@
+{
+  "date": "2026-04-14",
+  "generated_at": "2026-04-24T07:30:01.910170+00:00",
+  "backfilled_at": "2026-04-24T07:30:01.910180+00:00",
+  "backfill_source": "paideia_archive.json + @LatinateGame X timeline",
+  "languages": {
+    "greek": {
+      "word": "λόγος",
+      "transliteration": "logos",
+      "pronunciation": "LOH-gos",
+      "ipa": "ˈlo.ɡos",
+      "part_of_speech": "noun, masculine, 2nd declension",
+      "meaning": "Reason",
+      "forms": "Sing: λόγος/λόγου/λόγῳ/λόγον/λόγε; Plur: λόγοι/λόγων/λόγοις/λόγους/λόγοι",
+      "etymology": "Root: *leg- 'to collect, gather, speak'. English descendants: Logic (reasoning according to strict principles), Dialogue (conversation between two or more), Epilogue (concluding section of literary work), Catalogue (complete list of items)",
+      "literary_context": "Heraclitus, Fragment 1",
+      "usage_example": "τοῦ δὲ λόγου τοῦδ᾽ ἐόντος ἀεὶ ἀξύνετοι γίγνονται ἄνθρωποι — Of this Word's eternal being humans prove to be ignorant",
+      "did_you_know": "The Stoics distinguished between λόγος ἐνδιάθετος (internal thought) and λόγος προφορικός (spoken word). They believed the cosmic Logos was like divine internal thought made manifest in the physical world's rational order.",
+      "display": "Ancient Greek"
+    },
+    "french": {
+      "word": "spleen",
+      "transliteration": "",
+      "pronunciation": "SPLAHN",
+      "ipa": "splɛ̃",
+      "part_of_speech": "noun, masculine",
+      "meaning": "Dark ennui; morbid melancholy",
+      "forms": "Singular: un spleen, le spleen. Plural: des spleens (rare; Baudelaire uses it as uncountable)",
+      "etymology": "From Greek: splḗn (σπλήν) — the organ itself. Medieval medicine believed the spleen produced black bile → melancholy. English adopted 'spleen' as emotional gloom (17th c.). Baudelaire re-imported it into French with darker connotations.",
+      "literary_context": "Charles Baudelaire, Les Fleurs du Mal, 1857 — 'Spleen LXXVIII'",
+      "usage_example": "Je suis un cimetière abhorré de la lune. — I am a graveyard abhorred by the moon.",
+      "did_you_know": "Les Fleurs du Mal was prosecuted for obscenity upon publication in 1857 — same year as Madame Bovary's trial. Baudelaire lost. Six poems were legally suppressed and could not be published in France until 1949 — 82 years later.",
+      "display": "French"
+    },
+    "german": {
+      "word": "Weltschmerz",
+      "transliteration": "",
+      "pronunciation": "VELT-shmertz",
+      "ipa": "/ˈvɛltˌʃmɛʁts/",
+      "part_of_speech": "noun, masculine",
+      "meaning": "Pain caused by the gap between the world as it is and as it should be — grief at existence itself.",
+      "forms": "Singular only — no standard plural. Nom: der Weltschmerz, Acc: den Weltschmerz, Dat: dem Weltschmerz, Gen: des Weltschmerzes",
+      "etymology": "Welt (world) ← Old High German 'weralt' ← wer (man) + alt (age) → cognate: English 'world'. Schmerz (pain, ache) ← Middle High German 'smerze' ← Proto-Germanic *smertaz → cognate: English 'smart' (as in stinging pain)",
+      "literary_context": "Heinrich Heine, 'Die romantische Schule' (Der romantische Schule), 1836",
+      "usage_example": "Aus meinem großen Schmerzen mach ich die kleinen Lieder. — From my great pain I make the small songs.",
+      "did_you_know": "Heine's 'Die romantische Schule' (1836) was written in FRENCH first — for a Parisian audience — then self-translated into German. The book was banned in German states under the Carlsbad Decrees. Heine spent 25 years in Parisian exile, writing German literature.",
+      "display": "German"
+    },
+    "oldenglish": {
+      "word": "woruld-candel",
+      "transliteration": "",
+      "pronunciation": "WOR-uld-KAN-del",
+      "ipa": "/ˈwor.uld.ˌkan.del/",
+      "part_of_speech": "noun, feminine, compound",
+      "meaning": "world-candle = the sun",
+      "forms": "Base noun candel (fem., weak declension): Sg: candel / candlan / candlan / candlan; Pl: candlan / candlana / candlum / candlan",
+      "etymology": "candel ← Latin candela ← candēre 'to shine'; woruld ← Proto-Germanic *weraldiz (*we-raldiz = 'age of man'). Old Norse cognate: veröld. The kenning itself has no Norse parallel — it's a West Germanic poetic coinage.",
+      "literary_context": "Beowulf, c. 700–1000, line 1965 of the Cotton Vitellius A.xv manuscript. The compound appears once, in a dawn passage marking Beowulf's departure from Heorot.",
+      "usage_example": "woruld-candel scān — the world-candle shone",
+      "did_you_know": "Beowulf survives in a SINGLE manuscript: Cotton Vitellius A.xv, copied c. 1000 CE by two scribes whose hands change at line 1939 — near woruld-candel. The manuscript was almost destroyed in the 1731 Ashburnham House fire. Its edges remain scorched and brittle",
+      "display": "Old English"
+    },
+    "latin": {
+      "word": "fātum",
+      "transliteration": "",
+      "pronunciation": "FAH-toom",
+      "ipa": "/ˈfaː.tum/",
+      "part_of_speech": "noun, neuter, 2nd declension",
+      "meaning": "fate; that which has been spoken",
+      "forms": "SING: fātum / fātī / fātō / fātum / fāte / fātō; PLUR: fāta / fātōrum / fātīs / fāta / fāta / fātīs",
+      "etymology": "fātum ← faor/fārī (to speak) ← PIE *bʰeh₂- (to speak). Same root: Greek φημί (phēmí). Romance descendants: IT: fato | ES: hado | FR: fée (fairy). English: fate, fatal, fatality, infant (in-fans = not speaking)",
+      "literary_context": "Virgil, Aeneid I.2",
+      "usage_example": "fāto profugus — an exile by fate",
+      "did_you_know": "The Aeneid was unfinished when Virgil died in 19 BCE. He reportedly asked his literary executors Varius Rufus and Plotius Tucca to burn it. Augustus intervened — the poem survived by imperial command.",
+      "display": "Latin"
+    }
+  }
+}
