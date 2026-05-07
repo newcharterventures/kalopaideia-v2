@@ -5,6 +5,7 @@ import crypto from "crypto";
 import { spawn } from "child_process";
 import { fileURLToPath } from "url";
 import { lookupWord } from "./pipeline/word-lookup.js";
+import { buildCommerce } from "./lib/commerce.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -12,6 +13,16 @@ const PORT = 3026;
 const BASE = "/paideia";
 
 const VALID_LANGS = ["latin", "greek", "french", "german", "oldenglish"];
+
+// Trust the nginx proxy so req.protocol/host return public-facing values
+app.set("trust proxy", 1);
+
+// IMPORTANT: the Stripe webhook (inside commerce) needs the raw body for
+// signature verification. The commerce router declares its own express.raw()
+// for that route, so we mount commerce BEFORE the body parsers below.
+const commerce = buildCommerce({ basePath: BASE });
+app.use(BASE, express.urlencoded({ extended: false }));
+app.use(BASE, commerce);
 
 app.use(BASE, express.static(path.join(__dirname, "public")));
 app.use(BASE, express.json({ limit: "100kb" }));
