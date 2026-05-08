@@ -57,6 +57,12 @@ async def main():
         print(str(out))
         return
     await speak(word, lang, out)
+    # Validate that generation succeeded
+    if not out.exists() or out.stat().st_size == 0:
+        print(f"generation failed: empty output", file=sys.stderr)
+        if out.exists():
+            out.unlink()
+        sys.exit(1)
     print(str(out))
 
 

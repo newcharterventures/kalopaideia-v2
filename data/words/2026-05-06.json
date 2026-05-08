@@ -1,0 +1,136 @@
+{
+  "date": "2026-05-06",
+  "generated_at": "2026-05-06T11:00:02.165Z",
+  "languages": {
+    "latin": {
+      "word": "facundia",
+      "transliteration": "",
+      "pronunciation": "fah-KOON-dee-ah",
+      "ipa": "/faˈkun.di.a/",
+      "part_of_speech": "noun, fem.",
+      "meaning": "eloquence, readiness of speech, fluency",
+      "forms": "facundia, facundiae (gen.), facundiae (dat.), facundiam (acc.), facundiā (abl.); plural: facundiae, facundiārum, etc.",
+      "etymology": "From facundus (eloquent, fluent), itself from *fā-cundus, related to fārī (to speak). The root *bhā- gives both fārī and fāma.",
+      "literary_context": "Tacitus employs facundia frequently in the Dialogus de Oratoribus, where speakers debate whether eloquence has declined since the Republic. He contrasts the facundia of Cicero's age with the constraints of imperial rhetoric.",
+      "usage_example": "Tanta vis facundiae inerat ut adversarios vinceret. — So great was the power of his eloquence that he overcame his opponents.",
+      "did_you_know": "Quintilian distinguishes facundia from eloquentia: facundia denotes natural fluency and copiousness of speech, while eloquentia implies artful, studied oratory. The facundus orator speaks easily; the eloquens orator speaks well.",
+      "tokens": {
+        "input_tokens": 646,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 363,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Latin"
+    },
+    "greek": {
+      "word": "ἁμαρτία",
+      "transliteration": "hamartía",
+      "pronunciation": "hah-mar-TEE-ah",
+      "ipa": "/ha.mar.tí.a/",
+      "part_of_speech": "noun, fem.",
+      "meaning": "error, fault, tragic flaw, missing the mark",
+      "forms": "Nominative singular ἁμαρτία; genitive ἁμαρτίας; accusative ἁμαρτίαν; nominative plural ἁμαρτίαι. First declension feminine noun.",
+      "etymology": "From the verb ἁμαρτάνω (hamartánō), 'to miss the mark, to fail, to err,' composed of the intensive prefix ἁ- and the root *mert- related to missing or failing. Originally an archery term for missing the target.",
+      "literary_context": "Aristotle uses ἁμαρτία in the Poetics (1453a) to describe the error or flaw that leads the tragic hero to catastrophe, making it central to his theory of tragedy and the downfall of figures like Oedipus.",
+      "usage_example": "δι' ἁμαρτίαν τινὰ εἰς τὴν δυστυχίαν ἐκπίπτει. — Through some error he falls into misfortune.",
+      "did_you_know": "The concept of ἁμαρτία transformed from a simple mistake or archery miss in Homer into Aristotle's technical term for tragic error, and later Christian theology adopted it to mean sin, fundamentally shifting its moral weight from intellectual failure to spiritual transgression.",
+      "tokens": {
+        "input_tokens": 698,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 435,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Ancient Greek"
+    },
+    "french": {
+      "word": "albâtre",
+      "transliteration": "",
+      "pronunciation": "al-BAH-truh",
+      "ipa": "/al.bɑtʁ/",
+      "part_of_speech": "noun, masc.",
+      "meaning": "alabaster; a translucent white or pale stone used for sculpture and ornament",
+      "forms": "singular: albâtre; plural: albâtres (rarely used in plural)",
+      "etymology": "From Latin 'alabaster,' itself borrowed from Greek 'ἀλάβαστρος' (alabastros), originally referring to vases made from this stone. The Greek word may derive from the Egyptian town Alabastron, known for this mineral.",
+      "literary_context": "Racine employs 'albâtre' in 'Phèdre' (1677) to describe Hippolyte's complexion, emphasizing his youthful pallor and beauty. Baudelaire uses it repeatedly in 'Les Fleurs du mal' (1857) to evoke feminine beauty and purity, particularly in descriptions of skin and shoulders.",
+      "usage_example": "Son front poli ressemble à l'albâtre le plus pur. — Her smooth brow resembles the purest alabaster.",
+      "did_you_know": "In classical French poetry, 'albâtre' became a conventional term for describing pale, luminous skin, particularly in the Parnassian and Symbolist movements. The word carries associations with both sculpture and death, linking aesthetic beauty to marble coldness.",
+      "tokens": {
+        "input_tokens": 622,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 382,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "French"
+    },
+    "german": {
+      "word": "Unbehaustheit",
+      "transliteration": "",
+      "pronunciation": "OON-beh-how-st-hite",
+      "ipa": "/ˈʊnbəhaʊsthait/",
+      "part_of_speech": "noun, fem.",
+      "meaning": "homelessness, not-being-at-home, fundamental lack of dwelling",
+      "forms": "die Unbehaustheit (no plural); gen. der Unbehaustheit; dat. der Unbehaustheit; acc. die Unbehaustheit",
+      "etymology": "From un- (negating prefix) + behaust (housed, past participle of behausen, to house) + -heit (abstract noun suffix). Coined by Heidegger from Haus (house, dwelling) to express existential homelessness.",
+      "literary_context": "Heidegger uses Unbehaustheit in his Letter on Humanism (1946) to describe modern humanity's condition of rootlessness and alienation from Being, contrasting it with authentic dwelling.",
+      "usage_example": "Die Unbehaustheit des modernen Menschen zeigt sich in seiner Flucht vor dem Denken. — The homelessness of modern man shows itself in his flight from thinking.",
+      "did_you_know": "Heidegger tied Unbehaustheit to Hölderlin's poetic vision of dwelling, arguing that only through poetic thinking could humans overcome their metaphysical homelessness in the technological age.",
+      "tokens": {
+        "input_tokens": 665,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 383,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "German"
+    },
+    "oldenglish": {
+      "word": "galdor",
+      "transliteration": "galdor",
+      "pronunciation": "GAHL-dor",
+      "ipa": "ˈɡɑl.dor",
+      "part_of_speech": "noun, neut.",
+      "meaning": "incantation, spell, song of enchantment",
+      "forms": "nom./acc. sg. galdor; gen. sg. galdres; dat. sg. galdre; nom./acc. pl. galdor",
+      "etymology": "From Proto-Germanic *galdraz (magical song, incantation), from *galaną (to sing, call out). Related to Old Norse galdr (spell, enchantment) and the verb galan (to sing). The root connects to singing as a magical act.",
+      "literary_context": "The word appears in the Exeter Book's metrical Charm 1 ('Æcerbot'), where galdor refers to the charms and incantations sung over the fields to ensure fertility. The term also appears in religious contexts as early Christians described pagan practices.",
+      "usage_example": "Hē song þæt galdor ofer þām lande. — He sang that incantation over the land.",
+      "did_you_know": "The Anglo-Saxons believed that galdor possessed real power when properly performed, typically requiring specific words, rhythmic patterns, and vocal delivery. The Church struggled to suppress these practices, sometimes attempting to Christianize them by substituting prayers for pagan formulas.",
+      "tokens": {
+        "input_tokens": 663,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 374,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Old English"
+    }
+  }
+}

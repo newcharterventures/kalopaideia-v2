@@ -1,13 +1,14 @@
 // Generate one day's word + thread for each of the 5 languages.
 // Writes data/words/YYYY-MM-DD.json
 import Anthropic from "@anthropic-ai/sdk";
+import { wrapAnthropic } from "/home/jae/.openclaw/usage/usage_log.js";
 import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
-const client = new Anthropic();
+const client = wrapAnthropic(new Anthropic(), { project: "paideia", script: "generate" });
 const MODEL = "claude-sonnet-4-5";
 
 const LANGUAGES = [

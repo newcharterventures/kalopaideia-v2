@@ -1,6 +1,7 @@
 // Generate daily cultural vignettes per language + fetch public-domain image from Wikimedia.
 // Writes data/culture/YYYY-MM-DD.json
 import Anthropic from "@anthropic-ai/sdk";
+import { wrapAnthropic } from "/home/jae/.openclaw/usage/usage_log.js";
 import fetch from "node-fetch";
 import fs from "fs/promises";
 import path from "path";
@@ -8,7 +9,7 @@ import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
-const client = new Anthropic();
+const client = wrapAnthropic(new Anthropic(), { project: "paideia", script: "culture" });
 const MODEL = "claude-sonnet-4-5";
 
 const CULTURE_PROMPTS = {

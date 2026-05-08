@@ -1,0 +1,136 @@
+{
+  "date": "2026-05-05",
+  "generated_at": "2026-05-05T11:00:01.437Z",
+  "languages": {
+    "latin": {
+      "word": "ōtium",
+      "transliteration": "",
+      "pronunciation": "OH-tee-oom",
+      "ipa": "/ˈoː.ti.um/",
+      "part_of_speech": "noun, neut.",
+      "meaning": "leisure, rest, freedom from public duty; peace, tranquility",
+      "forms": "nominative/accusative ōtium, genitive ōtiī or ōtī, dative ōtiō, ablative ōtiō (2nd declension neuter)",
+      "etymology": "From Proto-Italic *oti-om, of uncertain ultimate origin. Contrasted with negōtium (business, from nec + ōtium).",
+      "literary_context": "Cicero famously discusses the philosophical use of leisure in De Ōrātōre, while Catullus poem 51 adapts Sappho's fragment, declaring that ōtium has destroyed kings and prosperous cities alike.",
+      "usage_example": "Ōtium sine litterīs mors est et hominis vīvī sepultūra. — Leisure without literature is death and the burial of a living man.",
+      "did_you_know": "The Romans distinguished between ōtium (cultivated leisure for study and contemplation) and inertia (idle laziness). Seneca wrote extensively on ōtium as the proper state for philosophical reflection, defending it against critics who saw public service as the only worthy occupation.",
+      "tokens": {
+        "input_tokens": 641,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 368,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Latin"
+    },
+    "greek": {
+      "word": "κλέος",
+      "transliteration": "kleos",
+      "pronunciation": "KLEH-os",
+      "ipa": "/kléːos/",
+      "part_of_speech": "noun, neut.",
+      "meaning": "glory, fame, renown (especially as won in battle and preserved in song)",
+      "forms": "nominative/accusative singular κλέος; genitive κλέους; dative κλέει. Athematic noun, third declension.",
+      "etymology": "From Proto-Indo-European *ḱléwos (fame, glory), from root *ḱlew- (to hear). Related to Latin clueo (to be called), Old English hlūd (loud), and Sanskrit श्रवस् (śravas, fame). The word inherently connects hearing and renown.",
+      "literary_context": "Central to the Iliad, where Achilles must choose between a long life without κλέος or a short life with κλέος ἄφθιτον (imperishable glory). Homer uses the phrase repeatedly to express the hero's paramount value: immortal fame through epic poetry.",
+      "usage_example": "ὣς καὶ ἐμὸν κλέος ἔσται ἀγήραον ἤματα πάντα. — Thus my glory will be undying for all days.",
+      "did_you_know": "κλέος is etymologically tied to the act of hearing because ancient glory depended entirely on being heard in song by future generations. The hero's deeds meant nothing unless a poet proclaimed them, making bards the true guardians of immortality.",
+      "tokens": {
+        "input_tokens": 693,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 413,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Ancient Greek"
+    },
+    "french": {
+      "word": "vêpres",
+      "transliteration": "",
+      "pronunciation": "VEH-pruh",
+      "ipa": "/vɛpʁ/",
+      "part_of_speech": "noun, fem. pl.",
+      "meaning": "vespers; evening prayer service",
+      "forms": "Always plural in liturgical sense. Singular 'vêpre' is archaic.",
+      "etymology": "From Latin 'vespera' (evening), ultimately from the same Indo-European root as Greek 'hesperos' (evening star). The circumflex in French marks the lost 's' from Latin.",
+      "literary_context": "Verlaine uses 'vêpres' in 'Mon Rêve familier' to evoke the melancholy atmosphere of evening bells, while the term gains dark historical resonance from the Sicilian Vespers massacre of 1282, referenced in French historical literature.",
+      "usage_example": "Les cloches sonnent pour les vêpres dans le crépuscule d'automne. — The bells ring for vespers in the autumn twilight.",
+      "did_you_know": "The expression 'sonner les vêpres à quelqu'un' (to ring vespers for someone) was a medieval euphemism meaning to beat or thrash someone, derived from the vigorous ringing of church bells at the evening service.",
+      "tokens": {
+        "input_tokens": 617,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 344,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "French"
+    },
+    "german": {
+      "word": "Stimmung",
+      "transliteration": "",
+      "pronunciation": "SHTIM-oong",
+      "ipa": "/ˈʃtɪmʊŋ/",
+      "part_of_speech": "noun, fem.",
+      "meaning": "mood, atmosphere, attunement",
+      "forms": "die Stimmung; gen. der Stimmung; pl. die Stimmungen",
+      "etymology": "From Middle High German 'stimmunge' (tuning, agreement), derived from the verb 'stimmen' (to tune, to accord). Related to 'Stimme' (voice). The musical sense of tuning an instrument precedes the psychological sense of mood or disposition.",
+      "literary_context": "Heidegger employs 'Stimmung' as a fundamental existential concept in Being and Time (1927), designating the primordial way Dasein finds itself disclosed to the world—not as mere emotion but as ontological attunement. Goethe uses it throughout his works to describe the atmospheric quality of natural settings and inner states.",
+      "usage_example": "Die Stimmung des Novemberabends lag schwer über der verlassenen Heide. — The mood of the November evening lay heavy over the deserted heath.",
+      "did_you_know": "Heidegger distinguishes 'Stimmung' from mere feelings or emotions: it is the pre-reflective attunement through which we are always already situated in the world, making moods like anxiety or boredom not psychological states but modes of metaphysical disclosure.",
+      "tokens": {
+        "input_tokens": 660,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 393,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "German"
+    },
+    "oldenglish": {
+      "word": "æðeling",
+      "transliteration": "aetheling",
+      "pronunciation": "ATH-el-ing",
+      "ipa": "ˈæθelɪŋ",
+      "part_of_speech": "noun, masc.",
+      "meaning": "prince, noble heir, man of royal lineage",
+      "forms": "nom. sg. æðeling; gen. æðelinges; dat. æðelinge; acc. æðeling; nom. pl. æðelingas",
+      "etymology": "From Proto-Germanic *aþalingaz (noble descendant), derived from *aþalaz (noble, of good family) + suffix *-ingaz (denoting descent or belonging). Cognate with Old Norse aðall (nobility) and Gothic aþals (kind, lineage).",
+      "literary_context": "The word appears prominently in Beowulf when describing both the hero himself and other noble warriors, as in line 3 where Scyld Scefing is called \"þēodcyninga\" (people's king) and later when Beowulf is identified as an æðeling of the Geats. The term consistently marks figures of royal blood and heroic stature throughout Anglo-Saxon heroic poetry.",
+      "usage_example": "Wæs se æðeling geong, modig on meðle. — The prince was young, bold in council.",
+      "did_you_know": "The word æðeling survived into Middle English as \"atheling\" and was notably used as a sobriquet for Edgar Ætheling, the last Anglo-Saxon claimant to the English throne after the Norman Conquest of 1066, emphasizing his legitimate royal bloodline in opposition to William the Conqueror.",
+      "tokens": {
+        "input_tokens": 659,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 429,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Old English"
+    }
+  }
+}

@@ -366,5 +366,74 @@
         "skipped": true
       }
     }
+  },
+  {
+    "date": "2026-05-05",
+    "at": "2026-05-05T11:01:41.141Z",
+    "results": {
+      "latin": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"id\":\"2051618326040674670\",\n    \"text\":\"ōtium — leisure, rest, freedom from public duty; peace, tranquility\\nō · t · i · u · m\\nsay: OH-tee-oom\\n\\nCicero famously discusses the philosophical use of leisure in De Ōrātōre, while Catullus poem 51 adapts Sappho's fragment, declaring that ōtium has destroyed kings and p...\",\n    \"edit_history_tweet_ids\":[\n      \"2051618326040674670\"\n    ]\n  }\n}\n"
+      },
+      "greek": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"text\":\"κλέος — glory, fame, renown (especially as won in battle and preserved in song)\\nκ · λ · έ · ο · ς\\n(kleos)\\nsay: KLEH-os\\n\\nCentral to the Iliad, where Achilles must choose between a long life without κλέος or a short life with κλέος ἄφθιτον (imperishable glory).\",\n    \"edit_history_tweet_ids\":[\n      \"2051618326955077734\"\n    ],\n    \"id\":\"2051618326955077734\"\n  }\n}\n"
+      },
+      "french": {
+        "skipped": true
+      },
+      "german": {
+        "skipped": true
+      },
+      "oldenglish": {
+        "skipped": true
+      }
+    }
+  },
+  {
+    "date": "2026-05-06",
+    "at": "2026-05-06T11:01:36.818Z",
+    "results": {
+      "latin": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"edit_history_tweet_ids\":[\n      \"2051980695849812055\"\n    ],\n    \"id\":\"2051980695849812055\",\n    \"text\":\"facundia — eloquence, readiness of speech, fluency\\nf · a · c · u · n · d · i · a\\nsay: fah-KOON-dee-ah\\n\\nTacitus employs facundia frequently in the Dialogus de Oratoribus, where speakers debate whether eloquence has declined since the Republic.\"\n  }\n}\n"
+      },
+      "greek": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"id\":\"2051980696718053768\",\n    \"edit_history_tweet_ids\":[\n      \"2051980696718053768\"\n    ],\n    \"text\":\"ἁμαρτία — error, fault, tragic flaw, missing the mark\\nἁ · μ · α · ρ · τ · ί · α\\n(hamartía)\\nsay: hah-mar-TEE-ah\\n\\nAristotle uses ἁμαρτία in the Poetics (1453a) to describe the error or flaw that leads the tragic hero to catastrophe, making it central to his theory of traged...\"\n  }\n}\n"
+      },
+      "french": {
+        "skipped": true
+      },
+      "german": {
+        "skipped": true
+      },
+      "oldenglish": {
+        "skipped": true
+      }
+    }
+  },
+  {
+    "date": "2026-05-07",
+    "at": "2026-05-07T11:01:36.056Z",
+    "results": {
+      "latin": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"edit_history_tweet_ids\":[\n      \"2052343080498389355\"\n    ],\n    \"id\":\"2052343080498389355\",\n    \"text\":\"fūrtim — stealthily, by stealth, secretly\\nf · ū · r · t · i · m\\nsay: FOOR-tim\\n\\nCatullus uses fūrtim in Poem 68 to describe secret stolen moments of love: fūrtīvā vēnit flāmine mīlītiae.\"\n  }\n}\n"
+      },
+      "greek": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"edit_history_tweet_ids\":[\n      \"2052343081362420111\"\n    ],\n    \"id\":\"2052343081362420111\",\n    \"text\":\"ἀναίδεια — shamelessness, impudence, effrontery\\nἀ · ν · α · ί · δ · ε · ι · α\\n(anaideia)\\nsay: ah-nah-ee-DAY-ah\\n\\nPlato uses ἀναίδεια extensively in the Republic to describe the shameless audacity of the democratic man who acknowledges no hierarchy of values, treating all d...\"\n  }\n}\n"
+      },
+      "french": {
+        "skipped": true
+      },
+      "german": {
+        "skipped": true
+      },
+      "oldenglish": {
+        "skipped": true
+      }
+    }
   }
 ]

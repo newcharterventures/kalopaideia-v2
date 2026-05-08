@@ -33,6 +33,12 @@ async def main():
     kw = speak_kwargs(lang, context="library")
     c = edge_tts.Communicate(text, **kw)
     await asyncio.wait_for(c.save(str(out_path)), timeout=20)
+    # Validate that generation succeeded
+    if not out_path.exists() or out_path.stat().st_size == 0:
+        print(f"generation failed: empty output", file=sys.stderr)
+        if out_path.exists():
+            out_path.unlink()
+        sys.exit(1)
     print(str(out_path))
 
 
