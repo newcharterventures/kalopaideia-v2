@@ -243,9 +243,23 @@ main {
   margin-bottom: 4px;
 }
 .detail-body.in-use-translation {
-  color: var(--ink-muted);
+  /* Match the original-language line's typography (Cormorant Garamond at
+   * 16px) so the translation reads as a quiet companion to the foreign
+   * sentence — same family, just upright instead of italic. Per Jae
+   * 2026-05-09: previously the translation inherited the body default
+   * font, which broke the visual pairing. */
+  font-family: var(--font-display);
+  font-size: 16px;
   font-style: normal;
+  color: var(--ink-muted);
   margin-top: 0;
+}
+/* Greek's italic line drops to 14px because polytonic fallback fonts run
+ * large; the upright translation should follow the same x-height rule. */
+.lang-greek .detail-body.in-use-translation,
+.word-card[data-lang="greek"] .detail-body.in-use-translation {
+  font-size: 14px;
+  font-family: "Cormorant Garamond", "GFS Didot", "Athena Unicode", Georgia, serif;
 }
 
 /* Culture vignette - redesigned card */
