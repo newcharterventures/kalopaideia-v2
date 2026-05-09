@@ -237,6 +237,16 @@ main {
   margin-top: 4px;
   font-style: normal;
 }
+/* New In Use layout (2026-05-09): original line carries the audio button;
+   the translation is its own paragraph beneath, muted, non-italic. */
+.detail-body.in-use-original {
+  margin-bottom: 4px;
+}
+.detail-body.in-use-translation {
+  color: var(--ink-muted);
+  font-style: normal;
+  margin-top: 0;
+}
 
 /* Culture vignette - redesigned card */
 .culture-card {

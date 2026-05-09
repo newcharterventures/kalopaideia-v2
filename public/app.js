@@ -52,16 +52,27 @@ function renderWord(langKey, entry, date) {
   const transliteration = entry.transliteration
     ? `<div class="transliteration">${esc(entry.transliteration)}</div>` : "";
 
-  // "In Use" section: original sentence + Listen button after it + translation
+  // "In Use" section: original sentence + Listen button after it, then
+  // translation on its OWN line below (no audio for the English).
+  // Per Jae 2026-05-09: the audio belongs only to the foreign-language
+  // sentence; the translation is a silent subtitle. Original/translation
+  // separator may be em-dash (—), en-dash (–), or ASCII hyphen with
+  // spaces ( - ); accept all three so prompt variants render correctly.
   let usage = "";
   if (entry.usage_example) {
-    const original = entry.usage_example.split("—")[0].trim();
-    const translation = entry.usage_example.includes("—")
-      ? entry.usage_example.split("—").slice(1).join("—").trim() : "";
+    const ue = entry.usage_example;
+    let original = ue, translation = "";
+    const splitMatch = ue.match(/\s+[—–]\s+|\s+-\s+/);
+    if (splitMatch) {
+      const idx = ue.indexOf(splitMatch[0]);
+      original = ue.slice(0, idx).trim();
+      translation = ue.slice(idx + splitMatch[0].length).trim();
+    }
     const sentenceAudio = `${BASE}/api/word-audio/${langKey}/${encodeURIComponent(original)}.mp3`;
     usage = `<div class="detail-section">
          <div class="detail-label">In Use</div>
-         <p class="detail-body italic">${esc(original)} <button class="audio-btn inline-audio-btn" data-audio="${sentenceAudio}" aria-label="Listen to sentence">▶</button>${translation ? `<span class="translation">${esc(translation)}</span>` : ""}</p>
+         <p class="detail-body italic in-use-original">${esc(original)} <button class="audio-btn inline-audio-btn" data-audio="${sentenceAudio}" aria-label="Listen to sentence">▶</button></p>
+         ${translation ? `<p class="detail-body in-use-translation">${esc(translation)}</p>` : ""}
        </div>`;
   }
 

@@ -54,15 +54,20 @@ VOICES = {
         "rate": "-10%",
         "pitch": "+5Hz",
     },
-    # Middle English (Chaucer, Pearl-poet) — same en-GB Sonia base as Old
-    # English but with a slightly less lifted pitch and gentler rate. Modern
-    # English readers will recognise much of the vocabulary; we want clarity
-    # over archaism. Phonetic normalization handled in middleenglish branch
-    # of preprocess_for_tts (yogh, thorn, eth, ash all converted).
+    # Middle English (Chaucer, Pearl-poet) — en-GB-RyanNeural (male, deeper,
+    # slightly Northern English flavor) per Jae 2026-05-09. Sonia read
+    # Chaucer with a modern lilt; Ryan gives a sturdier, more guttural
+    # consonantal attack closer to what Jae described as the historical
+    # voice. Combined with the Middle English phonetic respelling layer
+    # in middle_english_phonetics.py (gh, silent k restored, long vowels
+    # given continental values, final -e sounded as schwa), the result is
+    # a much closer approximation of London ME c. 1380. Still an
+    # approximation — Edge TTS has no Middle English voice and English
+    # voices cannot produce true /x/, true /ʍ/, or trilled /r/.
     "middleenglish": {
-        "voice": "en-GB-SoniaNeural",
-        "rate": "-12%",
-        "pitch": "+3Hz",
+        "voice": "en-GB-RyanNeural",
+        "rate": "-15%",
+        "pitch": "-2Hz",
     },
     # Italian — Isabella for Dante/Petrarch/Boccaccio. Same voice as Latin
     # so the Tuscan inheritance from Latin is acoustically honest, but
@@ -132,13 +137,34 @@ def normalize_old_english(text: str) -> str:
 
 def normalize_middle_english(text: str) -> str:
     """Normalize Middle English yogh/thorn/eth/ash to ASCII for Edge TTS so
-    en-GB Sonia pronounces words rather than spelling out letter names.
-    Per Jae 2026-05-09: Chaucer's Canterbury Tales etc. read with modern
-    English-leaning approximation; perfect ME reconstruction would need a
-    custom voice.
+    en-GB Ryan pronounces words rather than spelling letter names. Then
+    apply phonetic respelling so the modern voice approximates pre-Great-
+    Vowel-Shift London ME (c. 1380) instead of modern English. Per Jae
+    2026-05-09. Edge TTS has no Middle English voice; this is the closest
+    practical approximation — not a perfect reconstruction.
     """
+    # Step 1: yogh/thorn/eth/ash to ASCII so the voice doesn't spell letter names.
     for k, v in MIDDLE_ENGLISH_MAP.items():
         text = text.replace(k, v)
+    # Step 2: phonetic respelling for ME pronunciation. Imported lazily so
+    # this module loads even if the phonetics file is absent.
+    try:
+        # Hyphen in module file name forces importlib path.
+        import importlib.util, os
+        _here = os.path.dirname(os.path.abspath(__file__))
+        _spec = importlib.util.spec_from_file_location(
+            "middle_english_phonetics",
+            os.path.join(_here, "middle-english-phonetics.py"),
+        )
+        _mod = importlib.util.module_from_spec(_spec)
+        _spec.loader.exec_module(_mod)
+        text = _mod.respell_middle_english(text)
+    except Exception as e:
+        # If respelling fails for any reason, fall back to the
+        # yogh/thorn-normalized form. Audio quality degrades to v1 but
+        # the page still works.
+        import sys
+        print(f"[middleenglish] phonetic respelling skipped: {e}", file=sys.stderr)
     return text
 
 

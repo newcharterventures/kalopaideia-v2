@@ -43,7 +43,7 @@ You must output a JSON object with these exact keys:
 - "forms": inflection/conjugation info for this language (short, readable).
 - "etymology": root and origin, tracing to earlier forms when relevant.
 - "literary_context": one or two sentences naming a specific literary appearance of this word, with the author and work (and canto/line/page when known).
-- "usage_example": a short phrase or sentence in the language showing the word in use, plus its English translation - format: "Original. - English translation."
+- "usage_example": a short phrase or sentence in the language showing the word in use, plus its English translation. Format: "Original sentence. \u2014 English translation." (use the em-dash U+2014 between the original and the translation, with one space on each side).
 - "did_you_know": one interesting historical, etymological, or literary detail (1-2 sentences).
 
 HARD RULES:
