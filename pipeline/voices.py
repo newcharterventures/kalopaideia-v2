@@ -54,6 +54,25 @@ VOICES = {
         "rate": "-10%",
         "pitch": "+5Hz",
     },
+    # Middle English (Chaucer, Pearl-poet) — same en-GB Sonia base as Old
+    # English but with a slightly less lifted pitch and gentler rate. Modern
+    # English readers will recognise much of the vocabulary; we want clarity
+    # over archaism. Phonetic normalization handled in middleenglish branch
+    # of preprocess_for_tts (yogh, thorn, eth, ash all converted).
+    "middleenglish": {
+        "voice": "en-GB-SoniaNeural",
+        "rate": "-12%",
+        "pitch": "+3Hz",
+    },
+    # Italian — Isabella for Dante/Petrarch/Boccaccio. Same voice as Latin
+    # so the Tuscan inheritance from Latin is acoustically honest, but
+    # without the macron-stripping or the deepened gravitas. Slight slow
+    # for the hendecasyllabic line.
+    "italian": {
+        "voice": "it-IT-IsabellaNeural",
+        "rate": "-10%",
+        "pitch": "+0Hz",
+    },
 }
 
 
@@ -79,6 +98,21 @@ OLD_ENGLISH_MAP = {
     'Þ': 'Th',
 }
 
+# Middle English normalization. Chaucer-era texts use yogh (ȝ), thorn (þ),
+# eth (ð) and the long-s. Edge en-GB Sonia spells these out as letter names.
+# Map to phonetic equivalents that the voice handles as ordinary words.
+MIDDLE_ENGLISH_MAP = {
+    'ȝ': 'gh',  # yogh — typically /ɣ/, /j/, or /x/; "gh" reads as a soft 'gh'
+    'Ȝ': 'Gh',
+    'þ': 'th',  # thorn
+    'Þ': 'Th',
+    'ð': 'th',  # eth
+    'Ð': 'Th',
+    'æ': 'a',   # ash (rare in ME but appears in Pearl, Sir Gawain)
+    'Æ': 'A',
+    'ſ': 's',   # long-s (in older editions only)
+}
+
 
 def strip_latin_macrons(text: str) -> str:
     """Strip macrons/breves from Latin text so Edge TTS reads it as Italian-flavored Latin."""
@@ -92,6 +126,18 @@ def normalize_old_english(text: str) -> str:
     Converts æ/ǣ → ae, ð/þ → th so English voice pronounces words instead of spelling them.
     """
     for k, v in OLD_ENGLISH_MAP.items():
+        text = text.replace(k, v)
+    return text
+
+
+def normalize_middle_english(text: str) -> str:
+    """Normalize Middle English yogh/thorn/eth/ash to ASCII for Edge TTS so
+    en-GB Sonia pronounces words rather than spelling out letter names.
+    Per Jae 2026-05-09: Chaucer's Canterbury Tales etc. read with modern
+    English-leaning approximation; perfect ME reconstruction would need a
+    custom voice.
+    """
+    for k, v in MIDDLE_ENGLISH_MAP.items():
         text = text.replace(k, v)
     return text
 
@@ -136,6 +182,8 @@ def preprocess_for_tts(text: str, lang_key: str) -> str:
         return strip_greek_polytonic(text)
     if lang_key == "oldenglish":
         return normalize_old_english(text)
+    if lang_key == "middleenglish":
+        return normalize_middle_english(text)
     return text
 
 

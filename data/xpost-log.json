@@ -435,5 +435,51 @@
         "skipped": true
       }
     }
+  },
+  {
+    "date": "2026-05-08",
+    "at": "2026-05-08T11:01:41.518Z",
+    "results": {
+      "latin": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"edit_history_tweet_ids\":[\n      \"2052705491311046923\"\n    ],\n    \"text\":\"obreptīcius — obtained by stealth or deception; surreptitious\\no · b · r · e · p · t · ī · c · i · u · s\\nsay: oh-brep-TIH-kee-us\\n\\nCicero employs this term in his rhetorical works to describe arguments or claims obtained through fraudulent concealment, particularly in legal...\",\n    \"id\":\"2052705491311046923\"\n  }\n}\n"
+      },
+      "greek": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"edit_history_tweet_ids\":[\n      \"2052705492191920171\"\n    ],\n    \"id\":\"2052705492191920171\",\n    \"text\":\"ἀναδιπλόω — to redouble, repeat; to fold back upon itself\\nἀ · ν · α · δ · ι · π · λ · ό · ω\\n(anadipló̱ō)\\nsay: ah-nah-dee-PLO-oh\\n\\nAristotle uses this term in his Rhetoric (3.19.6) to describe a rhetorical figure involving the repetition of the same word or phrase for empha...\"\n  }\n}\n"
+      },
+      "french": {
+        "skipped": true
+      },
+      "german": {
+        "skipped": true
+      },
+      "oldenglish": {
+        "skipped": true
+      }
+    }
+  },
+  {
+    "date": "2026-05-09",
+    "at": "2026-05-09T11:01:43.808Z",
+    "results": {
+      "latin": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"id\":\"2053067888769052834\",\n    \"text\":\"fastīgium — summit, peak, gable; highest point, pinnacle of honor or power\\nf · a · s · t · ī · g · i · u · m\\nsay: fah-STEE-gee-oom\\n\\nCicero uses fastīgium frequently in his philosophical works and speeches to denote the apex of dignity or achievement.\",\n    \"edit_history_tweet_ids\":[\n      \"2053067888769052834\"\n    ]\n  }\n}\n"
+      },
+      "greek": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"text\":\"ἀναγκαῖον — necessary, inevitable, compulsory\\nἀ · ν · α · γ · κ · α · ῖ · ο · ν\\n(anankaion)\\nsay: ah-nahn-KAI-on\\n\\nAristotle uses τὸ ἀναγκαῖον extensively in the Nicomachean Ethics and Physics to distinguish what is necessary by nature from what is contingent.\",\n    \"id\":\"2053067889628877042\",\n    \"edit_history_tweet_ids\":[\n      \"2053067889628877042\"\n    ]\n  }\n}\n"
+      },
+      "french": {
+        "skipped": true
+      },
+      "german": {
+        "skipped": true
+      },
+      "oldenglish": {
+        "skipped": true
+      }
+    }
   }
 ]

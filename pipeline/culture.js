@@ -18,6 +18,8 @@ const CULTURE_PROMPTS = {
   french: "French literary and intellectual culture (high literature, Enlightenment salons, poetry, theater, philosophical movements — pre-1960)",
   german: "German literary and philosophical culture (Romanticism, idealist philosophy, Weimar, Sturm und Drang — pre-1960, NOT Nazi-era subject matter)",
   oldenglish: "Anglo-Saxon / Early Medieval English culture (5th-11th century): monasteries, scriptoria, illuminated manuscripts, heroic poetry, halls, law codes, Alfredian court",
+  middleenglish: "High and Late Medieval English culture (c. 1150–1500): Canterbury pilgrims, courtly love, alliterative revival, mystery plays, Lollardy and Wyclif's Bible, the Black Death's literary aftermath, manuscript illumination, the Pearl-poet's Cheshire, Chaucer's London, Malory's Arthurian compilations, anchorites, guild halls, Plantagenet court culture",
+  italian: "Italian literary and artistic culture pre-1900: Florentine Trecento (Dante, Petrarch, Boccaccio), Sicilian School, Dolce Stil Novo, the Tuscan vernacular, Renaissance courts (Medici Florence, Este Ferrara, Gonzaga Mantua), Venetian printing (Aldus Manutius), Counter-Reformation Rome, the Risorgimento; not modern political/fascist subject matter",
 };
 
 function systemPrompt(langKey) {

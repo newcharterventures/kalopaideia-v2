@@ -1,0 +1,268 @@
+{
+  "id": "canterbury-prologue",
+  "language": "middleenglish",
+  "title": "The Canterbury Tales: General Prologue (lines 1–42)",
+  "author": "Geoffrey Chaucer",
+  "date": "c. 1387–1400",
+  "meter": "Iambic pentameter rhyming couplets (heroic couplets)",
+  "translator": "Public-domain modernization (after Skeat)",
+  "translator_date": "1894",
+  "license": "Public domain",
+  "source_notes": "Middle English text follows the Ellesmere manuscript as edited by W. W. Skeat (Oxford, 1894). Modern English crib is a line-for-line gloss in the spirit of Skeat's notes; not a poetic translation.",
+  "reading_notes": "The opening of the Canterbury Tales — the most famous passage in Middle English literature. April rains have ended winter; the earth wakes; pilgrims feel the urge to set out for Canterbury. Lines 1–18 are the spring opening; lines 19–42 introduce the narrator at the Tabard Inn in Southwark and the company of pilgrims. To scan the verse correctly, sound the final unstressed -e as a schwa where it falls before a consonant.",
+  "status": "open",
+  "lines": [
+    {
+      "n": 1,
+      "original": "Whan that Aprille with his shoures soote",
+      "english": "When April with his sweet showers",
+      "gloss": "*Whan that* (when; *that* is a relic of older subordinator usage) + *Aprille* (April; final -e is sounded) + *with his* (with its — masculine 'his' for inanimate objects was still standard) + *shoures* (showers; two syllables, *shour-es*) + *soote* (sweet; final -e sounded). Note the personification: April is masculine, his showers are 'sweet'."
+    },
+    {
+      "n": 2,
+      "original": "The droghte of March hath perced to the roote,",
+      "english": "Has pierced the drought of March to the root,",
+      "gloss": "*The droghte of March* (the drought of March) + *hath perced* (has pierced; perfect with *hath*, the 3rd-sg form of *have*) + *to the roote* (to the root; final -e sounded). 'Droghte' is two syllables: *drogh-te*."
+    },
+    {
+      "n": 3,
+      "original": "And bathed every veyne in swich licour",
+      "english": "And bathed every vein in such liquor",
+      "gloss": "*bathed* (bathed; final -ed sounded as a syllable: *bath-ed*) + *every veyne* (every vein) + *in swich licour* (in such liquor; *swich* = such; *licour* = moisture, sap). The image: April rain rises through the plant's veins."
+    },
+    {
+      "n": 4,
+      "original": "Of which vertu engendred is the flour;",
+      "english": "By whose power the flower is engendered;",
+      "gloss": "*Of which vertu* (by which power, *vertu* = generative force) + *engendred is* (is engendered; verb-second word order) + *the flour* (the flower; *flour* and *flower* not yet distinguished in spelling). The whole tercet is one of the most famous spring openings in literature."
+    },
+    {
+      "n": 5,
+      "original": "Whan Zephirus eek with his sweete breeth",
+      "english": "When Zephyrus also with his sweet breath",
+      "gloss": "*Whan* (when) + *Zephirus* (Zephyrus, the west wind) + *eek* (also, eke) + *with his sweete breeth* (with his sweet breath; *sweete* = two syllables). Zephyrus is the personified west wind, son of Eos and Astraeus in Greek mythology."
+    },
+    {
+      "n": 6,
+      "original": "Inspired hath in every holt and heeth",
+      "english": "Has breathed life into every wood and heath",
+      "gloss": "*Inspired hath* (has breathed life into; *inspirare* = to breathe upon) + *in every holt* (in every wood, *holt* = wooded grove) + *and heeth* (and heath, *heeth* with sounded final consonant). 'Inspired' carries its Latin sense — to blow into."
+    },
+    {
+      "n": 7,
+      "original": "The tendre croppes, and the yonge sonne",
+      "english": "The tender shoots, and the young sun",
+      "gloss": "*The tendre croppes* (the tender shoots; *croppes* = sprouts, two syllables; here *croppes* not *crops*) + *and the yonge sonne* (and the young sun; *yonge* with sounded -e). The 'young sun' is the sun in early Aries, the start of the astrological year."
+    },
+    {
+      "n": 8,
+      "original": "Hath in the Ram his halve cours yronne,",
+      "english": "Has in the Ram his half-course run,",
+      "gloss": "*Hath in the Ram* (has in the Ram; the constellation Aries) + *his halve cours* (his half-course; *halve* = adjective with sounded -e) + *yronne* (run; past participle with the *y-* prefix descended from Old English *ge-*). The sun has run half its course through Aries — i.e., it is mid-April."
+    },
+    {
+      "n": 9,
+      "original": "And smale foweles maken melodye,",
+      "english": "And small birds make melody,",
+      "gloss": "*And smale foweles* (and small birds; *smale* with sounded -e for the plural-adjective form; *foweles* = three syllables, *fow-el-es*) + *maken melodye* (make melody; *maken* with -en plural and *melodye* with sounded final -e). The line scans only when -e is sounded throughout."
+    },
+    {
+      "n": 10,
+      "original": "That slepen al the nyght with open ye,",
+      "english": "That sleep all the night with open eye,",
+      "gloss": "*That slepen* (that sleep; -en plural) + *al the nyght* (all the night; *nyght* one syllable) + *with open ye* (with open eye; *ye* singular eye, descended from Old English *ēage*). A medieval commonplace: birds in spring sleep with open eyes for love."
+    },
+    {
+      "n": 11,
+      "original": "(So priketh hem Nature in hir corages),",
+      "english": "(So Nature pricks them in their hearts),",
+      "gloss": "*So priketh hem* (so pricks them; *priketh* = 3rd-sg ending -eth; *hem* = them, the older form before 'them' from Old Norse) + *Nature* (Nature, personified) + *in hir corages* (in their hearts/spirits; *hir* = their; *corages* = passions, three syllables). Nature spurs the birds to song and love."
+    },
+    {
+      "n": 12,
+      "original": "Thanne longen folk to goon on pilgrimages,",
+      "english": "Then folk long to go on pilgrimages,",
+      "gloss": "*Thanne* (then; final -e sounded) + *longen folk* (folk long; -en plural verb) + *to goon on pilgrimages* (to go on pilgrimages; *goon* infinitive). The 'thanne' answers the long 'whan' clause that has run since line 1: when all this happens, *then* people set out."
+    },
+    {
+      "n": 13,
+      "original": "And palmeres for to seken straunge strondes,",
+      "english": "And palmers to seek strange shores,",
+      "gloss": "*And palmeres* (and palmers; pilgrims who carried palm fronds from the Holy Land) + *for to seken* (to seek; *for to* + infinitive is standard ME) + *straunge strondes* (strange shores; *strondes* = strands, coasts)."
+    },
+    {
+      "n": 14,
+      "original": "To ferne halwes, kowthe in sondry londes;",
+      "english": "To distant shrines known in various lands;",
+      "gloss": "*To ferne halwes* (to far-off saints/shrines; *ferne* = distant, *halwes* = halls of saints, holy ones) + *kowthe* (known; past participle of *connen*, the ancestor of *uncouth* meaning 'unknown') + *in sondry londes* (in various lands)."
+    },
+    {
+      "n": 15,
+      "original": "And specially, from every shires ende",
+      "english": "And especially, from every shire's end",
+      "gloss": "*And specially* (and especially; *specially* = three syllables, *spe-ci-al-ly*) + *from every shires ende* (from every shire's end; the genitive -es is sounded). The narrowing focus: from foreign shrines back to England."
+    },
+    {
+      "n": 16,
+      "original": "Of Engelond, to Caunterbury they wende,",
+      "english": "Of England, to Canterbury they wend,",
+      "gloss": "*Of Engelond* (of England; three syllables: *En-ge-lond*) + *to Caunterbury* (to Canterbury; four syllables: *Caun-ter-bu-ry*) + *they wende* (they wend; *wenden* = to go; survives in 'wend one's way')."
+    },
+    {
+      "n": 17,
+      "original": "The hooly blisful martir for to seke,",
+      "english": "The holy blissful martyr to seek,",
+      "gloss": "*The hooly blisful martir* (the holy blissful martyr — Thomas Becket, murdered in Canterbury Cathedral in 1170) + *for to seke* (to seek; the *for to* construction). Thomas Becket's shrine was the most popular pilgrimage destination in medieval England."
+    },
+    {
+      "n": 18,
+      "original": "That hem hath holpen, whan that they were seke.",
+      "english": "Who has helped them when they were sick.",
+      "gloss": "*That hem hath holpen* (who has helped them; *hem* = them; *holpen* = past participle of *helpen*, the strong verb) + *whan that they were seke* (when they were sick; *seke* = sick, the older form). The sentence finally arrives at its main verb after eighteen lines of subordinate clauses — one of the great syntactic feats in English literature."
+    },
+    {
+      "n": 19,
+      "original": "Bifil that in that seson on a day,",
+      "english": "It happened that in that season on a day,",
+      "gloss": "*Bifil* (it befell; *befallen*, past) + *that in that seson* (that in that season) + *on a day* (on a day). After the sweeping spring opening, the poet brings us to a specific moment."
+    },
+    {
+      "n": 20,
+      "original": "In Southwerk at the Tabard as I lay,",
+      "english": "In Southwark at the Tabard as I lay,",
+      "gloss": "*In Southwerk* (in Southwark, the borough south of London Bridge — outside the city's jurisdiction, full of inns and theatres) + *at the Tabard* (at the Tabard Inn — a real establishment, run by Harry Bailly, mentioned in fourteenth-century records) + *as I lay* (as I lay/lodged)."
+    },
+    {
+      "n": 21,
+      "original": "Redy to wenden on my pilgrymage",
+      "english": "Ready to go on my pilgrimage",
+      "gloss": "*Redy* (ready; final -y is the adjectival ending) + *to wenden* (to go; -en infinitive) + *on my pilgrymage* (on my pilgrimage; four syllables)."
+    },
+    {
+      "n": 22,
+      "original": "To Caunterbury with ful devout corage,",
+      "english": "To Canterbury with full devout heart,",
+      "gloss": "*To Caunterbury* (to Canterbury) + *with ful devout corage* (with very devout spirit/heart; *ful* = very, intensifier; *corage* = heart, courage, spirit). 'Corage' here is closer to 'heart' than to modern 'courage'."
+    },
+    {
+      "n": 23,
+      "original": "At nyght was come into that hostelrye",
+      "english": "At night had come into that hostelry",
+      "gloss": "*At nyght* (at night) + *was come* (had come; *be*-perfect with verbs of motion, as in modern German *ist gekommen*) + *into that hostelrye* (into that hostelry; *hostelrye* = inn, four syllables)."
+    },
+    {
+      "n": 24,
+      "original": "Wel nyne and twenty in a compaignye,",
+      "english": "Fully twenty-nine in a company,",
+      "gloss": "*Wel* (fully, well) + *nyne and twenty* (twenty-nine; the inverted order from older usage; cf. German *neunundzwanzig*) + *in a compaignye* (in a company; four syllables, *com-pai-gny-e*)."
+    },
+    {
+      "n": 25,
+      "original": "Of sondry folk, by aventure yfalle",
+      "english": "Of various folk, by chance fallen",
+      "gloss": "*Of sondry folk* (of various folk) + *by aventure* (by chance, by adventure) + *yfalle* (fallen together; the *y-* past participle prefix). 'By aventure' is the medieval romance phrase for fortune's working."
+    },
+    {
+      "n": 26,
+      "original": "In felaweshipe, and pilgrimes were they alle,",
+      "english": "Into fellowship, and they were all pilgrims,",
+      "gloss": "*In felaweshipe* (into fellowship) + *and pilgrimes were they alle* (and they were all pilgrims; verb-second order). The chance gathering becomes a 'felaweshipe' — a fellowship, a deliberate term."
+    },
+    {
+      "n": 27,
+      "original": "That toward Caunterbury wolden ryde.",
+      "english": "Who would ride toward Canterbury.",
+      "gloss": "*That toward Caunterbury* (who toward Canterbury) + *wolden ryde* (would ride; -en plural of *wolde*, modal). The relative clause completes the sentence begun in line 19."
+    },
+    {
+      "n": 28,
+      "original": "The chambres and the stables weren wyde,",
+      "english": "The bedrooms and the stables were spacious,",
+      "gloss": "*The chambres and the stables* (the chambers and the stables) + *weren wyde* (were wide/spacious; *weren* = plural past of *be*; *wyde* with sounded -e). Inns of the period had to accommodate horses as well as guests."
+    },
+    {
+      "n": 29,
+      "original": "And wel we weren esed atte beste.",
+      "english": "And we were well attended in the best fashion.",
+      "gloss": "*And wel we weren esed* (and well we were eased/served) + *atte beste* (at the best; *atte* = *at the*, contraction). 'Esed' = made comfortable, accommodated."
+    },
+    {
+      "n": 30,
+      "original": "And shortly, whan the sonne was to reste,",
+      "english": "And in short, when the sun had gone to rest,",
+      "gloss": "*And shortly* (and briefly) + *whan the sonne was to reste* (when the sun was at rest; idiom for sunset; *be* + infinitive of motion). The narrator collapses the day to its end."
+    },
+    {
+      "n": 31,
+      "original": "So hadde I spoken with hem everichon,",
+      "english": "I had so spoken with each of them,",
+      "gloss": "*So hadde I spoken* (so I had spoken; verb-subject inversion) + *with hem everichon* (with each one of them; *hem* = them; *everichon* = every one)."
+    },
+    {
+      "n": 32,
+      "original": "That I was of hir felaweshipe anon,",
+      "english": "That I was at once of their fellowship,",
+      "gloss": "*That I was* (that I was) + *of hir felaweshipe* (of their fellowship; *hir* = their) + *anon* (at once, immediately). The narrator joins the company in a single conversational evening."
+    },
+    {
+      "n": 33,
+      "original": "And made forward erly for to ryse,",
+      "english": "And made an agreement to rise early,",
+      "gloss": "*And made forward* (and made a promise/agreement; *forward* = covenant) + *erly for to ryse* (to rise early; *for to* + infinitive)."
+    },
+    {
+      "n": 34,
+      "original": "To take oure wey, ther as I yow devyse.",
+      "english": "To take our way, where I describe to you.",
+      "gloss": "*To take oure wey* (to take our way) + *ther as I yow devyse* (where I describe to you; *yow* = you, plural object). The narrator addresses his readers directly."
+    },
+    {
+      "n": 35,
+      "original": "But nathelees, whil I have tyme and space,",
+      "english": "But nevertheless, while I have time and space,",
+      "gloss": "*But nathelees* (but nevertheless; *na-the-lees* three syllables) + *whil I have tyme and space* (while I have time and space). The narrator pauses to introduce the pilgrims one by one — the great parade that follows."
+    },
+    {
+      "n": 36,
+      "original": "Er that I ferther in this tale pace,",
+      "english": "Before I proceed further in this tale,",
+      "gloss": "*Er that I ferther* (before I further; *Er* = ere, before) + *in this tale pace* (proceed in this tale; *pacen* = to walk, proceed)."
+    },
+    {
+      "n": 37,
+      "original": "Me thynketh it acordaunt to resoun",
+      "english": "It seems to me agreeable to reason",
+      "gloss": "*Me thynketh* (it seems to me; impersonal construction with *me* in the dative — survives in 'methinks') + *it acordaunt to resoun* (it agreeable to reason; *acordaunt* = three syllables)."
+    },
+    {
+      "n": 38,
+      "original": "To telle yow al the condicioun",
+      "english": "To tell you all the condition",
+      "gloss": "*To telle yow* (to tell you) + *al the condicioun* (the whole condition/state; *condicioun* = four syllables: *con-di-ci-oun*)."
+    },
+    {
+      "n": 39,
+      "original": "Of ech of hem, so as it semed me,",
+      "english": "Of each of them, as it seemed to me,",
+      "gloss": "*Of ech of hem* (of each of them) + *so as it semed me* (as it seemed to me). The narrator marks his account as personal observation, not omniscient."
+    },
+    {
+      "n": 40,
+      "original": "And whiche they weren, and of what degree,",
+      "english": "And who they were, and of what rank,",
+      "gloss": "*And whiche they weren* (and which they were; *whiche* = who/which; *weren* plural) + *and of what degree* (and of what rank/social standing; *degree* = three syllables here)."
+    },
+    {
+      "n": 41,
+      "original": "And eek in what array that they were inne;",
+      "english": "And also in what array they were dressed;",
+      "gloss": "*And eek* (and also) + *in what array* (in what array/clothing) + *that they were inne* (that they were in; the *that* is a relic of older subordinator usage, like 'whan that' in line 1)."
+    },
+    {
+      "n": 42,
+      "original": "And at a knyght than wol I first bigynne.",
+      "english": "And with a knight then will I first begin.",
+      "gloss": "*And at a knyght* (and at a knight) + *than wol I first bigynne* (then will I first begin). The portraits begin with the Knight — the highest of the three estates Chaucer treats."
+    }
+  ]
+}

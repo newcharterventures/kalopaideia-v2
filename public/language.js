@@ -3,11 +3,13 @@
 const BASE = "/paideia";
 
 const LANG_META = {
-  latin:      { name: "Latin", subtitle: "Classical Roman letters — Cicero, Virgil, Ovid, Horace, Tacitus" },
-  greek:      { name: "Greek", subtitle: "Ancient Hellenic letters — Homer, Plato, Sappho, Sophocles" },
-  french:     { name: "French", subtitle: "Literary French — Molière, Baudelaire, Flaubert, Proust" },
-  german:     { name: "German", subtitle: "Letters & Philosophy — Goethe, Schiller, Kant, Nietzsche" },
-  oldenglish: { name: "Old English", subtitle: "Anglo-Saxon poetry — Beowulf, The Wanderer, Exeter Book" },
+  latin:         { name: "Latin", subtitle: "Classical Roman letters — Cicero, Virgil, Ovid, Horace, Tacitus" },
+  greek:         { name: "Greek", subtitle: "Ancient Hellenic letters — Homer, Plato, Sappho, Sophocles" },
+  italian:       { name: "Italian", subtitle: "Trecento and Renaissance letters — Dante, Petrarch, Boccaccio, Tasso, Manzoni" },
+  french:        { name: "French", subtitle: "Literary French — Molière, Baudelaire, Flaubert, Proust" },
+  german:        { name: "German", subtitle: "Letters & Philosophy — Goethe, Schiller, Kant, Nietzsche" },
+  oldenglish:    { name: "Old English", subtitle: "Anglo-Saxon poetry — Beowulf, The Wanderer, Exeter Book" },
+  middleenglish: { name: "Middle English", subtitle: "Chaucer and the Pearl-poet — Canterbury Tales, Sir Gawain, Pearl, Piers Plowman" },
 };
 
 function currentLang() {
@@ -66,9 +68,11 @@ function _addPronunciationImpl(text, lang, escapeFirst = true) {
   const patterns = {
     latin: /[a-zA-ZāēīōūȳĀĒĪŌŪȲ]+/g,
     greek: /[α-ωΑ-Ωάέήίόύώὰὲὴὶὸὺὼᾶῆῖῦῶἀ-ἇἈ-Ἇἐ-ἕἘ-Ἕἠ-ἧἨ-Ἧἰ-ἷἸ-Ἷὀ-ὅὈ-Ὅὐ-ὗὙὛὝὟὠ-ὧὨ-Ὧ]+/g,
+    italian: /[a-zA-ZàáèéìíîòóùúüÀÁÈÉÌÍÎÒÓÙÚÜ]+/g,
     german: /[a-zA-ZäöüßÄÖÜ]+/g,
     french: /[a-zA-ZàâæçéèêëïîôùûüÿœÀÂÆÇÉÈÊËÏÎÔÙÛÜŸŒ]+/g,
-    oldenglish: /[a-zA-ZæþðĊċĠġÆÞÐ]+/g
+    oldenglish: /[a-zA-ZæþðĊċĠġÆÞÐ]+/g,
+    middleenglish: /[a-zA-ZæþðȜȝÆÞÐ]+/g
   };
   
   const pattern = patterns[lang] || /[a-zA-Z]+/g;

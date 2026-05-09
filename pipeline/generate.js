@@ -42,6 +42,18 @@ const LANGUAGES = [
     focus: "Old English (Anglo-Saxon) literature: Beowulf, Anglo-Saxon Chronicle, Cynewulf, Caedmon, The Wanderer, The Seafarer, The Dream of the Rood, Exeter Riddles, Alfred's translations",
     word_field_label: "Old English word",
   },
+  {
+    key: "middleenglish",
+    display: "Middle English",
+    focus: "Middle English literature (c. 1150\u20131500): Chaucer's Canterbury Tales and Troilus and Criseyde, the Pearl-poet (Sir Gawain and the Green Knight, Pearl, Patience, Cleanness), Langland's Piers Plowman, Julian of Norwich, Margery Kempe, Malory's Le Morte d'Arthur, Gower's Confessio Amantis, Hoccleve, Lydgate. Use Chaucerian Middle English spelling (yogh, thorn, final \u2010e where appropriate).",
+    word_field_label: "Middle English word",
+  },
+  {
+    key: "italian",
+    display: "Italian",
+    focus: "Italian literature pre-1900: Dante's Commedia (Inferno, Purgatorio, Paradiso) and Vita Nuova; Petrarch's Canzoniere; Boccaccio's Decameron; Cavalcanti, Guinizelli, and the Dolce Stil Novo; Tasso's Gerusalemme Liberata; Ariosto's Orlando Furioso; Machiavelli; Castiglione; Leopardi; Manzoni's I Promessi Sposi; Foscolo; Carducci.",
+    word_field_label: "Italian word",
+  },
 ];
 
 function systemPromptFor(lang) {

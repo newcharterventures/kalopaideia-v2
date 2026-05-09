@@ -1,0 +1,136 @@
+{
+  "date": "2026-05-08",
+  "generated_at": "2026-05-08T11:00:01.858Z",
+  "languages": {
+    "latin": {
+      "word": "obreptīcius",
+      "transliteration": "",
+      "pronunciation": "oh-brep-TIH-kee-us",
+      "ipa": "/ob.rɛpˈtiː.ki.us/",
+      "part_of_speech": "adjective",
+      "meaning": "obtained by stealth or deception; surreptitious",
+      "forms": "obreptīcius, -a, -um; comparative obreptīcior; superlative obreptīcissimus",
+      "etymology": "From obrepō (ob- 'against' + repō 'to creep'), meaning to creep upon or steal upon unawares. The suffix -īcius forms adjectives denoting manner or method of action.",
+      "literary_context": "Cicero employs this term in his rhetorical works to describe arguments or claims obtained through fraudulent concealment, particularly in legal contexts where one party withholds material facts to gain advantage.",
+      "usage_example": "Testāmentum obreptīcium esse vidētur, cum hērēs vēritātem cēlāvit. — The will appears to be surreptitious, since the heir concealed the truth.",
+      "did_you_know": "This word entered canon law terminology to describe rescripts obtained from ecclesiastical authorities through suppression of truth, a concept that Roman legal precision made indispensable for medieval jurisprudence.",
+      "tokens": {
+        "input_tokens": 655,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 355,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Latin"
+    },
+    "greek": {
+      "word": "ἀναδιπλόω",
+      "transliteration": "anadipló̱ō",
+      "pronunciation": "ah-nah-dee-PLO-oh",
+      "ipa": "/a.na.di.ˈplo.ɔː/",
+      "part_of_speech": "verb, contract (-όω)",
+      "meaning": "to redouble, repeat; to fold back upon itself",
+      "forms": "Present: ἀναδιπλόω, ἀναδιπλοῖς, ἀναδιπλοῖ; Future: ἀναδιπλώσω; Aorist: ἀνεδίπλωσα; Perfect: ἀναδεδίπλωκα",
+      "etymology": "From ἀνά (up, back, again) + διπλόω (to double, fold), itself from δι- (two) + *πλ- root seen in πλέκω (to weave, plait). The compound suggests a doubling back or intensifying repetition.",
+      "literary_context": "Aristotle uses this term in his Rhetoric (3.19.6) to describe a rhetorical figure involving the repetition of the same word or phrase for emphasis, what later rhetoricians called epanaphora or anadiplosis.",
+      "usage_example": "ὁ ῥήτωρ τὴν αὐτὴν λέξιν ἀναδιπλοῖ πρὸς ἔμφασιν. — The orator redoubles the same expression for emphasis.",
+      "did_you_know": "This verb gave its name to the rhetorical device anadiplosis, where the last word of one clause becomes the first word of the next, creating a chain effect that Demosthenes employed to devastating effect in his philippics against Philip of Macedon.",
+      "tokens": {
+        "input_tokens": 716,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 492,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Ancient Greek"
+    },
+    "french": {
+      "word": "écueil",
+      "transliteration": "",
+      "pronunciation": "ay-KUH-yuh",
+      "ipa": "/e.kœj/",
+      "part_of_speech": "noun, masc.",
+      "meaning": "reef, rock; pitfall, snag",
+      "forms": "singular: écueil; plural: écueils",
+      "etymology": "From Latin scopulus 'rock, crag' through Vulgar Latin *scŏlium, later *escolh in Old French. The initial s- was lost through normal phonetic evolution, and the word developed through escoil to modern écueil.",
+      "literary_context": "Victor Hugo uses écueil extensively in Les Travailleurs de la mer (1866), where the treacherous Douvres reef becomes both literal obstacle and symbolic representation of fate's cruel obstacles against human will.",
+      "usage_example": "Le navire se brisa sur les écueils cachés sous la mer déchaînée. — The ship broke apart on the reefs hidden beneath the raging sea.",
+      "did_you_know": "Hugo spent years researching maritime terminology during his exile in the Channel Islands, making Les Travailleurs de la mer a dictionary of Norman seafaring vocabulary where écueil appears over forty times, each instance charged with metaphysical weight.",
+      "tokens": {
+        "input_tokens": 629,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 328,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "French"
+    },
+    "german": {
+      "word": "Wandlung",
+      "transliteration": "",
+      "pronunciation": "VAHND-loong",
+      "ipa": "ˈvandlʊŋ",
+      "part_of_speech": "noun, fem.",
+      "meaning": "transformation, metamorphosis, profound change",
+      "forms": "die Wandlung, gen. der Wandlung, pl. die Wandlungen",
+      "etymology": "From Middle High German wandelunge, derived from wandeln (to change, to walk, to transform), ultimately from Old High German wantalōn. Related to wenden (to turn). The noun suffix -ung indicates process or result of action.",
+      "literary_context": "Franz Kafka uses Wandlung in Die Verwandlung (The Metamorphosis, 1915) to describe Gregor Samsa's transformation into an insect. Thomas Mann employs the term throughout Der Zauberberg to describe Hans Castorp's spiritual and intellectual transformation during his years in the sanatorium.",
+      "usage_example": "Seine Jahre auf dem Zauberberg bewirkten eine tiefe Wandlung seines Charakters. — His years on the Magic Mountain brought about a profound transformation of his character.",
+      "did_you_know": "In Catholic theology, Wandlung refers specifically to transubstantiation, the transformation of bread and wine into the body and blood of Christ during Mass, a meaning that adds theological depth to its literary uses in German texts addressing spiritual conversion.",
+      "tokens": {
+        "input_tokens": 678,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 360,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "German"
+    },
+    "oldenglish": {
+      "word": "fȳrhord",
+      "transliteration": "fyrhord",
+      "pronunciation": "FOOR-hord",
+      "ipa": "ˈfyːr.hord",
+      "part_of_speech": "noun, neut.",
+      "meaning": "fiery hoard, treasure guarded by fire; dragon's treasure",
+      "forms": "nom./acc. sg. fȳrhord; gen. sg. fȳrhordes; dat. sg. fȳrhorde; nom./acc. pl. fȳrhord",
+      "etymology": "Compound of fȳr 'fire' (from Proto-Germanic *fōr) + hord 'hoard, treasure' (from Proto-Germanic *huzdam). The compound appears in poetry denoting treasure guarded by dragons.",
+      "literary_context": "The word appears in Beowulf in the context of the dragon's treasure-hoard, which the aged hero must confront. The dragon guards its fȳrhord jealously, and the theft of a single cup triggers its devastating wrath upon the Geats.",
+      "usage_example": "Se wyrm onwōc, fȳrhord sōhte. — The serpent awoke, sought its fiery hoard.",
+      "did_you_know": "In Beowulf, the dragon episode revolves around a fȳrhord that has lain untouched for three hundred years, until a desperate fugitive steals a cup to appease his lord, demonstrating how treasure in Germanic culture carried both material and symbolic weight as a sign of lordly generosity.",
+      "tokens": {
+        "input_tokens": 673,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 396,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Old English"
+    }
+  }
+}

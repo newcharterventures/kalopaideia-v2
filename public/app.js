@@ -2,13 +2,15 @@
 
 const BASE = "/paideia";
 
-const LANG_ORDER = ["latin", "greek", "french", "german", "oldenglish"];
+const LANG_ORDER = ["latin", "greek", "italian", "french", "german", "oldenglish", "middleenglish"];
 const LANG_META = {
-  latin:      { name: "Latin",       tagline: "Classical Roman letters" },
-  greek:      { name: "Greek",       tagline: "Ancient Hellenic letters" },
-  french:     { name: "French",      tagline: "Literary French" },
-  german:     { name: "German",      tagline: "Letters &amp; Philosophy" },
-  oldenglish: { name: "Old English", tagline: "Anglo-Saxon poetry" },
+  latin:         { name: "Latin",          tagline: "Classical Roman letters" },
+  greek:         { name: "Greek",          tagline: "Ancient Hellenic letters" },
+  italian:       { name: "Italian",        tagline: "Trecento &amp; Renaissance letters" },
+  french:        { name: "French",         tagline: "Literary French" },
+  german:        { name: "German",         tagline: "Letters &amp; Philosophy" },
+  oldenglish:    { name: "Old English",    tagline: "Anglo-Saxon poetry" },
+  middleenglish: { name: "Middle English", tagline: "Chaucer &amp; the Pearl-poet" },
 };
 
 function esc(s) {

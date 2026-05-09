@@ -12,7 +12,7 @@ const app = express();
 const PORT = 3026;
 const BASE = "/paideia";
 
-const VALID_LANGS = ["latin", "greek", "french", "german", "oldenglish"];
+const VALID_LANGS = ["latin", "greek", "french", "german", "oldenglish", "middleenglish", "italian"];
 
 // Trust the nginx proxy so req.protocol/host return public-facing values
 app.set("trust proxy", 1);
