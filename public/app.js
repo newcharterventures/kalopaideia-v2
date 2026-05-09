@@ -45,6 +45,40 @@ function formatDate(iso) {
   } catch { return iso; }
 }
 
+// Roman numeral helper for masthead Anno line.
+function toRoman(num) {
+  const map = [
+    [1000, "M"], [900, "CM"], [500, "D"], [400, "CD"],
+    [100, "C"], [90, "XC"], [50, "L"], [40, "XL"],
+    [10, "X"], [9, "IX"], [5, "V"], [4, "IV"], [1, "I"],
+  ];
+  let n = Math.max(0, Math.floor(num));
+  let out = "";
+  for (const [v, s] of map) { while (n >= v) { out += s; n -= v; } }
+  return out;
+}
+
+// Issue/Volume numbering for the Athenaeum masthead.
+// Volume = years since 2026 (launch year) + 1 → Volume I in 2026.
+// Issue  = day of the year (1-366), so it resets each January 1.
+function issueLines(iso) {
+  try {
+    const [y, m, d] = iso.split("-").map(Number);
+    const dt   = new Date(Date.UTC(y, m - 1, d));
+    const jan1 = new Date(Date.UTC(y, 0, 1));
+    const dayOfYear = Math.floor((dt - jan1) / 86400000) + 1;
+    const launchYear = 2026;
+    const volume = (y - launchYear) + 1;
+    return {
+      issue: `Issue №\u00a0${dayOfYear}`,
+      vol:   `Volume ${toRoman(volume)}`,
+      anno:  `Anno Domini ${toRoman(y)}`,
+    };
+  } catch {
+    return { issue: "Issue —", vol: "Volume —", anno: "—" };
+  }
+}
+
 function renderWord(langKey, entry, date) {
   const hasAudio = true; // audio is generated per language
   const audioPath = `${BASE}/audio/${date}/${langKey}.mp3`;
@@ -179,7 +213,15 @@ async function load() {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const issue = await res.json();
 
+    // Athenaeum masthead: populate the three ledger lines.
     document.getElementById("today-date").textContent = formatDate(issue.date);
+    const lines = issueLines(issue.date);
+    const issueEl = document.getElementById("issue-line");
+    const volEl   = document.getElementById("vol-line");
+    const annoEl  = document.getElementById("anno-line");
+    if (issueEl) issueEl.textContent = lines.issue;
+    if (volEl)   volEl.textContent   = lines.vol;
+    if (annoEl)  annoEl.textContent  = lines.anno;
     document.getElementById("loading").style.display = "none";
 
     // Load primer alphabets for all languages we'll render (for letter breakdown)
