@@ -1,7 +1,7 @@
 {
   "name": "Kalopaideia",
   "short_name": "Kalopaideia",
-  "description": "A daily classical languages education — Latin, Ancient Greek, Old English, French, German.",
+  "description": "A daily classical languages education — Ancient Greek, Latin, French, German, Italian, Olde English, Middle English.",
   "start_url": "/paideia/",
   "scope": "/paideia/",
   "display": "standalone",

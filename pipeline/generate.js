@@ -11,18 +11,22 @@ const ROOT = path.resolve(__dirname, "..");
 const client = wrapAnthropic(new Anthropic(), { project: "paideia", script: "generate" });
 const MODEL = "claude-sonnet-4-5";
 
+// Canonical language order per Jae 2026-05-09:
+// Greek, Latin, French, German, Italian, Olde English, Middle English.
+// The internal key for Olde English remains 'oldenglish' to preserve archive
+// continuity (existing data files, used-word registry, library entries).
 const LANGUAGES = [
-  {
-    key: "latin",
-    display: "Latin",
-    focus: "Classical Latin literature and rhetoric (Cicero, Virgil, Ovid, Horace, Tacitus, Seneca, Lucretius, Caesar, Catullus, Juvenal)",
-    word_field_label: "Latin word",
-  },
   {
     key: "greek",
     display: "Ancient Greek",
     focus: "Classical Greek literature and philosophy (Homer, Hesiod, Herodotus, Thucydides, Plato, Aristotle, Sophocles, Euripides, Aeschylus, Plutarch)",
     word_field_label: "Greek word (with accents)",
+  },
+  {
+    key: "latin",
+    display: "Latin",
+    focus: "Classical Latin literature and rhetoric (Cicero, Virgil, Ovid, Horace, Tacitus, Seneca, Lucretius, Caesar, Catullus, Juvenal)",
+    word_field_label: "Latin word",
   },
   {
     key: "french",
@@ -37,22 +41,22 @@ const LANGUAGES = [
     word_field_label: "German word",
   },
   {
+    key: "italian",
+    display: "Italian",
+    focus: "Italian literature pre-1900: Dante's Commedia (Inferno, Purgatorio, Paradiso) and Vita Nuova; Petrarch's Canzoniere; Boccaccio's Decameron; Cavalcanti, Guinizelli, and the Dolce Stil Novo; Tasso's Gerusalemme Liberata; Ariosto's Orlando Furioso; Machiavelli; Castiglione; Leopardi; Manzoni's I Promessi Sposi; Foscolo; Carducci.",
+    word_field_label: "Italian word",
+  },
+  {
     key: "oldenglish",
-    display: "Old English",
-    focus: "Old English (Anglo-Saxon) literature: Beowulf, Anglo-Saxon Chronicle, Cynewulf, Caedmon, The Wanderer, The Seafarer, The Dream of the Rood, Exeter Riddles, Alfred's translations",
-    word_field_label: "Old English word",
+    display: "Olde English",
+    focus: "Olde English (Anglo-Saxon) literature: Beowulf, Anglo-Saxon Chronicle, Cynewulf, Caedmon, The Wanderer, The Seafarer, The Dream of the Rood, Exeter Riddles, Alfred's translations",
+    word_field_label: "Olde English word",
   },
   {
     key: "middleenglish",
     display: "Middle English",
     focus: "Middle English literature (c. 1150\u20131500): Chaucer's Canterbury Tales and Troilus and Criseyde, the Pearl-poet (Sir Gawain and the Green Knight, Pearl, Patience, Cleanness), Langland's Piers Plowman, Julian of Norwich, Margery Kempe, Malory's Le Morte d'Arthur, Gower's Confessio Amantis, Hoccleve, Lydgate. Use Chaucerian Middle English spelling (yogh, thorn, final \u2010e where appropriate).",
     word_field_label: "Middle English word",
-  },
-  {
-    key: "italian",
-    display: "Italian",
-    focus: "Italian literature pre-1900: Dante's Commedia (Inferno, Purgatorio, Paradiso) and Vita Nuova; Petrarch's Canzoniere; Boccaccio's Decameron; Cavalcanti, Guinizelli, and the Dolce Stil Novo; Tasso's Gerusalemme Liberata; Ariosto's Orlando Furioso; Machiavelli; Castiglione; Leopardi; Manzoni's I Promessi Sposi; Foscolo; Carducci.",
-    word_field_label: "Italian word",
   },
 ];
 
@@ -62,7 +66,7 @@ function systemPromptFor(lang) {
 Draw from: ${lang.focus}.
 
 You must output a JSON object with these exact keys:
-- "word": the headword (use proper diacritics; for Greek use polytonic accents; for Old English use thorn/eth/ash as in Beowulf).
+- "word": the headword (use proper diacritics; for Greek use polytonic accents; for Olde English use thorn/eth/ash as in Beowulf).
 - "transliteration": a Latin-alphabet romanization if the script is non-Latin (empty string for languages using Latin alphabet).
 - "pronunciation": an approximate English-phonetic pronunciation guide (e.g., "roh-MAH-nus").
 - "ipa": IPA transcription for the word.
@@ -79,7 +83,7 @@ HARD RULES:
 - For today's selection, try to pick a word connected to a theme or work that rewards attention.
 - No slop: no adverbs in -ly, no em dashes, no "in today's world," no filler. Plain precise English.
 - Output ONLY valid JSON. No prose before or after. No code fences.
-- Use ASCII straight quotes in the JSON structure. Diacritics, accents, and special letters in Greek/Old English/etc. are REQUIRED inside string values.`;
+- Use ASCII straight quotes in the JSON structure. Diacritics, accents, and special letters in Greek/Olde English/etc. are REQUIRED inside string values.`;
 }
 
 async function generateOne(lang, usedWords) {

@@ -1,13 +1,13 @@
 /**
  * Pronunciation generation for Paideia
- * Generates IPA and approximations for words in Latin, Greek, German, French, Old English
+ * Generates IPA and approximations for words in Latin, Greek, German, French, Olde English
  */
 
 const Pronunciation = {
   /**
    * Generate pronunciation for a word based on language
    * @param {string} word - The word to pronounce
-   * @param {string} lang - Language code (latin, greek, german, french, oldenglish)
+   * @param {string} lang - Language code (latin, greek, german, french, italian, oldenglish, middleenglish)
    * @returns {Object} - { ipa: string, approx: string, say: string }
    */
   generate(word, lang) {
@@ -245,7 +245,7 @@ const Pronunciation = {
   },
 
   /**
-   * Old English pronunciation
+   * Olde English pronunciation
    */
   oldEnglish(word) {
     let ipa = word

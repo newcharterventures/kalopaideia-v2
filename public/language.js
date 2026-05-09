@@ -8,7 +8,7 @@ const LANG_META = {
   italian:       { name: "Italian", subtitle: "Trecento and Renaissance letters — Dante, Petrarch, Boccaccio, Tasso, Manzoni" },
   french:        { name: "French", subtitle: "Literary French — Molière, Baudelaire, Flaubert, Proust" },
   german:        { name: "German", subtitle: "Letters & Philosophy — Goethe, Schiller, Kant, Nietzsche" },
-  oldenglish:    { name: "Old English", subtitle: "Anglo-Saxon poetry — Beowulf, The Wanderer, Exeter Book" },
+  oldenglish:    { name: "Olde English", subtitle: "Anglo-Saxon poetry — Beowulf, The Wanderer, Exeter Book" },
   middleenglish: { name: "Middle English", subtitle: "Chaucer and the Pearl-poet — Canterbury Tales, Sir Gawain, Pearl, Piers Plowman" },
 };
 
@@ -63,7 +63,7 @@ function _addPronunciationImpl(text, lang, escapeFirst = true) {
   // Greek: Greek alphabet + accents
   // German: umlauts, ß
   // French: accents
-  // Old English: special characters þ, ð, æ, ċ, ġ
+  // Olde English: special characters þ, ð, æ, ċ, ġ
   
   const patterns = {
     latin: /[a-zA-ZāēīōūȳĀĒĪŌŪȲ]+/g,
