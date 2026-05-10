@@ -103,7 +103,7 @@ function renderWord(langKey, entry, date) {
       translation = ue.slice(idx + splitMatch[0].length).trim();
     }
     const sentenceAudio = `${BASE}/api/word-audio/${langKey}/${encodeURIComponent(original)}.mp3`;
-    usage = `<div class="detail-section">
+    usage = `<div class="detail-section in-use">
          <div class="detail-label">In Use</div>
          <p class="detail-body italic in-use-original">${esc(original)} <button class="audio-btn inline-audio-btn" data-audio="${sentenceAudio}" aria-label="Listen to sentence">▶</button></p>
          ${translation ? `<p class="detail-body in-use-translation">${esc(translation)}</p>` : ""}
@@ -150,6 +150,9 @@ function renderCulture(vignette) {
   `;
 }
 
+// AKOUSMA promo card data and renderers live in akousma.js (loaded
+// before this file). See AKOUSMA_BOOKS, renderAkousmaCard, fetchAkousmaCount.
+
 function renderSection(langKey, entry, culture, date) {
   const meta = LANG_META[langKey] || { name: langKey, tagline: "" };
   return `
@@ -162,6 +165,7 @@ function renderSection(langKey, entry, culture, date) {
         ${renderWord(langKey, entry, date)}
         ${renderCulture(culture)}
       </div>
+      ${renderAkousmaCard(langKey)}
     </section>
   `;
 }
@@ -239,6 +243,7 @@ async function load() {
       .join("");
     document.getElementById("sections").innerHTML = html;
     wireAudio();
+    fetchAkousmaCount();
     
     // Initialize archive scroller below today
     initArchive(issue.date);
@@ -321,6 +326,8 @@ async function loadMoreArchive() {
   
   // Re-wire audio buttons (idempotent — wireAudio re-attaches by class)
   wireAudio();
+  // Re-populate the dynamic Akousma count on any newly-rendered cards.
+  fetchAkousmaCount();
   
   // Update or hide button
   if (archiveShown >= archiveDates.length) {

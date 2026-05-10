@@ -402,7 +402,25 @@ async function renderLibraryAndReading(primer, lang) {
 
   const sections = [];
 
-  sections.push(`<h3 class="pane-heading">Library</h3>`);
+  // Per Jae 2026-05-09: the Library section gets the same scholarly
+  // typographic treatment as the C masthead — a small temple-ruin SVG
+  // icon flanking a Bodoni italic heading, with a faint hairline rule
+  // beneath. Acts as a section divider that echoes the masthead.
+  sections.push(`
+    <header class="library-masthead">
+      <img class="library-masthead-emblem" src="${BASE}/img/masthead/temple-ruin.svg" alt="" aria-hidden="true" />
+      <h3 class="library-masthead-title">The ${esc(LANG_META[lang]?.name || lang)} Library</h3>
+      <p class="library-masthead-sub"><em>Akousma</em> — the audio library of Kalopaideia, by tradition</p>
+    </header>
+  `);
+
+  // Per Jae 2026-05-09 (third ask): the Library section MUST show the
+  // Akousma promo card with the actual book cover. The card lives in
+  // akousma.js (loaded before this file).
+  if (typeof renderAkousmaCard === "function") {
+    sections.push(renderAkousmaCard(lang));
+  }
+
   sections.push(`<p class="library-intro">Sentence-by-sentence parallel-text readers. Open any text in the reader to move through one line at a time, listen to the original pronounced aloud, and read the grammar gloss beside each line.</p>`);
 
   // Continue Reading section (from bookmarks)
@@ -446,6 +464,8 @@ async function renderLibraryAndReading(primer, lang) {
   sections.push(`</ul>`);
 
   pane.innerHTML = sections.join("");
+  // Repopulate the Akousma count on the newly-rendered card.
+  if (typeof fetchAkousmaCount === "function") fetchAkousmaCount();
 }
 
 function libraryItemHtml(t, difficulty) {
@@ -653,10 +673,22 @@ async function load() {
     if (!data.entries || data.entries.length === 0) {
       entriesEl.innerHTML = '<div class="center">No daily words recorded yet for this language.</div>';
     } else {
-      entriesEl.innerHTML = data.entries.map(entryHtml).join("");
+      // Per Jae 2026-05-09: insert an inline Akousma promo card AFTER
+      // each daily-word entry, ROTATING through the language's available
+      // titles (e.g. Greek alternates Iliad / Odyssey / Republic / Sappho)
+      // so the same cover doesn't repeat under every entry.
+      const interleaved = data.entries.map(function (row, idx) {
+        const ako = (typeof renderAkousmaCard === "function")
+          ? renderAkousmaCard(lang, idx) : "";
+        return entryHtml(row) + ako;
+      }).join("");
+      entriesEl.innerHTML = interleaved;
       wireWordAudio();
       setupInfiniteScroll(lang, data.nextBefore, data.hasMore);
     }
+
+    // Populate the dynamic library count on every Akousma card just rendered.
+    if (typeof fetchAkousmaCount === "function") fetchAkousmaCount();
   } catch (err) {
     document.getElementById("entries").innerHTML = '<div class="center">Could not load this section.</div>';
     console.error(err);
@@ -703,9 +735,18 @@ function setupInfiniteScroll(lang, nextBefore, hasMore) {
         sentinel.remove();
 
         if (more.entries && more.entries.length > 0) {
-          const html = more.entries.map(entryHtml).join("");
+          // Same rotation as the initial load. Use the count of already-rendered
+          // entries as the starting offset so the rotation continues seamlessly
+          // across paginated loads.
+          const offset = entriesEl.querySelectorAll(".lang-entry").length;
+          const html = more.entries.map(function (row, idx) {
+            const ako = (typeof renderAkousmaCard === "function")
+              ? renderAkousmaCard(lang, offset + idx) : "";
+            return entryHtml(row) + ako;
+          }).join("");
           entriesEl.insertAdjacentHTML("beforeend", html);
           wireWordAudio();
+          if (typeof fetchAkousmaCount === "function") fetchAkousmaCount();
         }
         setupInfiniteScroll(lang, more.nextBefore, more.hasMore);
       } catch (e) {

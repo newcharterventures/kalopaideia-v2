@@ -20,35 +20,40 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default" />
 <meta name="apple-mobile-web-app-title" content="Kalopaideia" />
 <meta name="theme-color" content="#1a1410" />
-<link rel="stylesheet" href="/paideia/styles.css?v=1778005000" />
+<link rel="stylesheet" href="/paideia/styles.css?v=1778100000" />
 </head>
 <body>
 <header class="masthead masthead-athenaeum">
-  <div class="mast-grid">
-    <div class="mast-left">
-      <span class="mast-issue" id="issue-line">Issue №&nbsp;—</span>
-      <span class="mast-vol" id="vol-line">Volume —</span>
+  <img class="mast-watermark" src="/paideia/img/masthead/temple-ruin.svg" alt="" aria-hidden="true" />
+  <div class="mast-content">
+    <div class="mast-grid">
+      <div class="mast-center">
+        <div class="mast-eyebrow">A daily book of words · seven tongues</div>
+        <h1 class="mast-name"><a href="/paideia/" aria-label="Kalopaideia home">KALOPAIDEIA</a></h1>
+        <span class="mast-greek"><em>καλὴ παιδεία</em> — the cultivation of mind through classical letters</span>
+      </div>
     </div>
-    <div class="mast-center">
-      <h1 class="mast-name"><a href="/paideia/" aria-label="Kalopaideia home">KALOPAIDEIA</a></h1>
-      <span class="mast-rule"></span>
-      <span class="mast-greek"><em>καλὴ παιδεία</em> — the cultivation of mind through classical letters</span>
+    <div class="mast-ledger">
+      <div class="ledger-left">
+        <span class="mast-issue" id="issue-line">Issue №&nbsp;—</span>
+        <span class="mast-vol" id="vol-line">Volume —</span>
+      </div>
+      <div class="ledger-right">
+        <span class="mast-day" id="today-date">—</span>
+        <span class="mast-anno" id="anno-line">Anno Domini MMXXVI</span>
+      </div>
     </div>
-    <div class="mast-right">
-      <span class="mast-day" id="today-date">—</span>
-      <span class="mast-anno" id="anno-line">Anno Domini MMXXVI</span>
-    </div>
+    <nav class="nav mast-nav">
+      <a href="/paideia/greek">Greek</a>
+      <a href="/paideia/latin">Latin</a>
+      <a href="/paideia/french">French</a>
+      <a href="/paideia/german">German</a>
+      <a href="/paideia/italian">Italian</a>
+      <a href="/paideia/oldenglish">Olde English</a>
+      <a href="/paideia/middleenglish">Middle English</a>
+      <a class="util" href="/paideia/about.html">About</a>
+    </nav>
   </div>
-  <nav class="nav mast-nav">
-    <a href="/paideia/greek">Greek</a>
-    <a href="/paideia/latin">Latin</a>
-    <a href="/paideia/french">French</a>
-    <a href="/paideia/german">German</a>
-    <a href="/paideia/italian">Italian</a>
-    <a href="/paideia/oldenglish">Olde English</a>
-    <a href="/paideia/middleenglish">Middle English</a>
-    <a class="util" href="/paideia/about.html">About</a>
-  </nav>
 </header>
 
 <main>
@@ -56,6 +61,13 @@
   <div id="error" class="center" style="display:none"></div>
   <div id="sections"></div>
 </main>
+
+<aside class="akousma-band">
+  <div class="akousma-mark">ΑΚΟΥΣΜΑ</div>
+  <h2>The Audio Library of Kalopaideia</h2>
+  <p>One canonical work from each tradition · line-by-line audio in the original tongue · parallel English translation · scholarly notes · all for $11.99 a month.</p>
+  <a class="cta" href="#">Begin a Free Trial →</a>
+</aside>
 
 <footer class="foot">
   <div class="foot-inner">
@@ -70,8 +82,9 @@
   </div>
 </footer>
 
-<script src="/paideia/pronunciation.js?v=1778005000"></script>
-<script src="/paideia/letter-phonetics.js?v=1778005000"></script>
-<script src="/paideia/app.js?v=1778005000"></script>
+<script src="/paideia/pronunciation.js?v=1778100000"></script>
+<script src="/paideia/letter-phonetics.js?v=1778100000"></script>
+<script src="/paideia/akousma.js?v=1778100000"></script>
+<script src="/paideia/app.js?v=1778100000"></script>
 </body>
 </html>

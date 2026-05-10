@@ -6,6 +6,30 @@ import { spawn } from "child_process";
 import { fileURLToPath } from "url";
 import { lookupWord } from "./pipeline/word-lookup.js";
 import { buildCommerce } from "./lib/commerce.js";
+import { hasStoaAccess } from "./lib/commerce-db.js";
+import { stoaById } from "./lib/commerce-catalog.js";
+
+// Per Jae 2026-05-09: subscription pricing is $11.99/mo for both sites.
+// Paideia's audio/library content can be paywalled with the same
+// entitlement check as the Mansion's Stoa. The check is enabled when
+// `PAIDEIA_PAYWALL=1` in the environment; otherwise all content stays
+// free as before. Subscribers (and per-book buyers) get full access
+// either way — the flag only controls whether non-subscribers are
+// blocked. Default off so flipping the live site doesn't break readers
+// without a sign-in flow ready. Audio for the gateway book
+// (`odyssey-book-1`) and free daily-word audio always remain open.
+const PAYWALL_ENABLED = process.env.PAIDEIA_PAYWALL === "1";
+
+function enforceLibraryAccess(req, textId) {
+  // Returns null if access permitted, or an Express response payload
+  // describing the denial. Falls open when the paywall flag is off.
+  if (!PAYWALL_ENABLED) return null;
+  const work = stoaById(textId);
+  if (!work) return null;          // unknown work → let the route 404 normally
+  if (work.is_gateway) return null;
+  if (hasStoaAccess(req.user, work)) return null;
+  return { status: 402, body: { error: "subscription_required", work_id: work.id, all_access_url: `${BASE}/store/${encodeURIComponent(work.id)}` } };
+}
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -34,6 +58,9 @@ app.get(`${BASE}/library-audio/:textId/:line.mp3`, async (req, res, next) => {
   const textId = String(req.params.textId).replace(/[^a-z0-9-]/g, "");
   // Allow letters in line numbers (e.g. Stephanus pagination: 327a, 327b)
   const lineNum = String(req.params.line).replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+  // Entitlement gate (no-op when PAIDEIA_PAYWALL is unset).
+  const denied = enforceLibraryAccess(req, textId);
+  if (denied) return res.status(denied.status).json(denied.body);
   const outPath = path.join(__dirname, "data", "library-audio", textId, `${lineNum}.mp3`);
   try {
     await fs.access(outPath);
@@ -183,6 +210,32 @@ app.get(`${BASE}/api/day/:date`, async (req, res) => {
   }
 });
 
+// Library API: total count of audio works across the entire AKOUSMA corpus.
+// Excludes any *.backup-*.json snapshots. Per Jae 2026-05-09 — the count
+// is fetched live by the front-end so it updates automatically as new
+// works are added to data/library/.
+app.get(`${BASE}/api/library/all`, async (_req, res) => {
+  try {
+    const libDir = path.join(__dirname, "data", "library");
+    const files = await fs.readdir(libDir);
+    const byLang = {};
+    let total = 0;
+    for (const f of files) {
+      if (!f.endsWith(".json")) continue;
+      if (f.includes(".backup-")) continue;
+      try {
+        const data = JSON.parse(await fs.readFile(path.join(libDir, f), "utf8"));
+        const lang = data.language || "unknown";
+        byLang[lang] = (byLang[lang] || 0) + 1;
+        total++;
+      } catch {}
+    }
+    res.json({ total, by_language: byLang });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // Library API: list texts for a language
 app.get(`${BASE}/api/library/:lang`, async (req, res) => {
   const lang = String(req.params.lang).toLowerCase();
@@ -286,6 +339,27 @@ app.get(`${BASE}/api/word/:lang/:word`, async (req, res) => {
 // Library API: full text by id
 app.get(`${BASE}/api/library/text/:id`, async (req, res) => {
   const id = String(req.params.id).replace(/[^a-z0-9-]/g, "");
+  // Entitlement gate. When the paywall is on, non-owners get the work
+  // metadata + first 5 lines (the public sample) and a 402 hint.
+  const denied = enforceLibraryAccess(req, id);
+  if (denied) {
+    try {
+      const raw = await fs.readFile(path.join(__dirname, "data", "library", `${id}.json`), "utf8");
+      const data = JSON.parse(raw);
+      const allLines = (data.lines || []).slice();
+      if (data.sections) for (const s of data.sections) for (const l of (s.lines || [])) allLines.push(l);
+      const sample = allLines.slice(0, 5);
+      return res.status(denied.status).json({
+        ...denied.body,
+        id: data.id, title: data.title, author: data.author, language: data.language,
+        translator: data.translator, translator_date: data.translator_date,
+        meter: data.meter, license: data.license,
+        sample_lines: sample,
+        total_lines: allLines.length,
+      });
+    } catch {}
+    return res.status(denied.status).json(denied.body);
+  }
   try {
     const raw = await fs.readFile(path.join(__dirname, "data", "library", `${id}.json`), "utf8");
     res.json(JSON.parse(raw));

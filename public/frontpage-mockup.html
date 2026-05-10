@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kalopaideia — Front-page mockup with Akousma cards (May 9 2026)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cinzel:wght@400;500;600;700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;1,6..96,400;1,6..96,500;1,6..96,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<!-- Live site styles for fidelity on the word cards -->
+<link rel="stylesheet" href="/paideia/styles.css?v=1778005000" />
+<style>
+  :root {
+    --gold-deep: #7d5d12;
+    --gold:      #a07e2a;
+    --paper-warm: #faf3e2;
+    --claret:    #6b1d1d;
+  }
+
+  /* Guard against the 100vw + scrollbar-width phantom horizontal scroll
+   * created by the .akousma-ad full-bleed margins. */
+  html, body { overflow-x: hidden; }
+
+  /* Mockup banner */
+  .mock-banner {
+    position: sticky; top: 0;
+    background: #0f0a07;
+    color: #c9b88f;
+    padding: 10px 24px;
+    border-bottom: 1px solid #2a1f15;
+    z-index: 1000;
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .mock-banner strong { color: #f3e6c4; }
+  .mock-banner a { color: #c9b88f; text-decoration: none; border-bottom: 1px dotted; padding-bottom: 1px; margin-left: 16px; }
+
+  /* ============================================================
+     AKOUSMA — INLINE PROMOTIONAL CARD
+     Sits inside .word-block beneath the .culture-card.
+     ============================================================ */
+  /* The Akousma promo card. Two requirements:
+   *  (a) per Jae 2026-05-09: MUST stay horizontal at every viewport
+   *      (cover · copy · CTA in one row, never stacked).
+   *  (b) per Jae 2026-05-09 (later): MUST span the FULL page width,
+   *      breaking out of the narrow .word-block content column.
+   *
+   * Approach (per GPT-5 review):
+   *   - The outer .akousma-ad uses the 100vw + negative-margin
+   *     full-bleed trick to escape the narrow parent container.
+   *   - An inner .akousma-inner re-constrains content to the page's
+   *     max-width and re-applies horizontal padding.
+   *   - The .akousma-row inside that holds the three flex columns
+   *     (cover · copy · CTA), each percentage-based with a max-width
+   *     so the row always fits the inner column.
+   *
+   * IMPORTANT: do NOT add overflow:hidden to any ancestor of
+   * .akousma-ad — it would clip the full-bleed margins. */
+  .akousma-ad {
+    position: relative;
+    margin: 16px -50vw 0 -50vw;
+    left: 50%;
+    right: 50%;
+    width: 100vw;
+    background: var(--paper-warm);
+    border-top: 1px solid var(--ink, #1a1410);
+    border-bottom: 1px solid var(--ink, #1a1410);
+    display: flex;
+    flex-direction: column;
+    /* No overflow:hidden here — inner border frame is positioned by
+     * .akousma-inner instead so the full-bleed trick stays clean. */
+  }
+  /* Inner column — MUST mirror the live styles.css `main` block exactly
+   * so the cover/copy/CTA align with the word cards above. Per Claude
+   * Sonnet vision review of Jae's alignment screenshot 2026-05-09:
+   * `main { max-width: 1120px; padding: 36px 32px 60px }` on desktop
+   * and `main { padding: 24px 20px 48px }` below 860px. Match those.
+   *
+   * Note: the masthead uses max-width 1280px / padding 32px (desktop)
+   * or 18px (mobile) — different from `main`. The word cards live in
+   * `main`'s box, so we align the Akousma row with the word cards. */
+  .akousma-inner {
+    position: relative;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 32px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  /* Inner rule frame — left/right MUST equal .akousma-inner padding. */
+  .akousma-inner::before {
+    content: '';
+    position: absolute;
+    top: 6px; left: 32px; right: 32px; bottom: 6px;
+    border: 1px solid rgba(45,36,24,0.18);
+    pointer-events: none;
+  }
+  /* Mobile mirror of main's reduced padding below 860px. */
+  @media (max-width: 860px) {
+    .akousma-inner { padding: 0 20px; }
+    .akousma-inner::before { left: 20px; right: 20px; }
+  }
+  .akousma-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;        /* HARD rule — never stack */
+    align-items: flex-start;  /* top-align all three columns */
+    gap: 16px;                /* fixed gap so width math is predictable */
+    width: 100%;
+    box-sizing: border-box;
+  }
+  /* (Inner-rule frame moved to .akousma-inner::before, see above.) */
+
+  .akousma-eyebrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 10px 0 8px;
+    border-bottom: 1px solid rgba(45,36,24,0.25);
+    font-family: 'Cinzel', serif;
+    font-size: clamp(8px, 2.2vw, 10px);
+    letter-spacing: 0.42em;
+    text-transform: uppercase;
+    color: var(--gold-deep);
+  }
+  .akousma-eyebrow .alpha {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--gold-deep);
+    border-radius: 50%;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: var(--gold-deep);
+    line-height: 1;
+  }
+  .akousma-eyebrow .pipe { color: rgba(125,93,18,0.45); }
+
+  /* Cover — percentage-based so the row ALWAYS fits the viewport.
+   * 22% on phones, capped at 168px on desktop. Top-aligned with copy
+   * and CTA so the three columns share a baseline at the top. */
+  .akousma-cover {
+    flex: 0 0 22%;
+    max-width: 168px;
+    padding: 16px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .ako-cover {
+    width: 100%;            /* fill the .akousma-cover slot */
+    max-width: 132px;
+    aspect-ratio: 2 / 3;
+    background: var(--paper, #fdfaf3);
+    box-shadow:
+      0 2px 6px rgba(0,0,0,0.18),
+      inset 0 0 0 1px rgba(45,36,24,0.4),
+      inset 0 0 0 5px var(--paper-warm),
+      inset 0 0 0 6px rgba(125,93,18,0.5);
+    display: grid;
+    grid-template-rows: auto 1fr auto auto auto;
+    padding: 14px 12px 12px;
+    text-align: center;
+    color: var(--ink, #1a1410);
+    position: relative;
+  }
+  .ako-cover-imprint {
+    font-family: 'Cinzel', serif;
+    font-size: 7px;
+    letter-spacing: 0.32em;
+    color: var(--gold-deep);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+  }
+  .ako-cover-vignette {
+    position: relative;
+    margin: 0 0 8px;
+    aspect-ratio: 4 / 3;
+    background: var(--paper-deep, #ece4d0);
+    overflow: hidden;
+    box-shadow: inset 0 0 0 1px rgba(45,36,24,0.4);
+  }
+  .ako-cover-vignette img {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    filter: sepia(0.55) saturate(0.85) contrast(0.96) brightness(1.04);
+  }
+  .ako-cover-vignette::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center, transparent 55%, rgba(250,243,226,0.35) 90%, rgba(250,243,226,0.55) 100%);
+    pointer-events: none;
+  }
+  .ako-cover-rule {
+    width: 28px; height: 1px;
+    background: var(--gold-deep);
+    margin: 0 auto 6px;
+  }
+  .ako-cover-title {
+    font-family: 'Bodoni Moda', serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.12;
+    color: var(--ink, #1a1410);
+    margin: 0 0 4px;
+    padding: 0 2px;
+  }
+  .ako-cover-author {
+    font-family: 'Cinzel', serif;
+    font-size: 6.5px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-muted, #5c4d38);
+    line-height: 1.3;
+  }
+
+  /* Copy — takes all remaining space; min-width:0 is required for
+   * flex children to allow text wrapping/shrinking. Top-aligned. */
+  .akousma-copy {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding: 16px 0;
+    display: flex; flex-direction: column; justify-content: flex-start;
+    box-sizing: border-box;
+  }
+  .akousma-meta {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(8px, 1.8vw, 10px);
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-muted, #5c4d38);
+    margin-bottom: 6px;
+  }
+  .akousma-meta .lang {
+    color: var(--claret);
+    font-weight: 600;
+  }
+  .akousma-title {
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 600;
+    font-size: clamp(14px, 2.6vw, 24px);
+    line-height: 1.15;
+    color: var(--ink, #1a1410);
+    margin: 0 0 4px;
+  }
+  .akousma-title em { font-style: italic; font-weight: 600; }
+  .akousma-author {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(11px, 2vw, 15px);
+    color: var(--ink-muted, #5c4d38);
+    margin: 0 0 8px;
+    line-height: 1.3;
+  }
+  .akousma-blurb {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(11px, 1.9vw, 15px);
+    line-height: 1.45;
+    color: var(--ink-soft, #2d2418);
+    margin: 0 0 8px;
+    max-width: 56ch;
+  }
+  .akousma-credits {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(9.5px, 1.5vw, 11.5px);
+    color: var(--ink-muted, #5c4d38);
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  /* CTA — also percentage-based. 30% on phones, capped at 220px on
+   * desktop. Top-aligned with cover and copy. */
+  .akousma-cta {
+    flex: 0 0 30%;
+    max-width: 220px;
+    padding: 16px 0 16px 16px;
+    display: flex; flex-direction: column;
+    align-items: stretch; justify-content: flex-start;
+    border-left: 1px solid rgba(45,36,24,0.25);
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .akousma-cta-eyebrow {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(7px, 1.4vw, 8.5px);
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-muted, #5c4d38);
+    margin-bottom: 4px;
+  }
+  /* Price — scholarly weight, not commercial. Per Jae 2026-05-09:
+   * shrink so the card reads as an educational notice that mentions a
+   * subscription, not as a sales pitch. */
+  .akousma-cta-price {
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 600;
+    font-size: clamp(15px, 2.6vw, 22px);
+    line-height: 1;
+    color: var(--ink, #1a1410);
+    margin: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 2px;
+  }
+  .akousma-cta-price .cents {
+    font-size: 0.65em;
+    font-weight: 500;
+    line-height: 1;
+    align-self: flex-start;
+    margin-top: 2px;
+  }
+  .akousma-cta-period {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(9px, 1.5vw, 11.5px);
+    color: var(--ink-muted, #5c4d38);
+    margin: 1px 0 8px;
+    line-height: 1.3;
+  }
+  .akousma-cta-button {
+    display: block;
+    background: var(--ink, #1a1410);
+    color: var(--paper, #fdfaf3);
+    font-family: 'Cinzel', serif;
+    font-size: clamp(7.5px, 1.5vw, 10px);
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    padding: clamp(7px, 1.6vw, 10px) clamp(6px, 1.6vw, 12px);
+    border: 0;
+    text-decoration: none;
+    transition: background 0.2s;
+    white-space: nowrap;
+  }
+  .akousma-cta-button:hover { background: var(--gold-deep); }
+  .akousma-cta-fineprint {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(8px, 1.4vw, 10.5px);
+    color: var(--ink-muted, #5c4d38);
+    margin-top: 6px;
+    line-height: 1.35;
+  }
+  .akousma-cta-fineprint .count { font-style: normal; color: var(--ink, #1a1410); font-variant-numeric: oldstyle-nums; font-weight: 600; }
+
+  /* Hide low-priority lines on the narrowest phones so the three
+   * columns continue to breathe. */
+  @media (max-width: 480px) {
+    .akousma-credits { display: none; }
+    .akousma-cta-fineprint { display: none; }
+    .ako-cover-author { display: none; }
+    .akousma-blurb { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    .akousma-cta { border-left-width: 0; padding-left: 4px; }
+  }
+
+  /* Closing brand band */
+  .akousma-band {
+    background: var(--ink, #1a1410);
+    color: var(--paper, #fdfaf3);
+    padding: 36px 28px;
+    text-align: center;
+    margin: 64px 0 0;
+  }
+  .akousma-band .mark {
+    font-family: 'Cinzel', serif;
+    font-size: 22px;
+    letter-spacing: 0.42em;
+    color: var(--gold);
+    margin-bottom: 6px;
+  }
+  .akousma-band h2 {
+    font-family: 'Bodoni Moda', serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 28px;
+    margin: 0 0 10px;
+  }
+  .akousma-band p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 60ch;
+    line-height: 1.55;
+    color: rgba(253,250,243,0.85);
+    font-style: italic;
+  }
+  .akousma-band .cta {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 28px;
+    background: var(--gold);
+    color: var(--ink, #1a1410);
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .akousma-band .cta:hover { background: #c79c3a; }
+</style>
+</head>
+<body>
+
+<div class="mock-banner">
+  <strong>Front-page mockup</strong> · Athenaeum masthead + word cards + Akousma promo beneath each language ($11.99/mo)
+  <a href="/paideia/">← Live site</a>
+  <a href="/paideia/akousma-mockup.html">Akousma cards alone →</a>
+</div>
+
+<!-- ============================================================
+     ATHENAEUM MASTHEAD (matches the live site)
+     ============================================================ -->
+<header class="masthead masthead-athenaeum">
+  <div class="mast-grid">
+    <div class="mast-left">
+      <span class="mast-issue">Issue №&nbsp;129</span>
+      <span class="mast-vol">Volume I</span>
+    </div>
+    <div class="mast-center">
+      <h1 class="mast-name"><a href="#" aria-label="Kalopaideia home">KALOPAIDEIA</a></h1>
+      <span class="mast-rule"></span>
+      <span class="mast-greek"><em>καλὴ παιδεία</em> — the cultivation of mind through classical letters</span>
+    </div>
+    <div class="mast-right">
+      <span class="mast-day">Saturday, May 9, 2026</span>
+      <span class="mast-anno">Anno Domini MMXXVI</span>
+    </div>
+  </div>
+  <nav class="nav mast-nav">
+    <a href="#section-greek">Greek</a>
+    <a href="#section-latin">Latin</a>
+    <a href="#section-french">French</a>
+    <a href="#section-german">German</a>
+    <a href="#section-italian">Italian</a>
+    <a href="#section-oldenglish">Olde English</a>
+    <a href="#section-middleenglish">Middle English</a>
+    <a class="util" href="#">About</a>
+  </nav>
+</header>
+
+<main>
+  <div id="sections">
+
+    <!-- =================== GREEK =================== -->
+    <section class="lang-section" id="section-greek">
+      <div class="lang-header">
+        <div class="lang-name">Greek</div>
+        <div class="lang-tagline">Ancient Hellenic letters</div>
+      </div>
+      <div class="word-block">
+        <div class="word-card" data-lang="greek">
+          <div class="headword-row">
+            <h3 class="headword">ἀναγκαῖον</h3>
+            <button class="audio-btn" aria-label="Pronounce">▶</button>
+          </div>
+          <div class="transliteration">anankaion</div>
+          <div class="pos-line">adjective, neut.</div>
+          <div class="meaning">necessary, inevitable, compulsory</div>
+          <div class="pronunciation"><b>Say:</b> ah-nahn-KAI-on <b style="margin-left:12px">IPA:</b> /a.naŋ.ˈkai.on/</div>
+          <div class="detail-section"><div class="detail-label">Forms</div><p class="detail-body">ἀναγκαῖος, -α, -ον (masc., fem., neut.); comparative ἀναγκαιότερος; superlative ἀναγκαιότατος</p></div>
+          <div class="detail-section"><div class="detail-label">Etymology</div><p class="detail-body">From ἀνάγκη (necessity, constraint) + adjectival suffix -αῖος. The root ἀνάγκη itself derives from ἀνα- (intensive) + the verbal root of ἄγχω (to squeeze, strangle).</p></div>
+          <div class="detail-section"><div class="detail-label">In Literature</div><p class="detail-body">Aristotle uses τὸ ἀναγκαῖον extensively in the Nicomachean Ethics and Physics to distinguish what is necessary by nature from what is contingent. Plato employs the term in Republic Book 2.</p></div>
+          <div class="detail-section">
+            <div class="detail-label">In Use</div>
+            <p class="detail-body italic in-use-original">Τὰ ἀναγκαῖα πρῶτον δεῖ παρασκευάζειν. <button class="audio-btn inline-audio-btn" aria-label="Listen">▶</button></p>
+            <p class="detail-body in-use-translation">One must first provide the necessary things.</p>
+          </div>
+          <div class="detail-section"><div class="detail-label">Did You Know</div><p class="detail-body">Aristotle distinguished between simple necessity (ἁπλῶς ἀναγκαῖον) and hypothetical necessity (ἐξ ὑποθέσεως ἀναγκαῖον), a distinction foundational to medieval scholasticism.</p></div>
+        </div>
+
+        <div class="culture-card">
+          <div class="culture-text">
+            <h3 class="culture-title">The Three Fates and Cosmic Necessity</h3>
+            <p class="culture-body">The Moirai embodied the Greek conception of necessity that even the gods could not escape. Clotho spun the thread of life, Lachesis measured its length, Atropos cut it. In Hesiod's <em>Theogony</em>, they are daughters of Night, older than the Olympians themselves.</p>
+          </div>
+        </div>
+
+        <!-- AKOUSMA PROMOTION CARD — GREEK -->
+      </div>
+
+        <aside class="akousma-ad">
+          <div class="akousma-inner">
+            <div class="akousma-eyebrow">
+            <span class="alpha">Α</span>
+            Akousma <span class="pipe">·</span> The Audio Library
+          </div>
+          <div class="akousma-row">
+          <div class="akousma-cover">
+            <article class="ako-cover">
+              <div class="ako-cover-imprint">Akousma</div>
+              <div class="ako-cover-vignette">
+                <img src="/paideia/img/akousma/greek-iliad.jpg" alt="Achilles and Ajax playing dice — Exekias, c. 540 BC" />
+              </div>
+              <div class="ako-cover-rule"></div>
+              <h4 class="ako-cover-title">The Iliad</h4>
+              <div class="ako-cover-author">Homer</div>
+            </article>
+          </div>
+          <div class="akousma-copy">
+            <div class="akousma-meta"><span class="lang">Greek</span> · 611 lines · Pope, 1715–1720 · Public domain</div>
+            <h3 class="akousma-title"><em>The Iliad</em>, Book I</h3>
+            <p class="akousma-author">Homer · with parallel English translation by Alexander Pope</p>
+            <p class="akousma-blurb">Listen to the opening of Western literature in its original Greek — line by line, with Pope's heroic-couplet translation alongside. Fifteen hours of audio, the full Book I, every line read by a voice tuned for the Homeric line.</p>
+            <p class="akousma-credits">Cover: Achilles and Ajax playing dice, Attic black-figure amphora signed by Exekias, c. 540 BC. Vatican Museums (PD).</p>
+          </div>
+          <div class="akousma-cta">
+            <div class="akousma-cta-eyebrow">Full Library Access</div>
+            <div class="akousma-cta-price"><span>$</span>11<span class="cents">.99</span></div>
+            <div class="akousma-cta-period">per month · cancel anytime</div>
+            <a class="akousma-cta-button" href="#">Begin Listening →</a>
+            <p class="akousma-cta-fineprint"><span class="count" data-akousma-count>&mdash;</span> works in the library across all seven languages.</p>
+          </div>
+          </div>
+          </div>
+        </aside>
+    </section>
+
+    <!-- =================== LATIN =================== -->
+    <section class="lang-section" id="section-latin">
+      <div class="lang-header">
+        <div class="lang-name">Latin</div>
+        <div class="lang-tagline">Classical Roman letters</div>
+      </div>
+      <div class="word-block">
+        <div class="word-card" data-lang="latin">
+          <div class="headword-row">
+            <h3 class="headword">fastīgium</h3>
+            <button class="audio-btn" aria-label="Pronounce">▶</button>
+          </div>
+          <div class="pos-line">noun, neut.</div>
+          <div class="meaning">summit, peak, gable; highest point, pinnacle of honor or power</div>
+          <div class="pronunciation"><b>Say:</b> fah-STEE-gee-oom <b style="margin-left:12px">IPA:</b> /fasˈtiː.ɡi.um/</div>
+          <div class="detail-section"><div class="detail-label">Forms</div><p class="detail-body">nom. fastīgium, gen. fastīgiī, dat. fastīgiō, acc. fastīgium, abl. fastīgiō (2nd decl. neuter)</p></div>
+          <div class="detail-section"><div class="detail-label">Etymology</div><p class="detail-body">From *fastīgō (to make pointed), related to fastīgātus (sloping, pointed). Possibly connected to the root *bhasg- (to bind, make firm).</p></div>
+          <div class="detail-section"><div class="detail-label">In Literature</div><p class="detail-body">Cicero uses fastīgium frequently in his philosophical works to denote the apex of dignity or achievement. In <em>De Oratore</em>, he speaks of reaching the fastīgium of eloquence as the orator's ultimate goal.</p></div>
+          <div class="detail-section">
+            <div class="detail-label">In Use</div>
+            <p class="detail-body italic in-use-original">Ad summum fastīgium glōriae pervēnit. <button class="audio-btn inline-audio-btn" aria-label="Listen">▶</button></p>
+            <p class="detail-body in-use-translation">He arrived at the highest pinnacle of glory.</p>
+          </div>
+          <div class="detail-section"><div class="detail-label">Did You Know</div><p class="detail-body">In Roman architecture, fastīgium specifically referred to the triangular gable or pediment of a temple, making it both a literal and metaphorical peak.</p></div>
+        </div>
+
+        <div class="culture-card">
+          <div class="culture-text">
+            <h3 class="culture-title">The Pediment of Temple Architecture</h3>
+            <p class="culture-body">Roman temples wore their fastigia prominently: the triangular gable crowning the front portico, filled with sculpture and framed by the sloping roof. The Maison Carrée at Nîmes, built under Augustus, displays a perfectly proportioned fastīgium whose six-to-one ratio became canonical.</p>
+          </div>
+        </div>
+
+        <!-- AKOUSMA PROMOTION CARD — LATIN -->
+      </div>
+
+        <aside class="akousma-ad">
+          <div class="akousma-inner">
+            <div class="akousma-eyebrow">
+            <span class="alpha">Α</span>
+            Akousma <span class="pipe">·</span> The Audio Library
+          </div>
+          <div class="akousma-row">
+          <div class="akousma-cover">
+            <article class="ako-cover">
+              <div class="ako-cover-imprint">Akousma</div>
+              <div class="ako-cover-vignette">
+                <img src="/paideia/img/akousma/latin-aeneid.jpg" alt="Vergilius Romanus, folio 234v" />
+              </div>
+              <div class="ako-cover-rule"></div>
+              <h4 class="ako-cover-title">Aeneid</h4>
+              <div class="ako-cover-author">Virgil</div>
+            </article>
+          </div>
+          <div class="akousma-copy">
+            <div class="akousma-meta"><span class="lang">Latin</span> · 756 lines · Dryden, 1697 · Public domain</div>
+            <h3 class="akousma-title"><em>The Aeneid</em>, Book I</h3>
+            <p class="akousma-author">Publius Vergilius Maro · with parallel English translation by John Dryden</p>
+            <p class="akousma-blurb">Hear the opening of the Roman epic spoken in its native dactylic hexameter, with Dryden's 1697 verse translation read alongside. Each line carries a brief grammatical note for the student.</p>
+            <p class="akousma-credits">Cover: Vergilius Romanus, folio 234v — a fifth-century Latin manuscript of the Aeneid. Vatican Library (PD).</p>
+          </div>
+          <div class="akousma-cta">
+            <div class="akousma-cta-eyebrow">Full Library Access</div>
+            <div class="akousma-cta-price"><span>$</span>11<span class="cents">.99</span></div>
+            <div class="akousma-cta-period">per month · cancel anytime</div>
+            <a class="akousma-cta-button" href="#">Begin Listening →</a>
+            <p class="akousma-cta-fineprint"><span class="count" data-akousma-count>&mdash;</span> works in the library across all seven languages.</p>
+          </div>
+          </div>
+          </div>
+        </aside>
+    </section>
+
+    <!-- =================== FRENCH =================== -->
+    <section class="lang-section" id="section-french">
+      <div class="lang-header">
+        <div class="lang-name">French</div>
+        <div class="lang-tagline">Literary French</div>
+      </div>
+      <div class="word-block">
+        <div class="word-card" data-lang="french">
+          <div class="headword-row">
+            <h3 class="headword">houle</h3>
+            <button class="audio-btn" aria-label="Pronounce">▶</button>
+          </div>
+          <div class="pos-line">noun, fem.</div>
+          <div class="meaning">swell (of the sea); rolling waves</div>
+          <div class="pronunciation"><b>Say:</b> OOL <b style="margin-left:12px">IPA:</b> /ul/</div>
+          <div class="detail-section"><div class="detail-label">Forms</div><p class="detail-body">singular: la houle; plural: les houles</p></div>
+          <div class="detail-section"><div class="detail-label">Etymology</div><p class="detail-body">From Middle Dutch <em>holle</em> 'hollow, cavity' or related Germanic roots referring to hollow waves. Entered French maritime vocabulary in the 16th century.</p></div>
+          <div class="detail-section"><div class="detail-label">In Literature</div><p class="detail-body">Baudelaire uses <em>houle</em> in 'L'Homme et la mer' from <em>Les Fleurs du mal</em>, where the sea's swell mirrors the turbulence of the human heart.</p></div>
+          <div class="detail-section">
+            <div class="detail-label">In Use</div>
+            <p class="detail-body italic in-use-original">La houle berce le navire dans un mouvement régulier et profond. <button class="audio-btn inline-audio-btn" aria-label="Listen">▶</button></p>
+            <p class="detail-body in-use-translation">The swell rocks the ship in a regular and deep motion.</p>
+          </div>
+          <div class="detail-section"><div class="detail-label">Did You Know</div><p class="detail-body">In French maritime tradition, <em>houle</em> designates the long rolling waves that persist after a storm has passed, distinguishing it from <em>vague</em> (surface wave) and <em>lame</em> (breaking wave).</p></div>
+        </div>
+
+        <div class="culture-card">
+          <div class="culture-text">
+            <h3 class="culture-title">Baudelaire at the Hôtel Pimodan</h3>
+            <p class="culture-body">In the 1840s, Charles Baudelaire occupied rooms at the Hôtel Pimodan on the Île Saint-Louis, a crumbling seventeenth-century mansion where he cultivated his theory of <em>correspondances</em> and wrote early drafts of <em>Les Fleurs du mal</em>.</p>
+          </div>
+        </div>
+
+        <!-- AKOUSMA PROMOTION CARD — FRENCH -->
+      </div>
+
+        <aside class="akousma-ad">
+          <div class="akousma-inner">
+            <div class="akousma-eyebrow">
+            <span class="alpha">Α</span>
+            Akousma <span class="pipe">·</span> The Audio Library
+          </div>
+          <div class="akousma-row">
+          <div class="akousma-cover">
+            <article class="ako-cover">
+              <div class="ako-cover-imprint">Akousma</div>
+              <div class="ako-cover-vignette">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Danse_macabre_by_Michael_Wolgemut.png" alt="Danse Macabre, Wolgemut, 1493" loading="lazy" />
+              </div>
+              <div class="ako-cover-rule"></div>
+              <h4 class="ako-cover-title">Ballade des pendus</h4>
+              <div class="ako-cover-author">François Villon</div>
+            </article>
+          </div>
+          <div class="akousma-copy">
+            <div class="akousma-meta"><span class="lang">French</span> · 20 lines · Payne, 1878 · Public domain</div>
+            <h3 class="akousma-title"><em>Ballade des pendus</em></h3>
+            <p class="akousma-author">François Villon · with parallel English translation by John Payne</p>
+            <p class="akousma-blurb">The hanged poet's letter to the living — late-medieval French at its most ferocious. Hear each tercet read in the rhythm Villon set down in 1462, with Payne's 1878 translation alongside.</p>
+            <p class="akousma-credits">Cover: Danse Macabre, woodcut by Michael Wolgemut from the Nuremberg Chronicle, 1493 (PD).</p>
+          </div>
+          <div class="akousma-cta">
+            <div class="akousma-cta-eyebrow">Full Library Access</div>
+            <div class="akousma-cta-price"><span>$</span>11<span class="cents">.99</span></div>
+            <div class="akousma-cta-period">per month · cancel anytime</div>
+            <a class="akousma-cta-button" href="#">Begin Listening →</a>
+            <p class="akousma-cta-fineprint"><span class="count" data-akousma-count>&mdash;</span> works in the library across all seven languages.</p>
+          </div>
+          </div>
+          </div>
+        </aside>
+    </section>
+
+    <!-- =================== GERMAN =================== -->
+    <section class="lang-section" id="section-german">
+      <div class="lang-header">
+        <div class="lang-name">German</div>
+        <div class="lang-tagline">Letters &amp; Philosophy</div>
+      </div>
+      <div class="word-block">
+        <div class="word-card" data-lang="german">
+          <div class="headword-row">
+            <h3 class="headword">Verklärung</h3>
+            <button class="audio-btn" aria-label="Pronounce">▶</button>
+          </div>
+          <div class="pos-line">noun, fem.</div>
+          <div class="meaning">transfiguration, glorification, idealization</div>
+          <div class="pronunciation"><b>Say:</b> fehr-KLEH-roong <b style="margin-left:12px">IPA:</b> /fɛɐ̯ˈklɛːrʊŋ/</div>
+          <div class="detail-section"><div class="detail-label">Forms</div><p class="detail-body">die Verklärung, gen. der Verklärung, pl. die Verklärungen</p></div>
+          <div class="detail-section"><div class="detail-label">Etymology</div><p class="detail-body">From the verb <em>verklären</em> (to transfigure, to glorify), composed of the prefix ver- (transformation) + klären (to clarify, from <em>klar</em> 'clear').</p></div>
+          <div class="detail-section"><div class="detail-label">In Literature</div><p class="detail-body">Thomas Mann uses <em>Verklärung</em> throughout <em>Der Tod in Venedig</em> to describe Aschenbach's aesthetic transfiguration of Tadzio.</p></div>
+          <div class="detail-section">
+            <div class="detail-label">In Use</div>
+            <p class="detail-body italic in-use-original">Die Musik Wagners strebt nach der Verklärung des Leidens. <button class="audio-btn inline-audio-btn" aria-label="Listen">▶</button></p>
+            <p class="detail-body in-use-translation">Wagner's music strives toward the transfiguration of suffering.</p>
+          </div>
+          <div class="detail-section"><div class="detail-label">Did You Know</div><p class="detail-body">Schopenhauer identified <em>Verklärung</em> as the ultimate achievement of art, whereby aesthetic contemplation lifts us above the will's torment and grants us a vision of pure Ideas.</p></div>
+        </div>
+
+        <div class="culture-card">
+          <div class="culture-text">
+            <h3 class="culture-title">Goethe and the Sturm und Drang</h3>
+            <p class="culture-body">Goethe's early years in Weimar saw the formation of the literary movement that would shape German Romanticism. The transfiguration of feeling into form became its central preoccupation.</p>
+          </div>
+        </div>
+
+        <!-- AKOUSMA PROMOTION CARD — GERMAN -->
+      </div>
+
+        <aside class="akousma-ad">
+          <div class="akousma-inner">
+            <div class="akousma-eyebrow">
+            <span class="alpha">Α</span>
+            Akousma <span class="pipe">·</span> The Audio Library
+          </div>
+          <div class="akousma-row">
+          <div class="akousma-cover">
+            <article class="ako-cover">
+              <div class="ako-cover-imprint">Akousma</div>
+              <div class="ako-cover-vignette">
+                <img src="/paideia/img/akousma/german-erlkonig.jpg" alt="Erlkönig — Schwind, c. 1830" />
+              </div>
+              <div class="ako-cover-rule"></div>
+              <h4 class="ako-cover-title">Erlkönig</h4>
+              <div class="ako-cover-author">Goethe</div>
+            </article>
+          </div>
+          <div class="akousma-copy">
+            <div class="akousma-meta"><span class="lang">German</span> · 32 lines · Bowring, 1853 · Public domain</div>
+            <h3 class="akousma-title"><em>Erlkönig</em></h3>
+            <p class="akousma-author">Johann Wolfgang von Goethe · with parallel English translation by Edgar Alfred Bowring</p>
+            <p class="akousma-blurb">Goethe's 1782 ballad of the alder-king who claims a child on a midnight ride — the most famous lyric in German Romanticism. Each voice in the dialogue read by a separate reader.</p>
+            <p class="akousma-credits">Cover: Erlkönig, oil on canvas by Moritz von Schwind, c. 1830 — Belvedere, Vienna (PD).</p>
+          </div>
+          <div class="akousma-cta">
+            <div class="akousma-cta-eyebrow">Full Library Access</div>
+            <div class="akousma-cta-price"><span>$</span>11<span class="cents">.99</span></div>
+            <div class="akousma-cta-period">per month · cancel anytime</div>
+            <a class="akousma-cta-button" href="#">Begin Listening →</a>
+            <p class="akousma-cta-fineprint"><span class="count" data-akousma-count>&mdash;</span> works in the library across all seven languages.</p>
+          </div>
+          </div>
+          </div>
+        </aside>
+    </section>
+
+    <!-- =================== ITALIAN =================== -->
+    <section class="lang-section" id="section-italian">
+      <div class="lang-header">
+        <div class="lang-name">Italian</div>
+        <div class="lang-tagline">Trecento &amp; Renaissance letters</div>
+      </div>
+      <div class="word-block">
+        <div class="word-card" data-lang="italian">
+          <div class="headword-row">
+            <h3 class="headword">trasmutare</h3>
+            <button class="audio-btn" aria-label="Pronounce">▶</button>
+          </div>
+          <div class="pos-line">verb, transitive</div>
+          <div class="meaning">to transmute, to transform, to change from one form or nature into another</div>
+          <div class="pronunciation"><b>Say:</b> traz-moo-TAH-reh <b style="margin-left:12px">IPA:</b> /traz.muˈta.re/</div>
+          <div class="detail-section"><div class="detail-label">Forms</div><p class="detail-body">Present: trasmuto, trasmuti, trasmuta, trasmutiamo, trasmutate, trasmutano. Past participle: trasmutato. Gerund: trasmutando.</p></div>
+          <div class="detail-section"><div class="detail-label">Etymology</div><p class="detail-body">From Latin <em>trans-</em> (across, beyond) + <em>mutare</em> (to change). The prefix intensifies the sense of transformation, suggesting a complete change of nature or substance.</p></div>
+          <div class="detail-section"><div class="detail-label">In Literature</div><p class="detail-body">Dante uses <em>trasmutare</em> in <em>Paradiso</em> II.37–38 to describe the transformation of matter, and again in <em>Paradiso</em> I.67–70 regarding Glaucus, who was transmuted into a sea god.</p></div>
+          <div class="detail-section">
+            <div class="detail-label">In Use</div>
+            <p class="detail-body italic in-use-original">Trasumanar significar per verba non si poria; però l'essemplo basti a cui esperïenza grazia serba. <button class="audio-btn inline-audio-btn" aria-label="Listen">▶</button></p>
+            <p class="detail-body in-use-translation">To trans-humanize cannot be signified in words; therefore let the example suffice for him to whom grace reserves the experience.</p>
+          </div>
+          <div class="detail-section"><div class="detail-label">Did You Know</div><p class="detail-body">Dante coined the verb <em>trasumanar</em> (to transcend humanity) from <em>trasmutare</em> in <em>Paradiso</em> I.70, creating one of Italian literature's most famous neologisms.</p></div>
+        </div>
+
+        <div class="culture-card">
+          <div class="culture-text">
+            <h3 class="culture-title">Dante's Metamorphic Paradise</h3>
+            <p class="culture-body">In the highest reaches of the <em>Paradiso</em>, Dante draws on Ovid's <em>Metamorphoses</em> for the language of transformation that human speech cannot fully convey. The neologism <em>trasumanar</em> marks the threshold of what can be said.</p>
+          </div>
+        </div>
+
+        <!-- AKOUSMA PROMOTION CARD — ITALIAN -->
+      </div>
+
+        <aside class="akousma-ad">
+          <div class="akousma-inner">
+            <div class="akousma-eyebrow">
+            <span class="alpha">Α</span>
+            Akousma <span class="pipe">·</span> The Audio Library
+          </div>
+          <div class="akousma-row">
+          <div class="akousma-cover">
+            <article class="ako-cover">
+              <div class="ako-cover-imprint">Akousma</div>
+              <div class="ako-cover-vignette">
+                <img src="/paideia/img/akousma/italian-inferno.jpg" alt="La Carte de l'Enfer — Botticelli, c. 1485" />
+              </div>
+              <div class="ako-cover-rule"></div>
+              <h4 class="ako-cover-title">Inferno, Canto I</h4>
+              <div class="ako-cover-author">Dante Alighieri</div>
+            </article>
+          </div>
+          <div class="akousma-copy">
+            <div class="akousma-meta"><span class="lang">Italian</span> · 36 lines · Longfellow, 1867 · Public domain</div>
+            <h3 class="akousma-title"><em>Inferno</em>, Canto I</h3>
+            <p class="akousma-author">Dante Alighieri · with parallel English translation by Henry Wadsworth Longfellow</p>
+            <p class="akousma-blurb">"Nel mezzo del cammin di nostra vita…" — the dark wood, the sunlit hill, the leopard. Hear the opening of the Commedia in Tuscan terza rima with Longfellow's terza-rima translation read alongside.</p>
+            <p class="akousma-credits">Cover: La Carte de l'Enfer (Map of Hell), silverpoint and ink by Sandro Botticelli, c. 1485. Vatican Library (PD).</p>
+          </div>
+          <div class="akousma-cta">
+            <div class="akousma-cta-eyebrow">Full Library Access</div>
+            <div class="akousma-cta-price"><span>$</span>11<span class="cents">.99</span></div>
+            <div class="akousma-cta-period">per month · cancel anytime</div>
+            <a class="akousma-cta-button" href="#">Begin Listening →</a>
+            <p class="akousma-cta-fineprint"><span class="count" data-akousma-count>&mdash;</span> works in the library across all seven languages.</p>
+          </div>
+          </div>
+          </div>
+        </aside>
+    </section>
+
+    <!-- =================== OLDE ENGLISH =================== -->
+    <section class="lang-section" id="section-oldenglish">
+      <div class="lang-header">
+        <div class="lang-name">Olde English</div>
+        <div class="lang-tagline">Anglo-Saxon poetry</div>
+      </div>
+      <div class="word-block">
+        <div class="word-card" data-lang="oldenglish">
+          <div class="headword-row">
+            <h3 class="headword">wordhord</h3>
+            <button class="audio-btn" aria-label="Pronounce">▶</button>
+          </div>
+          <div class="pos-line">noun, neut.</div>
+          <div class="meaning">word-hoard, treasury of words, vocabulary, mental storehouse of language</div>
+          <div class="pronunciation"><b>Say:</b> WORD-hord <b style="margin-left:12px">IPA:</b> /ˈword.hord/</div>
+          <div class="detail-section"><div class="detail-label">Forms</div><p class="detail-body">nom./acc. sg. wordhord; gen. sg. wordhordes; dat. sg. wordhorde; nom./acc. pl. wordhord</p></div>
+          <div class="detail-section"><div class="detail-label">Etymology</div><p class="detail-body">Compound of <em>word</em> 'word' + <em>hord</em> 'hoard, treasure, store'. Proto-Germanic *wurda- + *huzdam.</p></div>
+          <div class="detail-section"><div class="detail-label">In Literature</div><p class="detail-body">In <em>Beowulf</em> (line 259), the coastal guard speaks wisely from his <em>wordhord</em>. The Exeter Book riddles also employ this term for mental eloquence.</p></div>
+          <div class="detail-section">
+            <div class="detail-label">In Use</div>
+            <p class="detail-body italic in-use-original">Onlēac his wordhord wide. <button class="audio-btn inline-audio-btn" aria-label="Listen">▶</button></p>
+            <p class="detail-body in-use-translation">He unlocked his word-hoard widely.</p>
+          </div>
+          <div class="detail-section"><div class="detail-label">Did You Know</div><p class="detail-body">The concept of <em>wordhord</em> reflects the Anglo-Saxon view that eloquence and wisdom were treasures to be accumulated and carefully dispensed, paralleling how literal gold-hoards were distributed by lords to worthy retainers in the mead-hall.</p></div>
+        </div>
+
+        <div class="culture-card">
+          <div class="culture-text">
+            <h3 class="culture-title">The Mead-Hall as Treasury of Speech</h3>
+            <p class="culture-body">In Anglo-Saxon culture, the mead-hall doubled as a treasury of words. The <em>scop</em> (poet) unlocked his word-hoard for the company; songs, riddles, and genealogies were the gold of speech, distributed as freely as the lord's gold-rings.</p>
+          </div>
+        </div>
+
+        <!-- AKOUSMA PROMOTION CARD — OLDE ENGLISH -->
+      </div>
+
+        <aside class="akousma-ad">
+          <div class="akousma-inner">
+            <div class="akousma-eyebrow">
+            <span class="alpha">Α</span>
+            Akousma <span class="pipe">·</span> The Audio Library
+          </div>
+          <div class="akousma-row">
+          <div class="akousma-cover">
+            <article class="ako-cover">
+              <div class="ako-cover-imprint">Akousma</div>
+              <div class="ako-cover-vignette">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Sutton_Hoo_helmet_2016.png/800px-Sutton_Hoo_helmet_2016.png" alt="Sutton Hoo helmet" loading="lazy" />
+              </div>
+              <div class="ako-cover-rule"></div>
+              <h4 class="ako-cover-title">Beowulf, Prologue</h4>
+              <div class="ako-cover-author">Anonymous</div>
+            </article>
+          </div>
+          <div class="akousma-copy">
+            <div class="akousma-meta"><span class="lang">Olde English</span> · 21 lines · Gummere, 1910 · Public domain</div>
+            <h3 class="akousma-title"><em>Beowulf</em>, Prologue</h3>
+            <p class="akousma-author">Anonymous · with parallel English translation by Francis B. Gummere</p>
+            <p class="akousma-blurb">"Hwæt!" — the alliterative opening of the great Anglo-Saxon epic, as it would have sounded in the mead-hall: stressed half-lines, caesuras, and a kenning every other phrase. Gummere's 1910 alliterative verse translation alongside.</p>
+            <p class="akousma-credits">Cover: Sutton Hoo helmet, early seventh-century Anglo-Saxon — British Museum, London (PD).</p>
+          </div>
+          <div class="akousma-cta">
+            <div class="akousma-cta-eyebrow">Full Library Access</div>
+            <div class="akousma-cta-price"><span>$</span>11<span class="cents">.99</span></div>
+            <div class="akousma-cta-period">per month · cancel anytime</div>
+            <a class="akousma-cta-button" href="#">Begin Listening →</a>
+            <p class="akousma-cta-fineprint"><span class="count" data-akousma-count>&mdash;</span> works in the library across all seven languages.</p>
+          </div>
+          </div>
+          </div>
+        </aside>
+    </section>
+
+    <!-- =================== MIDDLE ENGLISH =================== -->
+    <section class="lang-section" id="section-middleenglish">
+      <div class="lang-header">
+        <div class="lang-name">Middle English</div>
+        <div class="lang-tagline">Chaucer &amp; the Pearl-poet</div>
+      </div>
+      <div class="word-block">
+        <div class="word-card" data-lang="middleenglish">
+          <div class="headword-row">
+            <h3 class="headword">corteys</h3>
+            <button class="audio-btn" aria-label="Pronounce">▶</button>
+          </div>
+          <div class="pos-line">adjective</div>
+          <div class="meaning">courteous, refined in manners, possessing the qualities of courtly behavior</div>
+          <div class="pronunciation"><b>Say:</b> cor-TAYS <b style="margin-left:12px">IPA:</b> /kɔrˈtɛi̯s/</div>
+          <div class="detail-section"><div class="detail-label">Forms</div><p class="detail-body">Positive: corteys; Comparative: more corteys; Superlative: moost corteys. Adverb: corteysly. Noun form: corteysie (courtesy).</p></div>
+          <div class="detail-section"><div class="detail-label">Etymology</div><p class="detail-body">From Old French <em>corteis/curteis</em> (courtly, elegant), derived from <em>cort</em> (court) + -eis. The Old French <em>cort</em> comes from Latin <em>cohors, cohortis</em> (enclosure, retinue).</p></div>
+          <div class="detail-section"><div class="detail-label">In Literature</div><p class="detail-body">Chaucer uses <em>corteys</em> repeatedly in the <em>Canterbury Tales</em> to describe the Prioress (General Prologue, line 132). The Pearl-poet employs it in <em>Sir Gawain and the Green Knight</em> for the refined behavior expected at Arthur's court.</p></div>
+          <div class="detail-section">
+            <div class="detail-label">In Use</div>
+            <p class="detail-body italic in-use-original">The knyght was corteys and of gentil port, and spak ful faire to alle maner folk. <button class="audio-btn inline-audio-btn" aria-label="Listen">▶</button></p>
+            <p class="detail-body in-use-translation">The knight was courteous and of noble bearing, and spoke very graciously to all manner of people.</p>
+          </div>
+          <div class="detail-section"><div class="detail-label">Did You Know</div><p class="detail-body">In medieval romance literature, <em>corteys</em> embodied an entire social code encompassing not just politeness but also generosity, loyalty, and refined speech.</p></div>
+        </div>
+
+        <div class="culture-card">
+          <div class="culture-text">
+            <h3 class="culture-title">The Prioress's Courtly Table Manners</h3>
+            <p class="culture-body">Chaucer's portrait of the Prioress in the General Prologue dwells on her studied refinement — she sings the divine service through her nose, speaks French after the school of Stratford-atte-Bowe, and never lets a morsel fall from her lips. The whole catalogue is a quiet satire of <em>corteys</em> behavior turned into performance.</p>
+          </div>
+        </div>
+
+        <!-- AKOUSMA PROMOTION CARD — MIDDLE ENGLISH -->
+      </div>
+
+        <aside class="akousma-ad">
+          <div class="akousma-inner">
+            <div class="akousma-eyebrow">
+            <span class="alpha">Α</span>
+            Akousma <span class="pipe">·</span> The Audio Library
+          </div>
+          <div class="akousma-row">
+          <div class="akousma-cover">
+            <article class="ako-cover">
+              <div class="ako-cover-imprint">Akousma</div>
+              <div class="ako-cover-vignette">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/The_Knight_-_Ellesmere_Chaucer.jpg/800px-The_Knight_-_Ellesmere_Chaucer.jpg" alt="The Knight, Ellesmere Manuscript" loading="lazy" />
+              </div>
+              <div class="ako-cover-rule"></div>
+              <h4 class="ako-cover-title">Canterbury Tales</h4>
+              <div class="ako-cover-author">Geoffrey Chaucer</div>
+            </article>
+          </div>
+          <div class="akousma-copy">
+            <div class="akousma-meta"><span class="lang">Middle English</span> · 42 lines · after Skeat, 1894 · Public domain</div>
+            <h3 class="akousma-title"><em>The Canterbury Tales</em>, General Prologue</h3>
+            <p class="akousma-author">Geoffrey Chaucer · with parallel English crib after Skeat's edition</p>
+            <p class="akousma-blurb">"Whan that Aprille with his shoures soote…" — the most famous opening in English literature, read with the final-e schwa, the rolled rhotic r, the sounded gh: the language as Chaucer's audience heard it, c. 1387.</p>
+            <p class="akousma-credits">Cover: The Knight, Ellesmere Manuscript of the Canterbury Tales, c. 1410 — Huntington Library, San Marino (PD).</p>
+          </div>
+          <div class="akousma-cta">
+            <div class="akousma-cta-eyebrow">Full Library Access</div>
+            <div class="akousma-cta-price"><span>$</span>11<span class="cents">.99</span></div>
+            <div class="akousma-cta-period">per month · cancel anytime</div>
+            <a class="akousma-cta-button" href="#">Begin Listening →</a>
+            <p class="akousma-cta-fineprint"><span class="count" data-akousma-count>&mdash;</span> works in the library across all seven languages.</p>
+          </div>
+          </div>
+          </div>
+        </aside>
+    </section>
+
+  </div>
+
+  <!-- ============================================================
+       Closing brand band
+       ============================================================ -->
+  <div class="akousma-band">
+    <div class="mark">ΑΚΟΥΣΜΑ</div>
+    <h2>The Audio Library of Kalopaideia</h2>
+    <p>One canonical work from each tradition · line-by-line audio in the original tongue · parallel English translation · scholarly notes · all for $11.99 a month.</p>
+    <a class="cta" href="#">Begin a Free Trial →</a>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="foot-inner">
+    <div class="foot-title">Kalopaideia</div>
+    <p>A daily word from each classical tradition.</p>
+    <p class="foot-copyright">
+      © 2026 New Charter Ventures &middot; All rights reserved
+      &middot; <a href="/paideia/about.html">About</a>
+      &middot; <a href="/paideia/contact.html">Contact</a>
+      &middot; <a href="/paideia/terms.html">Terms</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+  // Dynamic Akousma library count. Fetches the live total from
+  // /paideia/api/library/all and writes it into every .count span.
+  // Per Jae 2026-05-09: count must update automatically as new works
+  // land in data/library/.
+  (function () {
+    var els = document.querySelectorAll('[data-akousma-count]');
+    if (!els.length) return;
+    fetch('/paideia/api/library/all')
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (j) {
+        if (!j || typeof j.total !== 'number') return;
+        var n = String(j.total);
+        for (var i = 0; i < els.length; i++) els[i].textContent = n;
+      })
+      .catch(function () { /* leave the dash if the API is unreachable */ });
+  })();
+</script>
+</body>
+</html>
