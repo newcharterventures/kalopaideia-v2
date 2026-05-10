@@ -2703,10 +2703,32 @@ main {
 .library-masthead-sub em { color: var(--gold-deep, #7d5d12); font-weight: 600; font-style: italic; }
 
 @media (max-width: 600px) {
-  .library-masthead { grid-template-columns: 64px 1fr; gap: 14px; padding: 10px 0 14px; }
-  .library-masthead-emblem { width: 64px; }
-  .library-masthead-title { font-size: 22px; }
-  .library-masthead-sub { font-size: 13px; }
+  /* Mobile: stack the temple emblem above a CENTERED title + subtitle.
+   * Per Jae 2026-05-09 (twice): force text-align center on every child
+   * AND override grid-column to 1 to break out of the 88px/1fr columns. */
+  .library-masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 12px 0 14px;
+    text-align: center;
+  }
+  .library-masthead-emblem {
+    grid-row: 1;
+    grid-column: 1;
+    width: 56px;
+    margin: 0 auto;
+    justify-self: center;
+  }
+  .library-masthead-title {
+    grid-column: 1;
+    font-size: 24px;
+    text-align: center;
+  }
+  .library-masthead-sub {
+    grid-column: 1;
+    font-size: 13px;
+    text-align: center;
+  }
 }
 
 /* ============================================================
