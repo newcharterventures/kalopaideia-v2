@@ -1,0 +1,473 @@
+{
+  "overview": "Old Norse is the North Germanic language spoken and written in Scandinavia and the Norse colonies from roughly 700 to 1400 CE, preserved most richly in the Icelandic sagas, eddic poetry, and skaldic verse of the thirteenth and fourteenth centuries. The language exhibits a conservative phonology and morphology, retaining much of the inflectional complexity of Proto-Germanic through four cases, three genders, and a sophisticated verbal system. Study of Old Norse grants direct access to the Eddas, the Family Sagas, Snorri Sturluson's historiography, and the runic inscriptions of the Viking Age.",
+  "alphabet": [
+    {
+      "char": "a",
+      "name": "a",
+      "ipa": "[a]",
+      "approximation": "like a in father",
+      "notes": "Short vowel. Long á [aː] when marked with acute accent."
+    },
+    {
+      "char": "á",
+      "name": "á",
+      "ipa": "[aː]",
+      "approximation": "long a as in father, held longer",
+      "notes": "Length is phonemic; distinguished from short a in meaning and form."
+    },
+    {
+      "char": "b",
+      "name": "bé",
+      "ipa": "[b]",
+      "approximation": "b in bat",
+      "notes": "Voiced stop; devoices to [p] word-finally in late Old Icelandic."
+    },
+    {
+      "char": "d",
+      "name": "dé",
+      "ipa": "[d]",
+      "approximation": "d in dog",
+      "notes": "Voiced dental stop; becomes [ð] intervocalically in some dialects."
+    },
+    {
+      "char": "ð",
+      "name": "eð",
+      "ipa": "[ð]",
+      "approximation": "th in this",
+      "notes": "Voiced dental fricative; occurs intervocalically and word-finally. Derived from earlier /d/ by lenition."
+    },
+    {
+      "char": "e",
+      "name": "e",
+      "ipa": "[ɛ]",
+      "approximation": "e in bet",
+      "notes": "Short open-mid front vowel. Long é [eː] when marked."
+    },
+    {
+      "char": "é",
+      "name": "é",
+      "ipa": "[eː]",
+      "approximation": "like French é, held longer",
+      "notes": "Long close-mid front vowel; from i-umlaut of á or inherited from Proto-Norse."
+    },
+    {
+      "char": "f",
+      "name": "ef",
+      "ipa": "[f]",
+      "approximation": "f in fat",
+      "notes": "Initially and finally [f]; intervocalically often [v]."
+    },
+    {
+      "char": "g",
+      "name": "gé",
+      "ipa": "[ɡ]",
+      "approximation": "g in go",
+      "notes": "Initially [ɡ]; intervocalically [ɣ] or [j] before front vowels; word-finally often devoices."
+    },
+    {
+      "char": "h",
+      "name": "há",
+      "ipa": "[h]",
+      "approximation": "h in house",
+      "notes": "Voiceless glottal fricative; also occurs in clusters hl-, hn-, hr-, hv-."
+    },
+    {
+      "char": "i",
+      "name": "i",
+      "ipa": "[i]",
+      "approximation": "i in machine, but short",
+      "notes": "Short close front vowel. Long í [iː] when marked."
+    },
+    {
+      "char": "í",
+      "name": "í",
+      "ipa": "[iː]",
+      "approximation": "ee in see, held longer",
+      "notes": "Long close front vowel; phonemically distinct from short i."
+    },
+    {
+      "char": "j",
+      "name": "jóð",
+      "ipa": "[j]",
+      "approximation": "y in yes",
+      "notes": "Palatal approximant; always consonantal in Old Icelandic orthography."
+    },
+    {
+      "char": "k",
+      "name": "ká",
+      "ipa": "[k]",
+      "approximation": "k in skill",
+      "notes": "Voiceless velar stop; remains [k] before all vowels in Old Icelandic."
+    },
+    {
+      "char": "l",
+      "name": "el",
+      "ipa": "[l]",
+      "approximation": "l in let",
+      "notes": "Alveolar lateral; may be syllabic in some clusters."
+    },
+    {
+      "char": "m",
+      "name": "em",
+      "ipa": "[m]",
+      "approximation": "m in man",
+      "notes": "Bilabial nasal."
+    },
+    {
+      "char": "n",
+      "name": "en",
+      "ipa": "[n]",
+      "approximation": "n in net",
+      "notes": "Alveolar nasal; assimilates in place before velars."
+    },
+    {
+      "char": "o",
+      "name": "o",
+      "ipa": "[ɔ]",
+      "approximation": "o in dog (British pronunciation)",
+      "notes": "Short open-mid back rounded vowel. Long ó [oː] when marked."
+    },
+    {
+      "char": "ó",
+      "name": "ó",
+      "ipa": "[oː]",
+      "approximation": "oa in boat, held longer",
+      "notes": "Long close-mid back rounded vowel."
+    },
+    {
+      "char": "ǫ / ö",
+      "name": "ǫ",
+      "ipa": "[ɔ̃] / [ø]",
+      "approximation": "like o in dog with nasalization, or French eu in peu",
+      "notes": "Originally a nasal vowel from u before a lost nasal; later denasalized and fronted to [ø]. Normalized as ǫ in many editions; manuscripts may write ö or o with diacritics."
+    },
+    {
+      "char": "œ",
+      "name": "œ",
+      "ipa": "[œ]",
+      "approximation": "like French eu in seul",
+      "notes": "Open-mid front rounded vowel, from i-umlaut of ǫ; rare in classical texts."
+    },
+    {
+      "char": "p",
+      "name": "pé",
+      "ipa": "[p]",
+      "approximation": "p in spin",
+      "notes": "Voiceless bilabial stop."
+    },
+    {
+      "char": "r",
+      "name": "er",
+      "ipa": "[r]",
+      "approximation": "trilled r as in Spanish perro",
+      "notes": "Alveolar trill; assimilates preceding dentals (t, d, n) to retroflex in some dialects."
+    },
+    {
+      "char": "s",
+      "name": "es",
+      "ipa": "[s]",
+      "approximation": "s in sit",
+      "notes": "Voiceless alveolar fricative."
+    },
+    {
+      "char": "t",
+      "name": "té",
+      "ipa": "[t]",
+      "approximation": "t in stop",
+      "notes": "Voiceless alveolar stop."
+    },
+    {
+      "char": "þ",
+      "name": "þorn",
+      "ipa": "[θ]",
+      "approximation": "th in thin",
+      "notes": "Voiceless dental fricative; distinguished from ð in classical orthography. Initially and after consonants [θ]; intervocalically may vary."
+    },
+    {
+      "char": "u",
+      "name": "u",
+      "ipa": "[u]",
+      "approximation": "u in put, but tenser",
+      "notes": "Short close back rounded vowel. Long ú [uː] when marked."
+    },
+    {
+      "char": "ú",
+      "name": "ú",
+      "ipa": "[uː]",
+      "approximation": "oo in food, held longer",
+      "notes": "Long close back rounded vowel."
+    },
+    {
+      "char": "v",
+      "name": "vé",
+      "ipa": "[v]",
+      "approximation": "v in vine",
+      "notes": "Voiced labiodental fricative; orthographic variant of f in some positions."
+    },
+    {
+      "char": "y",
+      "name": "y / ý",
+      "ipa": "[y]",
+      "approximation": "like French u in tu",
+      "notes": "Short close front rounded vowel, from i-umlaut of u. Long ý [yː] when marked."
+    },
+    {
+      "char": "ý",
+      "name": "ý",
+      "ipa": "[yː]",
+      "approximation": "like French u in pur, held longer",
+      "notes": "Long close front rounded vowel."
+    },
+    {
+      "char": "æ",
+      "name": "æ",
+      "ipa": "[ɛː] / [ai]",
+      "approximation": "like a in cat, held longer, or a diphthong like eye",
+      "notes": "Originally the diphthong [ai]; monophthongized to long [ɛː] in Icelandic by the thirteenth century. From i-umlaut of á or inherited diphthong."
+    },
+    {
+      "char": "ø",
+      "name": "ø",
+      "ipa": "[ø]",
+      "approximation": "like French eu in peu",
+      "notes": "Close-mid front rounded vowel; i-umlaut of ó. Variant spelling of ǿ when long."
+    },
+    {
+      "char": "au",
+      "name": "au",
+      "ipa": "[ɔu]",
+      "approximation": "like ow in how",
+      "notes": "Diphthong; from Proto-Norse *au, retained in Old Icelandic."
+    },
+    {
+      "char": "ei",
+      "name": "ei",
+      "ipa": "[ɛi]",
+      "approximation": "like ay in day",
+      "notes": "Diphthong; from Proto-Norse *ai, retained in Old Icelandic."
+    },
+    {
+      "char": "ey",
+      "name": "ey",
+      "ipa": "[øy]",
+      "approximation": "like French euille",
+      "notes": "Diphthong; i-umlaut of au."
+    }
+  ],
+  "pronunciation_notes": [
+    "Vowel length is phonemic: a and á, i and í, u and ú are distinct vowels differing in both duration and often quality. The acute accent marks length.",
+    "The letters þ (thorn) and ð (eth) represent distinct phonemes: þ is voiceless [θ] as in thin, ð is voiced [ð] as in this. Initial þ- and -ð- after consonants take [θ]; intervocalic position favors [ð] for ð.",
+    "The letter g has three main values: initially [ɡ] as in go; intervocalically before back vowels [ɣ] (a voiced velar fricative); before front vowels or finally often [j] or [ɣ] with palatalization.",
+    "I-umlaut is a living phonological process: back vowels are fronted when an i, j, or í follows in the next syllable. Thus u > y, ó > ø/œ, á > æ. This produces alternations in paradigms.",
+    "The diphthongs au, ei, ey are preserved in Old Icelandic; æ was originally a diphthong [ai] but monophthongized to [ɛː] in Iceland.",
+    "Double consonants (tt, kk, ll, nn, etc.) are pronounced long and geminated; they contrast with single consonants and often arise from assimilation or West Norse gemination."
+  ],
+  "grammar": {
+    "noun_system": "Old Norse nouns inflect for three genders (masculine, feminine, neuter), two numbers (singular, plural), and four cases: nominative (subject), accusative (direct object), dative (indirect object and after many prepositions), and genitive (possession and partitive). Adjectives agree with nouns in gender, number, and case, and distinguish strong (indefinite) and weak (definite) declensions.",
+    "declensions": [
+      {
+        "name": "Strong Masculine a-stem",
+        "description": "The largest masculine class, descendants of Proto-Germanic *-az. Example: armr (arm).",
+        "paradigm": {
+          "sg": {
+            "nom": "armr",
+            "acc": "arm",
+            "dat": "armi",
+            "gen": "arms"
+          },
+          "pl": {
+            "nom": "armar",
+            "acc": "arma",
+            "dat": "ǫrmum",
+            "gen": "arma"
+          }
+        }
+      },
+      {
+        "name": "Strong Feminine ō-stem",
+        "description": "The most common feminine class, from Proto-Germanic *-ō. Example: saga (story, saga).",
+        "paradigm": {
+          "sg": {
+            "nom": "saga",
+            "acc": "sǫgu",
+            "dat": "sǫgu",
+            "gen": "sǫgu"
+          },
+          "pl": {
+            "nom": "sǫgur",
+            "acc": "sǫgur",
+            "dat": "sǫgum",
+            "gen": "sagna"
+          }
+        }
+      },
+      {
+        "name": "Strong Neuter a-stem",
+        "description": "Neuter counterpart of the masculine a-stem. Example: skip (ship).",
+        "paradigm": {
+          "sg": {
+            "nom": "skip",
+            "acc": "skip",
+            "dat": "skipi",
+            "gen": "skips"
+          },
+          "pl": {
+            "nom": "skip",
+            "acc": "skip",
+            "dat": "skipum",
+            "gen": "skipa"
+          }
+        }
+      },
+      {
+        "name": "Strong Masculine i-stem",
+        "description": "A smaller class with some umlaut in plural. Example: gestr (guest).",
+        "paradigm": {
+          "sg": {
+            "nom": "gestr",
+            "acc": "gest",
+            "dat": "gesti",
+            "gen": "gests"
+          },
+          "pl": {
+            "nom": "gestir",
+            "acc": "gesti",
+            "dat": "gestum",
+            "gen": "gesta"
+          }
+        }
+      }
+    ],
+    "verb_system": "Old Norse verbs fall into two major classes: strong verbs (seven ablaut classes with vowel gradation in the stem) and weak verbs (four classes forming preterite with a dental suffix). Verbs inflect for three persons, two numbers, two tenses (present and preterite), three moods (indicative, subjunctive, imperative), and two voices (active and middle). The middle voice, marked by -sk or -st, expresses reflexive, reciprocal, passive, or inherently middle meanings.",
+    "conjugations": [
+      {
+        "name": "Strong Verb Class I (ríða type)",
+        "description": "Ablaut pattern í - ei - i - i. Example: ríða (to ride).",
+        "paradigm": {
+          "present_indicative": {
+            "1s": "ríð",
+            "2s": "ríðr",
+            "3s": "ríðr",
+            "1p": "ríðum",
+            "2p": "ríðið",
+            "3p": "ríða"
+          },
+          "preterite_indicative": {
+            "1s": "reið",
+            "2s": "reizt",
+            "3s": "reið",
+            "1p": "riðum",
+            "2p": "riðuð",
+            "3p": "riðu"
+          },
+          "present_subjunctive": {
+            "1s": "ríða",
+            "2s": "ríðir",
+            "3s": "ríði",
+            "1p": "ríðim",
+            "2p": "ríðið",
+            "3p": "ríði"
+          },
+          "preterite_subjunctive": {
+            "1s": "riða",
+            "2s": "riðir",
+            "3s": "riði",
+            "1p": "riðim",
+            "2p": "riðið",
+            "3p": "riði"
+          }
+        }
+      },
+      {
+        "name": "Weak Verb Class I (kalla type)",
+        "description": "Thematic weak verbs with -a- stem vowel; preterite in -aða/-að. Example: kalla (to call).",
+        "paradigm": {
+          "present_indicative": {
+            "1s": "kalla",
+            "2s": "kallar",
+            "3s": "kallar",
+            "1p": "kǫllum",
+            "2p": "kallið",
+            "3p": "kalla"
+          },
+          "preterite_indicative": {
+            "1s": "kallaða",
+            "2s": "kallaðir",
+            "3s": "kallaði",
+            "1p": "kǫlluðum",
+            "2p": "kǫlluðuð",
+            "3p": "kǫlluðu"
+          },
+          "present_subjunctive": {
+            "1s": "kalla",
+            "2s": "kallir",
+            "3s": "kalli",
+            "1p": "kallim",
+            "2p": "kallið",
+            "3p": "kalli"
+          },
+          "preterite_subjunctive": {
+            "1s": "kallaða",
+            "2s": "kallaðir",
+            "3s": "kallaði",
+            "1p": "kallaðim",
+            "2p": "kallaðið",
+            "3p": "kallaði"
+          }
+        }
+      },
+      {
+        "name": "Strong Verb Class III (binda type)",
+        "description": "Ablaut pattern i - a - u - u. Example: binda (to bind).",
+        "paradigm": {
+          "present_indicative": {
+            "1s": "bind",
+            "2s": "bindr",
+            "3s": "bindr",
+            "1p": "bindum",
+            "2p": "bindið",
+            "3p": "binda"
+          },
+          "preterite_indicative": {
+            "1s": "batt",
+            "2s": "batt",
+            "3s": "batt",
+            "1p": "bundum",
+            "2p": "bunduð",
+            "3p": "bundu"
+          },
+          "present_subjunctive": {
+            "1s": "binda",
+            "2s": "bindir",
+            "3s": "bindi",
+            "1p": "bindim",
+            "2p": "bindið",
+            "3p": "bindi"
+          },
+          "preterite_subjunctive": {
+            "1s": "bynda",
+            "2s": "byndir",
+            "3s": "byndi",
+            "1p": "byndim",
+            "2p": "byndið",
+            "3p": "byndi"
+          }
+        }
+      }
+    ]
+  },
+  "reading_list": [
+    "Viðar Hreinsson (ed.), The Complete Sagas of Icelanders (including the Þættir), five volumes (1997): modern English translations with facing-page summaries and introductions, useful for parallel reading.",
+    "Brennu-Njáls saga (Njál's Saga): the most celebrated of the family sagas, sophisticated narrative and legal drama; moderately complex prose.",
+    "Snorri Sturluson, Prose Edda (Edda Snorra Sturlusonar): handbook of poetics and mythology; the Gylfaginning section provides accessible mythological narrative.",
+    "Egils saga Skalla-Grímssonar (Egil's Saga): long family saga with embedded skaldic verse; the prose is relatively straightforward.",
+    "Gísla saga Súrssonar: shorter outlaw saga; tight structure and emotional intensity; good for intermediate readers.",
+    "Eddic poetry (Codex Regius): the Poetic Edda poems (Völuspá, Hávamál, Atlakviða, etc.); archaic diction and mythological vocabulary; requires strong grasp of nominal and verbal morphology.",
+    "Snorri Sturluson, Heimskringla: kings' sagas from mythical origins to 1177; varied styles; extensive historical and genealogical content.",
+    "Laxdœla saga: large-scale family saga with complex character psychology and interwoven plot lines; rich vocabulary.",
+    "Skaldic verse (court poetry): the most linguistically and metrically complex genre; requires mastery of kennings, heiti, and dróttkvætt meter.",
+    "Runic inscriptions (Younger Futhark, c. 800-1100): terse memorial and commemorative texts on stone; formulaic but useful for historical phonology and epigraphy."
+  ],
+  "display": "Old Norse",
+  "generated_at": "2026-05-11T23:29:10.673Z"
+}

@@ -38,6 +38,21 @@ const LANGUAGES = [
     display: "Old English",
     system: `You are writing a college-level primer on Old English (Anglo-Saxon) for an educated adult learner, oriented toward reading Beowulf and the Exeter Book. Cover special letters (thorn þ, eth ð, ash æ, yogh ȝ, wynn ƿ), the strong/weak verb system, and the case system. Your reference standard is Mitchell & Robinson's "A Guide to Old English." Be precise and scholarly.`,
   },
+  {
+    key: "gaulish",
+    display: "Gaulish",
+    system: `You are writing a college-level primer on Gaulish (the Continental Celtic language of pre-Roman and early-Roman Gaul) for an educated adult learner. The corpus survives in roughly 800 inscriptions on stone, lead curse tablets (Chamalières, L'Hospitalet-du-Larzac), pottery (Lezoux plate, Banassac), coins, and the Coligny calendar. Three writing systems were used: a Greek-derived alphabet in southern Gaul (Lugano script), an Etruscan-derived alphabet in northern Italy (Lepontic, sometimes treated separately), and the Latin alphabet under Roman influence. Your reference standards are Pierre-Yves Lambert, La langue gauloise (1994/2003); Xavier Delamarre, Dictionnaire de la langue gauloise (2003); and the Recueil des inscriptions gauloises (RIG, 1985–). Acknowledge openly where the language is reconstructed and where epigraphic evidence is direct; never overstate certainty. Cover the principal alphabets, the case system (six cases attested: nominative, vocative, accusative, genitive, dative, instrumental), the verb system (deponent middle endings, the o-stem and ā-stem conjugations), and the lexicon's deep continuity with Old Irish, Welsh, and Brittonic. Be precise, scholarly, and forthright about gaps in the evidence.`,
+  },
+  {
+    key: "welsh",
+    display: "Welsh",
+    system: `You are writing a college-level primer on Welsh for an educated adult learner, covering BOTH Middle Welsh (the language of the Mabinogion, c. 1100–1400) and Modern Literary Welsh (Dafydd ap Gwilym through Saunders Lewis and R. S. Thomas). Your reference standards are Simon Evans, A Grammar of Middle Welsh (1964); Stephen J. Williams, A Welsh Grammar (1980); and Gareth King, Modern Welsh: A Comprehensive Grammar (2003). Cover with depth: the Welsh alphabet (28 letters including the digraphs ch, dd, ff, ng, ll, ph, rh, th, treated as single letters; the absence of k, q, v, x, z in native words; w and y as full vowels); the four initial consonant mutations (soft/lenition, nasal, aspirate/spirant, mixed) with examples of each; VSO word order; the periphrastic verb system using bod ("to be") + verbal noun; the synthetic/literary verb conjugations preserved in formal registers; the genitive construction by simple juxtaposition (without of); the dual literary tradition of cynghanedd (the strict-meter prosodic system) and free-meter modern verse. Where Middle Welsh and Modern Welsh diverge, note both forms. Be precise and scholarly.`,
+  },
+  {
+    key: "oldnorse",
+    display: "Old Norse",
+    system: `You are writing a college-level primer on Old Norse for an educated adult learner. The primary register is Classical/Old Icelandic, the saga-language of c. 1150–1350 (Snörri Sturluson, the Family Sagas, the Poetic Edda); also cover the earlier runic Proto-Norse / Older Futhark stage (c. 200–700, e.g. the Tune stone, Järsberg stone) as a distinct earlier phase. Your reference standards are E. V. Gordon, An Introduction to Old Norse (2nd ed. 1957, rev. Taylor); Michael Barnes, A New Introduction to Old Norse (2007); and Stefan Einarsson's Icelandic Grammar (1949). Cover with depth: the Old Icelandic Latin alphabet (with þ thorn, ð eth, æ ash, ø / ǫ, accented vowels marking length); the Younger Futhark and Older Futhark runic alphabets as separate sections; the four-case system (nominative, accusative, dative, genitive) with three genders; the strong and weak verb classes (Class I-VII strong verbs with ablaut patterns; weak verbs in -a, -i, -ða); the middle voice in -sk/-st; u-umlaut and i-umlaut as living phonological processes; the rich pronominal system. Be precise and scholarly.`,
+  },
 ];
 
 const PROMPT = `Produce a JSON object with these keys:

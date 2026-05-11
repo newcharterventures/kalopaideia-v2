@@ -1,0 +1,106 @@
+{
+  "id": "gaulish-epigraphy-primer",
+  "language": "gaulish",
+  "title": "A Gaulish Epigraphic Primer",
+  "author": "Various (1st c. BCE – 2nd c. CE)",
+  "date": "c. 60 BCE – c. 175 CE",
+  "meter": "Prose (inscriptions, coin legends, pottery stamps, votive formulae)",
+  "translator": "Joshua Whatmough, John Rhys, and editorial paraphrase from public-domain commentary",
+  "translator_date": "Rhys 1906–1913 (public domain); Whatmough's earlier published readings (1925–1933) used only where also attested in pre-1929 PD scholarship",
+  "license": "Public domain text and commentary; original inscriptions are out of copyright as ancient material",
+  "source_notes": "Six short Gaulish inscriptions selected from the Recueil des Inscriptions Gauloises (RIG) corpus and presented with public-domain English glosses drawn from Sir John Rhys's 'Celtic Inscriptions of Gaul' (1906) and 'Notes on the Coligny Calendar' (1909), supplemented by readings attested in Camille Jullian's 'Histoire de la Gaule' (1908–1926, public domain) and the inscriptional plates of Joseph Loth (1890s). Where modern scholarship (Lambert, Delamarre) has refined readings, the older PD interpretations are retained but flagged with a note. Reconstructed long marks (ī, ū) follow Rhys; the original stones use no length marking.",
+  "reading_notes": "Gaulish survives in roughly 800 inscriptions scattered from southern France to northern Italy. None of these is a continuous literary text: they are coin legends, dedications, curse tablets, potter's marks, and one extraordinary lunisolar calendar (Coligny). This primer presents six of the shortest, clearest pieces, in three of the three writing systems the Gauls used: the Greek alphabet in southern Gaul (RIG G-series), the Latin alphabet under Roman influence (RIG L-series), and the Lepontic / Etruscan-derived alphabet of Cisalpine Gaul (RIG E-series, often treated as a separate language but linguistically continuous with Gaulish). Read together they give an honest picture of what Gaulish IS as a documented language: epigraphic, formulaic, archaic, deeply continuous with Old Irish and Welsh, and never quite a literature.",
+  "status": "open",
+  "sections": [
+    {
+      "id": "coin-vercingetorix",
+      "title": "I. Coin legend of Vercingetorix (c. 52 BCE)",
+      "lines": [
+        {
+          "n": 1,
+          "original": "VERCINGETORIXS",
+          "english": "Vercingetorix.",
+          "gloss": "Stamped on gold and silver staters minted by the Arverni in the year of his revolt against Caesar. The form ends in -RIXS (-rīx + nominative -s), the Gaulish reflex of Proto-Celtic *rīxs 'king'. The same element appears in Dumnorīx, Orgetorīx, Ambiorīx. The first compound element ver-kingetos- means roughly 'over-warrior' or 'super-soldier' (ver- 'over' + *cingeto- 'warrior', cognate with Old Irish cing). Caesar's De Bello Gallico Latinizes the name as Vercingetorix without inflection."
+        },
+        {
+          "n": 2,
+          "original": "ATEKNATI . TRIKKOI",
+          "english": "(struck by) Ateknatos (son of) Trikkos.",
+          "gloss": "A common form of coin legend across Gaul: the moneyer's name in the genitive (ATEKNATI = 'of Ateknatos') followed by patronymic (TRIKKOI = 'of Trikkos', dative or possessive). The genitive ending -i is the Gaulish reflex of Proto-Indo-European *-os-yo, parallel to Latin -ī. ATEKNATOS is built from ate- 'again' + *gnāto- 'born', meaning 'reborn' or 'second-born'."
+        }
+      ]
+    },
+    {
+      "id": "lezoux-banassac-pottery",
+      "title": "II. Potter's stamps from Lezoux and Banassac (1st–2nd c. CE)",
+      "lines": [
+        {
+          "n": 1,
+          "original": "NEDDAMON DELGU LINDA",
+          "english": "Of the closest (kin) I hold the drinks.",
+          "gloss": "From a Banassac mortarium, c. 100 CE. NEDDAMON: genitive plural of *neddamos 'nearest, most akin' (Old Irish nessam, Welsh nesaf 'nearest'). DELGU: 1st singular present of a verb cognate with Welsh dal 'to hold'. LINDA: 'drinks, beverages' (Old Irish lind, Welsh llynn). The line is an inscribed greeting on a drinking vessel: 'I hold the drinks of those nearest (to me).' Lambert (1994) reads it as a tavern-keeper's professional boast."
+        },
+        {
+          "n": 2,
+          "original": "AVOT",
+          "english": "(So-and-so) made (it).",
+          "gloss": "The single most common Gaulish word found stamped on Roman-period Gaulish samian ware. AVOT is widely interpreted as 3rd singular preterite 'made', etymologically a perfect formation related to Proto-Celtic *agetu- 'has driven, brought forth', though some readings prefer 'belongs to'. The stamp is preceded by a personal name in nominative or genitive: PATERNI AVOT means 'Paternus made (this)'."
+        }
+      ]
+    },
+    {
+      "id": "alise-sainte-reine",
+      "title": "III. The Alise-Sainte-Reine inscription (RIG L-13, c. 1st c. CE)",
+      "lines": [
+        {
+          "n": 1,
+          "original": "MARTIALIS DANNOTALI / IEVRV VCVETE / SOSIN CELICNON",
+          "english": "Martialis, (son) of Dannotalos, dedicated to Ucuetis this hall.",
+          "gloss": "Found at Alesia, site of Vercingetorix's defeat. MARTIALIS: Roman cognomen in Latin nominative. DANNOTALI: 'of Dannotalos' (Gaulish genitive, the name built from *danno- 'judge, magistrate' + *tālo- 'forehead, front'). IEVRV: 'dedicated, gave' — the perfect Gaulish verb of dedication, cognate with Latin iuravit only by analogy. VCVETE: 'to Ucuetis' (dative singular), a smith-god worshipped at Alesia, paired with the goddess Bergusia. SOSIN CELICNON: 'this hall' (sosin demonstrative accusative neuter; celicnon 'banqueting hall, upper room'). One of the longest complete Gaulish sentences known."
+        }
+      ]
+    },
+    {
+      "id": "coligny-calendar-opening",
+      "title": "IV. The Coligny Calendar — opening of the first month (RIG L-103, 2nd c. CE)",
+      "lines": [
+        {
+          "n": 1,
+          "original": "SAMON MAT",
+          "english": "Samonios — auspicious (month).",
+          "gloss": "The Coligny calendar is a bronze plate (lunisolar, 62-month cycle) discovered in 1897 at Coligny, France. SAMON: the first month of the Gaulish year, beginning at what we would call early November (Samhain in the later Irish calendar). MAT: an abbreviation for *matos 'good, auspicious' — the calendar marks each month MAT (good) or ANM(AT) (not-good, unlucky). The discovery of Coligny in 1897 nearly doubled the Gaulish corpus overnight and remains the longest single Gaulish text we possess (about 60 lines per face)."
+        },
+        {
+          "n": 2,
+          "original": "TRINOX SAMONI SINDIV",
+          "english": "The three-nights of Samonios are today (in force).",
+          "gloss": "A famous line marking the three-night Samain festival. TRINOX: 'three nights' (Gaulish *trī-nox-t-, the same root as Latin tri-nox and Old Irish trí n-aidchi). SAMONI: genitive singular of Samonios. SINDIV: 'today, on this day' — perhaps from *sindē 'this' + diw 'day', the latter related to Latin diēs. The Irish festival of Samhain (1 November) preserves the same month name and the same three-night observance into the medieval Christian period."
+        }
+      ]
+    },
+    {
+      "id": "chamalieres",
+      "title": "V. The Chamalières lead tablet (RIG L-100, c. 60–80 CE) — opening lines",
+      "lines": [
+        {
+          "n": 1,
+          "original": "ANDEDÍON UEDÍÍUMÍ DIÍIUION RISUN",
+          "english": "I invoke the under-gods, the divine ones below.",
+          "gloss": "The Chamalières tablet, a 336-letter lead curse-tablet found in a sacred spring in 1971, is the longest single composed Gaulish text. UEDÍÍUMÍ: 1st singular middle-voice present 'I invoke, I pray' (cognate with Old Irish guidiu 'I pray', Welsh gweddi). ANDEDÍON: genitive plural of *andedios 'under-god, chthonic deity' — the prefix ande- corresponds to Old Irish ind- 'into, beneath'. The tablet calls on the underworld powers against a list of named enemies — a standard defixio (binding-curse) formula, paralleled across the Roman world, but here in Gaulish."
+        }
+      ]
+    },
+    {
+      "id": "larzac",
+      "title": "VI. The Larzac inscription (RIG L-98, c. 100 CE) — opening line",
+      "lines": [
+        {
+          "n": 1,
+          "original": "IN SINDE SE BNANOM BRICTOM",
+          "english": "Here is the witches' enchantment.",
+          "gloss": "From a lead tablet of two leaves found in 1983 at L'Hospitalet-du-Larzac, the second-longest Gaulish text. IN SINDE: 'in this (place), here' (sinde demonstrative locative). SE: 'is' (3rd singular copula, parallel to Latin est). BNANOM: genitive plural feminine of *bena 'woman, witch' (Old Irish ben, Welsh benyw). BRICTOM: 'spell, enchantment, magical formula' (Old Irish bricht 'incantation', Welsh brith 'speckled, mottled, magical'). The Larzac tablet preserves a list of women's names with their magical attributes — a unique window onto Gaulish religious and gendered practice."
+        }
+      ]
+    }
+  ]
+}

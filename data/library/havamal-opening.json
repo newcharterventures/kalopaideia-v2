@@ -1,0 +1,88 @@
+{
+  "id": "havamal-opening",
+  "language": "oldnorse",
+  "title": "Hávamál — Sayings of the High One, stanzas 1–10",
+  "author": "Anonymous (the Eddic poet)",
+  "date": "Pre-1270 (composition); preserved in the Codex Regius (GKS 2365 4to), c. 1270",
+  "meter": "Ljóðaháttr — the 'song-meter' of gnomic and dramatic Eddic poetry",
+  "translator": "Olive Bray",
+  "translator_date": "1908 (public domain)",
+  "license": "Public domain. Old Norse text from the Sophus Bugge edition of the Edda (1867, PD) and the Finnur Jónsson normalization (1888–1890, PD). English translation from Olive Bray, 'The Elder or Poetic Edda' (Viking Club / Bernard Quaritch, 1908; PD).",
+  "source_notes": "Hávamál ('Sayings of the High One', i.e. Óðinn) is the longest Eddic poem after Vǫluspá and the great gnomic compendium of Norse wisdom literature: practical proverbs, traveller's advice, runic doctrine, and reminiscences of the god's own erotic and magical adventures. The opening ten stanzas — sometimes called the 'Gestaþáttr' or 'guest's section' — are advice on how a traveller should behave when entering a hall. They form the most-quoted, most-memorized portion of the poem and are the natural place for any Old Norse reading to begin.",
+  "reading_notes": "Ljóðaháttr alternates two pairs of lines: each pair has a short first line (two stresses) and a full alliterating second line, then a third 'full' line standing alone and bound by alliteration within itself. Note the case work: in stanza 1, gáttir 'door-openings' is nominative plural feminine; gangi 'should go' is 3rd singular present subjunctive of ganga 'to go'; sjái 'should see' is the same mood of sjá. The whole poem is in the voice of Óðinn ('Hár', the High One) but the gnomic stanzas were almost certainly assembled from older oral wisdom by an editor working in 13th-century Iceland.",
+  "status": "open",
+  "sections": [
+    {
+      "id": "stanzas-1-5",
+      "title": "Stanzas 1–5: at the door, in the hall",
+      "lines": [
+        {
+          "n": 1,
+          "original": "Gáttir allar, áðr gangi fram, / um skoðask skyli, / um skyggnask skyli; / því at óvíst er at vita, / hvar óvinir sitja á fleti fyrir.",
+          "english": "At every door-way, ere one enters, / one should spy round, / one should pry round; / for one cannot know what foes may sit / awaiting one in the hall.",
+          "gloss": "Gáttir allar: 'all door-openings' (nom. pl. f. of gátt 'door, opening'). áðr gangi fram: 'before (one) goes forward' (subjunctive of ganga 'to go'). um skoðask skyli: 'about (oneself) one should look' — the middle-voice in -sk gives the reflexive sense; skyli is 3rd singular subjunctive of skulu 'shall, ought'. um skyggnask: 'one should peer about' (a parallel verb to skoðask, often translated alliteratively as 'spy' and 'pry'). því at óvíst er at vita: 'for it is uncertain to know'. hvar óvinir sitja á fleti fyrir: 'where enemies may sit before (one) on the dais' — flet 'floor, raised dais of a hall'."
+        },
+        {
+          "n": 2,
+          "original": "Gefendr heilir! / Gestr er inn kominn, / hvar skal sitja sjá? / Mjǫk er bráðr, sá er á brǫndum skal / síns of freista frama.",
+          "english": "Hail to the giver! a guest has come; / where shall the stranger sit? / Hard pressed is he who tests his luck / by the fire-side.",
+          "gloss": "Gefendr heilir: 'givers, (be) whole / hail' — the vocative plural of gefandi 'giver' (the host's company is addressed). Gestr er inn kominn: 'a guest is come in' — perfect tense formed with vera + past participle. hvar skal sitja sjá?: 'where shall this one (sjá, dem. pron.) sit?'. Mjǫk er bráðr: 'much (mjǫk) is impatient (bráðr) (he who…)'. á brǫndum: 'on the burning logs, by the firewood' (dat. pl. of brandr 'log, brand'). síns of freista frama: 'to test (freista) his (síns) own advancement (frama)'."
+        },
+        {
+          "n": 3,
+          "original": "Elds er þǫrf, / þeims inn er kominn / ok á kné kalinn; / matar ok váða / er manni þǫrf, / þeim er hefir um fjall farit.",
+          "english": "Fire he needs / who comes in numb to the knees; / food and clothes / does a man need / who has fared over the fells.",
+          "gloss": "Elds er þǫrf: 'of fire is (there) need' — Elds is genitive of eldr, þǫrf 'need' takes the genitive. þeims inn er kominn: 'to him who is come in' (þeims = þeim er, dative relative). ok á kné kalinn: 'and (is) frozen to the knee' (kalinn past participle of kala 'to be cold-stiffened'). matar ok váða er manni þǫrf: 'of food and clothing (váð 'cloth, garment') is to a man need'. þeim er hefir um fjall farit: 'to him who has fared over fell (mountain).' The compactness of the lines — each kenning a survival recipe — is the gnomic spirit of the poem."
+        },
+        {
+          "n": 4,
+          "original": "Vatns er þǫrf, / þeim er til verðar kømr, / þerru ok þjóðlaðar, / góðs of œðis, / ef sér geta mætti, / orðs ok endrþǫgu.",
+          "english": "Water and towel / and welcoming speech / should he find who comes, to the feast; / if friendship he get, / let him keep it well; / silence in answer thereto.",
+          "gloss": "Vatns er þǫrf: 'of water is need' (genitive Vatns). þeim er til verðar kømr: 'to him who comes to a meal' (verðr 'meal', dative singular here). þerru ok þjóðlaðar: 'a towel and a kindly invitation' — þerra 'drying-cloth', þjóðlǫð 'people-invitation, public welcome'. góðs of œðis: 'good of dwelling' — œði 'temper, manner', here perhaps 'good treatment'. ef sér geta mætti: 'if he might get for himself'. orðs ok endrþǫgu: 'word and answering silence (endrþǫgu)' — endrþǫgu is a striking compound: endr 'back, again' + þǫgn 'silence', an answering hush."
+        },
+        {
+          "n": 5,
+          "original": "Vits er þǫrf, / þeim er víða ratar; / dælt er heima hvat; / at augabragði verðr, / sá er ekki kann / ok með snotrum sitr.",
+          "english": "Wits must he have who wanders wide, / aught will serve at home; / a laughing-stock is he who lacks the words, / while sitting amid the wise.",
+          "gloss": "Vits er þǫrf: 'of wits is need'. þeim er víða ratar: 'to him who wanders far' (ratar 3rd sg. of rata 'to find one's way, to travel'). dælt er heima hvat: 'easy is anything at home' (an aphorism). at augabragði verðr: 'becomes a mockery' (augabragð literally 'eye-glance', here 'an object of staring, a spectacle'). sá er ekki kann: 'he who knows nothing'. með snotrum sitr: 'sits with the wise'."
+        }
+      ]
+    },
+    {
+      "id": "stanzas-6-10",
+      "title": "Stanzas 6–10: silence, watchfulness, prudence",
+      "lines": [
+        {
+          "n": 1,
+          "original": "At hyggjandi sinni / skylit maðr hrœsinn vera, / heldr gætinn at geði; / þá er horskr ok þǫgull / kømr heimisgarða til, / sjaldan verðr víti vǫrum; / því at óbrigðra vin / fær maðr aldregi / en mannvit mikit.",
+          "english": "Of his understanding / no man should be proud, / rather wary of mind; / when the prudent and silent man comes to the homestead / harm seldom befalls the cautious; / for a firmer friend / man never finds / than wisdom tried and true.",
+          "gloss": "At hyggjandi sinni: 'of his understanding' (hyggjandi 'thought, intelligence', dative-instrumental). skylit maðr hrœsinn vera: 'should a man not be boastful' (skylit = skuli + -at negative suffix). heldr gætinn at geði: 'rather watchful in mind'. horskr ok þǫgull: 'prudent and silent' — two adjectives that together name the Old Norse ideal of bearing. heimisgarða til: 'to the homestead' (heimisgarðr 'home-yard'). sjaldan verðr víti vǫrum: 'seldom does harm come to the wary'. óbrigðra vin: 'a more unfailing friend' (comparative of óbrigðr 'unfailing'). mannvit mikit: 'great manly-wit' — the great proverb of stanza 10."
+        },
+        {
+          "n": 2,
+          "original": "Inn vari gestr, / er til verðar kømr, / þunnu hljóði þegir; / eyrum hlýðir, / en augum skoðar; / svá nýsisk fróðra hverr fyrir.",
+          "english": "The cautious guest / who comes to the table / speaks sparingly, / listens with ears, / watches with eyes; / so every wise man looks about him.",
+          "gloss": "Inn vari gestr: 'the cautious guest' (vari adjective 'wary'). þunnu hljóði þegir: 'is silent with thin (= sparing) sound' — a remarkable phrase, hljóð 'sound, hearing', in instrumental dative. eyrum hlýðir, en augum skoðar: 'with ears he listens, but with eyes he looks' — a textbook example of dative-of-instrument in Old Norse, and a textbook Norse proverb. nýsisk: 'examines for himself' (middle voice of nýsa 'to spy out')."
+        },
+        {
+          "n": 3,
+          "original": "Hinn er sæll, / er sér of getr / lof ok líknstafi; / ódælla er við þat, / er maðr eiga skal / annars brjóstum í.",
+          "english": "Happy is he who gains for himself / praise and good will; / less easy is it / when a man must store / what lies in another's breast.",
+          "gloss": "Hinn er sæll: 'happy is he' (sæll 'blessed, fortunate'; this is the Old Norse cognate of English silly via the semantic shift sæll → 'blessed' → 'simple' → 'foolish'). er sér of getr: 'who gets for himself' (sér dative reflexive). lof ok líknstafi: 'praise and runes-of-mercy' — líknstafr is a remarkable compound: líkn 'mercy, kindness' + stafr 'rune, letter', literally 'mercy-stave', meaning a magically protective inscribed sign."
+        },
+        {
+          "n": 4,
+          "original": "Byrði betri / berrat maðr brautu at / en sé mannvit mikit; / auði betra / þykkir þat í ókunnum stað; / slíkt er válaðs vera.",
+          "english": "A better burden / can no man bear on his way / than ample wisdom; / better than wealth / it seems in a stranger's place; / such is the resort of the wretched.",
+          "gloss": "Byrði betri: 'a better burden' (byrði 'load'). berrat: 'bears not' (ber-r-at: bera 3rd sg + suffixed negative). brautu at: 'on the way' (braut 'road', dative). en sé mannvit mikit: 'than great wisdom be'. auði betra: 'better than wealth' (auðr 'wealth', dative for comparison). í ókunnum stað: 'in an unknown place' (the proverb's punch line — wisdom is a traveller's wealth)."
+        },
+        {
+          "n": 5,
+          "original": "Deyr fé, / deyja frændr, / deyr sjalfr it sama; / en orðstírr / deyr aldregi, / hveim er sér góðan getr.",
+          "english": "Cattle die, kinsmen die, / one day you die yourself; / but the fair fame / never dies / of him who has earned it.",
+          "gloss": "Deyr fé: 'cattle die' (fé 'cattle, wealth'). deyja frændr: 'kinsmen die'. deyr sjalfr it sama: 'one dies oneself, likewise' (sjalfr 'self', it sama 'the same'). en orðstírr: 'but word-glory, fame' (orðstírr 'reputation', compound of orð 'word' + tírr 'glory'). deyr aldregi: 'never dies'. hveim er sér góðan getr: 'for whoever gets a good (one) for himself'. This is one of the most-quoted Eddic stanzas: it stands inscribed at the entrance to the National Library of Iceland and was inscribed in W. H. Auden's translation on a memorial wall in Reykjavík."
+        }
+      ]
+    }
+  ]
+}
