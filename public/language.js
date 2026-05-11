@@ -10,6 +10,10 @@ const LANG_META = {
   german:        { name: "German", subtitle: "Letters & Philosophy — Goethe, Schiller, Kant, Nietzsche" },
   oldenglish:    { name: "Olde English", subtitle: "Anglo-Saxon poetry — Beowulf, The Wanderer, Exeter Book" },
   middleenglish: { name: "Middle English", subtitle: "Chaucer and the Pearl-poet — Canterbury Tales, Sir Gawain, Pearl, Piers Plowman" },
+  // Phase 1 additions — primer + library to be filled in Phase 2.
+  gaulish:       { name: "Gaulish", subtitle: "Continental Celtic of pre-Roman Gaul — Coligny calendar, Lezoux plate, votive inscriptions", category: "celtic" },
+  welsh:         { name: "Welsh", subtitle: "Middle Welsh and the modern bardd — Pedair Cainc, Dafydd ap Gwilym, Saunders Lewis", category: "celtic" },
+  oldnorse:      { name: "Old Norse", subtitle: "The saga-language of medieval Iceland — Völuspá, Hávamál, Njal's Saga", category: "germanic" },
 };
 
 function currentLang() {
@@ -72,7 +76,18 @@ function _addPronunciationImpl(text, lang, escapeFirst = true) {
     german: /[a-zA-ZäöüßÄÖÜ]+/g,
     french: /[a-zA-ZàâæçéèêëïîôùûüÿœÀÂÆÇÉÈÊËÏÎÔÙÛÜŸŒ]+/g,
     oldenglish: /[a-zA-ZæþðĊċĠġÆÞÐ]+/g,
-    middleenglish: /[a-zA-ZæþðȜȝÆÞÐ]+/g
+    middleenglish: /[a-zA-ZæþðȜȝÆÞÐ]+/g,
+    // Phase 1 additions. Patterns deliberately permissive — will tighten
+    // in Phase 2 once the primers + word lists are seeded.
+    // Gaulish: Latin alphabet (most inscriptions) plus a small set of
+    //   Greek letters used in southern Gaulish inscriptions.
+    gaulish: /[a-zA-Zα-ωΑ-Ω]+/g,
+    // Welsh: Latin alphabet plus circumflex vowels (âêîôûŷŵ) used
+    //   in Modern Welsh; y/w are vowels in Welsh.
+    welsh: /[a-zA-ZâêîôûŵŷÂÊÎÔÛŴŶ]+/g,
+    // Old Norse: Latin alphabet plus þ ð æ ø ǫ (and capitals)
+    //   for Old Icelandic; runes handled separately when needed.
+    oldnorse: /[a-zA-ZþðæøǫýÞÐÆØǪÝ]+/g,
   };
   
   const pattern = patterns[lang] || /[a-zA-Z]+/g;

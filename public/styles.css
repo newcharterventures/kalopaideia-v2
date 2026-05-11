@@ -1,8 +1,12 @@
 /* Paideia — classical, warm, literary */
 
 :root {
-  --paper: #f6efe0;
-  --paper-deep: #ede3cc;
+  /* Per Jae 2026-05-10: paper tone matched to The American Sentinel
+   * (--paper: #fdfaf3, --paper-dark: #f6f0e2, --paper-shadow: #ece4d0).
+   * Lighter, cleaner; panels still read distinct from main field. */
+  --paper: #fdfaf3;
+  --paper-deep: #f6f0e2;
+  --paper-shadow: #ece4d0;
   --ink: #231c14;
   --ink-soft: #4a3d2c;
   --ink-muted: #7a6a54;
@@ -1389,7 +1393,7 @@ main {
 
 /* Grammar Reference Card */
 .grammar-reference {
-  background: var(--paper-light);
+  background: var(--paper-deep);
   border: 1px solid #d4c5a9;
   border-radius: 4px;
   padding: 16px 20px;
@@ -1436,7 +1440,7 @@ main {
   text-transform: uppercase;
   color: var(--accent);
   margin: 0 0 10px;
-  border-bottom: 1px solid #e8ddc8;
+  border-bottom: 1px solid var(--paper-shadow);
   padding-bottom: 4px;
 }
 
@@ -1627,7 +1631,7 @@ main {
   height: 20px !important;
   border-radius: 50%;
   border: 1px solid var(--rule);
-  background: var(--paper-deep, #e8ddc8);
+  background: var(--paper-deep, #f6f0e2);
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -1711,7 +1715,7 @@ main {
 
 .numbers-table tbody td {
   padding: 9px 10px 9px 0;
-  border-bottom: 1px solid #e8ddc8;
+  border-bottom: 1px solid var(--paper-shadow);
   vertical-align: middle;
   color: var(--ink);
 }
@@ -1786,7 +1790,7 @@ main {
       "note note note";
     row-gap: 4px;
     padding: 10px 0;
-    border-bottom: 1px solid #e8ddc8;
+    border-bottom: 1px solid var(--paper-shadow);
   }
   .numbers-table td { border: none; padding: 0; }
   .numbers-table td.val { grid-area: val; }
@@ -1924,7 +1928,7 @@ main {
   padding: 10px 12px;
   font-family: var(--font-body, Georgia, serif);
   font-size: 16px;
-  background: var(--paper, #f4ecd9);
+  background: var(--paper, #fdfaf3);
   border: 1px solid var(--rule);
   color: var(--ink);
   border-radius: 0;
@@ -1948,7 +1952,7 @@ main {
   display: inline-block;
   padding: 12px 32px;
   background: var(--ink, #2a1c12);
-  color: var(--paper, #f4ecd9);
+  color: var(--paper, #fdfaf3);
   border: none;
   font-family: var(--font-ui, 'Inter', sans-serif);
   font-size: 12px;
@@ -2337,13 +2341,15 @@ main {
   justify-content: flex-start;
   box-sizing: border-box;
 }
+/* Per Jae 2026-05-09: drop the soft drop-shadow only. Keep the
+ * inset double border (outer hairline + cream gap + inner gold line)
+ * intact — that's the cover's identity. */
 .ako-cover {
   width: 100%;
   max-width: 132px;
   aspect-ratio: 2 / 3;
   background: var(--paper, #fdfaf3);
   box-shadow:
-    0 2px 6px rgba(0, 0, 0, 0.18),
     inset 0 0 0 1px rgba(45, 36, 24, 0.4),
     inset 0 0 0 5px var(--paper-warm, #faf3e2),
     inset 0 0 0 6px rgba(125, 93, 18, 0.5);
@@ -2744,3 +2750,171 @@ main {
  * section's own bottom whitespace below it. Pull it tight to the
  * preceding word-block so the reader reads "this card belongs above". */
 .lang-section .akousma-ad { margin-top: 8px; margin-bottom: 32px; }
+
+/* ============================================================
+   PHASE 1 — Celtic & Germanic categories.
+   Per Jae 2026-05-11. Dropdown nav + category landing-page cards.
+   ============================================================ */
+
+/* ----- Nav dropdowns (Celtic ▾ / Germanic ▾) ----- */
+.nav-dd {
+  position: relative;
+  display: inline-block;
+}
+.nav-dd-toggle {
+  /* Inherits .nav a typography from above. */
+  display: inline-block;
+}
+.nav-dd-caret {
+  font-size: 0.7em;
+  margin-left: 4px;
+  vertical-align: 2px;
+  opacity: 0.65;
+}
+.nav-dd-panel {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-6px);
+  min-width: 180px;
+  padding: 10px 4px;
+  margin-top: 6px;
+  background: var(--paper, #f7efe1);
+  border: 1px solid var(--rule, #c9b896);
+  border-radius: 2px;
+  box-shadow: 0 8px 28px rgba(58, 41, 18, 0.18);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 140ms ease, transform 140ms ease, visibility 140ms;
+  z-index: 50;
+}
+.nav-dd:hover .nav-dd-panel,
+.nav-dd:focus-within .nav-dd-panel {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+.nav-dd-item {
+  display: block;
+  padding: 8px 18px;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink, #2a1f12);
+  text-transform: none;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.nav-dd-item:hover {
+  background: rgba(168, 124, 56, 0.10);
+  color: var(--accent, #8a5a18);
+}
+.nav-dd-overview {
+  font-style: italic;
+  border-bottom: 1px solid var(--rule, #c9b896);
+  margin-bottom: 4px;
+  padding-bottom: 8px;
+}
+
+/* Mobile: dropdowns flatten into the wrap'd row. */
+@media (max-width: 760px) {
+  .nav-dd-panel {
+    position: static;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+    display: inline;
+  }
+  .nav-dd-item {
+    display: inline-block;
+    padding: 0 6px;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-muted, #5c4d38);
+    font-weight: 400;
+    border: 0;
+  }
+  .nav-dd-overview { display: none; }
+  .nav-dd-caret { display: none; }
+}
+
+/* ----- Category landing page ----- */
+.category-heading {
+  text-align: center;
+  padding: 36px 24px 8px;
+  border-bottom: none;
+}
+.category-greek {
+  font-family: 'Cinzel', 'Cormorant Garamond', serif;
+  font-size: 13px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--ink-muted, #5c4d38);
+  margin-bottom: 8px;
+}
+.category-main {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 8px 24px 60px;
+}
+.category-description {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 19px;
+  line-height: 1.6;
+  font-style: italic;
+  text-align: center;
+  color: var(--ink-muted, #5c4d38);
+  max-width: 680px;
+  margin: 0 auto 40px;
+}
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+.cat-card {
+  display: block;
+  padding: 28px 24px;
+  background: var(--paper, #f7efe1);
+  border: 1px solid var(--rule, #c9b896);
+  border-radius: 2px;
+  color: var(--ink, #2a1f12);
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+.cat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(58, 41, 18, 0.14);
+  border-color: var(--accent, #8a5a18);
+}
+.cat-card-name {
+  font-family: 'Cinzel', 'Cormorant Garamond', serif;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+}
+.cat-card-sub {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 15px;
+  line-height: 1.45;
+  font-style: italic;
+  color: var(--ink-muted, #5c4d38);
+  margin-bottom: 14px;
+}
+.cat-card-cta {
+  font-family: 'Cinzel', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent, #8a5a18);
+}

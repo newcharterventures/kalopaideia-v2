@@ -36,7 +36,35 @@ const app = express();
 const PORT = 3026;
 const BASE = "/paideia";
 
-const VALID_LANGS = ["latin", "greek", "french", "german", "oldenglish", "middleenglish", "italian"];
+const VALID_LANGS = [
+  "latin", "greek", "french", "german", "oldenglish", "middleenglish", "italian",
+  // Phase 1 addition (Jae 2026-05-11): Celtic + Germanic peripheral tongues.
+  // Gaulish + Welsh under "celtic"; Old Norse under "germanic".
+  "gaulish", "welsh", "oldnorse",
+];
+
+// Category taxonomy. Categories group peripheral tongues without becoming
+// URL prefixes for the language pages themselves (Option C — flat language
+// URLs, but category landing pages exist for browsing).
+const CATEGORIES = {
+  celtic: {
+    slug: "celtic",
+    name: "Celtic",
+    greek_label: "Κελτικαί Φωναί",
+    subtitle: "The Celtic tongues — Gaulish and Welsh",
+    description: "The Celtic family of languages — the Continental tongue of pre-Roman Gaul, and the Insular tongue of medieval and modern Wales. Two thousand years of poetry, lawbooks, and inscriptions.",
+    languages: ["gaulish", "welsh"],
+  },
+  germanic: {
+    slug: "germanic",
+    name: "Germanic",
+    greek_label: "Γερμανικαί Φωναί",
+    subtitle: "The Germanic tongues — Old Norse",
+    description: "The Germanic family of languages, here represented by Old Norse: the saga-language of medieval Iceland and Norway, and the runic Proto-Norse of its earliest inscriptions.",
+    languages: ["oldnorse"],
+  },
+};
+const VALID_CATEGORIES = Object.keys(CATEGORIES);
 
 // Trust the nginx proxy so req.protocol/host return public-facing values
 app.set("trust proxy", 1);
@@ -466,5 +494,21 @@ for (const lang of VALID_LANGS) {
   app.get(`${BASE}/${lang}`, (_req, res) => res.sendFile(path.join(__dirname, "public", "language.html")));
   app.get(`${BASE}/${lang}/`, (_req, res) => res.sendFile(path.join(__dirname, "public", "language.html")));
 }
+
+// Category landing pages (Celtic, Germanic) — Option C: categories live
+// as their own URLs but the languages under them remain flat.
+for (const cat of VALID_CATEGORIES) {
+  app.get(`${BASE}/${cat}`, (_req, res) => res.sendFile(path.join(__dirname, "public", "category.html")));
+  app.get(`${BASE}/${cat}/`, (_req, res) => res.sendFile(path.join(__dirname, "public", "category.html")));
+}
+
+// Category API — returns metadata + child-language summaries for rendering
+// the landing page.
+app.get(`${BASE}/api/category/:slug`, async (req, res) => {
+  const slug = String(req.params.slug || "").toLowerCase();
+  const cat = CATEGORIES[slug];
+  if (!cat) return res.status(404).json({ error: "Unknown category." });
+  res.json(cat);
+});
 
 app.listen(PORT, () => console.log(`Paideia on :${PORT}${BASE}`));

@@ -43,67 +43,20 @@
         <span class="mast-anno" id="anno-line">Anno Domini MMXXVI</span>
       </div>
     </div>
-    <nav class="nav mast-nav">
-      <a href="/paideia/greek">Greek</a>
-      <a href="/paideia/latin">Latin</a>
-      <a href="/paideia/french">French</a>
-      <a href="/paideia/german">German</a>
-      <a href="/paideia/italian">Italian</a>
-      <a href="/paideia/oldenglish">Olde English</a>
-      <a href="/paideia/middleenglish">Middle English</a>
-      <a class="util" href="/paideia/store">Store</a>
-      <a class="util" href="/paideia/account">Sign in</a>
-      <a class="util" href="/paideia/about.html">About</a>
-    </nav>
+    <nav class="nav mast-nav" id="mast-nav-slot"><!-- injected by nav.js --></nav>
   </div>
 </header>
 
-<!-- Per-page section heading: language name + tagline (set by language.js). -->
-<div class="page-heading">
-  <h2 class="page-heading-name" id="lang-label">—</h2>
-  <p class="page-heading-sub" id="lang-subtitle">Loading…</p>
+<!-- Category heading: greek-titled, English subtitle, then prose description. -->
+<div class="page-heading category-heading">
+  <div class="category-greek" id="cat-greek">—</div>
+  <h2 class="page-heading-name" id="cat-name">—</h2>
+  <p class="page-heading-sub" id="cat-subtitle">Loading…</p>
 </div>
 
-<main class="language-main">
-  <!-- Primer panel at top -->
-  <section id="primer" class="primer-panel" style="display:none">
-    <div class="primer-tabs">
-      <button class="primer-tab active" data-tab="alphabet">Alphabet &amp; Pronunciation</button>
-      <button class="primer-tab" data-tab="grammar">Grammar</button>
-      <button class="primer-tab" data-tab="numbers">Numbers</button>
-      <button class="primer-tab" data-tab="library">Library</button>
-    </div>
-
-    <div class="primer-content" id="primer-overview"></div>
-
-    <div class="primer-pane" id="pane-alphabet">
-      <h3 class="pane-heading">Alphabet &amp; Pronunciation</h3>
-      <div id="alphabet-grid" class="alphabet-grid"></div>
-      <h4 class="pane-subheading">Key Pronunciation Rules</h4>
-      <ul id="pron-notes" class="pron-notes"></ul>
-    </div>
-
-    <div class="primer-pane" id="pane-grammar" style="display:none">
-      <h3 class="pane-heading">Grammar Overview</h3>
-      <div id="grammar-content"></div>
-    </div>
-
-    <div class="primer-pane" id="pane-numbers" style="display:none">
-      <h3 class="pane-heading">Numbers</h3>
-      <div id="numbers-content"></div>
-    </div>
-
-    <div class="primer-pane" id="pane-library" style="display:none"></div>
-  </section>
-
-  <!-- Daily word + archive -->
-  <section class="words-section">
-    <h2 class="words-heading">Daily Words, Newest First</h2>
-    <div id="entries" class="lang-entries">
-      <div class="center">Loading daily words…</div>
-    </div>
-  </section>
-
+<main class="category-main">
+  <p class="category-description" id="cat-description"></p>
+  <div class="category-grid" id="cat-grid"></div>
 </main>
 
 <footer class="foot">
@@ -119,16 +72,11 @@
   </div>
 </footer>
 
-<script src="/paideia/pronunciation.js?v=1778200000"></script>
-<script src="/paideia/akousma.js?v=1778200000"></script>
-<script src="/paideia/letter-phonetics.js?v=1778200000"></script>
 <script src="/paideia/nav.js?v=1778300000"></script>
-<script src="/paideia/language.js?v=1778200000"></script>
+<script src="/paideia/category.js?v=1778300000"></script>
 <script>
-  // Populate the C-masthead Issue / Vol / Day / Anno on this page,
-  // mirroring app.js's issueLines() helper. Per Jae 2026-05-09: the C
-  // masthead is propagated to every Paideia page; this small inline
-  // script keeps the date stamp accurate without depending on app.js.
+  // Populate the C-masthead Issue / Vol / Day / Anno. Cloned from
+  // language.html — same logic, no app.js dependency.
   (function () {
     var iso = new Date().toISOString().slice(0, 10);
     var parts = iso.split('-').map(Number);
@@ -152,3 +100,4 @@
 </script>
 </body>
 </html>
+</content>

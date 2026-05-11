@@ -2,6 +2,11 @@
 
 const BASE = "/paideia";
 
+// Daily-rotation order. Hybrid plan (Jae 2026-05-11): Welsh and Old Norse
+// JOIN the rotation once their primer + word pipeline land in Phase 2;
+// Gaulish stays reference-only (no daily word). For now the front page
+// still shows seven cards — the new entries below are metadata-only so
+// language.js, category.js, and nav.js have a single source of truth.
 const LANG_ORDER = ["greek", "latin", "french", "german", "italian", "oldenglish", "middleenglish"];
 const LANG_META = {
   latin:         { name: "Latin",          tagline: "Classical Roman letters" },
@@ -11,6 +16,10 @@ const LANG_META = {
   german:        { name: "German",         tagline: "Letters &amp; Philosophy" },
   oldenglish:    { name: "Olde English",   tagline: "Anglo-Saxon poetry" },
   middleenglish: { name: "Middle English", tagline: "Chaucer &amp; the Pearl-poet" },
+  // Phase 1 additions — metadata only, not yet in daily rotation:
+  gaulish:       { name: "Gaulish",        tagline: "Continental Celtic inscriptions", category: "celtic" },
+  welsh:         { name: "Welsh",          tagline: "Middle Welsh &amp; the modern bardd", category: "celtic" },
+  oldnorse:      { name: "Old Norse",      tagline: "The saga-language of Iceland",       category: "germanic" },
 };
 
 function esc(s) {
