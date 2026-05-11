@@ -16,6 +16,13 @@ const X_ACCOUNTS = {
   french: null,
   german: null,
   oldenglish: null,
+  // Phase 2 additions (Jae 2026-05-11): no dedicated X accounts yet for
+  // the new languages, so daily generation goes ahead but xpost skips
+  // them silently. Add account handles here to enable posting.
+  middleenglish: null,
+  italian: null,
+  welsh: null,
+  oldnorse: null,
 };
 
 function letterBreakdown(word) {

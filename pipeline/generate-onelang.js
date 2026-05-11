@@ -26,6 +26,18 @@ const LANGUAGES = {
     focus: "Italian literature pre-1900: Dante's Commedia (Inferno, Purgatorio, Paradiso) and Vita Nuova; Petrarch's Canzoniere; Boccaccio's Decameron; Cavalcanti, Guinizelli, and the Dolce Stil Novo; Tasso's Gerusalemme Liberata; Ariosto's Orlando Furioso; Machiavelli; Castiglione; Leopardi; Manzoni's I Promessi Sposi; Foscolo; Carducci.",
     word_field_label: "Italian word",
   },
+  welsh: {
+    key: "welsh",
+    display: "Welsh",
+    focus: "Welsh literature, covering BOTH Middle Welsh (Pedair Cainc y Mabinogi, Y Gododdin, the court poets Cynddelw and Gwalchmai) and Modern Literary Welsh (Dafydd ap Gwilym's cywyddau, Tudur Aled, William Williams Pantycelyn, Goronwy Owen, T. H. Parry-Williams, R. Williams Parry, R. S. Thomas, Saunders Lewis, Kate Roberts, Waldo Williams). Use proper Welsh orthography: the digraphs ch, dd, ff, ll, ng, ph, rh, th count as single letters; w and y are vowels; circumflex âêîôûŵŷ marks long vowels in Modern Welsh. Words may be from either Middle or Modern Welsh; specify which in 'forms' or 'literary_context'.",
+    word_field_label: "Welsh word",
+  },
+  oldnorse: {
+    key: "oldnorse",
+    display: "Old Norse",
+    focus: "Old Norse literature, primarily Old Icelandic of c. 1150-1350: the Poetic Edda (Vǫluspá, Hávamál, Skírnismál, etc.), Snorri Sturluson's Prose Edda and Heimskringla, the Family Sagas (Brennu-Njáls saga, Egils saga, Laxdœla saga, Grænlendinga saga, Eiríks saga rauða, Gunnlaugs saga, Hrafnkels saga), and skaldic verse (Egill Skallagrímsson, Sigvatr Þórðarson). Use proper Old Icelandic orthography with þ ð æ ø ǫ and accented vowels (á é í ó ú ý) marking length. May occasionally feature a runic Proto-Norse form (Older Futhark) where philologically rich; mark this in 'forms' or 'literary_context'.",
+    word_field_label: "Old Norse word",
+  },
 };
 
 function systemPromptFor(lang) {

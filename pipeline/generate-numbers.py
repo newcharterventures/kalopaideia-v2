@@ -30,6 +30,12 @@ LANGS = [
     {"key": "french",     "display": "Standard French"},
     {"key": "german",     "display": "Standard German"},
     {"key": "oldenglish", "display": "Old English (West Saxon)"},
+    # Phase 2 additions (Jae 2026-05-11):
+    {"key": "italian",    "display": "Standard Italian"},
+    {"key": "middleenglish", "display": "Middle English (Chaucerian, c. 1400)"},
+    {"key": "welsh",      "display": "Welsh (Modern Literary, with Middle Welsh forms noted where they differ)"},
+    {"key": "oldnorse",   "display": "Old Norse (Old Icelandic, c. 1200)"},
+    {"key": "gaulish",    "display": "Gaulish (where attested in the Coligny calendar and inscriptional corpus; flag reconstructed numbers as such in the etymology)"},
 ]
 
 PROMPT_TEMPLATE = """You are compiling a numbers tutorial for Paideia, a classical-language learning site.

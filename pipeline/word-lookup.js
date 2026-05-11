@@ -25,6 +25,12 @@ const WIKT_LANG = {
   french: "French",
   german: "German",
   oldenglish: "Old_English",
+  middleenglish: "Middle_English",
+  italian: "Italian",
+  // Phase 2 additions (Jae 2026-05-11):
+  welsh: "Welsh",
+  oldnorse: "Old_Norse",
+  gaulish: "Gaulish",
 };
 
 function slug(s) {

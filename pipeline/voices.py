@@ -78,6 +78,35 @@ VOICES = {
         "rate": "-10%",
         "pitch": "+0Hz",
     },
+    # Welsh — Edge TTS has a native cy-GB voice (NiaNeural, female,
+    # standard South Wales-influenced pronunciation). This is the right
+    # pick for both Middle Welsh and Modern Welsh; ll, ch, rh, dd are
+    # all produced authentically. Slight slow for the strict-meter
+    # cynghanedd rhythm.
+    "welsh": {
+        "voice": "cy-GB-NiaNeural",
+        "rate": "-10%",
+        "pitch": "+0Hz",
+    },
+    # Old Norse — no native Old Norse TTS exists. Use Icelandic
+    # (is-IS-GudrunNeural) as the closest living relative; Modern
+    # Icelandic preserves the Old Icelandic orthography (þ ð æ) and
+    # roughly the medieval vowel system. Slowed and pitched down for
+    # the saga register.
+    "oldnorse": {
+        "voice": "is-IS-GudrunNeural",
+        "rate": "-15%",
+        "pitch": "-2Hz",
+    },
+    # Gaulish has no daily-word rotation, but if a user manually triggers
+    # alphabet audio on the Gaulish page we fall back to a French voice
+    # for the Latin-alphabet inscriptions and a Greek voice for the
+    # Gallo-Greek inscriptions. The default mapping here uses French.
+    "gaulish": {
+        "voice": "fr-FR-VivienneMultilingualNeural",
+        "rate": "-10%",
+        "pitch": "+0Hz",
+    },
 }
 
 

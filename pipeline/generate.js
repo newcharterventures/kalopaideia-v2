@@ -58,6 +58,18 @@ const LANGUAGES = [
     focus: "Middle English literature (c. 1150\u20131500): Chaucer's Canterbury Tales and Troilus and Criseyde, the Pearl-poet (Sir Gawain and the Green Knight, Pearl, Patience, Cleanness), Langland's Piers Plowman, Julian of Norwich, Margery Kempe, Malory's Le Morte d'Arthur, Gower's Confessio Amantis, Hoccleve, Lydgate. Use Chaucerian Middle English spelling (yogh, thorn, final \u2010e where appropriate).",
     word_field_label: "Middle English word",
   },
+  {
+    key: "welsh",
+    display: "Welsh",
+    focus: "Welsh literature, covering BOTH Middle Welsh (Pedair Cainc y Mabinogi, Y Gododdin, the court poets Cynddelw and Gwalchmai) and Modern Literary Welsh (Dafydd ap Gwilym's cywyddau, Tudur Aled, William Williams Pantycelyn, Goronwy Owen, T. H. Parry-Williams, R. Williams Parry, R. S. Thomas, Saunders Lewis, Kate Roberts, Waldo Williams). Use proper Welsh orthography: the digraphs ch, dd, ff, ll, ng, ph, rh, th count as single letters; w and y are vowels; circumflex âêîôûŵŷ marks long vowels in Modern Welsh. Words may be from either Middle or Modern Welsh; specify which in 'forms' or 'literary_context'.",
+    word_field_label: "Welsh word",
+  },
+  {
+    key: "oldnorse",
+    display: "Old Norse",
+    focus: "Old Norse literature, primarily Old Icelandic of c. 1150\u20131350: the Poetic Edda (Vǫluspá, Hávamál, Skírnismál, etc.), Snorri Sturluson's Prose Edda and Heimskringla, the Family Sagas (Brennu-Njáls saga, Egils saga, Laxdœla saga, Grænlendinga saga, Eiríks saga rauða, Gunnlaugs saga, Hrafnkels saga), and skaldic verse (Egill Skallagrímsson, Sigvatr Þórðarson). Use proper Old Icelandic orthography with þ ð æ ø ǫ and accented vowels (\u00e1 \u00e9 \u00ed \u00f3 \u00fa \u00fd) marking length. May occasionally feature a runic Proto-Norse form (Older Futhark) where philologically rich; mark this in 'forms' or 'literary_context'.",
+    word_field_label: "Old Norse word",
+  },
 ];
 
 function systemPromptFor(lang) {
