@@ -101,9 +101,47 @@
     }
   }
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", inject);
-  } else {
+  // Mobile tap-to-toggle. Desktop browsers fire :hover and use the CSS
+  // path; touch devices need an explicit toggle since :hover is sticky.
+  // First tap opens the panel and DOES NOT navigate. Second tap on the
+  // already-open parent navigates to the category landing page.
+  function wireMobileToggles() {
+    const isTouch = matchMedia("(hover: none)").matches
+      || matchMedia("(max-width: 760px)").matches;
+    if (!isTouch) return;
+    const toggles = document.querySelectorAll(".nav-dd .nav-dd-toggle");
+    toggles.forEach((t) => {
+      const dd = t.closest(".nav-dd");
+      if (!dd) return;
+      t.addEventListener("click", (e) => {
+        if (dd.classList.contains("open")) {
+          // Already open — let the link navigate to the landing page.
+          return;
+        }
+        // First tap: open the panel, swallow the click.
+        e.preventDefault();
+        // Close any sibling open dropdowns.
+        document.querySelectorAll(".nav-dd.open").forEach((other) => {
+          if (other !== dd) other.classList.remove("open");
+        });
+        dd.classList.add("open");
+      });
+    });
+    // Tap outside any dropdown closes them.
+    document.addEventListener("click", (e) => {
+      if (e.target.closest(".nav-dd")) return;
+      document.querySelectorAll(".nav-dd.open").forEach((dd) => dd.classList.remove("open"));
+    });
+  }
+
+  function ready() {
     inject();
+    wireMobileToggles();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", ready);
+  } else {
+    ready();
   }
 })();
