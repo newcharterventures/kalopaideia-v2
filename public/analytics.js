@@ -289,11 +289,117 @@
     getPrefs() { return state.prefs; },
   };
 
+  // --- First-session privacy banner. Shown once per logged-in user until
+  //     they dismiss it. Per Jae 2026-05-12; required by the opt-out model.
+  function maybeShowBanner() {
+    if (!state.enabled || !state.prefs) return;
+    if (state.prefs.banner_dismissed_at) return;
+    if (typeof document === 'undefined') return;
+    // Don't show on the analytics or terms pages themselves.
+    const p = location.pathname;
+    if (/\/analytics(\b|\/)|\/terms|\/about\/terms/i.test(p)) return;
+
+    // Build the banner. Single, minimal, dismissable.
+    const banner = document.createElement('div');
+    banner.id = 'analytics-consent-banner';
+    banner.setAttribute('role', 'region');
+    banner.setAttribute('aria-label', 'Reading analytics notice');
+    const siteName = SITE === 'paideia' ? 'Kalopaideia' : 'The Reading Mansion';
+    const termsHref = SITE === 'paideia' ? BASE + '/terms' : BASE + '/about/terms';
+    const dashHref  = BASE + '/analytics';
+    banner.innerHTML = `
+      <div class="acb-inner">
+        <div class="acb-text">
+          Reading analytics on ${siteName}: we record your sessions, pages, and time to power your
+          <a href="${dashHref}">Reading Analytics</a> page. Anonymized aggregates help us improve the site.
+          We never sell or share your data. <a href="${termsHref}">Details</a>.
+        </div>
+        <div class="acb-actions">
+          <button class="acb-btn acb-btn-secondary" id="acb-opt-out">Turn off</button>
+          <button class="acb-btn acb-btn-primary" id="acb-dismiss">Got it</button>
+        </div>
+      </div>
+    `;
+    // Inline styles — self-contained so we don't need a CSS dependency
+    // on every page that loads analytics.js.
+    const style = document.createElement('style');
+    style.textContent = `
+      #analytics-consent-banner {
+        position: fixed; left: 0; right: 0; bottom: 0; z-index: 9999;
+        background: rgba(31, 27, 22, 0.96);
+        color: #f6f0e2;
+        font-family: 'Source Serif 4', Georgia, serif;
+        font-size: 14px;
+        padding: 12px 18px;
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        border-top: 1px solid rgba(255,255,255,0.08);
+      }
+      #analytics-consent-banner .acb-inner {
+        max-width: 980px; margin: 0 auto;
+        display: flex; gap: 16px; align-items: center;
+        flex-wrap: wrap;
+      }
+      #analytics-consent-banner .acb-text { flex: 1; min-width: 260px; line-height: 1.45; }
+      #analytics-consent-banner a { color: #d8b876; text-decoration: underline; }
+      #analytics-consent-banner a:hover { color: #f6f0e2; }
+      #analytics-consent-banner .acb-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+      #analytics-consent-banner .acb-btn {
+        font-family: 'Inter', sans-serif;
+        font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+        border-radius: 2px; cursor: pointer;
+        padding: 8px 14px; border: 1px solid rgba(255,255,255,0.18);
+      }
+      #analytics-consent-banner .acb-btn-primary {
+        background: #d8b876; color: #1f1b16; border-color: #d8b876;
+      }
+      #analytics-consent-banner .acb-btn-primary:hover { background: #f6f0e2; border-color: #f6f0e2; }
+      #analytics-consent-banner .acb-btn-secondary {
+        background: transparent; color: #f6f0e2;
+      }
+      #analytics-consent-banner .acb-btn-secondary:hover { background: rgba(255,255,255,0.08); }
+      @media (max-width: 640px) {
+        #analytics-consent-banner .acb-inner { flex-direction: column; align-items: stretch; }
+        #analytics-consent-banner .acb-actions { justify-content: flex-end; }
+      }
+    `;
+    document.head.appendChild(style);
+    document.body.appendChild(banner);
+
+    async function recordDismiss() {
+      await safeFetch('/api/analytics/prefs', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ banner_dismissed_at: new Date().toISOString() }),
+      });
+      if (state.prefs) state.prefs.banner_dismissed_at = new Date().toISOString();
+      banner.remove();
+    }
+    async function recordOptOut() {
+      await safeFetch('/api/analytics/prefs', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ tracking_enabled: false, banner_dismissed_at: new Date().toISOString() }),
+      });
+      state.enabled = false;
+      if (state.prefs) {
+        state.prefs.tracking_enabled = false;
+        state.prefs.banner_dismissed_at = new Date().toISOString();
+      }
+      banner.remove();
+    }
+    banner.querySelector('#acb-dismiss').addEventListener('click', recordDismiss);
+    banner.querySelector('#acb-opt-out').addEventListener('click', recordOptOut);
+  }
+
   // --- Auto-start when the page loads. We don't block other scripts.
+  function bootstrap() {
+    Analytics.ready().then(() => maybeShowBanner());
+  }
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => { Analytics.ready(); });
+    document.addEventListener('DOMContentLoaded', bootstrap);
   } else {
-    Analytics.ready();
+    bootstrap();
   }
 
   // --- Flush on tab hide / unload. visibilitychange catches mobile

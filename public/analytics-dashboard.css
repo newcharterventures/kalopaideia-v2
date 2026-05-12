@@ -366,3 +366,54 @@
   color: var(--ink-muted, #7a6a54);
   margin: 0;
 }
+
+/* ---------- Admin-only additions ---------- */
+.admin-toolbar { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 4px; }
+.admin-chart .users-line { stroke: var(--accent, #7a3322); stroke-linecap: round; stroke-linejoin: round; }
+.admin-chart .admin-bar { fill: var(--gold, #a07a2c); opacity: 0.45; }
+.admin-chart .admin-bar:hover { opacity: 0.85; }
+
+.cohort-table { width: 100%; border-collapse: collapse; font-family: var(--font-body, "Source Serif 4", Georgia, serif); }
+.cohort-table th, .cohort-table td {
+  padding: 6px 10px;
+  text-align: left;
+  border-bottom: 1px dotted var(--rule-soft, #d6c9a6);
+  font-size: 13px;
+}
+.cohort-table th {
+  font-family: var(--font-ui, Inter, sans-serif);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-muted, #7a6a54);
+  font-weight: 500;
+  border-bottom: 1px solid var(--rule, #c8b892);
+}
+.cohort-table .num { text-align: right; font-variant-numeric: tabular-nums; }
+.retention-pill {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-family: var(--font-ui, Inter, sans-serif);
+  background: hsl(calc(var(--pct) * 1.2), 50%, 90%);
+  color: hsl(calc(var(--pct) * 1.2), 40%, 30%);
+}
+.site-tab {
+  padding: 5px 12px;
+  font-family: var(--font-ui, Inter, sans-serif);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid var(--rule, #c8b892);
+  background: transparent;
+  color: var(--ink-muted, #7a6a54);
+  cursor: pointer;
+  border-radius: 2px;
+}
+.site-tab.active {
+  background: var(--paper, #fdfaf3);
+  color: var(--ink, #231c14);
+  border-color: var(--accent, #7a3322);
+}
+.site-tab:hover { color: var(--accent, #7a3322); }

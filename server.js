@@ -16,7 +16,24 @@ import {
   purgeAnalyticsForUser,
   exportAnalyticsForUser,
   getAnalyticsSummary,
+  getAdminAnalyticsSummary,
 } from "./lib/commerce-db.js";
+
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL || "jae@newcharterventures.com";
+function _isAdmin(user) { return !!user && user.email === ADMIN_EMAIL; }
+function _requireAdmin(req, res, next) {
+  // API requests get JSON status codes; page requests get redirected.
+  const isApi = req.path.startsWith(`${BASE}/api/`) || req.path.startsWith('/api/');
+  if (!req.user) {
+    if (isApi) return res.status(401).json({ error: 'sign in required' });
+    return res.redirect(`${BASE}/account?next=${encodeURIComponent(req.originalUrl)}`);
+  }
+  if (!_isAdmin(req.user)) {
+    if (isApi) return res.status(403).json({ error: 'forbidden' });
+    return res.status(403).send('<h1>Forbidden</h1><p>This page is for the proprietor.</p>');
+  }
+  next();
+}
 import { stoaById } from "./lib/commerce-catalog.js";
 
 // Per Jae 2026-05-09: subscription pricing is $11.99/mo for both sites.
@@ -585,6 +602,19 @@ app.delete(`${BASE}/api/analytics/data`, _requireUser, (req, res) => {
 app.get(`${BASE}/analytics`, (req, res) => {
   if (!req.user) return res.redirect(`${BASE}/account?next=${encodeURIComponent(BASE + '/analytics')}`);
   res.sendFile(path.join(__dirname, "public", "analytics.html"));
+});
+
+// Admin-only sitewide analytics. Same gate as Mansion: email match.
+app.get(`${BASE}/api/admin/analytics/summary`, _requireAdmin, (req, res) => {
+  const days = Number(req.query.days);
+  const site = req.query.site;
+  res.json(getAdminAnalyticsSummary({
+    days: Number.isFinite(days) ? days : 30,
+    site,
+  }));
+});
+app.get(`${BASE}/admin/analytics`, _requireAdmin, (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "admin-analytics.html"));
 });
 
 app.get(BASE, (_req, res) => res.sendFile(path.join(__dirname, "public", "index.html")));
