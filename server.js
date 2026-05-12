@@ -35,6 +35,7 @@ function _requireAdmin(req, res, next) {
   next();
 }
 import { stoaById } from "./lib/commerce-catalog.js";
+import { isConfigured as stripeConfigured } from "./lib/commerce-stripe.js";
 
 // Per Jae 2026-05-09: subscription pricing is $11.99/mo for both sites.
 // Paideia's audio/library content can be paywalled with the same
@@ -55,7 +56,7 @@ function enforceLibraryAccess(req, textId) {
   if (!work) return null;          // unknown work → let the route 404 normally
   if (work.is_gateway) return null;
   if (hasStoaAccess(req.user, work)) return null;
-  return { status: 402, body: { error: "subscription_required", work_id: work.id, all_access_url: `${BASE}/store/${encodeURIComponent(work.id)}` } };
+  return { status: 402, body: { error: "subscription_required", work_id: work.id, all_access_url: `${BASE}/akousma/${encodeURIComponent(work.id)}` } };
 }
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -269,6 +270,59 @@ app.get(`${BASE}/api/day/:date`, async (req, res) => {
 // Excludes any *.backup-*.json snapshots. Per Jae 2026-05-09 — the count
 // is fetched live by the front-end so it updates automatically as new
 // works are added to data/library/.
+// Per Jae 2026-05-12: akousma promo cards (rendered on the homepage between
+// language sections and on each language page) should pull cover + blurb
+// metadata from `data/library/library-meta.json` — the single source of truth
+// — NOT from a hardcoded AKOUSMA_BOOKS constant duplicated client-side.
+// This endpoint returns, for every language, the canonical first work with
+// full cover_src / cover_alt / cover_credits / blurb so the front-end can
+// render akousma cards directly from server data.
+app.get(`${BASE}/api/akousma/cards`, async (_req, res) => {
+  res.set("Cache-Control", "no-cache, no-store, must-revalidate");
+  try {
+    const libDir = path.join(__dirname, "data", "library");
+    const files = await fs.readdir(libDir);
+    const meta = await loadLibraryMeta();
+
+    // Group books by language. For each language pick the first one as
+    // the canonical akousma card (Iliad I for Greek, Aeneid I for Latin
+    // etc.) — stable order via the filename.
+    const byLang = {};
+    for (const f of files.sort()) {
+      if (!f.endsWith(".json")) continue;
+      if (f.includes(".backup-")) continue;
+      if (f === "library-meta.json") continue;
+      try {
+        const data = JSON.parse(await fs.readFile(path.join(libDir, f), "utf8"));
+        const lang = (data.language || "unknown").toLowerCase();
+        const m = meta[data.id] || {};
+        const lineCount =
+          (data.lines || []).length +
+          ((data.sections || []).reduce((a, s) => a + (s.lines || []).length, 0));
+        const card = {
+          id: data.id,
+          language: lang,
+          title: data.title,
+          author: data.author,
+          date: data.date,
+          translator: data.translator,
+          translator_date: data.translator_date,
+          lines_count: lineCount,
+          is_gateway: data.id === "odyssey-book-1",
+          cover_src: m.cover_src || null,
+          cover_alt: m.cover_alt || null,
+          cover_credits: m.cover_credits || null,
+          blurb: m.blurb || null,
+        };
+        (byLang[lang] ||= []).push(card);
+      } catch {}
+    }
+    res.json({ by_language: byLang });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 app.get(`${BASE}/api/library/all`, async (_req, res) => {
   try {
     const libDir = path.join(__dirname, "data", "library");
@@ -291,16 +345,35 @@ app.get(`${BASE}/api/library/all`, async (_req, res) => {
   }
 });
 
-// Library API: list texts for a language
+// Library API: list texts for a language. Per Jae 2026-05-12: each text
+// now carries cover_src / cover_alt / cover_credits / blurb pulled from
+// data/library/library-meta.json (single source of truth for cover art
+// and editorial blurbs). Backup snapshots (*.backup-*.json) are skipped.
+async function loadLibraryMeta() {
+  try {
+    const metaPath = path.join(__dirname, "data", "library", "library-meta.json");
+    return JSON.parse(await fs.readFile(metaPath, "utf8"));
+  } catch {
+    return {};
+  }
+}
+
 app.get(`${BASE}/api/library/:lang`, async (req, res) => {
   const lang = String(req.params.lang).toLowerCase();
   if (!VALID_LANGS.includes(lang)) return res.status(404).json({ error: "Unknown language." });
+  // Per Jae 2026-05-12: cover_src / cover_credits change as editorial
+  // curation evolves; browsers must always revalidate, not serve stale
+  // cached JSON that shows the previous cover's painter credits.
+  res.set("Cache-Control", "no-cache, no-store, must-revalidate");
   try {
     const libDir = path.join(__dirname, "data", "library");
     const files = await fs.readdir(libDir);
+    const meta = await loadLibraryMeta();
     const texts = [];
     for (const f of files) {
       if (!f.endsWith(".json")) continue;
+      if (f.includes(".backup-")) continue;
+      if (f === "library-meta.json") continue;
       try {
         const data = JSON.parse(await fs.readFile(path.join(libDir, f), "utf8"));
         if (data.language === lang) {
@@ -308,6 +381,7 @@ app.get(`${BASE}/api/library/:lang`, async (req, res) => {
           if (data.sections) {
             for (const sec of data.sections) linesCount += (sec.lines || []).length;
           }
+          const m = meta[data.id] || {};
           texts.push({
             id: data.id,
             title: data.title,
@@ -318,6 +392,11 @@ app.get(`${BASE}/api/library/:lang`, async (req, res) => {
             lines_count: linesCount,
             has_sections: !!data.sections,
             sections_count: data.sections ? data.sections.length : 0,
+            is_gateway: data.id === "odyssey-book-1",
+            cover_src: m.cover_src || null,
+            cover_alt: m.cover_alt || null,
+            cover_credits: m.cover_credits || null,
+            blurb: m.blurb || null,
           });
         }
       } catch {}
@@ -520,10 +599,22 @@ function _requireUser(req, res, next) {
 // callers get { user: null } and 200 OK (not 401 — we don't want a noisy
 // console error on every page load for anonymous browsers).
 app.get(`${BASE}/api/whoami`, (req, res) => {
-  if (!req.user) return res.json({ user: null });
+  // Stripe-ready flag is exposed to anonymous callers too, since the
+  // Library tab needs to choose between 'Subscribe' and 'coming soon' for
+  // every visitor, not just signed-in ones.
+  const stripe_ready = stripeConfigured();
+  if (!req.user) return res.json({ user: null, stripe_ready });
   const prefs = getAnalyticsPrefs(req.user.id);
   res.json({
-    user: { id: req.user.id, display_name: req.user.display_name || null },
+    user: {
+      id: req.user.id,
+      display_name: req.user.display_name || null,
+      // Per Jae 2026-05-12: expose subscription status so the Library tab
+      // can render the right state (subscriber sees Read buttons, non-
+      // subscriber sees a Subscribe CTA per book).
+      sub_status: req.user.sub_status || null,
+    },
+    stripe_ready,
     analytics: {
       tracking_enabled: prefs.tracking_enabled,
       daily_goal_minutes: prefs.daily_goal_minutes,

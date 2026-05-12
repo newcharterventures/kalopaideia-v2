@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Akousma silhouette mockups — 3 variations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cinzel:wght@400;500;600;700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;1,6..96,400;1,6..96,500;1,6..96,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/paideia/styles.css?v=1778577662" />
+<style>
+  /* ============================================================
+     SHARED — silhouette load + mockup chrome
+     ============================================================ */
+  body { background: var(--paper, #fdfaf3); }
+  html, body { overflow-x: hidden; margin: 0; padding: 0; }
+
+  .mock-banner {
+    position: sticky; top: 0;
+    background: #0f0d0a;
+    color: #c9b88f;
+    padding: 10px 24px;
+    border-bottom: 1px solid #2a1f15;
+    z-index: 1000;
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .mock-banner strong { color: #f3e6c4; }
+  .mock-banner a { color: #c9b88f; text-decoration: none; border-bottom: 1px dotted; padding-bottom: 1px; margin-left: 16px; }
+
+  .mock-section {
+    padding: 56px 0 80px;
+    border-bottom: 4px double rgba(45, 36, 24, 0.35);
+  }
+  .mock-section:last-of-type { border-bottom: 0; }
+  .mock-section h2 {
+    font-family: 'Bodoni Moda', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: clamp(28px, 4vw, 42px);
+    text-align: center;
+    margin: 0 0 6px;
+    color: var(--ink, #1a1410);
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 32px;
+  }
+  .mock-section .label {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--gold-deep, #7d5d12);
+    text-align: center;
+    margin-bottom: 6px;
+  }
+  .mock-section p.caption {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 14px;
+    text-align: center;
+    max-width: 60ch;
+    margin: 16px auto 36px;
+    padding: 0 32px;
+    color: var(--ink-muted, #5c4d38);
+    line-height: 1.55;
+  }
+
+  /* ============================================================
+     SHARED — the silhouette glyph
+     ============================================================ */
+  .ako-silhouette {
+    position: absolute;
+    pointer-events: none;
+    color: var(--ink, #1a1410);
+    z-index: 0;
+  }
+  /* All ako-* card content sits on top of the silhouette */
+  .akousma-inner > * { position: relative; z-index: 1; }
+
+  /* ============================================================
+     VARIATION A — FADED BACKDROP
+     The silhouette covers the whole card at very low opacity
+     (~6%). Subtle texture across all three columns.
+     ============================================================ */
+  .var-a .akousma-ad { position: relative; }
+  .var-a .ako-silhouette {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 88%;
+    height: 88%;
+    opacity: 0.07;
+  }
+
+  /* ============================================================
+     VARIATION B — CENTER OVERSIZE
+     The silhouette is gigantic, oversized, in the middle of the
+     card behind the copy. Higher opacity (~12%) but bigger so it
+     still reads as background.
+     ============================================================ */
+  .var-b .akousma-ad { position: relative; }
+  .var-b .ako-silhouette {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 130%;
+    height: 130%;
+    opacity: 0.10;
+  }
+
+  /* ============================================================
+     VARIATION C — RIGHT-EDGE BLEED
+     The silhouette anchored to the right edge, oversized but
+     cropped to the card. Higher contrast (~18%). Specifically
+     positioned so it doesn't overlap the headline column much.
+     Like editorial design.
+     ============================================================ */
+  .var-c .akousma-ad { position: relative; }
+  .var-c .ako-silhouette {
+    top: 50%;
+    right: -8%;
+    left: auto;
+    transform: translateY(-50%);
+    width: 60%;
+    height: 130%;
+    opacity: 0.18;
+  }
+
+  /* ============================================================
+     SHARED — gallery of all 7 silhouettes (compact preview row)
+     ============================================================ */
+  .silhouette-gallery {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 18px;
+  }
+  @media (max-width: 760px) {
+    .silhouette-gallery { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  }
+  .silhouette-card {
+    background: var(--paper-warm, #faf3e2);
+    border: 1px solid var(--rule, rgba(45,36,24,0.18));
+    padding: 14px 10px 12px;
+    text-align: center;
+    aspect-ratio: 3 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .silhouette-card svg {
+    width: 100%;
+    height: auto;
+    color: var(--ink, #1a1410);
+    margin-bottom: 8px;
+  }
+  .silhouette-card .name {
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold-deep, #7d5d12);
+    line-height: 1.3;
+  }
+  .silhouette-card .work {
+    font-family: 'Bodoni Moda', serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--ink, #1a1410);
+    margin-top: 2px;
+    line-height: 1.15;
+  }
+</style>
+</head>
+<body>
+
+<div class="mock-banner">
+  <strong>Akousma silhouette mockups</strong> · 3 variations · May 9 2026
+  <a href="/paideia/">← Live site</a>
+  <a href="#variations">Variations ↓</a>
+  <a href="#gallery">All seven ↓</a>
+</div>
+
+<!-- ==========================================================
+     SECTION: All seven silhouettes preview
+     ========================================================== -->
+<section class="mock-section" id="gallery">
+  <p class="label">The seven silhouettes</p>
+  <h2>One image per book</h2>
+  <p class="caption">Hand-drawn SVG silhouettes — pure ink, no AI, no copyrighted source. Penguin Classics-style icons that are recognizable at low opacity behind the promo card. One per canonical book in the Akousma rotation.</p>
+
+  <div class="silhouette-gallery">
+    <div class="silhouette-card">
+      <img src="/paideia/img/akousma/sil-iliad.png" alt="" style="width:100%;height:auto;display:block;max-width:140px;margin:0 auto 8px;"/>
+      <div class="name">Greek</div>
+      <div class="work"><em>The Iliad</em><br/>Trojan Horse</div>
+    </div>
+    <div class="silhouette-card">
+      <img src="/paideia/img/akousma/sil-odyssey.png" alt="" style="width:100%;height:auto;display:block;max-width:140px;margin:0 auto 8px;"/>
+      <div class="name">Greek</div>
+      <div class="work"><em>The Odyssey</em><br/>Black-figure ship</div>
+    </div>
+    <div class="silhouette-card">
+      <img src="/paideia/img/akousma/sil-aeneid.png" alt="" style="width:100%;height:auto;display:block;max-width:140px;margin:0 auto 8px;"/>
+      <div class="name">Latin</div>
+      <div class="work"><em>The Aeneid</em><br/>Roman warship · SPQR</div>
+    </div>
+    <div class="silhouette-card">
+      <img src="/paideia/img/akousma/sil-villon.png" alt="" style="width:100%;height:auto;display:block;max-width:140px;margin:0 auto 8px;"/>
+      <div class="name">French</div>
+      <div class="work"><em>Ballade des pendus</em><br/>Gallows · 3 hanged</div>
+    </div>
+    <div class="silhouette-card">
+      <img src="/paideia/img/akousma/sil-erlkonig.png" alt="" style="width:100%;height:auto;display:block;max-width:140px;margin:0 auto 8px;"/>
+      <div class="name">German</div>
+      <div class="work"><em>Erlkönig</em><br/>Cloaked rider</div>
+    </div>
+    <div class="silhouette-card">
+      <img src="/paideia/img/akousma/sil-inferno.png" alt="" style="width:100%;height:auto;display:block;max-width:140px;margin:0 auto 8px;"/>
+      <div class="name">Italian</div>
+      <div class="work"><em>Inferno</em><br/>Cerberus, three-headed</div>
+    </div>
+    <div class="silhouette-card">
+      <img src="/paideia/img/akousma/sil-beowulf.png" alt="" style="width:100%;height:auto;display:block;max-width:140px;margin:0 auto 8px;"/>
+      <div class="name">Olde English</div>
+      <div class="work"><em>Beowulf</em><br/>Hoard-dragon</div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================
+     SECTION: VARIATION A — Faded backdrop
+     ========================================================== -->
+<section class="mock-section var-a" id="variations">
+  <p class="label">Variation A — Faded backdrop</p>
+  <h2>Silhouette as full-card watermark</h2>
+  <p class="caption">The Trojan Horse fills the entire card at 7% opacity. Subtle, scholarly, never overpowers the type. Reads as texture under the page. Each card carries its own emblem the way Penguin's classic-edition spines do.</p>
+
+  <aside class="akousma-ad">
+    <img class="ako-silhouette" src="/paideia/img/akousma/sil-iliad.png" alt="" aria-hidden="true"/>
+    <div class="akousma-inner">
+      <div class="akousma-eyebrow"><span class="alpha">Α</span> Akousma <span class="pipe">·</span> The Audio Library</div>
+      <div class="akousma-row">
+        <div class="akousma-cover">
+          <article class="ako-cover">
+            <div class="ako-cover-imprint">Akousma</div>
+            <div class="ako-cover-vignette">
+              <img src="/paideia/img/akousma/greek-iliad.jpg" alt="Achilles and Ajax — Exekias amphora"/>
+            </div>
+            <div class="ako-cover-rule"></div>
+            <h4 class="ako-cover-title">The Iliad</h4>
+            <div class="ako-cover-author">Homer</div>
+          </article>
+        </div>
+        <div class="akousma-copy">
+          <div class="akousma-meta"><span class="lang">Greek</span> · 611 lines · Pope, 1715–1720 · Public domain</div>
+          <h3 class="akousma-title"><em>The Iliad</em>, Book I</h3>
+          <p class="akousma-author">Homer · with parallel English translation by Alexander Pope</p>
+          <p class="akousma-blurb">Listen to the opening of Western literature in its original Greek — line by line, with Pope's heroic-couplet translation alongside. Fifteen hours of audio, the full Book I, every line read by a voice tuned for the Homeric line.</p>
+          <p class="akousma-credits">Cover: Achilles and Ajax playing dice, Attic black-figure amphora signed by Exekias, c. 540 BC. Vatican Museums (PD).</p>
+        </div>
+        <div class="akousma-cta">
+          <div class="akousma-cta-eyebrow">Full Library Access</div>
+          <div class="akousma-cta-price"><span>$</span>11<span class="cents">.99</span></div>
+          <div class="akousma-cta-period">per month · cancel anytime</div>
+          <a class="akousma-cta-button" href="#">Begin Listening →</a>
+          <p class="akousma-cta-fineprint"><span class="count">19</span> works in the library across all seven languages.</p>
+        </div>
+      </div>
+    </div>
+  </aside>
+</section>
+
+<!-- ==========================================================
+     SECTION: VARIATION B — Center oversize
+     ========================================================== -->
+<section class="mock-section var-b">
+  <p class="label">Variation B — Center oversize</p>
+  <h2>Silhouette as monumental backdrop</h2>
+  <p class="caption">The Trojan Horse is gigantic, 130% the card's height, bleeding off the top and bottom. 10% opacity. More dramatic — it's the FIGURE behind the copy, not just texture. Like a Penguin Classics dust jacket with the iconic image behind a colored panel.</p>
+
+  <aside class="akousma-ad">
+    <img class="ako-silhouette" src="/paideia/img/akousma/sil-iliad.png" alt="" aria-hidden="true"/>
+    <div class="akousma-inner">
+      <div class="akousma-eyebrow"><span class="alpha">Α</span> Akousma <span class="pipe">·</span> The Audio Library</div>
+      <div class="akousma-row">
+        <div class="akousma-cover">
+          <article class="ako-cover">
+            <div class="ako-cover-imprint">Akousma</div>
+            <div class="ako-cover-vignette">
+              <img src="/paideia/img/akousma/greek-iliad.jpg" alt=""/>
+            </div>
+            <div class="ako-cover-rule"></div>
+            <h4 class="ako-cover-title">The Iliad</h4>
+            <div class="ako-cover-author">Homer</div>
+          </article>
+        </div>
+        <div class="akousma-copy">
+          <div class="akousma-meta"><span class="lang">Greek</span> · 611 lines · Pope, 1715–1720 · Public domain</div>
+          <h3 class="akousma-title"><em>The Iliad</em>, Book I</h3>
+          <p class="akousma-author">Homer · with parallel English translation by Alexander Pope</p>
+          <p class="akousma-blurb">Listen to the opening of Western literature in its original Greek — line by line, with Pope's heroic-couplet translation alongside. Fifteen hours of audio, the full Book I, every line read by a voice tuned for the Homeric line.</p>
+          <p class="akousma-credits">Cover: Achilles and Ajax playing dice, Attic black-figure amphora signed by Exekias, c. 540 BC. Vatican Museums (PD).</p>
+        </div>
+        <div class="akousma-cta">
+          <div class="akousma-cta-eyebrow">Full Library Access</div>
+          <div class="akousma-cta-price"><span>$</span>11<span class="cents">.99</span></div>
+          <div class="akousma-cta-period">per month · cancel anytime</div>
+          <a class="akousma-cta-button" href="#">Begin Listening →</a>
+          <p class="akousma-cta-fineprint"><span class="count">19</span> works in the library across all seven languages.</p>
+        </div>
+      </div>
+    </div>
+  </aside>
+</section>
+
+<!-- ==========================================================
+     SECTION: VARIATION C — Right-edge bleed
+     ========================================================== -->
+<section class="mock-section var-c">
+  <p class="label">Variation C — Right-edge bleed</p>
+  <h2>Silhouette as right-anchored ornament</h2>
+  <p class="caption">The Trojan Horse anchored to the right edge of the card, sized at 60% width and 130% height — bleeds off the top, bottom, and right. 18% opacity, the most dramatic of the three. The horse becomes a punctuation mark for the CTA column: the offer reads as guarded by the icon. Penguin's deluxe-edition aesthetic.</p>
+
+  <aside class="akousma-ad">
+    <img class="ako-silhouette" src="/paideia/img/akousma/sil-iliad.png" alt="" aria-hidden="true"/>
+    <div class="akousma-inner">
+      <div class="akousma-eyebrow"><span class="alpha">Α</span> Akousma <span class="pipe">·</span> The Audio Library</div>
+      <div class="akousma-row">
+        <div class="akousma-cover">
+          <article class="ako-cover">
+            <div class="ako-cover-imprint">Akousma</div>
+            <div class="ako-cover-vignette">
+              <img src="/paideia/img/akousma/greek-iliad.jpg" alt=""/>
+            </div>
+            <div class="ako-cover-rule"></div>
+            <h4 class="ako-cover-title">The Iliad</h4>
+            <div class="ako-cover-author">Homer</div>
+          </article>
+        </div>
+        <div class="akousma-copy">
+          <div class="akousma-meta"><span class="lang">Greek</span> · 611 lines · Pope, 1715–1720 · Public domain</div>
+          <h3 class="akousma-title"><em>The Iliad</em>, Book I</h3>
+          <p class="akousma-author">Homer · with parallel English translation by Alexander Pope</p>
+          <p class="akousma-blurb">Listen to the opening of Western literature in its original Greek — line by line, with Pope's heroic-couplet translation alongside. Fifteen hours of audio, the full Book I, every line read by a voice tuned for the Homeric line.</p>
+          <p class="akousma-credits">Cover: Achilles and Ajax playing dice, Attic black-figure amphora signed by Exekias, c. 540 BC. Vatican Museums (PD).</p>
+        </div>
+        <div class="akousma-cta">
+          <div class="akousma-cta-eyebrow">Full Library Access</div>
+          <div class="akousma-cta-price"><span>$</span>11<span class="cents">.99</span></div>
+          <div class="akousma-cta-period">per month · cancel anytime</div>
+          <a class="akousma-cta-button" href="#">Begin Listening →</a>
+          <p class="akousma-cta-fineprint"><span class="count">19</span> works in the library across all seven languages.</p>
+        </div>
+      </div>
+    </div>
+  </aside>
+</section>
+
+<!-- ==========================================================
+     SECTION: Variation showcase — A, B, C side by side with
+     four DIFFERENT books to show how each variant feels with
+     each silhouette.
+     ========================================================== -->
+<section class="mock-section">
+  <p class="label">Side-by-side · the rotation in context</p>
+  <h2>Each variation, with a different book</h2>
+  <p class="caption">The same three card variations, but each card is a different language and book — to show how each silhouette behaves and whether the "sizzle" carries across the rotation. From top: A · Aeneid (Roman warship), B · Erlkönig (rider in dark forest), C · Inferno (Cerberus).</p>
+
+  <!-- Aeneid in variation A -->
+  <div class="var-a" style="margin-bottom: 36px;">
+    <aside class="akousma-ad">
+      <img class="ako-silhouette" src="/paideia/img/akousma/sil-aeneid.png" alt="" aria-hidden="true"/>
+      <div class="akousma-inner">
+        <div class="akousma-eyebrow"><span class="alpha">Α</span> Akousma <span class="pipe">·</span> The Audio Library</div>
+        <div class="akousma-row">
+          <div class="akousma-cover">
+            <article class="ako-cover">
+              <div class="ako-cover-imprint">Akousma</div>
+              <div class="ako-cover-vignette"><img src="/paideia/img/akousma/latin-aeneid.jpg" alt=""/></div>
+              <div class="ako-cover-rule"></div>
+              <h4 class="ako-cover-title">Aeneid</h4>
+              <div class="ako-cover-author">Virgil</div>
+            </article>
+          </div>
+          <div class="akousma-copy">
+            <div class="akousma-meta"><span class="lang">Latin</span> · 756 lines · Dryden, 1697 · Public domain</div>
+            <h3 class="akousma-title"><em>The Aeneid</em>, Book I</h3>
+            <p class="akousma-author">Publius Vergilius Maro · with parallel English translation by John Dryden</p>
+            <p class="akousma-blurb">Hear the opening of the Roman epic spoken in its native dactylic hexameter, with Dryden's 1697 verse translation read alongside. Each line carries a brief grammatical note for the student.</p>
+            <p class="akousma-credits">Cover: Vergilius Romanus, folio 234v — a fifth-century Latin manuscript of the Aeneid. Vatican Library (PD).</p>
+          </div>
+          <div class="akousma-cta">
+            <div class="akousma-cta-eyebrow">Full Library Access</div>
+            <div class="akousma-cta-price"><span>$</span>11<span class="cents">.99</span></div>
+            <div class="akousma-cta-period">per month · cancel anytime</div>
+            <a class="akousma-cta-button" href="#">Begin Listening →</a>
+            <p class="akousma-cta-fineprint"><span class="count">19</span> works in the library across all seven languages.</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Erlkönig in variation B -->
+  <div class="var-b" style="margin-bottom: 36px;">
+    <aside class="akousma-ad">
+      <img class="ako-silhouette" src="/paideia/img/akousma/sil-erlkonig.png" alt="" aria-hidden="true"/>
+      <div class="akousma-inner">
+        <div class="akousma-eyebrow"><span class="alpha">Α</span> Akousma <span class="pipe">·</span> The Audio Library</div>
+        <div class="akousma-row">
+          <div class="akousma-cover">
+            <article class="ako-cover">
+              <div class="ako-cover-imprint">Akousma</div>
+              <div class="ako-cover-vignette"><img src="/paideia/img/akousma/german-erlkonig.jpg" alt=""/></div>
+              <div class="ako-cover-rule"></div>
+              <h4 class="ako-cover-title">Erlkönig</h4>
+              <div class="ako-cover-author">Goethe</div>
+            </article>
+          </div>
+          <div class="akousma-copy">
+            <div class="akousma-meta"><span class="lang">German</span> · 32 lines · Bowring, 1853 · Public domain</div>
+            <h3 class="akousma-title"><em>Erlkönig</em></h3>
+            <p class="akousma-author">Johann Wolfgang von Goethe · with parallel English translation by Edgar Alfred Bowring</p>
+            <p class="akousma-blurb">Goethe's 1782 ballad of the alder-king who claims a child on a midnight ride — the most famous lyric in German Romanticism. Each voice in the dialogue read by a separate reader.</p>
+            <p class="akousma-credits">Cover: Erlkönig, oil on canvas by Moritz von Schwind, c. 1830 — Belvedere, Vienna (PD).</p>
+          </div>
+          <div class="akousma-cta">
+            <div class="akousma-cta-eyebrow">Full Library Access</div>
+            <div class="akousma-cta-price"><span>$</span>11<span class="cents">.99</span></div>
+            <div class="akousma-cta-period">per month · cancel anytime</div>
+            <a class="akousma-cta-button" href="#">Begin Listening →</a>
+            <p class="akousma-cta-fineprint"><span class="count">19</span> works in the library across all seven languages.</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Inferno in variation C -->
+  <div class="var-c">
+    <aside class="akousma-ad">
+      <img class="ako-silhouette" src="/paideia/img/akousma/sil-inferno.png" alt="" aria-hidden="true"/>
+      <div class="akousma-inner">
+        <div class="akousma-eyebrow"><span class="alpha">Α</span> Akousma <span class="pipe">·</span> The Audio Library</div>
+        <div class="akousma-row">
+          <div class="akousma-cover">
+            <article class="ako-cover">
+              <div class="ako-cover-imprint">Akousma</div>
+              <div class="ako-cover-vignette"><img src="/paideia/img/akousma/italian-inferno.jpg" alt=""/></div>
+              <div class="ako-cover-rule"></div>
+              <h4 class="ako-cover-title">Inferno, Canto I</h4>
+              <div class="ako-cover-author">Dante Alighieri</div>
+            </article>
+          </div>
+          <div class="akousma-copy">
+            <div class="akousma-meta"><span class="lang">Italian</span> · 36 lines · Longfellow, 1867 · Public domain</div>
+            <h3 class="akousma-title"><em>Inferno</em>, Canto I</h3>
+            <p class="akousma-author">Dante Alighieri · with parallel English translation by Henry Wadsworth Longfellow</p>
+            <p class="akousma-blurb">"Nel mezzo del cammin di nostra vita…" — the dark wood, the sunlit hill, the leopard. Hear the opening of the Commedia in Tuscan terza rima with Longfellow's terza-rima translation read alongside.</p>
+            <p class="akousma-credits">Cover: La Carte de l'Enfer (Map of Hell), silverpoint and ink by Sandro Botticelli, c. 1485. Vatican Library (PD).</p>
+          </div>
+          <div class="akousma-cta">
+            <div class="akousma-cta-eyebrow">Full Library Access</div>
+            <div class="akousma-cta-price"><span>$</span>11<span class="cents">.99</span></div>
+            <div class="akousma-cta-period">per month · cancel anytime</div>
+            <a class="akousma-cta-button" href="#">Begin Listening →</a>
+            <p class="akousma-cta-fineprint"><span class="count">19</span> works in the library across all seven languages.</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<div style="background:#0f0d0a; color:#c9b88f; padding: 32px; text-align: center; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 14px; line-height: 1.6;">
+  Three variations. <strong>A</strong> (subtle backdrop) · <strong>B</strong> (center oversize) · <strong>C</strong> (right-edge bleed).<br/>
+  Tell me which one ships, or mix &amp; match (e.g. A's opacity with C's positioning).<br/>
+  All silhouettes are hand-drawn SVG in ink — no AI, no copyrighted images.
+</div>
+

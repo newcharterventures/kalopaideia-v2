@@ -391,6 +391,15 @@ function bookmarksForLang(lang) {
     .sort((a, b) => b.updated_at - a.updated_at);
 }
 
+// Per Jae 2026-05-12: the Library tab now shows a cover-and-blurb card for
+// EVERY book in the language, with two render states:
+//   - Subscriber (or anyone for the gateway work): "Open in Reader →" CTA,
+//     plus a resume bar if they have saved progress.
+//   - Non-subscriber: cover + blurb + "Subscribe — $11.99/month" CTA. Gated
+//     to "Subscribe — coming soon" until Stripe is configured.
+// The single promotional Akousma ad card that used to lead this section
+// has been removed. The site is the library now, not an ad for one book.
+
 async function renderLibraryAndReading(primer, lang) {
   const pane = document.getElementById("pane-library");
   const readingList = primer.reading_list || [];
@@ -400,27 +409,25 @@ async function renderLibraryAndReading(primer, lang) {
     if (res.ok) libraryTexts = (await res.json()).texts || [];
   } catch {}
 
-  // Build a unified list: for each reading-list entry, look up whether a library text exists
+  // Match reading-list entries to library texts so we can mark which works
+  // are part of the suggested progression vs. extra featured works.
   const usedLibIds = new Set();
-  const items = readingList.map((r, idx) => {
+  const matchedByLibId = new Map();
+  readingList.forEach((r, idx) => {
     const match = matchLibraryToReading(r, libraryTexts);
-    if (match) usedLibIds.add(match.id);
-    return {
-      difficulty: idx + 1,
-      description: r,
-      library: match || null,
-    };
+    if (match) {
+      usedLibIds.add(match.id);
+      matchedByLibId.set(match.id, { difficulty: idx + 1, description: r });
+    }
   });
 
-  // Any library texts not matched go at the top as "Featured readers"
-  const unmatched = libraryTexts.filter((t) => !usedLibIds.has(t.id));
+  const user = window.__USER__ || null;
+  const isSubscriber = !!(user && user.sub_status === 'active');
+  const isSignedIn = !!user;
 
   const sections = [];
 
-  // Per Jae 2026-05-09: the Library section gets the same scholarly
-  // typographic treatment as the C masthead — a small temple-ruin SVG
-  // icon flanking a Bodoni italic heading, with a faint hairline rule
-  // beneath. Acts as a section divider that echoes the masthead.
+  // Library section header (echoes the masthead's scholarly treatment).
   sections.push(`
     <header class="library-masthead">
       <img class="library-masthead-emblem" src="${BASE}/img/masthead/temple-ruin.svg" alt="" aria-hidden="true" />
@@ -429,16 +436,20 @@ async function renderLibraryAndReading(primer, lang) {
     </header>
   `);
 
-  // Per Jae 2026-05-09 (third ask): the Library section MUST show the
-  // Akousma promo card with the actual book cover. The card lives in
-  // akousma.js (loaded before this file).
-  if (typeof renderAkousmaCard === "function") {
-    sections.push(renderAkousmaCard(lang));
+  sections.push(`<p class="library-intro">Sentence-by-sentence parallel-text readers. Each work opens in its original language alongside an English translation, with a word-by-word gloss on click and audio for every line.</p>`);
+
+  // Subscriber status banner at the top of the library.
+  if (isSubscriber) {
+    sections.push(`<div class="library-sub-banner library-sub-banner-active"><b>The Akousma · Active.</b> Every work below is open to you.</div>`);
+  } else if (isSignedIn) {
+    sections.push(`<div class="library-sub-banner"><b>Signed in.</b> The gateway work below is open to you forever. Subscribe to The Akousma to open everything else — here and at <a href="https://newcharterventures.com/mansion/wanderings/akousma">The Reading Mansion</a>.</div>`);
+  } else {
+    sections.push(`<div class="library-sub-banner"><b>Not signed in.</b> <a href="${BASE}/login">Sign in</a> to open the gateway work and save your progress. Subscribe to The Akousma to open the rest — $11.99 a month, every work, present and future.</div>`);
   }
 
-  sections.push(`<p class="library-intro">Sentence-by-sentence parallel-text readers. Open any text in the reader to move through one line at a time, listen to the original pronounced aloud, and read the grammar gloss beside each line.</p>`);
-
-  // Continue Reading section (from bookmarks)
+  // Continue Reading from local bookmarks (always shown to anyone who has
+  // saved progress on this device, regardless of sub state — it's a UX
+  // continuation hint, not an entitlement).
   const bookmarks = bookmarksForLang(lang);
   if (bookmarks.length) {
     sections.push(`<h4 class="pane-subheading">Continue Reading</h4>`);
@@ -464,40 +475,132 @@ async function renderLibraryAndReading(primer, lang) {
     sections.push(`</ul>`);
   }
 
-  if (unmatched.length) {
-    sections.push(`<h4 class="pane-subheading">Open Now</h4>`);
+  if (!libraryTexts.length) {
+    sections.push(`<p class="library-empty"><em>The ${esc(LANG_META[lang]?.name || lang)} library is still being prepared.</em></p>`);
+  } else {
+    sections.push(`<h4 class="pane-subheading">The Library</h4>`);
+    sections.push(`<div class="library-book-grid">`);
+    // Sort: gateway first, then matched (in reading-list order), then unmatched.
+    const sorted = libraryTexts.slice().sort((a, b) => {
+      if (a.is_gateway && !b.is_gateway) return -1;
+      if (!a.is_gateway && b.is_gateway) return 1;
+      const ai = matchedByLibId.has(a.id) ? matchedByLibId.get(a.id).difficulty : 999;
+      const bi = matchedByLibId.has(b.id) ? matchedByLibId.get(b.id).difficulty : 999;
+      return ai - bi;
+    });
+    for (const t of sorted) {
+      const match = matchedByLibId.get(t.id);
+      sections.push(bookCardHtml(t, { isSubscriber, isSignedIn, difficulty: match ? match.difficulty : null, description: match ? match.description : null }));
+    }
+    sections.push(`</div>`);
+  }
+
+  // Reading-list entries that have NO matching library text ("preparing")
+  // — keep these visible as a roadmap of works in translation.
+  const preparing = readingList
+    .map((r, idx) => ({ difficulty: idx + 1, description: r, library: matchLibraryToReading(r, libraryTexts) }))
+    .filter((it) => !it.library);
+  if (preparing.length) {
+    sections.push(`<h4 class="pane-subheading">In Preparation</h4>`);
+    sections.push(`<p class="library-intro" style="font-size:13px;">Works on the editorial roadmap. Parallel-text readers in preparation; covers and audio still being curated.</p>`);
     sections.push(`<ul class="library-list">`);
-    for (const t of unmatched) sections.push(libraryItemHtml(t, null));
+    for (const item of preparing) {
+      sections.push(`
+        <li class="library-item">
+          <div class="library-link library-link-preparing">
+            <div class="lib-row">
+              <div class="lib-main">
+                <div class="lib-title">${item.difficulty}. ${esc(item.description)}</div>
+                <div class="lib-meta">Parallel-text reader in preparation.</div>
+              </div>
+              <span class="lib-status lib-status-preparing">Preparing</span>
+            </div>
+          </div>
+        </li>
+      `);
+    }
     sections.push(`</ul>`);
   }
 
-  sections.push(`<h4 class="pane-subheading">Suggested Reading, Easier to Harder</h4>`);
-  sections.push(`<ul class="library-list">`);
-  for (const item of items) {
-    sections.push(readingItemHtml(item));
-  }
-  sections.push(`</ul>`);
-
   pane.innerHTML = sections.join("");
-  // Repopulate the Akousma count on the newly-rendered card.
-  if (typeof fetchAkousmaCount === "function") fetchAkousmaCount();
 }
 
-function libraryItemHtml(t, difficulty) {
+// Render a single book card. Two visual variants share the same shell:
+// the only differences are the CTA button area and whether the cover
+// links to the reader directly. Gateway works (Odyssey Book 1) bypass
+// the subscription gate entirely.
+function bookCardHtml(t, ctx) {
+  const { isSubscriber, isSignedIn, difficulty, description } = ctx;
+  const hasAccess = isSubscriber || t.is_gateway;
+  const stripeReady = !!(window.__STRIPE_READY__);
+  const cover = t.cover_src
+    ? `<img class="book-card-cover-img" src="${esc(t.cover_src)}" alt="${esc(t.cover_alt || t.title)}" loading="lazy" />`
+    : `<div class="book-card-cover-placeholder"><span class="book-card-cover-mark">Κ</span><span class="book-card-cover-sub">AKOUSMA</span></div>`;
+  const credits = t.cover_credits
+    ? `<p class="book-card-credits">${esc(t.cover_credits)}</p>` : '';
+  const blurb = t.blurb
+    ? `<p class="book-card-blurb">${esc(t.blurb)}</p>`
+    : `<p class="book-card-blurb book-card-blurb-empty"><em>Blurb in preparation.</em></p>`;
+  const meta = `${esc(t.author || '')}${t.date ? ' · ' + esc(t.date) : ''}`;
+  const trans = t.translator
+    ? `tr. ${esc(t.translator)}${t.translator_date ? ', ' + esc(t.translator_date) : ''} · ${t.lines_count} lines`
+    : `${t.lines_count} lines`;
+  const difficultyBadge = difficulty
+    ? `<span class="book-card-difficulty">Reading list № ${difficulty}</span>` : '';
+  const gatewayBadge = t.is_gateway
+    ? `<span class="book-card-gateway">Free — the gateway</span>` : '';
+
+  let cta;
+  // Per Jae 2026-05-12: The Akousma is an AUDIO library. CTAs say
+  // "listen", not "read". Buttons: Open & Listen / Subscribe to listen
+  // / Sign in to listen.
+  if (hasAccess) {
+    cta = `
+      <a class="book-card-btn" href="${BASE}/read/${esc(t.id)}">Open &amp; Listen →</a>
+      ${t.is_gateway && !isSubscriber
+        ? '<p class="book-card-cta-note">Open to everyone. Subscribe to The Akousma to open the rest.</p>'
+        : ''}
+    `;
+  } else if (isSignedIn) {
+    cta = stripeReady
+      ? `<form method="POST" action="${BASE}/checkout/all-access" style="display:inline;">
+           <button class="book-card-btn" type="submit">Subscribe to listen — $11.99/month</button>
+         </form>
+         <p class="book-card-cta-note">One subscription opens every work in The Akousma, here and at The Reading Mansion.</p>`
+      : `<button class="book-card-btn" type="button" disabled>Subscribe — coming soon</button>
+         <p class="book-card-cta-note">Subscription will open every work in The Akousma. Stripe wiring underway.</p>`;
+  } else {
+    cta = `
+      <a class="book-card-btn" href="${BASE}/login?next=${encodeURIComponent('/paideia/' + currentLang())}">Sign in to listen</a>
+      <p class="book-card-cta-note">${t.is_gateway ? 'This work is free for any signed-in listener.' : 'Sign in, then subscribe to The Akousma — $11.99 a month, every work.'}</p>
+    `;
+  }
+
   return `
-    <li class="library-item">
-      <a href="${BASE}/read/${esc(t.id)}" class="library-link">
-        <div class="lib-row">
-          <div class="lib-main">
-            <div class="lib-title">${esc(t.title)}</div>
-            <div class="lib-meta">${esc(t.author)} · ${esc(t.date || "")}</div>
-            <div class="lib-trans">tr. ${esc(t.translator || "")}, ${esc(t.translator_date || "")} · ${t.lines_count} lines</div>
-          </div>
-          <span class="lib-status lib-status-open">Open</span>
-        </div>
-      </a>
-    </li>
+    <article class="book-card${t.is_gateway ? ' book-card-gateway-row' : ''}${hasAccess ? '' : ' book-card-locked'}">
+      <div class="book-card-cover">
+        ${hasAccess
+          ? `<a href="${BASE}/read/${esc(t.id)}" aria-label="Open ${esc(t.title)}">${cover}</a>`
+          : cover}
+      </div>
+      <div class="book-card-body">
+        <div class="book-card-badges">${gatewayBadge}${difficultyBadge}</div>
+        <h5 class="book-card-title">${esc(t.title)}</h5>
+        <p class="book-card-meta">${meta}</p>
+        <p class="book-card-trans">${trans}</p>
+        ${blurb}
+        ${description ? `<p class="book-card-reading-note"><em>On the reading list:</em> ${esc(description)}</p>` : ''}
+        <div class="book-card-cta">${cta}</div>
+        ${credits}
+      </div>
+    </article>
   `;
+}
+
+// Kept for backwards compat with any caller still using libraryItemHtml.
+// Forwards to the new card with no-access defaults.
+function libraryItemHtml(t) {
+  return bookCardHtml(t, { isSubscriber: false, isSignedIn: false, difficulty: null, description: null });
 }
 
 function readingItemHtml(item) {
@@ -611,18 +714,27 @@ function entryHtml(row) {
          <p class="culture-body">${esc(row.culture.body)}</p>
        </div>` : "";
   const audioPath = `${BASE}/audio/${row.date}/${lang}.mp3`;
+  // Per Jae 2026-05-12: V3 "Illuminated" header treatment. Mirror of
+  // app.js's renderWord() — four identity lines wrapped in
+  // <section class="word-header"> framed by a double-bronze rule above
+  // and below. POS becomes a small-caps eyebrow at top; transliteration
+  // and meaning separated by a three-diamond ornament.
+  const posLine = esc(e.part_of_speech || "");
   return `
     <article class="lang-entry">
       <div class="entry-date">${esc(formatDate(row.date))}</div>
       <div class="word-block">
         <div class="word-card" data-lang="${lang}">
-          <div class="headword-row">
-            <h3 class="headword">${esc(e.word)}</h3>
-            <button class="audio-btn" data-audio="${audioPath}" aria-label="Pronounce ${esc(e.word)}">▶</button>
-          </div>
-          ${trans}
-          <div class="pos-line">${esc(e.part_of_speech || "")}</div>
-          <div class="meaning">${esc(e.meaning || "")}</div>
+          <section class="word-header">
+            ${posLine ? `<div class="pos-eyebrow">${posLine}</div>` : ""}
+            <div class="headword-row">
+              <h3 class="headword">${esc(e.word)}</h3>
+              <button class="audio-btn" data-audio="${audioPath}" aria-label="Pronounce ${esc(e.word)}">▶</button>
+            </div>
+            ${trans}
+            <div class="ornament"><span></span><span></span><span></span></div>
+            <div class="meaning">${esc(e.meaning || "")}</div>
+          </section>
           <div class="pronunciation"><b>Say:</b> ${esc(e.pronunciation || "")} <b style="margin-left:12px">IPA:</b> ${esc(e.ipa || "")}</div>
           ${(typeof LetterPhonetics !== 'undefined') ? LetterPhonetics.renderHtml(e.word, lang, esc) : ''}
           ${e.forms ? `<div class="detail-section"><div class="detail-label">Forms</div><p class="detail-body">${esc(e.forms)}</p></div>` : ""}
@@ -635,6 +747,52 @@ function entryHtml(row) {
       </div>
     </article>
   `;
+}
+
+// Per Jae 2026-05-12: identical to fitHeadwords() in app.js — binary
+// search the largest font-size that keeps each headword on a single
+// line inside its parent .word-header / .headword-row. CSS clamp()
+// can't do this because it scales on viewport width, not on a word's
+// actual rendered length.
+function fitHeadwords(root) {
+  const heads = (root || document).querySelectorAll(".word-card .word-header .headword");
+  heads.forEach((el) => {
+    const row = el.parentElement;
+    if (!row) return;
+    const rowWidth = row.getBoundingClientRect().width;
+    const btn = row.querySelector(".audio-btn");
+    const gap = parseFloat(getComputedStyle(row).gap) || 0;
+    const btnWidth = btn ? btn.getBoundingClientRect().width : 0;
+    const available = Math.max(80, rowWidth - btnWidth - gap - 4);
+    const cs = getComputedStyle(el);
+    let max = parseFloat(cs.fontSize) || 72;
+    let min = 18;
+    el.style.whiteSpace = "nowrap";
+    el.style.overflow = "hidden";
+    if (el.scrollWidth <= available) {
+      el.style.whiteSpace = "";
+      el.style.overflow = "";
+      return;
+    }
+    let best = min;
+    for (let i = 0; i < 12; i++) {
+      const mid = (min + max) / 2;
+      el.style.fontSize = mid + "px";
+      if (el.scrollWidth <= available) { best = mid; min = mid; }
+      else { max = mid; }
+    }
+    el.style.fontSize = Math.floor(best) + "px";
+    el.style.whiteSpace = "";
+    el.style.overflow = "";
+  });
+}
+if (!window.__headwordFitWired) {
+  window.__headwordFitWired = true;
+  let __fitT = null;
+  window.addEventListener("resize", () => {
+    clearTimeout(__fitT);
+    __fitT = setTimeout(() => fitHeadwords(), 120);
+  }, { passive: true });
 }
 
 function wireWordAudio() {
@@ -668,6 +826,32 @@ async function load() {
   document.title = `${meta.name} · Kalopaideia`;
   document.getElementById("lang-label").textContent = meta.name;
   document.getElementById("lang-subtitle").textContent = meta.subtitle;
+
+  // Per Jae 2026-05-12: fetch live akousma cover data so the per-section
+  // promo cards pull covers from library-meta.json, not the stale
+  // hardcoded AKOUSMA_BOOKS fallback in akousma.js.
+  if (typeof fetchAkousmaCards === "function") {
+    await fetchAkousmaCards();
+  }
+
+  // Per Jae 2026-05-12: fetch the user's identity + subscription status
+  // + the global stripe-ready flag BEFORE rendering the library tab so
+  // cards can pick the right CTA (Open / Subscribe / Sign in / coming
+  // soon). Fails silently for anonymous users.
+  try {
+    const wr = await fetch(`${BASE}/api/whoami`, { credentials: 'same-origin' });
+    if (wr.ok) {
+      const wd = await wr.json();
+      window.__USER__ = wd.user || null;
+      window.__STRIPE_READY__ = !!wd.stripe_ready;
+    } else {
+      window.__USER__ = null;
+      window.__STRIPE_READY__ = false;
+    }
+  } catch {
+    window.__USER__ = null;
+    window.__STRIPE_READY__ = false;
+  }
 
   try {
     const res = await fetch(`${BASE}/api/language/${lang}?limit=50`);
@@ -711,6 +895,7 @@ async function load() {
       }).join("");
       entriesEl.innerHTML = interleaved;
       wireWordAudio();
+      fitHeadwords();
       setupInfiniteScroll(lang, data.nextBefore, data.hasMore);
     }
 
@@ -773,6 +958,7 @@ function setupInfiniteScroll(lang, nextBefore, hasMore) {
           }).join("");
           entriesEl.insertAdjacentHTML("beforeend", html);
           wireWordAudio();
+          fitHeadwords();
           if (typeof fetchAkousmaCount === "function") fetchAkousmaCount();
         }
         setupInfiniteScroll(lang, more.nextBefore, more.hasMore);

@@ -8,17 +8,45 @@
 <link rel="icon" href="/paideia/img/favicon.ico" />
 <link rel="apple-touch-icon" href="/paideia/img/apple-touch-icon.png" />
 <meta name="apple-mobile-web-app-title" content="Kalopaideia" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&family=Noto+Serif:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/paideia/styles.css?v=1777567241" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cinzel:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/paideia/styles.css?v=1778577662" />
 </head>
 <body class="terms-page">
 
-<header class="masthead">
-  <h1 class="title"><a href="/paideia/" aria-label="Kalopaideia home">Kalopaideia</a></h1>
-  <div class="meta meta-row">
-    <span class="meta-label">Terms of Service</span>
+<header class="masthead masthead-athenaeum">
+  <img class="mast-watermark" src="/paideia/img/masthead/temple-ruin.svg" alt="" aria-hidden="true" />
+  <div class="mast-content">
+    <div class="mast-grid">
+      <div class="mast-center">
+        <div class="mast-eyebrow">A daily book of words · ten tongues</div>
+        <h1 class="mast-name"><a href="/paideia/" aria-label="Kalopaideia home">KALOPAIDEIA</a></h1>
+        <span class="mast-greek"><em>καλὴ παιδεία</em> — the cultivation of mind through classical letters</span>
+      </div>
+    </div>
+    <div class="mast-ledger">
+      <div class="ledger-left">
+        <span class="mast-issue" id="issue-line">Issue №&nbsp;—</span>
+        <span class="mast-vol" id="vol-line">Volume —</span>
+      </div>
+      <div class="ledger-right">
+        <span class="mast-day" id="today-date">—</span>
+        <span class="mast-anno" id="anno-line">Anno Domini MMXXVI</span>
+      </div>
+    </div>
+    <nav class="nav mast-nav">
+      <a href="/paideia/greek">Greek</a>
+      <a href="/paideia/latin">Latin</a>
+      <a href="/paideia/french">French</a>
+      <a href="/paideia/german">German</a>
+      <a href="/paideia/italian">Italian</a>
+      <a href="/paideia/oldenglish">Olde English</a>
+      <a href="/paideia/middleenglish">Middle English</a>
+      <a class="util" href="/paideia/akousma">The Akousma</a>
+      <a class="util" href="/paideia/account">Sign in</a>
+      <a class="util" href="/paideia/about.html">About</a>
+    </nav>
   </div>
 </header>
 
@@ -751,5 +779,30 @@
   </div>
 </footer>
 
+<script src="/paideia/nav.js?v=1778561010"></script>
+<script>
+  // Populate the Athenaeum masthead ledger (Issue / Vol / Day / Anno).
+  // Mirror of the block in reader.html / language.html. Per Jae 2026-05-12.
+  (function () {
+    var iso = new Date().toISOString().slice(0, 10);
+    var parts = iso.split('-').map(Number);
+    var dt = new Date(Date.UTC(parts[0], parts[1] - 1, parts[2]));
+    var jan1 = new Date(Date.UTC(parts[0], 0, 1));
+    var dayOfYear = Math.floor((dt - jan1) / 86400000) + 1;
+    var volume = (parts[0] - 2026) + 1;
+    function toRoman(n) {
+      var map = [[1000,'M'],[900,'CM'],[500,'D'],[400,'CD'],[100,'C'],[90,'XC'],[50,'L'],[40,'XL'],[10,'X'],[9,'IX'],[5,'V'],[4,'IV'],[1,'I']];
+      var out = ''; n = Math.max(0, Math.floor(n));
+      for (var i = 0; i < map.length; i++) { while (n >= map[i][0]) { out += map[i][1]; n -= map[i][0]; } }
+      return out;
+    }
+    var dayLabel = dt.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+    function set(id, v) { var el = document.getElementById(id); if (el) el.textContent = v; }
+    set('issue-line', 'Issue №\u00a0' + dayOfYear);
+    set('vol-line',   'Volume ' + toRoman(volume));
+    set('today-date', dayLabel);
+    set('anno-line',  'Anno Domini ' + toRoman(parts[0]));
+  })();
+</script>
 </body>
 </html>

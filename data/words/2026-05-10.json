@@ -1,0 +1,188 @@
+{
+  "date": "2026-05-10",
+  "generated_at": "2026-05-10T11:00:01.442Z",
+  "languages": {
+    "greek": {
+      "word": "ψυχαγωγία",
+      "transliteration": "psychagōgía",
+      "pronunciation": "psoo-khah-goh-GEE-ah",
+      "ipa": "/psy.kʰa.ɡɔː.ɡí.a/",
+      "part_of_speech": "noun, fem.",
+      "meaning": "the leading or guiding of souls; entertainment, enchantment, or persuasion through rhetoric or art",
+      "forms": "ψυχαγωγίᾱ, ψυχαγωγίᾱς, ψυχαγωγίᾳ, ψυχαγωγίᾱν (first declension)",
+      "etymology": "From ψυχή (soul, spirit) + ἀγωγή (leading, guidance), from ἄγω (to lead). Originally denoted the evocation or summoning of souls, then expanded to mean the captivation of the soul through persuasive speech or artistic performance.",
+      "literary_context": "Plato uses ψυχαγωγία in the Phaedrus (261a, 271c) to describe the art of rhetoric as soul-leading, distinguishing genuine philosophical persuasion from mere flattery. Aristotle later employs the term for the emotional effect of tragedy.",
+      "usage_example": "ἡ ῥητορικὴ ψυχαγωγία τις διὰ λόγων. — Rhetoric is a certain guiding of souls through words.",
+      "did_you_know": "The term evolved from its archaic sense of necromancy to become Plato's technical description for how language moves the soul, making it central to ancient debates about whether poetry and rhetoric educate or merely seduce.",
+      "tokens": {
+        "input_tokens": 742,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 456,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Ancient Greek"
+    },
+    "latin": {
+      "word": "penātes",
+      "transliteration": "",
+      "pronunciation": "peh-NAH-tays",
+      "ipa": "/peˈnaː.teːs/",
+      "part_of_speech": "noun, masc. pl.",
+      "meaning": "household gods; the inner sanctum of a home; one's hearth and home",
+      "forms": "plural only (penātēs, penātium); no singular form in common use",
+      "etymology": "From penus ('provisions, store of food'), reflecting the protective deities of the innermost storeroom. Related to penetrō ('to enter within') via shared root *pen- ('inside, within').",
+      "literary_context": "Virgil's Aeneid depicts Aeneas carrying the penātēs of Troy from the burning city, making these household gods central to Rome's foundational myth and the mission to establish a new homeland in Italy.",
+      "usage_example": "Aenēās sacrōs Trōiae penātēs ad Italiam portāvit. — Aeneas carried the sacred penates of Troy to Italy.",
+      "did_you_know": "The Roman state itself had public penātēs housed in the temple of Vesta, believed to be the very gods Aeneas rescued from Troy, thus linking every Roman household shrine to the mythic origins of the city.",
+      "tokens": {
+        "input_tokens": 670,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 342,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Latin"
+    },
+    "french": {
+      "word": "émoi",
+      "transliteration": "",
+      "pronunciation": "ay-MWAH",
+      "ipa": "/e.mwa/",
+      "part_of_speech": "noun, masc.",
+      "meaning": "emotion, agitation, flutter (of the heart or mind)",
+      "forms": "singular: émoi; plural: émois (rare)",
+      "etymology": "From Old French esmoi, derived from the verb esmovoir (to stir up, disturb), itself from Vulgar Latin *exmovere, from Latin ex- (out) + movēre (to move). Related to émouvoir (to move emotionally).",
+      "literary_context": "Baudelaire uses émoi in Les Fleurs du mal to capture the subtle tremor of emotional disturbance, particularly in poems depicting the sudden stirring of desire or melancholy that disrupts the soul's repose.",
+      "usage_example": "Son regard me causa un doux émoi. — Her gaze caused me a sweet flutter.",
+      "did_you_know": "The word émoi preserves the Old French prefix es- (modern é-), which intensified the base verb. In classical usage, it often denoted a more profound psychological agitation than simple surprise, suggesting an inner upheaval that borders on distress or enchantment.",
+      "tokens": {
+        "input_tokens": 640,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 327,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "French"
+    },
+    "german": {
+      "word": "Zerstreuung",
+      "transliteration": "",
+      "pronunciation": "tser-SHTROI-oong",
+      "ipa": "/t͡sɛɐ̯ˈʃtʁɔʏ̯ʊŋ/",
+      "part_of_speech": "noun, fem.",
+      "meaning": "distraction, diversion, dispersal",
+      "forms": "die Zerstreuung, gen. der Zerstreuung, pl. die Zerstreuungen",
+      "etymology": "From the verb 'zerstreuen' (to scatter, disperse), itself from 'zer-' (apart, asunder) + 'streuen' (to strew, scatter). Middle High German 'zerströuwen'. The prefix 'zer-' intensifies the scattering action, suggesting complete dispersal or dissolution.",
+      "literary_context": "Pascal's concept of 'divertissement' finds its German expression in Zerstreuung. Heidegger in 'Sein und Zeit' uses the term to describe inauthentic existence in which Dasein flees itself through idle talk and distraction, losing itself in the 'they-self' of everyday absorption.",
+      "usage_example": "Der Mensch flieht sich selbst in der Zerstreuung des Alltags. — Man flees himself in the distractions of everyday life.",
+      "did_you_know": "Schopenhauer distinguished between deliberate Zerstreuung as relief from the Will's torment and the dangerous dispersal of consciousness that prevents philosophical contemplation. For him, measured diversion was medicinal, but chronic distraction was spiritual death.",
+      "tokens": {
+        "input_tokens": 692,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 419,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "German"
+    },
+    "italian": {
+      "word": "leggiadro",
+      "transliteration": "",
+      "pronunciation": "led-JAH-droh",
+      "ipa": "/led.ˈdʒa.dro/",
+      "part_of_speech": "adjective",
+      "meaning": "graceful, charming, elegant (especially of feminine beauty or poetic style)",
+      "forms": "leggiadro, leggiadra, leggiadri, leggiadre; comparative: più leggiadro; superlative: leggiadrissimo",
+      "etymology": "From Old Italian 'leggiadro', likely from Provençal 'legier' (light, nimble), ultimately from Latin 'levis' (light). The semantic shift toward grace and charm occurred in early Italian literary language.",
+      "literary_context": "Dante uses 'leggiadra' in Purgatorio XXVIII to describe Matelda, the maiden gathering flowers in the Earthly Paradise. Petrarch employs it frequently in the Canzoniere to evoke Laura's graceful movements and appearance, making it a quintessential word of the Dolce Stil Novo tradition.",
+      "usage_example": "La leggiadra donna movea per lo prato cantando. — The graceful lady moved through the meadow singing.",
+      "did_you_know": "This adjective became so associated with courtly poetry and the praise of feminine beauty that it nearly defines the aesthetic ideal of the stilnovisti, representing a synthesis of physical grace and spiritual nobility that distinguished their verse from earlier Italian poetry.",
+      "tokens": {
+        "input_tokens": 660,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 384,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Italian"
+    },
+    "oldenglish": {
+      "word": "þeġn",
+      "transliteration": "thegn",
+      "pronunciation": "THEYN",
+      "ipa": "/θejn/",
+      "part_of_speech": "noun, masc.",
+      "meaning": "warrior-retainer, noble servant, thane",
+      "forms": "nom. þeġn, acc. þeġn, gen. þeġnes, dat. þeġne; plural nom./acc. þeġnas",
+      "etymology": "From Proto-Germanic *þegnaz (servant, warrior), related to Old Norse þegn and Old High German degan. Shares root with verb þiċġan (to receive, partake), reflecting the reciprocal bond of service and reward.",
+      "literary_context": "The word appears throughout Beowulf to describe the loyal warriors of Hrothgar and Beowulf, most memorably in the description of the faithful retainers who wait for their lord's return from the mere: 'þeġnas syndon ġeþwære' (the thanes are united in loyalty).",
+      "usage_example": "Hē wæs manna mildust ond monðwærust, lēodum līðost ond lofġeornost, hold his þeġnum. — He was mildest of men and gentlest, kindest to his people and most eager for fame, loyal to his thanes.",
+      "did_you_know": "The social institution of the þeġn formed the backbone of Anglo-Saxon military organization. A þeġn's relationship with his lord was sacred, bound by oaths and gift-giving, making betrayal or failure to avenge one's lord the deepest shame in heroic culture.",
+      "tokens": {
+        "input_tokens": 693,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 424,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Olde English"
+    },
+    "middleenglish": {
+      "word": "buxumnesse",
+      "transliteration": "",
+      "pronunciation": "BUK-sum-nes-seh",
+      "ipa": "/ˈbʊksʊmnɛsə/",
+      "part_of_speech": "noun, fem.",
+      "meaning": "obedience, submission, humility, compliance",
+      "forms": "sg. buxumnesse; pl. buxumnesses (rare). Related: buxum (adj.), buxumly (adv.)",
+      "etymology": "From Old English būhsum (pliant, obedient) + -nesse (abstract noun suffix). Old English būhsum derives from būgan (to bow, bend). The word evolves from physical bending to moral submission.",
+      "literary_context": "The Pearl-poet employs this word prominently in Cleanness (Purity), where buxumnesse describes the proper submission of righteous souls to God's will, contrasting with the pride and rebellion of sinners. Chaucer uses the related adjective buxum in the Clerk's Tale to describe Griselda's patient obedience.",
+      "usage_example": "Þe maydenes schewed greet buxumnesse to hire lordes wille. — The maidens showed great obedience to their lord's will.",
+      "did_you_know": "This word captures a central medieval virtue that combined obedience with willing cheerfulness. Unlike modern 'submission,' buxumnesse carried positive connotations of freely choosing to align one's will with rightful authority, whether divine or earthly.",
+      "tokens": {
+        "input_tokens": 659,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 388,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Middle English"
+    }
+  }
+}

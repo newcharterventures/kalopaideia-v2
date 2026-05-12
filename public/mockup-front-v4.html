@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Stamped Folio (№ 4) · Front Page Mockup · Kalopaideia</title>
+<link rel="icon" href="/paideia/img/favicon.ico" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cinzel:wght@400;500;600;700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;1,6..96,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/paideia/styles.css?v=1778577662" />
+<style>
+/* Hide the old .word-card header CSS (.headword, .transliteration, .pos-line,
+ * .meaning) ONLY for this variant. The variant uses .word-header > .headword
+ * (etc) inside, and our variant CSS targets those nested under .v-active. */
+.word-card.v-active > .headword-row,
+.word-card.v-active > .transliteration,
+.word-card.v-active > .pos-line,
+.word-card.v-active > .meaning { display:none; }
+
+/* Variant CSS — copied from word-header-mockup.html for the chosen variant only. */
+
+.word-card.v-active .word-header {
+  position: relative;
+  background: #fbf6e7;
+  border: 2px solid var(--gold-deep, #7d5d12);
+  box-shadow: inset 0 0 0 4px var(--paper-warm, #faf3e2),
+              inset 0 0 0 5px var(--gold-deep, #7d5d12);
+  padding: 32px 28px 22px;
+  margin: 0 0 24px;
+  text-align: center;
+}
+.word-card.v-active .word-header .banner {
+  position: absolute;
+  top: -16px; left: 50%;
+  transform: translateX(-50%);
+  background: var(--ink, #1a1410);
+  color: var(--paper, #f7efe1);
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  padding: 8px 22px;
+  border: 1px solid var(--gold-deep, #7d5d12);
+  white-space: nowrap;
+}
+.word-card.v-active .word-header .headword-row {
+  display: flex; align-items: center; justify-content: center;
+  gap: 14px; margin: 6px 0 4px;
+}
+.word-card.v-active .word-header .headword {
+  font-family: 'Bodoni Moda', 'Cormorant Garamond', Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(40px, 5.5vw, 60px);
+  line-height: 1;
+  color: var(--ink, #1a1410);
+  margin: 0;
+}
+.word-card.v-active .word-header .audio-btn {
+  width: 32px; height: 32px; border-radius: 50%;
+  border: 1px solid var(--gold-deep, #7d5d12);
+  background: var(--paper, #f7efe1);
+  color: var(--gold-deep, #7d5d12);
+  cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 12px;
+}
+.word-card.v-active .word-header .transliteration {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-style: italic; font-size: 20px;
+  color: var(--ink-muted, #5c4d38);
+  margin: 0 0 8px;
+}
+.word-card.v-active .word-header .pos-line {
+  font-family: 'Cinzel', serif;
+  font-size: 10px; letter-spacing: 0.32em; text-transform: uppercase;
+  color: var(--gold-deep, #7d5d12);
+  margin: 0 auto 10px;
+  padding: 4px 16px;
+  background: var(--paper, #f7efe1);
+  display: inline-block;
+  border-top: 1px solid var(--rule, #c9b896);
+  border-bottom: 1px solid var(--rule, #c9b896);
+  white-space: nowrap;
+}
+.word-card.v-active .word-header .meaning {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-style: italic; font-size: 18px;
+  color: var(--ink-soft, #2d2418);
+  margin: 0 auto;
+  line-height: 1.5; max-width: 46ch;
+}
+@media (max-width: 600px) {
+  .word-card.v-active .word-header { padding: 28px 14px 16px; margin: 18px 2px 14px; }
+  .word-card.v-active .word-header .banner { font-size: 9px; letter-spacing: 0.22em; padding: 6px 14px; }
+  .word-card.v-active .word-header .headword { font-size: clamp(32px, 9vw, 44px); }
+  .word-card.v-active .word-header .audio-btn { width: 28px; height: 28px; font-size: 11px; }
+  .word-card.v-active .word-header .transliteration { font-size: 17px; }
+  .word-card.v-active .word-header .pos-line { font-size: 9px; letter-spacing: 0.22em; padding: 3px 10px; }
+  .word-card.v-active .word-header .meaning { font-size: 16px; }
+}
+
+
+/* Mockup banner at the top so it's obvious this is a mockup. */
+.mockup-banner {
+  background: var(--ink, #1a1410);
+  color: var(--paper, #f7efe1);
+  text-align: center;
+  padding: 10px 14px;
+  font-family: 'Cinzel', serif;
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+.mockup-banner em { color: var(--gold, #c79c3a); font-style: normal; letter-spacing: 0.16em; }
+.mockup-banner small { display: block; font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 13px; text-transform: none; letter-spacing: 0.01em; opacity: 0.85; margin-top: 4px; }
+</style>
+</head>
+<body>
+
+<div class="mockup-banner">
+  Mockup · <em>Stamped Folio (№ 4)</em>
+  <small>Black banner across a bronze-double-bordered card — Victorian bookplate / Beaux-Arts certificate</small>
+</div>
+
+<header class="masthead masthead-athenaeum">
+  <img class="mast-watermark" src="/paideia/img/masthead/temple-ruin.svg" alt="" aria-hidden="true" />
+  <div class="mast-content">
+    <div class="mast-grid">
+      <div class="mast-center">
+        <div class="mast-eyebrow">A daily book of words · ten tongues</div>
+        <h1 class="mast-name"><a href="/paideia/" aria-label="Kalopaideia home">KALOPAIDEIA</a></h1>
+        <span class="mast-greek"><em>καλὴ παιδεία</em> — the cultivation of mind through classical letters</span>
+      </div>
+    </div>
+    <div class="mast-ledger">
+      <div class="ledger-left">
+        <span class="mast-issue">Issue № 132</span>
+        <span class="mast-vol">Volume I</span>
+      </div>
+      <div class="ledger-right">
+        <span class="mast-day">Monday, May 11, 2026</span>
+        <span class="mast-anno">Anno Domini MMXXVI</span>
+      </div>
+    </div>
+    <nav class="nav mast-nav">
+      <a href="/paideia/greek">Greek</a>
+      <a href="/paideia/latin">Latin</a>
+      <a href="/paideia/french">French</a>
+      <a href="/paideia/german">German</a>
+      <a href="/paideia/italian">Italian</a>
+      <a href="/paideia/oldenglish">Olde English</a>
+      <a href="/paideia/middleenglish">Middle English</a>
+      <a class="util" href="/paideia/akousma">The Akousma</a>
+      <a class="util" href="/paideia/account">Sign in</a>
+      <a class="util" href="/paideia/about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="lang-section" id="greek">
+  <div class="lang-header">
+    <div class="lang-name">Greek</div>
+    <div class="lang-tagline">Ancient Hellenic Letters</div>
+  </div>
+  <div class="word-block">
+    <div class="word-card v-active" data-lang="greek">
+      <section class="word-header">
+  <span class="banner">Greek · Entry</span>
+  <div class="headword-row">
+    <h3 class="headword">ἀπόλαυσις</h3>
+    <button class="audio-btn" aria-label="Pronounce">▶</button>
+  </div>
+  <div class="transliteration">apolausis</div>
+  <div class="pos-line">noun, fem.</div>
+  <div class="meaning">enjoyment, fruition, the act of deriving pleasure or benefit from something</div>
+</section>
+      <div class="pronunciation"><b>Say:</b> ah-POH-low-sis <b style="margin-left:12px">IPA:</b> /a.ˈpo.lau̯.sis/</div>
+      <div class="detail-section"><div class="detail-label">Forms</div><p class="detail-body">nom. sing. ἀπόλαυσις, gen. ἀπολαύσεως, dat. ἀπολαύσει, acc. ἀπόλαυσιν; plural ἀπολαύσεις</p></div>
+<div class="detail-section"><div class="detail-label">Etymology</div><p class="detail-body">From ἀπολαύω (apolauō, &#x27;to enjoy, reap benefit from&#x27;), compound of ἀπό (&#x27;from&#x27;) + λαύω (&#x27;to enjoy&#x27;). The suffix -σις forms an abstract noun denoting the action or result.</p></div>
+<div class="detail-section"><div class="detail-label">In Literature</div><p class="detail-body">Aristotle employs ἀπόλαυσις extensively in the Nicomachean Ethics when discussing pleasure and the good life, distinguishing between immediate gratification and genuine enjoyment that accompanies virtuous activity.</p></div>
+<div class="detail-section"><div class="detail-label">In Use</div>
+  <p class="detail-body italic in-use-original">οὐκ ἔστιν ἀπόλαυσις ἀγαθῶν ἄνευ φίλων. <button class="audio-btn inline-audio-btn" aria-label="Listen">▶</button></p>
+  <p class="detail-body in-use-translation">There is no enjoyment of good things without friends.</p>
+</div>
+<div class="detail-section"><div class="detail-label">Did You Know</div><p class="detail-body">Epicurus refined this concept to distinguish between kinetic pleasure (active enjoyment, ἀπόλαυσις) and katastematic pleasure (the stable state of contentment), arguing that philosophy&#x27;s goal was achieving the latter through moderate pursuit of the former.</p></div>
+    </div>
+    <div>
+      <div class="culture-card">
+  <h4 class="culture-title">On Friendship in Aristotle</h4>
+  <p class="culture-body">Aristotle, in the Nicomachean Ethics (Book IX), argues that no one would choose to live without friends, even if they had all other goods. The Greek word ἀπόλαυσις captures something of what is at stake: not mere possession but the active enjoyment that comes only in shared life.</p>
+</div>
+    </div>
+  </div>
+</section>
+<section class="lang-section" id="latin">
+  <div class="lang-header">
+    <div class="lang-name">Latin</div>
+    <div class="lang-tagline">Classical Roman Letters</div>
+  </div>
+  <div class="word-block">
+    <div class="word-card v-active" data-lang="latin">
+      <section class="word-header">
+  <span class="banner">Latin · Entry</span>
+  <div class="headword-row">
+    <h3 class="headword">sōlācium</h3>
+    <button class="audio-btn" aria-label="Pronounce">▶</button>
+  </div>
+  
+  <div class="pos-line">noun, neut.</div>
+  <div class="meaning">comfort, consolation, solace</div>
+</section>
+      <div class="pronunciation"><b>Say:</b> so-LAH-kee-oom <b style="margin-left:12px">IPA:</b> /soːˈlaː.ki.um/</div>
+      <div class="detail-section"><div class="detail-label">Forms</div><p class="detail-body">sōlācium, sōlāciī (gen.); plural: sōlācia, sōlāciōrum</p></div>
+<div class="detail-section"><div class="detail-label">Etymology</div><p class="detail-body">From sōlārī (to console, comfort), related to sōlor (deponent verb). Cognate with sōlāmen (relief). Root possibly connected to sōlus through the notion of alleviating loneliness or isolation.</p></div>
+<div class="detail-section"><div class="detail-label">In Literature</div><p class="detail-body">Cicero uses sōlācium repeatedly in his philosophical works on grief, most notably in the Tusculan Disputations where he discusses consolation for loss. Ovid employs it in the Tristia, writing from exile about the comfort poetry provides in suffering.</p></div>
+<div class="detail-section"><div class="detail-label">In Use</div>
+  <p class="detail-body italic in-use-original">Philosophia mihi sōlācium est in adversīs rēbus. <button class="audio-btn inline-audio-btn" aria-label="Listen">▶</button></p>
+  <p class="detail-body in-use-translation">Philosophy is a comfort to me in adverse circumstances.</p>
+</div>
+<div class="detail-section"><div class="detail-label">Did You Know</div><p class="detail-body">The consolatio genre in Roman literature, exemplified by Seneca&#x27;s letters and Cicero&#x27;s lost Consolatio on his daughter&#x27;s death, made sōlācium a central concept in Stoic responses to grief and misfortune.</p></div>
+    </div>
+    <div>
+      <div class="culture-card">
+  <h4 class="culture-title">Cicero on Consolation</h4>
+  <p class="culture-body">After the death of his daughter Tullia in 45 BCE, Cicero composed a now-lost Consolatio to himself. The Latin sōlācium is the word he and Seneca after him would have reached for — comfort that does not deny the loss but accompanies it.</p>
+</div>
+    </div>
+  </div>
+</section>
+<section class="lang-section" id="french">
+  <div class="lang-header">
+    <div class="lang-name">French</div>
+    <div class="lang-tagline">The French Letters</div>
+  </div>
+  <div class="word-block">
+    <div class="word-card v-active" data-lang="french">
+      <section class="word-header">
+  <span class="banner">French · Entry</span>
+  <div class="headword-row">
+    <h3 class="headword">flambeau</h3>
+    <button class="audio-btn" aria-label="Pronounce">▶</button>
+  </div>
+  
+  <div class="pos-line">noun, masc.</div>
+  <div class="meaning">torch, flaming brand; figuratively, light of knowledge or inspiration</div>
+</section>
+      <div class="pronunciation"><b>Say:</b> flahn-BOH <b style="margin-left:12px">IPA:</b> /flɑ̃.bo/</div>
+      <div class="detail-section"><div class="detail-label">Forms</div><p class="detail-body">singular: flambeau; plural: flambeaux</p></div>
+<div class="detail-section"><div class="detail-label">Etymology</div><p class="detail-body">From Old French flambel, diminutive of flambe &#x27;flame,&#x27; from Latin flammula &#x27;little flame,&#x27; itself from flamma &#x27;flame.&#x27; The suffix -eau (from Latin -ellus) creates a diminutive.</p></div>
+<div class="detail-section"><div class="detail-label">In Literature</div><p class="detail-body">Racine employs flambeau in Phèdre (1677) when the title character speaks of carrying the torch of forbidden passion. The word recurs in Hugo&#x27;s Les Misérables to describe both literal torches in the Paris sewers and the metaphorical light of progress.</p></div>
+<div class="detail-section"><div class="detail-label">In Use</div>
+  <p class="detail-body italic in-use-original">Le flambeau de la vérité éclaire les ténèbres de l&#x27;ignorance. <button class="audio-btn inline-audio-btn" aria-label="Listen">▶</button></p>
+  <p class="detail-body in-use-translation">The torch of truth illuminates the darkness of ignorance.</p>
+</div>
+<div class="detail-section"><div class="detail-label">Did You Know</div><p class="detail-body">In 18th-century France, the flambeau was not merely a light source but a symbol of Enlightenment philosophy itself. Voltaire frequently used the image of humanity passing the flambeau from generation to generation to represent the transmission of reason and learning.</p></div>
+    </div>
+    <div>
+      <div class="culture-card">
+  <h4 class="culture-title">The Torch and the Flambeau</h4>
+  <p class="culture-body">In seventeenth-century France, the flambeau was the resinous torch carried in processions and night-time funerals; in eighteenth-century Enlightenment usage, the word turned figurative — flambeau de la raison, the torch of reason.</p>
+</div>
+    </div>
+  </div>
+</section>
+<section class="lang-section" id="german">
+  <div class="lang-header">
+    <div class="lang-name">German</div>
+    <div class="lang-tagline">The German Letters</div>
+  </div>
+  <div class="word-block">
+    <div class="word-card v-active" data-lang="german">
+      <section class="word-header">
+  <span class="banner">German · Entry</span>
+  <div class="headword-row">
+    <h3 class="headword">Weltfrömmigkeit</h3>
+    <button class="audio-btn" aria-label="Pronounce">▶</button>
+  </div>
+  
+  <div class="pos-line">noun, fem.</div>
+  <div class="meaning">world-piety; reverent devotion to earthly existence and nature</div>
+</section>
+      <div class="pronunciation"><b>Say:</b> VELT-fruh-mikh-kite <b style="margin-left:12px">IPA:</b> /ˈvɛltˌfʁœmɪçkaɪ̯t/</div>
+      <div class="detail-section"><div class="detail-label">Forms</div><p class="detail-body">die Weltfrömmigkeit (singular only; gen. der Weltfrömmigkeit, dat. der Weltfrömmigkeit, acc. die Weltfrömmigkeit)</p></div>
+<div class="detail-section"><div class="detail-label">Etymology</div><p class="detail-body">Compound of Welt (world, from Old High German weralt) + Frömmigkeit (piety, devotion, from fromm, ultimately from Old High German fruma, meaning advantage, benefit, later righteous). Coined in early Romantic discourse to express religious reverence directed toward nature and earthly life rather than transcendent deity.</p></div>
+<div class="detail-section"><div class="detail-label">In Literature</div><p class="detail-body">Goethe employed this concept to describe a spiritual attitude that finds the divine within nature and lived experience rather than in ascetic withdrawal, particularly in his later natural-philosophical writings and conversations with Eckermann.</p></div>
+<div class="detail-section"><div class="detail-label">In Use</div>
+  <p class="detail-body italic in-use-original">Seine Weltfrömmigkeit führte ihn nicht in die Kirche, sondern in die Wälder und Berge. <button class="audio-btn inline-audio-btn" aria-label="Listen">▶</button></p>
+  <p class="detail-body in-use-translation">His world-piety led him not into the church, but into forests and mountains.</p>
+</div>
+<div class="detail-section"><div class="detail-label">Did You Know</div><p class="detail-body">Weltfrömmigkeit represents a distinctly German Romantic redefinition of religious feeling, rejecting otherworldly Christianity in favor of immanent spirituality—a concept that deeply influenced later thinkers from Nietzsche to Heidegger in their critiques of metaphysical transcendence.</p></div>
+    </div>
+    <div>
+      <div class="culture-card">
+  <h4 class="culture-title">Goethe&#x27;s Weltfrömmigkeit</h4>
+  <p class="culture-body">Coined by Goethe in his later years, Weltfrömmigkeit is the reverent devotion to the world itself — to nature, to art, to ordinary human goodness — as the proper object of piety for a thinking modern person.</p>
+</div>
+    </div>
+  </div>
+</section>
+</main>
+
+<aside class="akousma-band">
+  <div class="akousma-mark">ΑΚΟΥΣΜΑ</div>
+  <h2>The Audio Library of Kalopaideia</h2>
+  <p>One canonical work from each tradition · line-by-line audio in the original tongue · parallel English translation · scholarly notes · all for $11.99 a month.</p>
+  <a class="cta" href="#">Begin a Free Trial →</a>
+</aside>
+
+<footer class="foot">
+  <div class="foot-inner">
+    <div class="foot-title">Kalopaideia</div>
+    <p>A daily word from each classical tradition.</p>
+    <p class="foot-copyright">
+      © 2026 New Charter Ventures · All rights reserved
+      · <a href="/paideia/about.html">About</a>
+      · <a href="/paideia/contact.html">Contact</a>
+      · <a href="/paideia/terms.html">Terms</a>
+    </p>
+  </div>
+</footer>
+
+<script src="/paideia/nav.js?v=1778561010"></script>
+</body>
+</html>

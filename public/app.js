@@ -117,15 +117,26 @@ function renderWord(langKey, entry, date) {
        </div>`;
   }
 
+  // Per Jae 2026-05-12: ship the V3 "Illuminated" header treatment
+  // (chosen from /paideia/word-header-mockup.html). The four identity
+  // lines — POS · headword+audio · transliteration · meaning — are
+  // wrapped in <section class="word-header"> framed by a double-bronze
+  // rule above and below, with a three-diamond ornament between
+  // transliteration and meaning. Pronunciation bar + everything below
+  // stays unchanged.
+  const posLine = esc(entry.part_of_speech || "");
   return `
     <div class="word-card" data-lang="${langKey}">
-      <div class="headword-row">
-        <h3 class="headword">${esc(entry.word)}</h3>
-        <button class="audio-btn" data-audio="${audioPath}" aria-label="Pronounce ${esc(entry.word)}">▶</button>
-      </div>
-      ${transliteration}
-      <div class="pos-line">${esc(entry.part_of_speech || "")}</div>
-      <div class="meaning">${esc(entry.meaning || "")}</div>
+      <section class="word-header">
+        ${posLine ? `<div class="pos-eyebrow">${posLine}</div>` : ""}
+        <div class="headword-row">
+          <h3 class="headword">${esc(entry.word)}</h3>
+          <button class="audio-btn" data-audio="${audioPath}" aria-label="Pronounce ${esc(entry.word)}">▶</button>
+        </div>
+        ${transliteration}
+        <div class="ornament"><span></span><span></span><span></span></div>
+        <div class="meaning">${esc(entry.meaning || "")}</div>
+      </section>
       <div class="pronunciation"><b>Say:</b> ${esc(entry.pronunciation || "")} <b style="margin-left:12px">IPA:</b> ${esc(entry.ipa || "")}</div>
       ${(typeof LetterPhonetics !== 'undefined') ? LetterPhonetics.renderHtml(entry.word, langKey, esc) : ''}
 
@@ -182,6 +193,62 @@ function renderSection(langKey, entry, culture, date) {
 // wired multiple times).
 let __audioState = { current: null };
 
+// Per Jae 2026-05-12: CSS clamp() can't shrink based on a word's actual
+// rendered width — only on viewport width. Long German compounds like
+// 'Weltfrömmigkeit' overflow even at the clamp's lower bound. Solution:
+// measure each .headword after layout and scale its font-size down with
+// a binary-search loop until the rendered word fits on a single line
+// inside its parent .word-header (minus the audio button's footprint).
+// Re-runs on window resize so the type stays fitted at every column width.
+function fitHeadwords(root) {
+  const heads = (root || document).querySelectorAll(".word-card .word-header .headword");
+  heads.forEach((el) => {
+    // Available width = parent .headword-row's content box minus the
+    // audio button and the row's gap. Measure once, then loop.
+    const row = el.parentElement;
+    if (!row) return;
+    const rowWidth = row.getBoundingClientRect().width;
+    const btn = row.querySelector(".audio-btn");
+    const gap = parseFloat(getComputedStyle(row).gap) || 0;
+    const btnWidth = btn ? btn.getBoundingClientRect().width : 0;
+    const available = Math.max(80, rowWidth - btnWidth - gap - 4);
+    // Start from the CSS-computed font-size (the clamp() upper bound on
+    // wide viewports, or whatever the cascade gave us).
+    const cs = getComputedStyle(el);
+    let max = parseFloat(cs.fontSize) || 72;
+    let min = 18; // hard floor — don't make a headword smaller than this
+    // If the word already fits at the current size, leave it.
+    el.style.whiteSpace = "nowrap";
+    el.style.overflow = "hidden";
+    if (el.scrollWidth <= available) {
+      el.style.whiteSpace = "";
+      el.style.overflow = "";
+      return;
+    }
+    // Binary search downward for the largest font-size that fits.
+    let best = min;
+    for (let i = 0; i < 12; i++) {
+      const mid = (min + max) / 2;
+      el.style.fontSize = mid + "px";
+      if (el.scrollWidth <= available) { best = mid; min = mid; }
+      else { max = mid; }
+    }
+    el.style.fontSize = Math.floor(best) + "px";
+    el.style.whiteSpace = "";
+    el.style.overflow = "";
+  });
+}
+
+// Run fitHeadwords on resize, debounced. Single global listener.
+if (!window.__headwordFitWired) {
+  window.__headwordFitWired = true;
+  let __fitT = null;
+  window.addEventListener("resize", () => {
+    clearTimeout(__fitT);
+    __fitT = setTimeout(() => fitHeadwords(), 120);
+  }, { passive: true });
+}
+
 function wireAudio() {
   document.querySelectorAll(".audio-btn").forEach((btn) => {
     if (btn.dataset.wired === "1") return; // already wired
@@ -231,6 +298,13 @@ function wireAudio() {
 
 async function load() {
   try {
+    // Per Jae 2026-05-12: fetch live akousma cover data FIRST so when
+    // renderAkousmaCard() runs it pulls covers from library-meta.json
+    // via /api/akousma/cards, not from the stale hardcoded fallback.
+    if (typeof fetchAkousmaCards === "function") {
+      await fetchAkousmaCards();
+    }
+
     const res = await fetch(`${BASE}/api/today`);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const issue = await res.json();
@@ -261,6 +335,7 @@ async function load() {
       .join("");
     document.getElementById("sections").innerHTML = html;
     wireAudio();
+    fitHeadwords();
     fetchAkousmaCount();
 
     // Analytics: emit one word_seen per language card on initial render.
@@ -360,6 +435,7 @@ async function loadMoreArchive() {
   
   // Re-wire audio buttons (idempotent — wireAudio re-attaches by class)
   wireAudio();
+  fitHeadwords();
   // Re-populate the dynamic Akousma count on any newly-rendered cards.
   fetchAkousmaCount();
   

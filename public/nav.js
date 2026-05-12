@@ -37,9 +37,9 @@
   ];
 
   const UTILITY = [
-    { href: "/paideia/store",       label: "Store",   util: true },
-    { href: "/paideia/account",     label: "Sign in", util: true },
-    { href: "/paideia/about.html",  label: "About",   util: true },
+    { href: "/paideia/akousma",     label: "The Akousma", util: true },
+    { href: "/paideia/account",     label: "Sign in",     util: true },
+    { href: "/paideia/about.html",  label: "About",       util: true },
   ];
 
   function renderHtml() {
@@ -101,40 +101,98 @@
     }
   }
 
-  // Tap-to-toggle for touch / pen interactions. Desktop with a mouse gets
-  // the CSS :hover path and never trips the JS preventDefault. We detect
-  // the trigger type per-event from PointerEvent.pointerType, because
-  // viewport width is a bad proxy (hybrid laptops, Surface, iPad Pro with
-  // a keyboard, etc. report wide viewports while only supporting touch).
-  // Per Jae 2026-05-12: previous media-query gate broke desktop dropdowns
-  // on touch-capable laptops where (hover: none) matched.
+  // Position a fixed-position panel under its toggle, horizontally centered
+  // on the toggle. Called on hover-enter, click-open, scroll, and resize.
+  // Skipped on mobile where the CSS @media (max-width: 760px) override
+  // re-anchors the panel as position: static below the toggle.
+  function positionPanel(dd) {
+    if (!dd) return;
+    if (window.matchMedia && window.matchMedia("(max-width: 760px)").matches) return;
+    const toggle = dd.querySelector(".nav-dd-toggle");
+    const panel = dd.querySelector(".nav-dd-panel");
+    if (!toggle || !panel) return;
+    const tr = toggle.getBoundingClientRect();
+    // Measure the panel after a temporary visibility flip so getBoundingClientRect
+    // reports a real width. Use measured width if available; otherwise fall back
+    // to the rendered offsetWidth which is set once the panel is shown.
+    const panelWidth = panel.offsetWidth || 200;
+    let left = tr.left + tr.width / 2 - panelWidth / 2;
+    // Keep the panel inside the viewport (12px breathing room from each edge).
+    const minLeft = 12;
+    const maxLeft = window.innerWidth - panelWidth - 12;
+    if (left < minLeft) left = minLeft;
+    if (left > maxLeft) left = Math.max(minLeft, maxLeft);
+    // No gap between toggle and panel — the panel's own top padding (10px)
+    // bridges the visual distance so the cursor can cross from toggle to
+    // menu items without dropping the :hover state.
+    const top = tr.bottom;
+    panel.style.left = left + "px";
+    panel.style.top = top + "px";
+  }
+
+  // Click-to-toggle for ALL pointer types. First click opens the panel,
+  // second click on the same toggle navigates to the category landing page.
+  // Desktop hover also works via :hover/:focus-within in CSS; we still
+  // run positioning on pointerenter so the panel renders in the right spot.
+  // Per Jae 2026-05-12: panel must escape masthead's overflow: hidden, so
+  // it uses position: fixed and JS computes the placement.
   function wireDropdownToggles() {
-    const toggles = document.querySelectorAll(".nav-dd .nav-dd-toggle");
-    toggles.forEach((t) => {
-      const dd = t.closest(".nav-dd");
-      if (!dd) return;
-      let lastPointerType = null;
-      t.addEventListener("pointerdown", (e) => { lastPointerType = e.pointerType; });
+    const dds = document.querySelectorAll(".nav-dd");
+    dds.forEach((dd) => {
+      const t = dd.querySelector(".nav-dd-toggle");
+      if (!t) return;
+      // Hover (mouse): position the panel and set .open so pointer-events
+      // stays "auto" even if the cursor briefly leaves the toggle on the
+      // way to a menu item. .open is removed on pointerleave of the whole
+      // .nav-dd (which contains both toggle and panel as DOM descendants).
+      dd.addEventListener("pointerenter", () => {
+        positionPanel(dd);
+        dd.classList.add("open");
+      });
+      dd.addEventListener("pointerleave", () => {
+        dd.classList.remove("open");
+      });
+      // Click on the toggle: first click opens, second click navigates.
       t.addEventListener("click", (e) => {
-        // Mouse click on desktop: let the CSS hover path handle the panel
-        // and let the link navigate to the category landing page.
-        if (lastPointerType === "mouse") return;
-        // Touch / pen: if the panel is already open, let the click navigate
-        // to the landing page (second tap = go).
+        // Allow modified clicks (⌘/Ctrl/middle/Shift) to pass through so
+        // users can open the category page in a new tab.
+        if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
+        // If the panel is already open, second click navigates to the
+        // landing page ("All Celtic" / "All Germanic" behavior).
         if (dd.classList.contains("open")) return;
-        // Otherwise (first touch tap), open the panel and swallow the click.
+        // First click: open the panel and swallow the navigation.
         e.preventDefault();
         document.querySelectorAll(".nav-dd.open").forEach((other) => {
           if (other !== dd) other.classList.remove("open");
         });
         dd.classList.add("open");
+        positionPanel(dd);
       });
     });
-    // Tap outside any dropdown closes them.
+    // Click outside any dropdown closes them.
     document.addEventListener("click", (e) => {
       if (e.target.closest(".nav-dd")) return;
       document.querySelectorAll(".nav-dd.open").forEach((dd) => dd.classList.remove("open"));
     });
+    // Escape closes any open dropdown (keyboard a11y).
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        document.querySelectorAll(".nav-dd.open").forEach((dd) => dd.classList.remove("open"));
+      }
+    });
+    // Reposition on scroll / resize while any panel is visible (covers both
+    // the hover-open and click-open states).
+    function repositionAllVisible() {
+      document.querySelectorAll(".nav-dd").forEach((dd) => {
+        const panel = dd.querySelector(".nav-dd-panel");
+        if (!panel) return;
+        // getComputedStyle().visibility is the reliable signal here because
+        // it's flipped by both the :hover and .open CSS branches.
+        if (getComputedStyle(panel).visibility === "visible") positionPanel(dd);
+      });
+    }
+    window.addEventListener("scroll", repositionAllVisible, { passive: true });
+    window.addEventListener("resize", repositionAllVisible);
   }
 
   function ready() {

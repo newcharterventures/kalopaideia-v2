@@ -481,5 +481,63 @@
         "skipped": true
       }
     }
+  },
+  {
+    "date": "2026-05-10",
+    "at": "2026-05-10T11:02:17.997Z",
+    "results": {
+      "greek": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"text\":\"ψυχαγωγία — the leading or guiding of souls; entertainment, enchantment, or persuasion through rhetoric or art\\nψ · υ · χ · α · γ · ω · γ · ί · α\\n(psychagōgía)\\nsay: psoo-khah-goh-GEE-ah\\n\\nPlato uses ψυχαγωγία in the Phaedrus (261a, 271c) to describe the art of rhetoric as s...\",\n    \"id\":\"2053430419966640241\",\n    \"edit_history_tweet_ids\":[\n      \"2053430419966640241\"\n    ]\n  }\n}\n"
+      },
+      "latin": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"edit_history_tweet_ids\":[\n      \"2053430420868333633\"\n    ],\n    \"text\":\"penātes — household gods; the inner sanctum of a home; one's hearth and home\\np · e · n · ā · t · e · s\\nsay: peh-NAH-tays\\n\\nVirgil's Aeneid depicts Aeneas carrying the penātēs of Troy from the burning city, making these household gods central to Rome's foundational myth and...\",\n    \"id\":\"2053430420868333633\"\n  }\n}\n"
+      },
+      "french": {
+        "skipped": true
+      },
+      "german": {
+        "skipped": true
+      },
+      "italian": {
+        "skipped": true
+      },
+      "oldenglish": {
+        "skipped": true
+      },
+      "middleenglish": {
+        "skipped": true
+      }
+    }
+  },
+  {
+    "date": "2026-05-11",
+    "at": "2026-05-11T11:02:34.813Z",
+    "results": {
+      "greek": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"text\":\"ἀπόλαυσις — enjoyment, fruition, the act of deriving pleasure or benefit from something\\nἀ · π · ό · λ · α · υ · σ · ι · ς\\n(apolausis)\\nsay: ah-POH-low-sis\\n\\nAristotle employs ἀπόλαυσις extensively in the Nicomachean Ethics when discussing pleasure and the good life, disting...\",\n    \"id\":\"2053792878376239375\",\n    \"edit_history_tweet_ids\":[\n      \"2053792878376239375\"\n    ]\n  }\n}\n"
+      },
+      "latin": {
+        "ok": true,
+        "output": "{\n  \"data\":{\n    \"id\":\"2053792879282213059\",\n    \"edit_history_tweet_ids\":[\n      \"2053792879282213059\"\n    ],\n    \"text\":\"sōlācium — comfort, consolation, solace\\ns · ō · l · ā · c · i · u · m\\nsay: so-LAH-kee-oom\\n\\nCicero uses sōlācium repeatedly in his philosophical works on grief, most notably in the Tusculan Disputations where he discusses consolation for loss.\"\n  }\n}\n"
+      },
+      "french": {
+        "skipped": true
+      },
+      "german": {
+        "skipped": true
+      },
+      "italian": {
+        "skipped": true
+      },
+      "oldenglish": {
+        "skipped": true
+      },
+      "middleenglish": {
+        "skipped": true
+      }
+    }
   }
 ]

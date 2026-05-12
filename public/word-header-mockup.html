@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Word Header — Redesign Mockups · Kalopaideia</title>
+<link rel="icon" href="/paideia/img/favicon.ico" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cinzel:wght@400;500;600;700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;1,6..96,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="/paideia/styles.css?v=1778577662" />
+
+<style>
+  /* ============================================================
+     Mockup-only styles for the redesigned word-header block.
+     Each variant scopes itself with a .v1 / .v2 / .v3 class on
+     a <section> so the existing .word-card styles still apply to
+     the body of the entry. Per Jae 2026-05-12: redesign the top
+     identity block only (headword + transliteration + POS + meaning).
+     The pronunciation bar and everything below it stays unchanged.
+     ============================================================ */
+
+  body {
+    background: var(--paper, #f7efe1);
+    font-family: 'Source Serif 4', Georgia, serif;
+  }
+  .mockup-wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 32px 24px 80px;
+  }
+  .mockup-intro {
+    text-align: center;
+    margin: 0 0 36px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--rule, #c9b896);
+  }
+  .mockup-intro h1 {
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    margin: 0 0 8px;
+    color: var(--ink, #1a1410);
+  }
+  .mockup-intro p {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--ink-muted, #5c4d38);
+    margin: 0;
+    line-height: 1.55;
+  }
+  .mockup-label {
+    text-align: center;
+    margin: 56px 0 12px;
+  }
+  .mockup-label .num {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--gold-deep, #7d5d12);
+    display: inline-block;
+    padding: 0 14px;
+    border-top: 1px solid var(--rule, #c9b896);
+    border-bottom: 1px solid var(--rule, #c9b896);
+    line-height: 28px;
+  }
+  .mockup-label .desc {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--ink-muted, #5c4d38);
+    margin-top: 8px;
+  }
+
+  /* The mockup .word-card is just a container; keep its existing styling
+   * (max-width, gold ornament, etc.) but override only the headword block. */
+  .mockup-card {
+    background: var(--paper-warm, #faf3e2);
+    border: 1px solid var(--rule, #c9b896);
+    padding: 36px 40px 28px;
+    margin: 0 auto;
+  }
+  .mockup-card .pron-bar {
+    /* simulate the pronunciation row that lives BELOW the redesigned area
+     * so Jae can see the boundary */
+    margin-top: 18px;
+    padding: 10px 14px;
+    background: rgba(125, 93, 18, 0.06);
+    border-left: 2px solid var(--gold-deep, #7d5d12);
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 14px;
+    color: var(--ink-soft, #2d2418);
+  }
+  .mockup-card .pron-bar b {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold-deep, #7d5d12);
+    margin-right: 6px;
+  }
+  .mockup-card .pron-bar .ipa-lbl { margin-left: 14px; }
+
+  /* shared "below-the-header" filler so each card visually shows where the
+   * redesigned area ends */
+  .below-fence {
+    margin-top: 14px;
+    border-top: 1px dotted rgba(45,36,24,0.32);
+    padding-top: 14px;
+    color: var(--ink-muted, #5c4d38);
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* ──────────────────────────────────────────────────────────────────
+     V1 — CARTOUCHE
+     A double hairline frame in bronze with small gold corner ornaments.
+     Headword centered inside the frame on a marble-paper tile. Reads
+     like a museum tombstone label. The headword stays large and serif,
+     transliteration + POS sit beneath it.
+     ────────────────────────────────────────────────────────────────── */
+  .v1 .word-header {
+    position: relative;
+    padding: 28px 36px 22px;
+    background: linear-gradient(180deg, #fdfbf4 0%, #f6efde 100%);
+    border: 1px solid var(--ink, #1a1410);
+    outline: 1px solid var(--ink, #1a1410);
+    outline-offset: 5px;
+    margin: 12px 8px 18px;
+    text-align: center;
+  }
+  /* corner ornaments — small bronze diamonds at each corner of the inner
+   * border so the cartouche reads as a hand-set frame, not a CSS box. */
+  .v1 .word-header::before,
+  .v1 .word-header::after {
+    content: '';
+    position: absolute;
+    width: 7px; height: 7px;
+    background: var(--gold-deep, #7d5d12);
+    transform: rotate(45deg);
+  }
+  .v1 .word-header::before { top: -4px; left: -4px; }
+  .v1 .word-header::after  { top: -4px; right: -4px; }
+  .v1 .word-header .corner-br,
+  .v1 .word-header .corner-bl {
+    position: absolute;
+    width: 7px; height: 7px;
+    background: var(--gold-deep, #7d5d12);
+    transform: rotate(45deg);
+  }
+  .v1 .word-header .corner-br { bottom: -4px; right: -4px; }
+  .v1 .word-header .corner-bl { bottom: -4px; left: -4px; }
+
+  .v1 .headword-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin: 0 0 6px;
+  }
+  .v1 .headword {
+    font-family: 'Bodoni Moda', 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(40px, 5.5vw, 64px);
+    line-height: 1;
+    color: var(--ink, #1a1410);
+    margin: 0;
+  }
+  .v1 .audio-btn {
+    width: 34px; height: 34px;
+    border-radius: 50%;
+    border: 1px solid var(--rule, #c9b896);
+    background: var(--paper, #f7efe1);
+    color: var(--accent, #8a5a18);
+    cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 13px;
+  }
+  .v1 .transliteration {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 20px;
+    color: var(--ink-muted, #5c4d38);
+    margin: 0 0 12px;
+  }
+  .v1 .pos-line {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--gold-deep, #7d5d12);
+    margin: 0 0 10px;
+    padding: 4px 0;
+    border-top: 1px solid var(--rule, #c9b896);
+    border-bottom: 1px solid var(--rule, #c9b896);
+    display: inline-block;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .v1 .meaning {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 19px;
+    color: var(--ink-soft, #2d2418);
+    margin: 6px 0 0;
+    line-height: 1.45;
+    max-width: 46ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ──────────────────────────────────────────────────────────────────
+     V2 — TABLET / PLAQUE
+     A bronze-tabbed plaque on a deeper paper-warm background. Reads
+     like an inscribed museum label (think Met / Louvre wall card).
+     Small "ENTRY №" bronze tab at the top, headword + meaning below.
+     ────────────────────────────────────────────────────────────────── */
+  .v2 .word-header {
+    position: relative;
+    background: #fbf6e7;
+    border: 1px solid var(--rule, #c9b896);
+    box-shadow:
+      inset 0 0 0 1px rgba(125, 93, 18, 0.18),
+      0 2px 8px rgba(45, 36, 24, 0.08);
+    padding: 38px 36px 26px;
+    margin: 26px 4px 18px;
+    text-align: left;
+  }
+  .v2 .word-header::before {
+    /* bronze tab at top-left */
+    content: 'Entry';
+    position: absolute;
+    top: -12px;
+    left: 28px;
+    background: var(--gold-deep, #7d5d12);
+    color: var(--paper, #f7efe1);
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    border-radius: 1px;
+  }
+  .v2 .word-header::after {
+    /* hairline rule on the right separating headword from meaning column */
+    content: '';
+    position: absolute;
+    top: 36px; bottom: 30px;
+    left: 55%;
+    width: 1px;
+    background: var(--rule, #c9b896);
+  }
+  .v2 .word-header .inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    align-items: center;
+  }
+  .v2 .word-header .left-col { text-align: left; }
+  .v2 .headword-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 0;
+  }
+  .v2 .headword {
+    font-family: 'Bodoni Moda', 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(36px, 4.8vw, 56px);
+    line-height: 1;
+    color: var(--ink, #1a1410);
+    margin: 0 0 6px;
+  }
+  .v2 .audio-btn {
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    border: 1px solid var(--rule, #c9b896);
+    background: var(--paper, #f7efe1);
+    color: var(--accent, #8a5a18);
+    cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 12px;
+  }
+  .v2 .transliteration {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--ink-muted, #5c4d38);
+    margin: 0;
+  }
+  .v2 .pos-line {
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--gold-deep, #7d5d12);
+    margin: 8px 0 0;
+  }
+  .v2 .meaning {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--ink-soft, #2d2418);
+    margin: 0;
+    line-height: 1.5;
+    text-align: left;
+  }
+  @media (max-width: 600px) {
+    .v2 .word-header::after { display: none; }
+    .v2 .word-header .inner {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 16px;
+    }
+    .v2 .word-header .left-col { text-align: center; }
+    .v2 .headword-row { justify-content: center; }
+    .v2 .meaning { text-align: center; }
+  }
+
+  /* ──────────────────────────────────────────────────────────────────
+     Per Jae 2026-05-12: mobile alignment fixes across all variants.
+     Symptoms: headword overflowing the cartouche, play button colliding
+     with frame edges / corner diamonds, POS line wrapping to two lines
+     ("NOUN ·" / "FEMININE"), pron-bar IPA line wrapping mid-token.
+     ────────────────────────────────────────────────────────────────── */
+  @media (max-width: 600px) {
+    .mockup-wrap { padding: 20px 14px 60px; }
+    .mockup-card { padding: 22px 16px 18px; }
+
+    /* Shared rules — apply to every variant's header. */
+    .v1 .headword, .v2 .headword, .v3 .headword {
+      /* Recalculate the clamp lower bound so the word fits on a 360-wide
+       * screen with the audio button alongside. */
+      font-size: clamp(32px, 9vw, 48px);
+    }
+    .v1 .headword-row, .v3 .headword-row {
+      flex-wrap: wrap;
+      row-gap: 6px;
+    }
+    .v1 .audio-btn, .v2 .audio-btn, .v3 .audio-btn {
+      width: 28px; height: 28px; font-size: 11px;
+    }
+    .v1 .meaning, .v2 .meaning, .v3 .meaning {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .v1 .transliteration, .v3 .transliteration {
+      font-size: 17px;
+    }
+    .v2 .transliteration { font-size: 16px; }
+    /* POS line: keep it on one line by shrinking + reducing letter-spacing
+     * so 'Noun · Feminine' or 'Adjective · Comparative' fits. */
+    .v1 .pos-line, .v2 .pos-line, .v3 .pos-eyebrow {
+      font-size: 9px;
+      letter-spacing: 0.22em;
+      white-space: nowrap;
+    }
+    .v3 .pos-eyebrow { gap: 8px; }
+
+    /* V1 cartouche — tighten the inner padding + outline offset so the
+     * headword doesn't crash into the left edge. */
+    .v1 .word-header {
+      margin: 10px 6px 14px;
+      padding: 18px 14px 16px;
+      outline-offset: 3px;
+    }
+
+    /* V2 tablet — keep the bronze 'Entry' tab inside the card. */
+    .v2 .word-header {
+      padding: 28px 18px 20px;
+      margin: 22px 2px 14px;
+    }
+    .v2 .word-header::before {
+      left: 14px;
+      font-size: 8px;
+      padding: 5px 10px;
+    }
+    .v2 .meaning { font-size: 17px; }
+
+    /* V3 illuminated — tighten the diamond flankers so they don't pin
+     * to the column edges. Use inline-flex with a max-width so the row
+     * collapses tight. */
+    .v3 .pos-eyebrow {
+      display: inline-flex;
+      max-width: 100%;
+    }
+
+    /* Pron-bar shared across variants — prevent the 'IPA: /a' orphan break.
+     * Stack the SAY and IPA on separate rows on narrow screens. */
+    .mockup-card .pron-bar {
+      font-size: 13px;
+      line-height: 1.55;
+    }
+    .mockup-card .pron-bar .ipa-lbl {
+      display: block;
+      margin-left: 0;
+      margin-top: 4px;
+    }
+  }
+
+  /* ──────────────────────────────────────────────────────────────────
+     V4 — STAMPED FOLIO
+     Per Jae 2026-05-12: a bookplate-style entry header. A rounded
+     bronze ribbon banner across the top reads 'GREEK · ENTRY'. The
+     headword sits centered on a paper-warm rectangle with a thin
+     gold-and-ink double border. Reads like a Victorian library
+     bookplate or a Beaux-Arts certificate cartouche.
+     ────────────────────────────────────────────────────────────────── */
+  .v4 .word-header {
+    position: relative;
+    background: #fbf6e7;
+    border: 2px solid var(--gold-deep, #7d5d12);
+    box-shadow: inset 0 0 0 4px var(--paper-warm, #faf3e2),
+                inset 0 0 0 5px var(--gold-deep, #7d5d12);
+    padding: 32px 28px 22px;
+    margin: 30px 4px 18px;
+    text-align: center;
+  }
+  .v4 .word-header .banner {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--ink, #1a1410);
+    color: var(--paper, #f7efe1);
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    padding: 8px 22px;
+    border: 1px solid var(--gold-deep, #7d5d12);
+    white-space: nowrap;
+  }
+  .v4 .headword-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin: 6px 0 4px;
+  }
+  .v4 .headword {
+    font-family: 'Bodoni Moda', 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(40px, 5.5vw, 60px);
+    line-height: 1;
+    color: var(--ink, #1a1410);
+    margin: 0;
+  }
+  .v4 .audio-btn {
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    border: 1px solid var(--gold-deep, #7d5d12);
+    background: var(--paper, #f7efe1);
+    color: var(--gold-deep, #7d5d12);
+    cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 12px;
+  }
+  .v4 .transliteration {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 20px;
+    color: var(--ink-muted, #5c4d38);
+    margin: 0 0 8px;
+  }
+  .v4 .pos-line {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--gold-deep, #7d5d12);
+    margin: 0 auto 10px;
+    padding: 4px 16px;
+    background: var(--paper, #f7efe1);
+    display: inline-block;
+    border-top: 1px solid var(--rule, #c9b896);
+    border-bottom: 1px solid var(--rule, #c9b896);
+    white-space: nowrap;
+  }
+  .v4 .meaning {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--ink-soft, #2d2418);
+    margin: 0 auto;
+    line-height: 1.5;
+    max-width: 46ch;
+  }
+  @media (max-width: 600px) {
+    .v4 .word-header {
+      padding: 28px 14px 16px;
+      margin: 24px 2px 14px;
+    }
+    .v4 .word-header .banner {
+      font-size: 9px;
+      letter-spacing: 0.22em;
+      padding: 6px 14px;
+    }
+    .v4 .headword { font-size: clamp(32px, 9vw, 44px); }
+    .v4 .audio-btn { width: 28px; height: 28px; font-size: 11px; }
+    .v4 .transliteration { font-size: 17px; }
+    .v4 .pos-line { font-size: 9px; letter-spacing: 0.22em; padding: 3px 10px; }
+    .v4 .meaning { font-size: 16px; }
+  }
+
+  /* ──────────────────────────────────────────────────────────────────
+     V5 — TRIPTYCH (Greek temple frieze)
+     Three vertical zones separated by hairline rules: left zone =
+     the part of speech in a vertical stack of small-caps, center =
+     headword + audio + transliteration, right zone = the meaning.
+     A continuous bronze rule top + bottom ties it together. Reads
+     like the inscription frieze on a Greek temple pediment.
+     ────────────────────────────────────────────────────────────────── */
+  .v5 .word-header {
+    position: relative;
+    background: linear-gradient(180deg, #fdfbf4 0%, #f6efde 100%);
+    border-top: 2px solid var(--gold-deep, #7d5d12);
+    border-bottom: 2px solid var(--gold-deep, #7d5d12);
+    padding: 24px 28px;
+    margin: 14px 0 18px;
+  }
+  .v5 .word-header .triptych {
+    display: grid;
+    grid-template-columns: auto 1px 1fr 1px 2fr;
+    align-items: center;
+    column-gap: 22px;
+  }
+  .v5 .word-header .triptych > .rule {
+    background: var(--rule, #c9b896);
+    width: 1px;
+    align-self: stretch;
+    margin: 4px 0;
+  }
+  .v5 .pos-stack {
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--gold-deep, #7d5d12);
+    line-height: 1.6;
+    text-align: right;
+    white-space: nowrap;
+  }
+  .v5 .pos-stack span { display: block; }
+  .v5 .center-zone { text-align: center; }
+  .v5 .headword-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 0 0 6px;
+  }
+  .v5 .headword {
+    font-family: 'Bodoni Moda', 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(38px, 5vw, 56px);
+    line-height: 1;
+    color: var(--ink, #1a1410);
+    margin: 0;
+  }
+  .v5 .audio-btn {
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--rule, #c9b896);
+    background: var(--paper, #f7efe1);
+    color: var(--accent, #8a5a18);
+    cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 11px;
+  }
+  .v5 .transliteration {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--ink-muted, #5c4d38);
+    margin: 0;
+  }
+  .v5 .meaning {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--ink-soft, #2d2418);
+    margin: 0;
+    line-height: 1.5;
+    text-align: left;
+  }
+  @media (max-width: 600px) {
+    /* Collapse to a centered stack on mobile — POS becomes an eyebrow,
+     * meaning drops below the headword. */
+    .v5 .word-header { padding: 18px 14px; }
+    .v5 .word-header .triptych {
+      display: block;
+      text-align: center;
+    }
+    .v5 .word-header .triptych > .rule { display: none; }
+    .v5 .pos-stack {
+      text-align: center;
+      margin-bottom: 10px;
+      white-space: normal;
+    }
+    .v5 .pos-stack span {
+      display: inline-block;
+      margin: 0 4px;
+    }
+    .v5 .pos-stack span + span::before {
+      content: '·';
+      margin-right: 6px;
+      color: var(--rule, #c9b896);
+    }
+    .v5 .headword { font-size: clamp(32px, 9vw, 44px); }
+    .v5 .audio-btn { width: 28px; height: 28px; font-size: 11px; }
+    .v5 .transliteration { font-size: 17px; margin-bottom: 12px; }
+    .v5 .meaning {
+      font-size: 16px;
+      text-align: center;
+      padding-top: 10px;
+      border-top: 1px dotted var(--rule, #c9b896);
+    }
+  }
+
+  /* ──────────────────────────────────────────────────────────────────
+     V6 — IMPERIAL ROMAN (inscribed stone)
+     Cinzel-on-stone treatment. A travertine-warm background panel
+     with the headword centered very large in Bodoni serif. Above the
+     headword: a small SPQR-style bronze laurel wreath ornament (CSS-
+     drawn). Below: a deeply-engraved hairline and the meaning in
+     small-caps Cinzel. Quiet Roman-monumental.
+     ────────────────────────────────────────────────────────────────── */
+  .v6 .word-header {
+    position: relative;
+    background: linear-gradient(180deg, #f5ead5 0%, #ebdfc5 100%);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,0.6),
+      inset 0 -1px 0 rgba(0,0,0,0.08),
+      0 1px 3px rgba(45,36,24,0.08);
+    border: 1px solid #b8a26e;
+    padding: 30px 36px 26px;
+    margin: 14px 0 18px;
+    text-align: center;
+  }
+  .v6 .ornament-laurel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 0 14px;
+    color: var(--gold-deep, #7d5d12);
+  }
+  .v6 .ornament-laurel .leaf {
+    width: 24px; height: 8px;
+    background: currentColor;
+    clip-path: polygon(0 50%, 30% 0, 70% 0, 100% 50%, 70% 100%, 30% 100%);
+    opacity: 0.7;
+  }
+  .v6 .ornament-laurel .leaf-left  { transform: rotate(-12deg); }
+  .v6 .ornament-laurel .leaf-right { transform: rotate(12deg); }
+  .v6 .ornament-laurel .center-dot {
+    width: 6px; height: 6px;
+    background: currentColor;
+    transform: rotate(45deg);
+  }
+  .v6 .headword-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin: 0 0 6px;
+  }
+  .v6 .headword {
+    font-family: 'Bodoni Moda', 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(44px, 6vw, 68px);
+    line-height: 1;
+    color: var(--ink, #1a1410);
+    margin: 0;
+    letter-spacing: 0.005em;
+    /* subtle engraved shadow */
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+  }
+  .v6 .audio-btn {
+    width: 34px; height: 34px;
+    border-radius: 50%;
+    border: 1px solid #b8a26e;
+    background: var(--paper, #f7efe1);
+    color: var(--gold-deep, #7d5d12);
+    cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 13px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
+  }
+  .v6 .transliteration {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 20px;
+    color: var(--ink-muted, #5c4d38);
+    margin: 0 0 14px;
+  }
+  .v6 .rule-divider {
+    width: 60px;
+    height: 2px;
+    background: var(--gold-deep, #7d5d12);
+    margin: 0 auto 12px;
+  }
+  .v6 .pos-line {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.42em;
+    text-transform: uppercase;
+    color: var(--gold-deep, #7d5d12);
+    margin: 0 0 10px;
+    white-space: nowrap;
+  }
+  .v6 .meaning {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 19px;
+    color: var(--ink-soft, #2d2418);
+    margin: 0 auto;
+    line-height: 1.5;
+    max-width: 46ch;
+  }
+  @media (max-width: 600px) {
+    .v6 .word-header {
+      padding: 22px 16px 18px;
+    }
+    .v6 .headword { font-size: clamp(32px, 9vw, 46px); }
+    .v6 .audio-btn { width: 28px; height: 28px; font-size: 11px; }
+    .v6 .transliteration { font-size: 17px; margin-bottom: 12px; }
+    .v6 .rule-divider { width: 40px; margin-bottom: 10px; }
+    .v6 .pos-line { font-size: 9px; letter-spacing: 0.28em; }
+    .v6 .meaning { font-size: 16px; }
+  }
+
+  /* ──────────────────────────────────────────────────────────────────
+     V3 — ILLUMINATED OPENING
+     Bronze double-rule above + below. The POS line is moved to the
+     TOP as an eyebrow ("NOUN · FEMININE") in small caps with a thin
+     bronze line. The headword is centered, very large, with a
+     decorative gold-leaf flourish. Below: transliteration centered,
+     then a hairline + meaning. Reads like the opening page of a
+     book of hours — typographic only, no image.
+     ────────────────────────────────────────────────────────────────── */
+  .v3 .word-header {
+    position: relative;
+    padding: 18px 36px 28px;
+    margin: 14px 0 18px;
+    text-align: center;
+    /* double bronze hairline top + bottom */
+    border-top: 3px double var(--gold-deep, #7d5d12);
+    border-bottom: 3px double var(--gold-deep, #7d5d12);
+  }
+  .v3 .pos-eyebrow {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.42em;
+    text-transform: uppercase;
+    color: var(--gold-deep, #7d5d12);
+    padding-top: 4px;
+    margin-bottom: 14px;
+    /* small bronze diamond before and after */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+  }
+  .v3 .pos-eyebrow::before,
+  .v3 .pos-eyebrow::after {
+    content: '';
+    width: 5px; height: 5px;
+    background: var(--gold-deep, #7d5d12);
+    transform: rotate(45deg);
+    display: inline-block;
+  }
+  .v3 .headword-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin: 0 0 8px;
+  }
+  .v3 .headword {
+    font-family: 'Bodoni Moda', 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(48px, 6.5vw, 78px);
+    line-height: 1;
+    color: var(--ink, #1a1410);
+    margin: 0;
+    letter-spacing: -0.005em;
+  }
+  .v3 .audio-btn {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    border: 1px solid var(--gold-deep, #7d5d12);
+    background: var(--paper, #f7efe1);
+    color: var(--gold-deep, #7d5d12);
+    cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 14px;
+  }
+  .v3 .transliteration {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 22px;
+    color: var(--ink-muted, #5c4d38);
+    margin: 0 0 14px;
+  }
+  .v3 .ornament {
+    /* tiny three-diamond flourish before the meaning */
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .v3 .ornament span {
+    width: 4px; height: 4px;
+    background: var(--gold-deep, #7d5d12);
+    transform: rotate(45deg);
+    display: inline-block;
+  }
+  .v3 .meaning {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 20px;
+    color: var(--ink-soft, #2d2418);
+    margin: 0;
+    line-height: 1.45;
+    max-width: 46ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ──────────────────────────────────────────────────────────────────
+     V7 — TITLE PAGE
+     Editorial restraint, no frames. The POS line sits at the very
+     top as a tiny kicker. A hairline rule. The headword huge in
+     Bodoni. A second hairline rule. The definition centered in
+     italic. Like the title page of an Everyman's Library or NYRB
+     Classics edition.
+     ────────────────────────────────────────────────────────────────── */
+  .v7 .word-header {
+    text-align: center;
+    padding: 26px 28px 24px;
+    margin: 14px 0 18px;
+  }
+  .v7 .pos-kicker {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.42em;
+    text-transform: uppercase;
+    color: var(--gold-deep, #7d5d12);
+    margin: 0 0 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--ink, #1a1410);
+    white-space: nowrap;
+  }
+  .v7 .headword-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin: 0 0 6px;
+  }
+  .v7 .headword {
+    font-family: 'Bodoni Moda', 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(52px, 7vw, 84px);
+    line-height: 1.02;
+    color: var(--ink, #1a1410);
+    margin: 0;
+    letter-spacing: -0.005em;
+  }
+  .v7 .audio-btn {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    border: 1px solid var(--ink, #1a1410);
+    background: transparent;
+    color: var(--ink, #1a1410);
+    cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 13px;
+  }
+  .v7 .audio-btn:hover { background: var(--ink); color: var(--paper); }
+  .v7 .transliteration {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 22px;
+    color: var(--ink-muted, #5c4d38);
+    margin: 0 0 18px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--ink, #1a1410);
+    display: inline-block;
+    padding-left: 32px; padding-right: 32px;
+  }
+  .v7 .meaning {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 20px;
+    color: var(--ink-soft, #2d2418);
+    margin: 0 auto;
+    line-height: 1.45;
+    max-width: 46ch;
+  }
+  @media (max-width: 600px) {
+    .v7 .word-header { padding: 18px 12px 18px; }
+    .v7 .pos-kicker { font-size: 9px; letter-spacing: 0.28em; padding-bottom: 12px; margin-bottom: 12px; }
+    .v7 .headword { font-size: clamp(36px, 11vw, 56px); }
+    .v7 .audio-btn { width: 30px; height: 30px; font-size: 12px; }
+    .v7 .transliteration { font-size: 18px; padding: 0 16px 12px; margin-bottom: 12px; }
+    .v7 .meaning { font-size: 16px; }
+  }
+
+  /* ──────────────────────────────────────────────────────────────────
+     V8 — MARGINALIA SPINE
+     A thick bronze vertical spine runs down the LEFT edge of the
+     entry block. Inside the body, the headword + audio sit at the
+     top with a small rotated POS rubric on the spine. Reads like a
+     manuscript with a rubricated edge. Asymmetrical in a deliberate,
+     classical-rubricated way — vertical anchor instead of a frame.
+     ────────────────────────────────────────────────────────────────── */
+  .v8 .word-header {
+    position: relative;
+    background: var(--paper-warm, #faf3e2);
+    padding: 22px 28px 22px 56px;
+    margin: 14px 0 18px;
+    border-top: 1px solid var(--rule, #c9b896);
+    border-bottom: 1px solid var(--rule, #c9b896);
+  }
+  .v8 .word-header::before {
+    /* the bronze spine */
+    content: '';
+    position: absolute;
+    top: -1px; bottom: -1px; left: 18px;
+    width: 4px;
+    background: var(--gold-deep, #7d5d12);
+  }
+  .v8 .word-header::after {
+    /* small bronze dot on the spine — the rubricated initial mark */
+    content: '';
+    position: absolute;
+    top: 26px; left: 13px;
+    width: 14px; height: 14px;
+    background: var(--gold-deep, #7d5d12);
+    border-radius: 50%;
+    border: 3px solid var(--paper-warm, #faf3e2);
+  }
+  .v8 .pos-rubric {
+    /* rotated POS label sitting just above the headword baseline */
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--gold-deep, #7d5d12);
+    margin: 0 0 6px;
+    white-space: nowrap;
+  }
+  .v8 .headword-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 0 0 6px;
+  }
+  .v8 .headword {
+    font-family: 'Bodoni Moda', 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(40px, 5.5vw, 62px);
+    line-height: 1;
+    color: var(--ink, #1a1410);
+    margin: 0;
+  }
+  .v8 .audio-btn {
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    border: 1px solid var(--rule, #c9b896);
+    background: var(--paper, #f7efe1);
+    color: var(--gold-deep, #7d5d12);
+    cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 12px;
+  }
+  .v8 .transliteration {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 20px;
+    color: var(--ink-muted, #5c4d38);
+    margin: 0 0 12px;
+  }
+  .v8 .meaning {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 19px;
+    color: var(--ink-soft, #2d2418);
+    margin: 0;
+    line-height: 1.5;
+    max-width: 52ch;
+  }
+  @media (max-width: 600px) {
+    .v8 .word-header { padding: 18px 16px 18px 38px; }
+    .v8 .word-header::before { left: 10px; }
+    .v8 .word-header::after { left: 5px; top: 22px; width: 12px; height: 12px; }
+    .v8 .pos-rubric { font-size: 9px; letter-spacing: 0.22em; }
+    .v8 .headword { font-size: clamp(32px, 9vw, 46px); }
+    .v8 .audio-btn { width: 28px; height: 28px; font-size: 11px; }
+    .v8 .transliteration { font-size: 17px; }
+    .v8 .meaning { font-size: 16px; }
+  }
+
+  /* ──────────────────────────────────────────────────────────────────
+     V9 — COIN / MEDALLION
+     A circular bronze medallion on the left holds the headword in
+     its center, with the POS curved around the top edge of the disc
+     (SVG textPath). The transliteration sits on a small bronze tag
+     directly beneath the medallion. The meaning sits as a paragraph
+     to the right of the medallion on desktop, beneath on mobile.
+     Reads like the obverse of a Hellenistic or Imperial Roman coin.
+     ────────────────────────────────────────────────────────────────── */
+  .v9 .word-header {
+    background: linear-gradient(180deg, #fdfbf4 0%, #f4ecd6 100%);
+    border: 1px solid var(--rule, #c9b896);
+    padding: 26px 28px;
+    margin: 14px 0 18px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 28px;
+    align-items: center;
+  }
+  .v9 .medallion {
+    position: relative;
+    width: 200px; height: 200px;
+    flex-shrink: 0;
+  }
+  .v9 .medallion svg {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+  }
+  .v9 .medallion .disc {
+    position: absolute; inset: 12px;
+    background: radial-gradient(circle at 35% 30%, #f4e2a8 0%, #d4a73f 55%, #8a6618 100%);
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 2px rgba(125,93,18,0.4),
+                inset 0 -4px 12px rgba(0,0,0,0.18),
+                inset 0 4px 12px rgba(255,255,255,0.25),
+                0 2px 6px rgba(45,36,24,0.18);
+    z-index: 0;
+  }
+  .v9 .medallion svg { z-index: 1; pointer-events: none; }
+  .v9 .medallion .headword-row {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+    z-index: 2;
+  }
+  .v9 .medallion .headword {
+    font-family: 'Bodoni Moda', 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--ink, #1a1410);
+    margin: 0;
+    line-height: 1;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    text-align: center;
+    padding: 0 14px;
+  }
+  .v9 .medallion .audio-btn {
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    border: 1px solid rgba(125,93,18,0.5);
+    background: rgba(255,250,235,0.85);
+    color: var(--ink, #1a1410);
+    cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 10px;
+  }
+  .v9 .medallion .curved-pos {
+    fill: var(--ink, #1a1410);
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+  .v9 .body-col { padding: 4px 0; }
+  .v9 .body-col .transliteration {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 22px;
+    color: var(--ink-muted, #5c4d38);
+    margin: 0 0 8px;
+  }
+  .v9 .body-col .pos-line {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--gold-deep, #7d5d12);
+    margin: 0 0 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--rule, #c9b896);
+  }
+  .v9 .body-col .meaning {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 19px;
+    color: var(--ink-soft, #2d2418);
+    margin: 0;
+    line-height: 1.5;
+  }
+  @media (max-width: 600px) {
+    .v9 .word-header {
+      grid-template-columns: 1fr;
+      gap: 18px;
+      padding: 22px 18px;
+      justify-items: center;
+      text-align: center;
+    }
+    .v9 .medallion { width: 160px; height: 160px; }
+    .v9 .medallion .headword { font-size: 24px; }
+    .v9 .medallion .audio-btn { width: 22px; height: 22px; font-size: 9px; }
+    .v9 .medallion .curved-pos { font-size: 10px; letter-spacing: 3px; }
+    .v9 .body-col { text-align: center; }
+    .v9 .body-col .transliteration { font-size: 18px; }
+    .v9 .body-col .pos-line { font-size: 9px; letter-spacing: 0.28em; }
+    .v9 .body-col .meaning { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<main class="mockup-wrap">
+
+  <header class="mockup-intro">
+    <h1>Word Header · Redesign Mockups</h1>
+    <p>Three variants for the headword identity block at the top of every
+       word entry. The pronunciation bar and everything below it remain
+       unchanged. Per Jae 2026-05-12 — current treatment "feels too open,
+       amateurish, like a blog."</p>
+  </header>
+
+  <!-- ===== V1 — CARTOUCHE ===== -->
+  <div class="mockup-label">
+    <span class="num">№ 1 · Cartouche</span>
+    <p class="desc">Double-hairline ink frame with bronze corner diamonds.<br>
+       Marble-paper interior. Centered, museum-tombstone treatment.</p>
+  </div>
+
+  <article class="mockup-card v1" data-lang="greek">
+    <section class="word-header">
+      <span class="corner-bl"></span>
+      <span class="corner-br"></span>
+      <div class="headword-row">
+        <h3 class="headword">ἀπόλαυσις</h3>
+        <button class="audio-btn" aria-label="Pronounce">▶</button>
+      </div>
+      <div class="transliteration">apolausis</div>
+      <div class="pos-line">Noun · Feminine</div>
+      <div class="meaning">enjoyment, fruition, the act of deriving pleasure or benefit from something</div>
+    </section>
+
+    <div class="pron-bar">
+      <b>Say:</b> ah-POH-low-sis <span class="ipa-lbl"><b>IPA:</b></span> /aˈpo.lau̯.sis/
+    </div>
+    <div class="below-fence">— remainder of the entry (letter-by-letter breakdown, Forms, Etymology, In Literature, In Use, Did You Know) stays as it is today —</div>
+  </article>
+
+  <!-- ===== V2 — TABLET / PLAQUE ===== -->
+  <div class="mockup-label">
+    <span class="num">№ 2 · Tablet</span>
+    <p class="desc">Two-column inscribed plaque with a bronze "Entry" tab at the top.<br>
+       Headword + transliteration on the left, definition on the right, divided by a hairline.</p>
+  </div>
+
+  <article class="mockup-card v2" data-lang="greek">
+    <section class="word-header">
+      <div class="inner">
+        <div class="left-col">
+          <div class="headword-row">
+            <h3 class="headword">ἀπόλαυσις</h3>
+            <button class="audio-btn" aria-label="Pronounce">▶</button>
+          </div>
+          <div class="transliteration">apolausis</div>
+          <div class="pos-line">Noun · Feminine</div>
+        </div>
+        <div class="meaning">enjoyment, fruition, the act of deriving pleasure or benefit from something</div>
+      </div>
+    </section>
+
+    <div class="pron-bar">
+      <b>Say:</b> ah-POH-low-sis <span class="ipa-lbl"><b>IPA:</b></span> /aˈpo.lau̯.sis/
+    </div>
+    <div class="below-fence">— remainder of the entry stays as it is today —</div>
+  </article>
+
+  <!-- ===== V3 — ILLUMINATED OPENING ===== -->
+  <div class="mockup-label">
+    <span class="num">№ 3 · Illuminated</span>
+    <p class="desc">Double-bronze-rule above and below. Part of speech promoted to a
+       small-caps eyebrow at the top. Headword centered, very large.<br>
+       Three-diamond flourish, then the meaning. Reads like a manuscript opening.</p>
+  </div>
+
+  <article class="mockup-card v3" data-lang="greek">
+    <section class="word-header">
+      <div class="pos-eyebrow">Noun · Feminine</div>
+      <div class="headword-row">
+        <h3 class="headword">ἀπόλαυσις</h3>
+        <button class="audio-btn" aria-label="Pronounce">▶</button>
+      </div>
+      <div class="transliteration">apolausis</div>
+      <div class="ornament"><span></span><span></span><span></span></div>
+      <div class="meaning">enjoyment, fruition, the act of deriving pleasure or benefit from something</div>
+    </section>
+
+    <div class="pron-bar">
+      <b>Say:</b> ah-POH-low-sis <span class="ipa-lbl"><b>IPA:</b></span> /aˈpo.lau̯.sis/
+    </div>
+    <div class="below-fence">— remainder of the entry stays as it is today —</div>
+  </article>
+
+  <!-- ===== V4 — STAMPED FOLIO ===== -->
+  <div class="mockup-label">
+    <span class="num">№ 4 · Stamped Folio</span>
+    <p class="desc">Victorian bookplate / Beaux-Arts certificate. A black banner with
+       'GREEK · ENTRY' straddles the top of a bronze-double-bordered card.<br>
+       Headword centered, POS in a hairlined token below.</p>
+  </div>
+
+  <article class="mockup-card v4" data-lang="greek">
+    <section class="word-header">
+      <span class="banner">Greek · Entry</span>
+      <div class="headword-row">
+        <h3 class="headword">ἀπόλαυσις</h3>
+        <button class="audio-btn" aria-label="Pronounce">▶</button>
+      </div>
+      <div class="transliteration">apolausis</div>
+      <div class="pos-line">Noun · Feminine</div>
+      <div class="meaning">enjoyment, fruition, the act of deriving pleasure or benefit from something</div>
+    </section>
+
+    <div class="pron-bar">
+      <b>Say:</b> ah-POH-low-sis <span class="ipa-lbl"><b>IPA:</b></span> /aˈpo.lau̯.sis/
+    </div>
+    <div class="below-fence">— remainder of the entry stays as it is today —</div>
+  </article>
+
+  <!-- ===== V5 — TRIPTYCH ===== -->
+  <div class="mockup-label">
+    <span class="num">№ 5 · Triptych</span>
+    <p class="desc">Three zones in a horizontal frieze separated by bronze hairlines:
+       Part-of-speech on the left, Headword in the center, Meaning on the right.<br>
+       Stacks vertically on mobile so the headword leads.</p>
+  </div>
+
+  <article class="mockup-card v5" data-lang="greek">
+    <section class="word-header">
+      <div class="triptych">
+        <div class="pos-stack">
+          <span>Noun</span>
+          <span>Feminine</span>
+        </div>
+        <div class="rule"></div>
+        <div class="center-zone">
+          <div class="headword-row">
+            <h3 class="headword">ἀπόλαυσις</h3>
+            <button class="audio-btn" aria-label="Pronounce">▶</button>
+          </div>
+          <div class="transliteration">apolausis</div>
+        </div>
+        <div class="rule"></div>
+        <div class="meaning">enjoyment, fruition, the act of deriving pleasure or benefit from something</div>
+      </div>
+    </section>
+
+    <div class="pron-bar">
+      <b>Say:</b> ah-POH-low-sis <span class="ipa-lbl"><b>IPA:</b></span> /aˈpo.lau̯.sis/
+    </div>
+    <div class="below-fence">— remainder of the entry stays as it is today —</div>
+  </article>
+
+  <!-- ===== V6 — IMPERIAL ROMAN ===== -->
+  <div class="mockup-label">
+    <span class="num">№ 6 · Imperial Roman</span>
+    <p class="desc">Travertine-warm stone panel. Bronze laurel-leaf ornament above the headword,
+       small Cinzel POS label below a short bronze rule.<br>
+       Quietly monumental — reads like a Forum inscription.</p>
+  </div>
+
+  <article class="mockup-card v6" data-lang="greek">
+    <section class="word-header">
+      <div class="ornament-laurel">
+        <span class="leaf leaf-left"></span>
+        <span class="center-dot"></span>
+        <span class="leaf leaf-right"></span>
+      </div>
+      <div class="headword-row">
+        <h3 class="headword">ἀπόλαυσις</h3>
+        <button class="audio-btn" aria-label="Pronounce">▶</button>
+      </div>
+      <div class="transliteration">apolausis</div>
+      <div class="rule-divider"></div>
+      <div class="pos-line">Noun · Feminine</div>
+      <div class="meaning">enjoyment, fruition, the act of deriving pleasure or benefit from something</div>
+    </section>
+
+    <div class="pron-bar">
+      <b>Say:</b> ah-POH-low-sis <span class="ipa-lbl"><b>IPA:</b></span> /aˈpo.lau̯.sis/
+    </div>
+    <div class="below-fence">— remainder of the entry stays as it is today —</div>
+  </article>
+
+  <!-- ===== V7 — TITLE PAGE ===== -->
+  <div class="mockup-label">
+    <span class="num">№ 7 · Title Page</span>
+    <p class="desc">Editorial restraint — no frames. Tiny POS kicker, ink hairline,
+       very large Bodoni headword, second hairline, italic definition.<br>
+       Reads like the title page of an Everyman's Library / NYRB Classics edition.</p>
+  </div>
+
+  <article class="mockup-card v7" data-lang="greek">
+    <section class="word-header">
+      <div class="pos-kicker">Noun · Feminine</div>
+      <div class="headword-row">
+        <h3 class="headword">ἀπόλαυσις</h3>
+        <button class="audio-btn" aria-label="Pronounce">▶</button>
+      </div>
+      <div class="transliteration">apolausis</div>
+      <div class="meaning">enjoyment, fruition, the act of deriving pleasure or benefit from something</div>
+    </section>
+
+    <div class="pron-bar">
+      <b>Say:</b> ah-POH-low-sis <span class="ipa-lbl"><b>IPA:</b></span> /aˈpo.lau̯.sis/
+    </div>
+    <div class="below-fence">— remainder of the entry stays as it is today —</div>
+  </article>
+
+  <!-- ===== V8 — MARGINALIA SPINE ===== -->
+  <div class="mockup-label">
+    <span class="num">№ 8 · Marginalia Spine</span>
+    <p class="desc">A bronze vertical rule down the left edge with a small bronze dot at the top —
+       a rubricated manuscript-spine treatment.<br>
+       Headword + audio sit just to the right of the spine, POS as a small bronze rubric above.</p>
+  </div>
+
+  <article class="mockup-card v8" data-lang="greek">
+    <section class="word-header">
+      <div class="pos-rubric">Noun · Feminine</div>
+      <div class="headword-row">
+        <h3 class="headword">ἀπόλαυσις</h3>
+        <button class="audio-btn" aria-label="Pronounce">▶</button>
+      </div>
+      <div class="transliteration">apolausis</div>
+      <div class="meaning">enjoyment, fruition, the act of deriving pleasure or benefit from something</div>
+    </section>
+
+    <div class="pron-bar">
+      <b>Say:</b> ah-POH-low-sis <span class="ipa-lbl"><b>IPA:</b></span> /aˈpo.lau̯.sis/
+    </div>
+    <div class="below-fence">— remainder of the entry stays as it is today —</div>
+  </article>
+
+  <!-- ===== V9 — COIN / MEDALLION ===== -->
+  <div class="mockup-label">
+    <span class="num">№ 9 · Coin Medallion</span>
+    <p class="desc">A round bronze medallion on the left holds the headword + audio.
+       The part-of-speech curves around the top of the disc, like a coin legend.<br>
+       Meaning sits to the right on desktop, beneath on mobile.</p>
+  </div>
+
+  <article class="mockup-card v9" data-lang="greek">
+    <section class="word-header">
+      <div class="medallion">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <path id="v9-arc-top" d="M 30 100 A 70 70 0 0 1 170 100" fill="none" />
+          </defs>
+          <text class="curved-pos" dy="-2">
+            <textPath href="#v9-arc-top" startOffset="50%" text-anchor="middle">Noun · Feminine</textPath>
+          </text>
+        </svg>
+        <div class="disc"></div>
+        <div class="headword-row">
+          <h3 class="headword">ἀπόλαυσις</h3>
+          <button class="audio-btn" aria-label="Pronounce">▶</button>
+        </div>
+      </div>
+      <div class="body-col">
+        <div class="transliteration">apolausis</div>
+        <div class="pos-line">Greek · Ancient</div>
+        <div class="meaning">enjoyment, fruition, the act of deriving pleasure or benefit from something</div>
+      </div>
+    </section>
+
+    <div class="pron-bar">
+      <b>Say:</b> ah-POH-low-sis <span class="ipa-lbl"><b>IPA:</b></span> /aˈpo.lau̯.sis/
+    </div>
+    <div class="below-fence">— remainder of the entry stays as it is today —</div>
+  </article>
+
+  <footer style="text-align:center; margin-top:64px; font-family:'Cormorant Garamond',Georgia,serif; font-style:italic; color:var(--ink-muted); font-size:14px;">
+    Nine options now. Pick one to ship, or mix elements across them.<br>
+    Mobile alignment fixed across all nine.
+  </footer>
+
+</main>
+
+</body>
+</html>
