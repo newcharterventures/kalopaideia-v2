@@ -6,7 +6,16 @@ import { spawn } from "child_process";
 import { fileURLToPath } from "url";
 import { lookupWord } from "./pipeline/word-lookup.js";
 import { buildCommerce } from "./lib/commerce.js";
-import { hasStoaAccess } from "./lib/commerce-db.js";
+import {
+  hasStoaAccess,
+  getAnalyticsPrefs,
+  setAnalyticsPrefs,
+  isAnalyticsAllowed,
+  upsertAnalyticsSession,
+  insertAnalyticsEvents,
+  purgeAnalyticsForUser,
+  exportAnalyticsForUser,
+} from "./lib/commerce-db.js";
 import { stoaById } from "./lib/commerce-catalog.js";
 
 // Per Jae 2026-05-09: subscription pricing is $11.99/mo for both sites.
@@ -477,6 +486,68 @@ app.post(`${BASE}/api/contact`, async (req, res) => {
     console.error("[contact] error:", e);
     return res.status(500).json({ error: "Server error. Please try again or write to info@newcharterventures.com." });
   }
+});
+
+// ===== Analytics (Jae 2026-05-12; opt-out model) =====
+// All endpoints require a logged-in user. Writes silently no-op when the
+// user has opted out OR sent DNT: 1, so the client doesn't branch.
+const SITE = "paideia";
+function _requireUser(req, res, next) {
+  if (!req.user) return res.status(401).json({ error: "sign in required" });
+  next();
+}
+
+app.get(`${BASE}/api/analytics/prefs`, _requireUser, (req, res) => {
+  res.json(getAnalyticsPrefs(req.user.id));
+});
+
+app.put(`${BASE}/api/analytics/prefs`, _requireUser, (req, res) => {
+  const body = req.body || {};
+  const patch = {};
+  if (typeof body.tracking_enabled === "boolean") patch.tracking_enabled = body.tracking_enabled;
+  if (Number.isFinite(body.daily_goal_minutes)) {
+    patch.daily_goal_minutes = Math.max(1, Math.min(600, Math.floor(body.daily_goal_minutes)));
+  }
+  if (body.banner_dismissed_at === null || typeof body.banner_dismissed_at === "string") {
+    patch.banner_dismissed_at = body.banner_dismissed_at;
+  }
+  setAnalyticsPrefs(req.user.id, patch);
+  res.json(getAnalyticsPrefs(req.user.id));
+});
+
+app.put(`${BASE}/api/analytics/session`, _requireUser, (req, res) => {
+  const dnt = req.get("DNT") || req.get("dnt");
+  if (!isAnalyticsAllowed(req.user.id, dnt)) return res.status(204).end();
+  const body = req.body || {};
+  const site = body.site === "mansion" ? "mansion" : SITE;
+  upsertAnalyticsSession(req.user.id, {
+    ...body,
+    site,
+    user_agent: (req.get("user-agent") || "").slice(0, 256) || null,
+  });
+  res.status(204).end();
+});
+
+app.post(`${BASE}/api/analytics/events`, _requireUser, (req, res) => {
+  const dnt = req.get("DNT") || req.get("dnt");
+  if (!isAnalyticsAllowed(req.user.id, dnt)) return res.status(204).end();
+  const events = Array.isArray(req.body?.events) ? req.body.events.slice(0, 200) : [];
+  for (const e of events) {
+    if (e && e.site !== "mansion") e.site = SITE;
+  }
+  const n = insertAnalyticsEvents(req.user.id, events);
+  res.json({ accepted: n });
+});
+
+app.get(`${BASE}/api/analytics/export`, _requireUser, (req, res) => {
+  const data = exportAnalyticsForUser(req.user.id);
+  res.setHeader("Content-Disposition", `attachment; filename="analytics-${req.user.id}.json"`);
+  res.json(data);
+});
+
+app.delete(`${BASE}/api/analytics/data`, _requireUser, (req, res) => {
+  purgeAnalyticsForUser(req.user.id);
+  res.status(204).end();
 });
 
 app.get(BASE, (_req, res) => res.sendFile(path.join(__dirname, "public", "index.html")));
