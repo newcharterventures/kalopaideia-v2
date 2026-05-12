@@ -15,6 +15,7 @@ import {
   insertAnalyticsEvents,
   purgeAnalyticsForUser,
   exportAnalyticsForUser,
+  getAnalyticsSummary,
 } from "./lib/commerce-db.js";
 import { stoaById } from "./lib/commerce-catalog.js";
 
@@ -560,6 +561,15 @@ function _handleEventsUpload(req, res) {
 app.post(`${BASE}/api/analytics/events`, _requireUser, _handleEventsUpload);
 app.post(`${BASE}/api/analytics/events-beacon`, _requireUser, _handleEventsUpload);
 
+app.get(`${BASE}/api/analytics/summary`, _requireUser, (req, res) => {
+  const days = Number(req.query.days);
+  const site = req.query.site;
+  res.json(getAnalyticsSummary(req.user.id, {
+    days: Number.isFinite(days) ? days : 30,
+    site,
+  }));
+});
+
 app.get(`${BASE}/api/analytics/export`, _requireUser, (req, res) => {
   const data = exportAnalyticsForUser(req.user.id);
   res.setHeader("Content-Disposition", `attachment; filename="analytics-${req.user.id}.json"`);
@@ -569,6 +579,12 @@ app.get(`${BASE}/api/analytics/export`, _requireUser, (req, res) => {
 app.delete(`${BASE}/api/analytics/data`, _requireUser, (req, res) => {
   purgeAnalyticsForUser(req.user.id);
   res.status(204).end();
+});
+
+// User-facing analytics dashboard page.
+app.get(`${BASE}/analytics`, (req, res) => {
+  if (!req.user) return res.redirect(`${BASE}/account?next=${encodeURIComponent(BASE + '/analytics')}`);
+  res.sendFile(path.join(__dirname, "public", "analytics.html"));
 });
 
 app.get(BASE, (_req, res) => res.sendFile(path.join(__dirname, "public", "index.html")));
