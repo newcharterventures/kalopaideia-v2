@@ -101,26 +101,29 @@
     }
   }
 
-  // Mobile tap-to-toggle. Desktop browsers fire :hover and use the CSS
-  // path; touch devices need an explicit toggle since :hover is sticky.
-  // First tap opens the panel and DOES NOT navigate. Second tap on the
-  // already-open parent navigates to the category landing page.
-  function wireMobileToggles() {
-    const isTouch = matchMedia("(hover: none)").matches
-      || matchMedia("(max-width: 760px)").matches;
-    if (!isTouch) return;
+  // Tap-to-toggle for touch / pen interactions. Desktop with a mouse gets
+  // the CSS :hover path and never trips the JS preventDefault. We detect
+  // the trigger type per-event from PointerEvent.pointerType, because
+  // viewport width is a bad proxy (hybrid laptops, Surface, iPad Pro with
+  // a keyboard, etc. report wide viewports while only supporting touch).
+  // Per Jae 2026-05-12: previous media-query gate broke desktop dropdowns
+  // on touch-capable laptops where (hover: none) matched.
+  function wireDropdownToggles() {
     const toggles = document.querySelectorAll(".nav-dd .nav-dd-toggle");
     toggles.forEach((t) => {
       const dd = t.closest(".nav-dd");
       if (!dd) return;
+      let lastPointerType = null;
+      t.addEventListener("pointerdown", (e) => { lastPointerType = e.pointerType; });
       t.addEventListener("click", (e) => {
-        if (dd.classList.contains("open")) {
-          // Already open — let the link navigate to the landing page.
-          return;
-        }
-        // First tap: open the panel, swallow the click.
+        // Mouse click on desktop: let the CSS hover path handle the panel
+        // and let the link navigate to the category landing page.
+        if (lastPointerType === "mouse") return;
+        // Touch / pen: if the panel is already open, let the click navigate
+        // to the landing page (second tap = go).
+        if (dd.classList.contains("open")) return;
+        // Otherwise (first touch tap), open the panel and swallow the click.
         e.preventDefault();
-        // Close any sibling open dropdowns.
         document.querySelectorAll(".nav-dd.open").forEach((other) => {
           if (other !== dd) other.classList.remove("open");
         });
@@ -136,7 +139,7 @@
 
   function ready() {
     inject();
-    wireMobileToggles();
+    wireDropdownToggles();
   }
 
   if (document.readyState === "loading") {

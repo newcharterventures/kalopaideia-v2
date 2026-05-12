@@ -2757,18 +2757,46 @@ main {
    ============================================================ */
 
 /* ----- Nav dropdowns (Celtic ▾ / Germanic ▾) ----- */
+/* Per Jae 2026-05-12 (desktop fix): the .nav-dd <span> was misaligned
+ * vertically because the .nav flex container computes baselines from
+ * each direct child's own typography — the bare <a>s inherit .nav a's
+ * 12px/Inter/uppercase, but a bare <span> does not. Mirror the typography
+ * onto .nav-dd itself so the flex baseline lines up exactly, and add
+ * align-self: baseline as a belt-and-suspenders measure. */
 .nav-dd {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  align-self: baseline;
+  /* Match .nav a typography so the flex baseline matches sibling <a>s. */
+  font-family: var(--font-ui);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: inherit;
+  color: var(--ink);
 }
 .nav-dd-toggle {
-  /* Inherits .nav a typography from above. */
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  /* Reset the inherited font-size so it matches the bare <a>s exactly
+   * (otherwise descendant rules can drift if any other .nav a rule
+   * targets direct children of .nav). */
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  color: inherit;
 }
+.nav-dd-toggle:hover { color: var(--accent); }
 .nav-dd-caret {
   font-size: 0.7em;
   margin-left: 4px;
-  vertical-align: 2px;
+  /* Use translate instead of vertical-align: inside inline-flex, vertical-align
+   * is ignored. translate keeps the carat optically aligned with the cap-line. */
+  display: inline-block;
+  transform: translateY(1px);
   opacity: 0.65;
 }
 .nav-dd-panel {
