@@ -189,6 +189,17 @@ function wireAudio() {
     btn.addEventListener("click", () => {
       const src = btn.dataset.audio;
       if (!src) return;
+      if (window.Analytics) {
+        // The audio src looks like /paideia/word-audio/<lang>/<word>.mp3 or
+        // /paideia/audio/<date>/<lang>.mp3 — strip the lang+word from it.
+        const m = src.match(/\/(word-audio|audio)\/([^/]+)\/([^/?]+)\.mp3/);
+        window.Analytics.track('word_audio_play', {
+          source: src,
+          lang: m ? (m[1] === 'word-audio' ? m[2] : null) : null,
+          word: m && m[1] === 'word-audio' ? decodeURIComponent(m[3].replace(/\.mp3$/, '')) : null,
+          date_or_lang: m && m[1] === 'audio' ? m[3] : null,
+        });
+      }
       const cur = __audioState.current;
       if (cur) {
         cur.audio.pause();
@@ -251,6 +262,22 @@ async function load() {
     document.getElementById("sections").innerHTML = html;
     wireAudio();
     fetchAkousmaCount();
+
+    // Analytics: emit one word_seen per language card on initial render.
+    // Anonymous + opted-out users get no-op'd inside Analytics.track().
+    if (window.Analytics) {
+      LANG_ORDER
+        .filter((k) => issue.languages?.[k])
+        .forEach((k) => {
+          const e = issue.languages[k];
+          window.Analytics.track('word_seen', {
+            lang: k,
+            word: e?.word || null,
+            date: issue.date,
+            archive: false,
+          });
+        });
+    }
     
     // Initialize archive scroller below today
     initArchive(issue.date);

@@ -497,6 +497,23 @@ function _requireUser(req, res, next) {
   next();
 }
 
+// Lightweight identity probe used by client-side analytics.js. Returns the
+// minimum the client needs to decide whether to track. Unauthenticated
+// callers get { user: null } and 200 OK (not 401 — we don't want a noisy
+// console error on every page load for anonymous browsers).
+app.get(`${BASE}/api/whoami`, (req, res) => {
+  if (!req.user) return res.json({ user: null });
+  const prefs = getAnalyticsPrefs(req.user.id);
+  res.json({
+    user: { id: req.user.id, display_name: req.user.display_name || null },
+    analytics: {
+      tracking_enabled: prefs.tracking_enabled,
+      daily_goal_minutes: prefs.daily_goal_minutes,
+      banner_dismissed_at: prefs.banner_dismissed_at,
+    },
+  });
+});
+
 app.get(`${BASE}/api/analytics/prefs`, _requireUser, (req, res) => {
   res.json(getAnalyticsPrefs(req.user.id));
 });
@@ -515,7 +532,7 @@ app.put(`${BASE}/api/analytics/prefs`, _requireUser, (req, res) => {
   res.json(getAnalyticsPrefs(req.user.id));
 });
 
-app.put(`${BASE}/api/analytics/session`, _requireUser, (req, res) => {
+function _handleSessionUpsert(req, res) {
   const dnt = req.get("DNT") || req.get("dnt");
   if (!isAnalyticsAllowed(req.user.id, dnt)) return res.status(204).end();
   const body = req.body || {};
@@ -526,9 +543,11 @@ app.put(`${BASE}/api/analytics/session`, _requireUser, (req, res) => {
     user_agent: (req.get("user-agent") || "").slice(0, 256) || null,
   });
   res.status(204).end();
-});
+}
+app.put(`${BASE}/api/analytics/session`, _requireUser, _handleSessionUpsert);
+app.post(`${BASE}/api/analytics/session-beacon`, _requireUser, _handleSessionUpsert);
 
-app.post(`${BASE}/api/analytics/events`, _requireUser, (req, res) => {
+function _handleEventsUpload(req, res) {
   const dnt = req.get("DNT") || req.get("dnt");
   if (!isAnalyticsAllowed(req.user.id, dnt)) return res.status(204).end();
   const events = Array.isArray(req.body?.events) ? req.body.events.slice(0, 200) : [];
@@ -537,7 +556,9 @@ app.post(`${BASE}/api/analytics/events`, _requireUser, (req, res) => {
   }
   const n = insertAnalyticsEvents(req.user.id, events);
   res.json({ accepted: n });
-});
+}
+app.post(`${BASE}/api/analytics/events`, _requireUser, _handleEventsUpload);
+app.post(`${BASE}/api/analytics/events-beacon`, _requireUser, _handleEventsUpload);
 
 app.get(`${BASE}/api/analytics/export`, _requireUser, (req, res) => {
   const data = exportAnalyticsForUser(req.user.id);

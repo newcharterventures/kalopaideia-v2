@@ -555,6 +555,12 @@ function wireTabs() {
       const targetKey = tab.dataset.tab;
       document.querySelectorAll(".primer-pane").forEach((p) => { p.style.display = "none"; });
       document.getElementById(`pane-${targetKey}`).style.display = "block";
+      if (window.Analytics) {
+        window.Analytics.track('lesson_view', {
+          lang: currentLang(),
+          pane: targetKey, // alphabet | grammar | numbers | library
+        });
+      }
     });
   });
 }
@@ -567,6 +573,12 @@ function wireLetterAudio() {
       if (currentAudio) { currentAudio.pause(); currentAudio = null; }
       const src = btn.dataset.audio;
       if (!src) return;
+      if (window.Analytics) {
+        window.Analytics.track('alphabet_audio_play', {
+          lang: currentLang(),
+          char: btn.dataset.char || btn.textContent?.trim() || null,
+        });
+      }
       const audio = new Audio(src);
       audio.play().catch(() => {});
       currentAudio = audio;
@@ -780,3 +792,69 @@ function setupInfiniteScroll(lang, nextBefore, hasMore) {
 }
 
 load();
+
+// === Analytics: pronunciation tooltip / library line read ===
+// Delegated listeners so we don't have to wire each rendered span.
+(function wireAnalyticsHooks() {
+  if (typeof document === 'undefined') return;
+
+  // word_tooltip: fired when a .pronounceable span receives focus (keyboard
+  // or mobile tap) or is hovered for >300 ms (intentful hover, not pass-by).
+  const tooltipSeen = new WeakSet();
+  function reportTooltip(span) {
+    if (!span || tooltipSeen.has(span)) return; // throttle: one per span per pageview
+    tooltipSeen.add(span);
+    if (!window.Analytics) return;
+    window.Analytics.track('word_tooltip', {
+      lang: currentLang(),
+      word: (span.textContent || '').trim().slice(0, 80),
+      tooltip: span.getAttribute('data-tooltip') || null,
+    });
+  }
+  document.addEventListener('focusin', (e) => {
+    const t = e.target.closest && e.target.closest('.pronounceable');
+    if (t) reportTooltip(t);
+  });
+  let hoverTimer = null;
+  document.addEventListener('mouseover', (e) => {
+    const t = e.target.closest && e.target.closest('.pronounceable');
+    if (!t) return;
+    if (hoverTimer) clearTimeout(hoverTimer);
+    hoverTimer = setTimeout(() => reportTooltip(t), 300);
+  });
+  document.addEventListener('mouseout', () => {
+    if (hoverTimer) { clearTimeout(hoverTimer); hoverTimer = null; }
+  });
+
+  // library_line_read: when a library line scrolls into view (IntersectionObserver).
+  function observeLibraryLines() {
+    if (!('IntersectionObserver' in window)) return;
+    const seen = new WeakSet();
+    const io = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue;
+        if (seen.has(entry.target)) continue;
+        seen.add(entry.target);
+        if (!window.Analytics) continue;
+        const lineEl = entry.target;
+        const lineN = lineEl.dataset.line || null;
+        const textId = lineEl.closest('[data-text-id]')?.dataset.textId || null;
+        window.Analytics.track('library_line_read', {
+          textId,
+          line: lineN ? Number(lineN) : null,
+          lang: currentLang(),
+        });
+        io.unobserve(entry.target);
+      }
+    }, { rootMargin: '0px', threshold: 0.6 });
+    document.querySelectorAll('.library-line[data-line]').forEach((el) => io.observe(el));
+  }
+  // Observe after the library pane renders (delayed). Use a MutationObserver
+  // on #pane-library so we pick up lines as they're injected.
+  const lib = document.getElementById('pane-library');
+  if (lib) {
+    const mo = new MutationObserver(observeLibraryLines);
+    mo.observe(lib, { childList: true, subtree: true });
+    observeLibraryLines();
+  }
+})();
