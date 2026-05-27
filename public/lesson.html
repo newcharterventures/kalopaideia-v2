@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Commissioner:wght@300;400;500;600&family=GFS+Didot&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="/paideia/curriculum-atelier.css?v=14" />
+<link rel="stylesheet" href="/paideia/curriculum-atelier.css?v=15" />
 <style>
   :root {
     --ink-4: #a3937a;
@@ -647,16 +647,58 @@ const IPA = {
   },
 };
 
-const STEPS = [
-  { id: 'orient',    roman: 'i',    label: 'Orientation' },
-  { id: 'letters',   roman: 'ii',   label: 'The first thirteen' },
-  { id: 'aspirated', roman: 'iii',  label: 'A note on aspiration' },
-  { id: 'listen',    roman: 'iv',   label: 'Listening drill' },
-  { id: 'write',     roman: 'v',    label: 'Writing drill' },
-  { id: 'check',     roman: 'vi',   label: 'Self-check' },
-  { id: 'reading',   roman: 'vii',  label: 'First words' },
-  { id: 'done',      roman: 'viii', label: 'Complete' },
-];
+// STEPS is built at boot from state.lesson.sections — each section in the
+// lesson JSON becomes one step. Section kinds we know how to render get a
+// dedicated step; the orientation step is synthesized from the lesson's
+// objectives + the first prose section; the completion step is synthesized
+// from the next_lesson section.
+let STEPS = [];
+const ROMAN_NUM = ['', 'i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x'];
+
+// Fallback labels per kind, used only if the lesson JSON section has no
+// `heading`. Language-agnostic.
+const STEP_LABEL_BY_KIND = {
+  orient:          'Orientation',
+  letter_grid:     'The letters',
+  prose:           'A note',
+  audio_drill:     'Listening drill',
+  writing_drill:   'Writing drill',
+  self_check:      'Self-check',
+  reading_preview: 'First words',
+  next_lesson:     'Complete',
+};
+
+function buildStepsFromLesson(lesson) {
+  if (!lesson || !Array.isArray(lesson.sections)) return [];
+  // Synthesize an orientation step (always first; consumes objectives + the
+  // first prose section, if any)
+  const steps = [];
+  steps.push({ id: 'orient', kind: 'orient', label: 'Orientation', section: null });
+  let i = 0;
+  let usedFirstProse = false;
+  lesson.sections.forEach((s, idx) => {
+    if (!s || !s.kind) return;
+    // Skip the first prose section — it's folded into the orientation step
+    if (s.kind === 'prose' && !usedFirstProse) {
+      usedFirstProse = true;
+      steps[0].section = s;
+      return;
+    }
+    // The completion 'done' step is synthesized from next_lesson section.
+    if (s.kind === 'next_lesson') return;
+    const id = `${s.kind}-${idx}`;
+    const label = (s.heading && s.heading.trim() && s.heading !== 'Content')
+      ? s.heading
+      : (STEP_LABEL_BY_KIND[s.kind] || s.kind);
+    steps.push({ id, kind: s.kind, label, section: s });
+  });
+  // Completion step (always last)
+  const nextLesson = lesson.sections.find((s) => s.kind === 'next_lesson');
+  steps.push({ id: 'done', kind: 'done', label: 'Complete', section: nextLesson || null });
+  // Assign roman numerals
+  steps.forEach((s, ix) => { s.roman = ROMAN_NUM[ix + 1] || String(ix + 1); });
+  return steps;
+}
 
 // Stage lesson sequence — populated from the manifest at boot.
 let STAGE_LESSONS = [];
@@ -746,23 +788,32 @@ function renderRail() {
 function renderHeader() {
   const l = state.lesson;
   if (!l) return;
+  const langDisplay = LANG_DISPLAY_NAME[LANG] || LANG.charAt(0).toUpperCase() + LANG.slice(1);
+  // Manifest may carry a richer display name (e.g. 'Old English (Anglo-Saxon)')
+  const manifestDisplay = (MANIFEST && MANIFEST.display_name) || langDisplay;
   document.title = `${l.title || "Lesson"} — Kalopaideia`;
   document.getElementById("lesson-title").textContent = l.title || "—";
   document.getElementById("lesson-sub").textContent = l.subtitle || "";
   const stageLabel = STAGE_INFO.roman ? `Stage ${STAGE_INFO.roman}` : (STAGE_INFO.number ? `Stage ${STAGE_INFO.number}` : "Stage");
   document.getElementById("eyebrow-stage").textContent = stageLabel;
   document.getElementById("eyebrow-id").textContent = `Lesson ${l.id || LESSON_ID}`;
-  document.getElementById("eyebrow-min").textContent = `${l.estimated_minutes || 45} min · audio + recitation`;
+  const hasAudio = (l.sections || []).some((s) => s.kind === 'audio_drill' || s.kind === 'letter_grid');
+  document.getElementById("eyebrow-min").textContent =
+    `${l.estimated_minutes || 45} min${hasAudio ? ' · audio + recitation' : ''}`;
   document.getElementById("crumb-course").href = `${BASE}/${LANG}/curriculum`;
-  document.getElementById("crumb-course").textContent = `The ${LANG.charAt(0).toUpperCase() + LANG.slice(1)} Course`;
+  document.getElementById("crumb-course").textContent = `The ${manifestDisplay} Course`;
   document.getElementById("crumb-stage").textContent = stageLabel;
   document.getElementById("crumb-lesson").textContent = `Lesson ${l.id || LESSON_ID}`;
   // Chrome back link (top-left nav)
   const back = document.getElementById("nav-course-back");
   if (back) {
     back.href = `${BASE}/${LANG}/curriculum`;
-    back.textContent = `← THE ${LANG.toUpperCase()} COURSE`;
+    back.textContent = `← THE ${langDisplay.toUpperCase()} COURSE`;
   }
+  // Pronunciation popover is Greek-only (the three systems Attic/Erasmian/
+  // Modern are specific to Greek). For other languages, hide it.
+  const pronWrap = document.querySelector('.chrome .pron-wrap');
+  if (pronWrap) pronWrap.style.display = (LANG === 'greek') ? '' : 'none';
 }
 function renderStepper() {
   const root = document.getElementById("stepper");
@@ -775,6 +826,8 @@ function renderStepper() {
 // =============================================================
 // STEP RENDERERS
 // =============================================================
+// Driven entirely from the dynamic STEPS array (built in boot from
+// state.lesson.sections). Each step's kind tells us which renderer to use.
 function renderAll() {
   renderStepper();
   const root = document.getElementById("content");
@@ -782,61 +835,92 @@ function renderAll() {
   const stepper = root.firstElementChild;
   root.innerHTML = "";
   root.appendChild(stepper);
-  root.insertAdjacentHTML("beforeend", stepOrient());
-  root.insertAdjacentHTML("beforeend", stepLetters());
-  root.insertAdjacentHTML("beforeend", stepAspirated());
-  root.insertAdjacentHTML("beforeend", stepListen());
-  root.insertAdjacentHTML("beforeend", stepWrite());
-  root.insertAdjacentHTML("beforeend", stepCheck());
-  root.insertAdjacentHTML("beforeend", stepReading());
-  root.insertAdjacentHTML("beforeend", stepDone());
-
-  wireLetters(root);
-  wireListen(root);
-  wireCheck(root);
-  wireReading(root);
-  wireDone(root);
+  STEPS.forEach((step) => {
+    let html = '';
+    switch (step.kind) {
+      case 'orient':         html = stepOrient(step);         break;
+      case 'letter_grid':    html = stepLetters(step);        break;
+      case 'prose':          html = stepProse(step);          break;
+      case 'audio_drill':    html = stepListen(step);         break;
+      case 'writing_drill':  html = stepWrite(step);          break;
+      case 'self_check':     html = stepCheck(step);          break;
+      case 'reading_preview':html = stepReading(step);        break;
+      case 'done':           html = stepDone(step);           break;
+      default:               html = stepGenericProse(step);   break;
+    }
+    if (html) root.insertAdjacentHTML("beforeend", html);
+  });
+  // Wire each step that has interactive behavior
+  STEPS.forEach((step) => {
+    if (step.kind === 'letter_grid') wireLetters(root, step);
+    if (step.kind === 'audio_drill') wireListen(root, step);
+    if (step.kind === 'self_check')  wireCheck(root, step);
+    if (step.kind === 'reading_preview') wireReading(root, step);
+    if (step.kind === 'done')        wireDone(root, step);
+  });
   wireScrollSpy();
 }
 
-function stepOrient() {
+function stepOrient(step) {
   const objectives = (state.lesson?.objectives || []).map((o) => `<li>${esc(o)}</li>`).join("");
+  // The first prose section of the lesson (consumed by buildStepsFromLesson)
+  // provides the orientation body. If there isn't one, fall back silently.
+  const proseSection = step && step.section;
+  const proseBody = proseSection && proseSection.body
+    ? proseSection.body.split(/\n\n+/).map((p) => `<p>${esc(p.trim())}</p>`).join("")
+    : "";
+  const proseHeading = proseSection && proseSection.heading && proseSection.heading !== 'Content'
+    ? proseSection.heading
+    : 'Where we are starting';
+  const companion = renderCompanionPlate();
   return `
     <section id="step-orient" class="step-block">
-      <div class="step-eye"><span class="roman">§ i.</span><span class="label">Orientation</span></div>
-      <h2 class="step-h">Where we are starting</h2>
+      <div class="step-eye"><span class="roman">§ ${esc(step.roman)}.</span><span class="label">Orientation</span></div>
+      <h2 class="step-h">${esc(proseHeading)}</h2>
 
-      <div class="obj">
+      ${objectives ? `<div class="obj">
         <div class="lbl">By the end of this lesson</div>
         <ul>${objectives}</ul>
-      </div>
+      </div>` : ''}
 
-      <div class="prose">
-        <p>Greek has twenty-four letters. We will learn them in two sittings, thirteen and eleven. Today, thirteen. You do not need to memorize the order in this lesson — the order will come from use. What you need is to recognize each letter the next time you see it, and to make its sound when you do.</p>
-        <p>The pronunciation we teach is the <strong>reconstructed Attic of around 400 BCE</strong>, the Athens of Plato. It is not the modern Greek you would hear in Athens today — that pronunciation, beautiful in its own right, has eight centuries of sound change behind it and obscures the distinctions that the meter of Homer, the puns of Aristophanes, and the wordplay of Plato all depend on. To hear those, we need the older sounds.</p>
-      </div>
+      ${proseBody ? `<div class="prose">${proseBody}</div>` : ''}
 
-      <div class="marginalia">
-        <span class="sc">A note on method</span>
-        Read this aloud as if a friend were across the table — not in your head. Speech is the gate; silence will close it.
-      </div>
-
-      <a class="companion-plate" href="/paideia/akousma">
-        <div class="img" aria-hidden="true"></div>
-        <div class="body">
-          <div class="sc l">Companion in the library</div>
-          <h4>The Odyssey — Book I</h4>
-          <p>By the end of Stage I you will be able to read the opening lines of Homer aloud, in restored Attic. The whole of Book I is free to any signed-in reader on the Akousma.</p>
-          <span class="cta">Hear it on the Akousma →</span>
-        </div>
-      </a>
+      ${companion}
     </section>
   `;
 }
 
-function stepLetters() {
-  const lg = (state.lesson?.sections || []).find((s) => s.kind === "letter_grid");
-  const letters = lg?.letters || [];
+// Companion plate is Greek-specific (the Odyssey gateway). For other
+// languages we render nothing here — the daily-word page already promotes
+// the Akousma. A future improvement: a per-language gateway work.
+function renderCompanionPlate() {
+  if (LANG !== 'greek') return '';
+  return `
+    <a class="companion-plate" href="/paideia/akousma">
+      <div class="img" aria-hidden="true"></div>
+      <div class="body">
+        <div class="sc l">Companion in the library</div>
+        <h4>The Odyssey — Book I</h4>
+        <p>By the end of Stage I you will be able to read the opening lines of Homer aloud, in restored Attic. The whole of Book I is free to any signed-in reader on the Akousma.</p>
+        <span class="cta">Hear it on the Akousma →</span>
+      </div>
+    </a>
+  `;
+}
+
+function stepLetters(step) {
+  // Letter explorer is driven by the section's letters[] array. Headings
+  // come from the section's `heading`; the H2 is the first + last letter
+  // ('A through Z' for Latin, 'Ν through Ω' for Greek pt 2, etc.).
+  const lg = step && step.section;
+  const letters = (lg && lg.letters) || [];
+  if (!letters.length) {
+    return `
+      <section id="step-${esc(step.id)}" class="step-block">
+        <div class="step-eye"><span class="roman">§ ${esc(step.roman)}.</span><span class="label">${esc(step.label)}</span></div>
+        <p class="step-lead"><em>Letter content for this lesson is being prepared.</em></p>
+      </section>`;
+  }
   const strip = letters.map((l, i) => `
     <button class="letter-chip${state.heard.has(i) ? " heard" : ""}${state.letterIdx === i ? " active" : ""}" data-idx="${i}" type="button">
       <div class="gr">${esc(l.upper || "")}${esc(l.lower || "")}</div>
@@ -844,11 +928,18 @@ function stepLetters() {
     </button>
   `).join("");
   const cur = letters[state.letterIdx] || letters[0];
-  const ipa = cur ? (IPA.attic[cur.upper] || "") : "";
+  // IPA is currently Attic-only (Greek). For other languages, use the letter's
+  // own `ipa` field from the JSON.
+  const ipa = cur ? (cur.ipa || (LANG === 'greek' ? (IPA.attic[cur.upper] || "") : "")) : "";
+  // H2: 'X through Y' showing the range. For lessons with very many letters
+  // (>15), show the heading directly.
+  const first = letters[0]?.upper || '';
+  const last = letters[letters.length - 1]?.upper || '';
+  const rangeH = letters.length <= 15 ? `${first} through ${last}` : (lg.heading || step.label);
   return `
-    <section id="step-letters" class="step-block">
-      <div class="step-eye"><span class="roman">§ ii.</span><span class="label">The first thirteen letters</span></div>
-      <h2 class="step-h">Α through Μ</h2>
+    <section id="step-${esc(step.id)}" class="step-block">
+      <div class="step-eye"><span class="roman">§ ${esc(step.roman)}.</span><span class="label">${esc(step.label)}</span></div>
+      <h2 class="step-h">${esc(rangeH)}</h2>
       <p class="step-lead">Click each letter and hear it spoken aloud. Each one will gild as you go — you can return to any of them. Use <em>← →</em> to step through and <em>space</em> to play.</p>
 
       <div class="letter-strip">${strip}</div>
@@ -894,32 +985,33 @@ function stepLetters() {
     </section>
   `;
 }
-function wireLetters(root) {
-  const lg = (state.lesson?.sections || []).find((s) => s.kind === "letter_grid");
-  const letters = lg?.letters || [];
+function wireLetters(root, step) {
+  const lg = step && step.section;
+  const letters = (lg && lg.letters) || [];
   if (!letters.length) return;
+  const sectionSel = `#${CSS.escape('step-' + step.id)}`;
 
   const repaint = () => { renderAll(); };
 
-  root.querySelectorAll(".letter-chip").forEach((b) => {
+  (root || document).querySelectorAll(`${sectionSel} .letter-chip`).forEach((b) => {
     b.addEventListener("click", () => { state.letterIdx = +b.dataset.idx; repaint(); });
   });
-  const prev = root.querySelector("#step-letters .lstage-prev");
-  const next = root.querySelector("#step-letters .lstage-next");
+  const prev = (root || document).querySelector(`${sectionSel} .lstage-prev`);
+  const next = (root || document).querySelector(`${sectionSel} .lstage-next`);
   if (prev) prev.addEventListener("click", () => { state.letterIdx = Math.max(0, state.letterIdx - 1); repaint(); });
   if (next) next.addEventListener("click", () => { state.letterIdx = Math.min(letters.length - 1, state.letterIdx + 1); repaint(); });
 
-  const auto = root.querySelector("#auto-toggle");
+  const auto = (root || document).querySelector(`${sectionSel} #auto-toggle`);
   if (auto) auto.addEventListener("change", (e) => { state.autoAdvance = e.target.checked; });
 
-  const pill = root.querySelector("#letter-pill");
+  const pill = (root || document).querySelector(`${sectionSel} #letter-pill`);
   if (pill) {
     pill.addEventListener("click", () => {
       const cur = letters[state.letterIdx];
       if (!cur) return;
       state.heard.add(state.letterIdx);
       // patch chip immediately
-      const chip = root.querySelector(`#step-letters .letter-chip[data-idx="${state.letterIdx}"]`);
+      const chip = (root || document).querySelector(`${sectionSel} .letter-chip[data-idx="${state.letterIdx}"]`);
       if (chip) chip.classList.add("heard");
       const txt = `${cur.upper} ${cur.lower} — ${cur.name}`;
       playText(pill, txt, () => {
@@ -927,7 +1019,7 @@ function wireLetters(root) {
           state.letterIdx += 1;
           repaint();
           // Auto-play the next one after the UI updates.
-          setTimeout(() => document.getElementById("letter-pill")?.click(), 180);
+          setTimeout(() => document.querySelector(`${sectionSel} #letter-pill`)?.click(), 180);
         }
       });
     });
@@ -949,56 +1041,56 @@ function wireLetters(root) {
   }
 }
 
-function stepAspirated() {
+// Generic prose section renderer — used for any prose section that isn't
+// the first (which is folded into stepOrient). Reads heading + body straight
+// from the JSON. NO hardcoded Greek prose anywhere.
+function stepProse(step) {
+  const s = step && step.section;
+  if (!s) return '';
+  const heading = (s.heading && s.heading.trim() && s.heading !== 'Content')
+    ? s.heading
+    : step.label;
+  const body = s.body
+    ? s.body.split(/\n\n+/).map((p) => `<p>${esc(p.trim())}</p>`).join("")
+    : '';
   return `
-    <section id="step-aspirated" class="step-block">
-      <div class="step-eye"><span class="roman">§ iii.</span><span class="label">A note on aspiration</span></div>
-      <h2 class="step-h">The aspirated stops</h2>
-      <p class="step-lead">Greek had three pairs of stops that English does not pair the same way. Today's lesson covers two of them in passing — θ, and one half of the κ-pair. The full set comes in 1.2.</p>
-
-      <div class="pair-table">
-        <div class="pair-head"></div>
-        <div class="pair-head">Unaspirated</div>
-        <div class="pair-head">Aspirated</div>
-        <div class="pair-row first">
-          <div class="pair-cell lbl">Labial</div>
-          <div class="pair-cell un"><span class="gl">π</span><span class="ex">like the p in <b>spin</b></span></div>
-          <div class="pair-cell asp"><span class="gl">φ</span><span class="ex">like the p in <b>pin</b></span></div>
-        </div>
-        <div class="pair-row">
-          <div class="pair-cell lbl">Dental</div>
-          <div class="pair-cell un"><span class="gl">τ</span><span class="ex">like the t in <b>stop</b></span></div>
-          <div class="pair-cell asp"><span class="gl">θ</span><span class="ex">like the t in <b>top</b></span></div>
-        </div>
-        <div class="pair-row">
-          <div class="pair-cell lbl">Velar</div>
-          <div class="pair-cell un"><span class="gl">κ</span><span class="ex">like the k in <b>skin</b></span></div>
-          <div class="pair-cell asp"><span class="gl">χ</span><span class="ex">like the k in <b>kite</b></span></div>
-        </div>
-      </div>
-
-      <div class="paper-test">
-        <div class="icon">❦</div>
-        <p>Hold a slip of paper an inch from your mouth. Say <em>spin</em> — the paper stays still. Say <em>pin</em> — the paper moves. That puff of air is the aspiration; that is what φ, θ, χ carry.</p>
-      </div>
-
-      <div class="prose">
-        <p>Do not let the modern English transliterations — <em>th</em>, <em>ph</em>, <em>ch</em> — mislead you. They reflect what these letters became in later Greek and in English borrowings (theology, philosophy, chrome), not what they sounded like in Plato's mouth.</p>
-      </div>
+    <section id="step-${esc(step.id)}" class="step-block">
+      <div class="step-eye"><span class="roman">§ ${esc(step.roman)}.</span><span class="label">${esc(step.label)}</span></div>
+      <h2 class="step-h">${esc(heading)}</h2>
+      ${body ? `<div class="prose">${body}</div>` : ''}
     </section>
   `;
 }
 
-function stepListen() {
+// Truly generic fallback for any unrecognised section kind.
+function stepGenericProse(step) {
+  return stepProse(step);
+}
+
+function stepListen(step) {
+  const s = step && step.section;
+  // Find the letter_grid step (if any) so we can describe the range
+  const lg = (state.lesson?.sections || []).find((x) => x.kind === 'letter_grid');
+  const letters = (lg && lg.letters) || [];
+  const first = letters[0]?.upper || '';
+  const last = letters[letters.length - 1]?.upper || '';
+  const langDisplay = (LANG_DISPLAY_NAME[LANG] || LANG);
+  const range = (first && last) ? `${first}–${last}` : 'each letter';
+  const instructions = s && s.instructions
+    ? s.instructions
+    : `Three passes through ${range}. Click a pass to play it; click again to stop. Say each letter aloud after the recording.`;
+  const heading = (s && s.heading && s.heading !== 'Content')
+    ? s.heading
+    : 'Each letter, three ways';
   return `
-    <section id="step-listen" class="step-block">
-      <div class="step-eye"><span class="roman">§ iv.</span><span class="label">Listening drill</span></div>
-      <h2 class="step-h">Each letter, three ways</h2>
-      <p class="step-lead">Three passes through Α–Μ. Click a pass to play it; click again to stop. Say each letter aloud after the recording.</p>
+    <section id="step-${esc(step.id)}" class="step-block">
+      <div class="step-eye"><span class="roman">§ ${esc(step.roman)}.</span><span class="label">${esc(step.label)}</span></div>
+      <h2 class="step-h">${esc(heading)}</h2>
+      <p class="step-lead">${esc(instructions)}</p>
 
       <div class="drill-card">
         <div class="drill-head">
-          <span class="sc">Drill · lesson 1.1 · listening</span>
+          <span class="sc">Drill · lesson ${esc(state.lesson?.id || LESSON_ID)} · listening</span>
           <span class="dur">three real passes</span>
         </div>
         <div class="drill-passes">
@@ -1020,24 +1112,32 @@ function stepListen() {
             <span class="glyph">${PLAY_SVG}</span>
             Play all three
           </button>
-          <span class="meta">Azure Speech · Greek · ≈ 90 sec total</span>
+          <span class="meta">Azure Speech · ${esc(langDisplay)} · ≈ 90 sec total</span>
         </div>
         <div class="drill-honest">
           <span class="sc">Honest about audio</span>
-          The voice is a neural Greek TTS, paced naturally. It is not a perfect Attic — the long/short vowel distinction is imperfect. Use it as a guide, not a gospel; the writing drill below is where the letters actually take.
+          The voice is a neural ${esc(langDisplay)} TTS, paced naturally. Use it as a guide; the writing drill below is where the letters actually take.
         </div>
       </div>
     </section>
   `;
 }
+
+// Display names for languages, used in audio drill metadata + completion text.
+const LANG_DISPLAY_NAME = {
+  greek: 'Greek', latin: 'Latin', french: 'French', german: 'German',
+  italian: 'Italian', oldenglish: 'Old English', middleenglish: 'Middle English',
+  oldnorse: 'Old Norse', welsh: 'Welsh', gaulish: 'Gaulish',
+};
 // Rewritten 2026-05-27 (Jae) — the previous wireListen rebuilt the
 // whole #step-listen section on every audio start/stop/end, which made
 // 'Play all three' destroy its own click handlers mid-chain. New design:
 // no DOM rebuild during playback. Pass-card classes are toggled in place;
 // playText fires its onEnd callback to advance the chain.
-function wireListen(root) {
+function wireListen(root, step) {
   root = root || document;
-  const sec = root.querySelector("#step-listen");
+  const sectionId = `step-${(step && step.id) || 'listen'}`;
+  const sec = root.querySelector(`#${CSS.escape(sectionId)}`);
   if (!sec) return;
   const passes = sec.querySelectorAll(".drill-pass");
   const allBtn = sec.querySelector("#drill-all");
@@ -1106,24 +1206,35 @@ function wireListen(root) {
   paintPasses();
 }
 
-function stepWrite() {
-  const lg = (state.lesson?.sections || []).find((s) => s.kind === "letter_grid");
-  const trace = (lg?.letters || []).map((l) => l.upper);
-  const wd = (state.lesson?.sections || []).find((s) => s.kind === "writing_drill");
+function stepWrite(step) {
+  const wd = step && step.section;
+  // Trace letters: prefer wd.trace_letters or wd.letters if present, else
+  // pull from the letter_grid section.
+  let trace = [];
+  if (Array.isArray(wd?.trace_letters) && wd.trace_letters.length) {
+    trace = wd.trace_letters.map((x) => typeof x === 'string' ? x : (x.upper || x.letter || ''));
+  } else if (Array.isArray(wd?.letters) && wd.letters.length) {
+    trace = wd.letters.map((x) => typeof x === 'string' ? x : (x.upper || x.letter || ''));
+  } else {
+    const lg = (state.lesson?.sections || []).find((s) => s.kind === 'letter_grid');
+    trace = ((lg && lg.letters) || []).map((l) => l.upper);
+  }
+  const heading = (wd?.heading && wd.heading !== 'Content') ? wd.heading : 'By the hand';
+  const instructions = wd?.instructions || `Print or trace each letter ten times in upper case, ten times in lower.`;
   return `
-    <section id="step-write" class="step-block">
-      <div class="step-eye"><span class="roman">§ v.</span><span class="label">Writing drill</span></div>
-      <h2 class="step-h">By the hand</h2>
-      <p class="step-lead">${esc(wd?.instructions || "Print or trace each letter ten times in upper case, ten times in lower. Greek lower case is essentially Latin handwriting with a few new shapes.")}</p>
+    <section id="step-${esc(step.id)}" class="step-block">
+      <div class="step-eye"><span class="roman">§ ${esc(step.roman)}.</span><span class="label">${esc(step.label)}</span></div>
+      <h2 class="step-h">${esc(heading)}</h2>
+      <p class="step-lead">${esc(instructions)}</p>
 
       <div class="write-card">
         <div class="write-head">
-          <span class="sc">Trace sheet · ${trace.length} letters · upper case</span>
+          <span class="sc">Trace sheet · ${trace.length} letter${trace.length === 1 ? '' : 's'} · upper case</span>
           <span style="font-family:var(--body);font-style:italic;font-size:13px;color:var(--ink-3)">printable</span>
         </div>
-        <div class="trace-area">
+        ${trace.length ? `<div class="trace-area">
           ${trace.map((g) => `<div class="trace-cell"><span class="ghost">${esc(g)}</span></div>`).join("")}
-        </div>
+        </div>` : ''}
         <div class="download-row">
           ${wd?.downloadable_pdf
             ? `<a class="play-pill" href="${esc(wd.downloadable_pdf)}" target="_blank" style="text-decoration:none">
@@ -1131,9 +1242,6 @@ function stepWrite() {
                  Download tracing sheet
                </a>`
             : `<span style="font-family:var(--body);font-style:italic;font-size:13px;color:var(--ink-3)">A printable tracing sheet will live here once we ship it.</span>`}
-          <span style="font-family:var(--body);font-style:italic;font-size:13.5px;color:var(--ink-3)">
-            Pay particular attention to the closed loop of θ versus the open arc of σ.
-          </span>
         </div>
       </div>
 
@@ -1146,60 +1254,61 @@ function stepWrite() {
 }
 
 function buildCheckQueue() {
+  // Build language-agnostic self-check queue. Prose questions from the
+  // lesson JSON come first (always relevant). Letter-recognition prompts
+  // are sampled from whatever letters this lesson actually teaches — no
+  // hardcoded Greek picks.
   const lg = (state.lesson?.sections || []).find((s) => s.kind === "letter_grid");
   const sc = (state.lesson?.sections || []).find((s) => s.kind === "self_check");
   const letters = lg?.letters || [];
 
-  // 4 letter-recognition prompts (upper)
-  const upperPicks = ["Θ","Η","Γ","Ζ"];
-  const upperQs = upperPicks.map((g) => {
-    const m = letters.find((l) => l.upper === g);
-    return m && {
-      kind: "letter",
-      glyph: g, italic: false,
-      answer: `<b>${m.name}</b> — ${m.note || ""}`,
-      tts: `${m.upper} ${m.lower} — ${m.name}`,
-    };
-  }).filter(Boolean);
-  // 2 lowercase letter prompts (visual variation)
-  const lowerPicks = ["δ","μ"];
-  const lowerQs = lowerPicks.map((g) => {
-    const m = letters.find((l) => l.lower === g);
-    return m && {
-      kind: "letter", glyph: g, italic: true,
-      answer: `<b>${m.name}</b>.`,
-      tts: `${m.upper} ${m.lower} — ${m.name}`,
-    };
-  }).filter(Boolean);
-  // 2 transliteration prompts (NEW kind — sound back to letter)
-  const trQs = [
-    { kind: "transliterate", tl: "th", answer: "<b>θ — theta</b>. Aspirated dental; <em>not</em> the English th in <em>thin</em>." },
-    { kind: "transliterate", tl: "zd", answer: "<b>ζ — zeta</b>. A true cluster, like the sd in <em>wisdom</em>." },
-  ];
-  // Lesson's prose questions
+  // Prose questions from lesson JSON (always shown if present)
   const proseQs = (sc?.items || []).map((it) => ({
     kind: "question", text: it.prompt, answer: `<b>${esc(it.answer)}</b>`,
   }));
-  return upperQs.concat(lowerQs).concat(trQs).concat(proseQs);
+
+  // Letter-recognition prompts: sample up to 6 letters from this lesson.
+  // Strategy: pick letters at evenly-spaced indices so we cover the range.
+  const letterQs = [];
+  if (letters.length) {
+    const want = Math.min(6, letters.length);
+    const stride = Math.max(1, Math.floor(letters.length / want));
+    for (let i = 0, taken = 0; i < letters.length && taken < want; i += stride, taken++) {
+      const m = letters[i];
+      // Alternate upper / lower glyph for visual variety
+      const useLower = (taken % 2 === 1) && m.lower;
+      letterQs.push({
+        kind: 'letter',
+        glyph: useLower ? m.lower : m.upper,
+        italic: !!useLower,
+        answer: `<b>${esc(m.name || '')}</b>${m.note ? ` — ${m.note}` : '.'}`,
+        tts: `${m.upper} ${m.lower} — ${m.name}`,
+      });
+    }
+  }
+
+  return letterQs.concat(proseQs);
 }
 
-function stepCheck() {
+function stepCheck(step) {
   if (!state.selfCheck.queue) state.selfCheck.queue = buildCheckQueue();
   const queue = state.selfCheck.queue;
   const total = queue.length;
+  const sectionId = `step-${step.id}`;
+  state._checkStepId = step.id;  // remember which step is the self-check
   if (state.selfCheck.done) {
     const pct = total ? Math.round((state.selfCheck.got / total) * 100) : 0;
     const pass = pct >= 70;
     return `
-      <section id="step-check" class="step-block">
-        <div class="step-eye"><span class="roman">§ vi.</span><span class="label">Self-check · result</span></div>
+      <section id="${esc(sectionId)}" class="step-block">
+        <div class="step-eye"><span class="roman">§ ${esc(step.roman)}.</span><span class="label">Self-check · result</span></div>
         <h2 class="step-h">Without looking back</h2>
         <div class="check-summary">
           <div>
             <h4>${pass ? "A clean pass." : "Worth one more pass."}</h4>
             <p>${state.selfCheck.got} of ${total} on the first run. ${pass
-              ? "You have these letters by sight and ear. The next lesson is yours."
-              : "Go back to § ii and let each letter sit a beat longer; then run the check again — there is no rush."}</p>
+              ? "You have this. The next lesson is yours."
+              : "Go back to the earlier steps and let the material sit a beat longer; then run the check again — there is no rush."}</p>
           </div>
           <div class="score">${pct}<span style="font-size:20px;color:var(--ink-3)">%</span></div>
         </div>
@@ -1211,10 +1320,20 @@ function stepCheck() {
   }
   const i = state.selfCheck.i;
   const q = queue[i];
-  if (!q) return `<section id="step-check" class="step-block"><p class="step-lead">No self-check defined.</p></section>`;
+  if (!q) {
+    return `<section id="${esc(sectionId)}" class="step-block">
+      <div class="step-eye"><span class="roman">§ ${esc(step.roman)}.</span><span class="label">Self-check</span></div>
+      <p class="step-lead"><em>Self-check questions for this lesson are being prepared.</em></p>
+    </section>`;
+  }
+  // Per-question framing text (language-agnostic)
+  const askText =
+    q.kind === 'letter'        ? 'What letter is this? Say its name aloud.' :
+    q.kind === 'transliterate' ? 'Which letter has this transliteration?' :
+                                 'Say it aloud, then check yourself.';
   return `
-    <section id="step-check" class="step-block">
-      <div class="step-eye"><span class="roman">§ vi.</span><span class="label">Self-check</span></div>
+    <section id="${esc(sectionId)}" class="step-block">
+      <div class="step-eye"><span class="roman">§ ${esc(step.roman)}.</span><span class="label">Self-check</span></div>
       <h2 class="step-h">Without looking back</h2>
       <p class="step-lead">Identify each prompt — say it aloud. Reveal the answer, then mark yourself honestly. No score is sent anywhere.</p>
 
@@ -1234,11 +1353,7 @@ function stepCheck() {
             : q.kind === 'transliterate'
             ? `<div class="tl">${esc(q.tl)}</div>`
             : `<div class="text">${esc(q.text)}</div>`}
-          <div class="ask">${
-            q.kind === 'letter'      ? 'What letter is this? Say its name aloud.' :
-            q.kind === 'transliterate' ? 'Which Greek letter has this English transliteration?' :
-                                       'Say it aloud, then check yourself.'
-          }</div>
+          <div class="ask">${askText}</div>
           ${q.tts ? `<button class="play-pill" type="button" data-tts="${esc(q.tts)}">
             <span class="glyph">${PLAY_SVG}</span>
             Hear it
@@ -1255,8 +1370,9 @@ function stepCheck() {
     </section>
   `;
 }
-function wireCheck(root) {
-  const sec = root.querySelector("#step-check");
+function wireCheck(root, step) {
+  const sectionId = `step-${(step && step.id) || state._checkStepId || 'check'}`;
+  const sec = (root || document).querySelector('#' + CSS.escape(sectionId));
   if (!sec) return;
   const reveal = sec.querySelector("#check-reveal");
   if (reveal) reveal.addEventListener("click", () => { state.selfCheck.revealed = true; repaintCheck(); });
@@ -1273,9 +1389,15 @@ function wireCheck(root) {
   if (tts) tts.addEventListener("click", () => playText(tts, tts.dataset.tts));
 }
 function repaintCheck() {
-  const sec = document.getElementById("step-check");
-  if (sec) sec.outerHTML = stepCheck();
-  wireCheck(document);
+  // The self-check step's id is whatever buildStepsFromLesson assigned.
+  const stepId = state._checkStepId;
+  if (!stepId) return;
+  const step = STEPS.find((s) => s.id === stepId);
+  const sec = document.getElementById(`step-${stepId}`);
+  if (sec && step) {
+    sec.outerHTML = stepCheck(step);
+    wireCheck(document, step);
+  }
 }
 function grade(right) {
   const total = (state.selfCheck.queue || []).length;
@@ -1286,19 +1408,42 @@ function grade(right) {
   repaintCheck();
 }
 
-function stepReading() {
-  const rp = (state.lesson?.sections || []).find((s) => s.kind === "reading_preview");
-  const words = rp?.words || [];
+// Returns the word text for a reading_preview row. The field name varies
+// by language: greek.greek, latin.latin, french.french, etc. Falls back
+// to .word / .text / first scalar field.
+function wordText(w) {
+  if (!w) return '';
+  if (typeof w[LANG] === 'string') return w[LANG];
+  if (typeof w.word === 'string') return w.word;
+  if (typeof w.text === 'string') return w.text;
+  // Last resort: any scalar field that isn't a known metadata field
+  for (const k of Object.keys(w)) {
+    if (['transliteration','gloss','audio'].includes(k)) continue;
+    if (typeof w[k] === 'string') return w[k];
+  }
+  return '';
+}
+
+function stepReading(step) {
+  const rp = step && step.section;
+  const words = (rp && rp.words) || [];
+  const langDisplay = LANG_DISPLAY_NAME[LANG] || LANG;
+  const heading = (rp && rp.heading && rp.heading !== 'Content')
+    ? rp.heading
+    : 'You can already read these';
+  const instructions = (rp && rp.instructions)
+    ? rp.instructions
+    : 'Every letter in each word is one you know. Try each one aloud first — then play the recording to check yourself.';
   return `
-    <section id="step-reading" class="step-block">
-      <div class="step-eye"><span class="roman">§ vii.</span><span class="label">First words in Greek</span></div>
-      <h2 class="step-h">You can already read these</h2>
-      <p class="step-lead">${esc(rp?.instructions || "Every letter in each word is one you know. Try each one aloud first — then play the recording to check yourself.")}</p>
+    <section id="step-${esc(step.id)}" class="step-block">
+      <div class="step-eye"><span class="roman">§ ${esc(step.roman)}.</span><span class="label">${esc(step.label)}</span></div>
+      <h2 class="step-h">${esc(heading)}</h2>
+      <p class="step-lead">${esc(instructions)}</p>
 
       <div class="reading-card">
         ${words.map((w, i) => `
           <div class="word-row${state.readingShown.has(i) ? " shown" : ""}${state.readingRead.has(i) ? " read" : ""}" data-idx="${i}">
-            <div class="gr">${esc(w.greek || "")}</div>
+            <div class="gr">${esc(wordText(w))}</div>
             <div class="tl reveal">${esc(w.transliteration || "")}</div>
             <div class="gloss reveal"><em>— ${esc(w.gloss || "")}</em></div>
             <div style="display:flex;gap:8px;align-items:center">
@@ -1312,30 +1457,27 @@ function stepReading() {
         `).join("")}
         <div class="reading-foot">
           <span><b>${state.readingRead.size}</b> of <b>${words.length}</b> read aloud</span>
-          <span>Audio + gloss <em>·</em> recorded in restored Attic</span>
+          <span>Audio + gloss · ${esc(langDisplay)}</span>
         </div>
-      </div>
-
-      <div class="marginalia">
-        <span class="sc">What's coming</span>
-        Lesson 1.2 brings Ν through Ω — the second half of the alphabet, including the other two aspirated stops (Φ, Χ) and the long vowels Υ and Ω. After 1.2 you will be able to read <em>any</em> printed Greek text aloud, even if you do not yet know what it means.
       </div>
     </section>
   `;
 }
-function wireReading(root) {
-  const rp = (state.lesson?.sections || []).find((s) => s.kind === "reading_preview");
-  const words = rp?.words || [];
-  root.querySelectorAll("#step-reading [data-toggle]").forEach((b) => {
+function wireReading(root, step) {
+  const rp = step && step.section;
+  const words = (rp && rp.words) || [];
+  const sectionId = `step-${(step && step.id) || 'reading'}`;
+  const selector = `#${CSS.escape(sectionId)}`;
+  (root || document).querySelectorAll(`${selector} [data-toggle]`).forEach((b) => {
     b.addEventListener("click", () => {
       const i = +b.dataset.toggle;
       if (state.readingShown.has(i)) state.readingShown.delete(i); else state.readingShown.add(i);
-      const sec = document.getElementById("step-reading");
-      if (sec) sec.outerHTML = stepReading();
-      wireReading(document);
+      const sec = document.getElementById(sectionId);
+      if (sec) sec.outerHTML = stepReading(step);
+      wireReading(document, step);
     });
   });
-  root.querySelectorAll("#step-reading [data-play]").forEach((b) => {
+  (root || document).querySelectorAll(`${selector} [data-play]`).forEach((b) => {
     b.addEventListener("click", () => {
       const i = +b.dataset.play;
       const w = words[i]; if (!w) return;
@@ -1344,13 +1486,28 @@ function wireReading(root) {
       // Patch row DOM (don't full re-render — we don't want to interrupt audio)
       const row = b.closest(".word-row");
       if (row) { row.classList.add("read"); row.classList.add("shown"); }
-      playText(b, w.greek || "");
+      playText(b, wordText(w));
     });
   });
 }
 
-function stepDone() {
-  const nl = (state.lesson?.sections || []).find((s) => s.kind === "next_lesson");
+// Per-language ceremony tagline. Each is 'a fair beginning' in its language
+// of study. For languages without a clean idiomatic phrase, falls to English.
+const CEREMONY_TAGLINE = {
+  greek:         { original: 'καλὴ ἀρχή', english: 'a fair beginning' },
+  latin:         { original: 'pulchrum initīum',  english: 'a fair beginning' },
+  french:        { original: 'un beau commencement', english: 'a fair beginning' },
+  german:        { original: 'ein guter Anfang',   english: 'a good beginning' },
+  italian:       { original: 'un buon principio',  english: 'a good beginning' },
+  oldenglish:    { original: 'gōd angīn',          english: 'a good beginning' },
+  middleenglish: { original: 'a fair beginning',   english: 'in the manner of Chaucer' },
+  oldnorse:      { original: 'góðr upphaf',         english: 'a good beginning' },
+  welsh:         { original: 'dechrau da',         english: 'a good beginning' },
+  gaulish:       { original: 'matus kīnos',        english: 'good beginning' },
+};
+
+function stepDone(step) {
+  const nl = step && step.section; // may be null if lesson has no next_lesson
   const curIdx = STAGE_LESSONS.findIndex((x) => x.id === LESSON_ID);
   const stageTotal = STAGE_LESSONS.length || 1;
   const minutes = state.lesson?.estimated_minutes || 45;
@@ -1366,11 +1523,12 @@ function stepDone() {
   const nextHref  = NEXT_LESSON ? `${BASE}/${LANG}/curriculum/${esc(NEXT_LESSON.id)}` : `${BASE}/${LANG}/curriculum`;
   const nextHead  = NEXT_LESSON ? `Lesson ${NEXT_LESSON.id} — ${NEXT_LESSON.title}` : "End of this stage";
   const nextBody  = nl?.body || (NEXT_LESSON ? "Continue to the next lesson when you're ready." : "Take a moment. The next stage begins from the curriculum page.");
+  const tag = CEREMONY_TAGLINE[LANG] || { original: '', english: 'a fair beginning' };
   return `
-    <section id="step-done" class="step-block ceremony">
+    <section id="step-${esc(step.id)}" class="step-block ceremony">
       <div class="seal-wrap"><div class="seal">K</div></div>
       <h2>Lesson ${esc(LESSON_ID)} complete</h2>
-      <div class="greek">καλὴ ἀρχή — a fair beginning.</div>
+      ${tag.original ? `<div class="greek">${esc(tag.original)} — ${esc(tag.english)}.</div>` : `<div class="greek">${esc(tag.english)}.</div>`}
       <p class="blurb">Saved to your record. ${minutes} minutes, credited to ${STAGE_INFO.name ? `Stage ${STAGE_INFO.roman || STAGE_INFO.number}` : "this stage"}.</p>
 
       <div class="stage-meter">
@@ -1384,7 +1542,7 @@ function stepDone() {
       <div class="next-up">
         <div>
           <div class="sc l">Up next</div>
-          <h4>${esc(nl?.heading || nextHead)}</h4>
+          <h4>${esc(nl?.heading && nl.heading !== 'Up next' ? nl.heading : nextHead)}</h4>
           <p>${esc(nextBody)}</p>
         </div>
         <button class="btn-next-lesson" type="button" id="go-next" data-href="${nextHref}">${nextLabel}</button>
@@ -1392,8 +1550,9 @@ function stepDone() {
     </section>
   `;
 }
-function wireDone(root) {
-  const b = root.querySelector("#step-done #go-next");
+function wireDone(root, step) {
+  const sectionId = `step-${(step && step.id) || 'done'}`;
+  const b = (root || document).querySelector(`#${CSS.escape(sectionId)} #go-next`);
   if (b) b.addEventListener("click", () => { window.location.href = b.dataset.href || `${BASE}/${LANG}/curriculum`; });
 }
 
@@ -1536,6 +1695,19 @@ async function boot() {
     STAGE_LESSONS = [{ id: LESSON_ID, title: state.lesson?.title || "Lesson" }];
     STAGE_INFO = { number: 1, name: "", roman: "I" };
   }
+
+  // Build the dynamic STEPS array from the lesson's actual sections, so the
+  // page shape adapts to whatever this lesson teaches — not a hardcoded
+  // Greek-shaped 8-step sequence.
+  STEPS = buildStepsFromLesson(state.lesson);
+  if (!STEPS.length) {
+    // No sections at all — still render an orientation + completion shell.
+    STEPS = [
+      { id: 'orient', kind: 'orient', label: 'Orientation', section: null, roman: 'i' },
+      { id: 'done',   kind: 'done',   label: 'Complete',    section: null, roman: 'ii' },
+    ];
+  }
+
   renderRail();
   renderHeader();
   renderAll();
