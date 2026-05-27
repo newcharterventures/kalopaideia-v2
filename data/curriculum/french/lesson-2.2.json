@@ -1,0 +1,71 @@
+{
+  "id": "2.2",
+  "stage": 2,
+  "title": "The Indefinite and Partitive Articles",
+  "subtitle": "un, une, des. du, de la, de l', des. The partitive as the marker of unspecified quantity: du pain, de l'eau.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Recognize the indefinite articles: un (masculine), une (feminine), des (plural).",
+    "Understand the partitive articles: du, de la, de l', des.",
+    "Apply the partitive to express unspecified quantity.",
+    "Distinguish between definite, indefinite, and partitive articles."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The indefinite article",
+      "body": "The indefinite article corresponds to 'a' or 'an' in English. French has three forms: un (masculine singular), une (feminine singular), and des (plural).\n\n- un roi (a king)\n- une reine (a queen)\n- des livres (some books, books)\n\nThe plural 'des' is often translated 'some' in English, but it is the standard indefinite article for plural nouns. 'J'ai des livres' means 'I have books', not 'I have some books' in the partitive sense."
+    },
+    {
+      "kind": "prose",
+      "heading": "The partitive article",
+      "body": "The partitive article expresses an unspecified quantity of something. It corresponds to 'some' or 'any' in English, but is obligatory in French where English can omit it.\n\nThe forms are:\n- du (masculine singular): du pain (some bread)\n- de la (feminine singular): de la viande (some meat)\n- de l' (before vowels): de l'eau (some water)\n- des (plural): des pommes (some apples)\n\nThe partitive is used with mass nouns (bread, water, wine) and with plural count nouns when the quantity is unspecified.\n\nPractice from Molière's Le Bourgeois Gentilhomme:\n\n  Donnez-moi du vin.\n  (Give me some wine.)\n\nThe partitive 'du' is required. You cannot say 'Donnez-moi vin.'"
+    },
+    {
+      "kind": "prose",
+      "heading": "When the partitive becomes de",
+      "body": "After a negative, the partitive and indefinite articles become 'de' (or 'd'' before vowels):\n\n- J'ai du pain. → Je n'ai pas de pain.\n- J'ai une voiture. → Je n'ai pas de voiture.\n- J'ai des amis. → Je n'ai pas d'amis.\n\nThis is a fixed rule."
+    },
+    {
+      "kind": "prose",
+      "heading": "Definite versus indefinite versus partitive",
+      "body": "Definite (le, la, les): a specific, known thing.\n  Le pain est bon. (The bread is good — a specific loaf.)\n\nIndefinite (un, une, des): a non-specific, countable thing.\n  J'ai un livre. (I have a book — one, not a specific one.)\n\nPartitive (du, de la, des): an unspecified quantity.\n  J'ai du pain. (I have some bread — not a whole loaf, just an amount.)"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer without looking back.",
+      "items": [
+        { "prompt": "What are the three forms of the indefinite article?", "answer": "un, une, des" },
+        { "prompt": "What is the masculine singular partitive?", "answer": "du" },
+        { "prompt": "What is the feminine singular partitive?", "answer": "de la" },
+        { "prompt": "What happens to 'du pain' in the negative?", "answer": "It becomes 'de pain': Je n'ai pas de pain." },
+        { "prompt": "Translate: 'I have some water.'", "answer": "J'ai de l'eau." },
+        { "prompt": "Translate: 'I have a book.'", "answer": "J'ai un livre." },
+        { "prompt": "What is the difference between 'le pain' and 'du pain'?", "answer": "'le pain' is definite (the specific bread); 'du pain' is partitive (some amount of bread)." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Phrases to practice",
+      "instructions": "Read each aloud.",
+      "words": [
+        { "french": "un roi", "transliteration": null, "gloss": "a king", "audio": "/paideia/audio/french/words/un-roi.mp3" },
+        { "french": "une maison", "transliteration": null, "gloss": "a house", "audio": "/paideia/audio/french/words/une-maison.mp3" },
+        { "french": "du pain", "transliteration": null, "gloss": "some bread", "audio": "/paideia/audio/french/words/du-pain.mp3" },
+        { "french": "de la viande", "transliteration": null, "gloss": "some meat", "audio": "/paideia/audio/french/words/de-la-viande.mp3" },
+        { "french": "de l'eau", "transliteration": null, "gloss": "some water", "audio": "/paideia/audio/french/words/de-l-eau.mp3" },
+        { "french": "des livres", "transliteration": null, "gloss": "some books", "audio": "/paideia/audio/french/words/des-livres.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.3 covers nouns in detail: gender and number. How to form plurals, and the irregular patterns to watch."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can distinguish definite, indefinite, and partitive articles and use each correctly in ten sentences.",
+    "credit_minutes": 50
+  }
+}

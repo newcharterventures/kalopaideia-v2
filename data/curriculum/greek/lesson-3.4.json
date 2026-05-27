@@ -1,0 +1,67 @@
+{
+  "id": "3.4",
+  "stage": 3,
+  "title": "The Future Indicative",
+  "subtitle": "λύσω — action that will happen.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Conjugate any regular ω-verb in the future indicative active and middle.",
+    "Recognize the sigma as the marker of the future tense.",
+    "Understand the contracted future of liquid verbs (μενῶ, ἀρῶ).",
+    "Translate future forms correctly in context."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The future tense",
+      "body": "The future expresses action that will happen. λύσω means 'I will loose'. The future tense is formed by inserting a sigma (σ) between the verb stem and the endings. The endings are the same as the present, but with the sigma infix.\n\nThe future has no augment. The augment marks past time; the future is not past.\n\nThe future middle is common. λύσομαι means 'I will free myself' or 'I will free (for myself)'. The future passive has separate forms (λυθήσομαι), which you will learn in Stage 4."
+    },
+    {
+      "kind": "prose",
+      "heading": "The future indicative active: λύσω",
+      "body": "  singular\n  1st   λύσω        I will loose\n  2nd   λύσεις      you will loose\n  3rd   λύσει       he/she/it will loose\n\n  plural\n  1st   λύσομεν     we will loose\n  2nd   λύσετε      you (plural) will loose\n  3rd   λύσουσι(ν)  they will loose\n\nThe sigma is the marker. The thematic vowel is ο/ε as usual."
+    },
+    {
+      "kind": "prose",
+      "heading": "The future indicative middle: λύσομαι",
+      "body": "  singular\n  1st   λύσομαι     I will free myself\n  2nd   λύσῃ        you will free yourself\n  3rd   λύσεται     he/she/it will free himself/herself/itself\n\n  plural\n  1st   λυσόμεθα    we will free ourselves\n  2nd   λύσεσθε     you (plural) will free yourselves\n  3rd   λύσονται    they will free themselves"
+    },
+    {
+      "kind": "prose",
+      "heading": "The contracted future: liquid verbs",
+      "body": "Verbs whose stems end in λ, ρ, μ, or ν (the liquids) do not add σ directly. Instead, the σ drops and the vowel contracts.\n\nμένω (I remain) → μενέω → μενῶ (I will remain)\nαἴρω (I lift) → ἀρέω → ἀρῶ (I will lift)\n\nThe contraction follows predictable rules. For now, just recognize that liquid-stem verbs have contracted futures without the visible σ."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Conjugate or answer.",
+      "items": [
+        { "prompt": "First person singular future active of λύω", "answer": "λύσω" },
+        { "prompt": "Third person singular future active of λύω", "answer": "λύσει" },
+        { "prompt": "First person singular future middle of λύω", "answer": "λύσομαι" },
+        { "prompt": "What is the marker of the future tense?", "answer": "The sigma (σ) between the stem and the ending." },
+        { "prompt": "Do liquid verbs have a visible σ in the future?", "answer": "No, the σ drops and the vowel contracts." },
+        { "prompt": "Translate: λύσω τοὺς αἰχμαλώτους.", "answer": "I will free the prisoners." },
+        { "prompt": "Translate: λύσεται.", "answer": "He/she/it will free himself/herself/itself." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Future in sentences",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "λύσω τοὺς αἰχμαλώτους.", "transliteration": "lýsō toùs aichmalṓtous.", "gloss": "I will free the prisoners.", "audio": "/paideia/audio/greek/sentences/lyso-aichmalotous.mp3" },
+        { "greek": "μενοῦμεν ἐν τῇ πόλει.", "transliteration": "menoûmen en têi pólei.", "gloss": "We will remain in the city.", "audio": "/paideia/audio/greek/sentences/menoumen-polei.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 3.5 introduces the first aorist. The aorist is the basic past tense for completed action. ἔλυσα means 'I loosed' (simple past). The aorist uses the augment ἐ- and the sigma infix, with a new set of endings."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can conjugate the future active and middle of any ω-verb from memory and can translate future forms correctly.",
+    "credit_minutes": 50
+  }
+}

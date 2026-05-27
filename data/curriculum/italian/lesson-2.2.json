@@ -1,0 +1,70 @@
+{
+  "id": "2.2",
+  "stage": 2,
+  "title": "The Indefinite Article",
+  "subtitle": "un, uno, una, un' — and the partitive article dei, degli, delle.",
+  "estimated_minutes": 40,
+  "objectives": [
+    "Learn the four forms of the indefinite article.",
+    "Understand that Italian has no plural indefinite article; some is expressed by the partitive.",
+    "Apply the same initial-sound rules as the definite article."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Four forms, same rule",
+      "body": "The indefinite article (a, an) has four forms: un (masculine before most consonants and vowels), uno (masculine before s+consonant, z, gn, ps), una (feminine before consonants), un' (feminine before vowels). The rule is the same as for il/lo/la, but the forms are different. un libro (a book), uno studente (a student), una casa (a house), un'amica (a friend, feminine). There is no plural indefinite article in Italian. To express some books, some students, Italian uses the partitive article: dei libri, degli studenti, delle case."
+    },
+    {
+      "kind": "paradigm",
+      "heading": "The indefinite article",
+      "table": {
+        "headers": ["", "Masculine", "Feminine"],
+        "rows": [
+          ["Singular (before most consonants)", "un libro", "una casa"],
+          ["Singular (before s+cons, z, gn, etc.)", "uno studente", "—"],
+          ["Singular (before vowel)", "un uomo", "un'amica"],
+          ["Plural (partitive)", "dei libri, degli studenti", "delle case, delle amiche"]
+        ]
+      }
+    },
+    {
+      "kind": "prose",
+      "heading": "From Collodi",
+      "body": "Carlo Collodi, Le avventure di Pinocchio: C'era una volta un pezzo di legno. una volta (once upon a time): feminine, singular, before a vowel. Modern Italian would use un' before a vowel, but una is used when the following word does not begin with a stressed vowel. un pezzo (a piece): masculine, before p, so un."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover answers; check after.",
+      "items": [
+        { "prompt": "What is the masculine indefinite article before most consonants?", "answer": "un" },
+        { "prompt": "What is the masculine indefinite article before s+consonant?", "answer": "uno" },
+        { "prompt": "What is the feminine indefinite article before a consonant?", "answer": "una" },
+        { "prompt": "What is the feminine indefinite article before a vowel?", "answer": "un'" },
+        { "prompt": "How do you say some books in Italian?", "answer": "dei libri (partitive article)" },
+        { "prompt": "Form: a book, a student, a house, a friend (f).", "answer": "un libro, uno studente, una casa, un'amica" }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Words with indefinite articles",
+      "instructions": "Read aloud.",
+      "words": [
+        { "italian": "un libro", "transliteration": null, "gloss": "a book", "audio": "/paideia/audio/italian/words/un-libro.mp3" },
+        { "italian": "uno studente", "transliteration": null, "gloss": "a student", "audio": "/paideia/audio/italian/words/uno-studente.mp3" },
+        { "italian": "una casa", "transliteration": null, "gloss": "a house", "audio": "/paideia/audio/italian/words/una-casa.mp3" },
+        { "italian": "un'amica", "transliteration": null, "gloss": "a friend (f)", "audio": "/paideia/audio/italian/words/un-amica.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.3: nouns in -o (masculine singular) and their plurals in -i."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can supply the correct indefinite article for any noun.",
+    "credit_minutes": 40
+  }
+}

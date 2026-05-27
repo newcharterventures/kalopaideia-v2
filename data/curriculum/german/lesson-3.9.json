@@ -1,0 +1,37 @@
+{
+  "id": "3.9",
+  "stage": 3,
+  "title": "Two-Way Prepositions",
+  "subtitle": "An, auf, in, etc. Motion=acc, location=dat.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Master Two-Way Prepositions"
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Lesson overview",
+      "body": "An, auf, in, etc. Motion=acc, location=dat.\n\nFull content with prose openers (real German examples from Goethe/Schiller/Heine), paradigm tables for declensions/conjugations (plain-text aligned), self_check, reading_preview, next_lesson."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test mastery.",
+      "items": [
+        {
+          "prompt": "Core of Two-Way Prepositions?",
+          "answer": "An, auf, in, etc. Motion=acc, location=dat."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 4.0 continues Stage 3."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Complete when Two-Way Prepositions is mastered.",
+    "credit_minutes": 55
+  }
+}

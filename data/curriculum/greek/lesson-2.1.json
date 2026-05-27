@@ -1,0 +1,68 @@
+{
+  "id": "2.1",
+  "stage": 2,
+  "title": "The Definite Article",
+  "subtitle": "ὁ, ἡ, τό — the gateway to declension.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Decline the definite article in all three genders, both numbers, all five cases.",
+    "Recognize the article as the most common word in Greek prose.",
+    "Understand that Greek has no indefinite article (no word for 'a' or 'an').",
+    "Observe the pattern that will recur in the first and second declension nouns."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The article",
+      "body": "Greek has a definite article: ὁ, ἡ, τό (the). It has no indefinite article. When you want to say 'a man' in Greek, you just say ἄνθρωπος with no article. When you want to say 'the man', you say ὁ ἄνθρωπος.\n\nThe article agrees with its noun in gender, number, and case. That means the article changes its ending to match the noun. If the noun is masculine singular nominative, the article is ὁ. If the noun is feminine plural genitive, the article is τῶν. The article has twenty-four forms: three genders, two numbers, five cases.\n\nThe article is the most common word in Greek prose. In any paragraph of Plato or Xenophon, you will see it dozens of times. Learn it now, and you have the skeleton for the first and second declension nouns."
+    },
+    {
+      "kind": "prose",
+      "heading": "The twenty-four forms",
+      "body": "Masculine:\n              singular    plural\n  nominative  ὁ           οἱ\n  genitive    τοῦ         τῶν\n  dative      τῷ          τοῖς\n  accusative  τόν         τούς\n  vocative    (none)      (none)\n\nFeminine:\n              singular    plural\n  nominative  ἡ           αἱ\n  genitive    τῆς         τῶν\n  dative      τῇ          ταῖς\n  accusative  τήν         τάς\n  vocative    (none)      (none)\n\nNeuter:\n              singular    plural\n  nominative  τό          τά\n  genitive    τοῦ         τῶν\n  dative      τῷ          τοῖς\n  accusative  τό          τά\n  vocative    (none)      (none)\n\nThe article has no vocative. You do not use the article when addressing someone directly.\n\nNotice the pattern: the genitive plural is τῶν for all three genders. The dative plural masculine and neuter is τοῖς. The endings will recur when you learn the nouns."
+    },
+    {
+      "kind": "prose",
+      "heading": "An example from Xenophon",
+      "body": "Anabasis I.1.1 begins: Δαρείου καὶ Παρυσάτιδος γίγνονται παῖδες δύο. The word order is flexible, but if we render it in the most common order: 'Of Darius and Parysatis are born two sons.' No article on παῖδες because it is indefinite. If Xenophon had written οἱ παῖδες, it would mean 'the sons' — specific, known sons. Greek uses the presence or absence of the article to mark definiteness."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers. Write out the requested forms from memory.",
+      "items": [
+        { "prompt": "Masculine nominative singular", "answer": "ὁ" },
+        { "prompt": "Feminine accusative singular", "answer": "τήν" },
+        { "prompt": "Neuter genitive plural", "answer": "τῶν" },
+        { "prompt": "Masculine dative plural", "answer": "τοῖς" },
+        { "prompt": "Feminine nominative plural", "answer": "αἱ" },
+        { "prompt": "Does Greek have an indefinite article?", "answer": "No. To say 'a man', you just say ἄνθρωπος with no article." },
+        { "prompt": "Does the article have a vocative form?", "answer": "No." },
+        { "prompt": "Which form of the article is the same for masculine and neuter in the genitive singular?", "answer": "τοῦ" },
+        { "prompt": "Which form of the article is the same for all three genders in the genitive plural?", "answer": "τῶν" },
+        { "prompt": "What does the article agree with?", "answer": "The noun — in gender, number, and case." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "The article in sentences",
+      "instructions": "Read these aloud. Each contains the article in a different form.",
+      "words": [
+        { "greek": "ὁ ἄνθρωπος", "transliteration": "ho ánthrōpos", "gloss": "the man (nominative)", "audio": "/paideia/audio/greek/phrases/ho-anthropos.mp3" },
+        { "greek": "τοῦ ἀνθρώπου", "transliteration": "toû anthrṓpoυ", "gloss": "of the man (genitive)", "audio": "/paideia/audio/greek/phrases/tou-anthropou.mp3" },
+        { "greek": "τῷ ἀνθρώπῳ", "transliteration": "tôi anthrṓpōi", "gloss": "to/for the man (dative)", "audio": "/paideia/audio/greek/phrases/toi-anthropoi.mp3" },
+        { "greek": "τὸν ἄνθρωπον", "transliteration": "tòn ánthrōpon", "gloss": "the man (accusative)", "audio": "/paideia/audio/greek/phrases/ton-anthropon.mp3" },
+        { "greek": "οἱ ἄνθρωποι", "transliteration": "hoi ánthrōpoi", "gloss": "the men (nominative plural)", "audio": "/paideia/audio/greek/phrases/hoi-anthropoi.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.2 introduces the second declension masculine nouns: ὁ ἄνθρωπος, ὁ λόγος, ὁ ἵππος. These nouns follow the same pattern as the masculine article. Once you have the article and the second declension, you will be able to read simple noun phrases and to understand the function of the nominative and accusative cases."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can write out all twenty-four forms of the article from memory in under five minutes with no more than two errors.",
+    "credit_minutes": 50
+  }
+}

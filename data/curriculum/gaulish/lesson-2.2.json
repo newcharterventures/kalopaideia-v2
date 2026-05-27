@@ -1,0 +1,69 @@
+{
+  "id": "2.2",
+  "stage": 2,
+  "title": "The Coligny Calendar, Part Two",
+  "subtitle": "Intercalation, INIS, and reading the annotations of SAMONIOS.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Understand how the Coligny Calendar intercalates months to align lunar and solar cycles.",
+    "Translate the intercalary month MID SAMONII.",
+    "Recognize the particle INIS (\"in\", \"entry\") and its function.",
+    "Read the festival annotations for SAMONIOS."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The intercalary problem",
+      "body": "A lunar month is 29.5 days. Twelve lunar months total 354 days. A solar year is 365.25 days. The gap is 11.25 days per year. Without correction, the lunar calendar drifts out of sync with the seasons. After three years, the calendar is a full month off. The Coligny Calendar solves this by intercalating extra months.\n\nThe calendar records two intercalary months: MID SAMONII (\"the good half of Samonios\") and MID GIAMONII (\"the good half of Giamonios\"). These are inserted between the regular months to bring the total closer to five solar years. The system is not perfect, but it is functional."
+    },
+    {
+      "kind": "prose",
+      "heading": "MID SAMONII",
+      "body": "The intercalary month MID SAMONII appears in the calendar as a 30-day month inserted after the second year. The name means \"the good half of Samonios\" — an extra month that duplicates the bright half of SAMONIOS. Here is the structure:\n\nMID SAMONII\nINIS R\nD I MID\nD II MID\nD III ANMID\n[...]\n\nParsing:\nMID SAMONII — \"good half of Samonios\" (genitive, \"of Samonios\")\nINIS R — \"entry\" + R (abbreviation, meaning uncertain; possibly \"return\" or a lunar phase marker)\nD I MID — Day 1, good\nD II MID — Day 2, good\nD III ANMID — Day 3, not-good\n\nThe pattern of MID and ANMID in the intercalary month mirrors the regular month."
+    },
+    {
+      "kind": "prose",
+      "heading": "The particle INIS",
+      "body": "INIS appears throughout the calendar at the start of months and on certain days within months. It means \"in\" or \"entry\". When it marks the first day of a month, it signals the beginning of that month. When it appears mid-month, it may mark the entry into the dark half (the second half of the lunar month, after the full moon). The exact function is debated, but the sense is clear: INIS marks transitions."
+    },
+    {
+      "kind": "prose",
+      "heading": "Festival annotations in SAMONIOS",
+      "body": "The calendar includes brief annotations for certain days. These are ritual or festival markers. In SAMONIOS, we have:\n\nDay 1: TRINVX SAMO SINDIV — \"three-night festival of Samo, today\"\nDay 7: IVOS — \"yew\" or \"Ivos\" (a name or plant?)\nDay 15: [fragmentary text]\nDay 17: [PRIN] LAG SAMO — \"[first?] day of Samo\"?\n\nThese annotations are cryptic. The words are Gaulish, but the referents are lost. We know festivals happened. We do not know what they celebrated."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers; check after.",
+      "items": [
+        { "prompt": "Why does a lunisolar calendar need intercalation?", "answer": "Because twelve lunar months (354 days) are shorter than a solar year (365.25 days). Without intercalation, the calendar drifts out of sync with the seasons." },
+        { "prompt": "What does MID SAMONII mean?", "answer": "\"The good half of Samonios\" — an intercalary month inserted to keep the calendar aligned." },
+        { "prompt": "What does INIS mean?", "answer": "\"In\" or \"entry\" — a particle marking transitions, such as the start of a month or the entry into the dark half." },
+        { "prompt": "How long is the intercalary month MID SAMONII?", "answer": "30 days." },
+        { "prompt": "What is TRINVX SAMO SINDIV?", "answer": "\"Three-night festival of Samo, today\" — a festival at the start of SAMONIOS." },
+        { "prompt": "What does the R in INIS R stand for?", "answer": "Uncertain. Possibly \"return\", a lunar phase marker, or an abbreviation we cannot reconstruct." },
+        { "prompt": "Where in the five-year cycle is MID SAMONII inserted?", "answer": "After the second year." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Intercalary and festival terms",
+      "instructions": "These words appear in the Coligny Calendar annotations. Memorize them.",
+      "words": [
+        { "gaulish": "MID SAMONII", "transliteration": null, "gloss": "good half of Samonios (intercalary month)", "audio": "/paideia/audio/gaulish/calendar/mid-samonii.mp3" },
+        { "gaulish": "INIS", "transliteration": null, "gloss": "in, entry (transition marker)", "audio": "/paideia/audio/gaulish/calendar/inis.mp3" },
+        { "gaulish": "TRINVX", "transliteration": null, "gloss": "three-night (festival lasting three nights)", "audio": "/paideia/audio/gaulish/calendar/trinux.mp3" },
+        { "gaulish": "SINDIV", "transliteration": null, "gloss": "today", "audio": "/paideia/audio/gaulish/calendar/sindiu.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.3 turns to the Larzac Tablet: a 160-word lead curse tablet, the longest connected Gaulish text outside the calendar. We read the opening lines and begin parsing the syntax."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can explain the intercalary system, translate MID SAMONII, and recognize INIS as a transition marker.",
+    "credit_minutes": 60
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "id": "2.1",
+  "stage": 2,
+  "title": "The Three Genders",
+  "subtitle": "Der Mann, die Frau, das Kind — grammatical gender in German.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Recognize the three genders: masculine, feminine, neuter.",
+    "Memorize twenty common nouns with their genders.",
+    "Understand that gender is grammatical, not biological."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Gender is grammar",
+      "body": "German nouns have gender. Every noun is masculine, feminine, or neuter. The gender controls the article (der, die, das), the adjective endings, and the pronoun used to refer to the noun. Gender is not optional. It is not a stylistic choice. It is built into the grammar.\n\nGender is often arbitrary. Der Löffel (spoon) is masculine. Die Gabel (fork) is feminine. Das Messer (knife) is neuter. There is no biological reason. The gender must be memorized with the noun."
+    },
+    {
+      "kind": "prose",
+      "heading": "The three genders and their articles",
+      "body": "Masculine: der Mann (the man), der Vater (the father), der Baum (the tree).\n\nFeminine: die Frau (the woman), die Mutter (the mother), die Blume (the flower).\n\nNeuter: das Kind (the child), das Buch (the book), das Haus (the house).\n\nThe article changes with case. For now, these are the nominative forms — the forms used for the subject of a sentence."
+    },
+    {
+      "kind": "prose",
+      "heading": "Patterns and exceptions",
+      "body": "Some genders follow patterns:\n\n  - Nouns ending in -ung, -heit, -keit, -schaft are feminine: die Zeitung, die Freiheit, die Freundschaft.\n  - Nouns ending in -chen or -lein are neuter (diminutives): das Mädchen, das Fräulein.\n  - Nouns ending in -er (agent nouns) are usually masculine: der Lehrer, der Arbeiter.\n\nBut patterns have exceptions. The safest method: learn each noun with its article. Der Tisch. Die Tür. Das Fenster. Say the article aloud every time."
+    },
+    {
+      "kind": "prose",
+      "heading": "Examples from Goethe",
+      "body": "\"Der Erlkönig\" — the alder king. Masculine.\n\"Die Lorelei\" — the Lorelei (a siren). Feminine (despite being a mythical creature of no fixed gender).\n\"Das Ewig-Weibliche zieht uns hinan.\" — The eternal feminine draws us onward. Neuter adjective used as a noun.\n\nGoethe chose these genders. You do not. Learn them."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer without notes. Memorize these twenty nouns with their genders.",
+      "items": [
+        { "prompt": "What is the gender of Tisch (table)?", "answer": "Masculine. Der Tisch." },
+        { "prompt": "What is the gender of Tür (door)?", "answer": "Feminine. Die Tür." },
+        { "prompt": "What is the gender of Fenster (window)?", "answer": "Neuter. Das Fenster." },
+        { "prompt": "What is the gender of Baum (tree)?", "answer": "Masculine. Der Baum." },
+        { "prompt": "What is the gender of Blume (flower)?", "answer": "Feminine. Die Blume." },
+        { "prompt": "What is the gender of Mädchen (girl)?", "answer": "Neuter. Das Mädchen. (Diminutive suffix -chen is always neuter, even for a person.)" },
+        { "prompt": "Why is das Mädchen neuter, not feminine?", "answer": "The diminutive suffix -chen makes any noun neuter, regardless of biological gender. Grammar overrides biology." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Twenty nouns to memorize with their genders",
+      "instructions": "Read each noun aloud with its article. Repeat ten times. Test yourself tomorrow.",
+      "words": [
+        { "german": "der Mann", "transliteration": null, "gloss": "the man", "audio": "/paideia/audio/german/nouns/der-mann.mp3" },
+        { "german": "die Frau", "transliteration": null, "gloss": "the woman", "audio": "/paideia/audio/german/nouns/die-frau.mp3" },
+        { "german": "das Kind", "transliteration": null, "gloss": "the child", "audio": "/paideia/audio/german/nouns/das-kind.mp3" },
+        { "german": "der Vater", "transliteration": null, "gloss": "the father", "audio": "/paideia/audio/german/nouns/der-vater.mp3" },
+        { "german": "die Mutter", "transliteration": null, "gloss": "the mother", "audio": "/paideia/audio/german/nouns/die-mutter.mp3" },
+        { "german": "das Buch", "transliteration": null, "gloss": "the book", "audio": "/paideia/audio/german/nouns/das-buch.mp3" },
+        { "german": "der Tisch", "transliteration": null, "gloss": "the table", "audio": "/paideia/audio/german/nouns/der-tisch.mp3" },
+        { "german": "die Tür", "transliteration": null, "gloss": "the door", "audio": "/paideia/audio/german/nouns/die-tuer.mp3" },
+        { "german": "das Fenster", "transliteration": null, "gloss": "the window", "audio": "/paideia/audio/german/nouns/das-fenster.mp3" },
+        { "german": "der Baum", "transliteration": null, "gloss": "the tree", "audio": "/paideia/audio/german/nouns/der-baum.mp3" },
+        { "german": "die Blume", "transliteration": null, "gloss": "the flower", "audio": "/paideia/audio/german/nouns/die-blume.mp3" },
+        { "german": "das Haus", "transliteration": null, "gloss": "the house", "audio": "/paideia/audio/german/nouns/das-haus.mp3" },
+        { "german": "der Hund", "transliteration": null, "gloss": "the dog", "audio": "/paideia/audio/german/nouns/der-hund.mp3" },
+        { "german": "die Katze", "transliteration": null, "gloss": "the cat", "audio": "/paideia/audio/german/nouns/die-katze.mp3" },
+        { "german": "das Pferd", "transliteration": null, "gloss": "the horse", "audio": "/paideia/audio/german/nouns/das-pferd.mp3" },
+        { "german": "der Vogel", "transliteration": null, "gloss": "the bird", "audio": "/paideia/audio/german/nouns/der-vogel.mp3" },
+        { "german": "die Zeitung", "transliteration": null, "gloss": "the newspaper", "audio": "/paideia/audio/german/nouns/die-zeitung.mp3" },
+        { "german": "das Mädchen", "transliteration": null, "gloss": "the girl", "audio": "/paideia/audio/german/nouns/das-maedchen.mp3" },
+        { "german": "der Wein", "transliteration": null, "gloss": "the wine", "audio": "/paideia/audio/german/nouns/der-wein.mp3" },
+        { "german": "die Musik", "transliteration": null, "gloss": "the music", "audio": "/paideia/audio/german/nouns/die-musik.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.2 covers the definite article in all four cases. You will meet the sixteen forms of der, die, das that every German sentence depends on."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can recall the gender of all twenty nouns without hesitation.",
+    "credit_minutes": 50
+  }
+}

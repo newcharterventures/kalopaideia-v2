@@ -1,0 +1,66 @@
+{
+  "id": "2.3",
+  "stage": 2,
+  "title": "The Second Declension — Neuter",
+  "subtitle": "τὸ δῶρον, τὸ τέκνον — and the neuter plural rule.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Decline any second-declension neuter noun in all five cases and both numbers.",
+    "Apply the neuter plural rule: neuter plural subjects take singular verbs.",
+    "Recognize that nominative and accusative are always identical in the neuter.",
+    "Parse second-declension neuter nouns on sight."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The neuter",
+      "body": "Neuter nouns of the second declension end in -ον in the nominative singular. They follow the same pattern as the masculine nouns in the genitive and dative, but the nominative and accusative are always identical. This is true in the singular and in the plural.\n\nThe neuter plural nominative and accusative end in -α. This looks like a feminine singular ending, but it is not. τὰ δῶρα is neuter plural: 'the gifts'.\n\nThe neuter plural rule is absolute: a neuter plural subject takes a singular verb. τὰ τέκνα τρέχει means 'the children run', not τρέχουσιν. This rule applies to all neuter nouns in Greek, not just the second declension."
+    },
+    {
+      "kind": "prose",
+      "heading": "The paradigm: τὸ δῶρον (gift)",
+      "body": "              singular        plural\n  nominative  δῶρον           δῶρα\n  genitive    δώρου           δώρων\n  dative      δώρῳ            δώροις\n  accusative  δῶρον           δῶρα\n  vocative    δῶρον           δῶρα\n\nWith the article:\n  nominative  τὸ δῶρον        τὰ δῶρα\n  genitive    τοῦ δώρου       τῶν δώρων\n  dative      τῷ δώρῳ         τοῖς δώροις\n  accusative  τὸ δῶρον        τὰ δῶρα\n  vocative    ὦ δῶρον         ὦ δῶρα\n\nNotice: nominative, accusative, and vocative are identical in both numbers."
+    },
+    {
+      "kind": "prose",
+      "heading": "The neuter plural rule in action",
+      "body": "τὰ τέκνα τρέχει. 'The children run.' (singular verb)\nτὰ δῶρα καλά ἐστιν. 'The gifts are beautiful.' (singular verb ἐστιν)\n\nThis rule feels strange to an English speaker. In English, 'the children run', not 'the children runs'. But in Greek, neuter plural subjects are treated as collective singulars. The rule is universal and never has exceptions."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers. Parse each form or answer each question.",
+      "items": [
+        { "prompt": "δῶρον", "answer": "nominative or accusative singular" },
+        { "prompt": "δώρων", "answer": "genitive plural" },
+        { "prompt": "δώροις", "answer": "dative plural" },
+        { "prompt": "δῶρα", "answer": "nominative or accusative plural" },
+        { "prompt": "What is the neuter plural rule?", "answer": "Neuter plural subjects take singular verbs." },
+        { "prompt": "Are the nominative and accusative ever different in the neuter?", "answer": "No. They are always identical." },
+        { "prompt": "What is the neuter plural nominative and accusative ending?", "answer": "-α" },
+        { "prompt": "How do you say 'the gifts run' in Greek?", "answer": "τὰ δῶρα τρέχει (singular verb)" },
+        { "prompt": "Does the neuter plural rule apply to all neuter nouns?", "answer": "Yes, in all declensions." },
+        { "prompt": "What is the genitive singular ending for neuter nouns of the second declension?", "answer": "-ου" }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Second-declension neuter nouns in sentences",
+      "instructions": "Read these aloud. Watch for the neuter plural rule.",
+      "words": [
+        { "greek": "τὸ τέκνον γράφει.", "transliteration": "tò téknon gráphei.", "gloss": "The child writes.", "audio": "/paideia/audio/greek/sentences/teknon-graphei.mp3" },
+        { "greek": "τὰ τέκνα τρέχει.", "transliteration": "tà tékna trékhei.", "gloss": "The children run.", "audio": "/paideia/audio/greek/sentences/tekna-trechei.mp3" },
+        { "greek": "τὰ δῶρα καλά ἐστιν.", "transliteration": "tà dôra kalá estin.", "gloss": "The gifts are beautiful.", "audio": "/paideia/audio/greek/sentences/dora-kala.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.4 introduces the first declension feminine nouns ending in -η: ἡ ἀρετή, ἡ τιμή, ἡ τέχνη. The first declension is more varied than the second, with three sub-types depending on the vowel in the stem. We begin with the most regular type."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can decline any second-declension neuter noun from memory and can correctly apply the neuter plural rule in at least five example sentences.",
+    "credit_minutes": 50
+  }
+}

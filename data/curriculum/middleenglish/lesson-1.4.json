@@ -1,0 +1,43 @@
+{
+  "id": "1.4",
+  "stage": 1,
+  "title": "Consonants and the Yogh",
+  "subtitle": "Ch, j, th, v, z — French influence and the yogh survives.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Master Consonants and the Yogh.",
+    "Read and translate authentic Middle English texts.",
+    "Prepare for sustained reading in Stage 3."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "Ch = 'ch' as in church. J = 'j' as in judge (new from French). Th = 'th' voiced or unvoiced. V and F distinguished (Old English had only F). Yogh (ȝ) = 'y' or guttural 'gh.' The letter thorn (þ) disappears; scribes use 'th' instead. Spelling is inconsistent across manuscripts."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "Consonants and the Yogh"
+        },
+        {
+          "prompt": "Can you apply this to reading?",
+          "answer": "Work through examples with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand Consonants and the Yogh.",
+    "credit_minutes": 50
+  }
+}

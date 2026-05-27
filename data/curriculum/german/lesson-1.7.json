@@ -1,0 +1,81 @@
+{
+  "id": "1.7",
+  "stage": 1,
+  "title": "Reading the Names",
+  "subtitle": "Fifty German proper names read aloud — Goethe, Nietzsche, Hölderlin, and the rest.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Pronounce the names of the fifty most important figures in German culture.",
+    "Apply all phonological rules learned so far: vowel length, umlauts, ch sounds, final devoicing.",
+    "Build confidence in reading German aloud."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Why names matter",
+      "body": "You cannot talk about German literature, philosophy, or music without saying Goethe, Nietzsche, Hölderlin, Bach, Kant. English speakers massacre these names. You will not. This lesson drills the fifty names you will encounter in every paragraph of German cultural history. Learn them now; use them forever."
+    },
+    {
+      "kind": "prose",
+      "heading": "The names — poets and writers",
+      "body": "Goethe — GER-tuh. Long ö [øː], not GOH-thee. The final -e is schwa.\nSchiller — SHIL-ler. Hard g devoiced? No, there is no g. Sch = [ʃ], double l marks short i.\nHölderlin — HER L-der-leen. Long ö, short e, long i.\nHeine — HIGH-nuh. Ei = [aɪ], final -e = schwa.\nRilke — RIL-kuh. Short i, final -e = schwa.\nKafka — KAHF-kah. Short a, [f] for f.\nMann — MAHN. Short a (despite one n in the name), final n nasalizes.\nNietzsche — NEET-shuh. Long ie [iː], tz = [ts], sch = [ʃ], final -e = schwa. Not NEE-chee.\nBrecht — BREKHT. Short e, final cht = [çt] (Ich-Laut after e).\nGrass — GRAHS. Short a, double s, final devoicing not applicable (s is voiceless already).\n\nThese ten are the foundation of modern German letters."
+    },
+    {
+      "kind": "prose",
+      "heading": "The names — philosophers",
+      "body": "Kant — KAHNT. Short a, final t.\nHegel — HAY-gel. Long e, hard g (not devoiced, followed by e).\nSchopenhauer — SHOH-pen-how-er. Long o, [ʃ] for sch, au = [aʊ], final -er = [ɐ].\nFichte — FIKH-tuh. Long i, Ich-Laut [ç] for ch.\nSchelling — SHEL-ling. Short e, double l, [ʃ] for sch.\nFeuerbach — FOY-er-bakh. Eu = [ɔʏ], Ach-Laut [x] for ch after a.\nHabermas — HAH-ber-mahs. Short a in all three syllables.\nArendt — AH-rent. Final dt devoices to [t].\nJaspers — YAHS-pers. J = [j], short a, final s.\nHeidegger — HIGH-deg-ger. Ei = [aɪ], short e, double g stays voiced (between vowels), final -er = [ɐ]."
+    },
+    {
+      "kind": "prose",
+      "heading": "The names — composers",
+      "body": "Bach — BAKH. Short a, Ach-Laut [x].\nBeethoven — BAY-toh-fen. Long e (two e's), long o, final -en.\nMozart — MOH-tsart. Long o, z = [ts], final t.\nWagner — VAHG-ner. V = [v] (wait, no — Wagner is German, so W = [v]: VAHG-ner. Short a, hard g (before n), final -er = [ɐ].\nBrahms — BRAHMS. Long a, final ms.\nSchubert — SHOO-bert. Sch = [ʃ], long u, final t.\nSchumann — SHOO-mahn. Sch = [ʃ], long u, double n marks short a? No: Mann is a family name, so likely short a.\nMahler — MAH-ler. Long a (one consonant), final -er = [ɐ].\nStrauss — SHTROWS. Sch = [ʃ]? No, just S + t = [ʃt], au = [aʊ], double s marks... wait, au is a diphthong, so ß would be used if the name were modern. Strauss is SHTROWS, rhymes with mouse.\nWebern — VAY-bern. We- = [veː], final -ern."
+    },
+    {
+      "kind": "prose",
+      "heading": "The names — artists and architects",
+      "body": "Dürer — DÜ-rer. Long ü, final -er.\nHolbein — HOLE-bine. Long o, ei = [aɪ].\nKlee — KLAY. Long e (two e's).\nKandinsky — kahn-DIN-skee. Russian name, but German pronunciation: short a, short i, long ee.\nNolde — NOHL-duh. Long o, final -e.\nBarlach — BAR-lakh. Short a, Ach-Laut [x].\nGropius — GROH-pee-oos. Long o, long i, long u.\nMies van der Rohe — MEES fahn dair ROH-uh. Long ie = [iː], van = [fahn], Rohe = long o, final -e schwa."
+    },
+    {
+      "kind": "prose",
+      "heading": "The names — scholars and scientists",
+      "body": "Humboldt — HOOM-bohlt. Long u, long o, final dt = [t].\nGrimm — GRIM. Short i, double m.\nRanke — RAHN-kuh. Long a, final -e schwa.\nWeber — VAY-ber. Long e, final -er.\nPlanck — PLAHNK. Long a, final ck = [k].\nHeisenberg — HIGH-zen-berk. Ei = [aɪ], final g devoiced to [k].\nEinstein — INE-shtine. Ei = [aɪ] twice, [ʃt] for st.\nFreud — FROYD. Eu = [ɔʏ], final d devoiced to [t].\nJung — YOONG. J = [j], long u, final ng = [ŋ]."
+    },
+    {
+      "kind": "prose",
+      "heading": "The names — rulers and statesmen",
+      "body": "Friedrich — FREE-drikh. Long ie = [iː], Ich-Laut [ç] for ch.\nWilhelm — VIL-helm. W = [v], short i, final m.\nBismarck — BIS-mark. Short i, final ck = [k].\nLuther — LOO-ter. Long u, final -er.\nKarl — KARL. Short a, final l.\nOtto — OT-toh. Short o, long o.\nHabsburg — HAHPS-boork. Short a, final g devoiced to [k].\nHohenzollern — HOH-en-tsol-lern. Long o, [ts] for z, short o, final -ern."
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill — fifty names",
+      "instructions": "Each name is spoken twice: once slowly, once at normal speed. Listen, then repeat. Mark any you find difficult and drill them separately.",
+      "audio": "/paideia/audio/german/drills/lesson-1.7-listening.mp3"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Without listening to the audio, say these ten names aloud. Check yourself after.",
+      "items": [
+        { "prompt": "Goethe", "answer": "GER-tuh, not GOH-thee" },
+        { "prompt": "Nietzsche", "answer": "NEET-shuh, not NEE-chee" },
+        { "prompt": "Hölderlin", "answer": "HER L-der-leen" },
+        { "prompt": "Bach", "answer": "BAKH (Ach-Laut)" },
+        { "prompt": "Kant", "answer": "KAHNT" },
+        { "prompt": "Schiller", "answer": "SHIL-ler" },
+        { "prompt": "Kafka", "answer": "KAHF-kah" },
+        { "prompt": "Wagner", "answer": "VAHG-ner (W = [v])" },
+        { "prompt": "Heine", "answer": "HIGH-nuh" },
+        { "prompt": "Freud", "answer": "FROYD (final d → [t])" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.8 covers your first full German sentences. Ten simple sentences with audio and glosses. After 1.8 you will have completed Stage 1 and can read any printed German aloud with confidence."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can pronounce thirty of the fifty names correctly without hesitation.",
+    "credit_minutes": 50
+  }
+}

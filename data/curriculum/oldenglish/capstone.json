@@ -1,0 +1,123 @@
+{
+  "id": "oldenglish-capstone",
+  "lang": "oldenglish",
+  "title": "The Kalopaideia Diploma in Reading Old English — Capstone Examination",
+  "instructions": "Three hours, printed lexicon and grammar permitted. Honor code: you affirm by submitting that you used only permitted aids. A failed examination may be retaken after thirty days.",
+  "time_limit_minutes": 180,
+  "sections": [
+    {
+      "id": "A",
+      "title": "Part A — Sight Translation (with glossary)",
+      "items": [
+        {
+          "id": "A1",
+          "type": "translate",
+          "points": 12,
+          "prompt_oldenglish": "Hwæt! Wē Gār-Dena in gēardagum, þēodcyninga, þrym gefrūnon.",
+          "prompt_en": "Translate. (Beowulf, lines 1-2)",
+          "reference": [
+            "Lo! We have heard of the glory of the Spear-Danes in days of yore, of the people-kings.",
+            "Listen! We of the Spear-Danes in ancient days have heard of the glory of the people-kings.",
+            "Behold! We have heard the glory of the Spear-Danes' people-kings in days gone by."
+          ],
+          "keywords": ["heard", "glory", "Spear-Danes", "days", "people-kings"],
+          "threshold": 0.4
+        },
+        {
+          "id": "A2",
+          "type": "translate",
+          "points": 12,
+          "prompt_oldenglish": "Nū sculon herigean heofonrīces Weard, Metodes meahte and his mōdgeþanc.",
+          "prompt_en": "Translate. (Caedmon's Hymn, lines 1-2)",
+          "reference": [
+            "Now we must praise the Guardian of the heavenly kingdom, the might of the Creator and his thought.",
+            "Now we should praise the Keeper of heaven's kingdom, the power of the Maker and his mind.",
+            "Now must we praise heaven-kingdom's Guardian, the Measurer's might and his purpose."
+          ],
+          "keywords": ["praise", "Guardian", "heaven", "might", "Creator", "thought"],
+          "threshold": 0.4
+        },
+        {
+          "id": "A3",
+          "type": "translate",
+          "points": 12,
+          "prompt_oldenglish": "Ælfred kyning hāteþ grētan Wærferþ biscep his wordum luflīce and frēondlīce.",
+          "prompt_en": "Translate. (Alfred's Preface to the Pastoral Care)",
+          "reference": [
+            "King Alfred commands Bishop Werferth to be greeted with his words lovingly and in friendship.",
+            "King Alfred sends loving and friendly greetings in his words to Bishop Werferth.",
+            "Alfred the king bids greet Bishop Werferth with his words lovingly and amicably."
+          ],
+          "keywords": ["Alfred", "greet", "Bishop", "Werferth", "lovingly", "friendly"],
+          "threshold": 0.35
+        },
+        {
+          "id": "A4",
+          "type": "translate",
+          "points": 12,
+          "prompt_oldenglish": "On anginne gesceōp God heofonan and eorþan. Sēo eorþe wæs īdel and ǣmtig.",
+          "prompt_en": "Translate. (Ælfric's Genesis)",
+          "reference": [
+            "In the beginning God created heaven and earth. The earth was idle and empty.",
+            "In the beginning God shaped the heavens and the earth. The earth was void and empty.",
+            "At the start God created heaven and earth. The earth was waste and vacant."
+          ],
+          "keywords": ["beginning", "created", "God", "heaven", "earth", "empty"],
+          "threshold": 0.4
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "title": "Part B — Parsing",
+      "items": [
+        {
+          "id": "B1",
+          "type": "parse",
+          "points": 6,
+          "prompt": "Parse the form cyningas. Give: case, number, gender, lexical form.",
+          "answer": ["nominative or accusative", "plural", "masculine", "cyning"]
+        },
+        {
+          "id": "B2",
+          "type": "parse",
+          "points": 6,
+          "prompt": "Parse the form rād. Give: person, number, tense, mood, voice, infinitive.",
+          "answer": ["first or third", "singular", "past", "indicative", "active", "rīdan"]
+        },
+        {
+          "id": "B3",
+          "type": "parse",
+          "points": 6,
+          "prompt": "Parse the form þǣm. Give: case, number, gender(s), meaning.",
+          "answer": ["dative", "singular or plural", "any gender", "that/the"]
+        },
+        {
+          "id": "B4",
+          "type": "parse",
+          "points": 6,
+          "prompt": "Parse the form gesceōp. Give: person, number, tense, mood, voice, infinitive.",
+          "answer": ["third", "singular", "past", "indicative", "active", "scieppan or scyppan"]
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "title": "Part D — Multiple Choice",
+      "items": [
+        { "id": "D1", "type": "mcq", "points": 3, "prompt": "What does the prefix ge- mark in Old English verbs?", "choices": ["perfective aspect (completed action)", "continuous action", "future tense", "passive voice"], "answer": "perfective aspect (completed action)" },
+        { "id": "D2", "type": "mcq", "points": 3, "prompt": "Which case does the preposition mid usually govern?", "choices": ["dative", "accusative", "genitive", "nominative"], "answer": "dative" },
+        { "id": "D3", "type": "mcq", "points": 3, "prompt": "In Old English alliterative verse, which stressed syllable does NOT alliterate?", "choices": ["the fourth", "the first", "the second", "the third"], "answer": "the fourth" },
+        { "id": "D4", "type": "mcq", "points": 3, "prompt": "What is a kenning?", "choices": ["a compound metaphor (e.g., whale-road = sea)", "a verb prefix", "a case ending", "a poetic meter"], "answer": "a compound metaphor (e.g., whale-road = sea)" },
+        { "id": "D5", "type": "mcq", "points": 3, "prompt": "Which vowel does Old English y represent?", "choices": ["front rounded vowel like German ü", "back rounded vowel like 'boot'", "diphthong", "the vowel in 'yes'"], "answer": "front rounded vowel like German ü" },
+        { "id": "D6", "type": "mcq", "points": 3, "prompt": "The letter þ (thorn) represents which sound(s)?", "choices": ["both voiced and voiceless 'th'", "only voiceless 'th' as in 'thin'", "only voiced 'th' as in 'this'", "the sound 'p'"], "answer": "both voiced and voiceless 'th'" }
+      ]
+    }
+  ],
+  "scoring": {
+    "max_points": 90,
+    "pass_mark": 0.70,
+    "honors_mark": 0.85
+  },
+  "honor_code": "I attest that the answers I have entered are my own, composed without aid beyond the materials permitted for each section of this examination. I understand that this examination is graded automatically, that the script and my signed attestation will be permanently hashed on completion, and that a passing score will issue a permanent on-chain diploma in my name."
+}

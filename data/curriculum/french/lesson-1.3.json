@@ -1,0 +1,74 @@
+{
+  "id": "1.3",
+  "stage": 1,
+  "title": "Silent Letters",
+  "subtitle": "Final consonants usually silent; the exceptions; the silent h and the aspirated h.",
+  "estimated_minutes": 40,
+  "objectives": [
+    "Apply the general rule: most final consonants in French are silent.",
+    "Recognize the exceptions: final c, r, f, l often sounded.",
+    "Distinguish between silent h (which allows liaison) and aspirated h (which blocks it).",
+    "Read words aloud with correct treatment of final consonants."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The rule",
+      "body": "Most final consonants in French are not pronounced. The word 'petit' ends in a t on the page, but the t is silent: [pəti]. The word 'grand' ends in a d, but you do not say it: [ɡʁɑ̃]. The word 'beaucoup' ends in a p, but the p vanishes: [boku].\n\nThis is the first stumbling block for English speakers, who expect to pronounce what they see. French spelling preserves etymology and morphology at the expense of phonetic transparency. The silent letters are not mistakes. They mark grammatical distinctions that were once audible and are still visible."
+    },
+    {
+      "kind": "prose",
+      "heading": "The exceptions: CaReFuL",
+      "content": "A handful of final consonants are usually pronounced. The mnemonic is CaReFuL: c, r, f, l.\n\n- Final c is usually sounded: parc [paʁk], sec [sɛk], avec [avɛk].\n- Final r is usually sounded: cher [ʃɛʁ], pour [puʁ], cœur [kœʁ].\n- Final f is usually sounded: neuf [nœf], actif [aktif], bref [bʁɛf].\n- Final l is usually sounded: fil [fil], mal [mal], animal [animal].\n\nBut even here, exceptions exist. The word 'estomac' has a silent c. The infinitive '-er' has a silent r in speech, though the -r is technically there. The rule is a guide, not a law. You will learn the common words by ear."
+    },
+    {
+      "kind": "prose",
+      "heading": "The two h's: silent and aspirated",
+      "body": "The letter h is never pronounced in French. But it comes in two types: h muet (silent h) and h aspiré (aspirated h). The names are misleading — neither is aspirated in the phonetic sense. The distinction is grammatical.\n\nWith h muet, liaison and élision apply: l'homme, les hommes [lezɔm]. The h is treated as if it were not there.\n\nWith h aspiré, liaison and élision are blocked: le héros, les héros [le eʁo], no liaison. The h creates a word boundary.\n\nThere is no way to tell from the letter alone. You must learn which words have h aspiré. The number is small: héros, haricot, honte, haut, and a few dozen others. Dictionaries mark them."
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill",
+      "instructions": "Each word is read aloud. Notice which final consonants are silent and which are sounded.",
+      "audio": "/paideia/audio/french/drills/lesson-1.3-listening.mp3"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer these without looking back.",
+      "items": [
+        { "prompt": "Is the final t in 'petit' pronounced?", "answer": "No. Final t is silent." },
+        { "prompt": "Is the final r in 'pour' pronounced?", "answer": "Yes. Final r is usually sounded." },
+        { "prompt": "Is the final c in 'avec' pronounced?", "answer": "Yes. Final c is usually sounded." },
+        { "prompt": "What does h muet mean?", "answer": "Silent h that allows liaison and élision. Ex: l'homme." },
+        { "prompt": "What does h aspiré mean?", "answer": "Aspirated h (misnomer) that blocks liaison and élision. Ex: le héros." },
+        { "prompt": "How do you know if a word has h muet or h aspiré?", "answer": "You must learn it or check a dictionary. There is no phonetic marker." },
+        { "prompt": "What is the mnemonic for final consonants that are usually pronounced?", "answer": "CaReFuL: c, r, f, l." },
+        { "prompt": "Does 'grand' end with a [d] sound?", "answer": "No. The d is silent: [ɡʁɑ̃]." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Words to practice",
+      "instructions": "Read each aloud. Pay attention to final consonants.",
+      "words": [
+        { "french": "petit", "transliteration": null, "gloss": "small", "audio": "/paideia/audio/french/words/petit.mp3" },
+        { "french": "grand", "transliteration": null, "gloss": "big, tall", "audio": "/paideia/audio/french/words/grand.mp3" },
+        { "french": "avec", "transliteration": null, "gloss": "with", "audio": "/paideia/audio/french/words/avec.mp3" },
+        { "french": "pour", "transliteration": null, "gloss": "for", "audio": "/paideia/audio/french/words/pour.mp3" },
+        { "french": "neuf", "transliteration": null, "gloss": "nine, new", "audio": "/paideia/audio/french/words/neuf.mp3" },
+        { "french": "homme", "transliteration": null, "gloss": "man", "audio": "/paideia/audio/french/words/homme.mp3" },
+        { "french": "héros", "transliteration": null, "gloss": "hero", "audio": "/paideia/audio/french/words/heros.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.4 covers liaison — linking the silent final consonant of one word to the initial vowel of the next. This is where the silent letters wake up."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can read a list of twenty French words aloud with correct treatment of final consonants.",
+    "credit_minutes": 40
+  }
+}

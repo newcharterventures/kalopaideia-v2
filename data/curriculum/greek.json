@@ -1,0 +1,200 @@
+{
+  "language": "greek",
+  "display_name": "Classical Greek (Attic)",
+  "tagline": "From the alphabet to Plato — a five-stage course in the Attic dialect of the fifth and fourth centuries BCE.",
+  "philosophy": "Kalopaideia teaches Greek the way it was taught for two thousand years before the textbook era: by ear, by recitation, by reading. We do not begin with grammar tables. We begin with the sounds, then with short authentic phrases, then with whole sentences from Xenophon, Plato, and the New Testament. Grammar is introduced when the student has already met the form in living text. Every stage ends with reading — not paradigms.",
+  "duration_estimate": "12–18 months at one hour per day",
+  "method": "Reading-led, with grammar called in as needed. Inspired by Hans Ørberg's natural method, the Cambridge Reading Greek course, and the older practice of construing sentences aloud before parsing them.",
+  "prerequisites": "None. The course assumes only that the student can read English and is willing to memorize a few hundred words. No prior linguistic training is required.",
+  "stages": [
+    {
+      "id": "stage-1",
+      "number": 1,
+      "name": "The Sound and the Shape",
+      "subtitle": "The alphabet, the breathings, the pitch accent; reading aloud before reading.",
+      "duration": "4–6 weeks",
+      "learning_outcomes": [
+        "Read aloud any printed Greek text with accurate pronunciation in the reconstructed Attic of c. 400 BCE.",
+        "Recognize and produce all twenty-four letters in upper and lower case, including the medial and final sigma.",
+        "Identify and pronounce smooth and rough breathings, the three accent marks, the diaeresis, and the iota subscript.",
+        "Hear and reproduce the distinctions between long and short vowels (α, ι, υ) and between aspirated and unaspirated stops (π/φ, τ/θ, κ/χ)."
+      ],
+      "lessons": [
+        { "id": "1.1", "title": "The Alphabet, Part One", "content": "Α through Μ. Letter names, shapes, sounds. Tracing exercises. Audio drill: each letter spoken in isolation and inside a real Greek word." },
+        { "id": "1.2", "title": "The Alphabet, Part Two", "content": "Ν through Ω. Special attention to the aspirated stops Θ, Φ, Χ (not the English th, f, ch sounds) and the cluster letters Ξ, Ψ." },
+        { "id": "1.3", "title": "Vowels and Diphthongs", "content": "The seven vowels. Long versus short α, ι, υ. The diphthongs αι, ει, οι, αυ, ευ, ου, υι and the long-vowel diphthongs ᾳ, ῃ, ῳ with iota subscript." },
+        { "id": "1.4", "title": "Breathings", "content": "Every word beginning with a vowel or rho takes a breathing. Smooth ( ̓) = no h; rough ( ̔) = h-sound. Practice with ἀνήρ vs. ἁγνός, ῥόδον (always rough)." },
+        { "id": "1.5", "title": "The Pitch Accent", "content": "Acute, grave, circumflex. Recessive accent in verbs; persistent accent in nouns. The student learns to hear pitch, not stress. Recitation drill on a passage from Xenophon." },
+        { "id": "1.6", "title": "Reading the Names", "content": "First connected reading: a list of fifty Greek proper names (Ἀθῆναι, Σωκράτης, Περικλῆς, Ὀδυσσεύς…). The student reads each aloud, audibly, before moving on." },
+        { "id": "1.7", "title": "First Sentences", "content": "Ten short authentic sentences with full audio, glosses, and parsing — no grammar instruction yet. ὁ ἄνθρωπος βαδίζει. ἡ θάλασσα μεγάλη ἐστίν. The student learns to read before parsing." }
+      ],
+      "checkpoint": {
+        "id": "stage-1-checkpoint",
+        "title": "Stage 1 Checkpoint",
+        "format": "Oral and written. Twenty letters dictated; ten words read aloud and recorded; five sentences transliterated from Greek into English letters; five English letters transliterated into Greek. Pass mark: 85%.",
+        "items": 40
+      }
+    },
+    {
+      "id": "stage-2",
+      "number": 2,
+      "name": "The Sentence",
+      "subtitle": "Nouns of the first and second declensions, the verb 'to be', the article, the present indicative.",
+      "duration": "8–10 weeks",
+      "learning_outcomes": [
+        "Decline any first- or second-declension noun in all five cases and both numbers, with the article.",
+        "Conjugate εἰμί and any thematic ω-verb in the present indicative active.",
+        "Parse and translate sentences of the form Subject + Verb + Object, with adjectives and a genitive of possession.",
+        "Read and understand short adapted passages of about a hundred words."
+      ],
+      "lessons": [
+        { "id": "2.1", "title": "The Definite Article", "content": "ὁ, ἡ, τό in all twenty-four forms. The article as the gateway to declension." },
+        { "id": "2.2", "title": "The Second Declension — Masculine", "content": "ὁ ἄνθρωπος, ὁ λόγος, ὁ ἵππος. Nominative as subject; accusative as direct object." },
+        { "id": "2.3", "title": "The Second Declension — Neuter", "content": "τὸ δῶρον, τὸ τέκνον. The neuter plural rule: τὰ τέκνα τρέχει, not τρέχουσιν — neuter plural subjects take singular verbs." },
+        { "id": "2.4", "title": "The First Declension — Feminine in η", "content": "ἡ ἀρετή, ἡ τιμή, ἡ τέχνη." },
+        { "id": "2.5", "title": "The First Declension — Feminine in α", "content": "ἡ θάλασσα, ἡ μοῖρα, ἡ ἡμέρα. Long and short alpha." },
+        { "id": "2.6", "title": "The First Declension — Masculine", "content": "ὁ ποιητής, ὁ νεανίας. The masculine first-declension forms." },
+        { "id": "2.7", "title": "The Genitive", "content": "The case of source, separation, and possession. ὁ λόγος τοῦ Σωκράτους." },
+        { "id": "2.8", "title": "The Dative", "content": "The case of the indirect object, the instrument, the location, and the time when. τῷ ἀνθρώπῳ δίδωμι τὸ δῶρον." },
+        { "id": "2.9", "title": "The Vocative", "content": "Direct address. ὦ Σώκρατες. The peculiarities of vocative formation." },
+        { "id": "2.10", "title": "The Verb εἰμί", "content": "The most common verb in Greek. Present indicative in full. εἰμί, εἶ, ἐστί, ἐσμέν, ἐστέ, εἰσί." },
+        { "id": "2.11", "title": "The Present Indicative Active of ω-Verbs", "content": "λύω, λύεις, λύει, λύομεν, λύετε, λύουσι. The thematic vowel ο/ε." },
+        { "id": "2.12", "title": "Adjectives of the First and Second Declension", "content": "ἀγαθός, ἀγαθή, ἀγαθόν. Attributive and predicate position." },
+        { "id": "2.13", "title": "Reading: A Day in Athens", "content": "A three-hundred-word adapted narrative using only the vocabulary and forms introduced in Stage 2. The student reads aloud, parses, and translates." }
+      ],
+      "checkpoint": {
+        "id": "stage-2-checkpoint",
+        "title": "Stage 2 Checkpoint",
+        "format": "Written. Twenty nouns to decline; ten verb forms to conjugate; a fifty-word passage to translate; ten English sentences to render in Greek. Pass mark: 80%.",
+        "items": 60
+      }
+    },
+    {
+      "id": "stage-3",
+      "number": 3,
+      "name": "The Verbs and the Reading",
+      "subtitle": "The middle and passive voices, the third declension, the imperfect, the future, the participle.",
+      "duration": "10–12 weeks",
+      "learning_outcomes": [
+        "Conjugate any regular ω-verb in the present, imperfect, future, and aorist indicative, in all three voices.",
+        "Decline any third-declension noun (consonant stems, ι-stems, υ-stems, σ-stems).",
+        "Recognize and translate the present and aorist participles, active and middle.",
+        "Read unadapted sentences from Xenophon's Anabasis Book I and the easier portions of the Gospel of John."
+      ],
+      "lessons": [
+        { "id": "3.1", "title": "The Middle Voice", "content": "Action for or upon oneself. λύομαι = I loose for myself. The endings -μαι, -σαι, -ται." },
+        { "id": "3.2", "title": "The Passive Voice", "content": "In the present and imperfect, identical to the middle. Context distinguishes." },
+        { "id": "3.3", "title": "The Imperfect Indicative", "content": "Past continuous action. ἔλυον, ἔλυες, ἔλυε. The augment ἐ-." },
+        { "id": "3.4", "title": "The Future Indicative", "content": "λύσω. The σ-future, and the contracted future of liquid verbs (μενῶ, ἀρῶ)." },
+        { "id": "3.5", "title": "The First Aorist", "content": "ἔλυσα. The σ-aorist. The basic past tense for completed action." },
+        { "id": "3.6", "title": "The Second Aorist", "content": "ἔλαβον, ἦλθον, εἶδον. The strong aorist with thematic endings, learned as a separate stem." },
+        { "id": "3.7", "title": "The Third Declension — Consonant Stems", "content": "ὁ φύλαξ (guard), ὁ γέρων (old man), ἡ ἐλπίς (hope). The nominative is often disguised; the genitive reveals the stem." },
+        { "id": "3.8", "title": "The Third Declension — Vowel and σ-Stems", "content": "ἡ πόλις (city), ὁ βασιλεύς (king), τὸ γένος (race). The compensatory lengthening and contraction patterns." },
+        { "id": "3.9", "title": "Adjectives of the Third Declension", "content": "ἀληθής, εὐδαίμων, πᾶς. Mixed declension types." },
+        { "id": "3.10", "title": "The Present Participle Active", "content": "λύων, λύουσα, λῦον. The participle as a verbal adjective." },
+        { "id": "3.11", "title": "The Aorist Participle Active", "content": "λύσας, λύσασα, λῦσαν. The participle of antecedent action." },
+        { "id": "3.12", "title": "The Middle and Passive Participles", "content": "λυόμενος, λυσάμενος, λυθείς." },
+        { "id": "3.13", "title": "The Genitive Absolute", "content": "ταῦτα εἰπόντος τοῦ Κύρου, ἀνέστησαν οἱ στρατιῶται. Reading: the opening of the Anabasis." },
+        { "id": "3.14", "title": "Reading: Xenophon, Anabasis I.1.1–11", "content": "The student's first sustained passage of unadapted Greek prose. Full audio, full gloss, full grammatical commentary." },
+        { "id": "3.15", "title": "Reading: John 1:1–18, the Prologue", "content": "ἐν ἀρχῇ ἦν ὁ λόγος. The simplest and most resonant Greek in the New Testament. A bridge between Attic and Koine." }
+      ],
+      "checkpoint": {
+        "id": "stage-3-checkpoint",
+        "title": "Stage 3 Checkpoint",
+        "format": "Written, with one oral component. Parse twenty inflected forms; translate a one-hundred-word passage from Xenophon (sight unseen); compose five short Greek sentences from English. Pass mark: 75%.",
+        "items": 75
+      }
+    },
+    {
+      "id": "stage-4",
+      "number": 4,
+      "name": "The Mood and the Mind",
+      "subtitle": "The subjunctive, optative, imperative, infinitive; conditions and indirect statement; the perfect system.",
+      "duration": "12–16 weeks",
+      "learning_outcomes": [
+        "Form and translate any subjunctive, optative, imperative, or infinitive of a regular verb.",
+        "Recognize all six common condition types and translate them faithfully (real, contrary-to-fact, future-more-vivid, future-less-vivid, present general, past general).",
+        "Translate indirect statement in all three constructions (ὅτι + indicative, accusative + infinitive, accusative + participle).",
+        "Form and translate the perfect, pluperfect, and future perfect, active and middle/passive."
+      ],
+      "lessons": [
+        { "id": "4.1", "title": "The Subjunctive", "content": "λύω, λύῃς, λύῃ. Hortatory, deliberative, and purpose clauses with ἵνα." },
+        { "id": "4.2", "title": "The Optative", "content": "λύοιμι, λύοις, λύοι. The mood of wish, of remote possibility, of secondary-sequence purpose." },
+        { "id": "4.3", "title": "The Imperative", "content": "λῦε, λυέτω, λύετε, λυόντων. Commands, prohibitions with μή + aorist subjunctive." },
+        { "id": "4.4", "title": "The Infinitive", "content": "λύειν, λῦσαι. As subject, complement, and the basis of indirect statement." },
+        { "id": "4.5", "title": "Conditions, Part One", "content": "Simple particular (εἰ + indicative, indicative); contrary-to-fact (εἰ + imperfect/aorist, ἄν + same)." },
+        { "id": "4.6", "title": "Conditions, Part Two", "content": "Future-more-vivid (ἐάν + subjunctive, future); future-less-vivid (εἰ + optative, optative); general (ἐάν + subjunctive, present; εἰ + optative, imperfect)." },
+        { "id": "4.7", "title": "Indirect Statement", "content": "The three patterns. ὅτι Σωκράτης σοφός ἐστιν. φησὶ Σωκράτη σοφὸν εἶναι. οἶδε Σωκράτη σοφὸν ὄντα." },
+        { "id": "4.8", "title": "The Perfect Active", "content": "λέλυκα. Reduplication. The state resulting from completed action." },
+        { "id": "4.9", "title": "The Perfect Middle and Passive", "content": "λέλυμαι. The endings stacked directly onto the reduplicated stem." },
+        { "id": "4.10", "title": "The Pluperfect and Future Perfect", "content": "ἐλελύκη, λελύσομαι. Rare but worth knowing." },
+        { "id": "4.11", "title": "Reading: Plato, Apology 17a–18a", "content": "The opening of Socrates's defense. Indirect statement, optatives, subjunctives all in living context." },
+        { "id": "4.12", "title": "Reading: Lysias 1, On the Murder of Eratosthenes, §§1–10", "content": "Conversational Attic prose. The everyday rhythm of the spoken language." }
+      ],
+      "checkpoint": {
+        "id": "stage-4-checkpoint",
+        "title": "Stage 4 Checkpoint",
+        "format": "Written. A one-hundred-and-fifty-word sight passage from a chosen prose author (Xenophon, Lysias, or Plato), with parsing and translation. Five composition prompts in English to render in Greek. Pass mark: 75%.",
+        "items": 50
+      }
+    },
+    {
+      "id": "stage-5",
+      "number": 5,
+      "name": "The Author",
+      "subtitle": "Sustained reading of a major author. The capstone.",
+      "duration": "12–24 weeks",
+      "learning_outcomes": [
+        "Read a complete book of Plato (Crito or Ion), Xenophon (Anabasis I), or the Gospel of Mark, with commentary, in the original.",
+        "Discuss, in writing, the literary and philosophical character of the chosen text.",
+        "Translate any passage of fifty or fewer words from the chosen author at sight.",
+        "Recognize and explain the chief stylistic features of Attic versus Koine, Platonic versus Xenophontic, narrative versus dialogue."
+      ],
+      "tracks": [
+        {
+          "id": "track-plato",
+          "name": "The Philosopher",
+          "text": "Plato, Crito (full dialogue, c. 6,200 words).",
+          "rationale": "The most accessible Plato. A complete short dialogue with a definite shape. Introduces the Socratic style and the major philosophical vocabulary (δίκαιον, ἀρετή, ψυχή)."
+        },
+        {
+          "id": "track-historian",
+          "name": "The Historian",
+          "text": "Xenophon, Anabasis Book I (c. 11,000 words).",
+          "rationale": "The classic intermediate reader. Simple syntax, vivid narrative, a great story. The book on which generations of Greek students cut their teeth."
+        },
+        {
+          "id": "track-evangelist",
+          "name": "The Evangelist",
+          "text": "The Gospel of Mark, in Koine (c. 11,300 words).",
+          "rationale": "The shortest and earliest Gospel. Koine, not Attic, but the bridge is short. Opens the entire New Testament to the student."
+        }
+      ],
+      "capstone_examination": {
+        "id": "stage-5-capstone",
+        "title": "The Kalopaideia Greek Examination",
+        "format": "Two parts, taken in sequence. Part one: a written examination of three hours. A fifty-word passage from the chosen author to translate at sight without notes; a one-hundred-word passage from the chosen author with notes; ten English sentences to render in Greek; ten parsing questions. Part two: an oral examination of thirty minutes, conducted in writing for now (live oral when staffing permits). The student reads a previously-prepared one-hundred-word passage aloud, then answers five questions in English about its language and content.",
+        "pass_mark": "70% on each part",
+        "honors_mark": "85% on each part — recorded on the certificate"
+      }
+    }
+  ],
+  "certification": {
+    "credential_name": "The Kalopaideia Diploma in Classical Greek",
+    "credential_subtitle": "An attestation that the bearer has completed the five-stage course and passed the capstone examination.",
+    "what_it_is": "A privately-issued certificate of completion. Not an academic degree. Not a teaching license. It says: this person sat down with the language for a year or two and earned an honest reading of Plato.",
+    "what_is_recorded": "Student's chosen public name; the language; the date of the capstone examination; the track (Philosopher, Historian, Evangelist); the result (Pass or Pass with Honors); the SHA-256 hash of the student's signed examination scripts.",
+    "what_is_not_recorded": "The actual examination answers; the student's email or other identifiers; anything that could identify the student against their will. The certificate is pseudonymous if the student wishes.",
+    "issuance": "On-chain on the Ethereum mainnet as an ERC-721 soulbound (non-transferable) token. One certificate per student per language. The contract is owned by Kalopaideia and the minting key is held by the proprietor. The token URI points to a permanent, IPFS-pinned JSON document signed by Kalopaideia's issuing key.",
+    "verification": "Any third party can verify a certificate at kalopaideia.com/verify/<token-id> by entering the token ID and the certificate hash. The page will display the issuance date, the language, the track, and the result.",
+    "cost": "Included in the Akousma subscription. The on-chain gas fee at issuance is paid by Kalopaideia. The student pays nothing extra.",
+    "first_of_its_kind": "We believe this is the first blockchain-issued credential for completion of a classical-language curriculum. The certificate is irrevocable: once minted, it cannot be withdrawn. If a student is later found to have cheated, a separate revocation token is minted that publicly cross-references the first; the original remains on-chain.",
+    "renewability": "None. A diploma in Greek is not a driver's licence. Once earned, it stands."
+  },
+  "policies": {
+    "honor_code": "All examinations are taken under the Kalopaideia honor code. The student attests, by signing the examination, that no aid was used beyond the materials permitted in the examination instructions. A student found in breach forfeits the right to be examined again for one calendar year.",
+    "retakes": "A failed checkpoint may be retaken after seven days; a failed capstone after thirty days. There is no limit to the number of retakes.",
+    "withdrawal": "The student may withdraw at any time. Progress is preserved indefinitely. No refund is offered for the subscription, which is month-to-month.",
+    "accommodations": "The capstone may be taken in untimed form for any student who requests it. The oral component may be waived for students who are deaf or non-speaking."
+  }
+}

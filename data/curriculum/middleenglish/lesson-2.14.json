@@ -1,0 +1,43 @@
+{
+  "id": "2.14",
+  "stage": 2,
+  "title": "Reading: The Knight's Tale, Lines 859–882",
+  "subtitle": "The temple of Mars — Chaucer's high style.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Master Reading: The Knight's Tale, Lines 859–882.",
+    "Read and translate authentic Middle English texts.",
+    "Prepare for sustained reading in Stage 3."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "The description of the temple of Mars. Chaucer's high style. Latinate vocabulary and complex syntax. 'The statue of Mars upon a carte stood / Armed, and looked grym as he were wood...' Vocabulary: carte (chariot), grym (grim), wood (mad), statue, armed."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "Reading: The Knight's Tale, Lines 859–882"
+        },
+        {
+          "prompt": "Can you apply this to reading?",
+          "answer": "Work through examples with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand Reading: The Knight's Tale, Lines 859–882.",
+    "credit_minutes": 55
+  }
+}

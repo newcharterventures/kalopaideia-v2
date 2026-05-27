@@ -1,0 +1,21 @@
+{
+  "id": "4.7",
+  "stage": 4,
+  "title": "Conditions",
+  "subtitle": "Six types: simple, future-more-vivid, future-less-vivid, present contrary-to-fact, past contrary-to-fact, general.",
+  "estimated_minutes": 60,
+  "objectives": ["Identify the six types of conditional sentences.", "Form and translate each type.", "Understand the protasis (if-clause) and apodosis (then-clause) structure.", "Recognize contrary-to-fact conditions by imperfect/pluperfect subjunctive."],
+  "sections": [
+    {"kind": "prose", "heading": "The six condition types", "body": "1. Simple (indicative in both clauses): sī hoc dīcis, errās. — If you say this, you err.\n\n2. Future-more-vivid (future indicative in both): sī hoc dīcēs, errābis. — If you (will) say this, you will err.\n\n3. Future-less-vivid (present subjunctive in both): sī hoc dīcās, errēs. — If you should say this, you would err.\n\n4. Present contrary-to-fact (imperfect subjunctive in both): sī hoc dīcerēs, errārēs. — If you were saying this (but you are not), you would be erring.\n\n5. Past contrary-to-fact (pluperfect subjunctive in both): sī hoc dīxissēs, errāvissēs. — If you had said this (but you did not), you would have erred.\n\n6. General (present subjunctive in protasis, indicative in apodosis): sī quis hoc dīcat, errat. — If anyone says this, he errs."},
+    {"kind": "self_check", "heading": "Self-check", "items": [
+      {"prompt": "Identify the type: sī Caesar adesset, vincerēmus.", "answer": "Present contrary-to-fact (imperfect subjunctive)."},
+      {"prompt": "Translate the above.", "answer": "If Caesar were here (but he is not), we would be winning."},
+      {"prompt": "Identify: sī Caesar adfuerit, vincēmus.", "answer": "Future-more-vivid (future perfect in protasis, future in apodosis)."}
+    ]},
+    {"kind": "reading_preview", "heading": "Sentences", "words": [
+      {"latin": "sī Caesar adesset, hostēs fugerent.", "transliteration": null, "gloss": "If Caesar were here, the enemies would flee.", "audio": "/paideia/audio/latin/sentences/4.7-1.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Lesson 4.8: indirect statement. accusative + infinitive."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can identify and translate all six condition types.", "credit_minutes": 60}
+}

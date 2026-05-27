@@ -1,0 +1,46 @@
+{
+  "id": "1.5",
+  "stage": 1,
+  "title": "Consonants and Clusters",
+  "subtitle": "P, t, k unaspirated after s. Hr, hl, hn voiceless.",
+  "estimated_minutes": 45,
+  "objectives": ["Pronounce hr, hl, hn as voiceless consonants (like Welsh ll).","Understand that p, t, k after s are unaspirated.","Pronounce double consonants as long."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers Consonants and Clusters. P, t, k unaspirated after s. Hr, hl, hn voiceless."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Pronounce hr, hl, hn as voiceless consonants (like Welsh ll)."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Pronounce hr, hl, hn as voiceless consonants (like Welsh ll)." },
+        { "prompt": "How do you apply this in practice?", "answer": "Understand that p, t, k after s are unaspirated." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "oldnorse": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/oldnorse/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on Consonants and Clusters."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in Consonants and Clusters to ten random examples.",
+    "credit_minutes": 45
+  }
+}

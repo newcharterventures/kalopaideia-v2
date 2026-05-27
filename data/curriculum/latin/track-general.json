@@ -1,0 +1,41 @@
+{
+  "id": "track-general",
+  "track_name": "The General",
+  "author": "Caesar",
+  "work": "De Bello Gallico, Book I",
+  "length_words": 16000,
+  "duration_weeks": "16–20",
+  "rationale": "The classic intermediate prose author. Direct, narrative, military. Caesar's commentaries are the most widely read Latin prose after Cicero.",
+  "description": "You will read all of Book I of Caesar's Gallic War: the campaigns of 58 BCE, including the migrations of the Helvetians, the defeat of Ariovistus, and the winter quarters. Caesar writes in a plain, direct style; his sentences are shorter and more regular than Cicero's, but no less effective. This is the Latin that generations of schoolchildren learned first, and for good reason.",
+  "learning_outcomes": [
+    "Read and translate all of De Bello Gallico Book I (c. 16,000 words) with notes.",
+    "Recognize Caesar's characteristic style: indirect statement, ablative absolutes, purpose clauses.",
+    "Identify military vocabulary and tactics.",
+    "Translate any fifty-word passage from Book I at sight without notes.",
+    "Discuss Caesar's self-presentation and political aims in writing."
+  ],
+  "weekly_plan": [
+    {"week": 1, "sections": "I.1–3", "focus": "Gallia est omnis dīvīsa. Geography and the three divisions of Gaul."},
+    {"week": 2, "sections": "I.4–6", "focus": "The Helvetians prepare to migrate."},
+    {"week": 3, "sections": "I.7–9", "focus": "Caesar blocks the Helvetian migration."},
+    {"week": 4, "sections": "I.10–13", "focus": "Negotiations and the first battle."},
+    {"week": 5, "sections": "I.14–16", "focus": "The defeat of the Helvetians."},
+    {"week": 6, "sections": "I.17–20", "focus": "The Gallic tribes appeal to Caesar against Ariovistus."},
+    {"week": 7, "sections": "I.21–24", "focus": "Caesar summons Ariovistus to a conference."},
+    {"week": 8, "sections": "I.25–29", "focus": "The conference and Ariovistus's refusal."},
+    {"week": 9, "sections": "I.30–35", "focus": "Preparations for battle."},
+    {"week": 10, "sections": "I.36–40", "focus": "The battle against Ariovistus."},
+    {"week": 11, "sections": "I.41–44", "focus": "The defeat of Ariovistus and the German retreat."},
+    {"week": 12, "sections": "I.45–54", "focus": "Winter quarters and the placement of legions."},
+    {"week": 13, "sections": "Review I.1–29", "focus": "Read the first half again at speed."},
+    {"week": 14, "sections": "Review I.30–54", "focus": "Read the second half again at speed."},
+    {"week": 15, "sections": "Full Book I", "focus": "Read the entire book aloud in two sittings."},
+    {"week": 16, "sections": "Capstone prep", "focus": "Sight translation practice from random passages."}
+  ],
+  "recommended_resources": [
+    "Edwards, H.J. (trans.), Caesar: The Gallic War (Loeb Classical Library)",
+    "Hammond, Carolyn, Caesar: De Bello Gallico (Oxford Classical Texts)",
+    "Raaflaub, Kurt A. & Ramsey, John T., Reconstructing the Roman Republic: An Ancient Political Culture and Modern Research"
+  ],
+  "capstone_prep": "In the final two weeks, focus on sight translation. Take random fifty-word passages from Book I and translate them without notes. Practice recognizing Caesar's patterns: indirect statement, temporal clauses, ablative absolutes. On the capstone exam you will see one passage from Book I that you have not prepared."
+}

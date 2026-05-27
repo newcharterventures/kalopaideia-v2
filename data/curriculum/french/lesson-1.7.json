@@ -1,0 +1,110 @@
+{
+  "id": "1.7",
+  "stage": 1,
+  "title": "Reading the Names",
+  "subtitle": "First connected reading: fifty French proper names from literature and history. Molière, Racine, Pascal, Versailles, Rousseau, Voltaire.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Read fifty French proper names aloud with correct pronunciation.",
+    "Apply stress, liaison, and élision in multi-syllable names.",
+    "Build confidence in reading connected French text.",
+    "Recognize the names of major authors, places, and historical figures."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Why names",
+      "body": "Names are a good place to start reading because they are concrete, familiar, and forgiving. You do not need to know what they mean — you need only to say them aloud. Many of these names you have heard before, in English contexts. Now you will hear them as they sound in French.\n\nThis lesson contains fifty names. Read each one aloud. Check your pronunciation against the audio. Move on when you can say it without hesitation."
+    },
+    {
+      "kind": "prose",
+      "heading": "The names",
+      "body": "Authors:\nMolière, Racine, Corneille, Pascal, Voltaire, Rousseau, Diderot, Montesquieu, Flaubert, Baudelaire, Hugo, Balzac, Stendhal, Maupassant, Zola, Proust, Gide, Camus, Sartre.\n\nPlaces:\nParis, Versailles, Lyon, Marseille, Bordeaux, Toulouse, Strasbourg, Rouen, Avignon, Chartres, Fontainebleau, Chantilly.\n\nHistorical figures:\nLouis XIV, Louis XVI, Marie Antoinette, Napoléon Bonaparte, Charlemagne, Richelieu, Mazarin, Lafayette, Robespierre, Danton, Talleyrand, de Gaulle.\n\nEach appears with audio below."
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Authors",
+      "instructions": "Read each name aloud, then check against the audio.",
+      "words": [
+        { "french": "Molière", "transliteration": "[mɔljɛʁ]", "gloss": "playwright, 1622–1673", "audio": "/paideia/audio/french/names/moliere.mp3" },
+        { "french": "Racine", "transliteration": "[ʁasin]", "gloss": "dramatist, 1639–1699", "audio": "/paideia/audio/french/names/racine.mp3" },
+        { "french": "Corneille", "transliteration": "[kɔʁnɛj]", "gloss": "dramatist, 1606–1684", "audio": "/paideia/audio/french/names/corneille.mp3" },
+        { "french": "Pascal", "transliteration": "[paskal]", "gloss": "philosopher, 1623–1662", "audio": "/paideia/audio/french/names/pascal.mp3" },
+        { "french": "Voltaire", "transliteration": "[vɔltɛʁ]", "gloss": "philosopher, 1694–1778", "audio": "/paideia/audio/french/names/voltaire.mp3" },
+        { "french": "Rousseau", "transliteration": "[ʁuso]", "gloss": "philosopher, 1712–1778", "audio": "/paideia/audio/french/names/rousseau.mp3" },
+        { "french": "Diderot", "transliteration": "[didʁo]", "gloss": "encyclopedist, 1713–1784", "audio": "/paideia/audio/french/names/diderot.mp3" },
+        { "french": "Montesquieu", "transliteration": "[mɔ̃tɛskjø]", "gloss": "philosopher, 1689–1755", "audio": "/paideia/audio/french/names/montesquieu.mp3" },
+        { "french": "Flaubert", "transliteration": "[flobɛʁ]", "gloss": "novelist, 1821–1880", "audio": "/paideia/audio/french/names/flaubert.mp3" },
+        { "french": "Baudelaire", "transliteration": "[bodlɛʁ]", "gloss": "poet, 1821–1867", "audio": "/paideia/audio/french/names/baudelaire.mp3" },
+        { "french": "Hugo", "transliteration": "[yɡo]", "gloss": "novelist, poet, 1802–1885", "audio": "/paideia/audio/french/names/hugo.mp3" },
+        { "french": "Balzac", "transliteration": "[balzak]", "gloss": "novelist, 1799–1850", "audio": "/paideia/audio/french/names/balzac.mp3" },
+        { "french": "Stendhal", "transliteration": "[stɑ̃dal]", "gloss": "novelist, 1783–1842", "audio": "/paideia/audio/french/names/stendhal.mp3" },
+        { "french": "Maupassant", "transliteration": "[mopasɑ̃]", "gloss": "short story writer, 1850–1893", "audio": "/paideia/audio/french/names/maupassant.mp3" },
+        { "french": "Zola", "transliteration": "[zɔla]", "gloss": "novelist, 1840–1902", "audio": "/paideia/audio/french/names/zola.mp3" },
+        { "french": "Proust", "transliteration": "[pʁust]", "gloss": "novelist, 1871–1922", "audio": "/paideia/audio/french/names/proust.mp3" },
+        { "french": "Gide", "transliteration": "[ʒid]", "gloss": "novelist, 1869–1951", "audio": "/paideia/audio/french/names/gide.mp3" },
+        { "french": "Camus", "transliteration": "[kamy]", "gloss": "novelist, philosopher, 1913–1960", "audio": "/paideia/audio/french/names/camus.mp3" },
+        { "french": "Sartre", "transliteration": "[saʁtʁ]", "gloss": "philosopher, 1905–1980", "audio": "/paideia/audio/french/names/sartre.mp3" }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Places",
+      "instructions": "Read each place name aloud.",
+      "words": [
+        { "french": "Paris", "transliteration": "[paʁi]", "gloss": "capital", "audio": "/paideia/audio/french/names/paris.mp3" },
+        { "french": "Versailles", "transliteration": "[vɛʁsaj]", "gloss": "royal palace", "audio": "/paideia/audio/french/names/versailles.mp3" },
+        { "french": "Lyon", "transliteration": "[ljɔ̃]", "gloss": "city", "audio": "/paideia/audio/french/names/lyon.mp3" },
+        { "french": "Marseille", "transliteration": "[maʁsɛj]", "gloss": "port city", "audio": "/paideia/audio/french/names/marseille.mp3" },
+        { "french": "Bordeaux", "transliteration": "[bɔʁdo]", "gloss": "wine region, city", "audio": "/paideia/audio/french/names/bordeaux.mp3" },
+        { "french": "Toulouse", "transliteration": "[tuluz]", "gloss": "city", "audio": "/paideia/audio/french/names/toulouse.mp3" },
+        { "french": "Strasbourg", "transliteration": "[stʁazbuʁ]", "gloss": "city", "audio": "/paideia/audio/french/names/strasbourg.mp3" },
+        { "french": "Rouen", "transliteration": "[ʁwɑ̃]", "gloss": "city", "audio": "/paideia/audio/french/names/rouen.mp3" },
+        { "french": "Avignon", "transliteration": "[aviɲɔ̃]", "gloss": "papal city", "audio": "/paideia/audio/french/names/avignon.mp3" },
+        { "french": "Chartres", "transliteration": "[ʃaʁtʁ]", "gloss": "cathedral city", "audio": "/paideia/audio/french/names/chartres.mp3" },
+        { "french": "Fontainebleau", "transliteration": "[fɔ̃tɛnblo]", "gloss": "royal palace", "audio": "/paideia/audio/french/names/fontainebleau.mp3" },
+        { "french": "Chantilly", "transliteration": "[ʃɑ̃tiji]", "gloss": "château", "audio": "/paideia/audio/french/names/chantilly.mp3" }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Historical figures",
+      "instructions": "Read each name aloud.",
+      "words": [
+        { "french": "Louis XIV", "transliteration": "[lwi katɔʁz]", "gloss": "Sun King, reigned 1643–1715", "audio": "/paideia/audio/french/names/louis-xiv.mp3" },
+        { "french": "Louis XVI", "transliteration": "[lwi sɛz]", "gloss": "king, executed 1793", "audio": "/paideia/audio/french/names/louis-xvi.mp3" },
+        { "french": "Marie Antoinette", "transliteration": "[maʁi ɑ̃twanɛt]", "gloss": "queen, executed 1793", "audio": "/paideia/audio/french/names/marie-antoinette.mp3" },
+        { "french": "Napoléon Bonaparte", "transliteration": "[napɔleɔ̃ bɔnapaʁt]", "gloss": "emperor, 1769–1821", "audio": "/paideia/audio/french/names/napoleon-bonaparte.mp3" },
+        { "french": "Charlemagne", "transliteration": "[ʃaʁləmaɲ]", "gloss": "emperor, c. 742–814", "audio": "/paideia/audio/french/names/charlemagne.mp3" },
+        { "french": "Richelieu", "transliteration": "[ʁiʃəljø]", "gloss": "cardinal, 1585–1642", "audio": "/paideia/audio/french/names/richelieu.mp3" },
+        { "french": "Mazarin", "transliteration": "[mazaʁɛ̃]", "gloss": "cardinal, 1602–1661", "audio": "/paideia/audio/french/names/mazarin.mp3" },
+        { "french": "Lafayette", "transliteration": "[lafajɛt]", "gloss": "general, 1757–1834", "audio": "/paideia/audio/french/names/lafayette.mp3" },
+        { "french": "Robespierre", "transliteration": "[ʁɔbɛspjɛʁ]", "gloss": "revolutionary, 1758–1794", "audio": "/paideia/audio/french/names/robespierre.mp3" },
+        { "french": "Danton", "transliteration": "[dɑ̃tɔ̃]", "gloss": "revolutionary, 1759–1794", "audio": "/paideia/audio/french/names/danton.mp3" },
+        { "french": "Talleyrand", "transliteration": "[tal(ə)ʁɑ̃]", "gloss": "diplomat, 1754–1838", "audio": "/paideia/audio/french/names/talleyrand.mp3" },
+        { "french": "de Gaulle", "transliteration": "[də ɡol]", "gloss": "general, president, 1890–1970", "audio": "/paideia/audio/french/names/de-gaulle.mp3" }
+      ]
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Can you read all fifty names aloud without looking at the transliteration? Try five at random. If you can say them correctly, mark the lesson complete.",
+      "items": [
+        { "prompt": "Read: Molière", "answer": "[mɔljɛʁ]" },
+        { "prompt": "Read: Versailles", "answer": "[vɛʁsaj]" },
+        { "prompt": "Read: Napoléon Bonaparte", "answer": "[napɔleɔ̃ bɔnapaʁt]" },
+        { "prompt": "Read: Baudelaire", "answer": "[bodlɛʁ]" },
+        { "prompt": "Read: Robespierre", "answer": "[ʁɔbɛspjɛʁ]" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.8 introduces the first real French sentences. Ten short sentences with full audio and glosses. You will read before parsing. The grammar comes later; the sound comes first."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can read twenty of the fifty names aloud without looking at the transliteration.",
+    "credit_minutes": 55
+  }
+}

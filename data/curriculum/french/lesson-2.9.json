@@ -1,0 +1,56 @@
+{
+  "id": "2.9",
+  "stage": 2,
+  "title": "Negation",
+  "subtitle": "ne ... pas, ne ... jamais, ne ... rien, ne ... plus. The two-part negative framing the verb: Je ne parle pas.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Understand negation.",
+    "Apply the concepts in reading and writing.",
+    "Practice with authentic French examples."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Main content",
+      "body": "French negation is expressed by two particles that frame the conjugated verb: ne before the verb, and pas (or jamais, rien, plus, etc.) after. In spoken French, ne is often dropped, but in written and formal French it remains."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer these questions.",
+      "items": [
+        {
+          "prompt": "What is the main concept?",
+          "answer": "Negation"
+        },
+        {
+          "prompt": "Review question 2",
+          "answer": "Review answer 2"
+        }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Practice materials",
+      "instructions": "Read each example.",
+      "words": [
+        {
+          "french": "exemple",
+          "transliteration": null,
+          "gloss": "example",
+          "audio": "/paideia/audio/french/words/example.mp3"
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson continues Stage 2."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts without hesitation.",
+    "credit_minutes": 50
+  }
+}

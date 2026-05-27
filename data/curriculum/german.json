@@ -1,0 +1,203 @@
+{
+  "language": "german",
+  "display_name": "Classical German",
+  "tagline": "From the alphabet to Kafka — a five-stage course in the literary German of Goethe, Nietzsche, and Mann.",
+  "philosophy": "Kalopaideia teaches German as a literary language. This is not the German of the airport or the hotel. This is the language of Faust, Thus Spoke Zarathustra, The Magic Mountain. We begin with the sound of the language — its umlauts, its guttural ch, its long compound nouns. Then we meet the cases, the genders, the strong verbs. Grammar serves reading, not the reverse. Every stage ends with an author.",
+  "duration_estimate": "12–18 months at one hour per day",
+  "method": "Reading-led. Grammar introduced in context. Authentic texts from the start. Inspired by the old Gymnasium tradition of reading Goethe in the third year.",
+  "prerequisites": "None. The course assumes the student can read English and is willing to memorize a few hundred words and forms.",
+  "stages": [
+    {
+      "id": "stage-1",
+      "number": 1,
+      "name": "The Sound and the Shape",
+      "subtitle": "The thirty-letter alphabet, the umlauts, the ß, the four ch sounds, final devoicing.",
+      "duration": "3–5 weeks",
+      "learning_outcomes": [
+        "Read aloud any printed German text with accurate pronunciation in the standard Bühnendeutsch (stage German) of the classical period.",
+        "Recognize and produce all thirty letters: the twenty-six Roman letters plus ä, ö, ü, and ß.",
+        "Distinguish and pronounce the four ch sounds: the hard Ach-Laut after a, o, u, au; the soft Ich-Laut after i, e, ä, ö, ü, ei, eu; the initial ch before r (Christus); and the foreign ch as in Chaos.",
+        "Apply final devoicing: b to p, d to t, g to k at the end of a syllable or word."
+      ],
+      "lessons": [
+        { "id": "1.1", "title": "The Alphabet, Part One", "content": "A through M. Letter names (ah, bay, tsay), shapes, sounds. Tracing exercises. Audio drill: each letter spoken in isolation and inside a German word." },
+        { "id": "1.2", "title": "The Alphabet, Part Two", "content": "N through Z. Special attention to V (pronounced f), W (pronounced v), Z (pronounced ts)." },
+        { "id": "1.3", "title": "The Umlauts and the ß", "content": "Ä, Ö, Ü: front vowels, historically from a, o, u + i. The ß (Eszett or scharfes S): a ligature of long s + z, used after long vowels and diphthongs. Straße, but Fluss. The Swiss write ss everywhere." },
+        { "id": "1.4", "title": "The Ch Sounds", "content": "Ach-Laut (Bach, Buch, auch). Ich-Laut (ich, nicht, Bücher). Initial Chr- (Christus = K). Foreign ch (Chaos, Charakter = K or kh). Audio drill on minimal pairs." },
+        { "id": "1.5", "title": "Final Devoicing", "content": "German voices b, d, g in the middle of a word but devoices them at the end. Kind (kint), aber Kinder (kinder). Tag (tahk), aber Tage (tahguh)." },
+        { "id": "1.6", "title": "Vowel Length", "content": "Long vowels before a single consonant or h. Short vowels before double consonants or consonant clusters. Bahn (long), aber Mann (short). Hof (long), aber Hoff (short — no such word, but the principle holds)." },
+        { "id": "1.7", "title": "Reading the Names", "content": "Fifty German proper names read aloud: Goethe, Schiller, Hölderlin, Heine, Rilke, Kafka, Mann, Nietzsche, Wagner, Bach, Kant, Hegel, Beethoven, Mozart, Dürer." },
+        { "id": "1.8", "title": "First Sentences", "content": "Ten short sentences with full audio and glosses. Der Mann geht. Die Frau singt. Das Kind spielt. The student reads aloud before parsing." }
+      ],
+      "checkpoint": {
+        "id": "stage-1-checkpoint",
+        "title": "Stage 1 Checkpoint",
+        "format": "Oral and written. Twenty letters dictated; ten words read aloud and recorded; five sentences transliterated from German into English letters; five English letters transliterated into German. Pass mark: 85%.",
+        "items": 40
+      }
+    },
+    {
+      "id": "stage-2",
+      "number": 2,
+      "name": "The Sentence",
+      "subtitle": "The articles in all four cases, the three genders, the present tense, basic V2 word order.",
+      "duration": "8–10 weeks",
+      "learning_outcomes": [
+        "Decline the definite and indefinite articles in nominative, accusative, dative, and genitive for all three genders.",
+        "Identify the gender of any common noun by its article (der, die, das) and memorize a hundred nouns with their genders.",
+        "Conjugate any regular verb in the present tense, and the common strong verbs sein, haben, werden.",
+        "Parse and translate simple sentences with V2 (verb-second) word order: Subject + Verb + Object, and Time/Manner/Place + Verb + Subject."
+      ],
+      "lessons": [
+        { "id": "2.1", "title": "The Three Genders", "content": "Der Mann (masculine), die Frau (feminine), das Kind (neuter). Gender is grammatical, not biological. Der Löffel (spoon) is masculine; die Gabel (fork) is feminine; das Messer (knife) is neuter. Learn each noun with its article." },
+        { "id": "2.2", "title": "The Definite Article", "content": "Der, die, das in the nominative. Den, die, das in the accusative. Dem, der, dem in the dative. Des, der, des in the genitive. Sixteen forms to memorize." },
+        { "id": "2.3", "title": "The Indefinite Article and the Negative", "content": "Ein, eine, ein. Kein, keine, kein (no, not a). The ein-words decline like the definite article but with no plural." },
+        { "id": "2.4", "title": "The Nominative Case", "content": "Subject of the sentence. Der Mann ist alt. Die Frau ist jung. Das Kind ist klein." },
+        { "id": "2.5", "title": "The Accusative Case", "content": "Direct object. Ich sehe den Mann. Ich habe eine Katze. The masculine article changes (der → den); feminine and neuter stay the same." },
+        { "id": "2.6", "title": "The Dative Case", "content": "Indirect object. Ich gebe dem Mann das Buch. The dative is the case of to, for, with." },
+        { "id": "2.7", "title": "The Genitive Case", "content": "Possession and the genitive after certain prepositions. Das Buch des Mannes. Während des Krieges. The genitive is dying in spoken German but alive in literature." },
+        { "id": "2.8", "title": "The Present Tense — Regular Verbs", "content": "Spielen: ich spiele, du spielst, er spielt, wir spielen, ihr spielt, sie spielen. The stem + the endings." },
+        { "id": "2.9", "title": "The Present Tense — Sein, Haben, Werden", "content": "The three most common verbs, all irregular. Sein (to be): ich bin, du bist, er ist. Haben (to have): ich habe, du hast, er hat. Werden (to become): ich werde, du wirst, er wird." },
+        { "id": "2.10", "title": "V2 Word Order", "content": "The verb is always in second position. Der Mann geht (SV). Heute geht der Mann (AdvVS). In the house goes the man = Im Haus geht der Mann. The verb never moves." },
+        { "id": "2.11", "title": "Adjectives and Adverbs", "content": "Predicate adjectives take no ending: Der Mann ist alt. Attributive adjectives decline: Der alte Mann. Adverbs are identical to the base adjective: Er spricht schnell (he speaks quickly)." },
+        { "id": "2.12", "title": "Reading: Heine, 'Ein Fichtenbaum steht einsam'", "content": "Eight lines of simple lyric. Vocabulary: twenty-five words. Grammar: nominative, present tense. Audio and gloss provided. First exposure to Heine's voice." }
+      ],
+      "checkpoint": {
+        "id": "stage-2-checkpoint",
+        "title": "Stage 2 Checkpoint",
+        "format": "Written. Twenty nouns with articles to decline in all four cases; ten verb forms to conjugate; a fifty-word passage to translate; ten English sentences to render in German. Pass mark: 80%.",
+        "items": 60
+      }
+    },
+    {
+      "id": "stage-3",
+      "number": 3,
+      "name": "The Tenses and the Cases",
+      "subtitle": "The four cases mastered, the tenses (perfect, Präteritum, Plusquamperfekt), separable verbs, modal verbs.",
+      "duration": "10–12 weeks",
+      "learning_outcomes": [
+        "Decline any noun (weak, strong, mixed) and any adjective (strong, weak, mixed declension) in all four cases.",
+        "Memorize the twenty most common two-way prepositions (accusative for motion, dative for location) and the pure accusative and dative prepositions.",
+        "Conjugate any verb in the present perfect (with haben or sein), Präteritum, and Plusquamperfekt.",
+        "Recognize and translate separable verbs (aufstehen, mitkommen) and the six modal verbs (können, müssen, dürfen, sollen, wollen, mögen).",
+        "Read adapted passages of Goethe and Schiller with notes."
+      ],
+      "lessons": [
+        { "id": "3.1", "title": "Weak Nouns", "content": "Der Junge, des Jungen, dem Jungen, den Jungen. Nouns that add -n or -en in every case except nominative singular. Common pattern for masculine animate nouns." },
+        { "id": "3.2", "title": "Strong Nouns", "content": "Nouns that take -s or -es in the genitive singular and -e in the dative plural. Der Mann, des Mannes, dem Mann(e), den Mann." },
+        { "id": "3.3", "title": "Mixed Nouns", "content": "A handful of nouns that combine weak and strong patterns. Der Name, des Namens. Das Herz, des Herzens." },
+        { "id": "3.4", "title": "Adjective Declension — Strong", "content": "After no article or after the number words. Guter Wein (masculine nominative), guten Wein (masculine accusative). The adjective carries the case ending." },
+        { "id": "3.5", "title": "Adjective Declension — Weak", "content": "After the definite article or any der-word. Der gute Wein, den guten Wein. The adjective takes -e or -en only." },
+        { "id": "3.6", "title": "Adjective Declension — Mixed", "content": "After ein, kein, mein, dein, sein, etc. Ein guter Wein (strong ending in masculine nominative), einen guten Wein (weak ending elsewhere)." },
+        { "id": "3.7", "title": "Prepositions Governing the Accusative", "content": "Durch, für, gegen, ohne, um. Memorize: Durch, für, gegen, ohne, um fordern stets Akkusativ — a schoolroom rhyme." },
+        { "id": "3.8", "title": "Prepositions Governing the Dative", "content": "Aus, bei, mit, nach, seit, von, zu. Aus, außer, bei, mit, nach, seit, von, zu fordern Dativ nur." },
+        { "id": "3.9", "title": "Two-Way Prepositions", "content": "An, auf, hinter, in, neben, über, unter, vor, zwischen. Accusative for motion (Ich gehe in die Schule). Dative for location (Ich bin in der Schule)." },
+        { "id": "3.10", "title": "The Present Perfect", "content": "Ich habe gespielt. Ich bin gegangen. Most verbs take haben; verbs of motion and change of state take sein. Past participle: ge- + stem + -t (weak) or ge- + stem + -en (strong)." },
+        { "id": "3.11", "title": "The Präteritum", "content": "Ich spielte (weak). Ich ging (strong). The simple past, used in narrative prose. The spoken language prefers the perfect, but Goethe and Nietzsche write in the Präteritum." },
+        { "id": "3.12", "title": "The Plusquamperfekt", "content": "Ich hatte gespielt. Ich war gegangen. The pluperfect, formed with the Präteritum of haben or sein + past participle." },
+        { "id": "3.13", "title": "Separable Verbs", "content": "Aufstehen (to get up), mitkommen (to come along), ausgehen (to go out). The prefix separates in main clauses: Ich stehe auf. But stays attached in subordinate clauses: wenn ich aufstehe." },
+        { "id": "3.14", "title": "Modal Verbs", "content": "Können (can), müssen (must), dürfen (may), sollen (should), wollen (want), mögen (like). The modals govern an infinitive without zu: Ich kann schwimmen." },
+        { "id": "3.15", "title": "Reading: Goethe, 'Heidenröslein'", "content": "Sah ein Knab ein Röslein stehn. A folk-song in the simplest German. Vocabulary: thirty words. Grammar: Präteritum, present tense, infinitive." },
+        { "id": "3.16", "title": "Reading: Schiller, 'Der Handschuh' (adapted)", "content": "A ballad. Seventy lines, lightly adapted. Present and Präteritum. The story of the glove thrown into the lion's den." }
+      ],
+      "checkpoint": {
+        "id": "stage-3-checkpoint",
+        "title": "Stage 3 Checkpoint",
+        "format": "Written. Parse twenty inflected forms (nouns, adjectives, verbs); translate a one-hundred-word passage from an adapted Goethe or Schiller text; compose five short German sentences from English. Pass mark: 75%.",
+        "items": 75
+      }
+    },
+    {
+      "id": "stage-4",
+      "number": 4,
+      "name": "The Subjunctive and the Subordinate",
+      "subtitle": "Konjunktiv I and II, indirect discourse, conditional sentences, relative clauses, infinitive constructions, passive voice.",
+      "duration": "12–16 weeks",
+      "learning_outcomes": [
+        "Form and translate Konjunktiv I (present subjunctive, used in indirect discourse) and Konjunktiv II (past subjunctive, used in conditionals and polite requests).",
+        "Recognize and translate indirect discourse (Er sagt, er sei krank).",
+        "Translate conditional sentences (Wenn ich Zeit hätte, würde ich kommen).",
+        "Parse and translate relative clauses with correct case agreement (Der Mann, den ich gesehen habe).",
+        "Recognize the passive voice (Das Buch wird gelesen) and the passive with modals (Das Buch muss gelesen werden)."
+      ],
+      "lessons": [
+        { "id": "4.1", "title": "Konjunktiv I — Present", "content": "Er sagt, er sei krank. The subjunctive of indirect discourse. Formed from the infinitive stem + -e endings: ich sei, du seiest, er sei." },
+        { "id": "4.2", "title": "Konjunktiv I — Perfect", "content": "Er sagt, er habe es getan. The perfect subjunctive: haben or sein in Konjunktiv I + past participle." },
+        { "id": "4.3", "title": "Konjunktiv II — Present", "content": "Wenn ich Zeit hätte. The subjunctive of hypothesis and contrary-to-fact. Formed from the Präteritum stem + umlaut (where possible) + -e endings: ich hätte, ich wäre, ich ginge." },
+        { "id": "4.4", "title": "Konjunktiv II — Perfect", "content": "Wenn ich Zeit gehabt hätte. The pluperfect subjunctive: hätte or wäre in Konjunktiv II + past participle." },
+        { "id": "4.5", "title": "Conditional Sentences", "content": "Three types. Real condition: Wenn er kommt, gebe ich ihm das Buch (present + present). Hypothetical: Wenn er käme, würde ich ihm das Buch geben (Konjunktiv II + würde + infinitive). Contrary-to-fact past: Wenn er gekommen wäre, hätte ich ihm das Buch gegeben (pluperfect subjunctive + pluperfect subjunctive)." },
+        { "id": "4.6", "title": "Würde + Infinitive", "content": "The würde construction as a substitute for Konjunktiv II. Ich würde gehen = Ich ginge. Colloquial but common in modern German, and acceptable in literature when the Konjunktiv II form is ambiguous or archaic." },
+        { "id": "4.7", "title": "Relative Clauses", "content": "Der Mann, der kommt (nominative). Der Mann, den ich sehe (accusative). Der Mann, dem ich das Buch gebe (dative). Der Mann, dessen Buch ich lese (genitive). The relative pronoun agrees in gender and number with the antecedent, but takes its case from its function in the relative clause." },
+        { "id": "4.8", "title": "Infinitive Constructions with Zu", "content": "Ich versuche zu schreiben. Ich habe keine Zeit zu schreiben. The zu comes before the infinitive, and before the prefix in separable verbs: Ich versuche aufzustehen." },
+        { "id": "4.9", "title": "The Passive Voice — Present and Präteritum", "content": "Das Buch wird gelesen (present). Das Buch wurde gelesen (Präteritum). The passive is formed with werden + past participle." },
+        { "id": "4.10", "title": "The Passive Voice — Perfect and Pluperfect", "content": "Das Buch ist gelesen worden (perfect). Das Buch war gelesen worden (pluperfect). The past participle of werden in the passive is worden, not geworden." },
+        { "id": "4.11", "title": "The Passive with Modals", "content": "Das Buch muss gelesen werden. The infinitive passive: gelesen werden." },
+        { "id": "4.12", "title": "Reading: Heine, 'Die Lorelei'", "content": "Ich weiß nicht, was soll es bedeuten. The most famous German lyric after Goethe. Vocabulary: fifty words. Grammar: Konjunktiv I, relative clauses, separable verbs." },
+        { "id": "4.13", "title": "Reading: Goethe, 'Erlkönig'", "content": "Wer reitet so spät durch Nacht und Wind? A ballad. Dialogue, narrative, indirect discourse. The student's first extended Goethe." }
+      ],
+      "checkpoint": {
+        "id": "stage-4-checkpoint",
+        "title": "Stage 4 Checkpoint",
+        "format": "Written. A one-hundred-and-fifty-word sight passage from Heine or Goethe, with parsing and translation. Five composition prompts in English to render in German. Pass mark: 75%.",
+        "items": 50
+      }
+    },
+    {
+      "id": "stage-5",
+      "number": 5,
+      "name": "The Author",
+      "subtitle": "Sustained reading of a major work. The capstone.",
+      "duration": "12–24 weeks",
+      "learning_outcomes": [
+        "Read a complete major work (or substantial selection) in the original German.",
+        "Translate any fifty-word passage from the chosen author at sight.",
+        "Discuss the literary and philosophical character of the chosen text in writing."
+      ],
+      "tracks": [
+        {
+          "id": "track-poet",
+          "name": "The Poet",
+          "text": "Goethe, selections from West-östlicher Divan (fifteen poems, c. 2,000 words), plus 'Heidenröslein,' 'Erlkönig,' 'Der Zauberlehrling' (full).",
+          "rationale": "The crown of German lyric. The Divan poems are late Goethe, mature, Orientalist, compressed. The student finishes with the three most famous Goethe ballads memorized entire."
+        },
+        {
+          "id": "track-philosopher",
+          "name": "The Philosopher",
+          "text": "Nietzsche, Also sprach Zarathustra, Vorrede (Prologue), sections 1–10 (c. 8,000 words).",
+          "rationale": "Nietzsche at his most poetic and accessible. The mountain, the saint, the tightrope walker, the three metamorphoses. Prose that reads like verse. The most quotable German outside Goethe."
+        },
+        {
+          "id": "track-novelist",
+          "name": "The Novelist",
+          "text": "Kafka, Die Verwandlung (entire — c. 22,000 words).",
+          "rationale": "The most famous opening sentence in twentieth-century literature. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt. Kafka's German is modern, clear, unornamented. The student reads a complete novella in four to six weeks."
+        }
+      ],
+      "capstone_examination": {
+        "id": "stage-5-capstone",
+        "title": "The Kalopaideia German Examination",
+        "format": "Two parts, taken in sequence. Part one: a written examination of three hours. A fifty-word passage from the chosen author to translate at sight without notes; a one-hundred-word passage from the chosen author with notes; ten English sentences to render in German; ten parsing questions. Part two: an oral examination of thirty minutes, conducted in writing for now (live oral when staffing permits). The student reads a previously-prepared one-hundred-word passage aloud, then answers five questions in English about its language and content.",
+        "pass_mark": "70% on each part",
+        "honors_mark": "85% on each part"
+      }
+    }
+  ],
+  "certification": {
+    "credential_name": "The Kalopaideia Diploma in Classical German",
+    "credential_subtitle": "An attestation that the bearer has completed the five-stage course and passed the capstone examination.",
+    "what_it_is": "A privately-issued certificate of completion. Not an academic degree. Not a teaching license. It says: this person sat down with the language for a year or two and earned an honest reading of Goethe, Nietzsche, or Kafka.",
+    "what_is_recorded": "Student's chosen public name; the language; the date of the capstone examination; the track (Poet, Philosopher, Novelist); the result (Pass or Pass with Honors); the SHA-256 hash of the student's signed examination scripts.",
+    "what_is_not_recorded": "The actual examination answers; the student's email or other identifiers; anything that could identify the student against their will. The certificate is pseudonymous if the student wishes.",
+    "issuance": "On-chain on the Ethereum mainnet as an ERC-721 soulbound (non-transferable) token. One certificate per student per language. The contract is owned by Kalopaideia and the minting key is held by the proprietor. The token URI points to a permanent, IPFS-pinned JSON document signed by Kalopaideia's issuing key.",
+    "verification": "Any third party can verify a certificate at kalopaideia.com/verify/<token-id> by entering the token ID and the certificate hash. The page will display the issuance date, the language, the track, and the result.",
+    "cost": "Included in the Akousma subscription. The on-chain gas fee at issuance is paid by Kalopaideia. The student pays nothing extra.",
+    "first_of_its_kind": "We believe this is the first blockchain-issued credential for completion of a classical-language curriculum. The certificate is irrevocable: once minted, it cannot be withdrawn. If a student is later found to have cheated, a separate revocation token is minted that publicly cross-references the first; the original remains on-chain.",
+    "renewability": "None. A diploma in German is not a driver's licence. Once earned, it stands."
+  },
+  "policies": {
+    "honor_code": "All examinations are taken under the Kalopaideia honor code. The student attests, by signing the examination, that no aid was used beyond the materials permitted in the examination instructions. A student found in breach forfeits the right to be examined again for one calendar year.",
+    "retakes": "A failed checkpoint may be retaken after seven days; a failed capstone after thirty days. There is no limit to the number of retakes.",
+    "withdrawal": "The student may withdraw at any time. Progress is preserved indefinitely. No refund is offered for the subscription, which is month-to-month.",
+    "accommodations": "The capstone may be taken in untimed form for any student who requests it. The oral component may be waived for students who are deaf or non-speaking."
+  }
+}

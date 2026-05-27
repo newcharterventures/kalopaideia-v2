@@ -1,0 +1,50 @@
+LATIN CURRICULUM - FULL CONTENT DELIVERY
+=========================================
+
+Completed: 2026-05-18
+
+DELIVERABLES:
+- 45 lesson files (lesson-1.1.json through lesson-4.12.json)
+- 3 Stage 5 track guides (track-orator.json, track-general.json, track-poet.json)
+- 1 capstone examination (capstone.json)
+- Total: 49 JSON files
+
+STRUCTURE VERIFICATION:
+✓ All files parse as valid JSON
+✓ All lessons match greek/lesson-1.1.json shape (id, stage, title, subtitle, estimated_minutes, objectives, sections, lesson_completion)
+✓ Capstone mirrors greek/capstone.json exactly (4 sections: A sight translation, B parsing, C composition, D MCQ)
+✓ Track guides include weekly plans, learning outcomes, and capstone prep
+
+STAGE BREAKDOWN:
+- Stage 1 (The Sound and the Shape): 6 lessons
+- Stage 2 (The Sentence): 13 lessons
+- Stage 3 (The Tenses and the Participle): 14 lessons
+- Stage 4 (The Subjunctive and the Sentence Made Subtle): 12 lessons
+- Stage 5 (The Author): 3 track guides + capstone
+
+VOICE & CONTENT QUALITY:
+✓ Real Latin examples from Cicero, Caesar, Vergil, Ovid, Catullus, Horace, Eutropius
+✓ Scholarly, declarative, warm register
+✓ No adverbs (-ly words)
+✓ No em dashes
+✓ No three-item lists
+✓ No filler phrases
+✓ No false agency
+✓ Every lesson includes reading preview with Latin sentences
+
+CAPSTONE EXAM STRUCTURE:
+- Part A: 3 sight passages (Cicero "Quousque tandem", Caesar "Gallia est omnis", Vergil "Arma virumque")
+- Part B: 4 parsing items (verb forms, participles, nouns)
+- Part C: 3 composition items (simple → complex Latin sentences)
+- Part D: 6 MCQ (vocab, grammar, idiom)
+- Scoring: max 95 points, pass 70%, honors 85%
+- Honor code block included
+
+TRACK GUIDES:
+1. Orator (Cicero In Catilinam I, 6500 words, 12-16 weeks)
+2. General (Caesar De Bello Gallico I, 16000 words, 16-20 weeks)
+3. Poet (Vergil Aeneid I, 5800 words, 14-18 weeks + scansion instruction)
+
+TOTAL CONTENT SIZE: 244KB (49 files)
+
+All files ready for deployment.

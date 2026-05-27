@@ -1,0 +1,53 @@
+{
+  "id": "2.5",
+  "stage": 2,
+  "title": "First and Second Declension Adjectives",
+  "subtitle": "bonus, bona, bonum. Agreement in case, number, gender.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Decline first/second declension adjectives in all genders.",
+    "Apply the rule of agreement: adjectives match their nouns in case, number, and gender.",
+    "Translate sentences with adjectives modifying nouns.",
+    "Recognize that adjectives do not need to match nouns in declension, only in case/number/gender."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Adjectives and agreement",
+      "body": "Latin adjectives change their endings to match the nouns they modify. An adjective must agree with its noun in three ways: case, number, and gender. The adjective does not need to belong to the same declension as the noun.\n\nThe model adjective bonus (good) declines like a second-declension masculine noun in the masculine, a first-declension noun in the feminine, and a second-declension neuter in the neuter:\n\n          Masc.    Fem.     Neut.\n  Nom.    bonus    bona     bonum\n  Gen.    bonī     bonae    bonī\n  Dat.    bonō     bonae    bonō\n  Acc.    bonum    bonam    bonum\n  Abl.    bonō     bonā     bonō\n\nExamples:\n  vir bonus — a good man (masc. nom. sg.)\n  puella bona — a good girl (fem. nom. sg.)\n  templum bonum — a good temple (neut. nom. sg.)\n  virī bonī — good men (masc. nom. pl.)\n  puellam bonam — a good girl (fem. acc. sg.)"
+    },
+    {
+      "kind": "prose",
+      "heading": "Examples from Cicero and Caesar",
+      "body": "Cicero writes: vir bonus. — A good man.\n\nCaesar writes: oppidum magnum. — A large town.\n\nVergil writes: arma virumque. — Arms and the man. (no adjective, but 'virum' is accusative singular masculine to agree with 'arma' in a compound object)."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "items": [
+        { "prompt": "Decline bonus in the feminine singular.", "answer": "bona, bonae, bonae, bonam, bonā" },
+        { "prompt": "What three things must an adjective agree with its noun in?", "answer": "Case, number, and gender." },
+        { "prompt": "Translate: puella parva rosam pulchram amat.", "answer": "The small girl loves the beautiful rose." },
+        { "prompt": "What is the gender of templum?", "answer": "Neuter." },
+        { "prompt": "What form of magnus modifies templum (nominative)?", "answer": "magnum (neuter nominative singular)." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Sentences with adjectives",
+      "words": [
+        { "latin": "vir fortis puellam parvam amat.", "transliteration": null, "gloss": "The brave man loves the small girl.", "audio": "/paideia/audio/latin/sentences/2.5-1.mp3" },
+        { "latin": "templum magnum in forō est.", "transliteration": null, "gloss": "The large temple is in the forum.", "audio": "/paideia/audio/latin/sentences/2.5-2.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.6: the present indicative active, first conjugation. amō, amās, amat."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can decline bonus in all genders and apply the agreement rule.",
+    "credit_minutes": 50
+  }
+}

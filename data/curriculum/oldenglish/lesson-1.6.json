@@ -1,0 +1,73 @@
+{
+  "id": "1.6",
+  "stage": 1,
+  "title": "First Words",
+  "subtitle": "Hwæt! Ten common words from Beowulf and the Chronicle.",
+  "estimated_minutes": 40,
+  "objectives": [
+    "Learn ten high-frequency Old English words by sight and sound.",
+    "Recognize cognates between Old English and modern English or German.",
+    "Practice pronunciation on real vocabulary from the corpus."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Building vocabulary from texts",
+      "body": "Old English vocabulary comes in layers. The core layer is Germanic — words shared with Old Norse, Old Saxon, Old High German. The second layer is Latin borrowings from the conversion to Christianity (biscop, disc, mæsse). The third layer is Old Norse loans from the Danelaw (they, take, law). We start with the Germanic core: the words Beowulf and King Alfred used without thinking."
+    },
+    {
+      "kind": "prose",
+      "heading": "Ten essential words",
+      "body": "These ten words appear hundreds of times in Old English texts. Learn them now; you will see them in every lesson from here on.\n\n1. hūs (house) — neuter noun, unchanged in modern English.\n2. cyning (king) — masculine noun. The modern form 'king' shows the palatalization of c before y.\n3. þegn (thane) — masculine noun. A warrior, a noble retainer. Modern 'thane' is a scholarly borrowing.\n4. sǣ (sea) — masculine or feminine noun. Cognate with German 'See.'\n5. mann (man) — masculine noun. The double n is original; modern English simplified it.\n6. wīf (woman, wife) — neuter noun. Cognate with modern 'wife.'\n7. bearn (child) — neuter noun. Archaic in modern English but survives in Scots 'bairn.'\n8. word (word) — neuter noun. Unchanged.\n9. dēaþ (death) — masculine noun. The þ becomes 'th' in modern English.\n10. līf (life) — neuter noun. Unchanged in meaning; the spelling modernized."
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "The ten words",
+      "instructions": "Listen and repeat. Practice until you can say each word from memory.",
+      "words": [
+        { "oldenglish": "hūs", "transliteration": null, "gloss": "house", "audio": "/paideia/audio/oldenglish/words/hus.mp3" },
+        { "oldenglish": "cyning", "transliteration": null, "gloss": "king", "audio": "/paideia/audio/oldenglish/words/cyning.mp3" },
+        { "oldenglish": "þegn", "transliteration": null, "gloss": "thane, warrior", "audio": "/paideia/audio/oldenglish/words/thegn.mp3" },
+        { "oldenglish": "sǣ", "transliteration": null, "gloss": "sea", "audio": "/paideia/audio/oldenglish/words/sae.mp3" },
+        { "oldenglish": "mann", "transliteration": null, "gloss": "man", "audio": "/paideia/audio/oldenglish/words/mann.mp3" },
+        { "oldenglish": "wīf", "transliteration": null, "gloss": "woman, wife", "audio": "/paideia/audio/oldenglish/words/wif.mp3" },
+        { "oldenglish": "bearn", "transliteration": null, "gloss": "child", "audio": "/paideia/audio/oldenglish/words/bearn.mp3" },
+        { "oldenglish": "word", "transliteration": null, "gloss": "word", "audio": "/paideia/audio/oldenglish/words/word.mp3" },
+        { "oldenglish": "dēaþ", "transliteration": null, "gloss": "death", "audio": "/paideia/audio/oldenglish/words/death.mp3" },
+        { "oldenglish": "līf", "transliteration": null, "gloss": "life", "audio": "/paideia/audio/oldenglish/words/lif.mp3" }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Hwæt!",
+      "body": "One more word, perhaps the most famous word in Old English: Hwæt! It opens Beowulf. It means 'lo!', 'listen!', 'behold!' It is an interjection that demands attention. Some translate it as 'So!' or 'What!' The poet uses it to say: I am about to tell you something worth hearing. Pay attention.\n\nPronounce it: HWAHT. The hw is a voiceless w, like the wh in 'where' pronounced with aspiration (not 'were'). The æ is the vowel in 'cat.'"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Translate each Old English word to modern English.",
+      "items": [
+        { "prompt": "hūs", "answer": "house" },
+        { "prompt": "cyning", "answer": "king" },
+        { "prompt": "þegn", "answer": "thane, warrior" },
+        { "prompt": "sǣ", "answer": "sea" },
+        { "prompt": "mann", "answer": "man" },
+        { "prompt": "wīf", "answer": "woman, wife" },
+        { "prompt": "bearn", "answer": "child" },
+        { "prompt": "word", "answer": "word" },
+        { "prompt": "dēaþ", "answer": "death" },
+        { "prompt": "līf", "answer": "life" },
+        { "prompt": "Hwæt!", "answer": "Lo! Listen! Behold!" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.7 presents your first Old English sentence. You will read the opening line of King Alfred's preface to the Pastoral Care."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can translate all ten words and Hwæt! from memory.",
+    "credit_minutes": 40
+  }
+}

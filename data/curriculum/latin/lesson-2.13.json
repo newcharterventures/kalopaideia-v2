@@ -1,0 +1,28 @@
+{
+  "id": "2.13",
+  "stage": 2,
+  "title": "Reading: Familia Romana, capitula I–V",
+  "subtitle": "Sustained connected Latin using only what we have covered.",
+  "estimated_minutes": 60,
+  "objectives": ["Read and understand extended Latin passages from Ørberg.", "Recognize all first-, second-, and third-declension forms in context.", "Translate without word-for-word parsing.", "Build reading fluency and confidence."],
+  "sections": [
+    {"kind": "prose", "heading": "Your first sustained Latin text", "body": "You have now learned the three declensions, the four conjugations, and the verb sum. You can read hundreds of Latin sentences. This lesson asks you to read extended connected text from Hans Ørberg's Familia Romana, capitula I through V. These chapters use only the grammar you have covered.\n\nDo not parse every word. Do not translate sentence by sentence into English. Read for meaning. Let the patterns emerge. When you encounter an unfamiliar word, guess from context first; consult the gloss only if you are stuck.\n\nThe passage below is adapted from Familia Romana, capitulum I. It describes the Roman Empire and the geography of Italy."},
+    {"kind": "prose", "heading": "Passage: Capitulum I (adapted)", "body": "Imperium Rōmānum magnum est. In imperiō Rōmānō multae prōvinciae sunt. Prōvincia est pars imperiī. Prōvinciae Rōmānae sunt: Italia, Graecia, Hispānia, Gallia, Syria, Aegyptus. Italia in Eurōpā est. Graecia quoque in Eurōpā est. Aegyptus in Āfricā est. Eurōpa et Āfrica et Asia sunt partēs orbis terrārum.\n\nItalia est paeninsula. Paeninsula est terra quae ab omnibus partibus aquā cingitur praeter ūnam. Italia ab Alpibus ad mare Siculum patet. Alpēs sunt montēs altī quī Italiam ab Eurōpā dīvidunt.\n\nIn Italiā multae urbēs sunt: Rōma, Brundisium, Tarentum. Rōma in Latiō est. Latium est ager quī circum Rōmam iacet. Rōma est caput imperiī Rōmānī. In Italiā quoque multa flūmina sunt: Padus, Tiberis.\n\n(Gloss: imperium — empire; pars, partis — part; orbis terrārum — world (lit. circle of lands); terra — land; ab — from; aqua — water; cingō, cingere — to surround; praeter — except; ūnus, -a, -um — one; Alpēs, -ium — the Alps; mons, montis — mountain; altus — high; quī — who, which; dīvidō, -ere — to divide; urbs, urbis — city; ager, agrī — territory, field; circum — around; iaceō, -ēre — to lie; caput, capitis — head, capital; flūmen, flūminis — river.)"},
+    {"kind": "self_check", "heading": "Comprehension check", "items": [
+      {"prompt": "What is a prōvincia?", "answer": "A part of the empire."},
+      {"prompt": "Name three Roman provinces.", "answer": "Italy, Greece, Spain, Gaul, Syria, Egypt (any three)."},
+      {"prompt": "Where is Egypt located?", "answer": "In Africa."},
+      {"prompt": "What is a peninsula?", "answer": "Land surrounded by water on all sides except one."},
+      {"prompt": "What mountains divide Italy from Europe?", "answer": "The Alps."},
+      {"prompt": "What is the capital of the Roman Empire?", "answer": "Rome."},
+      {"prompt": "Name two rivers in Italy.", "answer": "Padus (Po), Tiberis (Tiber)."}
+    ]},
+    {"kind": "reading_preview", "heading": "Read aloud again", "words": [
+      {"latin": "Imperium Rōmānum magnum est.", "transliteration": null, "gloss": "The Roman Empire is great.", "audio": "/paideia/audio/latin/sentences/2.13-1.mp3"},
+      {"latin": "In imperiō Rōmānō multae prōvinciae sunt.", "transliteration": null, "gloss": "In the Roman Empire there are many provinces.", "audio": "/paideia/audio/latin/sentences/2.13-2.mp3"},
+      {"latin": "Rōma est caput imperiī Rōmānī.", "transliteration": null, "gloss": "Rome is the head (capital) of the Roman Empire.", "audio": "/paideia/audio/latin/sentences/2.13-3.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Stage 2 is complete. Stage 3 begins the tenses: imperfect, future, perfect, pluperfect, future perfect. You will also learn the participles and the ablative absolute."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can read the entire passage aloud and understand its meaning without translating every word.", "credit_minutes": 60}
+}

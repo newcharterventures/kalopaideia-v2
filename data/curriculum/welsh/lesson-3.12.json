@@ -1,0 +1,46 @@
+{
+  "id": "3.12",
+  "stage": 3,
+  "title": "Pwyll, Lines 201–250: The Transformation",
+  "subtitle": "Arawn transforms Pwyll.",
+  "estimated_minutes": 70,
+  "objectives": ["Read the movement from mundane to magical.","Analyze narrative structure."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers Pwyll, Lines 201–250: The Transformation. Arawn transforms Pwyll."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Read the movement from mundane to magical."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Read the movement from mundane to magical." },
+        { "prompt": "How do you apply this in practice?", "answer": "Analyze narrative structure." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "welsh": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/welsh/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on Pwyll, Lines 201–250: The Transformation."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in Pwyll, Lines 201–250: The Transformation to ten random examples.",
+    "credit_minutes": 70
+  }
+}

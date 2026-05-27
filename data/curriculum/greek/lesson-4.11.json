@@ -1,0 +1,53 @@
+{
+  "id": "4.11",
+  "stage": 4,
+  "title": "Reading: Plato, Apology 17a–18a",
+  "subtitle": "The opening of Socrates's defense — subjunctives, optatives, and the real voice of Plato.",
+  "estimated_minutes": 90,
+  "objectives": [
+    "Read, parse, and translate the opening of Plato's Apology.",
+    "Recognize and apply all the grammar learned in Stage 4: subjunctive, optative, imperative, infinitive, conditions, indirect statement, perfect.",
+    "Understand the rhetorical style of Plato.",
+    "Build confidence for reading sustained Platonic dialogue."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The opening of the Apology",
+      "body": "Plato's Apology is Socrates's defense speech at his trial in 399 BCE. The opening lines are among the most famous in Greek literature. Socrates begins by addressing the jury and disclaiming any skill in rhetoric.\n\nThis is unadapted Plato. The syntax is more complex than Xenophon: longer sentences, more subordination, more optatives and subjunctives. But the vocabulary is accessible, and the grammar is everything you have learned. Read it aloud first, several times. Let the rhythm of Socrates's voice carry you."
+    },
+    {
+      "kind": "prose",
+      "heading": "Apology 17a-b (excerpt)",
+      "body": "Ὅτι μὲν ὑμεῖς, ὦ ἄνδρες Ἀθηναῖοι, πεπόνθατε ὑπὸ τῶν ἐμῶν κατηγόρων, οὐκ οἶδα· ἐγὼ δ' οὖν καὶ αὐτὸς ὑπ' αὐτῶν ὀλίγου ἐμαυτοῦ ἐπελαθόμην, οὕτω πιθανῶς ἔλεγον. καίτοι ἀληθές γε ὡς ἔπος εἰπεῖν οὐδὲν εἰρήκασιν. μάλιστα δὲ αὐτῶν ἓν ἐθαύμασα τῶν πολλῶν ὧν ἐψεύσαντο, τοῦτο ἐν ᾧ ἔλεγον ὡς χρῆν ὑμᾶς εὐλαβεῖσθαι μὴ ὑπ' ἐμοῦ ἐξαπατηθῆτε ὡς δεινοῦ ὄντος λέγειν.\n\nGloss (abridged):\nὅτι μέν... οὐκ οἶδα — 'What... I do not know'\nπεπόνθατε — you have experienced (perf. of πάσχω)\nὑπό + gen. — by\nτῶν ἐμῶν κατηγόρων — my accusers\nἐγὼ δ' οὖν — but I indeed\nκαὶ αὐτός — I myself also\nὀλίγου — almost\nἐμαυτοῦ ἐπελαθόμην — I forgot myself (aor. of ἐπιλανθάνομαι + gen.)\nοὕτω πιθανῶς — so persuasively\nἔλεγον — they spoke (imperf.)\nκαίτοι — and yet\nἀληθές γε — true indeed\nὡς ἔπος εἰπεῖν — so to speak (idiom)\nοὐδέν — nothing (acc.)\nεἰρήκασιν — they have said (perf. of λέγω)\nμάλιστα δέ — but especially\nἓν ἐθαύμασα — I marveled at one thing (aor.)\nτῶν πολλῶν ὧν ἐψεύσαντο — of the many things which they lied about\nτοῦτο ἐν ᾧ — this in which\nἔλεγον — they said\nὡς χρῆν — that it was necessary (imperf. of χρή + inf.)\nὑμᾶς εὐλαβεῖσθαι — for you to beware (pres. inf. mid. of εὐλαβέομαι)\nμή... ἐξαπατηθῆτε — lest you be deceived (aor. pass. subj. of ἐξαπατάω)\nὑπ' ἐμοῦ — by me\nδεινοῦ ὄντος λέγειν — (me) being clever at speaking (gen. abs.)\n\nTranslation:\nWhat you, men of Athens, have experienced at the hands of my accusers, I do not know. But I myself, under their influence, almost forgot who I was, so persuasively did they speak. And yet, to tell the truth, they have said nothing true. But I marveled most at one of the many lies they told, the one in which they said that you should beware lest you be deceived by me, since I am a clever speaker."
+    },
+    {
+      "kind": "prose",
+      "heading": "What you have done",
+      "body": "You have read the opening of Plato's Apology. You have seen subjunctives (ἐξαπατηθῆτε), optatives (if any appear later in the passage), infinitives (εὐλαβεῖσθαι, λέγειν, εἰπεῖν), perfect forms (πεπόνθατε, εἰρήκασιν), genitive absolutes (δεινοῦ ὄντος λέγειν), and indirect statement (ὡς χρῆν + infinitive). You recognized it all.\n\nThis is the threshold of advanced reading. You can now read any Greek prose with a lexicon and a commentary. The rest is vocabulary, idiom, and practice."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer these questions without looking back.",
+      "items": [
+        { "prompt": "Who is Socrates addressing?", "answer": "The men of Athens (the jury)." },
+        { "prompt": "What does Socrates say he almost forgot?", "answer": "He almost forgot himself." },
+        { "prompt": "Why did he almost forget himself?", "answer": "Because his accusers spoke so persuasively." },
+        { "prompt": "What does Socrates say about the truth of his accusers' statements?", "answer": "They have said nothing true." },
+        { "prompt": "What lie did Socrates marvel at most?", "answer": "The lie that the jury should beware lest they be deceived by him as a clever speaker." },
+        { "prompt": "What is the mood of ἐξαπατηθῆτε?", "answer": "Subjunctive (μή + aor. subj. = prohibition or fear)." },
+        { "prompt": "What is the tense of πεπόνθατε?", "answer": "Perfect." }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 4.12 is the final reading of Stage 4: Lysias 1, On the Murder of Eratosthenes, sections 1-10. This is conversational Attic prose, the everyday rhythm of the spoken language. After this lesson you will have read Xenophon, Plato, Lysias, and the New Testament. Stage 4 is complete."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can read the passage aloud with accurate pronunciation and can translate at least 80% of it without consulting the gloss.",
+    "credit_minutes": 90
+  }
+}

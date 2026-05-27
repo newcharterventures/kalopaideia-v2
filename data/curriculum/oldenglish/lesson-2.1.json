@@ -1,0 +1,58 @@
+{
+  "id": "2.1",
+  "stage": 2,
+  "title": "The Four Cases",
+  "subtitle": "Nominative, accusative, genitive, dative — how Old English marks the function of a noun.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Understand that Old English nouns inflect for case, number, and gender.",
+    "Recognize the four cases and their primary functions.",
+    "Distinguish case from word order as a marker of grammatical function."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Why Old English has cases",
+      "body": "Modern English marks grammatical function with word order. 'The man sees the dog' is different from 'The dog sees the man.' Switch the two nouns and you switch the meaning. Old English inherited from Proto-Germanic a system of noun inflections (case endings) that mark function directly. Word order is flexible because the case endings tell you who is doing what to whom."
+    },
+    {
+      "kind": "prose",
+      "heading": "The four cases",
+      "body": "Old English has four cases:\n\n1. **Nominative** — the subject of the verb. The doer of the action in an active sentence. Also used for the predicate nominative (the complement of 'to be').\n\n2. **Accusative** — the direct object of the verb. The thing acted upon. Also used after certain prepositions (þurh 'through,' geond 'throughout').\n\n3. **Genitive** — possession, origin, partition, description. 'The king's son,' 'a cup of wine,' 'a man of wisdom.' Also used after certain prepositions (e.g., forms of 'because').\n\n4. **Dative** — the indirect object ('give the book *to the child*'), the object of most prepositions, the instrument ('kill *with a sword*'), accompaniment ('go *with the king*'). The dative is the most versatile case.\n\nOld English once had a fifth case (instrumental), but by the classical period (c. 900–1000) it had merged with the dative in most declensions."
+    },
+    {
+      "kind": "prose",
+      "heading": "How to recognize case",
+      "body": "Case is marked by the ending of the noun and the form of the article or adjective that modifies it. You cannot always tell the case from the noun ending alone (many endings are ambiguous), but the article usually disambiguates. The definite article se/sēo/þæt has seventeen different forms, one for each combination of case, number, and gender. Learn the article and you have the key to the case system."
+    },
+    {
+      "kind": "prose",
+      "heading": "Example from Beowulf",
+      "body": "Hwæt! Wē Gār-Dena in gēardagum,\nþēodcyninga, þrym gefrūnon.\n\n'Lo! We have heard of the Spear-Danes in days of yore, of the glory of the people-kings.'\n\nGār-Dena (genitive plural) — 'of the Spear-Danes.' Marks possession or association.\nþēodcyninga (genitive plural) — 'of the people-kings.' Genitive after gefrūnon (heard).\nþrym (accusative singular) — 'glory.' Direct object of gefrūnon.\n\nThe case endings tell you the structure. The word order is flexible."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer from memory.",
+      "items": [
+        { "prompt": "What case marks the subject of a verb?", "answer": "Nominative" },
+        { "prompt": "What case marks the direct object?", "answer": "Accusative" },
+        { "prompt": "What case marks possession?", "answer": "Genitive" },
+        { "prompt": "What case marks the indirect object?", "answer": "Dative" },
+        { "prompt": "What case is used after most prepositions?", "answer": "Dative (some prepositions take accusative or genitive)" },
+        { "prompt": "How many cases did Old English have?", "answer": "Four (nominative, accusative, genitive, dative). A fifth (instrumental) had merged with the dative." },
+        { "prompt": "Why does Old English allow flexible word order?", "answer": "Case endings mark grammatical function, so word order is free to serve emphasis or meter." },
+        { "prompt": "What is the key to recognizing case?", "answer": "The definite article (se/sēo/þæt) and its seventeen forms." }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.2 teaches the definite article in all its forms. The article is the skeleton key to Old English case."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can name the four cases and state the primary function of each.",
+    "credit_minutes": 50
+  }
+}

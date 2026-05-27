@@ -1,0 +1,56 @@
+{
+  "id": "2.12",
+  "stage": 2,
+  "title": "Reading: La Fontaine, Fables (selections)",
+  "subtitle": "Le Corbeau et le Renard, La Cigale et la Fourmi. Short, simple verse fables.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Understand reading: la fontaine, fables (selections).",
+    "Apply the concepts in reading and writing.",
+    "Practice with authentic French examples."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Main content",
+      "body": "La Fontaine's Fables are written in clear, elegant verse. The vocabulary is simple, the syntax is straightforward, and the moral is explicit. They are the perfect first sustained reading in French."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer these questions.",
+      "items": [
+        {
+          "prompt": "What is the main concept?",
+          "answer": "Reading: La Fontaine, Fables (selections)"
+        },
+        {
+          "prompt": "Review question 2",
+          "answer": "Review answer 2"
+        }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Practice materials",
+      "instructions": "Read each example.",
+      "words": [
+        {
+          "french": "exemple",
+          "transliteration": null,
+          "gloss": "example",
+          "audio": "/paideia/audio/french/words/example.mp3"
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson continues Stage 2."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts without hesitation.",
+    "credit_minutes": 50
+  }
+}

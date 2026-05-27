@@ -1,0 +1,20 @@
+{
+  "id": "3.9",
+  "stage": 3,
+  "title": "The Present Active Participle",
+  "subtitle": "amāns, amantis. Third-declension adjective in form.",
+  "estimated_minutes": 50,
+  "objectives": ["Form the present active participle from any verb.", "Decline the participle as a third-declension adjective.", "Translate participles as 'X-ing' or with relative clauses.", "Understand participles as verbal adjectives."],
+  "sections": [
+    {"kind": "prose", "heading": "The present active participle", "body": "Formation: present stem + -ns (becomes -nt- in all cases except nom. sg.):\n  amāns, amantis — loving\n  regēns, regentis — ruling\n\nDeclines like a third-declension adjective (one-termination).\n\nCicero writes: vir amāns patriae. — A man loving his country.\nCaesar writes: mīlitēs pugnantēs. — Soldiers fighting."},
+    {"kind": "self_check", "heading": "Self-check", "items": [
+      {"prompt": "Form the present participle of dūcō.", "answer": "dūcēns, dūcentis — leading"},
+      {"prompt": "Translate: puella cantāns.", "answer": "A girl singing / the girl who is singing."}
+    ]},
+    {"kind": "reading_preview", "heading": "Sentences", "words": [
+      {"latin": "vir pugnāns fortis est.", "transliteration": null, "gloss": "The man fighting is brave.", "audio": "/paideia/audio/latin/sentences/3.9-1.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Lesson 3.10: the perfect passive participle. amātus, amāta, amātum."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can form and decline any present active participle.", "credit_minutes": 50}
+}

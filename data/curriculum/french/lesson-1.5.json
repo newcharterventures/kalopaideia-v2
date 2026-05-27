@@ -1,0 +1,78 @@
+{
+  "id": "1.5",
+  "stage": 1,
+  "title": "Élision",
+  "subtitle": "Dropping the final vowel before a word beginning with a vowel or mute h. The apostrophe as notation.",
+  "estimated_minutes": 40,
+  "objectives": [
+    "Understand élision as the deletion of a final vowel before an initial vowel.",
+    "Recognize which words undergo élision: le, la, je, me, te, se, ce, de, ne, que.",
+    "Apply élision correctly in writing with the apostrophe.",
+    "Distinguish between élision (vowel drops) and liaison (consonant links)."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "What élision is",
+      "body": "Élision is the deletion of a final vowel before a word that starts with a vowel or silent h. The dropped vowel is replaced by an apostrophe in writing.\n\n- le + ami = l'ami\n- la + école = l'école\n- je + ai = j'ai\n- ne + est = n'est\n\nThe apostrophe marks the absence, not the presence. It says: a vowel was here, but I dropped it to avoid a hiatus."
+    },
+    {
+      "kind": "prose",
+      "heading": "Which words undergo élision",
+      "body": "Only a small set of words undergo élision. They are all single-syllable function words:\n\n- Articles: le, la → l'\n- Pronouns: je, me, te, se, ce → j', m', t', s', c'\n- Prepositions: de → d'\n- Conjunctions: que → qu'\n- Negation: ne → n'\n\nThe plural article 'les' does not elide; it makes liaison instead: les amis, not l'amis.\n\nThe masculine article 'le' elides before vowels: l'homme. The feminine 'la' also elides: l'école. This means that 'l'' is ambiguous — you cannot tell from the form alone whether the noun is masculine or feminine. The full form must be learned."
+    },
+    {
+      "kind": "prose",
+      "heading": "Élision and the aspirated h",
+      "body": "Élision, like liaison, is blocked by an aspirated h. You write 'le héros', not 'l'héros'. The apostrophe never appears before an aspirated h.\n\nThis is the same rule as liaison: aspirated h creates a word boundary. Silent h does not."
+    },
+    {
+      "kind": "prose",
+      "heading": "Élision versus liaison",
+      "body": "Do not confuse them.\n\n- Élision drops a vowel: le + homme = l'homme.\n- Liaison links a consonant: les + hommes = [lezɔm].\n\nBoth apply before vowels. Some words do both, in sequence: de + les + hommes = des hommes, with liaison [dezɔm]."
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill",
+      "instructions": "Each phrase is read aloud. Notice where the vowel drops and where the apostrophe appears.",
+      "audio": "/paideia/audio/french/drills/lesson-1.5-listening.mp3"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer without looking back.",
+      "items": [
+        { "prompt": "What is élision?", "answer": "Deletion of a final vowel before a word starting with a vowel or silent h." },
+        { "prompt": "Write 'le + ami' with élision.", "answer": "l'ami" },
+        { "prompt": "Write 'la + école' with élision.", "answer": "l'école" },
+        { "prompt": "Does 'je + ai' become 'j'ai'?", "answer": "Yes." },
+        { "prompt": "Does 'les + amis' undergo élision?", "answer": "No. 'les' makes liaison, not élision: [lez‿ami]." },
+        { "prompt": "Can you elide before an aspirated h?", "answer": "No. Élision is blocked by aspirated h. Ex: le héros, not l'héros." },
+        { "prompt": "What does the apostrophe mark?", "answer": "The absence of a dropped vowel." },
+        { "prompt": "Which of these words undergo élision: le, les, un, de, ne?", "answer": "le, de, ne. Not les or un." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Phrases to practice",
+      "instructions": "Read each aloud. Notice the élision.",
+      "words": [
+        { "french": "l'ami", "transliteration": null, "gloss": "the friend", "audio": "/paideia/audio/french/words/l-ami.mp3" },
+        { "french": "l'école", "transliteration": null, "gloss": "the school", "audio": "/paideia/audio/french/words/l-ecole.mp3" },
+        { "french": "j'ai", "transliteration": null, "gloss": "I have", "audio": "/paideia/audio/french/words/j-ai.mp3" },
+        { "french": "d'abord", "transliteration": null, "gloss": "at first", "audio": "/paideia/audio/french/words/d-abord.mp3" },
+        { "french": "qu'il", "transliteration": null, "gloss": "that he", "audio": "/paideia/audio/french/words/qu-il.mp3" },
+        { "french": "n'est", "transliteration": null, "gloss": "is not", "audio": "/paideia/audio/french/words/n-est.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.6 covers stress and intonation. French stress falls on the final syllable of a phrase, not on individual words. The rising and falling contours of declarative and interrogative sentences."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can write ten French phrases with correct élision and read them aloud.",
+    "credit_minutes": 40
+  }
+}

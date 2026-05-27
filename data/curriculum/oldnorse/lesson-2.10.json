@@ -1,0 +1,46 @@
+{
+  "id": "2.10",
+  "stage": 2,
+  "title": "The Past Indicative of Strong Verbs",
+  "subtitle": "Ek bar, þú bart, hann bar — ablaut.",
+  "estimated_minutes": 50,
+  "objectives": ["Conjugate a strong verb in the past indicative.","Understand the six ablaut classes."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers The Past Indicative of Strong Verbs. Ek bar, þú bart, hann bar — ablaut."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Conjugate a strong verb in the past indicative."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Conjugate a strong verb in the past indicative." },
+        { "prompt": "How do you apply this in practice?", "answer": "Understand the six ablaut classes." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "oldnorse": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/oldnorse/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on The Past Indicative of Strong Verbs."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in The Past Indicative of Strong Verbs to ten random examples.",
+    "credit_minutes": 50
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "id": "2.8",
+  "stage": 2,
+  "title": "Funerary Inscriptions, Part Two",
+  "subtitle": "The Gaulish genitive — kinship, patronymics, and personal name compounds.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Recognize the genitive singular ending -i in -o- stem nouns.",
+    "Translate MATIR (\"mother\") and kinship terms.",
+    "Parse five inscriptions with genitive constructions.",
+    "Understand the common personal name elements: SEG-, MAR-, VER-, RIG-, DAGO-."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The genitive case",
+      "body": "The genitive case in Gaulish marks possession and kinship. The genitive singular of -o- stem nouns (the largest class) ends in -i:\n\nSEGOMĀROS (nominative) → SEGOMĀRI (genitive, \"of Segomaros\")\nVILONEOS (nominative) → VILONEI (genitive, \"of Viloneos\")\n\nThe genitive of -ā- stem nouns (mostly feminine) ends in -as:\n\nMĀTIR (nominative, \"mother\") → MĀTRAS (genitive, \"of the mother\")\n\nPatronymics use the genitive: X Y-gen. = \"X son of Y\" or \"X daughter of Y\". Kinship terms follow the same pattern: X MATIR Y-gen. = \"X mother of Y\"."
+    },
+    {
+      "kind": "prose",
+      "heading": "Inscription 1: Mother of Segomaros",
+      "body": "From a funerary stone in central Gaul, 1st century CE:\n\nMARIA SEGOMĀRI MATIR\n\nParsing:\nMARIA — nominative singular, a Latin name (\"Maria\")\nSEGOMĀRI — genitive singular, \"of Segomaros\"\nMATIR — nominative singular, \"mother\" (cognate with Latin māter)\n\nTranslation: \"Maria, mother of Segomaros.\""
+    },
+    {
+      "kind": "prose",
+      "heading": "Inscription 2: Son of Daxtio",
+      "body": "From Alise-Sainte-Reine, 1st century CE:\n\nATEPOMĀROS DAXTIONI\n\nParsing:\nATEPOMĀROS — nominative singular, \"very great\"\nDAXTIONI — genitive singular, \"of Daxtio\" (the ending -oni is a variant genitive for -on- stem nouns)\n\nTranslation: \"Atepomaros son of Daxtio.\""
+    },
+    {
+      "kind": "prose",
+      "heading": "Inscription 3: Daughter of Dannotalos",
+      "body": "From Autun, 1st century CE:\n\nPRISCA DANNOTALI\n\nParsing:\nPRISCA — nominative singular, a Latin name (\"Prisca\")\nDANNOTALI — genitive singular, \"of Dannotalos\"\n\nTranslation: \"Prisca daughter of Dannotalos.\""
+    },
+    {
+      "kind": "prose",
+      "heading": "Inscription 4: Wife of Eporedorix",
+      "body": "From Saint-Marcel, 1st century CE:\n\nSEVERA EPOREDORIGI GNATHA\n\nParsing:\nSEVERA — nominative singular, a Latin name (\"Severa\")\nEPOREDORIGI — genitive singular, \"of Eporedorix\"\nGNATHA — nominative singular, \"wife\" or \"daughter\" (cognate with Latin nata, \"born\")\n\nTranslation: \"Severa, wife of Eporedorix.\""
+    },
+    {
+      "kind": "prose",
+      "heading": "Name elements and meanings",
+      "body": "Gaulish personal names are transparent compounds. The most common elements:\n\nSEG- (victory) — SEGOMĀROS (\"great in victory\")\nMAR- (great) — appears in SEGOMĀROS, ATEPOMAROS, NERTOMAROS\nVER- (over, super-) — VERCINGETORIX (\"king over warriors\")\nRIG-, -RIX (king) — EPOREDORIX, DVBNORIX, VERCINGETORIX\nDAGO- (good) — DAGOMĀROS (\"good and great\")\nBRIG- (high) — BRIGOMAGLOS (\"high prince\")\nNERT- (strength) — NERTOMAROS (\"great in strength\")\nEPO- (horse) — EPOREDORIX (\"horse-driving king\")\n\nLearn these elements and you can parse any Gaulish name."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers; check after.",
+      "items": [
+        { "prompt": "What is the genitive singular ending of -o- stem nouns?", "answer": "-i, as in SEGOMĀRI (\"of Segomaros\")." },
+        { "prompt": "What does MATIR mean?", "answer": "\"Mother\" — cognate with Latin māter." },
+        { "prompt": "Translate MARIA SEGOMĀRI MATIR.", "answer": "\"Maria, mother of Segomaros.\"" },
+        { "prompt": "What is the genitive singular ending of -ā- stem nouns?", "answer": "-as, as in MĀTRAS (\"of the mother\")." },
+        { "prompt": "Parse ATEPOMAROS DAXTIONI.", "answer": "ATEPOMAROS (nom. sg., \"very great\") DAXTIONI (gen. sg., \"of Daxtio\") = \"Atepomaros son of Daxtio\"." },
+        { "prompt": "What does GNATHA mean?", "answer": "\"Wife\" or \"daughter\" — cognate with Latin nata (\"born\")." },
+        { "prompt": "What does the element SEG- mean in Gaulish names?", "answer": "\"Victory\", as in SEGOMĀROS (\"great in victory\")." },
+        { "prompt": "Parse VERCINGETORIX into its elements.", "answer": "VER- (over) + CINGETO- (warrior) + RIX (king) = \"king over warriors\"." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Genitive and kinship vocabulary",
+      "instructions": "These words appear in Gaulish funerary inscriptions with kinship or patronymic constructions. Memorize them.",
+      "words": [
+        { "gaulish": "SEGOMĀRI", "transliteration": null, "gloss": "of Segomaros (genitive)", "audio": "/paideia/audio/gaulish/funerary/segomari-gen.mp3" },
+        { "gaulish": "MATIR", "transliteration": null, "gloss": "mother (nominative)", "audio": "/paideia/audio/gaulish/funerary/matir.mp3" },
+        { "gaulish": "GNATHA", "transliteration": null, "gloss": "wife, daughter (nominative)", "audio": "/paideia/audio/gaulish/funerary/gnatha.mp3" },
+        { "gaulish": "DAXTIONI", "transliteration": null, "gloss": "of Daxtio (genitive)", "audio": "/paideia/audio/gaulish/funerary/daxtioni.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.9 covers dedicatory inscriptions: votive offerings to the gods, with the formula DEDEMIT IEVRV and ten complete dedications to Lugus, Rosmerta, Belenos, Taranis, and Esus."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can recognize the genitive -i, translate MATIR and GNATHA, and parse all five inscriptions.",
+    "credit_minutes": 60
+  }
+}

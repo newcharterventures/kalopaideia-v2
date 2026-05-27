@@ -1,0 +1,61 @@
+{
+  "id": "2.6",
+  "stage": 2,
+  "title": "Regular -ir and -re Verbs",
+  "subtitle": "finir: je finis, tu finis, il finit, nous finissons, vous finissez, ils finissent. vendre: je vends, tu vends, il vend, nous vendons, vous vendez, ils vendent.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Conjugate regular -ir verbs (finir pattern) in the present indicative.",
+    "Conjugate regular -re verbs (vendre pattern) in the present indicative.",
+    "Distinguish between the three regular conjugations: -er, -ir, -re."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Regular -ir verbs",
+      "body": "The second conjugation consists of verbs ending in -ir. The pattern is illustrated by finir (to finish).\n\n             finir (to finish)\n\n  je         fin-is      [fini]\n  tu         fin-is      [fini]\n  il/elle    fin-it      [fini]\n  nous       fin-issons  [finisɔ̃]\n  vous       fin-issez   [finise]\n  ils/elles  fin-issent  [finis]\n\nThe singular forms sound identical: [fini]. The plural forms insert -iss- before the ending."
+    },
+    {
+      "kind": "prose",
+      "heading": "Regular -re verbs",
+      "body": "The third conjugation consists of verbs ending in -re. The pattern is illustrated by vendre (to sell).\n\n             vendre (to sell)\n\n  je         vend-s      [vɑ̃]\n  tu         vend-s      [vɑ̃]\n  il/elle    vend        [vɑ̃]\n  nous       vend-ons    [vɑ̃dɔ̃]\n  vous       vend-ez     [vɑ̃de]\n  ils/elles  vend-ent    [vɑ̃d]\n\nNotice that the third-person singular has no ending: 'il vend', not 'il vends'."
+    },
+    {
+      "kind": "prose",
+      "heading": "Other common -ir and -re verbs",
+      "body": "-ir verbs:\n  choisir (to choose): je choisis, tu choisis, il choisit, nous choisissons, vous choisissez, ils choisissent\n  réussir (to succeed): je réussis, tu réussis, il réussit, nous réussissons, vous réussissez, ils réussissent\n\n-re verbs:\n  attendre (to wait): j'attends, tu attends, il attend, nous attendons, vous attendez, ils attendent\n  répondre (to answer): je réponds, tu réponds, il répond, nous répondons, vous répondez, ils répondent"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Conjugate the verb.",
+      "items": [
+        { "prompt": "finir: nous ?", "answer": "finissons" },
+        { "prompt": "vendre: il ?", "answer": "vend" },
+        { "prompt": "choisir: ils ?", "answer": "choisissent" },
+        { "prompt": "attendre: je ?", "answer": "attends" },
+        { "prompt": "What is inserted in the plural forms of -ir verbs?", "answer": "-iss-" },
+        { "prompt": "Does 'il vend' have an ending?", "answer": "No. Third-person singular -re verbs have no ending." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Verbs to practice",
+      "instructions": "Conjugate each verb aloud.",
+      "words": [
+        { "french": "finir", "transliteration": null, "gloss": "to finish", "audio": "/paideia/audio/french/words/finir-conj.mp3" },
+        { "french": "vendre", "transliteration": null, "gloss": "to sell", "audio": "/paideia/audio/french/words/vendre-conj.mp3" },
+        { "french": "choisir", "transliteration": null, "gloss": "to choose", "audio": "/paideia/audio/french/words/choisir-conj.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.7 covers être and avoir, the two auxiliary verbs. Irregular and mandatory."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can conjugate three -ir verbs and three -re verbs in the present tense.",
+    "credit_minutes": 50
+  }
+}

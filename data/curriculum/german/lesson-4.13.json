@@ -1,0 +1,37 @@
+{
+  "id": "4.13",
+  "stage": 4,
+  "title": "Reading: Goethe, 'Erlk\u00f6nig'",
+  "subtitle": "Wer reitet so sp\u00e4t durch Nacht und Wind? Ballad. Dialogue, narrative.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Master Reading: Goethe, 'Erlk\u00f6nig'"
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Lesson overview",
+      "body": "Wer reitet so sp\u00e4t durch Nacht und Wind? Ballad. Dialogue, narrative.\n\nFull content: prose opener with real examples from Goethe/Nietzsche/Heine, paradigm tables where applicable, self_check, reading_preview, next_lesson."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Verify understanding.",
+      "items": [
+        {
+          "prompt": "Core of Reading: Goethe, 'Erlk\u00f6nig'?",
+          "answer": "Wer reitet so sp\u00e4t durch Nacht und Wind? Ballad. Dialogue, narrative."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Stage 4 checkpoint follows. After that, Stage 5 \u2014 your chosen author."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Complete when Reading: Goethe, 'Erlk\u00f6nig' is mastered.",
+    "credit_minutes": 60
+  }
+}

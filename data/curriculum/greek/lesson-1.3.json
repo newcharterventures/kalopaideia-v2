@@ -1,0 +1,75 @@
+{
+  "id": "1.3",
+  "stage": 1,
+  "title": "Vowels and Diphthongs",
+  "subtitle": "The seven vowels, ten diphthongs, and the iota subscript.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Distinguish the three pairs of short and long vowels: α/ᾱ, ι/ῑ, υ/ῡ.",
+    "Recognize ε and ο as always short, η and ω as always long.",
+    "Pronounce the ten diphthongs: αι, ει, οι, αυ, ευ, ου, υι and ᾳ, ῃ, ῳ.",
+    "Identify the iota subscript and understand that it is silent in Attic but appears in declension."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The vowel system",
+      "body": "Greek has seven simple vowels: α, ε, η, ι, ο, υ, ω. Of these, two are always short (ε, ο), two are always long (η, ω), and three can be either short or long depending on the word (α, ι, υ). The distinction between short and long vowels is phonemic. A short α and a long ᾱ are as different to a Greek ear as the vowels in bit and beet are to an English ear.\n\nGreek also has ten diphthongs: combinations of two vowels pronounced as a single syllable. Seven are common, three are restricted to certain declensions and appear with the iota subscript. All diphthongs are long by nature."
+    },
+    {
+      "kind": "prose",
+      "heading": "The seven simple vowels",
+      "body": "α — can be short [a] or long [aː]. The long form is marked ᾱ in lexicons and grammars when the distinction needs to be shown, but in printed Greek texts the macron is not written.\n\nε — always short [e]. The name epsilon means 'plain e'.\n\nη — always long [ɛː]. The name eta means 'long e'. This is the long counterpart to ε.\n\nι — can be short [i] or long [iː]. When long, sometimes marked ῑ in lexicons.\n\nο — always short [o]. The name omicron means 'small o'.\n\nυ — can be short [y] or long [yː]. The sound is not found in English: lips rounded as for oo, tongue forward as for ee. Think of the German ü or the French u in tu.\n\nω — always long [ɔː]. The name omega means 'great o'. This is the long counterpart to ο."
+    },
+    {
+      "kind": "prose",
+      "heading": "The ten diphthongs",
+      "body": "A diphthong is two vowels in one syllable. Greek has seven common diphthongs:\n\nαι [ai] as in aisle — ἄνθρωπος καὶ θεός (man and god)\nει [ei] as in eight — εἰρήνη (peace)\nοι [oi] as in oil — οἶδα (I know)\nαυ [au] as in sauerkraut — αὐτός (self, same)\nευ [eu] as e + oo gliding together — εὖ (well)\nου [oː] this one is not a true diphthong in Attic; it is a long monophthong [oː], but spelled with two letters. Think of the vowel in food.\nυι [yi] rare, but occurs in some forms — υἱός (son)\n\nThree more diphthongs appear with the iota subscript: ᾳ, ῃ, ῳ. The subscript iota is written under the long vowel (α, η, ω) and was originally a second vowel in the diphthong. By the classical period the iota had become silent in speech, but it is still written and still affects declension. Think of it as a silent letter, like the e in English love."
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill",
+      "instructions": "Each vowel and diphthong is spoken in isolation, then inside a real Greek word. Listen; then repeat. Pay close attention to the difference between ε and η, between ο and ω.",
+      "audio": "/paideia/audio/greek/drills/lesson-1.3-listening.mp3"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers. Answer each question.",
+      "items": [
+        { "prompt": "Which two vowels are always short?", "answer": "ε (epsilon) and ο (omicron)" },
+        { "prompt": "Which two vowels are always long?", "answer": "η (eta) and ω (omega)" },
+        { "prompt": "Which three vowels can be either short or long?", "answer": "α, ι, υ" },
+        { "prompt": "How is the diphthong αι pronounced?", "answer": "Like the ai in aisle" },
+        { "prompt": "How is the diphthong ου pronounced in Attic?", "answer": "As a long monophthong [oː], like the oo in food — not a true diphthong" },
+        { "prompt": "What is the iota subscript?", "answer": "A small iota written under α, η, or ω (ᾳ, ῃ, ῳ). It is silent in speech but affects declension and must be written." },
+        { "prompt": "Which sound does υ represent?", "answer": "Like German ü or French u — lips rounded, tongue forward. Not found in English." },
+        { "prompt": "Is the vowel in εἰρήνη (peace) short or long?", "answer": "Long — the diphthong ει counts as long, and the η is always long." },
+        { "prompt": "What is the difference between ο and ω?", "answer": "ο (omicron) is always short; ω (omega) is always long. They are distinct phonemes." },
+        { "prompt": "How many diphthongs does Greek have?", "answer": "Ten: αι, ει, οι, αυ, ευ, ου, υι, ᾳ, ῃ, ῳ" }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Words with diphthongs",
+      "instructions": "Read these aloud. Each contains at least one diphthong.",
+      "words": [
+        { "greek": "καὶ", "transliteration": "kaí", "gloss": "and", "audio": "/paideia/audio/greek/words/kai.mp3" },
+        { "greek": "εἰρήνη", "transliteration": "eirḗnē", "gloss": "peace", "audio": "/paideia/audio/greek/words/eirene.mp3" },
+        { "greek": "οἶκος", "transliteration": "oîkos", "gloss": "house", "audio": "/paideia/audio/greek/words/oikos.mp3" },
+        { "greek": "αὐτός", "transliteration": "autós", "gloss": "self, same", "audio": "/paideia/audio/greek/words/autos.mp3" },
+        { "greek": "οὐρανός", "transliteration": "ouranós", "gloss": "heaven, sky", "audio": "/paideia/audio/greek/words/ouranos.mp3" },
+        { "greek": "τῇ ἡμέρᾳ", "transliteration": "têi hēmérāi", "gloss": "on the day (dative)", "audio": "/paideia/audio/greek/words/te-hemera.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.4 introduces the breathings. Every Greek word that begins with a vowel or with rho takes a breathing mark: either smooth (no h-sound) or rough (h-sound). The breathing is not optional. ἀνήρ and ἁγνός are as different as English an and hand."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can pronounce all ten diphthongs from memory and can identify whether a given simple vowel is always short, always long, or variable.",
+    "credit_minutes": 55
+  }
+}

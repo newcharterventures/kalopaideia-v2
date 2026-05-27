@@ -1,0 +1,62 @@
+{
+  "id": "1.7",
+  "stage": 1,
+  "title": "First Sentences",
+  "subtitle": "Ten short sentences with audio and glosses. Read before parsing.",
+  "estimated_minutes": 40,
+  "objectives": [
+    "Read ten complete Italian sentences aloud.",
+    "Match Italian words to English glosses without grammar instruction yet.",
+    "Build confidence in reading connected text."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Why read before parsing?",
+      "body": "Grammar will come. For now, you are training your eye and ear. You will read these sentences aloud, hear them in the recording, and learn to recognize the shapes of Italian words in context. Do not try to parse them yet. Just read."
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Ten first sentences",
+      "instructions": "Read each sentence aloud. Listen to the audio. Repeat until smooth.",
+      "words": [
+        { "italian": "La casa è grande.", "transliteration": null, "gloss": "The house is big.", "audio": "/paideia/audio/italian/sentences/sentence-1.mp3" },
+        { "italian": "Il sole splende.", "transliteration": null, "gloss": "The sun shines.", "audio": "/paideia/audio/italian/sentences/sentence-2.mp3" },
+        { "italian": "Dante è poeta.", "transliteration": null, "gloss": "Dante is a poet.", "audio": "/paideia/audio/italian/sentences/sentence-3.mp3" },
+        { "italian": "La donna canta.", "transliteration": null, "gloss": "The woman sings.", "audio": "/paideia/audio/italian/sentences/sentence-4.mp3" },
+        { "italian": "Il ragazzo legge un libro.", "transliteration": null, "gloss": "The boy reads a book.", "audio": "/paideia/audio/italian/sentences/sentence-5.mp3" },
+        { "italian": "La notte è bella.", "transliteration": null, "gloss": "The night is beautiful.", "audio": "/paideia/audio/italian/sentences/sentence-6.mp3" },
+        { "italian": "Roma è una città.", "transliteration": null, "gloss": "Rome is a city.", "audio": "/paideia/audio/italian/sentences/sentence-7.mp3" },
+        { "italian": "Il mare è blu.", "transliteration": null, "gloss": "The sea is blue.", "audio": "/paideia/audio/italian/sentences/sentence-8.mp3" },
+        { "italian": "La madre parla.", "transliteration": null, "gloss": "The mother speaks.", "audio": "/paideia/audio/italian/sentences/sentence-9.mp3" },
+        { "italian": "Un uomo cammina.", "transliteration": null, "gloss": "A man walks.", "audio": "/paideia/audio/italian/sentences/sentence-10.mp3" }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "What you just read",
+      "body": "You have now read ten Italian sentences. You did not parse them. You did not decline nouns or conjugate verbs. You simply read.\n\nThis is the method of Kalopaideia: reading-led, with grammar as servant. In Stage 2 you will learn articles, nouns, and verbs. You will return to these sentences and parse them. For now, they are sounds and shapes."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Without looking, translate these from memory.",
+      "items": [
+        { "prompt": "La casa è grande.", "answer": "The house is big." },
+        { "prompt": "Il sole splende.", "answer": "The sun shines." },
+        { "prompt": "Dante è poeta.", "answer": "Dante is a poet." },
+        { "prompt": "La donna canta.", "answer": "The woman sings." },
+        { "prompt": "Il ragazzo legge un libro.", "answer": "The boy reads a book." }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Stage 2 begins with Lesson 2.1: the definite article. You will learn il, lo, la, i, gli, le — the six forms of 'the' in Italian."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can read all ten sentences aloud with correct pronunciation and recognize their English meanings.",
+    "credit_minutes": 40
+  }
+}

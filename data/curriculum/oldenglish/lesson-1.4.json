@@ -1,0 +1,76 @@
+{
+  "id": "1.4",
+  "stage": 1,
+  "title": "Consonants",
+  "subtitle": "C always hard, G complex, H guttural — the sounds modern English has lost.",
+  "estimated_minutes": 45,
+  "objectives": [
+    "Pronounce c as [k] before back vowels and as [tʃ] before front vowels.",
+    "Distinguish the three values of g: stop [ɡ], fricative [ɣ], palatal [j].",
+    "Produce the guttural h [x] as in German 'ach' or Scottish 'loch.'",
+    "Recognize and pronounce the consonant clusters sc, cg, ng."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "C — hard and soft",
+      "body": "The letter c in Old English represents two sounds, conditioned by the following vowel. Before back vowels (a, o, u) and before consonants, c is always [k] as in 'cat' or 'king.' Before front vowels (e, i, y) and before the diphthongs that begin with e or i, c is palatalized to [tʃ] as in 'church.'\n\nExamples: cū (cow) — hard [k]. cild (child) — soft [tʃ]. cyning (king) — soft [tʃ]. ceaster (city, fort) — soft [tʃ].\n\nThis is not a spelling convention; it is a phonological rule. The Anglo-Saxons heard these as the same underlying sound in different environments. Modern English preserves some of these palatalizations (child, church, cheese) but has lost the rule."
+    },
+    {
+      "kind": "prose",
+      "heading": "G — stop, fricative, palatal",
+      "body": "The letter g is more complex than c. It represents three sounds:\n\n1. Stop [ɡ] — at the beginning of a word before a back vowel (a, o, u), and after n. Examples: gōd (good), gān (to go), gang (going), engel (angel).\n\n2. Fricative [ɣ] — between vowels, and sometimes at the end of a word. This is the sound you hear in Spanish 'lago' or modern Greek γάλα. The back of the tongue approaches the soft palate but does not close fully. Examples: sorga (sorrow), daga (of days), boga (bow).\n\n3. Palatal [j] — before or after front vowels (e, i, y) and before or after front diphthongs. This is the sound of modern English 'yes.' Examples: geong (young), gieldan (to pay), dæg (day), weg (way).\n\nThe same letter, three sounds, all predictable from context."
+    },
+    {
+      "kind": "prose",
+      "heading": "H — aspirate and guttural",
+      "body": "Before a vowel, h is a simple aspirate [h] as in modern English 'house.' Before a consonant or at the end of a word, h is a voiceless velar fricative [x], the sound in German 'ach' or Scottish 'loch.' This sound does not exist in standard modern English, but it was common in Old English.\n\nExamples: hūs (house) — aspirate [h]. niht (night) — guttural [x]. þurh (through) — guttural [x]. eahta (eight) — guttural [x] before t."
+    },
+    {
+      "kind": "prose",
+      "heading": "Consonant clusters",
+      "body": "Three clusters require attention:\n\nsc — before a back vowel, [sk] as in 'skill.' Before a front vowel, palatalized to [ʃ] as in 'ship.' Examples: scip (ship) — [ʃ]. sceadu (shadow) — [ʃ]. scolu (school) — [sk].\n\ncg — after a front vowel, palatalized to [dʒ] as in 'judge.' Examples: ecg (edge), brycg (bridge), secgan (to say).\n\nng — always [ŋɡ] (as in 'finger'), never [ŋ] alone (as in 'sing'). Examples: lang (long), engel (angel), singan (to sing)."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Pronounce each word and identify the sound of the highlighted consonant.",
+      "items": [
+        { "prompt": "cū", "answer": "hard [k] — before back vowel u" },
+        { "prompt": "cild", "answer": "soft [tʃ] — before front vowel i" },
+        { "prompt": "gōd", "answer": "stop [ɡ] — initial before back vowel" },
+        { "prompt": "dæg", "answer": "palatal [j] — after front vowel" },
+        { "prompt": "sorga", "answer": "fricative [ɣ] — between vowels" },
+        { "prompt": "hūs", "answer": "aspirate [h] — before vowel" },
+        { "prompt": "niht", "answer": "guttural [x] — before consonant" },
+        { "prompt": "scip", "answer": "sc = [ʃ] — before front vowel" },
+        { "prompt": "ecg", "answer": "cg = [dʒ] — after front vowel" },
+        { "prompt": "Why does c have two sounds?", "answer": "Palatalization before front vowels. The Anglo-Saxons heard it as one phoneme in two environments." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Words with consonant complexity",
+      "instructions": "Listen and repeat. Pay attention to c, g, h, and clusters.",
+      "words": [
+        { "oldenglish": "cyning", "transliteration": null, "gloss": "king", "audio": "/paideia/audio/oldenglish/words/cyning.mp3" },
+        { "oldenglish": "cild", "transliteration": null, "gloss": "child", "audio": "/paideia/audio/oldenglish/words/cild.mp3" },
+        { "oldenglish": "gōd", "transliteration": null, "gloss": "good", "audio": "/paideia/audio/oldenglish/words/god.mp3" },
+        { "oldenglish": "geong", "transliteration": null, "gloss": "young", "audio": "/paideia/audio/oldenglish/words/geong.mp3" },
+        { "oldenglish": "dæg", "transliteration": null, "gloss": "day", "audio": "/paideia/audio/oldenglish/words/daeg.mp3" },
+        { "oldenglish": "niht", "transliteration": null, "gloss": "night", "audio": "/paideia/audio/oldenglish/words/niht.mp3" },
+        { "oldenglish": "scip", "transliteration": null, "gloss": "ship", "audio": "/paideia/audio/oldenglish/words/scip.mp3" },
+        { "oldenglish": "ecg", "transliteration": null, "gloss": "edge", "audio": "/paideia/audio/oldenglish/words/ecg.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.5 covers stress and word accent. Old English stress falls almost always on the root syllable, not on prefixes or suffixes."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can pronounce c, g, and h correctly in ten different words.",
+    "credit_minutes": 45
+  }
+}

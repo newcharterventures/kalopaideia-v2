@@ -1,0 +1,67 @@
+{
+  "id": "4.3",
+  "stage": 4,
+  "title": "The Imperative",
+  "subtitle": "λῦε, λυέτω — the mood of command.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Form and conjugate the present and aorist imperative in active and middle/passive.",
+    "Understand the imperative as the mood of direct command.",
+    "Use the imperative in positive commands and prohibitions.",
+    "Distinguish present from aorist imperative by aspect."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The imperative mood",
+      "body": "The imperative is the mood of direct command. λῦε means 'Loose!' The imperative has second-person forms (you, you plural) and third-person forms (let him, let them). There is no first-person imperative; the hortatory subjunctive fills that role.\n\nThe present imperative expresses ongoing or repeated action: 'Keep loosing.' The aorist imperative expresses a single, completed action: 'Loose (once).' In practice, the distinction is often subtle, and context determines which is appropriate."
+    },
+    {
+      "kind": "prose",
+      "heading": "The present imperative active: λῦε, λυέτω",
+      "body": "  singular\n  2nd   λῦε         Loose!\n  3rd   λυέτω       Let him/her/it loose!\n\n  plural\n  2nd   λύετε       Loose! (plural)\n  3rd   λυόντων     Let them loose!\n\nThe second-person singular is λῦε (no thematic vowel). The rest use thematic endings."
+    },
+    {
+      "kind": "prose",
+      "heading": "The aorist imperative active: λῦσον, λυσάτω",
+      "body": "  singular\n  2nd   λῦσον       Loose!\n  3rd   λυσάτω      Let him/her/it loose!\n\n  plural\n  2nd   λύσατε      Loose! (plural)\n  3rd   λυσάντων    Let them loose!\n\nThe aorist uses the sigma infix (no augment) and imperative endings."
+    },
+    {
+      "kind": "prose",
+      "heading": "Prohibitions",
+      "body": "Greek has two ways to express a negative command (prohibition).\n\nPresent imperative: μὴ λῦε — 'Stop loosing' or 'Don't keep loosing.' The present emphasizes cessation or ongoing action.\n\nAorist subjunctive: μὴ λύσῃς — 'Don't loose (at all).' The aorist subjunctive (not the aorist imperative) is used for prohibitions referring to a single action.\n\nIn practice:\nμὴ + present imperative = 'stop doing X' or 'don't keep doing X'\nμὴ + aorist subjunctive = 'don't do X (at all)'"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Conjugate or translate.",
+      "items": [
+        { "prompt": "Second person singular present imperative active of λύω", "answer": "λῦε" },
+        { "prompt": "Second person singular aorist imperative active of λύω", "answer": "λῦσον" },
+        { "prompt": "Third person singular present imperative active of λύω", "answer": "λυέτω" },
+        { "prompt": "Translate: λῦε τοὺς αἰχμαλώτους.", "answer": "Loose the prisoners!" },
+        { "prompt": "Translate: λύσατε τοὺς αἰχμαλώτους.", "answer": "Loose the prisoners! (plural)" },
+        { "prompt": "Translate: μὴ λῦε.", "answer": "Stop loosing / Don't keep loosing." },
+        { "prompt": "Translate: μὴ λύσῃς.", "answer": "Don't loose (at all)." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Imperative in sentences",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "λῦε τοὺς αἰχμαλώτους.", "transliteration": "lŷe toùs aichmalṓtous.", "gloss": "Loose the prisoners!", "audio": "/paideia/audio/greek/sentences/lye-aichmalotous.mp3" },
+        { "greek": "μὴ λῦε τοὺς αἰχμαλώτους.", "transliteration": "mḕ lŷe toùs aichmalṓtous.", "gloss": "Don't (keep) loosing the prisoners.", "audio": "/paideia/audio/greek/sentences/me-lye.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 4.4 introduces the infinitive. The infinitive is the verbal noun: λύειν means 'to loose' or 'the act of loosing'. The infinitive has tense and voice but no person or number. It is used as subject, object, complement, and in indirect statement."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can form and recognize the present and aorist imperative of any ω-verb and can translate commands and prohibitions correctly.",
+    "credit_minutes": 50
+  }
+}

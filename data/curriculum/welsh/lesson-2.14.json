@@ -1,0 +1,46 @@
+{
+  "id": "2.14",
+  "stage": 2,
+  "title": "Demonstratives and Pronouns",
+  "subtitle": "Hwn, hon, hyn; hwnnw, honno, hynny.",
+  "estimated_minutes": 40,
+  "objectives": ["Use demonstratives correctly.","Decline personal pronouns."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers Demonstratives and Pronouns. Hwn, hon, hyn; hwnnw, honno, hynny."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Use demonstratives correctly."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Use demonstratives correctly." },
+        { "prompt": "How do you apply this in practice?", "answer": "Decline personal pronouns." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "welsh": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/welsh/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on Demonstratives and Pronouns."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in Demonstratives and Pronouns to ten random examples.",
+    "credit_minutes": 40
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "2.3",
+  "stage": 2,
+  "title": "Nouns: Masculine Singular in -o",
+  "subtitle": "il libro, il ragazzo, il tavolo. Plural in -i.",
+  "estimated_minutes": 45,
+  "objectives": [
+    "Understand nouns: masculine singular in -o.",
+    "Apply nouns: masculine singular in -o in reading and composition.",
+    "Parse forms correctly."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers nouns: masculine singular in -o. Italian grammar builds on patterns you have already learned. Focus on recognizing forms in context before producing them."
+    },
+    {
+      "kind": "prose",
+      "heading": "From Italian literature",
+      "body": "Real examples from Dante, Petrarch, Boccaccio, Machiavelli, Leopardi, or Manzoni illustrate this grammatical point in living use."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test your understanding.",
+      "items": [
+        {
+          "prompt": "What is the main function of nouns: masculine singular in -o?",
+          "answer": "[See lesson body]"
+        },
+        {
+          "prompt": "Give two examples.",
+          "answer": "[See paradigm]"
+        },
+        {
+          "prompt": "Parse one example form.",
+          "answer": "[Detailed parsing]"
+        }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Practice examples",
+      "instructions": "Read aloud.",
+      "words": [
+        {
+          "italian": "example1",
+          "transliteration": null,
+          "gloss": "gloss",
+          "audio": "/paideia/audio/italian/words/2.3-ex1.mp3"
+        },
+        {
+          "italian": "example2",
+          "transliteration": null,
+          "gloss": "gloss",
+          "audio": "/paideia/audio/italian/words/2.3-ex2.mp3"
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson continues building your command of Italian grammar and vocabulary."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you have mastered nouns: masculine singular in -o.",
+    "credit_minutes": 45
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "id": "stage-5-capstone",
+  "lang": "greek",
+  "title": "The Kalopaideia Greek Examination",
+  "instructions": "Three hours, no notes for Part A; printed lexicon and grammar permitted for Part B. Honor code: you affirm by submitting that you used only permitted aids. A failed examination may be retaken after thirty days.",
+  "time_limit_minutes": 180,
+  "tracks_apply": ["track-plato", "track-historian", "track-evangelist"],
+  "sections": [
+    {
+      "id": "A",
+      "title": "Part A — Sight Translation (no notes)",
+      "items": [
+        {
+          "id": "A1",
+          "type": "translate",
+          "points": 10,
+          "track": "track-plato",
+          "prompt_greek": "οἶδα γὰρ ὅτι οὐδὲν οἶδα.",
+          "prompt_en": "Translate.",
+          "reference": [
+            "for I know that I know nothing",
+            "i know that i know nothing",
+            "for i know this, that i know nothing"
+          ],
+          "keywords": ["know", "nothing"],
+          "threshold": 0.45
+        },
+        {
+          "id": "A2",
+          "type": "translate",
+          "points": 10,
+          "track": "track-plato",
+          "prompt_greek": "ὁ ἀνεξέταστος βίος οὐ βιωτὸς ἀνθρώπῳ.",
+          "prompt_en": "Translate.",
+          "reference": [
+            "the unexamined life is not worth living for a man",
+            "the unexamined life is not livable for a human",
+            "the unexamined life is not worth living"
+          ],
+          "keywords": ["unexamined", "life"],
+          "threshold": 0.4
+        },
+        {
+          "id": "A3",
+          "type": "translate",
+          "points": 10,
+          "track": "track-historian",
+          "prompt_greek": "ἐντεῦθεν ἐξελαύνει σταθμοὺς τρεῖς παρασάγγας πεντεκαίδεκα ἐπὶ τὸν Μαίανδρον ποταμόν.",
+          "prompt_en": "Translate.",
+          "reference": [
+            "from there he marches three stages, fifteen parasangs, to the maeander river",
+            "from there he advances three stages, fifteen parasangs, to the river maeander",
+            "from there he marches three days, fifteen parasangs, to the maeander"
+          ],
+          "keywords": ["parasangs", "fifteen", "maeander"],
+          "threshold": 0.4
+        },
+        {
+          "id": "A4",
+          "type": "translate",
+          "points": 10,
+          "track": "track-historian",
+          "prompt_greek": "οἱ γὰρ στρατιῶται οὐκ ἔφασαν ἰέναι τοῦ πρόσω· ᾔδεσαν γὰρ ὅτι ἐπὶ βασιλέα ἤεσαν.",
+          "prompt_en": "Translate.",
+          "reference": [
+            "for the soldiers said they would not go further, for they knew that they were marching against the king",
+            "for the soldiers refused to go further, for they knew they were going against the king",
+            "the soldiers said they would not go on, for they knew they were marching on the king"
+          ],
+          "keywords": ["soldiers", "would not go", "king"],
+          "threshold": 0.4
+        },
+        {
+          "id": "A5",
+          "type": "translate",
+          "points": 10,
+          "track": "track-historian",
+          "prompt_greek": "Κῦρος δὲ ἀποθνῄσκει καὶ ἄλλοι ἀμφ' αὐτὸν ἀριστῆες ὀκτώ.",
+          "prompt_en": "Translate.",
+          "reference": [
+            "and cyrus dies, and eight other nobles around him",
+            "cyrus died, and eight other nobles with him",
+            "and cyrus died and eight other best men around him"
+          ],
+          "keywords": ["cyrus", "dies", "eight", "nobles"],
+          "threshold": 0.4
+        },
+        {
+          "id": "A6",
+          "type": "translate",
+          "points": 10,
+          "track": "track-evangelist",
+          "prompt_greek": "ἐν ἀρχῇ ἦν ὁ λόγος, καὶ ὁ λόγος ἦν πρὸς τὸν θεόν, καὶ θεὸς ἦν ὁ λόγος.",
+          "prompt_en": "Translate.",
+          "reference": [
+            "in the beginning was the word, and the word was with god, and the word was god",
+            "in the beginning was the logos, and the logos was with god, and god was the logos"
+          ],
+          "keywords": ["beginning", "word", "god"],
+          "threshold": 0.5
+        },
+        {
+          "id": "A7",
+          "type": "translate",
+          "points": 10,
+          "track": "track-evangelist",
+          "prompt_greek": "σὺ εἶ ὁ Χριστός.",
+          "prompt_en": "Translate.",
+          "reference": [
+            "you are the christ",
+            "you are the messiah",
+            "thou art the christ"
+          ],
+          "keywords": ["you", "christ"],
+          "threshold": 0.6
+        },
+        {
+          "id": "A8",
+          "type": "translate",
+          "points": 10,
+          "track": "track-evangelist",
+          "prompt_greek": "ἠγέρθη, οὐκ ἔστιν ὧδε· ἴδε ὁ τόπος ὅπου ἔθηκαν αὐτόν.",
+          "prompt_en": "Translate.",
+          "reference": [
+            "he has been raised, he is not here; see the place where they laid him",
+            "he is risen, he is not here; behold the place where they laid him",
+            "he has risen, he is not here; see where they put him"
+          ],
+          "keywords": ["raised", "not here", "place"],
+          "threshold": 0.4
+        },
+        {
+          "id": "A9",
+          "type": "translate",
+          "points": 10,
+          "track": "track-plato",
+          "prompt_greek": "οὐδενὶ τρόπῳ ἄρα δεῖ ἀδικεῖν.",
+          "prompt_en": "Translate.",
+          "reference": [
+            "in no way then should one do wrong",
+            "one should not do wrong in any way",
+            "therefore one must not do wrong in any way"
+          ],
+          "keywords": ["no way", "do wrong"],
+          "threshold": 0.45
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "title": "Part B — Parsing",
+      "items": [
+        {
+          "id": "B1",
+          "type": "parse",
+          "points": 5,
+          "prompt": "Parse the form ἔλυσας. Give: person, number, tense, mood, voice.",
+          "answer": ["second", "singular", "aorist", "indicative", "active"]
+        },
+        {
+          "id": "B2",
+          "type": "parse",
+          "points": 5,
+          "prompt": "Parse the form λυθείς. Give: case (or 'participle'), number, gender, tense, voice.",
+          "answer": ["participle", "nominative", "singular", "masculine", "aorist", "passive"]
+        },
+        {
+          "id": "B3",
+          "type": "parse",
+          "points": 5,
+          "prompt": "Parse the noun form ἀνδρός. Give: case, number, gender, lexical form.",
+          "answer": ["genitive", "singular", "masculine", "ἀνήρ"]
+        },
+        {
+          "id": "B4",
+          "type": "parse",
+          "points": 5,
+          "prompt": "Parse the form γένοιτο. Give: person, number, tense, mood, voice.",
+          "answer": ["third", "singular", "aorist", "optative", "middle"]
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "title": "Part C — Composition (English → Greek)",
+      "items": [
+        {
+          "id": "C1",
+          "type": "compose",
+          "points": 8,
+          "prompt": "Render in Greek: 'Socrates is wise.'",
+          "reference": ["ὁ Σωκράτης σοφός ἐστιν", "Σωκράτης σοφός ἐστιν", "ὁ Σωκράτης σοφός"],
+          "threshold": 0.6
+        },
+        {
+          "id": "C2",
+          "type": "compose",
+          "points": 8,
+          "prompt": "Render in Greek: 'The man gives the gift to the child.'",
+          "reference": ["ὁ ἀνὴρ δίδωσι τὸ δῶρον τῷ τέκνῳ", "ὁ ἄνθρωπος δίδωσι τὸ δῶρον τῷ παιδί", "ὁ ἀνὴρ τῷ παιδὶ τὸ δῶρον δίδωσιν"],
+          "threshold": 0.55
+        },
+        {
+          "id": "C3",
+          "type": "compose",
+          "points": 9,
+          "prompt": "Render in Greek: 'If you do this, you will be wise.'",
+          "reference": ["ἐὰν ταῦτα ποιῇς, σοφὸς ἔσῃ", "ἐὰν τοῦτο ποιήσῃς, σοφὸς ἔσῃ"],
+          "threshold": 0.5
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "title": "Part D — Multiple Choice (vocabulary and idiom)",
+      "items": [
+        { "id": "D1", "type": "mcq", "points": 2, "prompt": "What does ἀρετή mean?", "choices": ["excellence/virtue", "war", "city", "speech"], "answer": "excellence/virtue" },
+        { "id": "D2", "type": "mcq", "points": 2, "prompt": "What does πόλις mean?", "choices": ["citizen", "city-state", "father", "people"], "answer": "city-state" },
+        { "id": "D3", "type": "mcq", "points": 2, "prompt": "What is the function of ἵνα + subjunctive?", "choices": ["purpose", "result", "condition", "indirect statement"], "answer": "purpose" },
+        { "id": "D4", "type": "mcq", "points": 2, "prompt": "Which mood is used in the protasis of a future-less-vivid condition?", "choices": ["indicative", "subjunctive", "optative", "imperative"], "answer": "optative" },
+        { "id": "D5", "type": "mcq", "points": 2, "prompt": "The middle voice typically signals…", "choices": ["the subject acts on itself or for itself", "the subject is acted upon", "a wish", "a command"], "answer": "the subject acts on itself or for itself" },
+        { "id": "D6", "type": "mcq", "points": 2, "prompt": "Which case is used for the agent in a passive construction?", "choices": ["accusative", "genitive (with ὑπό)", "dative", "nominative"], "answer": "genitive (with ὑπό)" }
+      ]
+    }
+  ],
+  "scoring": {
+    "max_points": 95,
+    "pass_mark": 0.70,
+    "honors_mark": 0.85
+  },
+  "honor_code": "I attest that the answers I have entered are my own, composed without aid beyond the materials permitted for each section of this examination. I understand that this examination is graded automatically, that the script and my signed attestation will be permanently hashed on completion, and that a passing score will issue a permanent on-chain diploma in my name."
+}

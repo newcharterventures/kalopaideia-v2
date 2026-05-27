@@ -1,0 +1,92 @@
+{
+  "id": "1.2",
+  "stage": 1,
+  "title": "The Greek-Script Inscriptions",
+  "subtitle": "The twenty-four letters of the Massaliote alphabet and their Gaulish sounds.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Recognize all twenty-four letters of the Greek alphabet in Gaulish epigraphy.",
+    "Pronounce Gaulish words written in Greek letters.",
+    "Understand the phonetic approximations Greek scribes made for Gaulish sounds.",
+    "Read and parse a complete Greek-script votive inscription."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The Massaliote alphabet",
+      "body": "The Greeks who settled Massalia around 600 BCE brought the Ionian alphabet, the same system used in Athens and throughout the eastern Greek world by the 4th century BCE. When Gauls in the Rhône valley began writing their language in Greek letters, they used this alphabet unchanged. The result: twenty-four Greek letters pressed into service for a Celtic sound system they were not designed for."
+    },
+    {
+      "kind": "letter_grid",
+      "heading": "The Greek letters in Gaulish",
+      "letters": [
+        { "upper": "Α", "lower": "α", "name": "alpha", "ipa": "[a] or [aː]", "audio": "/paideia/audio/gaulish/letters/alpha.mp3", "note": "Short or long a, as in Gaulish ANDEVDOS (name)." },
+        { "upper": "Β", "lower": "β", "name": "beta", "ipa": "[b]", "audio": "/paideia/audio/gaulish/letters/beta.mp3", "note": "As in Greek. Gaulish had /b/, but it was rare." },
+        { "upper": "Γ", "lower": "γ", "name": "gamma", "ipa": "[ɡ]", "audio": "/paideia/audio/gaulish/letters/gamma.mp3", "note": "Always hard g. Common in Gaulish names: SEGOMĀROS (great victory)." },
+        { "upper": "Δ", "lower": "δ", "name": "delta", "ipa": "[d]", "audio": "/paideia/audio/gaulish/letters/delta.mp3", "note": "As in Greek. Gaulish DEDEMIT (he gave) uses this letter twice." },
+        { "upper": "Ε", "lower": "ε", "name": "epsilon", "ipa": "[e]", "audio": "/paideia/audio/gaulish/letters/epsilon.mp3", "note": "Short e. Greek scribes used epsilon for Gaulish short /e/." },
+        { "upper": "Ζ", "lower": "ζ", "name": "zeta", "ipa": "[z] or [zd]", "audio": "/paideia/audio/gaulish/letters/zeta.mp3", "note": "Rare in Gaulish. Used for names borrowed from Greek." },
+        { "upper": "Η", "lower": "η", "name": "eta", "ipa": "[ɛː]", "audio": "/paideia/audio/gaulish/letters/eta.mp3", "note": "Long e. Greek scribes could mark vowel length in Gaulish." },
+        { "upper": "Θ", "lower": "θ", "name": "theta", "ipa": "[tʰ]", "audio": "/paideia/audio/gaulish/letters/theta.mp3", "note": "Aspirated t. Not native to Gaulish; used in Greek loanwords." },
+        { "upper": "Ι", "lower": "ι", "name": "iota", "ipa": "[i] or [iː]", "audio": "/paideia/audio/gaulish/letters/iota.mp3", "note": "Short or long i." },
+        { "upper": "Κ", "lower": "κ", "name": "kappa", "ipa": "[k]", "audio": "/paideia/audio/gaulish/letters/kappa.mp3", "note": "Gaulish /k/. Very common." },
+        { "upper": "Λ", "lower": "λ", "name": "lambda", "ipa": "[l]", "audio": "/paideia/audio/gaulish/letters/lambda.mp3", "note": "As in Greek." },
+        { "upper": "Μ", "lower": "μ", "name": "mu", "ipa": "[m]", "audio": "/paideia/audio/gaulish/letters/mu.mp3", "note": "Common in Gaulish. SEGOMĀROS, MĀRKOM (horse)." },
+        { "upper": "Ν", "lower": "ν", "name": "nu", "ipa": "[n]", "audio": "/paideia/audio/gaulish/letters/nu.mp3", "note": "As in Greek." },
+        { "upper": "Ξ", "lower": "ξ", "name": "xi", "ipa": "[ks]", "audio": "/paideia/audio/gaulish/letters/xi.mp3", "note": "Rare in Gaulish epigraphy." },
+        { "upper": "Ο", "lower": "ο", "name": "omicron", "ipa": "[o]", "audio": "/paideia/audio/gaulish/letters/omicron.mp3", "note": "Short o. Greek scribes used omicron for short /o/." },
+        { "upper": "Π", "lower": "π", "name": "pi", "ipa": "[p]", "audio": "/paideia/audio/gaulish/letters/pi.mp3", "note": "Gaulish had /p/, though it was less common than /k/ or /t/." },
+        { "upper": "Ρ", "lower": "ρ", "name": "rho", "ipa": "[r]", "audio": "/paideia/audio/gaulish/letters/rho.mp3", "note": "Gaulish /r/ was probably trilled." },
+        { "upper": "Σ", "lower": "σ/ς", "name": "sigma", "ipa": "[s]", "audio": "/paideia/audio/gaulish/letters/sigma.mp3", "note": "Very common. SEGOMĀROS, ESUS (god name)." },
+        { "upper": "Τ", "lower": "τ", "name": "tau", "ipa": "[t]", "audio": "/paideia/audio/gaulish/letters/tau.mp3", "note": "Common. DEDEMIT, TANNACOS (thin?)." },
+        { "upper": "Υ", "lower": "υ", "name": "upsilon", "ipa": "[u] or [uː]", "audio": "/paideia/audio/gaulish/letters/upsilon.mp3", "note": "Greek upsilon for Gaulish /u/. But Gaulish /u:/ was often written ΟΥ (ou)." },
+        { "upper": "Φ", "lower": "φ", "name": "phi", "ipa": "[pʰ]", "audio": "/paideia/audio/gaulish/letters/phi.mp3", "note": "Aspirated p. Not native to Gaulish; used in Greek loanwords." },
+        { "upper": "Χ", "lower": "χ", "name": "chi", "ipa": "[kʰ]", "audio": "/paideia/audio/gaulish/letters/chi.mp3", "note": "Aspirated k. Not native to Gaulish; used in Greek loanwords." },
+        { "upper": "Ψ", "lower": "ψ", "name": "psi", "ipa": "[ps]", "audio": "/paideia/audio/gaulish/letters/psi.mp3", "note": "Rare in Gaulish." },
+        { "upper": "Ω", "lower": "ω", "name": "omega", "ipa": "[ɔː]", "audio": "/paideia/audio/gaulish/letters/omega.mp3", "note": "Long o. Greek scribes could distinguish short /o/ (omicron) from long /ō/ (omega) in Gaulish." }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "The problem of /u:/",
+      "body": "Gaulish had a long /u:/ sound that Greek did not. Greek upsilon (Υ) was pronounced /y/ (like French u or German ü) by the time of Massalia's founding. Gaulish scribes solved this by writing long /u:/ as ΟΥ (omicron + upsilon), a digraph that approximated the sound. This convention carried over into Latin-script Gaulish, where <ou> became the standard spelling for /u:/. Example: ΟΥΙΛΛΟΝΕΟΣ (Ouilloneos) = /wi:llone:os/."
+    },
+    {
+      "kind": "prose",
+      "heading": "Reading a Greek-script votive",
+      "body": "Here is the complete text of a votive inscription from Vaison-la-Romaine, dating to around 100 BCE:\n\nΣΕΓΟΜΑΡΟΣ ΟΥΙΛΛΟΝΕΟΣ ΤΟΟΥΤΙΟΥΣ ΝΑΜΑΥΣΑΤΙΣ ΕΙΟΡΟΥ ΒΗΛΗΣΑΜΙ ΣΟΣΙΝ ΝΕΜΗΤΟΝ\n\nTransliteration: SEGOMAROS OUILLONEOS TOOUTIOUṢ NAMAUSATIS EIORU BĒLĒSAMI SOSIN NEMĒTON\n\nGloss: Segomaros son of Ouillo, citizen of Nemausus (modern Nîmes), set up this sacred grove to Belisama.\n\nParsing: SEGOMAROS (nom. sg., personal name, \"great victory\"), OUILLONEOS (gen. sg., patronymic, \"of Ouillo\"), TOOUTIOUṢ (nom. sg., \"citizen\"), NAMAUSATIS (gen. sg., ethnic, \"of Nemausus\"), EIORU (3rd sg. aorist, \"set up\"), BĒLĒSAMI (dat. sg., goddess name, \"to Belisama\"), SOSIN (demonstrative, \"this\"), NEMĒTON (acc. sg., \"sacred grove\")."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers; check after.",
+      "items": [
+        { "prompt": "How many letters are in the Greek alphabet used for Gaulish?", "answer": "Twenty-four, the same as the standard Greek alphabet of the 4th century BCE." },
+        { "prompt": "Why do Greek-script Gaulish inscriptions write /u:/ as ΟΥ?", "answer": "Greek upsilon was pronounced /y/ by this period, not /u/. The digraph ΟΥ approximated the Gaulish long /u:/ sound." },
+        { "prompt": "What does SEGOMAROS mean?", "answer": "\"Great victory\" or \"victory-great\" — a compound of SEGO- (victory) and -MĀROS (great)." },
+        { "prompt": "What case is BĒLĒSAMI?", "answer": "Dative singular. The ending -i marks the dative in Gaulish -ā- stem nouns." },
+        { "prompt": "What is a NEMĒTON?", "answer": "A sacred grove or sanctuary, a common Gaulish religious site." },
+        { "prompt": "Which three Greek letters represent sounds not native to Gaulish?", "answer": "Theta (Θ), phi (Φ), and chi (Χ) — the aspirated stops, used only in Greek loanwords." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Divine names in Greek script",
+      "instructions": "These Gaulish god names appear in Greek-script dedications. Practice reading them aloud.",
+      "words": [
+        { "gaulish": "ΒΗΛΗΣΑΜΙ", "transliteration": "BĒLĒSAMI", "gloss": "to Belisama (goddess, \"most bright\")", "audio": "/paideia/audio/gaulish/words/belesami.mp3" },
+        { "gaulish": "ΒΗΛΗΝΟΣ", "transliteration": "BĒLĒNOS", "gloss": "Belenos (god, \"bright one\")", "audio": "/paideia/audio/gaulish/words/belenos.mp3" },
+        { "gaulish": "ΜΑΡΤΙΣ", "transliteration": "MĀRTIS", "gloss": "to Mars (Roman name used for Gaulish war god)", "audio": "/paideia/audio/gaulish/words/martis.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.3 covers the Latin-script inscriptions: the Roman alphabet pressed into service for Gaulish phonemes, the digraph conventions, and a reading of a funerary stone from Alise-Sainte-Reine."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can read Greek-script Gaulish aloud and identify the dative singular ending -i.",
+    "credit_minutes": 50
+  }
+}

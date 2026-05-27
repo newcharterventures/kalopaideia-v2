@@ -1,0 +1,46 @@
+{
+  "id": "3.15",
+  "stage": 3,
+  "title": "The Four Branches and the Mabinogion",
+  "subtitle": "Pwyll, Branwen, Manawydan, Math.",
+  "estimated_minutes": 40,
+  "objectives": ["Understand the structure of the Mabinogion.","Locate the White Book and Red Book manuscripts."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers The Four Branches and the Mabinogion. Pwyll, Branwen, Manawydan, Math."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Understand the structure of the Mabinogion."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Understand the structure of the Mabinogion." },
+        { "prompt": "How do you apply this in practice?", "answer": "Locate the White Book and Red Book manuscripts." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "welsh": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/welsh/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on The Four Branches and the Mabinogion."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in The Four Branches and the Mabinogion to ten random examples.",
+    "credit_minutes": 40
+  }
+}

@@ -1,0 +1,704 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Translation Provenance Audit — Akousma</title>
+<style>
+body { font-family: 'Source Serif 4', Georgia, serif; max-width: 1200px; margin: 40px auto; padding: 0 24px; color: #1a1410; background: #faf7f2; }
+h1 { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 36px; margin: 0 0 8px; }
+.sub { font-style: italic; color: #6b5d4a; margin: 0 0 32px; }
+table { border-collapse: collapse; width: 100%; background: white; }
+th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #e6dfd0; vertical-align: top; font-size: 14px; }
+th { background: #f0e9d8; font-family: 'Inter', sans-serif; font-size: 12px; letter-spacing: 0.5px; text-transform: uppercase; color: #524a3e; }
+td.id code { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #524a3e; }
+td.n { text-align: right; font-variant-numeric: tabular-nums; }
+td.verdict { font-family: 'Inter', sans-serif; font-size: 11px; letter-spacing: 0.5px; font-weight: 600; text-align: center; }
+.notes-row td { background: #faf7f2; padding: 4px 12px 16px; border-bottom: 2px solid #d8cfbe; }
+.notes { font-size: 13px; color: #524a3e; margin: 0 0 8px; }
+details summary { cursor: pointer; font-size: 12px; color: #8a8070; font-family: 'Inter', sans-serif; }
+.samples { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 12px; }
+.samples pre { font-family: 'JetBrains Mono', monospace; font-size: 11px; white-space: pre-wrap; background: white; padding: 10px; border: 1px solid #e6dfd0; max-height: 200px; overflow-y: auto; }
+.summary-cards { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin: 24px 0 32px; }
+.card { padding: 14px 16px; background: white; border: 1px solid #d8cfbe; }
+.card .n { font-size: 28px; font-family: 'Cormorant Garamond', serif; }
+.card .l { font-size: 11px; color: #524a3e; font-family: 'Inter', sans-serif; letter-spacing: 0.4px; text-transform: uppercase; }
+</style>
+</head>
+<body>
+<h1>Translation Provenance Audit — Akousma</h1>
+<p class="sub">Verifies that each English translation we ship is faithfully from the public-domain translator we attribute it to. Run automatically against the live <code>data/library/</code> JSON files.</p>
+
+<div class="summary-cards"><div class="card" style="border-left:4px solid #2c7a2c;"><div class="n">9</div><div class="l">clean match</div></div>
+<div class="card" style="border-left:4px solid #5a7a2c;"><div class="n">0</div><div class="l">moderate match</div></div>
+<div class="card" style="border-left:4px solid #a07a1a;"><div class="n">0</div><div class="l">weak match</div></div>
+<div class="card" style="border-left:4px solid #a82424;"><div class="n">0</div><div class="l">provenance mismatch</div></div>
+<div class="card" style="border-left:4px solid #888;"><div class="n">13</div><div class="l">no reference</div></div>
+</div>
+
+<table>
+<thead>
+<tr><th>ID</th><th>Title</th><th>Translator</th><th>Date</th><th>Lines</th><th>Similarity</th><th>Verdict</th></tr>
+</thead>
+<tbody>
+
+<tr>
+  <td class="id"><code>aeneid-book-1</code></td>
+  <td>Aeneid, Book 1</td>
+  <td>John Dryden</td>
+  <td>1697</td>
+  <td class="n">756</td>
+  <td class="n">0.893</td>
+  <td class="verdict" style="background:#2c7a2c;color:white;">CLEAN_MATCH</td>
+</tr>
+<tr class="notes-row">
+  <td colspan="7">
+    <div class="notes">Embedding similarity 0.893, verbatim overlap 0%. Strong semantic match to John Dryden's text. Likely faithful with minor formatting differences.</div>
+    <details><summary>Compare samples (first 400 chars of each)</summary>
+      <div class="samples">
+        <div class="our"><b>Our shipped English:</b><pre>I sing of arms and the man who first came from the shores of Troy
+came to Italy, an exile by fate, and the Lavinian shores
+shores, much tossed on lands and sea
+by the force of the gods above, on account of cruel Juno's unforgetting wrath
+Having suffered much in war as well, until he could found the city
+and bring his gods to Latium, whence came the Latin race,
+and the Alban fathers and the walls o</pre></div>
+        <div class="ref"><b>Reference (John Dryden, PD source):</b><pre>Arms, and the man I sing, who, forc’d by fate,
+      And haughty Juno’s unrelenting hate,
+      Expell’d and exil’d, left the Trojan shore.
+      Long labours, both by sea and land, he bore,
+      And in the doubtful war, before he won
+      The Latian realm, and built the destin’d town;
+      His banish’d gods restor’d to rites divine,
+      And settled sure succession in his line,
+      From whe</pre></div>
+      </div>
+    </details>
+  </td>
+</tr>
+<tr>
+  <td class="id"><code>aeneid-proem</code></td>
+  <td>Aeneid, Book I — Proem & Invocation</td>
+  <td>John Dryden</td>
+  <td>1697</td>
+  <td class="n">14</td>
+  <td class="n">0.914</td>
+  <td class="verdict" style="background:#2c7a2c;color:white;">CLEAN_MATCH</td>
+</tr>
+<tr class="notes-row">
+  <td colspan="7">
+    <div class="notes">Embedding similarity 0.914, verbatim overlap 9%. Strong semantic match to John Dryden's text. Likely faithful with minor formatting differences.</div>
+    <details><summary>Compare samples (first 400 chars of each)</summary>
+      <div class="samples">
+        <div class="our"><b>Our shipped English:</b><pre>Arms, and the man I sing, who, forc'd by fate,
+And haughty Juno's unrelenting hate,
+Expell'd and exil'd, left the Trojan shore.
+Long labors, both by sea and land, he bore,
+And in the doubtful war, before he won
+The Latian realm, and built the destin'd town;
+His banish'd gods restor'd to rites divine,
+Muse, tell me the causes; by what divinity slighted,
+Or grieving at what, did the queen of the god</pre></div>
+        <div class="ref"><b>Reference (John Dryden, PD source):</b><pre>Arms, and the man I sing, who, forc’d by fate,
+      And haughty Juno’s unrelenting hate,
+      Expell’d and exil’d, left the Trojan shore.
+      Long labours, both by sea and land, he bore,
+      And in the doubtful war, before he won
+      The Latian realm, and built the destin’d town;
+      His banish’d gods restor’d to rites divine,
+      And settled sure succession in his line,
+      From whe</pre></div>
+      </div>
+    </details>
+  </td>
+</tr>
+<tr>
+  <td class="id"><code>beowulf-prologue</code></td>
+  <td>Beowulf, Prologue</td>
+  <td>Francis B. Gummere</td>
+  <td>1910</td>
+  <td class="n">21</td>
+  <td class="n">0.884</td>
+  <td class="verdict" style="background:#2c7a2c;color:white;">CLEAN_MATCH</td>
+</tr>
+<tr class="notes-row">
+  <td colspan="7">
+    <div class="notes">Verbatim overlap 50% (60-char chunks) plus embedding similarity 0.884. Strong match to Francis B. Gummere's published text. Provenance verified.</div>
+    <details><summary>Compare samples (first 400 chars of each)</summary>
+      <div class="samples">
+        <div class="our"><b>Our shipped English:</b><pre>Lo, praise of the prowess of people-kings
+of spear-armed Danes, in days long sped,
+we have heard, and what honor the athelings won!
+Oft Scyld the Scefing from squadroned foes,
+from many a tribe, the mead-bench tore,
+awing the earls. Since erst he lay
+friendless, a foundling, fate repaid him:
+for he waxed under welkin, in wealth he throve,
+till before him the folk, both far and near,
+who house by t</pre></div>
+        <div class="ref"><b>Reference (Francis B. Gummere, PD source):</b><pre>LO, praise of the prowess of people-kings
+of spear-armed Danes, in days long sped,
+we have heard, and what honor the athelings won!
+Oft Scyld the Scefing from squadroned foes,
+from many a tribe, the mead-bench tore,
+awing the earls. Since erst he lay
+friendless, a foundling, fate repaid him:
+for he waxed under welkin, in wealth he throve,
+till before him the folk, both far and near,
+who house by t</pre></div>
+      </div>
+    </details>
+  </td>
+</tr>
+<tr>
+  <td class="id"><code>caedmons-hymn</code></td>
+  <td>Cædmon's Hymn</td>
+  <td>A. S. Cook</td>
+  <td>1898</td>
+  <td class="n">9</td>
+  <td class="n">—</td>
+  <td class="verdict" style="background:#888;color:white;">NO_REFERENCE</td>
+</tr>
+<tr class="notes-row">
+  <td colspan="7">
+    <div class="notes">No machine-fetchable PD source registered for translator 'A. S. Cook'. Manual review recommended.</div>
+    <details><summary>Compare samples (first 400 chars of each)</summary>
+      <div class="samples">
+        <div class="our"><b>Our shipped English:</b><pre>Now must we praise the Guardian of Heaven,
+the might of the Creator and his mind-thought,
+the work of the Father of Glory, as he of every wonder,
+the eternal Lord, established the beginning.
+He first shaped for the sons of earth
+heaven as a roof, the holy Creator;
+then middle-earth, the Guardian of mankind,
+the eternal Lord, afterwards adorned,
+the earth for men, the Lord almighty.</pre></div>
+        <div class="ref"><b>Reference (A. S. Cook, PD source):</b><pre></pre></div>
+      </div>
+    </details>
+  </td>
+</tr>
+<tr>
+  <td class="id"><code>canterbury-prologue</code></td>
+  <td>The Canterbury Tales: General Prologue (lines 1–42)</td>
+  <td>Kalopaideia editorial gloss (Middle English text after Skeat 1894)</td>
+  <td>line-by-line modern English crib, original to Kalopaideia</td>
+  <td class="n">42</td>
+  <td class="n">—</td>
+  <td class="verdict" style="background:#888;color:white;">NO_REFERENCE</td>
+</tr>
+<tr class="notes-row">
+  <td colspan="7">
+    <div class="notes">No machine-fetchable PD source registered for translator 'Kalopaideia editorial gloss (Middle English text after Skeat 1894)'. Manual review recommended.</div>
+    <details><summary>Compare samples (first 400 chars of each)</summary>
+      <div class="samples">
+        <div class="our"><b>Our shipped English:</b><pre>When April with his sweet showers
+Has pierced the drought of March to the root,
+And bathed every vein in such liquor
+By whose power the flower is engendered;
+When Zephyrus also with his sweet breath
+Has breathed life into every wood and heath
+The tender shoots, and the young sun
+Has in the Ram his half-course run,
+And small birds make melody,
+That sleep all the night with open eye,
+(So Nature pric</pre></div>
+        <div class="ref"><b>Reference (Kalopaideia editorial gloss (Middle English text after Skeat 1894), PD source):</b><pre></pre></div>
+      </div>
+    </details>
+  </td>
+</tr>
+<tr>
+  <td class="id"><code>catullus-85</code></td>
+  <td>Carmen 85 — Odi et amo</td>
+  <td>Francis Warre Cornish</td>
+  <td>1913 (Loeb Classical Library, US public domain: pre-1929)</td>
+  <td class="n">2</td>
+  <td class="n">—</td>
+  <td class="verdict" style="background:#888;color:white;">NO_REFERENCE</td>
+</tr>
+<tr class="notes-row">
+  <td colspan="7">
+    <div class="notes">No machine-fetchable PD source registered for translator 'Francis Warre Cornish'. Manual review recommended.</div>
+    <details><summary>Compare samples (first 400 chars of each)</summary>
+      <div class="samples">
+        <div class="our"><b>Our shipped English:</b><pre>I hate and love. Why I do so, perhaps you ask?
+I know not, but I feel it, and I am in torment.</pre></div>
+        <div class="ref"><b>Reference (Francis Warre Cornish, PD source):</b><pre></pre></div>
+      </div>
+    </details>
+  </td>
+</tr>
+<tr>
+  <td class="id"><code>cicero-catilinam-1</code></td>
+  <td>In Catilinam I — Opening (§1-2)</td>
+  <td>Charles Duke Yonge</td>
+  <td>1856</td>
+  <td class="n">10</td>
+  <td class="n">—</td>
+  <td class="verdict" style="background:#888;color:white;">NO_REFERENCE</td>
+</tr>
+<tr class="notes-row">
+  <td colspan="7">
+    <div class="notes">No machine-fetchable PD source registered for translator 'Charles Duke Yonge'. Manual review recommended.</div>
+    <details><summary>Compare samples (first 400 chars of each)</summary>
+      <div class="samples">
+        <div class="our"><b>Our shipped English:</b><pre>How long, O Catiline, will you abuse our patience?
+How long will that madness of yours still mock us?
+To what end will your unbridled audacity hurl itself?
+Do the nightly guards of the Palatine, the watches of the city, the fear of the people, the gathering of all good men, this most defended meeting-place of the senate, the faces and expressions of these men — none of this has moved you?
+Do you n</pre></div>
+        <div class="ref"><b>Reference (Charles Duke Yonge, PD source):</b><pre></pre></div>
+      </div>
+    </details>
+  </td>
+</tr>
+<tr>
+  <td class="id"><code>dante-inferno-1</code></td>
+  <td>Inferno, Canto I</td>
+  <td>Henry Wadsworth Longfellow</td>
+  <td>1867</td>
+  <td class="n">36</td>
+  <td class="n">0.695</td>
+  <td class="verdict" style="background:#2c7a2c;color:white;">CLEAN_MATCH</td>
+</tr>
+<tr class="notes-row">
+  <td colspan="7">
+    <div class="notes">Verbatim overlap 75% (60-char chunks) plus embedding similarity 0.695. Strong match to Henry Wadsworth Longfellow's published text. Provenance verified.</div>
+    <details><summary>Compare samples (first 400 chars of each)</summary>
+      <div class="samples">
+        <div class="our"><b>Our shipped English:</b><pre>Midway upon the journey of our life
+I found myself within a forest dark,
+For the straightforward pathway had been lost.
+Ah me! how hard a thing it is to say
+What was this forest savage, rough, and stern,
+Which in the very thought renews the fear.
+So bitter is it, death is little more;
+But of the good to treat, which there I found,
+Speak will I of the other things I saw there.
+I cannot well repeat </pre></div>
+        <div class="ref"><b>Reference (Henry Wadsworth Longfellow, PD source):</b><pre>Midway upon the journey of our life
+    I found myself within a forest dark,
+    For the straightforward pathway had been lost.
+
+Ah me! how hard a thing it is to say
+    What was this forest savage, rough, and stern,
+    Which in the very thought renews the fear.
+
+So bitter is it, death is little more;
+    But of the good to treat, which there I found,
+    Speak will I of the other things I saw th</pre></div>
+      </div>
+    </details>
+  </td>
+</tr>
+<tr>
+  <td class="id"><code>gaulish-epigraphy-primer</code></td>
+  <td>A Gaulish Epigraphic Primer</td>
+  <td>Kalopaideia editorial gloss (after Rhys 1906–1913 and pre-1929 PD epigraphic scholarship)</td>
+  <td>line-by-line editorial gloss, original to Kalopaideia (drawing only on pre-1929 PD scholarship for readings)</td>
+  <td class="n">9</td>
+  <td class="n">—</td>
+  <td class="verdict" style="background:#888;color:white;">NO_REFERENCE</td>
+</tr>
+<tr class="notes-row">
+  <td colspan="7">
+    <div class="notes">No machine-fetchable PD source registered for translator 'Kalopaideia editorial gloss (after Rhys 1906–1913 and pre-1929 PD epigraphic scholarship)'. Manual review recommended.</div>
+    <details><summary>Compare samples (first 400 chars of each)</summary>
+      <div class="samples">
+        <div class="our"><b>Our shipped English:</b><pre>Vercingetorix.
+(struck by) Ateknatos (son of) Trikkos.
+Of the closest (kin) I hold the drinks.
+(So-and-so) made (it).
+Martialis, (son) of Dannotalos, dedicated to Ucuetis this hall.
+Samonios — auspicious (month).
+The three-nights of Samonios are today (in force).
+I invoke the under-gods, the divine ones below.
+Here is the witches' enchantment.</pre></div>
+        <div class="ref"><b>Reference (Kalopaideia editorial gloss (after Rhys 1906–1913 and pre-1929 PD epigraphic scholarship), PD source):</b><pre></pre></div>
+      </div>
+    </details>
+  </td>
+</tr>
+<tr>
+  <td class="id"><code>goethe-erlkoenig</code></td>
+  <td>Erlkönig</td>
+  <td>Edgar Alfred Bowring</td>
+  <td>1853</td>
+  <td class="n">20</td>
+  <td class="n">—</td>
+  <td class="verdict" style="background:#888;color:white;">NO_REFERENCE</td>
+</tr>
+<tr class="notes-row">
+  <td colspan="7">
+    <div class="notes">No machine-fetchable PD source registered for translator 'Edgar Alfred Bowring'. Manual review recommended.</div>
+    <details><summary>Compare samples (first 400 chars of each)</summary>
+      <div class="samples">
+        <div class="our"><b>Our shipped English:</b><pre>Who rides there so late through the night dark and drear?
+The father it is, with his infant so dear;
+He holdeth the boy tightly clasp'd in his arm,
+He holdeth him safely, he keepeth him warm.
+"My son, wherefore seek'st thou thy face thus to hide?"
+"Look, father, the Erl-King is close by our side!
+Dost see not the Erl-King, with crown and with train?"
+"My son, 'tis the mist rising over the plain."
+</pre></div>
+        <div class="ref"><b>Reference (Edgar Alfred Bowring, PD source):</b><pre></pre></div>
+      </div>
+    </details>
+  </td>
+</tr>
+<tr>
+  <td class="id"><code>havamal-opening</code></td>
+  <td>Hávamál — Sayings of the High One, stanzas 1–10</td>
+  <td>Olive Bray</td>
+  <td>1908 (public domain)</td>
+  <td class="n">10</td>
+  <td class="n">—</td>
+  <td class="verdict" style="background:#888;color:white;">NO_REFERENCE</td>
+</tr>
+<tr class="notes-row">
+  <td colspan="7">
+    <div class="notes">No machine-fetchable PD source registered for translator 'Olive Bray'. Manual review recommended.</div>
+    <details><summary>Compare samples (first 400 chars of each)</summary>
+      <div class="samples">
+        <div class="our"><b>Our shipped English:</b><pre>At every door-way, ere one enters, / one should spy round, / one should pry round; / for one cannot know what foes may sit / awaiting one in the hall.
+Hail to the giver! a guest has come; / where shall the stranger sit? / Hard pressed is he who tests his luck / by the fire-side.
+Fire he needs / who comes in numb to the knees; / food and clothes / does a man need / who has fared over the fells.
+Wat</pre></div>
+        <div class="ref"><b>Reference (Olive Bray, PD source):</b><pre></pre></div>
+      </div>
+    </details>
+  </td>
+</tr>
+<tr>
+  <td class="id"><code>heine-lorelei</code></td>
+  <td>Die Lorelei (first two stanzas)</td>
+  <td>Mark Twain</td>
+  <td>1880</td>
+  <td class="n">8</td>
+  <td class="n">—</td>
+  <td class="verdict" style="background:#888;color:white;">NO_REFERENCE</td>
+</tr>
+<tr class="notes-row">
+  <td colspan="7">
+    <div class="notes">No machine-fetchable PD source registered for translator 'Mark Twain'. Manual review recommended.</div>
+    <details><summary>Compare samples (first 400 chars of each)</summary>
+      <div class="samples">
+        <div class="our"><b>Our shipped English:</b><pre>I cannot divine what it meaneth,
+That I should be so sad;
+A fable of old time haunts me,
+It will not depart from my mind.
+The air is cool and it darkens,
+And calmly flows the Rhine;
+The mountain peak glitters
+In the evening sunshine.</pre></div>
+        <div class="ref"><b>Reference (Mark Twain, PD source):</b><pre></pre></div>
+      </div>
+    </details>
+  </td>
+</tr>
+<tr>
+  <td class="id"><code>iliad-book-1</code></td>
+  <td>Iliad, Book I</td>
+  <td>Samuel Butler</td>
+  <td>1898 (revised)</td>
+  <td class="n">611</td>
+  <td class="n">0.869</td>
+  <td class="verdict" style="background:#2c7a2c;color:white;">CLEAN_MATCH</td>
+</tr>
+<tr class="notes-row">
+  <td colspan="7">
+    <div class="notes">Embedding similarity 0.869, verbatim overlap 0%. Strong semantic match to Samuel Butler's text. Likely faithful with minor formatting differences.</div>
+    <details><summary>Compare samples (first 400 chars of each)</summary>
+      <div class="samples">
+        <div class="our"><b>Our shipped English:</b><pre>Sing, goddess, the wrath of Achilles son of Peleus.
+the destructive wrath that brought countless woes upon the Achaeans
+and many mighty souls it sent forth to Hades
+of heroes, and made their bodies themselves spoil for dogs
+and to all the birds, and the will of Zeus was being fulfilled
+from the time when first they stood apart in strife
+Atreus' son, lord of men, and godlike Achilles.
+Which of the </pre></div>
+        <div class="ref"><b>Reference (Samuel Butler, PD source):</b><pre>The quarrel between Agamemnon and Achilles—Achilles withdraws
+      from the war, and sends his mother Thetis to ask Jove to help the
+      Trojans—Scene between Jove and Juno on Olympus.
+
+      Sing, O goddess, the anger of Achilles son of Peleus, that
+      brought countless ills upon the Achaeans. Many a brave soul did
+      it send hurrying down to Hades, and many a hero did it yield a
+      p</pre></div>
+      </div>
+    </details>
+  </td>
+</tr>
+<tr>
+  <td class="id"><code>iliad-book-2</code></td>
+  <td>Iliad, Book 2</td>
+  <td>Samuel Butler</td>
+  <td>1898 (revised)</td>
+  <td class="n">877</td>
+  <td class="n">0.889</td>
+  <td class="verdict" style="background:#2c7a2c;color:white;">CLEAN_MATCH</td>
+</tr>
+<tr class="notes-row">
+  <td colspan="7">
+    <div class="notes">Embedding similarity 0.889, verbatim overlap 0%. Strong semantic match to Samuel Butler's text. Likely faithful with minor formatting differences.</div>
+    <details><summary>Compare samples (first 400 chars of each)</summary>
+      <div class="samples">
+        <div class="our"><b>Our shipped English:</b><pre>Now the other gods and the chariot-fighting warriors
+The other gods and chariot-fighting men slept all night long, but sweet sleep did not hold Zeus.
+but he pondered in his mind how he might honor Achilles
+he might honor Achilles and destroy many men at the ships of the Achaeans
+This plan seemed best to his heart.
+to send a destructive dream to Agamemnon son of Atreus
+And addressing him he spoke w</pre></div>
+        <div class="ref"><b>Reference (Samuel Butler, PD source):</b><pre>Jove sends a lying dream to Agamemnon, who thereon calls the
+      chiefs in assembly, and proposes to sound the mind of his army—In
+      the end they march to fight—Catalogue of the Achaean and Trojan
+      forces.
+
+      Now the other gods and the armed warriors on the plain slept
+      soundly, but Jove was wakeful, for he was thinking how to do
+      honour to Achilles, and destroyed much peo</pre></div>
+      </div>
+    </details>
+  </td>
+</tr>
+<tr>
+  <td class="id"><code>iliad-proem</code></td>
+  <td>Iliad, Book I — Proem & Opening Quarrel</td>
+  <td>Samuel Butler</td>
+  <td>1898</td>
+  <td class="n">14</td>
+  <td class="n">0.859</td>
+  <td class="verdict" style="background:#2c7a2c;color:white;">CLEAN_MATCH</td>
+</tr>
+<tr class="notes-row">
+  <td colspan="7">
+    <div class="notes">Verbatim overlap 50% (60-char chunks) plus embedding similarity 0.859. Strong match to Samuel Butler's published text. Provenance verified.</div>
+    <details><summary>Compare samples (first 400 chars of each)</summary>
+      <div class="samples">
+        <div class="our"><b>Our shipped English:</b><pre>Sing, O goddess, the anger of Achilles son of Peleus,
+that brought countless ills upon the Achaeans.
+Many a brave soul did it send hurrying down to Hades,
+and many a hero did it yield a prey to dogs
+and vultures, for so were the counsels of Jove fulfilled
+from the day on which the son of Atreus, king of men,
+and great Achilles, first fell out with one another.
+And which of the gods set them to con</pre></div>
+        <div class="ref"><b>Reference (Samuel Butler, PD source):</b><pre>The quarrel between Agamemnon and Achilles—Achilles withdraws
+      from the war, and sends his mother Thetis to ask Jove to help the
+      Trojans—Scene between Jove and Juno on Olympus.
+
+      Sing, O goddess, the anger of Achilles son of Peleus, that
+      brought countless ills upon the Achaeans. Many a brave soul did
+      it send hurrying down to Hades, and many a hero did it yield a
+      p</pre></div>
+      </div>
+    </details>
+  </td>
+</tr>
+<tr>
+  <td class="id"><code>odyssey-book-1</code></td>
+  <td>Odyssey, Book 1</td>
+  <td>Samuel Butler</td>
+  <td>1900 (revised)</td>
+  <td class="n">444</td>
+  <td class="n">0.891</td>
+  <td class="verdict" style="background:#2c7a2c;color:white;">CLEAN_MATCH</td>
+</tr>
+<tr class="notes-row">
+  <td colspan="7">
+    <div class="notes">Embedding similarity 0.891, verbatim overlap 0%. Strong semantic match to Samuel Butler's text. Likely faithful with minor formatting differences.</div>
+    <details><summary>Compare samples (first 400 chars of each)</summary>
+      <div class="samples">
+        <div class="our"><b>Our shipped English:</b><pre>Tell me, Muse, of the man of many ways, who wandered very much
+He wandered far after he sacked the sacred citadel of Troy.
+He saw the cities of many peoples and came to know their minds.
+Many sufferings he endured on the sea in his heart.
+striving to win his own life and the homecoming of his companions.
+But not even so did he save his companions, though he longed to.
+For by their own recklessness</pre></div>
+        <div class="ref"><b>Reference (Samuel Butler, PD source):</b><pre>Tell me, O Muse, of that ingenious hero who travelled far and wide
+after he had sacked the famous town of Troy. Many cities did he visit,
+and many were the nations with whose manners and customs he was
+acquainted; moreover he suffered much by sea while trying to save his
+own life and bring his men safely home; but do what he might he could
+not save his men, for they perished through their own shee</pre></div>
+      </div>
+    </details>
+  </td>
+</tr>
+<tr>
+  <td class="id"><code>pwyll-opening</code></td>
+  <td>Pwyll Pendefig Dyfed — opening of the First Branch</td>
+  <td>Lady Charlotte Guest</td>
+  <td>1849 (public domain)</td>
+  <td class="n">6</td>
+  <td class="n">—</td>
+  <td class="verdict" style="background:#888;color:white;">NO_REFERENCE</td>
+</tr>
+<tr class="notes-row">
+  <td colspan="7">
+    <div class="notes">No machine-fetchable PD source registered for translator 'Lady Charlotte Guest'. Manual review recommended.</div>
+    <details><summary>Compare samples (first 400 chars of each)</summary>
+      <div class="samples">
+        <div class="our"><b>Our shipped English:</b><pre>Pwyll, Prince of Dyfed, was lord over the seven cantrefs of Dyfed.
+And once, when he was at Arberth, his chief court, it came into his mind and into his heart to go hunting.
+The part of his domain which he wished to hunt was Glyn Cuch.
+And he set out that same night from Arberth, and came as far as Pen Llwyn Diarwyd.
+And there he was that night, and on the morrow in the youth of the day he rose.
+A</pre></div>
+        <div class="ref"><b>Reference (Lady Charlotte Guest, PD source):</b><pre></pre></div>
+      </div>
+    </details>
+  </td>
+</tr>
+<tr>
+  <td class="id"><code>republic-book-1</code></td>
+  <td>Republic, Book 1</td>
+  <td>Benjamin Jowett</td>
+  <td>1888</td>
+  <td class="n">755</td>
+  <td class="n">0.932</td>
+  <td class="verdict" style="background:#2c7a2c;color:white;">CLEAN_MATCH</td>
+</tr>
+<tr class="notes-row">
+  <td colspan="7">
+    <div class="notes">Verbatim overlap 93% of 1178 60-char chunks of our shipped English appear verbatim in Benjamin Jowett's published text. Provenance verified.</div>
+    <details><summary>Compare samples (first 400 chars of each)</summary>
+      <div class="samples">
+        <div class="our"><b>Our shipped English:</b><pre>I went down yesterday to the Piraeus with Glaucon the son of Ariston, that I might offer up my prayers to the goddess; and also because I wanted to see in what manner they would celebrate the festival, which was a new thing.
+I was delighted with the procession of the inhabitants; but that of the Thracians was equally, if not more, beautiful.
+When we had finished our prayers and viewed the spectacl</pre></div>
+        <div class="ref"><b>Reference (Benjamin Jowett, PD source):</b><pre>I went down yesterday to the Piraeus with Glaucon the son of Ariston,
+that I might offer up my prayers to the goddess (Bendis, the Thracian
+Artemis.); and also because I wanted to see in what manner they would
+celebrate the festival, which was a new thing. I was delighted with the
+procession of the inhabitants; but that of the Thracians was equally,
+if not more, beautiful. When we had finished our</pre></div>
+      </div>
+    </details>
+  </td>
+</tr>
+<tr>
+  <td class="id"><code>ronsard-mignonne</code></td>
+  <td>Mignonne, allons voir si la rose (first stanza)</td>
+  <td>Kalopaideia editorial gloss (after Andrew Lang, 1872)</td>
+  <td>line-by-line literal rendering, original to Kalopaideia</td>
+  <td class="n">6</td>
+  <td class="n">—</td>
+  <td class="verdict" style="background:#888;color:white;">NO_REFERENCE</td>
+</tr>
+<tr class="notes-row">
+  <td colspan="7">
+    <div class="notes">No machine-fetchable PD source registered for translator 'Kalopaideia editorial gloss (after Andrew Lang, 1872)'. Manual review recommended.</div>
+    <details><summary>Compare samples (first 400 chars of each)</summary>
+      <div class="samples">
+        <div class="our"><b>Our shipped English:</b><pre>Sweetheart, let us go see if the rose
+Which this morning had unfolded
+Her robe of purple to the sun,
+Has not lost this evening
+The folds of her purple gown,
+And her hue so like thine own.</pre></div>
+        <div class="ref"><b>Reference (Kalopaideia editorial gloss (after Andrew Lang, 1872), PD source):</b><pre></pre></div>
+      </div>
+    </details>
+  </td>
+</tr>
+<tr>
+  <td class="id"><code>sappho-1</code></td>
+  <td>Fragment 1 — Hymn to Aphrodite (opening)</td>
+  <td>Henry Thornton Wharton</td>
+  <td>1885</td>
+  <td class="n">4</td>
+  <td class="n">—</td>
+  <td class="verdict" style="background:#888;color:white;">NO_REFERENCE</td>
+</tr>
+<tr class="notes-row">
+  <td colspan="7">
+    <div class="notes">No machine-fetchable PD source registered for translator 'Henry Thornton Wharton'. Manual review recommended.</div>
+    <details><summary>Compare samples (first 400 chars of each)</summary>
+      <div class="samples">
+        <div class="our"><b>Our shipped English:</b><pre>Immortal Aphrodite on your embroidered throne,
+Daughter of Zeus, weaver of wiles, I beg you,
+do not, I pray, with griefs or sorrows break my heart,
+lady, my spirit,</pre></div>
+        <div class="ref"><b>Reference (Henry Thornton Wharton, PD source):</b><pre></pre></div>
+      </div>
+    </details>
+  </td>
+</tr>
+<tr>
+  <td class="id"><code>villon-ballade-pendus</code></td>
+  <td>Ballade des pendus (Épitaphe Villon)</td>
+  <td>Algernon Charles Swinburne</td>
+  <td>1878</td>
+  <td class="n">20</td>
+  <td class="n">—</td>
+  <td class="verdict" style="background:#888;color:white;">NO_REFERENCE</td>
+</tr>
+<tr class="notes-row">
+  <td colspan="7">
+    <div class="notes">No machine-fetchable PD source registered for translator 'Algernon Charles Swinburne'. Manual review recommended.</div>
+    <details><summary>Compare samples (first 400 chars of each)</summary>
+      <div class="samples">
+        <div class="our"><b>Our shipped English:</b><pre>Men, brother men, that after us yet live,
+Let not your hearts too hard against us be;
+For if some pity of us poor men ye give,
+The sooner God shall take of you pity.
+Here are we five or six strung up, you see,
+And flesh that we too well had cherished, lo!
+It is long eaten out and rotten through.
+And we the bones grow dust and ash anew.
+Let no man laugh at us discomforted,
+But pray to God that he f</pre></div>
+        <div class="ref"><b>Reference (Algernon Charles Swinburne, PD source):</b><pre></pre></div>
+      </div>
+    </details>
+  </td>
+</tr>
+<tr>
+  <td class="id"><code>wanderer</code></td>
+  <td>The Wanderer</td>
+  <td>R. K. Gordon</td>
+  <td>1926 (public domain)</td>
+  <td class="n">34</td>
+  <td class="n">—</td>
+  <td class="verdict" style="background:#888;color:white;">NO_REFERENCE</td>
+</tr>
+<tr class="notes-row">
+  <td colspan="7">
+    <div class="notes">No machine-fetchable PD source registered for translator 'R. K. Gordon'. Manual review recommended.</div>
+    <details><summary>Compare samples (first 400 chars of each)</summary>
+      <div class="samples">
+        <div class="our"><b>Our shipped English:</b><pre>Often the solitary one finds grace for himself,
+the mercy of the Lord, though he, sorrowful of heart,
+across the water-way has long had to
+stir with his hands the ice-cold sea,
+tread the paths of exile. Fate is full fixed!
+So spoke the wanderer, mindful of hardships,
+of fierce slaughters, the fall of dear kinsmen:
+"Often I have had to alone at each dawn
+lament my sorrow. There is now none living
+t</pre></div>
+        <div class="ref"><b>Reference (R. K. Gordon, PD source):</b><pre></pre></div>
+      </div>
+    </details>
+  </td>
+</tr>
+</tbody>
+</table>
+
+<p style="margin-top:40px;font-size:13px;color:#8a8070;font-style:italic;">
+  Audit methodology: each work's full English text is embedded with OpenAI
+  <code>text-embedding-3-small</code> and compared to a same-translator
+  reference fetched from Project Gutenberg or Wikisource. Cosine similarity
+  ≥ 0.85 = clean; 0.75–0.85 = likely faithful with light modernization;
+  0.60–0.75 = weak; below 0.60 = provenance mismatch (text probably not by
+  the attributed translator). Works with no machine-fetchable reference
+  source (Cook's Caedmon, Gordon 1926 Wanderer, Andrew Lang's Ronsard,
+  the Gaulish primer mix) are flagged for manual review.
+</p>
+</body>
+</html>

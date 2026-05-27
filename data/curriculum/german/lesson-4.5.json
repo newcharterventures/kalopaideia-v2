@@ -1,0 +1,37 @@
+{
+  "id": "4.5",
+  "stage": 4,
+  "title": "Conditional Sentences",
+  "subtitle": "Real, hypothetical, contrary-to-fact. Three types.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Master Conditional Sentences"
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Lesson overview",
+      "body": "Real, hypothetical, contrary-to-fact. Three types.\n\nFull content: prose opener with real examples from Goethe/Nietzsche/Heine, paradigm tables where applicable, self_check, reading_preview, next_lesson."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Verify understanding.",
+      "items": [
+        {
+          "prompt": "Core of Conditional Sentences?",
+          "answer": "Real, hypothetical, contrary-to-fact. Three types."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 4.6 continues Stage 4."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Complete when Conditional Sentences is mastered.",
+    "credit_minutes": 60
+  }
+}

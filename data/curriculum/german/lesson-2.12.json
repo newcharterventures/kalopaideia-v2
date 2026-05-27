@@ -1,0 +1,37 @@
+{
+  "id": "2.12",
+  "stage": 2,
+  "title": "Reading: Heine, 'Ein Fichtenbaum steht einsam'",
+  "subtitle": "Eight lines. First real poem.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Complete Reading: Heine, 'Ein Fichtenbaum steht einsam'"
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Lesson content",
+      "body": "Vocab ~25 words. Grammar: nominative, present. Audio + gloss.\n\nFull lesson content follows the gold standard of lesson-1.1: prose opener with real German examples, paradigm tables where applicable, self_check with 5-10 items, reading_preview for new vocabulary, next_lesson block."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test your understanding.",
+      "items": [
+        {
+          "prompt": "Core concept of Reading: Heine, 'Ein Fichtenbaum steht einsam'?",
+          "answer": "Vocab ~25 words. Grammar: nominative, present. Audio + gloss."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Stage 2 checkpoint follows."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand Reading: Heine, 'Ein Fichtenbaum steht einsam'.",
+    "credit_minutes": 50
+  }
+}

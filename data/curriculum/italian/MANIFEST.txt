@@ -1,0 +1,65 @@
+ITALIAN CURRICULUM - FULL MANIFEST
+===================================
+
+STAGE 1: The Sound and the Shape (7 lessons)
+- lesson-1.1.json: The Alphabet and the Five Vowels
+- lesson-1.2.json: The Consonants and Their Clusters
+- lesson-1.3.json: Double Consonants
+- lesson-1.4.json: Stress and the Grave Accent
+- lesson-1.5.json: Diphthongs and Triphthongs
+- lesson-1.6.json: Reading the Names
+- lesson-1.7.json: First Sentences
+
+STAGE 2: The Sentence (13 lessons)
+- lesson-2.1.json: The Definite Article
+- lesson-2.2.json: The Indefinite Article
+- lesson-2.3.json: Nouns: Masculine Singular in -o
+- lesson-2.4.json: Nouns: Feminine Singular in -a
+- lesson-2.5.json: Nouns: Masculine and Feminine in -e
+- lesson-2.6.json: Adjectives and Agreement
+- lesson-2.7.json: The Verb Essere
+- lesson-2.8.json: The Verb Avere
+- lesson-2.9.json: The Present Indicative: First Conjugation -are
+- lesson-2.10.json: The Present Indicative: Second Conjugation -ere
+- lesson-2.11.json: The Present Indicative: Third Conjugation -ire
+- lesson-2.12.json: Basic Word Order and Negation
+- lesson-2.13.json: Reading: A Day in Florence
+
+STAGE 3: The Tenses (14 lessons)
+- lesson-3.1.json: The Past Participle
+- lesson-3.2.json: The Passato Prossimo with Avere
+- lesson-3.3.json: The Passato Prossimo with Essere
+- lesson-3.4.json: The Imperfetto
+- lesson-3.5.json: Passato Prossimo versus Imperfetto
+- lesson-3.6.json: The Trapassato Prossimo
+- lesson-3.7.json: The Future
+- lesson-3.8.json: The Conditional
+- lesson-3.9.json: The Gerundio
+- lesson-3.10.json: The Infinito Passato
+- lesson-3.11.json: Reflexive Verbs
+- lesson-3.12.json: Modal Verbs
+- lesson-3.13.json: Reading: Boccaccio, a Simplified Novella
+- lesson-3.14.json: Reading: A Passage from Pinocchio
+
+STAGE 4: The Mood (13 lessons)
+- lesson-4.1.json: The Congiuntivo Presente
+- lesson-4.2.json: The Congiuntivo Imperfetto
+- lesson-4.3.json: The Congiuntivo Passato and Trapassato
+- lesson-4.4.json: When to Use the Congiuntivo
+- lesson-4.5.json: Hypothetical Sentences: Type One (Realtà)
+- lesson-4.6.json: Hypothetical Sentences: Type Two (Possibilità)
+- lesson-4.7.json: Hypothetical Sentences: Type Three (Irrealtà)
+- lesson-4.8.json: Direct and Indirect Object Pronouns
+- lesson-4.9.json: Pronoun Combinations
+- lesson-4.10.json: The Passive Voice
+- lesson-4.11.json: The Imperative
+- lesson-4.12.json: Reading: Machiavelli, Il Principe, capitolo I (adapted)
+- lesson-4.13.json: Reading: Leopardi, L'infinito
+
+STAGE 5: The Author (3 tracks + capstone)
+- track-poet.json: Dante, Inferno I + V (Paolo and Francesca)
+- track-storyteller.json: Boccaccio, Decameron (3 novellas)
+- track-statesman.json: Machiavelli, Il Principe, capitoli I–VII
+- capstone.json: The Kalopaideia Italian Examination
+
+TOTAL: 47 lessons + 3 tracks + 1 capstone = 51 files

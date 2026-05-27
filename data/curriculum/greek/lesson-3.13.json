@@ -1,0 +1,65 @@
+{
+  "id": "3.13",
+  "stage": 3,
+  "title": "The Genitive Absolute",
+  "subtitle": "ταῦτα εἰπόντος τοῦ Κύρου — an independent participial phrase.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Understand the genitive absolute as a participial phrase grammatically independent of the main sentence.",
+    "Translate genitive absolutes into natural English temporal or causal clauses.",
+    "Recognize when a participle is in the genitive absolute versus when it agrees with a noun in the main sentence.",
+    "Use the genitive absolute to express time, cause, or circumstance."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The genitive absolute",
+      "body": "The genitive absolute is a participial phrase in the genitive case, grammatically independent of the main sentence. It consists of a noun (or pronoun) in the genitive and a participle agreeing with it in the genitive.\n\nταῦτα εἰπόντος τοῦ Κύρου, ἀνέστησαν οἱ στρατιῶται.\n'These things having been said by Cyrus' or 'When Cyrus had said these things, the soldiers stood up.'\n\nταῦτα is the object of the participle εἰπόντος (aorist active participle of λέγω, genitive singular masculine). τοῦ Κύρου is the subject of the participle, also in the genitive. The whole phrase is in the genitive because it is independent of the main sentence."
+    },
+    {
+      "kind": "prose",
+      "heading": "When to use the genitive absolute",
+      "body": "The genitive absolute is used when the subject of the participle is different from the subject of the main verb. If the subject of the participle is the same as the subject of the main verb, use a circumstantial participle in the same case as the subject, not a genitive absolute.\n\nCorrect: ταῦτα εἰπόντος τοῦ Κύρου, ἀνέστησαν οἱ στρατιῶται.\nCyrus is the subject of εἰπόντος; the soldiers are the subject of ἀνέστησαν. Different subjects → genitive absolute.\n\nIncorrect: *οἱ στρατιῶται εἰπόντες ταῦτα ἀνέστησαν.\nThis would mean 'The soldiers, having said these things, stood up.' But if the soldiers are the subject of both the participle and the main verb, use a nominative participle, not a genitive absolute."
+    },
+    {
+      "kind": "prose",
+      "heading": "Translating the genitive absolute",
+      "body": "The genitive absolute is usually translated as a temporal, causal, or concessive clause in English.\n\nTemporal: 'when X happened', 'after X happened', 'while X was happening'\nCausal: 'because X happened', 'since X happened'\nConcessive: 'although X happened'\n\nContext tells you which is most natural.\n\nταῦτα εἰπόντος τοῦ Κύρου → 'When Cyrus had said these things' or 'After Cyrus said these things'.\n\nτούτων πραττομένων → 'While these things were being done' or 'Since these things were being done'."
+    },
+    {
+      "kind": "prose",
+      "heading": "From Xenophon",
+      "body": "Anabasis I.1.2: ταῦτα πράξαντος τοῦ Κύρου, ἀνέστησαν οἱ Ἕλληνες.\n'When Cyrus had done these things, the Greeks stood up.' ταῦτα πράξαντος τοῦ Κύρου is a genitive absolute: Cyrus is the subject of πράξαντος, the Greeks are the subject of ἀνέστησαν."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer or translate.",
+      "items": [
+        { "prompt": "What is the genitive absolute?", "answer": "A participial phrase in the genitive case, grammatically independent of the main sentence." },
+        { "prompt": "When do you use the genitive absolute?", "answer": "When the subject of the participle is different from the subject of the main verb." },
+        { "prompt": "Translate: ταῦτα εἰπόντος τοῦ Κύρου, ἀνέστησαν οἱ στρατιῶται.", "answer": "When Cyrus had said these things, the soldiers stood up." },
+        { "prompt": "Translate: τούτων πραττομένων", "answer": "While these things were being done" },
+        { "prompt": "Can you use a genitive absolute when the subject of the participle is the same as the subject of the main verb?", "answer": "No. Use a circumstantial participle in the same case as the subject." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Genitive absolute in sentences",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "ταῦτα εἰπόντος τοῦ Κύρου, ἀνέστησαν οἱ στρατιῶται.", "transliteration": "taûta eipóntos toû Kýrou, anéstēsan hoi stratiôtai.", "gloss": "When Cyrus had said these things, the soldiers stood up.", "audio": "/paideia/audio/greek/sentences/tauta-eipontos.mp3" },
+        { "greek": "τῆς νυκτὸς γενομένης ἀπῆλθον.", "transliteration": "tês nyktòs genoménēs apêlthon.", "gloss": "When night had come, they went away.", "audio": "/paideia/audio/greek/sentences/tes-nyktos-genomenes.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 3.14 is a sustained reading from Xenophon, Anabasis I.1.1-11. This is the student's first passage of unadapted Greek prose, with full audio, full gloss, and full grammatical commentary. This is the moment you have been preparing for."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can recognize a genitive absolute on sight, can translate it into natural English, and can distinguish it from a circumstantial participle.",
+    "credit_minutes": 50
+  }
+}

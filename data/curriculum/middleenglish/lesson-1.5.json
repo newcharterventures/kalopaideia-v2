@@ -1,0 +1,43 @@
+{
+  "id": "1.5",
+  "stage": 1,
+  "title": "Stress and Meter",
+  "subtitle": "Iambic pentameter — five beats, alternating stress.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Master Stress and Meter.",
+    "Read and translate authentic Middle English texts.",
+    "Prepare for sustained reading in Stage 3."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "Chaucer writes iambic pentameter. Five beats per line, alternating unstressed and stressed. The final -e counts as a syllable when you need ten syllables; drops when you have ten without it. Scan the line to know when to pronounce it. Meter is the key."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "Stress and Meter"
+        },
+        {
+          "prompt": "Can you apply this to reading?",
+          "answer": "Work through examples with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand Stress and Meter.",
+    "credit_minutes": 50
+  }
+}

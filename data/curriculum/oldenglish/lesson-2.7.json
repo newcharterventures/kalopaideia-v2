@@ -1,0 +1,60 @@
+{
+  "id": "2.7",
+  "stage": 2,
+  "title": "The Present Indicative of Strong Verbs",
+  "subtitle": "Rīdan (to ride) — Class I ablaut.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Understand and apply the concepts of The Present Indicative of Strong Verbs.",
+    "Read and parse examples from authentic Old English texts.",
+    "Practice pronunciation and recognition."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "Strong verbs form their past tense by changing the root vowel (ablaut), not by adding a dental suffix. Old English has seven classes of strong verbs, each with a different ablaut pattern. Class I: ī - ā - i - i. Present: ic rīde, þū rītst / rīdest, hē rītt / rīdeþ, wē / gē / hīe rīdaþ."
+    },
+    {
+      "kind": "paradigm_table",
+      "heading": "Paradigm",
+      "table": {
+        "Present Indicative": {
+          "ic": "rīde",
+          "þū": "rītst",
+          "hē/hēo/hit": "rītt",
+          "wē/gē/hīe": "rīdaþ"
+        }
+      }
+    },
+    {
+      "kind": "prose",
+      "heading": "Example",
+      "body": "Ic rīde (I ride), þū rītst (you ride), hē rītt (he rides), wē rīdaþ (we ride)."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test your understanding.",
+      "items": [
+        {
+          "prompt": "What is the main concept of this lesson?",
+          "answer": "The Present Indicative of Strong Verbs"
+        },
+        {
+          "prompt": "Can you parse the example?",
+          "answer": "Review the paradigm and example above."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson in Stage 2."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand The Present Indicative of Strong Verbs and can apply it in reading.",
+    "credit_minutes": 55
+  }
+}

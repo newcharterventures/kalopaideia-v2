@@ -1,0 +1,59 @@
+# robots.txt for Kalopaideia (newcharterventures.com/paideia)
+# A publication of New Charter Ventures LLC.
+
+# Standard search engines: welcome.
+User-agent: *
+Allow: /
+
+# AI training crawlers: not permitted to use Site content for model training,
+# dataset construction, or commercial AI products. This signals our intent
+# under emerging industry norms (IETF "ai.txt", Spawning ai.txt, and the
+# robots.txt extensions adopted by major AI labs). It is not a license; all
+# content remains subject to /paideia/terms.html.
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: OAI-SearchBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+# Wiktionary derivation note: tap-to-define popovers display short snippets
+# from Wiktionary under CC BY-SA 4.0, with inline attribution. See
+# /paideia/credits.html. Our own editorial content is © New Charter Ventures.
+
+Sitemap: https://newcharterventures.com/paideia/sitemap.xml

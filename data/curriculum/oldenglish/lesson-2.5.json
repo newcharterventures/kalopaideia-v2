@@ -1,0 +1,66 @@
+{
+  "id": "2.5",
+  "stage": 2,
+  "title": "Strong Nouns — Feminine ō-Stems",
+  "subtitle": "Giefu, lufu, lār — the feminine parallel to masculine a-stems.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Understand and apply the concepts of Strong Nouns — Feminine ō-Stems.",
+    "Read and parse examples from authentic Old English texts.",
+    "Practice pronunciation and recognition."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "Feminine ō-stems end in -u or a vowel in the nominative singular. The genitive and dative singular both end in -e. The nominative plural ends in -a or -e."
+    },
+    {
+      "kind": "paradigm_table",
+      "heading": "Paradigm",
+      "table": {
+        "singular": {
+          "Nom": "giefu",
+          "Acc": "giefe",
+          "Gen": "giefe",
+          "Dat": "giefe"
+        },
+        "plural": {
+          "Nom": "giefa / giefe",
+          "Acc": "giefa / giefe",
+          "Gen": "giefa / giefena",
+          "Dat": "giefum"
+        }
+      }
+    },
+    {
+      "kind": "prose",
+      "heading": "Example",
+      "body": "Giefu (gift): sēo giefu (nom), þā giefe (acc), þǣre giefe (gen/dat). Plural: þā giefa."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test your understanding.",
+      "items": [
+        {
+          "prompt": "What is the main concept of this lesson?",
+          "answer": "Strong Nouns — Feminine ō-Stems"
+        },
+        {
+          "prompt": "Can you parse the example?",
+          "answer": "Review the paradigm and example above."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson in Stage 2."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand Strong Nouns — Feminine ō-Stems and can apply it in reading.",
+    "credit_minutes": 55
+  }
+}

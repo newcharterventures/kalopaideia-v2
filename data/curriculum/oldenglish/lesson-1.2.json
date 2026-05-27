@@ -1,0 +1,98 @@
+{
+  "id": "1.2",
+  "stage": 1,
+  "title": "Æ, Þ, Ð, Ƿ",
+  "subtitle": "The four letters not found in modern English — why they exist and how to use them.",
+  "estimated_minutes": 45,
+  "objectives": [
+    "Distinguish æ from a and e in pronunciation and meaning.",
+    "Use þ and ð interchangeably for both voiced and voiceless 'th' sounds.",
+    "Recognize ƿ as w and avoid confusing it with p.",
+    "Write each of the four letters by hand."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Why Old English needed new letters",
+      "body": "Latin had five vowels (a, e, i, o, u) and did not distinguish vowel length in writing. Old English had seven simple vowels and four diphthongs, and vowel length mattered for both meaning and meter. Latin had no 'th' sound and no 'w' sound (the Latin v was pronounced [w], and the letter w did not yet exist). Old English had both. The scribes solved the problem by borrowing three runes and creating one ligature."
+    },
+    {
+      "kind": "prose",
+      "heading": "Æ — the ash",
+      "body": "Æ is a ligature of a and e. It represents the front open vowel [æ], the vowel you hear in modern English 'cat,' 'hat,' 'man.' Old English distinguished this sound from both the a in 'father' (which it wrote as a) and the e in 'met' (which it wrote as e). The three vowels were separate phonemes; switching one for another changed the meaning of the word.\n\nExamples: þæt (that), hæfde (had), dæg (day), fæst (fast), glæd (glad)."
+    },
+    {
+      "kind": "prose",
+      "heading": "Þ and Ð — thorn and eth",
+      "body": "Thorn (þ) and eth (ð) both represent the sounds we spell 'th' in modern English — the voiceless [θ] in 'thin' and the voiced [ð] in 'this.' In Old English these were allophones of a single phoneme, not separate sounds. Scribes used þ and ð interchangeably. Some manuscripts favor þ; others favor ð; many mix them freely. Modern editions preserve the manuscript spelling.\n\nExamples: þā (then), þæt (that), ðēod (people, nation), ōðer (other), broþor (brother)."
+    },
+    {
+      "kind": "prose",
+      "heading": "Ƿ — wynn",
+      "body": "Wynn (ƿ) represents [w]. It comes from the rune *wynn*, meaning 'joy.' The letter looks like a Latin p but must not be confused with it. In manuscripts the two are clearly distinct; in modern fonts the distinction can be subtle. Some modern editions substitute w for ƿ; we do not.\n\nExamples: ƿæter (water), ƿīf (woman, wife), ƿord (word), ƿeorold (world), ƿitan (to know).\n\nIn later Old English and early Middle English, scribes began writing uu (double-u) for the sound [w], and the letter ƿ fell out of use. The modern letter w descends from that uu ligature."
+    },
+    {
+      "kind": "letter_grid",
+      "heading": "The four special letters",
+      "letters": [
+        { "upper": "Æ", "lower": "æ", "name": "ash", "ipa": "[æ]", "audio": "/paideia/audio/oldenglish/letters/ash.mp3", "note": "Front open vowel. Modern English 'cat.'" },
+        { "upper": "Þ", "lower": "þ", "name": "thorn", "ipa": "[θ] or [ð]", "audio": "/paideia/audio/oldenglish/letters/thorn.mp3", "note": "Voiceless or voiced 'th.' Interchangeable with ð." },
+        { "upper": "Ð", "lower": "ð", "name": "eth", "ipa": "[θ] or [ð]", "audio": "/paideia/audio/oldenglish/letters/eth.mp3", "note": "Identical to þ. Manuscript preference." },
+        { "upper": "Ƿ", "lower": "ƿ", "name": "wynn", "ipa": "[w]", "audio": "/paideia/audio/oldenglish/letters/wynn.mp3", "note": "Not p. From the rune *wynn* (joy)." }
+      ]
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill",
+      "instructions": "Twenty words containing æ, þ, ð, or ƿ. Listen first, then repeat aloud.",
+      "audio": "/paideia/audio/oldenglish/drills/lesson-1.2-listening.mp3"
+    },
+    {
+      "kind": "writing_drill",
+      "heading": "Writing drill",
+      "instructions": "Copy each letter twenty times. Pay attention to the crossbar of ð, the ascender of þ, and the closed loop of ƿ that distinguishes it from p.",
+      "downloadable_pdf": "/paideia/curriculum/oldenglish/handouts/lesson-1.2-tracing.pdf"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Read each word aloud, then check your pronunciation.",
+      "items": [
+        { "prompt": "þæt", "answer": "that (pronounced THAHT, with the vowel of 'cat')" },
+        { "prompt": "ƿæter", "answer": "water (pronounced WAH-ter)" },
+        { "prompt": "broþor", "answer": "brother" },
+        { "prompt": "ōðer", "answer": "other" },
+        { "prompt": "hæfde", "answer": "had" },
+        { "prompt": "ƿīf", "answer": "woman, wife (pronounced WEEF)" },
+        { "prompt": "What is the difference in meaning between a, æ, and e in Old English?", "answer": "Three separate vowels. a = [a] as in 'father'; æ = [æ] as in 'cat'; e = [e] as in 'met.' Changing one to another changes the word." },
+        { "prompt": "Can you use þ and ð interchangeably?", "answer": "Yes. Scribes did. Modern editions preserve manuscript choices, but the sounds are the same." },
+        { "prompt": "Why does ƿ look like p?", "answer": "Runic letter adapted to Latin script. The two letters are distinct in manuscripts; modern fonts make them harder to tell apart." },
+        { "prompt": "When did ƿ disappear?", "answer": "Late Old English / early Middle English. Scribes replaced it with uu (double-u), which became modern w." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Words to practice",
+      "instructions": "Read aloud before checking audio.",
+      "words": [
+        { "oldenglish": "þæt", "transliteration": null, "gloss": "that", "audio": "/paideia/audio/oldenglish/words/thaet.mp3" },
+        { "oldenglish": "ƿæter", "transliteration": null, "gloss": "water", "audio": "/paideia/audio/oldenglish/words/waeter.mp3" },
+        { "oldenglish": "broþor", "transliteration": null, "gloss": "brother", "audio": "/paideia/audio/oldenglish/words/brothor.mp3" },
+        { "oldenglish": "hæfde", "transliteration": null, "gloss": "had", "audio": "/paideia/audio/oldenglish/words/haefde.mp3" },
+        { "oldenglish": "ƿīf", "transliteration": null, "gloss": "woman, wife", "audio": "/paideia/audio/oldenglish/words/wif.mp3" },
+        { "oldenglish": "ōðer", "transliteration": null, "gloss": "other", "audio": "/paideia/audio/oldenglish/words/other.mp3" },
+        { "oldenglish": "ðēod", "transliteration": null, "gloss": "people, nation", "audio": "/paideia/audio/oldenglish/words/theod.mp3" },
+        { "oldenglish": "ƿeorold", "transliteration": null, "gloss": "world", "audio": "/paideia/audio/oldenglish/words/weorold.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.3 covers vowel length and diphthongs. You will learn why the macron matters and how to hear the difference between short and long vowels."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can read twenty words containing æ, þ, ð, or ƿ without hesitation.",
+    "credit_minutes": 45
+  }
+}

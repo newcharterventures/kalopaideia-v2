@@ -1,0 +1,62 @@
+{
+  "id": "2.6",
+  "stage": 2,
+  "title": "The First Declension — Masculine",
+  "subtitle": "ὁ ποιητής, ὁ νεανίας — masculine forms in the first declension.",
+  "estimated_minutes": 45,
+  "objectives": [
+    "Decline first-declension masculine nouns in all five cases and both numbers.",
+    "Recognize that these nouns take the masculine article despite first-declension endings.",
+    "Distinguish the masculine nominative singular -ης or -ας from the feminine.",
+    "Parse first-declension masculine nouns on sight."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Masculine nouns in the first declension",
+      "body": "Most first-declension nouns are feminine. A small group is masculine. These nouns follow the first-declension pattern in the singular but take masculine plural endings borrowed from the second declension. They always take the masculine article: ὁ ποιητής, not ἡ ποιητής.\n\nThe nominative singular ends in -ης or -ας. The genitive singular ends in -ου (like the second declension). The dative singular ends in -ῃ or -ᾳ (like the feminine). The accusative singular ends in -ην or -αν. The vocative singular ends in -ᾰ (short α).\n\nThe plural uses second-declension masculine endings: -αι, -ῶν, -αις, -ᾱς."
+    },
+    {
+      "kind": "prose",
+      "heading": "The paradigm: ὁ ποιητής (poet)",
+      "body": "              singular        plural\n  nominative  ποιητής         ποιηταί\n  genitive    ποιητοῦ         ποιητῶν\n  dative      ποιητῇ          ποιηταῖς\n  accusative  ποιητήν         ποιητάς\n  vocative    ποιητά          ποιηταί\n\nWith the masculine article:\n  nominative  ὁ ποιητής       οἱ ποιηταί\n  genitive    τοῦ ποιητοῦ     τῶν ποιητῶν\n  dative      τῷ ποιητῇ       τοῖς ποιηταῖς\n  accusative  τὸν ποιητήν     τοὺς ποιητάς\n  vocative    ὦ ποιητά        ὦ ποιηταί\n\nNotice the vocative singular: ποιητά (short α, no circumflex). This is the distinctive marker of first-declension masculines."
+    },
+    {
+      "kind": "prose",
+      "heading": "The paradigm: ὁ νεανίας (young man)",
+      "body": "              singular        plural\n  nominative  νεανίας         νεανίαι\n  genitive    νεανίου         νεανιῶν\n  dative      νεανίᾳ          νεανίαις\n  accusative  νεανίαν         νεανίας\n  vocative    νεανία          νεανίαι\n\nLong α throughout the singular (after ι). Genitive singular still ends in -ου (masculine)."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers. Parse each form or answer each question.",
+      "items": [
+        { "prompt": "ποιητοῦ", "answer": "genitive singular (masculine)" },
+        { "prompt": "ποιητῇ", "answer": "dative singular" },
+        { "prompt": "ποιητά", "answer": "vocative singular" },
+        { "prompt": "νεανίου", "answer": "genitive singular (masculine)" },
+        { "prompt": "What is the genitive singular ending for first-declension masculines?", "answer": "-ου (like the second declension)" },
+        { "prompt": "What is the vocative singular ending?", "answer": "-ᾰ (short α)" },
+        { "prompt": "Do these nouns take the masculine or feminine article?", "answer": "Masculine — ὁ ποιητής" }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "First-declension masculines in sentences",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "ὁ ποιητὴς γράφει.", "transliteration": "ho poiētḕs gráphei.", "gloss": "The poet writes.", "audio": "/paideia/audio/greek/sentences/poietes-graphei.mp3" },
+        { "greek": "τοῦ νεανίου", "transliteration": "toû neaníou", "gloss": "of the young man", "audio": "/paideia/audio/greek/phrases/tou-neaniou.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.7 introduces the genitive case. You have seen the genitive ending in every declension, but now we examine its function: possession, source, separation, partitive, and more. The genitive is the most versatile case in Greek."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can decline ὁ ποιητής and ὁ νεανίας from memory and can distinguish masculine from feminine first-declension forms on sight.",
+    "credit_minutes": 45
+  }
+}

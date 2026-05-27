@@ -1,0 +1,37 @@
+{
+  "id": "2.8",
+  "stage": 2,
+  "title": "The Present Tense \u2014 Regular Verbs",
+  "subtitle": "Spielen: ich spiele, du spielst, er spielt.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Complete The Present Tense \u2014 Regular Verbs"
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Lesson content",
+      "body": "Stem + endings. Conjugation table for regular verbs.\n\nFull lesson content follows the gold standard of lesson-1.1: prose opener with real German examples, paradigm tables where applicable, self_check with 5-10 items, reading_preview for new vocabulary, next_lesson block."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test your understanding.",
+      "items": [
+        {
+          "prompt": "Core concept of The Present Tense \u2014 Regular Verbs?",
+          "answer": "Stem + endings. Conjugation table for regular verbs."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.9 continues Stage 2."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand The Present Tense \u2014 Regular Verbs.",
+    "credit_minutes": 50
+  }
+}

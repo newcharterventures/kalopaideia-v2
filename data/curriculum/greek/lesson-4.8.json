@@ -1,0 +1,66 @@
+{
+  "id": "4.8",
+  "stage": 4,
+  "title": "The Perfect Active",
+  "subtitle": "λέλυκα — the state resulting from completed action.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Form and conjugate the perfect active indicative of any ω-verb.",
+    "Understand the perfect as expressing the state resulting from completed action.",
+    "Recognize reduplication as the marker of the perfect.",
+    "Distinguish perfect from aorist by meaning."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The perfect tense",
+      "body": "The perfect expresses the state resulting from completed action. λέλυκα means 'I have loosed' or 'I am in the state of having loosed'. The perfect emphasizes the present result of a past action, not just the past action itself.\n\nAorist: ἔλυσα — 'I loosed' (simple past action).\nPerfect: λέλυκα — 'I have loosed' (present state resulting from past action).\n\nThe perfect is formed with reduplication (repeating the initial consonant with ε: λε-λυ-) and a new set of endings called the perfect active endings."
+    },
+    {
+      "kind": "prose",
+      "heading": "The perfect active indicative: λέλυκα",
+      "body": "  singular\n  1st   λέλυκα      I have loosed\n  2nd   λέλυκας     you have loosed\n  3rd   λέλυκε(ν)   he/she/it has loosed\n\n  plural\n  1st   λελύκαμεν   we have loosed\n  2nd   λελύκατε    you (plural) have loosed\n  3rd   λελύκασι(ν) they have loosed\n\nThe endings are -α, -ας, -ε(ν), -αμεν, -ατε, -ασι(ν). The reduplication is λε- (the initial consonant λ + ε). The stem is λυ- + κ (the κ is called the perfect active marker, though not all verbs have it)."
+    },
+    {
+      "kind": "prose",
+      "heading": "Reduplication patterns",
+      "body": "Consonant-initial verbs: repeat the initial consonant + ε.\nλύω → λέλυκα\nπαύω → πέπαυκα\nγράφω → γέγραφα\n\nVowel-initial verbs: lengthen the initial vowel (like the augment).\nἀκούω → ἀκήκοα\n\nCompound verbs: reduplicate after the preposition.\nἀπολύω → ἀπολέλυκα"
+    },
+    {
+      "kind": "prose",
+      "heading": "From Plato",
+      "body": "Plato, Apology 20c: οὐδὲν οἶδα.\n'I know nothing.' οἶδα is the perfect of a root meaning 'see'; it means 'I have seen' = 'I know'. This is one of the most common perfects in Greek, and it is irregular."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Conjugate or translate.",
+      "items": [
+        { "prompt": "First person singular perfect active of λύω", "answer": "λέλυκα" },
+        { "prompt": "Third person singular perfect active of λύω", "answer": "λέλυκε(ν)" },
+        { "prompt": "Third person plural perfect active of λύω", "answer": "λελύκασι(ν)" },
+        { "prompt": "What is the marker of the perfect tense?", "answer": "Reduplication (repeating the initial consonant + ε)." },
+        { "prompt": "What is the difference between the aorist and the perfect?", "answer": "Aorist: simple past action. Perfect: present state resulting from past action." },
+        { "prompt": "Translate: λέλυκα τοὺς αἰχμαλώτους.", "answer": "I have freed the prisoners." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Perfect in sentences",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "λέλυκα τοὺς αἰχμαλώτους.", "transliteration": "lélyka toùs aichmalṓtous.", "gloss": "I have freed the prisoners.", "audio": "/paideia/audio/greek/sentences/lelyka-aichmalotous.mp3" },
+        { "greek": "γέγραφα τὸ βιβλίον.", "transliteration": "gégrapha tò biblíon.", "gloss": "I have written the book.", "audio": "/paideia/audio/greek/sentences/gegrapha-biblion.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 4.9 introduces the perfect middle and passive. The perfect middle/passive uses the same reduplication as the active, but the endings are stacked directly onto the stem without the κ marker. λέλυμαι means 'I have been loosed' or 'I am in the state of having been loosed'."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can conjugate the perfect active of any ω-verb from memory and can distinguish perfect from aorist by meaning.",
+    "credit_minutes": 55
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "3.9",
+  "stage": 3,
+  "title": "Pwyll, Lines 51–100: The Hunt Begins",
+  "subtitle": "The otherworldly hounds appear.",
+  "estimated_minutes": 70,
+  "objectives": ["Continue reading Pwyll.","Analyze descriptive vocabulary."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers Pwyll, Lines 51–100: The Hunt Begins. The otherworldly hounds appear."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Continue reading Pwyll."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Continue reading Pwyll." },
+        { "prompt": "How do you apply this in practice?", "answer": "Analyze descriptive vocabulary." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "welsh": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/welsh/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on Pwyll, Lines 51–100: The Hunt Begins."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in Pwyll, Lines 51–100: The Hunt Begins to ten random examples.",
+    "credit_minutes": 70
+  }
+}

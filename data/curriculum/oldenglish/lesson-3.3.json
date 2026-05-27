@@ -1,0 +1,43 @@
+{
+  "id": "3.3",
+  "stage": 3,
+  "title": "Noun Declensions — i-Stems and u-Stems",
+  "subtitle": "Giest, sunu, duru — minor classes, common words.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Master Noun Declensions — i-Stems and u-Stems.",
+    "Read and translate authentic Old English poetry and prose.",
+    "Prepare for the capstone examination."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "The i-stem and u-stem declensions are smaller than the a-stem and ō-stem classes, but they include common words. Giest (guest), sunu (son), duru (door), feld (field), wine (friend). The u-stems have -u throughout; the i-stems often merge with a-stems in later Old English."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "Noun Declensions — i-Stems and u-Stems"
+        },
+        {
+          "prompt": "Can you translate the example passage?",
+          "answer": "Work through it word by word with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson or take the capstone examination."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply Noun Declensions — i-Stems and u-Stems to reading.",
+    "credit_minutes": 60
+  }
+}

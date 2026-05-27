@@ -1,0 +1,66 @@
+{
+  "id": "4.1",
+  "stage": 4,
+  "title": "The Subjunctive",
+  "subtitle": "λύω, λύῃς, λύῃ — the mood of uncertainty and purpose.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Form and conjugate the present and aorist subjunctive in all voices.",
+    "Understand the subjunctive as the mood of uncertainty, purpose, and exhortation.",
+    "Use the subjunctive in hortatory, deliberative, and purpose clauses.",
+    "Distinguish subjunctive from indicative by form and meaning."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The subjunctive mood",
+      "body": "The subjunctive is the mood of uncertainty and purpose. It expresses what may happen, what should happen, or what is aimed at. The indicative states facts; the subjunctive expresses possibilities, commands, purposes.\n\nThe subjunctive is formed with lengthened thematic vowels: ω/η instead of ο/ε. The present subjunctive uses the present stem; the aorist subjunctive uses the aorist stem (without the augment). The future has no subjunctive.\n\nThe subjunctive has no time reference. The present subjunctive does not mean present time; the aorist subjunctive does not mean past time. Both can refer to future or general time. The difference between present and aorist subjunctive is aspect: present = ongoing action, aorist = completed action."
+    },
+    {
+      "kind": "prose",
+      "heading": "The present subjunctive active: λύω, λύῃς, λύῃ",
+      "body": "  singular\n  1st   λύω         (that) I may loose\n  2nd   λύῃς        (that) you may loose\n  3rd   λύῃ         (that) he/she/it may loose\n\n  plural\n  1st   λύωμεν      (that) we may loose\n  2nd   λύητε       (that) you (plural) may loose\n  3rd   λύωσι(ν)    (that) they may loose\n\nThe endings are -ω, -ῃς, -ῃ, -ωμεν, -ητε, -ωσι. The long vowels ω/η distinguish the subjunctive from the indicative."
+    },
+    {
+      "kind": "prose",
+      "heading": "The aorist subjunctive active: λύσω, λύσῃς, λύσῃ",
+      "body": "  singular\n  1st   λύσω        (that) I may loose\n  2nd   λύσῃς       (that) you may loose\n  3rd   λύσῃ        (that) he/she/it may loose\n\n  plural\n  1st   λύσωμεν     (that) we may loose\n  2nd   λύσητε      (that) you (plural) may loose\n  3rd   λύσωσι(ν)   (that) they may loose\n\nNo augment. The aorist stem λυσ- + subjunctive endings. The aorist subjunctive looks like the future indicative, but without time reference."
+    },
+    {
+      "kind": "prose",
+      "heading": "Uses of the subjunctive",
+      "body": "Hortatory: λύωμεν τοὺς αἰχμαλώτους — 'Let us free the prisoners.' First person plural subjunctive used as a command.\n\nDeliberative: τί ποιῶμεν; — 'What should we do?' Subjunctive in a question expressing doubt or deliberation.\n\nPurpose clause with ἵνα: ἔρχομαι ἵνα λύσω τοὺς αἰχμαλώτους — 'I come in order that I may free the prisoners.' ἵνα + subjunctive = purpose.\n\nFear clause with μή: φοβοῦμαι μὴ ἔλθωσιν — 'I fear that they may come.' μή + subjunctive after verbs of fearing."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Conjugate or translate.",
+      "items": [
+        { "prompt": "First person singular present subjunctive active of λύω", "answer": "λύω" },
+        { "prompt": "First person plural aorist subjunctive active of λύω", "answer": "λύσωμεν" },
+        { "prompt": "What distinguishes the subjunctive from the indicative?", "answer": "The long thematic vowels ω/η instead of ο/ε." },
+        { "prompt": "Translate: λύωμεν τοὺς αἰχμαλώτους.", "answer": "Let us free the prisoners." },
+        { "prompt": "Translate: ἔρχομαι ἵνα λύσω τοὺς αἰχμαλώτους.", "answer": "I come in order that I may free the prisoners." },
+        { "prompt": "Does the aorist subjunctive refer to past time?", "answer": "No. The subjunctive has no time reference." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Subjunctive in sentences",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "λύωμεν τοὺς αἰχμαλώτους.", "transliteration": "lýōmen toùs aichmalṓtous.", "gloss": "Let us free the prisoners.", "audio": "/paideia/audio/greek/sentences/lyomen-aichmalotous.mp3" },
+        { "greek": "ἔρχομαι ἵνα λύσω τοὺς αἰχμαλώτους.", "transliteration": "érkhomai hína lýsō toùs aichmalṓtous.", "gloss": "I come in order to free the prisoners.", "audio": "/paideia/audio/greek/sentences/erkhomai-hina.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 4.2 introduces the optative. The optative is the mood of wish and remote possibility. λύοιμι means 'may I loose' or 'I might loose'. The optative is rarer than the subjunctive, but it is essential for understanding classical Greek."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can conjugate the present and aorist subjunctive of any ω-verb and can translate hortatory, deliberative, and purpose clauses correctly.",
+    "credit_minutes": 60
+  }
+}

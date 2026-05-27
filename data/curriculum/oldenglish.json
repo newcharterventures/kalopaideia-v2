@@ -1,0 +1,121 @@
+{
+  "language": "oldenglish",
+  "display_name": "Old English (Anglo-Saxon)",
+  "tagline": "From runes to Beowulf — a three-stage diploma in reading the language of the Anglo-Saxon kingdoms.",
+  "philosophy": "Old English is not modern English with strange spellings. It is a fully inflected Germanic tongue with four cases, three genders, strong and weak nouns, and a verbal system closer to modern German than to Shakespeare. We teach it as a language to be read with notes, not spoken or composed. You will earn the right to sit down with Beowulf, Caedmon's Hymn, The Wanderer, and Bede — to read them in the original with a glossary and a grammar at your side. That is the goal. That is enough.",
+  "duration_estimate": "4–8 months at one hour per day",
+  "method": "Reading-led. Grammar introduced in context. Every lesson contains a line or two of authentic Old English from the corpus. By the end of Stage 3 you will have read the opening of Beowulf and the whole of Caedmon's Hymn.",
+  "prerequisites": "None. A knowledge of modern English grammar (what a noun is, what a verb is, what a case is) helps but is not required. We will teach the grammar as we go.",
+  "stages": [
+    {
+      "id": "stage-1",
+      "number": 1,
+      "name": "The Sound and the Shape",
+      "subtitle": "The alphabet, the four extra letters, the long marks; reading aloud before parsing.",
+      "duration": "3–4 weeks",
+      "learning_outcomes": [
+        "Read aloud any printed Old English text with accurate reconstructed pronunciation (West Saxon, c. 900–1000 CE).",
+        "Recognize and produce the four letters not found in modern English: æ (ash), þ (thorn), ð (eth), ƿ (wynn).",
+        "Distinguish long and short vowels and mark them with macrons where traditional editions do.",
+        "Pronounce the consonant clusters (sc = sh, cg = dge) and the guttural h and g that have no modern English equivalents."
+      ],
+      "lessons": [
+        { "id": "1.1", "title": "The Alphabet", "content": "Twenty-four letters borrowed from Latin plus four Germanic holdovers. The long s (ſ) sometimes appears in manuscripts; the modern editions use the round s. No j, no v, no q in Old English spelling." },
+        { "id": "1.2", "title": "Æ, Þ, Ð, Ƿ", "content": "Æ (ash) = the vowel in modern English 'cat.' Þ and ð (thorn and eth) = both the voiced and unvoiced th sounds; scribes used them interchangeably. Ƿ (wynn) = w. It looks like a p but is not." },
+        { "id": "1.3", "title": "Vowels and Diphthongs", "content": "Seven simple vowels: a, æ, e, i, o, u, y (the last pronounced like German ü). Four diphthongs: ea, eo, ie, io. Long vowels marked with macrons in modern editions but not in the manuscripts." },
+        { "id": "1.4", "title": "Consonants", "content": "C always hard (k). G can be guttural (as in modern German sagen) or a stop (as in modern English go) depending on position. Sc = sh. Cg = dge. H before a consonant or at word-end = German ch in 'ach.'" },
+        { "id": "1.5", "title": "Stress", "content": "Almost always on the first syllable of the root. Prefixes (ge-, be-, for-) do not take stress." },
+        { "id": "1.6", "title": "First Words", "content": "Hwæt! — the opening word of Beowulf. Pronounced 'hwat,' not 'what.' Practice on ten common Old English words: hús (house), cyning (king), þegn (thane), sǽ (sea), mann (man), wíf (woman), bearn (child), word, déaþ (death), líf (life)." },
+        { "id": "1.7", "title": "First Sentence", "content": "Ælfred kyning hateþ grétan Wærferþ biscep. — 'King Alfred commands Bishop Werferth to be greeted.' The opening of Alfred's preface to the Pastoral Care. Read it aloud ten times before moving on." }
+      ],
+      "checkpoint": {
+        "id": "stage-1-checkpoint",
+        "title": "Stage 1 Checkpoint",
+        "format": "Twenty letters and letter-combinations to identify by audio; ten words read aloud and recorded; five short sentences read aloud; ten modern English words transliterated into Old English spelling. Pass mark: 85%.",
+        "items": 45
+      }
+    },
+    {
+      "id": "stage-2",
+      "number": 2,
+      "name": "The Sentence",
+      "subtitle": "The four cases, strong and weak nouns, strong verbs, the article; parsing before translating.",
+      "duration": "6–10 weeks",
+      "learning_outcomes": [
+        "Decline any strong or weak noun in all four cases and both numbers.",
+        "Conjugate a strong verb (Classes I–VII) in the present and past indicative.",
+        "Recognize and parse the definite article se/seo/þæt in all its forms.",
+        "Translate simple sentences of the form Subject + Verb + Object with prepositional phrases and a genitive of possession.",
+        "Read fifty-word adapted passages from the Anglo-Saxon Chronicle and Ælfric's prose."
+      ],
+      "lessons": [
+        { "id": "2.1", "title": "The Four Cases", "content": "Nominative (subject), accusative (direct object), genitive (possession and partitive), dative (indirect object, instrument, accompaniment). Old English had a fifth case (instrumental) but it merged with the dative early." },
+        { "id": "2.2", "title": "The Definite Article", "content": "Se (masculine nominative), seo (feminine nominative), þæt (neuter nominative). Seventeen forms total. The article as the key to the gender and case of the noun." },
+        { "id": "2.3", "title": "Strong Nouns — Masculine a-Stems", "content": "Stán (stone), dæg (day), hlāf (loaf). Nominative stán, accusative stán, genitive stānes, dative stāne. Plural: stānas, stānas, stāna, stānum." },
+        { "id": "2.4", "title": "Strong Nouns — Neuter a-Stems", "content": "Scip (ship), word. Identical nominative and accusative in both numbers. Neuter plural nominative/accusative ends in -u or is unchanged." },
+        { "id": "2.5", "title": "Strong Nouns — Feminine ō-Stems", "content": "Giefu (gift), lufu (love), lār (teaching). Genitive singular -e, dative singular -e, nominative plural -a or -e." },
+        { "id": "2.6", "title": "Weak Nouns", "content": "Guma (man), sunne (sun), éage (eye). The -an declension. Simpler than the strong: most forms end in -an." },
+        { "id": "2.7", "title": "The Present Indicative of Strong Verbs", "content": "Rīdan (to ride) — Class I. Ic rīde, þū rītst, hē/hēo/hit rītt, wē/gē/hīe rīdaþ. The vowel alternation (ablaut) between present and past is the mark of a strong verb." },
+        { "id": "2.8", "title": "The Past Indicative of Strong Verbs", "content": "Ic rād, þū ride, hē rād, wē ridon. Seven ablaut classes. Each must be learned." },
+        { "id": "2.9", "title": "The Verb 'To Be'", "content": "Eom, eart, is, sind/sindon (present). Wæs, wǽre, wæs, wǽron (past). Irregular, essential, everywhere." },
+        { "id": "2.10", "title": "Adjectives — Strong and Weak", "content": "Gōd (good). Strong when used predicatively or without an article; weak after the article or a demonstrative. Se gōda cyning. Gōd cyning." },
+        { "id": "2.11", "title": "Prepositions and Case Government", "content": "On + dative (place where) or accusative (motion towards). Fram + dative (from). Mid + dative (with). Tō + dative (to)." },
+        { "id": "2.12", "title": "Reading: The Anglo-Saxon Chronicle, Year 449", "content": "Her Martianus and Valentinus onfengon rīce... — 'In this year Martianus and Valentinus received the kingdom.' First sustained reading. Fifty words, adapted, with full glosses." },
+        { "id": "2.13", "title": "Reading: Ælfric, on the Creation", "content": "On anginne gesceop God heofonan and eorþan. — 'In the beginning God created heaven and earth.' The opening of Genesis in Old English. Ælfric's clear, homiletic prose." }
+      ],
+      "checkpoint": {
+        "id": "stage-2-checkpoint",
+        "title": "Stage 2 Checkpoint",
+        "format": "Written. Decline ten nouns; conjugate five verbs; translate a seventy-five-word passage from the Chronicle or Ælfric; parse twenty inflected forms. Pass mark: 80%.",
+        "items": 60
+      }
+    },
+    {
+      "id": "stage-3",
+      "number": 3,
+      "name": "The Reading",
+      "subtitle": "Caedmon's Hymn entire and the opening fifty lines of Beowulf. The capstone.",
+      "duration": "8–12 weeks",
+      "learning_outcomes": [
+        "Read Caedmon's Hymn (nine lines, the oldest surviving Old English poem) in the original with notes and translate it into modern English.",
+        "Read the first fifty lines of Beowulf with notes and translate them.",
+        "Recognize and parse the poetic formulas (kennings, variation, alliterative meter) that distinguish Old English verse from prose.",
+        "Decline any i-stem or u-stem noun and conjugate weak verbs of both classes.",
+        "Translate any passage of thirty or fewer words from a glossed Old English prose or verse text at sight."
+      ],
+      "lessons": [
+        { "id": "3.1", "title": "Weak Verbs — Class I", "content": "Dēman (to judge), hīeran (to hear). Present ic dēme, past ic dēmde. The dental suffix -d- marks the past tense." },
+        { "id": "3.2", "title": "Weak Verbs — Class II", "content": "Lufian (to love), macian (to make). The -ō- suffix in the first-person singular present." },
+        { "id": "3.3", "title": "Noun Declensions — i-Stems and u-Stems", "content": "Giest (guest), sunu (son), duru (door). Minor classes, common words." },
+        { "id": "3.4", "title": "Pronouns — Personal and Demonstrative", "content": "Ic, þū, hē, hēo, hit, wē, gē, hīe. The demonstrative þes, þēos, þis (this) versus se, seo, þæt (that / the)." },
+        { "id": "3.5", "title": "The Subjunctive", "content": "Present ic rīde (same form as indicative in many verbs; context distinguishes), past ic ride. Used in wishes, commands, conditions, subordinate clauses after þæt or gif." },
+        { "id": "3.6", "title": "The Infinitive and the Participles", "content": "Infinitive: rīdan. Present participle: rīdende. Past participle: geriden. The ge- prefix marks completed action." },
+        { "id": "3.7", "title": "Old English Poetic Meter", "content": "Alliterative verse. Four stresses per line, divided by a caesura. The first three stresses alliterate; the fourth does not. No end-rhyme." },
+        { "id": "3.8", "title": "Kennings and Variation", "content": "Kenning: a compound metaphor (bānhūs = bone-house = body; hronrād = whale-road = sea). Variation: saying the same thing two different ways for emphasis (the king, the lord of men, the giver of rings)." },
+        { "id": "3.9", "title": "Caedmon's Hymn — Lines 1–5", "content": "Nū sculon herigean heofonrīces Weard... — 'Now we must praise the Guardian of the heavenly kingdom.' First half of the hymn, with line-by-line grammatical commentary." },
+        { "id": "3.10", "title": "Caedmon's Hymn — Lines 6–9", "content": "...Hē ǽrest sceōp eorðan bearnum / heofon tō hrōfe... — '...He first created for the children of earth / heaven as a roof.' The conclusion. Full translation and recitation." },
+        { "id": "3.11", "title": "Beowulf, Lines 1–11", "content": "Hwæt! Wē Gār-Dena in gēardagum... — 'Lo! We have heard of the Spear-Danes in days of yore.' The opening verse paragraph. Gloss and grammar on every word." },
+        { "id": "3.12", "title": "Beowulf, Lines 12–25", "content": "The lineage of Scyld Scefing. Introduction to the genealogical formulas (Scyld Scefing sceaþena þrēatum... — Scyld son of Sceaf, from the hosts of enemies)." },
+        { "id": "3.13", "title": "Beowulf, Lines 26–50", "content": "The funeral of Scyld. The ship-burial. Poetic vocabulary (ȳþ-geblond = wave-tumult; sǽ-gēap = sea-curved). Full close reading." },
+        { "id": "3.14", "title": "Sight Reading Practice", "content": "Five short passages (twenty to thirty words each) from The Wanderer, The Seafarer, and Bede's Ecclesiastical History, with glosses but no grammatical notes. The student parses and translates at sight." }
+      ],
+      "checkpoint": {
+        "id": "stage-3-checkpoint",
+        "title": "Stage 3 Capstone Examination",
+        "format": "Written, three hours. Translate Caedmon's Hymn entire from memory or from the text (student's choice). Translate Beowulf lines 1–50 with notes. Translate one thirty-word sight passage from a glossed Old English prose text. Parse fifteen inflected forms. Pass mark: 70%. Honors: 85%.",
+        "items": 50
+      }
+    }
+  ],
+  "certification": {
+    "credential_name": "The Kalopaideia Diploma in Reading Old English",
+    "credential_subtitle": "An attestation that the bearer has completed the three-stage course and passed the capstone examination.",
+    "what_it_is": "A privately-issued certificate of completion. Not an academic degree. Not a teaching license. It says: this person sat down with the language of Beowulf and Bede and earned an honest reading of it.",
+    "what_is_recorded": "Student's chosen public name; the language; the date of the capstone examination; the result (Pass or Pass with Honors); the SHA-256 hash of the student's signed examination scripts.",
+    "what_is_not_recorded": "The actual examination answers; the student's email or other identifiers; anything that could identify the student against their will. The certificate is pseudonymous if the student wishes.",
+    "issuance": "On-chain on Base as an ERC-721 soulbound (non-transferable) token. One certificate per student per language. The contract is owned by Kalopaideia and the minting key is held by the proprietor. The token URI points to a permanent, IPFS-pinned JSON document signed by Kalopaideia's issuing key.",
+    "verification": "Any third party can verify a certificate at kalopaideia.com/verify/<token-id> by entering the token ID and the certificate hash. The page will display the issuance date, the language, and the result.",
+    "cost": "Included in the Akousma subscription. The on-chain gas fee at issuance is paid by Kalopaideia. The student pays nothing extra.",
+    "renewability": "None. A diploma is not a driver's license. Once earned, it stands."
+  }
+}

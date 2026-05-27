@@ -1,0 +1,81 @@
+{
+  "id": "track-moralist",
+  "stage": 5,
+  "name": "The Moralist",
+  "subtitle": "Pascal, Pensées (selections, c. 8,000 words) and La Rochefoucauld, Maximes (selections, c. 4,000 words).",
+  "estimated_weeks": 16,
+  "rationale": "The distilled essence of French prose. Short, aphoristic, devastating. The moralist tradition from the seventeenth century. Introduces the philosophical vocabulary and the subjunctive in all its forms.",
+  "learning_outcomes": [
+    "Read and translate selections from Pascal's Pensées.",
+    "Read and translate selections from La Rochefoucauld's Maximes.",
+    "Recognize the stylistic features of French moralist prose: brevity, paradox, antithesis.",
+    "Discuss the philosophical themes of each author in writing.",
+    "Translate any fifty-word passage from the chosen texts at sight."
+  ],
+  "texts": [
+    {
+      "author": "Blaise Pascal",
+      "work": "Pensées",
+      "selections": "Fragments 199, 200, 347, 425, and others",
+      "word_count": 8000,
+      "notes": "Pascal's prose is dense, philosophical, and often paradoxical. The Pensées are fragments of a planned apology for Christianity, left unfinished at his death. The student will encounter the subjunctive, conditional sentences, and rhetorical questions."
+    },
+    {
+      "author": "François de La Rochefoucauld",
+      "work": "Maximes",
+      "selections": "Maxims 1–100, selected from the 504",
+      "word_count": 4000,
+      "notes": "La Rochefoucauld's maxims are short, cynical observations on human nature. Each is a single sentence or two. The style is elegant, the vocabulary is precise, and the insight is cutting. The student will learn to read French at its most compressed."
+    }
+  ],
+  "weekly_reading_plan": [
+    {"week": 1, "reading": "Pascal, Pensées: Fragments 199–200", "pages": "10–15"},
+    {"week": 2, "reading": "Pascal, Pensées: Fragment 347 (Le Divertissement)", "pages": "15–20"},
+    {"week": 3, "reading": "Pascal, Pensées: Fragment 425 (Le Silence éternel)", "pages": "5–10"},
+    {"week": 4, "reading": "Pascal, Pensées: Additional fragments", "pages": "20–25"},
+    {"week": 5, "reading": "La Rochefoucauld, Maximes 1–20", "pages": "5–10"},
+    {"week": 6, "reading": "La Rochefoucauld, Maximes 21–40", "pages": "5–10"},
+    {"week": 7, "reading": "La Rochefoucauld, Maximes 41–60", "pages": "5–10"},
+    {"week": 8, "reading": "La Rochefoucauld, Maximes 61–80", "pages": "5–10"},
+    {"week": 9, "reading": "La Rochefoucauld, Maximes 81–100", "pages": "5–10"},
+    {"week": 10, "reading": "Review: Pascal selections", "pages": "varied"},
+    {"week": 11, "reading": "Review: La Rochefoucauld selections", "pages": "varied"},
+    {"week": 12, "reading": "Sight translation practice: Pascal", "pages": "varied"},
+    {"week": 13, "reading": "Sight translation practice: La Rochefoucauld", "pages": "varied"},
+    {"week": 14, "reading": "Capstone preparation: parsing drills", "pages": "varied"},
+    {"week": 15, "reading": "Capstone preparation: composition practice", "pages": "varied"},
+    {"week": 16, "reading": "Final review and capstone examination", "pages": "varied"}
+  ],
+  "vocabulary_focus": [
+    "Philosophical terms: âme (soul), esprit (mind), cœur (heart), raison (reason)",
+    "Moralist vocabulary: vertu (virtue), vice, orgueil (pride), amour-propre (self-love)",
+    "Abstract nouns: vérité (truth), bonheur (happiness), misère (misery)",
+    "Rhetorical structures: antithesis, paradox, rhetorical questions"
+  ],
+  "grammar_focus": [
+    "The subjunctive in clauses of doubt and necessity",
+    "Conditional sentences (all three types)",
+    "Indirect discourse with tense shifts",
+    "Complex sentence structures with multiple subordinate clauses"
+  ],
+  "sample_passages": [
+    {
+      "source": "Pascal, Pensées, Fragment 425",
+      "french": "Le silence éternel de ces espaces infinis m'effraie.",
+      "english": "The eternal silence of these infinite spaces frightens me.",
+      "notes": "One of the most famous lines in French philosophy. Note the subjunctive is not used here; the indicative 'effraie' expresses a fact, not a doubt."
+    },
+    {
+      "source": "La Rochefoucauld, Maxime 1",
+      "french": "Ce que nous prenons pour des vertus n'est souvent qu'un assemblage de diverses actions et de divers intérêts que la fortune ou notre industrie savent arranger.",
+      "english": "What we take for virtues is often only an assemblage of various actions and various interests that fortune or our industry know how to arrange.",
+      "notes": "A characteristic maxim: cynical, precise, paradoxical. The verb 'savent' is plural, agreeing with 'fortune ou notre industrie'."
+    }
+  ],
+  "capstone_prep": {
+    "sight_translation": "Practice translating fifty-word passages from Pascal and La Rochefoucauld without notes.",
+    "parsing": "Identify and parse verb forms, noun cases, and pronoun references in complex sentences.",
+    "composition": "Render five English sentences in French, using vocabulary and structures from the moralist texts.",
+    "oral_component": "Prepare a one-hundred-word passage from Pascal or La Rochefoucauld to read aloud. Answer five questions about its language and content."
+  }
+}

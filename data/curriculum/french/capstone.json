@@ -1,0 +1,199 @@
+{
+  "id": "stage-5-capstone",
+  "lang": "french",
+  "title": "The Kalopaideia French Examination",
+  "instructions": "Three hours, no notes for Part A; printed lexicon and grammar permitted for Part B. Honor code: you affirm by submitting that you used only permitted aids. A failed examination may be retaken after thirty days.",
+  "time_limit_minutes": 180,
+  "tracks_apply": ["track-moralist", "track-novelist", "track-poet"],
+  "sections": [
+    {
+      "id": "A",
+      "title": "Part A — Sight Translation (no notes)",
+      "items": [
+        {
+          "id": "A1",
+          "type": "translate",
+          "points": 10,
+          "track": "track-moralist",
+          "prompt_french": "Le silence éternel de ces espaces infinis m'effraie.",
+          "prompt_en": "Translate.",
+          "reference": [
+            "the eternal silence of these infinite spaces frightens me",
+            "the eternal silence of these infinite spaces terrifies me"
+          ],
+          "keywords": ["silence", "eternal", "infinite", "spaces", "frightens"],
+          "threshold": 0.5
+        },
+        {
+          "id": "A2",
+          "type": "translate",
+          "points": 10,
+          "track": "track-moralist",
+          "prompt_french": "Ce que nous prenons pour des vertus n'est souvent qu'un assemblage de diverses actions.",
+          "prompt_en": "Translate.",
+          "reference": [
+            "what we take for virtues is often only an assemblage of various actions",
+            "what we consider virtues is often just a collection of different actions"
+          ],
+          "keywords": ["virtues", "often", "assemblage", "actions"],
+          "threshold": 0.45
+        },
+        {
+          "id": "A3",
+          "type": "translate",
+          "points": 10,
+          "track": "track-moralist",
+          "prompt_french": "Le cœur a ses raisons que la raison ne connaît point.",
+          "prompt_en": "Translate.",
+          "reference": [
+            "the heart has its reasons which reason does not know",
+            "the heart has its reasons that reason knows nothing of"
+          ],
+          "keywords": ["heart", "reasons", "reason", "not know"],
+          "threshold": 0.5
+        },
+        {
+          "id": "A4",
+          "type": "translate",
+          "points": 10,
+          "track": "track-novelist",
+          "prompt_french": "Pendant un demi-siècle, les bourgeoises de Pont-l'Évêque envièrent à Mme Aubain sa servante Félicité.",
+          "prompt_en": "Translate.",
+          "reference": [
+            "for half a century, the bourgeois women of pont-l'eveque envied mme aubain her servant felicite",
+            "for fifty years, the townswomen of pont-l'eveque envied madame aubain her servant felicite"
+          ],
+          "keywords": ["half", "century", "envied", "servant", "felicite"],
+          "threshold": 0.45
+        },
+        {
+          "id": "A5",
+          "type": "translate",
+          "points": 10,
+          "track": "track-novelist",
+          "prompt_french": "Elle crut voir, dans les cieux entr'ouverts, un perroquet gigantesque, planant au-dessus de sa tête.",
+          "prompt_en": "Translate.",
+          "reference": [
+            "she believed she saw, in the half-open heavens, a gigantic parrot, hovering above her head",
+            "she thought she saw, in the opened skies, a huge parrot, flying above her head"
+          ],
+          "keywords": ["believed", "saw", "heavens", "parrot", "hovering", "head"],
+          "threshold": 0.45
+        },
+        {
+          "id": "A6",
+          "type": "translate",
+          "points": 10,
+          "track": "track-poet",
+          "prompt_french": "Quand le ciel bas et lourd pèse comme un couvercle sur l'esprit gémissant en proie aux longs ennuis.",
+          "prompt_en": "Translate.",
+          "reference": [
+            "when the low and heavy sky weighs like a lid on the groaning spirit prey to long ennuis",
+            "when the heavy low sky weighs like a cover on the groaning mind beset by long boredom"
+          ],
+          "keywords": ["sky", "weighs", "lid", "spirit", "groaning", "ennuis"],
+          "threshold": 0.4
+        },
+        {
+          "id": "A7",
+          "type": "translate",
+          "points": 10,
+          "track": "track-poet",
+          "prompt_french": "Là, tout n'est qu'ordre et beauté, luxe, calme et volupté.",
+          "prompt_en": "Translate.",
+          "reference": [
+            "there, all is only order and beauty, luxury, calm and voluptuousness",
+            "there, everything is order and beauty, luxury, peace and pleasure"
+          ],
+          "keywords": ["order", "beauty", "luxury", "calm", "voluptuousness"],
+          "threshold": 0.5
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "title": "Part B — Parsing",
+      "items": [
+        {
+          "id": "B1",
+          "type": "parse",
+          "points": 5,
+          "prompt": "Parse the form 'parlais'. Give: person, number, tense, mood, voice.",
+          "answer": ["first or second", "singular", "imparfait", "indicative", "active"]
+        },
+        {
+          "id": "B2",
+          "type": "parse",
+          "points": 5,
+          "prompt": "Parse the form 'parlerai'. Give: person, number, tense, mood, voice.",
+          "answer": ["first", "singular", "futur", "indicative", "active"]
+        },
+        {
+          "id": "B3",
+          "type": "parse",
+          "points": 5,
+          "prompt": "Parse the form 'qu'il parle'. Give: person, number, tense, mood, voice.",
+          "answer": ["third", "singular", "present", "subjunctive", "active"]
+        },
+        {
+          "id": "B4",
+          "type": "parse",
+          "points": 5,
+          "prompt": "Parse the noun form 'maisons'. Give: gender, number, article required.",
+          "answer": ["feminine", "plural", "les"]
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "title": "Part C — Composition (English → French)",
+      "items": [
+        {
+          "id": "C1",
+          "type": "compose",
+          "points": 8,
+          "prompt": "Render in French: 'The king is dead.'",
+          "reference": ["le roi est mort"],
+          "keywords": ["roi", "mort"],
+          "threshold": 0.6
+        },
+        {
+          "id": "C2",
+          "type": "compose",
+          "points": 8,
+          "prompt": "Render in French: 'I have some bread.'",
+          "reference": ["j'ai du pain"],
+          "keywords": ["ai", "pain"],
+          "threshold": 0.6
+        },
+        {
+          "id": "C3",
+          "type": "compose",
+          "points": 9,
+          "prompt": "Render in French: 'If you spoke French, you would understand.'",
+          "reference": ["si tu parlais français, tu comprendrais", "si vous parliez français, vous comprendriez"],
+          "keywords": ["parlais", "comprendrais"],
+          "threshold": 0.5
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "title": "Part D — Multiple Choice (vocabulary and idiom)",
+      "items": [
+        { "id": "D1", "type": "mcq", "points": 2, "prompt": "What does 'cœur' mean?", "choices": ["heart", "head", "hand", "house"], "answer": "heart" },
+        { "id": "D2", "type": "mcq", "points": 2, "prompt": "What does 'avoir peur' mean?", "choices": ["to be afraid", "to have fear", "to be cold", "to have pain"], "answer": "to be afraid" },
+        { "id": "D3", "type": "mcq", "points": 2, "prompt": "What mood is required after 'il faut que'?", "choices": ["subjunctive", "indicative", "conditional", "imperative"], "answer": "subjunctive" },
+        { "id": "D4", "type": "mcq", "points": 2, "prompt": "What is the difference between the imparfait and the passé composé?", "choices": ["ongoing vs. completed", "future vs. past", "formal vs. informal", "singular vs. plural"], "answer": "ongoing vs. completed" },
+        { "id": "D5", "type": "mcq", "points": 2, "prompt": "Which preposition contracts with 'le' to form 'au'?", "choices": ["à", "de", "en", "dans"], "answer": "à" },
+        { "id": "D6", "type": "mcq", "points": 2, "prompt": "What is the feminine of 'bon'?", "choices": ["bonne", "bons", "bone", "bon"], "answer": "bonne" }
+      ]
+    }
+  ],
+  "scoring": {
+    "max_points": 95,
+    "pass_mark": 0.70,
+    "honors_mark": 0.85
+  },
+  "honor_code": "I attest that the answers I have entered are my own, composed without aid beyond the materials permitted for each section of this examination. I understand that this examination is graded automatically, that the script and my signed attestation will be permanently hashed on completion, and that a passing score will issue a permanent on-chain diploma in my name."
+}

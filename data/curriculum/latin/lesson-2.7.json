@@ -1,0 +1,22 @@
+{
+  "id": "2.7",
+  "stage": 2,
+  "title": "The Present Indicative Active — Second and Third",
+  "subtitle": "moneō / regō. Long ē versus short ĭ as theme vowel.",
+  "estimated_minutes": 50,
+  "objectives": ["Conjugate second- and third-conjugation verbs in the present active.", "Distinguish the theme vowels: -ē- (second) and -ĭ- (third).", "Translate sentences with mixed conjugation verbs.", "Recognize verb conjugation by infinitive ending."],
+  "sections": [
+    {"kind": "prose", "heading": "Second and third conjugations", "body": "The second conjugation has infinitives in -ēre (long e): monēre (to warn). Theme vowel: -ē-.\n\nSecond conjugation:\n  moneō, monēs, monet, monēmus, monētis, monent\n\nThe third conjugation has infinitives in -ĕre (short e): regere (to rule). Theme vowel: -ĭ- (short i), which disappears or changes in some forms.\n\nThird conjugation:\n  regō, regis, regit, regimus, regitis, regunt\n\nCaesar writes: mīlitēs dūcit. — He leads the soldiers.\nCicero writes: populum Rōmānum regunt. — They rule the Roman people."},
+    {"kind": "self_check", "heading": "Self-check", "items": [
+      {"prompt": "Conjugate videō (to see, 2nd conj.) in all six persons.", "answer": "videō, vidēs, videt, vidēmus, vidētis, vident"},
+      {"prompt": "Conjugate mittō (to send, 3rd conj.) in all six persons.", "answer": "mittō, mittis, mittit, mittimus, mittitis, mittunt"},
+      {"prompt": "How do you distinguish 2nd from 3rd conjugation?", "answer": "2nd has -ē- theme vowel and infinitive in -ēre (long e); 3rd has -ĭ- and infinitive in -ĕre (short e)."}
+    ]},
+    {"kind": "reading_preview", "heading": "Sentences", "words": [
+      {"latin": "dominus servōs monet.", "transliteration": null, "gloss": "The master warns the slaves.", "audio": "/paideia/audio/latin/sentences/2.7-1.mp3"},
+      {"latin": "rēx populōs regit.", "transliteration": null, "gloss": "The king rules the peoples.", "audio": "/paideia/audio/latin/sentences/2.7-2.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Lesson 2.8: the present indicative active, fourth conjugation and mixed i-stems. audiō, capiō."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can conjugate moneō and regō and distinguish their theme vowels.", "credit_minutes": 50}
+}

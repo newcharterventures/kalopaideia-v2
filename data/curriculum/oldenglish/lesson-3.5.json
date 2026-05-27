@@ -1,0 +1,43 @@
+{
+  "id": "3.5",
+  "stage": 3,
+  "title": "The Subjunctive",
+  "subtitle": "Wishes, commands, conditions, subordinate clauses.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Master The Subjunctive.",
+    "Read and translate authentic Old English poetry and prose.",
+    "Prepare for the capstone examination."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "The subjunctive mood expresses wishes, commands, purpose, result, and hypotheticals. Present subjunctive often identical to the infinitive stem: ic rīde (that I ride), hē rīde (that he ride). Past subjunctive uses the past plural stem: ic ride (if I rode), hē ride (if he rode). Common in subordinate clauses after þæt (that) and gif (if)."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "The Subjunctive"
+        },
+        {
+          "prompt": "Can you translate the example passage?",
+          "answer": "Work through it word by word with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson or take the capstone examination."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply The Subjunctive to reading.",
+    "credit_minutes": 60
+  }
+}

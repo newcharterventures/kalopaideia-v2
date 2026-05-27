@@ -1,0 +1,56 @@
+{
+  "id": "2.10",
+  "stage": 2,
+  "title": "Questions",
+  "subtitle": "Three ways to ask: intonation (Tu viens?), est-ce que (Est-ce que tu viens?), inversion (Viens-tu?). The last is literary and formal.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Understand questions.",
+    "Apply the concepts in reading and writing.",
+    "Practice with authentic French examples."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Main content",
+      "body": "French has three strategies for forming yes-no questions: rising intonation (casual), est-ce que + statement (neutral), and subject-verb inversion (formal/literary). The choice signals register."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer these questions.",
+      "items": [
+        {
+          "prompt": "What is the main concept?",
+          "answer": "Questions"
+        },
+        {
+          "prompt": "Review question 2",
+          "answer": "Review answer 2"
+        }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Practice materials",
+      "instructions": "Read each example.",
+      "words": [
+        {
+          "french": "exemple",
+          "transliteration": null,
+          "gloss": "example",
+          "audio": "/paideia/audio/french/words/example.mp3"
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson continues Stage 2."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts without hesitation.",
+    "credit_minutes": 50
+  }
+}

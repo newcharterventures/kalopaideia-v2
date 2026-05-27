@@ -1,0 +1,76 @@
+{
+  "id": "1.3",
+  "stage": 1,
+  "title": "Vowels and Diphthongs",
+  "subtitle": "Seven simple vowels, four diphthongs, and the macron that marks length.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Distinguish short from long vowels by sound and by the macron in modern editions.",
+    "Recognize and pronounce the four Old English diphthongs (ea, eo, ie, īe).",
+    "Understand that vowel length was phonemic — changing length changed meaning.",
+    "Hear and reproduce the front rounded vowel y (as in German ü)."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Why vowel length matters",
+      "body": "Old English distinguished short and long vowels. The difference was not just duration but often quality. Changing a short vowel to a long one (or vice versa) changed the word. The Anglo-Saxon scribes did not mark length in writing; modern editors mark it with a macron (ā, ē, ī, ō, ū, ȳ). The manuscripts show only a, e, i, o, u, y. You must learn the length from the grammar and the meter."
+    },
+    {
+      "kind": "prose",
+      "heading": "The seven simple vowels",
+      "body": "Old English had seven simple vowel phonemes, each appearing in both short and long forms:\n\na / ā — short [a] as in 'cat' (but further back), long [aː] as in 'father'\næ / ǣ — short [æ] as in 'cat,' long [æː] held longer\ne / ē — short [e] as in 'met,' long [eː] as in French 'été'\ni / ī — short [i] as in 'sit,' long [iː] as in 'machine'\no / ō — short [o] as in British 'lot,' long [oː] as in 'boat'\nu / ū — short [u] as in 'put,' long [uː] as in 'boot'\ny / ȳ — short and long front rounded vowel, like German ü in 'hütte' (short) or 'über' (long)\n\nThe seventh vowel, y, has no equivalent in modern English. It is the vowel you hear in French 'tu' or German 'über.' Say the vowel in 'machine' and round your lips without moving your tongue."
+    },
+    {
+      "kind": "prose",
+      "heading": "The four diphthongs",
+      "body": "Old English had four diphthongs, each a sequence of two vowel sounds in a single syllable:\n\nea — [æa], roughly like 'a' in modern 'cat' followed by a short 'ah.'\neo — [eo], roughly like 'e' in 'met' followed by 'oh.'\nie — [ie], roughly like 'ee' followed by a short 'eh.'\nīe — long version of ie, held longer.\n\nThese diphthongs were true diphthongs, not digraphs. The two vowels were pronounced in sequence within one syllable. They did not occur in Latin, so the scribes had no models. They simply wrote both vowels."
+    },
+    {
+      "kind": "prose",
+      "heading": "Examples of length distinction",
+      "body": "god (god) versus gōd (good) — the vowel length alone distinguishes the meaning.\nis (is) versus īs (ice)\nful (foul, dirty) versus fūl (full)\nwin (wine) versus wīn (friend)\n\nIn poetry the meter depends on vowel length. A short vowel in an open syllable makes a light syllable; a long vowel or a short vowel followed by two consonants makes a heavy syllable. The poet needs to know the length of every vowel."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Read aloud and note the vowel length.",
+      "items": [
+        { "prompt": "god", "answer": "god (short o)" },
+        { "prompt": "gōd", "answer": "good (long o)" },
+        { "prompt": "is", "answer": "is (short i)" },
+        { "prompt": "īs", "answer": "ice (long i)" },
+        { "prompt": "bēon", "answer": "to be (long e, diphthong eo)" },
+        { "prompt": "eald", "answer": "old (diphthong ea)" },
+        { "prompt": "hēah", "answer": "high (long e, diphthong ea)" },
+        { "prompt": "cynn", "answer": "kin, race (y as in German ü)" },
+        { "prompt": "How do modern editors mark vowel length?", "answer": "With a macron over the vowel (ā, ē, ī, ō, ū, ȳ)." },
+        { "prompt": "Did Anglo-Saxon scribes mark vowel length?", "answer": "No. They wrote only the letter. Readers knew the length from context and grammar." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Words with long vowels and diphthongs",
+      "instructions": "Listen, then repeat.",
+      "words": [
+        { "oldenglish": "gōd", "transliteration": null, "gloss": "good", "audio": "/paideia/audio/oldenglish/words/god-long.mp3" },
+        { "oldenglish": "īs", "transliteration": null, "gloss": "ice", "audio": "/paideia/audio/oldenglish/words/is-long.mp3" },
+        { "oldenglish": "fūl", "transliteration": null, "gloss": "full", "audio": "/paideia/audio/oldenglish/words/ful-long.mp3" },
+        { "oldenglish": "bēon", "transliteration": null, "gloss": "to be", "audio": "/paideia/audio/oldenglish/words/beon.mp3" },
+        { "oldenglish": "eald", "transliteration": null, "gloss": "old", "audio": "/paideia/audio/oldenglish/words/eald.mp3" },
+        { "oldenglish": "hēah", "transliteration": null, "gloss": "high", "audio": "/paideia/audio/oldenglish/words/heah.mp3" },
+        { "oldenglish": "dēop", "transliteration": null, "gloss": "deep", "audio": "/paideia/audio/oldenglish/words/deop.mp3" },
+        { "oldenglish": "cynn", "transliteration": null, "gloss": "kin, race", "audio": "/paideia/audio/oldenglish/words/cynn.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.4 covers consonants in detail — the hard and soft c, the three values of g, and the guttural h."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can distinguish long from short vowels by ear and pronounce all four diphthongs.",
+    "credit_minutes": 50
+  }
+}

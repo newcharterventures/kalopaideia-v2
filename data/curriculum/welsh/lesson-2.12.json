@@ -1,0 +1,46 @@
+{
+  "id": "2.12",
+  "stage": 2,
+  "title": "Prepositions and Mutations",
+  "subtitle": "Most cause soft mutation. Some cause nasal.",
+  "estimated_minutes": 45,
+  "objectives": ["Learn which prepositions trigger which mutations.","Practice with yn, o, i, heb."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers Prepositions and Mutations. Most cause soft mutation. Some cause nasal."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Learn which prepositions trigger which mutations."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Learn which prepositions trigger which mutations." },
+        { "prompt": "How do you apply this in practice?", "answer": "Practice with yn, o, i, heb." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "welsh": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/welsh/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on Prepositions and Mutations."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in Prepositions and Mutations to ten random examples.",
+    "credit_minutes": 45
+  }
+}

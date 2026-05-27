@@ -1,0 +1,105 @@
+{
+  "id": "1.6",
+  "stage": 1,
+  "title": "Reading the Names",
+  "subtitle": "Fifty Greek proper names from history, myth, and literature.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Read fifty Greek proper names aloud with accurate pronunciation.",
+    "Apply all the rules learned so far: breathings, diphthongs, accents, aspirated stops.",
+    "Build confidence reading connected Greek text.",
+    "Recognize the names that recur in every Greek text."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The names",
+      "body": "Every Greek text, whether Plato or Xenophon or the New Testament, is full of proper names: people, places, gods. You cannot read Greek without reading these names, and you cannot read them without putting into practice everything you have learned in the first five lessons.\n\nToday you will read fifty names. Some will be familiar from English: Socrates, Plato, Athens. Others will be new. All are spelled in Greek as the Greeks spelled them. Read each one aloud before moving to the next. Do not rush. The goal is not speed but accuracy and confidence."
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Fifty Greek names",
+      "instructions": "Read each name aloud. Listen to the audio for each; then repeat.",
+      "words": [
+        { "greek": "Σωκράτης", "transliteration": "Sōkrátēs", "gloss": "Socrates", "audio": "/paideia/audio/greek/names/sokrates.mp3" },
+        { "greek": "Πλάτων", "transliteration": "Plátōn", "gloss": "Plato", "audio": "/paideia/audio/greek/names/platon.mp3" },
+        { "greek": "Ἀριστοτέλης", "transliteration": "Aristotélēs", "gloss": "Aristotle", "audio": "/paideia/audio/greek/names/aristoteles.mp3" },
+        { "greek": "Ὅμηρος", "transliteration": "Hómēros", "gloss": "Homer", "audio": "/paideia/audio/greek/names/homeros.mp3" },
+        { "greek": "Ἡρόδοτος", "transliteration": "Hēródotos", "gloss": "Herodotus", "audio": "/paideia/audio/greek/names/herodotos.mp3" },
+        { "greek": "Θουκυδίδης", "transliteration": "Thoukydídēs", "gloss": "Thucydides", "audio": "/paideia/audio/greek/names/thoukydides.mp3" },
+        { "greek": "Ξενοφῶν", "transliteration": "Xenophôn", "gloss": "Xenophon", "audio": "/paideia/audio/greek/names/xenophon.mp3" },
+        { "greek": "Περικλῆς", "transliteration": "Periklês", "gloss": "Pericles", "audio": "/paideia/audio/greek/names/perikles.mp3" },
+        { "greek": "Ἀλκιβιάδης", "transliteration": "Alkibiádēs", "gloss": "Alcibiades", "audio": "/paideia/audio/greek/names/alkibiades.mp3" },
+        { "greek": "Δημοσθένης", "transliteration": "Dēmosthénēs", "gloss": "Demosthenes", "audio": "/paideia/audio/greek/names/demosthenes.mp3" },
+        { "greek": "Ἀθῆναι", "transliteration": "Athênai", "gloss": "Athens", "audio": "/paideia/audio/greek/names/athenai.mp3" },
+        { "greek": "Σπάρτη", "transliteration": "Spártē", "gloss": "Sparta", "audio": "/paideia/audio/greek/names/sparte.mp3" },
+        { "greek": "Θῆβαι", "transliteration": "Thêbai", "gloss": "Thebes", "audio": "/paideia/audio/greek/names/thebai.mp3" },
+        { "greek": "Κόρινθος", "transliteration": "Kórinthos", "gloss": "Corinth", "audio": "/paideia/audio/greek/names/korinthos.mp3" },
+        { "greek": "Μακεδονία", "transliteration": "Makedonía", "gloss": "Macedonia", "audio": "/paideia/audio/greek/names/makedonia.mp3" },
+        { "greek": "Πέρσαι", "transliteration": "Pérsai", "gloss": "Persians", "audio": "/paideia/audio/greek/names/persai.mp3" },
+        { "greek": "Ζεύς", "transliteration": "Zeús", "gloss": "Zeus", "audio": "/paideia/audio/greek/names/zeus.mp3" },
+        { "greek": "Ἀθηνᾶ", "transliteration": "Athēnâ", "gloss": "Athena", "audio": "/paideia/audio/greek/names/athena.mp3" },
+        { "greek": "Ἀπόλλων", "transliteration": "Apóllōn", "gloss": "Apollo", "audio": "/paideia/audio/greek/names/apollon.mp3" },
+        { "greek": "Ἀφροδίτη", "transliteration": "Aphrodítē", "gloss": "Aphrodite", "audio": "/paideia/audio/greek/names/aphrodite.mp3" },
+        { "greek": "Ἄρης", "transliteration": "Árēs", "gloss": "Ares", "audio": "/paideia/audio/greek/names/ares.mp3" },
+        { "greek": "Ποσειδῶν", "transliteration": "Poseidôn", "gloss": "Poseidon", "audio": "/paideia/audio/greek/names/poseidon.mp3" },
+        { "greek": "Ἑρμῆς", "transliteration": "Hermês", "gloss": "Hermes", "audio": "/paideia/audio/greek/names/hermes.mp3" },
+        { "greek": "Διόνυσος", "transliteration": "Diónysos", "gloss": "Dionysus", "audio": "/paideia/audio/greek/names/dionysos.mp3" },
+        { "greek": "Ἀχιλλεύς", "transliteration": "Achilleús", "gloss": "Achilles", "audio": "/paideia/audio/greek/names/achilleus.mp3" },
+        { "greek": "Ἕκτωρ", "transliteration": "Héktōr", "gloss": "Hector", "audio": "/paideia/audio/greek/names/hektor.mp3" },
+        { "greek": "Ὀδυσσεύς", "transliteration": "Odysseús", "gloss": "Odysseus", "audio": "/paideia/audio/greek/names/odysseus.mp3" },
+        { "greek": "Πηνελόπη", "transliteration": "Pēnelópē", "gloss": "Penelope", "audio": "/paideia/audio/greek/names/penelope.mp3" },
+        { "greek": "Ἑλένη", "transliteration": "Helénē", "gloss": "Helen", "audio": "/paideia/audio/greek/names/helene.mp3" },
+        { "greek": "Πρίαμος", "transliteration": "Príamos", "gloss": "Priam", "audio": "/paideia/audio/greek/names/priamos.mp3" },
+        { "greek": "Ἀγαμέμνων", "transliteration": "Agamémnōn", "gloss": "Agamemnon", "audio": "/paideia/audio/greek/names/agamemnon.mp3" },
+        { "greek": "Οἰδίπους", "transliteration": "Oidípous", "gloss": "Oedipus", "audio": "/paideia/audio/greek/names/oidipous.mp3" },
+        { "greek": "Ἀντιγόνη", "transliteration": "Antigónē", "gloss": "Antigone", "audio": "/paideia/audio/greek/names/antigone.mp3" },
+        { "greek": "Μήδεια", "transliteration": "Mḗdeia", "gloss": "Medea", "audio": "/paideia/audio/greek/names/medeia.mp3" },
+        { "greek": "Ἰάσων", "transliteration": "Iásōn", "gloss": "Jason", "audio": "/paideia/audio/greek/names/iason.mp3" },
+        { "greek": "Ἡρακλῆς", "transliteration": "Hēraklês", "gloss": "Heracles", "audio": "/paideia/audio/greek/names/herakles.mp3" },
+        { "greek": "Θησεύς", "transliteration": "Thēseús", "gloss": "Theseus", "audio": "/paideia/audio/greek/names/theseus.mp3" },
+        { "greek": "Περσεύς", "transliteration": "Perseús", "gloss": "Perseus", "audio": "/paideia/audio/greek/names/perseus.mp3" },
+        { "greek": "Ἀνδρομάχη", "transliteration": "Andromáchē", "gloss": "Andromache", "audio": "/paideia/audio/greek/names/andromache.mp3" },
+        { "greek": "Κλυταιμνήστρα", "transliteration": "Klytaimnḗstra", "gloss": "Clytemnestra", "audio": "/paideia/audio/greek/names/klytaimnestra.mp3" },
+        { "greek": "Ἠλέκτρα", "transliteration": "Ēléktra", "gloss": "Electra", "audio": "/paideia/audio/greek/names/elektra.mp3" },
+        { "greek": "Πυθαγόρας", "transliteration": "Pythagóras", "gloss": "Pythagoras", "audio": "/paideia/audio/greek/names/pythagoras.mp3" },
+        { "greek": "Ἐπίκουρος", "transliteration": "Epíkouros", "gloss": "Epicurus", "audio": "/paideia/audio/greek/names/epikouros.mp3" },
+        { "greek": "Ζήνων", "transliteration": "Zḗnōn", "gloss": "Zeno", "audio": "/paideia/audio/greek/names/zenon.mp3" },
+        { "greek": "Διογένης", "transliteration": "Diogénēs", "gloss": "Diogenes", "audio": "/paideia/audio/greek/names/diogenes.mp3" },
+        { "greek": "Ἀλέξανδρος", "transliteration": "Aléxandros", "gloss": "Alexander", "audio": "/paideia/audio/greek/names/alexandros.mp3" },
+        { "greek": "Κῦρος", "transliteration": "Kŷros", "gloss": "Cyrus", "audio": "/paideia/audio/greek/names/kyros.mp3" },
+        { "greek": "Δαρεῖος", "transliteration": "Dareîos", "gloss": "Darius", "audio": "/paideia/audio/greek/names/dareios.mp3" },
+        { "greek": "Ξέρξης", "transliteration": "Xérxēs", "gloss": "Xerxes", "audio": "/paideia/audio/greek/names/xerxes.mp3" },
+        { "greek": "Λεωνίδας", "transliteration": "Leōnídas", "gloss": "Leonidas", "audio": "/paideia/audio/greek/names/leonidas.mp3" }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "What you have done",
+      "body": "You have read fifty proper names in Greek. Each one required you to apply the rules of breathing, diphthongs, aspiration, and accent. You are no longer a beginner. You can read printed Greek.\n\nYou do not yet know grammar. You do not yet know what the endings mean or how sentences are put together. But you can sound out the words, and that is the foundation. Everything else builds on this."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Without looking back, answer these questions.",
+      "items": [
+        { "prompt": "How is Σωκράτης pronounced?", "answer": "Sōkrátēs (not Sokráteez)" },
+        { "prompt": "How is Ξενοφῶν pronounced?", "answer": "Xenophôn (with a circumflex on the omega)" },
+        { "prompt": "What is the breathing on Ὅμηρος?", "answer": "Rough breathing — Hómēros" },
+        { "prompt": "What is the breathing on Ἀθῆναι?", "answer": "Smooth breathing — Athênai" },
+        { "prompt": "How is the Φ in Ἀφροδίτη pronounced?", "answer": "As an aspirated p, not as an f — Aphrodítē" },
+        { "prompt": "How many names did you read in this lesson?", "answer": "Fifty" },
+        { "prompt": "Can you read printed Greek now?", "answer": "Yes. You can sound out any word, even if you do not know its meaning yet." }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.7 is your first encounter with Greek sentences. Ten short, authentic sentences with full glosses and audio. You will not parse them yet; you will not diagram them. You will read them aloud and hear how they sound. Grammar comes later. Reading comes first."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can read all fifty names aloud in under ten minutes with no more than five errors.",
+    "credit_minutes": 50
+  }
+}

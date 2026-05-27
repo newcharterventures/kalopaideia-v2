@@ -1,0 +1,69 @@
+{
+  "id": "1.5",
+  "stage": 1,
+  "title": "Diphthongs and Triphthongs",
+  "subtitle": "When two or three vowels share one syllable.",
+  "estimated_minutes": 35,
+  "objectives": [
+    "Recognize falling diphthongs (ai, ei, oi, ui, au, eu).",
+    "Recognize rising diphthongs with semivowels (ia, ie, io, iu, ua, ue, ui, uo).",
+    "Pronounce triphthongs (iai, iei, uoi) as one syllable.",
+    "Distinguish diphthong from hiatus (two separate vowels)."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "What is a diphthong?",
+      "body": "A diphthong is two vowel sounds in one syllable. Italian has both falling diphthongs (stress on the first vowel, glide to the second) and rising diphthongs (glide from a semivowel to a full vowel). Falling: mai (never), sei (six), poi (then), lui (he), pausa (pause), Europa (Europe). Rising: piano (flat, slow), piede (foot), uomo (man), guanto (glove). A triphthong is three vowels in one syllable: miei (my, masculine plural), tuoi (your, masculine plural). Rare but grammatical."
+    },
+    {
+      "kind": "prose",
+      "heading": "Diphthong versus hiatus",
+      "body": "Not all vowel sequences form diphthongs. When two vowels are in separate syllables, that is hiatus. paura (fear): pa-U-ra (three syllables, hiatus between a and u); pausa (pause): PAU-sa (two syllables, diphthong au). poeta (poet): po-E-ta (three syllables, hiatus); piede (foot): PIE-de (two syllables, diphthong ie). Stress falls on the open vowel of a diphthong unless a written accent overrides."
+    },
+    {
+      "kind": "prose",
+      "heading": "From Petrarch",
+      "body": "Petrarch, Canzoniere 1: Voi ch'ascoltate in rime sparse il suono. rime: one syllable, ri-me? No: RI-me (two syllables). sparse: SPAR-se. suono: two syllables, suo-no? No: SUO-no (diphthong uo). Dante, Inferno I: Nel mezzo del cammin di nostra vita. mezzo: no diphthong, MED-dzo. cammin: cam-MIN. nostra: NO-stra. vita: VI-ta."
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill",
+      "instructions": "Ten words with diphthongs and hiatus. Listen; repeat.",
+      "audio": "/paideia/audio/italian/drills/lesson-1.5-diphthongs.mp3"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover answers; check after.",
+      "items": [
+        { "prompt": "What is a diphthong?", "answer": "Two vowel sounds in one syllable." },
+        { "prompt": "What is hiatus?", "answer": "Two vowels in separate syllables." },
+        { "prompt": "Is pausa a diphthong or hiatus?", "answer": "Diphthong (pau-sa)." },
+        { "prompt": "Is paura a diphthong or hiatus?", "answer": "Hiatus (pa-u-ra)." },
+        { "prompt": "Pronounce: mai, sei, poi, lui.", "answer": "mai, sei, poi, lui — each a single syllable." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Words with diphthongs",
+      "instructions": "Read aloud.",
+      "words": [
+        { "italian": "mai", "transliteration": null, "gloss": "never", "audio": "/paideia/audio/italian/words/mai.mp3" },
+        { "italian": "piano", "transliteration": null, "gloss": "flat, slow", "audio": "/paideia/audio/italian/words/piano.mp3" },
+        { "italian": "uomo", "transliteration": null, "gloss": "man", "audio": "/paideia/audio/italian/words/uomo.mp3" },
+        { "italian": "pausa", "transliteration": null, "gloss": "pause", "audio": "/paideia/audio/italian/words/pausa.mp3" },
+        { "italian": "piede", "transliteration": null, "gloss": "foot", "audio": "/paideia/audio/italian/words/piede.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.6: reading Italian proper names aloud — Dante, Petrarca, Boccaccio, Firenze, Venezia, Roma."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can distinguish diphthong from hiatus and pronounce each correctly.",
+    "credit_minutes": 35
+  }
+}

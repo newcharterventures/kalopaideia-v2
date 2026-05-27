@@ -1,0 +1,46 @@
+{
+  "id": "3.2",
+  "stage": 3,
+  "title": "Preterite-Present Verbs",
+  "subtitle": "Vita, mega, eiga, munu, skulu.",
+  "estimated_minutes": 50,
+  "objectives": ["Conjugate preterite-present verbs.","Understand their unique present-tense forms."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers Preterite-Present Verbs. Vita, mega, eiga, munu, skulu."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Conjugate preterite-present verbs."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Conjugate preterite-present verbs." },
+        { "prompt": "How do you apply this in practice?", "answer": "Understand their unique present-tense forms." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "oldnorse": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/oldnorse/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on Preterite-Present Verbs."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in Preterite-Present Verbs to ten random examples.",
+    "credit_minutes": 50
+  }
+}

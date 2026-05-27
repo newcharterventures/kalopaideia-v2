@@ -1,0 +1,240 @@
+{
+  "date": "2026-05-16",
+  "generated_at": "2026-05-16T11:00:01.795Z",
+  "languages": {
+    "greek": {
+      "word": "πειθώ",
+      "transliteration": "peithō",
+      "pronunciation": "pay-THOH",
+      "ipa": "/pei̯.tʰɔ̌ː/",
+      "part_of_speech": "noun, fem.",
+      "meaning": "persuasion, winning speech, the power to convince",
+      "forms": "πειθοῦς (gen.), πειθοῖ (dat.), πειθώ (acc./nom.); plural: πειθοῖ",
+      "etymology": "From the verb πείθω (peithō, 'to persuade'), from Proto-Indo-European *bʰeydʰ- ('to trust, confide'). Related to Latin fidēs ('faith, trust').",
+      "literary_context": "In Aeschylus' Agamemnon, Clytemnestra invokes Πειθώ as a personified force when describing how she lured Agamemnon to his death, making persuasion itself a goddess of deception. Plato in the Gorgias discusses πειθώ as the essential product of rhetoric, distinguishing between persuasion that produces belief without knowledge and that which produces true understanding.",
+      "usage_example": "ἡ πειθὼ τῆς ῥητορικῆς δύναμίς ἐστιν. — Persuasion is the power of rhetoric.",
+      "did_you_know": "Πειθώ was worshipped as a minor deity in Athens, particularly in connection with Aphrodite, suggesting the Greeks recognized persuasive speech as almost divine power that could compel action as surely as physical force or erotic attraction.",
+      "tokens": {
+        "input_tokens": 799,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 433,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Ancient Greek"
+    },
+    "latin": {
+      "word": "strēnuus",
+      "transliteration": "",
+      "pronunciation": "STREN-oo-oos",
+      "ipa": "/ˈstreː.nu.us/",
+      "part_of_speech": "adjective",
+      "meaning": "vigorous, active, brisk; energetic in battle or enterprise",
+      "forms": "strēnuus, -a, -um; comparative strēnuior; superlative strēnuissimus",
+      "etymology": "From Proto-Italic *strenwo-, possibly related to Greek στρηνής (strēnēs) 'strong, vigorous.' The root conveys physical and moral energy, particularly martial valor.",
+      "literary_context": "Sallust employs strēnuus repeatedly in Bellum Catilinae to describe Catiline's energy and audacity in conspiracy, contrasting vigorous action with moral corruption. Livy uses it of exemplary military commanders who display tireless activity in Rome's service.",
+      "usage_example": "Catilīna, vir strēnuus et audāx, cōnsilia nefāria concēpit. — Catiline, a vigorous and audacious man, conceived wicked designs.",
+      "did_you_know": "The word strēnuus gives us English 'strenuous,' but in Latin it carried a more martial connotation than our modern sense of mere effort. Romans admired strēnuitās as a cardinal virtue of generals and magistrates who acted decisively rather than deliberating endlessly.",
+      "tokens": {
+        "input_tokens": 703,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 388,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Latin"
+    },
+    "french": {
+      "word": "mélancolie",
+      "transliteration": "",
+      "pronunciation": "may-lahn-koh-LEE",
+      "ipa": "/me.lɑ̃.kɔ.li/",
+      "part_of_speech": "noun, fem.",
+      "meaning": "melancholy, a pensive sadness without apparent cause",
+      "forms": "singular: mélancolie; plural: mélancolies",
+      "etymology": "From Latin melancholia, itself from Greek μελαγχολία (melankholía), literally 'black bile,' from μέλας (mélas, 'black') + χολή (kholḗ, 'bile'). In ancient medicine, an excess of black bile was thought to cause this temperament.",
+      "literary_context": "Hugo uses mélancolie throughout Les Contemplations to describe the reflective sorrow following his daughter Léopoldine's death. Baudelaire distinguishes it from spleen in Les Fleurs du mal, giving mélancolie a more refined, almost sweet quality.",
+      "usage_example": "Une douce mélancolie s'empara de son âme au crépuscule. — A gentle melancholy took hold of his soul at twilight.",
+      "did_you_know": "The four humors theory held that melancholics possessed artistic genius but suffered periodic darkness. This medical concept became a Romantic ideal, with nineteenth-century poets deliberately cultivating mélancolie as a mark of sensitivity and depth.",
+      "tokens": {
+        "input_tokens": 660,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 374,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "French"
+    },
+    "german": {
+      "word": "Entsühnung",
+      "transliteration": "",
+      "pronunciation": "ent-ZOO-nung",
+      "ipa": "/ɛntˈzyːnʊŋ/",
+      "part_of_speech": "noun, fem.",
+      "meaning": "expiation, atonement, purification from guilt",
+      "forms": "die Entsühnung, gen. der Entsühnung, pl. die Entsühnungen (rare)",
+      "etymology": "From ent- (prefix indicating removal or reversal) + Sühne (atonement, expiation) + -ung (noun suffix). Sühne derives from Middle High German süene, Old High German suona, related to Gothic *sōnjan (to reconcile), ultimately from Proto-Germanic *sōnō.",
+      "literary_context": "The concept appears crucially in Goethe's Iphigenie auf Tauris (1787), where Iphigenie seeks to end the curse on the house of Tantalus through moral purity rather than blood sacrifice, transforming the Greek notion of ritual expiation into an ideal of humanistic redemption.",
+      "usage_example": "Die Entsühnung der alten Schuld kann nur durch Wahrheit geschehen. — The expiation of ancient guilt can only occur through truth.",
+      "did_you_know": "Goethe deliberately chose this word to signal a departure from the Greek source material: his Iphigenie achieves Entsühnung through ethical action and renunciation of deceit, rather than through the ritual violence demanded by Euripides' version.",
+      "tokens": {
+        "input_tokens": 724,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 406,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "German"
+    },
+    "italian": {
+      "word": "talento",
+      "transliteration": "",
+      "pronunciation": "tah-LEN-toh",
+      "ipa": "/taˈlɛn.to/",
+      "part_of_speech": "noun, masc.",
+      "meaning": "talent, natural gift; desire, will; ancient unit of weight/currency",
+      "forms": "plural: talenti",
+      "etymology": "From Latin talentum, from Greek τάλαντον (talanton), originally a unit of weight, then a sum of money, later extended metaphorically to mean natural endowment or gift (influenced by the parable of the talents in Matthew 25).",
+      "literary_context": "Dante uses talento in Inferno XIII.73 where Pier della Vigna says 'l'animo mio, per disdegnoso gusto, / credendo col morir fuggir disdegno, / ingiusto fece me contra me giusto' — the sense of desire and will pervades his tragic account. The word appears throughout medieval Italian poetry with its dual meaning of desire and gift.",
+      "usage_example": "Non mi manca il talento, ma sol la forza di compier l'impresa. — I lack not the will, but only the strength to complete the undertaking.",
+      "did_you_know": "The semantic shift from a unit of measurement to innate ability mirrors the biblical parable where servants are given talents (coins) to invest. Medieval Italian poets exploited both senses: Dante often uses talento to mean desire or inclination, while later humanists emphasized the meaning of natural aptitude.",
+      "tokens": {
+        "input_tokens": 685,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 393,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Italian"
+    },
+    "oldenglish": {
+      "word": "eorðscrӕf",
+      "transliteration": "eorthscræf",
+      "pronunciation": "EH-orth-SKRAF",
+      "ipa": "ˈe̯o̯rθˌskræf",
+      "part_of_speech": "noun, neut.",
+      "meaning": "earth-cave, grave, tomb",
+      "forms": "nom/acc sg eorðscrӕf; gen sg eorðscrӕfes; dat sg eorðscrӕfe; nom/acc pl eorðscrӕfu",
+      "etymology": "Compound of eorðe (earth, ground) + scrӕf (cave, cavern, hollow). From Proto-Germanic *erþō + *skrabą. The word literally means 'earth-cave' but carries the somber meaning of grave or burial chamber.",
+      "literary_context": "This word appears in The Wanderer, where the poet laments the decay of earthly glory and the fact that warriors ultimately find their rest in the eorðscrӕf, emphasizing the transience of human life and achievement.",
+      "usage_example": "Ealle hī eorðscrӕf ūpāhōfon, dēade þēodnas dӯsegu gesӕgon. — All of them the earth-cave lifted up, dead princes saw darkness.",
+      "did_you_know": "The Anglo-Saxons frequently used kennings (compound metaphors) to describe death and burial, and eorðscrӕf is among the most direct, contrasting with more poetic terms like 'bone-house' by starkly naming the physical reality of the grave as a hollow in the earth.",
+      "tokens": {
+        "input_tokens": 727,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 432,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Olde English"
+    },
+    "middleenglish": {
+      "word": "wanhope",
+      "transliteration": "",
+      "pronunciation": "WAHN-hoh-peh",
+      "ipa": "/ˈwanhɔːpə/",
+      "part_of_speech": "noun",
+      "meaning": "despair, hopelessness, spiritual desperation",
+      "forms": "Noun: wanhope (singular), no common plural forms attested in standard usage.",
+      "etymology": "From Old English wanhopa (despair), compound of wan- (lacking, deficient, from Proto-Germanic *wana-) + hope (hope, expectation). The prefix wan- appears in words denoting absence or negation.",
+      "literary_context": "In Piers Plowman, Langland treats wanhope as one of the gravest spiritual dangers, a temptation that can lead the soul to abandon faith in divine mercy. The Pearl-poet similarly explores themes of despair overcome by grace.",
+      "usage_example": "And whan Despair hadde al this cas ytold, / Anon his herte gan in wanhope colde. — And when Despair had told all this matter, his heart immediately grew cold in hopelessness.",
+      "did_you_know": "Medieval theologians considered wanhope (desperatio) a sin against the Holy Spirit because it denied God's infinite mercy. Chaucer's Parson condemns it explicitly in his tale as the spiritual death that prevents repentance.",
+      "tokens": {
+        "input_tokens": 683,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 357,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Middle English"
+    },
+    "welsh": {
+      "word": "dychmygion",
+      "transliteration": "",
+      "pronunciation": "dukh-MUG-yon",
+      "ipa": "/dəxˈməɡjɔn/",
+      "part_of_speech": "noun, plural",
+      "meaning": "imaginings, fancies, visions",
+      "forms": "singular: dychmyg (m.); plural: dychmygion. The singular dychmyg also means 'imagination' as a faculty.",
+      "etymology": "From dy- (intensive prefix) + chymyg, related to Latin commōtus (moved, stirred). The verb dychmygu 'to imagine' derives from the same root, expressing mental stirring or conception.",
+      "literary_context": "T. H. Parry-Williams employs dychmygion in his introspective poetry, notably in 'Hon' (1928), where he explores the tension between imaginative yearning and physical place. The word captures the Romantic preoccupation with creative vision that marks early twentieth-century Welsh verse.",
+      "usage_example": "Nid oedd ei ddychmygion yn ddim ond breuddwydion gwag. — His imaginings were nothing but empty dreams.",
+      "did_you_know": "The plural dychmygion appears frequently in Modern Welsh poetry to distinguish between multiple visions or fantasies (dychmygion) and the unitary faculty of imagination (dychmyg), a distinction that Welsh poets exploit for subtle psychological effect.",
+      "tokens": {
+        "input_tokens": 747,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 382,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Welsh"
+    },
+    "oldnorse": {
+      "word": "ørlǫg",
+      "transliteration": "orlog",
+      "pronunciation": "UR-lurg",
+      "ipa": "ˈøːrˌlɔɡ",
+      "part_of_speech": "noun, neut. pl.",
+      "meaning": "primal law, fate, destiny laid down at birth",
+      "forms": "nom./acc. ørlǫg; gen. ørlaga; dat. ørlǫgum. Typically used in plural, though singular ørlag attested.",
+      "etymology": "From ør- (prefix meaning 'primal, original', cognate with Goth. uz-, OE or-) + lǫg (plural of lag 'law, that which is laid down'). Literally 'primal layers' or 'primordial laws', referring to the decrees of fate established at the beginning of one's life.",
+      "literary_context": "The concept appears in Vǫluspá (stanza 20), where the three Norns arrive from the well beneath Yggdrasill and 'ørlǫg skáru' — they carved or decreed the primal fates for all beings. The word recurs throughout eddic poetry as the inescapable decree that governs gods and mortals alike.",
+      "usage_example": "Þær lǫg lǫgðu, þær líf kuru alda bǫrnum, ørlǫg seggja. — They established laws, they chose life for the sons of men, the fates of warriors.",
+      "did_you_know": "Unlike wyrd in Old English, which emphasizes the thread of individual destiny, ørlǫg stresses the foundational, legislative aspect of fate — something carved in the cosmic order at the moment of creation or birth, immutable as the runic inscriptions on sacred wood.",
+      "tokens": {
+        "input_tokens": 788,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 461,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Old Norse"
+    }
+  }
+}

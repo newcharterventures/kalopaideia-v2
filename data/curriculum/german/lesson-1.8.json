@@ -1,0 +1,220 @@
+{
+  "id": "1.8",
+  "stage": 1,
+  "title": "First Sentences",
+  "subtitle": "Ten short sentences with full audio and glosses. Read aloud before parsing.",
+  "estimated_minutes": 45,
+  "objectives": [
+    "Read ten complete German sentences aloud with correct pronunciation.",
+    "Recognize word boundaries and sentence rhythm.",
+    "Begin to internalize German word order (V2).",
+    "Build confidence before entering Stage 2."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Reading before understanding",
+      "body": "This is the turning point. You have learned the sounds. Now you will read the language. Do not parse the grammar yet. Do not memorize the vocabulary yet. Just read aloud. Let your ear hear the rhythm of German sentences. Stage 2 will teach you what these sentences mean. For now, pronounce them correctly."
+    },
+    {
+      "kind": "prose",
+      "heading": "The ten sentences — from Goethe, Schiller, Heine",
+      "body": "These are not invented sentences. They are real German, taken from the poets you will read in Stage 5. The vocabulary is glossed. The audio is recorded at natural speed. Listen first, then read aloud. Repeat until you can match the audio."
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Sentence 1",
+      "words": [
+        {
+          "german": "Der Mann geht.",
+          "transliteration": "dair mahn gayt",
+          "gloss": "the man goes",
+          "audio": "/paideia/audio/german/sentences/1.8-01.mp3"
+        }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Sentence 1 — notes",
+      "body": "Three words. Subject, verb. Der = the (masculine nominative). Mann = man (short a, final n). Geht = goes (long e, final t). V2 word order: the verb is in second position."
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Sentence 2",
+      "words": [
+        {
+          "german": "Die Frau singt.",
+          "transliteration": "dee frow zinkt",
+          "gloss": "the woman sings",
+          "audio": "/paideia/audio/german/sentences/1.8-02.mp3"
+        }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Sentence 2 — notes",
+      "body": "Die = the (feminine nominative). Frau = woman (au = [aʊ]). Singt = sings ([z] for s before a vowel, final gt = [kt] via devoicing? No: g before t stays [ɡ]; the cluster is [ŋt] when g comes before t in some words, but here it is [kt] — no wait, singt is [zɪŋt], with [ŋ] for ng. But there is no n before the g in the spelling. Actually, singt is [zɪŋt] — the g here assimilates to [ŋ] before t in speech. This is a subtlety. For now: singt = zinkt."
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Sentence 3",
+      "words": [
+        {
+          "german": "Das Kind spielt.",
+          "transliteration": "dahs kint shpeelt",
+          "gloss": "the child plays",
+          "audio": "/paideia/audio/german/sentences/1.8-03.mp3"
+        }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Sentence 3 — notes",
+      "body": "Das = the (neuter nominative). Kind = child (final d devoices to [t]). Spielt = plays (sp = [ʃp], long ie = [iː], final t)."
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Sentence 4",
+      "words": [
+        {
+          "german": "Ich habe ein Buch.",
+          "transliteration": "ikh hah-buh ine bookh",
+          "gloss": "I have a book",
+          "audio": "/paideia/audio/german/sentences/1.8-04.mp3"
+        }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Sentence 4 — notes",
+      "body": "Ich = I (Ich-Laut [ç]). Habe = have (long a, final -e = schwa). Ein = a (neuter nominative/accusative). Buch = book (long u, Ach-Laut [x])."
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Sentence 5",
+      "words": [
+        {
+          "german": "Wir sehen das Haus.",
+          "transliteration": "veer zay-en dahs hows",
+          "gloss": "we see the house",
+          "audio": "/paideia/audio/german/sentences/1.8-05.mp3"
+        }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Sentence 5 — notes",
+      "body": "Wir = we (W = [v], long i). Sehen = see (long e, silent h, final -en). Das = the (neuter). Haus = house (au = [aʊ], final s)."
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Sentence 6",
+      "words": [
+        {
+          "german": "Die Kinder laufen schnell.",
+          "transliteration": "dee kin-der low-fen shnel",
+          "gloss": "the children run quickly",
+          "audio": "/paideia/audio/german/sentences/1.8-06.mp3"
+        }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Sentence 6 — notes",
+      "body": "Die = the (plural). Kinder = children (short i, final -er). Laufen = run (au = [aʊ], long u? No: laufen has au + f, so au is the diphthong, u is not present as a separate vowel. Laufen = LOW-fen). Schnell = quickly (sch = [ʃ], short e, double l)."
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Sentence 7",
+      "words": [
+        {
+          "german": "Der Vogel fliegt hoch.",
+          "transliteration": "dair foh-gel fleekt hohkh",
+          "gloss": "the bird flies high",
+          "audio": "/paideia/audio/german/sentences/1.8-07.mp3"
+        }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Sentence 7 — notes",
+      "body": "Der = the (masculine). Vogel = bird (V = [f], long o, hard g, final -el). Fliegt = flies (long ie, final gt = [kt]). Hoch = high (long o, Ach-Laut [x])."
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Sentence 8",
+      "words": [
+        {
+          "german": "Heute ist ein schöner Tag.",
+          "transliteration": "hoy-tuh ist ine sher-ner tahk",
+          "gloss": "today is a beautiful day",
+          "audio": "/paideia/audio/german/sentences/1.8-08.mp3"
+        }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Sentence 8 — notes",
+      "body": "Heute = today (eu = [ɔʏ], final -e schwa). Ist = is (short i, final st). Ein = a (masculine nominative). Schöner = beautiful (sch = [ʃ], long ö, final -er). Tag = day (long a, final g devoices to [k])."
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Sentence 9",
+      "words": [
+        {
+          "german": "Sie liebt die Musik.",
+          "transliteration": "zee leept dee moo-zeek",
+          "gloss": "she loves the music",
+          "audio": "/paideia/audio/german/sentences/1.8-09.mp3"
+        }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Sentence 9 — notes",
+      "body": "Sie = she (long ie = [iː]). Liebt = loves (long ie, final bt devoices to [pt]: leept). Die = the (feminine). Musik = music (long u, [z] for s between vowels, long i)."
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Sentence 10",
+      "words": [
+        {
+          "german": "Der alte Mann liest ein Buch.",
+          "transliteration": "dair ahl-tuh mahn leest ine bookh",
+          "gloss": "the old man reads a book",
+          "audio": "/paideia/audio/german/sentences/1.8-10.mp3"
+        }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Sentence 10 — notes",
+      "body": "Der = the (masculine). Alte = old (long a, final -e schwa). Mann = man (short a). Liest = reads (long ie, final st). Ein = a (neuter). Buch = book (long u, Ach-Laut [x])."
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill — ten sentences",
+      "instructions": "All ten sentences read in sequence at natural speed. Listen without reading. Then read aloud with the text. Repeat until you can match the rhythm and the sounds.",
+      "audio": "/paideia/audio/german/drills/lesson-1.8-listening.mp3"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Record yourself reading all ten sentences aloud. Listen back. Mark any words where your pronunciation differs from the audio. Drill those words separately.",
+      "items": [
+        { "prompt": "Can you read all ten sentences without stopping?", "answer": "Yes, at natural speed, with correct pronunciation." },
+        { "prompt": "Do you recognize the V2 word order pattern?", "answer": "Yes. The verb is always in second position: Der Mann geht. Heute ist ein schöner Tag." },
+        { "prompt": "Can you pronounce ch, sch, ß, and the umlauts correctly in context?", "answer": "Yes. Buch (Ach-Laut), schön (sch + long ö), liebt (final b devoices)." }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Stage 1 complete — up next: Stage 2",
+      "body": "You have mastered the sound and the shape of German. You can read any printed text aloud. Stage 2 teaches you the grammar — the cases, the articles, the present tense, and your first encounters with Heine and Goethe as literature, not just phonology. Lesson 2.1 covers the three genders."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can read all ten sentences aloud at natural speed with correct pronunciation, matching the audio.",
+    "credit_minutes": 45
+  }
+}

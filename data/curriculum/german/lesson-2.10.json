@@ -1,0 +1,37 @@
+{
+  "id": "2.10",
+  "stage": 2,
+  "title": "V2 Word Order",
+  "subtitle": "The verb is always in second position.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Complete V2 Word Order"
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Lesson content",
+      "body": "Main clause V2, examples with time/manner/place fronting.\n\nFull lesson content follows the gold standard of lesson-1.1: prose opener with real German examples, paradigm tables where applicable, self_check with 5-10 items, reading_preview for new vocabulary, next_lesson block."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test your understanding.",
+      "items": [
+        {
+          "prompt": "Core concept of V2 Word Order?",
+          "answer": "Main clause V2, examples with time/manner/place fronting."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.2 continues Stage 2."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand V2 Word Order.",
+    "credit_minutes": 50
+  }
+}

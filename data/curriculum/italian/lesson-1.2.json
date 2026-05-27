@@ -1,0 +1,75 @@
+{
+  "id": "1.2",
+  "stage": 1,
+  "title": "The Consonants and Their Clusters",
+  "subtitle": "C and G (hard/soft), H (silent), SC, GL, GN, and the affricates.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Pronounce c and g hard before a, o, u; soft before e, i.",
+    "Understand that h is silent but ch and gh restore the hard sound.",
+    "Master sc before e, i (like English sh in shoe).",
+    "Pronounce gli (like the lli in million) and gn (like the ny in canyon)."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "C and G: hard and soft",
+      "body": "In Italian, c before a, o, u is hard: casa, cosa, cura. Before e, i it softens to ch as in church: cento, cinema. Same rule for g: hard before a, o, u (gatto, gola, gusto); soft before e, i (gente, giro). The letter h is silent in Italian. But when placed after c or g, it forces the hard sound before e or i: che (not che but ke), chi; ghe, ghi. Examples: perché (why), laghi (lakes)."
+    },
+    {
+      "kind": "letter_grid",
+      "heading": "The palatals and clusters",
+      "letters": [
+        { "letter": "gli", "ipa": "[ʎʎ]", "audio": "/paideia/audio/italian/clusters/gli.mp3", "note": "Palatalized double l, like the lli in million. figlio, gli." },
+        { "letter": "gn", "ipa": "[ɲ]", "audio": "/paideia/audio/italian/clusters/gn.mp3", "note": "Palatalized n, like the ny in canyon. ogni, sogno." },
+        { "letter": "sc (before e/i)", "ipa": "[ʃ]", "audio": "/paideia/audio/italian/clusters/sc.mp3", "note": "Like English sh. scena, scienza." },
+        { "letter": "sc (before a/o/u)", "ipa": "[sk]", "audio": "/paideia/audio/italian/clusters/sc-hard.mp3", "note": "Hard sk. scala, scopo, scuola." }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Examples from Dante",
+      "body": "Dante Alighieri, Inferno I.1: Nel mezzo del cammin di nostra vita. Read it aloud. cammin: double m, hard c. nostra: hard c implied in the cluster str. vita: single consonants, open i. Petrarch, Canzoniere 1: Voi ch'ascoltate in rime sparse il suono. ch' equals che (hard k sound). ascoltate: sc before o is hard. sparse: no cluster, but note the open a."
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill",
+      "instructions": "Minimal pairs and clusters. Repeat each one after the recording.",
+      "audio": "/paideia/audio/italian/drills/lesson-1.2-consonants.mp3"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers; check after.",
+      "items": [
+        { "prompt": "Pronounce: cane, cena, chi, che.", "answer": "ka-ne, che-na, ki, ke" },
+        { "prompt": "Pronounce: gatto, gente, ghiro, laghi.", "answer": "gat-to, jen-te, gi-ro, la-gi" },
+        { "prompt": "What sound does sc make before e or i?", "answer": "sh, like English sh." },
+        { "prompt": "What sound does gli make?", "answer": "palatalized ll, like the lli in million." },
+        { "prompt": "What sound does gn make?", "answer": "palatalized n, like the ny in canyon." },
+        { "prompt": "Why is h used in chi and che?", "answer": "To force the hard k sound before e and i, where c would otherwise soften to ch." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Words with clusters",
+      "instructions": "Read aloud; check audio.",
+      "words": [
+        { "italian": "figlio", "transliteration": null, "gloss": "son", "audio": "/paideia/audio/italian/words/figlio.mp3" },
+        { "italian": "ogni", "transliteration": null, "gloss": "every", "audio": "/paideia/audio/italian/words/ogni.mp3" },
+        { "italian": "scena", "transliteration": null, "gloss": "scene", "audio": "/paideia/audio/italian/words/scena.mp3" },
+        { "italian": "perché", "transliteration": null, "gloss": "why, because", "audio": "/paideia/audio/italian/words/perche.mp3" },
+        { "italian": "chiesa", "transliteration": null, "gloss": "church", "audio": "/paideia/audio/italian/words/chiesa.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.3 introduces double consonants: the phonemic length distinction that separates pala (shovel) from palla (ball)."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can read any Italian word aloud with correct c/g hard/soft and palatals.",
+    "credit_minutes": 55
+  }
+}

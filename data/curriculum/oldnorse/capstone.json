@@ -1,0 +1,128 @@
+{
+  "id": "stage-3-capstone",
+  "lang": "oldnorse",
+  "title": "The Kalopaideia Old Norse Examination",
+  "instructions": "Three hours, no notes for Part A; printed lexicon and grammar permitted for Part B. Honor code: you affirm by submitting that you used only permitted aids. A failed examination may be retaken after thirty days.",
+  "time_limit_minutes": 180,
+  "tracks_apply": null,
+  "sections": [
+    {
+      "id": "A",
+      "title": "Part A — Sight Translation (no notes)",
+      "items": [
+        {
+          "id": "A1",
+          "type": "translate",
+          "points": 10,
+          "track": null,
+          "prompt_oldnorse": "Gáttir allar, áðr gangi fram, um skoðask skyli.",
+          "prompt_en": "Translate (Hávamál, stanza 1, opening lines).",
+          "reference": [
+            "all doorways, before one goes forward, one should look about",
+            "every door, before going forward, should be looked at",
+            "all gates, before one walks forward, one should examine"
+          ],
+          "keywords": ["doorways", "gates", "before", "look", "examine"],
+          "threshold": 0.45
+        },
+        {
+          "id": "A2",
+          "type": "translate",
+          "points": 10,
+          "track": null,
+          "prompt_oldnorse": "Deyr fé, deyja frændr, deyr sjálfr it sama.",
+          "prompt_en": "Translate (Hávamál, stanza 77, opening line).",
+          "reference": [
+            "cattle die, kinsmen die, the self dies the same",
+            "wealth dies, relatives die, oneself dies likewise",
+            "possessions die, kinsmen die, one dies oneself the same"
+          ],
+          "keywords": ["die", "cattle", "kinsmen", "self", "same"],
+          "threshold": 0.45
+        },
+        {
+          "id": "A3",
+          "type": "translate",
+          "points": 10,
+          "track": null,
+          "prompt_oldnorse": "Hljóðs bið ek allar helgar kindir, meiri ok minni, mǫgu Heimdallar.",
+          "prompt_en": "Translate (Völuspá, stanza 1, opening).",
+          "reference": [
+            "silence I bid from all holy kindreds, greater and lesser, sons of heimdall",
+            "hearing I ask from all sacred kindred, greater and smaller, children of heimdall",
+            "silence I ask all holy kin, greater and lesser, heimdall's offspring"
+          ],
+          "keywords": ["silence", "hearing", "holy", "kindreds", "heimdall"],
+          "threshold": 0.4
+        },
+        {
+          "id": "A4",
+          "type": "translate",
+          "points": 10,
+          "track": null,
+          "prompt_oldnorse": "Ór Ymis holdi var jǫrð of sköpuð, en ór beinum bjǫrg.",
+          "prompt_en": "Translate (Völuspá, stanza 21, cosmogony).",
+          "reference": [
+            "from ymir's flesh was the earth shaped, and from his bones the mountains",
+            "from ymir's body earth was created, and from bones mountains",
+            "out of ymir's flesh was earth formed, and from his bones the crags"
+          ],
+          "keywords": ["ymir", "flesh", "earth", "bones", "mountains"],
+          "threshold": 0.45
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "title": "Part B — Parsing",
+      "items": [
+        {
+          "id": "B1",
+          "type": "parse",
+          "points": 5,
+          "prompt": "Parse the form berr. Give: person, number, tense, mood, voice.",
+          "answer": ["third", "singular", "present", "indicative", "active"]
+        },
+        {
+          "id": "B2",
+          "type": "parse",
+          "points": 5,
+          "prompt": "Parse the form bárum. Give: person, number, tense, mood, voice.",
+          "answer": ["first", "plural", "past", "indicative", "active"]
+        },
+        {
+          "id": "B3",
+          "type": "parse",
+          "points": 5,
+          "prompt": "Parse the noun form löndum. Give: case, number, gender, lexical form.",
+          "answer": ["dative", "plural", "neuter", "land"]
+        },
+        {
+          "id": "B4",
+          "type": "parse",
+          "points": 5,
+          "prompt": "Parse the form maðrinn. Give: case, number, gender, article status.",
+          "answer": ["nominative", "singular", "masculine", "with suffixed definite article"]
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "title": "Part D — Multiple Choice (vocabulary and grammar)",
+      "items": [
+        { "id": "D1", "type": "mcq", "points": 2, "prompt": "What does maðr mean?", "choices": ["man", "woman", "king", "god"], "answer": "man" },
+        { "id": "D2", "type": "mcq", "points": 2, "prompt": "What does konungr mean?", "choices": ["king", "queen", "lord", "chieftain"], "answer": "king" },
+        { "id": "D3", "type": "mcq", "points": 2, "prompt": "How many cases does Old Norse have?", "choices": ["three", "four", "five", "six"], "answer": "four" },
+        { "id": "D4", "type": "mcq", "points": 2, "prompt": "Which case is used for the direct object?", "choices": ["nominative", "accusative", "genitive", "dative"], "answer": "accusative" },
+        { "id": "D5", "type": "mcq", "points": 2, "prompt": "What is the suffixed definite article on maðr (man)?", "choices": ["maðrinn", "maðren", "maðrar", "maðrit"], "answer": "maðrinn" },
+        { "id": "D6", "type": "mcq", "points": 2, "prompt": "Which meter is used in Hávamál?", "choices": ["fornyrðislag", "ljóðaháttr", "dróttkvætt", "hrynhenda"], "answer": "ljóðaháttr" }
+      ]
+    }
+  ],
+  "scoring": {
+    "max_points": 72,
+    "pass_mark": 0.70,
+    "honors_mark": 0.85
+  },
+  "honor_code": "I attest that the answers I have entered are my own, composed without aid beyond the materials permitted for each section of this examination. I understand that this examination is graded automatically, that the script and my signed attestation will be permanently hashed on completion, and that a passing score will issue a permanent on-chain diploma in my name."
+}

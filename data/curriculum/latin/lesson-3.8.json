@@ -1,0 +1,20 @@
+{
+  "id": "3.8",
+  "stage": 3,
+  "title": "Third Declension Adjectives",
+  "subtitle": "fortis, ingens, vetus. Three patterns.",
+  "estimated_minutes": 50,
+  "objectives": ["Decline two-termination adjectives (fortis, forte).", "Decline one-termination adjectives (ingens).", "Decline exceptional adjectives (vetus).", "Apply agreement rules to third-declension adjectives."],
+  "sections": [
+    {"kind": "prose", "heading": "Third-declension adjectives", "body": "Two-termination (m./f. and n.): fortis, forte (brave)\n  Sg: fortis, fortis, fortī, fortem, fortī (m./f.); forte, fortis, fortī, forte, fortī (n.)\n\nOne-termination (all genders): ingēns, ingentis (huge)\n\nCaesar writes: vir fortis. — A brave man.\nCicero writes: rēs ingēns. — A huge affair."},
+    {"kind": "self_check", "heading": "Self-check", "items": [
+      {"prompt": "Decline fortis in masculine singular.", "answer": "fortis, fortis, fortī, fortem, fortī"},
+      {"prompt": "Translate: mīlitēs fortēs.", "answer": "Brave soldiers."}
+    ]},
+    {"kind": "reading_preview", "heading": "Sentences", "words": [
+      {"latin": "vir fortis rēgnum regit.", "transliteration": null, "gloss": "A brave man rules the kingdom.", "audio": "/paideia/audio/latin/sentences/3.8-1.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Lesson 3.9: the present active participle. amāns, amantis."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can decline third-declension adjectives.", "credit_minutes": 50}
+}

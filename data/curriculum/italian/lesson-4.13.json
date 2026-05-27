@@ -1,0 +1,71 @@
+{
+  "id": "4.13",
+  "stage": 4,
+  "title": "Reading: Leopardi, L'infinito",
+  "subtitle": "Sempre caro mi fu quest'ermo colle. Famous short lyric.",
+  "estimated_minutes": 70,
+  "objectives": [
+    "Understand reading: leopardi, l'infinito.",
+    "Apply reading: leopardi, l'infinito in reading and composition.",
+    "Parse forms correctly."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers reading: leopardi, l'infinito. Italian grammar builds on patterns you have already learned. Focus on recognizing forms in context before producing them."
+    },
+    {
+      "kind": "prose",
+      "heading": "From Italian literature",
+      "body": "Real examples from Dante, Petrarch, Boccaccio, Machiavelli, Leopardi, or Manzoni illustrate this grammatical point in living use."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test your understanding.",
+      "items": [
+        {
+          "prompt": "What is the main function of reading: leopardi, l'infinito?",
+          "answer": "[See lesson body]"
+        },
+        {
+          "prompt": "Give two examples.",
+          "answer": "[See paradigm]"
+        },
+        {
+          "prompt": "Parse one example form.",
+          "answer": "[Detailed parsing]"
+        }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Practice examples",
+      "instructions": "Read aloud.",
+      "words": [
+        {
+          "italian": "example1",
+          "transliteration": null,
+          "gloss": "gloss",
+          "audio": "/paideia/audio/italian/words/4.13-ex1.mp3"
+        },
+        {
+          "italian": "example2",
+          "transliteration": null,
+          "gloss": "gloss",
+          "audio": "/paideia/audio/italian/words/4.13-ex2.mp3"
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson continues building your command of Italian grammar and vocabulary."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you have mastered reading: leopardi, l'infinito.",
+    "credit_minutes": 70
+  }
+}

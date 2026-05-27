@@ -1,0 +1,66 @@
+{
+  "id": "4.2",
+  "stage": 4,
+  "title": "The Optative",
+  "subtitle": "λύοιμι, λύοις, λύοι — the mood of wish and remote possibility.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Form and conjugate the present and aorist optative in all voices.",
+    "Understand the optative as the mood of wish, remote possibility, and secondary-sequence purpose.",
+    "Use the optative in wishes, potential statements, and optative conditions.",
+    "Distinguish optative from subjunctive by form and meaning."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The optative mood",
+      "body": "The optative is the mood of wish and remote possibility. It expresses what might happen in theory, what one wishes would happen, or what is merely conceivable. The optative is less common than the subjunctive and is used primarily in secondary sequence (after past-tense main verbs) and in wishes.\n\nThe optative is formed with the optative suffix -ι or -ιη added to the stem. The present optative uses the present stem; the aorist optative uses the aorist stem (without the augment). Like the subjunctive, the optative has no time reference."
+    },
+    {
+      "kind": "prose",
+      "heading": "The present optative active: λύοιμι, λύοις, λύοι",
+      "body": "  singular\n  1st   λύοιμι      may I loose / I might loose\n  2nd   λύοις       may you loose / you might loose\n  3rd   λύοι        may he/she/it loose / he might loose\n\n  plural\n  1st   λύοιμεν     may we loose / we might loose\n  2nd   λύοιτε      may you (plural) loose / you might loose\n  3rd   λύοιεν      may they loose / they might loose\n\nThe endings are -οιμι, -οις, -οι, -οιμεν, -οιτε, -οιεν."
+    },
+    {
+      "kind": "prose",
+      "heading": "The aorist optative active: λύσαιμι, λύσαις, λύσαι",
+      "body": "  singular\n  1st   λύσαιμι     may I loose / I might loose\n  2nd   λύσαις      may you loose / you might loose\n  3rd   λύσαι       may he/she/it loose / he might loose\n\n  plural\n  1st   λύσαιμεν    may we loose / we might loose\n  2nd   λύσαιτε     may you (plural) loose / you might loose\n  3rd   λύσαιεν     may they loose / they might loose\n\nThe endings are -αιμι, -αις, -αι, -αιμεν, -αιτε, -αιεν. No augment."
+    },
+    {
+      "kind": "prose",
+      "heading": "Uses of the optative",
+      "body": "Wish: εἴθε λύσαιμι τοὺς αἰχμαλώτους — 'Would that I might free the prisoners!' Optative of wish, often with εἴθε or εἰ γάρ.\n\nPotential: λύσαιμι ἄν — 'I might loose' or 'I would loose'. Optative + ἄν = potential.\n\nSecondary-sequence purpose: ἦλθεν ἵνα λύσαι — 'He came in order that he might loose.' After a past-tense main verb, ἵνα takes the optative instead of the subjunctive.\n\nFuture-less-vivid condition: εἰ λύοις, ἀγαθὸς εἴης ἄν — 'If you should loose, you would be good.' Optative in both protasis and apodosis (with ἄν in the apodosis)."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Conjugate or translate.",
+      "items": [
+        { "prompt": "First person singular present optative active of λύω", "answer": "λύοιμι" },
+        { "prompt": "First person singular aorist optative active of λύω", "answer": "λύσαιμι" },
+        { "prompt": "What is the optative mood used for?", "answer": "Wish, remote possibility, secondary-sequence purpose." },
+        { "prompt": "Translate: εἴθε λύσαιμι τοὺς αἰχμαλώτους.", "answer": "Would that I might free the prisoners!" },
+        { "prompt": "Translate: λύσαιμι ἄν.", "answer": "I might loose / I would loose." },
+        { "prompt": "Does the aorist optative refer to past time?", "answer": "No. The optative has no time reference." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Optative in sentences",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "εἴθε λύσαιμι τοὺς αἰχμαλώτους.", "transliteration": "eíthe lýsaimi toùs aichmalṓtous.", "gloss": "Would that I might free the prisoners!", "audio": "/paideia/audio/greek/sentences/eithe-lysaimi.mp3" },
+        { "greek": "λύσαιμι ἄν.", "transliteration": "lýsaimi án.", "gloss": "I might loose / I would loose.", "audio": "/paideia/audio/greek/sentences/lysaimi-an.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 4.3 introduces the imperative. The imperative is the mood of command. λῦε means 'Loose!' The imperative has present and aorist forms in the second and third persons."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can conjugate the present and aorist optative of any ω-verb and can translate wishes, potential statements, and secondary-sequence purpose clauses.",
+    "credit_minutes": 55
+  }
+}

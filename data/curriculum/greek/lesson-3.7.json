@@ -1,0 +1,67 @@
+{
+  "id": "3.7",
+  "stage": 3,
+  "title": "The Third Declension — Consonant Stems",
+  "subtitle": "ὁ φύλαξ, ὁ γέρων, ἡ ἐλπίς — the nominative disguises the stem.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Decline third-declension consonant-stem nouns in all five cases and both numbers.",
+    "Understand that the genitive singular reveals the true stem.",
+    "Recognize the patterns: labial stems (π, β, φ), velar stems (κ, γ, χ), dental stems (τ, δ, θ), nasal stems (ν), liquid stems (ρ), sibilant stems (σ).",
+    "Parse third-declension forms on sight."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The third declension",
+      "body": "The third declension contains nouns of all three genders. The stems end in consonants or vowels. The nominative singular is often disguised by sound changes; the genitive singular shows the true stem.\n\nφύλαξ (guard) has the stem φυλακ-. The nominative singular drops the κ and shows only φύλαξ. The genitive singular is φύλακος, revealing the stem.\n\nThe third declension is more varied than the first and second. You must learn the genitive singular for every third-declension noun, because the nominative alone does not tell you the stem."
+    },
+    {
+      "kind": "prose",
+      "heading": "Velar stems: ὁ φύλαξ (guard)",
+      "body": "Stem: φυλακ- (the κ drops before σ in the nominative)\n              singular        plural\n  nominative  φύλαξ           φύλακες\n  genitive    φύλακος         φυλάκων\n  dative      φύλακι          φύλαξι(ν)\n  accusative  φύλακα          φύλακας\n  vocative    φύλαξ           φύλακες\n\nThe dative plural φύλαξι comes from φυλακ-σι: the κ + σ produces ξ."
+    },
+    {
+      "kind": "prose",
+      "heading": "Dental stems: ἡ ἐλπίς (hope)",
+      "body": "Stem: ἐλπιδ- (the δ drops before σ in the nominative)\n              singular        plural\n  nominative  ἐλπίς           ἐλπίδες\n  genitive    ἐλπίδος         ἐλπίδων\n  dative      ἐλπίδι          ἐλπίσι(ν)\n  accusative  ἐλπίδα          ἐλπίδας\n  vocative    ἐλπίς           ἐλπίδες\n\nThe dative plural ἐλπίσι comes from ἐλπιδ-σι: the δ drops before σ."
+    },
+    {
+      "kind": "prose",
+      "heading": "Nasal stems: ὁ γέρων (old man)",
+      "body": "Stem: γεροντ- (the τ drops in the nominative)\n              singular        plural\n  nominative  γέρων           γέροντες\n  genitive    γέροντος        γερόντων\n  dative      γέροντι         γέρουσι(ν)\n  accusative  γέροντα         γέροντας\n  vocative    γέρον           γέροντες\n\nThe dative plural γέρουσι is irregular (from an older form)."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Parse or answer.",
+      "items": [
+        { "prompt": "φύλακος", "answer": "genitive singular (stem φυλακ-)" },
+        { "prompt": "ἐλπίδος", "answer": "genitive singular (stem ἐλπιδ-)" },
+        { "prompt": "γέροντος", "answer": "genitive singular (stem γεροντ-)" },
+        { "prompt": "What case reveals the true stem of a third-declension noun?", "answer": "The genitive singular." },
+        { "prompt": "What happens to κ + σ?", "answer": "It produces ξ." },
+        { "prompt": "What happens to δ + σ?", "answer": "The δ drops." },
+        { "prompt": "Why is the nominative singular often disguised?", "answer": "Because final consonants drop or change according to sound laws." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Third-declension nouns in sentences",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "ὁ φύλαξ φυλάσσει τὴν πόλιν.", "transliteration": "ho phýlax phylássei tḕn pólin.", "gloss": "The guard guards the city.", "audio": "/paideia/audio/greek/sentences/phylax-phylassei.mp3" },
+        { "greek": "ἡ ἐλπὶς μεγάλη ἐστίν.", "transliteration": "hē elpìs megálē estín.", "gloss": "The hope is great.", "audio": "/paideia/audio/greek/sentences/elpis-megale.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 3.8 introduces the third declension vowel and σ-stems: ἡ πόλις (city), ὁ βασιλεύς (king), τὸ γένος (race). These stems end in vowels or sigma, and they show compensatory lengthening and contraction patterns."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can decline φύλαξ, ἐλπίς, and γέρων from memory and can identify the stem of any third-declension noun from its genitive singular.",
+    "credit_minutes": 60
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "id": "2.9",
+  "stage": 2,
+  "title": "The Verb 'To Be'",
+  "subtitle": "Eom, eart, is — the most irregular verb in the language.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Understand and apply the concepts of The Verb 'To Be'.",
+    "Read and parse examples from authentic Old English texts.",
+    "Practice pronunciation and recognition."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The verb 'to be' (bēon / wesan) is suppletive: it uses forms from two different roots. Present: eom, eart, is, sind/sindon/sint. Past: wæs, wǣre, wæs, wǣron. Infinitive: bēon (future-oriented) or wesan (present-oriented). Essential, irregular, everywhere."
+    },
+    {
+      "kind": "paradigm_table",
+      "heading": "Paradigm",
+      "table": {
+        "Present": {
+          "ic": "eom",
+          "þū": "eart",
+          "hē": "is",
+          "wē/gē/hīe": "sind/sindon"
+        },
+        "Past": {
+          "ic": "wæs",
+          "þū": "wǣre",
+          "hē": "wæs",
+          "wē/gē/hīe": "wǣron"
+        }
+      }
+    },
+    {
+      "kind": "prose",
+      "heading": "Example",
+      "body": "Ic eom cyning (I am king). Hē wæs cyning (He was king)."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test your understanding.",
+      "items": [
+        {
+          "prompt": "What is the main concept of this lesson?",
+          "answer": "The Verb 'To Be'"
+        },
+        {
+          "prompt": "Can you parse the example?",
+          "answer": "Review the paradigm and example above."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson in Stage 2."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand The Verb 'To Be' and can apply it in reading.",
+    "credit_minutes": 55
+  }
+}

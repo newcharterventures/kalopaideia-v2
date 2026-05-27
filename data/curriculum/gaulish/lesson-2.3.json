@@ -1,0 +1,73 @@
+{
+  "id": "2.3",
+  "stage": 2,
+  "title": "The Larzac Tablet",
+  "subtitle": "A lead curse — 160 words, women invoking powers, the hardest text in the corpus.",
+  "estimated_minutes": 70,
+  "objectives": [
+    "Understand the context and function of the Larzac defixio (curse tablet).",
+    "Translate the opening lines: IN ALCVINOM CANTOBEDNNABOGAITIRCON.",
+    "Recognize the dative plural ending -bo.",
+    "Begin parsing the list of women's names."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Discovery and context",
+      "body": "In 1983, a lead tablet was discovered at L'Hospitalet-du-Larzac (Aveyron, southern France), in the ruins of a Gallo-Roman sanctuary. The tablet is inscribed on both sides with a total of 160 words in cursive Latin script. The text is a defixio — a curse tablet. A group of women invoke supernatural forces against another group of women. The language is Gaulish. The date is around 100 CE, fifty years after the supposed death of the Gaulish language. This tablet proves otherwise."
+    },
+    {
+      "kind": "prose",
+      "heading": "What is a defixio?",
+      "body": "A defixio is a curse. You write the name of your enemy on a lead tablet, invoke gods or spirits to bind them, and bury the tablet in a sacred place or a grave. The ritual was common in the Roman world, and the Gauls adopted it. Most defixiones are in Latin or Greek. The Larzac Tablet is in Gaulish. It is the longest connected Gaulish text outside the Coligny Calendar."
+    },
+    {
+      "kind": "prose",
+      "heading": "The opening lines",
+      "body": "Here is the start of the Larzac Tablet, with transliteration and parsing:\n\nIN ALCVINOM CANTOBEDNNABOGAITIRCON NOILBINACON NATARCON\n\nTransliteration:\nIN — \"in\" or \"into\" (preposition, governing accusative)\nALCVINOM — accusative singular, perhaps a place-name or \"sacred place\" (etymology uncertain)\nCANTOBEDNNABOGAITIRCON — This is a compound list: \"to the Cantobednnā and the Bogaitirix and...\" (dative plural -BO)\nNOILBINACON — dative plural, \"to the Noiluinae\" (a group name or personal names)\nNATARCON — dative plural, \"to the Nātares\" (a group name or personal names)\n\nThe syntax: IN ALCVINOM (\"in/into the sacred place\"), the speaker invokes CANTOBEDNNABOGAITIRCON NOILBINACON NATARCON (\"to the Cantobednnā, the Bogaitirix, the Noiluinae, the Nātares\"). These are the supernatural forces being called upon."
+    },
+    {
+      "kind": "prose",
+      "heading": "The dative plural in -bo",
+      "body": "The dative plural ending in Gaulish is -bo for all noun classes. This is one of the clearest morphological features of the language. In the Larzac Tablet, the supernatural forces are all in the dative plural:\n\nCANTOBEDNNABO — \"to the Cantobednnā\" (a group of goddesses or spirits?)\nGAITIRCON — This may be a separate name or part of the compound; the parsing is disputed.\n\nThe ending -bo appears throughout the tablet. Once you recognize it, you can identify the recipients of the curse."
+    },
+    {
+      "kind": "prose",
+      "heading": "The women's names",
+      "body": "The tablet lists two groups of women: the cursers and the cursed. The cursers are named first:\n\nSEVERA TERTIONICNA\nMARCIA PROXSVMA\nMARENA\nETVASIA ADIEGIAS\n\nThe names are mixed: some are Latin (SEVERA, MARCIA, PROXSVMA), some are Gaulish (TERTIONICNA, MARĘNA, ETVASIA). This is typical of Gallo-Roman society in the 1st and 2nd centuries CE. The Gauls had Roman citizenship and Roman names, but they still spoke Gaulish and practiced Gaulish rituals."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers; check after.",
+      "items": [
+        { "prompt": "When and where was the Larzac Tablet discovered?", "answer": "1983, at L'Hospitalet-du-Larzac (Aveyron, southern France)." },
+        { "prompt": "What is a defixio?", "answer": "A curse tablet — a lead tablet inscribed with a curse, invoking gods or spirits to bind an enemy, then buried in a sacred place or grave." },
+        { "prompt": "How many words are in the Larzac Tablet?", "answer": "160 words, the longest connected Gaulish text outside the Coligny Calendar." },
+        { "prompt": "What is the dative plural ending in Gaulish?", "answer": "-bo, for all noun classes." },
+        { "prompt": "What does IN ALCVINOM mean?", "answer": "\"In/into the sacred place\" (IN = preposition, ALCVINOM = accusative singular)." },
+        { "prompt": "Who are the cursers in the Larzac Tablet?", "answer": "A group of women: Severa Tertionicna, Marcia Proxsuma, Marena, Etuasia Adiegias." },
+        { "prompt": "Why do the names mix Latin and Gaulish elements?", "answer": "Because Gallo-Roman society in the 1st-2nd centuries CE was bilingual. People had Roman citizenship and Roman names but still spoke Gaulish." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Larzac vocabulary",
+      "instructions": "These words appear in the Larzac Tablet. Memorize them.",
+      "words": [
+        { "gaulish": "IN ALCVINOM", "transliteration": null, "gloss": "in/into the sacred place", "audio": "/paideia/audio/gaulish/larzac/in-alkunom.mp3" },
+        { "gaulish": "CANTOBEDNNABO", "transliteration": null, "gloss": "to the Cantobednnā (spirits/goddesses, dative plural)", "audio": "/paideia/audio/gaulish/larzac/cantobednnabo.mp3" },
+        { "gaulish": "NOILBINACON", "transliteration": null, "gloss": "to the Noiluinae (group name, dative plural)", "audio": "/paideia/audio/gaulish/larzac/noilbinacon.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.4 continues parsing the Larzac Tablet: the verbs AVDE (\"invokes\") and ADSAXSATILIN (\"the ones who bind\"), and the accusative list of the cursed women."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can translate IN ALCVINOM, recognize the dative plural -bo, and name the four cursers.",
+    "credit_minutes": 70
+  }
+}

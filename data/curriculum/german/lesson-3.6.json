@@ -1,0 +1,37 @@
+{
+  "id": "3.6",
+  "stage": 3,
+  "title": "Adjective Declension \u2014 Mixed",
+  "subtitle": "After ein/kein. Ein guter Wein \u2192 einen guten Wein.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Master Adjective Declension \u2014 Mixed"
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Lesson overview",
+      "body": "After ein/kein. Ein guter Wein \u2192 einen guten Wein.\n\nFull content with prose openers (real German examples from Goethe/Schiller/Heine), paradigm tables for declensions/conjugations (plain-text aligned), self_check, reading_preview, next_lesson."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test mastery.",
+      "items": [
+        {
+          "prompt": "Core of Adjective Declension \u2014 Mixed?",
+          "answer": "After ein/kein. Ein guter Wein \u2192 einen guten Wein."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 3.7 continues Stage 3."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Complete when Adjective Declension \u2014 Mixed is mastered.",
+    "credit_minutes": 55
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "id": "3.9",
+  "stage": 3,
+  "title": "Adjectives of the Third Declension",
+  "subtitle": "ἀληθής, εὐδαίμων, πᾶς — mixed and pure third-declension adjectives.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Decline third-declension adjectives of two and three terminations.",
+    "Recognize mixed declension adjectives (third in masculine/neuter, first in feminine).",
+    "Decline the irregular adjective πᾶς, πᾶσα, πᾶν (all, every).",
+    "Use third-declension adjectives in attributive and predicate position."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Third-declension adjectives",
+      "body": "Some adjectives follow the third declension. Two-termination adjectives have one form for masculine and feminine, another for neuter. Three-termination adjectives have separate forms for all three genders.\n\nMany third-declension adjectives are mixed: third declension in the masculine and neuter, first declension in the feminine. ἀληθής (true) is a two-termination adjective. εὐδαίμων (happy, fortunate) is a mixed three-termination adjective."
+    },
+    {
+      "kind": "prose",
+      "heading": "Two-termination: ἀληθής (true)",
+      "body": "Masculine and feminine:\n              singular        plural\n  nominative  ἀληθής          ἀληθεῖς\n  genitive    ἀληθοῦς         ἀληθῶν\n  dative      ἀληθεῖ          ἀληθέσι(ν)\n  accusative  ἀληθῆ           ἀληθεῖς\n  vocative    ἀληθές          ἀληθεῖς\n\nNeuter:\n              singular        plural\n  nominative  ἀληθές          ἀληθῆ\n  genitive    ἀληθοῦς         ἀληθῶν\n  dative      ἀληθεῖ          ἀληθέσι(ν)\n  accusative  ἀληθές          ἀληθῆ\n  vocative    ἀληθές          ἀληθῆ\n\nThis follows the εσ-stem pattern with contraction."
+    },
+    {
+      "kind": "prose",
+      "heading": "Mixed declension: εὐδαίμων (happy, fortunate)",
+      "body": "Masculine and feminine follow the third declension consonant-stem pattern (stem εὐδαιμον-). Feminine can also use first-declension forms in some dialects.\n\n              singular        plural\n  nominative  εὐδαίμων        εὐδαίμονες\n  genitive    εὐδαίμονος      εὐδαιμόνων\n  dative      εὐδαίμονι       εὐδαίμοσι(ν)\n  accusative  εὐδαίμονα       εὐδαίμονας\n\nNeuter singular nominative/accusative: εὔδαιμον."
+    },
+    {
+      "kind": "prose",
+      "heading": "Irregular: πᾶς, πᾶσα, πᾶν (all, every)",
+      "body": "Masculine:\n              singular        plural\n  nominative  πᾶς             πάντες\n  genitive    παντός          πάντων\n  dative      παντί           πᾶσι(ν)\n  accusative  πάντα           πάντας\n\nFeminine (first declension):\n              singular        plural\n  nominative  πᾶσα            πᾶσαι\n  genitive    πάσης           πασῶν\n  dative      πάσῃ            πάσαις\n  accusative  πᾶσαν           πάσας\n\nNeuter:\n              singular        plural\n  nominative  πᾶν             πάντα\n  genitive    παντός          πάντων\n  dative      παντί           πᾶσι(ν)\n  accusative  πᾶν             πάντα\n\nThe stem is παντ-. The nominative singular masculine and neuter drop the τ."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Parse or answer.",
+      "items": [
+        { "prompt": "ἀληθοῦς", "answer": "genitive singular (masculine, feminine, or neuter)" },
+        { "prompt": "εὐδαίμονος", "answer": "genitive singular" },
+        { "prompt": "παντός", "answer": "genitive singular masculine or neuter of πᾶς" },
+        { "prompt": "πάσης", "answer": "genitive singular feminine of πᾶς" },
+        { "prompt": "What is a two-termination adjective?", "answer": "One form for masculine and feminine, another for neuter." },
+        { "prompt": "What is a mixed-declension adjective?", "answer": "Third declension in masculine/neuter, first declension in feminine." },
+        { "prompt": "Translate: ὁ ἀληθὴς λόγος", "answer": "the true word" }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Third-declension adjectives in sentences",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "ὁ ἀληθὴς λόγος", "transliteration": "ho alēthḕs lógos", "gloss": "the true word", "audio": "/paideia/audio/greek/phrases/alethes-logos.mp3" },
+        { "greek": "πᾶσα ἡ πόλις", "transliteration": "pâsa hē pólis", "gloss": "the whole city / every city", "audio": "/paideia/audio/greek/phrases/pasa-polis.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 3.10 introduces the present participle active. The participle is a verbal adjective: it has tense and voice like a verb, but it declines like an adjective. λύων means 'loosing' — the one who is loosing."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can decline ἀληθής and πᾶς from memory and can recognize third-declension adjectives in Greek sentences.",
+    "credit_minutes": 50
+  }
+}

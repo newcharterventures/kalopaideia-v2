@@ -1,0 +1,75 @@
+{
+  "id": "1.4",
+  "stage": 1,
+  "title": "Breathings",
+  "subtitle": "The smooth and rough breathings, and the rules that govern them.",
+  "estimated_minutes": 40,
+  "objectives": [
+    "Recognize the smooth breathing ( ̓) and the rough breathing ( ̔).",
+    "Pronounce words beginning with a vowel or rho correctly depending on the breathing.",
+    "Apply the rule that every Greek word beginning with a vowel or rho must take a breathing.",
+    "Understand that rho always takes a rough breathing when it begins a word."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The breathings",
+      "body": "Every Greek word that begins with a vowel takes a breathing mark written above the vowel (or above the second vowel if the word begins with a diphthong). The breathing mark tells you whether to pronounce an h-sound before the vowel.\n\nThe smooth breathing ( ̓) means no h-sound. ἀνήρ is pronounced anēr, not hanēr.\n\nThe rough breathing ( ̔) means an h-sound. ἁγνός is pronounced hagnos.\n\nThe distinction is absolute. A student who confuses the two is pronouncing a different word. The smooth and rough breathings are as different to a Greek ear as the presence or absence of h- in English (an versus hand, arm versus harm)."
+    },
+    {
+      "kind": "prose",
+      "heading": "The rule for rho",
+      "body": "Every word that begins with the consonant rho (ρ) also takes a breathing. The breathing is always rough: ῥόδον (rose) is pronounced rhodon with an initial h-r cluster, something like the rh in English rhyme or rhetoric when those words are pronounced with the h audible.\n\nWhen rho appears inside a word after a vowel, no breathing is written. The rule applies only to initial rho."
+    },
+    {
+      "kind": "prose",
+      "heading": "Placement of the breathing",
+      "body": "When a word begins with a single vowel, the breathing is written directly above it: ἀνήρ, ἁγνός.\n\nWhen a word begins with a diphthong, the breathing is written above the second vowel: αἰών, οἶκος.\n\nWhen a word begins with a capital vowel, the breathing is written to the left of the capital: Ἀθῆναι (Athens), Ὅμηρος (Homer).\n\nThe breathing and the accent can appear together on the same vowel. The rough breathing and the acute accent combine: ἅγιος. The smooth breathing and the circumflex combine: οἶκος (here the breathing is smooth, the accent is circumflex)."
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill",
+      "instructions": "Pairs of words, one with smooth breathing and one with rough. Listen for the h-sound in the second member of each pair. Then repeat both.",
+      "audio": "/paideia/audio/greek/drills/lesson-1.4-listening.mp3"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers. Answer each question or pronounce each word.",
+      "items": [
+        { "prompt": "What does the smooth breathing ( ̓) mean?", "answer": "No h-sound before the vowel." },
+        { "prompt": "What does the rough breathing ( ̔) mean?", "answer": "An h-sound before the vowel." },
+        { "prompt": "Which breathing does rho take when it begins a word?", "answer": "Always rough." },
+        { "prompt": "How is ἀνήρ pronounced?", "answer": "anēr (no h-sound)" },
+        { "prompt": "How is ἁγνός pronounced?", "answer": "hagnos (with h-sound)" },
+        { "prompt": "How is ῥόδον pronounced?", "answer": "rhodon (with h-sound before the r)" },
+        { "prompt": "Where is the breathing written when a word begins with a diphthong?", "answer": "Above the second vowel of the diphthong." },
+        { "prompt": "Where is the breathing written on a capital vowel?", "answer": "To the left of the capital." },
+        { "prompt": "Can a vowel have both a breathing and an accent?", "answer": "Yes. The two marks can appear together on the same vowel." },
+        { "prompt": "Is the breathing optional?", "answer": "No. Every word beginning with a vowel or rho must take a breathing." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Words with breathings",
+      "instructions": "Read these aloud. Pay attention to the breathing in each case.",
+      "words": [
+        { "greek": "ἀνήρ", "transliteration": "anḗr", "gloss": "man, husband", "audio": "/paideia/audio/greek/words/aner.mp3" },
+        { "greek": "ἁγνός", "transliteration": "hagnós", "gloss": "pure, holy", "audio": "/paideia/audio/greek/words/hagnos.mp3" },
+        { "greek": "ἡμέρα", "transliteration": "hēméra", "gloss": "day", "audio": "/paideia/audio/greek/words/hemera.mp3" },
+        { "greek": "ὁδός", "transliteration": "hodós", "gloss": "road, way", "audio": "/paideia/audio/greek/words/hodos.mp3" },
+        { "greek": "ῥόδον", "transliteration": "rhódon", "gloss": "rose", "audio": "/paideia/audio/greek/words/rhodon.mp3" },
+        { "greek": "Ἀθῆναι", "transliteration": "Athênai", "gloss": "Athens", "audio": "/paideia/audio/greek/words/athenai.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.5 introduces the pitch accent. Greek accent is not stress (loudness) but pitch (rising or falling tone). The three accent marks — acute, grave, circumflex — tell you whether the syllable rises, stays level, or falls. This is the hardest part of the sound system for an English speaker, but it is also the most rewarding. Once you hear the pitch, you will hear the music of the language."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can pronounce ten words with initial vowels or rho, correctly observing the breathing in each case, without hesitation.",
+    "credit_minutes": 40
+  }
+}

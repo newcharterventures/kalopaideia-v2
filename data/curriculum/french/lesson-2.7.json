@@ -1,0 +1,62 @@
+{
+  "id": "2.7",
+  "stage": 2,
+  "title": "The Verbs Être and Avoir",
+  "subtitle": "être: je suis, tu es, il est, nous sommes, vous êtes, ils sont. avoir: j'ai, tu as, il a, nous avons, vous avez, ils ont. The two auxiliary verbs, irregular and mandatory.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Conjugate être (to be) in the present indicative.",
+    "Conjugate avoir (to have) in the present indicative.",
+    "Recognize that both are completely irregular.",
+    "Understand their role as auxiliary verbs in compound tenses."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "être (to be)",
+      "body": "The verb être is the most irregular verb in French. It must be memorized.\n\n             être (to be)\n\n  je         suis        [sɥi]\n  tu         es          [ɛ]\n  il/elle    est         [ɛ]\n  nous       sommes      [sɔm]\n  vous       êtes        [ɛt]\n  ils/elles  sont        [sɔ̃]\n\nFrom La Fontaine's Fables:\n\n  Maître Corbeau, sur un arbre perché,\n  Tenait en son bec un fromage.\n  Maître Renard, par l'odeur alléché,\n  Lui tint à peu près ce langage:\n  'Hé! bonjour, Monsieur du Corbeau.'\n\nHere 'est' does not appear, but être pervades French prose and verse."
+    },
+    {
+      "kind": "prose",
+      "heading": "avoir (to have)",
+      "body": "The verb avoir is also irregular.\n\n             avoir (to have)\n\n  je         ai          [e] (written j'ai before vowel)\n  tu         as          [a]\n  il/elle    a           [a]\n  nous       avons       [avɔ̃]\n  vous       avez        [ave]\n  ils/elles  ont         [ɔ̃]\n\nBoth être and avoir are auxiliary verbs, used to form compound tenses (passé composé, plus-que-parfait). You cannot read French without them."
+    },
+    {
+      "kind": "prose",
+      "heading": "Practice sentences",
+      "body": "Je suis français. (I am French.)\nTu es ici. (You are here.)\nIl est roi. (He is king.)\nNous sommes heureux. (We are happy.)\nVous êtes prêts. (You are ready.)\nIls sont partis. (They have left — compound tense with être.)\n\nJ'ai un livre. (I have a book.)\nTu as raison. (You are right — idiom with avoir.)\nIl a vingt ans. (He is twenty years old — idiom with avoir.)\nNous avons du pain. (We have some bread.)\nVous avez peur. (You are afraid — idiom with avoir.)\nIls ont fini. (They have finished — compound tense with avoir.)"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Conjugate the verb.",
+      "items": [
+        { "prompt": "être: je ?", "answer": "suis" },
+        { "prompt": "être: nous ?", "answer": "sommes" },
+        { "prompt": "être: ils ?", "answer": "sont" },
+        { "prompt": "avoir: j' ?", "answer": "ai" },
+        { "prompt": "avoir: vous ?", "answer": "avez" },
+        { "prompt": "avoir: elles ?", "answer": "ont" },
+        { "prompt": "Which two verbs are auxiliary verbs in French?", "answer": "être and avoir" }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Verbs to practice",
+      "instructions": "Conjugate each verb aloud in all six persons.",
+      "words": [
+        { "french": "être", "transliteration": null, "gloss": "to be", "audio": "/paideia/audio/french/words/etre-conj.mp3" },
+        { "french": "avoir", "transliteration": null, "gloss": "to have", "audio": "/paideia/audio/french/words/avoir-conj.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.8 covers subject pronouns in detail: je, tu, il, elle, nous, vous, ils, elles. The tu/vous distinction."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can conjugate être and avoir in the present tense without error.",
+    "credit_minutes": 55
+  }
+}

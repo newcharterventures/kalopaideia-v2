@@ -1,0 +1,37 @@
+{
+  "id": "3.12",
+  "stage": 3,
+  "title": "The Plusquamperfekt",
+  "subtitle": "Ich hatte gespielt. Ich war gegangen. Pluperfect.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Master The Plusquamperfekt"
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Lesson overview",
+      "body": "Ich hatte gespielt. Ich war gegangen. Pluperfect.\n\nFull content with prose openers (real German examples from Goethe/Schiller/Heine), paradigm tables for declensions/conjugations (plain-text aligned), self_check, reading_preview, next_lesson."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test mastery.",
+      "items": [
+        {
+          "prompt": "Core of The Plusquamperfekt?",
+          "answer": "Ich hatte gespielt. Ich war gegangen. Pluperfect."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 3.2 continues Stage 3."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Complete when The Plusquamperfekt is mastered.",
+    "credit_minutes": 55
+  }
+}

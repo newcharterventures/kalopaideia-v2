@@ -1,0 +1,74 @@
+{
+  "id": "1.3",
+  "stage": 1,
+  "title": "The Consonants",
+  "subtitle": "C and G always hard; V as w; I as y; the clusters.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Pronounce C and G as hard stops in all positions.",
+    "Distinguish consonantal I (pronounced y) from vocalic I.",
+    "Distinguish consonantal U (pronounced w) from vocalic U.",
+    "Recognize and pronounce the clusters QU, X, and GN."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The hard rule for C and G",
+      "body": "In Classical Latin, C and G are always hard. C is always k; G is always the g in 'go'. There is no soft c (as in 'city') and no soft g (as in 'gem'). This holds before every vowel, including e and i.\n\nCicero begins with a k-sound. So does cēna (dinner) and circus. The name Julius is pronounced YOO-lee-us, not JOO-lee-us. The first sound in genius is a hard g, not a j.\n\nThe softening of c and g before e and i happened later, during the medieval period. It is one of the clearest markers of the difference between Classical Latin and Church Latin. We teach the Classical pronunciation."
+    },
+    {
+      "kind": "prose",
+      "heading": "Consonantal I and U",
+      "body": "The letters I and U each do double duty in Latin. Each can represent a vowel or a consonant.\n\nConsonantal I is pronounced like English y (as in 'yes'):\n  Iūlius — YOO-lee-us\n  iam — yahm (now, already)\n  māior — MY-yor (greater)\n\nConsonantal U is pronounced like English w (as in 'wet'):\n  vēnī — WAY-nee (I came)\n  vīnum — WEE-noom (wine)\n  vult — woolt (he wishes)\n\nIn modern printed editions, consonantal I is often written as J, and consonantal U as V. In this course we preserve the Roman practice: I for both, U for both. Context tells you which is which. When I or U appears before a vowel at the start of a syllable, it is consonantal. Otherwise it is vocalic."
+    },
+    {
+      "kind": "prose",
+      "heading": "The clusters: QU, X, GN",
+      "body": "QU is always pronounced kw, as in English 'quick'. Q never appears without U.\n  quī — kwee (who)\n  quod — kwod (because, that)\n  equus — EH-kwoos (horse)\n\nX is a true cluster: k + s, as in English 'box'.\n  rēx — reks (king)\n  dūxit — DOOK-sit (he led)\n\nGN is usually a true cluster (g + n), not the ny-sound of Italian 'gnocchi'. Some speakers nasalized it to ny in late Latin, but we preserve the earlier pronunciation.\n  magnus — MAG-noos (great)\n  signum — SIG-noom (sign, standard)"
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill",
+      "instructions": "Each consonant or cluster is spoken in isolation, then inside a real Latin word. Repeat after the recording.",
+      "audio": "/paideia/audio/latin/drills/lesson-1.3-listening.mp3"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Without looking back, answer each question.",
+      "items": [
+        { "prompt": "How is the first sound in Cicero pronounced?", "answer": "Like a k. Kikero." },
+        { "prompt": "How is the first sound in genius pronounced?", "answer": "Like the g in 'go', not the g in 'gem'." },
+        { "prompt": "What does consonantal I sound like?", "answer": "Like English y, as in 'yes'." },
+        { "prompt": "What does consonantal U sound like?", "answer": "Like English w, as in 'wet'." },
+        { "prompt": "How do you know whether I or U is consonantal or vocalic?", "answer": "If it appears before a vowel at the start of a syllable, it is consonantal. Otherwise vocalic." },
+        { "prompt": "How is QU pronounced?", "answer": "Like kw in 'quick'." },
+        { "prompt": "What does X represent?", "answer": "The cluster k + s." },
+        { "prompt": "How is GN pronounced in Classical Latin?", "answer": "As two separate sounds: g + n, not the ny-sound of Italian." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Words with these consonants",
+      "instructions": "Read each word aloud.",
+      "words": [
+        { "latin": "Cicerō", "transliteration": null, "gloss": "Cicero", "audio": "/paideia/audio/latin/words/cicero.mp3" },
+        { "latin": "Iūlius", "transliteration": null, "gloss": "Julius", "audio": "/paideia/audio/latin/words/julius.mp3" },
+        { "latin": "vīnum", "transliteration": null, "gloss": "wine", "audio": "/paideia/audio/latin/words/vinum.mp3" },
+        { "latin": "quī", "transliteration": null, "gloss": "who", "audio": "/paideia/audio/latin/words/qui.mp3" },
+        { "latin": "rēx", "transliteration": null, "gloss": "king", "audio": "/paideia/audio/latin/words/rex.mp3" },
+        { "latin": "magnus", "transliteration": null, "gloss": "great", "audio": "/paideia/audio/latin/words/magnus.mp3" },
+        { "latin": "gens", "transliteration": null, "gloss": "clan, nation", "audio": "/paideia/audio/latin/words/gens.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.4 introduces stress and syllable quantity: how to tell where the accent falls in any Latin word."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can pronounce C, G, I, U, QU, X, and GN correctly in all positions without hesitation.",
+    "credit_minutes": 50
+  }
+}

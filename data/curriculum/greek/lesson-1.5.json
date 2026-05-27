@@ -1,0 +1,73 @@
+{
+  "id": "1.5",
+  "stage": 1,
+  "title": "The Pitch Accent",
+  "subtitle": "Acute, grave, circumflex — the music of the language.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Recognize the three accent marks: acute ( ́), grave ( ̀), circumflex ( ͂).",
+    "Understand that Greek accent is pitch (high or falling tone), not stress.",
+    "Pronounce accented syllables with a rising or falling pitch contour.",
+    "Observe the recessive accent in verbs and the persistent accent in nouns."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Pitch, not stress",
+      "body": "English accent is stress. When you say the word record as a noun, you put more loudness on the first syllable: REcord. When you say it as a verb, you put more loudness on the second: reCORD. The difference is volume and duration.\n\nGreek accent is pitch. An accented syllable in Greek is not louder; it is higher in pitch, or it rises and then falls. The difference is musical. The acute accent marks a high pitch or a rising pitch; the circumflex marks a rising-then-falling pitch on a single long vowel or diphthong; the grave is a contextual variant of the acute that appears when the word is followed immediately by another word without punctuation.\n\nFor a modern English speaker, this is the hardest part of Greek pronunciation to master. The good news is that you do not need to master it perfectly to read Greek. The accent marks are written in every printed text, and you can learn to see them and approximate the pitch contour even if your ear never fully internalizes the distinction."
+    },
+    {
+      "kind": "prose",
+      "heading": "The three accents",
+      "body": "The acute ( ́) marks a high pitch or a rising pitch. It can stand on any of the last three syllables of a word. λόγος has the acute on the first syllable.\n\nThe circumflex ( ͂ or ῀) marks a rising-then-falling pitch. It can only stand on a long vowel or diphthong, and it can only stand on one of the last two syllables. δῶρον has the circumflex on the first syllable. The circumflex signals that the vowel is long and that the pitch rises and falls within that one syllable.\n\nThe grave ( ̀) is a variant of the acute. When a word with an acute on its final syllable is followed by another word without intervening punctuation, the acute changes to a grave. καλὸς ἀνήρ (a good man): the acute on καλός becomes a grave because the next word follows immediately. The grave tells you to level the pitch instead of raising it."
+    },
+    {
+      "kind": "prose",
+      "heading": "Recessive and persistent accent",
+      "body": "Greek words follow two broad accent patterns.\n\nVerbs have recessive accent. The accent wants to be as far from the end of the word as the rules allow. λύομεν (we loose) has the accent on the first syllable; if a prefix is added, the accent moves: ἀπολύομεν (we release) still has the accent as far back as allowed.\n\nNouns have persistent accent. The accent stays on the syllable where it was in the nominative singular, as far as the rules allow. ἄνθρωπος (man, nominative) has the accent on the antepenult; ἀνθρώπου (genitive) has the accent on the penult, because the ultima is long and the three-syllable rule forbids an accent on the antepenult when the ultima is long. The accent persists on the same syllable in the word's internal count.\n\nThese rules will become second nature as you work through the declensions and conjugations. For now, just observe: verbs pull the accent back; nouns hold it in place."
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill",
+      "instructions": "A passage from Xenophon read aloud with exaggerated pitch accent. Listen for the rise and fall of pitch on the accented syllables. Then read the same passage aloud yourself, trying to imitate the pitch contours.",
+      "audio": "/paideia/audio/greek/drills/lesson-1.5-listening.mp3"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers. Answer each question.",
+      "items": [
+        { "prompt": "What is the difference between English accent and Greek accent?", "answer": "English accent is stress (loudness). Greek accent is pitch (rising or falling tone)." },
+        { "prompt": "What does the acute accent mark?", "answer": "A high pitch or a rising pitch." },
+        { "prompt": "What does the circumflex mark?", "answer": "A rising-then-falling pitch on a long vowel or diphthong." },
+        { "prompt": "When does the grave accent appear?", "answer": "When a word with an acute on its final syllable is followed immediately by another word without punctuation. The acute changes to grave." },
+        { "prompt": "Can the circumflex stand on a short vowel?", "answer": "No. The circumflex can only stand on a long vowel or diphthong." },
+        { "prompt": "What is recessive accent?", "answer": "Accent that wants to be as far from the end of the word as the rules allow. Verbs have recessive accent." },
+        { "prompt": "What is persistent accent?", "answer": "Accent that stays on the same syllable of the word across its inflected forms, as far as the rules allow. Nouns have persistent accent." },
+        { "prompt": "How many syllables from the end can an accent fall?", "answer": "At most three: ultima, penult, antepenult." },
+        { "prompt": "Which accent can only appear on one of the last two syllables?", "answer": "The circumflex." },
+        { "prompt": "Do you need perfect pitch to read Greek?", "answer": "No. Approximating the pitch contour is enough. The accent marks are always written, and you can learn to see and approximate them even if your ear never fully masters the pitch distinctions." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Words with different accents",
+      "instructions": "Read these aloud. Try to hear the pitch rise or fall on the accented syllable.",
+      "words": [
+        { "greek": "λόγος", "transliteration": "lógos", "gloss": "word, speech (acute on first syllable)", "audio": "/paideia/audio/greek/words/logos-accent.mp3" },
+        { "greek": "δῶρον", "transliteration": "dôron", "gloss": "gift (circumflex on first syllable)", "audio": "/paideia/audio/greek/words/doron-accent.mp3" },
+        { "greek": "καλὸς ἀνήρ", "transliteration": "kalòs anḗr", "gloss": "a good man (grave on καλός because ἀνήρ follows)", "audio": "/paideia/audio/greek/words/kalos-aner.mp3" },
+        { "greek": "ἄνθρωπος", "transliteration": "ánthrōpos", "gloss": "human being (acute on first syllable)", "audio": "/paideia/audio/greek/words/anthropos-accent.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.6 is your first sustained reading: fifty Greek proper names, from Homer, from history, from myth. You will read them aloud, applying everything you have learned about letters, breathings, diphthongs, and pitch. By the end of that lesson you will have the confidence to tackle any Greek text, because you will have already read the names that every Greek text contains."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can identify all three accent marks on sight and can read a short passage aloud with an approximation of pitch accent on each accented syllable.",
+    "credit_minutes": 60
+  }
+}

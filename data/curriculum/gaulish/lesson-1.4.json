@@ -1,0 +1,86 @@
+{
+  "id": "1.4",
+  "stage": 1,
+  "title": "The Lepontic Alphabet",
+  "subtitle": "The Etruscan-derived script of Cisalpine Gaul and the Prestino inscription.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Recognize the thirteen consonants and five vowels of the Lepontic alphabet.",
+    "Understand the Etruscan origin of Lepontic script.",
+    "Read Lepontic inscriptions left-to-right or right-to-left as context requires.",
+    "Translate the opening lines of the Prestino stone."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The oldest script",
+      "body": "Lepontic is the oldest alphabetic writing used for a Celtic language. The script appears in northern Italy — the territory of the Lepontii, a Celtic people centered around modern Como and the Alpine lakes — from the 7th or 6th century BCE until Roman conquest in the 2nd century BCE. The alphabet is Etruscan, adapted for Celtic phonology. The Etruscans, who dominated northern Italy before Rome, used a script derived from the western Greek alphabets; the Lepontii borrowed it and modified it for their language."
+    },
+    {
+      "kind": "letter_grid",
+      "heading": "The Lepontic letters",
+      "letters": [
+        { "upper": "𐌀", "lower": "𐌀", "name": "a", "ipa": "[a]", "audio": "/paideia/audio/gaulish/lepontic/a.mp3", "note": "From Etruscan A." },
+        { "upper": "𐌄", "lower": "𐌄", "name": "e", "ipa": "[e]", "audio": "/paideia/audio/gaulish/lepontic/e.mp3", "note": "From Etruscan E." },
+        { "upper": "𐌉", "lower": "𐌉", "name": "i", "ipa": "[i]", "audio": "/paideia/audio/gaulish/lepontic/i.mp3", "note": "From Etruscan I." },
+        { "upper": "𐌏", "lower": "𐌏", "name": "o", "ipa": "[o]", "audio": "/paideia/audio/gaulish/lepontic/o.mp3", "note": "From Etruscan O (via Greek omicron)." },
+        { "upper": "𐌖", "lower": "𐌖", "name": "u", "ipa": "[u]", "audio": "/paideia/audio/gaulish/lepontic/u.mp3", "note": "From Etruscan V." },
+        { "upper": "𐌐", "lower": "𐌐", "name": "p", "ipa": "[p]", "audio": "/paideia/audio/gaulish/lepontic/p.mp3", "note": "Rare in Celtic. From Etruscan P." },
+        { "upper": "𐌕", "lower": "𐌕", "name": "t", "ipa": "[t]", "audio": "/paideia/audio/gaulish/lepontic/t.mp3", "note": "From Etruscan T." },
+        { "upper": "𐌊", "lower": "𐌊", "name": "k", "ipa": "[k]", "audio": "/paideia/audio/gaulish/lepontic/k.mp3", "note": "Very common. From Etruscan K/C." },
+        { "upper": "𐌔", "lower": "𐌔", "name": "s", "ipa": "[s]", "audio": "/paideia/audio/gaulish/lepontic/s.mp3", "note": "From Etruscan S." },
+        { "upper": "𐌌", "lower": "𐌌", "name": "m", "ipa": "[m]", "audio": "/paideia/audio/gaulish/lepontic/m.mp3", "note": "From Etruscan M." },
+        { "upper": "𐌍", "lower": "𐌍", "name": "n", "ipa": "[n]", "audio": "/paideia/audio/gaulish/lepontic/n.mp3", "note": "From Etruscan N." },
+        { "upper": "𐌋", "lower": "𐌋", "name": "l", "ipa": "[l]", "audio": "/paideia/audio/gaulish/lepontic/l.mp3", "note": "From Etruscan L." },
+        { "upper": "𐌓", "lower": "𐌓", "name": "r", "ipa": "[r]", "audio": "/paideia/audio/gaulish/lepontic/r.mp3", "note": "From Etruscan R." }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "What Lepontic lacks",
+      "body": "Etruscan had no voiced stops (b, d, g) in its native phonology, so the Etruscan alphabet lacked distinct letters for them. Lepontic inherited this limitation. When a Lepontic inscription spells a word with 𐌐, we cannot always tell whether the sound was /p/ or /b/; the same for 𐌕 (/t/ or /d/) and 𐌊 (/k/ or /g/). Etymology and comparison with Greek- and Latin-script versions of the same names help us decide."
+    },
+    {
+      "kind": "prose",
+      "heading": "Direction of writing",
+      "body": "Lepontic inscriptions run left-to-right, right-to-left, or boustrophedon (alternating direction like an ox plowing a field). The earliest inscriptions tend to be right-to-left, following the Etruscan convention; later ones are left-to-right, under Roman influence. Letter orientation tells you the direction: letters face the beginning of the line."
+    },
+    {
+      "kind": "prose",
+      "heading": "The Prestino stone",
+      "body": "The Prestino inscription, found near Como in 1983, is one of the longest Lepontic texts. It dates to the late 2nd century BCE. The stone is a funerary stele. Here are the opening lines in Lepontic script, transliteration, and gloss:\n\nLepontic: 𐌖𐌅𐌀𐌌𐌏𐌊𐌏𐌆𐌉𐌔 𐌔𐌉𐌕𐌉𐌀𐌕𐌄𐌔 𐌐𐌄𐌓𐌉𐌕𐌄 𐌊𐌀𐌓𐌍𐌉𐌕𐌖 𐌀𐌓𐌀𐌊𐌖𐌉𐌀 𐌕𐌄𐌖𐌏𐌆𐌏𐌍𐌉𐌀\n\nTransliteration: UVAMOKOZIS SITIATES PERITE KARNITU ARAKUIA TEUZONIA\n\nGloss: Uvamokozis, son of Sitiates, lies here. Arakuia Teuzonia (names of dedicators, perhaps family members).\n\nParsing: UVAMOKOZIS (nom. sg., personal name), SITIATES (gen. sg., patronymic, \"of Sitiates\"), PERITE (verb, \"lies\" or \"is buried\"), KARNITU (particle or place-name?, meaning uncertain), ARAKUIA TEUZONIA (nom. sg., two names, possibly of those who set up the stone)."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers; check after.",
+      "items": [
+        { "prompt": "Where was Lepontic script used?", "answer": "Northern Italy, especially the territory of the Lepontii around Como and the Alpine lakes." },
+        { "prompt": "From which writing system is Lepontic derived?", "answer": "Etruscan, which itself comes from western Greek alphabets." },
+        { "prompt": "Why can we not always distinguish /p/ from /b/, /t/ from /d/, and /k/ from /g/ in Lepontic?", "answer": "Because Etruscan lacked voiced stops and the alphabet had no separate letters for them. Lepontic inherited this limitation." },
+        { "prompt": "How do we know the direction of a Lepontic inscription?", "answer": "The letters face the beginning of the line. If they face right, the text runs right-to-left; if they face left, left-to-right." },
+        { "prompt": "What does PERITE mean?", "answer": "\"Lies\" or \"is buried\" — a verb found in Lepontic funerary inscriptions." },
+        { "prompt": "When did Lepontic script fall out of use?", "answer": "After Roman conquest of Cisalpine Gaul in the 2nd century BCE. The latest Lepontic inscriptions date to around 100 BCE." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Lepontic names",
+      "instructions": "These personal names appear in Lepontic inscriptions. The letters are shown in modern transcription.",
+      "words": [
+        { "gaulish": "UVAMOKOZIS", "transliteration": null, "gloss": "Uvamokozis (personal name, etymology uncertain)", "audio": "/paideia/audio/gaulish/words/uvamokozis-word.mp3" },
+        { "gaulish": "SITIATES", "transliteration": null, "gloss": "Sitiates (personal name, perhaps \"the one who sows\")", "audio": "/paideia/audio/gaulish/words/sitiates.mp3" },
+        { "gaulish": "ARAKUIA", "transliteration": null, "gloss": "Arakuia (personal name, meaning uncertain)", "audio": "/paideia/audio/gaulish/words/arakuia.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.5 covers Gaulish phonology: the reconstructed vowel system, diphthongs, consonants, and accent. This is the sound system underlying all three scripts."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can identify Lepontic letters and read a Lepontic name aloud in modern transcription.",
+    "credit_minutes": 55
+  }
+}

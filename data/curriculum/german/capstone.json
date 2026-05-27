@@ -1,0 +1,292 @@
+{
+  "id": "stage-5-capstone",
+  "lang": "german",
+  "title": "The Kalopaideia German Examination",
+  "instructions": "Three hours, no notes for Part A; printed lexicon and grammar permitted for Part B. Honor code: you affirm by submitting that you used only permitted aids. A failed examination may be retaken after thirty days.",
+  "time_limit_minutes": 180,
+  "tracks_apply": ["track-poet", "track-philosopher", "track-novelist"],
+  "sections": [
+    {
+      "id": "A",
+      "title": "Part A — Sight Translation (no notes)",
+      "items": [
+        {
+          "id": "A1",
+          "type": "translate",
+          "points": 10,
+          "track": "track-poet",
+          "prompt_german": "Sagt es niemand, nur den Weisen, / Weil die Menge gleich verhöhnet.",
+          "prompt_en": "Translate this opening couplet from Goethe's 'Selige Sehnsucht' (West-östlicher Divan).",
+          "reference": [
+            "Tell it to no one, only to the wise, / For the crowd will mock at once",
+            "Tell no one, only the wise, / Because the crowd mocks immediately",
+            "Say it to no one, only to the wise, / For the multitude will ridicule it"
+          ],
+          "keywords": ["tell", "wise", "crowd", "mock"],
+          "threshold": 0.45
+        },
+        {
+          "id": "A2",
+          "type": "translate",
+          "points": 10,
+          "track": "track-poet",
+          "prompt_german": "Wer reitet so spät durch Nacht und Wind? / Es ist der Vater mit seinem Kind.",
+          "prompt_en": "Translate this opening couplet from Goethe's 'Erlkönig'.",
+          "reference": [
+            "Who rides so late through night and wind? / It is the father with his child",
+            "Who rides so late through night and wind? / It's the father with his child",
+            "Who is riding so late through night and wind? / It is the father with his child"
+          ],
+          "keywords": ["rides", "late", "night", "wind", "father", "child"],
+          "threshold": 0.5
+        },
+        {
+          "id": "A3",
+          "type": "translate",
+          "points": 10,
+          "track": "track-philosopher",
+          "prompt_german": "Als Zarathustra dreißig Jahre alt war, verließ er seine Heimat und den See seiner Heimat und ging in das Gebirge.",
+          "prompt_en": "Translate this opening sentence of Nietzsche's 'Also sprach Zarathustra', Vorrede §1.",
+          "reference": [
+            "When Zarathustra was thirty years old, he left his home and the lake of his home and went into the mountains",
+            "When Zarathustra turned thirty, he left his homeland and the lake of his homeland and went to the mountains",
+            "As Zarathustra was thirty years old, he left his home and the lake of his home and went into the mountains"
+          ],
+          "keywords": ["Zarathustra", "thirty", "left", "home", "lake", "mountains"],
+          "threshold": 0.5
+        },
+        {
+          "id": "A4",
+          "type": "translate",
+          "points": 10,
+          "track": "track-philosopher",
+          "prompt_german": "Gott ist tot! Gott bleibt tot! Und wir haben ihn getötet!",
+          "prompt_en": "Translate this famous line from Nietzsche.",
+          "reference": [
+            "God is dead! God remains dead! And we have killed him!",
+            "God is dead! God stays dead! And we have killed him!",
+            "God is dead! God is still dead! And we killed him!"
+          ],
+          "keywords": ["God", "dead", "killed"],
+          "threshold": 0.6
+        },
+        {
+          "id": "A5",
+          "type": "translate",
+          "points": 10,
+          "track": "track-novelist",
+          "prompt_german": "Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.",
+          "prompt_en": "Translate this opening sentence of Kafka's 'Die Verwandlung'.",
+          "reference": [
+            "When Gregor Samsa woke one morning from uneasy dreams, he found himself transformed in his bed into a monstrous vermin",
+            "As Gregor Samsa awoke one morning from troubled dreams, he found himself transformed in his bed into a gigantic insect",
+            "When Gregor Samsa woke up one morning from restless dreams, he found himself in his bed transformed into a huge bug"
+          ],
+          "keywords": ["Gregor Samsa", "woke", "morning", "dreams", "transformed", "vermin"],
+          "threshold": 0.45
+        },
+        {
+          "id": "A6",
+          "type": "translate",
+          "points": 10,
+          "track": "track-novelist",
+          "prompt_german": "Was ist mir geschehen?",
+          "prompt_en": "Translate Gregor's first thought after his transformation.",
+          "reference": [
+            "What has happened to me?",
+            "What happened to me?",
+            "What has become of me?"
+          ],
+          "keywords": ["what", "happened"],
+          "threshold": 0.7
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "title": "Part B — Parsing",
+      "items": [
+        {
+          "id": "B1",
+          "type": "parse",
+          "points": 5,
+          "prompt": "Parse the form *sagte*. Give: person, number, tense, mood, voice, infinitive.",
+          "answer": ["third", "singular", "Präteritum", "indicative", "active", "sagen"]
+        },
+        {
+          "id": "B2",
+          "type": "parse",
+          "points": 5,
+          "prompt": "Parse the form *hätte*. Give: person, number, tense, mood, voice, infinitive.",
+          "answer": ["first or third", "singular", "Präteritum", "Konjunktiv II", "active", "haben"]
+        },
+        {
+          "id": "B3",
+          "type": "parse",
+          "points": 5,
+          "prompt": "Parse the noun form *des Mannes*. Give: case, number, gender, nominative singular.",
+          "answer": ["genitive", "singular", "masculine", "der Mann"]
+        },
+        {
+          "id": "B4",
+          "type": "parse",
+          "points": 5,
+          "prompt": "Parse the form *wurde*. Give: person, number, tense, mood, voice, infinitive.",
+          "answer": ["third", "singular", "Präteritum", "indicative", "active", "werden"]
+        },
+        {
+          "id": "B5",
+          "type": "parse",
+          "points": 5,
+          "prompt": "Parse the adjective *guten* in the phrase *den guten Mann*. Give: case, number, gender, declension type (strong/weak/mixed).",
+          "answer": ["accusative", "singular", "masculine", "weak"]
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "title": "Part C — Composition (English → German)",
+      "items": [
+        {
+          "id": "C1",
+          "type": "compose",
+          "points": 8,
+          "prompt": "Render in German: 'The man is old.'",
+          "reference": [
+            "Der Mann ist alt",
+            "Der Mann ist alt."
+          ],
+          "keywords": ["Mann", "ist", "alt"],
+          "threshold": 0.7
+        },
+        {
+          "id": "C2",
+          "type": "compose",
+          "points": 8,
+          "prompt": "Render in German: 'I see the book.'",
+          "reference": [
+            "Ich sehe das Buch",
+            "Ich sehe das Buch."
+          ],
+          "keywords": ["Ich", "sehe", "Buch"],
+          "threshold": 0.7
+        },
+        {
+          "id": "C3",
+          "type": "compose",
+          "points": 9,
+          "prompt": "Render in German: 'The woman gives the child a book.'",
+          "reference": [
+            "Die Frau gibt dem Kind ein Buch",
+            "Die Frau gibt dem Kind ein Buch.",
+            "Die Frau gibt ein Buch dem Kind"
+          ],
+          "keywords": ["Frau", "gibt", "Kind", "Buch"],
+          "threshold": 0.6
+        },
+        {
+          "id": "C4",
+          "type": "compose",
+          "points": 9,
+          "prompt": "Render in German: 'If I had time, I would come.'",
+          "reference": [
+            "Wenn ich Zeit hätte, würde ich kommen",
+            "Wenn ich Zeit hätte, würde ich kommen.",
+            "Wenn ich Zeit hätte, käme ich"
+          ],
+          "keywords": ["Wenn", "Zeit", "hätte", "würde", "kommen"],
+          "threshold": 0.55
+        },
+        {
+          "id": "C5",
+          "type": "compose",
+          "points": 9,
+          "prompt": "Render in German: 'The book was read by the student.' (passive voice)",
+          "reference": [
+            "Das Buch wurde vom Studenten gelesen",
+            "Das Buch wurde vom Studenten gelesen.",
+            "Das Buch wurde von dem Studenten gelesen"
+          ],
+          "keywords": ["Buch", "wurde", "gelesen", "Studenten"],
+          "threshold": 0.55
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "title": "Part D — Multiple Choice (vocabulary and idiom)",
+      "items": [
+        {
+          "id": "D1",
+          "type": "mcq",
+          "points": 2,
+          "prompt": "What does *Sehnsucht* mean?",
+          "choices": ["longing/yearning", "happiness", "fear", "anger"],
+          "answer": "longing/yearning"
+        },
+        {
+          "id": "D2",
+          "type": "mcq",
+          "points": 2,
+          "prompt": "What does *verwandeln* mean?",
+          "choices": ["to transform", "to travel", "to sleep", "to speak"],
+          "answer": "to transform"
+        },
+        {
+          "id": "D3",
+          "type": "mcq",
+          "points": 2,
+          "prompt": "What case does the preposition *mit* govern?",
+          "choices": ["nominative", "accusative", "dative", "genitive"],
+          "answer": "dative"
+        },
+        {
+          "id": "D4",
+          "type": "mcq",
+          "points": 2,
+          "prompt": "Which auxiliary verb does *gehen* take in the present perfect?",
+          "choices": ["haben", "sein", "werden", "mögen"],
+          "answer": "sein"
+        },
+        {
+          "id": "D5",
+          "type": "mcq",
+          "points": 2,
+          "prompt": "What is the Konjunktiv II form of *sein* for the first-person singular?",
+          "choices": ["wäre", "sei", "bin", "war"],
+          "answer": "wäre"
+        },
+        {
+          "id": "D6",
+          "type": "mcq",
+          "points": 2,
+          "prompt": "In a two-way preposition phrase, which case indicates motion toward a place?",
+          "choices": ["nominative", "accusative", "dative", "genitive"],
+          "answer": "accusative"
+        },
+        {
+          "id": "D7",
+          "type": "mcq",
+          "points": 2,
+          "prompt": "What does *Ungeziefer* mean (Kafka's word for Gregor's new form)?",
+          "choices": ["vermin/bug", "monster", "ghost", "angel"],
+          "answer": "vermin/bug"
+        },
+        {
+          "id": "D8",
+          "type": "mcq",
+          "points": 2,
+          "prompt": "What is the past participle of *lesen*?",
+          "choices": ["gelest", "gelesen", "lest", "liest"],
+          "answer": "gelesen"
+        }
+      ]
+    }
+  ],
+  "scoring": {
+    "max_points": 100,
+    "pass_mark": 0.70,
+    "honors_mark": 0.85
+  },
+  "honor_code": "I attest that the answers I have entered are my own, composed without aid beyond the materials permitted for each section of this examination. I understand that this examination is graded automatically, that the script and my signed attestation will be permanently hashed on completion, and that a passing score will issue a permanent on-chain diploma in my name."
+}

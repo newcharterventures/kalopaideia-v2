@@ -1,0 +1,78 @@
+{
+  "id": "track-novelist",
+  "stage": 5,
+  "name": "The Novelist",
+  "subtitle": "Flaubert, Un Cœur Simple (entire, c. 12,000 words).",
+  "estimated_weeks": 20,
+  "rationale": "The most perfect short story in French. Prose at its highest pitch. Every sentence has been weighed. The student finishes the course having read a complete Flaubert tale.",
+  "learning_outcomes": [
+    "Read and translate Flaubert's Un Cœur Simple in its entirety.",
+    "Recognize the stylistic features of Flaubert's prose: free indirect discourse, precise observation, restraint.",
+    "Understand the narrative structure of a nineteenth-century French short story.",
+    "Translate any fifty-word passage from Un Cœur Simple at sight.",
+    "Discuss the literary character of Flaubert's style in writing."
+  ],
+  "texts": [
+    {
+      "author": "Gustave Flaubert",
+      "work": "Un Cœur Simple",
+      "selections": "Complete text",
+      "word_count": 12000,
+      "notes": "Un Cœur Simple is the story of Félicité, a servant woman whose life is marked by loss and devotion. Flaubert's prose is restrained, precise, and deeply humane. The student will encounter free indirect discourse, the imparfait and passé composé in sustained narrative, and the vocabulary of domestic life in nineteenth-century France."
+    }
+  ],
+  "weekly_reading_plan": [
+    {"week": 1, "reading": "Chapter I: Opening, Félicité's arrival", "pages": "1–10"},
+    {"week": 2, "reading": "Chapter I: Félicité's character and work", "pages": "10–20"},
+    {"week": 3, "reading": "Chapter II: Félicité's youth, Théodore", "pages": "20–30"},
+    {"week": 4, "reading": "Chapter II: The betrayal", "pages": "30–40"},
+    {"week": 5, "reading": "Chapter III: Paul and Virginie, Félicité's devotion", "pages": "40–50"},
+    {"week": 6, "reading": "Chapter III: The bull incident", "pages": "50–60"},
+    {"week": 7, "reading": "Chapter IV: Victor's departure and death", "pages": "60–70"},
+    {"week": 8, "reading": "Chapter IV: Virginie's death", "pages": "70–80"},
+    {"week": 9, "reading": "Chapter V: Loulou the parrot", "pages": "80–90"},
+    {"week": 10, "reading": "Chapter V: Loulou's death and preservation", "pages": "90–100"},
+    {"week": 11, "reading": "Chapter V: Félicité's final years", "pages": "100–110"},
+    {"week": 12, "reading": "Chapter V: The ending, Félicité's death", "pages": "110–120"},
+    {"week": 13, "reading": "Review: Chapters I–II", "pages": "varied"},
+    {"week": 14, "reading": "Review: Chapters III–IV", "pages": "varied"},
+    {"week": 15, "reading": "Review: Chapter V", "pages": "varied"},
+    {"week": 16, "reading": "Sight translation practice: selected passages", "pages": "varied"},
+    {"week": 17, "reading": "Capstone preparation: parsing drills", "pages": "varied"},
+    {"week": 18, "reading": "Capstone preparation: composition practice", "pages": "varied"},
+    {"week": 19, "reading": "Final review: complete re-reading", "pages": "1–120"},
+    {"week": 20, "reading": "Capstone examination", "pages": "varied"}
+  ],
+  "vocabulary_focus": [
+    "Domestic vocabulary: ménage (household), cuisine (kitchen), servante (maidservant)",
+    "Emotional vocabulary: dévouement (devotion), chagrin (sorrow), tendresse (tenderness)",
+    "Descriptive vocabulary: precise nouns for objects, colors, textures",
+    "Narrative vocabulary: adverbs of time, conjunctions linking events"
+  ],
+  "grammar_focus": [
+    "The imparfait versus passé composé in sustained narrative",
+    "Free indirect discourse (style indirect libre)",
+    "The pluperfect for actions completed before the main narrative",
+    "Descriptive and relative clauses"
+  ],
+  "sample_passages": [
+    {
+      "source": "Un Cœur Simple, Chapter I, opening",
+      "french": "Pendant un demi-siècle, les bourgeoises de Pont-l'Évêque envièrent à Mme Aubain sa servante Félicité.",
+      "english": "For half a century, the bourgeois women of Pont-l'Évêque envied Mme Aubain her servant Félicité.",
+      "notes": "The opening sentence. Note the imparfait 'envièrent' for a habitual past action. The phrase structure is characteristic of Flaubert: direct, precise, with no wasted words."
+    },
+    {
+      "source": "Un Cœur Simple, Chapter V, ending",
+      "french": "Elle crut voir, dans les cieux entr'ouverts, un perroquet gigantesque, planant au-dessus de sa tête.",
+      "english": "She believed she saw, in the half-open heavens, a gigantic parrot, hovering above her head.",
+      "notes": "The final sentence. The parrot Loulou, symbol of Félicité's devotion, appears in her dying vision. The passé simple 'crut' signals a completed, decisive moment. The present participle 'planant' gives the vision immediacy."
+    }
+  ],
+  "capstone_prep": {
+    "sight_translation": "Practice translating fifty-word passages from Un Cœur Simple without notes.",
+    "parsing": "Identify and parse verb tenses (imparfait, passé composé, pluperfect) in narrative passages.",
+    "composition": "Render five English sentences in French, using vocabulary and structures from Un Cœur Simple.",
+    "oral_component": "Prepare a one-hundred-word passage from Un Cœur Simple to read aloud. Answer five questions about its language and content."
+  }
+}

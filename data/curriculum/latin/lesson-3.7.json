@@ -1,0 +1,20 @@
+{
+  "id": "3.7",
+  "stage": 3,
+  "title": "The Fifth Declension",
+  "subtitle": "rēs, diēs, fidēs. The e-stems.",
+  "estimated_minutes": 45,
+  "objectives": ["Decline fifth-declension nouns.", "Recognize -ēs nominative singular as fifth-declension marker.", "Understand that most fifth-declension nouns are feminine."],
+  "sections": [
+    {"kind": "prose", "heading": "The fifth declension", "body": "Fifth-declension nouns end in -ēs. Most are feminine. Paradigm (rēs, reī — thing):\n\n  Sg: rēs, reī, reī, rem, rē\n  Pl: rēs, rērum, rēbus, rēs, rēbus\n\nCommon: rēs (thing, affair), diēs (day, m./f.), fidēs (faith, f.)."},
+    {"kind": "self_check", "heading": "Self-check", "items": [
+      {"prompt": "Decline diēs in singular.", "answer": "diēs, diēī, diēī, diem, diē"},
+      {"prompt": "Translate: rēs pūblica.", "answer": "The republic (public affair)."}
+    ]},
+    {"kind": "reading_preview", "heading": "Sentences", "words": [
+      {"latin": "fidēs magna est.", "transliteration": null, "gloss": "Faith is great.", "audio": "/paideia/audio/latin/sentences/3.7-1.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Lesson 3.8: third-declension adjectives. fortis, ingens."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can decline fifth-declension nouns.", "credit_minutes": 45}
+}

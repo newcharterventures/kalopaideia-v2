@@ -1,0 +1,37 @@
+{
+  "id": "3.14",
+  "stage": 3,
+  "title": "Modal Verbs",
+  "subtitle": "K\u00f6nnen, m\u00fcssen, d\u00fcrfen, sollen, wollen, m\u00f6gen + infinitive.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Master Modal Verbs"
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Lesson overview",
+      "body": "K\u00f6nnen, m\u00fcssen, d\u00fcrfen, sollen, wollen, m\u00f6gen + infinitive.\n\nFull content with prose openers (real German examples from Goethe/Schiller/Heine), paradigm tables for declensions/conjugations (plain-text aligned), self_check, reading_preview, next_lesson."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test mastery.",
+      "items": [
+        {
+          "prompt": "Core of Modal Verbs?",
+          "answer": "K\u00f6nnen, m\u00fcssen, d\u00fcrfen, sollen, wollen, m\u00f6gen + infinitive."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 3.2 continues Stage 3."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Complete when Modal Verbs is mastered.",
+    "credit_minutes": 55
+  }
+}

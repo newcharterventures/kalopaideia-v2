@@ -1,0 +1,68 @@
+{
+  "id": "2.6",
+  "stage": 2,
+  "title": "The Vercelli Stone Bilingual",
+  "subtitle": "Lepontic and Latin side by side — a funerary dedication parsed word for word.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Read the Lepontic text: AKANONETIVIS TANKINOM IUVINOM.",
+    "Read the Latin text: C. VALERIUS C. F. ATANIO.",
+    "Understand the dative case marking in both texts.",
+    "Parse the Lepontic words: AKANONETIVIS (personal name, dative), TANKINOM (\"to the deceased\"?), IUVINOM (\"to the youth\")."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Discovery and context",
+      "body": "The Vercelli stone is a funerary stele from Vercelli (Piedmont, northern Italy), dating to the late 2nd or early 1st century BCE. The stone is inscribed in both Lepontic script and Latin. The Lepontic text is carved above the Latin. This is one of the few bilingual inscriptions in Lepontic and Latin, and it gives us direct evidence for how Lepontic case endings correspond to Latin ones."
+    },
+    {
+      "kind": "prose",
+      "heading": "The Lepontic text",
+      "body": "Here is the Lepontic inscription in modern transcription:\n\nAKANONETIVIS\nTANKINOM\nIUVINOM\n\nTransliteration and parsing:\nAKANONETIVIS — dative singular, a personal name (\"to Akanonetivis\")\nTANKINOM — accusative or dative singular, possibly \"to the deceased\" or \"to the monument\" (root *tank-, meaning uncertain)\nIUVINOM — accusative or dative singular, \"to the youth\" or \"for the young man\" (cognate with Latin iuvenis)\n\nThe text is a dedication. Someone set up this stone for Akanonetivis, described as a youth (IUVINOM)."
+    },
+    {
+      "kind": "prose",
+      "heading": "The Latin text",
+      "body": "Here is the Latin inscription:\n\nC. VALERIUS C. F.\nATANIO\n\nTransliteration and parsing:\nC. VALERIUS — nominative, \"Gaius Valerius\" (the dedicator, a Roman or Romanized Gaul)\nC. F. — abbreviation, \"Gai filius\" (\"son of Gaius\")\nATANIO — dative singular, \"to Atanius\" (the deceased, a Latinized form of a Celtic name?)\n\nThe Latin tells us that Gaius Valerius, son of Gaius, set up this stone to Atanius. The Lepontic text gives the Celtic name (AKANONETIVIS) and description (IUVINOM, \"youth\")."
+    },
+    {
+      "kind": "prose",
+      "heading": "What the bilingual tells us",
+      "body": "The Vercelli stone shows us that:\n\n1. AKANONETIVIS (Lepontic) = ATANIO (Latin). The same person, two names. The Lepontic name is the native Celtic form; the Latin name is a shortened or Romanized version.\n\n2. The Lepontic dative singular ending -VIS corresponds to the Latin dative -O. This confirms that Lepontic (and Gaulish) used a different set of case endings but marked the same grammatical functions.\n\n3. Bilingualism was common. A Romanized Gaul like Gaius Valerius could commission an inscription in both scripts, honoring both traditions."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers; check after.",
+      "items": [
+        { "prompt": "Where and when was the Vercelli stone found?", "answer": "Vercelli (Piedmont, northern Italy), late 2nd or early 1st century BCE." },
+        { "prompt": "What two scripts appear on the Vercelli stone?", "answer": "Lepontic and Latin." },
+        { "prompt": "What does AKANONETIVIS mean?", "answer": "A personal name in the dative singular (\"to Akanonetivis\")." },
+        { "prompt": "What does IUVINOM mean?", "answer": "\"To the youth\" or \"for the young man\" (cognate with Latin iuvenis)." },
+        { "prompt": "Who set up the Vercelli stone?", "answer": "Gaius Valerius, son of Gaius, a Roman or Romanized Gaul." },
+        { "prompt": "What is the relationship between AKANONETIVIS and ATANIO?", "answer": "They are the same person: AKANONETIVIS is the native Celtic name, ATANIO is the Latinized form." },
+        { "prompt": "What does the bilingual inscription tell us about Lepontic case endings?", "answer": "That Lepontic dative -VIS corresponds to Latin dative -O, showing the two languages marked the same grammatical functions with different endings." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Vercelli vocabulary",
+      "instructions": "These are the Lepontic words from the Vercelli stone. Memorize them.",
+      "words": [
+        { "gaulish": "AKANONETIVIS", "transliteration": null, "gloss": "to Akanonetivis (personal name, dative)", "audio": "/paideia/audio/gaulish/vercelli/akanonetiuis.mp3" },
+        { "gaulish": "TANKINOM", "transliteration": null, "gloss": "to the deceased(?), to the monument(?)", "audio": "/paideia/audio/gaulish/vercelli/tankinom.mp3" },
+        { "gaulish": "IUVINOM", "transliteration": null, "gloss": "to the youth, for the young man", "audio": "/paideia/audio/gaulish/vercelli/iuuinom.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.7 begins reading funerary inscriptions from Gaul proper: the formulae ANDEDASETI (\"he set up\"), MARKOM (\"horse\"), MONI (\"memorial\"), and five complete epitaphs from Autun, Alise-Sainte-Reine, and Saint-Marcel."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can read both the Lepontic and Latin texts of the Vercelli stone and explain the correspondence between AKANONETIVIS and ATANIO.",
+    "credit_minutes": 60
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "4.1",
+  "stage": 4,
+  "title": "The Present and Imperfect Subjunctive",
+  "subtitle": "amem / amārem. The marker vowels.",
+  "estimated_minutes": 55,
+  "objectives": ["Form present subjunctive with -e- (1st) or -ā- (others).", "Form imperfect subjunctive from infinitive + personal endings.", "Translate subjunctive mood as 'may', 'might', 'would', or 'should'.", "Understand subjunctive as the mood of possibility, wish, or uncertainty."],
+  "sections": [
+    {"kind": "prose", "heading": "The subjunctive mood", "body": "The subjunctive expresses possibility, wish, purpose, doubt, or hypothetical action.\n\nPresent subjunctive:\n  1st: amem, amēs, amet, amēmus, amētis, ament (marker: -e-)\n  2nd/3rd/4th: moneam, regam, audiam (marker: -ā-, -ā-, -iā-)\n\nImperfect subjunctive: infinitive + -m, -s, -t, -mus, -tis, -nt:\n  amārem, amārēs, amāret, amārēmus, amārētis, amārent\n\nCicero writes: Utinam vīverem! — Would that I were living!"},
+    {"kind": "self_check", "heading": "Self-check", "items": [
+      {"prompt": "Conjugate laudō in present subjunctive.", "answer": "laudem, laudēs, laudet, laudēmus, laudētis, laudent"},
+      {"prompt": "Conjugate regō in imperfect subjunctive.", "answer": "regerem, regerēs, regeret, regerēmus, regerētis, regerent"}
+    ]},
+    {"kind": "reading_preview", "heading": "Sentences", "words": [
+      {"latin": "utinam veniat!", "transliteration": null, "gloss": "Would that he might come!", "audio": "/paideia/audio/latin/sentences/4.1-1.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Lesson 4.2: the perfect and pluperfect subjunctive. amāverim, amāvissem."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can form present and imperfect subjunctive.", "credit_minutes": 55}
+}

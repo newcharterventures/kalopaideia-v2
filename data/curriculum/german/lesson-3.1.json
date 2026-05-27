@@ -1,0 +1,37 @@
+{
+  "id": "3.1",
+  "stage": 3,
+  "title": "Weak Nouns",
+  "subtitle": "Der Junge \u2192 des Jungen. Nouns adding -n/-en in all cases except nom. sg.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Master Weak Nouns"
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Lesson overview",
+      "body": "Der Junge \u2192 des Jungen. Nouns adding -n/-en in all cases except nom. sg.\n\nFull content with prose openers (real German examples from Goethe/Schiller/Heine), paradigm tables for declensions/conjugations (plain-text aligned), self_check, reading_preview, next_lesson."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test mastery.",
+      "items": [
+        {
+          "prompt": "Core of Weak Nouns?",
+          "answer": "Der Junge \u2192 des Jungen. Nouns adding -n/-en in all cases except nom. sg."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 3.2 continues Stage 3."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Complete when Weak Nouns is mastered.",
+    "credit_minutes": 55
+  }
+}

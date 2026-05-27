@@ -1,0 +1,37 @@
+{
+  "id": "3.4",
+  "stage": 3,
+  "title": "Adjective Declension \u2014 Strong",
+  "subtitle": "After no article. Guter Wein \u2192 guten Wein.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Master Adjective Declension \u2014 Strong"
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Lesson overview",
+      "body": "After no article. Guter Wein \u2192 guten Wein.\n\nFull content with prose openers (real German examples from Goethe/Schiller/Heine), paradigm tables for declensions/conjugations (plain-text aligned), self_check, reading_preview, next_lesson."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test mastery.",
+      "items": [
+        {
+          "prompt": "Core of Adjective Declension \u2014 Strong?",
+          "answer": "After no article. Guter Wein \u2192 guten Wein."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 3.5 continues Stage 3."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Complete when Adjective Declension \u2014 Strong is mastered.",
+    "credit_minutes": 55
+  }
+}

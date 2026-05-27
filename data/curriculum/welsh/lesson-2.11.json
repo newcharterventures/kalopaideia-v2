@@ -1,0 +1,46 @@
+{
+  "id": "2.11",
+  "stage": 2,
+  "title": "Conjugated Prepositions",
+  "subtitle": "Ar, i, gan, o conjugate like verbs.",
+  "estimated_minutes": 60,
+  "objectives": ["Conjugate ar, i, gan (unique to Celtic).","Use conjugated prepositions in sentences."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers Conjugated Prepositions. Ar, i, gan, o conjugate like verbs."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Conjugate ar, i, gan (unique to Celtic)."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Conjugate ar, i, gan (unique to Celtic)." },
+        { "prompt": "How do you apply this in practice?", "answer": "Use conjugated prepositions in sentences." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "welsh": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/welsh/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on Conjugated Prepositions."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in Conjugated Prepositions to ten random examples.",
+    "credit_minutes": 60
+  }
+}

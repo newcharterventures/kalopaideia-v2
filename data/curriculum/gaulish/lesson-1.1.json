@@ -1,0 +1,71 @@
+{
+  "id": "1.1",
+  "stage": 1,
+  "title": "The Scripts of Gaul",
+  "subtitle": "Greek, Latin, and Lepontic — the three alphabets of continental Celtic epigraphy.",
+  "estimated_minutes": 40,
+  "objectives": [
+    "Distinguish the three scripts used for Gaulish inscriptions on sight.",
+    "Place each script in its geographic and chronological context.",
+    "Understand why the same language was written three different ways.",
+    "Read the abbreviation conventions used in Gaulish scholarship."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Three scripts for one language",
+      "body": "The Gauls left no native script. When they began writing their language in the centuries before Roman conquest, they borrowed the writing systems of their neighbors. In the south, the Greek colonists at Massalia (modern Marseille) had brought the Greek alphabet; in the north and center, contact with Rome introduced the Latin alphabet; and in the Alpine zone, the Lepontii — close kin to the Gauls — had adapted the Etruscan alphabet into what we now call Lepontic script. The same Gaulish word could be carved in three different alphabets depending on where and when the stone was set up."
+    },
+    {
+      "kind": "prose",
+      "heading": "The Greek-script zone",
+      "body": "Gaulish written in Greek letters appears in southern Gaul: the valley of the Rhône, the coast from Massalia to Antipolis (Antibes), and inland to Vaison-la-Romaine and Glanum. The inscriptions date from around 300 BCE to 50 BCE. Most are votive dedications to local Celtic gods, written by Gauls who had learned Greek from the merchants and settlers of Massalia. The letters are standard Greek capitals. The sounds are Gaulish."
+    },
+    {
+      "kind": "prose",
+      "heading": "The Latin-script zone",
+      "body": "Gaulish written in Latin letters appears everywhere Roman influence reached: central Gaul, northern Gaul, the Rhineland, and the upper Danube. The inscriptions date from around 100 BCE to 200 CE, long after Caesar's conquest. The Roman alphabet was easier to carve on stone and had official prestige. Most surviving Gaulish texts are in Latin script: the Coligny Calendar, the Larzac and Chamalières tablets, the funerary stones of Autun and Alise-Sainte-Reine."
+    },
+    {
+      "kind": "prose",
+      "heading": "The Lepontic zone",
+      "body": "Lepontic script appears in northern Italy and the adjacent Alpine valleys: the territories of the Lepontii, Insubres, and other Cisalpine Celtic peoples. The script itself predates Gaulish contact with Rome and Greece; the earliest Lepontic inscriptions date to the 7th or 6th century BCE. The alphabet is Etruscan, adapted for a Celtic language. Lepontic inscriptions are short: names, dedications, a few longer texts. The script fell out of use after Roman conquest of Cisalpine Gaul in the 2nd century BCE."
+    },
+    {
+      "kind": "prose",
+      "heading": "Why three scripts matter",
+      "body": "Each script tells us something about Gaulish phonology that the others do not. Greek had distinct letters for long and short e (epsilon vs. eta), which the Latin alphabet lacked. Latin had no letter for the Gaulish /u:/ sound, so Latin-script Gaulish used the digraph <ou>. Lepontic had no distinction between voiced and voiceless stops in its orthography, which obscures certain Gaulish contrasts. To reconstruct Gaulish pronunciation, we need all three traditions."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers; check after.",
+      "items": [
+        { "prompt": "Where was Gaulish written in Greek letters?", "answer": "Southern Gaul, especially the Rhône valley and the coast around Massalia (Marseille)." },
+        { "prompt": "Where was Gaulish written in Latin letters?", "answer": "Central and northern Gaul, the Rhineland, and the upper Danube — everywhere Roman influence reached." },
+        { "prompt": "Where was Lepontic script used?", "answer": "Northern Italy and the Alpine valleys, the territory of the Lepontii and Insubres." },
+        { "prompt": "Which script tradition is oldest?", "answer": "Lepontic, dating to the 7th or 6th century BCE. Greek-script Gaulish appears around 300 BCE; Latin-script Gaulish around 100 BCE." },
+        { "prompt": "Why do we need all three scripts to reconstruct Gaulish pronunciation?", "answer": "Each preserves distinctions the others do not. Greek marks vowel length; Latin <ou> signals /u:/; Lepontic shows archaic forms before Roman influence." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Sample inscriptions",
+      "instructions": "These are real Gaulish inscriptions in the three scripts. You cannot read them yet, but you can see the alphabets.",
+      "words": [
+        { "gaulish": "ΣΕΓΟΜΑΡΟΣ ΟΥΙΛΛΟΝΕΟΣ", "transliteration": "Segomaros Ouilloneos", "gloss": "Segomaros son of Ouillo — Greek-script dedication from Vaison", "audio": "/paideia/audio/gaulish/words/segomaros.mp3" },
+        { "gaulish": "ANDEVDOS SEGOMARI", "transliteration": "Andevdos Segomari", "gloss": "Andevdos of Segomarus — Latin-script funerary stone", "audio": "/paideia/audio/gaulish/words/andevdos.mp3" },
+        { "gaulish": "UVAMOKOZIS", "transliteration": "Uvamokozis", "gloss": "Personal name in Lepontic script from the Prestino stone", "audio": "/paideia/audio/gaulish/words/uvamokozis.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.2 covers the Greek-script inscriptions in detail: the twenty-four letters of the Massaliote alphabet, the sounds they represent, and a full reading of a votive inscription from Vaison-la-Romaine."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can identify which script a given Gaulish inscription is written in and place it geographically.",
+    "credit_minutes": 40
+  }
+}

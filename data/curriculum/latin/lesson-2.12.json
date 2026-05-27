@@ -1,0 +1,22 @@
+{
+  "id": "2.12",
+  "stage": 2,
+  "title": "The Third Declension — i-Stems",
+  "subtitle": "civis, mare, animal. Genitive plural -ium.",
+  "estimated_minutes": 50,
+  "objectives": ["Decline third-declension i-stem nouns in all cases.", "Recognize i-stem nouns by their genitive plural -ium.", "Distinguish i-stems from consonant stems.", "Translate sentences using i-stem nouns."],
+  "sections": [
+    {"kind": "prose", "heading": "The third declension: i-stems", "body": "Some third-declension nouns have an -i- that appears in certain forms. The main marker is the genitive plural: -ium instead of -um.\n\nParadigm: civis, civis (citizen, m./f.):\n\n          Singular    Plural\n  Nom.    civis       civēs\n  Gen.    civis       civium\n  Dat.    civī        civibus\n  Acc.    civem       civēs (or civīs)\n  Abl.    cive        civibus\n\nNeuter i-stems have -e nominative/accusative singular and -ia plural:\n  mare, maris (sea) → nominative/accusative plural: maria\n  animal, animālis (animal) → nominative/accusative plural: animālia\n\nCicero writes: cīvēs Rōmānī. — Roman citizens."},
+    {"kind": "self_check", "heading": "Self-check", "items": [
+      {"prompt": "What is the genitive plural of civis?", "answer": "civium (not civum)."},
+      {"prompt": "Decline mare (sea, n.) in the singular.", "answer": "mare, maris, marī, mare, marī"},
+      {"prompt": "What is the nominative/accusative plural of mare?", "answer": "maria."}
+    ]},
+    {"kind": "reading_preview", "heading": "Sentences with i-stems", "words": [
+      {"latin": "cīvēs urbem amant.", "transliteration": null, "gloss": "The citizens love the city.", "audio": "/paideia/audio/latin/sentences/2.12-1.mp3"},
+      {"latin": "maria magna sunt.", "transliteration": null, "gloss": "The seas are great.", "audio": "/paideia/audio/latin/sentences/2.12-2.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Lesson 2.13: reading sustained Latin from Familia Romana, capitula I–V."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can decline civis and mare and recognize i-stems by genitive plural -ium.", "credit_minutes": 50}
+}

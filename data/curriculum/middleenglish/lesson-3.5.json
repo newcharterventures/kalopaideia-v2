@@ -1,0 +1,43 @@
+{
+  "id": "3.5",
+  "stage": 3,
+  "title": "Chaucer's Meter and Rhyme",
+  "subtitle": "Iambic pentameter, heroic couplets.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Master Chaucer's Meter and Rhyme.",
+    "Read and translate authentic Middle English texts.",
+    "Prepare for the capstone examination."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "Iambic pentameter, rhyming couplets (heroic couplets). Enjambment rare; each couplet tends to close a thought. Caesura mid-line. Practice scansion on ten couplets. The meter is regular; the syntax flexible."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "Chaucer's Meter and Rhyme"
+        },
+        {
+          "prompt": "Can you apply this to reading?",
+          "answer": "Work through examples with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand Chaucer's Meter and Rhyme.",
+    "credit_minutes": 60
+  }
+}

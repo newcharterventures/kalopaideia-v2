@@ -1,0 +1,77 @@
+{
+  "id": "1.1",
+  "stage": 1,
+  "title": "The Alphabet and the Five Vowels",
+  "subtitle": "The twenty-one letters of Italian, plus the five vowels — a, e, i, o, u — and the open/closed distinction.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Recognize the twenty-one letters of the Italian alphabet.",
+    "Pronounce a, i, u (always the same); e and o (open vs. closed).",
+    "Distinguish the five foreign letters (j, k, w, x, y) used in loanwords.",
+    "Hear the difference between pèsca (peach) and pésca (fishing)."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The alphabet",
+      "body": "Italian has twenty-one letters. Five are vowels. Sixteen are consonants. The vowels carry more phonetic weight than in English: each is a distinct sound, each can be long or short (duration matters in poetry), and two (e and o) have open and closed variants.\n\nThe alphabet: a, b, c, d, e, f, g, h, i, l, m, n, o, p, q, r, s, t, u, v, z.\n\nFive foreign letters appear in loanwords: j (jazz), k (kiwi), w (whisky), x (taxi), y (yogurt). They are not counted in the traditional alphabet but you will see them."
+    },
+    {
+      "kind": "letter_grid",
+      "heading": "The seven vowel sounds",
+      "letters": [
+        { "letter": "a", "ipa": "[a]", "audio": "/paideia/audio/italian/vowels/a.mp3", "note": "Always open, like the a in father. casa, mamma." },
+        { "letter": "e (open)", "ipa": "[ɛ]", "audio": "/paideia/audio/italian/vowels/e-open.mp3", "note": "Like the e in bet. bène (well), sètte (seven)." },
+        { "letter": "e (closed)", "ipa": "[e]", "audio": "/paideia/audio/italian/vowels/e-closed.mp3", "note": "Like the e in they. mése (month), pésce (fish)." },
+        { "letter": "i", "ipa": "[i]", "audio": "/paideia/audio/italian/vowels/i.mp3", "note": "Always high, like the i in machine. mi, finire." },
+        { "letter": "o (open)", "ipa": "[ɔ]", "audio": "/paideia/audio/italian/vowels/o-open.mp3", "note": "Like the o in off. òggi (today), còsa (thing)." },
+        { "letter": "o (closed)", "ipa": "[o]", "audio": "/paideia/audio/italian/vowels/o-closed.mp3", "note": "Like the o in go. módo (manner), sólo (alone)." },
+        { "letter": "u", "ipa": "[u]", "audio": "/paideia/audio/italian/vowels/u.mp3", "note": "Always back, like the oo in boot. tu, uno." }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Open versus closed",
+      "body": "The distinction between open and closed e and o is not marked in standard Italian orthography. You learn it by ear, by region (northern Italy tends to close more vowels than Tuscany), and by etymology (Latin open vowels often stay open in Italian).\n\nA few minimal pairs: bòtte (barrel, open o) versus bótte (blows, closed o); pèsca (peach, open e) versus pésca (fishing, closed e). In connected speech the distinction softens; in formal recitation (poetry, opera, theater) it remains sharp."
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill",
+      "instructions": "Each vowel sound is spoken in isolation, then in a real Italian word. Listen first; repeat aloud.",
+      "audio": "/paideia/audio/italian/drills/lesson-1.1-vowels.mp3"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Without looking back, answer these.",
+      "items": [
+        { "prompt": "How many letters in the Italian alphabet?", "answer": "Twenty-one (plus five foreign letters in loanwords)." },
+        { "prompt": "Which three vowels are always pronounced the same way?", "answer": "a, i, u." },
+        { "prompt": "Which two vowels have open and closed variants?", "answer": "e and o." },
+        { "prompt": "How do you tell open from closed e or o in written Italian?", "answer": "You do not, in standard orthography. You learn by ear and by word." },
+        { "prompt": "Pronounce: casa, bène, pésce, mi, òggi, sólo, tu.", "answer": "[Audio check]" }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "First words",
+      "instructions": "Read these aloud. Check your pronunciation against the audio.",
+      "words": [
+        { "italian": "casa", "transliteration": null, "gloss": "house", "audio": "/paideia/audio/italian/words/casa.mp3" },
+        { "italian": "mamma", "transliteration": null, "gloss": "mother", "audio": "/paideia/audio/italian/words/mamma.mp3" },
+        { "italian": "bène", "transliteration": null, "gloss": "well", "audio": "/paideia/audio/italian/words/bene.mp3" },
+        { "italian": "pésce", "transliteration": null, "gloss": "fish", "audio": "/paideia/audio/italian/words/pesce.mp3" },
+        { "italian": "sole", "transliteration": null, "gloss": "sun", "audio": "/paideia/audio/italian/words/sole.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.2 covers the consonants: c and g (hard and soft), h (silent but phonetic), sc, gl, gn, and the clusters. After 1.2 you will be able to pronounce any printed Italian word."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can pronounce all seven vowel sounds without hesitation and distinguish pèsca from pésca by ear.",
+    "credit_minutes": 50
+  }
+}

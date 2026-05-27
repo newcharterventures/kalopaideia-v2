@@ -1,0 +1,240 @@
+{
+  "date": "2026-05-12",
+  "generated_at": "2026-05-12T11:00:01.508Z",
+  "languages": {
+    "greek": {
+      "word": "χρηστηρία",
+      "transliteration": "chrēstēria",
+      "pronunciation": "kray-STAY-ree-ah",
+      "ipa": "/kʰrɛːstɛːˈri.a/",
+      "part_of_speech": "noun, neut. pl.",
+      "meaning": "oracular responses; prophecies delivered by an oracle",
+      "forms": "Nominative/Accusative plural of χρηστήριον. Genitive: χρηστηρίων. Dative: χρηστηρίοις. Singular forms: χρηστήριον, χρηστηρίου, χρηστηρίῳ.",
+      "etymology": "From χράω/χρῄζω (to give an oracle, to declare) + instrumental suffix -τήριον denoting place or instrument of action. Related to χρή (it is necessary) and χρῆσθαι (to use, consult).",
+      "literary_context": "Herodotus uses χρηστήρια extensively throughout the Histories when discussing the oracles consulted before major decisions, particularly the Delphic pronouncements to Croesus and the Greeks before the Persian Wars.",
+      "usage_example": "τὰ χρηστήρια τοῦ θεοῦ ἀμφίβολα ἦν. — The oracular responses of the god were ambiguous.",
+      "did_you_know": "The ambiguity of χρηστήρια was proverbial in ancient Greece. The oracle told Croesus that if he attacked Persia he would destroy a great empire — which turned out to be his own.",
+      "tokens": {
+        "input_tokens": 763,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 439,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Ancient Greek"
+    },
+    "latin": {
+      "word": "nefārius",
+      "transliteration": "",
+      "pronunciation": "neh-FAH-ree-oos",
+      "ipa": "/neˈfaː.ri.us/",
+      "part_of_speech": "adjective",
+      "meaning": "wicked, abominable, impious, contrary to divine law",
+      "forms": "nefārius, -a, -um; comparative nefārior; superlative nefārissimus",
+      "etymology": "From nefās (that which is contrary to divine law, a crime against the gods), itself from ne- (not) + fās (divine law, what is permitted by the gods). The adjectival suffix -ārius creates the meaning 'characterized by nefās.'",
+      "literary_context": "Cicero employs nefārius repeatedly in his orations against Catiline, describing the conspiracy as a nefārium facinus (abominable crime). Sallust uses it in Bellum Catilinae to characterize the conspirators' designs against the state.",
+      "usage_example": "Quid tam nefārium quam cīvem in vincula dūcī? — What is so wicked as to lead a citizen into chains?",
+      "did_you_know": "While both nefandus and nefārius derive from nefās, nefandus emphasizes what cannot be spoken (from fārī, to speak), while nefārius emphasizes the quality of being characterized by impiety. Roman orators preferred nefārius for moral condemnation in legal and political contexts.",
+      "tokens": {
+        "input_tokens": 680,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 396,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Latin"
+    },
+    "french": {
+      "word": "gouffre",
+      "transliteration": "",
+      "pronunciation": "GOO-fruh",
+      "ipa": "/ɡufʁ/",
+      "part_of_speech": "noun, masc.",
+      "meaning": "abyss, chasm, gulf",
+      "forms": "singular: gouffre; plural: gouffres",
+      "etymology": "From Latin colpus 'blow, strike', from Greek κόλπος (kolpos) 'bosom, gulf'. The sense evolved from 'hollow' to 'deep cavity' to 'abyss'.",
+      "literary_context": "Baudelaire uses 'gouffre' repeatedly in Les Fleurs du mal, notably in the poem 'Le Gouffre' where Pascal's terror before the infinite abyss becomes a symbol of existential vertigo.",
+      "usage_example": "Pascal avait son gouffre, avec lui se mouvant. — Pascal had his abyss, moving with him.",
+      "did_you_know": "The word appears in Victor Hugo's maritime descriptions in Les Travailleurs de la mer, where the gouffre represents both the physical ocean depths and the metaphysical void that threatens to swallow human ambition.",
+      "tokens": {
+        "input_tokens": 647,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 311,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "French"
+    },
+    "german": {
+      "word": "Eigentlichkeit",
+      "transliteration": "",
+      "pronunciation": "EYE-gent-likh-kite",
+      "ipa": "ˈaɪɡn̩tlɪçkaɪt",
+      "part_of_speech": "noun, fem.",
+      "meaning": "authenticity; ownmost being; the state of existing genuinely as oneself",
+      "forms": "die Eigentlichkeit (nom. sing.); der Eigentlichkeit (gen. sing.); no plural commonly used",
+      "etymology": "From 'eigen' (own, proper) + '-tlich' (adjectival suffix) + '-keit' (noun-forming suffix denoting state or quality). Related to Middle High German 'eigen' and ultimately Proto-Germanic *aiganaz (possessed, owned).",
+      "literary_context": "Heidegger employs 'Eigentlichkeit' as a central concept in 'Sein und Zeit' (1927), contrasting it with 'Uneigentlichkeit' (inauthenticity) to describe modes of Dasein's relation to its own Being and possibilities.",
+      "usage_example": "Das Vorlaufen zum Tode ermöglicht die Eigentlichkeit des Daseins. — Running ahead toward death enables the authenticity of existence.",
+      "did_you_know": "Heidegger derived this term from the ordinary German word 'eigentlich' (actually, really), transforming it into a technical philosophical concept that captures the difference between living according to one's ownmost possibilities versus dissolving into the anonymous 'they' (das Man).",
+      "tokens": {
+        "input_tokens": 705,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 410,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "German"
+    },
+    "italian": {
+      "word": "disdegno",
+      "transliteration": "",
+      "pronunciation": "dees-DAY-nyoh",
+      "ipa": "/disˈdeɲɲo/",
+      "part_of_speech": "noun, masc.",
+      "meaning": "disdain, scorn, noble indignation",
+      "forms": "singular: disdegno; plural: disdegni. Related verb: disdegnare (to disdain, scorn).",
+      "etymology": "From Latin *disdignare* (intensive form of *dignari*, 'to deem worthy'), itself from *dignus* ('worthy'). The prefix *dis-* negates the root, yielding 'to consider unworthy.'",
+      "literary_context": "Central to Dante's Inferno, where Virgil explains that some souls are moved by *disdegno* (Canto VIII), and Farinata degli Uberti stands upright in his tomb as one 'che ebbe a disdegno' ('who held in disdain,' Canto X, line 36). Cavalcanti uses the term extensively in his stilnovist poetry to describe the proud resistance of the noble heart.",
+      "usage_example": "Farinata degli Uberti dimostrò gran disdegno per i suoi nemici anche nell'Inferno. — Farinata degli Uberti showed great disdain for his enemies even in Hell.",
+      "did_you_know": "Dante's famous phrase 'per disdegno' has been debated for centuries: does it refer to Guido Cavalcanti's disdain for Virgil as a pagan poet, or to someone else's rejection of divine grace? The ambiguity enriches one of the Commedia's most discussed tercets.",
+      "tokens": {
+        "input_tokens": 668,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 447,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Italian"
+    },
+    "oldenglish": {
+      "word": "hēafodweard",
+      "transliteration": "heafodweard",
+      "pronunciation": "HAY-ah-fod-WEH-ard",
+      "ipa": "ˈhɛːa.vod.wɛɑrd",
+      "part_of_speech": "noun, masc.",
+      "meaning": "head-guard, helmet, protector of the head",
+      "forms": "nom. sg. hēafodweard; gen. sg. hēafodweardes; nom. pl. hēafodweardas",
+      "etymology": "Compound of hēafod 'head' (from Proto-Germanic *haubudą) + weard 'guard, keeper' (from Proto-Germanic *warduz). The poetic kenning reflects the Anglo-Saxon fondness for compound formations describing warrior equipment.",
+      "literary_context": "This kenning appears in Beowulf to describe the helmets worn by warriors, exemplifying the poem's rich vocabulary for martial equipment and the compound-noun style characteristic of Germanic heroic verse.",
+      "usage_example": "Hēafodweard bær beorht searo. — He bore the bright-crafted helmet.",
+      "did_you_know": "Anglo-Saxon poetry contains dozens of kennings for helmet, each emphasizing different aspects: some stress protection (like hēafodweard), others highlight decoration or craftsmanship, revealing how central martial culture was to poetic imagination.",
+      "tokens": {
+        "input_tokens": 703,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 365,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Olde English"
+    },
+    "middleenglish": {
+      "word": "swich",
+      "transliteration": "",
+      "pronunciation": "SWICH (rhymes with 'which')",
+      "ipa": "/swɪtʃ/",
+      "part_of_speech": "adjective/pronoun",
+      "meaning": "such, of that kind",
+      "forms": "Invariable in form; used before nouns or as pronoun. Plural: swiche (though often unchanged).",
+      "etymology": "From Old English swilc, swylc (such), from Proto-Germanic *swa-līkaz (so-like). Compound of swa (so) + lic (like, body). Cognate with Dutch zulk, German solch.",
+      "literary_context": "Chaucer employs swich repeatedly in the Canterbury Tales, notably in the General Prologue describing the Prioress: 'She was so charitable and so pitous / She wolde wepe, if that she saugh a mous / Kaught in a trappe, if it were deed or bledde. / Of smale houndes hadde she that she fedde / With rosted flessh, or milk and wastel-breed. / But soore wepte she if oon of hem were deed, / Or if men smoot it with a yerde smerte; / And al was conscience and tendre herte. / Ful semyly hir wympul pynched was, / Hir nose tretys, hir eyen greye as glas, / Hir mouth ful smal, and therto softe and reed. / But sikerly she hadde a fair forheed; / It was almoost a spanne brood, I trowe; / For, hardily, she was nat undergrowe. / Ful fetys was hir cloke, as I was war. / Of smal coral aboute hire arm she bar / A peire of bedes, gauded al with grene, / And theron heng a brooch of gold ful sheene, / On which ther was first write a crowned A, / And after Amor vincit omnia.' The phrase 'swich another' appears frequently.",
+      "usage_example": "Nevere yet no vileynye ne sayde / In al his lyf unto no maner wight. / He was a verray, parfit gentil knyght. / But, for to tellen yow of his array, / His hors were goode, but he was nat gay. / Of fustian he wered a gypon / Al bismotered with his habergeon, / For he was late ycome from his viage, / And wente for to doon his pilgrymage. — Never yet did he say any villainy in all his life to any manner of person. He was a true, perfect gentle knight. But to tell you of his array, his horses were good, but he was not gaily dressed. He wore a tunic of coarse cloth all rust-stained from his coat of mail, for he had lately come from his voyage and went to do his pilgrimage.",
+      "did_you_know": "The word swich demonstrates a common Middle English phonological development where Old English -lc became -ch, paralleling the shift in which (OE hwilc) and ech/eche (OE ælc). This palatalization was complete by Chaucer's time, making swich the standard spelling throughout the fourteenth century.",
+      "tokens": {
+        "input_tokens": 669,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 816,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Middle English"
+    },
+    "welsh": {
+      "word": "cyfarwydd",
+      "transliteration": "",
+      "pronunciation": "kuh-VAR-with",
+      "ipa": "/kəˈvarwɪð/",
+      "part_of_speech": "noun, masc.; adjective",
+      "meaning": "skilled, experienced; a storyteller, guide, or one versed in lore",
+      "forms": "As noun: cyfarwydd (sg.), cyfarwyddiaid (pl.). As adjective: soft mutation after feminine singular noun (gyfarwydd).",
+      "etymology": "From cy- (together) + gwydd (knowledge, from Proto-Celtic *weidā). Cognate with Irish fios (knowledge). The compound originally meant 'possessing knowledge' and evolved to designate those who possessed traditional lore.",
+      "literary_context": "In Pedair Cainc y Mabinogi, the term appears in the opening formula where the narrator identifies as one who tells the tales: the cyfarwydd was the professional storyteller who preserved oral tradition in medieval Welsh courts.",
+      "usage_example": "Ef a oed gyfarwydd yn holl chwedleu y wlat. — He was skilled in all the tales of the land.",
+      "did_you_know": "The cyfarwydd held an official position in medieval Welsh society, equivalent to the Irish seanachie, responsible for memorizing genealogies, legends, and territorial knowledge. Their art was essential to both entertainment and legal testimony about boundaries and inheritance.",
+      "tokens": {
+        "input_tokens": 728,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 369,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Welsh"
+    },
+    "oldnorse": {
+      "word": "draugr",
+      "transliteration": "",
+      "pronunciation": "DROW-gr",
+      "ipa": "ˈdrɔuɣr",
+      "part_of_speech": "noun, masc.",
+      "meaning": "undead corpse, revenant that haunts its burial mound",
+      "forms": "nom. sg. draugr, acc. draug, gen. draugs, dat. draugi; nom. pl. draugar, acc. drauga, gen. drauga, dat. draugum",
+      "etymology": "From Proto-Norse *draugaʀ, from Proto-Germanic *draugaz (apparition, phantom). Related to Old English drēag (ghost), and the verb drjúga (to perform, endure). The root connects to notions of deceptive appearance and uncanny persistence.",
+      "literary_context": "The draugr appears prominently in Eyrbyggja saga, where the shepherd Þórólfr bægifótr rises from his grave to terrorize the living, growing larger and more malevolent. Grœnlendinga þáttr features the fierce draugr Þorgunna, whose corpse must be handled with elaborate ritual to prevent haunting.",
+      "usage_example": "Þá stóð draugrinn upp ór haugi sínum ok gekk at húsunum. — Then the draugr stood up from his mound and walked toward the houses.",
+      "did_you_know": "Unlike modern zombies, the Old Norse draugr possessed intelligence, supernatural strength, and the ability to change size or shape. Many sagas describe draugar as swelling to enormous proportions, and the only reliable method of stopping one was beheading, burning the body, and casting the ashes into the sea.",
+      "tokens": {
+        "input_tokens": 767,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 441,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Old Norse"
+    }
+  }
+}

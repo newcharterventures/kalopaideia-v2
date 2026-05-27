@@ -1,0 +1,77 @@
+{
+  "id": "2.1",
+  "stage": 2,
+  "title": "The Coligny Calendar, Part One",
+  "subtitle": "The longest Gaulish text — bronze, months, and a lunisolar system.",
+  "estimated_minutes": 65,
+  "objectives": [
+    "Understand the structure of the Coligny Calendar: sixteen columns, sixty-two months, five years.",
+    "Recognize the twelve month names and their meanings.",
+    "Translate the opening lines of SAMONIOS (the first month).",
+    "Distinguish MID (good days) from ANMID (not-good days)."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Discovery and date",
+      "body": "In November 1897, a farmer near Coligny (Ain, eastern France) uncovered fragments of a large bronze tablet while plowing his field. The fragments were pieced together: a calendar, 1.48 meters wide and 0.9 meters tall, inscribed with Gaulish text in Roman capitals. The calendar dates to the late 2nd century CE, but it records a pre-Roman timekeeping system. This is the longest Gaulish text that survives."
+    },
+    {
+      "kind": "prose",
+      "heading": "Structure of the calendar",
+      "body": "The Coligny Calendar is a lunisolar calendar: it tracks both the moon (lunar months of 29 or 30 days) and the sun (the solar year of 365.25 days). To keep the lunar months aligned with the seasons, the calendar intercalates extra months. The tablet records five years (sixty lunar months) plus two intercalary months, for a total of sixty-two months arranged in sixteen columns.\n\nEach month is divided into two halves: the bright half (from new moon to full moon) and the dark half (from full moon to new moon). The Gaulish year began in mid-autumn, with the month SAMONIOS."
+    },
+    {
+      "kind": "prose",
+      "heading": "The twelve month names",
+      "body": "The Coligny Calendar gives us the names of the twelve months of the Gaulish year. The names are seasonal or descriptive:\n\n1. SAMONIOS — \"summer-end\" or \"seed-fall\" (October–November)\n2. DVMANNIOS — \"dark half\" or \"smoke-time\" (November–December)\n3. RIVROS — \"cold\" or \"frost\" (December–January)\n4. ANAGANTIOS — \"staying-in\" or \"remaining-home\" (January–February)\n5. OGRONIOS — \"cold-time\" (February–March)\n6. CVTIOS — \"windy\" or \"stormy\"? (March–April)\n7. GIAMONIOS — \"winter-end\" or \"shoots\" (April–May)\n8. SIMIVISONNIOS — \"bright half\" or \"half-summer\" (May–June)\n9. EQVOS — \"horse\" (June–July)\n10. ELEMBIVIOS — \"deer-time\" or \"claim-time\" (July–August)\n11. EDRINIOS — \"heat\" or \"arbitration\"? (August–September)\n12. CANTLOS — \"song\" or \"incantation\"? (September–October)\n\nThese are reconstructed meanings; scholars disagree on several."
+    },
+    {
+      "kind": "prose",
+      "heading": "MID and ANMID",
+      "body": "Each day in the calendar is marked MID (\"good\") or ANMID (\"not-good\"). This is a binary lucky/unlucky system. On MID days, business, travel, and rituals were favorable. On ANMID days, they were not. The pattern of MID and ANMID varies by month and is not regular. The reasons are lost."
+    },
+    {
+      "kind": "prose",
+      "heading": "Reading SAMONIOS",
+      "body": "Here are the opening lines of the first month, SAMONIOS, from the Coligny Calendar:\n\nSAMONIOS\nTRINVX SAMO SINDIV\nD I MID\nD II MID\nD III ANMID\n[...]\n\nTransliteration and parsing:\nSAMONIOS — \"summer-end\", the name of the month (nominative)\nTRINVX SAMO SINDIV — \"three-night festival of Samo, today\"\nTRINVX = \"three-night\" (a festival lasting three nights)\nSAMO = abbreviation of SAMONIOS, the month\nSINDIV = \"today\"\nD = abbreviation of \"day\" (Latin dies borrowed into Gaulish)\nMID = \"good\"\nANMID = \"not-good\" (AN- is the negative prefix + MID)\n\nThe first three days of SAMONIOS: Day 1 is good, Day 2 is good, Day 3 is not good. The TRINVX SAMO festival begins on Day 1 and lasts three nights."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers; check after.",
+      "items": [
+        { "prompt": "When and where was the Coligny Calendar discovered?", "answer": "November 1897, near Coligny (Ain, eastern France)." },
+        { "prompt": "How many months does the calendar record?", "answer": "Sixty-two: sixty regular lunar months (five years' worth) plus two intercalary months." },
+        { "prompt": "What does SAMONIOS mean?", "answer": "\"Summer-end\" or \"seed-fall\", the first month of the Gaulish year (October–November)." },
+        { "prompt": "What is a lunisolar calendar?", "answer": "A calendar that tracks both the moon (lunar months) and the sun (solar year), using intercalation to keep them aligned." },
+        { "prompt": "What does MID mean?", "answer": "\"Good\" — a lucky or favorable day." },
+        { "prompt": "What does ANMID mean?", "answer": "\"Not-good\" — an unlucky or unfavorable day. AN- is the negative prefix." },
+        { "prompt": "What is TRINVX SAMO?", "answer": "\"Three-night festival of Samo\" — a festival at the start of the month SAMONIOS, lasting three nights." },
+        { "prompt": "Which month began the Gaulish year?", "answer": "SAMONIOS, in mid-autumn (October–November)." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "The month names",
+      "instructions": "Read each month name aloud. These will recur throughout Stage 2.",
+      "words": [
+        { "gaulish": "SAMONIOS", "transliteration": null, "gloss": "summer-end (Oct–Nov)", "audio": "/paideia/audio/gaulish/months/samonios.mp3" },
+        { "gaulish": "DVMANNIOS", "transliteration": null, "gloss": "dark half (Nov–Dec)", "audio": "/paideia/audio/gaulish/months/dumannios.mp3" },
+        { "gaulish": "RIVROS", "transliteration": null, "gloss": "cold (Dec–Jan)", "audio": "/paideia/audio/gaulish/months/rivros.mp3" },
+        { "gaulish": "GIAMONIOS", "transliteration": null, "gloss": "winter-end (Apr–May)", "audio": "/paideia/audio/gaulish/months/giamonios.mp3" },
+        { "gaulish": "EQVOS", "transliteration": null, "gloss": "horse (Jun–Jul)", "audio": "/paideia/audio/gaulish/months/equos.mp3" },
+        { "gaulish": "CANTLOS", "transliteration": null, "gloss": "song (Sep–Oct)", "audio": "/paideia/audio/gaulish/months/cantlos.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.2 covers the intercalary system: how the Coligny Calendar kept lunar and solar time synchronized, and a close reading of the intercalary month MID SAMONII."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can name all twelve months, translate TRINVX SAMO SINDIV, and distinguish MID from ANMID.",
+    "credit_minutes": 65
+  }
+}

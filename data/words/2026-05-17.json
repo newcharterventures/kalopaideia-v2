@@ -1,0 +1,240 @@
+{
+  "date": "2026-05-17",
+  "generated_at": "2026-05-17T11:00:01.240Z",
+  "languages": {
+    "greek": {
+      "word": "ἀπορρητος",
+      "transliteration": "aporrhētos",
+      "pronunciation": "ah-POR-ray-toss",
+      "ipa": "/a.ˈpor.rɛː.tos/",
+      "part_of_speech": "adjective",
+      "meaning": "forbidden to be spoken, secret, unspeakable",
+      "forms": "ἀπόρρητος, -ον; gen. ἀπορρήτου; comparative ἀπορρητότερος; superlative ἀπορρητότατος",
+      "etymology": "From ἀπο- (away, from) + ῥητός (spoken, from ῥέω/εἴρω, to speak). Literally: not to be spoken, what must not be uttered.",
+      "literary_context": "Herodotus uses ἀπόρρητα to describe the secret mysteries at Eleusis, whose rituals initiates were forbidden to reveal (Histories 2.171). Plato employs the term in Phaedo when discussing esoteric teachings.",
+      "usage_example": "τὰ ἀπόρρητα τῶν μυστηρίων οὐ θέμις λέγειν. — It is not lawful to speak the secret things of the mysteries.",
+      "did_you_know": "This word designated sacred knowledge in mystery religions, where violation of silence could result in death. The philosophical schools later adopted it for doctrines taught only to advanced students.",
+      "tokens": {
+        "input_tokens": 805,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 401,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Ancient Greek"
+    },
+    "latin": {
+      "word": "aemulātiō",
+      "transliteration": "",
+      "pronunciation": "eye-moo-LAH-tee-oh",
+      "ipa": "/ae̯.muˈlaː.ti.oː/",
+      "part_of_speech": "noun, fem., 3rd decl.",
+      "meaning": "rivalry, emulation, jealous imitation",
+      "forms": "nom. aemulātiō, gen. aemulātiōnis, dat. aemulātiōnī, acc. aemulātiōnem, abl. aemulātiōne",
+      "etymology": "From aemulor (to rival, emulate), itself from aemulus (rival, competing). The root carries both positive (striving to equal) and negative (envious rivalry) senses.",
+      "literary_context": "Cicero uses aemulātiō frequently in his philosophical works, notably in De Officiis where he distinguishes honorable emulation from base envy, and in the Pro Archia where he speaks of the aemulātiō that drives men to seek glory through virtue.",
+      "usage_example": "Aemulātiōne virtūtis incenduntur animi iuvenum. — The spirits of young men are inflamed by emulation of virtue.",
+      "did_you_know": "The semantic range of aemulātiō reveals Roman ambivalence about competition: it could mean noble striving to match excellence or petty jealousy, depending on context. This duality passed into English 'emulation' and 'jealousy' as separate descendants.",
+      "tokens": {
+        "input_tokens": 709,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 402,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Latin"
+    },
+    "french": {
+      "word": "verglas",
+      "transliteration": "",
+      "pronunciation": "vair-GLAH",
+      "ipa": "/vɛʁ.ɡla/",
+      "part_of_speech": "noun, masc.",
+      "meaning": "black ice; a thin coating of ice on surfaces",
+      "forms": "singular: verglas; no plural form (uncountable mass noun)",
+      "etymology": "From Old French verre (glass) + glas (ice), literally 'glass ice.' The term emerged in Middle French to describe the glassy, transparent layer of ice that forms on roads and surfaces.",
+      "literary_context": "Maupassant uses 'verglas' in his naturalist tales to evoke the treacherous Norman winter landscapes, particularly in describing the perilous country roads that mirror the moral dangers faced by his characters.",
+      "usage_example": "Les chevaux glissaient sur le verglas qui recouvrait la route. — The horses slipped on the black ice covering the road.",
+      "did_you_know": "The compound construction of verglas (glass + ice) reflects medieval observations of how this meteorological phenomenon creates a transparent, glass-like surface that conceals its danger, making it a potent metaphor in French literature for hidden perils and deceptive appearances.",
+      "tokens": {
+        "input_tokens": 665,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 320,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "French"
+    },
+    "german": {
+      "word": "Urfaust",
+      "transliteration": "",
+      "pronunciation": "OOR-fowst",
+      "ipa": "/ˈuːɐ̯faʊ̯st/",
+      "part_of_speech": "noun, masc.",
+      "meaning": "original Faust; primordial or earliest version of something",
+      "forms": "der Urfaust, des Urfaust(e)s, dem Urfaust(e), den Urfaust; plural rare",
+      "etymology": "From Ur- (prefix meaning 'original, primordial, proto-') + Faust (the character/work). The prefix Ur- derives from Germanic *uz-, *ur- 'out of, from' with sense of 'earliest, original.' Specifically coined to refer to Goethe's early manuscript version of Faust, discovered in 1887.",
+      "literary_context": "The Urfaust is Goethe's earliest draft of his Faust drama, written around 1772-1775 during his Sturm und Drang period, containing the Gretchen tragedy in its rawest form. This version was unknown until discovered among papers of Luise von Göchhausen decades after Goethe's death.",
+      "usage_example": "Der Urfaust zeigt Goethes jugendliche Kraft ohne die späteren philosophischen Überarbeitungen. — The Urfaust shows Goethe's youthful power without the later philosophical revisions.",
+      "did_you_know": "The term Urfaust has become a literary designation for any primitive or original version of a work, and the prefix Ur- itself became highly productive in German intellectual discourse, appearing in compounds like Urpflanze (Goethe's concept of the archetypal plant) and Heidegger's philosophical terminology.",
+      "tokens": {
+        "input_tokens": 730,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 457,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "German"
+    },
+    "italian": {
+      "word": "noia",
+      "transliteration": "",
+      "pronunciation": "NOY-ah",
+      "ipa": "/ˈnɔ.ja/",
+      "part_of_speech": "noun, fem.",
+      "meaning": "boredom, tedium, existential ennui",
+      "forms": "sing. noia; pl. noie. Also means 'troubles' or 'annoyances' in older usage.",
+      "etymology": "From Provençal enoia, from Latin in odio 'in hatred' (literally 'into hatred'). The Provençal form influenced Italian poetry through the troubadour tradition, shifting from 'hatred' to 'vexation' to 'tedium.'",
+      "literary_context": "Leopardi's 'A se stesso' confronts the noia at the heart of existence: the soul settles into final calm and desperate quietude after recognizing the infinite vanity of all things. His entire poetic system makes noia central to the human condition.",
+      "usage_example": "La noia m'opprime e mi consuma. — Boredom oppresses and consumes me.",
+      "did_you_know": "Leopardi elevated noia from simple boredom to a philosophical concept: the existential emptiness that follows once desire is exhausted and illusions are stripped away, making it a cornerstone of his cosmic pessimism.",
+      "tokens": {
+        "input_tokens": 688,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 346,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Italian"
+    },
+    "oldenglish": {
+      "word": "ellenwōdnes",
+      "transliteration": "ellenwodnes",
+      "pronunciation": "EL-len-WOOD-ness",
+      "ipa": "/ˈel.len.woːd.nes/",
+      "part_of_speech": "noun, fem.",
+      "meaning": "zeal, fervor, courageous ardor",
+      "forms": "nominative/accusative ellenwōdnes; genitive ellenwōdnesse; dative ellenwōdnesse",
+      "etymology": "From ellen ('courage, strength, zeal') + wōdnes ('madness, fury'), itself from wōd ('mad, furious') + -nes (abstract noun suffix). The compound suggests courage intensified to the point of inspired frenzy.",
+      "literary_context": "This compound appears in Juliana by Cynewulf, where the saint's zealous resistance to pagan persecution is described with terms of inspired religious fervor approaching battle-fury.",
+      "usage_example": "Hēo mid ellenwōdnesse Crīstes ġelēafan hēold. — She held Christ's faith with fervent zeal.",
+      "did_you_know": "The element wōdnes shares its root with Wōden (Odin), the god associated with divine frenzy and poetic inspiration, suggesting that Anglo-Saxon Christians repurposed the vocabulary of pagan ecstasy for describing religious devotion.",
+      "tokens": {
+        "input_tokens": 736,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 361,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Olde English"
+    },
+    "middleenglish": {
+      "word": "gentillesse",
+      "transliteration": "",
+      "pronunciation": "jen-til-ESS-uh",
+      "ipa": "/ˌdʒɛntɪˈlɛsə/",
+      "part_of_speech": "noun, fem.",
+      "meaning": "nobility of character, moral excellence, true gentility (distinct from mere noble birth)",
+      "forms": "singular: gentillesse; plural: gentillesses (rare); genitive: gentillesses",
+      "etymology": "From Old French gentillesse, from gentil 'noble, well-born' (Latin gentilis 'of the same clan'), with the abstract noun suffix -esse. Chaucer elevated the term to signify virtue independent of social rank.",
+      "literary_context": "Chaucer explores this concept extensively in the Wife of Bath's Tale, where the old hag lectures her knight that true gentillesse comes from virtuous deeds and God's grace, not ancestry. He also devoted an entire short poem, 'Gentilesse,' to the principle that nobility derives from virtue alone.",
+      "usage_example": "For gentillesse nys but renomee of thyne auncestres, for hire heigh bountee, which is a strange thyng to thy persone. — For nobility is but the renown of your ancestors, for their great goodness, which is a thing external to your person.",
+      "did_you_know": "Chaucer's treatment of gentillesse was radical for his time, arguing against the feudal assumption that noble birth guaranteed noble character. This democratic view of virtue influenced English moral philosophy for centuries.",
+      "tokens": {
+        "input_tokens": 687,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 394,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Middle English"
+    },
+    "welsh": {
+      "word": "llawenydd",
+      "transliteration": "",
+      "pronunciation": "hlau-EN-ith",
+      "ipa": "/ɬau̯ˈɛnɨð/",
+      "part_of_speech": "noun, masc.",
+      "meaning": "joy, gladness, exultation",
+      "forms": "plural llawenyddau; in Middle Welsh often appears as llavenyd or lavenit with orthographic variation",
+      "etymology": "From llawen 'glad, joyful' + the abstract suffix -ydd. The root llawen derives from Proto-Brythonic *lāwanos, cognate with Breton laouenn 'joy' and perhaps related to Latin laetus 'joyful'.",
+      "literary_context": "The word appears prominently in William Williams Pantycelyn's hymn 'Arglwydd, arwain trwy'r anialwch' where he writes of the believer's llawenydd in spiritual pilgrimage. Waldo Williams uses it in 'Mewn Dau Gae' when describing the joy of childhood friendship and shared labour.",
+      "usage_example": "Canu mewn llawenydd awnaeth y plant wrth weld yr eira cyntaf. — The children sang in joy upon seeing the first snow.",
+      "did_you_know": "The mutation of initial ll- to l- in compound forms reveals the word's ancient structure: the prefix go- (intensifying) creates golawenydd 'great joy', showing how Welsh phonology preserves traces of word formation invisible in the standard spelling.",
+      "tokens": {
+        "input_tokens": 753,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 403,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Welsh"
+    },
+    "oldnorse": {
+      "word": "gjallarhorn",
+      "transliteration": "",
+      "pronunciation": "GYAL-lar-horn",
+      "ipa": "/ˈɡjɑlːɑrˌhorn/",
+      "part_of_speech": "noun, neut.",
+      "meaning": "the resounding horn; specifically, Heimdallr's horn that signals the onset of Ragnarǫk",
+      "forms": "nom./acc. sg. gjallarhorn; gen. sg. gjallarhorns; dat. sg. gjallarhorni; nom./acc. pl. gjallarhorn. Strong neuter a-stem declension.",
+      "etymology": "Compound of gjalla (inf. of gjalla 'to yell, resound,' from Proto-Germanic *gellanan) + horn 'horn' (from Proto-Germanic *hurnan, PIE *ḱer- 'head, horn'). The first element is genitive singular of gjǫll f. 'loud noise, ringing sound.'",
+      "literary_context": "The gjallarhorn appears most prominently in Vǫluspá (stanza 46) where the vǫlva prophesies: 'Hátt blæss Heimdallr, horn er á lofti' ('Loud blows Heimdallr, the horn is aloft'). Snorri Sturluson's Gylfaginning (chapter 27) describes how Heimdallr keeps the horn beneath Yggdrasill and will blow it to summon the gods when the giants attack.",
+      "usage_example": "Heimdallr mun blása í gjallarhorn þá er óvinir koma. — Heimdallr will blow the gjallarhorn when enemies come.",
+      "did_you_know": "The horn's name derives from the river Gjǫll, one of the eleven rivers that flow from the spring Hvergelmir in Niflheimr. Some scholars suggest Heimdallr's hearing is said to be hidden under Yggdrasill near the horn, creating a parallel with Óðinn's eye sacrificed at Mímisbrunnr.",
+      "tokens": {
+        "input_tokens": 794,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 536,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Old Norse"
+    }
+  }
+}

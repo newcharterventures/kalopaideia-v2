@@ -1,0 +1,67 @@
+{
+  "id": "3.8",
+  "stage": 3,
+  "title": "The Third Declension — Vowel and σ-Stems",
+  "subtitle": "ἡ πόλις, ὁ βασιλεύς, τὸ γένος — lengthening and contraction.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Decline third-declension ι-stems, ευ-stems, and εσ-stems in all cases.",
+    "Recognize compensatory lengthening when σ drops between vowels.",
+    "Parse πόλις, βασιλεύς, and γένος on sight.",
+    "Understand the contraction patterns in neuter εσ-stems."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Vowel and σ-stems",
+      "body": "Some third-declension nouns have stems ending in vowels (ι, υ) or in sigma. The sigma often drops between vowels, and the resulting vowels contract or lengthen.\n\nπόλις (city) has the stem πολι-. βασιλεύς (king) has the stem βασιλευ-. γένος (race, kind) has the stem γενεσ-, but the σ drops in most forms.\n\nThese nouns show compensatory lengthening: when a consonant drops, the preceding vowel lengthens. ε + dropping σ + vowel often produces a long vowel or diphthong."
+    },
+    {
+      "kind": "prose",
+      "heading": "ι-stems: ἡ πόλις (city)",
+      "body": "Stem: πολι-\n              singular        plural\n  nominative  πόλις           πόλεις\n  genitive    πόλεως          πόλεων\n  dative      πόλει           πόλεσι(ν)\n  accusative  πόλιν           πόλεις\n  vocative    πόλι            πόλεις\n\nThe genitive and dative singular show lengthening: πόλι + ος → πόλεως (ι lengthens to ε + compensatory lengthening)."
+    },
+    {
+      "kind": "prose",
+      "heading": "ευ-stems: ὁ βασιλεύς (king)",
+      "body": "Stem: βασιλευ-\n              singular        plural\n  nominative  βασιλεύς        βασιλεῖς\n  genitive    βασιλέως        βασιλέων\n  dative      βασιλεῖ         βασιλεῦσι(ν)\n  accusative  βασιλέα         βασιλέας\n  vocative    βασιλεῦ         βασιλεῖς\n\nThe nominative plural contracts ευ + ες → εῖς. The accusative singular loses the υ: βασιλέα."
+    },
+    {
+      "kind": "prose",
+      "heading": "εσ-stems: τὸ γένος (race, kind)",
+      "body": "Stem: γενεσ- (the σ drops between vowels)\n              singular        plural\n  nominative  γένος           γένη\n  genitive    γένους          γενῶν\n  dative      γένει           γένεσι(ν)\n  accusative  γένος           γένη\n  vocative    γένος           γένη\n\nThe genitive singular γένους comes from γενεσ-ος → γενε(σ)ος → γένους (ε + ο contracts to ου). The nominative/accusative plural γένη comes from γενεσ-α → γένε(σ)α → γένη (ε + α contracts to η)."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Parse or answer.",
+      "items": [
+        { "prompt": "πόλεως", "answer": "genitive singular of πόλις" },
+        { "prompt": "βασιλέως", "answer": "genitive singular of βασιλεύς" },
+        { "prompt": "γένους", "answer": "genitive singular of γένος" },
+        { "prompt": "What is compensatory lengthening?", "answer": "When a consonant drops, the preceding vowel lengthens to compensate." },
+        { "prompt": "What happens to ε + ο when they contract?", "answer": "They produce ου." },
+        { "prompt": "What happens to ε + α when they contract?", "answer": "They produce η." },
+        { "prompt": "Translate: αἱ πόλεις", "answer": "the cities" }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Third-declension vowel stems in sentences",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "ἡ πόλις μεγάλη ἐστίν.", "transliteration": "hē pólis megálē estín.", "gloss": "The city is large.", "audio": "/paideia/audio/greek/sentences/polis-megale.mp3" },
+        { "greek": "ὁ βασιλεὺς ἄρχει.", "transliteration": "ho basileùs árkhei.", "gloss": "The king rules.", "audio": "/paideia/audio/greek/sentences/basileus-archei.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 3.9 introduces adjectives of the third declension: ἀληθής, εὐδαίμων, πᾶς. These adjectives follow third-declension patterns and can be mixed (third declension in masculine and neuter, first declension in feminine)."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can decline πόλις, βασιλεύς, and γένος from memory and can explain compensatory lengthening and contraction in these nouns.",
+    "credit_minutes": 60
+  }
+}

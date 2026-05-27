@@ -1,0 +1,67 @@
+{
+  "id": "3.5",
+  "stage": 3,
+  "title": "The First Aorist",
+  "subtitle": "ἔλυσα — the basic past tense for completed action.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Conjugate any regular ω-verb in the first aorist indicative active and middle.",
+    "Understand the aorist as the simple past tense for completed action.",
+    "Recognize the augment ἐ- and the sigma infix as the markers of the first aorist.",
+    "Distinguish aorist from imperfect by meaning: completed versus ongoing past action."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The aorist tense",
+      "body": "The aorist is the simple past tense. ἔλυσα means 'I loosed' or 'I freed'. The aorist expresses completed action in past time, without regard to duration. The imperfect expresses ongoing or repeated past action; the aorist expresses a single, completed past action.\n\nEnglish 'I was loosing' = Greek imperfect ἔλυον.\nEnglish 'I loosed' = Greek aorist ἔλυσα.\n\nThe aorist is formed with the augment ἐ-, the sigma infix (like the future), and a new set of endings called the secondary active endings."
+    },
+    {
+      "kind": "prose",
+      "heading": "The first aorist indicative active: ἔλυσα",
+      "body": "  singular\n  1st   ἔλυσα       I loosed\n  2nd   ἔλυσας      you loosed\n  3rd   ἔλυσε(ν)    he/she/it loosed\n\n  plural\n  1st   ἐλύσαμεν    we loosed\n  2nd   ἐλύσατε     you (plural) loosed\n  3rd   ἔλυσαν      they loosed\n\nThe endings are -α, -ας, -ε(ν), -αμεν, -ατε, -αν. These are the first aorist endings."
+    },
+    {
+      "kind": "prose",
+      "heading": "The first aorist indicative middle: ἐλυσάμην",
+      "body": "  singular\n  1st   ἐλυσάμην    I freed myself\n  2nd   ἐλύσω       you freed yourself\n  3rd   ἐλύσατο     he/she/it freed himself/herself/itself\n\n  plural\n  1st   ἐλυσάμεθα   we freed ourselves\n  2nd   ἐλύσασθε    you (plural) freed yourselves\n  3rd   ἐλύσαντο    they freed themselves\n\nThe endings are -άμην, -ω, -ατο, -άμεθα, -ασθε, -αντο."
+    },
+    {
+      "kind": "prose",
+      "heading": "From Xenophon",
+      "body": "Anabasis I.1.2: ἐγένετο πόλεμος.\n'War arose.' ἐγένετο is the aorist middle of γίγνομαι (I become). The aorist marks a single completed event: 'it came into being', 'it happened'."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Conjugate or answer.",
+      "items": [
+        { "prompt": "First person singular first aorist active of λύω", "answer": "ἔλυσα" },
+        { "prompt": "Third person singular first aorist active of λύω", "answer": "ἔλυσε(ν)" },
+        { "prompt": "Third person plural first aorist active of λύω", "answer": "ἔλυσαν" },
+        { "prompt": "First person singular first aorist middle of λύω", "answer": "ἐλυσάμην" },
+        { "prompt": "What is the difference between the aorist and the imperfect?", "answer": "Aorist: completed action. Imperfect: ongoing or repeated action." },
+        { "prompt": "Translate: ἔλυσα τοὺς αἰχμαλώτους.", "answer": "I freed the prisoners." },
+        { "prompt": "Translate: ἐλύσατο.", "answer": "He/she/it freed himself/herself/itself." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Aorist in sentences",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "ἔλυσα τοὺς αἰχμαλώτους.", "transliteration": "élysa toùs aichmalṓtous.", "gloss": "I freed the prisoners.", "audio": "/paideia/audio/greek/sentences/elysa-aichmalotous.mp3" },
+        { "greek": "ἐγένετο πόλεμος.", "transliteration": "egéneto pólemos.", "gloss": "War arose.", "audio": "/paideia/audio/greek/sentences/egeneto-polemos.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 3.6 introduces the second aorist. The second aorist is the strong aorist with thematic endings, learned as a separate stem. ἔλαβον (I took), ἦλθον (I came), εἶδον (I saw) are all second aorists. They do not have the sigma infix."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can conjugate the first aorist active and middle of any ω-verb from memory and can distinguish aorist from imperfect by meaning.",
+    "credit_minutes": 55
+  }
+}

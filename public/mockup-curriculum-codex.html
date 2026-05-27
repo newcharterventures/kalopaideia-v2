@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Greek Course — Codex — Kalopaideia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cinzel:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --paper: #fdfaf3;
+  --paper-deep: #f6f0e2;
+  --paper-shadow: #ece4d0;
+  --ink: #231c14;
+  --ink-soft: #4a3d2c;
+  --ink-muted: #7a6a54;
+  --rule: #c8b892;
+  --rule-soft: #d6c9a6;
+  --accent: #7a3322;
+  --accent-soft: #a85242;
+  --gold: #a07a2c;
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Source Serif 4", Georgia, serif;
+  --font-cinzel: "Cinzel", serif;
+  --font-ui: "Inter", system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.mast {
+  text-align: center;
+  padding: 32px 24px 18px;
+  border-bottom: 3px double var(--rule);
+}
+.mast-name {
+  font-family: var(--font-cinzel);
+  font-size: 28px;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  margin: 0;
+}
+.mast-name a { color: var(--ink); text-decoration: none; }
+.mast-sub { font-family: var(--font-display); font-style: italic; color: var(--ink-muted); margin-top: 4px; font-size: 16px; }
+
+/* ---- Page ---- */
+.page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 64px 28px 80px;
+}
+
+.eyebrow {
+  font-family: var(--font-cinzel);
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  color: var(--accent);
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.title {
+  font-family: var(--font-display);
+  font-size: 56px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.05;
+  margin: 6px 0 4px;
+  letter-spacing: 0.005em;
+}
+.subtitle {
+  font-family: var(--font-display);
+  font-style: italic;
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 22px;
+  margin: 0 0 28px;
+}
+.subtitle em { color: var(--accent); }
+.flourish {
+  text-align: center;
+  color: var(--gold);
+  font-size: 22px;
+  margin: 18px 0 36px;
+  letter-spacing: 0.4em;
+}
+
+.prefatio {
+  font-family: var(--font-body);
+  font-size: 17.5px;
+  line-height: 1.7;
+  text-align: justify;
+  hyphens: auto;
+}
+.prefatio::first-letter {
+  font-family: var(--font-display);
+  font-size: 62px;
+  font-weight: 600;
+  float: left;
+  line-height: 0.85;
+  padding: 6px 10px 0 0;
+  color: var(--accent);
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 40px auto;
+  width: 60%;
+  position: relative;
+}
+.divider::after {
+  content: '❦';
+  position: absolute;
+  left: 50%;
+  top: -14px;
+  transform: translateX(-50%);
+  background: var(--paper);
+  padding: 0 14px;
+  color: var(--gold);
+  font-size: 16px;
+}
+
+/* ---- Stage rubrics ---- */
+.rubric {
+  margin: 44px 0 0;
+}
+.rubric-head {
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--rule-soft);
+  padding-bottom: 4px;
+}
+.rubric-stage {
+  font-family: var(--font-cinzel);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  color: var(--accent);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.rubric-name {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--ink);
+  flex: 1;
+}
+.rubric-meta {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  color: var(--ink-muted);
+  letter-spacing: 0.04em;
+}
+.rubric-sub {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 19px;
+  color: var(--ink-soft);
+  margin: 0 0 16px;
+}
+
+.lesson-list {
+  font-family: var(--font-body);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+.lesson-list li {
+  display: grid;
+  grid-template-columns: 22px 50px 1fr auto;
+  gap: 12px;
+  align-items: baseline;
+  padding: 7px 0;
+  border-bottom: 1px dotted var(--rule-soft);
+  color: var(--ink-soft);
+}
+.lesson-list li:last-child { border-bottom: none; }
+.l-check { color: var(--gold); font-family: var(--font-display); font-size: 18px; line-height: 1; }
+.l-check.empty { color: transparent; }
+.lesson-list li.done .l-check { color: var(--accent); }
+.l-num { font-family: var(--font-ui); font-size: 12px; color: var(--ink-muted); font-variant-numeric: tabular-nums; }
+.l-title { font-family: var(--font-body); color: var(--ink); }
+.lesson-list li.done .l-title { color: var(--ink-muted); }
+.l-title a { color: inherit; text-decoration: none; border-bottom: 1px dotted var(--rule-soft); }
+.l-title a:hover { color: var(--accent); border-color: var(--accent); }
+.lesson-list li.next .l-title a { color: var(--accent); border-color: var(--accent); font-weight: 600; }
+.l-meta { font-family: var(--font-ui); font-size: 11px; color: var(--ink-muted); letter-spacing: 0.04em; }
+
+.checkpoint-note {
+  margin-top: 14px;
+  padding: 12px 18px;
+  background: var(--paper-deep);
+  border-left: 3px solid var(--gold);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 16px;
+  color: var(--ink-soft);
+}
+.checkpoint-note.passed { border-left-color: var(--accent); }
+.checkpoint-note .cp-status {
+  font-family: var(--font-cinzel);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-right: 8px;
+  color: var(--accent);
+}
+
+/* ---- Continue panel (a bookmark, not a card) ---- */
+.continue-bookmark {
+  margin: 30px 0 48px;
+  padding: 20px 24px;
+  background: var(--paper-deep);
+  border-top: 1px solid var(--gold);
+  border-bottom: 1px solid var(--gold);
+  text-align: center;
+}
+.cb-eyebrow {
+  font-family: var(--font-cinzel);
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  color: var(--gold);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.cb-title {
+  font-family: var(--font-display);
+  font-size: 24px;
+  margin: 6px 0 4px;
+  color: var(--ink);
+}
+.cb-meta {
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--ink-soft);
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+.cb-link {
+  font-family: var(--font-cinzel);
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 2px;
+}
+.cb-link:hover { color: var(--ink); border-color: var(--ink); }
+
+/* ---- Tracks (Stage 5) ---- */
+.tracks-block { margin: 50px 0 0; }
+.track-entry { padding: 16px 0; border-bottom: 1px dotted var(--rule-soft); }
+.track-entry:last-child { border-bottom: none; }
+.track-roman {
+  font-family: var(--font-cinzel);
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  font-weight: 600;
+}
+.track-name {
+  font-family: var(--font-display);
+  font-size: 22px;
+  margin: 2px 0 2px;
+  color: var(--ink);
+}
+.track-text { font-family: var(--font-display); font-style: italic; color: var(--accent); font-size: 17px; }
+.track-rationale { font-size: 15px; color: var(--ink-soft); margin-top: 4px; }
+
+/* ---- Tiers (bottom) ---- */
+.tiers {
+  margin-top: 64px;
+  border-top: 3px double var(--rule);
+  padding-top: 40px;
+}
+.tiers h2 {
+  font-family: var(--font-display);
+  font-size: 32px;
+  text-align: center;
+  margin: 0 0 4px;
+}
+.tiers .t-sub { text-align: center; font-family: var(--font-display); font-style: italic; color: var(--ink-soft); margin-bottom: 30px; }
+.tier-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.tier-col {
+  border: 1px solid var(--rule);
+  padding: 28px 24px;
+  background: var(--paper);
+}
+.tier-col.premium {
+  border-color: var(--gold);
+  background: linear-gradient(to bottom, #fbf5e3 0%, var(--paper) 100%);
+}
+.tier-eyebrow {
+  font-family: var(--font-cinzel);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--ink-muted);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.tier-col.premium .tier-eyebrow { color: var(--gold); }
+.tier-price {
+  font-family: var(--font-display);
+  font-size: 38px;
+  font-weight: 600;
+  margin: 6px 0 2px;
+}
+.tier-per { font-size: 14px; color: var(--ink-muted); font-family: var(--font-ui); }
+.tier-features { list-style: none; padding: 0; margin: 18px 0 22px; font-size: 15px; }
+.tier-features li {
+  padding: 6px 0 6px 20px;
+  border-bottom: 1px dotted var(--rule-soft);
+  position: relative;
+}
+.tier-features li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  font-size: 24px;
+  line-height: 1;
+  color: var(--gold);
+}
+.tier-cta {
+  display: block;
+  text-align: center;
+  padding: 11px 16px;
+  background: var(--paper);
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  font-family: var(--font-cinzel);
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.tier-col.premium .tier-cta { background: var(--accent); color: var(--paper); }
+.tier-cta:hover { background: var(--accent); color: var(--paper); }
+.tier-col.premium .tier-cta:hover { background: var(--ink); border-color: var(--ink); }
+
+.colophon { text-align: center; color: var(--ink-muted); font-family: var(--font-ui); font-size: 12px; margin: 60px 0 20px; letter-spacing: 0.04em; }
+
+@media (max-width: 700px) {
+  .title { font-size: 38px; }
+  .lesson-list li { grid-template-columns: 18px 40px 1fr; }
+  .l-meta { display: none; }
+  .tier-pair { grid-template-columns: 1fr; gap: 18px; }
+}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <h1 class="mast-name"><a href="/paideia/">KALOPAIDEIA</a></h1>
+  <div class="mast-sub"><em>καλὴ παιδεία</em></div>
+</header>
+
+<main class="page">
+  <div class="eyebrow">The Curriculum · Classical Greek</div>
+  <h1 class="title">The Greek Course</h1>
+  <p class="subtitle">From the alphabet to <em>Plato</em>, in five guided stages</p>
+  <div class="flourish">❦ ❦ ❦</div>
+
+  <p class="prefatio">Kalopaideia teaches Greek the way it was taught for two thousand years before the textbook era: by ear, by recitation, by reading. We do not begin with grammar tables. We begin with the sounds, then with short authentic phrases, then with whole sentences from Xenophon, Plato, and the New Testament. Grammar is introduced when the student has already met the form in living text. Every stage ends with reading. The course runs twelve to eighteen months at an hour a day. The student who finishes it earns the Kalopaideia Diploma in Classical Greek, recorded irrevocably on the Base blockchain.</p>
+
+  <hr class="divider" />
+
+  <!-- STAGE 1 -->
+  <section class="rubric">
+    <div class="rubric-head">
+      <span class="rubric-stage">Stage I</span>
+      <h2 class="rubric-name">The Sound and the Shape</h2>
+      <span class="rubric-meta">7 lessons · 6 weeks</span>
+    </div>
+    <p class="rubric-sub">The alphabet, the breathings, the pitch accent. Reading aloud before reading.</p>
+    <ol class="lesson-list">
+      <li class="done"><span class="l-check">✓</span><span class="l-num">i.</span><span class="l-title"><a href="#">The Alphabet, Part One</a></span><span class="l-meta">45 min</span></li>
+      <li class="done"><span class="l-check">✓</span><span class="l-num">ii.</span><span class="l-title"><a href="#">The Alphabet, Part Two</a></span><span class="l-meta">45 min</span></li>
+      <li class="done"><span class="l-check">✓</span><span class="l-num">iii.</span><span class="l-title"><a href="#">Vowels and Diphthongs</a></span><span class="l-meta">40 min</span></li>
+      <li class="done"><span class="l-check">✓</span><span class="l-num">iv.</span><span class="l-title"><a href="#">Breathings</a></span><span class="l-meta">30 min</span></li>
+      <li class="done"><span class="l-check">✓</span><span class="l-num">v.</span><span class="l-title"><a href="#">The Pitch Accent</a></span><span class="l-meta">50 min</span></li>
+      <li class="done"><span class="l-check">✓</span><span class="l-num">vi.</span><span class="l-title"><a href="#">Reading the Names</a></span><span class="l-meta">35 min</span></li>
+      <li class="done"><span class="l-check">✓</span><span class="l-num">vii.</span><span class="l-title"><a href="#">First Sentences</a></span><span class="l-meta">50 min</span></li>
+    </ol>
+    <div class="checkpoint-note passed">
+      <span class="cp-status">Checkpoint</span> passed at 91% on the 8th of April. ❦
+    </div>
+  </section>
+
+  <!-- STAGE 2 -->
+  <section class="rubric">
+    <div class="rubric-head">
+      <span class="rubric-stage">Stage II</span>
+      <h2 class="rubric-name">The Sentence</h2>
+      <span class="rubric-meta">13 lessons · 8–10 weeks</span>
+    </div>
+    <p class="rubric-sub">First and second declensions, the article, εἰμί, the present indicative.</p>
+    <ol class="lesson-list">
+      <li class="done"><span class="l-check">✓</span><span class="l-num">i.</span><span class="l-title"><a href="#">The Definite Article</a></span><span class="l-meta">40 min</span></li>
+      <li class="done"><span class="l-check">✓</span><span class="l-num">ii.</span><span class="l-title"><a href="#">The Second Declension — Masculine</a></span><span class="l-meta">45 min</span></li>
+      <li class="done"><span class="l-check">✓</span><span class="l-num">iii.</span><span class="l-title"><a href="#">The Second Declension — Neuter</a></span><span class="l-meta">40 min</span></li>
+      <li class="done"><span class="l-check">✓</span><span class="l-num">iv.</span><span class="l-title"><a href="#">The First Declension, Feminine in η</a></span><span class="l-meta">45 min</span></li>
+      <li class="next"><span class="l-check">»</span><span class="l-num">v.</span><span class="l-title"><a href="#">The First Declension, Feminine in α</a></span><span class="l-meta">45 min</span></li>
+      <li><span class="l-check empty">·</span><span class="l-num">vi.</span><span class="l-title">The First Declension — Masculine</span><span class="l-meta">40 min</span></li>
+      <li><span class="l-check empty">·</span><span class="l-num">vii.</span><span class="l-title">The Genitive</span><span class="l-meta">50 min</span></li>
+      <li><span class="l-check empty">·</span><span class="l-num">viii.</span><span class="l-title">The Dative</span><span class="l-meta">50 min</span></li>
+      <li><span class="l-check empty">·</span><span class="l-num">ix.</span><span class="l-title">The Vocative</span><span class="l-meta">30 min</span></li>
+      <li><span class="l-check empty">·</span><span class="l-num">x.</span><span class="l-title">The Verb εἰμί</span><span class="l-meta">40 min</span></li>
+      <li><span class="l-check empty">·</span><span class="l-num">xi.</span><span class="l-title">Present Indicative Active</span><span class="l-meta">45 min</span></li>
+      <li><span class="l-check empty">·</span><span class="l-num">xii.</span><span class="l-title">Adjectives of the 1st and 2nd Declension</span><span class="l-meta">45 min</span></li>
+      <li><span class="l-check empty">·</span><span class="l-num">xiii.</span><span class="l-title">Reading: A Day in Athens</span><span class="l-meta">60 min</span></li>
+    </ol>
+
+    <div class="continue-bookmark">
+      <div class="cb-eyebrow">Where you left off</div>
+      <div class="cb-title">Lesson v · The First Declension, Feminine in α</div>
+      <div class="cb-meta">paradigm of θάλασσα, ἡμέρα, μοῖρα · self-check · reading preview from Thucydides</div>
+      <a href="#" class="cb-link">Open the lesson →</a>
+    </div>
+  </section>
+
+  <!-- STAGE 3 -->
+  <section class="rubric">
+    <div class="rubric-head">
+      <span class="rubric-stage">Stage III</span>
+      <h2 class="rubric-name">The Verbs and the Reading</h2>
+      <span class="rubric-meta">15 lessons · 10–12 weeks</span>
+    </div>
+    <p class="rubric-sub">Middle and passive, the third declension, imperfect, future, aorist, the participle.</p>
+    <ol class="lesson-list">
+      <li><span class="l-check empty">·</span><span class="l-num">i–xv.</span><span class="l-title">Fifteen lessons closing with Xenophon, Anabasis I.1, and John 1:1–18 in the original.</span><span class="l-meta"></span></li>
+    </ol>
+  </section>
+
+  <!-- STAGE 4 -->
+  <section class="rubric">
+    <div class="rubric-head">
+      <span class="rubric-stage">Stage IV</span>
+      <h2 class="rubric-name">The Mood and the Mind</h2>
+      <span class="rubric-meta">12 lessons · 12–16 weeks</span>
+    </div>
+    <p class="rubric-sub">The subjunctive, the optative, the imperative; the six conditions; indirect statement; the perfect system.</p>
+    <ol class="lesson-list">
+      <li><span class="l-check empty">·</span><span class="l-num">i–xii.</span><span class="l-title">Closing with Plato, Apology 17a–18a, and Lysias 1 §§1–10.</span><span class="l-meta"></span></li>
+    </ol>
+  </section>
+
+  <!-- STAGE 5 -->
+  <section class="rubric">
+    <div class="rubric-head">
+      <span class="rubric-stage">Stage V</span>
+      <h2 class="rubric-name">The Author</h2>
+      <span class="rubric-meta">12–24 weeks · capstone</span>
+    </div>
+    <p class="rubric-sub">Sustained reading of a major author. Choose your track. Sit the examination. Earn the diploma.</p>
+    <div class="tracks-block">
+      <div class="track-entry">
+        <div class="track-roman">Track I</div>
+        <div class="track-name">The Philosopher</div>
+        <div class="track-text">Plato, Crito (complete dialogue, c. 6,200 words)</div>
+        <div class="track-rationale">The most accessible Plato. A short dialogue with a definite shape; the Socratic style; the major philosophical vocabulary.</div>
+      </div>
+      <div class="track-entry">
+        <div class="track-roman">Track II</div>
+        <div class="track-name">The Historian</div>
+        <div class="track-text">Xenophon, Anabasis Book I (c. 11,000 words)</div>
+        <div class="track-rationale">Simple syntax, vivid narrative. The book on which generations of Greek students cut their teeth.</div>
+      </div>
+      <div class="track-entry">
+        <div class="track-roman">Track III</div>
+        <div class="track-name">The Evangelist</div>
+        <div class="track-text">The Gospel of Mark, in Koine (c. 11,300 words)</div>
+        <div class="track-rationale">The shortest and earliest Gospel. The bridge between Attic and the rest of the New Testament.</div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- TIERS -->
+  <section class="tiers">
+    <h2>Two memberships</h2>
+    <p class="t-sub">Read at your pace, or take the course.</p>
+    <div class="tier-pair">
+      <div class="tier-col">
+        <div class="tier-eyebrow">The Library</div>
+        <div class="tier-price">$12.99 <span class="tier-per">/ month</span></div>
+        <ul class="tier-features">
+          <li>Every book in every language</li>
+          <li>The Akousma · line-by-line audio</li>
+          <li>The daily word, in ten tongues</li>
+          <li>Grammar and pronunciation primer</li>
+          <li>Reading bookmarks across all books</li>
+        </ul>
+        <a href="#" class="tier-cta">Subscribe</a>
+      </div>
+      <div class="tier-col premium">
+        <div class="tier-eyebrow">The Curriculum</div>
+        <div class="tier-price">$19.99 <span class="tier-per">/ month</span></div>
+        <ul class="tier-features">
+          <li>Everything in the Library</li>
+          <li>The five-stage course in every language</li>
+          <li>Self-checks and auto-graded checkpoints</li>
+          <li>Listening proficiency record</li>
+          <li>Capstone examination</li>
+          <li>On-chain diploma upon passage</li>
+        </ul>
+        <a href="#" class="tier-cta">Join the Curriculum</a>
+      </div>
+    </div>
+  </section>
+
+  <p class="colophon">Mockup A · Codex · the printed-book layout</p>
+</main>
+
+</body>
+</html>

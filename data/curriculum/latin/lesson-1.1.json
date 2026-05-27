@@ -1,0 +1,102 @@
+{
+  "id": "1.1",
+  "stage": 1,
+  "title": "The Alphabet and the Vowels",
+  "subtitle": "Twenty-three letters, five vowels in long and short.",
+  "estimated_minutes": 45,
+  "objectives": [
+    "Recognize all twenty-three letters of the Classical Latin alphabet in upper and lower case.",
+    "Pronounce each of the five vowels in both long and short forms.",
+    "Distinguish between long and short vowels by ear.",
+    "Trace each letter by hand and copy it from memory."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Where we are starting",
+      "body": "Latin has twenty-three letters. The Romans borrowed their alphabet from the Etruscans, who borrowed it from the Greeks. Some of the original Greek letters vanished in transit; the Romans had no need for theta or phi. What remained became the ancestor of every Western alphabet from Portuguese to Polish.\n\nThe pronunciation we teach is the Classical Latin of the late Republic and early Empire, roughly 100 BCE to 100 CE. This is the Latin of Cicero and Caesar, Vergil and Horace. The Church Latin you might hear sung in a cathedral is beautiful, but it obscures the vowel distinctions and the quantitative meter that Vergil composed in. To hear the Aeneid as Vergil heard it, we need the older sounds."
+    },
+    {
+      "kind": "letter_grid",
+      "heading": "The twenty-three letters",
+      "letters": [
+        { "upper": "A", "lower": "a", "name": "a", "ipa": "[a] or [aː]", "audio": "/paideia/audio/latin/letters/a.mp3", "note": "Short or long, like the a in father." },
+        { "upper": "B", "lower": "b", "name": "be", "ipa": "[b]", "audio": "/paideia/audio/latin/letters/b.mp3", "note": "Like the b in boy." },
+        { "upper": "C", "lower": "c", "name": "ce", "ipa": "[k]", "audio": "/paideia/audio/latin/letters/c.mp3", "note": "Always hard, like the k in cat. Never soft. Cicero begins with a k-sound, not an s-sound." },
+        { "upper": "D", "lower": "d", "name": "de", "ipa": "[d]", "audio": "/paideia/audio/latin/letters/d.mp3", "note": "Like the d in dog." },
+        { "upper": "E", "lower": "e", "name": "e", "ipa": "[ɛ] or [eː]", "audio": "/paideia/audio/latin/letters/e.mp3", "note": "Short like the e in met, or long like the a in gate." },
+        { "upper": "F", "lower": "f", "name": "ef", "ipa": "[f]", "audio": "/paideia/audio/latin/letters/f.mp3", "note": "Like the f in fun." },
+        { "upper": "G", "lower": "g", "name": "ge", "ipa": "[ɡ]", "audio": "/paideia/audio/latin/letters/g.mp3", "note": "Always hard, like the g in go. Never soft." },
+        { "upper": "H", "lower": "h", "name": "ha", "ipa": "[h]", "audio": "/paideia/audio/latin/letters/h.mp3", "note": "Like the h in house. Weak in many positions, silent in some dialects." },
+        { "upper": "I", "lower": "i", "name": "i", "ipa": "[ɪ] or [iː]", "audio": "/paideia/audio/latin/letters/i.mp3", "note": "Short like the i in bit, or long like the ee in see. Also used as a consonant (modern j), pronounced like English y." },
+        { "upper": "K", "lower": "k", "name": "ka", "ipa": "[k]", "audio": "/paideia/audio/latin/letters/k.mp3", "note": "Rare. Used in a few old words like Kalendae. Otherwise replaced by C." },
+        { "upper": "L", "lower": "l", "name": "el", "ipa": "[l]", "audio": "/paideia/audio/latin/letters/l.mp3", "note": "Like the l in let." },
+        { "upper": "M", "lower": "m", "name": "em", "ipa": "[m]", "audio": "/paideia/audio/latin/letters/m.mp3", "note": "Like the m in man." },
+        { "upper": "N", "lower": "n", "name": "en", "ipa": "[n]", "audio": "/paideia/audio/latin/letters/n.mp3", "note": "Like the n in no." },
+        { "upper": "O", "lower": "o", "name": "o", "ipa": "[ɔ] or [oː]", "audio": "/paideia/audio/latin/letters/o.mp3", "note": "Short like the o in hot, or long like the o in note." },
+        { "upper": "P", "lower": "p", "name": "pe", "ipa": "[p]", "audio": "/paideia/audio/latin/letters/p.mp3", "note": "Like the p in spin — unaspirated, no puff of air." },
+        { "upper": "Q", "lower": "q", "name": "qu", "ipa": "[kʷ]", "audio": "/paideia/audio/latin/letters/q.mp3", "note": "Always followed by u, pronounced like English qu in quick." },
+        { "upper": "R", "lower": "r", "name": "er", "ipa": "[r]", "audio": "/paideia/audio/latin/letters/r.mp3", "note": "Trilled, like the r in Spanish perro." },
+        { "upper": "S", "lower": "s", "name": "es", "ipa": "[s]", "audio": "/paideia/audio/latin/letters/s.mp3", "note": "Always voiceless, like the s in sing. Never like the z in rose." },
+        { "upper": "T", "lower": "t", "name": "te", "ipa": "[t]", "audio": "/paideia/audio/latin/letters/t.mp3", "note": "Like the t in stop — unaspirated." },
+        { "upper": "U", "lower": "u", "name": "u", "ipa": "[ʊ] or [uː]", "audio": "/paideia/audio/latin/letters/u.mp3", "note": "Short like the u in put, or long like the oo in food. Also used as a consonant (modern v), pronounced like English w." },
+        { "upper": "X", "lower": "x", "name": "ex", "ipa": "[ks]", "audio": "/paideia/audio/latin/letters/x.mp3", "note": "Like the x in box — a true cluster, not a single sound." },
+        { "upper": "Y", "lower": "y", "name": "y graeca", "ipa": "[y] or [yː]", "audio": "/paideia/audio/latin/letters/y.mp3", "note": "Borrowed from Greek for Greek loanwords. Pronounced like French u or German ü. Rare." },
+        { "upper": "Z", "lower": "z", "name": "zeta", "ipa": "[z]", "audio": "/paideia/audio/latin/letters/z.mp3", "note": "Borrowed from Greek for Greek loanwords. Pronounced like English z. Rare." }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "The five vowels and their quantity",
+      "body": "Latin has five vowels: A, E, I, O, U. Each can be pronounced short or long. The difference is not one of quality (though short and long vowels sometimes have slightly different timbres), but of duration. A long vowel takes twice as long to say as a short vowel.\n\nIn modern printed editions we mark long vowels with a macron: ā, ē, ī, ō, ū. The Romans did not mark them — they knew which vowels were long because they were native speakers. We are not, so we mark them. The difference matters: vowel length determines meter in poetry and distinguishes forms in grammar. populus (the people) and pōpulus (the poplar tree) are two different words, distinguished by the length of the first o.\n\nShort vowels:\n  a as in father (but shorter)\n  e as in met\n  i as in bit\n  o as in hot\n  u as in put\n\nLong vowels:\n  ā as in father (held longer)\n  ē as in gate\n  ī as in see\n  ō as in note\n  ū as in food"
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill",
+      "instructions": "Each vowel is spoken three times: short, long, and inside a real Latin word. Listen first; then say each one aloud after the recording.",
+      "audio": "/paideia/audio/latin/drills/lesson-1.1-listening.mp3"
+    },
+    {
+      "kind": "writing_drill",
+      "heading": "Writing drill",
+      "instructions": "Print or trace each letter ten times in upper case, ten times in lower case. The Latin alphabet is the ancestor of our own; the only difference is that modern English adds J, U distinct from V, and W. For this course, write I for both vowel i and consonant j; write U for both vowel u and consonant v.",
+      "downloadable_pdf": "/paideia/curriculum/latin/handouts/lesson-1.1-tracing.pdf"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Without looking back, answer each question. Cover the answers; check yourself after.",
+      "items": [
+        { "prompt": "How many letters does the Latin alphabet have?", "answer": "Twenty-three. (Modern English has twenty-six.)" },
+        { "prompt": "Is C ever pronounced like an s in Classical Latin?", "answer": "No. Always hard, always k." },
+        { "prompt": "What is the difference between a short and a long vowel?", "answer": "Duration. A long vowel takes twice as long to say." },
+        { "prompt": "Why do we mark long vowels with macrons if the Romans did not?", "answer": "Because the Romans were native speakers and knew vowel length by ear. We are not, so we mark them to avoid confusion." },
+        { "prompt": "What does the vowel I represent when used as a consonant?", "answer": "The sound of English y, as in yes." },
+        { "prompt": "What does the vowel U represent when used as a consonant?", "answer": "The sound of English w, as in wet." },
+        { "prompt": "Name two words that differ only in vowel length.", "answer": "populus (the people) and pōpulus (the poplar tree); or malus (bad) and mālus (apple tree)." },
+        { "prompt": "How is R pronounced in Classical Latin?", "answer": "Trilled, like Spanish r." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "First words in Latin",
+      "instructions": "You can read these aloud. Try each one, then check against the audio.",
+      "words": [
+        { "latin": "Rōma", "transliteration": null, "gloss": "Rome", "audio": "/paideia/audio/latin/words/roma.mp3" },
+        { "latin": "amor", "transliteration": null, "gloss": "love", "audio": "/paideia/audio/latin/words/amor.mp3" },
+        { "latin": "pāx", "transliteration": null, "gloss": "peace", "audio": "/paideia/audio/latin/words/pax.mp3" },
+        { "latin": "vēritās", "transliteration": null, "gloss": "truth", "audio": "/paideia/audio/latin/words/veritas.mp3" },
+        { "latin": "lūx", "transliteration": null, "gloss": "light", "audio": "/paideia/audio/latin/words/lux.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.2 covers the diphthongs: ae, oe, au, ei, eu, ui. After that, the consonants in detail, then stress and quantity. By Lesson 1.6 you will be reading short connected sentences aloud."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can name and pronounce all twenty-three letters and all ten vowel sounds (five short, five long) without hesitation.",
+    "credit_minutes": 45
+  }
+}

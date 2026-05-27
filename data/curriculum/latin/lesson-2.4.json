@@ -1,0 +1,57 @@
+{
+  "id": "2.4",
+  "stage": 2,
+  "title": "The Six Cases",
+  "subtitle": "Nominative subject; accusative object; genitive possession; dative indirect object; ablative everything else; vocative direct address.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Identify the function of each of the six cases.",
+    "Translate sentences using all six cases.",
+    "Recognize case by ending and function by context.",
+    "Understand the ablative as the catch-all case for means, manner, place, time, agent."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The six cases and their functions",
+      "body": "Latin has six cases. Each signals a different function in the sentence.\n\n1. Nominative: the subject. puella cantat. — The girl sings.\n2. Genitive: possession, or 'of'. filia puellae. — The daughter of the girl.\n3. Dative: indirect object, or 'to/for'. puellae rosam dō. — I give a rose to the girl.\n4. Accusative: direct object. puellam videō. — I see the girl.\n5. Ablative: means, manner, place, time, agent, accompaniment. cum puellā. — with the girl. ā puellā. — by the girl.\n6. Vocative: direct address. puella, venī! — Girl, come!\n\nThe ablative is the most versatile. It does the work of several English prepositions: by, with, from, in, at, on."
+    },
+    {
+      "kind": "prose",
+      "heading": "Examples from Cicero and Caesar",
+      "body": "Cicero writes: salūs populī suprēma lēx estō. — Let the safety of the people be the supreme law. 'populī' is genitive singular, modifying 'salūs'. 'lēx' is nominative singular, subject of 'estō'.\n\nCaesar writes: cum legiōnibus in Galliam vēnit. — He came into Gaul with the legions. 'legiōnibus' is ablative plural, accompaniment. 'Galliam' is accusative singular, motion towards.\n\nCicero writes: ō tempora, ō mōrēs! — O the times, O the customs! 'tempora' and 'mōrēs' are vocative/accusative (the vocative is often identical to the nominative for plurals and neuters)."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "items": [
+        { "prompt": "What case is the subject?", "answer": "Nominative." },
+        { "prompt": "What case is the direct object?", "answer": "Accusative." },
+        { "prompt": "What case shows possession?", "answer": "Genitive." },
+        { "prompt": "What case is the indirect object?", "answer": "Dative." },
+        { "prompt": "What case is used for means, manner, place, and agent?", "answer": "Ablative." },
+        { "prompt": "What case is used for direct address?", "answer": "Vocative." },
+        { "prompt": "Translate: puella dominō rosam dat.", "answer": "The girl gives a rose to the master." },
+        { "prompt": "Identify the case of each noun in the sentence above.", "answer": "puella (nom.), dominō (dat.), rosam (acc.)." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Sentences using all six cases",
+      "words": [
+        { "latin": "dominus servō pecūniam dat.", "transliteration": null, "gloss": "The master gives money to the slave.", "audio": "/paideia/audio/latin/sentences/2.4-1.mp3" },
+        { "latin": "vir cum amīcīs ambulat.", "transliteration": null, "gloss": "The man walks with friends.", "audio": "/paideia/audio/latin/sentences/2.4-2.mp3" },
+        { "latin": "Mārce, fīliam tuam videō.", "transliteration": null, "gloss": "Marcus, I see your daughter.", "audio": "/paideia/audio/latin/sentences/2.4-3.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.5: first and second declension adjectives. bonus, bona, bonum. Agreement in case, number, gender."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can name the function of each case and identify the case of any noun by its ending and context.",
+    "credit_minutes": 55
+  }
+}

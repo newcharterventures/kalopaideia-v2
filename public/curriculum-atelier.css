@@ -1,0 +1,496 @@
+/* ============================================================
+   Shared CSS for all Atelier variations.
+   Five separate HTML files import this. Differences live in each
+   HTML file's <style> at the bottom, scoped under .v-frescoed,
+   .v-daybreak, .v-tablinum, .v-promenade, .v-sanctum.
+   ============================================================ */
+
+:root {
+  --paper: #fdfaf3;
+  --paper-deep: #f6f0e2;
+  --paper-shadow: #ece4d0;
+  --ink: #231c14;
+  --ink-soft: #4a3d2c;
+  --ink-muted: #7a6a54;
+  --rule: #c8b892;
+  --rule-soft: #d6c9a6;
+  --accent: #7a3322;
+  --accent-soft: #a85242;
+  --gold: #a07a2c;
+  --gold-soft: #d1b370;
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Source Serif 4", Georgia, serif;
+  --font-cinzel: "Cinzel", serif;
+  --font-ui: "Inter", system-ui, sans-serif;
+
+  /* PD painting URLs — Wikimedia Special:FilePath. All audited against
+     the paideia-covers safelist on 2026-05-18. */
+  --img-school:    url('https://commons.wikimedia.org/wiki/Special:FilePath/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg?width=2400');
+  --img-school-md: url('https://commons.wikimedia.org/wiki/Special:FilePath/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg?width=1400');
+  --img-reading:   url('https://commons.wikimedia.org/wiki/Special:FilePath/Sir_Lawrence_Alma-Tadema%2C_English_%28born_Netherlands%29_-_A_Reading_from_Homer_-_Google_Art_Project.jpg?width=1600');
+  --img-pebbles:   url('https://commons.wikimedia.org/wiki/Special:FilePath/Greek_Girls_Picking_up_Pebbles_by_the_Sea.jpg?width=1400');
+  --img-odysseus:  url('https://commons.wikimedia.org/wiki/Special:FilePath/Pinturicchio_-_The_Return_of_Odysseus_-_WGA17830.jpg?width=1400');
+  --img-mark:      url('https://commons.wikimedia.org/wiki/Special:FilePath/Cicer%C3%B3n_denuncia_a_Catilina%2C_por_Cesare_Maccari.jpg?width=1400');
+  --img-sappho:    url('https://commons.wikimedia.org/wiki/Special:FilePath/Godward-In_the_Days_of_Sappho-1904.jpg?width=1400');
+  --img-spring:    url('https://commons.wikimedia.org/wiki/Special:FilePath/Lawrence_Alma-Tadema_-_Spring_-_Google_Art_Project.jpg?width=1600');
+  --img-flaming:   url('https://commons.wikimedia.org/wiki/Special:FilePath/Flaming_June%2C_by_Frederic_Lord_Leighton_%281830-1896%29.jpg?width=1400');
+  --img-sappho-at: url('https://commons.wikimedia.org/wiki/Special:FilePath/Sappho_and_Alcaeus%2C_by_Lawrence_Alma-Tadema.jpg?width=1600');
+  --img-penelope:  url('https://commons.wikimedia.org/wiki/Special:FilePath/JohnWilliamWaterhouse-PenelopeandtheSuitors%281912%29.jpg?width=1400');
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { background: var(--paper); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.55; }
+
+/* ============================================================
+   Separate-section top bar (on every variation)
+   ============================================================ */
+.curriculum-bar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 11px 26px; background: var(--ink); color: var(--paper);
+  font-family: var(--font-cinzel); font-size: 10px; letter-spacing: 0.28em;
+  font-weight: 600; text-transform: uppercase;
+}
+.curriculum-bar a { color: var(--paper); text-decoration: none; opacity: 0.85; }
+.curriculum-bar a:hover { opacity: 1; color: var(--gold-soft); }
+.curriculum-bar .cb-greek { font-family: var(--font-display); font-style: italic; letter-spacing: 0; text-transform: none; opacity: 0.55; font-size: 14px; }
+.curriculum-bar .cb-left { display: flex; align-items: center; gap: 16px; }
+
+/* ============================================================
+   Syllabus table (the discipline the user said they liked)
+   ============================================================ */
+.syllabus-table { width: 100%; border-collapse: collapse; font-size: 15px; font-family: var(--font-body); }
+.syllabus-table th { text-align: left; font-family: var(--font-cinzel); font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-muted); font-weight: 600; padding: 8px 10px; border-bottom: 1px solid var(--rule); }
+.syllabus-table td { padding: 9px 10px; border-bottom: 1px dotted var(--rule-soft); vertical-align: baseline; }
+.syllabus-table tr:last-child td { border-bottom: 1px solid var(--rule); }
+.col-check { width: 30px; text-align: center; color: var(--gold); font-family: var(--font-display); font-size: 18px; }
+.syllabus-table tr.done .col-check { color: var(--accent); }
+.col-num { width: 60px; font-family: var(--font-ui); font-size: 12px; color: var(--ink-muted); font-variant-numeric: tabular-nums; }
+.col-title { color: var(--ink-soft); }
+.syllabus-table tr.done .col-title { color: var(--ink-muted); }
+.col-title a { color: inherit; text-decoration: none; border-bottom: 1px dotted transparent; }
+.col-title a:hover { color: var(--accent); border-color: var(--accent); }
+.syllabus-table tr.next .col-title a { color: var(--accent); border-color: var(--accent); font-weight: 600; }
+.syllabus-table tr.next .col-check { color: var(--gold); }
+.col-duration { width: 80px; font-family: var(--font-ui); font-size: 12px; color: var(--ink-muted); text-align: right; letter-spacing: 0.02em; }
+.checkpoint-row { background: var(--paper-deep); }
+.checkpoint-row td { padding: 12px 10px; border-bottom: 1px solid var(--rule) !important; font-family: var(--font-display); font-style: italic; color: var(--ink-soft); }
+.checkpoint-row.passed td { color: var(--accent); }
+.cp-tag { font-family: var(--font-cinzel); font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 600; font-style: normal; margin-right: 8px; }
+
+/* Section heads */
+.section-head {
+  margin: 48px 0 0; display: flex; align-items: baseline; gap: 16px;
+  padding-bottom: 6px; border-bottom: 2px solid var(--ink);
+}
+.section-num { font-family: var(--font-cinzel); font-size: 12px; letter-spacing: 0.22em; color: var(--accent); font-weight: 700; text-transform: uppercase; }
+.section-name { font-family: var(--font-display); font-size: 26px; font-weight: 600; flex: 1; margin: 0; }
+.section-meta { font-family: var(--font-ui); font-size: 11px; color: var(--ink-muted); letter-spacing: 0.04em; }
+.section-sub { font-family: var(--font-display); font-style: italic; color: var(--ink-soft); font-size: 17px; margin: 6px 0 0; }
+
+/* Continue bookmark */
+.continue {
+  margin: 26px 0 12px;
+  padding: 16px 20px;
+  border-top: 1px solid var(--gold); border-bottom: 1px solid var(--gold);
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px;
+  background: var(--paper);
+}
+.continue-text { font-family: var(--font-display); font-size: 18px; color: var(--ink); }
+.continue-text em { color: var(--accent); font-style: italic; }
+.continue-meta { font-family: var(--font-ui); font-size: 12px; color: var(--ink-muted); margin-top: 2px; }
+.continue-link {
+  font-family: var(--font-cinzel); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent); padding-bottom: 2px; font-weight: 600;
+}
+.continue-link:hover { color: var(--ink); border-color: var(--ink); }
+
+/* Framed plate (marginalia) */
+.framed-plate { border: 1px solid var(--rule); padding: 8px; background: var(--paper); }
+.framed-plate .plate-img { width: 100%; aspect-ratio: 4 / 3; background-size: cover; background-position: center; border: 1px solid var(--rule-soft); }
+.framed-plate .plate-caption {
+  font-family: var(--font-display); font-style: italic; color: var(--ink-muted);
+  font-size: 12px; text-align: center; padding: 8px 4px 2px; line-height: 1.4;
+}
+
+/* Vignette (vertical 3:4 marginalia) */
+.vignette { border: 1px solid var(--rule); padding: 6px; background: var(--paper-deep); }
+.vignette .v-img { width: 100%; aspect-ratio: 3 / 4; background-size: cover; background-position: center; border: 1px solid var(--rule-soft); }
+.vignette .v-caption {
+  font-family: var(--font-display); font-style: italic; font-size: 12px;
+  color: var(--ink-muted); text-align: center; padding: 6px 4px 2px; line-height: 1.4;
+}
+
+/* Portrait card (capstone) */
+.portrait-card { background: var(--paper); border: 1px solid var(--rule); padding: 10px; transition: box-shadow 0.25s; }
+.portrait-card:hover { box-shadow: 0 4px 18px rgba(122,51,34,0.10); }
+.portrait-frame { width: 100%; aspect-ratio: 3 / 4; background-size: cover; background-position: center; border: 1px solid var(--rule-soft); }
+.portrait-card.philosopher .portrait-frame { background-image: var(--img-school-md); background-position: 28% 40%; }
+.portrait-card.historian   .portrait-frame { background-image: var(--img-odysseus); }
+.portrait-card.evangelist  .portrait-frame { background-image: var(--img-mark); }
+.portrait-info { padding: 14px 8px 6px; text-align: center; }
+.portrait-roman { font-family: var(--font-cinzel); font-size: 10px; letter-spacing: 0.22em; color: var(--gold); text-transform: uppercase; font-weight: 700; }
+.portrait-name { font-family: var(--font-display); font-size: 22px; margin: 4px 0 2px; }
+.portrait-text { font-family: var(--font-display); font-style: italic; color: var(--accent); font-size: 16px; }
+.portrait-rationale { color: var(--ink-soft); font-size: 14px; margin-top: 6px; line-height: 1.5; }
+
+/* Tiers (matching across all variations) */
+.tiers { margin-top: 60px; border-top: 3px double var(--rule); padding-top: 36px; }
+.tiers h2 { font-family: var(--font-display); font-size: 32px; text-align: center; margin: 0 0 4px; }
+.tiers .t-sub { text-align: center; font-family: var(--font-display); font-style: italic; color: var(--ink-soft); margin-bottom: 30px; }
+.tier-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; max-width: 760px; margin: 0 auto; }
+.tier-col { border: 1px solid var(--rule); padding: 28px 24px; background: var(--paper); }
+.tier-col.premium { border-color: var(--gold); background: linear-gradient(to bottom, #fbf5e3 0%, var(--paper) 100%); }
+.tier-eyebrow { font-family: var(--font-cinzel); font-size: 11px; letter-spacing: 0.2em; color: var(--ink-muted); text-transform: uppercase; font-weight: 600; }
+.tier-col.premium .tier-eyebrow { color: var(--gold); }
+.tier-price { font-family: var(--font-display); font-size: 38px; font-weight: 600; margin: 6px 0 2px; }
+.tier-per { font-size: 14px; color: var(--ink-muted); font-family: var(--font-ui); }
+.tier-features { list-style: none; padding: 0; margin: 18px 0 22px; font-size: 15px; }
+.tier-features li { padding: 6px 0 6px 20px; border-bottom: 1px dotted var(--rule-soft); position: relative; }
+.tier-features li::before { content: '·'; position: absolute; left: 0; top: 6px; font-size: 24px; line-height: 1; color: var(--gold); }
+.tier-cta { display: block; text-align: center; padding: 11px 16px; background: var(--paper); color: var(--accent); border: 1px solid var(--accent); font-family: var(--font-cinzel); font-size: 12px; letter-spacing: 0.18em; font-weight: 600; text-decoration: none; text-transform: uppercase; }
+.tier-col.premium .tier-cta { background: var(--accent); color: var(--paper); }
+.tier-cta:hover { background: var(--accent); color: var(--paper); }
+.tier-col.premium .tier-cta:hover { background: var(--ink); border-color: var(--ink); }
+
+.colophon { text-align: center; color: var(--ink-muted); font-family: var(--font-ui); font-size: 12px; margin: 60px 0 20px; letter-spacing: 0.04em; }
+
+
+
+
+
+
+
+/* ============================================================
+   IMPORTANT: This is a SEPARATE SECTION from the rest of Kalopaideia.
+   No primer tabs, no Library nav. A dedicated curriculum surface.
+   ============================================================ */
+
+/* ---- A slimmer masthead that signals "you have left the main site" ---- */
+/* ---- HERO: full-bleed painting with title overlay ---- */
+.hero-banner {
+  position: relative;
+  height: 620px;
+  background-image: linear-gradient(to bottom, rgba(35,28,20,0.15) 0%, rgba(35,28,20,0.05) 35%, rgba(253,250,243,0) 65%, rgba(253,250,243,0.95) 100%), var(--hero-school);
+  background-size: cover;
+  background-position: center 35%;
+  border-bottom: 1px solid var(--rule);
+}
+.hero-overlay {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  text-align: center;
+  padding: 0 24px 40px;
+}
+.hero-eyebrow {
+  font-family: var(--font-cinzel);
+  font-size: 11px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--accent);
+}
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(48px, 7vw, 84px);
+  font-weight: 700;
+  margin: 8px 0 4px;
+  line-height: 0.95;
+  letter-spacing: 0.005em;
+  color: var(--ink);
+  text-shadow: 0 1px 0 rgba(253,250,243,0.7);
+}
+.hero-greek {
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--accent);
+  font-size: clamp(22px, 3vw, 32px);
+  margin: 4px 0 8px;
+}
+.hero-sub {
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--ink-soft);
+  font-size: clamp(18px, 2.2vw, 22px);
+  max-width: 50ch;
+  margin: 0 auto;
+}
+.hero-sub em { color: var(--accent); }
+.hero-credit {
+  position: absolute;
+  bottom: 8px; right: 14px;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: var(--ink-muted);
+  letter-spacing: 0.02em;
+  background: rgba(253,250,243,0.85);
+  padding: 3px 9px;
+  border-radius: 2px;
+}
+
+.page { max-width: 940px; margin: 0 auto; padding: 48px 24px 80px; }
+
+/* ---- Metadata strip ---- */
+.metadata {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border: 1px solid var(--rule);
+  margin-bottom: 36px;
+  background: var(--paper);
+}
+.meta-cell { padding: 16px 18px; border-right: 1px solid var(--rule-soft); }
+.meta-cell:last-child { border-right: none; }
+.meta-label { font-family: var(--font-cinzel); font-size: 9px; letter-spacing: 0.22em; color: var(--ink-muted); text-transform: uppercase; font-weight: 600; margin-bottom: 4px; }
+.meta-value { font-family: var(--font-display); font-size: 17px; color: var(--ink); }
+.meta-value em { color: var(--accent); font-style: italic; }
+
+/* ---- Preface with a small framed plate on the right ---- */
+.preface-wrap {
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  gap: 32px;
+  align-items: flex-start;
+  margin-bottom: 44px;
+}
+.preface {
+  font-size: 16.5px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  text-align: justify;
+  hyphens: auto;
+  margin: 0;
+}
+.preface::first-letter {
+  font-family: var(--font-display);
+  font-size: 64px;
+  float: left;
+  line-height: 0.85;
+  padding: 6px 10px 0 0;
+  color: var(--accent);
+  font-weight: 600;
+}
+.framed-plate {
+  border: 1px solid var(--rule);
+  padding: 8px;
+  background: var(--paper);
+}
+.framed-plate .plate-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background-image: var(--img-pebbles);
+  background-size: cover;
+  background-position: center;
+  border: 1px solid var(--rule-soft);
+}
+.framed-plate .plate-caption {
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--ink-muted);
+  font-size: 12px;
+  text-align: center;
+  padding: 8px 4px 2px;
+  line-height: 1.4;
+}
+
+/* ---- Section heads, table layout, lessons (same DNA as Syllabus C) ---- */
+.section-head {
+  margin: 48px 0 0;
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--ink);
+}
+.section-num { font-family: var(--font-cinzel); font-size: 12px; letter-spacing: 0.22em; color: var(--accent); font-weight: 700; text-transform: uppercase; }
+.section-name { font-family: var(--font-display); font-size: 28px; font-weight: 600; flex: 1; margin: 0; }
+.section-meta { font-family: var(--font-ui); font-size: 11px; color: var(--ink-muted); letter-spacing: 0.04em; }
+.section-sub { font-family: var(--font-display); font-style: italic; color: var(--ink-soft); font-size: 18px; margin: 6px 0 0; }
+
+/* The little vignette in the margin per stage */
+.stage-with-vignette {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 28px;
+  margin-top: 14px;
+  align-items: start;
+}
+.vignette {
+  border: 1px solid var(--rule);
+  padding: 6px;
+  background: var(--paper-deep);
+}
+.vignette .v-img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid var(--rule-soft);
+}
+.vignette .v-caption {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 12px;
+  color: var(--ink-muted);
+  text-align: center;
+  padding: 6px 4px 2px;
+  line-height: 1.4;
+}
+
+/* Stage I vignette */
+.vignette.v-stage1 .v-img { background-image: var(--img-pebbles); }
+.vignette.v-stage2 .v-img { background-image: var(--img-reading); }
+.vignette.v-stage3 .v-img { background-image: var(--img-odysseus); }
+.vignette.v-stage4 .v-img { background-image: var(--img-mark); }
+
+.syllabus-table { width: 100%; border-collapse: collapse; font-size: 15px; font-family: var(--font-body); }
+.syllabus-table th { text-align: left; font-family: var(--font-cinzel); font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-muted); font-weight: 600; padding: 8px 10px; border-bottom: 1px solid var(--rule); }
+.syllabus-table td { padding: 9px 10px; border-bottom: 1px dotted var(--rule-soft); vertical-align: baseline; }
+.syllabus-table tr:last-child td { border-bottom: 1px solid var(--rule); }
+.col-check { width: 30px; text-align: center; color: var(--gold); font-family: var(--font-display); font-size: 18px; }
+.syllabus-table tr.done .col-check { color: var(--accent); }
+.col-num { width: 60px; font-family: var(--font-ui); font-size: 12px; color: var(--ink-muted); font-variant-numeric: tabular-nums; }
+.col-title { color: var(--ink-soft); }
+.syllabus-table tr.done .col-title { color: var(--ink-muted); }
+.col-title a { color: inherit; text-decoration: none; border-bottom: 1px dotted transparent; }
+.col-title a:hover { color: var(--accent); border-color: var(--accent); }
+.syllabus-table tr.next .col-title a { color: var(--accent); border-color: var(--accent); font-weight: 600; }
+.syllabus-table tr.next .col-check { color: var(--gold); }
+.col-duration { width: 80px; font-family: var(--font-ui); font-size: 12px; color: var(--ink-muted); text-align: right; letter-spacing: 0.02em; }
+
+.checkpoint-row { background: var(--paper-deep); }
+.checkpoint-row td { padding: 12px 10px; border-bottom: 1px solid var(--rule) !important; font-family: var(--font-display); font-style: italic; color: var(--ink-soft); }
+.checkpoint-row.passed td { color: var(--accent); }
+.cp-tag { font-family: var(--font-cinzel); font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 600; font-style: normal; margin-right: 8px; }
+
+.continue {
+  margin: 26px 0 12px;
+  padding: 16px 20px;
+  border-top: 1px solid var(--gold);
+  border-bottom: 1px solid var(--gold);
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px;
+  background: var(--paper);
+}
+.continue-text { font-family: var(--font-display); font-size: 18px; color: var(--ink); }
+.continue-text em { color: var(--accent); font-style: italic; }
+.continue-meta { font-family: var(--font-ui); font-size: 12px; color: var(--ink-muted); margin-top: 2px; }
+.continue-link {
+  font-family: var(--font-cinzel); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent); padding-bottom: 2px; font-weight: 600;
+}
+.continue-link:hover { color: var(--ink); border-color: var(--ink); }
+
+/* ---- The Capstone: a PORTRAIT GALLERY of the three authors ---- */
+.capstone-banner {
+  margin: 60px 0 28px;
+  text-align: center;
+  border-top: 3px double var(--rule);
+  border-bottom: 3px double var(--rule);
+  padding: 24px 20px;
+}
+.capstone-eyebrow { font-family: var(--font-cinzel); font-size: 11px; letter-spacing: 0.3em; color: var(--accent); font-weight: 700; text-transform: uppercase; }
+.capstone-name { font-family: var(--font-display); font-size: 44px; font-weight: 600; margin: 8px 0 4px; }
+.capstone-sub { font-family: var(--font-display); font-style: italic; color: var(--ink-soft); font-size: 19px; max-width: 50ch; margin: 0 auto; }
+
+.portraits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.portrait-card {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  padding: 10px;
+}
+.portrait-card:hover { box-shadow: 0 2px 16px rgba(122,51,34,0.08); }
+.portrait-frame {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid var(--rule-soft);
+}
+.portrait-card.philosopher .portrait-frame { background-image: var(--hero-school); background-position: 28% 40%; }
+.portrait-card.historian   .portrait-frame { background-image: var(--img-odysseus); background-position: center; }
+.portrait-card.evangelist  .portrait-frame { background-image: var(--img-mark); background-position: center; }
+.portrait-info { padding: 14px 8px 6px; text-align: center; }
+.portrait-roman { font-family: var(--font-cinzel); font-size: 10px; letter-spacing: 0.22em; color: var(--gold); text-transform: uppercase; font-weight: 700; }
+.portrait-name { font-family: var(--font-display); font-size: 22px; margin: 4px 0 2px; }
+.portrait-text { font-family: var(--font-display); font-style: italic; color: var(--accent); font-size: 16px; }
+.portrait-rationale { color: var(--ink-soft); font-size: 14px; margin-top: 6px; line-height: 1.5; }
+.portrait-credit {
+  font-family: var(--font-ui); font-size: 11px; color: var(--ink-muted); text-align: center;
+  margin-top: 6px; letter-spacing: 0.02em;
+}
+
+.colophon { text-align: center; color: var(--ink-muted); font-family: var(--font-ui); font-size: 12px; margin: 60px 0 20px; letter-spacing: 0.04em; }
+
+@media (max-width: 800px) {
+  .hero-banner { height: 420px; }
+  .preface-wrap { grid-template-columns: 1fr; }
+  .framed-plate { max-width: 280px; margin: 0 auto; }
+  .stage-with-vignette { grid-template-columns: 1fr; }
+  .vignette { max-width: 240px; margin: 0 auto; }
+  .portraits { grid-template-columns: 1fr; }
+  .metadata { grid-template-columns: 1fr 1fr; }
+  .tier-pair { grid-template-columns: 1fr; }
+}
+
+
+/* ============================================================
+   Production additions (not in mockup)
+   ============================================================ */
+
+/* Right side of the curriculum bar */
+.curriculum-bar .cb-right { display: flex; align-items: center; gap: 16px; }
+.curriculum-bar .cb-right a { color: var(--paper); text-decoration: none; opacity: 0.85; }
+.curriculum-bar .cb-right a:hover { opacity: 1; color: var(--gold-soft); }
+.curriculum-bar .cb-back { color: var(--paper); text-decoration: none; opacity: 0.9; }
+.curriculum-bar .cb-back:hover { opacity: 1; color: var(--gold-soft); }
+.curriculum-bar .cb-sep { opacity: 0.45; }
+.curriculum-bar .cb-section { color: var(--paper); }
+
+/* Painting credit floats top-right on hero (overrides bottom-right placement on mobile) */
+.hero-credit { top: 14px; bottom: auto; }
+
+/* Hero per-language: the painting URL is set inline by JS via --hero-img */
+.hero-banner {
+  background-image: linear-gradient(to bottom, rgba(35,28,20,0.15) 0%, rgba(35,28,20,0.05) 35%, rgba(253,250,243,0) 65%, rgba(253,250,243,0.95) 100%), var(--hero-img);
+}
+/* Stage vignettes also set per-language via --vig-1 ... --vig-4 */
+.vignette.v-stage1 .v-img { background-image: var(--vig-1); }
+.vignette.v-stage2 .v-img { background-image: var(--vig-2); }
+.vignette.v-stage3 .v-img { background-image: var(--vig-3); }
+.vignette.v-stage4 .v-img { background-image: var(--vig-4); }
+
+/* Portrait frames also set per-track via --tk-1 etc. */
+.portrait-card.t1 .portrait-frame { background-image: var(--tk-1); background-position: var(--tk-1-pos, center); }
+.portrait-card.t2 .portrait-frame { background-image: var(--tk-2); background-position: var(--tk-2-pos, center); }
+.portrait-card.t3 .portrait-frame { background-image: var(--tk-3); background-position: var(--tk-3-pos, center); }
+
+/* Tiers — production version uses single $15.99 all-access tier with a small note */
+.tiers.single-tier { max-width: 540px; margin-left: auto; margin-right: auto; }
+.tiers.single-tier .tier-pair { grid-template-columns: 1fr; }
+
+/* "Continue where you left off" — when there's nothing in progress yet (anonymous), show CTA */
+.continue.cta-state .continue-text { font-style: italic; color: var(--ink-muted); }
+
+/* Continue panel — sign-in prompt */
+.continue.signin-state { border-color: var(--rule); }
+.continue.signin-state .continue-text { color: var(--ink-soft); font-style: italic; }
+
+/* Single tier feature highlights "Includes the diploma" */
+.tier-col .feature-key { font-weight: 600; color: var(--ink); }
+
+/* Mobile tweaks */
+@media (max-width: 700px) {
+  .curriculum-bar { padding: 10px 14px; font-size: 9px; letter-spacing: 0.22em; }
+  .curriculum-bar .cb-right a:not(.cb-account) { display: none; }
+  .hero-credit { font-size: 10px; padding: 3px 6px; }
+}
+
+/* Preface plate background — set by JS via --preface-plate-img (avoids
+   the inline-style + URL-with-quotes collision that broke 2026-05-18). */
+.framed-plate .plate-img.preface-plate-img {
+  background-image: var(--preface-plate-img);
+}

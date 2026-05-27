@@ -1,0 +1,43 @@
+{
+  "id": "3.6",
+  "stage": 3,
+  "title": "The Infinitive and the Participles",
+  "subtitle": "Rīdan, rīdende, geriden.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Master The Infinitive and the Participles.",
+    "Read and translate authentic Old English poetry and prose.",
+    "Prepare for the capstone examination."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "Infinitive: rīdan (to ride). Present participle: rīdende (riding). Past participle: geriden (ridden). The ge- prefix marks completed action (perfective aspect). The participles decline like adjectives when used attributively."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "The Infinitive and the Participles"
+        },
+        {
+          "prompt": "Can you translate the example passage?",
+          "answer": "Work through it word by word with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson or take the capstone examination."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply The Infinitive and the Participles to reading.",
+    "credit_minutes": 60
+  }
+}

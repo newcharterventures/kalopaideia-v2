@@ -1,0 +1,43 @@
+{
+  "id": "2.5",
+  "stage": 2,
+  "title": "The Subjunctive",
+  "subtitle": "Wishes, commands, conditions — still alive in Middle English.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Master The Subjunctive.",
+    "Read and translate authentic Middle English texts.",
+    "Prepare for sustained reading in Stage 3."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "Present subjunctive often identical to infinitive (that he love, that they come). Past subjunctive: were, hadde, mighte. Used in conditions, wishes, commands, subordinate clauses after 'that.' Subjunctive is stronger in Middle English than in modern English but weaker than in Old English."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "The Subjunctive"
+        },
+        {
+          "prompt": "Can you apply this to reading?",
+          "answer": "Work through examples with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand The Subjunctive.",
+    "credit_minutes": 55
+  }
+}

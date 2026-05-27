@@ -1,0 +1,43 @@
+{
+  "id": "3.13",
+  "stage": 3,
+  "title": "Beowulf, Lines 26–50",
+  "subtitle": "The funeral of Scyld — the ship-burial.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Master Beowulf, Lines 26–50.",
+    "Read and translate authentic Old English poetry and prose.",
+    "Prepare for the capstone examination."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "Þā wæs on burgum Bēowulf Scyldinga,\nlēof lēodcyning, longe þrāge...\n\n'Then in the strongholds was Beowulf of the Scyldings, beloved people-king, for a long time...'\n\nThe funeral of Scyld. Poetic vocabulary (ȳþ-geblond = wave-tumult; sǣ-gēap = sea-curved). Full close reading."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "Beowulf, Lines 26–50"
+        },
+        {
+          "prompt": "Can you translate the example passage?",
+          "answer": "Work through it word by word with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson or take the capstone examination."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply Beowulf, Lines 26–50 to reading.",
+    "credit_minutes": 60
+  }
+}

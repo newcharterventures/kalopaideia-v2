@@ -1,0 +1,20 @@
+{
+  "id": "3.10",
+  "stage": 3,
+  "title": "The Perfect Passive Participle",
+  "subtitle": "amātus, amāta, amātum. The most useful participle.",
+  "estimated_minutes": 50,
+  "objectives": ["Form the perfect passive participle from the fourth principal part.", "Decline it as a first/second declension adjective.", "Translate as 'X-ed' or 'having been X-ed'.", "Use it to form perfect passive tenses."],
+  "sections": [
+    {"kind": "prose", "heading": "The perfect passive participle", "body": "Formation: fourth principal part: amātus, amāta, amātum — loved, having been loved\n\nDeclines like bonus, bona, bonum.\n\nUsed in perfect passive tenses:\n  amātus sum — I have been loved\n  captum est — it has been captured\n\nCaesar writes: oppidum captum. — The captured town.\nVergil writes: urbs condita. — The founded city."},
+    {"kind": "self_check", "heading": "Self-check", "items": [
+      {"prompt": "Form the perfect participle of dūcō (ductus).", "answer": "ductus, ducta, ductum — led, having been led"},
+      {"prompt": "Translate: puella laudāta.", "answer": "The praised girl / the girl who has been praised."}
+    ]},
+    {"kind": "reading_preview", "heading": "Sentences", "words": [
+      {"latin": "oppidum ā Caesare captum est.", "transliteration": null, "gloss": "The town captured by Caesar is...", "audio": "/paideia/audio/latin/sentences/3.10-1.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Lesson 3.11: the future active participle and the gerundive. amātūrus, amandus."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can form and translate the perfect passive participle.", "credit_minutes": 50}
+}

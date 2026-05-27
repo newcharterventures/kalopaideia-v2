@@ -1,0 +1,81 @@
+{
+  "id": "1.3",
+  "stage": 1,
+  "title": "The Umlauts and the ß",
+  "subtitle": "Ä, Ö, Ü — front vowels born from history. The ß — a ligature.",
+  "estimated_minutes": 40,
+  "objectives": [
+    "Pronounce all three umlauts with confidence.",
+    "Understand the historical origin of the umlaut (a, o, u + i → ä, ö, ü).",
+    "Know when to write ß and when to write ss.",
+    "Distinguish Ü from the diphthong eu."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "What an umlaut is",
+      "body": "The word *Umlaut* means 'sound change around.' In Old High German, the vowels a, o, u were pulled forward in the mouth when an i or j followed in the next syllable. Over time the i disappeared, but the fronted vowel remained. The two dots above the letter are a scribal convention — originally a small e written above the vowel to mark the change.\n\nGast (guest, singular) → Gäste (guests, plural). The a fronts to ä.\nBuch (book, singular) → Bücher (books, plural). The u fronts to ü.\n\nThe umlaut is not decorative. It marks a real sound difference and often a grammatical one."
+    },
+    {
+      "kind": "letter_grid",
+      "heading": "The three umlauts",
+      "letters": [
+        { "upper": "Ä", "lower": "ä", "name": "ah-umlaut", "ipa": "[ɛ] or [ɛː]", "audio": "/paideia/audio/german/letters/ae.mp3", "note": "Short ä = [ɛ] as in met. Long ä = [ɛː] as in air. Männer (short), Mädchen (short), spät (long)." },
+        { "upper": "Ö", "lower": "ö", "name": "oh-umlaut", "ipa": "[œ] or [øː]", "audio": "/paideia/audio/german/letters/oe.mp3", "note": "Say [e] but round your lips. Götter (short), schön (long). French eu in peu is close." },
+        { "upper": "Ü", "lower": "ü", "name": "oo-umlaut", "ipa": "[y] or [yː]", "audio": "/paideia/audio/german/letters/ue.mp3", "note": "Say [i] but round your lips. Mütter (short), Tür (long). French u in lune is the same." },
+        { "upper": "ß", "lower": "ß", "name": "Eszett", "ipa": "[s]", "audio": "/paideia/audio/german/letters/eszett.mp3", "note": "Ligature of long s + z. After long vowels and diphthongs: Straße, groß, außen. After short vowels: ss (Fluss, Kuss)." }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "When to use ß, when to use ss",
+      "body": "German spelling follows a simple rule. After a long vowel or a diphthong, write ß. After a short vowel, write ss.\n\n  Long vowel: Straße (street), Fuß (foot), groß (great).\n  Diphthong: außen (outside), heiß (hot).\n  Short vowel: Fluss (river), müssen (must), Kuss (kiss).\n\nSwiss German abolished the ß in 1938 and writes ss in all cases. Austrian and German texts still use ß. Both are correct in their respective countries."
+    },
+    {
+      "kind": "prose",
+      "heading": "Minimal pairs — ä vs. a, ö vs. o, ü vs. u",
+      "body": "The umlauts are distinct phonemes. Changing a to ä, o to ö, or u to ü changes the meaning.\n\n  Mutter (mother) vs. Mütter (mothers)\n  Gott (god) vs. Götter (gods)\n  Mann (man) vs. Männer (men)\n  schon (already) vs. schön (beautiful)\n  Buch (book) vs. Bücher (books)\n\nPay attention. The umlaut is not optional."
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill",
+      "instructions": "Minimal pairs. Each pair is read twice. Listen for the difference, then repeat both.",
+      "audio": "/paideia/audio/german/drills/lesson-1.3-listening.mp3"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer without notes.",
+      "items": [
+        { "prompt": "What is the historical origin of the umlaut?", "answer": "A vowel (a, o, or u) fronted in the mouth when an i or j followed in the next syllable. The i disappeared but the fronted vowel remained. The two dots descend from a small e written above the vowel." },
+        { "prompt": "How do you pronounce Ö?", "answer": "Say [e] but round your lips. A front rounded vowel." },
+        { "prompt": "How do you pronounce Ü?", "answer": "Say [i] but round your lips. A front rounded vowel." },
+        { "prompt": "When do you write ß instead of ss?", "answer": "After a long vowel or a diphthong. Straße (long a), groß (long o), but Fluss (short u)." },
+        { "prompt": "What is the difference between Mann and Männer?", "answer": "Mann = man (singular). Männer = men (plural). The umlaut marks the plural." },
+        { "prompt": "What is the difference between schon and schön?", "answer": "Schon = already. Schön = beautiful. The umlaut changes the meaning entirely." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Words with umlauts",
+      "instructions": "Read aloud. Check the audio after.",
+      "words": [
+        { "german": "Männer", "transliteration": "men-ner", "gloss": "men", "audio": "/paideia/audio/german/words/maenner.mp3" },
+        { "german": "Mütter", "transliteration": "mü-ter", "gloss": "mothers", "audio": "/paideia/audio/german/words/muetter.mp3" },
+        { "german": "Götter", "transliteration": "ger-ter", "gloss": "gods", "audio": "/paideia/audio/german/words/goetter.mp3" },
+        { "german": "schön", "transliteration": "shern", "gloss": "beautiful", "audio": "/paideia/audio/german/words/schoen.mp3" },
+        { "german": "Tür", "transliteration": "tür", "gloss": "door", "audio": "/paideia/audio/german/words/tuer.mp3" },
+        { "german": "Fuß", "transliteration": "foos", "gloss": "foot", "audio": "/paideia/audio/german/words/fuss.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.4 covers the ch sounds — the single most important consonant distinction in German. Four sounds, one letter. After ch, you will have met every phoneme in the language."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can distinguish ä from a, ö from o, ü from u by ear, and can write five German words with ß in the correct positions.",
+    "credit_minutes": 40
+  }
+}

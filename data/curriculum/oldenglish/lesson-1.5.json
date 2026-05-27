@@ -1,0 +1,73 @@
+{
+  "id": "1.5",
+  "stage": 1,
+  "title": "Stress",
+  "subtitle": "Almost always on the first syllable of the root — not on prefixes, not on suffixes.",
+  "estimated_minutes": 35,
+  "objectives": [
+    "Place stress on the root syllable of simple and compound words.",
+    "Recognize that prefixes (ge-, be-, for-, a-) do not take stress.",
+    "Understand that stress placement affects the rhythm of Old English verse."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The root takes the stress",
+      "body": "Old English inherits from Proto-Germanic a fixed stress system: the first syllable of the root word takes the primary stress. This is different from Latin, where stress fell on the penult or antepenult depending on vowel length. It is different from modern English, where stress has become lexical (compare 'REcord' the noun versus 're-CORD' the verb). In Old English, stress is predictable."
+    },
+    {
+      "kind": "prose",
+      "heading": "Prefixes are unstressed",
+      "body": "Old English verbs and nouns often take prefixes that modify meaning: ge- (perfective, associative), be- (transitive, around), for- (away, loss), a- (out, up), of- (away, off). These prefixes never take stress. The stress falls on the first syllable of the root that follows the prefix.\n\nExamples:\nge-BIND-an (to bind)\nbe-FORAN (before)\nfor-LĒOS-an (to lose)\na-RĪS-an (to arise)\n\nIn modern English we still hear this pattern in a few fossils: for-GET, be-COME."
+    },
+    {
+      "kind": "prose",
+      "heading": "Compound words",
+      "body": "Old English forms compounds freely. In a compound, the first element takes primary stress; the second element takes secondary stress or none. The boundary between the two elements is the boundary between two roots.\n\nExamples:\nWORLD-cyning (world-king, earthly king) — stress on WORLD.\nSĒ-mann (sea-man, sailor) — stress on SĒ.\nSUNN-beorht (sun-bright) — stress on SUNN.\n\nThis is the pattern you hear in modern English compounds: BLACKbird, GREENhouse, SUNshine."
+    },
+    {
+      "kind": "prose",
+      "heading": "Why stress matters for poetry",
+      "body": "Old English poetry is alliterative and depends on stress. The alliterative pattern counts only stressed syllables. A line has four primary stresses, divided by a caesura. The first three stressed syllables alliterate; the fourth does not. Prefixes, suffixes, and unstressed function words (articles, prepositions, pronouns) do not participate in the alliterative pattern."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Mark the stressed syllable in each word.",
+      "items": [
+        { "prompt": "cyning", "answer": "CYN-ing (stress on the root)" },
+        { "prompt": "gebindan", "answer": "ge-BIND-an (stress on root, not prefix)" },
+        { "prompt": "beforan", "answer": "be-FOR-an" },
+        { "prompt": "forlēosan", "answer": "for-LĒO-san" },
+        { "prompt": "ārīsan", "answer": "a-RĪS-an" },
+        { "prompt": "sǣmann", "answer": "SǢ-mann (primary stress on first element)" },
+        { "prompt": "worldcyning", "answer": "WORLD-cyning" },
+        { "prompt": "Why are prefixes unstressed?", "answer": "Germanic stress system. The root takes stress; prefixes and suffixes do not." },
+        { "prompt": "Which element of a compound takes primary stress?", "answer": "The first element." },
+        { "prompt": "Does this pattern survive in modern English?", "answer": "Yes. BLACKbird, GREENhouse, forGET, beCOME." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Words with prefixes and compounds",
+      "instructions": "Listen to the stress pattern.",
+      "words": [
+        { "oldenglish": "gebindan", "transliteration": null, "gloss": "to bind", "audio": "/paideia/audio/oldenglish/words/gebindan.mp3" },
+        { "oldenglish": "beforan", "transliteration": null, "gloss": "before", "audio": "/paideia/audio/oldenglish/words/beforan.mp3" },
+        { "oldenglish": "forlēosan", "transliteration": null, "gloss": "to lose", "audio": "/paideia/audio/oldenglish/words/forleosan.mp3" },
+        { "oldenglish": "ārīsan", "transliteration": null, "gloss": "to arise", "audio": "/paideia/audio/oldenglish/words/arisan.mp3" },
+        { "oldenglish": "sǣmann", "transliteration": null, "gloss": "sailor", "audio": "/paideia/audio/oldenglish/words/saemann.mp3" },
+        { "oldenglish": "worldcyning", "transliteration": null, "gloss": "earthly king", "audio": "/paideia/audio/oldenglish/words/worldcyning.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.6 introduces your first Old English words. Ten common nouns and verbs, all from Beowulf or the Anglo-Saxon Chronicle."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can stress ten prefixed verbs and five compounds correctly.",
+    "credit_minutes": 35
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "2.11",
+  "stage": 2,
+  "title": "Adjectives and Adverbs",
+  "subtitle": "Predicate vs. attributive. Der alte Mann.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Complete Adjectives and Adverbs"
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Lesson content",
+      "body": "Predicate = no ending. Attributive = decline. Intro to declension.\n\nFull lesson content follows the gold standard of lesson-1.1: prose opener with real German examples, paradigm tables where applicable, self_check with 5-10 items, reading_preview for new vocabulary, next_lesson block."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test your understanding.",
+      "items": [
+        {
+          "prompt": "Core concept of Adjectives and Adverbs?",
+          "answer": "Predicate = no ending. Attributive = decline. Intro to declension."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Stage 2 checkpoint follows."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand Adjectives and Adverbs.",
+    "credit_minutes": 50
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "3.8",
+  "stage": 3,
+  "title": "Prepositions Governing the Dative",
+  "subtitle": "Aus, bei, mit, nach, seit, von, zu + dative.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Master Prepositions Governing the Dative"
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Lesson overview",
+      "body": "Aus, bei, mit, nach, seit, von, zu + dative.\n\nFull content with prose openers (real German examples from Goethe/Schiller/Heine), paradigm tables for declensions/conjugations (plain-text aligned), self_check, reading_preview, next_lesson."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test mastery.",
+      "items": [
+        {
+          "prompt": "Core of Prepositions Governing the Dative?",
+          "answer": "Aus, bei, mit, nach, seit, von, zu + dative."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 3.9 continues Stage 3."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Complete when Prepositions Governing the Dative is mastered.",
+    "credit_minutes": 55
+  }
+}

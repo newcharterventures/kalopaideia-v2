@@ -1,0 +1,21 @@
+{
+  "id": "4.9",
+  "stage": 4,
+  "title": "The Gerund and Gerundive",
+  "subtitle": "ars scrībendī. Carthāgō dēlenda est. Verbal nouns and adjectives of obligation.",
+  "estimated_minutes": 55,
+  "objectives": ["Form the gerund (verbal noun) from any verb.", "Form the gerundive (verbal adjective) from any verb.", "Translate gerund as '-ing' noun.", "Translate gerundive as 'must be X-ed' or 'to be X-ed'."],
+  "sections": [
+    {"kind": "prose", "heading": "Gerund and gerundive", "body": "Gerund (verbal noun): present stem + -ndī, -ndō, -ndum, -ndō (gen., dat., acc., abl.):\n  ars scrībendī — the art of writing\n  cupidus vīdendī — desirous of seeing\n\nGerundive (verbal adjective): present stem + -ndus, -a, -um:\n  Carthāgō dēlenda est. — Carthage must be destroyed.\n  līber legendus — a book to be read\n\nCicero writes: vīvendī causa. — For the sake of living.\nCato writes: Carthāgō dēlenda est. — Carthage must be destroyed."},
+    {"kind": "self_check", "heading": "Self-check", "items": [
+      {"prompt": "Form the gerund (gen.) of amō.", "answer": "amandī — of loving"},
+      {"prompt": "Form the gerundive of dūcō.", "answer": "dūcendus, dūcenda, dūcendum — to be led"},
+      {"prompt": "Translate: hoc faciendum est.", "answer": "This must be done."}
+    ]},
+    {"kind": "reading_preview", "heading": "Sentences", "words": [
+      {"latin": "tempus legendi.", "transliteration": null, "gloss": "A time for reading.", "audio": "/paideia/audio/latin/sentences/4.9-1.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Lesson 4.10: deponent verbs. loquor, locūtus sum."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can form and translate gerunds and gerundives.", "credit_minutes": 55}
+}

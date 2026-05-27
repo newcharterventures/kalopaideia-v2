@@ -1,0 +1,68 @@
+{
+  "id": "2.4",
+  "stage": 2,
+  "title": "The Larzac Tablet, Continued",
+  "subtitle": "Parsing AVDE, ADSAXSATILIN, and the syntax of binding.",
+  "estimated_minutes": 70,
+  "objectives": [
+    "Translate the verb AVDE (\"invokes\" or \"calls upon\").",
+    "Parse ADSAXSATILIN (\"the ones who bind\").",
+    "Recognize the accusative case in the list of cursed women.",
+    "Understand the syntactic structure: X invokes Y (dative) against Z (accusative)."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The core verb: AVDE",
+      "body": "The Larzac Tablet pivots on one verb: AVDE. The word appears after the list of supernatural forces:\n\nIN ALCVINOM CANTOBEDNNABOGAITIRCON NOILBINACON NATARCON DAXTECXXTONIAVDEDASETI\n\nIsolating AVDE:\nDAXTECXXTONI — \"to the lower ones\" (dative, spirits of the underworld?)\nAVDE — \"invokes\" or \"calls upon\" (verb, 3rd person singular or plural)\nDASETI — possibly \"binds\" or \"places\" (verb, meaning uncertain)\n\nAVDE is cognate with Latin voveo (\"I vow\") and related to the Gaulish formula AVVOT (\"vowed\"). Here it means \"invokes\" or \"calls upon\". The cursers are calling upon the supernatural forces (all in the dative) to act."
+    },
+    {
+      "kind": "prose",
+      "heading": "ADSAXSATILIN — the binders",
+      "body": "Later in the tablet, the text gives a name or description for the forces invoked:\n\nADSAXSATILIN\n\nParsing:\nADSAXSATILIN — \"the ones who bind\" or \"the binding ones\" (participle or adjective, accusative plural feminine?)\n\nThe root is *sax- (\"bind\"), related to Latin sancio and Old Irish sáithe. The prefix AD- intensifies. The suffix -LIN marks a participle or agent noun. These are the spirits who bind the cursed women, who prevent them from acting, speaking, or prospering."
+    },
+    {
+      "kind": "prose",
+      "heading": "The cursed women",
+      "body": "After invoking the powers, the tablet lists the women to be cursed. They are in the accusative case (the direct object of the binding):\n\nPAVLLAM PRIMAM\nAIONAS ADIEGIASAS\nSATIRICNAM\nTERTIÁM\n\nParsing:\nPAVLLAM — accusative singular, \"Paulla\" (a Latin name)\nPRIMAM — accusative singular, \"Prima\" (\"first\", a Latin name or epithet)\nAIONAS — accusative plural, \"the Aionae\" (a group name or family name)\nADIEGIASAS — accusative plural, \"of Adiegias\" (genitive or ethnic, modifying AIONAS)\nSATIRICNAM — accusative singular, \"Satiricna\" (a Gaulish name)\nTERTIÁM — accusative singular, \"Tertia\" (\"third\", a Latin name)\n\nThese women are the targets. The binding spirits (ADSAXSATILIN) are invoked against them."
+    },
+    {
+      "kind": "prose",
+      "heading": "The syntactic structure",
+      "body": "The Larzac Tablet follows a curse formula:\n\n1. IN + place (accusative): \"in/into the sacred place\"\n2. Spirits invoked (dative): \"to X, to Y, to Z\"\n3. Verb (AVDE): \"(she/they) invoke(s)\"\n4. Targets (accusative): \"Paulla, Prima, the Aionae, Satiricna, Tertia\"\n5. Purpose or result: \"that they be bound\"\n\nThis is the structure of every Roman-world defixio. The Larzac Tablet is Gaulish in language, Roman in form."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers; check after.",
+      "items": [
+        { "prompt": "What does AVDE mean?", "answer": "\"Invokes\" or \"calls upon\" — the core verb of the curse." },
+        { "prompt": "What does ADSAXSATILIN mean?", "answer": "\"The ones who bind\" or \"the binding ones\" — a description of the spirits invoked." },
+        { "prompt": "What case are the cursed women in?", "answer": "Accusative — they are the direct objects of the binding." },
+        { "prompt": "Name three of the cursed women.", "answer": "Paulla Prima, Satiricna, Tertia (also AIONAS ADIEGIASAS, a group)." },
+        { "prompt": "What is the root of ADSAXSATILIN?", "answer": "*sax-, meaning \"bind\", related to Latin sancio and Old Irish sáithe." },
+        { "prompt": "What case are the spirits invoked in?", "answer": "Dative — they are the recipients of the invocation." },
+        { "prompt": "What is the syntactic structure of the curse?", "answer": "IN + place, spirits (dative), AVDE, targets (accusative), purpose/result." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Larzac verb and noun forms",
+      "instructions": "These are the key forms from the curse syntax. Memorize them.",
+      "words": [
+        { "gaulish": "AVDE", "transliteration": null, "gloss": "invokes, calls upon (verb)", "audio": "/paideia/audio/gaulish/larzac/aude.mp3" },
+        { "gaulish": "ADSAXSATILIN", "transliteration": null, "gloss": "the ones who bind (participle/adjective)", "audio": "/paideia/audio/gaulish/larzac/adsaxsatilin.mp3" },
+        { "gaulish": "PAVLLAM PRIMAM", "transliteration": null, "gloss": "Paulla Prima (accusative, cursed woman)", "audio": "/paideia/audio/gaulish/larzac/paullam-primam.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.5 turns to the Chamalières Tablet: another lead curse, shorter and clearer than Larzac, invoking MAPONOS ARVERNORIGIIS (\"Maponos of the Arverni kings\")."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can translate AVDE, parse ADSAXSATILIN, and identify the accusative case in the list of cursed women.",
+    "credit_minutes": 70
+  }
+}

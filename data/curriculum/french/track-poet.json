@@ -1,0 +1,76 @@
+{
+  "id": "track-poet",
+  "stage": 5,
+  "name": "The Poet",
+  "subtitle": "Baudelaire, Les Fleurs du Mal: Spleen et Idéal (selections, c. 5,000 words).",
+  "estimated_weeks": 18,
+  "rationale": "The greatest lyric poetry in nineteenth-century French. Alexandrine verse, rich imagery, the vocabulary of modernity and melancholy. Opens the door to Rimbaud and Verlaine.",
+  "learning_outcomes": [
+    "Read and translate selections from Baudelaire's Spleen et Idéal.",
+    "Recognize the alexandrine verse form: twelve syllables, caesura, rhyme.",
+    "Understand the themes of Baudelaire's poetry: beauty, spleen, the city, time, death.",
+    "Translate any alexandrine quatrain from the chosen poems at sight.",
+    "Discuss the literary and stylistic character of Baudelaire's verse in writing."
+  ],
+  "texts": [
+    {
+      "author": "Charles Baudelaire",
+      "work": "Les Fleurs du Mal: Spleen et Idéal",
+      "selections": "Selected poems: L'Albatros, Correspondances, La Beauté, L'Invitation au voyage, Spleen (IV), and others",
+      "word_count": 5000,
+      "notes": "Baudelaire's poetry is dense, imagistic, and musical. The alexandrine verse form (twelve syllables per line, with a caesura after the sixth) is the standard meter of French poetry from the seventeenth through nineteenth centuries. The student will encounter the passé simple in verse, the subjunctive in poetic clauses, and a vocabulary of sensation, beauty, and despair."
+    }
+  ],
+  "weekly_reading_plan": [
+    {"week": 1, "reading": "Introduction to alexandrine verse: structure, caesura, rhyme", "pages": "varied"},
+    {"week": 2, "reading": "L'Albatros (The Albatross)", "pages": "1 poem"},
+    {"week": 3, "reading": "Correspondances", "pages": "1 poem"},
+    {"week": 4, "reading": "La Beauté (Beauty)", "pages": "1 poem"},
+    {"week": 5, "reading": "L'Invitation au voyage", "pages": "1 poem"},
+    {"week": 6, "reading": "Spleen (IV): 'Quand le ciel bas et lourd...'", "pages": "1 poem"},
+    {"week": 7, "reading": "Le Chat (The Cat)", "pages": "1 poem"},
+    {"week": 8, "reading": "La Musique (Music)", "pages": "1 poem"},
+    {"week": 9, "reading": "Additional Spleen et Idéal poems", "pages": "2–3 poems"},
+    {"week": 10, "reading": "Additional Spleen et Idéal poems", "pages": "2–3 poems"},
+    {"week": 11, "reading": "Review: L'Albatros, Correspondances, La Beauté", "pages": "varied"},
+    {"week": 12, "reading": "Review: L'Invitation au voyage, Spleen (IV)", "pages": "varied"},
+    {"week": 13, "reading": "Review: Additional poems", "pages": "varied"},
+    {"week": 14, "reading": "Sight translation practice: quatrains from selected poems", "pages": "varied"},
+    {"week": 15, "reading": "Capstone preparation: parsing drills", "pages": "varied"},
+    {"week": 16, "reading": "Capstone preparation: composition practice", "pages": "varied"},
+    {"week": 17, "reading": "Final review: re-reading all selected poems", "pages": "varied"},
+    {"week": 18, "reading": "Capstone examination", "pages": "varied"}
+  ],
+  "vocabulary_focus": [
+    "Sensory vocabulary: parfum (perfume), couleur (color), son (sound), odeur (odor)",
+    "Urban vocabulary: rue (street), foule (crowd), lumière (light), brouillard (fog)",
+    "Abstract vocabulary: spleen (melancholy), ennui (boredom), beauté (beauty), idéal (ideal)",
+    "Poetic diction: archaic and elevated terms, inversions, figurative language"
+  ],
+  "grammar_focus": [
+    "The passé simple in verse (il fut, il vit, il parut)",
+    "The subjunctive in poetic clauses of wish and doubt",
+    "Inversion for emphasis and meter",
+    "Relative clauses and complex sentence structures in verse"
+  ],
+  "sample_passages": [
+    {
+      "source": "L'Albatros, stanza 2",
+      "french": "À peine les ont-ils déposés sur les planches,\nQue ces rois de l'azur, maladroits et honteux,\nLaissent piteusement leurs grandes ailes blanches\nComme des avirons traîner à côté d'eux.",
+      "english": "Scarcely have they placed them on the planks,\nThan these kings of the azure, clumsy and ashamed,\nPitifully let their great white wings\nDrag beside them like oars.",
+      "notes": "Classic alexandrines. The caesura falls after the sixth syllable in each line. The inversion 'À peine les ont-ils déposés' is characteristic of poetic syntax. The simile 'comme des avirons' is precise and visual."
+    },
+    {
+      "source": "Spleen (IV), opening quatrain",
+      "french": "Quand le ciel bas et lourd pèse comme un couvercle\nSur l'esprit gémissant en proie aux longs ennuis,\nEt que de l'horizon embrassant tout le cercle\nIl nous verse un jour noir plus triste que les nuits.",
+      "english": "When the low and heavy sky weighs like a lid\nOn the groaning spirit prey to long ennuis,\nAnd when from the horizon embracing the whole circle\nIt pours on us a black day sadder than the nights.",
+      "notes": "One of Baudelaire's most famous openings. The alexandrine is stretched by enjambment: 'couvercle' at the end of line 1 completes its syntactic unit in line 2. The vocabulary of oppression and melancholy is characteristic of the Spleen poems."
+    }
+  ],
+  "capstone_prep": {
+    "sight_translation": "Practice translating alexandrine quatrains from Baudelaire without notes.",
+    "parsing": "Identify and parse verb forms (passé simple, subjunctive) and poetic inversions.",
+    "composition": "Render five English sentences in French, using vocabulary and structures from Baudelaire.",
+    "oral_component": "Prepare a quatrain from Baudelaire to recite aloud. Answer five questions about its language, imagery, and meter."
+  }
+}

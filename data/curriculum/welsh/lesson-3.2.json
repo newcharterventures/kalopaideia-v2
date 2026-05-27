@@ -1,0 +1,46 @@
+{
+  "id": "3.2",
+  "stage": 3,
+  "title": "Irregular Verbs — Dod (To Come)",
+  "subtitle": "Present: deuaf, deui, daw. Preterite: deuthum, daeth.",
+  "estimated_minutes": 50,
+  "objectives": ["Conjugate dod in present and preterite.","Distinguish from mynd."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers Irregular Verbs — Dod (To Come). Present: deuaf, deui, daw. Preterite: deuthum, daeth."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Conjugate dod in present and preterite."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Conjugate dod in present and preterite." },
+        { "prompt": "How do you apply this in practice?", "answer": "Distinguish from mynd." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "welsh": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/welsh/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on Irregular Verbs — Dod (To Come)."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in Irregular Verbs — Dod (To Come) to ten random examples.",
+    "credit_minutes": 50
+  }
+}

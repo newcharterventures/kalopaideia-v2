@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kalopaideia — Verify Diploma</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Cinzel:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/paideia/styles.css?v=1778713200" />
+<style>
+.verify-card {
+  max-width: 56ch;
+  margin: 40px auto;
+  padding: 36px 40px;
+  background: #fbf5e9;
+  border: 1px solid #c9b8a1;
+  border-radius: 6px;
+  font-family: 'Source Serif 4', Georgia, serif;
+}
+.verify-card h1 { font-family: 'Cinzel', serif; letter-spacing: 0.04em; }
+.verify-card .v-row { display: flex; gap: 14px; padding: 8px 0; border-bottom: 1px dotted #c9b8a1; }
+.verify-card .v-row:last-child { border: none; }
+.verify-card .v-label { flex: 0 0 130px; color: #5b4a36; font-size: 14px; }
+.verify-card .v-value { flex: 1; }
+.verify-card .v-token { font-family: 'Source Code Pro', monospace; font-size: 12px; word-break: break-all; }
+.verify-card .v-honors {
+  display: inline-block; padding: 4px 12px; background: #c8983a; color: #1a1410;
+  font-family: 'Cinzel', serif; letter-spacing: 0.08em; font-size: 12px; border-radius: 3px;
+}
+.verify-card .v-pass {
+  display: inline-block; padding: 4px 12px; background: #5a8a3e; color: #fff;
+  font-family: 'Cinzel', serif; letter-spacing: 0.08em; font-size: 12px; border-radius: 3px;
+}
+.verify-card .v-not-found { color: #8a1a1a; font-style: italic; }
+.verify-form { display: flex; gap: 8px; margin-top: 16px; }
+.verify-form input { flex: 1; font-size: 16px; padding: 8px; border: 1px solid #c9b8a1; border-radius: 3px; }
+.verify-form button { background: #1a1410; color: #f4ecda; border: none; padding: 8px 18px; font-family: 'Cinzel', serif; cursor: pointer; border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<header class="masthead masthead-athenaeum">
+  <div class="mast-content">
+    <div class="mast-grid">
+      <div class="mast-center">
+        <h1 class="mast-name"><a href="/paideia/" aria-label="Kalopaideia home">KALOPAIDEIA</a></h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="verify-card" id="verify-root">
+  <p><em>Loading…</em></p>
+</main>
+
+<script>
+const BASE = "/paideia";
+function esc(s) {
+  if (s === null || s === undefined) return "";
+  return String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+function formatDate(ms) {
+  if (!ms) return "—";
+  return new Date(Number(ms)).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+}
+function getTokenIdFromPath() {
+  const parts = location.pathname.split("/").filter(Boolean);
+  // /paideia/verify or /paideia/verify/<tokenId>
+  return parts[2] || "";
+}
+
+async function show(tokenId) {
+  const root = document.getElementById("verify-root");
+  if (!tokenId) {
+    root.innerHTML = `
+      <h1>Verify a Kalopaideia diploma</h1>
+      <p>Every Kalopaideia diploma is recorded on the Base blockchain as a soulbound ERC-721 token. Enter the token ID to verify a credential.</p>
+      <form class="verify-form" onsubmit="event.preventDefault(); location.href='/paideia/verify/' + encodeURIComponent(document.getElementById('tid').value.trim());">
+        <input id="tid" type="text" placeholder="Token ID" />
+        <button>Verify</button>
+      </form>`;
+    return;
+  }
+
+  let data = null;
+  try {
+    const r = await fetch(`${BASE}/api/verify/${encodeURIComponent(tokenId)}`);
+    if (r.ok) data = await r.json();
+    else if (r.status === 404) {
+      root.innerHTML = `
+        <h1>Diploma not found</h1>
+        <p class="v-not-found">No Kalopaideia diploma exists with that token ID. Check the value and try again.</p>
+        <p><a href="${BASE}/verify">← Back to verify</a></p>`;
+      return;
+    }
+  } catch {}
+  if (!data) {
+    root.innerHTML = `<p>Could not load. Try again.</p>`;
+    return;
+  }
+
+  const honors = !!data.honors;
+  root.innerHTML = `
+    <h1>${honors ? "Diploma with Honors" : "Diploma of Completion"}</h1>
+    <p style="font-size:14px;color:#5b4a36;">Verified by Kalopaideia · ${esc(data.chain || "base")}</p>
+    <div style="margin:24px 0;">
+      <span class="${honors ? "v-honors" : "v-pass"}">${honors ? "Pass with Honors" : "Pass"}</span>
+    </div>
+    <div class="v-row"><div class="v-label">Awarded to</div><div class="v-value"><strong>${esc(data.public_name || "—")}</strong></div></div>
+    <div class="v-row"><div class="v-label">Language</div><div class="v-value">${esc(data.language || "—")}</div></div>
+    <div class="v-row"><div class="v-label">Track</div><div class="v-value">${esc(data.track || "—")}</div></div>
+    <div class="v-row"><div class="v-label">Score</div><div class="v-value">${data.score_pct != null ? (Math.round(data.score_pct * 1000) / 10) + "%" : "—"}</div></div>
+    <div class="v-row"><div class="v-label">Issued</div><div class="v-value">${formatDate(data.minted_at)}</div></div>
+    <div class="v-row"><div class="v-label">Token ID</div><div class="v-value v-token">${esc(data.token_id)}</div></div>
+    <div class="v-row"><div class="v-label">Tx Hash</div><div class="v-value v-token">${esc(data.tx_hash || "—")}</div></div>
+    <div class="v-row"><div class="v-label">Script Hash</div><div class="v-value v-token">${esc(data.script_hash || "—")}</div></div>
+    <p style="margin-top:24px;font-size:13px;color:#5b4a36;">
+      This diploma is soulbound: it cannot be transferred. The script hash is the SHA-256 of the examination this student submitted. To dispute, contact <a href="${BASE}/contact">Kalopaideia</a>.
+    </p>
+    <p><a href="${BASE}/verify">← Verify another</a></p>
+  `;
+}
+
+show(getTokenIdFromPath());
+</script>
+</body>
+</html>

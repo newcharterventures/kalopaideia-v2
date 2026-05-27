@@ -1,0 +1,43 @@
+{
+  "id": "1.6",
+  "stage": 1,
+  "title": "First Lines",
+  "subtitle": "Whan that Aprill with his shoures soote...",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Master First Lines.",
+    "Read and translate authentic Middle English texts.",
+    "Prepare for sustained reading in Stage 3."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "Whan that Aprill with his shoures soote... — the opening of the Canterbury Tales. Read it aloud ten times, attending to every final -e. WHAHN thaht ah-PREEL with hiss SHOO-res SOH-tuh... The meter reveals the pronunciation."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "First Lines"
+        },
+        {
+          "prompt": "Can you apply this to reading?",
+          "answer": "Work through examples with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand First Lines.",
+    "credit_minutes": 50
+  }
+}

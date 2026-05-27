@@ -1,0 +1,46 @@
+{
+  "id": "1.8",
+  "stage": 1,
+  "title": "The Nasal Mutation (Treiglad Trwynol)",
+  "subtitle": "P → mh, t → nh, c → ngh, b → m, d → n, g → ng.",
+  "estimated_minutes": 50,
+  "objectives": ["Learn the nasal mutation pattern.","Identify triggers: fy (my), yn (in, with certain nouns)."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers The Nasal Mutation (Treiglad Trwynol). P → mh, t → nh, c → ngh, b → m, d → n, g → ng."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Learn the nasal mutation pattern."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Learn the nasal mutation pattern." },
+        { "prompt": "How do you apply this in practice?", "answer": "Identify triggers: fy (my), yn (in, with certain nouns)." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "welsh": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/welsh/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on The Nasal Mutation (Treiglad Trwynol)."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in The Nasal Mutation (Treiglad Trwynol) to ten random examples.",
+    "credit_minutes": 50
+  }
+}

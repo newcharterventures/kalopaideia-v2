@@ -1,0 +1,93 @@
+{
+  "id": "1.1",
+  "stage": 1,
+  "title": "The Alphabet, Part One",
+  "subtitle": "Α through Μ — the first thirteen letters of the twenty-four.",
+  "estimated_minutes": 45,
+  "objectives": [
+    "Recognize Α, Β, Γ, Δ, Ε, Ζ, Η, Θ, Ι, Κ, Λ, Μ in both upper and lower case.",
+    "Pronounce each letter as it would have been heard in Athens around 400 BCE.",
+    "Trace each letter by hand and copy it from memory.",
+    "Hear the difference between an aspirated theta and an English th."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Where we are starting",
+      "body": "Greek has twenty-four letters. We will learn them in two sittings, thirteen and eleven. Today, thirteen. You do not need to memorize the order in this lesson — the order will come from use. What you need is to recognize each letter the next time you see it, and to make its sound when you do.\n\nThe pronunciation we teach is the reconstructed Attic of around 400 BCE, the Athens of Plato. It is not the modern Greek pronunciation you would hear in Athens today — that pronunciation, beautiful in its own right, has eight centuries of sound change behind it and obscures the distinctions that the meter of Homer, the puns of Aristophanes, and the wordplay of Plato all depend on. To hear those, we need the older sounds."
+    },
+    {
+      "kind": "letter_grid",
+      "heading": "The first thirteen letters",
+      "letters": [
+        { "upper": "Α", "lower": "α", "name": "alpha", "ipa": "[a] or [aː]", "audio": "/paideia/audio/greek/letters/alpha.mp3", "note": "Short or long, like the a in father." },
+        { "upper": "Β", "lower": "β", "name": "beta", "ipa": "[b]", "audio": "/paideia/audio/greek/letters/beta.mp3", "note": "Like the b in boy. In modern Greek this letter has become a v, but in Plato's Athens it was still a true b." },
+        { "upper": "Γ", "lower": "γ", "name": "gamma", "ipa": "[ɡ]", "audio": "/paideia/audio/greek/letters/gamma.mp3", "note": "Always hard, like the g in go — never like the g in gem. Before γ, κ, χ, or ξ, it nasalizes to ng as in sing." },
+        { "upper": "Δ", "lower": "δ", "name": "delta", "ipa": "[d]", "audio": "/paideia/audio/greek/letters/delta.mp3", "note": "Like the d in dog." },
+        { "upper": "Ε", "lower": "ε", "name": "epsilon", "ipa": "[e]", "audio": "/paideia/audio/greek/letters/epsilon.mp3", "note": "Always short, like the e in met. The name means simply 'plain e' — to distinguish it from the long eta." },
+        { "upper": "Ζ", "lower": "ζ", "name": "zeta", "ipa": "[zd]", "audio": "/paideia/audio/greek/letters/zeta.mp3", "note": "Probably a true cluster, like the sd in wisdom, not a simple z. This will matter when we come to verb formation." },
+        { "upper": "Η", "lower": "η", "name": "eta", "ipa": "[ɛː]", "audio": "/paideia/audio/greek/letters/eta.mp3", "note": "Always long, like the a in air, but held longer. Distinct from epsilon. The two will never be confused once your ear is trained." },
+        { "upper": "Θ", "lower": "θ", "name": "theta", "ipa": "[tʰ]", "audio": "/paideia/audio/greek/letters/theta.mp3", "note": "This is NOT the English th in thin. It is an aspirated t — a t with a strong puff of air. Hold a piece of paper in front of your mouth: a Greek θ should move it; an English t will not." },
+        { "upper": "Ι", "lower": "ι", "name": "iota", "ipa": "[i] or [iː]", "audio": "/paideia/audio/greek/letters/iota.mp3", "note": "Short or long, like the i in machine." },
+        { "upper": "Κ", "lower": "κ", "name": "kappa", "ipa": "[k]", "audio": "/paideia/audio/greek/letters/kappa.mp3", "note": "Like the k in skin — unaspirated. The English k in kite is too aspirated; the k in skin is closer." },
+        { "upper": "Λ", "lower": "λ", "name": "lambda", "ipa": "[l]", "audio": "/paideia/audio/greek/letters/lambda.mp3", "note": "Like the l in let." },
+        { "upper": "Μ", "lower": "μ", "name": "mu", "ipa": "[m]", "audio": "/paideia/audio/greek/letters/mu.mp3", "note": "Like the m in man." }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "A note on the aspirated stops",
+      "body": "Greek had three pairs of stops that English does not pair the same way:\n\n  unaspirated   aspirated\n      π             φ\n      τ             θ\n      κ             χ\n\nThe unaspirated members (π, τ, κ) are like the p in spin, the t in stop, the k in skin — said without a puff of air. The aspirated members (φ, θ, χ) are like the p in pin, the t in top, the k in kite — said with a clear puff of air. Today's lesson covers two of these pairs in passing (θ and one half of the κ-pair). The full picture comes in Lesson 1.2.\n\nDo not let the modern English transliterations 'th', 'ph', 'ch' mislead you. They reflect what these letters became in later Greek and in English borrowings (theology, philosophy, chrome), not what they sounded like in Plato's mouth."
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill",
+      "instructions": "Each of the thirteen letters is spoken three times: once in isolation, once at the start of a real Greek word, and once between two vowels. Listen first; then say each one aloud after the recording.",
+      "audio": "/paideia/audio/greek/drills/lesson-1.1-listening.mp3"
+    },
+    {
+      "kind": "writing_drill",
+      "heading": "Writing drill",
+      "instructions": "Print or trace each letter ten times in upper case, ten times in lower case. Greek handwriting in lower case is essentially Latin handwriting with a few new shapes — the chief ones are β, γ, δ, ζ, η, θ, λ, μ. Pay particular attention to the closed loop of θ versus the open arc of σ, and to the descender on η that distinguishes it from a Latin n.",
+      "downloadable_pdf": "/paideia/curriculum/greek/handouts/lesson-1.1-tracing.pdf"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Without looking back, identify each letter. Cover the answers; check yourself after.",
+      "items": [
+        { "prompt": "Θ", "answer": "theta, aspirated t — not English th" },
+        { "prompt": "Η", "answer": "eta, long e (like air)" },
+        { "prompt": "Γ", "answer": "gamma, hard g (like go)" },
+        { "prompt": "Ζ", "answer": "zeta, sd-cluster" },
+        { "prompt": "Λ", "answer": "lambda" },
+        { "prompt": "Ε", "answer": "epsilon, short e" },
+        { "prompt": "δ", "answer": "delta" },
+        { "prompt": "μ", "answer": "mu" },
+        { "prompt": "What is the difference in sound between Θ and an English t?", "answer": "Θ is aspirated — a t with a strong puff of air. The English t in 'stop' is unaspirated; the t in 'top' is aspirated. Greek θ is closer to the second, but pushed further." },
+        { "prompt": "Why is Γ called 'always hard'?", "answer": "Because it never softens to a j-sound before e or i, the way English g does in 'gem' or 'giant'. Greek γενεά begins with the g of 'go', not the g of 'gem'." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "First words in Greek",
+      "instructions": "You can already read these. Try aloud, then check against the audio.",
+      "words": [
+        { "greek": "λόγος", "transliteration": "lógos", "gloss": "word, speech, reason", "audio": "/paideia/audio/greek/words/logos.mp3" },
+        { "greek": "ἀγαθή", "transliteration": "agathḗ", "gloss": "good (feminine)", "audio": "/paideia/audio/greek/words/agathe.mp3" },
+        { "greek": "θεός", "transliteration": "theós", "gloss": "god", "audio": "/paideia/audio/greek/words/theos.mp3" },
+        { "greek": "ζωή", "transliteration": "zōḗ", "gloss": "life", "audio": "/paideia/audio/greek/words/zoe.mp3" },
+        { "greek": "ἡμέρα", "transliteration": "hēméra", "gloss": "day", "audio": "/paideia/audio/greek/words/hemera.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.2 covers Ν through Ω — the second half of the alphabet, including the other two aspirated stops (Φ, Χ) and the long vowels Υ and Ω. After 1.2 you will be able to read any printed Greek text aloud, even if you do not know what it means yet."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can name and pronounce all thirteen letters in random order in under sixty seconds.",
+    "credit_minutes": 45
+  }
+}

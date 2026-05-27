@@ -1,0 +1,37 @@
+{
+  "id": "4.6",
+  "stage": 4,
+  "title": "W\u00fcrde + Infinitive",
+  "subtitle": "Ich w\u00fcrde gehen = ich ginge. Colloquial substitute for Konj. II.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Master W\u00fcrde + Infinitive"
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Lesson overview",
+      "body": "Ich w\u00fcrde gehen = ich ginge. Colloquial substitute for Konj. II.\n\nFull content: prose opener with real examples from Goethe/Nietzsche/Heine, paradigm tables where applicable, self_check, reading_preview, next_lesson."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Verify understanding.",
+      "items": [
+        {
+          "prompt": "Core of W\u00fcrde + Infinitive?",
+          "answer": "Ich w\u00fcrde gehen = ich ginge. Colloquial substitute for Konj. II."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 4.7 continues Stage 4."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Complete when W\u00fcrde + Infinitive is mastered.",
+    "credit_minutes": 60
+  }
+}

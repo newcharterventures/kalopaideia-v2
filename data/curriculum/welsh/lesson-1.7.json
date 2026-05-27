@@ -1,0 +1,46 @@
+{
+  "id": "1.7",
+  "stage": 1,
+  "title": "The Soft Mutation (Treiglad Meddal)",
+  "subtitle": "P → b, t → d, c → g, b → f, d → dd, g → ∅, m → f, ll → l, rh → r.",
+  "estimated_minutes": 60,
+  "objectives": ["Learn the soft mutation pattern.","Identify common triggers: article (feminine), yn, prepositions."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers The Soft Mutation (Treiglad Meddal). P → b, t → d, c → g, b → f, d → dd, g → ∅, m → f, ll → l, rh → r."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Learn the soft mutation pattern."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Learn the soft mutation pattern." },
+        { "prompt": "How do you apply this in practice?", "answer": "Identify common triggers: article (feminine), yn, prepositions." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "welsh": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/welsh/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on The Soft Mutation (Treiglad Meddal)."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in The Soft Mutation (Treiglad Meddal) to ten random examples.",
+    "credit_minutes": 60
+  }
+}

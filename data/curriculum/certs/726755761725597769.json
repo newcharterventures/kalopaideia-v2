@@ -1,0 +1,58 @@
+{
+  "tokenId": "726755761725597769",
+  "chain": "base-sepolia",
+  "contract": "(dry-run)",
+  "txHash": "0xDRYRUNd10880132655545e078ad746eb3a75353ca5ff31c40ed7b51eb95d5a",
+  "mintedAt": 1779092776577,
+  "userEmail": "jae@newcharterventures.com",
+  "publicName": "Jae Lee",
+  "lang": "greek",
+  "displayName": "Classical Greek (Attic)",
+  "trackId": "track-plato",
+  "trackName": "The Philosopher",
+  "honors": true,
+  "scriptHash": "abc123def456",
+  "scorePct": 0.91,
+  "metadata": {
+    "name": "Kalopaideia Diploma in Classical Greek (Attic) (with Honors)",
+    "description": "Issued by Kalopaideia to Jae Lee on 2026-05-18 on completion of the Classical Greek (Attic) capstone examination (The Philosopher track).",
+    "image": "https://newcharterventures.com/paideia/img/diploma/greek.png",
+    "external_url": "https://newcharterventures.com/paideia/verify/{TOKEN_ID}",
+    "attributes": [
+      {
+        "trait_type": "Language",
+        "value": "Classical Greek (Attic)"
+      },
+      {
+        "trait_type": "Track",
+        "value": "The Philosopher"
+      },
+      {
+        "trait_type": "Result",
+        "value": "Pass with Honors"
+      },
+      {
+        "trait_type": "Score",
+        "value": "91.0%"
+      },
+      {
+        "trait_type": "Date",
+        "value": "2026-05-18"
+      },
+      {
+        "trait_type": "Chain",
+        "value": "base-sepolia"
+      },
+      {
+        "trait_type": "Soulbound",
+        "value": "true"
+      }
+    ],
+    "properties": {
+      "issuer": "Kalopaideia",
+      "issuer_url": "https://newcharterventures.com/paideia/",
+      "credential_type": "diploma_of_completion",
+      "script_hash": "abc123def456"
+    }
+  }
+}

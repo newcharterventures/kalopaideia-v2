@@ -1,0 +1,74 @@
+{
+  "id": "1.5",
+  "stage": 1,
+  "title": "Final Devoicing",
+  "subtitle": "Why German words end crisp — b→p, d→t, g→k.",
+  "estimated_minutes": 35,
+  "objectives": [
+    "Recognize and produce final devoicing automatically.",
+    "Distinguish pairs like lieb/lieben, Kind/Kinder, Tag/Tage by sound.",
+    "Understand that spelling does not change, but pronunciation does."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The crispness of German",
+      "body": "German voices b, d, g when they appear inside a word between vowels. But at the end of a word, or at the end of a syllable before a consonant, they devoice. B becomes [p], d becomes [t], g becomes [k]. The spelling does not change. The sound does.\n\nThis is called *Auslautverhärtung* — final-sound hardening. It is one of the signatures of German phonology. It makes German endings sound sharp and distinct."
+    },
+    {
+      "kind": "prose",
+      "heading": "The three devoicing pairs",
+      "body": "B / P:\n  lieben (to love) — lee-ben [b]\n  lieb (dear) — leep [p]\n\nD / T:\n  Kinder (children) — kin-der [d]\n  Kind (child) — kint [t]\n\nG / K:\n  Tage (days) — tah-guh [g]\n  Tag (day) — tahk [k]\n\nThe letter does not change. B stays written as b. But your mouth says [p]."
+    },
+    {
+      "kind": "prose",
+      "heading": "When devoicing happens",
+      "body": "Devoicing occurs:\n\n  1. At the end of a word: Rad (wheel) = raht.\n  2. At the end of a syllable before another consonant: Radfahrer (cyclist) = raht-fah-rer.\n  3. Before a suffix that starts with a consonant: liebst (you love) = leepst.\n\nDevoicing does NOT occur:\n\n  1. Between two vowels: Leben (life) = lay-ben [b].\n  2. Before a suffix that starts with a vowel: lieben = lee-ben [b].\n\nThe rule is mechanical. Learn it once; apply it everywhere."
+    },
+    {
+      "kind": "prose",
+      "heading": "Examples from Goethe",
+      "body": "\"Über allen Gipfeln ist Ruh.\" (Over all peaks is rest.)\n\n  Gipfeln — the -n keeps the [f] voiced? No. The p is voiceless already. But notice ist: spelled with t, sounds like [t]. No change needed.\n  Ruh — final h is silent, so this is just Ru, and the u is the end of the word. No devoicing here; no voiced consonant to devoice.\n\nBetter example: \"Ein Wort, ein Satz\" (A word, a sentence).\n\n  Wort — ends in t, pronounced [t]. No devoicing; t is already voiceless.\n  Satz — ends in tz [ts]. No devoicing.\n\nBetter still: \"Ich hab es getragen\" (I have borne it).\n\n  hab — from *haben*. Final b devoices to [p]: hahp.\n  getragen — the g in *ge-* is internal, stays [g]. The final *-en* keeps the g of *trag-* internal too, so it stays [g]: guh-trah-gen.\n\nBut: \"Was ich trag\" (what I bear).\n\n  trag — final g devoices to [k]: trahk."
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill — voiced vs. devoiced",
+      "instructions": "Each pair is read twice. Listen for the devoicing at the end of the first word. Repeat both.",
+      "audio": "/paideia/audio/german/drills/lesson-1.5-listening.mp3"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer without notes.",
+      "items": [
+        { "prompt": "What is final devoicing?", "answer": "A phonological rule in German where b, d, g become [p], [t], [k] at the end of a word or syllable." },
+        { "prompt": "How do you pronounce lieb?", "answer": "leep — final b devoices to [p]." },
+        { "prompt": "How do you pronounce Kind?", "answer": "kint — final d devoices to [t]." },
+        { "prompt": "How do you pronounce Tag?", "answer": "tahk — final g devoices to [k]." },
+        { "prompt": "Does the spelling change when a consonant devoices?", "answer": "No. The spelling stays the same. Only the pronunciation changes." },
+        { "prompt": "When does devoicing NOT happen?", "answer": "Between two vowels, or before a suffix that starts with a vowel. Lieben keeps the [b] because the b is followed by -en." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Words demonstrating devoicing",
+      "instructions": "Read each pair aloud. Notice the devoicing in the singular or base form.",
+      "words": [
+        { "german": "Kind / Kinder", "transliteration": "kint / kin-der", "gloss": "child / children", "audio": "/paideia/audio/german/words/kind-kinder.mp3" },
+        { "german": "Tag / Tage", "transliteration": "tahk / tah-guh", "gloss": "day / days", "audio": "/paideia/audio/german/words/tag-tage.mp3" },
+        { "german": "lieb / lieben", "transliteration": "leep / lee-ben", "gloss": "dear / to love", "audio": "/paideia/audio/german/words/lieb-lieben.mp3" },
+        { "german": "Rad / Räder", "transliteration": "raht / ray-der", "gloss": "wheel / wheels", "audio": "/paideia/audio/german/words/rad-raeder.mp3" },
+        { "german": "Weg / Wege", "transliteration": "vayk / vay-guh", "gloss": "way / ways", "audio": "/paideia/audio/german/words/weg-wege.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.6 covers vowel length — the distinction between Mann and Bahn, Bett and Beet. After that, consonant clusters (sch, pf, qu, tz), and then you will read your first full German sentences."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can pronounce ten German words with final devoicing automatically, without thinking about the rule.",
+    "credit_minutes": 35
+  }
+}

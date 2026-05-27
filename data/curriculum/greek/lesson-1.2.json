@@ -1,0 +1,93 @@
+{
+  "id": "1.2",
+  "stage": 1,
+  "title": "The Alphabet, Part Two",
+  "subtitle": "Ν through Ω — completing the twenty-four.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Recognize Ν, Ξ, Ο, Π, Ρ, Σ, Τ, Υ, Φ, Χ, Ψ, Ω in both upper and lower case.",
+    "Distinguish the medial (σ) and final (ς) forms of sigma.",
+    "Pronounce the aspirated stops Φ and Χ as aspirated sounds, not English f or guttural ch.",
+    "Master the distinction between short omicron and long omega."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The second half",
+      "body": "You now have thirteen letters. Today you gain eleven more, and the alphabet is complete.\n\nTwo of these eleven are digraphs, each representing a cluster of two sounds: Ξ (ks as in box) and Ψ (ps as in lips). Two are the long partners to vowels you already know: Ω (long o) to balance the short omicron, and Υ (which can be short or long and whose sound is unfamiliar to an English ear). Two are the remaining aspirated stops: Φ (aspirated p, not English f) and Χ (aspirated k, not German or Scottish ch).\n\nThe rest are familiar ground. By the end of this lesson you will be able to read any printed Greek text aloud, even if you do not yet know what it means."
+    },
+    {
+      "kind": "letter_grid",
+      "heading": "The final eleven letters",
+      "letters": [
+        { "upper": "Ν", "lower": "ν", "name": "nu", "ipa": "[n]", "audio": "/paideia/audio/greek/letters/nu.mp3", "note": "Like the n in no." },
+        { "upper": "Ξ", "lower": "ξ", "name": "xi", "ipa": "[ks]", "audio": "/paideia/audio/greek/letters/xi.mp3", "note": "Always ks as in box, never gz." },
+        { "upper": "Ο", "lower": "ο", "name": "omicron", "ipa": "[o]", "audio": "/paideia/audio/greek/letters/omicron.mp3", "note": "Always short, like the o in pot. The name means 'small o'." },
+        { "upper": "Π", "lower": "π", "name": "pi", "ipa": "[p]", "audio": "/paideia/audio/greek/letters/pi.mp3", "note": "Unaspirated p, like the p in spin — no puff of air." },
+        { "upper": "Ρ", "lower": "ρ", "name": "rho", "ipa": "[r]", "audio": "/paideia/audio/greek/letters/rho.mp3", "note": "A rolled or trilled r. When rho begins a word, it always takes a rough breathing: ῥόδον." },
+        { "upper": "Σ", "lower": "σ / ς", "name": "sigma", "ipa": "[s]", "audio": "/paideia/audio/greek/letters/sigma.mp3", "note": "Always s, never z. Use σ inside a word; use ς at the end of a word. This is the only letter in Greek with two lower-case forms." },
+        { "upper": "Τ", "lower": "τ", "name": "tau", "ipa": "[t]", "audio": "/paideia/audio/greek/letters/tau.mp3", "note": "Unaspirated t, like the t in stop." },
+        { "upper": "Υ", "lower": "υ", "name": "upsilon", "ipa": "[y] or [yː]", "audio": "/paideia/audio/greek/letters/upsilon.mp3", "note": "Like the German ü or French u — lips rounded as for oo, tongue forward as for ee. Not found in English. Short or long." },
+        { "upper": "Φ", "lower": "φ", "name": "phi", "ipa": "[pʰ]", "audio": "/paideia/audio/greek/letters/phi.mp3", "note": "Aspirated p, not English f. Hold paper in front of your mouth: φ should blow it hard." },
+        { "upper": "Χ", "lower": "χ", "name": "chi", "ipa": "[kʰ]", "audio": "/paideia/audio/greek/letters/chi.mp3", "note": "Aspirated k, not German or Scottish ch. Think of the k in kite, but with more air." },
+        { "upper": "Ψ", "lower": "ψ", "name": "psi", "ipa": "[ps]", "audio": "/paideia/audio/greek/letters/psi.mp3", "note": "Always ps as in lips." },
+        { "upper": "Ω", "lower": "ω", "name": "omega", "ipa": "[ɔː]", "audio": "/paideia/audio/greek/letters/omega.mp3", "note": "Always long, like the aw in law but held longer. Distinct from omicron. The name means 'great o'." }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "The aspirated stops, complete",
+      "body": "You now have all six: three pairs.\n\n  unaspirated   aspirated\n      π             φ\n      τ             θ\n      κ             χ\n\nThe English transliterations p, t, k versus ph, th, ch are misleading. They reflect the sound changes that happened after the classical period and the way English borrowed Greek words (philosophy, theater, chaos). In Plato's Athens, φ was not an f-sound; it was a p with a puff of air. Χ was not a guttural sound; it was a k with a puff of air. Θ was not the English th; it was a t with a puff of air.\n\nThe distinction mattered. Minimal pairs existed. A student who said φιλέω with an English f instead of an aspirated p was pronouncing a different word."
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill",
+      "instructions": "Each of the eleven letters is spoken three times: once alone, once at the start of a word, once between vowels. Listen; then repeat.",
+      "audio": "/paideia/audio/greek/drills/lesson-1.2-listening.mp3"
+    },
+    {
+      "kind": "writing_drill",
+      "heading": "Writing drill",
+      "instructions": "Trace each letter ten times in upper case, ten times in lower case. Pay attention to the two forms of sigma: σ inside, ς at the end. No other letter in Greek has this peculiarity.",
+      "downloadable_pdf": "/paideia/curriculum/greek/handouts/lesson-1.2-tracing.pdf"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers. Identify each letter or answer each question.",
+      "items": [
+        { "prompt": "Φ", "answer": "phi, aspirated p" },
+        { "prompt": "Χ", "answer": "chi, aspirated k" },
+        { "prompt": "Ω", "answer": "omega, long o" },
+        { "prompt": "Ξ", "answer": "xi, ks cluster" },
+        { "prompt": "Ψ", "answer": "psi, ps cluster" },
+        { "prompt": "Υ", "answer": "upsilon, like German ü" },
+        { "prompt": "What are the two forms of sigma?", "answer": "σ (medial, inside a word) and ς (final, at the end of a word)" },
+        { "prompt": "Which letter always takes a rough breathing at the start of a word?", "answer": "Rho (ρ)" },
+        { "prompt": "What sound does Φ make in classical Attic?", "answer": "Aspirated p, not English f" },
+        { "prompt": "What is the difference between Ο and Ω?", "answer": "Ο (omicron) is always short; Ω (omega) is always long. The length distinction is phonemic and affects meaning." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "More words in Greek",
+      "instructions": "Read these aloud. You now have all twenty-four letters.",
+      "words": [
+        { "greek": "φιλοσοφία", "transliteration": "philosophía", "gloss": "love of wisdom", "audio": "/paideia/audio/greek/words/philosophia.mp3" },
+        { "greek": "ψυχή", "transliteration": "psykhḗ", "gloss": "soul, life, breath", "audio": "/paideia/audio/greek/words/psyche.mp3" },
+        { "greek": "χρόνος", "transliteration": "khrónos", "gloss": "time", "audio": "/paideia/audio/greek/words/chronos.mp3" },
+        { "greek": "σοφός", "transliteration": "sophós", "gloss": "wise", "audio": "/paideia/audio/greek/words/sophos.mp3" },
+        { "greek": "νοῦς", "transliteration": "noûs", "gloss": "mind, intellect", "audio": "/paideia/audio/greek/words/nous.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.3 takes up the vowels and diphthongs in full. You know the seven simple vowels. Now you will learn the ten diphthongs, the iota subscript, and the rules of vowel length. After that lesson you will be able to hear the difference between ἀγαθή and ἀγαθαί, between λέγω and λέγοι, and to understand why the difference matters."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can name all eleven letters in random order in under ninety seconds and can write the two forms of sigma from memory.",
+    "credit_minutes": 50
+  }
+}

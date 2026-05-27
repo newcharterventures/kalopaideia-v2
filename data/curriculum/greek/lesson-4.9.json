@@ -1,0 +1,61 @@
+{
+  "id": "4.9",
+  "stage": 4,
+  "title": "The Perfect Middle and Passive",
+  "subtitle": "λέλυμαι — endings stacked on the reduplicated stem.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Form and conjugate the perfect middle/passive indicative of any ω-verb.",
+    "Recognize that the perfect middle/passive has no κ marker.",
+    "Understand the perfect middle/passive as expressing the state resulting from middle or passive action.",
+    "Distinguish perfect middle/passive from perfect active by form."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The perfect middle and passive",
+      "body": "The perfect middle/passive uses the same reduplication as the active, but the endings are the primary middle/passive endings stacked directly onto the reduplicated stem. There is no κ marker.\n\nλέλυμαι means 'I have been loosed' (passive) or 'I have loosed for myself' (middle), depending on context. As in the present and imperfect, the perfect middle and passive forms are identical. Context distinguishes."
+    },
+    {
+      "kind": "prose",
+      "heading": "The perfect middle/passive indicative: λέλυμαι",
+      "body": "  singular\n  1st   λέλυμαι     I have been loosed / I have loosed for myself\n  2nd   λέλυσαι     you have been loosed / you have loosed for yourself\n  3rd   λέλυται     he/she/it has been loosed / has loosed for himself/herself/itself\n\n  plural\n  1st   λελύμεθα    we have been loosed / we have loosed for ourselves\n  2nd   λέλυσθε     you (plural) have been loosed / have loosed for yourselves\n  3rd   λέλυνται    they have been loosed / they have loosed for themselves\n\nThe endings are -μαι, -σαι, -ται, -μεθα, -σθε, -νται. No κ. The σ of -σαι often causes sound changes with the preceding stem consonant."
+    },
+    {
+      "kind": "prose",
+      "heading": "From Xenophon",
+      "body": "Xenophon, Anabasis I.1.2: γέγονε πόλεμος.\n'War has arisen.' γέγονε is the perfect of γίγνομαι (I become). The perfect means 'it has come into being' = 'it has arisen'."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Conjugate or answer.",
+      "items": [
+        { "prompt": "First person singular perfect middle/passive of λύω", "answer": "λέλυμαι" },
+        { "prompt": "Third person singular perfect middle/passive of λύω", "answer": "λέλυται" },
+        { "prompt": "Third person plural perfect middle/passive of λύω", "answer": "λέλυνται" },
+        { "prompt": "Does the perfect middle/passive have the κ marker?", "answer": "No." },
+        { "prompt": "Translate: λέλυμαι ὑπὸ τοῦ στρατηγοῦ.", "answer": "I have been freed by the general." },
+        { "prompt": "Are the perfect middle and passive forms the same?", "answer": "Yes. Context distinguishes." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Perfect middle/passive in sentences",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "λέλυμαι ὑπὸ τοῦ στρατηγοῦ.", "transliteration": "lélymai hypò toû stratēgoû.", "gloss": "I have been freed by the general.", "audio": "/paideia/audio/greek/sentences/lelymai-strategos.mp3" },
+        { "greek": "γέγονε πόλεμος.", "transliteration": "gégone pólemos.", "gloss": "War has arisen.", "audio": "/paideia/audio/greek/sentences/gegone-polemos.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 4.10 introduces the pluperfect and future perfect. The pluperfect expresses a state that existed in the past. ἐλελύκη means 'I had loosed'. The future perfect expresses a state that will exist in the future. λελύσομαι means 'I will have loosed'. Both tenses are rare."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can conjugate the perfect middle/passive of any ω-verb from memory and can distinguish it from the perfect active by form.",
+    "credit_minutes": 50
+  }
+}

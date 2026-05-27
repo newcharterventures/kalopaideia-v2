@@ -1,0 +1,158 @@
+{
+  "id": "stage-5-capstone",
+  "lang": "italian",
+  "title": "The Kalopaideia Italian Examination",
+  "instructions": "Three hours, no notes for Part A; printed lexicon and grammar permitted for Part B. Honor code: you affirm by submitting that you used only permitted aids. A failed examination may be retaken after thirty days.",
+  "time_limit_minutes": 180,
+  "tracks_apply": ["track-poet", "track-storyteller", "track-statesman"],
+  "sections": [
+    {
+      "id": "A",
+      "title": "Part A — Sight Translation (no notes)",
+      "items": [
+        {
+          "id": "A1",
+          "type": "translate",
+          "points": 10,
+          "track": "track-poet",
+          "prompt_italian": "Nel mezzo del cammin di nostra vita\nmi ritrovai per una selva oscura,\nché la diritta via era smarrita.",
+          "prompt_en": "Translate this tercet from Dante, Inferno I.",
+          "reference": [
+            "in the middle of the journey of our life i found myself in a dark wood for the straight way was lost",
+            "midway upon the journey of our life i found myself within a dark wood for the right way was lost",
+            "in the middle of the road of our life i found myself in a dark forest because the straight path was lost"
+          ],
+          "keywords": ["middle", "journey", "life", "dark", "wood", "lost"],
+          "threshold": 0.45
+        },
+        {
+          "id": "A2",
+          "type": "translate",
+          "points": 10,
+          "track": "track-poet",
+          "prompt_italian": "Amor, ch'al cor gentil ratto s'apprende,\nprese costui de la bella persona\nche mi fu tolta; e 'l modo ancor m'offende.",
+          "prompt_en": "Translate this tercet from Dante, Inferno V (Francesca speaks).",
+          "reference": [
+            "love which to the gentle heart swiftly attaches itself took hold of this one for the beautiful person that was taken from me and the manner still offends me",
+            "love that quickly seizes the gentle heart took hold of him for the fair form that was taken from me and the way still wounds me",
+            "love which attaches itself swiftly to the noble heart seized this man for the beautiful body taken from me and the manner still offends me"
+          ],
+          "keywords": ["love", "gentle", "heart", "beautiful", "taken", "offends"],
+          "threshold": 0.4
+        },
+        {
+          "id": "A3",
+          "type": "translate",
+          "points": 10,
+          "track": "track-storyteller",
+          "prompt_italian": "Umana cosa è aver compassione degli afflitti; e come che a ciascuna persona stea bene, a coloro è massimamente richiesto li quali già hanno di conforto avuto mestiere e hannol trovato in alcuni.",
+          "prompt_en": "Translate this sentence from Boccaccio, Decameron, Proemio (opening).",
+          "reference": [
+            "it is a human thing to have compassion for the afflicted and while it becomes every person it is especially required of those who have once had need of comfort and have found it in others",
+            "to have compassion for the suffering is a human thing and although it befits everyone it is most especially required of those who have had need of consolation and have found it in some",
+            "it is human to have pity on the afflicted and though it suits all people it is most necessary for those who once needed comfort and found it in certain people"
+          ],
+          "keywords": ["human", "compassion", "afflicted", "comfort", "found"],
+          "threshold": 0.35
+        },
+        {
+          "id": "A4",
+          "type": "translate",
+          "points": 10,
+          "track": "track-statesman",
+          "prompt_italian": "Tutti li stati, tutti e' dominii che hanno avuto et hanno imperio sopra li uomini, sono stati e sono o repubbliche o principati.",
+          "prompt_en": "Translate the opening sentence of Machiavelli, Il Principe, chapter I.",
+          "reference": [
+            "all states all dominions that have had and have empire over men have been and are either republics or principalities",
+            "all the states all the domains that have had and have authority over men were and are either republics or principalities",
+            "all states all governments that have had and have power over men have been and are either republics or principalities"
+          ],
+          "keywords": ["states", "dominions", "empire", "men", "republics", "principalities"],
+          "threshold": 0.4
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "title": "Part B — Parsing",
+      "items": [
+        {
+          "id": "B1",
+          "type": "parse",
+          "points": 5,
+          "prompt": "Parse the verb form parlò. Give: person, number, tense, mood, voice.",
+          "answer": ["third", "singular", "passato remoto", "indicative", "active"]
+        },
+        {
+          "id": "B2",
+          "type": "parse",
+          "points": 5,
+          "prompt": "Parse the verb form avesse parlato. Give: person, number, tense, mood, voice.",
+          "answer": ["third", "singular", "trapassato", "congiuntivo", "active"]
+        },
+        {
+          "id": "B3",
+          "type": "parse",
+          "points": 5,
+          "prompt": "Parse the noun form libri. Give: case (nominative/accusative), number, gender, singular form.",
+          "answer": ["nominative or accusative", "plural", "masculine", "libro"]
+        },
+        {
+          "id": "B4",
+          "type": "parse",
+          "points": 5,
+          "prompt": "Parse the pronoun form glielo. Give: the two component pronouns and their functions.",
+          "answer": ["gli (indirect object, to him/her/them) + lo (direct object, it/him)"]
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "title": "Part C — Composition (English → Italian)",
+      "items": [
+        {
+          "id": "C1",
+          "type": "compose",
+          "points": 8,
+          "prompt": "Render in Italian: 'Dante is a great poet.'",
+          "reference": ["Dante è un grande poeta", "Dante è grande poeta", "Dante è un gran poeta"],
+          "threshold": 0.6
+        },
+        {
+          "id": "C2",
+          "type": "compose",
+          "points": 8,
+          "prompt": "Render in Italian: 'The woman gave the book to the child.'",
+          "reference": ["La donna ha dato il libro al bambino", "La donna diede il libro al bambino", "La donna ha dato il libro al ragazzo"],
+          "threshold": 0.55
+        },
+        {
+          "id": "C3",
+          "type": "compose",
+          "points": 9,
+          "prompt": "Render in Italian: 'If I had known, I would have come.'",
+          "reference": ["Se avessi saputo, sarei venuto", "Se lo avessi saputo, sarei venuto", "Se avessi saputo, sarei venuta"],
+          "threshold": 0.5
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "title": "Part D — Multiple Choice (vocabulary and idiom)",
+      "items": [
+        { "id": "D1", "type": "mcq", "points": 2, "prompt": "What does virtù mean in Dante and Machiavelli?", "choices": ["virtue (moral excellence)", "power/strength/skill", "truth", "fate"], "answer": "power/strength/skill" },
+        { "id": "D2", "type": "mcq", "points": 2, "prompt": "What does talento mean in Dante?", "choices": ["talent/ability", "desire/wish", "money", "destiny"], "answer": "desire/wish" },
+        { "id": "D3", "type": "mcq", "points": 2, "prompt": "What is the function of the congiuntivo in Italian?", "choices": ["to express facts", "to express doubt, wish, or subordinate clauses after verbs of opinion", "to give commands", "to form the future"], "answer": "to express doubt, wish, or subordinate clauses after verbs of opinion" },
+        { "id": "D4", "type": "mcq", "points": 2, "prompt": "Which auxiliary verb does andare take in compound tenses?", "choices": ["avere", "essere", "both", "neither"], "answer": "essere" },
+        { "id": "D5", "type": "mcq", "points": 2, "prompt": "In a Type Three hypothetical sentence (irrealtà), what mood is the protasis (the if-clause)?", "choices": ["indicative", "congiuntivo imperfetto", "congiuntivo trapassato", "conditional"], "answer": "congiuntivo trapassato" },
+        { "id": "D6", "type": "mcq", "points": 2, "prompt": "What is the passato remoto used for?", "choices": ["recent past actions", "habitual past", "completed past actions (often literary/historical)", "ongoing past actions"], "answer": "completed past actions (often literary/historical)" }
+      ]
+    }
+  ],
+  "scoring": {
+    "max_points": 95,
+    "pass_mark": 0.70,
+    "honors_mark": 0.85
+  },
+  "honor_code": "I attest that the answers I have entered are my own, composed without aid beyond the materials permitted for each section of this examination. I understand that this examination is graded automatically, that the script and my signed attestation will be permanently hashed on completion, and that a passing score will issue a permanent on-chain diploma in my name."
+}

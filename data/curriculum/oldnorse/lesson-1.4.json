@@ -1,0 +1,80 @@
+{
+  "id": "1.4",
+  "stage": 1,
+  "title": "Diphthongs",
+  "subtitle": "Au, ei, ey — two vowels, one syllable.",
+  "estimated_minutes": 40,
+  "objectives": [
+    "Pronounce the three main diphthongs: au, ei, ey.",
+    "Recognize ǫu in rare words.",
+    "Distinguish diphthongs from vowel sequences across syllable boundaries."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "What is a diphthong",
+      "body": "A diphthong is two vowels pronounced as one syllable. The tongue moves from one vowel position to another without a break. English has many: the i in ride (aɪ), the ow in how (aʊ), the oy in boy (ɔɪ).\n\nOld Norse has three main diphthongs: au, ei, ey. Each is one syllable. The stress falls on the first element, and the tongue glides to the second."
+    },
+    {
+      "kind": "prose",
+      "heading": "Au",
+      "body": "Au = [au], as in English house or cow. The vowel starts at [a] (father) and glides to [u] (put). Common words: auga (eye), daudi (death), lauss (loose), haugr (mound).\n\nDo not confuse au with a + u across a syllable boundary. In the word fara + -um (we go), the a and u are separate syllables: fa-rum. In daudi, au is one syllable: dau-di."
+    },
+    {
+      "kind": "prose",
+      "heading": "Ei",
+      "body": "Ei = [ei], as in English bay or say. The vowel starts at [e] (met) and glides to [i] (machine). Common words: ein (one), einn (alone), heimr (world, home), steinn (stone).\n\nThis is the most common diphthong in Old Norse. You will see it everywhere."
+    },
+    {
+      "kind": "prose",
+      "heading": "Ey",
+      "body": "Ey = [øy]. The first element is ø (mid front rounded, as in French peu), the second is y (high front rounded, as in French tu). English has no equivalent. To approximate: say the ay in say, round your lips, then glide upward toward ee with lips still rounded.\n\nCommon words: ey (island), eyra (ear), deyja (to die)."
+    },
+    {
+      "kind": "prose",
+      "heading": "Ǫu (rare)",
+      "body": "Ǫu appears in a handful of words. It is [ɔu] — the vowel of caught gliding to the vowel of put. Rare enough that some grammars do not list it as a phoneme, but you will see it: jǫtunn (giant), sometimes spelled with ǫu in older texts."
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill",
+      "instructions": "Each diphthong is spoken in isolation, then in three words. Repeat aloud.",
+      "audio": "/paideia/audio/oldnorse/drills/lesson-1.4-listening.mp3"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "items": [
+        { "prompt": "How do you pronounce au?", "answer": "Like English house — starts at [a], glides to [u]." },
+        { "prompt": "How do you pronounce ei?", "answer": "Like English bay — starts at [e], glides to [i]." },
+        { "prompt": "How do you pronounce ey?", "answer": "Like ay in say, but with rounded lips throughout. Glides from ø to y." },
+        { "prompt": "Is au in auga one syllable or two?", "answer": "One. It is a diphthong." },
+        { "prompt": "Is the u in farum part of a diphthong?", "answer": "No. The a and u are in separate syllables: fa-rum." },
+        { "prompt": "Read aloud: heimr", "answer": "heimr (with ei as in bay)" },
+        { "prompt": "Read aloud: auga", "answer": "auga (with au as in house)" },
+        { "prompt": "Read aloud: eyra", "answer": "eyra (with ey, lips rounded)" }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Words with diphthongs",
+      "words": [
+        { "oldnorse": "auga", "transliteration": "auga", "gloss": "eye", "audio": "/paideia/audio/oldnorse/words/auga.mp3" },
+        { "oldnorse": "daudi", "transliteration": "daudi", "gloss": "death", "audio": "/paideia/audio/oldnorse/words/daudi.mp3" },
+        { "oldnorse": "heimr", "transliteration": "heimr", "gloss": "world, home", "audio": "/paideia/audio/oldnorse/words/heimr.mp3" },
+        { "oldnorse": "steinn", "transliteration": "steinn", "gloss": "stone", "audio": "/paideia/audio/oldnorse/words/steinn.mp3" },
+        { "oldnorse": "ey", "transliteration": "ey", "gloss": "island", "audio": "/paideia/audio/oldnorse/words/ey.mp3" },
+        { "oldnorse": "eyra", "transliteration": "eyra", "gloss": "ear", "audio": "/paideia/audio/oldnorse/words/eyra.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.5 covers consonants and clusters — hr, hl, hn at word-start (voiceless), and the unaspirated p, t, k after s."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can pronounce all three main diphthongs correctly in ten random words.",
+    "credit_minutes": 40
+  }
+}

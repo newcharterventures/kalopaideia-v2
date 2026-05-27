@@ -1,0 +1,21 @@
+{
+  "id": "4.10",
+  "stage": 4,
+  "title": "Deponent Verbs",
+  "subtitle": "loquor, locūtus sum. Passive in form, active in meaning.",
+  "estimated_minutes": 50,
+  "objectives": ["Recognize deponent verbs by their passive forms.", "Translate deponents with active meaning.", "Conjugate common deponents (loquor, sequor, patior, morior, etc.).", "Understand semi-deponents (gaudeō, audeō)."],
+  "sections": [
+    {"kind": "prose", "heading": "Deponent verbs", "body": "Deponent verbs have passive forms but active meanings.\n\nloquor, loquī, locūtus sum — to speak\nsequor, sequī, secūtus sum — to follow\npatior, patī, passus sum — to suffer, endure\nmorior, morī, mortuus sum — to die\n\nPresent: loquor, loqueris, loquitur, loquimur, loquiminī, loquuntur\nPerfect: locūtus sum, locūtus es, etc.\n\nCicero writes: dē hāc rē loquor. — I speak about this matter.\nCaesar writes: hostēs secūtī sunt. — They followed the enemies."},
+    {"kind": "self_check", "heading": "Self-check", "items": [
+      {"prompt": "Conjugate loquor in the present.", "answer": "loquor, loqueris, loquitur, loquimur, loquiminī, loquuntur"},
+      {"prompt": "Translate: mīlitēs ducem secūtī sunt.", "answer": "The soldiers followed the leader."},
+      {"prompt": "What does 'deponent' mean?", "answer": "Passive in form, active in meaning."}
+    ]},
+    {"kind": "reading_preview", "heading": "Sentences", "words": [
+      {"latin": "Cicerō sapienter loquitur.", "transliteration": null, "gloss": "Cicero speaks wisely.", "audio": "/paideia/audio/latin/sentences/4.10-1.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Lesson 4.11: reading Cicero, Pro Archia §§1–5. Slow, periodic prose."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can recognize and translate deponent verbs.", "credit_minutes": 50}
+}

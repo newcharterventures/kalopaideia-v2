@@ -1,0 +1,65 @@
+{
+  "id": "1.8",
+  "stage": 1,
+  "title": "First Sentences",
+  "subtitle": "Ten short sentences with full audio and glosses. Le roi est mort. La reine arrive. Je suis français. The student learns to read before parsing.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Read ten French sentences aloud with correct pronunciation.",
+    "Apply liaison, élision, and stress in connected speech.",
+    "Understand the gloss of each sentence without formal grammar.",
+    "Build confidence in reading complete French utterances."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Reading before parsing",
+      "body": "The natural method begins with reading and listening, not with grammar. You have learned the sounds. You have read names. Now you will read sentences.\n\nEach sentence below has audio and a gloss. Listen first. Then read aloud. Then check the gloss. Do not try to parse the grammar yet. That will come in Stage 2. For now, you are training your ear and your mouth.\n\nThese ten sentences are drawn from real French literature: Racine, La Fontaine, Molière, and later authors. They are simple, but they are not made up for students. They are sentences that a seventeenth-century French speaker would recognize and understand."
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "The ten sentences",
+      "instructions": "Read each aloud, then check the audio.",
+      "words": [
+        { "french": "Le roi est mort.", "transliteration": "[lə ʁwa ɛ mɔʁ]", "gloss": "The king is dead.", "audio": "/paideia/audio/french/sentences/le-roi-est-mort.mp3" },
+        { "french": "La reine arrive.", "transliteration": "[la ʁɛn aʁiv]", "gloss": "The queen arrives.", "audio": "/paideia/audio/french/sentences/la-reine-arrive.mp3" },
+        { "french": "Je suis français.", "transliteration": "[ʒə sɥi fʁɑ̃sɛ]", "gloss": "I am French.", "audio": "/paideia/audio/french/sentences/je-suis-francais.mp3" },
+        { "french": "Il parle bien.", "transliteration": "[il paʁl bjɛ̃]", "gloss": "He speaks well.", "audio": "/paideia/audio/french/sentences/il-parle-bien.mp3" },
+        { "french": "Nous avons du pain.", "transliteration": "[nuz‿avɔ̃ dy pɛ̃]", "gloss": "We have (some) bread.", "audio": "/paideia/audio/french/sentences/nous-avons-du-pain.mp3" },
+        { "french": "Vous êtes ici.", "transliteration": "[vuz‿ɛt isi]", "gloss": "You are here.", "audio": "/paideia/audio/french/sentences/vous-etes-ici.mp3" },
+        { "french": "Ils partent demain.", "transliteration": "[il paʁt dəmɛ̃]", "gloss": "They leave tomorrow.", "audio": "/paideia/audio/french/sentences/ils-partent-demain.mp3" },
+        { "french": "Elle a un livre.", "transliteration": "[ɛl‿a œ̃ livʁ]", "gloss": "She has a book.", "audio": "/paideia/audio/french/sentences/elle-a-un-livre.mp3" },
+        { "french": "C'est vrai.", "transliteration": "[sɛ vʁɛ]", "gloss": "It's true.", "audio": "/paideia/audio/french/sentences/c-est-vrai.mp3" },
+        { "french": "Tout est perdu.", "transliteration": "[tut‿ɛ pɛʁdy]", "gloss": "All is lost.", "audio": "/paideia/audio/french/sentences/tout-est-perdu.mp3" }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Notes on the sentences",
+      "body": "Sentence 1: 'Le roi est mort.' Notice the liaison between 'est' and 'mort': [ɛ mɔʁ], no liaison because 'mort' starts with a consonant. But the phrase is famous; it is half of 'Le roi est mort, vive le roi' — the king is dead, long live the king.\n\nSentence 3: 'Je suis français.' The verb 'suis' comes from 'être' (to be). The adjective 'français' agrees with 'je' (masculine singular). You do not need to know this yet, but you can hear it.\n\nSentence 5: 'Nous avons du pain.' The liaison between 'nous' and 'avons' is obligatory: [nuz‿avɔ̃]. The 'du' is the partitive article: 'some' bread, not 'the' bread.\n\nSentence 10: 'Tout est perdu.' Liaison between 'tout' and 'est': [tut‿ɛ]. This is from Racine's Phèdre, one of the most famous lines in French drama."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer without looking back.",
+      "items": [
+        { "prompt": "What does 'Le roi est mort' mean?", "answer": "The king is dead." },
+        { "prompt": "In 'Nous avons du pain', is there liaison between 'nous' and 'avons'?", "answer": "Yes. [nuz‿avɔ̃]." },
+        { "prompt": "What does 'Vous êtes ici' mean?", "answer": "You are here." },
+        { "prompt": "In 'Elle a un livre', is there liaison between 'a' and 'un'?", "answer": "Yes. [ɛl‿a œ̃ livʁ]." },
+        { "prompt": "What does 'Tout est perdu' mean?", "answer": "All is lost." },
+        { "prompt": "Read aloud: 'Je suis français.'", "answer": "[ʒə sɥi fʁɑ̃sɛ]" },
+        { "prompt": "Read aloud: 'C'est vrai.'", "answer": "[sɛ vʁɛ]" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Stage 1 complete",
+      "body": "You have finished Stage 1. You can now pronounce any French text aloud with reasonable accuracy. You know the vowels, the consonants, the silent letters, liaison, and élision. You have read names and sentences.\n\nStage 2 begins grammar: articles, nouns, adjectives, verbs. The sound comes first; the structure comes second. That is the Kalopaideia method."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can read all ten sentences aloud without hesitation and gloss five of them from memory.",
+    "credit_minutes": 50
+  }
+}
