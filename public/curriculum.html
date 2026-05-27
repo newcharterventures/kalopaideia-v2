@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8" />
@@ -7,49 +7,169 @@
 <meta name="description" content="A guided five-stage course in classical letters, ending in a Kalopaideia diploma." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cinzel:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Commissioner:wght@300;400;500;600&family=GFS+Didot&display=swap" rel="stylesheet" />
 <link rel="icon" type="image/png" sizes="32x32" href="/paideia/img/favicon-32.png" />
 <link rel="shortcut icon" href="/paideia/img/favicon.ico" />
-<link rel="stylesheet" href="/paideia/curriculum-atelier.css?v=5" />
+<link rel="stylesheet" href="/paideia/curriculum-atelier.css?v=8" />
 </head>
 <body class="curriculum-page" data-lang="">
 
-<div class="curriculum-bar">
-  <div class="cb-left">
-    <a class="cb-back" href="/paideia/">← Kalopaideia</a>
-    <span class="cb-sep">·</span>
-    <span class="cb-section">The Curriculum</span>
-  </div>
-  <div class="cb-greek">καλὴ παιδεία</div>
-  <div class="cb-right">
-    <a id="cb-langlink" href="/paideia/">The Library</a>
-    <a class="cb-account" href="/paideia/account">Sign in</a>
-  </div>
-</div>
-
-<header class="hero-banner" id="hero">
-  <div class="hero-credit" id="hero-credit">—</div>
-  <div class="hero-overlay">
-    <div class="hero-eyebrow">The Curriculum · <span id="hero-lang">—</span></div>
-    <h1 class="hero-title" id="hero-title">—</h1>
-    <div class="hero-greek" id="hero-greek"></div>
-    <p class="hero-sub" id="hero-sub">Loading…</p>
-  </div>
+<!-- ============ CHROME (prototype design) ============ -->
+<header class="chrome">
+  <a class="wordmark" href="/paideia/">
+    <span class="name">KALOPAIDEIA</span>
+    <span class="tag">καλὴ παιδεία</span>
+  </a>
+  <nav>
+    <span class="cur-label">THE CURRICULUM</span>
+    <a class="sc" href="/paideia/akousma">AKOUSMA</a>
+    <a class="sc" href="/paideia/commonplace.html">COMMONPLACE</a>
+    <a class="italic" href="/paideia/">Today's word</a>
+    <a class="italic" href="/paideia/support.html">Support</a>
+    <a class="italic" href="/paideia/account">Sign in</a>
+  </nav>
 </header>
 
-<main class="page" id="page-main">
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-fade" aria-hidden="true"></div>
+  <div class="hero-credit" id="hero-credit">—</div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow">THE CURRICULUM <span style="margin:0 8px">·</span> <span id="hero-lang">—</span></div>
+    <h1 id="hero-title">—</h1>
+    <div class="greek" id="hero-greek"></div>
+    <p class="blurb" id="hero-sub">Loading…</p>
 
-  <!-- Skeleton — populated by curriculum-atelier.js -->
-  <div class="metadata" id="metadata-strip"></div>
-  <div class="preface-wrap" id="preface-block"></div>
-  <div id="stages-block"></div>
-  <header class="capstone-banner" id="capstone-banner-block"></header>
-  <div class="portraits" id="portraits-block"></div>
-  <section class="tiers" id="tiers-block"></section>
+    <div class="audio-teaser" id="audio-teaser" style="display:none">
+      <button class="play-pill" data-pill="hero" type="button" aria-label="Hear the course opening">
+        <span class="glyph">
+          <svg viewBox="0 0 16 16" width="9" height="9"><path d="M4.5 2.6v10.8L13 8z" fill="currentColor"/></svg>
+        </span>
+        HEAR THE COURSE OPENING
+      </button>
+      <div class="audio-teaser-text">
+        <div class="audio-teaser-greek" id="teaser-line"></div>
+        <div class="audio-teaser-caption" id="teaser-caption"></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <p class="colophon" id="colophon-block">Kalopaideia · The Curriculum</p>
+<!-- ============ META STRIP ============ -->
+<div class="shell">
+  <div class="meta-strip" id="meta-strip"></div>
+</div>
+
+<!-- ============ MAIN ============ -->
+<main class="shell" id="page-main">
+
+  <!-- Pinned next lesson — populated by JS from progress data -->
+  <section class="pinned" id="pinned-block" style="display:none"></section>
+
+  <!-- Progress arc -->
+  <section class="arc-section">
+    <div class="arc-header">
+      <span class="sc" style="color:var(--ink-2)">YOUR COURSE</span>
+      <span class="right">five stages · four checkpoints · one capstone</span>
+    </div>
+    <div class="arc" id="arc"></div>
+  </section>
+
+  <!-- Drop-cap intro -->
+  <section class="intro-section" id="intro-section">
+    <!-- populated by JS -->
+  </section>
+
+  <!-- Stages -->
+  <div id="stages-root"></div>
+
+  <!-- Capstone -->
+  <section class="capstone-section" id="capstone-section">
+    <div class="sc" style="color:var(--wine); letter-spacing:.42em">STAGE V <span style="margin:0 6px">·</span> THE CAPSTONE</div>
+    <h2>The Author</h2>
+    <p class="lead">Sustained reading of a major author. The capstone.</p>
+    <div class="capstone-grid" id="capstone-grid"></div>
+  </section>
+
+  <!-- Reading horizon — sample passages by milestone -->
+  <section class="horizon-section">
+    <div class="horizon-header">
+      <div class="sc" style="color:var(--wine); letter-spacing:.42em">YOUR READING HORIZON</div>
+      <h2>What you will read</h2>
+      <p>Sample passages from each milestone of the course.</p>
+    </div>
+    <div class="horizon-grid" id="horizon-grid"></div>
+  </section>
+
+  <!-- Diploma preview -->
+  <section class="diploma-section">
+    <div class="sc" style="color:var(--wine); letter-spacing:.42em">UPON COMPLETION</div>
+    <h2>The Kalopaideia diploma</h2>
+    <div class="diploma-card">
+      <div class="diploma-corner tl"></div>
+      <div class="diploma-corner tr"></div>
+      <div class="diploma-corner bl"></div>
+      <div class="diploma-corner br"></div>
+      <div class="name-lbl">KALOPAIDEIA</div>
+      <div class="greek" id="diploma-greek">καλὴ παιδεία</div>
+      <div class="diploma-rule"></div>
+      <div class="be-known">Be it known that</div>
+      <div class="student-name" id="diploma-name">[ Your Name Here ]</div>
+      <p class="cert" id="diploma-cert">has completed the five-stage course and the capstone, having read a major author in the original tongue.</p>
+      <div class="diploma-row">
+        <div class="l">
+          <div class="sc">DATE</div>
+          <div class="val">· Anno Domini MMXXVII ·</div>
+        </div>
+        <div class="diploma-seal">K</div>
+        <div class="r">
+          <div class="sc">CAPSTONE</div>
+          <div class="val" id="diploma-capstone">—</div>
+        </div>
+      </div>
+      <div class="diploma-footer">
+        <span>signed PDF · verifiable</span>
+        <a href="/paideia/verify" class="verify">VERIFY →</a>
+      </div>
+    </div>
+    <p class="diploma-explainer">A signed, verifiable record of completion. Yours to share — your name added on passage of the capstone.</p>
+  </section>
+
+  <!-- Membership -->
+  <section class="membership-section">
+    <h2>Membership</h2>
+    <p class="lead">One price for everything — the Library, the Akousma, the Curriculum, the diploma.</p>
+    <div class="membership-card">
+      <div class="brand">KALOPAIDEIA <span style="margin:0 6px">·</span> ALL ACCESS</div>
+      <div class="membership-price">
+        <span class="amt">$12.99</span>
+        <span class="per">/ month</span>
+      </div>
+      <div class="membership-price" style="font-size:18px;margin-top:-4px;color:var(--ink-2)">
+        <span>or $99.99 / year (save $56)</span>
+      </div>
+      <ul class="membership-list">
+        <li><span class="bullet">·</span><span><strong>The Library</strong> — every book in every language</span></li>
+        <li><span class="bullet">·</span><span><strong>The Akousma</strong> — line-by-line classical audio</span></li>
+        <li><span class="bullet">·</span><span><strong>The daily word</strong> — in ten tongues</span></li>
+        <li><span class="bullet">·</span><span><strong>The Curriculum</strong> — five-stage course in every language</span></li>
+        <li><span class="bullet">·</span><span>Auto-graded checkpoints and capstone</span></li>
+        <li><span class="bullet">·</span><span><strong>Signed PDF diploma upon passage</strong></span></li>
+      </ul>
+      <form method="POST" action="/paideia/checkout/all-access" style="margin:0">
+        <button class="membership-btn" type="submit">SUBSCRIBE</button>
+      </form>
+      <div class="membership-fine">Cancel any time. Month to month. No annual lock-in. 30-day free trial. Or <a href="/paideia/support.html" style="color:var(--wine);text-decoration:underline">become a sponsor</a>.</div>
+    </div>
+  </section>
+
 </main>
 
-<script src="/paideia/curriculum-atelier.js?v=5"></script>
+<footer class="footer">
+  Kalopaideia <span class="sep">·</span> The Curriculum
+</footer>
+
+<script src="/paideia/curriculum-atelier.js?v=8"></script>
 </body>
 </html>

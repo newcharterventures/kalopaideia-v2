@@ -146,283 +146,386 @@ function esc(s) {
   return String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 }
 
+
+// ============================================================
+// Path helper
+// ============================================================
 function getLangFromPath() {
-  // /paideia/<lang>/curriculum
+  // Check for ?lang= query parameter first
+  const params = new URLSearchParams(location.search);
+  const langParam = params.get('lang');
+  if (langParam) return langParam;
+  
+  // Fall back to path-based detection
   const parts = location.pathname.split("/").filter(Boolean);
   return parts[1] || "greek";
 }
 
+// ============================================================
+// Palette — drives hero painting, stage vignettes, capstone tracks
+// ============================================================
 function applyPalette(lang) {
   const p = LANG_PALETTE[lang] || LANG_PALETTE.greek;
   const root = document.documentElement;
-  // Hero
   const heroP = PAINTING[p.hero.key];
-  root.style.setProperty("--hero-img", `url("${COMMONS(heroP.file, p.hero.w || 2000)}")`);
-  document.getElementById("hero").style.backgroundPosition = p.hero.pos || "center 32%";
-  document.getElementById("hero-credit").innerHTML = heroP.cred;
+  if (heroP) {
+    root.style.setProperty("--hero-img", `url("${COMMONS(heroP.file, p.hero.w || 2000)}")`);
+    const heroEl = document.getElementById("hero");
+    if (heroEl) heroEl.style.setProperty("--hero-pos", p.hero.pos || "center 32%");
+    const cred = document.getElementById("hero-credit");
+    if (cred) cred.innerHTML = heroP.cred;
+  }
   document.getElementById("hero-lang").textContent = p.eyebrow;
   document.getElementById("hero-greek").textContent = p.greek;
+  document.getElementById("hero-title").textContent = p.title;
+  const dg = document.getElementById("diploma-greek");
+  if (dg) dg.textContent = p.greek;
   document.body.dataset.lang = lang;
   document.title = `${p.title} — Kalopaideia`;
-  // Stage vignettes
+  // Stage vignettes — backgrounds for each stage card
   for (let i = 1; i <= 4; i++) {
-    root.style.setProperty(`--vig-${i}`, img(p.vignettes[i]));
+    if (p.vignettes && p.vignettes[i]) {
+      root.style.setProperty(`--vig-${i}`, img(p.vignettes[i]));
+    }
   }
   // Capstone portraits
   for (let i = 1; i <= 3; i++) {
-    const t = p.tracks[i];
-    root.style.setProperty(`--tk-${i}`, img(t.key));
-    root.style.setProperty(`--tk-${i}-pos`, t.pos || "center");
-  }
-  // The cb-right link to the language's reading page
-  const cbLink = document.getElementById("cb-langlink");
-  if (cbLink) {
-    cbLink.href = `/paideia/${lang}`;
-    cbLink.textContent = `The ${p.eyebrow.split(" ").slice(-1)[0]} Library`;
+    if (p.tracks && p.tracks[i]) {
+      const t = p.tracks[i];
+      root.style.setProperty(`--tk-${i}`, img(t.key));
+      root.style.setProperty(`--tk-${i}-pos`, t.pos || "center");
+    }
   }
   return p;
 }
 
 // ============================================================
-// Renderers
+// Renderers (v2 — matches paideia-prototype-v2/curriculum.html structure)
 // ============================================================
 
-function renderMetadata(manifest) {
+function renderMetaStrip(manifest) {
   const stages = manifest.stages || [];
   const totalLessons = stages.reduce((n, s) => n + (s.lessons?.length || 0), 0);
   const checkpoints = stages.filter((s) => s.checkpoint).length;
-  const tracksStage = stages.find((s) => s.tracks);
-  const tracksCount = tracksStage?.tracks?.length || 0;
-  document.getElementById("metadata-strip").innerHTML = `
-    <div class="meta-cell"><div class="meta-label">Duration</div><div class="meta-value">${esc(manifest.duration_estimate || "—")}</div></div>
-    <div class="meta-cell"><div class="meta-label">Effort</div><div class="meta-value">1 hour / day</div></div>
-    <div class="meta-cell"><div class="meta-label">Lessons</div><div class="meta-value">${totalLessons} · ${checkpoints} checkpoint${checkpoints === 1 ? "" : "s"}</div></div>
-    <div class="meta-cell"><div class="meta-label">Capstone</div><div class="meta-value">${tracksCount > 0 ? `<em>${tracksCount} tracks</em>` : "<em>1 reading</em>"}</div></div>
-  `;
-}
-
-function renderPreface(manifest, palette) {
-  const phil = manifest.philosophy || "";
-  const sideKey = palette.vignettes[2] || "reading_homer";
-  const sideCred = PAINTING[sideKey]?.cred || "";
-  // Set the preface-plate background via a CSS custom property on :root,
-  // matching how the other plates work. Inline `style="background-image: url(\"...\")"`
-  // breaks the attribute when the URL contains commas/parens (Wikimedia URLs do),
-  // because the inner double quotes terminate the style attribute. Custom
-  // properties are set via CSSOM API and avoid this entirely.
-  document.documentElement.style.setProperty("--preface-plate-img", img(sideKey));
-  document.getElementById("preface-block").innerHTML = `
-    <p class="preface">${esc(phil)}</p>
-    <figure class="framed-plate">
-      <div class="plate-img preface-plate-img"></div>
-      <figcaption class="plate-caption">${esc(sideCred)}</figcaption>
-    </figure>
-  `;
-}
-
-function renderStages(manifest, lang, progress) {
-  const stages = manifest.stages || [];
-  const out = [];
-  let activeStageNum = null;
-  let nextLessonId = null;
-  // Compute active stage = first incomplete stage
-  for (const stage of stages) {
-    const lessons = stage.lessons || [];
-    const done = lessons.filter((l) => progress?.lessons?.[l.id]).length;
-    if (done < lessons.length && lessons.length > 0) {
-      activeStageNum = stage.number;
-      const nextLesson = lessons.find((l) => !progress?.lessons?.[l.id]);
-      if (nextLesson) nextLessonId = nextLesson.id;
-      break;
-    }
-  }
-
-  for (const stage of stages) {
-    const isCapstone = !!stage.tracks;
-    if (isCapstone) continue; // capstone block rendered separately
-    const lessons = stage.lessons || [];
-    const stageDone = lessons.filter((l) => progress?.lessons?.[l.id]).length;
-    const allDone = stageDone === lessons.length && lessons.length > 0;
-    const cpDone = progress?.checkpoints?.[stage.checkpoint?.id]?.passed;
-
-    const stageNum = stage.number;
-    out.push(`
-      <div class="section-head" ${stageNum === 1 ? "" : 'style="margin-top:54px;"'}>
-        <span class="section-num">§ ${roman(stageNum)}.</span>
-        <h2 class="section-name">${esc(stage.name)}</h2>
-        <span class="section-meta">${lessons.length} lessons · ${esc(stage.duration || "")}</span>
-      </div>
-      <p class="section-sub">${esc(stage.subtitle || "")}</p>
-      <div class="stage-with-vignette">
-        <table class="syllabus-table">
-          <thead><tr><th></th><th>Lesson</th><th>Topic</th><th style="text-align:right;">Min.</th></tr></thead>
-          <tbody>
-            ${lessons.map((l) => {
-              const done = !!progress?.lessons?.[l.id];
-              const isNext = l.id === nextLessonId;
-              const cls = done ? "done" : (isNext ? "next" : "");
-              const check = done ? "✓" : (isNext ? "»" : "·");
-              const titleHTML = done || isNext
-                ? `<a href="${BASE}/${lang}/curriculum/${esc(l.id)}">${esc(l.title)}</a>`
-                : esc(l.title);
-              return `<tr class="${cls}"><td class="col-check">${check}</td><td class="col-num">${esc(stageRoman(stageNum))}.${esc(l.id.split('.')[1] || "")}</td><td class="col-title">${titleHTML}</td><td class="col-duration">${esc(l.duration || "—")}</td></tr>`;
-            }).join("")}
-            ${stage.checkpoint ? `
-              <tr class="checkpoint-row ${cpDone ? "passed" : ""}">
-                <td colspan="4">
-                  <span class="cp-tag">Checkpoint ${roman(stageNum)}</span>
-                  ${cpDone ? `passed on ${formatProgressDate(progress?.checkpoints?.[stage.checkpoint?.id])}` : (allDone ? `<a href="${BASE}/${lang}/curriculum/${esc(stage.checkpoint.id)}" style="color:var(--accent);text-decoration:underline;">take the checkpoint →</a>` : "opens upon completion")}
-                </td>
-              </tr>` : ""}
-          </tbody>
-        </table>
-        <figure class="vignette v-stage${stageNum}">
-          <div class="v-img"></div>
-          <figcaption class="v-caption">${esc(stageCaption(stageNum, lang))}</figcaption>
-        </figure>
-      </div>
-    `);
-  }
-
-  document.getElementById("stages-block").innerHTML = out.join("");
-
-  // Continue strip — find the active lesson, show below the active stage's table
-  if (nextLessonId) {
-    const continueHtml = `
-      <div class="continue">
-        <div>
-          <div class="continue-text"><em>Lesson ${esc(nextLessonId)}</em> — ${esc(findLessonTitle(manifest, nextLessonId))}</div>
-          <div class="continue-meta">Pick up where you left off.</div>
-        </div>
-        <a href="${BASE}/${lang}/curriculum/${esc(nextLessonId)}" class="continue-link">Open</a>
-      </div>`;
-    // Insert after the active stage's table
-    const tables = document.querySelectorAll("#stages-block .stage-with-vignette");
-    if (tables[activeStageNum - 1]) {
-      tables[activeStageNum - 1].insertAdjacentHTML("afterend", continueHtml);
-    }
-  } else if (!progress) {
-    // Anonymous user — show a generic CTA in place of "continue"
-    const tables = document.querySelectorAll("#stages-block .stage-with-vignette");
-    if (tables[0]) {
-      tables[0].insertAdjacentHTML("afterend", `
-        <div class="continue signin-state">
-          <div>
-            <div class="continue-text">Sign in to track your progress.</div>
-            <div class="continue-meta">$15.99 / month for everything — Library and Curriculum.</div>
-          </div>
-          <a href="${BASE}/account?next=${encodeURIComponent(location.pathname)}" class="continue-link">Sign in</a>
-        </div>`);
-    }
-  }
-}
-
-function renderCapstone(manifest, lang) {
-  const capstoneStage = manifest.stages?.find((s) => s.tracks);
-  if (!capstoneStage) {
-    // 3-stage diploma-in-reading languages — show single capstone CTA
-    document.getElementById("capstone-banner-block").innerHTML = `
-      <div class="capstone-eyebrow">The Capstone</div>
-      <h2 class="capstone-name">The Reading</h2>
-      <p class="capstone-sub">A sustained reading examination. Pass it and earn the Kalopaideia Diploma in Reading.</p>
-    `;
-    const trackKey = "1";
-    document.getElementById("portraits-block").innerHTML = `
-      <article class="portrait-card t1" style="max-width:380px;margin:0 auto;">
-        <div class="portrait-frame"></div>
-        <div class="portrait-info">
-          <div class="portrait-roman">The Capstone</div>
-          <h3 class="portrait-name">The Reading Examination</h3>
-          <p class="portrait-text">Selected passages</p>
-          <p class="portrait-rationale">Sight reading, parsing, and short comprehension questions, drawn from the texts you have studied in the course.</p>
-        </div>
-      </article>
-    `;
-    return;
-  }
-
-  document.getElementById("capstone-banner-block").innerHTML = `
-    <div class="capstone-eyebrow">Stage V · The Capstone</div>
-    <h2 class="capstone-name">${esc(capstoneStage.name || "The Author")}</h2>
-    <p class="capstone-sub">${esc(capstoneStage.subtitle || "Sustained reading of a major author. Choose your track. Sit the examination. Earn the diploma.")}</p>
-  `;
-  const tracks = capstoneStage.tracks || [];
-  const trackNames = ["philosopher", "historian", "evangelist"];
-  document.getElementById("portraits-block").innerHTML = tracks.map((t, i) => `
-    <article class="portrait-card t${i + 1} ${trackNames[i] || ""}">
-      <div class="portrait-frame"></div>
-      <div class="portrait-info">
-        <div class="portrait-roman">Track ${roman(i + 1)}</div>
-        <h3 class="portrait-name">${esc(t.name)}</h3>
-        <p class="portrait-text">${esc(t.text)}</p>
-        <p class="portrait-rationale">${esc(t.rationale || "")}</p>
-      </div>
-    </article>
-  `).join("");
-}
-
-function renderTiers() {
-  document.getElementById("tiers-block").innerHTML = `
-    <h2>Membership</h2>
-    <p class="t-sub">One price for everything — the Library, the Curriculum, the diploma.</p>
-    <div class="tier-pair" style="grid-template-columns: 1fr; max-width: 540px; margin: 0 auto;">
-      <div class="tier-col premium">
-        <div class="tier-eyebrow">Kalopaideia · All Access</div>
-        <div class="tier-price">$15.99 <span class="tier-per">/ month</span></div>
-        <ul class="tier-features">
-          <li class="feature-key">The Library — every book in every language</li>
-          <li>The Akousma — line-by-line classical audio</li>
-          <li>The daily word, in ten tongues</li>
-          <li class="feature-key">The Curriculum — five-stage course in every language</li>
-          <li>Auto-graded checkpoints and capstone</li>
-          <li class="feature-key">On-chain diploma upon passage</li>
-        </ul>
-        <a href="${BASE}/akousma" class="tier-cta">Subscribe</a>
-        <p style="font-family:var(--font-display);font-style:italic;color:var(--ink-muted);font-size:13px;text-align:center;margin-top:14px;">Cancel any time. Month to month. No annual lock-in.</p>
-      </div>
+  const duration = manifest.duration_estimate || "12–18 months";
+  document.getElementById("meta-strip").innerHTML = `
+    <div class="meta-cell">
+      <div class="sc">DURATION</div>
+      <div class="val">${esc(duration)}</div>
+    </div>
+    <div class="meta-cell">
+      <div class="sc">EFFORT</div>
+      <div class="val">1 hour / day</div>
+    </div>
+    <div class="meta-cell">
+      <div class="sc">LESSONS</div>
+      <div class="val">${totalLessons} · ${checkpoints || 4} checkpoints</div>
+    </div>
+    <div class="meta-cell">
+      <div class="sc">CAPSTONE</div>
+      <div class="val">${manifest.capstone_tracks?.length || 3} tracks</div>
     </div>
   `;
 }
 
-// ============================================================
-// Helpers
-// ============================================================
-
-function findLessonTitle(manifest, id) {
-  for (const stage of manifest.stages || []) {
-    for (const l of stage.lessons || []) {
-      if (l.id === id) return l.title;
-    }
+function renderPinned(manifest, progress) {
+  if (!progress || !progress.next_lesson) {
+    // Anonymous user — show "Begin the course" pinned card pointing at lesson 1.1
+    const stage1 = (manifest.stages || [])[0];
+    if (!stage1) return;
+    const lesson1 = (stage1.lessons || [])[0];
+    if (!lesson1) return;
+    const block = document.getElementById("pinned-block");
+    block.style.display = "";
+    block.innerHTML = `
+      <div>
+        <div class="label-row">
+          <span class="pulse"></span>
+          <span class="sc" style="color:var(--wine); letter-spacing:.32em">BEGIN THE COURSE</span>
+        </div>
+        <div class="lesson-row">
+          <span class="lesson-id">Lesson ${esc(lesson1.id || "I.1")}</span>
+          <span class="lesson-title">— ${esc(lesson1.title || "Open the first lesson")}</span>
+        </div>
+        <div class="meta">
+          Stage I · ${esc(stage1.name || "")}
+          <span class="sep">·</span>
+          ${esc(lesson1.duration_minutes || lesson1.min || 12)} min
+          <span class="sep">·</span>
+          new student
+        </div>
+        <div class="mini-bar"><div class="fill" style="width:0%"></div></div>
+      </div>
+      <div class="actions">
+        <a class="btn-primary" href="/paideia/account">SIGN IN TO BEGIN →</a>
+      </div>`;
+    return;
   }
-  return id;
+  const next = progress.next_lesson;
+  const stage = (manifest.stages || []).find((s) => (s.lessons || []).some((l) => l.id === next.id));
+  const completed = progress.completed_lesson_count || 0;
+  const total = (manifest.stages || []).reduce((n, s) => n + (s.lessons?.length || 0), 0);
+  const pct = total ? Math.round((completed / total) * 100) : 0;
+  const block = document.getElementById("pinned-block");
+  block.style.display = "";
+  block.innerHTML = `
+    <div>
+      <div class="label-row">
+        <span class="pulse"></span>
+        <span class="sc" style="color:var(--wine); letter-spacing:.32em">PICK UP WHERE YOU LEFT OFF</span>
+      </div>
+      <div class="lesson-row">
+        <span class="lesson-id">Lesson ${esc(next.id || "")}</span>
+        <span class="lesson-title">— ${esc(next.title || "")}</span>
+      </div>
+      <div class="meta">
+        ${stage ? `Stage ${esc(stage.number || "")} · ${esc(stage.name || "")}` : ""}
+        <span class="sep">·</span>
+        ${esc(next.duration_minutes || next.min || 12)} min
+        <span class="sep">·</span>
+        <span class="lining">${completed}</span> of <span class="lining">${total}</span> lessons complete
+      </div>
+      <div class="mini-bar"><div class="fill" style="width:${pct}%"></div></div>
+    </div>
+    <div class="actions">
+      <a class="btn-primary" href="/paideia/${esc(getLangFromPath())}/curriculum/${esc(next.id || "")}">RESUME LESSON →</a>
+    </div>`;
 }
 
-function roman(n) { return ["", "I", "II", "III", "IV", "V", "VI"][n] || String(n); }
-
-function stageRoman(n) { return roman(n); }
-
-function stageCaption(n, lang) {
-  const p = LANG_PALETTE[lang] || LANG_PALETTE.greek;
-  const key = p.vignettes[n];
-  const cred = PAINTING[key]?.cred || "";
-  // Trim the cred to fit caption length
-  return cred.split(" · ")[0] || cred;
+function renderArc(manifest, progress) {
+  // Matches prototype's .arc structure: connector line + 5 stage nodes + capstone.
+  const stages = manifest.stages || [];
+  const completed = (progress && progress.completed_lesson_count) || 0;
+  const totalLessons = stages.reduce((n, s) => n + (s.lessons?.length || 0), 0);
+  // Determine which stage is active
+  let activeIdx = -1, cum = 0;
+  for (let i = 0; i < stages.length; i++) {
+    const sLen = (stages[i].lessons || []).length;
+    if (completed >= cum && completed < cum + sLen) { activeIdx = i; break; }
+    cum += sLen;
+  }
+  if (activeIdx === -1 && completed >= totalLessons) activeIdx = stages.length;
+  const fillPct = activeIdx <= 0 ? 0 : Math.min(80, (activeIdx / 5) * 80);
+  const nodes = stages.slice(0, 5).map((s, i) => {
+    const isDone = i < activeIdx;
+    const isActive = i === activeIdx;
+    const roman = ['i', 'ii', 'iii', 'iv', 'v'][i] || (i + 1);
+    return `
+      <div class="node ${isActive ? 'active' : ''} ${isDone ? 'done' : ''}">
+        <div class="circle">${esc(roman)}</div>
+        <div class="label">${esc(s.name || `Stage ${i+1}`)}</div>
+        <div class="weeks">${esc(s.duration || '')}</div>
+      </div>`;
+  }).join('');
+  // Capstone node (final, gilt)
+  const capstoneDone = activeIdx > 5;
+  const capstoneNode = `
+    <div class="node ${capstoneDone ? 'done' : ''}">
+      <div class="circle" style="background:var(--gilt);border-color:var(--gilt);color:var(--bg)">K</div>
+      <div class="label"><span class="capstone">Capstone</span></div>
+      <div class="weeks">diploma</div>
+    </div>`;
+  document.getElementById("arc").innerHTML = `
+    <div class="connector"></div>
+    <div class="connector-fill" style="width:${fillPct}%"></div>
+    <div class="row">${nodes}${capstoneNode}</div>`;
 }
 
-function formatProgressDate(checkpoint) {
-  if (!checkpoint || !checkpoint.attempt_no) return "—";
-  return `attempt ${checkpoint.attempt_no}`;
+function renderIntro(manifest, palette) {
+  if (!manifest.philosophy) {
+    document.getElementById("intro-section").innerHTML = "";
+    return;
+  }
+  const phil = manifest.philosophy.trim();
+  const first = phil.charAt(0);
+  const rest = phil.slice(1);
+  const coverP = PAINTING[(palette.vignettes && palette.vignettes[2]) || palette.hero.key];
+  document.getElementById("intro-section").innerHTML = `
+    <div class="intro-body">
+      <div class="intro-dropcap">${esc(first)}</div>
+      <p class="intro-text">${esc(rest)}</p>
+    </div>
+    ${coverP ? `<figure class="cover-fig">
+      <img class="cover-img" src="${COMMONS(coverP.file, 800)}" alt="${esc(coverP.cred)}" loading="lazy" />
+      <figcaption class="cover-cap">${coverP.cred}</figcaption>
+    </figure>` : ""}
+  `;
+}
+
+function renderStages(manifest, lang, progress) {
+  // Matches the prototype's stage structure: stage-head (roman | title | right meta),
+  // stage-summary, stage-progress, stage-grid (lessons table + companion card +
+  // cover figure). The lessons table uses .lesson-row with id-cell / title-cell /
+  // min-cell that the existing CSS already styles.
+  const stages = manifest.stages || [];
+  const completedSet = new Set((progress && progress.completed_lessons) || []);
+  const totalLessons = stages.reduce((n, s) => n + (s.lessons?.length || 0), 0);
+  const completedTotal = (progress && progress.completed_lesson_count) || 0;
+  const palette = LANG_PALETTE[lang] || LANG_PALETTE.greek;
+  // Find the current stage (first stage with an incomplete lesson)
+  let currentStageIdx = stages.length - 1;
+  let cumDone = 0;
+  for (let i = 0; i < stages.length; i++) {
+    const sLen = (stages[i].lessons || []).length;
+    if (completedTotal < cumDone + sLen) { currentStageIdx = i; break; }
+    cumDone += sLen;
+  }
+
+  const romanize = ['i.', 'ii.', 'iii.', 'iv.', 'v.', 'vi.'];
+  const out = stages.map((s, si) => {
+    const stageLessons = s.lessons || [];
+    const stageLessonCount = stageLessons.length;
+    // Lessons completed in this stage
+    const stageOffset = stages.slice(0, si).reduce((n, ss) => n + (ss.lessons?.length || 0), 0);
+    const completedInStage = stageLessons.filter(l => completedSet.has(l.id)).length;
+    const pct = stageLessonCount ? Math.round((completedInStage / stageLessonCount) * 100) : 0;
+    const isCurrent = si === currentStageIdx;
+    const fillColor = isCurrent ? 'var(--wine)' : (si < currentStageIdx ? 'var(--gilt)' : 'var(--rule)');
+
+    // Lessons table (matches prototype: id-cell, title-cell, min-cell)
+    const lessonsHtml = stageLessons.map((lesson, li) => {
+      const isLessonDone = completedSet.has(lesson.id);
+      const isLessonCurrent = isCurrent && (li === completedInStage);
+      const minutes = lesson.duration_minutes || lesson.min || 12;
+      const idIcon = isLessonCurrent
+        ? '<span style="color:var(--wine)">▸</span>'
+        : isLessonDone
+          ? '<span class="marker" style="color:var(--gilt)">✓</span>'
+          : '<span style="color:var(--rule)">·</span>';
+      const badge = lesson.is_reading || lesson.isReading
+        ? ' <span class="badge">READING</span>' : '';
+      return `
+        <a class="lesson-row ${li === 0 ? 'first' : ''} ${isLessonCurrent ? 'current' : ''}" href="/paideia/${esc(lang)}/curriculum/${esc(lesson.id || '')}">
+          <span class="id-cell">${idIcon} ${esc(lesson.id || '')}</span>
+          <span class="title-cell">${esc(lesson.title || '')}${badge}</span>
+          <span class="min-cell">${minutes}</span>
+          <span class="toggle">›</span>
+        </a>`;
+    }).join('');
+
+    // Cover painting for this stage (rotate through the palette vignettes)
+    const vigKey = palette.vignettes && palette.vignettes[(si % 4) + 1];
+    const vigP = vigKey ? PAINTING[vigKey] : null;
+    const coverFig = vigP
+      ? `<figure class="cover-fig">
+           <img class="cover-img" src="${COMMONS(vigP.file, 800)}" alt="${esc(vigP.cred)}" loading="lazy" />
+           <figcaption class="cover-cap">${vigP.cred}</figcaption>
+         </figure>`
+      : '';
+
+    const weeks = s.duration || `Stage ${s.number || si + 1}`;
+    const roman = romanize[si] || `${si + 1}.`;
+
+    return `
+      <section class="stage">
+        <header class="stage-head">
+          <div class="left">
+            <span class="roman">§ ${esc(roman)}</span>
+            <h2>${esc(s.name || '')}</h2>
+          </div>
+          <div class="right">
+            ${stageLessonCount} lessons <span class="sep">·</span> ${esc(weeks)}
+          </div>
+        </header>
+        <p class="stage-summary">${esc(s.subtitle || '')}</p>
+        <div class="stage-progress">
+          <span class="label">STAGE PROGRESS</span>
+          <div class="bar"><div class="fill" style="width:${pct}%; background:${fillColor}"></div></div>
+          <span class="count"><span class="lining">${completedInStage}</span> of <span class="lining">${stageLessonCount}</span></span>
+        </div>
+        <div class="stage-grid">
+          <div>
+            <div class="lessons">
+              <div class="lessons-head">
+                <span class="sc">LESSON</span>
+                <span class="sc">TOPIC</span>
+                <span class="sc min-col">MIN.</span>
+                <span></span>
+              </div>
+              ${lessonsHtml}
+              ${s.checkpoint ? `
+                <div class="checkpoint-row">
+                  <span class="checkpoint-pill">CHECKPOINT ${esc(s.number || si + 1)}</span>
+                  <span class="checkpoint-note">opens upon completion</span>
+                </div>` : ''}
+            </div>
+          </div>
+          ${coverFig}
+        </div>
+      </section>`;
+  }).join('');
+  document.getElementById("stages-root").innerHTML = out;
+}
+
+function renderCapstone(manifest, lang, palette) {
+  const tracks = manifest.capstone_tracks || [];
+  const grid = document.getElementById("capstone-grid");
+  if (!tracks.length) {
+    grid.innerHTML = `
+      <div class="capstone-card">
+        <div class="capstone-art" style="background-image: var(--tk-1); background-position: var(--tk-1-pos)"></div>
+        <div class="capstone-body">
+          <h3>The Capstone</h3>
+          <p>Final examination on a major author of your choosing. The capstone is set after you pass the four checkpoints.</p>
+        </div>
+      </div>`;
+    return;
+  }
+  grid.innerHTML = tracks.slice(0, 3).map((t, i) => `
+    <div class="capstone-card">
+      <div class="capstone-art" style="background-image: var(--tk-${i+1}); background-position: var(--tk-${i+1}-pos)"></div>
+      <div class="capstone-body">
+        <h3>${esc(t.title || t.name || "Track")}</h3>
+        <p>${esc(t.summary || t.description || "")}</p>
+        ${t.author ? `<div class="capstone-author">— ${esc(t.author)}</div>` : ""}
+      </div>
+    </div>`).join('');
+}
+
+function renderHorizon(manifest) {
+  const grid = document.getElementById("horizon-grid");
+  const stages = manifest.stages || [];
+  // Pull a sample passage from each stage that has one
+  const items = stages.map((s) => {
+    const sample = s.horizon_sample || s.reading_sample || "";
+    const eng = s.horizon_english || s.reading_english || "";
+    if (!sample) return null;
+    return { stage: s.number || "?", name: s.name || "", sample, eng };
+  }).filter(Boolean);
+  if (!items.length) {
+    grid.innerHTML = `
+      <div class="horizon-card">
+        <div class="horizon-stage sc">END OF STAGE I</div>
+        <p class="horizon-orig" style="font-style:italic;color:var(--ink-2)">Sample readings appear here as you advance.</p>
+      </div>`;
+    return;
+  }
+  grid.innerHTML = items.map((it) => `
+    <div class="horizon-card">
+      <div class="horizon-stage sc">END OF STAGE ${esc(it.stage)} · ${esc(it.name)}</div>
+      <p class="horizon-orig">${esc(it.sample)}</p>
+      ${it.eng ? `<p class="horizon-eng">${esc(it.eng)}</p>` : ""}
+    </div>`).join('');
+}
+
+function fillDiploma(manifest, palette) {
+  const cap = (manifest.capstone_tracks && manifest.capstone_tracks[0]) || null;
+  const dCap = document.getElementById("diploma-capstone");
+  if (dCap && cap) {
+    dCap.textContent = cap.title || cap.name || "—";
+  } else if (dCap) {
+    dCap.textContent = "—";
+  }
 }
 
 // ============================================================
 // Main
 // ============================================================
-
 (async function init() {
   const lang = getLangFromPath();
   const palette = applyPalette(lang);
-  document.getElementById("hero-title").textContent = palette.title;
-  document.getElementById("hero-sub").innerHTML = `From the beginning to the masters, in five guided stages.`;
+
+  document.getElementById("hero-sub").textContent = "Loading…";
 
   let manifest = null;
   let progress = null;
@@ -437,18 +540,76 @@ function formatProgressDate(checkpoint) {
 
   if (!manifest) {
     document.getElementById("page-main").innerHTML = `
-      <div style="text-align:center;padding:60px 24px;font-family:var(--font-display);font-style:italic;color:var(--ink-soft);">
+      <div style="text-align:center;padding:80px 24px;font-family:var(--display);font-style:italic;color:var(--ink-2);font-size:20px;">
         <p>The curriculum for this language is in preparation.</p>
-        <p><a href="${BASE}/" style="color:var(--accent);">← Back to Kalopaideia</a></p>
+        <p style="margin-top:24px"><a href="${BASE}/" style="color:var(--wine);text-decoration:underline">← Back to Kalopaideia</a></p>
       </div>`;
+    document.getElementById("hero-sub").textContent = "In preparation.";
     return;
   }
 
-  document.getElementById("hero-sub").innerHTML = esc(manifest.tagline || "From the beginning to the masters, in five guided stages.").replace(/—/g, "—");
+  document.getElementById("hero-sub").textContent = manifest.tagline || "From the beginning to the masters, in five guided stages.";
 
-  renderMetadata(manifest);
-  renderPreface(manifest, palette);
+  renderMetaStrip(manifest);
+  renderPinned(manifest, progress);
+  renderArc(manifest, progress);
+  renderIntro(manifest, palette);
   renderStages(manifest, lang, progress);
-  renderCapstone(manifest, lang);
-  renderTiers();
+  renderCapstone(manifest, lang, palette);
+  renderHorizon(manifest);
+  fillDiploma(manifest, palette);
+  renderAudioTeaser(lang);
+  wirePlayPills(document);
 })();
+
+// ===================================================================
+// AUDIO TEASER ("Hear the course opening")
+// ===================================================================
+// Per-language opening passage shown in the hero, ported from
+// paideia-prototype-v2/curriculum.html. The play-pill is a visual
+// affordance only — a 2.2s animation — until real audio is wired.
+const COURSE_OPENINGS = {
+  greek: {
+    line: "ἄνδρα μοι ἔννεπε, μοῦσα…",
+    caption: "Hear the opening of the Odyssey — read aloud in restored classical pronunciation.",
+  },
+};
+
+function renderAudioTeaser(lang) {
+  const wrap = document.getElementById("audio-teaser");
+  if (!wrap) return;
+  const data = COURSE_OPENINGS[lang];
+  if (!data) return; // leave hidden for languages without a vetted opening
+  document.getElementById("teaser-line").textContent = data.line;
+  document.getElementById("teaser-caption").textContent = data.caption;
+  wrap.style.display = "";
+}
+
+function wirePlayPills(root) {
+  (root || document).querySelectorAll(".play-pill").forEach((btn) => {
+    if (btn.dataset.wired) return;
+    btn.dataset.wired = "1";
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const playing = btn.classList.toggle("playing");
+      const glyph = btn.querySelector(".glyph");
+      if (!glyph) return;
+      glyph.innerHTML = playing
+        ? '<svg viewBox="0 0 16 16" width="9" height="9"><rect x="4" y="3" width="2.5" height="10" fill="currentColor"/><rect x="9.5" y="3" width="2.5" height="10" fill="currentColor"/></svg>'
+        : '<svg viewBox="0 0 16 16" width="9" height="9"><path d="M4.5 2.6v10.8L13 8z" fill="currentColor"/></svg>';
+      btn.querySelectorAll(".ring").forEach((r) => r.remove());
+      if (playing) {
+        const ring = document.createElement("span");
+        ring.className = "ring";
+        btn.appendChild(ring);
+        clearTimeout(btn._timer);
+        btn._timer = setTimeout(() => {
+          btn.classList.remove("playing");
+          ring.remove();
+          glyph.innerHTML =
+            '<svg viewBox="0 0 16 16" width="9" height="9"><path d="M4.5 2.6v10.8L13 8z" fill="currentColor"/></svg>';
+        }, 2200);
+      }
+    });
+  });
+}
