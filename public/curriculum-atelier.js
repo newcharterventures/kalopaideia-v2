@@ -592,6 +592,12 @@ function renderAudioTeaser(lang) {
   if (!data) return; // leave hidden for languages without a vetted opening
   document.getElementById("teaser-line").textContent = data.line;
   document.getElementById("teaser-caption").textContent = data.caption;
+  // Stash audio text on the hero play-pill so wirePlayPills can fetch real TTS.
+  const pill = wrap.querySelector('[data-pill="hero"]');
+  if (pill) {
+    pill.dataset.audioText = data.line;
+    pill.dataset.audioLang = lang;
+  }
   wrap.style.display = "";
 }
 
@@ -658,12 +664,17 @@ function lessonDetailHTML(lang, lesson) {
                }</div>
              </div>`;
   }
+  // Audio text for the HEAR IT pill: strip HTML entities and markup from the
+  // sample so the TTS gets clean Greek. Fall back to the description if no sample.
+  const audioText = p.sample
+    ? p.sample.replace(/&nbsp;/g, " ").replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim()
+    : (p.desc || "").slice(0, 200);
   return `<div class="lesson-detail">
             <p>${esc(p.desc)}</p>
             ${sample}
             ${vocab}
             <div class="lesson-actions">
-              <button class="play-pill" data-pill="lesson" type="button">
+              <button class="play-pill" data-pill="lesson" data-audio-text="${esc(audioText)}" data-audio-lang="${esc(lang)}" type="button">
                 <span class="glyph"><svg viewBox="0 0 16 16" width="9" height="9"><path d="M4.5 2.6v10.8L13 8z" fill="currentColor"/></svg></span>
                 HEAR IT
               </button>
@@ -904,31 +915,95 @@ function renderCheckpoint(lang, si, wrap) {
   paint();
 }
 
+// Play SVG = triangle; Pause SVG = double bars
+const _PLAY_SVG  = '<svg viewBox="0 0 16 16" width="9" height="9"><path d="M4.5 2.6v10.8L13 8z" fill="currentColor"/></svg>';
+const _PAUSE_SVG = '<svg viewBox="0 0 16 16" width="9" height="9"><rect x="4" y="3" width="2.5" height="10" fill="currentColor"/><rect x="9.5" y="3" width="2.5" height="10" fill="currentColor"/></svg>';
+
+// Single shared audio element so play-pills can stop each other.
+let _currentAudio = null;
+let _currentPill = null;
+
+function resetPill(btn) {
+  if (!btn) return;
+  btn.classList.remove("playing");
+  const glyph = btn.querySelector(".glyph");
+  if (glyph) glyph.innerHTML = _PLAY_SVG;
+  btn.querySelectorAll(".ring").forEach((r) => r.remove());
+  clearTimeout(btn._timer);
+}
+
+function stopCurrentAudio() {
+  if (_currentAudio) {
+    try { _currentAudio.pause(); } catch {}
+    _currentAudio = null;
+  }
+  if (_currentPill) {
+    resetPill(_currentPill);
+    _currentPill = null;
+  }
+}
+
 function wirePlayPills(root) {
   (root || document).querySelectorAll(".play-pill").forEach((btn) => {
     if (btn.dataset.wired) return;
     btn.dataset.wired = "1";
     btn.addEventListener("click", (e) => {
       e.stopPropagation();
-      const playing = btn.classList.toggle("playing");
-      const glyph = btn.querySelector(".glyph");
-      if (!glyph) return;
-      glyph.innerHTML = playing
-        ? '<svg viewBox="0 0 16 16" width="9" height="9"><rect x="4" y="3" width="2.5" height="10" fill="currentColor"/><rect x="9.5" y="3" width="2.5" height="10" fill="currentColor"/></svg>'
-        : '<svg viewBox="0 0 16 16" width="9" height="9"><path d="M4.5 2.6v10.8L13 8z" fill="currentColor"/></svg>';
-      btn.querySelectorAll(".ring").forEach((r) => r.remove());
-      if (playing) {
-        const ring = document.createElement("span");
-        ring.className = "ring";
-        btn.appendChild(ring);
-        clearTimeout(btn._timer);
-        btn._timer = setTimeout(() => {
-          btn.classList.remove("playing");
-          ring.remove();
-          glyph.innerHTML =
-            '<svg viewBox="0 0 16 16" width="9" height="9"><path d="M4.5 2.6v10.8L13 8z" fill="currentColor"/></svg>';
-        }, 2200);
+
+      // If THIS pill is already playing, stop it.
+      if (_currentPill === btn) {
+        stopCurrentAudio();
+        return;
       }
+      // If a different pill is playing, stop it first.
+      stopCurrentAudio();
+
+      const text = btn.dataset.audioText || "";
+      const lang = btn.dataset.audioLang || getLangFromPath();
+      const glyph = btn.querySelector(".glyph");
+
+      // Visual: switch to pause icon, add ring animation.
+      btn.classList.add("playing");
+      if (glyph) glyph.innerHTML = _PAUSE_SVG;
+      const ring = document.createElement("span");
+      ring.className = "ring";
+      btn.appendChild(ring);
+
+      // No text → short visual flourish only (graceful fallback).
+      if (!text) {
+        _currentPill = btn;
+        btn._timer = setTimeout(() => {
+          if (_currentPill === btn) stopCurrentAudio();
+        }, 1200);
+        return;
+      }
+
+      // Real audio via /api/word-audio/<lang>/<text>.mp3 (server-side TTS,
+      // disk-cached, rate-limited). The endpoint synthesizes on miss and
+      // streams on hit; an <audio> element is the simplest consumer.
+      const url = `${BASE}/api/word-audio/${encodeURIComponent(lang)}/${encodeURIComponent(text)}.mp3`;
+      const audio = new Audio(url);
+      audio.preload = "auto";
+      _currentAudio = audio;
+      _currentPill = btn;
+
+      // Hard timeout so a hung synth doesn't leave the pill stuck.
+      btn._timer = setTimeout(() => {
+        if (_currentPill === btn) stopCurrentAudio();
+      }, 30000);
+
+      audio.addEventListener("ended", () => {
+        if (_currentPill === btn) stopCurrentAudio();
+      });
+      audio.addEventListener("error", () => {
+        console.warn("[play-pill] audio error for", lang, text);
+        if (_currentPill === btn) stopCurrentAudio();
+      });
+
+      audio.play().catch((err) => {
+        console.warn("[play-pill] play() rejected:", err && err.message);
+        if (_currentPill === btn) stopCurrentAudio();
+      });
     });
   });
 }
