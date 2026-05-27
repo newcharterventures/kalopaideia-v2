@@ -1,99 +1,327 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Support · Kalopaideia</title>
-<meta name="description" content="Become a sponsor of Kalopaideia. Independent classical letters, supported by readers like you. New Charter Ventures LLC — a for-profit company; contributions are not tax-deductible." />
+<meta name="description" content="Subscribe to Kalopaideia for full access to the Akousma, or contribute as a patron. Either supports the work." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cinzel:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Commissioner:wght@300;400;500;600&family=GFS+Didot&display=swap" rel="stylesheet" />
 <link rel="icon" type="image/png" sizes="32x32" href="/paideia/img/favicon-32.png?v=1777151780" />
 <link rel="icon" type="image/png" sizes="16x16" href="/paideia/img/favicon-16.png?v=1777151780" />
-<link rel="stylesheet" href="/paideia/styles.css?v=1778662356" />
+
+<!-- Atelier tokens (palette + display fonts) shared with curriculum / lesson pages. -->
+<link rel="stylesheet" href="/paideia/curriculum-atelier.css?v=12" />
+<!-- The existing patron CTA stylesheet — also Atelier-token aligned. -->
 <link rel="stylesheet" href="/paideia/components/support-epic.css?v=1" />
+
+<style>
+  /* ============================================================
+     Support page — redesigned 2026-05-27 to match curriculum/lesson
+     chrome and typography. Reuses the .chrome / .stage-shell / .obj
+     idioms from curriculum-atelier.css; adds only the page-specific
+     hero strip and the two option cards.
+     ============================================================ */
+
+  :root {
+    --gilt-soft: #b89348;
+  }
+
+  /* The .chrome rules in curriculum-atelier.css use z-index 40 — fine here
+     since this page has no sticky-below content that could bleed through. */
+
+  /* Page header strip (mirrors .lesson-head from the lesson page) */
+  .support-head {
+    max-width: 1100px; margin: 0 auto;
+    padding: 48px 56px 32px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .sh-crumb {
+    font-family: var(--body); font-style: italic; font-size: 13px; color: var(--ink-3);
+    margin: 0 0 10px;
+  }
+  .sh-crumb a { color: var(--ink-2); }
+  .sh-crumb a:hover { color: var(--wine); }
+  .sh-crumb .arrow { color: var(--gilt); margin-right: 4px; }
+  .sh-eyebrow {
+    font-family: var(--sans); font-size: 11px; letter-spacing: .42em;
+    text-transform: uppercase; color: var(--wine); font-weight: 600;
+    margin: 0 0 6px;
+  }
+  .sh-title {
+    font-family: var(--display); font-weight: 500;
+    font-size: clamp(40px, 5.4vw, 64px); color: var(--ink);
+    line-height: 1.02; letter-spacing: -.005em;
+    margin: 4px 0 12px;
+  }
+  .sh-lede {
+    font-family: var(--display); font-style: italic;
+    font-size: 21px; color: var(--ink-2);
+    line-height: 1.45; max-width: 60ch; margin: 0;
+  }
+
+  /* Body container */
+  .support-shell {
+    max-width: 1100px; margin: 0 auto;
+    padding: 36px 56px 60px;
+  }
+
+  /* The two option cards: option I is the primary (gilt border-left like
+     the curriculum objectives box); option II is the quieter sibling. */
+  .options {
+    display: grid; grid-template-columns: 1fr;
+    gap: 18px;
+    margin: 0 0 8px;
+    max-width: 760px;
+  }
+  .option-card {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    padding: 28px 32px;
+    position: relative;
+  }
+  .option-card.primary {
+    background: var(--card);
+    border-left: 3px solid var(--gilt);
+  }
+  .option-card .sc-eye {
+    font-family: var(--sans); font-size: 10px; font-weight: 600;
+    letter-spacing: .28em; text-transform: uppercase;
+    color: var(--gilt);
+    margin: 0 0 10px;
+  }
+  .option-card.primary .sc-eye { color: var(--gilt); }
+  .option-card h2 {
+    font-family: var(--display); font-weight: 500;
+    font-size: 28px; color: var(--ink);
+    margin: 0 0 12px; line-height: 1.15;
+  }
+  .option-card h2 em {
+    font-style: italic; color: var(--wine);
+  }
+  .option-card p {
+    font-family: var(--body); font-size: 16px;
+    line-height: 1.6; color: var(--ink-2);
+    margin: 0 0 18px; max-width: 58ch;
+  }
+  .option-card .price-row {
+    font-family: var(--display); font-style: italic;
+    font-size: 17px; color: var(--ink-3);
+    margin: 0 0 18px;
+  }
+  .option-card .price-row b {
+    font-family: var(--display); font-style: normal;
+    font-weight: 500; color: var(--ink);
+    font-variant-numeric: lining-nums;
+  }
+  .option-card .price-row .save {
+    color: var(--gilt); font-style: normal;
+    font-family: var(--sans); font-size: 10px;
+    letter-spacing: .22em; text-transform: uppercase;
+    margin-left: 8px; padding: 2px 8px;
+    border: 1px solid var(--gilt);
+    font-weight: 500;
+  }
+  .option-card .cta-row {
+    display: flex; gap: 12px; flex-wrap: wrap; align-items: center;
+  }
+  .cta-primary {
+    appearance: none; cursor: pointer;
+    background: var(--wine); color: var(--paper);
+    border: 0; padding: 12px 24px;
+    font-family: var(--sans); font-size: 11px; font-weight: 600;
+    letter-spacing: .26em; text-transform: uppercase;
+    text-decoration: none; display: inline-block;
+  }
+  .cta-primary:hover { background: #5e2718; }
+  .cta-secondary {
+    appearance: none; cursor: pointer;
+    background: transparent; color: var(--ink);
+    border: 1px solid var(--rule);
+    padding: 11px 22px;
+    font-family: var(--sans); font-size: 11px; font-weight: 600;
+    letter-spacing: .26em; text-transform: uppercase;
+    text-decoration: none; display: inline-block;
+  }
+  .cta-secondary:hover { border-color: var(--ink); color: var(--ink); }
+  .option-card .meta {
+    font-family: var(--body); font-style: italic;
+    font-size: 13px; color: var(--ink-3);
+    margin-top: 16px;
+  }
+  .option-card .meta a {
+    color: var(--wine); text-decoration: underline;
+    text-decoration-color: var(--rule); text-underline-offset: 3px;
+  }
+  .option-card .meta a:hover { text-decoration-color: var(--wine); }
+
+  /* Ornamental rule between the option cards and the patron component */
+  .between {
+    max-width: 760px; margin: 36px auto 4px;
+    text-align: center;
+  }
+  .between .glyph {
+    color: var(--gilt); font-family: var(--display); font-style: italic;
+    font-size: 17px; letter-spacing: .6em;
+    padding: 0 16px;
+  }
+
+  /* The data-support-epic placeholder \u2014 gets enriched by support-epic.js.
+     Constrain it to the same outer width so it sits beneath the options
+     consistently. */
+  [data-support-epic] {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  /* Footer / colophon \u2014 reuse the existing one from styles.css. We load
+     just enough to render it cleanly. */
+  .colophon {
+    border-top: 1px solid var(--rule);
+    margin-top: 0;
+    padding: 36px 24px 48px;
+    text-align: center;
+    font-family: var(--body);
+    color: var(--ink-3);
+    background: var(--bg);
+  }
+  .colophon .name {
+    font-family: var(--display); font-weight: 500;
+    font-size: 18px; letter-spacing: .22em;
+    color: var(--ink); margin-bottom: 6px;
+  }
+  .colophon .tagline {
+    font-family: var(--body); font-style: italic;
+    font-size: 14px; color: var(--ink-3);
+    margin-bottom: 8px;
+  }
+  .colophon .tagline em { font-style: normal; }
+  .colophon .est {
+    font-family: var(--sans); font-size: 10px;
+    letter-spacing: .22em; text-transform: uppercase;
+    color: var(--ink-3); margin-bottom: 14px;
+  }
+  .colophon .imprint { color: var(--wine); font-weight: 500; }
+  .colophon .legal {
+    font-family: var(--body); font-size: 13px;
+    color: var(--ink-3);
+  }
+  .colophon .legal a {
+    color: var(--ink-2); text-decoration: underline;
+    text-decoration-color: var(--rule); text-underline-offset: 3px;
+  }
+  .colophon .legal a:hover { color: var(--wine); }
+  .colophon .sep {
+    color: var(--gilt); margin: 0 8px;
+  }
+
+  /* Responsive */
+  @media (max-width: 720px) {
+    .support-head { padding: 32px 24px 22px; }
+    .support-shell { padding: 28px 24px 60px; }
+    .sh-title { font-size: 36px; }
+    .option-card { padding: 22px 22px; }
+  }
+</style>
 </head>
 <body>
-<header class="masthead masthead-athenaeum">
-  <img class="mast-watermark" src="/paideia/img/masthead/temple-ruin.svg" alt="" aria-hidden="true" />
-  <div class="mast-content">
-    <div class="mast-grid">
-      <div class="mast-center">
-        <div class="mast-eyebrow">A daily book of words · ten tongues</div>
-        <h1 class="mast-name"><a href="/paideia/" aria-label="Kalopaideia home">KALOPAIDEIA</a></h1>
-        <span class="mast-greek"><em>καλὴ παιδεία</em> — the cultivation of mind through classical letters</span>
-      </div>
-    </div>
-    <nav class="nav mast-nav">
-      <a href="/paideia/greek">Greek</a>
-      <a href="/paideia/latin">Latin</a>
-      <a href="/paideia/french">French</a>
-      <a href="/paideia/german">German</a>
-      <a href="/paideia/italian">Italian</a>
-      <a href="/paideia/oldenglish">Olde English</a>
-      <a href="/paideia/middleenglish">Middle English</a>
-      <a class="util" href="/paideia/akousma">The Akousma</a>
-      <a class="util" href="/paideia/support.html">Support</a>
-      <a class="util" href="/paideia/account">Sign in</a>
-      <a class="util" href="/paideia/about.html">About</a>
-    </nav>
-  </div>
+
+<!-- Chrome: matches curriculum.html / lesson.html exactly -->
+<header class="chrome">
+  <a class="wordmark" href="/paideia/">
+    <span class="name">KALOPAIDEIA</span>
+    <span class="tag">καλὴ παιδεία</span>
+  </a>
+  <nav>
+    <a class="sc" href="/paideia/greek/curriculum">THE CURRICULUM</a>
+    <a class="sc" href="/paideia/akousma">AKOUSMA</a>
+    <a class="sc" href="/paideia/commonplace.html">COMMONPLACE</a>
+    <a class="italic" href="/paideia/">Today's word</a>
+    <a class="italic" href="/paideia/about.html">About</a>
+    <a class="italic" href="/paideia/account">Sign in</a>
+  </nav>
 </header>
 
-<main>
-  <article class="support-page-intro" style="max-width:680px;margin:48px auto 0;padding:0 24px;">
-    <h1 style="font-family:var(--font-display);font-size:42px;line-height:1.15;margin:0 0 14px;">Two ways to keep the lamp lit.</h1>
-    <p style="font-family:var(--font-body);font-size:18px;line-height:1.6;color:var(--ink-soft);margin:0 0 22px;">
-      Kalopaideia is sustained by readers who care about the classical canon
-      in the languages it was written in. You can subscribe for full access
-      to the Akousma audio library, or contribute as a patron in addition.
-      Either supports the work.
-    </p>
+<!-- Hero strip (mirrors .lesson-head from the lesson page) -->
+<section class="support-head">
+  <p class="sh-crumb">
+    <span class="arrow">←</span><a href="/paideia/">Kalopaideia</a> · <em>Support</em>
+  </p>
+  <div class="sh-eyebrow">Support the work · two ways</div>
+  <h1 class="sh-title">Keep the lamp lit.</h1>
+  <p class="sh-lede">
+    Kalopaideia is sustained by readers who care about the classical canon
+    in the languages it was written in. Subscribe for full access to the
+    Akousma audio library, or contribute as a patron in addition. Either
+    supports the work.
+  </p>
+</section>
 
-    <section style="display:grid;grid-template-columns:1fr;gap:14px;margin:0 0 36px;border-top:1px solid var(--rule);padding-top:24px;">
-      <div style="border:1px solid var(--rule);padding:22px 24px;background:var(--paper);">
-        <div style="font-family:'Cinzel',serif;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:var(--accent);margin-bottom:8px;">
-          Option I — Subscription
-        </div>
-        <h2 style="font-family:var(--font-display);font-style:italic;font-size:26px;margin:0 0 10px;">Full access to Akousma</h2>
-        <p style="font-family:var(--font-body);font-size:16px;line-height:1.55;color:var(--ink-soft);margin:0 0 18px;">
-          $12.99 a month or $99.99 a year (save $56). Includes the full
-          line-by-line audio library of Homer, Plato, Virgil, Sappho,
-          Beowulf, and more. Cancel anytime.
-        </p>
-        <div style="display:flex;gap:12px;flex-wrap:wrap;">
-          <!-- TODO replace href with Stripe Payment Link for $12.99/mo subscription -->
-          <a class="cta" href="https://buy.stripe.com/PLACEHOLDER_KALOPAIDEIA_MONTHLY"
-             style="display:inline-block;padding:10px 22px;background:var(--accent);color:var(--paper);font-family:'Cinzel',serif;font-size:13px;letter-spacing:0.18em;text-transform:uppercase;text-decoration:none;">
-            Subscribe — $12.99 / mo
-          </a>
-          <!-- TODO replace href with Stripe Payment Link for $99.99/yr subscription -->
-          <a class="cta" href="https://buy.stripe.com/PLACEHOLDER_KALOPAIDEIA_ANNUAL"
-             style="display:inline-block;padding:10px 22px;background:transparent;color:var(--accent);border:1px solid var(--accent);font-family:'Cinzel',serif;font-size:13px;letter-spacing:0.18em;text-transform:uppercase;text-decoration:none;">
-            Subscribe — $99.99 / yr
-          </a>
-        </div>
+<main class="support-shell">
+
+  <div class="options">
+
+    <!-- Option I — Subscription (primary, gilt-bordered) -->
+    <article class="option-card primary">
+      <p class="sc-eye">Option I · Subscription</p>
+      <h2><em>Full access</em> to the Akousma</h2>
+      <p>
+        The complete line-by-line audio library — Homer, Plato, Virgil,
+        Sappho, Beowulf, and more — read in their original languages with
+        restored classical pronunciation. Cancel anytime.
+      </p>
+      <p class="price-row">
+        <b>$12.99</b> a month <span class="save">or save $56 · $99.99/year</span>
+      </p>
+      <div class="cta-row">
+        <!-- TODO replace href with Stripe Payment Link for $12.99/mo subscription -->
+        <a class="cta-primary"
+           href="https://buy.stripe.com/PLACEHOLDER_KALOPAIDEIA_MONTHLY">
+          Subscribe · $12.99 / mo
+        </a>
+        <!-- TODO replace href with Stripe Payment Link for $99.99/yr subscription -->
+        <a class="cta-secondary"
+           href="https://buy.stripe.com/PLACEHOLDER_KALOPAIDEIA_ANNUAL">
+          Subscribe · $99.99 / yr
+        </a>
       </div>
+      <p class="meta">
+        Includes the full Curriculum (Lessons 2 through capstone) in every
+        published language, the auto-graded checkpoints, and the Diploma —
+        plus the classical wing of <a href="https://newcharterventures.com/mansion">The Reading Mansion</a>,
+        all under one subscription. See <a href="/paideia/terms.html">Terms</a> for details.
+      </p>
+    </article>
 
-      <div style="border:1px solid var(--rule);padding:22px 24px;background:var(--paper);">
-        <div style="font-family:'Cinzel',serif;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:var(--accent);margin-bottom:8px;">
-          Option II — Sponsor / patron (optional, additive)
-        </div>
-        <h2 style="font-family:var(--font-display);font-style:italic;font-size:26px;margin:0 0 10px;">Help us go further</h2>
-        <p style="font-family:var(--font-body);font-size:16px;line-height:1.55;color:var(--ink-soft);margin:0 0 0;">
-          Choose any tier below. Your sponsorship funds new texts, new
-          recordings, and improvements to the reader. It is in addition to
-          a subscription, not a replacement for one.
-        </p>
-      </div>
-    </section>
-  </article>
+    <!-- Option II — Patron (quieter, additive) -->
+    <article class="option-card">
+      <p class="sc-eye">Option II · Sponsor</p>
+      <h2><em>Help us go further</em></h2>
+      <p>
+        Choose any tier below. Sponsorship funds new texts, new recordings,
+        and improvements to the reader. It is in addition to a subscription,
+        not a replacement for one — readers who can give a little extra make
+        new editions possible.
+      </p>
+      <p class="meta">
+        Patrons are listed (by first name and city, if you like, or
+        anonymously) on the <a href="/paideia/about.html">House Accounts</a>
+        page each month.
+      </p>
+    </article>
 
-  <!-- The SupportEpic component itself -->
+  </div>
+
+  <div class="between">
+    <span class="glyph">❦ · ❦ · ❦</span>
+  </div>
+
+  <!-- The patron CTA component (unchanged — its CSS already matches our palette). -->
   <div data-support-epic
        data-site="kalopaideia"
        data-site-name="Kalopaideia"
-       data-mission="Help us expand our reach, grow our library, improve our site by becoming a sponsor."
+       data-mission="Help us expand our reach, grow our library, and improve our reader by becoming a sponsor."
        data-blurb="Pick any of the three monthly tiers below, or contribute a one-time amount of your choice. We list every patron on the House Accounts page each month — by first name and city if you like, anonymously if you prefer."
        data-onetime-link="https://buy.stripe.com/PLACEHOLDER_KALOPAIDEIA_ONETIME"
        data-monthly-5-link="https://buy.stripe.com/PLACEHOLDER_KALOPAIDEIA_READER"
@@ -101,23 +329,23 @@
        data-monthly-25-link="https://buy.stripe.com/PLACEHOLDER_KALOPAIDEIA_PATRON"
        data-summary-url="/paideia/api/patrons/summary?site=kalopaideia"
        data-tos-url="/paideia/terms.html"></div>
+
 </main>
 
-<footer class="foot">
-  <div class="foot-inner">
-    <div class="foot-title">Kalopaideia</div>
-    <p>A daily word from each classical tradition.</p>
-    <p class="foot-copyright">
-      © 2026 New Charter Ventures &middot; All rights reserved
-      &middot; <a href="/paideia/about.html">About</a>
-      &middot; <a href="/paideia/contact.html">Contact</a>
-      &middot; <a href="/paideia/credits.html">Credits</a>
-      &middot; <a href="/paideia/terms.html">Terms</a>
-      &middot; <a href="/paideia/support.html">Support</a>
-    </p>
+<footer class="colophon">
+  <div class="name">KALOPAIDEIA</div>
+  <div class="tagline"><em>καλὴ παιδεία</em> <span class="sep">·</span> the cultivation of mind through classical letters</div>
+  <div class="est">EST. MMXXIV <span class="sep">·</span> ATHENS &amp; OXFORD &amp; ELSEWHERE <span class="sep">·</span> <span class="imprint">NEW CHARTER VENTURES</span></div>
+  <div class="legal">
+    Anno Domini MMXXVI <span class="sep">·</span>
+    <a href="/paideia/about.html">About</a> <span class="sep">·</span>
+    <a href="/paideia/contact.html">Contact</a> <span class="sep">·</span>
+    <a href="/paideia/credits.html">Credits</a> <span class="sep">·</span>
+    <a href="/paideia/terms.html">Terms</a>
   </div>
 </footer>
 
 <script src="/paideia/components/support-epic.js?v=1"></script>
+
 </body>
 </html>
