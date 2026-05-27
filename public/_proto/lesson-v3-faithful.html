@@ -1,0 +1,1230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lesson 1.1 — The Alphabet, Part One · Kalopaideia · v3 faithful</title>
+<meta name="description" content="Prototype 1 — Claude Design's lesson redesign ported into Kalopaideia production chrome and audio." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Commissioner:wght@300;400;500;600&family=GFS+Didot&display=swap" rel="stylesheet" />
+<!-- Inherit the same Atelier tokens production already uses -->
+<link rel="stylesheet" href="/paideia/curriculum-atelier.css?v=11" />
+<style>
+  /* Extra tokens used by Claude Design v3 that aren't in production CSS yet. */
+  :root {
+    --ink-4: #a3937a;
+    --card-2: #efe6cf;
+    --gilt-soft: #b89348;
+  }
+  /* ============================================================
+     Prototype 1 — Claude Design v3, ported into production chrome.
+     Reuses every token from curriculum-atelier.css (--paper, --ink,
+     --wine, --gilt, --display, --body, --sans). The visual debt to
+     Claude's design is preserved verbatim where it adds value
+     (8-step layout, letter explorer, audio drill card, ceremony seal).
+     The chrome, the play-pills, and all audio are swapped to match
+     the existing production patterns.
+     ============================================================ */
+
+  /* --- Prototype banner so we can tell it apart from production --- */
+  .proto-banner {
+    background: var(--gilt); color: var(--paper);
+    padding: 8px 24px; text-align: center;
+    font-family: var(--sans); font-size: 10px; font-weight: 600;
+    letter-spacing: .28em; text-transform: uppercase;
+  }
+  .proto-banner a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+
+  /* --- Lesson header strip (Claude's design) --- */
+  .lesson-head {
+    max-width: 1380px; margin: 0 auto; padding: 36px 56px 28px;
+    display: grid; grid-template-columns: minmax(0, 1fr) auto;
+    gap: 48px; align-items: end;
+    border-bottom: 1px solid var(--rule);
+  }
+  .lh-eyebrow {
+    font-family: var(--sans); font-size: 11px; letter-spacing: .42em;
+    text-transform: uppercase; color: var(--wine); font-weight: 600;
+  }
+  .lh-eyebrow .sep { color: var(--gilt); margin: 0 10px; letter-spacing: 0; }
+  .lh-eyebrow .min { color: var(--ink-3); font-weight: 500; }
+  .lh-title {
+    font-family: var(--display); font-weight: 500;
+    font-size: clamp(36px, 4.4vw, 56px); color: var(--ink);
+    margin: 8px 0 4px; line-height: 1.02; letter-spacing: -.005em;
+  }
+  .lh-sub {
+    font-family: var(--display); font-style: italic;
+    font-size: 20px; color: var(--ink-2);
+    max-width: 60ch; margin: 0;
+  }
+  .lh-dial { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; min-width: 220px; }
+  .lh-dial .progress-strip { display: flex; gap: 6px; align-items: center; }
+  .lh-dial .tick { width: 18px; height: 3px; background: var(--rule); }
+  .lh-dial .tick.done { background: var(--gilt); }
+  .lh-dial .tick.current { background: var(--wine); height: 5px; }
+  .lh-dial .count { font-family: var(--display); font-style: italic; font-size: 15px; color: var(--ink-3); }
+  .lh-dial .count b { font-style: normal; font-weight: 500; color: var(--ink); font-variant-numeric: lining-nums; }
+
+  /* --- Two-column shell (Claude's design) --- */
+  .stage-shell {
+    max-width: 1380px; margin: 0 auto;
+    padding: 0 56px 120px;
+    display: grid; grid-template-columns: 260px minmax(0, 1fr);
+    gap: 64px; align-items: flex-start;
+    min-height: calc(100vh - 280px);
+  }
+
+  /* --- Left rail TOC --- */
+  .rail { position: sticky; top: 88px; padding: 36px 0 36px; align-self: flex-start; }
+  .rail-eye { color: var(--ink-3); margin-bottom: 18px; display: flex; align-items: center; gap: 10px; }
+  .rail-eye .glyph { width: 6px; height: 6px; background: var(--gilt); border-radius: 50%; flex: none; }
+  .rail-list { display: flex; flex-direction: column; gap: 2px; border-left: 1px solid var(--rule-soft); margin-left: 6px; }
+  .rail-item {
+    appearance: none; background: transparent; border: 0; width: 100%;
+    text-align: left; cursor: pointer; font-family: inherit;
+    display: grid; grid-template-columns: 30px 1fr auto;
+    gap: 10px; align-items: baseline;
+    padding: 11px 14px 11px 18px;
+    border-left: 2px solid transparent; margin-left: -2px;
+    transition: background .15s, border-color .15s;
+  }
+  .rail-item:hover { background: rgba(35, 28, 20, .025); }
+  .rail-item .num { font-family: var(--display); font-style: italic; font-size: 14px; color: var(--ink-4); line-height: 1; }
+  .rail-item .ttl { font-family: var(--body); font-size: 14px; color: var(--ink-3); line-height: 1.35; }
+  .rail-item .mn  { font-family: var(--body); font-style: italic; font-size: 12px; color: var(--ink-4); font-variant-numeric: lining-nums; }
+  .rail-item.done .num { color: var(--gilt); }
+  .rail-item.done .ttl { color: var(--ink-2); text-decoration: line-through; text-decoration-color: rgba(125, 93, 18, .5); }
+  .rail-item.current { border-left-color: var(--wine); background: rgba(122, 51, 34, .04); }
+  .rail-item.current .num { color: var(--wine); font-style: normal; font-weight: 500; }
+  .rail-item.current .ttl { color: var(--ink); font-weight: 500; }
+  .rail-foot {
+    margin-top: 22px; padding: 14px 16px; background: var(--card);
+    font-family: var(--body); font-style: italic; font-size: 13px; color: var(--ink-2);
+  }
+  .rail-foot .l {
+    color: var(--ink-3); display: block; font-size: 11px;
+    letter-spacing: .18em; text-transform: uppercase;
+    font-family: var(--sans); font-weight: 500; font-style: normal;
+    margin-bottom: 2px;
+  }
+  .rail-foot b { font-family: var(--display); font-weight: 500; color: var(--ink); font-variant-numeric: lining-nums; }
+
+  /* --- Center content --- */
+  .content { padding: 36px 0 60px; max-width: 780px; }
+  .step-eye { display: flex; align-items: baseline; gap: 14px; margin-bottom: 10px; }
+  .step-eye .roman { font-family: var(--display); font-style: italic; font-size: 18px; color: var(--gilt); }
+  .step-eye .label { font-family: var(--sans); font-size: 11px; letter-spacing: .32em; text-transform: uppercase; color: var(--ink-3); font-weight: 500; }
+  .step-h { font-family: var(--display); font-weight: 500; font-size: 38px; color: var(--ink); margin: 0 0 24px; line-height: 1.1; }
+  .step-lead {
+    font-family: var(--body); font-style: italic; font-size: 18px;
+    color: var(--ink-2); line-height: 1.55; margin: 0 0 24px; max-width: 62ch;
+  }
+
+  /* --- Prose with dropcap --- */
+  .prose p {
+    font-family: var(--body); font-size: 17px; line-height: 1.72;
+    color: var(--ink-2); margin: 0 0 18px; max-width: 62ch;
+  }
+  .prose p:first-of-type::first-letter {
+    font-family: "GFS Didot", var(--display); font-style: italic;
+    color: var(--wine); float: left;
+    font-size: 90px; line-height: .85; padding: 8px 12px 0 0; font-weight: 400;
+  }
+  .marginalia {
+    margin: 24px 0; padding: 14px 18px;
+    border-left: 2px solid var(--gilt);
+    background: rgba(125, 93, 18, .05);
+    font-family: var(--body); font-style: italic;
+    font-size: 14.5px; color: var(--ink-2);
+    line-height: 1.55; max-width: 60ch;
+  }
+  .marginalia .sc {
+    display: block; color: var(--gilt); margin-bottom: 4px;
+    font-style: normal; font-family: var(--sans); font-size: 11px;
+    font-weight: 500; letter-spacing: .22em; text-transform: uppercase;
+  }
+
+  /* --- Objectives --- */
+  .obj { padding: 20px 24px; background: var(--card); border-left: 3px solid var(--gilt); margin: 0 0 28px; max-width: 62ch; }
+  .obj .lbl { color: var(--ink-3); font-style: normal; margin-bottom: 10px; font-family: var(--sans); font-size: 11px; letter-spacing: .22em; text-transform: uppercase; font-weight: 500; }
+  .obj ul { margin: 0; padding: 0; list-style: none; }
+  .obj li { font-family: var(--body); font-size: 15px; color: var(--ink); line-height: 1.55; padding: 5px 0 5px 22px; position: relative; }
+  .obj li::before { content: "❦"; position: absolute; left: 0; top: 3px; color: var(--gilt); font-size: 13px; }
+
+  /* --- Companion plate --- */
+  .companion-plate {
+    margin: 28px 0 0; display: grid; grid-template-columns: auto 1fr;
+    gap: 20px; align-items: flex-start; max-width: 62ch;
+    padding: 18px; background: var(--paper); border: 1px solid var(--rule-soft);
+  }
+  .companion-plate .img {
+    width: 140px; aspect-ratio: 3 / 4;
+    background: #c8b89c center/cover no-repeat;
+    border: 1px solid var(--rule);
+    background-image: url('https://commons.wikimedia.org/wiki/Special:FilePath/Greek_Girls_Picking_up_Pebbles_by_the_Sea.jpg?width=560');
+    background-position: 30% 40%;
+    filter: sepia(.1) saturate(.95) contrast(1.02);
+  }
+  .companion-plate .body { padding-top: 4px; }
+  .companion-plate .l { color: var(--gilt); font-style: normal; margin-bottom: 6px; font-family: var(--sans); font-size: 10px; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; }
+  .companion-plate h4 { font-family: var(--display); font-weight: 500; font-size: 20px; color: var(--ink); margin: 0 0 4px; }
+  .companion-plate p { font-family: var(--body); font-style: italic; font-size: 13.5px; color: var(--ink-3); margin: 0; line-height: 1.5; }
+
+  /* --- Letter explorer (Claude's interactive design) --- */
+  .letter-strip {
+    display: flex; gap: 6px; flex-wrap: wrap; margin: 0 0 28px;
+    padding: 14px 16px; background: var(--paper); border: 1px solid var(--rule-soft);
+  }
+  .letter-chip {
+    appearance: none; background: transparent;
+    border: 1px solid transparent;
+    padding: 8px 6px 6px; min-width: 48px; text-align: center;
+    cursor: pointer; transition: all .15s; font-family: inherit;
+  }
+  .letter-chip .gr { font-family: var(--display); font-size: 24px; color: var(--ink-2); line-height: 1; }
+  .letter-chip .nm { font-family: var(--body); font-style: italic; font-size: 10.5px; color: var(--ink-4); margin-top: 4px; }
+  .letter-chip:hover { background: var(--card); }
+  .letter-chip:hover .gr { color: var(--ink); }
+  .letter-chip.heard .gr { color: var(--ink); }
+  .letter-chip.heard { position: relative; }
+  .letter-chip.heard::after {
+    content: ""; position: absolute; bottom: -1px; left: 8px; right: 8px;
+    height: 1.5px; background: var(--gilt);
+  }
+  .letter-chip.active { background: var(--card); border-color: var(--wine); }
+  .letter-chip.active .gr,
+  .letter-chip.active .nm { color: var(--wine); }
+
+  .letter-stage {
+    display: grid; grid-template-columns: 300px 1fr; gap: 36px;
+    background: var(--paper); border: 1px solid var(--rule);
+    padding: 32px; margin: 0 0 24px; position: relative;
+  }
+  .letter-stage .corner { position: absolute; width: 18px; height: 18px; border-color: var(--gilt); }
+  .letter-stage .corner.tl { top: 10px; left: 10px; border-top: 1px solid; border-left: 1px solid; }
+  .letter-stage .corner.tr { top: 10px; right: 10px; border-top: 1px solid; border-right: 1px solid; }
+  .letter-stage .corner.bl { bottom: 10px; left: 10px; border-bottom: 1px solid; border-left: 1px solid; }
+  .letter-stage .corner.br { bottom: 10px; right: 10px; border-bottom: 1px solid; border-right: 1px solid; }
+  .lstage-glyphs {
+    background: var(--card);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 24px; border: 1px solid var(--rule-soft); position: relative;
+  }
+  .lstage-glyphs .upper { font-family: "GFS Didot", var(--display); font-size: 120px; line-height: .9; color: var(--ink); }
+  .lstage-glyphs .lower { font-family: "GFS Didot", var(--display); font-size: 90px; line-height: .9; color: var(--wine); font-style: italic; margin-top: 6px; }
+  .lstage-glyphs .roman { position: absolute; top: 10px; left: 14px; font-family: var(--display); font-style: italic; font-size: 13px; color: var(--ink-4); }
+  .lstage-body { display: flex; flex-direction: column; gap: 12px; }
+  .lstage-name { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+  .lstage-name .nm { font-family: var(--display); font-weight: 500; font-size: 36px; color: var(--ink); }
+  .lstage-name .ipa {
+    font-family: var(--sans); font-size: 12px; color: var(--gilt);
+    font-weight: 500; letter-spacing: .06em;
+    padding: 3px 10px; border: 1px solid var(--gilt);
+  }
+  .lstage-note { font-family: var(--body); font-size: 15.5px; line-height: 1.65; color: var(--ink-2); }
+  .lstage-note strong { color: var(--ink); }
+  .lstage-controls { display: flex; gap: 10px; align-items: center; margin-top: 8px; flex-wrap: wrap; }
+  .lstage-prev, .lstage-next {
+    appearance: none; background: transparent;
+    border: 1px solid var(--rule); color: var(--ink-2);
+    width: 36px; height: 36px;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-family: var(--display); font-size: 18px; cursor: pointer;
+  }
+  .lstage-prev:hover, .lstage-next:hover { border-color: var(--ink); color: var(--ink); }
+  .lstage-prev:disabled, .lstage-next:disabled { opacity: .35; cursor: not-allowed; }
+  .lstage-hint { font-family: var(--body); font-style: italic; font-size: 13px; color: var(--ink-3); margin-left: auto; }
+  .lstage-hint b { color: var(--ink-2); font-weight: 500; font-style: normal; font-family: var(--display); }
+
+  .letter-progress {
+    display: flex; align-items: center; gap: 14px;
+    font-family: var(--body); font-style: italic; font-size: 14px; color: var(--ink-3);
+    margin: 0;
+  }
+  .letter-progress .v { font-family: var(--display); font-style: normal; color: var(--ink); font-size: 18px; font-variant-numeric: lining-nums; }
+  .letter-progress .bar { flex: 1; max-width: 260px; height: 2px; background: var(--rule-soft); position: relative; }
+  .letter-progress .bar i { position: absolute; inset: 0; background: var(--gilt); transition: width .3s; }
+
+  /* --- Pair table (aspirated stops) --- */
+  .pair-table { display: grid; grid-template-columns: 160px 1fr 1fr; gap: 0; margin: 8px 0 28px; background: var(--paper); border: 1px solid var(--rule); }
+  .pair-head { padding: 14px 18px; font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; color: var(--ink-3); border-bottom: 1px solid var(--rule); background: var(--card); }
+  .pair-cell { padding: 18px 22px; border-top: 1px dashed var(--rule-soft); display: flex; flex-direction: column; gap: 6px; }
+  .pair-row.first .pair-cell { border-top: 0; }
+  .pair-cell .gl { font-family: "GFS Didot", var(--display); font-size: 42px; line-height: 1; color: var(--ink); }
+  .pair-cell.un .gl { color: var(--ink-2); }
+  .pair-cell.asp .gl { color: var(--wine); }
+  .pair-cell .ex { font-family: var(--body); font-style: italic; font-size: 13.5px; color: var(--ink-3); }
+  .pair-cell .ex b { color: var(--ink); font-style: normal; font-weight: 500; }
+  .pair-cell.lbl { background: #efe6cf; font-family: var(--display); font-style: italic; justify-content: center; font-size: 15px; color: var(--ink-2); }
+  .paper-test {
+    margin: 20px 0; padding: 18px 22px;
+    border: 1px solid var(--rule-soft); background: rgba(122, 51, 34, .04);
+    display: grid; grid-template-columns: 60px 1fr; gap: 18px; align-items: center;
+  }
+  .paper-test .icon { font-family: "GFS Didot", var(--display); font-size: 48px; line-height: 1; color: var(--wine); text-align: center; }
+  .paper-test p { font-family: var(--body); font-style: italic; font-size: 14.5px; color: var(--ink-2); margin: 0; line-height: 1.55; }
+
+  /* --- Audio drill card --- */
+  .audio-card { background: var(--paper); border: 1px solid var(--rule); padding: 32px; margin: 0 0 24px; }
+  .audio-card .head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 18px; }
+  .audio-card .head .sc { color: var(--ink-3); }
+  .audio-card .head .dur { font-family: var(--body); font-style: italic; font-size: 14px; color: var(--ink-3); }
+  .waveform { display: flex; align-items: flex-end; gap: 3px; height: 80px; padding: 8px 0; margin: 0 0 14px; justify-content: center; }
+  .waveform i { width: 4px; background: var(--ink-4); border-radius: 1px; transition: height .2s, background .2s; }
+  .audio-card.playing .waveform i { background: var(--wine); }
+  .audio-card .label-row { display: flex; justify-content: space-between; font-family: var(--body); font-style: italic; font-size: 13px; color: var(--ink-3); margin-bottom: 18px; }
+  .audio-card .passes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin: 0 0 18px; border: 1px solid var(--rule-soft); }
+  .audio-card .pass { padding: 14px 16px; border-right: 1px solid var(--rule-soft); text-align: center; }
+  .audio-card .pass:last-child { border-right: 0; }
+  .audio-card .pass.active { background: var(--card); }
+  .audio-card .pass .n { font-family: var(--display); font-style: italic; font-size: 14px; color: var(--gilt); margin-bottom: 4px; }
+  .audio-card .pass .t { font-family: var(--body); font-style: italic; font-size: 13.5px; color: var(--ink-2); }
+  .audio-card .pass.active .t { color: var(--ink); }
+  .audio-card .controls { display: flex; gap: 12px; align-items: center; }
+  .audio-card .controls .meta { margin-left: auto; font-family: var(--body); font-style: italic; font-size: 13px; color: var(--ink-3); }
+
+  /* --- Writing drill --- */
+  .write-card { background: var(--paper); border: 1px solid var(--rule); padding: 32px; margin: 0 0 24px; }
+  .write-card .head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 18px; }
+  .trace-area { margin: 14px 0 18px; padding: 24px; background: var(--card); border: 1px dashed var(--rule); display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+  .trace-cell {
+    width: 100px; aspect-ratio: 1;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--paper); border: 1px solid var(--rule-soft); position: relative;
+  }
+  .trace-cell::before, .trace-cell::after { content: ""; position: absolute; background: rgba(35, 28, 20, .05); }
+  .trace-cell::before { left: 0; right: 0; height: 1px; top: 50%; }
+  .trace-cell::after  { top: 0; bottom: 0; width: 1px; left: 50%; }
+  .trace-cell .ghost { font-family: "GFS Didot", var(--display); font-size: 78px; line-height: 1; color: rgba(35, 28, 20, .12); position: relative; }
+  .download-row { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; margin-top: 14px; }
+
+  /* --- Self-check --- */
+  .check-card { background: var(--paper); border: 1px solid var(--rule); padding: 36px 40px; margin: 0 0 24px; position: relative; }
+  .check-card .corner { position: absolute; width: 14px; height: 14px; border-color: #b89348; }
+  .check-card .corner.tl { top: 8px; left: 8px; border-top: 1px solid; border-left: 1px solid; }
+  .check-card .corner.tr { top: 8px; right: 8px; border-top: 1px solid; border-right: 1px solid; }
+  .check-card .corner.bl { bottom: 8px; left: 8px; border-bottom: 1px solid; border-left: 1px solid; }
+  .check-card .corner.br { bottom: 8px; right: 8px; border-bottom: 1px solid; border-right: 1px solid; }
+  .check-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 18px; }
+  .check-head .q { font-family: var(--body); font-style: italic; font-size: 13px; color: var(--ink-3); }
+  .check-head .q b { font-family: var(--display); color: var(--ink); font-style: normal; font-variant-numeric: lining-nums; }
+  .check-score { display: flex; gap: 10px; font-family: var(--body); font-style: italic; font-size: 13px; color: var(--ink-3); }
+  .check-score .got { color: var(--gilt); }
+  .check-score .miss { color: var(--wine); }
+  .check-prompt { min-height: 160px; display: flex; align-items: center; justify-content: center; flex-direction: column; padding: 24px 0 14px; text-align: center; }
+  .check-prompt.letter .gr { font-family: "GFS Didot", var(--display); font-size: 140px; line-height: .9; color: var(--ink); }
+  .check-prompt.letter .gr.italic { font-style: italic; color: var(--wine); }
+  .check-prompt.question .text { font-family: var(--display); font-style: italic; font-size: 26px; color: var(--ink); max-width: 34ch; line-height: 1.35; }
+  .check-prompt .ask { font-family: var(--body); font-style: italic; font-size: 14px; color: var(--ink-3); margin-top: 16px; }
+  .check-answer { margin: 8px 0 0; padding: 16px 20px; background: var(--card); border-left: 2px solid var(--gilt); font-family: var(--body); font-size: 15.5px; color: var(--ink); line-height: 1.55; }
+  .check-answer.hidden { display: none; }
+  .check-actions { margin-top: 22px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  .btn-reveal {
+    appearance: none; background: var(--ink); color: var(--paper); border: 0;
+    padding: 11px 18px; font-family: var(--sans); font-size: 11px; font-weight: 600;
+    letter-spacing: .22em; text-transform: uppercase; cursor: pointer;
+  }
+  .btn-good {
+    appearance: none; background: transparent; color: var(--gilt);
+    border: 1px solid var(--gilt); padding: 11px 18px;
+    font-family: var(--sans); font-size: 11px; font-weight: 600;
+    letter-spacing: .22em; text-transform: uppercase; cursor: pointer;
+  }
+  .btn-good:hover { background: var(--gilt); color: var(--paper); }
+  .btn-again {
+    appearance: none; background: transparent; color: var(--wine);
+    border: 1px solid var(--wine); padding: 11px 18px;
+    font-family: var(--sans); font-size: 11px; font-weight: 600;
+    letter-spacing: .22em; text-transform: uppercase; cursor: pointer;
+  }
+  .btn-again:hover { background: var(--wine); color: var(--paper); }
+
+  .check-summary {
+    margin: 18px 0 24px; padding: 22px 26px;
+    background: var(--card); border: 1px solid var(--gilt);
+    display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: center;
+  }
+  .check-summary h4 { font-family: var(--display); font-weight: 500; font-size: 24px; color: var(--ink); margin: 0 0 4px; }
+  .check-summary p  { font-family: var(--body); font-style: italic; font-size: 14px; color: var(--ink-2); margin: 0; line-height: 1.5; }
+  .check-summary .score { font-family: var(--display); font-weight: 500; font-size: 42px; color: var(--wine); font-variant-numeric: lining-nums; }
+
+  /* --- Reading preview --- */
+  .reading-card { background: var(--paper); border: 1px solid var(--rule); padding: 32px; margin: 0 0 24px; }
+  .word-row {
+    display: grid; grid-template-columns: auto 180px 1fr auto;
+    gap: 24px; align-items: center;
+    padding: 18px 4px; border-top: 1px dashed var(--rule-soft);
+    transition: background .2s;
+  }
+  .word-row:first-of-type { border-top: 0; }
+  .word-row:hover { background: rgba(35, 28, 20, .02); }
+  .word-row.read { background: rgba(125, 93, 18, .06); }
+  .word-row .gr { font-family: "GFS Didot", var(--display); font-size: 38px; color: var(--ink); line-height: 1; min-width: 130px; }
+  .word-row.read .gr { color: var(--wine); }
+  .word-row .tl { font-family: var(--body); font-style: italic; font-size: 16px; color: var(--ink-3); }
+  .word-row .gloss { font-family: var(--body); font-size: 15px; color: var(--ink-2); line-height: 1.4; }
+  .word-row .reveal { opacity: 0; transition: opacity .25s; }
+  .word-row.shown .reveal { opacity: 1; }
+  .reading-foot {
+    margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--rule-soft);
+    display: flex; justify-content: space-between; align-items: baseline;
+    flex-wrap: wrap; gap: 14px;
+    font-family: var(--body); font-style: italic; font-size: 14px; color: var(--ink-3);
+  }
+  .reading-foot b { font-family: var(--display); font-weight: 500; color: var(--ink); font-style: normal; font-variant-numeric: lining-nums; }
+
+  /* --- Completion ceremony --- */
+  .ceremony { text-align: center; padding: 24px 24px 48px; }
+  .seal-wrap { position: relative; display: inline-block; margin: 8px 0 18px; }
+  .seal {
+    width: 140px; height: 140px; border-radius: 50%;
+    background: var(--gilt); color: var(--paper);
+    display: flex; align-items: center; justify-content: center;
+    font-family: "GFS Didot", var(--display); font-style: italic;
+    font-size: 68px; font-weight: 400;
+    box-shadow: inset 0 0 0 4px rgba(255, 255, 255, .25), 0 8px 24px rgba(60, 40, 20, .25);
+    position: relative;
+  }
+  .seal::before { content: ""; position: absolute; inset: -12px; border: 1px solid #b89348; border-radius: 50%; }
+  .seal::after  { content: ""; position: absolute; inset: -22px; border: 1px dashed #b89348; border-radius: 50%; opacity: .55; }
+  .ceremony h2 { font-family: var(--display); font-weight: 500; font-size: 42px; color: var(--ink); margin: 14px 0 6px; }
+  .ceremony .greek { font-family: var(--display); font-style: italic; font-size: 22px; color: var(--wine); margin-bottom: 14px; }
+  .ceremony .blurb { font-family: var(--body); font-style: italic; font-size: 17px; color: var(--ink-2); max-width: 48ch; margin: 0 auto 26px; line-height: 1.55; }
+  .stage-meter { max-width: 480px; margin: 0 auto 36px; }
+  .stage-meter .row { display: flex; justify-content: space-between; font-family: var(--sans); font-size: 10px; letter-spacing: .22em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 10px; font-weight: 500; }
+  .stage-meter .row .v { color: var(--ink); font-family: var(--display); font-style: italic; font-size: 14px; letter-spacing: 0; text-transform: none; }
+  .stage-meter .ticks { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; }
+  .stage-meter .ticks i { height: 6px; background: var(--rule); }
+  .stage-meter .ticks i.done { background: var(--gilt); }
+  .stage-meter .ticks i.current { background: var(--wine); }
+  .next-up {
+    max-width: 540px; margin: 0 auto;
+    padding: 24px 28px; background: var(--paper); border: 1px solid var(--gilt);
+    text-align: left;
+    display: grid; grid-template-columns: 1fr auto; gap: 18px; align-items: center;
+  }
+  .next-up .l { color: var(--gilt); font-style: normal; margin-bottom: 6px; font-family: var(--sans); font-size: 10px; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; }
+  .next-up h4 { font-family: var(--display); font-weight: 500; font-size: 22px; color: var(--ink); margin: 0 0 4px; }
+  .next-up p  { font-family: var(--body); font-style: italic; font-size: 14px; color: var(--ink-3); margin: 0; line-height: 1.5; }
+
+  /* --- Footbar --- */
+  .footbar {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
+    background: rgba(253, 250, 243, .94);
+    backdrop-filter: blur(8px);
+    border-top: 1px solid var(--rule);
+    padding: 14px 56px;
+    display: grid; grid-template-columns: 1fr auto 1fr; gap: 24px; align-items: center;
+  }
+  .footbar .left { display: flex; align-items: center; gap: 14px; }
+  .footbar .right { display: flex; justify-content: flex-end; align-items: center; gap: 14px; }
+  .footbar .meta { font-family: var(--body); font-style: italic; font-size: 13px; color: var(--ink-3); }
+  .footbar .meta b { font-family: var(--display); font-weight: 500; color: var(--ink); font-style: normal; font-variant-numeric: lining-nums; }
+  .foot-prev {
+    appearance: none; background: transparent;
+    border: 1px solid var(--rule); color: var(--ink-2);
+    padding: 13px 18px; font-family: var(--sans); font-size: 11px;
+    font-weight: 500; letter-spacing: .22em; text-transform: uppercase;
+    cursor: pointer;
+  }
+  .foot-prev:disabled { opacity: .35; cursor: not-allowed; }
+  .foot-prev:not(:disabled):hover { border-color: var(--ink); color: var(--ink); }
+  .foot-next {
+    appearance: none; background: var(--wine); color: var(--paper); border: 0;
+    padding: 14px 26px; font-family: var(--sans); font-size: 11px;
+    font-weight: 600; letter-spacing: .28em; text-transform: uppercase;
+    display: inline-flex; align-items: center; gap: 10px; cursor: pointer;
+  }
+  .foot-next:hover { background: #5e2718; }
+  .foot-next.gilt { background: var(--gilt); }
+  .foot-pause { font-family: var(--body); font-style: italic; font-size: 13px; color: var(--ink-3); }
+  .foot-bar { height: 2px; background: var(--rule-soft); position: relative; width: 240px; }
+  .foot-bar i { position: absolute; left: 0; top: 0; bottom: 0; background: var(--gilt); transition: width .3s; }
+
+  /* --- Step transition --- */
+  .step-anim { animation: kp-in .35s ease both; }
+  @keyframes kp-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+
+  /* --- Responsive --- */
+  @media (max-width: 1100px) {
+    .stage-shell { grid-template-columns: 1fr; gap: 0; }
+    .rail { position: static; padding: 0 0 24px; border-bottom: 1px solid var(--rule); }
+    .rail-list { flex-direction: row; flex-wrap: wrap; border-left: 0; margin-left: 0; gap: 6px; }
+    .rail-item { padding: 8px 12px; border: 1px solid var(--rule-soft); border-left: 2px solid transparent; }
+    .letter-stage { grid-template-columns: 1fr; }
+    .lesson-head { grid-template-columns: 1fr; }
+    .lh-dial { align-items: flex-start; }
+  }
+  @media (max-width: 720px) {
+    .chrome, .lesson-head, .stage-shell, .footbar { padding-left: 24px; padding-right: 24px; }
+    .word-row { grid-template-columns: auto 1fr; row-gap: 6px; }
+    .pair-table { grid-template-columns: 80px 1fr 1fr; }
+    .step-h { font-size: 30px; }
+    .check-prompt.letter .gr { font-size: 96px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Prototype banner -->
+<div class="proto-banner">
+  Prototype 1 · Claude Design v3 ported into production chrome ·
+  <a href="/paideia/greek/curriculum/1.1">production 1.1</a> ·
+  <a href="/paideia/_proto/lesson-v3-best.html">prototype 2</a>
+</div>
+
+<!-- Chrome (exact match to curriculum.html) -->
+<header class="chrome">
+  <a class="wordmark" href="/paideia/">
+    <span class="name">KALOPAIDEIA</span>
+    <span class="tag">καλὴ παιδεία</span>
+  </a>
+  <nav>
+    <a class="sc" href="/paideia/greek/curriculum">← THE GREEK COURSE</a>
+    <a class="sc" href="/paideia/akousma">AKOUSMA</a>
+    <a class="sc" href="/paideia/commonplace.html">COMMONPLACE</a>
+    <a class="italic" href="/paideia/">Today's word</a>
+    <a class="italic" href="/paideia/account">Sign in</a>
+  </nav>
+</header>
+
+<!-- Lesson header strip -->
+<section class="lesson-head">
+  <div>
+    <div class="lh-eyebrow">
+      Stage I <span class="sep">·</span> Lesson 1.1 <span class="sep">·</span>
+      <span class="min">45 min · audio + recitation</span>
+    </div>
+    <h1 class="lh-title">The Alphabet, Part One</h1>
+    <p class="lh-sub">Α through Μ — the first thirteen letters of the twenty-four.</p>
+  </div>
+  <div class="lh-dial" id="dial"></div>
+</section>
+
+<!-- Main shell -->
+<div class="stage-shell">
+  <aside class="rail" id="rail"></aside>
+  <main class="content" id="content">
+    <p style="font-family: var(--body); font-style: italic; color: var(--ink-3);">Loading lesson…</p>
+  </main>
+</div>
+
+<!-- Footbar -->
+<div class="footbar" id="footbar"></div>
+
+<script>
+// =============================================================
+// CONFIG
+// =============================================================
+const BASE = "/paideia";
+const LANG = "greek";
+const LESSON_ID = "1.1";
+
+// Pronunciation systems for the IPA badge in the letter explorer.
+// (Stretch: drive these from a Tweaks popover; for the prototype we
+// pin to Attic — the only one the production TTS actually delivers.)
+const IPA = {
+  attic: {
+    'Α':'[a] · [aː]', 'Β':'[b]', 'Γ':'[ɡ]', 'Δ':'[d]', 'Ε':'[e]',
+    'Ζ':'[zd]',       'Η':'[ɛː]','Θ':'[tʰ]','Ι':'[i] · [iː]','Κ':'[k]',
+    'Λ':'[l]',        'Μ':'[m]',
+  }
+};
+
+// Eight steps mirror Claude Design's structure.
+const STEPS = [
+  { id: 'orient',    roman: 'i',    label: 'Orientation',          min: 5 },
+  { id: 'letters',   roman: 'ii',   label: 'The first thirteen',   min: 14 },
+  { id: 'aspirated', roman: 'iii',  label: 'A note on aspiration', min: 5 },
+  { id: 'listen',    roman: 'iv',   label: 'Listening drill',      min: 8 },
+  { id: 'write',     roman: 'v',    label: 'Writing drill',        min: 6 },
+  { id: 'check',     roman: 'vi',   label: 'Self-check',           min: 4 },
+  { id: 'reading',   roman: 'vii',  label: 'First words',          min: 3 },
+  { id: 'done',      roman: 'viii', label: 'Lesson complete',      min: 0 },
+];
+
+// =============================================================
+// STATE
+// =============================================================
+const state = {
+  step: 0,
+  completed: new Set(),
+  heard: new Set(),
+  letterIdx: 0,
+  selfCheck: { i: 0, revealed: false, got: 0, miss: 0, done: false },
+  readingShown: new Set(),
+  readingRead: new Set(),
+  passIdx: -1, // listening drill 0..2
+  lesson: null, // populated from API
+};
+
+// =============================================================
+// HELPERS
+// =============================================================
+function esc(s) {
+  if (s === null || s === undefined) return "";
+  return String(s).replace(/[&<>"]/g, (c) => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
+}
+function cn(...xs) { return xs.filter(Boolean).join(" "); }
+function el(html) { const t = document.createElement("template"); t.innerHTML = html.trim(); return t.content.firstElementChild; }
+function ttsUrl(text) {
+  return `${BASE}/api/word-audio/${encodeURIComponent(LANG)}/${encodeURIComponent(text)}.mp3`;
+}
+
+// =============================================================
+// AUDIO (single shared <audio>, real /api/word-audio backing)
+// =============================================================
+let _audio = null, _pillEl = null;
+const PLAY_SVG  = '<svg viewBox="0 0 16 16" width="10" height="10"><path d="M4.5 2.4v11.2L13.2 8z" fill="currentColor"/></svg>';
+const PAUSE_SVG = '<svg viewBox="0 0 16 16" width="9" height="9"><rect x="3.5" y="3" width="3" height="10" fill="currentColor"/><rect x="9.5" y="3" width="3" height="10" fill="currentColor"/></svg>';
+
+function _resetPill(p) {
+  if (!p) return;
+  p.classList.remove("playing");
+  const g = p.querySelector(".glyph"); if (g) g.innerHTML = PLAY_SVG;
+  p.querySelectorAll(".ring").forEach((r) => r.remove());
+  clearTimeout(p._timer);
+}
+function stopAudio() {
+  if (_audio) { try { _audio.pause(); } catch {} _audio = null; }
+  if (_pillEl) { _resetPill(_pillEl); _pillEl = null; }
+}
+function playText(pillEl, text, onEnd) {
+  stopAudio();
+  pillEl.classList.add("playing");
+  const g = pillEl.querySelector(".glyph"); if (g) g.innerHTML = PAUSE_SVG;
+  const ring = document.createElement("span"); ring.className = "ring"; pillEl.appendChild(ring);
+  _pillEl = pillEl;
+  const a = new Audio(ttsUrl(text));
+  a.preload = "auto";
+  _audio = a;
+  pillEl._timer = setTimeout(() => { if (_pillEl === pillEl) stopAudio(); }, 30000);
+  const end = () => { if (_pillEl === pillEl) { stopAudio(); onEnd && onEnd(); } };
+  a.addEventListener("ended", end);
+  a.addEventListener("error", () => { console.warn("[audio] error", text); end(); });
+  a.play().catch((err) => { console.warn("[audio] play rejected:", err && err.message); end(); });
+}
+
+// =============================================================
+// RENDER — header dial, rail, footbar
+// =============================================================
+function renderDial() {
+  const root = document.getElementById("dial");
+  const ticks = STEPS.map((_, i) => {
+    let cls = "tick";
+    if (state.completed.has(i)) cls += " done";
+    if (i === state.step) cls += " current";
+    return `<span class="${cls}"></span>`;
+  }).join("");
+  root.innerHTML = `
+    <div class="progress-strip">${ticks}</div>
+    <span class="count">Step <b>${state.step + 1}</b> of <b>${STEPS.length}</b> · <em>${esc(STEPS[state.step].label)}</em></span>
+  `;
+}
+function renderRail() {
+  const root = document.getElementById("rail");
+  const items = STEPS.map((s, i) => {
+    let cls = "rail-item";
+    if (i === state.step) cls += " current";
+    if (state.completed.has(i)) cls += " done";
+    const num = state.completed.has(i) ? "✓" : (s.roman + ".");
+    return `<button class="${cls}" data-go="${i}" type="button">
+      <span class="num">${num}</span>
+      <span class="ttl">${esc(s.label)}</span>
+      <span class="mn">${s.min || "—"}</span>
+    </button>`;
+  }).join("");
+  const totalMin = STEPS.reduce((n, s) => n + s.min, 0);
+  const doneMin = STEPS.slice(0, state.step).reduce((n, s) => n + s.min, 0);
+  const remain = Math.max(0, totalMin - doneMin);
+  root.innerHTML = `
+    <div class="sc rail-eye"><span class="glyph"></span>Lesson contents</div>
+    <div class="rail-list">${items}</div>
+    <div class="rail-foot">
+      <span class="l">Time remaining</span>
+      ≈ <b>${remain}</b> min — pause and return any time. Progress is saved per step.
+    </div>
+  `;
+  root.querySelectorAll("[data-go]").forEach((b) => b.addEventListener("click", () => go(+b.dataset.go)));
+}
+function renderFootbar() {
+  const root = document.getElementById("footbar");
+  const isLast = state.step === STEPS.length - 1;
+  const pct = ((state.step + 1) / STEPS.length) * 100;
+  root.innerHTML = `
+    <div class="left">
+      <button class="foot-prev" type="button" ${state.step === 0 ? "disabled" : ""} id="prev-btn">← Previous</button>
+      <a class="foot-pause" href="#" id="pause-btn">Pause &amp; resume later</a>
+    </div>
+    <div style="display:flex;align-items:center;gap:14px;justify-content:center">
+      <div class="foot-bar"><i style="width:${pct}%"></i></div>
+      <span class="meta">Step <b>${state.step + 1}</b> / <b>${STEPS.length}</b></span>
+    </div>
+    <div class="right">
+      ${isLast
+        ? `<button class="foot-next gilt" type="button" id="finish-btn">Continue to lesson 1.2 →</button>`
+        : `<button class="foot-next" type="button" id="next-btn">${state.step === STEPS.length - 2 ? "Mark lesson complete" : "Continue"} →</button>`}
+    </div>
+  `;
+  const prev = document.getElementById("prev-btn"); if (prev) prev.addEventListener("click", () => go(state.step - 1));
+  const next = document.getElementById("next-btn"); if (next) next.addEventListener("click", () => go(state.step + 1));
+  const fin  = document.getElementById("finish-btn"); if (fin) fin.addEventListener("click", complete);
+  const pause = document.getElementById("pause-btn"); if (pause) pause.addEventListener("click", (e) => { e.preventDefault(); window.location.href = `${BASE}/${LANG}/curriculum`; });
+}
+
+// =============================================================
+// STEP RENDERERS
+// =============================================================
+function renderStep() {
+  const root = document.getElementById("content");
+  stopAudio();
+  const s = STEPS[state.step];
+  switch (s.id) {
+    case "orient":    root.innerHTML = stepOrient();    wireOrient(root); break;
+    case "letters":   root.innerHTML = stepLetters();   wireLetters(root); break;
+    case "aspirated": root.innerHTML = stepAspirated(); break;
+    case "listen":    root.innerHTML = stepListen();    wireListen(root); break;
+    case "write":     root.innerHTML = stepWrite();     break;
+    case "check":     root.innerHTML = stepCheck();     wireCheck(root); break;
+    case "reading":   root.innerHTML = stepReading();   wireReading(root); break;
+    case "done":      root.innerHTML = stepDone();      wireDone(root); break;
+  }
+  root.firstElementChild && root.firstElementChild.classList.add("step-anim");
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function stepOrient() {
+  const objectives = (state.lesson?.objectives || []).map((o) => `<li>${esc(o)}</li>`).join("");
+  return `
+    <section class="step-block">
+      <div class="step-eye"><span class="roman">§ i.</span><span class="label">Orientation</span></div>
+      <h2 class="step-h">Where we are starting</h2>
+
+      <div class="obj">
+        <div class="lbl">By the end of this lesson</div>
+        <ul>${objectives || "<li>Recognize Α–Μ in upper and lower case.</li>"}</ul>
+      </div>
+
+      <div class="prose">
+        <p>Greek has twenty-four letters. We will learn them in two sittings, thirteen and eleven. Today, thirteen. You do not need to memorize the order in this lesson — the order will come from use. What you need is to recognize each letter the next time you see it, and to make its sound when you do.</p>
+        <p>The pronunciation we teach is the <strong>reconstructed Attic of around 400 BCE</strong>, the Athens of Plato. It is not the modern Greek you would hear in Athens today — that pronunciation, beautiful in its own right, has eight centuries of sound change behind it and obscures the distinctions that the meter of Homer, the puns of Aristophanes, and the wordplay of Plato all depend on. To hear those, we need the older sounds.</p>
+      </div>
+
+      <div class="marginalia">
+        <span class="sc">A note on method</span>
+        Read this aloud as if a friend were across the table — not in your head. Speech is the gate; silence will close it.
+      </div>
+
+      <div class="companion-plate">
+        <div class="img" aria-hidden="true"></div>
+        <div class="body">
+          <div class="sc l">Companion plate</div>
+          <h4>Greek Girls Picking up Pebbles by the Sea</h4>
+          <p>Frederic, Lord Leighton (1871) — public domain. A frieze for the hour we begin: the letters too are pebbles, to be picked up one by one.</p>
+        </div>
+      </div>
+    </section>
+  `;
+}
+function wireOrient() {}
+
+function stepLetters() {
+  const lg = (state.lesson?.sections || []).find((s) => s.kind === "letter_grid");
+  const letters = lg?.letters || [];
+  const strip = letters.map((l, i) => `
+    <button class="letter-chip${state.heard.has(i) ? " heard" : ""}${state.letterIdx === i ? " active" : ""}" data-idx="${i}" type="button">
+      <div class="gr">${esc(l.upper || "")}${esc(l.lower || "")}</div>
+      <div class="nm">${esc(l.name || "")}</div>
+    </button>
+  `).join("");
+
+  const cur = letters[state.letterIdx] || letters[0];
+  const ipa = cur ? (IPA.attic[cur.upper] || cur.ipa || "") : "";
+  return `
+    <section class="step-block">
+      <div class="step-eye"><span class="roman">§ ii.</span><span class="label">The first thirteen letters</span></div>
+      <h2 class="step-h">Α through Μ</h2>
+      <p class="step-lead">Click each letter and hear it spoken aloud. Each one will gild as you go — you can return to any of them.</p>
+
+      <div class="letter-strip">${strip}</div>
+
+      ${cur ? `
+        <div class="letter-stage">
+          <span class="corner tl"></span><span class="corner tr"></span>
+          <span class="corner bl"></span><span class="corner br"></span>
+          <div class="lstage-glyphs">
+            <span class="roman">№ ${state.letterIdx + 1}</span>
+            <div class="upper">${esc(cur.upper || "")}</div>
+            <div class="lower">${esc(cur.lower || "")}</div>
+          </div>
+          <div class="lstage-body">
+            <div class="lstage-name">
+              <span class="nm">${esc(cur.name || "")}</span>
+              ${ipa ? `<span class="ipa">${esc(ipa)}</span>` : ""}
+            </div>
+            <p class="lstage-note">${cur.note || ""}</p>
+            <div class="lstage-controls">
+              <button class="play-pill" type="button" id="letter-pill">
+                <span class="glyph">${PLAY_SVG}</span>
+                Hear it
+              </button>
+              <button class="lstage-prev" type="button" ${state.letterIdx === 0 ? "disabled" : ""}>‹</button>
+              <button class="lstage-next" type="button" ${state.letterIdx === letters.length - 1 ? "disabled" : ""}>›</button>
+              <span class="lstage-hint">№ <b>${state.letterIdx + 1}</b> of <b>${letters.length}</b> · ← → arrows · space to play</span>
+            </div>
+          </div>
+        </div>
+      ` : ""}
+
+      <div class="letter-progress">
+        <span class="sc" style="color:var(--ink-3)">Heard</span>
+        <span class="v">${state.heard.size}</span>
+        <span>of ${letters.length}</span>
+        <div class="bar"><i style="width:${(state.heard.size / Math.max(letters.length, 1)) * 100}%"></i></div>
+        ${state.heard.size === letters.length && letters.length ? `<span style="color:var(--gilt);font-family:var(--display);font-style:italic">✦ All heard. Continue when ready.</span>` : ""}
+      </div>
+    </section>
+  `;
+}
+function wireLetters(root) {
+  const lg = (state.lesson?.sections || []).find((s) => s.kind === "letter_grid");
+  const letters = lg?.letters || [];
+  if (!letters.length) return;
+
+  root.querySelectorAll(".letter-chip").forEach((b) => {
+    b.addEventListener("click", () => { state.letterIdx = +b.dataset.idx; renderStep(); });
+  });
+  const prev = root.querySelector(".lstage-prev");
+  const next = root.querySelector(".lstage-next");
+  if (prev) prev.addEventListener("click", () => { state.letterIdx = Math.max(0, state.letterIdx - 1); renderStep(); });
+  if (next) next.addEventListener("click", () => { state.letterIdx = Math.min(letters.length - 1, state.letterIdx + 1); renderStep(); });
+
+  const pill = document.getElementById("letter-pill");
+  if (pill) {
+    pill.addEventListener("click", () => {
+      const cur = letters[state.letterIdx];
+      if (!cur) return;
+      // Mark heard immediately for instant UI feedback.
+      state.heard.add(state.letterIdx);
+      const chip = root.querySelector(`.letter-chip[data-idx="${state.letterIdx}"]`);
+      if (chip) chip.classList.add("heard");
+      const txt = `${cur.upper} ${cur.lower} — ${cur.name}`;
+      playText(pill, txt);
+    });
+  }
+
+  // Keyboard nav
+  if (!root._kbWired) {
+    root._kbWired = true;
+    document.addEventListener("keydown", (e) => {
+      if (STEPS[state.step].id !== "letters") return;
+      if (e.target.matches("input, textarea")) return;
+      if (e.key === "ArrowRight") { state.letterIdx = Math.min(letters.length - 1, state.letterIdx + 1); renderStep(); }
+      else if (e.key === "ArrowLeft") { state.letterIdx = Math.max(0, state.letterIdx - 1); renderStep(); }
+      else if (e.key === " " || e.key === "Enter") { e.preventDefault(); document.getElementById("letter-pill")?.click(); }
+    });
+  }
+}
+
+function stepAspirated() {
+  return `
+    <section class="step-block">
+      <div class="step-eye"><span class="roman">§ iii.</span><span class="label">A note on aspiration</span></div>
+      <h2 class="step-h">The aspirated stops</h2>
+      <p class="step-lead">Greek had three pairs of stops that English does not pair the same way. Today's lesson covers two of them in passing — θ, and one half of the κ-pair. The full set comes in 1.2.</p>
+
+      <div class="pair-table">
+        <div class="pair-head"></div>
+        <div class="pair-head">Unaspirated</div>
+        <div class="pair-head">Aspirated</div>
+
+        <div class="pair-row first">
+          <div class="pair-cell lbl">Labial</div>
+          <div class="pair-cell un"><span class="gl">π</span><span class="ex">like the p in <b>spin</b></span></div>
+          <div class="pair-cell asp"><span class="gl">φ</span><span class="ex">like the p in <b>pin</b></span></div>
+        </div>
+        <div class="pair-row">
+          <div class="pair-cell lbl">Dental</div>
+          <div class="pair-cell un"><span class="gl">τ</span><span class="ex">like the t in <b>stop</b></span></div>
+          <div class="pair-cell asp"><span class="gl">θ</span><span class="ex">like the t in <b>top</b></span></div>
+        </div>
+        <div class="pair-row">
+          <div class="pair-cell lbl">Velar</div>
+          <div class="pair-cell un"><span class="gl">κ</span><span class="ex">like the k in <b>skin</b></span></div>
+          <div class="pair-cell asp"><span class="gl">χ</span><span class="ex">like the k in <b>kite</b></span></div>
+        </div>
+      </div>
+
+      <div class="paper-test">
+        <div class="icon">❦</div>
+        <p>Hold a slip of paper an inch from your mouth. Say <em>spin</em> — the paper stays still. Say <em>pin</em> — the paper moves. That puff of air is the aspiration; that is what φ, θ, χ carry.</p>
+      </div>
+
+      <div class="prose">
+        <p>Do not let the modern English transliterations — <em>th</em>, <em>ph</em>, <em>ch</em> — mislead you. They reflect what these letters became in later Greek and in English borrowings (theology, philosophy, chrome), not what they sounded like in Plato's mouth.</p>
+      </div>
+    </section>
+  `;
+}
+
+function stepListen() {
+  // Faux waveform bars — purely decorative, not synthesized from real audio
+  const bars = Array.from({ length: 56 }, (_, i) => {
+    const base = 14 + Math.sin(i * 0.4) * 22 + Math.cos(i * 0.9) * 14;
+    return Math.max(6, Math.abs(base) + (i % 4) * 4);
+  });
+  const drill = (state.lesson?.sections || []).find((s) => s.kind === "audio_drill");
+  return `
+    <section class="step-block">
+      <div class="step-eye"><span class="roman">§ iv.</span><span class="label">Listening drill</span></div>
+      <h2 class="step-h">Each letter, three ways</h2>
+      <p class="step-lead">${esc(drill?.instructions || "Each of the thirteen letters is spoken three times — alone, then at the start of a real Greek word, then between two vowels. Listen first; then say each one aloud after the recording.")}</p>
+
+      <div class="audio-card${state.passIdx >= 0 ? " playing" : ""}">
+        <div class="head">
+          <span class="sc">Drill · lesson 1.1 · listening</span>
+          <span class="dur">≈ 90 sec</span>
+        </div>
+        <div class="waveform">
+          ${bars.map((h, i) => `<i style="height:${h}%;background:${state.passIdx >= 0 ? (i < bars.length * ((state.passIdx + 1) / 3) ? 'var(--wine)' : 'var(--ink-4)') : 'var(--ink-4)'}"></i>`).join("")}
+        </div>
+        <div class="label-row">
+          <span>0:00</span>
+          <span>${state.passIdx === 0 ? "pass i · in isolation" : state.passIdx === 1 ? "pass ii · in a word" : state.passIdx === 2 ? "pass iii · between vowels" : "three passes"}</span>
+          <span>1:30</span>
+        </div>
+        <div class="passes">
+          <div class="pass${state.passIdx === 0 ? " active" : ""}"><div class="n">i.</div><div class="t">in isolation</div></div>
+          <div class="pass${state.passIdx === 1 ? " active" : ""}"><div class="n">ii.</div><div class="t">in a word</div></div>
+          <div class="pass${state.passIdx === 2 ? " active" : ""}"><div class="n">iii.</div><div class="t">between vowels</div></div>
+        </div>
+        <div class="controls">
+          <button class="play-pill" type="button" id="drill-pill">
+            <span class="glyph">${PLAY_SVG}</span>
+            ${state.passIdx >= 0 ? "Stop drill" : "Begin drill"}
+          </button>
+          <span class="meta">Voice: Azure Speech · Greek · restored Attic</span>
+        </div>
+      </div>
+    </section>
+  `;
+}
+function wireListen(root) {
+  const pill = document.getElementById("drill-pill");
+  if (!pill) return;
+  pill.addEventListener("click", () => {
+    if (state.passIdx >= 0) {
+      stopAudio();
+      state.passIdx = -1;
+      renderStep();
+      return;
+    }
+    const lg = (state.lesson?.sections || []).find((s) => s.kind === "letter_grid");
+    const letters = lg?.letters || [];
+    // Three composed passes — each is a single concatenated Greek string
+    // for one TTS call. Total ≈ 90 sec.
+    const passes = [
+      letters.map((l) => `${l.upper} ${l.lower}`).join(", "),
+      letters.map((l) => l.name).join(", "),
+      letters.map((l) => `${l.lower}α`).join(", "),
+    ];
+    const playPass = (n) => {
+      if (n >= passes.length) { state.passIdx = -1; renderStep(); return; }
+      state.passIdx = n; renderStep();
+      const p2 = document.getElementById("drill-pill");
+      if (!p2) return;
+      playText(p2, passes[n], () => playPass(n + 1));
+    };
+    playPass(0);
+  });
+}
+
+function stepWrite() {
+  const lg = (state.lesson?.sections || []).find((s) => s.kind === "letter_grid");
+  const trace = (lg?.letters || []).map((l) => l.upper);
+  const writeDrill = (state.lesson?.sections || []).find((s) => s.kind === "writing_drill");
+  return `
+    <section class="step-block">
+      <div class="step-eye"><span class="roman">§ v.</span><span class="label">Writing drill</span></div>
+      <h2 class="step-h">By the hand</h2>
+      <p class="step-lead">${esc(writeDrill?.instructions || "Print or trace each letter ten times in upper case, ten times in lower. Greek lower case is essentially Latin handwriting with a few new shapes — the chief ones are β, γ, δ, ζ, η, θ, λ, μ.")}</p>
+
+      <div class="write-card">
+        <div class="head">
+          <span class="sc" style="color:var(--ink-3)">Trace sheet · ${trace.length} letters · upper case</span>
+          <span style="font-family:var(--body);font-style:italic;font-size:13px;color:var(--ink-3)">printable</span>
+        </div>
+        <div class="trace-area">
+          ${trace.map((g) => `<div class="trace-cell"><span class="ghost">${esc(g)}</span></div>`).join("")}
+        </div>
+        <div class="download-row">
+          ${writeDrill?.downloadable_pdf
+            ? `<a class="play-pill" href="${esc(writeDrill.downloadable_pdf)}" target="_blank" style="text-decoration:none">
+                 <span class="glyph"><svg viewBox="0 0 16 16" width="10" height="10"><path d="M8 1.5v8.5M4.5 7.5L8 11l3.5-3.5M2 13h12" stroke="currentColor" stroke-width="1.4" fill="none"/></svg></span>
+                 Download tracing sheet (PDF)
+               </a>`
+            : `<span style="font-family:var(--body);font-style:italic;font-size:13px;color:var(--ink-3)">A printable tracing sheet will live here.</span>`}
+          <span style="font-family:var(--body);font-style:italic;font-size:13.5px;color:var(--ink-3)">
+            Pay particular attention to the closed loop of θ versus the open arc of σ, and to the descender on η that distinguishes it from a Latin n.
+          </span>
+        </div>
+      </div>
+
+      <div class="marginalia">
+        <span class="sc">A note from the proprietor</span>
+        Twenty minutes with a pencil will fix more in your mind than two hours of reading. Set a small timer. Come back when you're done.
+      </div>
+    </section>
+  `;
+}
+
+function stepCheck() {
+  // Build the check from the lesson's self_check section, augmented with
+  // a few letter-recognition prompts that test visual recall of Α–Μ.
+  const sc = (state.lesson?.sections || []).find((s) => s.kind === "self_check");
+  const lg = (state.lesson?.sections || []).find((s) => s.kind === "letter_grid");
+  const letters = lg?.letters || [];
+
+  // Mix: 6 letter-recognition prompts (sampled), then the lesson's question items
+  const letterPicks = ["Θ","Η","Γ","Ζ","Λ","Ε"];
+  const letterQs = letterPicks.map((g) => {
+    const m = letters.find((l) => l.upper === g);
+    return m ? {
+      kind: "letter",
+      glyph: g,
+      italic: false,
+      answer: `<b>${m.name}</b> — ${m.note || ""}`,
+    } : null;
+  }).filter(Boolean);
+  const proseQs = (sc?.items || []).map((it) => ({
+    kind: "question", text: it.prompt, answer: `<b>${esc(it.answer)}</b>`,
+  }));
+  const queue = letterQs.concat(proseQs);
+  if (state._queue !== queue) state._queue = queue;
+
+  const total = queue.length;
+  const i = state.selfCheck.i;
+  if (state.selfCheck.done) {
+    const pct = total ? Math.round((state.selfCheck.got / total) * 100) : 0;
+    const pass = pct >= 70;
+    return `
+      <section class="step-block">
+        <div class="step-eye"><span class="roman">§ vi.</span><span class="label">Self-check · result</span></div>
+        <h2 class="step-h">Without looking back</h2>
+        <div class="check-summary">
+          <div>
+            <h4>${pass ? "A clean pass." : "Worth one more pass."}</h4>
+            <p>${state.selfCheck.got} of ${total} on the first run. ${pass
+              ? "You have these letters by sight and ear. The next lesson is yours."
+              : "Go back to step ii and let each letter sit a beat longer; then run the check again — there is no rush."}</p>
+          </div>
+          <div class="score">${pct}<span style="font-size:22px;color:var(--ink-3)">%</span></div>
+        </div>
+        <div class="check-actions">
+          <button class="btn-good" type="button" id="check-reset">Run the check again</button>
+        </div>
+      </section>
+    `;
+  }
+  const q = queue[i] || queue[0];
+  if (!q) return `<section class="step-block"><p class="step-lead">No self-check defined for this lesson.</p></section>`;
+  return `
+    <section class="step-block">
+      <div class="step-eye"><span class="roman">§ vi.</span><span class="label">Self-check</span></div>
+      <h2 class="step-h">Without looking back</h2>
+      <p class="step-lead">Identify each letter — say it aloud. Reveal the answer, then mark yourself honestly. No score is sent anywhere; this is for your ear, not your record.</p>
+
+      <div class="check-card">
+        <span class="corner tl"></span><span class="corner tr"></span>
+        <span class="corner bl"></span><span class="corner br"></span>
+        <div class="check-head">
+          <div class="q">Question <b>${i + 1}</b> of <b>${total}</b></div>
+          <div class="check-score">
+            <span class="got">✓ ${state.selfCheck.got}</span>
+            <span class="miss">· ${state.selfCheck.miss}</span>
+          </div>
+        </div>
+        <div class="check-prompt ${q.kind === 'letter' ? 'letter' : 'question'}">
+          ${q.kind === 'letter'
+            ? `<div class="gr${q.italic ? " italic" : ""}">${esc(q.glyph)}</div>`
+            : `<div class="text">${esc(q.text)}</div>`}
+          <div class="ask">${q.kind === 'letter' ? 'What letter is this?' : 'Say it aloud, then check yourself.'}</div>
+        </div>
+        <div class="check-answer ${state.selfCheck.revealed ? "" : "hidden"}">
+          ${q.answer || ""}
+        </div>
+        <div class="check-actions">
+          ${!state.selfCheck.revealed
+            ? `<button class="btn-reveal" type="button" id="check-reveal">Show answer</button>`
+            : `<button class="btn-good" type="button" id="check-got">✓ I had it</button>
+               <button class="btn-again" type="button" id="check-miss">· Review again</button>`}
+        </div>
+      </div>
+    </section>
+  `;
+}
+function wireCheck(root) {
+  const reveal = root.querySelector("#check-reveal");
+  if (reveal) reveal.addEventListener("click", () => { state.selfCheck.revealed = true; renderStep(); });
+  const got = root.querySelector("#check-got");
+  if (got) got.addEventListener("click", () => grade(true));
+  const miss = root.querySelector("#check-miss");
+  if (miss) miss.addEventListener("click", () => grade(false));
+  const reset = root.querySelector("#check-reset");
+  if (reset) reset.addEventListener("click", () => {
+    state.selfCheck = { i: 0, revealed: false, got: 0, miss: 0, done: false };
+    renderStep();
+  });
+}
+function grade(right) {
+  const total = (state._queue || []).length;
+  state.selfCheck.got  += right ? 1 : 0;
+  state.selfCheck.miss += right ? 0 : 1;
+  if (state.selfCheck.i + 1 >= total) state.selfCheck.done = true;
+  else { state.selfCheck.i += 1; state.selfCheck.revealed = false; }
+  renderStep();
+}
+
+function stepReading() {
+  const rp = (state.lesson?.sections || []).find((s) => s.kind === "reading_preview");
+  const words = rp?.words || [];
+  return `
+    <section class="step-block">
+      <div class="step-eye"><span class="roman">§ vii.</span><span class="label">First words in Greek</span></div>
+      <h2 class="step-h">You can already read these</h2>
+      <p class="step-lead">${esc(rp?.instructions || "Every letter in each word is one you know. Try each one aloud first — then play the recording to check yourself.")}</p>
+
+      <div class="reading-card">
+        ${words.map((w, i) => `
+          <div class="word-row${state.readingShown.has(i) ? " shown" : ""}${state.readingRead.has(i) ? " read" : ""}" data-idx="${i}">
+            <div class="gr">${esc(w.greek || "")}</div>
+            <div class="tl reveal">${esc(w.transliteration || "")}</div>
+            <div class="gloss reveal"><em>— ${esc(w.gloss || "")}</em></div>
+            <div style="display:flex;gap:8px;align-items:center">
+              <button class="play-pill" type="button" data-play="${i}">
+                <span class="glyph">${PLAY_SVG}</span>
+                Play
+              </button>
+              <button class="lstage-prev" type="button" data-toggle="${i}" title="Toggle gloss" style="width:32px;height:32px">${state.readingShown.has(i) ? "−" : "+"}</button>
+            </div>
+          </div>
+        `).join("")}
+        <div class="reading-foot">
+          <span><b>${state.readingRead.size}</b> of <b>${words.length}</b> read aloud</span>
+          <span>Audio + gloss <em>·</em> recorded in restored Attic</span>
+        </div>
+      </div>
+
+      <div class="marginalia">
+        <span class="sc">What's coming</span>
+        Lesson 1.2 brings Ν through Ω — the second half of the alphabet, including the other two aspirated stops (Φ, Χ) and the long vowels Υ and Ω. After 1.2 you will be able to read <em>any</em> printed Greek text aloud, even if you do not yet know what it means.
+      </div>
+    </section>
+  `;
+}
+function wireReading(root) {
+  const rp = (state.lesson?.sections || []).find((s) => s.kind === "reading_preview");
+  const words = rp?.words || [];
+  root.querySelectorAll("[data-toggle]").forEach((b) => {
+    b.addEventListener("click", () => {
+      const i = +b.dataset.toggle;
+      if (state.readingShown.has(i)) state.readingShown.delete(i); else state.readingShown.add(i);
+      renderStep();
+    });
+  });
+  root.querySelectorAll("[data-play]").forEach((b) => {
+    b.addEventListener("click", () => {
+      const i = +b.dataset.play;
+      state.readingRead.add(i);
+      state.readingShown.add(i);
+      const w = words[i];
+      if (!w) return;
+      const pill = b;
+      playText(pill, w.greek || "");
+      // No re-render here — leave the playing pill animation alone.
+      // Mark the row as read by patching the DOM directly:
+      const row = pill.closest(".word-row");
+      if (row) { row.classList.add("read"); row.classList.add("shown"); }
+    });
+  });
+}
+
+function stepDone() {
+  const nl = (state.lesson?.sections || []).find((s) => s.kind === "next_lesson");
+  return `
+    <section class="step-block ceremony">
+      <div class="seal-wrap"><div class="seal">K</div></div>
+      <h2>Lesson 1.1 complete</h2>
+      <div class="greek">καλὴ ἀρχή — a fair beginning.</div>
+      <p class="blurb">You have the first thirteen letters by sight and ear. Saved to your record. Forty-five minutes, credited to Stage I.</p>
+
+      <div class="stage-meter">
+        <div class="row">
+          <span>Stage I · The Sound and the Shape</span>
+          <span class="v">1 of 7 lessons</span>
+        </div>
+        <div class="ticks">
+          <i class="done"></i><i class="current"></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+      </div>
+
+      <div class="next-up">
+        <div>
+          <div class="sc l">Up next</div>
+          <h4>${esc(nl?.heading || "Lesson 1.2 — The Alphabet, Part Two")}</h4>
+          <p>${esc(nl?.body || "Ν through Ω. Special attention to the aspirated stops Θ, Φ, Χ — not the English th, f, ch sounds — and to the cluster letters Ξ, Ψ.")}</p>
+        </div>
+        <button class="foot-next" type="button" id="go-next">Begin 1.2 →</button>
+      </div>
+    </section>
+  `;
+}
+function wireDone(root) {
+  const b = root.querySelector("#go-next");
+  if (b) b.addEventListener("click", () => { window.location.href = `${BASE}/${LANG}/curriculum/1.2`; });
+}
+
+// =============================================================
+// NAV
+// =============================================================
+function go(next) {
+  if (next < 0 || next >= STEPS.length) return;
+  if (next > state.step) {
+    for (let i = 0; i <= state.step; i++) state.completed.add(i);
+  }
+  state.step = next;
+  renderAll();
+}
+async function complete() {
+  // Mark all steps done and POST completion to the curriculum API.
+  for (let i = 0; i < STEPS.length; i++) state.completed.add(i);
+  state.step = STEPS.length - 1;
+  renderAll();
+  try {
+    await fetch(`${BASE}/api/curriculum/${LANG}/lesson/${LESSON_ID}/complete`, {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ minutes: state.lesson?.estimated_minutes || 45 }),
+    });
+  } catch {}
+}
+
+// =============================================================
+// BOOT
+// =============================================================
+async function boot() {
+  try {
+    const r = await fetch(`${BASE}/api/curriculum/${LANG}/lesson/${LESSON_ID}`);
+    if (r.ok) state.lesson = await r.json();
+  } catch (e) {
+    console.error("[lesson] fetch failed", e);
+  }
+  renderAll();
+}
+function renderAll() { renderDial(); renderRail(); renderStep(); renderFootbar(); }
+boot();
+</script>
+</body>
+</html>
