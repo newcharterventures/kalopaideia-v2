@@ -158,7 +158,12 @@ function getLangFromPath() {
   
   // Fall back to path-based detection
   const parts = location.pathname.split("/").filter(Boolean);
-  return parts[1] || "greek";
+  const candidate = parts[1];
+  
+  // If parts[1] is a file (like "curriculum.html"), not a language, default to greek
+  if (!candidate || candidate.includes('.')) return "greek";
+  
+  return candidate;
 }
 
 // ============================================================
