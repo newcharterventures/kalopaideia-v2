@@ -7,26 +7,368 @@
 <meta name="description" content="A guided lesson in the Kalopaideia curriculum." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Cinzel:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="/paideia/styles.css?v=1778713200" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Commissioner:wght@300;400;500;600&family=GFS+Didot&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/paideia/curriculum-atelier.css?v=11" />
+<style>
+/* ============================================================
+   Lesson page — matches the Atelier curriculum landing palette.
+   Tokens (--paper, --ink, --wine, --gilt, --display, --body, etc.)
+   are inherited from curriculum-atelier.css.
+   ============================================================ */
+.lesson-wrap {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 48px 32px 96px;
+}
+.lesson-back {
+  font-family: var(--body); font-style: italic;
+  font-size: 14px; color: var(--ink-3);
+  text-decoration: underline;
+  text-decoration-color: var(--rule);
+  text-underline-offset: 4px;
+  display: inline-block;
+  margin-bottom: 28px;
+}
+.lesson-back:hover { color: var(--wine); }
+
+.lesson-eyebrow {
+  font-family: var(--sans); font-weight: 500;
+  font-size: 11px; letter-spacing: .32em;
+  text-transform: uppercase; color: var(--wine);
+  margin: 0 0 16px;
+}
+.lesson-wrap h1 {
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: clamp(40px, 5.5vw, 64px);
+  line-height: 1.05;
+  letter-spacing: -.005em;
+  color: var(--ink);
+  margin: 0 0 12px;
+}
+.lesson-subtitle {
+  font-family: var(--body); font-style: italic;
+  font-size: 19px; color: var(--ink-2);
+  max-width: 60ch; line-height: 1.55;
+  margin: 0 0 36px;
+}
+
+/* Objectives */
+.lesson-objectives {
+  background: var(--card);
+  border-left: 3px solid var(--gilt);
+  padding: 22px 26px;
+  margin: 0 0 44px;
+}
+.lesson-objectives h3 {
+  font-family: var(--sans); font-size: 10px;
+  letter-spacing: .28em; text-transform: uppercase;
+  color: var(--gilt); font-weight: 600;
+  margin: 0 0 12px;
+}
+.lesson-objectives ul {
+  margin: 0; padding-left: 0; list-style: none;
+}
+.lesson-objectives li {
+  font-family: var(--body); font-size: 16px;
+  color: var(--ink); line-height: 1.55;
+  padding: 4px 0 4px 22px;
+  position: relative;
+}
+.lesson-objectives li::before {
+  content: "·";
+  position: absolute; left: 6px; top: 2px;
+  color: var(--gilt); font-size: 22px;
+  font-family: var(--display);
+}
+
+/* Sections */
+.lesson-section {
+  margin: 44px 0;
+  padding-top: 36px;
+  border-top: 1px solid var(--rule-soft);
+}
+.lesson-section:first-of-type { border-top: 0; padding-top: 0; }
+.lesson-section h3 {
+  font-family: var(--display);
+  font-style: italic; font-weight: 500;
+  font-size: 26px; color: var(--ink);
+  margin: 0 0 18px;
+}
+
+/* Prose */
+.lesson-prose {
+  font-family: var(--body); font-size: 17px;
+  color: var(--ink); line-height: 1.7;
+  max-width: 62ch; white-space: pre-wrap;
+}
+
+/* Letter grid */
+.letter-grid-lesson {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+.letter-cell-lesson {
+  background: var(--paper);
+  border: 1px solid var(--rule-soft);
+  padding: 18px 16px 14px;
+  display: flex; flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  transition: border-color .15s, background .15s;
+}
+.letter-cell-lesson:hover {
+  border-color: var(--gilt);
+  background: var(--card);
+}
+.letter-cell-lesson .lc-char {
+  font-family: var(--display);
+  font-size: 36px; line-height: 1;
+  color: var(--ink); margin-bottom: 6px;
+}
+.letter-cell-lesson .lc-name {
+  font-family: var(--sans); font-size: 11px;
+  letter-spacing: .22em; text-transform: uppercase;
+  color: var(--wine); font-weight: 500;
+}
+.letter-cell-lesson .lc-ipa {
+  font-family: "Source Code Pro", "Courier New", monospace;
+  font-size: 12px; color: var(--ink-3);
+}
+.letter-cell-lesson .lc-note {
+  font-family: var(--body); font-style: italic;
+  font-size: 13px; color: var(--ink-2);
+  line-height: 1.5; margin-top: 4px;
+}
+.letter-cell-lesson .play-pill {
+  margin-top: 10px;
+}
+
+/* play-pill (inherits look from curriculum-atelier.css; only add minor
+   variants here in case the curriculum CSS didn't load). */
+.play-pill {
+  appearance: none; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 6px 12px 6px 8px;
+  background: transparent;
+  border: 1px solid var(--rule);
+  color: var(--ink);
+  font-family: var(--sans); font-size: 10px;
+  font-weight: 500; letter-spacing: .22em;
+  text-transform: uppercase;
+  position: relative; overflow: hidden;
+}
+.play-pill:hover { border-color: var(--ink); }
+.play-pill .glyph {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 18px; height: 18px;
+  background: var(--ink); color: var(--paper);
+  border-radius: 999px;
+}
+.play-pill.playing { border-color: var(--wine); color: var(--wine); }
+.play-pill.playing .glyph { background: var(--wine); }
+.play-pill .ring {
+  position: absolute; inset: -1px;
+  border: 1px solid var(--wine);
+  pointer-events: none;
+  animation: pill-ring 2.2s ease-out forwards;
+}
+@keyframes pill-ring {
+  0%   { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(1.08); }
+}
+
+/* Audio drill */
+.audio-drill {
+  background: var(--card);
+  border-left: 3px solid var(--wine);
+  padding: 20px 24px;
+}
+.audio-drill p {
+  font-family: var(--body); font-size: 15.5px;
+  color: var(--ink-2); line-height: 1.6;
+  margin: 0 0 14px;
+}
+.audio-drill audio {
+  width: 100%; max-width: 560px;
+}
+
+/* Writing drill */
+.writing-drill {
+  background: var(--card);
+  padding: 20px 24px;
+}
+.writing-drill p {
+  font-family: var(--body); font-size: 15.5px;
+  color: var(--ink-2); line-height: 1.6;
+  margin: 0 0 12px;
+}
+.writing-drill a {
+  color: var(--wine); text-decoration: underline;
+  text-decoration-color: var(--rule);
+  text-underline-offset: 3px;
+  font-style: italic; font-size: 14px;
+}
+.writing-drill a:hover {
+  text-decoration-color: var(--wine);
+}
+
+/* Self check */
+.self-check-item {
+  background: var(--paper);
+  border: 1px solid var(--rule-soft);
+  padding: 18px 22px;
+  margin: 12px 0;
+}
+.self-check-prompt {
+  font-family: var(--body);
+  font-size: 16px; color: var(--ink);
+  margin: 0 0 12px; line-height: 1.55;
+}
+.self-check-reveal {
+  appearance: none; cursor: pointer;
+  background: transparent;
+  border: 1px solid var(--rule);
+  color: var(--ink-2);
+  padding: 6px 14px;
+  font-family: var(--sans); font-size: 10px;
+  font-weight: 500; letter-spacing: .22em;
+  text-transform: uppercase;
+}
+.self-check-reveal:hover {
+  border-color: var(--ink); color: var(--ink);
+}
+.self-check-answer {
+  display: none;
+  margin-top: 14px;
+  padding: 14px 16px;
+  background: var(--card);
+  border-left: 2px solid var(--gilt);
+  font-family: var(--display);
+  font-size: 19px;
+  color: var(--ink);
+}
+.self-check-item.revealed .self-check-answer { display: block; }
+
+/* Reading preview */
+.reading-preview-list {
+  list-style: none; margin: 0; padding: 0;
+  display: flex; flex-direction: column;
+  gap: 8px;
+}
+.reading-preview-list li {
+  background: var(--paper);
+  border: 1px solid var(--rule-soft);
+  padding: 12px 16px;
+  display: flex; align-items: baseline; gap: 12px;
+  flex-wrap: wrap;
+}
+.reading-preview-list .gr {
+  font-family: var(--display);
+  font-size: 22px; color: var(--ink);
+  min-width: 80px;
+}
+.reading-preview-list .tr {
+  font-family: "Source Code Pro", monospace;
+  font-size: 13px; color: var(--ink-3);
+}
+.reading-preview-list .gloss {
+  font-family: var(--body); font-style: italic;
+  font-size: 14.5px; color: var(--ink-2);
+  flex: 1;
+}
+.reading-preview-list .play-pill { padding: 4px 10px 4px 6px; }
+.reading-preview-list .play-pill .glyph { width: 16px; height: 16px; }
+
+/* Next-up box */
+.next-lesson-box {
+  background: var(--card);
+  padding: 22px 26px;
+  border-left: 3px solid var(--gilt);
+  margin-top: 32px;
+}
+.next-lesson-box h3 {
+  font-style: normal; font-weight: 500;
+  font-size: 14px;
+  font-family: var(--sans);
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--gilt);
+  margin: 0 0 8px;
+}
+.next-lesson-box p {
+  font-family: var(--body); font-style: italic;
+  font-size: 16px; color: var(--ink);
+  line-height: 1.55; margin: 0;
+}
+
+/* Complete bar */
+.lesson-complete-bar {
+  margin-top: 56px;
+  padding-top: 28px;
+  border-top: 1px solid var(--rule);
+  display: flex; flex-direction: column;
+  gap: 10px;
+}
+.lesson-complete-btn {
+  appearance: none; cursor: pointer;
+  background: var(--ink); color: var(--paper);
+  border: 1px solid var(--ink);
+  padding: 12px 24px;
+  font-family: var(--sans); font-size: 11px;
+  font-weight: 500; letter-spacing: .26em;
+  text-transform: uppercase;
+  align-self: flex-start;
+  transition: background .15s, color .15s;
+}
+.lesson-complete-btn:hover {
+  background: var(--wine); border-color: var(--wine);
+}
+.lesson-complete-btn.done {
+  background: var(--gilt); border-color: var(--gilt);
+  cursor: default;
+}
+.lesson-complete-btn[disabled] { opacity: .55; cursor: wait; }
+.lesson-complete-status {
+  font-family: var(--body); font-style: italic;
+  font-size: 14px; color: var(--ink-3);
+}
+.lesson-complete-status a { color: var(--wine); }
+
+/* Loading state */
+.lesson-loading {
+  font-family: var(--body); font-style: italic;
+  color: var(--ink-3); font-size: 17px;
+}
+
+@media (max-width: 640px) {
+  .lesson-wrap { padding: 32px 20px 80px; }
+  .letter-grid-lesson { grid-template-columns: repeat(2, 1fr); }
+}
+</style>
 </head>
 <body>
 
-<header class="masthead masthead-athenaeum">
-  <div class="mast-content">
-    <div class="mast-grid">
-      <div class="mast-center">
-        <h1 class="mast-name"><a href="/paideia/" aria-label="Kalopaideia home">KALOPAIDEIA</a></h1>
-      </div>
-    </div>
-    <nav class="nav mast-nav">
-      <a id="back-link" href="/paideia/greek">← Back to language</a>
-    </nav>
-  </div>
+<!-- Chrome (matches curriculum.html) -->
+<header class="chrome">
+  <a class="wordmark" href="/paideia/">
+    <span class="name">KALOPAIDEIA</span>
+    <span class="tag">καλὴ παιδεία</span>
+  </a>
+  <nav>
+    <a class="sc" href="/paideia/greek/curriculum" id="back-link">← BACK TO CURRICULUM</a>
+    <a class="sc" href="/paideia/akousma">AKOUSMA</a>
+    <a class="sc" href="/paideia/commonplace.html">COMMONPLACE</a>
+    <a class="italic" href="/paideia/">Today's word</a>
+    <a class="italic" href="/paideia/support.html">Support</a>
+    <a class="italic" href="/paideia/account">Sign in</a>
+  </nav>
 </header>
 
-<main class="lesson-page" id="lesson-root">
-  <p><em>Loading lesson…</em></p>
+<main class="lesson-wrap" id="lesson-root">
+  <p class="lesson-loading">Loading lesson…</p>
 </main>
 
 <script>
@@ -40,11 +382,105 @@ function esc(s) {
 function parsePath() {
   // /paideia/<lang>/curriculum/<lessonId>
   const parts = location.pathname.split("/").filter(Boolean);
-  // expect ["paideia", "<lang>", "curriculum", "<lessonId>"]
   return { lang: parts[1], id: parts[3] };
 }
 
-function renderSection(s) {
+// Build a /api/word-audio fallback URL for any Greek (or other-lang) text.
+function ttsUrl(lang, text) {
+  if (!text) return "";
+  return `${BASE}/api/word-audio/${encodeURIComponent(lang)}/${encodeURIComponent(text)}.mp3`;
+}
+
+// ============================================================
+// Audio playback (shared single-audio model)
+// ============================================================
+let _audio = null;
+let _pill = null;
+
+const PLAY_SVG  = '<svg viewBox="0 0 16 16" width="9" height="9"><path d="M4.5 2.6v10.8L13 8z" fill="currentColor"/></svg>';
+const PAUSE_SVG = '<svg viewBox="0 0 16 16" width="9" height="9"><rect x="4" y="3" width="2.5" height="10" fill="currentColor"/><rect x="9.5" y="3" width="2.5" height="10" fill="currentColor"/></svg>';
+
+function resetPill(btn) {
+  if (!btn) return;
+  btn.classList.remove("playing");
+  const g = btn.querySelector(".glyph");
+  if (g) g.innerHTML = PLAY_SVG;
+  btn.querySelectorAll(".ring").forEach((r) => r.remove());
+  clearTimeout(btn._timer);
+}
+
+function stopAudio() {
+  if (_audio) { try { _audio.pause(); } catch {} _audio = null; }
+  if (_pill) { resetPill(_pill); _pill = null; }
+}
+
+function playFromPill(btn, sources) {
+  // sources is an array of URL strings to try in order.
+  // First success wins; on error, fall back to next.
+  stopAudio();
+
+  btn.classList.add("playing");
+  const g = btn.querySelector(".glyph");
+  if (g) g.innerHTML = PAUSE_SVG;
+  const ring = document.createElement("span");
+  ring.className = "ring";
+  btn.appendChild(ring);
+
+  _pill = btn;
+
+  let idx = 0;
+  function tryNext() {
+    if (idx >= sources.length) {
+      stopAudio();
+      return;
+    }
+    const url = sources[idx++];
+    if (!url) return tryNext();
+    const a = new Audio(url);
+    a.preload = "auto";
+    _audio = a;
+    a.addEventListener("ended", () => { if (_pill === btn) stopAudio(); });
+    a.addEventListener("error", () => {
+      console.warn("[lesson audio] error on", url, "— trying next");
+      tryNext();
+    });
+    a.play().catch((err) => {
+      console.warn("[lesson audio] play() rejected:", err && err.message);
+      tryNext();
+    });
+  }
+
+  // 30s hard timeout
+  btn._timer = setTimeout(() => { if (_pill === btn) stopAudio(); }, 30000);
+
+  tryNext();
+}
+
+function wirePlayPill(btn, sources) {
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    if (_pill === btn) { stopAudio(); return; }
+    playFromPill(btn, sources);
+  });
+}
+
+// ============================================================
+// Section renderers
+// ============================================================
+function pillHTML() {
+  return `<button class="play-pill" type="button" aria-label="Listen">
+    <span class="glyph">${PLAY_SVG}</span>
+    HEAR IT
+  </button>`;
+}
+function smallPillHTML() {
+  return `<button class="play-pill" type="button" aria-label="Listen">
+    <span class="glyph">${PLAY_SVG}</span>
+    HEAR
+  </button>`;
+}
+
+function renderSection(s, lang) {
   if (s.kind === "prose") {
     return `<section class="lesson-section">
       ${s.heading ? `<h3>${esc(s.heading)}</h3>` : ""}
@@ -55,13 +491,13 @@ function renderSection(s) {
     return `<section class="lesson-section">
       ${s.heading ? `<h3>${esc(s.heading)}</h3>` : ""}
       <div class="letter-grid-lesson">
-        ${(s.letters || []).map((l) => `
-          <div class="letter-cell-lesson">
+        ${(s.letters || []).map((l, i) => `
+          <div class="letter-cell-lesson" data-letter='${esc(JSON.stringify({ static: l.audio || "", text: (l.upper || "") + " " + (l.lower || "") + " — " + (l.name || ""), lang }))}'>
             <div class="lc-char">${esc(l.upper || "")} ${esc(l.lower || "")}</div>
             <div class="lc-name">${esc(l.name || "")}</div>
-            <div class="lc-ipa">${esc(l.ipa || "")}</div>
-            <div class="lc-note">${esc(l.note || "")}</div>
-            ${l.audio ? `<button class="lc-play" data-audio="${esc(l.audio)}">▶ Listen</button>` : ""}
+            ${l.ipa ? `<div class="lc-ipa">${esc(l.ipa)}</div>` : ""}
+            ${l.note ? `<div class="lc-note">${esc(l.note)}</div>` : ""}
+            ${pillHTML()}
           </div>
         `).join("")}
       </div>
@@ -70,21 +506,25 @@ function renderSection(s) {
   if (s.kind === "audio_drill") {
     return `<section class="lesson-section">
       ${s.heading ? `<h3>${esc(s.heading)}</h3>` : ""}
-      <p>${esc(s.instructions || "")}</p>
-      ${s.audio ? `<audio controls src="${esc(s.audio)}" style="width:100%;margin-top:8px;"></audio>` : "<p><em>Audio in preparation.</em></p>"}
+      <div class="audio-drill" data-drill='${esc(JSON.stringify({ static: s.audio || "", text: s.tts_text || s.instructions || "", lang }))}'>
+        ${s.instructions ? `<p>${esc(s.instructions)}</p>` : ""}
+        ${pillHTML()}
+      </div>
     </section>`;
   }
   if (s.kind === "writing_drill") {
     return `<section class="lesson-section">
       ${s.heading ? `<h3>${esc(s.heading)}</h3>` : ""}
-      <p>${esc(s.instructions || "")}</p>
-      ${s.downloadable_pdf ? `<p><a href="${esc(s.downloadable_pdf)}" target="_blank">Download tracing sheet (PDF) →</a></p>` : ""}
+      <div class="writing-drill">
+        ${s.instructions ? `<p>${esc(s.instructions)}</p>` : ""}
+        ${s.downloadable_pdf ? `<p><a href="${esc(s.downloadable_pdf)}" target="_blank">Download tracing sheet (PDF) →</a></p>` : ""}
+      </div>
     </section>`;
   }
   if (s.kind === "self_check") {
     return `<section class="lesson-section">
       ${s.heading ? `<h3>${esc(s.heading)}</h3>` : ""}
-      <p>${esc(s.instructions || "")}</p>
+      ${s.instructions ? `<p class="lesson-prose">${esc(s.instructions)}</p>` : ""}
       ${(s.items || []).map((it, i) => `
         <div class="self-check-item" data-idx="${i}">
           <div class="self-check-prompt">${esc(it.prompt)}</div>
@@ -97,32 +537,40 @@ function renderSection(s) {
   if (s.kind === "reading_preview") {
     return `<section class="lesson-section">
       ${s.heading ? `<h3>${esc(s.heading)}</h3>` : ""}
-      <p>${esc(s.instructions || "")}</p>
+      ${s.instructions ? `<p class="lesson-prose">${esc(s.instructions)}</p>` : ""}
       <ul class="reading-preview-list">
         ${(s.words || []).map((w) => `
-          <li>
-            <strong style="font-family:'Cormorant Garamond',serif;font-size:22px;">${esc(w.greek)}</strong>
-            <span style="color:#5b4a36;margin:0 8px;">${esc(w.transliteration)}</span>
-            <span>— ${esc(w.gloss)}</span>
-            ${w.audio ? `<button class="lc-play" data-audio="${esc(w.audio)}">▶</button>` : ""}
+          <li data-word='${esc(JSON.stringify({ static: w.audio || "", text: w.greek || "", lang }))}'>
+            <span class="gr">${esc(w.greek || "")}</span>
+            <span class="tr">${esc(w.transliteration || "")}</span>
+            <span class="gloss">— ${esc(w.gloss || "")}</span>
+            ${smallPillHTML()}
           </li>
         `).join("")}
       </ul>
     </section>`;
   }
   if (s.kind === "next_lesson") {
-    return `<section class="lesson-section" style="background:#f4ecda;padding:18px 20px;border-radius:4px;">
-      <h3>${esc(s.heading || "Up next")}</h3>
-      <p>${esc(s.body || "")}</p>
+    return `<section class="lesson-section">
+      <div class="next-lesson-box">
+        <h3>${esc(s.heading || "Up next")}</h3>
+        <p>${esc(s.body || "")}</p>
+      </div>
     </section>`;
   }
   return "";
 }
 
+// ============================================================
+// Main render
+// ============================================================
 async function loadAndRender() {
   const { lang, id } = parsePath();
-  document.getElementById("back-link").href = `${BASE}/${lang}/curriculum`;
-  document.getElementById("back-link").textContent = `← Back to ${lang} curriculum`;
+  const back = document.getElementById("back-link");
+  if (back) {
+    back.href = `${BASE}/${lang}/curriculum`;
+    back.textContent = `← BACK TO ${lang.toUpperCase()} CURRICULUM`;
+  }
 
   let lesson = null;
   try {
@@ -133,16 +581,17 @@ async function loadAndRender() {
   const root = document.getElementById("lesson-root");
   if (!lesson) {
     root.innerHTML = `
+      <a href="${BASE}/${lang}/curriculum" class="lesson-back">← Back to the curriculum</a>
       <p class="lesson-eyebrow">Stage ${esc(id.split(".")[0])} · Lesson ${esc(id)}</p>
       <h1>Lesson in preparation</h1>
       <p class="lesson-subtitle">The full text of this lesson is being prepared. Until it ships, refer to the curriculum overview on the language page.</p>
-      <p><a href="${BASE}/${lang}/curriculum">← Back to the curriculum</a></p>
     `;
     return;
   }
 
   document.title = `${lesson.title} — Kalopaideia`;
   const html = [];
+  html.push(`<a href="${BASE}/${lang}/curriculum" class="lesson-back">← Back to the ${esc(lang)} curriculum</a>`);
   html.push(`<p class="lesson-eyebrow">Stage ${esc(lesson.stage)} · Lesson ${esc(lesson.id)} · ${esc(lesson.estimated_minutes || 0)} min</p>`);
   html.push(`<h1>${esc(lesson.title)}</h1>`);
   if (lesson.subtitle) html.push(`<p class="lesson-subtitle">${esc(lesson.subtitle)}</p>`);
@@ -153,29 +602,57 @@ async function loadAndRender() {
     </div>`);
   }
   for (const sec of lesson.sections || []) {
-    html.push(renderSection(sec));
+    html.push(renderSection(sec, lang));
   }
   html.push(`<div class="lesson-complete-bar">
-    <button id="complete-btn" class="lesson-complete-btn">Mark lesson complete</button>
-    <div style="margin-top:6px;font-size:13px;color:#5b4a36;" id="complete-status"></div>
+    <button id="complete-btn" class="lesson-complete-btn" type="button">Mark lesson complete</button>
+    <div class="lesson-complete-status" id="complete-status"></div>
   </div>`);
   root.innerHTML = html.join("");
 
-  // Wire audio + self-check + completion
-  root.querySelectorAll(".lc-play").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const src = btn.dataset.audio;
-      if (!src) return;
-      const a = new Audio(src);
-      a.play().catch(() => {});
-    });
+  // ============================================================
+  // Wire audio play-pills (static path first, TTS fallback)
+  // ============================================================
+  root.querySelectorAll("[data-letter]").forEach((cell) => {
+    let cfg = {};
+    try { cfg = JSON.parse(cell.dataset.letter); } catch {}
+    const sources = [];
+    if (cfg.static) sources.push(cfg.static);
+    if (cfg.text)   sources.push(ttsUrl(cfg.lang || lang, cfg.text));
+    const pill = cell.querySelector(".play-pill");
+    if (pill && sources.length) wirePlayPill(pill, sources);
   });
+
+  root.querySelectorAll("[data-drill]").forEach((wrap) => {
+    let cfg = {};
+    try { cfg = JSON.parse(wrap.dataset.drill); } catch {}
+    const sources = [];
+    if (cfg.static) sources.push(cfg.static);
+    if (cfg.text)   sources.push(ttsUrl(cfg.lang || lang, cfg.text));
+    const pill = wrap.querySelector(".play-pill");
+    if (pill && sources.length) wirePlayPill(pill, sources);
+  });
+
+  root.querySelectorAll("[data-word]").forEach((li) => {
+    let cfg = {};
+    try { cfg = JSON.parse(li.dataset.word); } catch {}
+    const sources = [];
+    if (cfg.static) sources.push(cfg.static);
+    if (cfg.text)   sources.push(ttsUrl(cfg.lang || lang, cfg.text));
+    const pill = li.querySelector(".play-pill");
+    if (pill && sources.length) wirePlayPill(pill, sources);
+  });
+
+  // ============================================================
+  // Self-check reveal + completion
+  // ============================================================
   root.querySelectorAll(".self-check-reveal").forEach((btn) => {
     btn.addEventListener("click", () => {
       btn.closest(".self-check-item").classList.add("revealed");
       btn.style.display = "none";
     });
   });
+
   const completeBtn = document.getElementById("complete-btn");
   const completeStatus = document.getElementById("complete-status");
   completeBtn.addEventListener("click", async () => {
