@@ -1,0 +1,43 @@
+{
+  "id": "3.11",
+  "stage": 3,
+  "title": "Sir Gawain, Lines 208–231",
+  "subtitle": "Arthur responds; Gawain volunteers.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Master Sir Gawain, Lines 208–231.",
+    "Read and translate authentic Middle English texts.",
+    "Prepare for the capstone examination."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "Bot Arthur wolde not ete til al were serued... Close reading of the social dynamics and the chivalric code. Arthur will not eat until all are served. Gawain steps forward to take the challenge. Honor, courtesy, and the test of the hero."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "Sir Gawain, Lines 208–231"
+        },
+        {
+          "prompt": "Can you apply this to reading?",
+          "answer": "Work through examples with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand Sir Gawain, Lines 208–231.",
+    "credit_minutes": 60
+  }
+}

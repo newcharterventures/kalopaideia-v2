@@ -1,0 +1,59 @@
+{
+  "id": "4.10",
+  "stage": 4,
+  "title": "The Pluperfect and Future Perfect",
+  "subtitle": "ἐλελύκη, λελύσομαι — rare but worth knowing.",
+  "estimated_minutes": 45,
+  "objectives": [
+    "Form and conjugate the pluperfect active and middle/passive.",
+    "Form and conjugate the future perfect active and middle/passive.",
+    "Understand the pluperfect as expressing a past state.",
+    "Understand the future perfect as expressing a future state."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The pluperfect and future perfect",
+      "body": "The pluperfect expresses a state that existed in the past. ἐλελύκη means 'I had loosed' or 'I was in the state of having loosed'. The future perfect expresses a state that will exist in the future. λελύσομαι means 'I will have loosed' or 'I will be in the state of having loosed'.\n\nBoth tenses are rare in Greek. The pluperfect appears in narrative; the future perfect is almost never used. But you should recognize them when you see them."
+    },
+    {
+      "kind": "prose",
+      "heading": "The pluperfect active: ἐλελύκη",
+      "body": "  singular\n  1st   ἐλελύκη     I had loosed\n  2nd   ἐλελύκης    you had loosed\n  3rd   ἐλελύκει    he/she/it had loosed\n\n  plural\n  1st   ἐλελύκεμεν  we had loosed\n  2nd   ἐλελύκετε   you (plural) had loosed\n  3rd   ἐλελύκεσαν  they had loosed\n\nThe pluperfect uses the augment ἐ- + reduplication + perfect stem + secondary endings. The endings look like the imperfect."
+    },
+    {
+      "kind": "prose",
+      "heading": "The future perfect active: λελύσομαι",
+      "body": "The future perfect is formed with the perfect stem + future endings. It is rare and usually middle/passive in form even when active in meaning.\n\n  λελύσομαι   I will have loosed\n\nThe future perfect is so rare that you can treat it as a curiosity. If you see it, recognize that it means 'will have X-ed'."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer or translate.",
+      "items": [
+        { "prompt": "What does the pluperfect express?", "answer": "A state that existed in the past — 'had X-ed'." },
+        { "prompt": "What does the future perfect express?", "answer": "A state that will exist in the future — 'will have X-ed'." },
+        { "prompt": "Translate: ἐλελύκη τοὺς αἰχμαλώτους.", "answer": "I had freed the prisoners." },
+        { "prompt": "How common is the future perfect?", "answer": "Rare. Almost never used." },
+        { "prompt": "Does the pluperfect have an augment?", "answer": "Yes." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Pluperfect in sentences",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "ἐλελύκη τοὺς αἰχμαλώτους.", "transliteration": "elelýkē toùs aichmalṓtous.", "gloss": "I had freed the prisoners.", "audio": "/paideia/audio/greek/sentences/elelyke-aichmalotous.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 4.11 is a sustained reading from Plato, Apology 17a-18a. This is the opening of Socrates's defense. You will see subjunctives, optatives, infinitives, indirect statement, conditions, and perfect forms all in living context. This is the capstone of Stage 4."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can recognize the pluperfect and future perfect on sight and can translate them correctly.",
+    "credit_minutes": 45
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "3.7",
+  "stage": 3,
+  "title": "Numerals and Mutations",
+  "subtitle": "Un + soft, dau/dwy + soft, tri/tair + aspirate/soft.",
+  "estimated_minutes": 50,
+  "objectives": ["Count from 1 to 10.","Apply correct mutations."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers Numerals and Mutations. Un + soft, dau/dwy + soft, tri/tair + aspirate/soft."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Count from 1 to 10."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Count from 1 to 10." },
+        { "prompt": "How do you apply this in practice?", "answer": "Apply correct mutations." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "welsh": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/welsh/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on Numerals and Mutations."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in Numerals and Mutations to ten random examples.",
+    "credit_minutes": 50
+  }
+}

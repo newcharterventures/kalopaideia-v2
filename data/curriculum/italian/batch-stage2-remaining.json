@@ -1,0 +1,16 @@
+{
+  "lessons": [
+    {"id": "2.2", "title": "The Indefinite Article"},
+    {"id": "2.3", "title": "Nouns: Masculine Singular in -o"},
+    {"id": "2.4", "title": "Nouns: Feminine Singular in -a"},
+    {"id": "2.5", "title": "Nouns: Masculine and Feminine in -e"},
+    {"id": "2.6", "title": "Adjectives and Agreement"},
+    {"id": "2.7", "title": "The Verb Essere"},
+    {"id": "2.8", "title": "The Verb Avere"},
+    {"id": "2.9", "title": "The Present Indicative: First Conjugation -are"},
+    {"id": "2.10", "title": "The Present Indicative: Second Conjugation -ere"},
+    {"id": "2.11", "title": "The Present Indicative: Third Conjugation -ire"},
+    {"id": "2.12", "title": "Basic Word Order and Negation"},
+    {"id": "2.13", "title": "Reading: A Day in Florence"}
+  ]
+}

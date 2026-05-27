@@ -1,0 +1,124 @@
+<div class="kp-journal-overlay" id="kp-journal" role="dialog" aria-modal="true" aria-label="Commonplace book">
+  <div class="kp-journal-backdrop" id="kp-journal-backdrop"></div>
+  <div class="kp-journal-sheet">
+
+    <!-- HEADER -->
+    <header class="kp-journal-header">
+      <div style="flex:1">
+        <div class="kp-smallcaps" style="color:var(--ink-3); letter-spacing:.32em">YOUR COMMONPLACE BOOK</div>
+        <div style="font-family:var(--display); font-style:italic; font-weight:500; font-size:26px; color:var(--ink); line-height:1.1; margin-top:6px">
+          Entry Nº <span class="lining">139</span> &nbsp;<span style="color:var(--gilt); margin:0 6px">·</span>&nbsp; Tuesday, <span class="lining">May 19, 2026</span>
+        </div>
+      </div>
+      <div class="kp-journal-meta">
+        <a href="./commonplace.html" class="kp-journal-allbtn" title="View all entries">
+          <svg viewBox="0 0 16 16" width="12" height="12"><path d="M2.5 4h11M2.5 8h11M2.5 12h11" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+          <span class="kp-smallcaps">ALL ENTRIES</span>
+        </a>
+        <div class="kp-journal-streak">
+          <span class="kp-smallcaps">STREAK</span>
+          <span class="lining" style="font-family:var(--display); font-size:26px; color:var(--wine); font-weight:500; line-height:1">27</span>
+          <span style="font-family:var(--body); font-style:italic; font-size:12px; color:var(--ink-3)">days</span>
+        </div>
+        <button class="kp-journal-close" id="kp-journal-close" aria-label="Close journal">
+          <svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 3l10 10M13 3L3 13" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- BODY -->
+    <div class="kp-journal-body">
+
+      <!-- WRITE side -->
+      <section class="kp-journal-write">
+        <div class="kp-smallcaps" style="color:var(--wine); letter-spacing:.32em">TODAY'S PROMPT</div>
+        <p style="font-family:var(--display); font-style:italic; font-size:20px; line-height:1.45; color:var(--ink); margin:10px 0 22px; max-width:52ch">
+          Where, in your body, do you feel your θυμός today? Notice it without naming. Then write three lines describing the room around you, as though your breath were the witness.
+        </p>
+
+        <!-- Toolbar -->
+        <div class="kp-journal-toolbar">
+          <div class="kp-tg">
+            <button class="kp-tbtn" data-cmd="italic" title="Italic (⌘I)">
+              <svg viewBox="0 0 16 16" width="14" height="14"><path d="M6 2h6M4 14h6M9 2L7 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            </button>
+            <button class="kp-tbtn" data-cmd="blockquote" title="Blockquote">
+              <svg viewBox="0 0 16 16" width="14" height="14"><path d="M3.5 3.5h3v3l-2 3h-1zM9 3.5h3v3l-2 3H9z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="kp-tbtn" data-cmd="dropcap" title="Drop cap (first letter)">
+              <svg viewBox="0 0 16 16" width="14" height="14"><path d="M2 4.5C2 3.7 2.7 3 3.5 3h2C7.4 3 9 4.6 9 6.5S7.4 10 5.5 10H3v3.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M11 6.5h3M11 9h3M11 11.5h3" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" opacity=".55"/></svg>
+            </button>
+          </div>
+          <div class="kp-tg-divider"></div>
+          <div class="kp-tg kp-tg-chips">
+            <span class="kp-smallcaps" style="color:var(--ink-3); letter-spacing:.22em; margin-right:6px; font-size:10px">INSERT</span>
+            <button class="kp-chip" data-ins="headword">
+              <svg viewBox="0 0 12 12" width="10" height="10"><path d="M6 1.5v9M1.5 6h9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+              <span style="font-family:var(--display); font-style:italic; font-size:13px; color:var(--wine)">θυμός</span>
+            </button>
+            <div style="position:relative">
+              <button class="kp-chip" id="kp-shade-toggle">
+                <svg viewBox="0 0 12 12" width="10" height="10"><path d="M6 1.5v9M1.5 6h9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+                Definition
+                <svg viewBox="0 0 8 8" width="6" height="6" style="margin-left:2px"><path d="M1 2l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+              </button>
+              <div class="kp-shade-menu" id="kp-shade-menu" style="display:none"></div>
+            </div>
+            <button class="kp-chip" data-ins="use">
+              <svg viewBox="0 0 12 12" width="10" height="10"><path d="M6 1.5v9M1.5 6h9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+              Iliad use
+            </button>
+            <button class="kp-chip" data-ins="citation">
+              <svg viewBox="0 0 12 12" width="10" height="10"><path d="M6 1.5v9M1.5 6h9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+              Iliad I.192
+            </button>
+          </div>
+        </div>
+
+        <!-- Editor -->
+        <div
+          class="kp-journal-editor"
+          id="kp-editor"
+          contenteditable="true"
+          data-placeholder="Let your hand speak before your reason catches up."
+        ></div>
+
+        <!-- Tags -->
+        <div class="kp-tags" id="kp-tags"></div>
+
+        <!-- Footer -->
+        <div class="kp-journal-footer">
+          <div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap">
+            <span class="kp-journal-savedot" id="kp-savedot"></span>
+            <span id="kp-savedtxt" style="font-family:var(--body); font-style:italic; font-size:13px; color:var(--ink-3)">not yet saved</span>
+            <span style="color:var(--rule)">·</span>
+            <span id="kp-counts" style="font-family:var(--body); font-style:italic; font-size:12.5px; color:var(--ink-3)">begin where you are</span>
+            <span style="color:var(--rule)">·</span>
+            <span class="kp-smallcaps" style="color:var(--ink-3); letter-spacing:.22em; font-size:10px">⌘S save · ⌘I italic · ESC close</span>
+          </div>
+          <div style="display:flex; gap:10px">
+            <button class="kp-journal-btn ghost" id="kp-cancel">Close</button>
+            <button class="kp-journal-btn primary" id="kp-save">Save &amp; bookmark</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAST entries -->
+      <aside class="kp-journal-past">
+        <div style="display:flex; align-items:baseline; justify-content:space-between; margin-bottom:14px">
+          <div class="kp-smallcaps" style="color:var(--ink-2); letter-spacing:.32em">ALSO IN THE BOOK</div>
+          <div style="font-family:var(--body); font-style:italic; font-size:12px; color:var(--ink-3)">most recent</div>
+        </div>
+        <div class="kp-journal-pastlist" id="kp-pastlist"></div>
+      </aside>
+    </div>
+
+    <!-- Toast -->
+    <div id="kp-toast" class="kp-journal-toast" style="display:none">
+      <svg viewBox="0 0 16 16" width="12" height="12"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="kp-smallcaps" style="letter-spacing:.28em">BOOKMARKED IN YOUR COMMONPLACE</span>
+    </div>
+
+  </div>
+</div>
+

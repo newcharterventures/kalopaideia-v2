@@ -1,0 +1,20 @@
+{
+  "id": "4.2",
+  "stage": 4,
+  "title": "The Perfect and Pluperfect Subjunctive",
+  "subtitle": "amāverim / amāvissem.",
+  "estimated_minutes": 50,
+  "objectives": ["Form perfect subjunctive: perfect stem + -erim.", "Form pluperfect subjunctive: perfect stem + -issem.", "Translate in subordinate clauses as 'may have', 'might have', 'had'."],
+  "sections": [
+    {"kind": "prose", "heading": "Perfect and pluperfect subjunctive", "body": "Perfect subjunctive: perfect stem + -erim, -eris, -erit, -erimus, -eritis, -erint:\n  amāverim, amāveris, amāverit, etc.\n\nPluperfect subjunctive: perfect stem + -issem, -issēs, -isset, -issēmus, -issētis, -issent:\n  amāvissem, amāvissēs, amāvisset, etc.\n\nCicero writes: nesciō quid fēcerim. — I do not know what I may have done."},
+    {"kind": "self_check", "heading": "Self-check", "items": [
+      {"prompt": "Conjugate dūxī in perfect subjunctive.", "answer": "dūxerim, dūxeris, dūxerit, dūxerimus, dūxeritis, dūxerint"},
+      {"prompt": "Conjugate vīdī in pluperfect subjunctive.", "answer": "vīdissem, vīdissēs, vīdisset, vīdissēmus, vīdissētis, vīdissent"}
+    ]},
+    {"kind": "reading_preview", "heading": "Sentences", "words": [
+      {"latin": "dubitō num vēnerit.", "transliteration": null, "gloss": "I doubt whether he has come.", "audio": "/paideia/audio/latin/sentences/4.2-1.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Lesson 4.3: purpose clauses. ut + subjunctive."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can form all four subjunctive tenses.", "credit_minutes": 50}
+}

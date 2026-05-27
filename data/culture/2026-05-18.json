@@ -1,0 +1,102 @@
+{
+  "date": "2026-05-18",
+  "generated_at": "2026-05-18T11:01:34.797Z",
+  "vignettes": {
+    "greek": {
+      "title": "The Plague of Athens, 430 BCE",
+      "body": "In the second year of the Peloponnesian War, a pestilence entered Athens through Piraeus, killing perhaps a third of the population. Thucydides, who contracted and survived the disease, documented symptoms with clinical precision: sudden fever, inflammation of the eyes, bleeding from throat and tongue, unquenchable thirst, convulsions, skin eruptions. Bodies piled unburied in the streets. Funeral pyres blazed on altars meant for sacrifice. The historian rejected divine causation, instead offering eyewitness testimony so precise that modern scholars still debate the pathogen, proposing typhus, smallpox, or viral hemorrhagic fever. Thucydides insisted on the visible reality of suffering, contrasting his account with poetic embellishment. The plague killed Pericles in 429 BCE, shattered Athenian morale, and demonstrated that neither walls nor naval supremacy could protect a city from invisible contagion.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/La_peste_d%E2%80%99Ath%C3%A8nes._Fran%C3%A7ois_Perrier.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "François Perrier / Wikimedia Commons (Public domain)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:La_peste_d%E2%80%99Ath%C3%A8nes._Fran%C3%A7ois_Perrier.jpg",
+        "width": 1200,
+        "height": 890
+      },
+      "image_query": "Thucydides plague Athens"
+    },
+    "latin": {
+      "title": "Cicero's Defense of Aulus Caecina",
+      "body": "In 69 BCE, Cicero defended Aulus Caecina in a property dispute that turned on whether physical violence was necessary for legal redress. Caecina claimed he had been forcibly prevented from taking possession of land his wife inherited near Volterra. The opposing side argued that since no actual blows were struck, no actionable force occurred. Cicero brilliantly expanded the definition of vis (force) to include intimidation and the mere threat of violence. He argued that armed men blocking entry constituted injury to a citizen's rights, regardless of whether they drew blood. The case became a landmark in Roman jurisprudence, establishing that dignitas—a citizen's standing and honor—could be violated through threats and indignities, not just physical assault. Cicero's victory helped codify the principle that law protects not merely bodies but the civic person itself.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Cicero-bust-1.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Derrick Andes / Wikimedia Commons (CC BY-SA 4.0)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Cicero-bust-1.png",
+        "width": 1200,
+        "height": 1599
+      },
+      "image_query": "Cicero bust Roman"
+    },
+    "french": {
+      "title": "Perrault's Fairy Tales and the Académie",
+      "body": "Charles Perrault published his 'Histoires ou contes du temps passé' in 1697, a slender volume that gave France 'Sleeping Beauty,' 'Cinderella,' and 'Little Red Riding Hood.' A respected member of the Académie française, Perrault drew these tales from oral tradition and salon storytelling, then reshaping them with classical restraint and moral verses. His contemporary readers recognized the spinning wheel curse as both folk motif and veiled commentary on women's domestic labor. The collection sparked the Quarrel of the Ancients and Moderns, with Perrault defending vernacular French literature against those who championed Greek and Latin models. His tales circulated through aristocratic salons before reaching the nursery, their blend of enchantment and didacticism defining the conte de fées as a distinctly French literary form that would influence Madame d'Aulnoy, the Brothers Grimm, and generations of writers.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Portrait_de_Charles_Perrault_par_Charles_Le_Brun.jpg/1280px-Portrait_de_Charles_Perrault_par_Charles_Le_Brun.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Charles Le Brun / Wikimedia Commons (Public domain)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Portrait_de_Charles_Perrault_par_Charles_Le_Brun.jpg",
+        "width": 1200,
+        "height": 1648
+      },
+      "image_query": "Charles Perrault portrait"
+    },
+    "german": {
+      "title": "Goethe's Late Ethical Vision",
+      "body": "In 1829, the eighty-year-old Goethe completed Wilhelm Meisters Wanderjahre, a novel whose subtitle Die Entsagenden signals a complete reversal from Romantic individualism. Where the earlier Wilhelm Meisters Lehrjahre (1796) celebrated personal development through varied experience, the Wanderjahre presents a society organized around chosen limitations. Wilhelm himself must wander perpetually, never remaining more than three days in one place. His son Feliz trains in a pedagogical province where students renounce certain artistic pursuits to master one craft thoroughly. The novel's episodic structure mirrors this ethic: fragmented narratives and interpolated novellas replace unified plot. Goethe conceived Entsagung not as grim asceticism but as productive self-limitation, the mature recognition that human flourishing requires boundaries. The work puzzled contemporary readers expecting conventional storytelling, yet it crystallized Goethe's final philosophical position: that meaningful community emerges only when individuals voluntarily constrain their infinite desires.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Wilhelm_meister_harfner_225px.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Gustav Heinrich Naeke (1786-1835) / Wikimedia Commons (Public domain)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Wilhelm_meister_harfner_225px.jpg",
+        "width": 1200,
+        "height": 1904
+      },
+      "image_query": "Goethe Wilhelm Meister"
+    },
+    "italian": {
+      "title": "Dante's Dark Wood and Spiritual Geography",
+      "body": "When Dante opened the Inferno with his speaker lost in a selva oscura, he drew on a medieval understanding of wilderness as moral state. The selva was not merely landscape but figura, a forest where reason fails and the soul wanders without divine guidance. This image had roots in Virgil's Aeneid and early Christian allegory, but Dante made it unmistakably Tuscan. The woods surrounding Florence in 1300 were real enough: dense chestnut and oak forests where bandits hid and travelers lost their way after dark. Yet Dante's forest exists outside geography. It stands at the threshold between the world and the otherworld, between sin and confession. The three beasts that drive him back—lonza, leone, lupa—emerge from this wilderness as emblems of specific vices. By contrast, Eden at Purgatorio's summit appears as a perfected forest, its trees ordered and luminous. Dante never abolishes nature; he redeems it through structure and ascent.",
+      "image": null,
+      "image_query": "Dante dark forest manuscript"
+    },
+    "oldenglish": {
+      "title": "The Beowulf Manuscript's Narrow Escape",
+      "body": "The single surviving manuscript of Beowulf, copied around the year 1000, nearly perished in a 1731 fire at Ashburnham House in Westminster. The codex, catalogued as Cotton Vitellius A.xv after its owner Sir Robert Cotton, suffered scorched edges and crumbling leaves. Scholars in the eighteenth century could still read words now lost forever as the parchment continued to deteriorate. Icelandic scholar Grímur Jónsson Thorkelin made two transcripts in 1787, one of which survived the British bombardment of Copenhagen in 1807, preserving readings no longer visible on the damaged folios. The manuscript contains not only Beowulf but also a life of Saint Christopher, The Wonders of the East, and a fragment of Judith. The dragon that Beowulf faces in his final battle appears on folios whose outer margins turned to ash and char, a fitting irony for the fyrdraca's literary home.",
+      "image": null,
+      "image_query": "Beowulf manuscript damaged folio"
+    },
+    "middleenglish": {
+      "title": "Pandarus and the Art of the Go-Between",
+      "body": "Pandarus, Criseyde's uncle in Chaucer's Troilus and Criseyde, perfected the medieval role of the go-between. He arranges meetings, delivers letters, and orchestrates the lovers' affair with elaborate stagecraft. When Troilus falls silent with bashfulness, Pandarus speaks. When propriety forbids direct contact, Pandarus creates the occasion. His machinations reflect actual courtly practice: aristocratic love affairs required intermediaries who could navigate honor, reputation, and the complex codes governing interaction between unmarried men and women. The go-between tradition had roots in Ovid and the troubadours, but Chaucer made Pandarus something new: comic, manipulative, almost modern in his pragmatism. His name entered English as 'pander,' but in the poem he operates from genuine affection for both parties, even as he compromises them. The Italian source Chaucer adapted gave Pandaro far less prominence. Chaucer's expansion made the facilitator as central as the lovers themselves.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Pandarus_and_Criseyde_from_Boccaccio%27s_Il_Filostrato_MS._Douce_331.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Unknown authorUnknown author / Wikimedia Commons (Public domain)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Pandarus_and_Criseyde_from_Boccaccio%27s_Il_Filostrato_MS._Douce_331.png",
+        "width": 1200,
+        "height": 539
+      },
+      "image_query": "Troilus Criseyde medieval manuscript"
+    },
+    "welsh": {
+      "title": "The Red Book of Hergest",
+      "body": "Compiled around 1382-1410 at Hergest Court in Herefordshire, the Red Book preserves the most complete collection of medieval Welsh prose and poetry to survive. Its 362 vellum pages contain the four branches of the Mabinogi, the complete text of Y Gododdin attributed to Aneirin, court poetry by Taliesin and the Gogynfeirdd, Welsh translations of Geoffrey of Monmouth, and the oldest complete version of the Welsh Triads. The manuscript passed through the hands of Thomas Wilkins of Llanblethian before reaching Jesus College, Oxford in 1701, where it remains as MS 111. Unlike the White Book of Rhydderch, its contemporary, the Red Book includes substantial genealogical material and historical chronicles. The book's name derives from its red leather binding. Modern Welsh literature still draws on these texts: Saunders Lewis adapted material from the Red Book for his plays, and twentieth-century poets including Waldo Williams referenced its bardic forms.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Llyfr_Coch_Hergest_240-241.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Hywel Fychan fab Hywel Goch of Buellt / Wikimedia Commons (Public domain)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Llyfr_Coch_Hergest_240-241.JPG",
+        "width": 1200,
+        "height": 834
+      },
+      "image_query": "Red Book Hergest"
+    },
+    "oldnorse": {
+      "title": "Women's Words and Blood Feuds",
+      "body": "In Njáls saga, the catastrophic feud between Njáll and Gunnarr begins not with swords but with insults traded between their wives. Bergþóra and Hallgerðr exchange heiptyrði across property lines, mocking each other's worth and honor. Each taunt demands response from the household's men, who must kill to restore reputation. The saga's author understood that verbal violence creates obligations as binding as physical assault. When Hallgerðr calls Bergþóra's servants worthless, six men die in escalating vengeance killings before the friendship of Njáll and Gunnarr fractures under the weight of compounded slaughter. Icelandic law recognized níð (verbal insult) as actionable injury, but words spoken in the hall could not be easily arbitrated at the Althing. The sagas record this calculus coldly: one insult requires one death, which requires another, until entire families vanish. Women often spoke the words men died to answer.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/M%C3%B6%C3%B0ruvallab%C3%B3k_f13r.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "GDK / Wikimedia Commons (Public domain)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:M%C3%B6%C3%B0ruvallab%C3%B3k_f13r.jpg",
+        "width": 1200,
+        "height": 1151
+      },
+      "image_query": "Njals saga Iceland"
+    }
+  }
+}

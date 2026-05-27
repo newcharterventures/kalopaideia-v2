@@ -1,0 +1,46 @@
+{
+  "id": "2.13",
+  "stage": 2,
+  "title": "The Relative Clause",
+  "subtitle": "Introduced by a (+ soft mutation). VSO order.",
+  "estimated_minutes": 50,
+  "objectives": ["Form relative clauses with the particle a.","Maintain VSO order in the relative clause."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers The Relative Clause. Introduced by a (+ soft mutation). VSO order."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Form relative clauses with the particle a."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Form relative clauses with the particle a." },
+        { "prompt": "How do you apply this in practice?", "answer": "Maintain VSO order in the relative clause." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "welsh": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/welsh/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on The Relative Clause."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in The Relative Clause to ten random examples.",
+    "credit_minutes": 50
+  }
+}

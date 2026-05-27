@@ -1,0 +1,79 @@
+{
+  "id": "2.7",
+  "stage": 2,
+  "title": "Funerary Inscriptions, Part One",
+  "subtitle": "Five epitaphs from Autun, Alise-Sainte-Reine, and Saint-Marcel — ANDEDASETI, MARKOM, MONI.",
+  "estimated_minutes": 65,
+  "objectives": [
+    "Translate the formula ANDEDASETI (\"he set up\").",
+    "Recognize MARKOM (\"horse\") and MONI (\"memorial\") in funerary contexts.",
+    "Read five complete funerary inscriptions from Gaul.",
+    "Parse personal names and patronymics in epitaphs."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Funerary formulae",
+      "body": "Gaulish funerary inscriptions follow consistent patterns. The most common formula is:\n\nX [patronymic] ANDEDASETI Y MONI\n\n\"X [son of Y] set up this memorial.\"\n\nVariants include:\n\nX DEDEMIT — \"X gave (this)\"\nX IEVRV — \"X dedicated (this)\"\nX AVVOT — \"X vowed (this)\"\n\nThe key verb is ANDEDASETI (\"he set up\"), the preterite of a verb meaning \"to set up\" or \"to erect\". The prefix ANDE- intensifies or marks completion."
+    },
+    {
+      "kind": "prose",
+      "heading": "Inscription 1: Autun",
+      "body": "Here is a complete funerary inscription from Autun (ancient Augustodunum), 1st century CE:\n\nSEGOMĀROS VILONEOS ANDEDASETI MONI\n\nParsing:\nSEGOMĀROS — nominative singular, personal name, \"great in victory\"\nVILONEOS — genitive singular, patronymic, \"of Viloneos\"\nANDEDASETI — 3rd singular preterite, \"set up\"\nMONI — accusative singular, \"memorial\" (cognate with Latin monumentum)\n\nTranslation: \"Segomaros son of Viloneos set up this memorial.\""
+    },
+    {
+      "kind": "prose",
+      "heading": "Inscription 2: Alise-Sainte-Reine",
+      "body": "From Alise-Sainte-Reine (ancient Alesia, site of Vercingetorix's last stand), 1st century CE:\n\nDAGOMĀROS ANDEVDDOS DEDEMIT MARKOM\n\nParsing:\nDAGOMĀROS — nominative singular, \"good and great\"\nANVEDDOS — nominative singular, personal name (etymology uncertain)\nDEDEMIT — 3rd singular preterite, \"gave\" or \"dedicated\"\nMARKOM — accusative singular, \"horse\" (cognate with Latin marcus, borrowed into Gaulish)\n\nTranslation: \"Dagomaros Andevddos gave (this) horse.\"\n\nNote: MARKOM here may refer to a carved image of a horse, a votive offering, or a symbolic representation. Horse imagery was common in Gaulish funerary art."
+    },
+    {
+      "kind": "prose",
+      "heading": "Inscription 3: Saint-Marcel",
+      "body": "From Saint-Marcel (near Argentomagus), 1st century CE:\n\nATEPOMĀROS SEGOMARI ANDEDASETI\n\nParsing:\nATEPOMĀROS — nominative singular, \"very great\"\nSEGOMĀRI — genitive singular, patronymic, \"of Segomaros\"\nANDEDASETI — \"set up\"\n\nTranslation: \"Atepomaros son of Segomaros set up (this).\""
+    },
+    {
+      "kind": "prose",
+      "heading": "Inscription 4: Autun",
+      "body": "A second inscription from Autun, 1st century CE:\n\nNERTOMĀROS DVBNORIGI MONI BRIXTOM\n\nParsing:\nNERTOMĀROS — nominative singular, \"great in strength\"\nDVBNORIGI — genitive or dative singular, patronymic, \"of Dubnorix\" or \"to Dubnorix\"\nMONI — accusative singular, \"memorial\"\nBRIXTOM — accusative singular, \"magic\" or \"spell\" (etymology disputed; may refer to a protective charm carved on the stone)\n\nTranslation: \"Nertomaros (son of) Dubnorix (set up) this memorial (with) magic.\""
+    },
+    {
+      "kind": "prose",
+      "heading": "Inscription 5: Alise-Sainte-Reine",
+      "body": "A third from Alise-Sainte-Reine, 1st century CE:\n\nVERCINGETORIX ANDEDASETI\n\nParsing:\nVERCINGETORIX — nominative singular, \"king over warriors\" (the famous name, here on a funerary stone — not necessarily the same Vercingetorix who fought Caesar, but the name lived on)\nANDEDASETI — \"set up\"\n\nTranslation: \"Vercingetorix set up (this).\""
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers; check after.",
+      "items": [
+        { "prompt": "What does ANDEDASETI mean?", "answer": "\"He set up\" — 3rd singular preterite, common in funerary inscriptions." },
+        { "prompt": "What does MONI mean?", "answer": "\"Memorial\" — cognate with Latin monumentum." },
+        { "prompt": "What does MARKOM mean?", "answer": "\"Horse\" — cognate with Latin marcus, possibly referring to a carved horse or votive offering." },
+        { "prompt": "Translate SEGOMĀROS VILONEOS ANDEDASETI MONI.", "answer": "\"Segomaros son of Viloneos set up this memorial.\"" },
+        { "prompt": "What is BRIXTOM?", "answer": "\"Magic\" or \"spell\" — possibly a protective charm. Etymology disputed." },
+        { "prompt": "Parse NERTOMAROS DVBNORIGI.", "answer": "NERTOMAROS (nom. sg., \"great in strength\") DVBNORIGI (gen. sg., \"of Dubnorix\") = \"Nertomaros son of Dubnorix\"." },
+        { "prompt": "Why might the name VERCINGETORIX appear on a 1st-century CE funerary stone?", "answer": "Because the name lived on after the famous Vercingetorix's death. Gauls continued to name their children after him." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Funerary vocabulary",
+      "instructions": "These words appear in Gaulish epitaphs. Memorize them.",
+      "words": [
+        { "gaulish": "ANDEDASETI", "transliteration": null, "gloss": "he set up (funerary formula)", "audio": "/paideia/audio/gaulish/funerary/andedaseti.mp3" },
+        { "gaulish": "MONI", "transliteration": null, "gloss": "memorial (cognate with monumentum)", "audio": "/paideia/audio/gaulish/funerary/moni.mp3" },
+        { "gaulish": "MARKOM", "transliteration": null, "gloss": "horse (carved image or votive)", "audio": "/paideia/audio/gaulish/funerary/markom.mp3" },
+        { "gaulish": "BRIXTOM", "transliteration": null, "gloss": "magic, spell (protective charm)", "audio": "/paideia/audio/gaulish/funerary/brixtom.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.8 continues with funerary inscriptions, focusing on the genitive case: SEGOMARI MATIR (\"mother of Segomaros\"), DAXTIONI ATEPOMAROS (\"Atepomaros son of Daxtio\"), and the structure of Gaulish kinship terms."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can translate ANDEDASETI, MONI, MARKOM, and read all five inscriptions without hesitation.",
+    "credit_minutes": 65
+  }
+}

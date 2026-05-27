@@ -1,0 +1,56 @@
+{
+  "id": "2.8",
+  "stage": 2,
+  "title": "Subject Pronouns",
+  "subtitle": "je, tu, il, elle, nous, vous, ils, elles. The distinction between tu and vous: singular familiar versus plural or formal.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Understand subject pronouns.",
+    "Apply the concepts in reading and writing.",
+    "Practice with authentic French examples."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Main content",
+      "body": "Subject pronouns in French mark person, number, and in the third person, gender. The tu/vous distinction is crucial: tu is singular and familiar (friends, family, children); vous is plural or formal (strangers, superiors, groups)."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer these questions.",
+      "items": [
+        {
+          "prompt": "What is the main concept?",
+          "answer": "Subject Pronouns"
+        },
+        {
+          "prompt": "Review question 2",
+          "answer": "Review answer 2"
+        }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Practice materials",
+      "instructions": "Read each example.",
+      "words": [
+        {
+          "french": "exemple",
+          "transliteration": null,
+          "gloss": "example",
+          "audio": "/paideia/audio/french/words/example.mp3"
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson continues Stage 2."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts without hesitation.",
+    "credit_minutes": 50
+  }
+}

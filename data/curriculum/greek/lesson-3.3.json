@@ -1,0 +1,67 @@
+{
+  "id": "3.3",
+  "stage": 3,
+  "title": "The Imperfect Indicative",
+  "subtitle": "Past continuous action — ἔλυον.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Conjugate any regular ω-verb in the imperfect indicative active and middle/passive.",
+    "Understand the imperfect as the past continuous or habitual past tense.",
+    "Recognize the augment ἐ- as the marker of past time.",
+    "Distinguish imperfect from present by form and meaning."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The imperfect tense",
+      "body": "The imperfect expresses past continuous action ('I was loosing') or habitual past action ('I used to loose'). It is formed by adding the augment ἐ- to the front of the verb stem and using a set of secondary endings.\n\nThe augment is the marker of past time in the indicative mood. All past tenses in the indicative use the augment (imperfect, aorist, pluperfect). The augment is ἐ- before consonants. Before a vowel, the augment lengthens the vowel: ἀκούω becomes ἤκουον.\n\nThe imperfect has no equivalent in English to the simple past ('I loosed'). Greek uses the aorist for that (you will learn the aorist in Lesson 3.5). The imperfect is for ongoing or repeated past action."
+    },
+    {
+      "kind": "prose",
+      "heading": "The imperfect indicative active: ἔλυον",
+      "body": "  singular\n  1st   ἔλυον       I was loosing\n  2nd   ἔλυες       you were loosing\n  3rd   ἔλυε(ν)     he/she/it was loosing\n\n  plural\n  1st   ἐλύομεν     we were loosing\n  2nd   ἐλύετε      you (plural) were loosing\n  3rd   ἔλυον       they were loosing\n\nThe augment is ἐ-. The thematic vowel is still ο/ε. The endings are -ον, -ες, -ε, -ομεν, -ετε, -ον. Notice that first singular and third plural are identical: ἔλυον. Context tells you which."
+    },
+    {
+      "kind": "prose",
+      "heading": "The imperfect indicative middle/passive: ἐλυόμην",
+      "body": "  singular\n  1st   ἐλυόμην     I was freeing myself / I was being freed\n  2nd   ἐλύου       you were freeing yourself / you were being freed\n  3rd   ἐλύετο      he/she/it was freeing himself/herself/itself / was being freed\n\n  plural\n  1st   ἐλυόμεθα    we were freeing ourselves / we were being freed\n  2nd   ἐλύεσθε     you (plural) were freeing yourselves / were being freed\n  3rd   ἐλύοντο     they were freeing themselves / they were being freed\n\nThe endings are -όμην, -ου, -ετο, -όμεθα, -εσθε, -οντο."
+    },
+    {
+      "kind": "prose",
+      "heading": "From Xenophon",
+      "body": "Anabasis I.2.1: ἐξελαύνει — 'he marches' (present). If imperfect: ἐξήλαυνε — 'he was marching'. The augment ἐξ- has the vowel ε lengthened to η before the λ."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Conjugate or answer.",
+      "items": [
+        { "prompt": "First person singular imperfect active of λύω", "answer": "ἔλυον" },
+        { "prompt": "Third person singular imperfect active of λύω", "answer": "ἔλυε(ν)" },
+        { "prompt": "Third person plural imperfect active of λύω", "answer": "ἔλυον" },
+        { "prompt": "First person singular imperfect middle of λύω", "answer": "ἐλυόμην" },
+        { "prompt": "What is the augment?", "answer": "ἐ- before consonants; lengthening of the initial vowel before vowels." },
+        { "prompt": "What does the imperfect express?", "answer": "Past continuous or habitual past action." },
+        { "prompt": "Translate: ἔλυον τοὺς αἰχμαλώτους.", "answer": "I was freeing the prisoners." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Imperfect in sentences",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "ἔλυον τοὺς αἰχμαλώτους.", "transliteration": "élyon toùs aichmalṓtous.", "gloss": "I was freeing the prisoners.", "audio": "/paideia/audio/greek/sentences/elyon-aichmalotous.mp3" },
+        { "greek": "ἐλύετο ὑπὸ τοῦ στρατηγοῦ.", "transliteration": "elýeto hypò toû stratēgoû.", "gloss": "He was being freed by the general.", "audio": "/paideia/audio/greek/sentences/elyeto-strategos.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 3.4 introduces the future indicative. The future tense expresses action that will happen. λύσω means 'I will loose'. The future inserts a sigma between the stem and the ending."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can conjugate the imperfect active and middle/passive of any ω-verb from memory and can translate imperfect forms correctly in context.",
+    "credit_minutes": 55
+  }
+}

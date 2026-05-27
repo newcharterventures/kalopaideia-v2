@@ -1,0 +1,75 @@
+{
+  "id": "1.6",
+  "stage": 1,
+  "title": "Vowel Length",
+  "subtitle": "Long and short — the distinction that changes meaning.",
+  "estimated_minutes": 40,
+  "objectives": [
+    "Distinguish long vowels from short vowels by ear and by spelling.",
+    "Recognize the spelling clues for vowel length: single vs. double consonants, h after a vowel, ie for long i.",
+    "Pronounce minimal pairs with correct length."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The length distinction",
+      "body": "German vowels come in pairs: short and long. The difference is not an accent or a tone. It is duration. A long vowel is held longer than a short vowel. The quality of the sound may also shift slightly — long vowels are often more tense, short vowels more lax.\n\nThe distinction is phonemic. Change the length, change the word.\n\n  Bahn (railway, long a) vs. Mann (man, short a).\n  Beet (flowerbed, long e) vs. Bett (bed, short e).\n  Miete (rent, long i) vs. Mitte (middle, short i).\n\nIn writing, German marks vowel length with several conventions. Once you know them, you can pronounce any written word correctly."
+    },
+    {
+      "kind": "prose",
+      "heading": "How German marks long vowels",
+      "body": "1. Single consonant after the vowel:\n  If one consonant follows a vowel, the vowel is long.\n    Tag (tahk, long a), Hof (hohf, long o), Schule (shoo-luh, long u).\n\n2. H after the vowel:\n  The h is silent. It marks the vowel as long.\n    Bahn (bahn, long a), sehen (zay-en, long e), Ruh (roo, long u).\n\n3. Doubled vowel (rare):\n  Mostly for e and o.\n    Beet (bayt, long e), Boot (boht, long o), Schnee (shnay, long e).\n\n4. IE for long i:\n  The combination ie is pronounced [iː].\n    Liebe (lee-buh, long i), Bier (beer, long i), viel (feel, long i).\n\nThese are clues, not absolute rules. But they hold in 95% of cases."
+    },
+    {
+      "kind": "prose",
+      "heading": "How German marks short vowels",
+      "body": "If two or more consonants follow a vowel, the vowel is short.\n\n  Mann (mahn, short a) — two n's.\n  Bett (bet, short e) — two t's.\n  Mitte (mit-tuh, short i) — two t's.\n  Fluss (floos, short u) — two s's (spelled ss after a short vowel, remember?).\n\nThe double consonant is not pronounced twice. It is a spelling signal for vowel length. Mann is [mahn], not [mahn-n]."
+    },
+    {
+      "kind": "prose",
+      "heading": "Minimal pairs — length alone",
+      "body": "These pairs differ only in vowel length:\n\n  Bahn (railway, long) / Bann (ban, short)\n  Beet (flowerbed, long) / Bett (bed, short)\n  bieten (to offer, long i) / bitten (to ask, short i)\n  Höhle (cave, long ö) / Hölle (hell, short ö)\n  Mus (mush, long u) / muss (must, short u)\n\nThe length is not optional. Say Beet when you mean Bett and you will be misunderstood."
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill — long vs. short",
+      "instructions": "Each pair is read twice. Listen for the length difference. Repeat both words.",
+      "audio": "/paideia/audio/german/drills/lesson-1.6-listening.mp3"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer without notes.",
+      "items": [
+        { "prompt": "What is the difference between a long vowel and a short vowel in German?", "answer": "Duration. A long vowel is held longer. The difference is phonemic — it changes the meaning." },
+        { "prompt": "How do you know a vowel is long from the spelling?", "answer": "Single consonant after the vowel, or h after the vowel (silent), or doubled vowel (ee, oo), or ie for long i." },
+        { "prompt": "How do you know a vowel is short from the spelling?", "answer": "Two or more consonants after the vowel. Mann, Bett, Fluss." },
+        { "prompt": "How do you pronounce Bahn?", "answer": "bahn — long a." },
+        { "prompt": "How do you pronounce Mann?", "answer": "mahn — short a." },
+        { "prompt": "What does ie represent in German?", "answer": "Long i, pronounced [iː]. Liebe, Bier, viel." },
+        { "prompt": "Why is the vowel in Fluss short?", "answer": "Two s's follow it (spelled ss after a short vowel). The doubling signals shortness." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Words demonstrating vowel length",
+      "instructions": "Read each pair aloud. Hold the long vowels longer than the short ones.",
+      "words": [
+        { "german": "Bahn / Mann", "transliteration": "bahn (long) / mahn (short)", "gloss": "railway / man", "audio": "/paideia/audio/german/words/bahn-mann.mp3" },
+        { "german": "Beet / Bett", "transliteration": "bayt (long) / bet (short)", "gloss": "flowerbed / bed", "audio": "/paideia/audio/german/words/beet-bett.mp3" },
+        { "german": "bieten / bitten", "transliteration": "bee-ten (long) / bit-ten (short)", "gloss": "to offer / to ask", "audio": "/paideia/audio/german/words/bieten-bitten.mp3" },
+        { "german": "Ofen / offen", "transliteration": "oh-fen (long) / of-fen (short)", "gloss": "oven / open", "audio": "/paideia/audio/german/words/ofen-offen.mp3" },
+        { "german": "Mus / muss", "transliteration": "moos (long) / moos (short)", "gloss": "mush / must", "audio": "/paideia/audio/german/words/mus-muss.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.7 covers the great German names — Goethe, Schiller, Nietzsche, Hölderlin — and teaches you to pronounce them as the authors themselves would have. After that, consonant clusters and your first full sentences."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can distinguish ten long/short minimal pairs by ear and pronounce them correctly.",
+    "credit_minutes": 40
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "3.11",
+  "stage": 3,
+  "title": "Beowulf, Lines 1–11",
+  "subtitle": "Hwæt! Wē Gār-Dena in gēardagum...",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Master Beowulf, Lines 1–11.",
+    "Read and translate authentic Old English poetry and prose.",
+    "Prepare for the capstone examination."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "Hwæt! Wē Gār-Dena in gēardagum,\nþēodcyninga, þrym gefrūnon,\nhū ðā æþelingas ellen fremedon.\n\n'Lo! We have heard of the Spear-Danes in days of yore, of the glory of the people-kings, how those nobles performed brave deeds.'\n\nThe opening verse paragraph. Gloss and grammar on every word. Continues with the lineage of Scyld Scefing."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "Beowulf, Lines 1–11"
+        },
+        {
+          "prompt": "Can you translate the example passage?",
+          "answer": "Work through it word by word with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson or take the capstone examination."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply Beowulf, Lines 1–11 to reading.",
+    "credit_minutes": 60
+  }
+}

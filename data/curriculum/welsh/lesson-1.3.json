@@ -1,0 +1,46 @@
+{
+  "id": "1.3",
+  "stage": 1,
+  "title": "Consonants — The Familiar",
+  "subtitle": "B, d, g, h, l, m, n, p, r, s, t. C always hard.",
+  "estimated_minutes": 40,
+  "objectives": ["Pronounce the consonants common to English.","Note that c is always hard (k), f is v, ff is f."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers Consonants — The Familiar. B, d, g, h, l, m, n, p, r, s, t. C always hard."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Pronounce the consonants common to English."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Pronounce the consonants common to English." },
+        { "prompt": "How do you apply this in practice?", "answer": "Note that c is always hard (k), f is v, ff is f." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "welsh": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/welsh/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on Consonants — The Familiar."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in Consonants — The Familiar to ten random examples.",
+    "credit_minutes": 40
+  }
+}

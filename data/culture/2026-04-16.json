@@ -1,0 +1,18 @@
+{
+  "date": "2026-04-16",
+  "generated_at": "2026-04-24T07:33:01.253Z",
+  "backfilled_at": "2026-04-24T07:33:01.253Z",
+  "vignettes": {
+    "greek": {
+      "title": "Mnemosyne and the Gift of Remembrance",
+      "body": "The Greeks personified memory as Mnemosyne, a Titaness who lay with Zeus for nine nights and bore the nine Muses. This genealogy reveals how the ancients understood creative arts: poetry, music, and history all flowed from memory's power to preserve and transform experience into meaning.\n\nBefore widespread literacy, trained singers called rhapsodes performed Homer's epics from memory, carrying thousands of verses in intricate patterns of formulaic phrases. The poet invoked the Muse not as mere convention but as necessary aid—memory was divine inspiration made manifest. Simonides of Ceos developed techniques of spatial memory, the 'method of loci,' by which orators could recall entire speeches by mentally walking through architectural spaces.\n\nWhen Plato wrote of anamnesis, remembering as the soul's recovery of eternal truths, he elevated memory beyond mere retention. To remember was to participate in the immortal.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Parnassius_mnemosyne_-_Dumanl%C4%B1_apollo_12.jpg",
+        "credit": "Parnassius mnemosyne - Dumanlı apollo 12.jpg — Zeynel Cebeci",
+        "width": 3250,
+        "height": 2212
+      },
+      "image_query": "Mnemosyne Greek titan"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "id": "2.5",
+  "stage": 2,
+  "title": "The Chamalières Tablet",
+  "subtitle": "A curse from a sacred spring — MAPONOS ARVERNORIGIIS and sixty words of invocation.",
+  "estimated_minutes": 65,
+  "objectives": [
+    "Understand the context of the Chamalières defixio: a sacred spring, a ritual deposit.",
+    "Translate the opening: ANDEDION VEDIIUMI DIIIUIOMI.",
+    "Parse MAPONOS ARVERNORIGIIS (\"Maponos of the Arverni kings\").",
+    "Recognize the repetition RISVM RISVM VEDIIUMÍ as a ritual formula."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Discovery and context",
+      "body": "In 1971, during excavations at the Source des Roches in Chamalières (Puy-de-Dôme, central France), archaeologists uncovered a lead tablet inscribed with sixty words of Gaulish text. The tablet was found in a sacred spring, a site where Gauls made offerings to water deities. The spring was active from the 1st century BCE to the 3rd century CE. The tablet dates to around 50 CE, within living memory of Caesar's conquest. The text is a curse or a binding spell."
+    },
+    {
+      "kind": "prose",
+      "heading": "The opening lines",
+      "body": "Here is the beginning of the Chamalières Tablet:\n\nANDEDION VEDIIUMI DIIIUIOMI RISVM RISVM VEDIIUMÍ AVDMON AVOTÓN MAPONOS ARVERNORIGIIS\n\nTransliteration and parsing:\nANDEDION — \"great god\" or \"very divine\" (accusative or vocative, compound: ANDE- \"very\" + -DION \"god\")\nVEDIIUMI — uncertain; possibly dative of a name or epithet, \"to Vediiumos\"?\nDIIIUIOMI — uncertain; possibly dative, \"to Diiuios\"? The repetition of VEDIIUMI suggests parallel invocations.\n\nRISVM RISVM VEDIIUMÍ — \"curse curse, to Vediiumos\" (RISVM = \"curse\", imperative or noun?; repetition for emphasis)\n\nAVDMON AVOTÓN — \"hear the vow\" or \"hearing, having vowed\" (AVDMON = imperative or participle of \"hear\"; AVOTÓN = past participle or noun, \"vowed\")\n\nMAPONOS ARVERNORIGIIS — \"Maponos of the Arverni kings\" (MAPONOS = nominative or vocative, the god's name; ARVERNORIGIIS = genitive or dative, \"of the Arverni kings\")"
+    },
+    {
+      "kind": "prose",
+      "heading": "MAPONOS and the Arverni",
+      "body": "MAPONOS (\"divine youth\" or \"divine son\") is a Gaulish god identified with Apollo in Roman interpretations. The name appears in dedications across Gaul and Britain. ARVERNORIGIIS means \"of the Arverni kings\". The Arverni were the dominant Gallic tribe of central Gaul; their king Vercingetorix led the final resistance to Caesar in 52 BCE. By 50 CE, when this tablet was inscribed, the Arverni were under Roman rule, but their memory and their gods endured. The invocation links Maponos to the old royal line."
+    },
+    {
+      "kind": "prose",
+      "heading": "Ritual repetition",
+      "body": "The tablet repeats certain words for ritual effect:\n\nRISVM RISVM — \"curse curse\"\nVEDIIUMÍ (appears twice) — a name or epithet invoked twice\n\nRepetition intensifies the invocation. This is common in magical texts across the ancient Mediterranean. Say a name twice and the spirit hears you louder. Say it three times and the binding is complete."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers; check after.",
+      "items": [
+        { "prompt": "When and where was the Chamalières Tablet discovered?", "answer": "1971, at the Source des Roches in Chamalières (Puy-de-Dôme, central France), in a sacred spring." },
+        { "prompt": "How many words are in the Chamalières Tablet?", "answer": "Sixty words, shorter than the Larzac Tablet but longer than most Gaulish inscriptions." },
+        { "prompt": "What does MAPONOS mean?", "answer": "\"Divine youth\" or \"divine son\" — a Gaulish god identified with Apollo." },
+        { "prompt": "What does ARVERNORIGIIS mean?", "answer": "\"Of the Arverni kings\" — linking the god to the royal line of the Arverni tribe." },
+        { "prompt": "Who were the Arverni?", "answer": "A dominant Gallic tribe of central Gaul. Their king Vercingetorix led the final resistance to Caesar in 52 BCE." },
+        { "prompt": "What does RISVM mean?", "answer": "\"Curse\" — repeated for ritual emphasis (RISVM RISVM = \"curse curse\")." },
+        { "prompt": "Why is repetition used in magical texts?", "answer": "To intensify the invocation. Repeating a name or command makes the binding stronger." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Chamalières vocabulary",
+      "instructions": "These words and phrases appear in the Chamalières Tablet. Memorize them.",
+      "words": [
+        { "gaulish": "ANDEDION", "transliteration": null, "gloss": "great god, very divine (accusative/vocative)", "audio": "/paideia/audio/gaulish/chamalieres/andedion.mp3" },
+        { "gaulish": "MAPONOS", "transliteration": null, "gloss": "Maponos (divine youth, god name)", "audio": "/paideia/audio/gaulish/chamalieres/maponos.mp3" },
+        { "gaulish": "ARVERNORIGIIS", "transliteration": null, "gloss": "of the Arverni kings (genitive)", "audio": "/paideia/audio/gaulish/chamalieres/arvernorigiis.mp3" },
+        { "gaulish": "RISVM RISVM", "transliteration": null, "gloss": "curse curse (ritual repetition)", "audio": "/paideia/audio/gaulish/chamalieres/risum-risum.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.6 covers the Vercelli stone bilingual: a funerary stele written in both Lepontic and Latin, giving us the clearest window into Lepontic-Latin equivalences."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can translate MAPONOS ARVERNORIGIIS, recognize RISVM as \"curse\", and explain why repetition appears in ritual texts.",
+    "credit_minutes": 65
+  }
+}

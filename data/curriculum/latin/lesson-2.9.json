@@ -1,0 +1,22 @@
+{
+  "id": "2.9",
+  "stage": 2,
+  "title": "The Verb Sum",
+  "subtitle": "sum, es, est, sumus, estis, sunt. The most common verb, irregular, mandatory.",
+  "estimated_minutes": 45,
+  "objectives": ["Conjugate sum in all six persons of the present indicative.", "Translate sentences using sum as a linking verb.", "Understand that sum takes nominative complements, not accusative.", "Recognize sum as the auxiliary for perfect passive forms."],
+  "sections": [
+    {"kind": "prose", "heading": "The verb to be", "body": "sum (to be) is irregular. Learn it by heart:\n\nPresent indicative:\n  sum — I am\n  es — you (sg.) are\n  est — he/she/it is\n  sumus — we are\n  estis — you (pl.) are\n  sunt — they are\n\nsum takes nominative complements:\n  vir fortis est. — The man is brave. (fortis is nominative, agreeing with vir)\n  puellae bonae sunt. — The girls are good.\n\nCicero writes: cōnsul sum. — I am consul.\nCaesar writes: Helvētiī sunt fortissimī. — The Helvetians are very brave."},
+    {"kind": "self_check", "heading": "Self-check", "items": [
+      {"prompt": "Conjugate sum in all persons.", "answer": "sum, es, est, sumus, estis, sunt"},
+      {"prompt": "Translate: rēx iūstus est.", "answer": "The king is just."},
+      {"prompt": "What case does sum take as its complement?", "answer": "Nominative."}
+    ]},
+    {"kind": "reading_preview", "heading": "Sentences with sum", "words": [
+      {"latin": "Rōma magna urbs est.", "transliteration": null, "gloss": "Rome is a great city.", "audio": "/paideia/audio/latin/sentences/2.9-1.mp3"},
+      {"latin": "mīlitēs fortēs sunt.", "transliteration": null, "gloss": "The soldiers are brave.", "audio": "/paideia/audio/latin/sentences/2.9-2.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Lesson 2.10: the present indicative passive. amor, amāris, amātur."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can conjugate sum without hesitation.", "credit_minutes": 45}
+}

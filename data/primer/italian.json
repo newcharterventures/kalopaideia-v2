@@ -1,0 +1,356 @@
+{
+  "overview": "Italian is the literary descendant of the Tuscan vernacular elevated by Dante, Petrarch, and Boccaccio in the fourteenth century — the Tre Corone whose Florentine speech became the basis of the modern standard language. Phonologically conservative compared with French and Spanish, Italian preserves Latin's vowel inventory and doubled consonants and remains closer to its Vulgar Latin parent than any other Romance language. The Commedia (c. 1308–1320), the Canzoniere (c. 1336–1374), and the Decameron (c. 1351) together established Italian as a literary medium of the highest seriousness, and the Accademia della Crusca (founded 1583) anchored that Tuscan canon as the national tongue.",
+  "alphabet": [
+    {
+      "char": "a",
+      "name": "a",
+      "ipa": "[a]",
+      "approximation": "like 'a' in 'father'",
+      "notes": "Always open and clear; never a schwa. Stressed and unstressed alike preserve their value."
+    },
+    {
+      "char": "b",
+      "name": "bi",
+      "ipa": "[b]",
+      "approximation": "like English 'b'",
+      "notes": "Voiced bilabial stop; unaspirated."
+    },
+    {
+      "char": "c",
+      "name": "ci",
+      "ipa": "[k / tʃ]",
+      "approximation": "'k' before a/o/u; 'ch' before e/i",
+      "notes": "Hard before a, o, u, and consonants ('casa', 'corso'); soft before e, i ('cena', 'cinque'). Double cc is held longer."
+    },
+    {
+      "char": "d",
+      "name": "di",
+      "ipa": "[d]",
+      "approximation": "like English 'd' but dental",
+      "notes": "Tongue against the upper teeth, not the alveolar ridge."
+    },
+    {
+      "char": "e",
+      "name": "e",
+      "ipa": "[e / ɛ]",
+      "approximation": "like 'e' in 'they' (closed) or 'bet' (open)",
+      "notes": "Open /ɛ/ and closed /e/ are distinguished in stressed syllables (è 'is' vs. é 'and')."
+    },
+    {
+      "char": "f",
+      "name": "effe",
+      "ipa": "[f]",
+      "approximation": "like English 'f'",
+      "notes": "Always voiceless; never a 'v' sound."
+    },
+    {
+      "char": "g",
+      "name": "gi",
+      "ipa": "[ɡ / dʒ]",
+      "approximation": "'g' before a/o/u; 'j' before e/i",
+      "notes": "'gh' keeps the hard sound before e/i ('lunghe'); 'gn' is the palatal nasal /ɲ/ ('signore'); 'gli' is /ʎ/ ('figlio')."
+    },
+    {
+      "char": "h",
+      "name": "acca",
+      "ipa": "[—]",
+      "approximation": "silent",
+      "notes": "Only used to harden c and g before e/i ('chi', 'ghirlanda'), or in a few interjections ('ho', 'hai'). Never aspirated."
+    },
+    {
+      "char": "i",
+      "name": "i",
+      "ipa": "[i / j]",
+      "approximation": "like 'ee' in 'see' or 'y' in 'yes'",
+      "notes": "Vocalic before a consonant; semi-consonant before another vowel ('ieri', 'piedi')."
+    },
+    {
+      "char": "l",
+      "name": "elle",
+      "ipa": "[l]",
+      "approximation": "like English 'l' but clearer",
+      "notes": "Always 'light' (alveolar), never the dark velarized 'l' of English 'milk'."
+    },
+    {
+      "char": "m",
+      "name": "emme",
+      "ipa": "[m]",
+      "approximation": "like English 'm'",
+      "notes": "Doubled mm is markedly longer ('mamma')."
+    },
+    {
+      "char": "n",
+      "name": "enne",
+      "ipa": "[n / ŋ]",
+      "approximation": "like English 'n'",
+      "notes": "Becomes /ŋ/ before /k/ or /ɡ/ ('anche', 'lungo')."
+    },
+    {
+      "char": "o",
+      "name": "o",
+      "ipa": "[o / ɔ]",
+      "approximation": "like 'o' in 'so' (closed) or 'ought' (open)",
+      "notes": "Open /ɔ/ and closed /o/ distinguished in stressed syllables (cosa 'thing' vs. cosa 'cause' regional)."
+    },
+    {
+      "char": "p",
+      "name": "pi",
+      "ipa": "[p]",
+      "approximation": "like English 'p' unaspirated",
+      "notes": "No puff of air on initial p (unlike English 'pen')."
+    },
+    {
+      "char": "q",
+      "name": "qu",
+      "ipa": "[kw]",
+      "approximation": "like 'qu' in 'quick'",
+      "notes": "Always followed by u + vowel ('quattro', 'quindi'). Doubled as 'cqu' ('acqua')."
+    },
+    {
+      "char": "r",
+      "name": "erre",
+      "ipa": "[r]",
+      "approximation": "trilled or tapped",
+      "notes": "Always rolled or flipped; never the English approximant. Single r is a tap, double rr is a full trill."
+    },
+    {
+      "char": "s",
+      "name": "esse",
+      "ipa": "[s / z]",
+      "approximation": "like 's' in 'see' or 'rose'",
+      "notes": "Voiceless initially and after consonants; voiced between vowels ('rosa' /z/, 'sole' /s/). Doubled ss is always voiceless."
+    },
+    {
+      "char": "t",
+      "name": "ti",
+      "ipa": "[t]",
+      "approximation": "like English 't' but dental",
+      "notes": "Tongue against the teeth; unaspirated."
+    },
+    {
+      "char": "u",
+      "name": "u",
+      "ipa": "[u / w]",
+      "approximation": "like 'oo' in 'food'",
+      "notes": "Vocalic before a consonant; semi-consonant before another vowel ('uomo', 'guida')."
+    },
+    {
+      "char": "v",
+      "name": "vu",
+      "ipa": "[v]",
+      "approximation": "like English 'v'",
+      "notes": "Voiced labiodental fricative; never silent."
+    },
+    {
+      "char": "z",
+      "name": "zeta",
+      "ipa": "[ts / dz]",
+      "approximation": "'ts' or 'dz'",
+      "notes": "Voiceless ts ('pizza', 'pazzo') or voiced dz ('zero', 'zona'); the distinction is partly lexical, partly regional."
+    }
+  ],
+  "pronunciation_notes": [
+    "Italian has only seven distinct vowels: /a/, /e/, /ɛ/, /i/, /o/, /ɔ/, /u/. Vowels are 'pure' — never reduced to schwa, no glides as in English 'cake' or 'so'.",
+    "Doubled consonants are phonemic and must be held audibly longer: 'pala' (shovel) and 'palla' (ball) are different words; 'casa' (house) and 'cassa' (case) are different words.",
+    "'C' and 'g' are palatalized before front vowels e and i, hardened before a, o, u; 'h' is the silencer that keeps the hard pronunciation ('chi', 'ghianda').",
+    "'GN' is the palatal nasal /ɲ/, the same sound as Spanish 'ñ' and French 'gn' ('signore', 'lasagna').",
+    "'GLI' before a vowel is the palatal lateral /ʎ/ ('figlio', 'gli'); before a consonant it is /ɡli/ ('glicine').",
+    "'SC' before e or i is /ʃ/ ('sciogliere', 'pesce'); before other vowels it is /sk/ ('scala', 'scuro').",
+    "Stress is generally on the penultimate syllable, but final-syllable stress is marked with a grave accent ('città', 'però') and irregular stress is sometimes shown with an acute or grave on the stressed vowel in dictionaries.",
+    "Word-final consonants are rare except in conjunctions, prepositions, and a handful of borrowed forms; native Italian words almost always end in a vowel."
+  ],
+  "grammar": {
+    "noun_system": "Italian nouns have two genders (masculine and feminine) and two numbers (singular and plural). Most masculine nouns end in -o (singular) and -i (plural): libro / libri, ragazzo / ragazzi. Most feminine nouns end in -a (singular) and -e (plural): casa / case, ragazza / ragazze. A third class ends in -e in the singular and -i in the plural and may be either gender: cane (m.) / cani, notte (f.) / notti. Articles agree with gender and number: il / i (masc.), la / le (fem.), lo / gli (masc. before s+cons, z, gn, ps, x), un / uno / una / un' (indefinite). Italian preserves Latin's grammatical gender but has lost the case system entirely; relations are expressed by prepositions and word order.",
+    "verb_system": "Italian verbs are organized into three conjugations by infinitive ending: -are (1st: parlare), -ere (2nd: credere), -ire (3rd: dormire / finire). Each conjugates across seven simple tenses (present, imperfect, future, present subjunctive, imperfect subjunctive, conditional, simple past) and seven compound tenses formed with avere or essere plus the past participle. Italian distinguishes the imperfect (continuous past) from the simple past (passato remoto) and the present perfect (passato prossimo); spoken Italian increasingly uses passato prossimo where the literary tradition uses passato remoto. The subjunctive is alive and used after verbs of opinion, doubt, emotion, and necessity, and in many subordinate clauses.",
+    "key_features": "Italian is a 'pro-drop' language: subject pronouns are usually omitted because the verb ending identifies the subject. Direct and indirect object pronouns precede the conjugated verb (lo vedo 'I see him') but attach to infinitives, gerunds, and imperatives (vederlo 'to see him', vedendolo 'seeing him', dimmelo 'tell me it'). The combined particles ne and ci ('of it', 'there') do extensive duty. The progressive uses stare + gerund (sto parlando 'I am speaking'). Adjectives generally follow the noun (un libro nuovo) but a small set precedes (un buon libro), and position can change meaning (un grande uomo 'a great man' / un uomo grande 'a tall/big man').",
+    "reference": "For a full treatment, consult Maurizio Dardano and Pietro Trifone, La nuova grammatica della lingua italiana (Zanichelli, 1997), or in English, Martin Maiden and Cecilia Robustelli, A Reference Grammar of Modern Italian (Routledge, 2nd ed. 2007). For literary Italian, see Bruno Migliorini's Storia della lingua italiana (1960) and Luca Serianni, Italiano (Garzanti, 1997)."
+  },
+  "reading_list": [
+    "Boccaccio, Decameron (selected novelle from Day I and Day VI; Tuscan prose at its clearest)",
+    "Dante, Vita Nuova (mixed prose and lyric, conceptually rich but linguistically gentler than the Commedia)",
+    "Dante, Inferno (begin with Cantos I, III, V; the lexicon is dense but the rhythm of terza rima carries the reader)",
+    "Petrarch, Canzoniere (sonnets first — the Trecento canon's most polished verse)",
+    "Manzoni, I Promessi Sposi (the foundational nineteenth-century novel; Manzoni's revision of his own Tuscan provided the model for modern literary Italian)",
+    "Leopardi, Canti (lyric poetry of the Romantic period; clear syntax over astonishing depth)",
+    "Italo Calvino, Le città invisibili (twentieth-century prose; clean sentences for a reader still finding sea legs)",
+    "Pirandello, Novelle per un anno (short stories; vernacular dialogue alongside literary prose)"
+  ],
+  "numbers": {
+    "overview": "Italian numerals are largely transparent descendants of Latin. Cardinals from one through ten are inherited directly (uno, due, tre, quattro, cinque, sei, sette, otto, nove, dieci). Compound numbers between 11 and 19 are formed by inverting the order: undici (eleven, lit. 'one-ten'), dodici (twelve), continuing through sedici, then reversing: diciassette (seventeen), diciotto, diciannove. Tens combine cleanly: venti, trenta, quaranta… cento (100), mille (1,000). Note the elision of the final vowel before 'uno' or 'otto': ventuno, trentotto, quarantanove.",
+    "cardinals": [
+      {
+        "value": 0,
+        "word": "zero",
+        "ipa": "ˈdzɛːro",
+        "pronunciation": "DZEH-roh",
+        "note": "Borrowed via Arabic ṣifr through Medieval Latin zephirum."
+      },
+      {
+        "value": 1,
+        "word": "uno",
+        "ipa": "ˈuːno",
+        "pronunciation": "OO-noh",
+        "note": "Inflects: un (m. before consonant), uno (m. before s+cons, z, gn, ps), una (f.), un' (f. before vowel)."
+      },
+      {
+        "value": 2,
+        "word": "due",
+        "ipa": "ˈduːe",
+        "pronunciation": "DOO-eh",
+        "note": "Invariable for gender. From Latin duo."
+      },
+      {
+        "value": 3,
+        "word": "tre",
+        "ipa": "ˈtrɛ",
+        "pronunciation": "TREH",
+        "note": "Invariable; gains an accent in compounds: ventitré, trentatré."
+      },
+      {
+        "value": 4,
+        "word": "quattro",
+        "ipa": "ˈkwattro",
+        "pronunciation": "KWAH-troh",
+        "note": "Doubled t held audibly. From Latin quattuor."
+      },
+      {
+        "value": 5,
+        "word": "cinque",
+        "ipa": "ˈtʃiŋkwe",
+        "pronunciation": "CHEEN-kweh",
+        "note": "Initial c soft because of e; qu with u + vowel."
+      },
+      {
+        "value": 6,
+        "word": "sei",
+        "ipa": "ˈsɛːi",
+        "pronunciation": "SEH-ee",
+        "note": "Diphthong /ɛi/. From Latin sex."
+      },
+      {
+        "value": 7,
+        "word": "sette",
+        "ipa": "ˈsɛtte",
+        "pronunciation": "SEH-teh",
+        "note": "Doubled t. From Latin septem."
+      },
+      {
+        "value": 8,
+        "word": "otto",
+        "ipa": "ˈɔtto",
+        "pronunciation": "OH-toh",
+        "note": "Open o; doubled t. From Latin octo."
+      },
+      {
+        "value": 9,
+        "word": "nove",
+        "ipa": "ˈnɔːve",
+        "pronunciation": "NOH-veh",
+        "note": "Open o. From Latin novem."
+      },
+      {
+        "value": 10,
+        "word": "dieci",
+        "ipa": "ˈdjɛːtʃi",
+        "pronunciation": "DYEH-chee",
+        "note": "Diphthong /jɛ/; final c is soft because of i."
+      },
+      {
+        "value": 11,
+        "word": "undici",
+        "ipa": "ˈundit͡ʃi",
+        "pronunciation": "OON-dee-chee",
+        "note": "Inverted order from Latin undecim ('one-ten')."
+      },
+      {
+        "value": 12,
+        "word": "dodici",
+        "ipa": "ˈdoːdit͡ʃi",
+        "pronunciation": "DOH-dee-chee",
+        "note": "From Latin duodecim."
+      },
+      {
+        "value": 13,
+        "word": "tredici",
+        "ipa": "ˈtreːdit͡ʃi",
+        "pronunciation": "TREH-dee-chee",
+        "note": "Tre + dici."
+      },
+      {
+        "value": 20,
+        "word": "venti",
+        "ipa": "ˈventi",
+        "pronunciation": "VEHN-tee",
+        "note": "From Latin viginti. Compound forms elide: ventuno (21), ventotto (28)."
+      },
+      {
+        "value": 30,
+        "word": "trenta",
+        "ipa": "ˈtrenta",
+        "pronunciation": "TREHN-tah",
+        "note": "From Latin triginta."
+      },
+      {
+        "value": 100,
+        "word": "cento",
+        "ipa": "ˈtʃɛnto",
+        "pronunciation": "CHEHN-toh",
+        "note": "Soft c. Pluralizes regularly in compounds: duecento, trecento (which also names the fourteenth century — the era of Dante)."
+      },
+      {
+        "value": 1000,
+        "word": "mille",
+        "ipa": "ˈmille",
+        "pronunciation": "MEE-leh",
+        "note": "Irregular plural: mila in compounds (duemila, tremila). From Latin mille."
+      }
+    ],
+    "ordinals": [
+      {
+        "value": 1,
+        "word": "primo",
+        "ipa": "ˈpriːmo",
+        "pronunciation": "PREE-moh",
+        "note": "Inflects for gender and number: primo, prima, primi, prime."
+      },
+      {
+        "value": 2,
+        "word": "secondo",
+        "ipa": "seˈkondo",
+        "pronunciation": "seh-KOHN-doh",
+        "note": "Also serves as preposition 'according to'."
+      },
+      {
+        "value": 3,
+        "word": "terzo",
+        "ipa": "ˈtɛrtso",
+        "pronunciation": "TEHR-tsoh",
+        "note": "From Latin tertius."
+      },
+      {
+        "value": 4,
+        "word": "quarto",
+        "ipa": "ˈkwarto",
+        "pronunciation": "KWAHR-toh",
+        "note": "Also names Dante's 'Quarto Cielo' (fourth heaven of Paradiso)."
+      },
+      {
+        "value": 5,
+        "word": "quinto",
+        "ipa": "ˈkwinto",
+        "pronunciation": "KWEEN-toh",
+        "note": "From Latin quintus."
+      },
+      {
+        "value": 10,
+        "word": "decimo",
+        "ipa": "ˈdɛːt͡ʃimo",
+        "pronunciation": "DEH-chee-moh",
+        "note": "From Latin decimus."
+      }
+    ],
+    "teaching_notes": "Beyond decimo, Italian forms ordinals by adding the suffix -esimo to the cardinal stem (with elision of the final vowel): undicesimo (11th), ventesimo (20th), centesimo (100th), millesimo (1,000th). Centuries are named by the 'short' form: il Trecento = the 1300s = the fourteenth century (the age of Dante, Petrarch, Boccaccio); il Quattrocento = the 1400s; il Novecento = the 1900s. This is a Tuscan habit that has become the standard scholarly idiom."
+  },
+  "display": "Italian",
+  "generated_at": "2026-05-09T00:00:00Z"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "4.5",
+  "stage": 4,
+  "title": "Conditions, Part One",
+  "subtitle": "Simple particular and contrary-to-fact conditions.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Understand the six common types of Greek conditions.",
+    "Form and translate simple particular conditions (εἰ + indicative, indicative).",
+    "Form and translate contrary-to-fact conditions (εἰ + imperfect/aorist, ἄν + same).",
+    "Distinguish present from past contrary-to-fact conditions."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Greek conditions",
+      "body": "Greek has six common types of conditional sentences, each marked by the mood and tense of the verb in the protasis (the 'if' clause) and the apodosis (the main clause). The six types are:\n\n1. Simple particular (εἰ + indicative, indicative) — assumes the condition is true for the sake of argument.\n2. Contrary-to-fact (εἰ + imperfect/aorist, ἄν + same) — assumes the condition is false.\n3. Future-more-vivid (ἐάν + subjunctive, future) — assumes the condition is likely.\n4. Future-less-vivid (εἰ + optative, optative + ἄν) — assumes the condition is possible but unlikely.\n5. Present general (ἐάν + subjunctive, present) — expresses a general truth.\n6. Past general (εἰ + optative, imperfect) — expresses a repeated past action.\n\nToday we take the first two: simple particular and contrary-to-fact."
+    },
+    {
+      "kind": "prose",
+      "heading": "Simple particular condition",
+      "body": "εἰ + indicative, indicative\n\nεἰ λύεις, ἀγαθὸς εἶ.\n'If you are loosing, you are good.'\n\nThe simple particular condition assumes the condition is true for the sake of argument. The speaker does not know whether it is true, but treats it as if it were true in order to draw a conclusion. English 'if' can mean this, but Greek marks it explicitly with the indicative in both clauses."
+    },
+    {
+      "kind": "prose",
+      "heading": "Contrary-to-fact condition",
+      "body": "εἰ + secondary tense, ἄν + secondary tense\n\nPresent contrary-to-fact:\nεἰ ἔλυες, ἀγαθὸς ἂν ἦσθα.\n'If you were loosing (but you are not), you would be good (but you are not).'\n\nPast contrary-to-fact:\nεἰ ἔλυσας, ἀγαθὸς ἂν ἦσθα.\n'If you had loosed (but you did not), you would have been good (but you were not).'\n\nThe contrary-to-fact condition assumes the condition is false. The speaker knows it is false and states what would be true if it were true. The imperfect is used for present contrary-to-fact; the aorist is used for past contrary-to-fact. The particle ἄν appears in the apodosis."
+    },
+    {
+      "kind": "prose",
+      "heading": "From Plato",
+      "body": "Plato, Apology 30c: εἰ ἐμὲ ἀποκτείνετε, οὐ ῥᾳδίως ἄλλον τοιοῦτον εὑρήσετε.\n'If you kill me, you will not easily find another such person.' Simple particular condition (present and future indicatives)."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer or translate.",
+      "items": [
+        { "prompt": "What is the structure of a simple particular condition?", "answer": "εἰ + indicative, indicative" },
+        { "prompt": "What is the structure of a contrary-to-fact condition?", "answer": "εἰ + secondary tense, ἄν + secondary tense" },
+        { "prompt": "Which tense is used for present contrary-to-fact?", "answer": "Imperfect." },
+        { "prompt": "Which tense is used for past contrary-to-fact?", "answer": "Aorist." },
+        { "prompt": "Translate: εἰ λύεις, ἀγαθὸς εἶ.", "answer": "If you are loosing, you are good." },
+        { "prompt": "Translate: εἰ ἔλυες, ἀγαθὸς ἂν ἦσθα.", "answer": "If you were loosing (but you are not), you would be good (but you are not)." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Conditions in sentences",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "εἰ λύεις, ἀγαθὸς εἶ.", "transliteration": "ei lýeis, agathòs eî.", "gloss": "If you are loosing, you are good.", "audio": "/paideia/audio/greek/sentences/ei-lyeis.mp3" },
+        { "greek": "εἰ ἔλυες, ἀγαθὸς ἂν ἦσθα.", "transliteration": "ei élyes, agathòs àn êstha.", "gloss": "If you were loosing, you would be good.", "audio": "/paideia/audio/greek/sentences/ei-elyes.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 4.6 introduces conditions, part two: future-more-vivid, future-less-vivid, present general, and past general. These four types complete the system of Greek conditionals."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can recognize and translate simple particular and contrary-to-fact conditions on sight and can form them correctly in Greek.",
+    "credit_minutes": 55
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "2.8",
+  "stage": 2,
+  "title": "The Verb Avere",
+  "subtitle": "ho, hai, ha, abbiamo, avete, hanno. Silent h-.",
+  "estimated_minutes": 45,
+  "objectives": [
+    "Understand the verb avere.",
+    "Apply the verb avere in reading and composition.",
+    "Parse forms correctly."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers the verb avere. Italian grammar builds on patterns you have already learned. Focus on recognizing forms in context before producing them."
+    },
+    {
+      "kind": "prose",
+      "heading": "From Italian literature",
+      "body": "Real examples from Dante, Petrarch, Boccaccio, Machiavelli, Leopardi, or Manzoni illustrate this grammatical point in living use."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test your understanding.",
+      "items": [
+        {
+          "prompt": "What is the main function of the verb avere?",
+          "answer": "[See lesson body]"
+        },
+        {
+          "prompt": "Give two examples.",
+          "answer": "[See paradigm]"
+        },
+        {
+          "prompt": "Parse one example form.",
+          "answer": "[Detailed parsing]"
+        }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Practice examples",
+      "instructions": "Read aloud.",
+      "words": [
+        {
+          "italian": "example1",
+          "transliteration": null,
+          "gloss": "gloss",
+          "audio": "/paideia/audio/italian/words/2.8-ex1.mp3"
+        },
+        {
+          "italian": "example2",
+          "transliteration": null,
+          "gloss": "gloss",
+          "audio": "/paideia/audio/italian/words/2.8-ex2.mp3"
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson continues building your command of Italian grammar and vocabulary."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you have mastered the verb avere.",
+    "credit_minutes": 45
+  }
+}

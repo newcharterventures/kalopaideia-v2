@@ -1,0 +1,46 @@
+{
+  "id": "3.7",
+  "stage": 3,
+  "title": "Eddaic Meter — Ljóðaháttr",
+  "subtitle": "Six-line stanzas with short full lines.",
+  "estimated_minutes": 50,
+  "objectives": ["Scan a stanza of ljóðaháttr.","Recognize the meter in wisdom poetry."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers Eddaic Meter — Ljóðaháttr. Six-line stanzas with short full lines."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Scan a stanza of ljóðaháttr."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Scan a stanza of ljóðaháttr." },
+        { "prompt": "How do you apply this in practice?", "answer": "Recognize the meter in wisdom poetry." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "oldnorse": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/oldnorse/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on Eddaic Meter — Ljóðaháttr."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in Eddaic Meter — Ljóðaháttr to ten random examples.",
+    "credit_minutes": 50
+  }
+}

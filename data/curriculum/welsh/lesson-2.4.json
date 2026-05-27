@@ -1,0 +1,46 @@
+{
+  "id": "2.4",
+  "stage": 2,
+  "title": "Regular Verbs — Imperfect",
+  "subtitle": "Past continuous or habitual.",
+  "estimated_minutes": 50,
+  "objectives": ["Conjugate a regular verb in the imperfect.","Distinguish from the preterite."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers Regular Verbs — Imperfect. Past continuous or habitual."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Conjugate a regular verb in the imperfect."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Conjugate a regular verb in the imperfect." },
+        { "prompt": "How do you apply this in practice?", "answer": "Distinguish from the preterite." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "welsh": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/welsh/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on Regular Verbs — Imperfect."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in Regular Verbs — Imperfect to ten random examples.",
+    "credit_minutes": 50
+  }
+}

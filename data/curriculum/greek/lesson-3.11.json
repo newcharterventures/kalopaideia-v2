@@ -1,0 +1,67 @@
+{
+  "id": "3.11",
+  "stage": 3,
+  "title": "The Aorist Participle Active",
+  "subtitle": "λύσας, λύσασα, λῦσαν — antecedent action.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Form and decline the aorist active participle of any ω-verb.",
+    "Understand the aorist participle as expressing completed action.",
+    "Use the aorist participle to show action prior to the main verb.",
+    "Distinguish aorist from present participle by meaning and form."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The aorist participle",
+      "body": "The aorist participle expresses completed action. λύσας means 'having loosed' or 'after loosing'. The aorist participle is used for antecedent action: action that happened before the action of the main verb.\n\nλύσας τοὺς αἰχμαλώτους ἀπῆλθεν — 'Having freed the prisoners, he went away.' The freeing happened first; the going away happened second.\n\nThe aorist participle has no augment. The augment is only for the indicative mood. The aorist participle is formed with the sigma infix (first aorist) or the strong stem (second aorist) plus participial endings."
+    },
+    {
+      "kind": "prose",
+      "heading": "The first aorist active participle: λύσας, λύσασα, λῦσαν",
+      "body": "Masculine (third declension):\n              singular        plural\n  nominative  λύσας           λύσαντες\n  genitive    λύσαντος        λυσάντων\n  dative      λύσαντι         λύσασι(ν)\n  accusative  λύσαντα         λύσαντας\n\nFeminine (first declension):\n              singular        plural\n  nominative  λύσασα          λύσασαι\n  genitive    λυσάσης         λυσασῶν\n  dative      λυσάσῃ          λυσάσαις\n  accusative  λύσασαν         λυσάσας\n\nNeuter (third declension):\n              singular        plural\n  nominative  λῦσαν           λύσαντα\n  genitive    λύσαντος        λυσάντων\n  dative      λύσαντι         λύσασι(ν)\n  accusative  λῦσαν           λύσαντα\n\nThe stem is λυσαντ-. No augment."
+    },
+    {
+      "kind": "prose",
+      "heading": "The second aorist active participle: λαβών, λαβοῦσα, λαβόν",
+      "body": "Second aorist participles follow the same pattern as the present participle, but with the aorist stem.\n\nλαβών (from λαμβάνω, aorist stem λαβ-) means 'having taken'.\n\n              masculine       feminine        neuter\n  nominative  λαβών           λαβοῦσα         λαβόν\n  genitive    λαβόντος        λαβούσης        λαβόντος\n\nThe pattern is identical to λύων, λύουσα, λῦον, but with the aorist stem."
+    },
+    {
+      "kind": "prose",
+      "heading": "From Xenophon",
+      "body": "Anabasis I.1.2: ταῦτα εἰπὼν ἀπῆλθεν.\n'Having said these things, he went away.' εἰπών is the aorist participle of λέγω (second aorist εἶπον). The saying happened first; the going happened second."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Parse or translate.",
+      "items": [
+        { "prompt": "λύσαντος", "answer": "genitive singular masculine or neuter of λύσας" },
+        { "prompt": "λυσάσης", "answer": "genitive singular feminine of λύσας" },
+        { "prompt": "λύσαντες", "answer": "nominative plural masculine of λύσας" },
+        { "prompt": "What does the aorist participle express?", "answer": "Completed action, antecedent to the main verb." },
+        { "prompt": "Does the aorist participle have an augment?", "answer": "No. The augment is only for the indicative." },
+        { "prompt": "Translate: λύσας τοὺς αἰχμαλώτους ἀπῆλθεν.", "answer": "Having freed the prisoners, he went away." },
+        { "prompt": "Translate: ταῦτα εἰπὼν ἀπῆλθεν.", "answer": "Having said these things, he went away." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Aorist participle in sentences",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "λύσας τοὺς αἰχμαλώτους ἀπῆλθεν.", "transliteration": "lýsas toùs aichmalṓtous apêlthen.", "gloss": "Having freed the prisoners, he went away.", "audio": "/paideia/audio/greek/sentences/lysas-apelthen.mp3" },
+        { "greek": "λαβὼν τὸ δῶρον εὐχαρίστησε.", "transliteration": "labṑn tò dôron eucharístēse.", "gloss": "Having taken the gift, he gave thanks.", "audio": "/paideia/audio/greek/sentences/labon-eucharistese.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 3.12 introduces the middle and passive participles. The present and aorist middle participles follow the same pattern as the active, but with middle endings. The aorist passive participle has its own forms (λυθείς), which you will learn here."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can form and decline the aorist active participle of any ω-verb and can translate aorist participles showing antecedent action.",
+    "credit_minutes": 50
+  }
+}

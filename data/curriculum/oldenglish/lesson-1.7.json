@@ -1,0 +1,67 @@
+{
+  "id": "1.7",
+  "stage": 1,
+  "title": "First Sentence",
+  "subtitle": "Ælfred kyning hāteþ grētan Wærferþ biscep.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Read your first complete Old English sentence aloud.",
+    "Recognize the structure: Subject + Verb + Infinitive + Object.",
+    "Translate the sentence into modern English.",
+    "Understand the historical context: King Alfred's educational reforms."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The sentence",
+      "body": "Ælfred kyning hāteþ grētan Wærferþ biscep.\n\nThis is the opening sentence of King Alfred's preface to his translation of Gregory the Great's Pastoral Care. Alfred wrote it around 890 CE, at the end of his reign, as part of his program to restore learning in Wessex after the Viking invasions. It is prose, not poetry. It is direct, clear, and grammatical. It is the perfect first sentence."
+    },
+    {
+      "kind": "prose",
+      "heading": "Word by word",
+      "body": "Ælfred — the king's name. Modern 'Alfred.' The æ is the vowel in 'cat.'\n\nkyning — king. Nominative singular. The subject of the sentence.\n\nhāteþ — commands, bids. Third-person singular present indicative of hātan (to command). The macron marks the long ā.\n\ngrētan — to greet. Infinitive. The object of hāteþ. 'Commands to greet' means 'sends greetings.'\n\nWærferþ — the name of the Bishop of Worcester, to whom Alfred sent this letter.\n\nbiscep — bishop. Accusative singular. The object of grētan. Borrowed from Latin episcopus.\n\nThe sentence means: 'King Alfred commands Bishop Werferth to be greeted.' Or in natural English: 'King Alfred sends greetings to Bishop Werferth.'"
+    },
+    {
+      "kind": "prose",
+      "heading": "Grammar notes",
+      "body": "The structure is Subject (Ælfred kyning) + Verb (hāteþ) + Infinitive (grētan) + Object (Wærferþ biscep). This pattern (finite verb + infinitive) is common in Old English. The infinitive takes its own object (Wærferþ biscep), which is in the accusative case.\n\nThe word order is flexible. Old English is a V2 (verb-second) language in main clauses, meaning the finite verb appears in the second position. The subject can come first (as here) or after the verb. In subordinate clauses the verb moves to the end."
+    },
+    {
+      "kind": "prose",
+      "heading": "Historical context",
+      "body": "Alfred became king of Wessex in 871, at the height of the Viking invasions. He fought the Danes to a standstill and negotiated a treaty that divided England between English and Danish control. In the 880s, with peace secured, he turned his attention to education. He lamented that learning had decayed so far that few priests south of the Thames could read Latin. He began a program of translation: the Pastoral Care, Boethius, Augustine, Bede. This preface is his explanation of why he did it. The sentence you just read is the first sentence of that explanation."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer without looking back.",
+      "items": [
+        { "prompt": "Translate: Ælfred kyning hāteþ grētan Wærferþ biscep.", "answer": "King Alfred sends greetings to Bishop Werferth." },
+        { "prompt": "What is the subject of the sentence?", "answer": "Ælfred kyning (King Alfred)" },
+        { "prompt": "What is the finite verb?", "answer": "hāteþ (commands)" },
+        { "prompt": "What is the infinitive?", "answer": "grētan (to greet)" },
+        { "prompt": "What case is Wærferþ biscep?", "answer": "Accusative (object of the infinitive grētan)" },
+        { "prompt": "When did Alfred write this preface?", "answer": "Around 890 CE" },
+        { "prompt": "Why did Alfred translate Latin works into Old English?", "answer": "Learning had decayed; few priests could read Latin. He wanted to restore education in Wessex." },
+        { "prompt": "What does hāteþ grētan mean?", "answer": "Commands to greet = sends greetings" }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "The sentence read aloud",
+      "instructions": "Listen ten times. Repeat until you can say it from memory.",
+      "words": [
+        { "oldenglish": "Ælfred kyning hāteþ grētan Wærferþ biscep.", "transliteration": null, "gloss": "King Alfred sends greetings to Bishop Werferth.", "audio": "/paideia/audio/oldenglish/sentences/alfred-greeting.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Stage 1 complete",
+      "body": "You have finished Stage 1. You can read and pronounce Old English. You know the alphabet, the special letters, the vowel system, the consonant system, the stress pattern, and your first sentence. Stage 2 introduces grammar: the four cases, the strong and weak nouns, the article, the verb. Take the Stage 1 checkpoint when you are ready."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can read Alfred's sentence aloud from memory and translate it.",
+    "credit_minutes": 50
+  }
+}

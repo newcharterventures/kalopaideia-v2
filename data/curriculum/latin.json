@@ -1,0 +1,171 @@
+{
+  "language": "latin",
+  "display_name": "Classical Latin",
+  "tagline": "From the alphabet to Cicero — a five-stage course in the Latin of the late Republic and early Empire.",
+  "philosophy": "We teach Latin in the natural method of Hans Ørberg's Lingua Latina per se Illustrata: meaning before grammar, reading before parsing, sustained connected text from the first month. Grammar is introduced when the form has already been met in living context. The student finishes the course reading Cicero and Vergil with notes — not parsing tables.",
+  "duration_estimate": "12–18 months at one hour per day",
+  "method": "Reading-led, in the Ørberg tradition. Inspired by Familia Romana, Wheelock's reading passages, and the older school practice of construing Caesar aloud before parsing him.",
+  "prerequisites": "None.",
+  "stages": [
+    {
+      "id": "stage-1",
+      "number": 1,
+      "name": "The Sound and the Shape",
+      "subtitle": "The alphabet, the vowels, the stress; reading aloud before reading.",
+      "duration": "3–5 weeks",
+      "learning_outcomes": [
+        "Read aloud any Latin text in the reconstructed Classical pronunciation (c. 100 BCE – 100 CE).",
+        "Distinguish long and short vowels by ear and mark them by hand (macrons).",
+        "Apply the Latin stress rules (penultimate or antepenultimate by syllable weight).",
+        "Recognize and produce the consonants whose values differ from English (c, g, v, j, qu, x, gn)."
+      ],
+      "lessons": [
+        { "id": "1.1", "title": "The Alphabet and the Vowels", "content": "Twenty-three letters. The five vowels in long and short. Audio drill on each in isolation and inside a real Latin word." },
+        { "id": "1.2", "title": "The Diphthongs", "content": "ae, oe, au, ei, eu, ui. Pronunciation and spelling. Caesar, poena, aurum." },
+        { "id": "1.3", "title": "The Consonants", "content": "C and G always hard. V as English w. J as English y. QU as English qu. Aspirated and unaspirated stops (no aspirated pair in Classical Latin — a relief after Greek)." },
+        { "id": "1.4", "title": "Stress and Quantity", "content": "Heavy and light syllables. The penult rule. ǎmīcus (heavy penult: stress on penult); pŏpŭlus (light penult: stress on antepenult)." },
+        { "id": "1.5", "title": "Macrons", "content": "Why we mark long vowels in the textbook and not in real inscriptions. Reading drill: a paragraph with macrons, then the same without." },
+        { "id": "1.6", "title": "First Sentences", "content": "Ten short sentences from Familia Romana, capitulum I. Rōma in Italiā est. Italia in Eurōpā est. Read aloud first, parse never." }
+      ],
+      "checkpoint": {
+        "id": "stage-1-checkpoint",
+        "title": "Stage 1 Checkpoint",
+        "format": "Twenty letters and diphthongs to identify by ear from audio; ten words read aloud and recorded; five sentences marked for stress and macron length; five English words spelled in Latin transliteration. Pass mark: 85%.",
+        "items": 40
+      }
+    },
+    {
+      "id": "stage-2",
+      "number": 2,
+      "name": "The Sentence",
+      "subtitle": "The first three declensions, the four conjugations, the present indicative, the article-less sentence.",
+      "duration": "8–10 weeks",
+      "learning_outcomes": [
+        "Decline any first-, second-, or third-declension noun in all six cases and both numbers.",
+        "Conjugate any regular verb of the four conjugations in the present indicative active and passive.",
+        "Translate sentences of the form Subject + Verb + Object with adjectives, prepositional phrases, and a genitive of possession.",
+        "Read adapted passages of about a hundred and fifty words at sight."
+      ],
+      "lessons": [
+        { "id": "2.1", "title": "The First Declension", "content": "puella, puella, puellam, puellae, puellae, puellā. Vocative identical to nominative." },
+        { "id": "2.2", "title": "The Second Declension — Masculine", "content": "dominus, servus, puer, vir. Vocative singular in -e and -ī." },
+        { "id": "2.3", "title": "The Second Declension — Neuter", "content": "templum, dōnum, bellum. Neuter nominative and accusative always identical." },
+        { "id": "2.4", "title": "The Six Cases", "content": "Nominative subject; accusative object and motion-towards; genitive possession; dative indirect object; ablative everything else (means, manner, separation, agent, place where). Vocative direct address." },
+        { "id": "2.5", "title": "First and Second Declension Adjectives", "content": "bonus, bona, bonum. Agreement in case, number, gender." },
+        { "id": "2.6", "title": "The Present Indicative Active — First Conjugation", "content": "amō, amās, amat, amāmus, amātis, amant." },
+        { "id": "2.7", "title": "The Present Indicative Active — Second and Third", "content": "moneō / regō. Long ē versus short ĭ as theme vowel." },
+        { "id": "2.8", "title": "The Present Indicative Active — Fourth and Mixed", "content": "audiō, capiō. The -iō verbs and the small i-stem class." },
+        { "id": "2.9", "title": "The Verb Sum", "content": "sum, es, est, sumus, estis, sunt. The most common verb, irregular, mandatory." },
+        { "id": "2.10", "title": "The Present Indicative Passive", "content": "amor, amāris, amātur. The -r endings." },
+        { "id": "2.11", "title": "The Third Declension — Consonant Stems", "content": "rēx, lūx, miles, pater, soror. The genitive reveals the stem." },
+        { "id": "2.12", "title": "The Third Declension — i-Stems", "content": "civis, mare, animal. Genitive plural -ium." },
+        { "id": "2.13", "title": "Reading: Familia Romana, capitula I–V", "content": "The student's first sustained Latin. Hundreds of words of connected text, all of it from Ørberg, all using only what we have covered." }
+      ],
+      "checkpoint": {
+        "id": "stage-2-checkpoint",
+        "title": "Stage 2 Checkpoint",
+        "format": "Twenty nouns to decline; ten verb forms to conjugate; a fifty-word passage to translate; ten English sentences to render in Latin. Pass mark: 80%.",
+        "items": 60
+      }
+    },
+    {
+      "id": "stage-3",
+      "number": 3,
+      "name": "The Tenses and the Participle",
+      "subtitle": "The imperfect, future, perfect; the four participles; the ablative absolute; the fourth and fifth declensions.",
+      "duration": "10–12 weeks",
+      "learning_outcomes": [
+        "Conjugate any regular verb across the present system (present, imperfect, future) and the perfect system (perfect, pluperfect, future perfect) in both voices.",
+        "Decline any fourth- or fifth-declension noun and any third-declension adjective.",
+        "Recognize and translate the four participles (present active, perfect passive, future active, future passive / gerundive).",
+        "Read unadapted passages of Caesar with notes."
+      ],
+      "lessons": [
+        { "id": "3.1", "title": "The Imperfect", "content": "amābam, amābās, amābat. Past continuous action — was loving, used to love, kept on loving." },
+        { "id": "3.2", "title": "The Future", "content": "amābō / regam. Two patterns, one for the first two conjugations and one for the rest." },
+        { "id": "3.3", "title": "The Perfect Active", "content": "amāvī, amāvistī, amāvit. The four principal parts. Why every Latin verb must be learned with all four." },
+        { "id": "3.4", "title": "Pluperfect and Future Perfect", "content": "amāveram, amāverō. The auxiliary endings on the perfect stem." },
+        { "id": "3.5", "title": "The Perfect Passive System", "content": "amātus sum / eram / erō. Periphrastic forms with the participle." },
+        { "id": "3.6", "title": "The Fourth Declension", "content": "manus, manūs. The u-stems." },
+        { "id": "3.7", "title": "The Fifth Declension", "content": "rēs, diēs, fidēs. The e-stems, mostly feminine." },
+        { "id": "3.8", "title": "Third Declension Adjectives", "content": "fortis, fortis, forte; ingens; vetus. Three patterns: two-termination, one-termination, exceptional." },
+        { "id": "3.9", "title": "The Present Active Participle", "content": "amāns, amantis. Third-declension adjective in form." },
+        { "id": "3.10", "title": "The Perfect Passive Participle", "content": "amātus, amāta, amātum. The most useful participle in Latin." },
+        { "id": "3.11", "title": "The Future Active and the Gerundive", "content": "amātūrus / amandus. Intention versus obligation." },
+        { "id": "3.12", "title": "The Ablative Absolute", "content": "Caesare duce — with Caesar as leader. Caesare interfectō — Caesar having been killed. Latin's compact alternative to subordinate clauses." },
+        { "id": "3.13", "title": "Reading: Caesar, De Bello Gallico I.1", "content": "Gallia est omnis dīvīsa in partēs trēs. The most famous opening sentence in Latin prose. Full grammatical commentary." },
+        { "id": "3.14", "title": "Reading: Eutropius, Breviarium I.1–7", "content": "The founding of Rome. Simpler than Caesar, ideal at this stage." }
+      ],
+      "checkpoint": {
+        "id": "stage-3-checkpoint",
+        "title": "Stage 3 Checkpoint",
+        "format": "Parse twenty inflected forms; translate a one-hundred-word passage from Caesar or Eutropius at sight; compose five short Latin sentences from English. Pass mark: 75%.",
+        "items": 75
+      }
+    },
+    {
+      "id": "stage-4",
+      "number": 4,
+      "name": "The Subjunctive and the Sentence Made Subtle",
+      "subtitle": "The four subjunctive tenses; purpose, result, indirect command; conditions; indirect statement; the gerund.",
+      "duration": "12–16 weeks",
+      "learning_outcomes": [
+        "Form and translate the subjunctive in all four tenses, both voices.",
+        "Recognize and translate the six condition types.",
+        "Translate indirect statement (accusative + infinitive).",
+        "Parse and translate the gerund and the gerundive of obligation."
+      ],
+      "lessons": [
+        { "id": "4.1", "title": "The Present and Imperfect Subjunctive", "content": "amem / amārem. The marker vowels: -e- (first conjugation), -ā- (others)." },
+        { "id": "4.2", "title": "The Perfect and Pluperfect Subjunctive", "content": "amāverim / amāvissem." },
+        { "id": "4.3", "title": "Purpose Clauses", "content": "ut + subjunctive. veniō ut tē videam." },
+        { "id": "4.4", "title": "Result Clauses", "content": "ut + subjunctive (again — but with a signal word). tam fortis est ut omnēs eum laudent." },
+        { "id": "4.5", "title": "Indirect Command", "content": "imperō / rogō ut + subjunctive." },
+        { "id": "4.6", "title": "Cum-Clauses", "content": "cum + subjunctive: when, since, although. The most useful conjunction in Latin prose." },
+        { "id": "4.7", "title": "Conditions", "content": "Six types: simple, future-more-vivid, future-less-vivid, present contrary-to-fact, past contrary-to-fact, general." },
+        { "id": "4.8", "title": "Indirect Statement", "content": "dīcō Caesarem venīre / vēnisse / ventūrum esse. The accusative-and-infinitive construction." },
+        { "id": "4.9", "title": "The Gerund and Gerundive", "content": "ars scrībendī. Carthāgō dēlenda est. Verbal nouns and verbal adjectives of obligation." },
+        { "id": "4.10", "title": "Deponent Verbs", "content": "loquor, locūtus sum. Passive in form, active in meaning." },
+        { "id": "4.11", "title": "Reading: Cicero, Pro Archia §§1–5", "content": "Slow, sonorous, periodic prose. The student's first exposure to a Ciceronian sentence." },
+        { "id": "4.12", "title": "Reading: Vergil, Aeneid I.1–11", "content": "Arma virumque canō. The opening of the Aeneid. First exposure to dactylic hexameter." }
+      ],
+      "checkpoint": {
+        "id": "stage-4-checkpoint",
+        "title": "Stage 4 Checkpoint",
+        "format": "A one-hundred-and-fifty-word sight passage from Cicero or Caesar, with parsing and translation. Five composition prompts in English to render in Latin. Pass mark: 75%.",
+        "items": 50
+      }
+    },
+    {
+      "id": "stage-5",
+      "number": 5,
+      "name": "The Author",
+      "subtitle": "Sustained reading of a major author. The capstone.",
+      "duration": "12–24 weeks",
+      "learning_outcomes": [
+        "Read a complete short work (or substantial book) of a major Latin author in the original.",
+        "Translate any fifty-word passage from the chosen author at sight.",
+        "Discuss the literary and rhetorical character of the chosen text in writing."
+      ],
+      "tracks": [
+        { "id": "track-orator", "name": "The Orator", "text": "Cicero, In Catilinam I (entire — c. 6,500 words).", "rationale": "Cicero's most famous speech. Periodic prose at its highest pitch." },
+        { "id": "track-general", "name": "The General", "text": "Caesar, De Bello Gallico Book I (entire — c. 16,000 words).", "rationale": "The classic intermediate prose author. Direct, narrative, military." },
+        { "id": "track-poet", "name": "The Poet", "text": "Vergil, Aeneid Book I (entire — c. 5,800 words of dactylic hexameter).", "rationale": "The greatest poem in Latin. Meter, diction, allusion." }
+      ],
+      "capstone_examination": {
+        "id": "stage-5-capstone",
+        "title": "The Kalopaideia Latin Examination",
+        "format": "Three hours, written, auto-graded. A fifty-word passage from the chosen author to translate at sight without notes; a one-hundred-word passage with notes; ten English sentences to render in Latin; ten parsing questions; for the Poet track, five questions on scansion.",
+        "pass_mark": "70%",
+        "honors_mark": "85%"
+      }
+    }
+  ],
+  "certification": {
+    "credential_name": "The Kalopaideia Diploma in Classical Latin",
+    "issuance": "ERC-721 soulbound (non-transferable) on Base. One per student per language.",
+    "what_is_recorded": "Public name, language, capstone date, track, result, SHA-256 of signed examination.",
+    "verification": "kalopaideia.com/verify/<token-id>",
+    "cost": "Included in the Akousma subscription; gas paid by Kalopaideia."
+  }
+}

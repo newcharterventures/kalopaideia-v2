@@ -1,0 +1,57 @@
+{
+  "date": "2026-04-14",
+  "generated_at": "2026-04-24T07:32:06.016Z",
+  "backfilled_at": "2026-04-24T07:32:06.016Z",
+  "vignettes": {
+    "greek": {
+      "title": "Heraclitus and the Universal Logos",
+      "body": "In the marketplace of Ephesus, around 500 BCE, Heraclitus the Obscure declared that fire was the first principle and that everything flows. Yet behind this flux, he insisted, stood something unchanging: the logos. Not merely speech or reason, but the cosmic pattern governing all transformations.\n\nHe wrote in riddling fragments, mocking those who heard his words but missed their meaning. The logos was both the principle that steers all things and the rational account that could reveal it. Most people, he complained, live as if asleep, deaf to the universal law speaking through nature itself.\n\nLater thinkers seized upon this concept. The Stoics made logos central to their physics and ethics. Christian theologians found in John's Gospel an echo: \"In the beginning was the Logos.\" What began as one philosopher's cryptic insight became the foundation for understanding divine order, human rationality, and the structure of the cosmos itself.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Heraclitus_b_4_compressed.jpg",
+        "credit": "Heraclitus b 4 compressed.jpg — RoyFokker",
+        "width": 768,
+        "height": 963
+      },
+      "image_query": "Heraclitus ancient bust"
+    },
+    "french": {
+      "title": "Baudelaire's Black Sun of Paris",
+      "body": "Charles Baudelaire gave French literature its most sophisticated name for urban despair. His 1857 collection *Les Fleurs du mal* contains an entire section titled \"Spleen et Idéal,\" where the English medical term becomes a metaphysical condition. In poems like \"Spleen (IV),\" the sky presses down \"like a heavy lid\" on the groaning spirit, transforming rainy Paris into a vast prison cell.\n\nBaudelaire borrowed the word from English melancholia but made it distinctly modern. His spleen is not the Romantic's nostalgic sadness but the city-dweller's nausea, born of crowds, mud, and aimless hours. The poet wanders gas-lit boulevards, collecting images of decay with a connoisseur's precision. He watches time tick away in shabby rooms where Hope beats its wings against the ceiling and admits defeat.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/F%C3%A9lix_Nadar_1820-1910_portraits_Charles_Baudelaire_1.jpg",
+        "credit": "Félix Nadar 1820-1910 portraits Charles Baudelaire 1.jpg — Nadar",
+        "width": 1541,
+        "height": 2111
+      },
+      "image_query": "Baudelaire portrait Nadar"
+    },
+    "german": {
+      "title": "Heinrich Heine's Aching Spirit",
+      "body": "Heinrich Heine sat in his Parisian exile, pen trembling over verses that mingled wit with wounds. The Romantic poet had fled Germany in 1831, chased by censors who feared his radical sympathies and biting satire. But geography could not cure what ailed him: that peculiar German affliction of the soul, Weltschmerz.\n\nHeine had named it perfectly in his early works, this romantic sickness born when imagination outpaced reality. His generation inherited it from Goethe's Werther, that young dreamer who chose death over a world too small for his longings. The July Revolution had promised transformation; instead, Europe calcified into bourgeois mediocrity.\n\nFrom his mattress-grave in later years, paralyzed by spinal disease, Heine composed his bitterest verses. The gap between ideal and real had become flesh: a body that would not obey, a homeland that would not claim him, a revolution that would not come.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Heinrich_Heine-Oppenheim.jpg",
+        "credit": "Heinrich Heine-Oppenheim.jpg — Moritz Daniel Oppenheim",
+        "width": 1445,
+        "height": 1832
+      },
+      "image_query": "Heinrich Heine portrait"
+    },
+    "oldenglish": {
+      "title": "The Sun in Anglo-Saxon Cosmology",
+      "body": "Anglo-Saxon poets never tired of renaming the sun. Beyond *woruld-candel*, they called it *rodores candel* (sky-candle), *dæges ēage* (day's eye), and *heofontorht* (heaven-bright). These kennings reveal a culture attuned to light's scarcity in northern latitudes, where winter days dwindled to brief intervals between long darks.\n\nBede recorded that Anglo-Saxons oriented their churches eastward, so the rising sun would illuminate the altar at dawn. This practice merged Christian resurrection symbolism with older reverence for the sun's daily return. Manuscripts show prayers appointed for daybreak, terce, sext, and none—the canonical hours that divided sunlight into sacred segments.\n\nIn *Beowulf*, the monster Grendel flees at *dægrēd* (daybreak), unable to endure the sun's coming. Light meant safety, community, the opened hall. Darkness brought exile and terror.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/St_Peter%27s_Collegiate_Church_-_St_Peter%27s_Gardens%2C_Wolverhampton_%2816768276486%29.jpg",
+        "credit": "St Peter's Collegiate Church - St Peter's Gardens, Wolverhampton (16768276486).jpg — Elliott Brown from Birmingham, United Kingdom",
+        "width": 4288,
+        "height": 3216
+      },
+      "image_query": "Anglo-Saxon sundial stone"
+    },
+    "latin": {
+      "title": "The Three Parcae at Rome's Beginning",
+      "body": "The Parcae—Nona, Decima, and Morta—sat at every Roman's birth with spindle, thread, and shears. What they spun could not be unspun. Their Greek sisters were the Moirai, but Rome gave them Latin names tied to the ninth and tenth months of pregnancy, and to death itself.\n\nRomulus consulted them before founding his city. The augur Attus Navius knew that even kings bent to their decree. When Sulla claimed Felix as his cognomen, he announced that Fortuna favored him—but fatum stood higher than fortune. One was the goddess's whim; the other was speech from the divine mouth, irrevocable as bronze.\n\nOn the Kalends of March, Roman matrons left offerings at the Parcae's shrine. They prayed not for change but for knowledge, for the courage to accept what had already been spoken into being.",
+      "image": null,
+      "image_query": "Parcae Roman relief"
+    }
+  }
+}

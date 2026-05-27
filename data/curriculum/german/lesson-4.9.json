@@ -1,0 +1,37 @@
+{
+  "id": "4.9",
+  "stage": 4,
+  "title": "The Passive Voice \u2014 Present and Pr\u00e4teritum",
+  "subtitle": "Das Buch wird gelesen. Werden + past participle.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Master The Passive Voice \u2014 Present and Pr\u00e4teritum"
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Lesson overview",
+      "body": "Das Buch wird gelesen. Werden + past participle.\n\nFull content: prose opener with real examples from Goethe/Nietzsche/Heine, paradigm tables where applicable, self_check, reading_preview, next_lesson."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Verify understanding.",
+      "items": [
+        {
+          "prompt": "Core of The Passive Voice \u2014 Present and Pr\u00e4teritum?",
+          "answer": "Das Buch wird gelesen. Werden + past participle."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 5.0 continues Stage 4."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Complete when The Passive Voice \u2014 Present and Pr\u00e4teritum is mastered.",
+    "credit_minutes": 60
+  }
+}

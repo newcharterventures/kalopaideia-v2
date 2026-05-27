@@ -1,0 +1,74 @@
+{
+  "id": "1.3",
+  "stage": 1,
+  "title": "Double Consonants",
+  "subtitle": "The phonemic length distinction: pala vs. palla, casa vs. cassa.",
+  "estimated_minutes": 45,
+  "objectives": [
+    "Distinguish single from double consonants by audible length.",
+    "Pronounce minimal pairs (pala/palla, pena/penna) without confusion.",
+    "Understand that doubling affects meaning, not just emphasis."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Length is meaning",
+      "body": "Italian double consonants are not mere emphasis. They are phonemic: they change the meaning of the word. pala (shovel) versus palla (ball); pena (penalty, pain) versus penna (pen); casa (house) versus cassa (box, till); fato (fate) versus fatto (done, fact). When you double a consonant in Italian, you hold it longer. A double t is not two separate t sounds; it is one t sound held for twice the duration. The same applies to double l, double n, double m, double r."
+    },
+    {
+      "kind": "letter_grid",
+      "heading": "Common minimal pairs",
+      "letters": [
+        { "letter": "pala / palla", "ipa": "pa.la / pal.la", "audio": "/paideia/audio/italian/doubles/pala-palla.mp3", "note": "shovel / ball" },
+        { "letter": "pena / penna", "ipa": "pe.na / pen.na", "audio": "/paideia/audio/italian/doubles/pena-penna.mp3", "note": "pain / pen" },
+        { "letter": "casa / cassa", "ipa": "ka.sa / kas.sa", "audio": "/paideia/audio/italian/doubles/casa-cassa.mp3", "note": "house / box" },
+        { "letter": "fato / fatto", "ipa": "fa.to / fat.to", "audio": "/paideia/audio/italian/doubles/fato-fatto.mp3", "note": "fate / done" },
+        { "letter": "note / notte", "ipa": "no.te / not.te", "audio": "/paideia/audio/italian/doubles/note-notte.mp3", "note": "notes / night" }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "From Manzoni",
+      "body": "Alessandro Manzoni, I promessi sposi, chapter I: Quel ramo del lago di Como, che volge a mezzogiorno. volge: single l in the root (volgere), but if we had volle (he wanted, from volere), the double l would be audible. mezzogiorno: double z (held longer), double g in giorno. Boccaccio, Decameron, Proemio: Umana cosa è aver compassione degli afflitti. compassione: double s. afflitti: double f, double t. Each doubling is phonemic."
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill",
+      "instructions": "Ten minimal pairs spoken in sequence. Repeat each one, holding the double consonant for audible length.",
+      "audio": "/paideia/audio/italian/drills/lesson-1.3-doubles.mp3"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover answers; check after.",
+      "items": [
+        { "prompt": "What is the difference between pala and palla?", "answer": "Single l (shovel) versus double l (ball). The double l is held longer." },
+        { "prompt": "Pronounce: casa, cassa.", "answer": "ka.sa, kas.sa — hold the double s." },
+        { "prompt": "Pronounce: pena, penna.", "answer": "pe.na, pen.na — the double n is audible." },
+        { "prompt": "Are double consonants just emphasis?", "answer": "No. They are phonemic: they change meaning." },
+        { "prompt": "How do you produce a double consonant?", "answer": "Hold the consonant for twice the length of a single consonant. Do not release and restart; hold." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Words with doubles",
+      "instructions": "Read aloud; hold the doubled consonant.",
+      "words": [
+        { "italian": "palla", "transliteration": null, "gloss": "ball", "audio": "/paideia/audio/italian/words/palla.mp3" },
+        { "italian": "penna", "transliteration": null, "gloss": "pen", "audio": "/paideia/audio/italian/words/penna.mp3" },
+        { "italian": "cassa", "transliteration": null, "gloss": "box", "audio": "/paideia/audio/italian/words/cassa.mp3" },
+        { "italian": "fatto", "transliteration": null, "gloss": "done", "audio": "/paideia/audio/italian/words/fatto.mp3" },
+        { "italian": "notte", "transliteration": null, "gloss": "night", "audio": "/paideia/audio/italian/words/notte.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.4 covers stress and the grave accent: why città has a written accent and casa does not."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can distinguish pala from palla, pena from penna, by ear and by pronunciation.",
+    "credit_minutes": 45
+  }
+}

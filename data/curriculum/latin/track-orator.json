@@ -1,0 +1,37 @@
+{
+  "id": "track-orator",
+  "track_name": "The Orator",
+  "author": "Cicero",
+  "work": "In Catilinam I",
+  "length_words": 6500,
+  "duration_weeks": "12–16",
+  "rationale": "Cicero's most famous speech. Periodic prose at its highest pitch. The speech that defined Roman oratory.",
+  "description": "You will read the entire first Catilinarian oration: Cicero's denunciation of the conspirator Catiline, delivered in the Senate in 63 BCE. This is the speech that begins 'Quousque tandem abutere, Catilina, patientia nostra?' — How long, Catiline, will you abuse our patience? It is the model of Latin periodic structure, rhetorical force, and invective.",
+  "learning_outcomes": [
+    "Read and translate the entire In Catilinam I (c. 6,500 words) with notes.",
+    "Recognize and analyze Ciceronian periodic structure.",
+    "Identify rhetorical devices: anaphora, tricolon, chiasmus, apostrophe.",
+    "Translate any fifty-word passage from the speech at sight without notes.",
+    "Discuss Cicero's argumentative strategy and political context in writing."
+  ],
+  "weekly_plan": [
+    {"week": 1, "sections": "§§1–5", "focus": "The opening: Quousque tandem. Cicero establishes the enormity of Catiline's crime."},
+    {"week": 2, "sections": "§§6–9", "focus": "Cicero recounts the conspiracy and the Senate's prior inaction."},
+    {"week": 3, "sections": "§§10–13", "focus": "The historical precedents: how past consuls dealt with traitors."},
+    {"week": 4, "sections": "§§14–16", "focus": "Cicero's defense of his own hesitation and clemency."},
+    {"week": 5, "sections": "§§17–20", "focus": "The call to leave: Cicero urges Catiline to depart from Rome."},
+    {"week": 6, "sections": "§§21–24", "focus": "The personification of Rome: the city itself speaks to Catiline."},
+    {"week": 7, "sections": "§§25–27", "focus": "The conspiracy unmasked: names and plans revealed."},
+    {"week": 8, "sections": "§§28–30", "focus": "The gods' protection of Rome."},
+    {"week": 9, "sections": "§§31–33", "focus": "Final appeal to the Senate and the people."},
+    {"week": 10, "sections": "Review §§1–15", "focus": "Read the first half again at speed."},
+    {"week": 11, "sections": "Review §§16–33", "focus": "Read the second half again at speed."},
+    {"week": 12, "sections": "Full text", "focus": "Read the entire speech aloud in one sitting."}
+  ],
+  "recommended_resources": [
+    "Shackleton Bailey, D.R. (ed.), Cicero: Catilinarians (Loeb Classical Library)",
+    "Dyck, Andrew R., Cicero: Catilinarians (Cambridge Greek and Latin Classics)",
+    "Gotoff, H.C., Cicero's Elegant Style: An Analysis of the Pro Archia"
+  ],
+  "capstone_prep": "In the final two weeks, focus on sight translation. Take random fifty-word passages from the speech and translate them without notes. Aim for fluency, not word-for-word accuracy. On the capstone exam you will see one passage from In Catilinam I that you have not prepared."
+}

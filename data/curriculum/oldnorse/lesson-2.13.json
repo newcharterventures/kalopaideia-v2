@@ -1,0 +1,46 @@
+{
+  "id": "2.13",
+  "stage": 2,
+  "title": "Prepositions and Case Government",
+  "subtitle": "Í, á, með, til, frá — which case?",
+  "estimated_minutes": 45,
+  "objectives": ["Learn which case each preposition governs.","Understand accusative vs dative with í and á."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers Prepositions and Case Government. Í, á, með, til, frá — which case?"
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Learn which case each preposition governs."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Learn which case each preposition governs." },
+        { "prompt": "How do you apply this in practice?", "answer": "Understand accusative vs dative with í and á." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "oldnorse": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/oldnorse/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on Prepositions and Case Government."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in Prepositions and Case Government to ten random examples.",
+    "credit_minutes": 45
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "3.9",
+  "stage": 3,
+  "title": "Sir Gawain, Lines 160–183",
+  "subtitle": "Description of knight and horse — all green.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Master Sir Gawain, Lines 160–183.",
+    "Read and translate authentic Middle English texts.",
+    "Prepare for the capstone examination."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "Al grene, with grene stele and grene enamayl... Reading the color symbolism and the French/English lexical mix. The green man, green horse, green armor. What does green mean? Supernatural, otherworldly, or natural/fertile? The poem never tells."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "Sir Gawain, Lines 160–183"
+        },
+        {
+          "prompt": "Can you apply this to reading?",
+          "answer": "Work through examples with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand Sir Gawain, Lines 160–183.",
+    "credit_minutes": 60
+  }
+}

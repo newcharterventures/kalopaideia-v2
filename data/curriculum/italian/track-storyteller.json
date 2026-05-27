@@ -1,0 +1,77 @@
+{
+  "id": "track-storyteller",
+  "stage": 5,
+  "track_name": "The Storyteller",
+  "author": "Giovanni Boccaccio",
+  "texts": "Decameron: three selected novellas (Chichibio and the Crane, Ser Ciappelletto, Federigo's Falcon)",
+  "estimated_weeks": "10–14",
+  "rationale": "The Decameron is the bridge between Dante and modern Italian. Boccaccio's prose is lucid, vivid, colloquial. The student learns to read extended narrative in the trecento vernacular. Three novellas chosen for humor, brevity, and moral complexity.",
+  "learning_outcomes": [
+    "Read three complete novellas from Boccaccio's Decameron in the original with notes.",
+    "Recognize trecento narrative prose forms (verb tenses, word order).",
+    "Translate any fifty-word passage from the assigned novellas at sight with notes.",
+    "Discuss the narrative and moral structure of a novella in writing."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Why Boccaccio?",
+      "body": "Giovanni Boccaccio (1313–1375) wrote the Decameron in the vernacular Tuscan of Florence, the same dialect Dante used. But where Dante wrote in the elevated register of epic poetry, Boccaccio wrote in the register of everyday speech: merchants, servants, lovers, tricksters. The Decameron is one hundred tales told by ten young people over ten days, fleeing the Black Death in 1348.\n\nBoccaccio's prose is closer to modern Italian than Dante's poetry. The verb forms are more regular, the syntax more transparent. This is the track for students who want to read narrative prose before tackling the demands of terza rima."
+    },
+    {
+      "kind": "prose",
+      "heading": "The three novellas",
+      "body": "You will read three novellas:\n\n1. Chichibio and the Crane (Day VI, Novella 4): A cook eats one leg of a roasted crane and then must explain to his master why the crane has only one leg. A comedy of quick thinking.\n\n2. Ser Ciappelletto (Day I, Novella 1): The worst man in the world makes a false confession on his deathbed and is venerated as a saint. A dark satire on hypocrisy and gullibility.\n\n3. Federigo's Falcon (Day V, Novella 9): A nobleman impoverishes himself for love, then kills his prize falcon to serve dinner to the woman he loves. A tragedy of misplaced devotion and honorable failure.\n\nThese three novellas cover comedy, satire, and tragedy. Together they are about 6,000 words of Italian prose."
+    },
+    {
+      "kind": "trecento_forms",
+      "heading": "Trecento prose forms",
+      "items": [
+        {
+          "form": "egli for lui",
+          "explanation": "Subject pronoun. Trecento: egli (he). Modern: lui. Boccaccio uses egli.",
+          "example": "egli disse (he said)"
+        },
+        {
+          "form": "avea for aveva",
+          "explanation": "Apocope in the imperfect. Modern: aveva. Trecento: avea.",
+          "example": "egli avea (he had)"
+        },
+        {
+          "form": "cotale for tale",
+          "explanation": "Demonstrative adjective. Modern: tale (such). Trecento: cotale (such, of this kind).",
+          "example": "cotale uomo (such a man)"
+        },
+        {
+          "form": "costui for questo",
+          "explanation": "Demonstrative pronoun. Modern: questo (this one). Trecento: costui (this one, masculine).",
+          "example": "costui disse (this one said)"
+        },
+        {
+          "form": "il quale for che",
+          "explanation": "Relative pronoun. Both il quale and che are used in trecento prose; il quale is more formal.",
+          "example": "il quale era (who was)"
+        }
+      ]
+    },
+    {
+      "kind": "reading_assignment",
+      "heading": "Your reading assignment",
+      "body": "Read the three assigned novellas in the original Italian with full notes and glosses. Work through them at your own pace. Audio recordings of each paragraph are available.\n\nWhen you finish, you will sit the capstone examination. Part of the examination will ask you to translate a fifty-word passage from one of these novellas at sight."
+    },
+    {
+      "kind": "recommended_editions",
+      "heading": "Recommended editions",
+      "items": [
+        "G. H. McWilliam, The Decameron (Penguin, 1995) — complete translation, excellent introduction.",
+        "Wayne A. Rebhorn, The Decameron (Norton, 2013) — facing-page translation, scholarly notes.",
+        "Vittore Branca, Decameron (Einaudi, 1980) — Italian critical edition, extensive commentary (Italian only)."
+      ]
+    },
+    {
+      "kind": "next_step",
+      "heading": "When you are ready",
+      "body": "When you have read the three novellas and feel prepared, proceed to the capstone examination. You may retake the examination after thirty days if you do not pass on the first attempt."
+    }
+  ]
+}

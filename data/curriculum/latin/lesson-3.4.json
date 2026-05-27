@@ -1,0 +1,20 @@
+{
+  "id": "3.4",
+  "stage": 3,
+  "title": "Pluperfect and Future Perfect",
+  "subtitle": "amāveram, amāverō. Auxiliary endings on the perfect stem.",
+  "estimated_minutes": 50,
+  "objectives": ["Form pluperfect and future perfect from the perfect stem.", "Translate pluperfect as 'had -ed'.", "Translate future perfect as 'will have -ed'.", "Understand the perfect system as three tenses sharing one stem."],
+  "sections": [
+    {"kind": "prose", "heading": "Pluperfect and future perfect", "body": "Pluperfect (had -ed): amāveram, amāverās, amāverat, amāverāmus, amāverātis, amāverant\n\nFuture perfect (will have -ed): amāverō, amāveris, amāverit, amāverimus, amāveritis, amāverint\n\nCaesar writes: mīlitēs iam discesserant. — The soldiers had already departed."},
+    {"kind": "self_check", "heading": "Self-check", "items": [
+      {"prompt": "Conjugate dūxī in the pluperfect.", "answer": "dūxeram, dūxerās, dūxerat, dūxerāmus, dūxerātis, dūxerant"},
+      {"prompt": "Translate: Caesar Galliam vīcerat.", "answer": "Caesar had conquered Gaul."}
+    ]},
+    {"kind": "reading_preview", "heading": "Sentences", "words": [
+      {"latin": "hostēs iam fūgerant.", "transliteration": null, "gloss": "The enemies had already fled.", "audio": "/paideia/audio/latin/sentences/3.4-1.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Lesson 3.5: the perfect passive system. amātus sum / eram / erō."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can form pluperfect and future perfect from any perfect stem.", "credit_minutes": 50}
+}

@@ -1,0 +1,46 @@
+{
+  "id": "1.6",
+  "stage": 1,
+  "title": "Stress",
+  "subtitle": "Almost always on the first syllable.",
+  "estimated_minutes": 30,
+  "objectives": ["Place stress on the first syllable of the root.","Recognize that prefixes do not take stress."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers Stress. Almost always on the first syllable."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Place stress on the first syllable of the root."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Place stress on the first syllable of the root." },
+        { "prompt": "How do you apply this in practice?", "answer": "Recognize that prefixes do not take stress." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "oldnorse": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/oldnorse/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on Stress."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in Stress to ten random examples.",
+    "credit_minutes": 30
+  }
+}

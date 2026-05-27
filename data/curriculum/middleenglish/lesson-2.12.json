@@ -1,0 +1,43 @@
+{
+  "id": "2.12",
+  "stage": 2,
+  "title": "Word Order and Style",
+  "subtitle": "More flexible than modern, French-influenced.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Master Word Order and Style.",
+    "Read and translate authentic Middle English texts.",
+    "Prepare for sustained reading in Stage 3."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "More flexible than modern English. Verb-subject inversion common after adverbs (Thanne longen folk to goon...). French influence: adjective sometimes follows noun (chivalrye royal). The syntax is transitional between Old English (fully inflected, free word order) and modern English (fixed word order)."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "Word Order and Style"
+        },
+        {
+          "prompt": "Can you apply this to reading?",
+          "answer": "Work through examples with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand Word Order and Style.",
+    "credit_minutes": 55
+  }
+}

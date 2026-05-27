@@ -1,0 +1,54 @@
+{
+  "id": "2.3",
+  "stage": 2,
+  "title": "The Second Declension — Neuter",
+  "subtitle": "templum, dōnum, bellum. Neuter nominative and accusative always identical.",
+  "estimated_minutes": 45,
+  "objectives": [
+    "Decline second-declension neuter nouns in all cases, both numbers.",
+    "Recognize that neuter nominative and accusative are always identical.",
+    "Apply the neuter plural rule: neuter plurals take plural verbs.",
+    "Translate sentences with neuter subjects and objects."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The second declension: neuter nouns",
+      "body": "Neuter nouns of the second declension end in -um. They follow the same pattern as masculine nouns, with two exceptions:\n  1. The nominative and accusative are always identical in both numbers.\n  2. The nominative and accusative plural end in -a, not -ī or -ōs.\n\nParadigm:\n\n          Singular    Plural\n  Nom.    templum     templa\n  Gen.    templī      templōrum\n  Dat.    templō      templīs\n  Acc.    templum     templa\n  Abl.    templō      templīs\n\nThis pattern holds for neuters in all declensions: nominative and accusative are always identical."
+    },
+    {
+      "kind": "prose",
+      "heading": "Examples from Caesar and Cicero",
+      "body": "templum magnum est. — The temple is large.\ntemplum videō. — I see the temple.\nmūrus templī altus est. — The wall of the temple is high.\nbellum longum erat. — The war was long.\nbella multa gessērunt. — They waged many wars.\n\nCaesar writes: oppidum erat positum in colle. — The town was situated on a hill. 'oppidum' is nominative singular neuter, subject of 'erat'.\n\nCicero writes: dōnum deī. — The gift of a god. 'dōnum' is nominative/accusative neuter."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "items": [
+        { "prompt": "Decline dōnum (gift) in the singular.", "answer": "dōnum, dōnī, dōnō, dōnum, dōnō" },
+        { "prompt": "What is the nominative plural of bellum?", "answer": "bella" },
+        { "prompt": "What is the accusative plural of templum?", "answer": "templa (same as nominative)" },
+        { "prompt": "Do neuter plural subjects take singular or plural verbs?", "answer": "Plural verbs." },
+        { "prompt": "Name the two ways neuter nouns differ from masculine nouns of the second declension.", "answer": "1. Nom. and acc. are identical. 2. Nom./acc. plural ends in -a." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Sentences with neuter nouns",
+      "words": [
+        { "latin": "templum in forō est.", "transliteration": null, "gloss": "The temple is in the forum.", "audio": "/paideia/audio/latin/sentences/2.3-1.mp3" },
+        { "latin": "dōna deōrum magna sunt.", "transliteration": null, "gloss": "The gifts of the gods are great.", "audio": "/paideia/audio/latin/sentences/2.3-2.mp3" },
+        { "latin": "bellum crūdēle gerimus.", "transliteration": null, "gloss": "We wage a cruel war.", "audio": "/paideia/audio/latin/sentences/2.3-3.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.4: the six cases and their functions. Nominative subject, accusative object, genitive possession, dative indirect object, ablative everything else, vocative direct address."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can decline any second-declension neuter noun and recognize that nominative and accusative are always identical.",
+    "credit_minutes": 45
+  }
+}

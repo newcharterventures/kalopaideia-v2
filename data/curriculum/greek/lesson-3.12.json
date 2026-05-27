@@ -1,0 +1,66 @@
+{
+  "id": "3.12",
+  "stage": 3,
+  "title": "The Middle and Passive Participles",
+  "subtitle": "λυόμενος, λυσάμενος, λυθείς — middle and passive forms.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Form and decline the present and aorist middle participles.",
+    "Form and decline the aorist passive participle.",
+    "Distinguish middle from passive participles by context.",
+    "Translate middle and passive participles correctly."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Middle and passive participles",
+      "body": "The present and aorist middle participles follow the same declension pattern as the active, but with middle endings. The present middle/passive participle is λυόμενος, λυομένη, λυόμενον. The aorist middle participle is λυσάμενος, λυσαμένη, λυσάμενον.\n\nThe aorist passive participle has its own form: λυθείς, λυθεῖσα, λυθέν. This is the first time you have seen a separate passive form. The aorist passive participle uses the θη infix (you will learn the full aorist passive system in Stage 4)."
+    },
+    {
+      "kind": "prose",
+      "heading": "The present middle/passive participle: λυόμενος, λυομένη, λυόμενον",
+      "body": "Masculine:\n              singular        plural\n  nominative  λυόμενος        λυόμενοι\n  genitive    λυομένου        λυομένων\n  dative      λυομένῳ         λυομένοις\n  accusative  λυόμενον        λυομένους\n\nFeminine:\n              singular        plural\n  nominative  λυομένη         λυόμεναι\n  genitive    λυομένης        λυομένων\n  dative      λυομένῃ         λυομέναις\n  accusative  λυομένην        λυομένας\n\nNeuter:\n              singular        plural\n  nominative  λυόμενον        λυόμενα\n  genitive    λυομένου        λυομένων\n  dative      λυομένῳ         λυομένοις\n  accusative  λυόμενον        λυόμενα\n\nThis follows the first and second declension pattern: masculine and neuter like ἀγαθός, feminine like ἀγαθή."
+    },
+    {
+      "kind": "prose",
+      "heading": "The aorist middle participle: λυσάμενος, λυσαμένη, λυσάμενον",
+      "body": "The aorist middle participle follows the same declension as the present middle, but with the aorist stem λυσα-.\n\nλυσάμενος means 'having freed himself' or 'having freed (for himself)'.\n\nThe pattern is identical to λυόμενος."
+    },
+    {
+      "kind": "prose",
+      "heading": "The aorist passive participle: λυθείς, λυθεῖσα, λυθέν",
+      "body": "Masculine:\n              singular        plural\n  nominative  λυθείς          λυθέντες\n  genitive    λυθέντος        λυθέντων\n  dative      λυθέντι         λυθεῖσι(ν)\n  accusative  λυθέντα         λυθέντας\n\nFeminine:\n              singular        plural\n  nominative  λυθεῖσα         λυθεῖσαι\n  genitive    λυθείσης        λυθεισῶν\n  dative      λυθείσῃ         λυθείσαις\n  accusative  λυθεῖσαν        λυθείσας\n\nNeuter:\n              singular        plural\n  nominative  λυθέν           λυθέντα\n  genitive    λυθέντος        λυθέντων\n  dative      λυθέντι         λυθεῖσι(ν)\n  accusative  λυθέν           λυθέντα\n\nThe stem is λυθεντ-. The θη infix marks the aorist passive."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Parse or translate.",
+      "items": [
+        { "prompt": "λυομένου", "answer": "genitive singular masculine or neuter of λυόμενος" },
+        { "prompt": "λυσαμένου", "answer": "genitive singular masculine or neuter of λυσάμενος" },
+        { "prompt": "λυθέντος", "answer": "genitive singular masculine or neuter of λυθείς" },
+        { "prompt": "What is the aorist passive participle of λύω?", "answer": "λυθείς, λυθεῖσα, λυθέν" },
+        { "prompt": "Translate: λυόμενος ὑπὸ τοῦ στρατηγοῦ", "answer": "being freed by the general" },
+        { "prompt": "Translate: λυθείς", "answer": "having been freed" }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Middle and passive participles in sentences",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "λυόμενος ἀπῆλθεν.", "transliteration": "lyómenos apêlthen.", "gloss": "While being freed, he went away.", "audio": "/paideia/audio/greek/sentences/lyomenos-apelthen.mp3" },
+        { "greek": "λυθεὶς ὑπὸ τοῦ στρατηγοῦ ἀπῆλθεν.", "transliteration": "lytheìs hypò toû stratēgoû apêlthen.", "gloss": "Having been freed by the general, he went away.", "audio": "/paideia/audio/greek/sentences/lytheis-apelthen.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 3.13 introduces the genitive absolute. The genitive absolute is a participial phrase in the genitive case, grammatically independent of the main sentence. It is one of the most elegant constructions in Greek."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can form and decline the present middle, aorist middle, and aorist passive participles of any ω-verb.",
+    "credit_minutes": 55
+  }
+}

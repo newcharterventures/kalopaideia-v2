@@ -1,0 +1,73 @@
+{
+  "id": "2.1",
+  "stage": 2,
+  "title": "The Definite Article",
+  "subtitle": "il, lo, la, l', i, gli, le — the six forms of the.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Learn the six forms of the definite article.",
+    "Apply the initial-sound rule: il before most consonants, lo before s+consonant/z/gn/ps, l' before vowels.",
+    "Form the plural: i, gli, le."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Why six forms?",
+      "body": "English has one form of the definite article: the. Italian has six: il, lo, la, l', i, gli, le. The form depends on two things: the gender of the noun (masculine or feminine) and the initial sound of the following word. Masculine singular: il (before most consonants), lo (before s+consonant, z, gn, ps, x, y), l' (before a vowel). Feminine singular: la (before consonants), l' (before a vowel). Masculine plural: i (il becomes i), gli (lo becomes gli, l' becomes gli). Feminine plural: le (la becomes le, l' becomes le)."
+    },
+    {
+      "kind": "paradigm",
+      "heading": "The definite article paradigm",
+      "table": {
+        "headers": ["", "Masculine", "Feminine"],
+        "rows": [
+          ["Singular (before most consonants)", "il libro", "la casa"],
+          ["Singular (before s+cons, z, gn, etc.)", "lo studente", "—"],
+          ["Singular (before vowel)", "l'uomo", "l'amica"],
+          ["Plural (i / gli / le)", "i libri, gli studenti, gli uomini", "le case, le amiche"]
+        ]
+      }
+    },
+    {
+      "kind": "prose",
+      "heading": "From Manzoni",
+      "body": "Alessandro Manzoni, I promessi sposi: Quel ramo del lago di Como. il lago (the lake): masculine, singular, before l (a liquid consonant, so il). Boccaccio, Decameron: Umana cosa è aver compassione degli afflitti. degli afflitti: degli is a contraction of di + gli (of the afflicted, masculine plural). We will cover contractions in a later lesson."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover answers; check after.",
+      "items": [
+        { "prompt": "What is the masculine singular definite article before most consonants?", "answer": "il" },
+        { "prompt": "What is the masculine singular definite article before s+consonant?", "answer": "lo" },
+        { "prompt": "What is the masculine singular definite article before a vowel?", "answer": "l'" },
+        { "prompt": "What is the feminine singular definite article before a consonant?", "answer": "la" },
+        { "prompt": "What is the feminine singular definite article before a vowel?", "answer": "l'" },
+        { "prompt": "Form the plural: il libro, lo studente, la casa, l'amica.", "answer": "i libri, gli studenti, le case, le amiche" }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Words with articles",
+      "instructions": "Read aloud.",
+      "words": [
+        { "italian": "il libro", "transliteration": null, "gloss": "the book", "audio": "/paideia/audio/italian/words/il-libro.mp3" },
+        { "italian": "lo studente", "transliteration": null, "gloss": "the student", "audio": "/paideia/audio/italian/words/lo-studente.mp3" },
+        { "italian": "la casa", "transliteration": null, "gloss": "the house", "audio": "/paideia/audio/italian/words/la-casa.mp3" },
+        { "italian": "l'uomo", "transliteration": null, "gloss": "the man", "audio": "/paideia/audio/italian/words/l-uomo.mp3" },
+        { "italian": "i libri", "transliteration": null, "gloss": "the books", "audio": "/paideia/audio/italian/words/i-libri.mp3" },
+        { "italian": "gli studenti", "transliteration": null, "gloss": "the students", "audio": "/paideia/audio/italian/words/gli-studenti.mp3" },
+        { "italian": "le case", "transliteration": null, "gloss": "the houses", "audio": "/paideia/audio/italian/words/le-case.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.2: the indefinite article — un, uno, una, un'."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can supply the correct form of the definite article for any noun, singular and plural.",
+    "credit_minutes": 50
+  }
+}

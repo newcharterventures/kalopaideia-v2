@@ -1,0 +1,53 @@
+{
+  "id": "3.15",
+  "stage": 3,
+  "title": "Reading: John 1:1–18, the Prologue",
+  "subtitle": "ἐν ἀρχῇ ἦν ὁ λόγος — the bridge between Attic and Koine.",
+  "estimated_minutes": 90,
+  "objectives": [
+    "Read, parse, and translate the Prologue to the Gospel of John.",
+    "Recognize the differences between Attic and Koine Greek.",
+    "Understand the theological vocabulary of the New Testament.",
+    "Build confidence for reading Koine texts."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The Prologue to John",
+      "body": "John 1:1-18 is the most famous opening in the New Testament. ἐν ἀρχῇ ἦν ὁ λόγος — 'In the beginning was the Word.' The Greek is Koine, not Attic, but the grammar is almost identical to what you have learned. The vocabulary is simpler, the syntax is clearer, and the rhythms are more Hebraic than Greek.\n\nKoine Greek is the common dialect spoken across the eastern Mediterranean from the third century BCE to the third century CE. The New Testament was written in Koine. The differences from Attic are minor: some sound changes, some vocabulary shifts, a preference for parataxis over hypotaxis. But the grammar is the same.\n\nRead this passage aloud several times before working through the translation. The Prologue has a cadence that carries you forward."
+    },
+    {
+      "kind": "prose",
+      "heading": "John 1:1-5 (excerpt)",
+      "body": "Ἐν ἀρχῇ ἦν ὁ λόγος, καὶ ὁ λόγος ἦν πρὸς τὸν θεόν, καὶ θεὸς ἦν ὁ λόγος. οὗτος ἦν ἐν ἀρχῇ πρὸς τὸν θεόν. πάντα δι' αὐτοῦ ἐγένετο, καὶ χωρὶς αὐτοῦ ἐγένετο οὐδὲ ἕν ὃ γέγονεν. ἐν αὐτῷ ζωὴ ἦν, καὶ ἡ ζωὴ ἦν τὸ φῶς τῶν ἀνθρώπων· καὶ τὸ φῶς ἐν τῇ σκοτίᾳ φαίνει, καὶ ἡ σκοτία αὐτὸ οὐ κατέλαβεν.\n\nGloss:\nἘν ἀρχῇ — in the beginning (ἐν + dat.)\nἦν — was (3rd sg. imperf. of εἰμί)\nὁ λόγος — the word, the reason (nom. sg.)\nκαί — and\nπρὸς τὸν θεόν — with God, toward God (πρός + acc.)\nθεὸς ἦν ὁ λόγος — God was the Word (predicate nominative θεός, subject ὁ λόγος)\nοὗτος — this one (nom. sg. masc. demonstrative)\nπάντα — all things (nom. or acc. pl. neut.)\nδι' αὐτοῦ — through him (διά + gen.)\nἐγένετο — came into being (3rd sg. aor. mid. of γίγνομαι)\nχωρίς — without, apart from (+ gen.)\nαὐτοῦ — him (gen.)\nοὐδὲ ἕν — not even one thing\nὃ γέγονεν — which has come into being (3rd sg. perf. of γίγνομαι)\nἐν αὐτῷ — in him (ἐν + dat.)\nζωή — life (nom. sg.)\nτὸ φῶς — the light (nom. or acc. sg. neut.)\nτῶν ἀνθρώπων — of men (gen. pl.)\nἐν τῇ σκοτίᾳ — in the darkness (ἐν + dat.)\nφαίνει — shines (3rd sg. pres. of φαίνω)\nἡ σκοτία — the darkness (nom. sg.)\nαὐτό — it (acc. sg. neut.)\nοὐ κατέλαβεν — did not grasp, did not overcome (3rd sg. aor. of καταλαμβάνω)\n\nTranslation:\nIn the beginning was the Word, and the Word was with God, and the Word was God. This one was in the beginning with God. All things came into being through him, and without him not even one thing came into being that has come into being. In him was life, and the life was the light of men. And the light shines in the darkness, and the darkness did not grasp it."
+    },
+    {
+      "kind": "prose",
+      "heading": "What you have done",
+      "body": "You have read the Prologue to John. You have crossed the bridge from Attic to Koine. The grammar is the same. The vocabulary is different, but not radically so. The style is different: shorter sentences, more parataxis (coordination with καί), less hypotaxis (subordination with participles and relative clauses). But you recognized it all.\n\nYou can now read the New Testament. You can read Xenophon, Plato, Lysias. You can read Greek prose. The rest is vocabulary, idiom, and practice.\n\nStage 3 is complete. You are ready for Stage 4."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer these questions without looking back.",
+      "items": [
+        { "prompt": "What was in the beginning?", "answer": "The Word (ὁ λόγος)." },
+        { "prompt": "Where was the Word?", "answer": "With God (πρὸς τὸν θεόν)." },
+        { "prompt": "What was the Word?", "answer": "God (θεός)." },
+        { "prompt": "Through whom did all things come into being?", "answer": "Through him (δι' αὐτοῦ) — the Word." },
+        { "prompt": "What was in him?", "answer": "Life (ζωή)." },
+        { "prompt": "What was the life?", "answer": "The light of men (τὸ φῶς τῶν ἀνθρώπων)." },
+        { "prompt": "Did the darkness grasp the light?", "answer": "No (οὐ κατέλαβεν)." }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Stage 3 complete — up next: Stage 4",
+      "body": "Stage 3 is complete. You have learned the middle and passive voices, the third declension, the imperfect, the future, the aorist, and the participle. You have read Xenophon and John. You are no longer a beginner. You are an intermediate reader of Greek.\n\nStage 4 introduces the subjunctive, optative, imperative, infinitive, conditions, indirect statement, and the perfect system. The grammar becomes more complex, but the foundation is firm. You are ready."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can read the Prologue aloud with accurate pronunciation and can translate at least 80% of it without consulting the gloss.",
+    "credit_minutes": 90
+  }
+}

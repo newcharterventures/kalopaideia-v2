@@ -1,0 +1,22 @@
+{
+  "id": "2.10",
+  "stage": 2,
+  "title": "The Present Indicative Passive",
+  "subtitle": "amor, amāris, amātur. The -r endings.",
+  "estimated_minutes": 50,
+  "objectives": ["Conjugate any verb in the present passive across all conjugations.", "Translate passive sentences with and without expressed agent.", "Understand that the agent of a passive verb is expressed with ā/ab + ablative.", "Recognize that passive forms use -r instead of active -ō, -m, -t."],
+  "sections": [
+    {"kind": "prose", "heading": "The passive voice", "body": "The passive voice shows that the subject is acted upon. amō means 'I love'; amor means 'I am loved'.\n\nPresent passive endings:\n  -or, -ris, -tur, -mur, -minī, -ntur\n\nFirst conjugation passive:\n  amor, amāris, amātur, amāmur, amāminī, amantur\n\nThe agent (by whom) is expressed with ā or ab + ablative:\n  amor ā puellā. — I am loved by the girl.\n\nCicero writes: Catilīna ā cōnsule accūsātur. — Catiline is accused by the consul.\nCaesar writes: oppidum oppugnātur. — The town is being attacked."},
+    {"kind": "self_check", "heading": "Self-check", "items": [
+      {"prompt": "Conjugate videō in the present passive.", "answer": "videor, vidēris, vidētur, vidēmur, vidēminī, videntur"},
+      {"prompt": "Translate: puella ā dominō laudātur.", "answer": "The girl is praised by the master."},
+      {"prompt": "How is the agent expressed in a passive sentence?", "answer": "ā or ab + ablative."}
+    ]},
+    {"kind": "reading_preview", "heading": "Passive sentences", "words": [
+      {"latin": "servus ā dominō monētur.", "transliteration": null, "gloss": "The slave is warned by the master.", "audio": "/paideia/audio/latin/sentences/2.10-1.mp3"},
+      {"latin": "oppidum capitur.", "transliteration": null, "gloss": "The town is being captured.", "audio": "/paideia/audio/latin/sentences/2.10-2.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Lesson 2.11: the third declension, consonant stems. rēx, lūx, miles, pater."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can conjugate any verb in the present passive.", "credit_minutes": 50}
+}

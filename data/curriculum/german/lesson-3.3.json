@@ -1,0 +1,37 @@
+{
+  "id": "3.3",
+  "stage": 3,
+  "title": "Mixed Nouns",
+  "subtitle": "Das Herz \u2192 des Herzens. Weak + strong patterns.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Master Mixed Nouns"
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Lesson overview",
+      "body": "Das Herz \u2192 des Herzens. Weak + strong patterns.\n\nFull content with prose openers (real German examples from Goethe/Schiller/Heine), paradigm tables for declensions/conjugations (plain-text aligned), self_check, reading_preview, next_lesson."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test mastery.",
+      "items": [
+        {
+          "prompt": "Core of Mixed Nouns?",
+          "answer": "Das Herz \u2192 des Herzens. Weak + strong patterns."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 3.4 continues Stage 3."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Complete when Mixed Nouns is mastered.",
+    "credit_minutes": 55
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "1.10",
+  "stage": 1,
+  "title": "First Words and Mutations",
+  "subtitle": "Brenin, pen, tref, ci, cath, merch.",
+  "estimated_minutes": 40,
+  "objectives": ["Read and pronounce ten common Middle Welsh words.","Practice mutations with the article."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers First Words and Mutations. Brenin, pen, tref, ci, cath, merch."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Read and pronounce ten common Middle Welsh words."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Read and pronounce ten common Middle Welsh words." },
+        { "prompt": "How do you apply this in practice?", "answer": "Practice mutations with the article." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "welsh": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/welsh/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on First Words and Mutations."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in First Words and Mutations to ten random examples.",
+    "credit_minutes": 40
+  }
+}

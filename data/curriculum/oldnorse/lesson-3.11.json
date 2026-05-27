@@ -1,0 +1,46 @@
+{
+  "id": "3.11",
+  "stage": 3,
+  "title": "Hávamál, Stanzas 8–10",
+  "subtitle": "Speech, drinking, reputation.",
+  "estimated_minutes": 60,
+  "objectives": ["Complete the first ten stanzas of Hávamál.","Internalize Old Norse ethics."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers Hávamál, Stanzas 8–10. Speech, drinking, reputation."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Complete the first ten stanzas of Hávamál."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Complete the first ten stanzas of Hávamál." },
+        { "prompt": "How do you apply this in practice?", "answer": "Internalize Old Norse ethics." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "oldnorse": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/oldnorse/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on Hávamál, Stanzas 8–10."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in Hávamál, Stanzas 8–10 to ten random examples.",
+    "credit_minutes": 60
+  }
+}

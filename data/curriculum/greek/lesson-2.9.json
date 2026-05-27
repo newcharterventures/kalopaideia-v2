@@ -1,0 +1,62 @@
+{
+  "id": "2.9",
+  "stage": 2,
+  "title": "The Vocative",
+  "subtitle": "Direct address — calling someone by name.",
+  "estimated_minutes": 35,
+  "objectives": [
+    "Understand the vocative as the case of direct address.",
+    "Form the vocative for first- and second-declension nouns.",
+    "Recognize the particle ὦ as the marker of vocative address.",
+    "Distinguish the vocative from the nominative where the forms differ."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The vocative case",
+      "body": "The vocative is the case you use when addressing someone directly. ὦ Σώκρατες means 'O Socrates' or 'Hey, Socrates.' The particle ὦ is often used with the vocative, but it is not required.\n\nIn many nouns, the vocative is identical to the nominative. In the second-declension masculine, the vocative singular is distinct: -ε instead of -ος. In the first-declension masculine, the vocative singular is also distinct: -ᾰ (short α) instead of -ης or -ας.\n\nThe vocative never takes an article. You do not say ὁ Σώκρατες in the vocative; you just say Σώκρατες or ὦ Σώκρατες."
+    },
+    {
+      "kind": "prose",
+      "heading": "Vocative forms",
+      "body": "Second-declension masculine:\n  nominative  ὁ ἄνθρωπος\n  vocative    ὦ ἄνθρωπε\n\nFirst-declension masculine:\n  nominative  ὁ ποιητής\n  vocative    ὦ ποιητά\n\nFirst-declension feminine in -η:\n  nominative  ἡ ἀρετή\n  vocative    ὦ ἀρετή (same as nominative)\n\nSecond-declension neuter:\n  nominative  τὸ τέκνον\n  vocative    ὦ τέκνον (same as nominative)\n\nThe vocative plural is always identical to the nominative plural in all declensions."
+    },
+    {
+      "kind": "prose",
+      "heading": "Examples from Plato",
+      "body": "Plato, Crito 43a: ὦ Σώκρατες.\n'O Socrates.' The vocative form of Σωκράτης is Σώκρατες (drop the -ης, leave the stem).\n\nPlato, Apology 17a: ὦ ἄνδρες Ἀθηναῖοι.\n'O men of Athens.' ἄνδρες is the vocative plural of ἀνήρ (man); Ἀθηναῖοι is the vocative plural of Ἀθηναῖος (Athenian). Both are identical to the nominative plural."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers. Answer each question or give the requested form.",
+      "items": [
+        { "prompt": "What is the vocative case used for?", "answer": "Direct address — calling out to someone." },
+        { "prompt": "Give the vocative singular of ὁ ἄνθρωπος.", "answer": "ὦ ἄνθρωπε" },
+        { "prompt": "Give the vocative singular of ὁ ποιητής.", "answer": "ὦ ποιητά" },
+        { "prompt": "Is the vocative plural ever different from the nominative plural?", "answer": "No. They are always identical." },
+        { "prompt": "Does the vocative take an article?", "answer": "No." },
+        { "prompt": "What is the particle often used with the vocative?", "answer": "ὦ" },
+        { "prompt": "Translate: ὦ Σώκρατες", "answer": "O Socrates / Hey, Socrates" }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Vocative in sentences",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "ὦ Σώκρατες, τί λέγεις;", "transliteration": "ô Sṓkrates, tí légeis?", "gloss": "O Socrates, what do you say?", "audio": "/paideia/audio/greek/sentences/o-sokrates.mp3" },
+        { "greek": "ὦ ἄνθρωπε, ἄκουσον.", "transliteration": "ô ánthrōpe, ákouson.", "gloss": "O man, listen.", "audio": "/paideia/audio/greek/sentences/o-anthrope.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.10 introduces the verb εἰμί (to be), the most common verb in Greek. The present indicative forms are irregular but essential. εἰμί, εἶ, ἐστί, ἐσμέν, ἐστέ, εἰσί. Once you know εἰμί, you can form predicate sentences and express existence."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can form the vocative singular and plural of any first- or second-declension noun and can recognize the vocative in Greek sentences.",
+    "credit_minutes": 35
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "3.5",
+  "stage": 3,
+  "title": "The Perfect Passive System",
+  "subtitle": "amātus sum / eram / erō. Periphrastic forms with the participle.",
+  "estimated_minutes": 50,
+  "objectives": ["Form perfect passive using participle + sum.", "Form pluperfect passive using participle + eram.", "Form future perfect passive using participle + erō.", "Translate passive perfects with 'have been', 'had been', 'will have been'."],
+  "sections": [
+    {"kind": "prose", "heading": "Perfect passive system", "body": "Perfect passive: amātus sum, amātus es, amātus est, amātī sumus, amātī estis, amātī sunt\n\nPluperfect passive: amātus eram, amātus erās, etc.\n\nFuture perfect passive: amātus erō, amātus eris, etc.\n\nCaesar writes: oppidum captum est. — The town has been captured."},
+    {"kind": "self_check", "heading": "Self-check", "items": [
+      {"prompt": "Translate: puella laudāta est.", "answer": "The girl has been praised."},
+      {"prompt": "Translate: mīlitēs missī erant.", "answer": "The soldiers had been sent."}
+    ]},
+    {"kind": "reading_preview", "heading": "Sentences", "words": [
+      {"latin": "oppidum ā Caesare captum est.", "transliteration": null, "gloss": "The town was captured by Caesar.", "audio": "/paideia/audio/latin/sentences/3.5-1.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Lesson 3.6: the fourth declension. manus, manūs."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can form and translate all three perfect passive tenses.", "credit_minutes": 50}
+}

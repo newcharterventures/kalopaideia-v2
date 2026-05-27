@@ -1,0 +1,37 @@
+{
+  "id": "4.1",
+  "stage": 4,
+  "title": "Konjunktiv I \u2014 Present",
+  "subtitle": "Er sagt, er sei krank. Indirect discourse subjunctive.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Master Konjunktiv I \u2014 Present"
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Lesson overview",
+      "body": "Er sagt, er sei krank. Indirect discourse subjunctive.\n\nFull content: prose opener with real examples from Goethe/Nietzsche/Heine, paradigm tables where applicable, self_check, reading_preview, next_lesson."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Verify understanding.",
+      "items": [
+        {
+          "prompt": "Core of Konjunktiv I \u2014 Present?",
+          "answer": "Er sagt, er sei krank. Indirect discourse subjunctive."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 4.2 continues Stage 4."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Complete when Konjunktiv I \u2014 Present is mastered.",
+    "credit_minutes": 60
+  }
+}

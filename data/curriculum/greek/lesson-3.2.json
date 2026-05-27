@@ -1,0 +1,56 @@
+{
+  "id": "3.2",
+  "stage": 3,
+  "title": "The Passive Voice",
+  "subtitle": "Action done to the subject — identical to the middle in present and imperfect.",
+  "estimated_minutes": 45,
+  "objectives": [
+    "Understand the passive voice as action done to the subject by an agent.",
+    "Recognize that present and imperfect passive forms are identical to the middle.",
+    "Use context to distinguish middle from passive.",
+    "Express the agent of a passive verb with ὑπό + genitive."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The passive voice",
+      "body": "The passive voice is action done to the subject by an agent. λύομαι can mean 'I am freed' (passive) or 'I free myself' (middle). The form is the same; context tells you which.\n\nIn the present and imperfect tenses, Greek uses the same endings for middle and passive. In the aorist and future tenses, the passive has its own forms (you will learn these later). For now, just know that λύομαι is either middle or passive depending on the sentence.\n\nThe agent (the doer of the action) in a passive sentence is expressed with ὑπό + genitive. λύομαι ὑπὸ τοῦ ἀνθρώπου — 'I am freed by the man.' τοῦ ἀνθρώπου is genitive, and ὑπό marks the agent."
+    },
+    {
+      "kind": "prose",
+      "heading": "Examples",
+      "body": "λύομαι ὑπὸ τοῦ στρατηγοῦ. — 'I am freed by the general.' (passive)\n\nλύομαι ἀπὸ τῶν δεσμῶν. — 'I free myself from the chains.' (middle)\n\nThe preposition is the clue. ὑπό + genitive signals a passive agent. ἀπό + genitive signals separation or source, and the verb is middle.\n\nπαιδεύονται οἱ παῖδες. — 'The boys are educated.' (passive, no explicit agent)\n\nπαύονται τῆς μάχης. — 'They cease from the battle.' (middle, genitive of separation)"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer or translate.",
+      "items": [
+        { "prompt": "What is the passive voice?", "answer": "Action done to the subject by an agent." },
+        { "prompt": "Are the present middle and passive forms the same?", "answer": "Yes, they are identical. Context distinguishes." },
+        { "prompt": "How do you express the agent in a passive sentence?", "answer": "With ὑπό + genitive." },
+        { "prompt": "Translate: λύομαι ὑπὸ τοῦ ἀνθρώπου.", "answer": "I am freed by the man." },
+        { "prompt": "Is παιδεύονται οἱ παῖδες middle or passive?", "answer": "Passive — 'the boys are educated.'" },
+        { "prompt": "Is παύονται τῆς μάχης middle or passive?", "answer": "Middle — 'they cease from the battle.'" }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Passive voice in sentences",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "λύομαι ὑπὸ τοῦ στρατηγοῦ.", "transliteration": "lýomai hypò toû stratēgoû.", "gloss": "I am freed by the general.", "audio": "/paideia/audio/greek/sentences/lyomai-strategos.mp3" },
+        { "greek": "παιδεύονται οἱ νεανίαι.", "transliteration": "paideúontai hoi neaníai.", "gloss": "The young men are educated.", "audio": "/paideia/audio/greek/sentences/paideuontai-neaniai.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 3.3 introduces the imperfect indicative. The imperfect is the past continuous tense. ἔλυον means 'I was loosing' or 'I used to loose'. The imperfect uses the augment ἐ- and a different set of endings from the present."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can distinguish middle from passive by context and can translate passive sentences with ὑπό + genitive correctly.",
+    "credit_minutes": 45
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "3.11",
+  "stage": 3,
+  "title": "The Pr\u00e4teritum",
+  "subtitle": "Ich spielte (weak), ich ging (strong). Simple past for narrative.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Master The Pr\u00e4teritum"
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Lesson overview",
+      "body": "Ich spielte (weak), ich ging (strong). Simple past for narrative.\n\nFull content with prose openers (real German examples from Goethe/Schiller/Heine), paradigm tables for declensions/conjugations (plain-text aligned), self_check, reading_preview, next_lesson."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test mastery.",
+      "items": [
+        {
+          "prompt": "Core of The Pr\u00e4teritum?",
+          "answer": "Ich spielte (weak), ich ging (strong). Simple past for narrative."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 3.2 continues Stage 3."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Complete when The Pr\u00e4teritum is mastered.",
+    "credit_minutes": 55
+  }
+}

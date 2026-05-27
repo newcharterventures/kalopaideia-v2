@@ -1,0 +1,156 @@
+/* ============================================================
+   Shared CSS for all Atelier variations.
+   Five separate HTML files import this. Differences live in each
+   HTML file's <style> at the bottom, scoped under .v-frescoed,
+   .v-daybreak, .v-tablinum, .v-promenade, .v-sanctum.
+   ============================================================ */
+
+:root {
+  --paper: #fdfaf3;
+  --paper-deep: #f6f0e2;
+  --paper-shadow: #ece4d0;
+  --ink: #231c14;
+  --ink-soft: #4a3d2c;
+  --ink-muted: #7a6a54;
+  --rule: #c8b892;
+  --rule-soft: #d6c9a6;
+  --accent: #7a3322;
+  --accent-soft: #a85242;
+  --gold: #a07a2c;
+  --gold-soft: #d1b370;
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Source Serif 4", Georgia, serif;
+  --font-cinzel: "Cinzel", serif;
+  --font-ui: "Inter", system-ui, sans-serif;
+
+  /* PD painting URLs — Wikimedia Special:FilePath. All audited against
+     the paideia-covers safelist on 2026-05-18. */
+  --img-school:    url('https://commons.wikimedia.org/wiki/Special:FilePath/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg?width=2400');
+  --img-school-md: url('https://commons.wikimedia.org/wiki/Special:FilePath/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg?width=1400');
+  --img-reading:   url('https://commons.wikimedia.org/wiki/Special:FilePath/Sir_Lawrence_Alma-Tadema%2C_English_%28born_Netherlands%29_-_A_Reading_from_Homer_-_Google_Art_Project.jpg?width=1600');
+  --img-pebbles:   url('https://commons.wikimedia.org/wiki/Special:FilePath/Greek_Girls_Picking_up_Pebbles_by_the_Sea.jpg?width=1400');
+  --img-odysseus:  url('https://commons.wikimedia.org/wiki/Special:FilePath/Pinturicchio_-_The_Return_of_Odysseus_-_WGA17830.jpg?width=1400');
+  --img-mark:      url('https://commons.wikimedia.org/wiki/Special:FilePath/Cicer%C3%B3n_denuncia_a_Catilina%2C_por_Cesare_Maccari.jpg?width=1400');
+  --img-sappho:    url('https://commons.wikimedia.org/wiki/Special:FilePath/Godward-In_the_Days_of_Sappho-1904.jpg?width=1400');
+  --img-spring:    url('https://commons.wikimedia.org/wiki/Special:FilePath/Lawrence_Alma-Tadema_-_Spring_-_Google_Art_Project.jpg?width=1600');
+  --img-flaming:   url('https://commons.wikimedia.org/wiki/Special:FilePath/Flaming_June%2C_by_Frederic_Lord_Leighton_%281830-1896%29.jpg?width=1400');
+  --img-sappho-at: url('https://commons.wikimedia.org/wiki/Special:FilePath/Sappho_and_Alcaeus%2C_by_Lawrence_Alma-Tadema.jpg?width=1600');
+  --img-penelope:  url('https://commons.wikimedia.org/wiki/Special:FilePath/JohnWilliamWaterhouse-PenelopeandtheSuitors%281912%29.jpg?width=1400');
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { background: var(--paper); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.55; }
+
+/* ============================================================
+   Separate-section top bar (on every variation)
+   ============================================================ */
+.curriculum-bar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 11px 26px; background: var(--ink); color: var(--paper);
+  font-family: var(--font-cinzel); font-size: 10px; letter-spacing: 0.28em;
+  font-weight: 600; text-transform: uppercase;
+}
+.curriculum-bar a { color: var(--paper); text-decoration: none; opacity: 0.85; }
+.curriculum-bar a:hover { opacity: 1; color: var(--gold-soft); }
+.curriculum-bar .cb-greek { font-family: var(--font-display); font-style: italic; letter-spacing: 0; text-transform: none; opacity: 0.55; font-size: 14px; }
+.curriculum-bar .cb-left { display: flex; align-items: center; gap: 16px; }
+
+/* ============================================================
+   Syllabus table (the discipline the user said they liked)
+   ============================================================ */
+.syllabus-table { width: 100%; border-collapse: collapse; font-size: 15px; font-family: var(--font-body); }
+.syllabus-table th { text-align: left; font-family: var(--font-cinzel); font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-muted); font-weight: 600; padding: 8px 10px; border-bottom: 1px solid var(--rule); }
+.syllabus-table td { padding: 9px 10px; border-bottom: 1px dotted var(--rule-soft); vertical-align: baseline; }
+.syllabus-table tr:last-child td { border-bottom: 1px solid var(--rule); }
+.col-check { width: 30px; text-align: center; color: var(--gold); font-family: var(--font-display); font-size: 18px; }
+.syllabus-table tr.done .col-check { color: var(--accent); }
+.col-num { width: 60px; font-family: var(--font-ui); font-size: 12px; color: var(--ink-muted); font-variant-numeric: tabular-nums; }
+.col-title { color: var(--ink-soft); }
+.syllabus-table tr.done .col-title { color: var(--ink-muted); }
+.col-title a { color: inherit; text-decoration: none; border-bottom: 1px dotted transparent; }
+.col-title a:hover { color: var(--accent); border-color: var(--accent); }
+.syllabus-table tr.next .col-title a { color: var(--accent); border-color: var(--accent); font-weight: 600; }
+.syllabus-table tr.next .col-check { color: var(--gold); }
+.col-duration { width: 80px; font-family: var(--font-ui); font-size: 12px; color: var(--ink-muted); text-align: right; letter-spacing: 0.02em; }
+.checkpoint-row { background: var(--paper-deep); }
+.checkpoint-row td { padding: 12px 10px; border-bottom: 1px solid var(--rule) !important; font-family: var(--font-display); font-style: italic; color: var(--ink-soft); }
+.checkpoint-row.passed td { color: var(--accent); }
+.cp-tag { font-family: var(--font-cinzel); font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 600; font-style: normal; margin-right: 8px; }
+
+/* Section heads */
+.section-head {
+  margin: 48px 0 0; display: flex; align-items: baseline; gap: 16px;
+  padding-bottom: 6px; border-bottom: 2px solid var(--ink);
+}
+.section-num { font-family: var(--font-cinzel); font-size: 12px; letter-spacing: 0.22em; color: var(--accent); font-weight: 700; text-transform: uppercase; }
+.section-name { font-family: var(--font-display); font-size: 26px; font-weight: 600; flex: 1; margin: 0; }
+.section-meta { font-family: var(--font-ui); font-size: 11px; color: var(--ink-muted); letter-spacing: 0.04em; }
+.section-sub { font-family: var(--font-display); font-style: italic; color: var(--ink-soft); font-size: 17px; margin: 6px 0 0; }
+
+/* Continue bookmark */
+.continue {
+  margin: 26px 0 12px;
+  padding: 16px 20px;
+  border-top: 1px solid var(--gold); border-bottom: 1px solid var(--gold);
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px;
+  background: var(--paper);
+}
+.continue-text { font-family: var(--font-display); font-size: 18px; color: var(--ink); }
+.continue-text em { color: var(--accent); font-style: italic; }
+.continue-meta { font-family: var(--font-ui); font-size: 12px; color: var(--ink-muted); margin-top: 2px; }
+.continue-link {
+  font-family: var(--font-cinzel); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent); padding-bottom: 2px; font-weight: 600;
+}
+.continue-link:hover { color: var(--ink); border-color: var(--ink); }
+
+/* Framed plate (marginalia) */
+.framed-plate { border: 1px solid var(--rule); padding: 8px; background: var(--paper); }
+.framed-plate .plate-img { width: 100%; aspect-ratio: 4 / 3; background-size: cover; background-position: center; border: 1px solid var(--rule-soft); }
+.framed-plate .plate-caption {
+  font-family: var(--font-display); font-style: italic; color: var(--ink-muted);
+  font-size: 12px; text-align: center; padding: 8px 4px 2px; line-height: 1.4;
+}
+
+/* Vignette (vertical 3:4 marginalia) */
+.vignette { border: 1px solid var(--rule); padding: 6px; background: var(--paper-deep); }
+.vignette .v-img { width: 100%; aspect-ratio: 3 / 4; background-size: cover; background-position: center; border: 1px solid var(--rule-soft); }
+.vignette .v-caption {
+  font-family: var(--font-display); font-style: italic; font-size: 12px;
+  color: var(--ink-muted); text-align: center; padding: 6px 4px 2px; line-height: 1.4;
+}
+
+/* Portrait card (capstone) */
+.portrait-card { background: var(--paper); border: 1px solid var(--rule); padding: 10px; transition: box-shadow 0.25s; }
+.portrait-card:hover { box-shadow: 0 4px 18px rgba(122,51,34,0.10); }
+.portrait-frame { width: 100%; aspect-ratio: 3 / 4; background-size: cover; background-position: center; border: 1px solid var(--rule-soft); }
+.portrait-card.philosopher .portrait-frame { background-image: var(--img-school-md); background-position: 28% 40%; }
+.portrait-card.historian   .portrait-frame { background-image: var(--img-odysseus); }
+.portrait-card.evangelist  .portrait-frame { background-image: var(--img-mark); }
+.portrait-info { padding: 14px 8px 6px; text-align: center; }
+.portrait-roman { font-family: var(--font-cinzel); font-size: 10px; letter-spacing: 0.22em; color: var(--gold); text-transform: uppercase; font-weight: 700; }
+.portrait-name { font-family: var(--font-display); font-size: 22px; margin: 4px 0 2px; }
+.portrait-text { font-family: var(--font-display); font-style: italic; color: var(--accent); font-size: 16px; }
+.portrait-rationale { color: var(--ink-soft); font-size: 14px; margin-top: 6px; line-height: 1.5; }
+
+/* Tiers (matching across all variations) */
+.tiers { margin-top: 60px; border-top: 3px double var(--rule); padding-top: 36px; }
+.tiers h2 { font-family: var(--font-display); font-size: 32px; text-align: center; margin: 0 0 4px; }
+.tiers .t-sub { text-align: center; font-family: var(--font-display); font-style: italic; color: var(--ink-soft); margin-bottom: 30px; }
+.tier-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; max-width: 760px; margin: 0 auto; }
+.tier-col { border: 1px solid var(--rule); padding: 28px 24px; background: var(--paper); }
+.tier-col.premium { border-color: var(--gold); background: linear-gradient(to bottom, #fbf5e3 0%, var(--paper) 100%); }
+.tier-eyebrow { font-family: var(--font-cinzel); font-size: 11px; letter-spacing: 0.2em; color: var(--ink-muted); text-transform: uppercase; font-weight: 600; }
+.tier-col.premium .tier-eyebrow { color: var(--gold); }
+.tier-price { font-family: var(--font-display); font-size: 38px; font-weight: 600; margin: 6px 0 2px; }
+.tier-per { font-size: 14px; color: var(--ink-muted); font-family: var(--font-ui); }
+.tier-features { list-style: none; padding: 0; margin: 18px 0 22px; font-size: 15px; }
+.tier-features li { padding: 6px 0 6px 20px; border-bottom: 1px dotted var(--rule-soft); position: relative; }
+.tier-features li::before { content: '·'; position: absolute; left: 0; top: 6px; font-size: 24px; line-height: 1; color: var(--gold); }
+.tier-cta { display: block; text-align: center; padding: 11px 16px; background: var(--paper); color: var(--accent); border: 1px solid var(--accent); font-family: var(--font-cinzel); font-size: 12px; letter-spacing: 0.18em; font-weight: 600; text-decoration: none; text-transform: uppercase; }
+.tier-col.premium .tier-cta { background: var(--accent); color: var(--paper); }
+.tier-cta:hover { background: var(--accent); color: var(--paper); }
+.tier-col.premium .tier-cta:hover { background: var(--ink); border-color: var(--ink); }
+
+.colophon { text-align: center; color: var(--ink-muted); font-family: var(--font-ui); font-size: 12px; margin: 60px 0 20px; letter-spacing: 0.04em; }

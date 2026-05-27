@@ -1,0 +1,43 @@
+{
+  "id": "3.12",
+  "stage": 3,
+  "title": "Beowulf, Lines 12–25",
+  "subtitle": "The lineage of Scyld Scefing.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Master Beowulf, Lines 12–25.",
+    "Read and translate authentic Old English poetry and prose.",
+    "Prepare for the capstone examination."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "Oft Scyld Scēfing sceaþena þrēatum,\nmonegum mǣgþum, meodosetla oftēah...\n\n'Often Scyld son of Sceaf from enemy hosts, from many tribes, took away the mead-benches...'\n\nGenealogical formulas. The past tense narrative of Scyld's conquests and reign."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "Beowulf, Lines 12–25"
+        },
+        {
+          "prompt": "Can you translate the example passage?",
+          "answer": "Work through it word by word with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson or take the capstone examination."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply Beowulf, Lines 12–25 to reading.",
+    "credit_minutes": 60
+  }
+}

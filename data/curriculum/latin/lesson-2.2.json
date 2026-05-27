@@ -1,0 +1,64 @@
+{
+  "id": "2.2",
+  "stage": 2,
+  "title": "The Second Declension — Masculine",
+  "subtitle": "dominus, servus, puer, vir.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Decline second-declension masculine nouns ending in -us, -er, and -ir.",
+    "Recognize the vocative singular in -e and distinguish it from the nominative.",
+    "Translate sentences using second-declension nouns as subjects, objects, and possessors.",
+    "Understand the stem-change in nouns like puer and ager."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The second declension: masculine nouns",
+      "body": "The second declension contains masculine and neuter nouns. Today, the masculine. Most end in -us in the nominative singular. A few end in -er or -ir. The paradigm:\n\n          Singular    Plural\n  Nom.    dominus     dominī\n  Gen.    dominī      dominōrum\n  Dat.    dominō      dominīs\n  Acc.    dominum     dominōs\n  Abl.    dominō      dominīs\n  Voc.    domine      dominī\n\nThe vocative singular is the only form that differs from the nominative in its ending: -e instead of -us. Cicero addresses a man named Marcus as 'Marce', not 'Marcus'."
+    },
+    {
+      "kind": "prose",
+      "heading": "Nouns in -er: puer and ager",
+      "body": "Some second-declension masculine nouns end in -er in the nominative. There are two patterns:\n\n  puer (boy) — the e survives in all forms: puer, puerī, puerō, puerum, puerō, puerī, puerōrum, etc.\n  ager (field) — the e drops after the nominative: ager, agrī, agrō, agrum, agrō, agrī, agrōrum, etc.\n\nThe genitive singular tells you which pattern a noun follows. If the genitive is puerī, the e survives. If it is agrī, the e drops. The dictionary always gives both nominative and genitive for this reason.\n\nCaesar writes: agrī vastābantur. — The fields were being laid waste. 'agrī' is nominative plural, subject of the passive verb.\n\nCicero writes: līberī meī. — My children. 'līberī' (the plural of līber, a poetic word for 'child') is nominative plural."
+    },
+    {
+      "kind": "prose",
+      "heading": "Examples from Caesar and Vergil",
+      "body": "dominus servum vocat. — The master calls the slave.\nservus dominum timet. — The slave fears the master.\nfilius virī fortis est. — The son of the man is brave.\npuerō librum dō. — I give a book to the boy.\ncum puerīs lūdō. — I play with the boys.\nMārce, venī! — Marcus, come! (vocative)\n\nVergil writes: arma virumque canō. — I sing of arms and the man. 'virum' is accusative singular, direct object of 'canō'."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Decline servus (slave) in all cases, singular and plural.",
+      "items": [
+        { "prompt": "Nominative singular", "answer": "servus" },
+        { "prompt": "Genitive singular", "answer": "servī" },
+        { "prompt": "Accusative singular", "answer": "servum" },
+        { "prompt": "Vocative singular", "answer": "serve" },
+        { "prompt": "Nominative plural", "answer": "servī" },
+        { "prompt": "Genitive plural", "answer": "servōrum" },
+        { "prompt": "Accusative plural", "answer": "servōs" },
+        { "prompt": "What is the difference between puer and ager?", "answer": "puer keeps the e in all forms; ager drops it after the nominative." },
+        { "prompt": "How do you address Marcus directly?", "answer": "Marce (vocative singular, -e ending)." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Sentences with second-declension masculines",
+      "words": [
+        { "latin": "dominus servum laudat.", "transliteration": null, "gloss": "The master praises the slave.", "audio": "/paideia/audio/latin/sentences/2.2-1.mp3" },
+        { "latin": "puer in agrō lūdit.", "transliteration": null, "gloss": "The boy plays in the field.", "audio": "/paideia/audio/latin/sentences/2.2-2.mp3" },
+        { "latin": "fīlius virī fortis est.", "transliteration": null, "gloss": "The son of the man is brave.", "audio": "/paideia/audio/latin/sentences/2.2-3.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.3: the second declension, neuter. templum, dōnum, bellum."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can decline dominus and puer without hesitation and recognize the vocative -e ending.",
+    "credit_minutes": 50
+  }
+}

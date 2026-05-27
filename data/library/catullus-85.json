@@ -1,0 +1,18 @@
+{
+  "id": "catullus-85",
+  "language": "latin",
+  "title": "Carmen 85 — Odi et amo",
+  "author": "Gaius Valerius Catullus",
+  "date": "c. 57 BCE",
+  "meter": "Elegiac couplet",
+  "translator": "Francis Warre Cornish",
+  "translator_date": "1913 (Loeb Classical Library, US public domain: pre-1929)",
+  "license": "Public domain (US)",
+  "source_notes": "English translation by Francis Warre Cornish, Catullus, Tibullus, Pervigilium Veneris, Loeb Classical Library (1913), now in the US public domain.",
+  "reading_notes": "Perhaps the most famous two lines in Latin poetry. Four verbs — odi, amo, fieri, excrucior — compress the whole psychology of loving what one cannot stop resenting. Note the absence of a pronoun for 'her': Catullus does not need to name her.",
+  "status": "open",
+  "lines": [
+    { "n": 1, "original": "Odi et amo. Quare id faciam, fortasse requiris.", "english": "I hate and love. Why I do so, perhaps you ask?", "gloss": "Odi = 'I hate' (perfect-for-present of ōdi, defective verb); et = 'and'; amo = 'I love' (1st sg. present); Quare = 'why'; id = 'that, it' (accusative neuter); faciam = 'I do' (present subjunctive; deliberative); fortasse = 'perhaps'; requiris = 'you ask' (2nd sg. of requiro)." },
+    { "n": 2, "original": "Nescio, sed fieri sentio et excrucior.", "english": "I know not, but I feel it, and I am in torment.", "gloss": "Nescio = 'I do not know' (ne + scio); sed = 'but'; fieri = 'to happen, be made' (passive infinitive of facio); sentio = 'I feel, perceive' (1st sg. present); et = 'and'; excrucior = 'I am tortured, crucified' (1st sg. present passive of excrucio)." }
+  ]
+}

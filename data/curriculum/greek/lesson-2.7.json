@@ -1,0 +1,63 @@
+{
+  "id": "2.7",
+  "stage": 2,
+  "title": "The Genitive",
+  "subtitle": "The case of source, separation, and possession.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Understand the genitive as the case of source and separation.",
+    "Use the genitive to express possession.",
+    "Recognize the genitive after prepositions and with certain verbs.",
+    "Translate genitive constructions into natural English."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The genitive case",
+      "body": "The genitive is the most versatile case in Greek. In English we use 'of' or the possessive 's to translate it, but the genitive does far more than show possession.\n\nThe basic meaning of the genitive is separation or source. Something comes from something else, belongs to something else, is part of something else. The genitive marks the starting point, the origin, the whole from which a part is taken.\n\nὁ λόγος τοῦ Σωκράτους — 'the word of Socrates' or 'Socrates's word'. The genitive τοῦ Σωκράτους marks the source or possessor of the λόγος."
+    },
+    {
+      "kind": "prose",
+      "heading": "Uses of the genitive",
+      "body": "Possessive genitive: ὁ οἶκος τοῦ ἀνθρώπου — 'the house of the man' or 'the man's house'.\n\nPartitive genitive: τῶν ἀνθρώπων τινές — 'some of the men'. The genitive marks the whole from which a part is taken.\n\nGenitive of source: παῖς τοῦ βασιλέως — 'child of the king' (born from the king).\n\nGenitive of separation: ἀπέχει τῆς πόλεως — 'it is distant from the city'. The preposition ἀπό takes the genitive.\n\nGenitive after certain verbs: ἀκούω τοῦ διδασκάλου — 'I hear the teacher' (literally 'I hear from the teacher'). The verb ἀκούω takes its object in the genitive."
+    },
+    {
+      "kind": "prose",
+      "heading": "Examples from Xenophon",
+      "body": "Anabasis I.1.1: Δαρείου καὶ Παρυσάτιδος γίγνονται παῖδες δύο.\n'Of Darius and Parysatis are born two sons.' Δαρείου and Παρυσάτιδος are genitive — the sons come from them, belong to them.\n\nAnabasis I.1.2: τούτων ὁ μὲν πρεσβύτερος ἦν Ἀρταξέρξης.\n'Of these the elder was Artaxerxes.' τούτων is genitive plural of the demonstrative οὗτος — 'of these'."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers. Answer each question or translate each phrase.",
+      "items": [
+        { "prompt": "What is the basic meaning of the genitive?", "answer": "Source, separation, or belonging — the starting point or origin." },
+        { "prompt": "How do you translate ὁ λόγος τοῦ Σωκράτους?", "answer": "'the word of Socrates' or 'Socrates's word'" },
+        { "prompt": "What is a partitive genitive?", "answer": "A genitive that marks the whole from which a part is taken, as in 'some of the men'." },
+        { "prompt": "Which case does the preposition ἀπό take?", "answer": "Genitive." },
+        { "prompt": "What case does the verb ἀκούω take for its object?", "answer": "Genitive." },
+        { "prompt": "Translate: τῶν ἀνθρώπων τινές", "answer": "Some of the men." },
+        { "prompt": "Translate: ὁ οἶκος τῆς γυναικός", "answer": "The house of the woman / the woman's house." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Genitive constructions",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "ὁ λόγος τοῦ Σωκράτους", "transliteration": "ho lógos toû Sōkrátous", "gloss": "the word of Socrates", "audio": "/paideia/audio/greek/phrases/logos-sokratous.mp3" },
+        { "greek": "τῶν ἀνθρώπων τινές", "transliteration": "tôn anthrṓpōn tinés", "gloss": "some of the men", "audio": "/paideia/audio/greek/phrases/ton-anthropon-tines.mp3" },
+        { "greek": "ἀπὸ τῆς πόλεως", "transliteration": "apò tês póleōs", "gloss": "from the city", "audio": "/paideia/audio/greek/phrases/apo-tes-poleos.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.8 introduces the dative case. The dative is the case of the indirect object, the instrument, the location, and the time when. Where the genitive separates, the dative locates and gives."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can identify and translate five different uses of the genitive in random Greek sentences.",
+    "credit_minutes": 50
+  }
+}

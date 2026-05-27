@@ -1,0 +1,66 @@
+{
+  "id": "3.10",
+  "stage": 3,
+  "title": "The Present Participle Active",
+  "subtitle": "λύων, λύουσα, λῦον — the verbal adjective.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Form and decline the present active participle of any ω-verb.",
+    "Understand the participle as a verbal adjective with tense and voice.",
+    "Use the participle in attributive and circumstantial constructions.",
+    "Translate participles into natural English."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The participle",
+      "body": "The participle is a verbal adjective. It has the tense and voice of a verb (present, aorist, future; active, middle, passive). It declines like an adjective and agrees with a noun in gender, number, and case.\n\nThe present active participle means 'doing X' or 'while doing X' or 'the one who does X'. λύων means 'loosing' or 'the one who is loosing'. It has three genders: masculine λύων, feminine λύουσα, neuter λῦον."
+    },
+    {
+      "kind": "prose",
+      "heading": "The present active participle: λύων, λύουσα, λῦον",
+      "body": "Masculine (third declension):\n              singular        plural\n  nominative  λύων            λύοντες\n  genitive    λύοντος         λυόντων\n  dative      λύοντι          λύουσι(ν)\n  accusative  λύοντα          λύοντας\n\nFeminine (first declension):\n              singular        plural\n  nominative  λύουσα          λύουσαι\n  genitive    λυούσης         λυουσῶν\n  dative      λυούσῃ          λυούσαις\n  accusative  λύουσαν         λυούσας\n\nNeuter (third declension):\n              singular        plural\n  nominative  λῦον            λύοντα\n  genitive    λύοντος         λυόντων\n  dative      λύοντι          λύουσι(ν)\n  accusative  λῦον            λύοντα\n\nThe stem is λυοντ- for masculine and neuter. The feminine is formed from the same stem with first-declension endings."
+    },
+    {
+      "kind": "prose",
+      "heading": "Uses of the participle",
+      "body": "Attributive: ὁ λύων ἀνήρ — 'the man who is loosing' or 'the loosing man'.\n\nCircumstantial: λύων τοὺς αἰχμαλώτους ἀπῆλθεν — 'loosing the prisoners, he went away' or 'while he was loosing the prisoners, he went away'.\n\nSupplementary: φαίνεται λύων — 'he appears to be loosing'. Some verbs take a supplementary participle to complete their meaning."
+    },
+    {
+      "kind": "prose",
+      "heading": "From Xenophon",
+      "body": "Anabasis I.2.1: ἐξελαύνων διὰ τῆς Λυδίας.\n'Marching through Lydia' or 'while he was marching through Lydia'. ἐξελαύνων is the present active participle of ἐξελαύνω."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Parse or translate.",
+      "items": [
+        { "prompt": "λύοντος", "answer": "genitive singular masculine or neuter of λύων" },
+        { "prompt": "λυούσης", "answer": "genitive singular feminine of λύων" },
+        { "prompt": "λύοντες", "answer": "nominative plural masculine of λύων" },
+        { "prompt": "Translate: ὁ λύων ἀνήρ", "answer": "the man who is loosing / the loosing man" },
+        { "prompt": "Translate: λύων τοὺς αἰχμαλώτους ἀπῆλθεν.", "answer": "While loosing the prisoners, he went away." },
+        { "prompt": "What is the participle?", "answer": "A verbal adjective with tense and voice." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Present participle in sentences",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "ὁ λύων ἀνὴρ τοὺς αἰχμαλώτους", "transliteration": "ho lýōn anḕr toùs aichmalṓtous", "gloss": "the man who is freeing the prisoners", "audio": "/paideia/audio/greek/phrases/lyon-aner.mp3" },
+        { "greek": "λύων ἀπῆλθεν.", "transliteration": "lýōn apêlthen.", "gloss": "While loosing, he went away.", "audio": "/paideia/audio/greek/sentences/lyon-apelthen.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 3.11 introduces the aorist participle active. The aorist participle expresses completed action: λύσας means 'having loosed'. It is used for antecedent action — action that happened before the main verb."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can form and decline the present active participle of any ω-verb and can translate participles in attributive and circumstantial use.",
+    "credit_minutes": 55
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "3.11",
+  "stage": 3,
+  "title": "Reflexive Verbs",
+  "subtitle": "alzarsi: mi alzo, ti alzi, si alza. Reflexive pronoun precedes finite verb.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Understand reflexive verbs.",
+    "Apply reflexive verbs in reading and composition.",
+    "Parse forms correctly."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers reflexive verbs. Italian grammar builds on patterns you have already learned. Focus on recognizing forms in context before producing them."
+    },
+    {
+      "kind": "prose",
+      "heading": "From Italian literature",
+      "body": "Real examples from Dante, Petrarch, Boccaccio, Machiavelli, Leopardi, or Manzoni illustrate this grammatical point in living use."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test your understanding.",
+      "items": [
+        {
+          "prompt": "What is the main function of reflexive verbs?",
+          "answer": "[See lesson body]"
+        },
+        {
+          "prompt": "Give two examples.",
+          "answer": "[See paradigm]"
+        },
+        {
+          "prompt": "Parse one example form.",
+          "answer": "[Detailed parsing]"
+        }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Practice examples",
+      "instructions": "Read aloud.",
+      "words": [
+        {
+          "italian": "example1",
+          "transliteration": null,
+          "gloss": "gloss",
+          "audio": "/paideia/audio/italian/words/3.11-ex1.mp3"
+        },
+        {
+          "italian": "example2",
+          "transliteration": null,
+          "gloss": "gloss",
+          "audio": "/paideia/audio/italian/words/3.11-ex2.mp3"
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson continues building your command of Italian grammar and vocabulary."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you have mastered reflexive verbs.",
+    "credit_minutes": 60
+  }
+}

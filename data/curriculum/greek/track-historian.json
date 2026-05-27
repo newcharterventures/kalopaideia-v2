@@ -1,0 +1,52 @@
+{
+  "id": "track-historian",
+  "track_name": "The Historian",
+  "text_title": "Xenophon, Anabasis Book I",
+  "text_subtitle": "The march of the Ten Thousand, c. 11,000 words — the classic intermediate reader.",
+  "estimated_weeks": 14,
+  "rationale": "Anabasis Book I is the text on which generations of Greek students cut their teeth. Simple syntax, vivid narrative, a great story. The vocabulary is concrete and military. The pace is brisk. This is the book that teaches you to read Greek prose at speed.",
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Why the Anabasis?",
+      "body": "The Anabasis is the story of the Ten Thousand Greek mercenaries who marched into the heart of Persia in 401 BCE, fought at Cunaxa, and then had to fight their way back to the sea. Xenophon was one of them, and he tells the story with clarity and force.\n\nBook I covers the march from Sardis to Cunaxa and the battle itself. The narrative is straightforward, the characters are memorable (Cyrus the Younger, Clearchus the Spartan general, Tissaphernes the Persian satrap), and the stakes are life and death.\n\nThe Greek is accessible. Xenophon writes for readers, not for display. His sentences are clear, his vocabulary is practical, and his style is direct. Once you have read Anabasis I, you can read any Greek narrative prose."
+    },
+    {
+      "kind": "prose",
+      "heading": "Reading schedule",
+      "body": "Week 1-2: Anabasis I.1 (The sons of Darius; Cyrus assembles his army)\nWeek 3-4: Anabasis I.2 (The march through Lydia, Phrygia, and Lycaonia)\nWeek 5-6: Anabasis I.3-4 (The march through Cilicia and Syria; the troops discover the true goal)\nWeek 7-8: Anabasis I.5-6 (The approach to Babylon; negotiations with Tissaphernes)\nWeek 9-10: Anabasis I.7-8 (The battle of Cunaxa; the death of Cyrus)\nWeek 11-12: Anabasis I.9-10 (The aftermath; the Greeks are stranded)\nWeek 13-14: Review, essay, and preparation for the capstone examination\n\nRead each section aloud. Track the geography on a map. Write a short essay (500 words) on Xenophon's narrative technique or on the character of Cyrus."
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Key passages with full glosses",
+      "instructions": "These passages are the narrative pivots of Book I. Master these and you will master the Anabasis.",
+      "words": [
+        { "greek": "ἐντεῦθεν ἐξελαύνει σταθμοὺς τρεῖς παρασάγγας πεντεκαίδεκα ἐπὶ τὸν Μαίανδρον ποταμόν.", "transliteration": "enteûthen exelaúnei stathmoùs treîs parasángas pentekáídeka epì tòn Maíandron potamón.", "gloss": "From there he marches three stages, fifteen parasangs, to the Maeander river. (Anabasis I.2.5)" },
+        { "greek": "ἐνταῦθα Κῦρος καὶ ἡ στρατιὰ ἔμειναν ἡμέρας εἴκοσιν· οἱ γὰρ στρατιῶται οὐκ ἔφασαν ἰέναι τοῦ πρόσω.", "transliteration": "entaûtha Kŷros kaì hē stratiá émeinan hēméras eíkosin; hoi gàr stratiôtai ouk éphasasn iénai toû prósō.", "gloss": "There Cyrus and the army remained twenty days; for the soldiers said they would not go further. (Anabasis I.3.1)" },
+        { "greek": "Κῦρος δὲ ἀποθνῄσκει καὶ ἄλλοι ἀμφ' αὐτὸν ἀριστῆες ὀκτώ.", "transliteration": "Kŷros dè apothnḗiskei kaì álloi amph' autòn aristêes oktṓ.", "gloss": "And Cyrus dies, and eight other nobles around him. (Anabasis I.8.27)" }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Vocabulary clusters",
+      "body": "στρατηγός, στρατιώτης, στρατιά — general, soldier, army\nσταθμός, παρασάγγης, ὁδός — stage, parasang (Persian mile), road\nἐξελαύνω, πορεύομαι, ἀφικνέομαι — march out, journey, arrive\nμάχη, πόλεμος, μάχομαι — battle, war, to fight\nποταμός, πεδίον, ὄρος — river, plain, mountain\n\nThese are the words of military narrative. Learn them in the Anabasis and you will read Caesar, Polybius, and Arrian with ease."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Discussion questions",
+      "instructions": "Answer these in writing after completing Anabasis I.",
+      "items": [
+        { "prompt": "What was Cyrus's goal?", "answer": "To overthrow his brother Artaxerxes and seize the Persian throne." },
+        { "prompt": "When did the Greek soldiers discover the true goal of the march?", "answer": "At Tarsus in Cilicia, when they realized they were marching against the king." },
+        { "prompt": "How did Cyrus persuade them to continue?", "answer": "By promising them increased pay and by appealing to their sense of honor." },
+        { "prompt": "What happened at the battle of Cunaxa?", "answer": "The Greeks won their part of the battle, but Cyrus was killed, and the cause was lost." },
+        { "prompt": "What is Xenophon's narrative style?", "answer": "(Student must construct an analysis.)" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "After the Anabasis",
+      "body": "Once you have completed Anabasis I, you are ready for the capstone examination. You will translate a fifty-word passage from the Anabasis at sight, without notes. You will parse ten forms. You will compose five Greek sentences. You will pass, and you will hold the Kalopaideia Diploma in Classical Greek, track Historian."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "1.5",
+  "stage": 1,
+  "title": "Macrons",
+  "subtitle": "Why we mark long vowels and the Romans did not.",
+  "estimated_minutes": 35,
+  "objectives": [
+    "Explain why modern editions mark long vowels with macrons.",
+    "Read the same Latin text with and without macrons.",
+    "Distinguish pairs of words that differ only in vowel length.",
+    "Recognize when vowel length determines meaning."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "What is a macron",
+      "body": "A macron is the horizontal line we place over a long vowel: ā, ē, ī, ō, ū. The Romans did not use them. Roman inscriptions and manuscripts show no distinction between long and short vowels; the reader supplied the length from memory and context.\n\nWe are not native speakers. We cannot supply vowel length from memory. We need the marks, or we will mispronounce words, misidentify grammatical forms, and fail to hear the meter in poetry. The macron is a pedagogical device, invented in the nineteenth century for students of Latin. It has no ancient precedent, but it is indispensable."
+    },
+    {
+      "kind": "prose",
+      "heading": "When vowel length determines meaning",
+      "body": "Many Latin words differ only in the length of a single vowel:\n  populus (the people) vs. pōpulus (the poplar tree)\n  malus (bad) vs. mālus (apple tree) vs. mălus (mast of a ship)\n  liber (free) vs. lĭber (book)\n  venit (he comes) vs. vēnit (he came)\n  legit (he reads) vs. lēgit (he read)\n\nWithout the macron, you would read 'malus' three different ways depending on context. With the macron, you know immediately which word you are looking at. The same holds for verb tenses: vowel length often distinguishes present from perfect."
+    },
+    {
+      "kind": "prose",
+      "heading": "Reading without macrons",
+      "body": "Once you have read enough Latin with macrons, you will begin to recognize words and forms without them. The process is gradual. Do not rush it. Keep using marked texts for at least a year.\n\nWhen you do begin reading unmarked Latin (inscriptions, manuscripts, or scholarly editions that omit macrons), you will rely on three aids:\n  1. The dictionary, which gives vowel quantities for every word.\n  2. Grammatical knowledge, which tells you that (for example) perfect tense verbs often have a long vowel where the present has a short one.\n  3. Context, which tells you whether 'malus' is likely to mean 'bad', 'apple tree', or 'mast' in this sentence.\n\nThe Romans had all three aids built in from childhood. We acquire them through study."
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Reading drill",
+      "instructions": "The same paragraph is read twice: once with macrons visible on the page, once without. Listen and follow along with the text. Notice how your eye relies on the macrons the first time.",
+      "audio": "/paideia/audio/latin/drills/lesson-1.5-reading.mp3"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Without looking back, answer each question.",
+      "items": [
+        { "prompt": "Did the Romans use macrons?", "answer": "No. Macrons are a modern pedagogical invention." },
+        { "prompt": "Why do we use macrons if the Romans did not?", "answer": "Because we are not native speakers and cannot supply vowel length from memory." },
+        { "prompt": "Give two words that differ only in vowel length.", "answer": "populus vs. pōpulus, or malus vs. mālus, or venit vs. vēnit, or many others." },
+        { "prompt": "What three aids do we use when reading unmarked Latin?", "answer": "The dictionary, grammatical knowledge, and context." },
+        { "prompt": "How long should a student keep using marked texts?", "answer": "At least a year. Do not rush to unmarked texts." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Minimal pairs",
+      "instructions": "Each pair differs only in the length of one vowel. Read both aloud and hear the difference.",
+      "words": [
+        { "latin": "venit / vēnit", "transliteration": null, "gloss": "he comes / he came", "audio": "/paideia/audio/latin/pairs/venit-venit.mp3" },
+        { "latin": "legit / lēgit", "transliteration": null, "gloss": "he reads / he read", "audio": "/paideia/audio/latin/pairs/legit-legit.mp3" },
+        { "latin": "malus / mālus", "transliteration": null, "gloss": "bad / apple tree", "audio": "/paideia/audio/latin/pairs/malus-malus.mp3" },
+        { "latin": "liber / līber", "transliteration": null, "gloss": "free / book", "audio": "/paideia/audio/latin/pairs/liber-liber.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.6: your first connected Latin sentences. Ten short sentences from Familia Romana, to be read aloud and understood without parsing."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can explain why macrons are used and read the same sentence both with and without them.",
+    "credit_minutes": 35
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "date": "2026-05-20",
+  "generated_at": "2026-05-20T11:07:32.976Z",
+  "vignettes": {
+    "greek": {
+      "title": "Apollo's Plague in Iliad Book One",
+      "body": "The Iliad opens not with battle but with disease. When Agamemnon dishonors Chryses, priest of Apollo, the god descends from Olympos with his silver bow and shoots plague arrows into the Achaean camp for nine days. Homer describes the god's arrival with precision: the arrows clatter on his shoulders as he moves, angry, like night itself. The funeral pyres burn constantly. This divine pestilence forces Achilles to call the assembly where he names the plague algeinon, painful, grievous. The scene would have resonated with audiences familiar with epidemic disease in densely packed cities. Athens itself suffered catastrophic plague in 430 BCE during the Peloponnesian War, described by Thucydides with clinical detail. Homer's Apollo wields illness as deliberately as any warrior wields a spear, reminding Greeks that the gods punish communities, not just individuals, and that contamination respects no hierarchy.",
+      "image": null,
+      "image_query": "Apollo archer Greek vase"
+    },
+    "latin": {
+      "title": "The Pullarius and His Sacred Chickens",
+      "body": "Before battle, a Roman general consulted the pullarius, keeper of the sacred chickens. This official opened their cage at dawn and scattered grain. If the birds ate greedily, dropping food from their beaks, the tripudium solistimum occurred—a favorable sign. Refusal to eat meant postponement. In 249 BCE, consul Publius Claudius Pulcher grew impatient when his chickens would not feed before engaging Carthage at Drepana. He threw them overboard, declaring, \"If they will not eat, let them drink.\" Rome lost ninety-three ships. Claudius was recalled and fined. His impiety became proverbial. Yet skeptics existed even then. Cato the Elder wondered how two haruspices could meet without laughing. By the late Republic, political convenience often dictated what the chickens revealed, though no magistrate dared dispense with the ritual entirely. The birds traveled with every legion in wicker coops, mundane creatures bearing the weight of divine will.",
+      "image": null,
+      "image_query": "Roman chicken augury relief"
+    },
+    "french": {
+      "title": "Voltaire's Gardens at Ferney",
+      "body": "In 1758, Voltaire purchased the estate of Ferney near Geneva and transformed its grounds into experimental orchards and productive gardens. He planted thousands of fruit trees, tested agricultural methods, and cultivated silkworms, turning philosophy into practical action. The gardens became a stage for his principle that one must \"cultivate one's garden,\" the closing moral of *Candide* (1759). Visitors from across Europe made pilgrimage to Ferney, where the aging philosophe received them amid his apple trees and walnut groves. The estate produced income that supported local artisans and farmers, embodying Enlightenment ideals of improvement and enterprise. Voltaire died in 1778, but his orchards remained a symbol of reason applied to soil, thought married to labor, skepticism rooted in earth.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/John_Sewell_-_View_of_Voltaire%27s_Chateau_at_Ferney%2C_from_the_Garden_-_B1998.14.651_-_Yale_Center_for_British_Art.jpg/1280px-John_Sewell_-_View_of_Voltaire%27s_Chateau_at_Ferney%2C_from_the_Garden_-_B1998.14.651_-_Yale_Center_for_British_Art.jpg",
+        "credit": "John Sewell / Wikimedia Commons (CC0)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:John_Sewell_-_View_of_Voltaire%27s_Chateau_at_Ferney,_from_the_Garden_-_B1998.14.651_-_Yale_Center_for_British_Art.jpg",
+        "width": 1200,
+        "height": 736
+      },
+      "image_query": "Ferney Voltaire chateau garden"
+    },
+    "german": {
+      "title": "Goethe's Metamorphosis of Plants",
+      "body": "In 1790, Goethe published his Versuch die Metamorphose der Pflanzen zu erklären, proposing that all plant organs derive from a single archetypal leaf. Walking through the botanical gardens of Padua three years earlier, he had experienced what he called his Urpflanze vision: the idea that beneath visible diversity lay one primal form undergoing transformation. This was Gestalt thinking applied to nature. Each leaf, petal, and sepal represented the same essential structure modified by its position and function. Goethe rejected mechanistic botany. He sought the dynamic pattern, the living whole that organized matter into meaning. His morphology influenced Romantic Naturphilosophie and later thinkers from Schelling to the Gestalt psychologists, who borrowed his term for their theory of perception as organized wholes rather than assembled parts.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/The_metamorphosis_of_plants_%281790%29.jpg",
+        "credit": "Goethe, 1790 / Wikimedia Commons (CC BY-SA 4.0)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:The_metamorphosis_of_plants_(1790).jpg",
+        "width": 644,
+        "height": 973
+      },
+      "image_query": "Goethe metamorphosis plants"
+    },
+    "italian": {
+      "title": "Beatrice's Salute on the Ponte Santa Trinita",
+      "body": "In May 1274, the nine-year-old Dante Alighieri first saw Beatrice Portinari at a gathering in her father's house near the Ponte Vecchio. Nine years later, around 1283, she greeted him on a Florentine street, possibly near the Ponte Santa Trinita. This salute—a simple acknowledgment, perhaps a nod—became the generative moment of the Vita Nuova. Dante's prose memoir describes how her greeting bestowed such beatitude that he withdrew to his room and dreamed of Love holding his burning heart. The word salute carried triple meaning: the social gesture of greeting, the spiritual salvation it promised, and the physical health it restored to the love-struck poet. Beatrice married Simone dei Bardi in 1287 and died in June 1290, around age twenty-four. Dante transformed her brief mortal life into eternal literature, where her salute opens the path from earthly Florence to the celestial rose of Paradise.",
+      "image": null,
+      "image_query": "Dante Beatrice bridge Florence"
+    },
+    "oldenglish": {
+      "title": "The Exeter Book's Solitary Voices",
+      "body": "Around 970, a scribe at a West Saxon scriptorium copied The Wanderer and The Seafarer into what we now call the Exeter Book, the largest surviving collection of Old English poetry. These elegies give voice to figures outside the hall's warmth: the lordless man crossing winter seas, the penitent sailor drawn back to the waves. The poems share a structure of inward meditation, moving from physical exile to spiritual reckoning. Both speakers articulate their mōdġeþōht, the mind's hidden counsel, in language that mirrors monastic psalmody and Germanic heroic verse alike. The Exeter Book itself survived as a humble possession of Exeter Cathedral, its vellum pages bearing ale-stains and burn marks, yet preserving these inward journeys across a millennium. Bishop Leofric bequeathed it to the cathedral library in 1072, where it rests still, its elegiac voices undiminished.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Eala_Earendel_engla_beorhtast_-_Exeter_Book_folio_9v_top_two_lines.jpg",
+        "credit": "Chiswick Chap / Wikimedia Commons (Public domain)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Eala_Earendel_engla_beorhtast_-_Exeter_Book_folio_9v_top_two_lines.jpg",
+        "width": 956,
+        "height": 139
+      },
+      "image_query": "Exeter Book manuscript"
+    },
+    "middleenglish": {
+      "title": "Boethius in the English Court",
+      "body": "King Alfred translated Boethius's Consolation of Philosophy into Old English around 890, establishing a philosophical tradition that shaped English letters for six centuries. By Chaucer's time, the Consolation had become essential reading for educated courtiers. Chaucer himself translated it in the 1380s while serving as diplomat and controller of customs. The text's central question—whether Fortune governs randomly or Providence orders all—permeated courtly literature. In Parliament and privy chamber, men debated whether political reversals reflected divine will or mere accident. The wheel of Fortune appeared in manuscripts, on church walls, in morality plays. When Richard II fell in 1399, poets reached for Boethian language: the king had trusted Fortune's favor, forgetting that her wheel turns without warning. Philosophy offered cold comfort, but it gave shape to catastrophe.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Boethius_imprisoned_Consolation_of_philosophy_1385.jpg",
+        "credit": "Unknown / Wikimedia Commons (Public domain)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Boethius_imprisoned_Consolation_of_philosophy_1385.jpg",
+        "width": 603,
+        "height": 612
+      },
+      "image_query": "Boethius Consolation Philosophy manuscript"
+    },
+    "welsh": {
+      "title": "Cynddelw Brydydd Mawr's Court Praise",
+      "body": "Cynddelw Brydydd Mawr (fl. 1155–1200) served five princes of Powys and Gwynedd across four decades, composing awdlau and cywyddau that cemented his reputation as pencerdd, chief poet. His praise-poems for Owain Gwynedd and Madog ap Maredudd balanced genealogical recitation with battle description, anchoring princely legitimacy in poetic form. Cynddelw invoked awen not as decorative metaphor but as the actual force enabling his craft, the flowing spirit that moved from divine source through the trained poet's tongue. His work survives in both the Red Book of Hergest and the Hendregadredd manuscript, copied generations after his death because later poets treated his corpus as foundational. The Gogynfeirdd who followed him inherited this model: awen as both gift and responsibility, requiring technical mastery of cynghanedd and meter to channel properly. Without awen, a pencerdd became mere wordsmith; with it, he sustained the social order itself.",
+      "image": null,
+      "image_query": "medieval Welsh manuscript illumination"
+    },
+    "oldnorse": {
+      "title": "The Úlfhéðnar: Warriors in Wolf-Skins",
+      "body": "The úlfhéðnar, wolf-coats, fought in the vanguard of battle wearing wolf pelts rather than mail. Snorri Sturluson describes them in Ynglinga saga as men who went without armor and were mad as dogs or wolves. They belonged to a broader category of shape-strong warriors, including the berserkers in bear-skins, who served in the retinues of Norwegian kings through the tenth century. These men cultivated ecstatic battle-fury, perhaps through ritual preparation or psychoactive substances. The practice connected to Óðinn, god of war and magic, who could send out his spirit in animal form while his body lay as if sleeping. By the conversion period, Christian law codes explicitly outlawed going berserk, treating it as a heathen abomination. The Grágás laws of Iceland imposed outlawry for shape-changing, marking the end of these warrior-cults as social institutions.",
+      "image": null,
+      "image_query": "berserker viking helmet"
+    }
+  }
+}

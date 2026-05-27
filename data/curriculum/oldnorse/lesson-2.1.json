@@ -1,0 +1,46 @@
+{
+  "id": "2.1",
+  "stage": 2,
+  "title": "The Four Cases",
+  "subtitle": "Nominative, accusative, genitive, dative.",
+  "estimated_minutes": 45,
+  "objectives": ["Identify the four cases by function.","Understand that the instrumental merged with the dative."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers The Four Cases. Nominative, accusative, genitive, dative."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Identify the four cases by function."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Identify the four cases by function." },
+        { "prompt": "How do you apply this in practice?", "answer": "Understand that the instrumental merged with the dative." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "oldnorse": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/oldnorse/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on The Four Cases."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in The Four Cases to ten random examples.",
+    "credit_minutes": 45
+  }
+}

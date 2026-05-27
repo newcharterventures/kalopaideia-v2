@@ -1,0 +1,46 @@
+{
+  "id": "1.1",
+  "stage": 1,
+  "title": "The Alphabet and Spelling",
+  "subtitle": "Twenty-nine letters, White Book orthography.",
+  "estimated_minutes": 40,
+  "objectives": ["Recognize all twenty-nine letters of the Welsh alphabet.","Understand that Middle Welsh spelling is not standardized."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers The Alphabet and Spelling. Twenty-nine letters, White Book orthography."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Recognize all twenty-nine letters of the Welsh alphabet."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Recognize all twenty-nine letters of the Welsh alphabet." },
+        { "prompt": "How do you apply this in practice?", "answer": "Understand that Middle Welsh spelling is not standardized." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "welsh": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/welsh/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on The Alphabet and Spelling."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in The Alphabet and Spelling to ten random examples.",
+    "credit_minutes": 40
+  }
+}

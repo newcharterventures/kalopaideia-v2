@@ -1,0 +1,75 @@
+{
+  "id": "1.6",
+  "stage": 1,
+  "title": "Stress and Intonation",
+  "subtitle": "French stress falls on the final syllable of a phrase, not on individual words. The rising and falling contours of declarative and interrogative sentences.",
+  "estimated_minutes": 45,
+  "objectives": [
+    "Understand that French is syllable-timed, not stress-timed like English.",
+    "Apply stress to the final syllable of a phrase, not to individual words.",
+    "Recognize the rising intonation of yes-no questions.",
+    "Distinguish between declarative falling and interrogative rising contours."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "French as a syllable-timed language",
+      "body": "English is stress-timed: some syllables are strong, others weak, and the rhythm hinges on the stressed beats. French is syllable-timed: every syllable gets roughly equal weight and duration until the end of the phrase.\n\nThis gives French its characteristic even flow, where no word stands out until the phrase ends. English speakers, trained to hunt for the stressed syllable in each word, will struggle to hear the rhythm until the ear adjusts."
+    },
+    {
+      "kind": "prose",
+      "heading": "Where stress falls",
+      "body": "In French, stress falls on the final syllable of a phrase, not on individual words. The phrase is the prosodic unit.\n\nConsider: 'Je parle français.'\n\nThe stress lands on the final syllable of the phrase: fran-çais. The syllables 'Je', 'parle', and 'fran-' are unstressed and equal in length. Only the final '-çais' carries the stress.\n\nIf the phrase is longer, the same rule applies: 'Je parle français avec mes amis.' Stress falls on the last syllable: a-mis. Everything before is level."
+    },
+    {
+      "kind": "prose",
+      "heading": "Secondary stress and phrase breaks",
+      "body": "Longer sentences break into smaller phrases, each with its own final stress. These phrase breaks correspond to syntactic boundaries.\n\nExample: 'Je parle français | avec mes amis.'\n\nHere, 'français' gets a stress at the end of the first phrase, and 'amis' gets another at the end of the second. The stress marks the phrase boundary, not the word."
+    },
+    {
+      "kind": "prose",
+      "heading": "Intonation: declarative versus interrogative",
+      "body": "Declarative sentences in French have falling intonation: the pitch drops at the end of the phrase.\n\nInterrogative sentences have rising intonation: the pitch rises at the end.\n\nCompare:\n- 'Tu viens.' (declarative, falling)\n- 'Tu viens?' (interrogative, rising)\n\nThe only difference is the intonation contour. The words are identical. The question is marked by the rise."
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill",
+      "instructions": "Each sentence is read twice: once as a statement (falling), once as a question (rising). Hear the difference in intonation, not in words.",
+      "audio": "/paideia/audio/french/drills/lesson-1.6-listening.mp3"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer without looking back.",
+      "items": [
+        { "prompt": "Is French stress-timed or syllable-timed?", "answer": "Syllable-timed. Each syllable is roughly equal in length." },
+        { "prompt": "Where does stress fall in a French phrase?", "answer": "On the final syllable of the phrase." },
+        { "prompt": "In 'Je parle français', which syllable is stressed?", "answer": "The final one: -çais." },
+        { "prompt": "How do you mark a yes-no question in spoken French?", "answer": "By rising intonation at the end of the sentence." },
+        { "prompt": "What is the intonation contour of a declarative sentence?", "answer": "Falling." },
+        { "prompt": "If a sentence has multiple phrases, does each phrase get its own stress?", "answer": "Yes. Each phrase boundary is marked by stress on the final syllable." },
+        { "prompt": "Why does French sound 'flat' to English speakers at first?", "answer": "Because French is syllable-timed, with no internal stress on individual words. English speakers expect stressed and unstressed syllables within words." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Sentences to practice",
+      "instructions": "Read each aloud. Stress the final syllable of each phrase.",
+      "words": [
+        { "french": "Je parle français.", "transliteration": null, "gloss": "I speak French.", "audio": "/paideia/audio/french/words/je-parle-francais.mp3" },
+        { "french": "Tu viens?", "transliteration": null, "gloss": "Are you coming?", "audio": "/paideia/audio/french/words/tu-viens.mp3" },
+        { "french": "Il est ici.", "transliteration": null, "gloss": "He is here.", "audio": "/paideia/audio/french/words/il-est-ici.mp3" },
+        { "french": "Vous parlez français?", "transliteration": null, "gloss": "Do you speak French?", "audio": "/paideia/audio/french/words/vous-parlez-francais.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.7 introduces connected reading with fifty French proper names from literature and history: Molière, Racine, Pascal, Versailles, Rousseau, Voltaire. You will read each aloud before moving on."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can read ten French sentences aloud with correct stress and intonation contours.",
+    "credit_minutes": 45
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-05-04",
+  "generated_at": "2026-05-04T11:00:50.272Z",
+  "vignettes": {
+    "latin": {
+      "title": "The Roman Critic's Raised Brow",
+      "body": "In the porticos of Augustan Rome, literary recitations were blood sport. A poet like Horace faced audiences trained in rhetoric from childhood, men who could dissect a hexameter's every caesura. The professional critic—the grammaticus—wielded his supercilium as a weapon, that eloquent raising of the eyebrow signaling contempt before a word was spoken. Horace knew these men well. They gathered in libraries like that of Asinius Pollio, Rome's first public collection, where scrolls were judged with merciless precision. A misplaced spondee, an awkward elision, and the brow would arch. Younger poets learned to read faces before they read their verses aloud. The severest critics, Horace warned, demanded impossible perfection, forgetting that even Homer nodded. Their arrogance, encoded in a facial gesture, could silence talent before it bloomed.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Mosaic_depicting_theatrical_masks_of_Tragedy_and_Comedy_%28Thermae_Decianae%29.jpg/1280px-Mosaic_depicting_theatrical_masks_of_Tragedy_and_Comedy_%28Thermae_Decianae%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Carole Raddato from FRANKFURT, Germany (FollowingHadrian); derivative work: Speravir / Wikimedia Commons (Public domain)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Mosaic_depicting_theatrical_masks_of_Tragedy_and_Comedy_(Thermae_Decianae).jpg",
+        "width": 1200,
+        "height": 973
+      },
+      "image_query": "Roman theater masks tragedy"
+    },
+    "greek": {
+      "title": "Epicurus in the Garden at Athens",
+      "body": "Around 307 BCE, Epicurus purchased a house with a garden outside Athens, between the city walls and the Academy. Unlike other philosophical schools that met in gymnasiums or public colonnades, Epicurus taught in this private space, known simply as the Garden. His followers formed a close-knit community, unusual for including women and slaves alongside free men. They shared meals of bread, water, and occasional cheese, living modestly while pursuing what Epicurus called the highest pleasure: freedom from mental disturbance and bodily pain. The Garden's gate reportedly bore an inscription promising visitors barley cakes and fresh water, not luxury. Epicurus wrote prolifically—over three hundred rolls, though only fragments survive—teaching that the gods existed but cared nothing for human affairs, that death was merely the dissolution of atoms, and that friendship was life's greatest joy.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Marble_head_of_Epikouros_MET_DP333053.jpg/1280px-Marble_head_of_Epikouros_MET_DP333053.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Unknown / Wikimedia Commons (CC0)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Marble_head_of_Epikouros_MET_DP333053.jpg",
+        "width": 1200,
+        "height": 1599
+      },
+      "image_query": "Epicurus portrait"
+    },
+    "french": {
+      "title": "Victor Hugo's Campaign Against Social Plagues",
+      "body": "Victor Hugo spent his final decades fighting what he called the twin fléaux of poverty and ignorance. After returning from exile in 1870, he turned his Paris home on avenue d'Eylau into a command center for social reform. Each Thursday he hosted dinners for poor children from his arrondissement, serving hundreds over the years. His 1862 novel Les Misérables dramatized these scourges through Jean Valjean and the Thénardiers, arguing that criminal behavior stemmed from social conditions rather than innate depravity. Hugo donated most of his royalties to charity and used his seat in the Senate to advocate for free public education. At his state funeral in 1885, two million mourners followed his pauper's hearse from the Arc de Triomphe to the Panthéon. The procession included workers, students, and the poor children he had fed.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Victor_Hugo_by_%C3%89tienne_Carjat_1876_-_full.jpg/1280px-Victor_Hugo_by_%C3%89tienne_Carjat_1876_-_full.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Étienne Carjat / Wikimedia Commons (Public domain)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Victor_Hugo_by_%C3%89tienne_Carjat_1876_-_full.jpg",
+        "width": 1200,
+        "height": 1476
+      },
+      "image_query": "Victor Hugo portrait"
+    },
+    "german": {
+      "title": "Goethe's Theory of Voluntary Limitation",
+      "body": "In his seventies, Goethe developed a counterintuitive ethics: mastery comes through renunciation. Wilhelm Meisters Wanderjahre (1821, revised 1829) depicts a society of 'Entsagenden' who achieve freedom by accepting limits. The tower society assigns each member a single vocation, one art, one region. Wilhelm renounces theater for surgery. The wanderers may not sleep two nights in the same place, cultivating detachment through motion. Goethe saw modern life fracturing into specialization; instead of lamenting lost wholeness, he elevated constraint to wisdom. 'In der Beschränkung zeigt sich erst der Meister' (In limitation the master first reveals himself), he wrote in 1802. This late philosophy reversed the Faustian striving of his youth. The novel baffled readers with its fragmentary structure, its interpolated tales, its refusal of conventional plot. Goethe had renounced even narrative coherence, modeling in form what his wanderers practiced in life.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Goethe_%28Stieler_1828%29.jpg/1280px-Goethe_%28Stieler_1828%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Joseph Karl Stieler / Wikimedia Commons (Public domain)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Goethe_(Stieler_1828).jpg",
+        "width": 1200,
+        "height": 1480
+      },
+      "image_query": "Goethe portrait 1828"
+    },
+    "oldenglish": {
+      "title": "The Scop in the Mead-Hall",
+      "body": "In the timber halls of seventh-century Northumbria, the scop held a place of honor beside warriors and thegns. Armed with a six-stringed lyre and centuries of formulaic verse, he wove tales of monsters and ancestors while firelight caught the gold thread in tapestries. His craft depended on kennings—compound metaphors like hronrād for the sea or bānhūs for the body—which allowed him to compose extemporaneously within strict alliterative meter. The scop was not merely entertainer but historian, preserving genealogies and battle-glory in an age before widespread literacy. At Yeavering, archaeologists found the postholes of a great hall that once seated hundreds for such performances. When the scop sang of Beowulf crossing the whale-road to fight Grendel, his audience heard their own Danish and Geatish ancestors, their own perils on cold northern waters, transformed into enduring poetry.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Utrechts-Psalter_PSALM-46_lyre_and_harp.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Unknown authorUnknown author / Wikimedia Commons (Public domain)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Utrechts-Psalter_PSALM-46_lyre_and_harp.jpg",
+        "width": 1200,
+        "height": 722
+      },
+      "image_query": "Anglo-Saxon lyre harp"
+    }
+  }
+}

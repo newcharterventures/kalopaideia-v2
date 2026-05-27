@@ -1,0 +1,46 @@
+{
+  "id": "3.5",
+  "stage": 3,
+  "title": "The Imperative",
+  "subtitle": "Commands. Second-person singular and plural.",
+  "estimated_minutes": 40,
+  "objectives": ["Form the imperative.","Use negative imperative with subjunctive."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers The Imperative. Commands. Second-person singular and plural."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Form the imperative."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Form the imperative." },
+        { "prompt": "How do you apply this in practice?", "answer": "Use negative imperative with subjunctive." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "welsh": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/welsh/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on The Imperative."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in The Imperative to ten random examples.",
+    "credit_minutes": 40
+  }
+}

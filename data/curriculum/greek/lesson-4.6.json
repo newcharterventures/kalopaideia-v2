@@ -1,0 +1,76 @@
+{
+  "id": "4.6",
+  "stage": 4,
+  "title": "Conditions, Part Two",
+  "subtitle": "Future, general, and mixed conditions.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Form and translate future-more-vivid conditions (ἐάν + subjunctive, future).",
+    "Form and translate future-less-vivid conditions (εἰ + optative, optative + ἄν).",
+    "Form and translate present and past general conditions.",
+    "Master all six types of Greek conditional sentences."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The remaining four condition types",
+      "body": "Today we complete the system of Greek conditionals. You have learned simple particular and contrary-to-fact. Now you will learn future-more-vivid, future-less-vivid, present general, and past general. Once you have all six, you can parse and translate any conditional sentence in Greek prose."
+    },
+    {
+      "kind": "prose",
+      "heading": "Future-more-vivid",
+      "body": "ἐάν + subjunctive, future indicative\n\nἐὰν λύῃς, ἀγαθὸς ἔσῃ.\n'If you loose (and you may), you will be good.'\n\nThe future-more-vivid condition expresses a likely future condition. ἐάν (= εἰ + ἄν) is used with the subjunctive in the protasis, and the future indicative appears in the apodosis. This is the most common future condition in Greek."
+    },
+    {
+      "kind": "prose",
+      "heading": "Future-less-vivid",
+      "body": "εἰ + optative, optative + ἄν\n\nεἰ λύοις, ἀγαθὸς εἴης ἄν.\n'If you should loose (but you probably won't), you would be good.'\n\nThe future-less-vivid condition expresses a remote or unlikely future condition. The optative appears in both protasis and apodosis, with ἄν in the apodosis. This condition is less common than the future-more-vivid."
+    },
+    {
+      "kind": "prose",
+      "heading": "Present general",
+      "body": "ἐάν + subjunctive, present indicative\n\nἐὰν λύῃς, ἀγαθὸς εἶ.\n'If you loose (whenever you do), you are good (always).'\n\nThe present general condition expresses a repeated or habitual action in present time. The subjunctive appears in the protasis; the present indicative appears in the apodosis. This condition states a general truth: whenever X happens, Y happens."
+    },
+    {
+      "kind": "prose",
+      "heading": "Past general",
+      "body": "εἰ + optative, imperfect indicative\n\nεἰ λύοις, ἀγαθὸς ἦσθα.\n'If you loosed (whenever you did), you were good (always).'\n\nThe past general condition expresses a repeated or habitual action in past time. The optative appears in the protasis; the imperfect indicative appears in the apodosis. This condition states a general truth about the past: whenever X happened, Y happened."
+    },
+    {
+      "kind": "prose",
+      "heading": "Summary of all six types",
+      "body": "1. Simple particular: εἰ + indicative, indicative\n2. Contrary-to-fact: εἰ + secondary tense, ἄν + secondary tense\n3. Future-more-vivid: ἐάν + subjunctive, future\n4. Future-less-vivid: εἰ + optative, optative + ἄν\n5. Present general: ἐάν + subjunctive, present\n6. Past general: εἰ + optative, imperfect\n\nMemoriz these six patterns. Every Greek conditional sentence falls into one of these types."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer or translate.",
+      "items": [
+        { "prompt": "What is the structure of a future-more-vivid condition?", "answer": "ἐάν + subjunctive, future" },
+        { "prompt": "What is the structure of a future-less-vivid condition?", "answer": "εἰ + optative, optative + ἄν" },
+        { "prompt": "What is the structure of a present general condition?", "answer": "ἐάν + subjunctive, present" },
+        { "prompt": "What is the structure of a past general condition?", "answer": "εἰ + optative, imperfect" },
+        { "prompt": "Translate: ἐὰν λύῃς, ἀγαθὸς ἔσῃ.", "answer": "If you loose, you will be good." },
+        { "prompt": "Translate: εἰ λύοις, ἀγαθὸς εἴης ἄν.", "answer": "If you should loose, you would be good." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Conditions in sentences",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "ἐὰν λύῃς, ἀγαθὸς ἔσῃ.", "transliteration": "eàn lýēis, agathòs ésēi.", "gloss": "If you loose, you will be good.", "audio": "/paideia/audio/greek/sentences/ean-lyeis.mp3" },
+        { "greek": "εἰ λύοις, ἀγαθὸς εἴης ἄν.", "transliteration": "ei lýois, agathòs eíēs án.", "gloss": "If you should loose, you would be good.", "audio": "/paideia/audio/greek/sentences/ei-lyois.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 4.7 introduces indirect statement. Greek has three ways to express indirect statement: ὅτι + indicative, accusative + infinitive, and accusative + participle. You will learn all three here."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can recognize and translate all six types of Greek conditional sentences and can produce them correctly in Greek.",
+    "credit_minutes": 60
+  }
+}

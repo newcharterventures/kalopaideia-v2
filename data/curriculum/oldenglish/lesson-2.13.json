@@ -1,0 +1,53 @@
+{
+  "id": "2.13",
+  "stage": 2,
+  "title": "Reading: Ælfric, on the Creation",
+  "subtitle": "On anginne gesceōp God heofonan and eorþan.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Understand and apply the concepts of Reading: Ælfric, on the Creation.",
+    "Read and parse examples from authentic Old English texts.",
+    "Practice pronunciation and recognition."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "On anginne gesceōp God heofonan and eorþan. Sēo eorþe sōþlīce wæs īdel and ǣmtig, and þēostru wǣron ofer þǣre nīwelnesse brādnesse, and Godes gāst wæs geferod ofer wæteru.\n\nTranslation: 'In the beginning God created heaven and earth. The earth was idle and empty, and darkness was over the breadth of the abyss, and God's spirit was borne over the waters.'\n\nThis is Ælfric's translation of Genesis 1:1-2. Ælfric (c. 955–1010) was a Benedictine monk, the greatest prose stylist of late Old English. His homilies and saints' lives are models of clear, rhythmic prose."
+    },
+    {
+      "kind": "prose",
+      "heading": "Example",
+      "body": "Ælfric's prose is a model of clarity and rhythm."
+    },
+    {
+      "kind": "prose",
+      "heading": "Glossary",
+      "body": "anginne (beginning, dat.), gesceōp (created, past sg.), heofonan (heaven, acc.), eorþan (earth, acc.), sōþlīce (truly), īdel (idle, empty), ǣmtig (empty), þēostru (darkness, nom. pl.), nīwelnesse (abyss, gen.), brādnesse (breadth, gen.), gāst (spirit, nom.), geferod (borne, past part.), wæteru (waters, acc. pl.)."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test your understanding.",
+      "items": [
+        {
+          "prompt": "What is the main concept of this lesson?",
+          "answer": "Reading: Ælfric, on the Creation"
+        },
+        {
+          "prompt": "Can you parse the example?",
+          "answer": "Review the paradigm and example above."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson in Stage 2."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand Reading: Ælfric, on the Creation and can apply it in reading.",
+    "credit_minutes": 55
+  }
+}

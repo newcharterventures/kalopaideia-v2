@@ -1,0 +1,18 @@
+{
+  "date": "2026-04-11",
+  "generated_at": "2026-04-24T07:31:40.832Z",
+  "backfilled_at": "2026-04-24T07:31:40.833Z",
+  "vignettes": {
+    "greek": {
+      "title": "Socrates and the Oracle at Delphi",
+      "body": "When Chaerephon asked the Delphic Oracle whether anyone was wiser than Socrates, the priestess answered no. Socrates found this baffling. He possessed no special knowledge, no technical expertise, no claim to wisdom. So he set out to disprove the oracle by finding someone truly wise.\n\nHe questioned politicians, poets, and craftsmen throughout Athens. Each claimed expertise, yet under examination revealed only ignorance dressed as knowledge. The craftsmen knew their trades but presumed this made them wise about all things. The poets created beauty without understanding their own creations.\n\nSocrates finally grasped the oracle's meaning: his wisdom lay in knowing he knew nothing. This awareness, this honest confrontation with ignorance, became the foundation of philosophy itself. True sophia began not with answers but with the courage to question.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Oracle_of_Delphi%2C_red-figure_kylix%2C_440-430_BC%2C_Kodros_Painter%2C_Berlin_F_2538%2C_141666.jpg",
+        "credit": "Oracle of Delphi, red-figure kylix, 440-430 BC, Kodros Painter, Berlin F 2538, 141666.jpg — Zde",
+        "width": 4499,
+        "height": 3374
+      },
+      "image_query": "Delphi oracle temple"
+    }
+  }
+}

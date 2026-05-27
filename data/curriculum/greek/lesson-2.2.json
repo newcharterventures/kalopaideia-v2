@@ -1,0 +1,72 @@
+{
+  "id": "2.2",
+  "stage": 2,
+  "title": "The Second Declension — Masculine",
+  "subtitle": "ὁ ἄνθρωπος, ὁ λόγος, ὁ ἵππος — the foundation.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Decline any second-declension masculine noun in all five cases and both numbers.",
+    "Understand the nominative as the case of the subject.",
+    "Understand the accusative as the case of the direct object.",
+    "Parse second-declension masculine nouns on sight."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The second declension",
+      "body": "The second declension contains most masculine nouns ending in -ος and all neuter nouns ending in -ον. Today we take up the masculine forms. These are the most common nouns in Greek prose after the article itself.\n\nThe pattern is regular. The nominative singular ends in -ος, the genitive singular in -ου, the dative singular in -ῳ, the accusative singular in -ον. The vocative singular ends in -ε. The plural endings mirror the article: nominative -οι, genitive -ων, dative -οις, accusative -ους.\n\nOnce you have this paradigm, you have the skeleton for hundreds of Greek nouns."
+    },
+    {
+      "kind": "prose",
+      "heading": "The paradigm: ὁ ἄνθρωπος (human being, man)",
+      "body": "              singular        plural\n  nominative  ἄνθρωπος        ἄνθρωποι\n  genitive    ἀνθρώπου        ἀνθρώπων\n  dative      ἀνθρώπῳ         ἀνθρώποις\n  accusative  ἄνθρωπον        ἀνθρώπους\n  vocative    ἄνθρωπε         ἄνθρωποι\n\nWith the article:\n  nominative  ὁ ἄνθρωπος      οἱ ἄνθρωποι\n  genitive    τοῦ ἀνθρώπου    τῶν ἀνθρώπων\n  dative      τῷ ἀνθρώπῳ      τοῖς ἀνθρώποις\n  accusative  τὸν ἄνθρωπον    τοὺς ἀνθρώπους\n  vocative    ὦ ἄνθρωπε       ὦ ἄνθρωποι\n\nThe vocative is the case of direct address. When you call out to someone, you use the vocative. ὦ ἄνθρωπε means 'O man!' or 'Hey, man!' The particle ὦ is optional but common."
+    },
+    {
+      "kind": "prose",
+      "heading": "Nominative and accusative",
+      "body": "The nominative is the case of the subject. ὁ ἄνθρωπος βαδίζει means 'the man walks.' ἄνθρωπος is nominative because it is the subject.\n\nThe accusative is the case of the direct object. ὁ διδάσκαλος διδάσκει τὸν ἄνθρωπον means 'the teacher teaches the man.' ἄνθρωπον is accusative because it is the direct object of the verb διδάσκει.\n\nGreek word order is flexible. You can say ὁ διδάσκαλος τὸν ἄνθρωπον διδάσκει or τὸν ἄνθρωπον διδάσκει ὁ διδάσκαλος, and both mean the same thing. The endings, not the position, tell you which word is subject and which is object."
+    },
+    {
+      "kind": "prose",
+      "heading": "Examples from real Greek",
+      "body": "Xenophon, Anabasis I.2.1: ἐντεῦθεν ἐξελαύνει διὰ τῆς Λυδίας σταθμοὺς τρεῖς.\n'From there he marches through Lydia three stages.' The word σταθμούς (accusative plural of σταθμός, stage) is the direct object of the verb ἐξελαύνει.\n\nPlato, Apology 17a: ὁ μὲν Μέλητος κατηγορεῖ.\n'Meletus accuses.' Μέλητος is nominative, the subject of the verb.\n\nThese are real sentences. The second declension is not a textbook abstraction. It is the backbone of Greek prose."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers. Parse each form or answer each question.",
+      "items": [
+        { "prompt": "ἀνθρώπου", "answer": "genitive singular" },
+        { "prompt": "ἀνθρώποις", "answer": "dative plural" },
+        { "prompt": "ἄνθρωπον", "answer": "accusative singular" },
+        { "prompt": "ἄνθρωπε", "answer": "vocative singular" },
+        { "prompt": "ἀνθρώπων", "answer": "genitive plural" },
+        { "prompt": "Which case is used for the subject of a verb?", "answer": "nominative" },
+        { "prompt": "Which case is used for the direct object of a verb?", "answer": "accusative" },
+        { "prompt": "What is the vocative singular ending for second-declension masculine nouns?", "answer": "-ε" },
+        { "prompt": "Does Greek word order determine which noun is the subject?", "answer": "No. The endings determine function, not the position." },
+        { "prompt": "What is the genitive plural ending?", "answer": "-ων" }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Second-declension masculine nouns in sentences",
+      "instructions": "Read these aloud. Each contains a second-declension masculine noun.",
+      "words": [
+        { "greek": "ὁ λόγος καλός ἐστιν.", "transliteration": "ho lógos kalós estin.", "gloss": "The word is beautiful.", "audio": "/paideia/audio/greek/sentences/logos-kalos.mp3" },
+        { "greek": "τοῦ ἵππου", "transliteration": "toû híppou", "gloss": "of the horse", "audio": "/paideia/audio/greek/phrases/tou-hippou.mp3" },
+        { "greek": "ὁ διδάσκαλος διδάσκει τὸν ἄνθρωπον.", "transliteration": "ho didáskalos didáskei tòn ánthrōpon.", "gloss": "The teacher teaches the man.", "audio": "/paideia/audio/greek/sentences/didaskalos-didaskei.mp3" },
+        { "greek": "οἱ φίλοι τρέχουσιν.", "transliteration": "hoi phíloi trékhoυsin.", "gloss": "The friends run.", "audio": "/paideia/audio/greek/sentences/philoi-trechousin.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.3 introduces the second-declension neuter nouns: τὸ δῶρον, τὸ τέκνον. The neuter forms are almost identical to the masculine, with one major exception: the nominative and accusative are always the same, and the neuter plural subject takes a singular verb. This is the neuter plural rule, and it is absolute."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can decline any second-declension masculine noun from memory in under three minutes and can parse ten randomly-chosen forms without error.",
+    "credit_minutes": 55
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "id": "capstone-gaulish",
+  "lang": "gaulish",
+  "title": "The Kalopaideia Diploma in Reading Gaulish Epigraphy",
+  "instructions": "Ninety minutes, no notes. A printed lexicon and reference grammar are permitted for Sections B and C. Honor code: you affirm by submitting that you used only permitted aids. A failed examination may be retaken after thirty days.",
+  "time_limit_minutes": 90,
+  "sections": [
+    {
+      "id": "A",
+      "title": "Part A — Inscription Reading (lexicon permitted)",
+      "items": [
+        {
+          "id": "A1",
+          "type": "translate",
+          "points": 10,
+          "prompt_gaulish": "SAMONIOS TRINVX SAMO SINDIV",
+          "prompt_en": "Translate this line from the Coligny Calendar.",
+          "reference": [
+            "samonios three-night festival of samo today",
+            "samonios three-night of samo today",
+            "summer-end three-night samo today"
+          ],
+          "keywords": ["samonios", "three", "today"],
+          "threshold": 0.4
+        },
+        {
+          "id": "A2",
+          "type": "translate",
+          "points": 10,
+          "prompt_gaulish": "IN ALCVINOM CANTOBEDNNABO AVDE",
+          "prompt_en": "Translate this phrase from the Larzac Tablet.",
+          "reference": [
+            "in the sacred place to the cantobednna invokes",
+            "into alkunom to cantobednna calls upon",
+            "in the sacred place invokes the cantobednna"
+          ],
+          "keywords": ["sacred place", "invokes"],
+          "threshold": 0.35
+        },
+        {
+          "id": "A3",
+          "type": "translate",
+          "points": 10,
+          "prompt_gaulish": "ANDEDION MAPONOS ARVERNORIGIIS RISVM RISVM",
+          "prompt_en": "Translate this opening from the Chamalières Tablet.",
+          "reference": [
+            "great god maponos of the arverni kings curse curse",
+            "very divine maponos of arverni kings curse curse",
+            "andedion maponos of the arverni kings curse curse"
+          ],
+          "keywords": ["maponos", "arverni", "curse"],
+          "threshold": 0.4
+        },
+        {
+          "id": "A4",
+          "type": "translate",
+          "points": 10,
+          "prompt_gaulish": "AKANONETIVIS TANKINOM IUVINOM",
+          "prompt_en": "Translate this Lepontic text from the Vercelli bilingual stone.",
+          "reference": [
+            "to akanonetivis to the deceased to the youth",
+            "to akanonetivis tankinom for the youth",
+            "akanonetivis to the monument to the young man"
+          ],
+          "keywords": ["akanonetivis", "youth"],
+          "threshold": 0.35
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "title": "Part B — Parsing",
+      "items": [
+        {
+          "id": "B1",
+          "type": "parse",
+          "points": 6,
+          "prompt": "Parse SEGOMĀRI. Give: case, number, lexical form (nominative).",
+          "answer": ["genitive", "singular", "SEGOMĀROS"]
+        },
+        {
+          "id": "B2",
+          "type": "parse",
+          "points": 6,
+          "prompt": "Parse DEDEMIT. Give: person, number, tense.",
+          "answer": ["third", "singular", "preterite"]
+        },
+        {
+          "id": "B3",
+          "type": "parse",
+          "points": 6,
+          "prompt": "Parse LVGVO. Give: case, number, lexical form (nominative).",
+          "answer": ["dative", "singular", "LVGVS"]
+        },
+        {
+          "id": "B4",
+          "type": "parse",
+          "points": 6,
+          "prompt": "What is the dative plural ending for all Gaulish noun classes?",
+          "answer": ["-bo", "bo", "-BO"]
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "title": "Part D — Multiple Choice",
+      "items": [
+        {
+          "id": "D1",
+          "type": "mcq",
+          "points": 3,
+          "prompt": "Which script is the oldest used for Celtic epigraphy?",
+          "choices": ["Greek", "Latin", "Lepontic", "Ogham"],
+          "answer": "Lepontic"
+        },
+        {
+          "id": "D2",
+          "type": "mcq",
+          "points": 3,
+          "prompt": "What does the digraph <ou> represent in Gaulish?",
+          "choices": ["long /u:/", "diphthong /ou/", "short /o/", "/w/"],
+          "answer": "long /u:/"
+        },
+        {
+          "id": "D3",
+          "type": "mcq",
+          "points": 3,
+          "prompt": "Which month began the Gaulish year according to the Coligny Calendar?",
+          "choices": ["GIAMONIOS", "SAMONIOS", "RIVROS", "EQVOS"],
+          "answer": "SAMONIOS"
+        },
+        {
+          "id": "D4",
+          "type": "mcq",
+          "points": 3,
+          "prompt": "What does MID mean in the Coligny Calendar?",
+          "choices": ["middle", "good/lucky", "month", "moon"],
+          "answer": "good/lucky"
+        },
+        {
+          "id": "D5",
+          "type": "mcq",
+          "points": 3,
+          "prompt": "Which Gaulish god was identified with Roman Mercury?",
+          "choices": ["Taranis", "Esus", "Lugus", "Belenos"],
+          "answer": "Lugus"
+        },
+        {
+          "id": "D6",
+          "type": "mcq",
+          "points": 3,
+          "prompt": "What does IEVRV mean in votive inscriptions?",
+          "choices": ["he vowed", "to the sacred place", "forever", "in the year"],
+          "answer": "to the sacred place"
+        }
+      ]
+    }
+  ],
+  "scoring": {
+    "max_points": 82,
+    "pass_mark": 0.70,
+    "honors_mark": 0.85
+  },
+  "honor_code": "I attest that the answers I have entered are my own, composed without aid beyond the materials permitted for each section of this examination. I understand that this examination is graded, that the script and my signed attestation will be hashed on completion, and that a passing score will issue a permanent on-chain diploma in my name."
+}

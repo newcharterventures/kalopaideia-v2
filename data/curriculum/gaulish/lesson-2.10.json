@@ -1,0 +1,79 @@
+{
+  "id": "2.10",
+  "stage": 2,
+  "title": "The Gaulish Verb",
+  "subtitle": "What we know — -IT, -ONT, -S, and the verb DEDEMIT.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Understand the limitations of Gaulish verb reconstruction.",
+    "Recognize third singular -IT and third plural -ONT.",
+    "Identify the preterite marker -S in DEDEMIT and ANDEDASETI.",
+    "Accept that infinitives, participles, and most other verb forms are rare or unattested."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The problem",
+      "body": "Gaulish verb morphology is incomplete. The inscriptions give us a handful of verb forms, mostly third person, mostly preterite (past tense). We have no paradigm tables because the Gauls never wrote paradigm tables. We have no grammars because no Gaulish grammarian survived. What we know about the verb comes from what appears in the corpus, compared with related Celtic languages (Old Irish, Welsh) and reconstructed Proto-Celtic."
+    },
+    {
+      "kind": "prose",
+      "heading": "Third person singular: -IT",
+      "body": "The most common verb ending in Gaulish inscriptions is -IT, marking third person singular. Examples:\n\nDEDEMIT — \"he/she gave\" (preterite)\nIEVRIT — \"he/she dedicated\" (if IEVRV is a verb form)\nEIORV — \"he/she set up\" (from the Vaison inscription)\n\nThe ending -IT is cognate with Latin -it (dedit, \"he gave\") and Old Irish -id. This is secure."
+    },
+    {
+      "kind": "prose",
+      "heading": "Third person plural: -ONT",
+      "body": "The third person plural ending is -ONT, cognate with Latin -unt and Old Irish -at. It is rare in Gaulish inscriptions because most dedications are made by individuals, not groups. One attested example:\n\nLEGONT — \"they read\" or \"they lie\" (from the Coligny Calendar annotations, meaning disputed)\n\nThe ending is certain; the verb stems are not always clear."
+    },
+    {
+      "kind": "prose",
+      "heading": "The preterite marker: -S-",
+      "body": "The Gaulish preterite (simple past) is marked by the suffix -S-, inserted between the verb root and the person ending. Examples:\n\nDEDEMIT — DE-DE-S-IT (\"he gave\", root *dē- \"give\", reduplicated, + -S- preterite + -IT 3rd sg.)\nANDEDASETI — ANDE-DA-S-ETI (\"he set up\", prefix ANDE- + root *dē- + -S- preterite + -ETI 3rd sg. variant)\n\nThe -S- is cognate with the Latin perfect -s- (dīxī < *deik-s-) and the Old Irish -s- preterite. This is how we know DEDEMIT is past tense."
+    },
+    {
+      "kind": "prose",
+      "heading": "What we do not know",
+      "body": "We lack:\n\n1. First and second person forms (\"I\", \"you\") — the inscriptions are third-person by nature\n2. Infinitives — none are attested with certainty\n3. Participles — a few possible forms (ADSAXSATILIN in the Larzac Tablet may be a participle), but the system is unclear\n4. Imperative — possibly attested in the curse tablets (RISVM?), but disputed\n5. Subjunctive and optative — not preserved\n6. Present vs. preterite distinction outside a few verbs\n\nGaulish verb reconstruction is honest about its limits. We work with what survives."
+    },
+    {
+      "kind": "prose",
+      "heading": "DEDEMIT — the verb that built the corpus",
+      "body": "DEDEMIT appears in dozens of inscriptions. It is the backbone of Gaulish epigraphy. The word means \"he/she gave\" or \"dedicated\", and it is the standard formula for votive and funerary dedications. Parse it:\n\nDE-DE-S-IT\n\nRoot: *dē- (\"give\")\nReduplication: DE-DE- (a common Indo-European past tense marker, as in Latin dedī)\nPreterite marker: -S-\nThird singular ending: -IT\n\nThis is the most thoroughly understood Gaulish verb. Everything else is less certain."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers; check after.",
+      "items": [
+        { "prompt": "What is the third person singular verb ending in Gaulish?", "answer": "-IT, cognate with Latin -it and Old Irish -id." },
+        { "prompt": "What is the third person plural verb ending in Gaulish?", "answer": "-ONT, cognate with Latin -unt and Old Irish -at." },
+        { "prompt": "How is the preterite marked in Gaulish verbs?", "answer": "By the suffix -S- inserted between the root and the person ending." },
+        { "prompt": "Parse DEDEMIT into its elements.", "answer": "DE-DE-S-IT: root *dē- (give), reduplicated, + -S- (preterite) + -IT (3rd sg.)." },
+        { "prompt": "Why do we lack first and second person verb forms in Gaulish?", "answer": "Because the inscriptions are third-person by nature (dedications, epitaphs). No one carves \"I gave\" on a stone; they carve \"X gave\"." },
+        { "prompt": "What does ANDEDASETI mean?", "answer": "\"He set up\" — ANDE- (prefix) + DA- (root *dē-) + -S- (preterite) + -ETI (3rd sg. variant)." },
+        { "prompt": "Why is Gaulish verb reconstruction incomplete?", "answer": "Because the corpus is small and formulaic. Most verb forms simply do not appear in the inscriptions." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Gaulish verb forms",
+      "instructions": "These are the attested verb forms in Gaulish inscriptions. Memorize them.",
+      "words": [
+        { "gaulish": "DEDEMIT", "transliteration": null, "gloss": "he/she gave (preterite, 3rd sg.)", "audio": "/paideia/audio/gaulish/verbs/dedemit.mp3" },
+        { "gaulish": "ANDEDASETI", "transliteration": null, "gloss": "he/she set up (preterite, 3rd sg.)", "audio": "/paideia/audio/gaulish/verbs/andedaseti.mp3" },
+        { "gaulish": "AVDE", "transliteration": null, "gloss": "invokes, calls upon (3rd sg. or pl.)", "audio": "/paideia/audio/gaulish/verbs/aude.mp3" },
+        { "gaulish": "LEGONT", "transliteration": null, "gloss": "they read / they lie (3rd pl.)", "audio": "/paideia/audio/gaulish/verbs/legont.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Stage 2 is complete. You have read the Coligny Calendar, the Larzac and Chamalières tablets, the Vercelli bilingual, and twenty funerary and votive inscriptions. The capstone examination awaits."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can parse DEDEMIT into its elements, recognize -IT and -ONT, and accept the limits of Gaulish verb reconstruction.",
+    "credit_minutes": 55
+  }
+}

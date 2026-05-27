@@ -1,0 +1,100 @@
+{
+  "id": "1.2",
+  "stage": 1,
+  "title": "The Consonants",
+  "subtitle": "The twenty-one consonants — including the uvular r, the palatal gn, and the distinction between s and ss.",
+  "estimated_minutes": 45,
+  "objectives": [
+    "Recognize and produce all twenty-one French consonants.",
+    "Pronounce the uvular r as a voiced fricative, not an English alveolar r.",
+    "Produce the palatal nasal gn as a single phoneme.",
+    "Distinguish between intervocalic s (voiced) and ss (voiceless).",
+    "Understand the difference between c and ç."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The French consonants",
+      "body": "French has twenty-one consonants. Most are close to their English counterparts. Three are not: the r, the gn, and the h (which comes in two types, silent and aspirated, but is never pronounced as a consonant).\n\nThe r is the most distinctive French sound for English speakers. It is made at the back of the mouth, near the uvula, as a voiced fricative. The tongue does not touch the roof of the mouth. The sound is like gargling, but gentler. Listen to the audio carefully; this one takes practice."
+    },
+    {
+      "kind": "letter_grid",
+      "heading": "The consonants",
+      "letters": [
+        { "upper": "P", "lower": "p", "name": "p", "ipa": "[p]", "audio": "/paideia/audio/french/letters/p.mp3", "note": "Like English p. Ex: pain." },
+        { "upper": "B", "lower": "b", "name": "b", "ipa": "[b]", "audio": "/paideia/audio/french/letters/b.mp3", "note": "Like English b. Ex: bon." },
+        { "upper": "T", "lower": "t", "name": "t", "ipa": "[t]", "audio": "/paideia/audio/french/letters/t.mp3", "note": "Like English t. Ex: tout." },
+        { "upper": "D", "lower": "d", "name": "d", "ipa": "[d]", "audio": "/paideia/audio/french/letters/d.mp3", "note": "Like English d. Ex: dans." },
+        { "upper": "K", "lower": "k", "name": "k", "ipa": "[k]", "audio": "/paideia/audio/french/letters/k.mp3", "note": "Spelled c before a, o, u, or qu. Ex: car, qui." },
+        { "upper": "G", "lower": "g", "name": "g", "ipa": "[ɡ]", "audio": "/paideia/audio/french/letters/g.mp3", "note": "Hard g before a, o, u. Ex: gare, goût." },
+        { "upper": "F", "lower": "f", "name": "f", "ipa": "[f]", "audio": "/paideia/audio/french/letters/f.mp3", "note": "Like English f. Ex: feu." },
+        { "upper": "V", "lower": "v", "name": "v", "ipa": "[v]", "audio": "/paideia/audio/french/letters/v.mp3", "note": "Like English v. Ex: vous." },
+        { "upper": "S", "lower": "s", "name": "s", "ipa": "[s] or [z]", "audio": "/paideia/audio/french/letters/s.mp3", "note": "Voiceless at the start and end; voiced between vowels. Ex: sans [s], maison [z]." },
+        { "upper": "Z", "lower": "z", "name": "z", "ipa": "[z]", "audio": "/paideia/audio/french/letters/z.mp3", "note": "Like English z. Ex: zéro." },
+        { "upper": "CH", "lower": "ch", "name": "ch", "ipa": "[ʃ]", "audio": "/paideia/audio/french/letters/ch.mp3", "note": "Like English sh. Ex: chaud." },
+        { "upper": "J", "lower": "j", "name": "j", "ipa": "[ʒ]", "audio": "/paideia/audio/french/letters/j.mp3", "note": "Like the s in pleasure. Ex: je, rouge." },
+        { "upper": "M", "lower": "m", "name": "m", "ipa": "[m]", "audio": "/paideia/audio/french/letters/m.mp3", "note": "Like English m. Ex: mère." },
+        { "upper": "N", "lower": "n", "name": "n", "ipa": "[n]", "audio": "/paideia/audio/french/letters/n.mp3", "note": "Like English n. Ex: non." },
+        { "upper": "GN", "lower": "gn", "name": "gn", "ipa": "[ɲ]", "audio": "/paideia/audio/french/letters/gn.mp3", "note": "Palatal nasal, like the ny in canyon. Ex: champagne." },
+        { "upper": "L", "lower": "l", "name": "l", "ipa": "[l]", "audio": "/paideia/audio/french/letters/l.mp3", "note": "Like English l. Ex: le." },
+        { "upper": "R", "lower": "r", "name": "r", "ipa": "[ʁ]", "audio": "/paideia/audio/french/letters/r.mp3", "note": "Uvular fricative. The signature sound of French. Ex: rue, Paris." },
+        { "upper": "W", "lower": "w", "name": "w", "ipa": "[w]", "audio": "/paideia/audio/french/letters/w.mp3", "note": "Like English w. Ex: oui." },
+        { "upper": "Y", "lower": "y", "name": "y", "ipa": "[j]", "audio": "/paideia/audio/french/letters/y.mp3", "note": "Like English y in yes. Ex: yeux." },
+        { "upper": "Ç", "lower": "ç", "name": "c cédille", "ipa": "[s]", "audio": "/paideia/audio/french/letters/c-cedille.mp3", "note": "C with cedilla before a, o, u forces [s]. Ex: français." },
+        { "upper": "H", "lower": "h", "name": "h", "ipa": "silent or aspirated", "audio": "/paideia/audio/french/letters/h.mp3", "note": "Never pronounced. Silent h allows liaison; aspirated h blocks it. Ex: l'homme (silent), le héros (aspirated)." }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "The r — a note",
+      "body": "The French r is the hardest sound for English speakers. It is made at the back of the throat, not at the front. The tongue does not touch the roof of the mouth. The uvula vibrates or the back of the tongue constricts the airflow near it. The result is a voiced fricative.\n\nYou will not get it right the first time. That is expected. Listen to the audio ten times. Mimic it. Record yourself. Compare. The sound will come."
+    },
+    {
+      "kind": "prose",
+      "heading": "The letter s and the doubled ss",
+      "body": "Between two vowels, a single s is voiced: maison [mɛzɔ̃]. A doubled ss is voiceless: poisson [pwasɔ̃]. At the start of a word or after a consonant, s is voiceless: sans, instant. This rule trips beginners who expect the letter s to always sound like English s."
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill",
+      "instructions": "Each consonant is spoken in isolation, then inside a real French word. Repeat each one.",
+      "audio": "/paideia/audio/french/drills/lesson-1.2-listening.mp3"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer without looking back.",
+      "items": [
+        { "prompt": "What is the IPA symbol for the French r?", "answer": "[ʁ]" },
+        { "prompt": "Is the r in 'rue' pronounced with the tongue touching the roof of the mouth?", "answer": "No. It is a uvular fricative, made at the back of the throat." },
+        { "prompt": "What sound does gn make?", "answer": "Palatal nasal [ɲ], like the ny in canyon." },
+        { "prompt": "When is s voiced?", "answer": "Between two vowels: maison [mɛzɔ̃]." },
+        { "prompt": "What does the cédille (ç) do?", "answer": "It forces the c to be pronounced [s] before a, o, or u." },
+        { "prompt": "Is the h in 'homme' pronounced?", "answer": "No. French h is always silent." },
+        { "prompt": "What is the difference between a silent h and an aspirated h?", "answer": "A silent h allows liaison and élision (l'homme). An aspirated h blocks them (le héros, no liaison)." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Words to practice",
+      "instructions": "Read each aloud. Focus on the r and the gn.",
+      "words": [
+        { "french": "rue", "transliteration": null, "gloss": "street", "audio": "/paideia/audio/french/words/rue.mp3" },
+        { "french": "Paris", "transliteration": null, "gloss": "Paris", "audio": "/paideia/audio/french/words/paris.mp3" },
+        { "french": "champagne", "transliteration": null, "gloss": "champagne", "audio": "/paideia/audio/french/words/champagne.mp3" },
+        { "french": "maison", "transliteration": null, "gloss": "house", "audio": "/paideia/audio/french/words/maison.mp3" },
+        { "french": "poisson", "transliteration": null, "gloss": "fish", "audio": "/paideia/audio/french/words/poisson.mp3" },
+        { "french": "français", "transliteration": null, "gloss": "French", "audio": "/paideia/audio/french/words/francais.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.3 covers silent letters — which consonants are pronounced at the end of a word, and which are not. The rule is simpler than it looks, but the exceptions must be learned."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can pronounce all twenty-one consonants in context and produce a passable uvular r.",
+    "credit_minutes": 45
+  }
+}

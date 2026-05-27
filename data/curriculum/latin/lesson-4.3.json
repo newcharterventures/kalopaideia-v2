@@ -1,0 +1,20 @@
+{
+  "id": "4.3",
+  "stage": 4,
+  "title": "Purpose Clauses",
+  "subtitle": "ut + subjunctive. veniō ut tē videam.",
+  "estimated_minutes": 50,
+  "objectives": ["Recognize purpose clauses with ut (or nē for negative).", "Translate as 'in order to', 'so that', 'to'.", "Understand sequence of tenses in purpose clauses.", "Distinguish purpose (ut + subj.) from result (ut + subj. with signal word)."],
+  "sections": [
+    {"kind": "prose", "heading": "Purpose clauses", "body": "Purpose clauses express the goal or intent of an action. They use ut + subjunctive (nē for negative purpose).\n\nveniō ut tē videam. — I come (in order) to see you.\nmīlitēs mittit nē hostēs fugiant. — He sends soldiers so that the enemies may not flee.\n\nCaesar writes: pontem fēcit ut exercitum trādūceret. — He made a bridge (in order) to lead the army across.\nCicero writes: dīcō ut discās. — I speak so that you may learn."},
+    {"kind": "self_check", "heading": "Self-check", "items": [
+      {"prompt": "Translate: venit ut mē audīret.", "answer": "He came (in order) to hear me / so that he might hear me."},
+      {"prompt": "Translate: loquor nē taceas.", "answer": "I speak so that you may not be silent."}
+    ]},
+    {"kind": "reading_preview", "heading": "Sentences", "words": [
+      {"latin": "Caesar pontem fēcit ut exercitum trādūceret.", "transliteration": null, "gloss": "Caesar made a bridge to lead the army across.", "audio": "/paideia/audio/latin/sentences/4.3-1.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Lesson 4.4: result clauses. tam fortis est ut omnēs eum laudent."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can recognize and translate purpose clauses.", "credit_minutes": 50}
+}

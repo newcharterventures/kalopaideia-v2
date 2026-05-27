@@ -1,0 +1,56 @@
+{
+  "id": "3.13",
+  "stage": 3,
+  "title": "Reading: Maupassant, La Parure (adapted)",
+  "subtitle": "A three-hundred-word extract.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Understand reading: maupassant, la parure (adapted).",
+    "Apply the concepts in reading and writing.",
+    "Practice with authentic French examples."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Main content",
+      "body": "This lesson covers Reading: Maupassant, La Parure (adapted). A three-hundred-word extract."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer these questions.",
+      "items": [
+        {
+          "prompt": "What is the main concept?",
+          "answer": "Reading: Maupassant, La Parure (adapted)"
+        },
+        {
+          "prompt": "Review question 2",
+          "answer": "Review answer 2"
+        }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Practice materials",
+      "instructions": "Read each example.",
+      "words": [
+        {
+          "french": "exemple",
+          "transliteration": null,
+          "gloss": "example",
+          "audio": "/paideia/audio/french/words/example.mp3"
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson continues Stage 3."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts without hesitation.",
+    "credit_minutes": 50
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "id": "track-plato",
+  "track_name": "The Philosopher",
+  "text_title": "Plato, Crito",
+  "text_subtitle": "The complete dialogue, c. 6,200 words — a defense of law and the examined life.",
+  "estimated_weeks": 12,
+  "rationale": "The Crito is the most accessible Plato. A complete short dialogue with a definite shape. Introduces the Socratic style and the major philosophical vocabulary (δίκαιον, ἀρετή, ψυχή). The argument is clear, the stakes are high, and the ending is moving. This is where students learn to read Plato.",
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Why the Crito?",
+      "body": "The Crito is short, complete, and philosophically substantive. Socrates is in prison, awaiting execution. His friend Crito offers to help him escape. Socrates refuses, and the dialogue is his defense of that refusal.\n\nThe arguments are ethical and political. Should one obey an unjust law? What does one owe to the city? Is it better to suffer wrong than to do wrong? The Crito raises these questions and answers them with clarity and force.\n\nThe Greek is accessible. The dialogue form keeps the syntax manageable. The vocabulary is the vocabulary of ethics and citizenship, and once learned it unlocks the rest of Plato."
+    },
+    {
+      "kind": "prose",
+      "heading": "Reading schedule",
+      "body": "Week 1-2: Crito 43a-44b (Crito's arrival and opening appeal)\nWeek 3-4: Crito 44b-46a (Socrates's refusal and the principle of never doing wrong)\nWeek 5-6: Crito 46b-49a (The examination of opinion and the rule of the expert)\nWeek 7-8: Crito 49a-50a (The principle: never do wrong, never return wrong for wrong)\nWeek 9-10: Crito 50a-54d (The speech of the Laws)\nWeek 11-12: Review, essay, and preparation for the capstone examination\n\nRead each section aloud at least twice before translating. Memorize the key arguments. Write a short essay (500 words) on one of the dialogue's central questions."
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Key passages with full glosses",
+      "instructions": "These passages are the heart of the dialogue. Master these and you will master the Crito.",
+      "words": [
+        { "greek": "οὐ γὰρ περὶ τοῦ ἐπιτυχόντος ὁ λόγος, ἀλλὰ περὶ τοῦ ὅντινα τρόπον χρὴ ζῆν.", "transliteration": "ou gàr perì toû epitykhóntos ho lógos, allà perì toû hóntina trópon khrḕ zên.", "gloss": "For the discussion is not about something random, but about the way in which one ought to live. (Crito 48b)" },
+        { "greek": "οὐδενὶ τρόπῳ ἄρα δεῖ ἀδικεῖν.", "transliteration": "oudenì trópōi ára deî adikeîn.", "gloss": "In no way, then, should one do wrong. (Crito 49a)" },
+        { "greek": "οὔτε ἀνταδικεῖν ἄρα δεῖ οὔτε κακῶς ποιεῖν οὐδένα ἀνθρώπων, οὐδ' ἂν ὁτιοῦν πάσχῃ ὑπ' αὐτῶν.", "transliteration": "oúte antadikeîn ára deî oúte kakôs poieîn oudéna anthrṓpōn, oud' àn hótioûn páskhēi hyp' autôn.", "gloss": "One should neither return wrong for wrong nor do harm to any person, whatever one may suffer at their hands. (Crito 49c)" }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Vocabulary clusters",
+      "body": "δίκαιος, δικαιοσύνη, ἀδικέω, ἀδικία — just, justice, to do wrong, wrongdoing\nψυχή, σῶμα — soul, body\nἀρετή, κακία — excellence, vice\nπόλις, νόμος, πολίτης — city, law, citizen\nπείθω, πείθομαι — persuade, obey\nχρή, δεῖ — it is necessary, one ought\n\nThese words recur throughout the dialogue. Learn them in context and you will read Plato with ease."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Discussion questions",
+      "instructions": "Answer these in writing after completing the Crito.",
+      "items": [
+        { "prompt": "What is Crito's argument for why Socrates should escape?", "answer": "(Student must construct from the text.)" },
+        { "prompt": "What is Socrates's principle about doing wrong?", "answer": "One should never do wrong, not even in return for wrong done to oneself." },
+        { "prompt": "What is the speech of the Laws?", "answer": "A personification of the laws of Athens, arguing that Socrates owes obedience to the city that raised and educated him." },
+        { "prompt": "Why does Socrates refuse to escape?", "answer": "Because escaping would be doing wrong to the city and breaking the implicit contract between citizen and state." },
+        { "prompt": "Is the Crito's argument convincing? Why or why not?", "answer": "(Student must construct an argument.)" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "After the Crito",
+      "body": "Once you have completed the Crito, you are ready for the capstone examination. You will translate a fifty-word passage from the Crito at sight, without notes. You will parse ten forms. You will compose five Greek sentences. You will pass, and you will hold the Kalopaideia Diploma in Classical Greek, track Philosopher."
+    }
+  ]
+}

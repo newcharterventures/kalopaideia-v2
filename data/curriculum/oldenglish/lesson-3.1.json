@@ -1,0 +1,43 @@
+{
+  "id": "3.1",
+  "stage": 3,
+  "title": "Weak Verbs — Class I",
+  "subtitle": "Dēman, hīeran — the dental suffix.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Master Weak Verbs — Class I.",
+    "Read and translate authentic Old English poetry and prose.",
+    "Prepare for the capstone examination."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "Weak verbs form their past tense by adding a dental suffix (-d- or -t-), not by ablaut. Class I weak verbs have -e- in the infinitive and present tense. Present: ic dēme, þū dēmest, hē dēmeþ. Past: ic dēmde, þū dēmdest, hē dēmde. Past participle: gedēmed."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "Weak Verbs — Class I"
+        },
+        {
+          "prompt": "Can you translate the example passage?",
+          "answer": "Work through it word by word with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson or take the capstone examination."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply Weak Verbs — Class I to reading.",
+    "credit_minutes": 60
+  }
+}

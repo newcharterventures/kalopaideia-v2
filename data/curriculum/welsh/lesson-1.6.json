@@ -1,0 +1,46 @@
+{
+  "id": "1.6",
+  "stage": 1,
+  "title": "Consonant Mutation — Introduction",
+  "subtitle": "Initial consonants change by context.",
+  "estimated_minutes": 50,
+  "objectives": ["Understand that Welsh has three mutation types.","Recognize soft, nasal, and aspirate mutations by sight."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers Consonant Mutation — Introduction. Initial consonants change by context."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Understand that Welsh has three mutation types."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Understand that Welsh has three mutation types." },
+        { "prompt": "How do you apply this in practice?", "answer": "Recognize soft, nasal, and aspirate mutations by sight." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "welsh": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/welsh/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on Consonant Mutation — Introduction."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in Consonant Mutation — Introduction to ten random examples.",
+    "credit_minutes": 50
+  }
+}

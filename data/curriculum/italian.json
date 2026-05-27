@@ -1,0 +1,202 @@
+{
+  "language": "italian",
+  "display_name": "Classical Italian",
+  "tagline": "From the alphabet to Dante — a five-stage course in the literary Italian of the trecento to the present.",
+  "philosophy": "Kalopaideia teaches Italian as a literary language. This is not phrase-book Italian for travelers. This is the Italian of the Divine Comedy, The Prince, The Leopard. We teach modern standard Italian as the access language, then guide the student into the older strata: the trecento forms of Dante, the humanist elegance of Machiavelli, the romantic registers of Leopardi. The student finishes the course reading Inferno with notes and walking confidently into the entire Italian literary tradition.",
+  "duration_estimate": "12–18 months at one hour per day",
+  "method": "Reading-led, with grammar as servant not master. Audio for every lesson. Authentic texts from the beginning. Modern Italian first, medieval Italian second, but both in living connection.",
+  "prerequisites": "None. The course assumes the student can read English and is willing to memorize a few hundred words. No prior linguistic training required. Knowledge of Latin helps but is not assumed.",
+  "stages": [
+    {
+      "id": "stage-1",
+      "number": 1,
+      "name": "The Sound and the Shape",
+      "subtitle": "The alphabet, the open and closed vowels, double consonants, gli and gn, stress patterns.",
+      "duration": "3–5 weeks",
+      "learning_outcomes": [
+        "Read aloud any printed Italian text with accurate pronunciation, distinguishing open and closed e and o.",
+        "Recognize and produce the twenty-one letters of the Italian alphabet plus the five foreign letters (j, k, w, x, y).",
+        "Pronounce double consonants with audible length distinction (pala vs. palla, pena vs. penna).",
+        "Master the palatals gli and gn (figlio, ogni) and the affricates ci, ce, chi, che, gie, gi.",
+        "Apply the stress rules: stress falls on the penultimate syllable unless marked with a grave accent or overridden by final diphthong patterns."
+      ],
+      "lessons": [
+        { "id": "1.1", "title": "The Alphabet and the Five Vowels", "content": "The twenty-one letters: a, b, c, d, e, f, g, h, i, l, m, n, o, p, q, r, s, t, u, v, z. Audio drill on each letter in isolation and inside a real Italian word. The five vowels: a always open; i and u always high; e and o open or closed by position and etymology." },
+        { "id": "1.2", "title": "The Consonants and Their Clusters", "content": "C and G soft before e, i (cento, gente); hard before a, o, u (casa, gola, gusto). H is silent, but ch and gh restore the hard sound (chi, ghetto). SC before e, i makes the English sh sound (scena). GL and GN: gli = million, gn = canyon." },
+        { "id": "1.3", "title": "Double Consonants", "content": "Italian doubles are phonemic: they change meaning. pala (shovel) vs. palla (ball); pena (penalty) vs. penna (pen); casa (house) vs. cassa (box). Audio drills on minimal pairs. The student learns to hear length, not just articulation." },
+        { "id": "1.4", "title": "Stress and the Grave Accent", "content": "Default stress: second-to-last syllable (parola, finestra). When final syllable is stressed, marked with a grave accent (città, perché, più). A few words stress the antepenult (tavola, medico) — learned as exceptions." },
+        { "id": "1.5", "title": "Diphthongs and Triphthongs", "content": "The falling diphthongs ai, ei, oi, ui, au, eu (mai, sei, poi, lui, pausa, Europa). The rising diphthongs with semivowels (piano, piede, uomo, guanto). Stress falls on the open vowel of the diphthong unless a written accent overrides." },
+        { "id": "1.6", "title": "Reading the Names", "content": "First connected reading: fifty Italian proper names (Dante, Petrarca, Boccaccio, Firenze, Venezia, Roma, Michelangelo…). The student reads each aloud, audible, before moving on." },
+        { "id": "1.7", "title": "First Sentences", "content": "Ten short sentences with full audio, glosses, and no grammar instruction yet. La casa è grande. Il sole splende. Dante è poeta. The student learns to read before parsing." }
+      ],
+      "checkpoint": {
+        "id": "stage-1-checkpoint",
+        "title": "Stage 1 Checkpoint",
+        "format": "Oral and written. Twenty letters and clusters dictated; ten words read aloud and recorded; five sentences marked for stress; five English words transliterated into Italian orthography. Pass mark: 85%.",
+        "items": 40
+      }
+    },
+    {
+      "id": "stage-2",
+      "number": 2,
+      "name": "The Sentence",
+      "subtitle": "Articles, nouns, regular verbs in three conjugations, gender, agreement, basic word order.",
+      "duration": "8–10 weeks",
+      "learning_outcomes": [
+        "Decline any regular noun in both singular and plural with the definite and indefinite articles.",
+        "Conjugate any regular -are, -ere, -ire verb in the present indicative.",
+        "Parse and translate sentences of the form Subject + Verb + Object, with adjectives, prepositional phrases, and a genitive (di + noun).",
+        "Distinguish masculine and feminine gender by article and ending pattern."
+      ],
+      "lessons": [
+        { "id": "2.1", "title": "The Definite Article", "content": "il, lo, la, l', i, gli, le. The forms depend on the initial sound of the following noun: il before most consonants; lo before s + consonant, z, gn, ps, x, y; l' before vowels; i / gli / le in the plural." },
+        { "id": "2.2", "title": "The Indefinite Article", "content": "un, uno, una, un'. Same initial-sound rules. No plural form (some, any = dei, degli, delle, partitive article)." },
+        { "id": "2.3", "title": "Nouns: Masculine Singular in -o", "content": "il libro, il ragazzo, il tavolo. Plural in -i: i libri, i ragazzi, i tavoli." },
+        { "id": "2.4", "title": "Nouns: Feminine Singular in -a", "content": "la casa, la donna, la finestra. Plural in -e: le case, le donne, le finestre." },
+        { "id": "2.5", "title": "Nouns: Masculine and Feminine in -e", "content": "il padre, la madre, il fiore, la notte. Plural in -i: i padri, le madri, i fiori, le notti. Gender must be memorized." },
+        { "id": "2.6", "title": "Adjectives and Agreement", "content": "Adjectives agree in gender and number. il ragazzo alto, la donna alta, i ragazzi alti, le donne alte. Position: most adjectives follow the noun; a few common ones precede (bello, buono, grande, piccolo, giovane, vecchio)." },
+        { "id": "2.7", "title": "The Verb Essere", "content": "The most common verb, irregular. sono, sei, è, siamo, siete, sono. The third-person singular and plural are identical in spelling but not in context." },
+        { "id": "2.8", "title": "The Verb Avere", "content": "ho, hai, ha, abbiamo, avete, hanno. The h- is etymological (from Latin habeo) and silent." },
+        { "id": "2.9", "title": "The Present Indicative: First Conjugation -are", "content": "parlare: parlo, parli, parla, parliamo, parlate, parlano. Regular and predictable." },
+        { "id": "2.10", "title": "The Present Indicative: Second Conjugation -ere", "content": "credere: credo, credi, crede, crediamo, credete, credono. Stress on the stem vowel in the singular forms." },
+        { "id": "2.11", "title": "The Present Indicative: Third Conjugation -ire", "content": "Two patterns. Type one: dormire (dormo, dormi, dorme, dormiamo, dormite, dormono). Type two with -isc- infix: finire (finisco, finisci, finisce, finiamo, finite, finiscono). The -isc- pattern is more common." },
+        { "id": "2.12", "title": "Basic Word Order and Negation", "content": "Subject-Verb-Object is default, but subject pronouns are optional (the verb ending carries person and number). Negation: non before the verb. Non parlo italiano." },
+        { "id": "2.13", "title": "Reading: A Day in Florence", "content": "A two-hundred-word adapted narrative using only the vocabulary and grammar introduced in Stage 2. The student reads aloud, parses, and translates." }
+      ],
+      "checkpoint": {
+        "id": "stage-2-checkpoint",
+        "title": "Stage 2 Checkpoint",
+        "format": "Written. Twenty nouns to decline with articles; ten verb forms to conjugate; a fifty-word passage to translate; ten English sentences to render in Italian. Pass mark: 80%.",
+        "items": 60
+      }
+    },
+    {
+      "id": "stage-3",
+      "number": 3,
+      "name": "The Tenses",
+      "subtitle": "The past tenses (passato prossimo, imperfetto, trapassato prossimo), the future, the conditional, the gerund.",
+      "duration": "10–12 weeks",
+      "learning_outcomes": [
+        "Form and distinguish the passato prossimo (compound past with avere or essere) and the imperfetto (simple past / imperfect).",
+        "Conjugate any regular verb in the future and conditional.",
+        "Recognize and translate the trapassato prossimo (pluperfect), the gerundio (present and past), and the infinito (present and past).",
+        "Choose the correct auxiliary (avere vs. essere) for compound tenses."
+      ],
+      "lessons": [
+        { "id": "3.1", "title": "The Past Participle", "content": "Regular forms: parlare → parlato; credere → creduto; dormire → dormito. Irregular forms must be memorized (fare → fatto, dire → detto, scrivere → scritto)." },
+        { "id": "3.2", "title": "The Passato Prossimo with Avere", "content": "ho parlato, hai parlato, ha parlato, abbiamo parlato, avete parlato, hanno parlato. For transitive verbs and most intransitives." },
+        { "id": "3.3", "title": "The Passato Prossimo with Essere", "content": "sono andato/a, sei andato/a, è andato/a, siamo andati/e, siete andati/e, sono andati/e. For motion verbs, reflexive verbs, and verbs of state. The participle agrees with the subject when the auxiliary is essere." },
+        { "id": "3.4", "title": "The Imperfetto", "content": "parlavo, parlavi, parlava, parlavamo, parlavate, parlavano. Past continuous, habitual past, background description. Ero stanco. Pioveva. The imperfetto sets the scene; the passato prossimo narrates the event." },
+        { "id": "3.5", "title": "Passato Prossimo versus Imperfetto", "content": "The distinction is semantic, not temporal. Quando sono arrivato, pioveva. When I arrived (completed action), it was raining (ongoing background). Practice with paired sentences." },
+        { "id": "3.6", "title": "The Trapassato Prossimo", "content": "avevo parlato, ero andato/a. The pluperfect: action completed before another past action. Quando sono arrivato, lui era già partito." },
+        { "id": "3.7", "title": "The Future", "content": "parlerò, parlerai, parlerà, parleremo, parlerete, parleranno. Future intention, prediction, conjecture. The future is also used for polite commands (Mi passerai il sale? = Will you pass me the salt?)." },
+        { "id": "3.8", "title": "The Conditional", "content": "parlerei, parleresti, parlerebbe, parleremmo, parlereste, parlerebbero. Hypothetical statements, polite requests, reported speech. Vorrei un caffè." },
+        { "id": "3.9", "title": "The Gerundio", "content": "parlando, credendo, dormendo. The present gerund, used with stare to form progressive tenses (sto parlando = I am speaking). The past gerund (avendo parlato, essendo andato) is rare but grammatical." },
+        { "id": "3.10", "title": "The Infinito Passato", "content": "avere parlato, essere andato. The past infinitive, used after prepositions and modal verbs. Dopo aver mangiato, sono uscito." },
+        { "id": "3.11", "title": "Reflexive Verbs", "content": "alzarsi (to get up): mi alzo, ti alzi, si alza, ci alziamo, vi alzate, si alzano. The reflexive pronoun precedes the verb in finite forms and attaches to the infinitive or gerund." },
+        { "id": "3.12", "title": "Modal Verbs", "content": "potere, volere, dovere. Conjugated like regular -ere verbs but with stem changes. posso, puoi, può; voglio, vuoi, vuole; devo, devi, deve. Followed by the infinitive." },
+        { "id": "3.13", "title": "Reading: Boccaccio, a Simplified Novella", "content": "A short story from the Decameron, adapted to Stage 3 grammar. Two hundred words of narrative past tenses in living context." },
+        { "id": "3.14", "title": "Reading: A Passage from Pinocchio", "content": "Carlo Collodi's Le avventure di Pinocchio, chapter I. Simple past tenses, vivid and colloquial." }
+      ],
+      "checkpoint": {
+        "id": "stage-3-checkpoint",
+        "title": "Stage 3 Checkpoint",
+        "format": "Written. Parse twenty verb forms across the three past tenses; translate a one-hundred-word passage; compose five short Italian sentences from English. Pass mark: 75%.",
+        "items": 75
+      }
+    },
+    {
+      "id": "stage-4",
+      "number": 4,
+      "name": "The Mood",
+      "subtitle": "The congiuntivo (present, imperfect, perfect, pluperfect); hypothetical periods; indirect discourse; pronoun combinations; the passive voice.",
+      "duration": "12–16 weeks",
+      "learning_outcomes": [
+        "Form and translate the congiuntivo (subjunctive) in all four tenses.",
+        "Recognize and translate hypothetical sentences (periodo ipotetico) of all three types: realtà, possibilità, irrealtà.",
+        "Translate indirect discourse with the congiuntivo in subordinate clauses.",
+        "Combine object pronouns (mi, ti, lo, la, ci, vi, li, le) with indirect pronouns and attach them to verbs.",
+        "Form and translate the passive voice (venire + past participle, essere + past participle)."
+      ],
+      "lessons": [
+        { "id": "4.1", "title": "The Congiuntivo Presente", "content": "parli, creda, dorma. The mood of doubt, wish, uncertainty, and subordinate clauses after verbs of opinion. Penso che sia vero. Voglio che tu venga." },
+        { "id": "4.2", "title": "The Congiuntivo Imperfetto", "content": "parlassi, credessi, dormissi. Used in subordinate clauses when the main verb is past. Pensavo che fosse vero. Volevo che tu venissi." },
+        { "id": "4.3", "title": "The Congiuntivo Passato and Trapassato", "content": "abbia parlato, fossi andato, avessi parlato. The compound forms, for past actions in the subjunctive." },
+        { "id": "4.4", "title": "When to Use the Congiuntivo", "content": "After verbs of thought, emotion, doubt, will (penso, credo, spero, voglio, dubito, temo). After impersonal expressions (è possibile che, è necessario che, è importante che). After certain conjunctions (benché, sebbene, affinché, prima che)." },
+        { "id": "4.5", "title": "Hypothetical Sentences: Type One (Realtà)", "content": "Se + present indicative, present or future indicative. Se piove, resto a casa. If it rains (and it might), I stay home." },
+        { "id": "4.6", "title": "Hypothetical Sentences: Type Two (Possibilità)", "content": "Se + congiuntivo imperfetto, conditional present. Se piovesse, resterei a casa. If it rained (but it probably won't), I would stay home." },
+        { "id": "4.7", "title": "Hypothetical Sentences: Type Three (Irrealtà)", "content": "Se + congiuntivo trapassato, conditional past. Se fosse piovuto, sarei restato a casa. If it had rained (but it didn't), I would have stayed home." },
+        { "id": "4.8", "title": "Direct and Indirect Object Pronouns", "content": "mi, ti, lo, la, ci, vi, li, le (direct); mi, ti, gli, le, ci, vi, loro (indirect). Position: before the conjugated verb, attached to the infinitive or gerund. Mi vede. Vuole vedermi." },
+        { "id": "4.9", "title": "Pronoun Combinations", "content": "When both direct and indirect pronouns appear, the indirect comes first and changes form: mi + lo → me lo; ti + la → te la; gli + lo → glielo; le + lo → glielo. Me lo dai? Will you give it to me?" },
+        { "id": "4.10", "title": "The Passive Voice", "content": "essere + past participle (permanent state or completed action). venire + past participle (action in progress). La casa è costruita. La casa viene costruita. Passive voice is less common in Italian than in English; active constructions are preferred." },
+        { "id": "4.11", "title": "The Imperative", "content": "Commands: second-person singular and plural, first-person plural, third-person formal. parla!, parli! (formal), parlate!, parliamo! Negative commands in the second-person singular use the infinitive: non parlare!" },
+        { "id": "4.12", "title": "Reading: Machiavelli, Il Principe, capitolo I (adapted)", "content": "The opening chapter of The Prince, lightly modernized. First exposure to humanist prose. Full grammatical notes." },
+        { "id": "4.13", "title": "Reading: Leopardi, L'infinito", "content": "Sempre caro mi fu quest'ermo colle. The most famous short lyric in Italian. The student reads, translates, and discusses the congiuntivo and conditional forms in the poem." }
+      ],
+      "checkpoint": {
+        "id": "stage-4-checkpoint",
+        "title": "Stage 4 Checkpoint",
+        "format": "Written. A one-hundred-and-fifty-word passage from Machiavelli or a modern author, with parsing and translation. Five composition prompts in English to render in Italian, using the congiuntivo and hypothetical periods. Pass mark: 75%.",
+        "items": 50
+      }
+    },
+    {
+      "id": "stage-5",
+      "number": 5,
+      "name": "The Author",
+      "subtitle": "Sustained reading of a major author. The capstone.",
+      "duration": "12–24 weeks",
+      "learning_outcomes": [
+        "Read a complete canto of Dante's Inferno or substantial selections from Boccaccio and Machiavelli in the original, with notes.",
+        "Translate any fifty-word passage from the chosen track at sight.",
+        "Recognize and explain the chief trecento forms (verb endings, pronouns, vocabulary) that distinguish Dante's Italian from modern Italian.",
+        "Discuss the literary and rhetorical character of the chosen text in writing."
+      ],
+      "tracks": [
+        {
+          "id": "track-poet",
+          "name": "The Poet",
+          "text": "Dante, Inferno, Canto I (entire) and Canto V, lines 73–142 (Paolo and Francesca).",
+          "rationale": "The greatest poem in Italian. Canto I is the threshold of the journey: the dark wood, the three beasts, the meeting with Vergil. Canto V is the most famous episode in the Inferno: the lovers swept in the infernal wind. The student learns to read trecento Italian with full grammatical notes. Trecento forms: infinitives in -are/-ere/-ire unchanged, but past participles sometimes in -ato/-uto/-ito and sometimes in older forms (-atto, -utto, -itto); pronouns in archaic positions (dirotti = ti dirò); verb forms with apocope (far for fare, dir for dire); vocabulary shifts (talento = desire, not talent; virtù = power, not virtue)."
+        },
+        {
+          "id": "track-storyteller",
+          "name": "The Storyteller",
+          "text": "Boccaccio, Decameron: three selected novellas (Chichibio and the Crane, Ser Ciappelletto, Federigo's Falcon).",
+          "rationale": "The Decameron is the bridge between Dante and modern Italian. Boccaccio's prose is lucid, vivid, colloquial. The student learns to read extended narrative in the trecento vernacular. Three novellas chosen for humor, brevity, and moral complexity."
+        },
+        {
+          "id": "track-statesman",
+          "name": "The Statesman",
+          "text": "Machiavelli, Il Principe, capitoli I–VII.",
+          "rationale": "The most famous work of political philosophy in Italian. Humanist prose of the early cinquecento, closer to modern Italian than Dante but still requiring notes. Chapters I–VII cover the types of principalities and the figure of Cesare Borgia. The student learns to read argumentative prose and to recognize the rhetorical strategies of Renaissance humanism."
+        }
+      ],
+      "capstone_examination": {
+        "id": "stage-5-capstone",
+        "title": "The Kalopaideia Italian Examination",
+        "format": "Two parts, taken in sequence. Part one: a written examination of three hours. A fifty-word passage from the chosen author to translate at sight without notes; a one-hundred-word passage from the chosen author with notes; ten English sentences to render in Italian; ten parsing questions. Part two: an oral examination of thirty minutes, conducted in writing for now (live oral when staffing permits). The student reads a previously-prepared one-hundred-word passage aloud, then answers five questions in English about its language and content.",
+        "pass_mark": "70% on each part",
+        "honors_mark": "85% on each part — recorded on the certificate"
+      }
+    }
+  ],
+  "certification": {
+    "credential_name": "The Kalopaideia Diploma in Classical Italian",
+    "credential_subtitle": "An attestation that the bearer has completed the five-stage course and passed the capstone examination.",
+    "what_it_is": "A privately-issued certificate of completion. Not an academic degree. Not a teaching license. It says: this person sat down with Dante and earned an honest reading of the Comedy.",
+    "what_is_recorded": "Student's chosen public name; the language; the date of the capstone examination; the track (Poet, Storyteller, Statesman); the result (Pass or Pass with Honors); the SHA-256 hash of the student's signed examination scripts.",
+    "what_is_not_recorded": "The actual examination answers; the student's email or other identifiers; anything that could identify the student against their will. The certificate is pseudonymous if the student wishes.",
+    "issuance": "On-chain on the Ethereum mainnet as an ERC-721 soulbound (non-transferable) token. One certificate per student per language. The contract is owned by Kalopaideia and the minting key is held by the proprietor. The token URI points to a permanent, IPFS-pinned JSON document signed by Kalopaideia's issuing key.",
+    "verification": "Any third party can verify a certificate at kalopaideia.com/verify/<token-id> by entering the token ID and the certificate hash. The page will display the issuance date, the language, the track, and the result.",
+    "cost": "Included in the Akousma subscription. The on-chain gas fee at issuance is paid by Kalopaideia. The student pays nothing extra.",
+    "first_of_its_kind": "We believe this is the first blockchain-issued credential for completion of a classical-language curriculum. The certificate is irrevocable: once minted, it cannot be withdrawn. If a student is later found to have cheated, a separate revocation token is minted that publicly cross-references the first; the original remains on-chain.",
+    "renewability": "None. A diploma in Italian is not a driver's licence. Once earned, it stands."
+  },
+  "policies": {
+    "honor_code": "All examinations are taken under the Kalopaideia honor code. The student attests, by signing the examination, that no aid was used beyond the materials permitted in the examination instructions. A student found in breach forfeits the right to be examined again for one calendar year.",
+    "retakes": "A failed checkpoint may be retaken after seven days; a failed capstone after thirty days. There is no limit to the number of retakes.",
+    "withdrawal": "The student may withdraw at any time. Progress is preserved indefinitely. No refund is offered for the subscription, which is month-to-month.",
+    "accommodations": "The capstone may be taken in untimed form for any student who requests it. The oral component may be waived for students who are deaf or non-speaking."
+  }
+}

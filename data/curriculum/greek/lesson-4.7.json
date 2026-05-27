@@ -1,0 +1,72 @@
+{
+  "id": "4.7",
+  "stage": 4,
+  "title": "Indirect Statement",
+  "subtitle": "The three patterns: ὅτι, accusative + infinitive, accusative + participle.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Understand the three constructions for indirect statement in Greek.",
+    "Use ὅτι + indicative to report statements.",
+    "Use accusative + infinitive with verbs of saying and thinking.",
+    "Use accusative + participle with verbs of knowing and perceiving.",
+    "Translate all three constructions into natural English."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Indirect statement",
+      "body": "Indirect statement reports what someone said or thought without quoting their exact words. English uses 'that' clauses: 'He says that Socrates is wise.' Greek has three constructions:\n\n1. ὅτι + indicative (like English 'that')\n2. Accusative + infinitive (unique to Greek and Latin)\n3. Accusative + participle (unique to Greek)\n\nThe choice of construction depends on the main verb. Some verbs prefer one construction; some allow multiple constructions."
+    },
+    {
+      "kind": "prose",
+      "heading": "ὅτι + indicative",
+      "body": "λέγει ὅτι Σωκράτης σοφός ἐστιν.\n'He says that Socrates is wise.'\n\nὅτι introduces a subordinate clause with the verb in the indicative. The tense of the verb in the ὅτι clause is the same as it would be in direct statement. This construction is closest to English and is common in Koine Greek (New Testament)."
+    },
+    {
+      "kind": "prose",
+      "heading": "Accusative + infinitive",
+      "body": "φησὶ Σωκράτη σοφὸν εἶναι.\n'He says that Socrates is wise.'\n\nThe subject of the indirect statement is in the accusative (Σωκράτη). Any adjective or predicate noun agreeing with it is also in the accusative (σοφόν). The verb is an infinitive (εἶναι). This construction is common with verbs of saying and thinking (φημί, λέγω, νομίζω, οἴομαι).\n\nPresent infinitive = present time.\nAorist infinitive = past time.\nFuture infinitive = future time."
+    },
+    {
+      "kind": "prose",
+      "heading": "Accusative + participle",
+      "body": "οἶδε Σωκράτη σοφὸν ὄντα.\n'He knows that Socrates is wise.'\n\nThe subject of the indirect statement is in the accusative (Σωκράτη). The verb is a participle agreeing with the subject (ὄντα, accusative singular masculine of ὤν, the present participle of εἰμί). This construction is common with verbs of knowing and perceiving (οἶδα, γιγνώσκω, αἰσθάνομαι, ἀκούω, ὁράω).\n\nPresent participle = ongoing or contemporaneous action.\nAorist participle = completed or antecedent action."
+    },
+    {
+      "kind": "prose",
+      "heading": "From Plato",
+      "body": "Plato, Apology 21b: λέγει ὅτι σοφώτατός ἐστι Σωκράτης.\n'He says that Socrates is wisest.' (ὅτι + indicative)\n\nPlato, Apology 21d: ἠγάσθην οἰόμενος αὐτὸν σοφὸν εἶναι.\n'I marveled, thinking him to be wise.' (accusative + infinitive with οἴομαι)"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer or translate.",
+      "items": [
+        { "prompt": "What are the three constructions for indirect statement?", "answer": "ὅτι + indicative, accusative + infinitive, accusative + participle" },
+        { "prompt": "Translate: λέγει ὅτι Σωκράτης σοφός ἐστιν.", "answer": "He says that Socrates is wise." },
+        { "prompt": "Translate: φησὶ Σωκράτη σοφὸν εἶναι.", "answer": "He says that Socrates is wise." },
+        { "prompt": "Translate: οἶδε Σωκράτη σοφὸν ὄντα.", "answer": "He knows that Socrates is wise." },
+        { "prompt": "Which construction is used with verbs of knowing and perceiving?", "answer": "Accusative + participle." },
+        { "prompt": "Which construction is used with verbs of saying and thinking?", "answer": "Accusative + infinitive (or ὅτι + indicative)." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Indirect statement in sentences",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "λέγει ὅτι Σωκράτης σοφός ἐστιν.", "transliteration": "légei hóti Sōkrátēs sophós estin.", "gloss": "He says that Socrates is wise.", "audio": "/paideia/audio/greek/sentences/legei-hoti.mp3" },
+        { "greek": "φησὶ Σωκράτη σοφὸν εἶναι.", "transliteration": "phēsì Sōkrátē sophòn eînai.", "gloss": "He says that Socrates is wise.", "audio": "/paideia/audio/greek/sentences/phesi-sokrate-einai.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 4.8 introduces the perfect active. The perfect expresses the state resulting from completed action. λέλυκα means 'I have loosed' or 'I am in the state of having loosed'. The perfect uses reduplication and a new set of endings."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can recognize and translate all three constructions for indirect statement and can produce them correctly in Greek.",
+    "credit_minutes": 60
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "3.1",
+  "stage": 3,
+  "title": "The Imperfect",
+  "subtitle": "amābam, amābās, amābat. Past continuous action.",
+  "estimated_minutes": 50,
+  "objectives": ["Conjugate any verb in the imperfect active and passive.", "Translate the imperfect as 'was -ing', 'used to', or 'kept on'.", "Distinguish imperfect (continuous past) from perfect (completed past).", "Recognize the -bā- marker in first/second conjugations and -ēbā- in third/fourth."],
+  "sections": [
+    {"kind": "prose", "heading": "The imperfect tense", "body": "The imperfect describes continuous, repeated, or habitual action in the past: 'I was loving', 'I used to love', 'I kept on loving'.\n\nFirst conjugation imperfect active:\n  amābam, amābās, amābat, amābāmus, amābātis, amābant\n\nThe marker is -bā- (first/second conj.) or -ēbā- (third/fourth conj.).\n\nThird conjugation imperfect:\n  regēbam, regēbās, regēbat, regēbāmus, regēbātis, regēbant\n\nCaesar writes: Gallī bellum gerēbant. — The Gauls were waging war.\nCicero writes: Catilīna coniūrātiōnem parābat. — Catiline was preparing a conspiracy."},
+    {"kind": "self_check", "heading": "Self-check", "items": [
+      {"prompt": "Conjugate laudō in the imperfect active.", "answer": "laudābam, laudābās, laudābat, laudābāmus, laudābātis, laudābant"},
+      {"prompt": "Translate: mīlitēs pugnābant.", "answer": "The soldiers were fighting / used to fight."},
+      {"prompt": "What is the marker for the imperfect in first/second conjugations?", "answer": "-bā-"}
+    ]},
+    {"kind": "reading_preview", "heading": "Sentences in the imperfect", "words": [
+      {"latin": "servī in agrīs labōrābant.", "transliteration": null, "gloss": "The slaves were working in the fields.", "audio": "/paideia/audio/latin/sentences/3.1-1.mp3"},
+      {"latin": "rēx populōs crūdēliter regēbat.", "transliteration": null, "gloss": "The king was ruling the peoples cruelly.", "audio": "/paideia/audio/latin/sentences/3.1-2.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Lesson 3.2: the future tense. amābō / regam."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can conjugate any verb in the imperfect and translate it as continuous past action.", "credit_minutes": 50}
+}

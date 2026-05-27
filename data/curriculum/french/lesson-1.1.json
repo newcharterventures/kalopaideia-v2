@@ -1,0 +1,107 @@
+{
+  "id": "1.1",
+  "stage": 1,
+  "title": "The Vowels",
+  "subtitle": "The fifteen vowel phonemes — front unrounded, front rounded, back rounded, nasal.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Recognize and produce the fifteen vowel phonemes of Classical French.",
+    "Distinguish between the front unrounded vowels i, é, è, e muet.",
+    "Produce the three front rounded vowels u, eu, œ.",
+    "Pronounce the four nasal vowels an, in, on, un.",
+    "Hear each vowel in the context of a real French word."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Where we are starting",
+      "body": "French has fifteen vowel phonemes, more than English or Spanish or German. Four of these are nasal vowels, a sound that English does not have at all. Three are front rounded vowels — vowels made with the tongue forward and the lips rounded, a combination that English also lacks. The rest are familiar, but with distinctions that matter: é is not è; e muet is neither.\n\nYou will hear each vowel in isolation, then in the frame of a real French word. The words are not chosen for their meaning. They are chosen because they let you hear the vowel clearly. The meaning will come later."
+    },
+    {
+      "kind": "letter_grid",
+      "heading": "The front unrounded vowels",
+      "letters": [
+        { "upper": "I", "lower": "i", "name": "i", "ipa": "[i]", "audio": "/paideia/audio/french/letters/i.mp3", "note": "Like the i in machine. Ex: ici." },
+        { "upper": "É", "lower": "é", "name": "é fermé", "ipa": "[e]", "audio": "/paideia/audio/french/letters/e-ferme.mp3", "note": "Close e, like the a in late but without the glide. Ex: été." },
+        { "upper": "È", "lower": "è", "name": "è ouvert", "ipa": "[ɛ]", "audio": "/paideia/audio/french/letters/e-ouvert.mp3", "note": "Open e, like the e in met. Ex: mère, près." },
+        { "upper": "E", "lower": "e", "name": "e muet", "ipa": "[ə]", "audio": "/paideia/audio/french/letters/e-muet.mp3", "note": "The schwa. Halfway between é and è. Often dropped in speech. Ex: le, petit." }
+      ]
+    },
+    {
+      "kind": "letter_grid",
+      "heading": "The front rounded vowels",
+      "letters": [
+        { "upper": "U", "lower": "u", "name": "u", "ipa": "[y]", "audio": "/paideia/audio/french/letters/u.mp3", "note": "Say i, then round your lips without moving your tongue. Ex: tu, rue." },
+        { "upper": "EU", "lower": "eu", "name": "eu fermé", "ipa": "[ø]", "audio": "/paideia/audio/french/letters/eu-ferme.mp3", "note": "Say é, then round your lips. Ex: peu, feu." },
+        { "upper": "ŒU", "lower": "œu", "name": "eu ouvert", "ipa": "[œ]", "audio": "/paideia/audio/french/letters/eu-ouvert.mp3", "note": "Say è, then round your lips. Ex: peur, sœur." }
+      ]
+    },
+    {
+      "kind": "letter_grid",
+      "heading": "The back rounded vowels",
+      "letters": [
+        { "upper": "OU", "lower": "ou", "name": "ou", "ipa": "[u]", "audio": "/paideia/audio/french/letters/ou.mp3", "note": "Like the oo in boot. Ex: vous, tout." },
+        { "upper": "O", "lower": "o", "name": "o fermé", "ipa": "[o]", "audio": "/paideia/audio/french/letters/o-ferme.mp3", "note": "Close o, like the o in go but without the glide. Ex: beau, chaud." },
+        { "upper": "Ô", "lower": "ô", "name": "o ouvert", "ipa": "[ɔ]", "audio": "/paideia/audio/french/letters/o-ouvert.mp3", "note": "Open o, like the o in bought. Ex: porte, or." }
+      ]
+    },
+    {
+      "kind": "letter_grid",
+      "heading": "The nasal vowels",
+      "letters": [
+        { "upper": "AN", "lower": "an", "name": "an", "ipa": "[ɑ̃]", "audio": "/paideia/audio/french/letters/an.mp3", "note": "A vowel plus nasal resonance. Ex: dans, grand." },
+        { "upper": "IN", "lower": "in", "name": "in", "ipa": "[ɛ̃]", "audio": "/paideia/audio/french/letters/in.mp3", "note": "Nasal è. Ex: vin, pain." },
+        { "upper": "ON", "lower": "on", "name": "on", "ipa": "[ɔ̃]", "audio": "/paideia/audio/french/letters/on.mp3", "note": "Nasal o. Ex: bon, nom." },
+        { "upper": "UN", "lower": "un", "name": "un", "ipa": "[œ̃]", "audio": "/paideia/audio/french/letters/un.mp3", "note": "Nasal eu. Rare in modern French. Ex: un, brun." }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "A note on nasal vowels",
+      "body": "The nasal vowels are single phonemes, not vowel-plus-consonant clusters. When you see 'an' in 'dans', you do not say [a] then [n]. You say a single nasal vowel [ɑ̃]. The mouth shape is that of the base vowel; the velum lowers to let air pass through the nose.\n\nIn English we nasalize vowels before nasal consonants ('can', 'sing'), but we do not have distinct nasal vowel phonemes. French does. The distinction is phonemic: sans (without) versus sens (sense) hang on the difference between [ɑ̃] and [ɑ̃] — or, in older French, between [ɑ̃] and [ɛ̃]. The ear learns to catch it."
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill",
+      "instructions": "Each vowel is spoken three times: once in isolation, once inside a French word, and once contrasted with its nearest neighbor. Listen first. Then repeat each one.",
+      "audio": "/paideia/audio/french/drills/lesson-1.1-listening.mp3"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Without looking back, answer these.",
+      "items": [
+        { "prompt": "What is the IPA symbol for the vowel in 'tu'?", "answer": "[y]" },
+        { "prompt": "What is the difference between é and è?", "answer": "é is close (met without opening wide); è is open (like the e in met)." },
+        { "prompt": "How many nasal vowels does French have?", "answer": "Four: an, in, on, un." },
+        { "prompt": "What does 'e muet' mean?", "answer": "Mute e — the schwa, often dropped in speech." },
+        { "prompt": "Which vowel is front rounded and appears in 'rue'?", "answer": "u [y]" },
+        { "prompt": "What is the vowel in 'peu'?", "answer": "eu fermé [ø]" },
+        { "prompt": "What makes a nasal vowel nasal?", "answer": "The velum lowers, letting air pass through the nose while the vowel is produced. The nasal consonant is not pronounced separately." },
+        { "prompt": "Say the vowel in 'tout'. Now say the vowel in 'tu'. What changed?", "answer": "Tongue position. 'tout' is back rounded [u]; 'tu' is front rounded [y]." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "First words in French",
+      "instructions": "You can already read these. Try each aloud, then check against the audio.",
+      "words": [
+        { "french": "ici", "transliteration": null, "gloss": "here", "audio": "/paideia/audio/french/words/ici.mp3" },
+        { "french": "été", "transliteration": null, "gloss": "summer", "audio": "/paideia/audio/french/words/ete.mp3" },
+        { "french": "tu", "transliteration": null, "gloss": "you", "audio": "/paideia/audio/french/words/tu.mp3" },
+        { "french": "peu", "transliteration": null, "gloss": "little", "audio": "/paideia/audio/french/words/peu.mp3" },
+        { "french": "bon", "transliteration": null, "gloss": "good", "audio": "/paideia/audio/french/words/bon.mp3" },
+        { "french": "un", "transliteration": null, "gloss": "one, a", "audio": "/paideia/audio/french/words/un.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.2 covers the twenty-one consonants. After that, you will know the full phonetic inventory and be ready to tackle the silent letters, liaison, and élision — the three stumbling blocks for every beginner."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can pronounce all fifteen vowels in random order in under ninety seconds.",
+    "credit_minutes": 50
+  }
+}

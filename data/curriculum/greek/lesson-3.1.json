@@ -1,0 +1,68 @@
+{
+  "id": "3.1",
+  "stage": 3,
+  "title": "The Middle Voice",
+  "subtitle": "Action for or upon oneself — λύομαι.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Conjugate any regular ω-verb in the present indicative middle.",
+    "Understand the middle voice as action for or upon oneself.",
+    "Recognize the middle endings -μαι, -σαι, -ται, -μεθα, -σθε, -νται.",
+    "Distinguish middle from active in meaning and form."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The middle voice",
+      "body": "Greek has three voices: active, middle, and passive. The active voice is action done by the subject to an object. The middle voice is action done by the subject for or upon itself. The passive voice is action done to the subject by an agent (you will learn this in the next lesson).\n\nλύω — I loose (active: I loose something else)\nλύομαι — I loose for myself, I free myself (middle: I loose something for my own benefit or I loose myself)\n\nThe middle voice is hard to translate into English because English has no middle voice. Greek uses the middle when the subject has a personal stake in the action or when the action affects the subject directly."
+    },
+    {
+      "kind": "prose",
+      "heading": "The present indicative middle: λύομαι",
+      "body": "  singular\n  1st   λύομαι      I loose for myself\n  2nd   λύῃ         you loose for yourself\n  3rd   λύεται      he/she/it looses for himself/herself/itself\n\n  plural\n  1st   λυόμεθα     we loose for ourselves\n  2nd   λύεσθε      you (plural) loose for yourselves\n  3rd   λύονται     they loose for themselves\n\nThe endings are -μαι, -σαι (contracts to -ῃ), -ται, -μεθα, -σθε, -νται. The thematic vowel is still ο/ε, as in the active."
+    },
+    {
+      "kind": "prose",
+      "heading": "Examples of the middle voice",
+      "body": "παύομαι — I stop (myself), I cease (middle of παύω, I stop something else)\n\nπείθομαι — I obey, I trust (middle of πείθω, I persuade). The middle means 'I persuade myself' = 'I am persuaded' = 'I trust'.\n\nγράφομαι — I write for myself, I have written (middle of γράφω). In practice, this might mean 'I commission a writing' or 'I record for my own use'.\n\nThe middle voice is common in Greek. Many verbs prefer the middle when the subject is involved in the result of the action."
+    },
+    {
+      "kind": "prose",
+      "heading": "From Xenophon",
+      "body": "Anabasis I.3.1: ἐντεῦθεν ἐξελαύνει.\n'From there he marches forth.' ἐξελαύνει is active. If it were middle (ἐξελαύνεται), it might mean 'he marches forth for himself' or 'he rides out' (emphasizing his personal involvement)."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Conjugate or answer.",
+      "items": [
+        { "prompt": "First person singular middle of λύω", "answer": "λύομαι" },
+        { "prompt": "Second person singular middle of λύω", "answer": "λύῃ" },
+        { "prompt": "Third person singular middle of λύω", "answer": "λύεται" },
+        { "prompt": "First person plural middle of λύω", "answer": "λυόμεθα" },
+        { "prompt": "Third person plural middle of λύω", "answer": "λύονται" },
+        { "prompt": "What is the basic meaning of the middle voice?", "answer": "Action for or upon oneself — the subject has a personal stake in the action." },
+        { "prompt": "Translate: παύομαι.", "answer": "I stop (myself), I cease." },
+        { "prompt": "Translate: πείθονται.", "answer": "They obey, they trust." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Middle voice in sentences",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "λύομαι ἀπὸ τῶν δεσμῶν.", "transliteration": "lýomai apò tôn desmôn.", "gloss": "I free myself from the chains.", "audio": "/paideia/audio/greek/sentences/lyomai-desmon.mp3" },
+        { "greek": "παύεται τῆς μάχης.", "transliteration": "paúetai tês mákhēs.", "gloss": "He ceases from the battle.", "audio": "/paideia/audio/greek/sentences/pauetai-maches.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 3.2 introduces the passive voice. In the present and imperfect tenses, the passive is identical in form to the middle. Context distinguishes. λύομαι can mean 'I free myself' (middle) or 'I am freed' (passive)."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can conjugate the present middle of any ω-verb from memory and can distinguish middle from active in meaning.",
+    "credit_minutes": 55
+  }
+}

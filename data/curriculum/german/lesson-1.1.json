@@ -1,0 +1,91 @@
+{
+  "id": "1.1",
+  "stage": 1,
+  "title": "The Alphabet, Part One",
+  "subtitle": "A through M — thirteen letters of the thirty.",
+  "estimated_minutes": 45,
+  "objectives": [
+    "Recognize A through M in printed German.",
+    "Pronounce each letter as the educated German of Goethe's time would have pronounced it.",
+    "Distinguish the umlauts Ä and Ö from their base vowels A and O.",
+    "Trace each letter by hand."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Where we begin",
+      "body": "German uses twenty-six letters borrowed from Latin, plus four additional characters: ä, ö, ü, and ß. The pronunciation is more regular than English — most letters have one sound, and that sound does not change from word to word. A German child learns to read in a quarter the time an English child needs.\n\nWe teach the standard pronunciation of Bühnendeutsch, the stage German of the eighteenth and nineteenth centuries. This is the German you hear in a good recording of Schiller or Goethe read aloud. It is not the Bavarian of Munich or the Plattdeutsch of the north coast — those are separate languages, mutually comprehensible but with their own phonologies."
+    },
+    {
+      "kind": "letter_grid",
+      "heading": "Letters A through M",
+      "letters": [
+        { "upper": "A", "lower": "a", "name": "ah", "ipa": "[a] or [aː]", "audio": "/paideia/audio/german/letters/a.mp3", "note": "Short or long, like the a in father. German distinguishes the two by context: Mann (short), Bahn (long)." },
+        { "upper": "Ä", "lower": "ä", "name": "ah-umlaut", "ipa": "[ɛ] or [ɛː]", "audio": "/paideia/audio/german/letters/ae.mp3", "note": "A front vowel. Short ä sounds like the e in met; long ä sounds like the a in air. Historically, a + i collapsed into ä." },
+        { "upper": "B", "lower": "b", "name": "bay", "ipa": "[b] or [p]", "audio": "/paideia/audio/german/letters/b.mp3", "note": "Voiced [b] inside a word; devoiced to [p] at the end. Liebe (lee-buh), but lieb (leep)." },
+        { "upper": "C", "lower": "c", "name": "tsay", "ipa": "[ts] or [k]", "audio": "/paideia/audio/german/letters/c.mp3", "note": "Rare in native German words. Usually [ts] before e or i (Cicero), [k] elsewhere (Café). Most German words spell the [ts] sound with Z." },
+        { "upper": "D", "lower": "d", "name": "day", "ipa": "[d] or [t]", "audio": "/paideia/audio/german/letters/d.mp3", "note": "Voiced [d] inside a word; devoiced to [t] at the end. Kinder (kin-der), but Kind (kint)." },
+        { "upper": "E", "lower": "e", "name": "ay", "ipa": "[e] or [eː] or [ə]", "audio": "/paideia/audio/german/letters/e.mp3", "note": "Short [e] as in met, long [eː] as in may (but without the glide), or schwa [ə] in unstressed syllables. Bett (short), Beet (long), gekommen (schwa in ge-)." },
+        { "upper": "F", "lower": "f", "name": "eff", "ipa": "[f]", "audio": "/paideia/audio/german/letters/f.mp3", "note": "Like English f." },
+        { "upper": "G", "lower": "g", "name": "gay", "ipa": "[ɡ] or [k]", "audio": "/paideia/audio/german/letters/g.mp3", "note": "Hard [ɡ] as in go. Devoiced to [k] at the end: Tag (tahk). In -ig endings, often pronounced [ç] (like the ich-sound)." },
+        { "upper": "H", "lower": "h", "name": "hah", "ipa": "[h] or silent", "audio": "/paideia/audio/german/letters/h.mp3", "note": "Pronounced [h] at the start of a syllable (Haus). Silent after a vowel, where it marks vowel length: sehen, Vieh." },
+        { "upper": "I", "lower": "i", "name": "ee", "ipa": "[i] or [iː]", "audio": "/paideia/audio/german/letters/i.mp3", "note": "Short or long, like the i in machine. Bitte (short), Bibel (long)." },
+        { "upper": "J", "lower": "j", "name": "yot", "ipa": "[j]", "audio": "/paideia/audio/german/letters/j.mp3", "note": "Like English y in yes. Jahr (yahr)." },
+        { "upper": "K", "lower": "k", "name": "kah", "ipa": "[k]", "audio": "/paideia/audio/german/letters/k.mp3", "note": "Like English k." },
+        { "upper": "L", "lower": "l", "name": "ell", "ipa": "[l]", "audio": "/paideia/audio/german/letters/l.mp3", "note": "Like English l." },
+        { "upper": "M", "lower": "m", "name": "emm", "ipa": "[m]", "audio": "/paideia/audio/german/letters/m.mp3", "note": "Like English m." }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Final devoicing",
+      "body": "German voices b, d, g when they appear between vowels or before a voiced consonant. But at the end of a word or syllable, they devoice: b becomes p, d becomes t, g becomes k. This is one of the signature sounds of German. Compare:\n\n  lieben (lee-ben) — to love\n  lieb (leep) — dear\n\n  Kinder (kin-der) — children\n  Kind (kint) — child\n\n  Tage (tah-guh) — days\n  Tag (tahk) — day\n\nThe spelling does not change. The sound does."
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill",
+      "instructions": "Each of the fourteen letters (including Ä) is spoken three times: in isolation, at the start of a word, inside a word. Listen first, then repeat aloud.",
+      "audio": "/paideia/audio/german/drills/lesson-1.1-listening.mp3"
+    },
+    {
+      "kind": "writing_drill",
+      "heading": "Writing drill",
+      "instructions": "Print each letter ten times in upper case, ten times in lower case. German handwriting follows the Latin alphabet with the addition of the umlauts. The ä is simply an a with two dots above; in handwriting the dots are often written as a small horizontal stroke.",
+      "downloadable_pdf": "/paideia/curriculum/german/handouts/lesson-1.1-tracing.pdf"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Without looking back, answer these questions. Check yourself after.",
+      "items": [
+        { "prompt": "What is the German name for the letter A?", "answer": "ah" },
+        { "prompt": "What sound does Ä make?", "answer": "Short [ɛ] as in met, or long [ɛː] as in air. A front vowel, distinct from A." },
+        { "prompt": "What happens to the letter B at the end of a word?", "answer": "It devoices to [p]. Lieb is pronounced leep." },
+        { "prompt": "What sound does the letter J make in German?", "answer": "Like English y in yes. Jahr = yahr." },
+        { "prompt": "How is the letter H pronounced after a vowel?", "answer": "It is silent. It marks the vowel as long. Sehen = zay-en." },
+        { "prompt": "What is the difference between short and long E?", "answer": "Short E is [e] as in met. Long E is [eː] as in may, but held longer and without the English glide to [i]. Bett vs. Beet." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "First words in German",
+      "instructions": "You can read these now. Try aloud, then check the audio.",
+      "words": [
+        { "german": "Mann", "transliteration": "mahn", "gloss": "man", "audio": "/paideia/audio/german/words/mann.mp3" },
+        { "german": "Bahn", "transliteration": "bahn", "gloss": "path, railway", "audio": "/paideia/audio/german/words/bahn.mp3" },
+        { "german": "Kind", "transliteration": "kint", "gloss": "child", "audio": "/paideia/audio/german/words/kind.mp3" },
+        { "german": "Tag", "transliteration": "tahk", "gloss": "day", "audio": "/paideia/audio/german/words/tag.mp3" },
+        { "german": "Lamm", "transliteration": "lahm", "gloss": "lamb", "audio": "/paideia/audio/german/words/lamm.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.2 covers N through Z, including the umlaut Ü, the ß, and the letters V, W, and Z, which do not sound the way English speakers expect. After 1.2 you will have met all thirty letters and can read any printed German aloud."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark this lesson complete when you can name and pronounce all fourteen letters (A through M, plus Ä) in random order in under sixty seconds.",
+    "credit_minutes": 45
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "id": "1.6",
+  "stage": 1,
+  "title": "First Sentences",
+  "subtitle": "Ten sentences from Familia Romana. Read aloud first, parse never.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Read aloud ten connected Latin sentences with correct pronunciation and stress.",
+    "Understand the meaning of each sentence from context and glosses.",
+    "Recognize the subject-verb-object structure without formal parsing.",
+    "Build confidence in reading Latin for meaning before grammar."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Reading before parsing",
+      "body": "From this lesson forward, you will read Latin for meaning. Do not parse. Do not translate word-by-word into English. Do not ask yourself what case or tense a word is in. Just read, and let the meaning emerge.\n\nThis is the natural method. Children do not learn their native language by parsing; they learn by hearing and reading connected text until patterns become intuitive. You will do the same. Grammar comes later, to name what you already recognize.\n\nThe ten sentences below come from the first chapter of Hans Ørberg's Lingua Latina per se Illustrata: Familia Romana. They are simple, repetitive, and cumulative. Each sentence adds one new word or structure. By the tenth sentence you will have read the same words five or six times, and they will begin to stick."
+    },
+    {
+      "kind": "prose",
+      "heading": "The ten sentences",
+      "body": "Rōma in Italiā est.\nItalia in Eurōpā est.\nGraecia in Eurōpā est.\nItalia et Graecia in Eurōpā sunt.\nHispānia quoque in Eurōpā est.\nHispānia et Italia et Graecia in Eurōpā sunt.\nItalia paeninsula est.\nEtiam Graecia et Hispānia paeninsulae sunt.\nArabia et Aegyptus in Āfricā sunt.\nĀfrica nōn in Eurōpā est.\n\nGloss:\n  Rōma — Rome (a city)\n  Italia — Italy\n  Eurōpa — Europe\n  Graecia — Greece\n  Hispānia — Spain\n  Āfrica — Africa\n  Arabia — Arabia\n  Aegyptus — Egypt\n  est — is\n  sunt — are\n  in — in\n  et — and\n  quoque — also\n  nōn — not\n  paeninsula — peninsula\n  paeninsulae — peninsulas\n  etiam — also, even"
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill",
+      "instructions": "Each sentence is read twice: once slowly, once at normal speed. Follow along with the text. Then read each sentence aloud yourself.",
+      "audio": "/paideia/audio/latin/drills/lesson-1.6-sentences.mp3"
+    },
+    {
+      "kind": "prose",
+      "heading": "What you have learned without parsing",
+      "body": "You have now read ten sentences of Latin. You did not parse a single word. You did not memorize a single paradigm. Yet you understand:\n  — 'est' means 'is' and 'sunt' means 'are'.\n  — 'in' means 'in' and 'et' means 'and'.\n  — Proper nouns (Rome, Italy, Greece) are recognizable without translation.\n  — Word order is flexible: 'Rōma in Italiā est' and 'in Italiā Rōma est' would both be correct.\n  — The verb often comes last.\n\nYou also know, without being told, that 'paeninsula' is singular and 'paeninsulae' is plural, because 'est' pairs with the first and 'sunt' with the second. This is pattern recognition. It is how children learn language. It is faster and more durable than memorizing tables."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Without looking back, answer each question in English.",
+      "items": [
+        { "prompt": "Where is Rome?", "answer": "In Italy." },
+        { "prompt": "Where is Italy?", "answer": "In Europe." },
+        { "prompt": "What kind of landform is Italy?", "answer": "A peninsula." },
+        { "prompt": "Are Spain and Greece also in Europe?", "answer": "Yes." },
+        { "prompt": "Is Africa in Europe?", "answer": "No." },
+        { "prompt": "What does 'quoque' mean?", "answer": "Also." },
+        { "prompt": "What does 'nōn' mean?", "answer": "Not." },
+        { "prompt": "What does 'sunt' mean?", "answer": "They are, or (there) are." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Read aloud again",
+      "instructions": "Now that you have checked your understanding, read all ten sentences aloud one more time. Aim for fluency. Do not pause between words. Let the rhythm emerge.",
+      "words": [
+        { "latin": "Rōma in Italiā est.", "transliteration": null, "gloss": "Rome is in Italy.", "audio": "/paideia/audio/latin/sentences/1.6-1.mp3" },
+        { "latin": "Italia in Eurōpā est.", "transliteration": null, "gloss": "Italy is in Europe.", "audio": "/paideia/audio/latin/sentences/1.6-2.mp3" },
+        { "latin": "Graecia in Eurōpā est.", "transliteration": null, "gloss": "Greece is in Europe.", "audio": "/paideia/audio/latin/sentences/1.6-3.mp3" },
+        { "latin": "Italia et Graecia in Eurōpā sunt.", "transliteration": null, "gloss": "Italy and Greece are in Europe.", "audio": "/paideia/audio/latin/sentences/1.6-4.mp3" },
+        { "latin": "Hispānia quoque in Eurōpā est.", "transliteration": null, "gloss": "Spain also is in Europe.", "audio": "/paideia/audio/latin/sentences/1.6-5.mp3" },
+        { "latin": "Italia paeninsula est.", "transliteration": null, "gloss": "Italy is a peninsula.", "audio": "/paideia/audio/latin/sentences/1.6-6.mp3" },
+        { "latin": "Āfrica nōn in Eurōpā est.", "transliteration": null, "gloss": "Africa is not in Europe.", "audio": "/paideia/audio/latin/sentences/1.6-7.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Stage 1 is complete. You can now read Latin aloud with correct pronunciation, stress, and rhythm. Stage 2 begins the grammar: the first declension, the four conjugations, and the structure of the Latin sentence."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can read all ten sentences aloud without hesitation and understand their meaning without translating.",
+    "credit_minutes": 60
+  }
+}

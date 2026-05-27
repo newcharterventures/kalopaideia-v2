@@ -1,0 +1,24 @@
+{
+  "id": "3.14",
+  "stage": 3,
+  "title": "Reading: Eutropius, Breviarium I.1–7",
+  "subtitle": "The founding of Rome. Simpler than Caesar, ideal at this stage.",
+  "estimated_minutes": 60,
+  "objectives": ["Read extended Latin from Eutropius.", "Understand narrative past tenses in context.", "Recognize simpler prose style than Caesar.", "Build reading stamina and fluency."],
+  "sections": [
+    {"kind": "prose", "heading": "Eutropius on the founding of Rome", "body": "Rōmānum imperium ā Rōmulō initium habet. Rōmulus, cum frātre Remō, ex stirpe Aeneae et Veneris deae nātus, urbem Rōmam condidit. Rōmulus deinde populum in trīgintā cūriās dīvīsit. Centum ex seniōribus lēgit, quōrum cōnsiliō omnia agerentur, quōs senātōrēs nōmināvit propter senectūtem.\n\nGloss:\nimperium — empire\ninitium — beginning\nhabeō, -ēre — to have\nfrāter, frātris — brother\nstirps, stirpis (f.) — stock, lineage\nnāscor, nāscī, nātus sum — to be born\ncondō, -ere, condidī, conditus — to found\ndeinde — then\ntrīgintā — thirty\ncūria, -ae — curia (political division)\ndīvidō — to divide\ncentum — one hundred\nex — from, out of\nsenior, -ōris — elder\nlegō, -ere, lēgī, lēctus — to choose\nquōrum — of whom\ncōnsilium, -iī — advice, counsel\nagerō, agere — to act, do\nsenātor, -ōris — senator\nnōminō, -āre — to name\npropter — because of\nsenectūs, -ūtis (f.) — old age"},
+    {"kind": "self_check", "heading": "Comprehension", "items": [
+      {"prompt": "Who founded Rome?", "answer": "Romulus."},
+      {"prompt": "Who was his brother?", "answer": "Remus."},
+      {"prompt": "From whose lineage did they descend?", "answer": "Aeneas and the goddess Venus."},
+      {"prompt": "How many curiae did Romulus create?", "answer": "Thirty."},
+      {"prompt": "How many senators did he choose?", "answer": "One hundred."},
+      {"prompt": "Why were they called senators?", "answer": "Because of their old age (senectus)."}
+    ]},
+    {"kind": "reading_preview", "heading": "Read aloud", "words": [
+      {"latin": "Rōmānum imperium ā Rōmulō initium habet.", "transliteration": null, "gloss": "The Roman Empire has its beginning from Romulus.", "audio": "/paideia/audio/latin/sentences/3.14-1.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Stage 3 complete. Stage 4 begins the subjunctive mood and complex sentence structures."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can read and understand Eutropius's narrative.", "credit_minutes": 60}
+}

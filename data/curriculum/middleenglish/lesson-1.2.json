@@ -1,0 +1,43 @@
+{
+  "id": "1.2",
+  "stage": 1,
+  "title": "The Vowels Before the Shift",
+  "subtitle": "Long a = 'ah', long i = 'ee', long u = 'oo' — not yet modern.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Master The Vowels Before the Shift.",
+    "Read and translate authentic Middle English texts.",
+    "Prepare for sustained reading in Stage 3."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "The Great Vowel Shift has not yet happened. Long a = 'ah' (name = NAH-muh). Long e = 'ay' (sweet = SWAYT). Long i = 'ee' (fyre = FEE-ruh). Long o = 'oh' (good = GOHD). Long u = 'oo' (hous = HOOS). Short vowels closer to modern. You must unlearn modern pronunciation to hear Chaucer."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "The Vowels Before the Shift"
+        },
+        {
+          "prompt": "Can you apply this to reading?",
+          "answer": "Work through examples with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand The Vowels Before the Shift.",
+    "credit_minutes": 50
+  }
+}

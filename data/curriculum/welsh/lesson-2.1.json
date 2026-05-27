@@ -1,0 +1,46 @@
+{
+  "id": "2.1",
+  "stage": 2,
+  "title": "Verb-Subject-Object Word Order",
+  "subtitle": "Finite verb first, always.",
+  "estimated_minutes": 45,
+  "objectives": ["Understand VSO order.","Recognize the exception: preverbal particles."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers Verb-Subject-Object Word Order. Finite verb first, always."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Understand VSO order."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Understand VSO order." },
+        { "prompt": "How do you apply this in practice?", "answer": "Recognize the exception: preverbal particles." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "welsh": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/welsh/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on Verb-Subject-Object Word Order."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in Verb-Subject-Object Word Order to ten random examples.",
+    "credit_minutes": 45
+  }
+}

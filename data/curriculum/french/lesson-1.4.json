@@ -1,0 +1,82 @@
+{
+  "id": "1.4",
+  "stage": 1,
+  "title": "Liaison",
+  "subtitle": "Linking the final consonant of one word to the initial vowel of the next. Obligatory, forbidden, and optional liaisons.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Understand liaison as the linking of a silent final consonant to a following vowel.",
+    "Distinguish between obligatory, forbidden, and optional liaisons.",
+    "Pronounce common liaisons correctly: les amis [lez‿ami].",
+    "Recognize that liaison changes the sound of some consonants: s and x become [z]."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "What liaison is",
+      "body": "Liaison is the linking of a word-final consonant to the initial vowel of the next word. The consonant is silent when the next word starts with a consonant, but pronounced when the next word starts with a vowel or silent h.\n\nConsider 'les'. Before a consonant, it is [le]: les maisons. Before a vowel, it is [lez]: les amis. The s, silent in isolation, becomes [z] in liaison.\n\nLiaison is not optional everywhere. Some liaisons are obligatory, some are forbidden, and some are optional. The distinctions mark register and formality."
+    },
+    {
+      "kind": "prose",
+      "heading": "Obligatory liaisons",
+      "body": "Liaison is obligatory in these contexts:\n\n1. Article + noun or adjective: les amis, un homme, des enfants.\n2. Adjective + noun: petit ami, grand homme.\n3. Pronoun + verb: nous avons, ils ont, vous êtes.\n4. Preposition + article or pronoun: en été, chez eux, dans un.\n5. Adverb + adjective: très intéressant, bien aimé.\n6. Fixed expressions: de temps en temps, tout à fait.\n\nIn these cases, failure to make liaison is a mark of a non-native speaker."
+    },
+    {
+      "kind": "prose",
+      "heading": "Forbidden liaisons",
+      "body": "Liaison is forbidden in these contexts:\n\n1. After a singular noun: un garçon | intelligent (no liaison on the n of garçon).\n2. Before an aspirated h: les | héros (no liaison).\n3. After et: et | il vient (no liaison on the t).\n4. Before the word 'oui': mais | oui (no liaison).\n5. After an interrogative inversion where the verb ends in a nasal: comment | allez-vous (no liaison on the t of comment).\n\nIn these cases, making liaison is an error."
+    },
+    {
+      "kind": "prose",
+      "heading": "Optional liaisons",
+      "body": "Between these, there are optional liaisons, which mark style. Making them sounds formal or literary. Omitting them sounds casual.\n\nExample: 'pas encore' can be [paz‿ɑ̃kɔʁ] (formal) or [pa ɑ̃kɔʁ] (casual).\n\nYou will hear both in careful speech. In reading Racine or Molière aloud, you make the liaisons. In conversation, you pick and choose."
+    },
+    {
+      "kind": "prose",
+      "heading": "How liaison changes sounds",
+      "body": "In liaison, the final consonant is not always pronounced as written:\n\n- s and x → [z]: les amis [lez‿ami], deux ans [døz‿ɑ̃].\n- d → [t]: grand homme [ɡʁɑ̃t‿ɔm].\n- f → [v] in some fixed words: neuf ans [nœv‿ɑ̃], but neuf heures [nœf‿œʁ] (irregular).\n\nThe consonant that appears in liaison is the underlying form, preserved from Latin or Old French."
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill",
+      "instructions": "Each phrase is read twice: once without liaison (where the next word starts with a consonant), once with liaison (where the next word starts with a vowel). Hear the difference.",
+      "audio": "/paideia/audio/french/drills/lesson-1.4-listening.mp3"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer without looking back.",
+      "items": [
+        { "prompt": "What is liaison?", "answer": "Linking a silent final consonant to the initial vowel of the next word." },
+        { "prompt": "Is liaison obligatory in 'les amis'?", "answer": "Yes. Article + noun always requires liaison." },
+        { "prompt": "Is liaison permitted in 'les héros'?", "answer": "No. The h in 'héros' is aspirated, blocking liaison." },
+        { "prompt": "How is the s in 'les amis' pronounced?", "answer": "[z], not [s]." },
+        { "prompt": "How is the d in 'grand homme' pronounced in liaison?", "answer": "[t], not [d]." },
+        { "prompt": "Is liaison obligatory after 'et'?", "answer": "No. Liaison after 'et' is forbidden." },
+        { "prompt": "What does it mean that some liaisons are optional?", "answer": "They are stylistic. Making them sounds formal; omitting them sounds casual." },
+        { "prompt": "In 'nous avons', is liaison made?", "answer": "Yes. Pronoun + verb requires liaison: [nuz‿avɔ̃]." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Phrases to practice",
+      "instructions": "Read each aloud with liaison.",
+      "words": [
+        { "french": "les amis", "transliteration": "[lez‿ami]", "gloss": "the friends", "audio": "/paideia/audio/french/words/les-amis.mp3" },
+        { "french": "un homme", "transliteration": "[œ̃n‿ɔm]", "gloss": "a man", "audio": "/paideia/audio/french/words/un-homme.mp3" },
+        { "french": "vous êtes", "transliteration": "[vuz‿ɛt]", "gloss": "you are", "audio": "/paideia/audio/french/words/vous-etes.mp3" },
+        { "french": "grand homme", "transliteration": "[ɡʁɑ̃t‿ɔm]", "gloss": "great man", "audio": "/paideia/audio/french/words/grand-homme.mp3" },
+        { "french": "deux ans", "transliteration": "[døz‿ɑ̃]", "gloss": "two years", "audio": "/paideia/audio/french/words/deux-ans.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.5 covers élision — dropping the final vowel before a word beginning with a vowel or mute h. The apostrophe as notation. Where liaison links consonants, élision drops vowels."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can read ten short phrases aloud with correct obligatory liaisons.",
+    "credit_minutes": 50
+  }
+}

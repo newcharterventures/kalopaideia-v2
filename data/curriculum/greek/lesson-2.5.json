@@ -1,0 +1,63 @@
+{
+  "id": "2.5",
+  "stage": 2,
+  "title": "The First Declension — Feminine in α",
+  "subtitle": "ἡ θάλασσα, ἡ μοῖρα, ἡ ἡμέρα — long and short alpha.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Decline first-declension feminine nouns ending in -α in all five cases and both numbers.",
+    "Distinguish long α (after ε, ι, ρ) from short α (after other consonants).",
+    "Recognize the genitive singular ending -ας or -ης depending on vowel length.",
+    "Parse first-declension feminine nouns in -α on sight."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Alpha instead of eta",
+      "body": "Some first-declension feminines end in -α instead of -η. The pattern is almost identical to the -η nouns, but the singular uses α where the -η nouns used η.\n\nThere are two sub-types: long α and short α. Long α appears after ε, ι, or ρ. Short α appears after other consonants. The difference matters only in the genitive and dative singular.\n\nLong α nouns: genitive singular -ας (not -ης), dative singular -ᾳ (not -ῃ).\nShort α nouns: genitive singular -ης (like the -η nouns), dative singular -ῃ.\n\nThe plural is identical for all first-declension feminines."
+    },
+    {
+      "kind": "prose",
+      "heading": "The paradigm: ἡ θάλασσα (sea) — long α",
+      "body": "              singular        plural\n  nominative  θάλασσα         θάλασσαι\n  genitive    θαλάσσης        θαλασσῶν\n  dative      θαλάσσῃ         θαλάσσαις\n  accusative  θάλασσαν        θαλάσσας\n  vocative    θάλασσα         θάλασσαι\n\nWait — this is short α (the sigma is not ε, ι, or ρ). Let me correct:\n\nἡ μοῖρα (fate, portion) — long α after ρ:\n              singular        plural\n  nominative  μοῖρα           μοῖραι\n  genitive    μοίρας          μοιρῶν\n  dative      μοίρᾳ           μοίραις\n  accusative  μοῖραν          μοίρας\n  vocative    μοῖρα           μοῖραι\n\nἡ ἡμέρα (day) — long α after ρ:\n              singular        plural\n  nominative  ἡμέρα           ἡμέραι\n  genitive    ἡμέρας          ἡμερῶν\n  dative      ἡμέρᾳ           ἡμέραις\n  accusative  ἡμέραν          ἡμέρας\n  vocative    ἡμέρα           ἡμέραι\n\nThe genitive and dative singular have α, not η, because α is long after ρ."
+    },
+    {
+      "kind": "prose",
+      "heading": "Short α: ἡ θάλασσα",
+      "body": "              singular        plural\n  nominative  θάλασσα         θάλασσαι\n  genitive    θαλάσσης        θαλασσῶν\n  dative      θαλάσσῃ         θαλάσσαις\n  accusative  θάλασσαν        θαλάσσας\n  vocative    θάλασσα         θάλασσαι\n\nThe genitive and dative singular use η (θαλάσσης, θαλάσσῃ) because the α is short."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers. Parse each form or answer each question.",
+      "items": [
+        { "prompt": "μοίρας", "answer": "genitive singular (long α)" },
+        { "prompt": "μοίρᾳ", "answer": "dative singular (long α)" },
+        { "prompt": "θαλάσσης", "answer": "genitive singular (short α)" },
+        { "prompt": "θαλάσσῃ", "answer": "dative singular (short α)" },
+        { "prompt": "When does α remain α in the genitive and dative singular?", "answer": "When it is long — after ε, ι, or ρ." },
+        { "prompt": "When does α change to η in the genitive and dative singular?", "answer": "When it is short — after consonants other than ρ." },
+        { "prompt": "Are the plural endings the same for all first-declension feminines?", "answer": "Yes." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "First-declension α-stem nouns in sentences",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "ἡ θάλασσα μεγάλη ἐστίν.", "transliteration": "hē thálassa megálē estín.", "gloss": "The sea is large.", "audio": "/paideia/audio/greek/sentences/thalassa-megale.mp3" },
+        { "greek": "τῆς ἡμέρας", "transliteration": "tês hēméras", "gloss": "of the day", "audio": "/paideia/audio/greek/phrases/tes-hemeras.mp3" },
+        { "greek": "τῇ μοίρᾳ", "transliteration": "têi moírāi", "gloss": "to/for fate", "audio": "/paideia/audio/greek/phrases/te-moira.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.6 introduces the first-declension masculines: ὁ ποιητής, ὁ νεανίας. These are masculine nouns that follow the first declension instead of the second. They take the masculine article but use first-declension endings."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can distinguish long α from short α and can decline both types correctly.",
+    "credit_minutes": 50
+  }
+}

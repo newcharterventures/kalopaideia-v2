@@ -1,0 +1,65 @@
+{
+  "id": "2.4",
+  "stage": 2,
+  "title": "The First Declension — Feminine in η",
+  "subtitle": "ἡ ἀρετή, ἡ τιμή, ἡ τέχνη — the most regular type.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Decline any first-declension feminine noun ending in -η in all five cases and both numbers.",
+    "Recognize the genitive singular ending -ης and the dative singular -ῃ.",
+    "Distinguish first-declension feminines from second-declension masculines by their endings.",
+    "Parse first-declension feminine nouns in -η on sight."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The first declension",
+      "body": "The first declension contains most feminine nouns. It has three sub-types depending on the vowel in the stem: nouns in -η, nouns in -α (long), and nouns in -α (short). Today we take the first type: feminines ending in -η.\n\nThese nouns are regular. The nominative singular ends in -η, the genitive singular in -ης, the dative singular in -ῃ (with iota subscript), the accusative singular in -ην. The plural endings are the same for all three sub-types of the first declension."
+    },
+    {
+      "kind": "prose",
+      "heading": "The paradigm: ἡ ἀρετή (excellence, virtue)",
+      "body": "              singular        plural\n  nominative  ἀρετή           ἀρεταί\n  genitive    ἀρετῆς          ἀρετῶν\n  dative      ἀρετῇ           ἀρεταῖς\n  accusative  ἀρετήν          ἀρετάς\n  vocative    ἀρετή           ἀρεταί\n\nWith the article:\n  nominative  ἡ ἀρετή         αἱ ἀρεταί\n  genitive    τῆς ἀρετῆς      τῶν ἀρετῶν\n  dative      τῇ ἀρετῇ        ταῖς ἀρεταῖς\n  accusative  τὴν ἀρετήν      τὰς ἀρετάς\n  vocative    ὦ ἀρετή         ὦ ἀρεταί\n\nThe genitive and dative singular have a circumflex on the ultima: -ῆς, -ῇ. This is regular and predictable."
+    },
+    {
+      "kind": "prose",
+      "heading": "Examples from Plato",
+      "body": "Plato, Republic 353e: ἆρ᾽ οὖν ἔστιν ψυχῆς ἀρετή;\n'Is there, then, an excellence of the soul?' ἀρετή is nominative singular; ψυχῆς is genitive singular of ψυχή (soul).\n\nThe first declension feminine in -η is the home of abstract nouns and of many common words: τέχνη (art, skill), τιμή (honor), ἀλήθεια (truth), δίκη (justice)."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers. Parse each form.",
+      "items": [
+        { "prompt": "ἀρετῆς", "answer": "genitive singular" },
+        { "prompt": "ἀρετῇ", "answer": "dative singular" },
+        { "prompt": "ἀρετήν", "answer": "accusative singular" },
+        { "prompt": "ἀρετῶν", "answer": "genitive plural" },
+        { "prompt": "ἀρεταῖς", "answer": "dative plural" },
+        { "prompt": "What is the genitive singular ending?", "answer": "-ης (with circumflex: -ῆς)" },
+        { "prompt": "What is the dative singular ending?", "answer": "-ῃ (with iota subscript and circumflex)" },
+        { "prompt": "Are the nominative and vocative singular the same?", "answer": "Yes." },
+        { "prompt": "What is the accusative plural ending?", "answer": "-άς" }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "First-declension feminines in sentences",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "ἡ ἀρετὴ καλή ἐστιν.", "transliteration": "hē aretḕ kalḗ estin.", "gloss": "Excellence is beautiful.", "audio": "/paideia/audio/greek/sentences/arete-kale.mp3" },
+        { "greek": "τῆς τιμῆς", "transliteration": "tês timês", "gloss": "of honor", "audio": "/paideia/audio/greek/phrases/tes-times.mp3" },
+        { "greek": "τὴν τέχνην διδάσκει.", "transliteration": "tḕn tékhnēn didáskei.", "gloss": "He teaches the art.", "audio": "/paideia/audio/greek/sentences/ten-technen.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.5 introduces the first-declension feminines in -α (long): ἡ θάλασσα, ἡ μοῖρα, ἡ ἡμέρα. These follow the same pattern as the -η nouns except that the vowel is α throughout the singular."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can decline any first-declension feminine noun in -η from memory in under three minutes.",
+    "credit_minutes": 50
+  }
+}

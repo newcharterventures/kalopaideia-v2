@@ -1,0 +1,71 @@
+{
+  "id": "1.7",
+  "stage": 1,
+  "title": "Reading Drill: Formulae",
+  "subtitle": "IEVRV, DEDEMIT, AVVOT, ETIC — the recurring chunks of Gaulish epigraphy.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Recognize the five most common formulae in Gaulish inscriptions on sight.",
+    "Translate DEDEMIT, IEVRV, AVVOT, ETIC, and patronymic constructions.",
+    "Understand the pragmatic function of formulaic language in epigraphy.",
+    "Read a complete votive inscription using only formulae and names."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Why formulae matter",
+      "body": "Gaulish inscriptions are short and formulaic. The same phrases recur hundreds of times across the corpus. Learn these chunks and you can read the structure of most inscriptions before you learn the full morphology. Formulae are the training wheels. Use them."
+    },
+    {
+      "kind": "prose",
+      "heading": "The five core formulae",
+      "body": "1. DEDEMIT — \"he/she gave\" or \"dedicated\". The most common verb in the corpus. Third person singular preterite of a verb meaning \"to give\". It appears in votive and funerary inscriptions: X DEDEMIT Y (\"X gave/dedicated Y\").\n\n2. IEVRV — \"dedicated\", \"set up\", or \"to the sacred place\". The etymology is disputed, but the function is clear: it marks dedications. Often paired with a divine name in the dative.\n\n3. AVVOT — \"vowed\" or \"to the vow\". A votive formula, probably related to Latin vovit. Appears in dedications: X AVVOT Y (\"X vowed Y\").\n\n4. ETIC — \"and\". The Gaulish conjunction, cognate with Latin et. Used to link names or clauses.\n\n5. Patronymic constructions — \"X son of Y\". The genitive of the father's name follows the son's name: ANDEVDOS SEGOMARI (\"Andevdos of Segomaros\" = \"Andevdos son of Segomaros\"). In Greek script: ΣΕΓΟΜΑΡΟΣ ΟΥΙΛΛΟΝΕΟΣ (\"Segomaros of Ouillo\" = \"Segomaros son of Ouillo\")."
+    },
+    {
+      "kind": "prose",
+      "heading": "Reading with formulae",
+      "body": "Here is a complete Latin-script votive inscription from Autun, 1st century CE:\n\nSEGOMĀROS VILONEOS DEDEMIT LVGVVO IEVRV\n\nParsing:\nSEGOMĀROS — nom. sg., personal name, \"great in victory\"\nVILONEOS — gen. sg., patronymic, \"of Viloneos\"\nDEDEMIT — 3rd sg. preterite, \"gave\" or \"dedicated\"\nLVGVVO — dat. sg., \"to Lugus\" (the god)\nIEVRV — formula, \"to the sacred place\" or \"dedicated\"\n\nTranslation: \"Segomaros son of Viloneos dedicated (this) to Lugus, to the sacred place.\"\n\nEvery word is either a name or a formula. This is typical."
+    },
+    {
+      "kind": "prose",
+      "heading": "Why Gaulish is formulaic",
+      "body": "Inscriptions cost money. Stone had to be quarried, carved, and transported. Bronze had to be cast. Lead had to be inscribed. The fewer words, the cheaper the memorial. Formulae were efficient. Everyone knew what DEDEMIT meant. You did not need to say more. Economy drove repetition. This is not a weakness of Gaulish epigraphy. It is a feature."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers; check after.",
+      "items": [
+        { "prompt": "What does DEDEMIT mean?", "answer": "\"He/she gave\" or \"dedicated\". Third person singular preterite." },
+        { "prompt": "What does IEVRV mean?", "answer": "\"Dedicated\" or \"to the sacred place\". A votive formula." },
+        { "prompt": "What does AVVOT mean?", "answer": "\"Vowed\" or \"to the vow\". Related to Latin vovit." },
+        { "prompt": "What does ETIC mean?", "answer": "\"And\". The Gaulish conjunction, cognate with Latin et." },
+        { "prompt": "How is a patronymic formed in Gaulish?", "answer": "The father's name in the genitive follows the son's name: ANDEVDOS SEGOMARI (\"Andevdos of Segomaros\")." },
+        { "prompt": "In the phrase LVGVVO IEVRV, what case is LVGVVO?", "answer": "Dative singular. The ending -vo or -ui marks the dative of -o- stem nouns." },
+        { "prompt": "Why are Gaulish inscriptions so formulaic?", "answer": "Economy. Stone and bronze were expensive. Formulae were efficient and universally understood." },
+        { "prompt": "Parse SEGOMĀROS VILONEOS.", "answer": "SEGOMĀROS (nom. sg., personal name) VILONEOS (gen. sg., patronymic, \"of Viloneos\") = \"Segomaros son of Viloneos\"." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Ten formulaic inscriptions",
+      "instructions": "Read each inscription aloud. You know every word.",
+      "words": [
+        { "gaulish": "ANDEVDOS DEDEMIT LVGVO", "transliteration": null, "gloss": "Andevdos gave (this) to Lugus", "audio": "/paideia/audio/gaulish/inscriptions/andevdos-dedemit.mp3" },
+        { "gaulish": "DAGOMĀROS ETIC ATEPOMĀROS IEVRV", "transliteration": null, "gloss": "Dagomaros and Atepomaros dedicated (this)", "audio": "/paideia/audio/gaulish/inscriptions/dagomaros-etic.mp3" },
+        { "gaulish": "SEQVANA AVVOT", "transliteration": null, "gloss": "Vowed to Sequana", "audio": "/paideia/audio/gaulish/inscriptions/sequana-avvot.mp3" },
+        { "gaulish": "EPONA DEDEMIT", "transliteration": null, "gloss": "Dedicated to Epona", "audio": "/paideia/audio/gaulish/inscriptions/epona-dedemit.mp3" },
+        { "gaulish": "TARANIS IEVRV", "transliteration": null, "gloss": "To Taranis, dedicated", "audio": "/paideia/audio/gaulish/inscriptions/taranis-ieuru.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Stage 1 is complete. You can now read the scripts, pronounce Gaulish, recognize names, and parse formulae. Stage 2 begins with the Coligny Calendar, the longest and most important Gaulish text. We will read it line by line."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can translate DEDEMIT, IEVRV, AVVOT, ETIC, and a patronymic construction without hesitation.",
+    "credit_minutes": 50
+  }
+}

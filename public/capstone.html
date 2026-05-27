@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kalopaideia — Capstone Examination</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Cinzel:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/paideia/styles.css?v=1779378800" />
+</head>
+<body>
+
+<header class="masthead masthead-athenaeum">
+  <div class="mast-content">
+    <div class="mast-grid">
+      <div class="mast-center">
+        <h1 class="mast-name"><a href="/paideia/" aria-label="Kalopaideia home">KALOPAIDEIA</a></h1>
+      </div>
+    </div>
+    <nav class="nav mast-nav">
+      <a id="back-link" href="/paideia/greek">← Back to curriculum</a>
+    </nav>
+  </div>
+</header>
+
+<main class="capstone-page" id="capstone-root">
+  <p><em>Loading examination…</em></p>
+</main>
+
+<script>
+const BASE = "/paideia";
+
+function esc(s) {
+  if (s === null || s === undefined) return "";
+  return String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+function getLang() {
+  const parts = location.pathname.split("/").filter(Boolean);
+  return parts[1]; // /paideia/<lang>/capstone
+}
+
+async function loadAndRender() {
+  const lang = getLang();
+  document.getElementById("back-link").href = `${BASE}/${lang}/curriculum`;
+
+  let exam = null;
+  let manifest = null;
+  try {
+    const r = await fetch(`${BASE}/api/curriculum/${lang}/capstone-exam`).catch(() => null);
+    // We don't expose a GET-exam endpoint, so we fetch via static-friendly route:
+    const r2 = await fetch(`${BASE}/api/curriculum/${lang}`);
+    if (r2.ok) manifest = await r2.json();
+  } catch {}
+  // Fetch the exam JSON directly. We expose it through the same static path used for lessons.
+  try {
+    const r3 = await fetch(`${BASE}/api/curriculum/${lang}/lesson/capstone`).catch(() => null);
+  } catch {}
+  // For simplicity, expose capstone as a static JSON.
+  try {
+    const r4 = await fetch(`${BASE}/curriculum/${lang}/capstone.json`);
+    if (r4.ok) exam = await r4.json();
+  } catch {}
+  // Fallback: direct path to data file via a new dedicated endpoint.
+  if (!exam) {
+    try {
+      const r5 = await fetch(`${BASE}/api/curriculum/${lang}/capstone-spec`);
+      if (r5.ok) exam = await r5.json();
+    } catch {}
+  }
+
+  const root = document.getElementById("capstone-root");
+  if (!exam) {
+    root.innerHTML = `
+      <h1>Capstone examination</h1>
+      <p>The capstone examination for ${esc(lang)} is in preparation. Check back soon.</p>
+      <p><a href="${BASE}/${lang}/curriculum">← Back to curriculum</a></p>`;
+    return;
+  }
+
+  document.title = `${exam.title} — Kalopaideia`;
+
+  const html = [];
+  html.push(`<h1>${esc(exam.title)}</h1>`);
+  html.push(`<p style="font-size:16px;color:#5b4a36;">${esc(exam.instructions || "")}</p>`);
+  html.push(`<p style="font-size:14px;"><strong>Time limit:</strong> ${esc(exam.time_limit_minutes || 180)} minutes. <strong>Pass mark:</strong> ${Math.round((exam.scoring?.pass_mark || 0.7) * 100)}%. <strong>Honors:</strong> ${Math.round((exam.scoring?.honors_mark || 0.85) * 100)}%.</p>`);
+
+  // Track picker
+  const tracks = manifest?.stages?.find((s) => s.tracks)?.tracks || [];
+  if (tracks.length > 0) {
+    html.push(`<div class="capstone-section">
+      <h2>Choose your track</h2>
+      <select id="track-select" style="font-size:16px;padding:8px;">
+        ${tracks.map((t) => `<option value="${esc(t.id)}">${esc(t.name)} — ${esc(t.text)}</option>`).join("")}
+      </select>
+    </div>`);
+  }
+
+  // Public name
+  html.push(`<div class="capstone-section">
+    <h2>The name on your diploma</h2>
+    <p style="font-size:15px;">This is the only personal information recorded on the on-chain certificate. Use a pen name if you prefer.</p>
+    <input type="text" id="public-name" placeholder="e.g. Jane Doe, or Anon, or your real name" maxlength="64" style="width:100%;padding:8px;font-size:16px;" />
+  </div>`);
+
+  // Sections
+  for (const sec of exam.sections || []) {
+    html.push(`<div class="capstone-section"><h2>${esc(sec.title)}</h2>`);
+    for (const it of sec.items || []) {
+      let body = "";
+      if (it.type === "translate") {
+        body = `
+          ${it.prompt_greek ? `<div class="greek-prompt">${esc(it.prompt_greek)}</div>` : ""}
+          <div class="item-prompt">${esc(it.prompt_en || it.prompt || "Translate the above.")}</div>
+          <textarea id="ans-${esc(it.id)}" placeholder="Your translation…"></textarea>`;
+      } else if (it.type === "compose") {
+        body = `
+          <div class="item-prompt">${esc(it.prompt || "")}</div>
+          <textarea id="ans-${esc(it.id)}" placeholder="Write your answer in the target language…"></textarea>`;
+      } else if (it.type === "parse") {
+        body = `
+          <div class="item-prompt">${esc(it.prompt || "")}</div>
+          <input type="text" id="ans-${esc(it.id)}" placeholder="e.g. third, singular, aorist, indicative, active" />`;
+      } else if (it.type === "mcq") {
+        body = `
+          <div class="item-prompt">${esc(it.prompt || "")}</div>
+          <ul class="mcq-choices">
+            ${(it.choices || []).map((c, i) => `<li><label><input type="radio" name="ans-${esc(it.id)}" value="${esc(c)}"> ${esc(c)}</label></li>`).join("")}
+          </ul>`;
+      } else if (it.type === "cloze") {
+        body = `
+          <div class="item-prompt">${esc(it.prompt || "")}</div>
+          <input type="text" id="ans-${esc(it.id)}" placeholder="Pipe-separate blanks: blank1 | blank2 | …" />`;
+      }
+      const showTrack = it.track ? `<div style="font-size:12px;color:#8a6a3e;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:6px;">${esc(tracks.find((t) => t.id === it.track)?.name || it.track)}</div>` : "";
+      html.push(`<div class="exam-item" data-id="${esc(it.id)}" data-track="${esc(it.track || "")}" data-type="${esc(it.type)}">
+        ${showTrack}
+        <div style="font-size:12px;color:#5b4a36;">${esc(it.id)} · ${esc(it.points || 1)} points</div>
+        ${body}
+      </div>`);
+    }
+    html.push(`</div>`);
+  }
+
+  // Honor code
+  html.push(`<div class="capstone-honor">
+    <h2 style="margin-top:0;font-family:'Cinzel',serif;font-size:16px;">Honor Code</h2>
+    <p style="font-size:15px;">${esc(exam.honor_code)}</p>
+    <label style="display:block;margin-top:10px;font-size:15px;">
+      <input type="checkbox" id="honor-check" /> I agree.
+    </label>
+  </div>`);
+
+  html.push(`<div style="text-align:center;margin:30px 0;">
+    <button id="submit-btn" style="background:#1a1410;color:#f4ecda;border:none;padding:14px 36px;font-family:'Cinzel',serif;letter-spacing:0.08em;font-size:15px;cursor:pointer;border-radius:3px;">Submit examination</button>
+  </div>
+  <div id="result-area"></div>`);
+
+  document.getElementById("capstone-root").innerHTML = html.join("");
+
+  // Filter visible items by chosen track
+  function applyTrack() {
+    const t = document.getElementById("track-select")?.value || null;
+    document.querySelectorAll(".exam-item").forEach((el) => {
+      const tr = el.dataset.track;
+      el.style.display = (!tr || tr === t) ? "" : "none";
+    });
+  }
+  document.getElementById("track-select")?.addEventListener("change", applyTrack);
+  applyTrack();
+
+  document.getElementById("submit-btn").addEventListener("click", async () => {
+    const trackId = document.getElementById("track-select")?.value || null;
+    const publicName = document.getElementById("public-name").value.trim();
+    const honor = document.getElementById("honor-check").checked;
+    if (!publicName) { alert("Please enter the name for your diploma."); return; }
+    if (!honor) { alert("Please affirm the honor code."); return; }
+
+    const responses = {};
+    document.querySelectorAll(".exam-item").forEach((el) => {
+      if (el.style.display === "none") return;
+      const id = el.dataset.id;
+      const type = el.dataset.type;
+      if (type === "mcq") {
+        const picked = el.querySelector(`input[name="ans-${id}"]:checked`);
+        responses[id] = picked ? picked.value : "";
+      } else {
+        const f = document.getElementById(`ans-${id}`);
+        responses[id] = f ? f.value : "";
+      }
+    });
+
+    const btn = document.getElementById("submit-btn");
+    btn.disabled = true;
+    btn.textContent = "Grading…";
+
+    try {
+      const r = await fetch(`${BASE}/api/curriculum/${lang}/capstone`, {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          track_id: trackId,
+          responses,
+          honor_code_accepted: true,
+          public_name: publicName,
+        }),
+      });
+      if (r.status === 401) {
+        document.getElementById("result-area").innerHTML = `<div class="exam-result"><h2>Sign in required</h2><p><a href="${BASE}/account?next=${encodeURIComponent(location.pathname)}" style="color:#f4ecda;text-decoration:underline;">Sign in to sit the examination</a></p></div>`;
+        btn.disabled = false; btn.textContent = "Submit examination";
+        return;
+      }
+      const j = await r.json();
+      const pct = Math.round((j.score || 0) * 1000) / 10;
+      const cls = j.honors ? "honors" : (j.passed ? "passed" : "");
+      const head = j.honors ? "Pass with Honors" : (j.passed ? "Pass" : "Not Passed");
+      let bodyHtml = `<h2>${head}</h2>
+        <p>Final score: <strong>${pct}%</strong> &middot; pass mark ${Math.round((j.pass_mark || 0.7) * 100)}% &middot; honors mark ${Math.round((j.honors_mark || 0.85) * 100)}%</p>`;
+      if (j.passed && j.diploma) {
+        if (j.diploma.error) {
+          bodyHtml += `<p>(Diploma issuance pending: ${esc(j.diploma.error)}.)</p>`;
+        } else {
+          bodyHtml += `
+            <p><strong>Your diploma has been issued.</strong></p>
+            <p>Token ID: <span class="diploma-token">${esc(j.diploma.tokenId)}</span></p>
+            <p>Chain: ${esc(j.chain)} &middot; Tx: <span class="diploma-token">${esc(j.diploma.txHash || "—")}</span> ${j.diploma.dryRun ? "<em>(dry-run; will move on-chain at Base mainnet launch)</em>" : ""}</p>
+            <p><a href="${BASE}/verify/${esc(j.diploma.tokenId)}" style="color:#f4ecda;text-decoration:underline;">Public verification page →</a></p>`;
+        }
+      } else if (!j.passed) {
+        bodyHtml += `<p>You may retake the examination after thirty days. The script of this attempt has been hashed (${esc((j.script_hash || "").slice(0,16))}…) and recorded.</p>`;
+      }
+      document.getElementById("result-area").innerHTML = `<div class="exam-result ${cls}">${bodyHtml}</div>`;
+      window.scrollTo({ top: document.getElementById("result-area").offsetTop - 60, behavior: "smooth" });
+    } catch (e) {
+      document.getElementById("result-area").innerHTML = `<div class="exam-result"><h2>Submission failed</h2><p>${esc(e.message || String(e))}</p></div>`;
+      btn.disabled = false; btn.textContent = "Submit examination";
+    }
+  });
+}
+
+loadAndRender();
+</script>
+</body>
+</html>

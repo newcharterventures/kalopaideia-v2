@@ -1,0 +1,43 @@
+{
+  "id": "3.10",
+  "stage": 3,
+  "title": "Caedmon's Hymn — Lines 6–9",
+  "subtitle": "Hē ǣrest sceōp eorðan bearnum...",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Master Caedmon's Hymn — Lines 6–9.",
+    "Read and translate authentic Old English poetry and prose.",
+    "Prepare for the capstone examination."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "Hē ǣrest sceōp eorðan bearnum\nheofon tō hrōfe, hālig Scyppend;\nþā middangeard, moncynnes Weard,\nēce Drihten, æfter tēode firum foldan, Frēa ælmihtig.\n\nTranslation: 'He first created for the children of earth heaven as a roof, the holy Creator; then middle-earth, the Guardian of mankind, the eternal Lord, afterwards made for men the earth, the almighty Lord.'\n\nThe conclusion. Full translation and recitation."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "Caedmon's Hymn — Lines 6–9"
+        },
+        {
+          "prompt": "Can you translate the example passage?",
+          "answer": "Work through it word by word with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson or take the capstone examination."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply Caedmon's Hymn — Lines 6–9 to reading.",
+    "credit_minutes": 60
+  }
+}

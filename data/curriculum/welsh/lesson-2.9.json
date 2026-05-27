@@ -1,0 +1,46 @@
+{
+  "id": "2.9",
+  "stage": 2,
+  "title": "Adjectives",
+  "subtitle": "Follow the noun. Agree in number, sometimes gender.",
+  "estimated_minutes": 40,
+  "objectives": ["Place adjectives after nouns.","Apply soft mutation after feminine singular nouns."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers Adjectives. Follow the noun. Agree in number, sometimes gender."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Place adjectives after nouns."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Place adjectives after nouns." },
+        { "prompt": "How do you apply this in practice?", "answer": "Apply soft mutation after feminine singular nouns." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "welsh": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/welsh/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on Adjectives."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in Adjectives to ten random examples.",
+    "credit_minutes": 40
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "4.8",
+  "stage": 4,
+  "title": "Indirect Statement",
+  "subtitle": "dīcō Caesarem venīre / vēnisse / ventūrum esse. The accusative-and-infinitive construction.",
+  "estimated_minutes": 60,
+  "objectives": ["Form indirect statements with accusative subject + infinitive.", "Use present, perfect, and future infinitives.", "Translate as 'that' clauses in English.", "Understand time relative to the main verb."],
+  "sections": [
+    {"kind": "prose", "heading": "Indirect statement", "body": "Latin expresses indirect statement (what someone says, thinks, knows) with accusative + infinitive.\n\ndīcō Caesarem venīre. — I say that Caesar is coming. (present infinitive = same time as main verb)\ndīcō Caesarem vēnisse. — I say that Caesar came / has come. (perfect infinitive = time before main verb)\ndīcō Caesarem ventūrum esse. — I say that Caesar will come. (future infinitive = time after main verb)\n\nCicero writes: sciō tē fortem esse. — I know that you are brave.\nCaesar writes: nūntiāvit hostēs appropinquāre. — He announced that the enemies were approaching."},
+    {"kind": "self_check", "heading": "Self-check", "items": [
+      {"prompt": "Translate: dīcō puellam cantāre.", "answer": "I say that the girl is singing."},
+      {"prompt": "Translate: scīvī hostēs vēnisse.", "answer": "I knew that the enemies had come."},
+      {"prompt": "Translate: spērō tē ventūrum esse.", "answer": "I hope that you will come."}
+    ]},
+    {"kind": "reading_preview", "heading": "Sentences", "words": [
+      {"latin": "Caesar nūntiāvit legiōnēs adesse.", "transliteration": null, "gloss": "Caesar announced that the legions were present.", "audio": "/paideia/audio/latin/sentences/4.8-1.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Lesson 4.9: the gerund and gerundive. ars scrībendī, Carthāgō dēlenda est."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can recognize and translate indirect statements.", "credit_minutes": 60}
+}

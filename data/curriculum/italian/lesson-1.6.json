@@ -1,0 +1,86 @@
+{
+  "id": "1.6",
+  "stage": 1,
+  "title": "Reading the Names",
+  "subtitle": "Fifty Italian proper names — authors, cities, artists.",
+  "estimated_minutes": 30,
+  "objectives": [
+    "Read and pronounce fifty Italian proper names.",
+    "Recognize stress patterns in Italian surnames and place names.",
+    "Hear the difference between foreign-origin names (e.g., Michelangelo) and native Italian names (e.g., Petrarca)."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Why names?",
+      "body": "Names are the first continuous reading. They carry no grammar yet, no inflection, just sound. You will read them aloud, hear them, repeat them. By the end of this lesson you will recognize fifty Italian names on sight and pronounce them without hesitation."
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Authors and poets",
+      "instructions": "Read each name aloud. Check your pronunciation against the audio.",
+      "words": [
+        { "italian": "Dante Alighieri", "transliteration": null, "gloss": "poet (1265–1321)", "audio": "/paideia/audio/italian/names/dante-alighieri.mp3" },
+        { "italian": "Francesco Petrarca", "transliteration": null, "gloss": "poet (1304–1374)", "audio": "/paideia/audio/italian/names/francesco-petrarca.mp3" },
+        { "italian": "Giovanni Boccaccio", "transliteration": null, "gloss": "storyteller (1313–1375)", "audio": "/paideia/audio/italian/names/giovanni-boccaccio.mp3" },
+        { "italian": "Niccolò Machiavelli", "transliteration": null, "gloss": "political philosopher (1469–1527)", "audio": "/paideia/audio/italian/names/niccolo-machiavelli.mp3" },
+        { "italian": "Ludovico Ariosto", "transliteration": null, "gloss": "poet (1474–1533)", "audio": "/paideia/audio/italian/names/ludovico-ariosto.mp3" },
+        { "italian": "Torquato Tasso", "transliteration": null, "gloss": "poet (1544–1595)", "audio": "/paideia/audio/italian/names/torquato-tasso.mp3" },
+        { "italian": "Giacomo Leopardi", "transliteration": null, "gloss": "poet (1798–1837)", "audio": "/paideia/audio/italian/names/giacomo-leopardi.mp3" },
+        { "italian": "Alessandro Manzoni", "transliteration": null, "gloss": "novelist (1785–1873)", "audio": "/paideia/audio/italian/names/alessandro-manzoni.mp3" },
+        { "italian": "Italo Calvino", "transliteration": null, "gloss": "novelist (1923–1985)", "audio": "/paideia/audio/italian/names/italo-calvino.mp3" },
+        { "italian": "Primo Levi", "transliteration": null, "gloss": "writer (1919–1987)", "audio": "/paideia/audio/italian/names/primo-levi.mp3" }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Artists",
+      "instructions": "Read aloud.",
+      "words": [
+        { "italian": "Michelangelo Buonarroti", "transliteration": null, "gloss": "sculptor, painter (1475–1564)", "audio": "/paideia/audio/italian/names/michelangelo-buonarroti.mp3" },
+        { "italian": "Leonardo da Vinci", "transliteration": null, "gloss": "polymath (1452–1519)", "audio": "/paideia/audio/italian/names/leonardo-da-vinci.mp3" },
+        { "italian": "Raffaello Sanzio", "transliteration": null, "gloss": "painter (1483–1520)", "audio": "/paideia/audio/italian/names/raffaello-sanzio.mp3" },
+        { "italian": "Caravaggio", "transliteration": null, "gloss": "painter (1571–1610)", "audio": "/paideia/audio/italian/names/caravaggio.mp3" },
+        { "italian": "Tiziano Vecellio", "transliteration": null, "gloss": "painter (1488–1576)", "audio": "/paideia/audio/italian/names/tiziano-vecellio.mp3" }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Cities",
+      "instructions": "Read aloud.",
+      "words": [
+        { "italian": "Roma", "transliteration": null, "gloss": "Rome", "audio": "/paideia/audio/italian/names/roma.mp3" },
+        { "italian": "Firenze", "transliteration": null, "gloss": "Florence", "audio": "/paideia/audio/italian/names/firenze.mp3" },
+        { "italian": "Venezia", "transliteration": null, "gloss": "Venice", "audio": "/paideia/audio/italian/names/venezia.mp3" },
+        { "italian": "Milano", "transliteration": null, "gloss": "Milan", "audio": "/paideia/audio/italian/names/milano.mp3" },
+        { "italian": "Napoli", "transliteration": null, "gloss": "Naples", "audio": "/paideia/audio/italian/names/napoli.mp3" },
+        { "italian": "Torino", "transliteration": null, "gloss": "Turin", "audio": "/paideia/audio/italian/names/torino.mp3" },
+        { "italian": "Bologna", "transliteration": null, "gloss": "Bologna", "audio": "/paideia/audio/italian/names/bologna.mp3" },
+        { "italian": "Palermo", "transliteration": null, "gloss": "Palermo", "audio": "/paideia/audio/italian/names/palermo.mp3" },
+        { "italian": "Genova", "transliteration": null, "gloss": "Genoa", "audio": "/paideia/audio/italian/names/genova.mp3" },
+        { "italian": "Pisa", "transliteration": null, "gloss": "Pisa", "audio": "/paideia/audio/italian/names/pisa.mp3" }
+      ]
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Without looking, pronounce these names.",
+      "items": [
+        { "prompt": "Dante Alighieri", "answer": "[ˈdan.te a.liˈɡjɛ.ri]" },
+        { "prompt": "Petrarca", "answer": "[peˈtrar.ka]" },
+        { "prompt": "Boccaccio", "answer": "[bokˈkat.tʃo]" },
+        { "prompt": "Firenze", "answer": "[fiˈren.tse]" },
+        { "prompt": "Venezia", "answer": "[veˈnɛt.tsja]" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.7: first sentences in Italian. Ten short sentences with audio and glosses. You will read before parsing."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can read all fifty names aloud without hesitation.",
+    "credit_minutes": 30
+  }
+}

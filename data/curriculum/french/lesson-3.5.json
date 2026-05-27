@@ -1,0 +1,56 @@
+{
+  "id": "3.5",
+  "stage": 3,
+  "title": "The Plus-que-parfait",
+  "subtitle": "Pluperfect for action completed before another past action.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Understand the plus-que-parfait.",
+    "Apply the concepts in reading and writing.",
+    "Practice with authentic French examples."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Main content",
+      "body": "This lesson covers The Plus-que-parfait. Pluperfect for action completed before another past action."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer these questions.",
+      "items": [
+        {
+          "prompt": "What is the main concept?",
+          "answer": "The Plus-que-parfait"
+        },
+        {
+          "prompt": "Review question 2",
+          "answer": "Review answer 2"
+        }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Practice materials",
+      "instructions": "Read each example.",
+      "words": [
+        {
+          "french": "exemple",
+          "transliteration": null,
+          "gloss": "example",
+          "audio": "/paideia/audio/french/words/example.mp3"
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson continues Stage 3."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts without hesitation.",
+    "credit_minutes": 50
+  }
+}

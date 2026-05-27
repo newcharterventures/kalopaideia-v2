@@ -1,0 +1,96 @@
+{
+  "date": "2026-05-23",
+  "generated_at": "2026-05-23T11:07:27.923Z",
+  "vignettes": {
+    "greek": {
+      "title": "The Three Moirai at the Loom",
+      "body": "The Greeks conceived fate as three sisters spinning thread. Clotho spun the fiber of each life from her distaff, Lachesis measured its length with her rod, and Atropos cut it with shears that never dulled. These Moirai stood apart from the Olympian gods, older and more primal. Even Zeus could not alter what they apportioned. Pottery from the sixth century BCE shows them as solemn women at their work, sometimes winged, always intent on the thread. Plato placed them in his cosmic vision, singing with the Sirens at the spindle of Necessity. To the Greeks, your moira was your portion of life's thread, allotted before birth. No prayer, no sacrifice, no cunning could add a cubit to its measure. The shears would close when Atropos willed it, and the portion would be complete.",
+      "image": null,
+      "image_query": "Moirai Greek vase painting"
+    },
+    "latin": {
+      "title": "Aeneas Flees Burning Troy with Anchises",
+      "body": "When Virgil composed the Aeneid between 29 and 19 BCE, he cast pietas as the hero's burden and glory. Aeneas carries his aged father Anchises on his shoulders from the flames of Troy, clutching the household gods while his son Ascanius follows. The image became canonical in Roman art: sculptures, frescoes, and coins depicted the three generations in flight. Augustus commissioned Virgil's epic to provide Rome with a mythic origin that valued duty over passion. Aeneas abandons Dido in Carthage not from cruelty but from pietas, obeying Jupiter's command to found a new city in Italy. The word itself appears in inscriptions honoring soldiers and magistrates who served the res publica faithfully. Pietas bound Romans vertically to ancestors and gods, horizontally to family and state. It was never merely sentiment but obligation enforced by law and custom.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Aeneas_Carrying_Anchises_in_the_Burning_of_Troy_MET_DP807570.jpg/1280px-Aeneas_Carrying_Anchises_in_the_Burning_of_Troy_MET_DP807570.jpg",
+        "credit": "Francesco Allegrini da Gubbio / Wikimedia Commons (CC0)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Aeneas_Carrying_Anchises_in_the_Burning_of_Troy_MET_DP807570.jpg",
+        "width": 1200,
+        "height": 909
+      },
+      "image_query": "Aeneas Anchises Troy"
+    },
+    "french": {
+      "title": "Racine's Classical Tragedy at Versailles",
+      "body": "Jean Racine premiered Phèdre at the Hôtel de Bourgogne in January 1677, but its true home was Versailles. Louis XIV's poet crafted alexandrine verse so musical that courtiers memorized whole scenes. Phèdre's confession of illicit love arrives at dawn, when night's protective darkness fails. Racine borrowed his structure from Euripides but purified it through the three unities: one day, one palace, one catastrophe. His rival Pradon staged a competing Phèdre the same week, backed by the duchesse de Bouillon's faction. The contest turned vicious. Racine's supporters hired street toughs to fill Pradon's theater with hecklers. After Phèdre, Racine abandoned secular theater entirely, becoming Louis's historiographer. He wrote one final tragedy, Athalie, for Madame de Maintenon's girls' school at Saint-Cyr, then fell silent.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Jean_Racine_d%27apr%C3%A8s_Santerre_-_Mus%C3%A9e_Cond%C3%A9.jpeg",
+        "credit": "After Jean-Baptiste Santerre / Wikimedia Commons (Public domain)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Jean_Racine_d%27apr%C3%A8s_Santerre_-_Mus%C3%A9e_Cond%C3%A9.jpeg",
+        "width": 552,
+        "height": 650
+      },
+      "image_query": "Jean Racine portrait"
+    },
+    "german": {
+      "title": "Goethe's Chemical Metaphor for Love",
+      "body": "Goethe borrowed the term Wahlverwandtschaft from eighteenth-century chemistry, where it described substances that preferentially combined with certain partners over others. In his 1809 novel, a Captain explains the concept to Charlotte and Eduard at their estate: when sulfuric acid encounters limestone, it abandons its previous partner to form a new compound. The four characters—Eduard, Charlotte, the Captain, and Ottilie—mirror this process, their attractions shifting with what Goethe presented as natural law. The novel shocked Weimar society. Schiller's widow called it immoral. Yet Goethe insisted he was mapping the territory between freedom and fate. The chemical metaphor allowed him to examine adultery and passion without moralizing, treating human desire as a force subject to observation like any phenomenon in nature. The book became a touchstone for nineteenth-century debates about marriage, determinism, and whether science could illuminate the human heart.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Fotoreproductie_van_%28vermoedelijk%29_een_prent_naar_werk_van_W._von_Kaulbach_Ottilie_%28Wahlverwandtschaften%29_Ottilie_%28Wahlverwandtschaften%29_W._von_Kaulbach_%28titel_op_object%29%2C_RP-F-F00788-G.jpg/1280px-thumbnail.jpg",
+        "credit": "Rijksmuseum / Wikimedia Commons (CC0)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Fotoreproductie_van_(vermoedelijk)_een_prent_naar_werk_van_W._von_Kaulbach_Ottilie_(Wahlverwandtschaften)_Ottilie_(Wahlverwandtschaften)_W._von_Kaulbach_(titel_op_object),_RP-F-F00788-G.jpg",
+        "width": 1200,
+        "height": 1874
+      },
+      "image_query": "Goethe Wahlverwandtschaften illustration"
+    },
+    "italian": {
+      "title": "Petrarch's Laura and the Scattered Rhymes",
+      "body": "Francesco Petrarca spent decades refining the 366 poems of his Canzoniere, arranging and rearranging them until his death in 1374. The collection takes its alternate title, Rerum vulgarium fragmenta, from the poet's own description: fragments in the vernacular, scattered like the leaves his beloved Laura's name evokes. Laura herself remains historically unverified—perhaps Laura de Noves of Avignon, perhaps a fiction. Petrarch claimed he first saw her in the church of Sainte-Claire on April 6, 1327, and mourned her death from plague in 1348. Whether real or imagined, she became the axis around which an entire lyric universe turned. The Canzoniere established the sonnet as Europe's dominant love poem for five centuries, its influence reaching from Pietro Bembo's Venetian editions to Shakespeare's England. Petrarch polished each poem with obsessive care, seeking a beauty that language could approach but never possess.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Petrarch_canzoniere.jpg/1280px-Petrarch_canzoniere.jpg",
+        "credit": "AnonymousUnknown author / Wikimedia Commons (Public domain)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Petrarch_canzoniere.jpg",
+        "width": 1200,
+        "height": 1633
+      },
+      "image_query": "Petrarch manuscript Canzoniere"
+    },
+    "oldenglish": {
+      "title": "The Wanderer's Meditation on Ruin",
+      "body": "The Wanderer, preserved in the tenth-century Exeter Book, opens with an anhaga (solitary man) seeking mercy across winter seas. This elegy shifts between personal lament and cosmic meditation. The speaker recalls the loss of his lord and hall-companions, then widens his gaze to contemplate ruined cities, the work of enta geweorc (giants' work), standing empty across the landscape. These stone remnants of Roman Britain haunted Anglo-Saxon England. The poem's structure moves from immediate grief through wyrd (fate) to Christian consolation, yet its power lies in the middle section where the speaker surveys windswept walls and vanished glory. Scholars debate whether one voice or two speak in the text. The manuscript itself, donated to Exeter Cathedral by Bishop Leofric in 1072, contains most surviving Old English poetry. Its pages show the wear of monastic readers who copied and contemplated transience.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Eala_Earendel_engla_beorhtast_-_Exeter_Book_folio_9v_top_two_lines.jpg",
+        "credit": "Chiswick Chap / Wikimedia Commons (Public domain)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Eala_Earendel_engla_beorhtast_-_Exeter_Book_folio_9v_top_two_lines.jpg",
+        "width": 956,
+        "height": 139
+      },
+      "image_query": "Exeter Book manuscript"
+    },
+    "middleenglish": {
+      "title": "Criseyde's Chamber in Troilus and Criseyde",
+      "body": "When Chaucer composed Troilus and Criseyde in the 1380s, he transformed Boccaccio's tale into an anatomy of emotion, making routhe the hinge on which desire turns to consent. Criseyde deliberates in her chamber, weighing Troilus's suffering against her widow's reputation. Pandarus engineers their first night together at Deiphebus's house, then at his own, where Troilus appears bedside claiming mortal anguish. Criseyde's routhe becomes the acceptable face of yielding, converting erotic surrender into moral virtue. The narrator insists she acts from compassion, not lust. Later, when she betrays Troilus for Diomede at the Greek camp, that same routhe makes her lament her faithlessness even as she commits it. The poem makes pity both enabler and measure of courtly love's self-deceptions, a mirror held to Richard II's court where feeling refined replaced feeling true.",
+      "image": null,
+      "image_query": "Troilus Criseyde manuscript illustration"
+    },
+    "welsh": {
+      "title": "Dafydd ap Gwilym and the Cywydd",
+      "body": "Dafydd ap Gwilym, working in mid-fourteenth-century Ceredigion and Glamorgan, transformed Welsh poetry by turning the cywydd deuair hirion — a meter of rhyming seven-syllable couplets bound by cynghanedd — toward subjects the aristocratic Gogynfeirdd had scorned. Where earlier court poets praised princes in dense genealogical syntax, Dafydd wrote of frustrated love, woodland trysts, and humiliating mishaps at tavern doors. His poem 'Y Gwynt' sends the wind as messenger to his beloved, asking it to carry not mere words but ystyr, the inner weight of longing. He layered courtly diction with earthy humor, using strict-meter technique to generate surprise: a thrush becomes love's herald, a wave bears erotic invitation. Over 150 poems survive in manuscripts like the Red Book of Hergest, many copied within decades of his death around 1370. His influence bent Welsh poetry toward personal voice while maintaining the intricate consonantal patterning that still defines cerdd dafod.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Barddoniaeth_Dafydd_Nanmor_a_Dafydd_ap_Gwilym%2C_Page_11_%284391785%29.jpg",
+        "credit": "Dafydd ap Gwilym / Dafydd Nanmor / Wikimedia Commons (CC0)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Barddoniaeth_Dafydd_Nanmor_a_Dafydd_ap_Gwilym,_Page_11_(4391785).jpg",
+        "width": 805,
+        "height": 883
+      },
+      "image_query": "Dafydd ap Gwilym manuscript"
+    },
+    "oldnorse": {
+      "title": "Seiðr and the Gender Boundary",
+      "body": "Seiðr belonged to a class of magic associated with prophecy, spirit-travel, and manipulation of fate. Practitioners, usually women called vǫlur or seiðkonur, entered trance states on raised platforms while assistants sang ritual songs. The practice appears in Eiríks saga rauða, where a vǫlva named Þorbjǫrg performs seiðr in Greenland to divine the end of a famine. She wore a blue cloak, catskin gloves, and carried a brass-studded staff. The ritual required a chorus of women to chant the varðlokkur, spirit-summoning songs. Male practitioners faced accusations of ergi, a term denoting unmanliness that carried serious social consequences. Yet Óðinn himself crossed this boundary in myth, learning seiðr from Freyja. This contradiction troubled saga audiences: the Allfather's pursuit of knowledge—even feminizing knowledge—against the rigid gender codes that governed mortal men.",
+      "image": null,
+      "image_query": "Norse Odin Freyja manuscript"
+    }
+  }
+}

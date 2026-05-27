@@ -1,0 +1,84 @@
+{
+  "id": "track-poet",
+  "stage": 5,
+  "track_name": "The Poet",
+  "author": "Dante Alighieri",
+  "texts": "Inferno, Canto I (entire) and Canto V, lines 73–142 (Paolo and Francesca)",
+  "estimated_weeks": "12–16",
+  "rationale": "The greatest poem in Italian. Canto I is the threshold of the journey: the dark wood, the three beasts, the meeting with Vergil. Canto V is the most famous episode in the Inferno: the lovers swept in the infernal wind. The student learns to read trecento Italian with full grammatical notes.",
+  "learning_outcomes": [
+    "Read Dante's Inferno Canto I and Canto V, lines 73–142, in the original with notes.",
+    "Recognize and explain trecento verb forms (apocope, archaic endings).",
+    "Identify trecento pronoun positions (dirotti = ti dirò).",
+    "Translate any fifty-word passage from the assigned cantos at sight with notes.",
+    "Discuss the literary and theological character of the Comedy in writing."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Why Dante?",
+      "body": "Dante Alighieri (1265–1321) wrote the Commedia in the vernacular Tuscan of his time, not in Latin. This was a radical choice. The poem became the foundation of Italian literature and the Italian language. To read Dante is to read the birth certificate of Italian.\n\nThe Italian you have learned in Stages 1–4 is modern standard Italian. Dante's Italian is six hundred years older. Some forms differ: infinitives are sometimes apocopated (far for fare, dir for dire), pronouns appear in archaic positions, vocabulary has shifted (virtù meant power, not virtue; talento meant desire, not talent). But the grammar is recognizable. You can read Dante."
+    },
+    {
+      "kind": "prose",
+      "heading": "Canto I: the dark wood",
+      "body": "Nel mezzo del cammin di nostra vita\nmi ritrovai per una selva oscura,\nché la diritta via era smarrita.\n\nIn the middle of the journey of our life, I found myself in a dark wood, for the straight way was lost.\n\nThis is the opening tercet of the Inferno. The meter is terza rima: interlocking three-line stanzas, ABA BCB CDC, rhyming throughout the canto. The rhyme scheme drives the forward momentum of the poem. You will read Canto I entire: 136 lines."
+    },
+    {
+      "kind": "prose",
+      "heading": "Canto V: Paolo and Francesca",
+      "body": "Amor, ch'al cor gentil ratto s'apprende,\nprese costui de la bella persona\nche mi fu tolta; e 'l modo ancor m'offende.\n\nLove, which to the gentle heart swiftly attaches itself, took hold of this one for the beautiful person that was taken from me; and the manner still offends me.\n\nFrancesca speaks. She and Paolo are the lovers in the second circle, punished for lust. This is the most famous episode in the Inferno. You will read lines 73–142: seventy lines of direct speech and narrative."
+    },
+    {
+      "kind": "trecento_forms",
+      "heading": "Trecento forms you will meet",
+      "items": [
+        {
+          "form": "dir for dire",
+          "explanation": "Apocope: the final -e is dropped. Common in poetry for meter.",
+          "example": "non ti posso dir (I cannot tell you)"
+        },
+        {
+          "form": "dirotti for ti dirò",
+          "explanation": "Archaic pronoun position: the pronoun attaches to the end of the future verb. Modern: ti dirò. Trecento: dirotti.",
+          "example": "Io dirotti (I will tell you)"
+        },
+        {
+          "form": "virtù = power",
+          "explanation": "Vocabulary shift. Latin virtus (power, strength). Modern Italian virtù = virtue. In Dante, virtù often means power.",
+          "example": "tanta virtù (so much power)"
+        },
+        {
+          "form": "talento = desire",
+          "explanation": "Vocabulary shift. Modern Italian talento = talent. In Dante, talento = desire, wish.",
+          "example": "quel che talento (that which desire)"
+        },
+        {
+          "form": "fu for è",
+          "explanation": "Sometimes Dante uses the passato remoto (fu) where modern Italian would use the present (è). This is a stylistic choice.",
+          "example": "mi fu caro (it was dear to me, but could mean 'is' in context)"
+        }
+      ]
+    },
+    {
+      "kind": "reading_assignment",
+      "heading": "Your reading assignment",
+      "body": "Read Canto I entire (136 lines) and Canto V, lines 73–142 (70 lines). That is 206 lines of Dante. Work through them at your own pace. Full grammatical notes and glosses are provided for every line. Audio recordings of each tercet are available.\n\nWhen you finish, you will sit the capstone examination. Part of the examination will ask you to translate a fifty-word passage from one of these cantos at sight."
+    },
+    {
+      "kind": "recommended_editions",
+      "heading": "Recommended editions",
+      "items": [
+        "Robert Hollander and Jean Hollander, Inferno (Anchor, 2002) — facing-page translation, excellent notes.",
+        "Allen Mandelbaum, The Divine Comedy of Dante Alighieri: Inferno (Bantam, 1982) — verse translation.",
+        "John Ciardi, The Inferno (New American Library, 1954) — readable, with introduction.",
+        "Charles Singleton, The Divine Comedy: Inferno (Princeton, 1970) — scholarly edition, extensive commentary."
+      ]
+    },
+    {
+      "kind": "next_step",
+      "heading": "When you are ready",
+      "body": "When you have read the assigned cantos and feel prepared, proceed to the capstone examination. You may retake the examination after thirty days if you do not pass on the first attempt."
+    }
+  ]
+}

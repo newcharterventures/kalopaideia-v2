@@ -1,0 +1,43 @@
+{
+  "id": "3.2",
+  "stage": 3,
+  "title": "Weak Verbs — Class II",
+  "subtitle": "Lufian, macian — the -ō- suffix.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Master Weak Verbs — Class II.",
+    "Read and translate authentic Old English poetry and prose.",
+    "Prepare for the capstone examination."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "Class II weak verbs have -ia- in the infinitive. First-person singular present has -ie. Present: ic lufie, þū lufast, hē lufaþ. Past: ic lufode, þū lufodest, hē lufode. Past participle: gelufod."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "Weak Verbs — Class II"
+        },
+        {
+          "prompt": "Can you translate the example passage?",
+          "answer": "Work through it word by word with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson or take the capstone examination."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply Weak Verbs — Class II to reading.",
+    "credit_minutes": 60
+  }
+}

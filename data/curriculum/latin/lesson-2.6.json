@@ -1,0 +1,47 @@
+{
+  "id": "2.6",
+  "stage": 2,
+  "title": "The Present Indicative Active — First Conjugation",
+  "subtitle": "amō, amās, amat, amāmus, amātis, amant.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Conjugate first-conjugation verbs in the present indicative active.",
+    "Recognize the theme vowel -ā- as the marker of the first conjugation.",
+    "Translate simple sentences with first-conjugation verbs.",
+    "Understand that Latin verbs encode person and number in their endings."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The first conjugation",
+      "body": "Latin verbs change their endings to show person (who is acting) and number (how many). The first conjugation contains verbs whose infinitive ends in -āre: amāre (to love), laudāre (to praise), vocāre (to call). The theme vowel is -ā-.\n\nPresent indicative active:\n  amō — I love\n  amās — you (sg.) love\n  amat — he/she/it loves\n  amāmus — we love\n  amātis — you (pl.) love\n  amant — they love\n\nCicero writes: tē laudō. — I praise you.\nCaesar writes: hostēs oppugnant. — The enemies attack.\nOvid writes: puella amat. — The girl loves."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "items": [
+        { "prompt": "Conjugate vocō in all six persons.", "answer": "vocō, vocās, vocat, vocāmus, vocātis, vocant" },
+        { "prompt": "Translate: puella cantat.", "answer": "The girl sings." },
+        { "prompt": "Translate: servī labōrant.", "answer": "The slaves work." },
+        { "prompt": "What is the theme vowel of the first conjugation?", "answer": "-ā-" }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Sentences with first-conjugation verbs",
+      "words": [
+        { "latin": "puella rosās amat.", "transliteration": null, "gloss": "The girl loves roses.", "audio": "/paideia/audio/latin/sentences/2.6-1.mp3" },
+        { "latin": "servī dominōs laudant.", "transliteration": null, "gloss": "The slaves praise the masters.", "audio": "/paideia/audio/latin/sentences/2.6-2.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.7: the present indicative active, second and third conjugations. moneō, regō."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can conjugate any first-conjugation verb in the present active.",
+    "credit_minutes": 50
+  }
+}

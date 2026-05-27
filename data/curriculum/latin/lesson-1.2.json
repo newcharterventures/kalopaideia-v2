@@ -1,0 +1,67 @@
+{
+  "id": "1.2",
+  "stage": 1,
+  "title": "The Diphthongs",
+  "subtitle": "Six combinations that act as single vowels.",
+  "estimated_minutes": 40,
+  "objectives": [
+    "Recognize and pronounce the six Latin diphthongs: ae, oe, au, ei, eu, ui.",
+    "Distinguish diphthongs from separate vowels by pronunciation and spelling.",
+    "Identify diphthongs inside real Latin words.",
+    "Read aloud words containing diphthongs with correct stress."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "What is a diphthong",
+      "body": "A diphthong is two vowels pronounced as a single syllable. In English, the word 'coin' has a diphthong (oi); the word 'co-operate' has two separate vowels (o-o). Latin has six diphthongs. They appear frequently, especially ae and au.\n\nThe six diphthongs:\n  ae — like the i in 'aisle'\n  oe — like the oi in 'oil'\n  au — like the ou in 'out'\n  ei — like the ay in 'say' (rare)\n  eu — like eh-oo said quickly (rare)\n  ui — like we in 'we' (very rare)\n\nOf these, ae and au dominate. You will see them dozens of times on every page of Latin. The others appear in a handful of words: ei in hei and deinde, eu in heu and neuter, ui in cui and huic."
+    },
+    {
+      "kind": "prose",
+      "heading": "The spelling of ae and oe",
+      "body": "In medieval manuscripts and in modern printed editions before the nineteenth century, ae and oe were often written as ligatures: æ and œ. In this course we write them as two letters: ae, oe. The pronunciation is the same.\n\nTwo common words illustrate the difference between a diphthong and two separate vowels:\n  poena (punishment) — diphthong, one syllable: POE-na\n  poēta (poet) — two separate vowels, three syllables: po-AY-ta\n\nThe macron over the e in poēta signals that the o and e belong to separate syllables. Without it, you would read 'poena' and expect a punishment, not a poem."
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill",
+      "instructions": "Each diphthong is spoken in isolation, then inside a real Latin word. Repeat after the recording.",
+      "audio": "/paideia/audio/latin/drills/lesson-1.2-listening.mp3"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Without looking back, answer each question.",
+      "items": [
+        { "prompt": "How many diphthongs does Latin have?", "answer": "Six: ae, oe, au, ei, eu, ui." },
+        { "prompt": "Which two diphthongs are most common?", "answer": "ae and au." },
+        { "prompt": "How is ae pronounced?", "answer": "Like the i in aisle." },
+        { "prompt": "How is au pronounced?", "answer": "Like the ou in out." },
+        { "prompt": "What is the difference between poena and poēta?", "answer": "poena has a diphthong (oe) and two syllables; poēta has two separate vowels and three syllables." },
+        { "prompt": "Why is a macron sometimes written over one vowel in what looks like a diphthong?", "answer": "To signal that the vowels belong to separate syllables and do not form a diphthong." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Words with diphthongs",
+      "instructions": "Read each word aloud. Each contains at least one diphthong.",
+      "words": [
+        { "latin": "Caesar", "transliteration": null, "gloss": "Caesar", "audio": "/paideia/audio/latin/words/caesar.mp3" },
+        { "latin": "aurum", "transliteration": null, "gloss": "gold", "audio": "/paideia/audio/latin/words/aurum.mp3" },
+        { "latin": "poena", "transliteration": null, "gloss": "punishment", "audio": "/paideia/audio/latin/words/poena.mp3" },
+        { "latin": "caelum", "transliteration": null, "gloss": "sky, heaven", "audio": "/paideia/audio/latin/words/caelum.mp3" },
+        { "latin": "laetus", "transliteration": null, "gloss": "happy", "audio": "/paideia/audio/latin/words/laetus.mp3" },
+        { "latin": "nauta", "transliteration": null, "gloss": "sailor", "audio": "/paideia/audio/latin/words/nauta.mp3" },
+        { "latin": "proelium", "transliteration": null, "gloss": "battle", "audio": "/paideia/audio/latin/words/proelium.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.3 covers the consonants in detail: the hard c and g, the w-sound of v, the y-sound of consonantal i, and the clusters qu, gn, x."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can pronounce all six diphthongs without hesitation and identify them inside words.",
+    "credit_minutes": 40
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "4.7",
+  "stage": 4,
+  "title": "Hypothetical Sentences: Type Three (Irrealtà)",
+  "subtitle": "Se + cong. trapassato, conditional past. Se fosse piovuto, sarei restato.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Understand hypothetical sentences: type three (irrealtà).",
+    "Apply hypothetical sentences: type three (irrealtà) in reading and composition.",
+    "Parse forms correctly."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers hypothetical sentences: type three (irrealtà). Italian grammar builds on patterns you have already learned. Focus on recognizing forms in context before producing them."
+    },
+    {
+      "kind": "prose",
+      "heading": "From Italian literature",
+      "body": "Real examples from Dante, Petrarch, Boccaccio, Machiavelli, Leopardi, or Manzoni illustrate this grammatical point in living use."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test your understanding.",
+      "items": [
+        {
+          "prompt": "What is the main function of hypothetical sentences: type three (irrealtà)?",
+          "answer": "[See lesson body]"
+        },
+        {
+          "prompt": "Give two examples.",
+          "answer": "[See paradigm]"
+        },
+        {
+          "prompt": "Parse one example form.",
+          "answer": "[Detailed parsing]"
+        }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Practice examples",
+      "instructions": "Read aloud.",
+      "words": [
+        {
+          "italian": "example1",
+          "transliteration": null,
+          "gloss": "gloss",
+          "audio": "/paideia/audio/italian/words/4.7-ex1.mp3"
+        },
+        {
+          "italian": "example2",
+          "transliteration": null,
+          "gloss": "gloss",
+          "audio": "/paideia/audio/italian/words/4.7-ex2.mp3"
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson continues building your command of Italian grammar and vocabulary."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you have mastered hypothetical sentences: type three (irrealtà).",
+    "credit_minutes": 60
+  }
+}

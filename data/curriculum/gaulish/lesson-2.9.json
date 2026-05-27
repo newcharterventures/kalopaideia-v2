@@ -1,0 +1,91 @@
+{
+  "id": "2.9",
+  "stage": 2,
+  "title": "Dedicatory Inscriptions",
+  "subtitle": "Ten votive offerings to the gods — LVGVS, ROSMERTA, BELENVS, TARANIS, ESVS.",
+  "estimated_minutes": 70,
+  "objectives": [
+    "Read ten complete votive inscriptions from southern Gaul.",
+    "Recognize the dative singular endings -ui, -vo, -i for divine names.",
+    "Translate the formula DEDEMIT IEVRV (\"gave, dedicated to the sacred place\").",
+    "Understand the religious function of votive epigraphy."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Votive inscriptions and the gods",
+      "body": "A votive inscription records a gift to a deity. The dedicator sets up a stone, an altar, or a statue and inscribes it with the formula:\n\nX DEDEMIT Y-dat. IEVRV\n\n\"X gave (this) to Y, to the sacred place.\"\n\nThe god's name appears in the dative case. The formula IEVRV (\"to the sacred place\") marks the dedication as ritual. Votive epigraphy was the primary way Gauls interacted with their gods in writing."
+    },
+    {
+      "kind": "prose",
+      "heading": "The major gods",
+      "body": "The Gaulish pantheon, as preserved in inscriptions, includes:\n\nLVGVS (Lugus) — god of all skills, identified with Mercury\nROSMERTA — goddess of abundance, often paired with Mercury\nBELENVS (Belenos) — god of light and healing, identified with Apollo\nTARANIS — thunder god, identified with Jupiter\nESVS — god of sacrifice, associated with trees\nEPONA — horse goddess, popular in cavalry units\nSEQVANA — goddess of the Seine river\nBELISAMA — \"most bright\", a goddess of light\n\nThese names recur in hundreds of dedications across Gaul, Britain, and the Rhineland."
+    },
+    {
+      "kind": "prose",
+      "heading": "Inscription 1: To Lugus",
+      "body": "From Autun, 1st century CE:\n\nSEGOMĀROS VILONEOS DEDEMIT LVGVO IEVRV\n\nParsing:\nSEGOMĀROS VILONEOS — \"Segomaros son of Viloneos\"\nDEDEMIT — \"gave\"\nLVGVO — dative singular, \"to Lugus\" (the ending -vo is a dative variant for -o- stem nouns)\nIEVRV — \"to the sacred place\"\n\nTranslation: \"Segomaros son of Viloneos gave (this) to Lugus, to the sacred place.\""
+    },
+    {
+      "kind": "prose",
+      "heading": "Inscription 2: To Rosmerta",
+      "body": "From Alise-Sainte-Reine, 1st century CE:\n\nPRISCA ROSMERTAE AVVOT\n\nParsing:\nPRISCA — \"Prisca\" (a Latin name)\nROSMERTAE — dative singular, \"to Rosmerta\" (the ending -ae is a Latinized dative for -ā- stem nouns)\nAVVOT — \"vowed\"\n\nTranslation: \"Prisca vowed (this) to Rosmerta.\""
+    },
+    {
+      "kind": "prose",
+      "heading": "Inscription 3: To Belenos",
+      "body": "From Vaison-la-Romaine (Greek script), 1st century BCE:\n\nΣΕΓΟΜΑΡΟΣ ΟΥΙΛΛΟΝΕΟΣ ΒΗΛΗΝΟΙ IEVRV\n\nTransliteration:\nSEGOMAROS OUILLONEOS BĒLĒNOI IEVRV\n\nParsing:\nSEGOMAROS OUILLONEOS — \"Segomaros son of Ouillo\"\nBĒLĒNOI — dative singular, \"to Belenos\" (Greek ending -οι represents Gaulish dative)\nIEVRV — \"to the sacred place\"\n\nTranslation: \"Segomaros son of Ouillo (dedicated this) to Belenos, to the sacred place.\""
+    },
+    {
+      "kind": "prose",
+      "heading": "Inscription 4: To Taranis",
+      "body": "From Saint-Marcel, 1st century CE:\n\nATEPOMĀROS TARANIS DEDEMIT\n\nParsing:\nATEPOMĀROS — \"Atepomaros\"\nTARANIS — dative singular(?), \"to Taranis\" (the ending -is may be a nominative used as dative, or a scribal error)\nDEDEMIT — \"gave\"\n\nTranslation: \"Atepomaros gave (this) to Taranis.\""
+    },
+    {
+      "kind": "prose",
+      "heading": "Inscription 5: To Esus",
+      "body": "From Autun, 1st century CE:\n\nDAGOMĀROS ESVI IEVRV\n\nParsing:\nDAGOMĀROS — \"Dagomaros\"\nESVI — dative singular, \"to Esus\" (the ending -vi is a dative variant)\nIEVRV — \"to the sacred place\"\n\nTranslation: \"Dagomaros (dedicated this) to Esus, to the sacred place.\""
+    },
+    {
+      "kind": "prose",
+      "heading": "Inscriptions 6-10: Short dedications",
+      "body": "Six more votive inscriptions, from various sites in Gaul, 1st century BCE to 1st century CE:\n\n6. SEQVANAE AVVOT — \"Vowed to Sequana\"\n7. EPONAE DEDEMIT — \"Gave (this) to Epona\"\n8. BELISAMAE IEVRV — \"To Belisama, to the sacred place\"\n9. LVGVO MAPONOS — \"To Lugus Maponos\" (compound deity)\n10. ROSMERTAE LVGVO — \"To Rosmerta and Lugus\" (paired deities)\n\nThese short dedications are the most common type of Gaulish inscription. Learn the structure and you can read hundreds of them."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers; check after.",
+      "items": [
+        { "prompt": "What is the formula for a votive dedication?", "answer": "X DEDEMIT Y-dat. IEVRV (\"X gave (this) to Y, to the sacred place\")." },
+        { "prompt": "What case are divine names in when they receive dedications?", "answer": "Dative, with endings -ui, -vo, -vi, or -i depending on the noun stem." },
+        { "prompt": "Translate SEGOMĀROS DEDEMIT LVGVO IEVRV.", "answer": "\"Segomaros gave (this) to Lugus, to the sacred place.\"" },
+        { "prompt": "What does AVVOT mean?", "answer": "\"Vowed\" — a votive formula, related to Latin vovit." },
+        { "prompt": "Which god was identified with Roman Mercury?", "answer": "Lugus (LVGVS)." },
+        { "prompt": "Which goddess was paired with Mercury/Lugus?", "answer": "Rosmerta (ROSMERTA)." },
+        { "prompt": "Which god was identified with Roman Jupiter?", "answer": "Taranis (TARANIS), the thunder god." },
+        { "prompt": "What does BELISAMAE mean?", "answer": "\"To Belisama\" (dative, \"most bright\", a goddess of light)." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Divine names in the dative",
+      "instructions": "These are the gods of Gaul as they appear in votive inscriptions. Memorize them.",
+      "words": [
+        { "gaulish": "LVGVO", "transliteration": null, "gloss": "to Lugus (dative, god of skills)", "audio": "/paideia/audio/gaulish/gods/luguo.mp3" },
+        { "gaulish": "ROSMERTAE", "transliteration": null, "gloss": "to Rosmerta (dative, goddess of abundance)", "audio": "/paideia/audio/gaulish/gods/rosmertae.mp3" },
+        { "gaulish": "BĒLĒNOI", "transliteration": null, "gloss": "to Belenos (dative, god of light)", "audio": "/paideia/audio/gaulish/gods/belenoi.mp3" },
+        { "gaulish": "TARANIS", "transliteration": null, "gloss": "to Taranis (dative, thunder god)", "audio": "/paideia/audio/gaulish/gods/taranis-dat.mp3" },
+        { "gaulish": "EPONAE", "transliteration": null, "gloss": "to Epona (dative, horse goddess)", "audio": "/paideia/audio/gaulish/gods/eponae.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.10 covers the Gaulish verb: what we know and what we do not. Third singular -IT, third plural -ONT, preterite -S, and the verb DEDEMIT as the backbone of the corpus."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can translate all ten votive inscriptions, recognize the dative forms of divine names, and recite the formula DEDEMIT IEVRV.",
+    "credit_minutes": 70
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "id": "1.2",
+  "stage": 1,
+  "title": "Þ, Ð, Æ, Ǫ",
+  "subtitle": "The four letters not found in modern English.",
+  "estimated_minutes": 45,
+  "objectives": [
+    "Pronounce þ and ð correctly in all positions.",
+    "Hear the difference between æ and ordinary a or e.",
+    "Pronounce ǫ as a distinct back rounded vowel.",
+    "Recognize these letters instantly in running text."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Þ and ð in detail",
+      "body": "Þ (thorn) = voiceless th, as in thin, path, ether. Ð (eth) = voiced th, as in that, bathe, father. English has both sounds but writes them both 'th.' Old Norse distinguishes them in writing, though medieval scribes were inconsistent.\n\nWhere to use each: between vowels, usually ð (voiced). After voiceless consonants (s, t, p, k, f), usually þ (voiceless). Word-initial position varies by word: þú (you), ðat (that). Modern Icelandic has retained this distinction and can guide pronunciation, though the sagas predate sound changes in some consonant clusters."
+    },
+    {
+      "kind": "prose",
+      "heading": "Æ in detail",
+      "body": "Æ (ash) is a low front vowel, the vowel in English cat or bad. It is always long in Old Norse. It developed from Proto-Germanic *ai by monophthongization. You will see it in common words: mæla (to speak), læra (to teach), hætta (to risk), and in names like Ægir (the sea-god).\n\nDo not confuse it with the diphthong ei (which is two sounds: e + i) or with short e. Æ is one sound, held long."
+    },
+    {
+      "kind": "prose",
+      "heading": "Ǫ in detail",
+      "body": "Ǫ (o-ogonek, sometimes printed ǫ or ö with a tail in older editions) is a back rounded vowel between o and a. Think of the vowel in English caught, law, oraw. It is distinct from both o and a. It developed from Proto-Germanic *a before certain consonants (especially before u in the next syllable, by u-umlaut).\n\nCommon words: sǫgn (tale), lǫnd (lands, plural of land), kǫttr (cat), ǫl (ale). It merged with ö in modern Icelandic, but in the saga age it was phonemically distinct."
+    },
+    {
+      "kind": "letter_grid",
+      "heading": "The four special letters",
+      "letters": [
+        { "upper": "Þ", "lower": "þ", "name": "thorn", "ipa": "[θ]", "audio": "/paideia/audio/oldnorse/letters/thorn.mp3", "note": "Voiceless th. As in thin." },
+        { "upper": "Ð", "lower": "ð", "name": "eth", "ipa": "[ð]", "audio": "/paideia/audio/oldnorse/letters/eth.mp3", "note": "Voiced th. As in that." },
+        { "upper": "Æ", "lower": "æ", "name": "ash", "ipa": "[æː]", "audio": "/paideia/audio/oldnorse/letters/ae.mp3", "note": "As in English cat. Always long." },
+        { "upper": "Ǫ", "lower": "ǫ", "name": "o-ogonek", "ipa": "[ɔ]", "audio": "/paideia/audio/oldnorse/letters/o-ogonek.mp3", "note": "Back rounded vowel. As in caught." }
+      ]
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill — minimal pairs",
+      "instructions": "Listen to pairs of words that differ only in one of these letters. Repeat each pair aloud.",
+      "audio": "/paideia/audio/oldnorse/drills/lesson-1.2-listening.mp3"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers and test yourself.",
+      "items": [
+        { "prompt": "Which letter represents the voiceless th (as in thin)?", "answer": "þ (thorn)" },
+        { "prompt": "Which letter represents the voiced th (as in that)?", "answer": "ð (eth)" },
+        { "prompt": "Is æ a diphthong?", "answer": "No. It is a single vowel, always long." },
+        { "prompt": "How do you pronounce ǫ?", "answer": "Like the vowel in English caught or law. Back rounded, between o and a." },
+        { "prompt": "Read aloud: maðr", "answer": "mahr (with voiced th in the middle, like the th in father)" },
+        { "prompt": "Read aloud: þórr", "answer": "thor (with voiceless th at the start, like thin)" },
+        { "prompt": "Read aloud: mæla", "answer": "mai-la (æ as in cat, held long)" },
+        { "prompt": "Read aloud: sǫgn", "answer": "sawn (ǫ as in caught)" }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Words to practice",
+      "instructions": "Read each word aloud. Listen to the audio afterward to check yourself.",
+      "words": [
+        { "oldnorse": "þing", "transliteration": "þing", "gloss": "assembly, parliament", "audio": "/paideia/audio/oldnorse/words/thing.mp3" },
+        { "oldnorse": "ðat", "transliteration": "ðat", "gloss": "that (neuter)", "audio": "/paideia/audio/oldnorse/words/that.mp3" },
+        { "oldnorse": "mæla", "transliteration": "mæla", "gloss": "to speak", "audio": "/paideia/audio/oldnorse/words/maela.mp3" },
+        { "oldnorse": "lǫnd", "transliteration": "lǫnd", "gloss": "lands (plural)", "audio": "/paideia/audio/oldnorse/words/lond.mp3" },
+        { "oldnorse": "þú", "transliteration": "þú", "gloss": "you (singular)", "audio": "/paideia/audio/oldnorse/words/thu.mp3" },
+        { "oldnorse": "ǫl", "transliteration": "ǫl", "gloss": "ale", "audio": "/paideia/audio/oldnorse/words/ol.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.3 covers vowels — long and short — and why length matters. Mál (speech) and mal (bag) are different words."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can pronounce all four special letters correctly in ten random words.",
+    "credit_minutes": 45
+  }
+}

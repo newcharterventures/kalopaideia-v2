@@ -1,0 +1,82 @@
+{
+  "id": "1.4",
+  "stage": 1,
+  "title": "The Ch Sounds",
+  "subtitle": "One letter, four sounds — Ach-Laut, Ich-Laut, initial Chr-, foreign ch.",
+  "estimated_minutes": 45,
+  "objectives": [
+    "Pronounce the Ach-Laut [x] after a, o, u, au.",
+    "Pronounce the Ich-Laut [ç] after i, e, ä, ö, ü, ei, eu, and in the diminutive suffix -chen.",
+    "Recognize the initial ch in Greek borrowings (Christus, Charakter) as [k] or [kh].",
+    "Distinguish all four ch sounds in minimal pairs."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The single most important consonant in German",
+      "body": "German ch has no equivalent in English. It is not the ch in church (that would be German tsch). It is not the ch in Scottish loch, though that is closer. German ch is a fricative — a sound made by forcing air through a narrow channel. The position of the channel depends on the vowel before it.\n\nAfter a, o, u, au: the sound is made far back, in the soft palate. This is the *Ach-Laut* [x]. Bach, Buch, auch.\n\nAfter i, e, ä, ö, ü, ei, eu, or a consonant: the sound is made further forward, near the hard palate. This is the *Ich-Laut* [ç]. Ich, nicht, Bücher, euch.\n\nThe distinction is automatic for native speakers. You do not choose; the preceding vowel chooses for you."
+    },
+    {
+      "kind": "prose",
+      "heading": "The Ach-Laut [x]",
+      "body": "Made in the back of the mouth, after a, o, u, au. Hold your tongue low and back. Let air hiss through the space between your tongue and the soft palate. The sound is not voiced. It is like the ch in Scottish loch, but perhaps stronger.\n\nExamples:\n  Bach (brook) — bakh\n  Nacht (night) — nakht\n  Buch (book) — bookh\n  auch (also) — owkh\n\nDo not substitute a [k]. The difference between Buch (book) and Bock (buck) is the difference between a fricative and a stop."
+    },
+    {
+      "kind": "prose",
+      "heading": "The Ich-Laut [ç]",
+      "body": "Made further forward, after i, e, ä, ö, ü, ei, eu, or after a consonant (l, n, r). The tongue is higher and more forward. The sound is softer than the Ach-Laut. It resembles the h in English huge, but with more friction.\n\nExamples:\n  ich (I) — ikh (but softer)\n  nicht (not) — nikht (but softer)\n  Bücher (books) — bü-kher\n  euch (you, plural accusative) — oykh (soft)\n  Milch (milk) — milkh (soft)\n\nThe -chen diminutive suffix always takes the Ich-Laut, regardless of the preceding vowel: Mädchen (girl) = maid-khen (soft)."
+    },
+    {
+      "kind": "prose",
+      "heading": "Initial ch in Greek borrowings",
+      "body": "Words borrowed from Greek often begin with ch. In German, this is pronounced [k], not [ç] or [x].\n\n  Christus — kris-toos\n  Charakter — kah-rahk-ter\n  Chaos — kah-os or khah-os\n\nThe pronunciation [kh] (aspirated k) is heard in educated speech; colloquial speech often reduces it to [k]."
+    },
+    {
+      "kind": "prose",
+      "heading": "Four ch sounds, one letter",
+      "body": "To summarize:\n\n  1. After a, o, u, au → Ach-Laut [x] (back, guttural). Bach, auch.\n  2. After i, e, ä, ö, ü, ei, eu, consonants → Ich-Laut [ç] (front, softer). Ich, nicht, Milch.\n  3. Initial ch in Greek words → [k] or [kh]. Christus, Charakter.\n  4. Foreign ch in some borrowings → [ʃ] or [tʃ]. Chef, Couch. Rare.\n\nThe first two are the sounds you will meet in every paragraph of Goethe or Nietzsche. Master them."
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill — Ach vs. Ich",
+      "instructions": "Each word is read twice. Listen for the back [x] or the forward [ç]. Repeat after.",
+      "audio": "/paideia/audio/german/drills/lesson-1.4-listening.mp3"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer without looking back.",
+      "items": [
+        { "prompt": "What is the Ach-Laut?", "answer": "The ch sound after a, o, u, au. A guttural fricative [x], made in the back of the mouth. Bach, Nacht, auch." },
+        { "prompt": "What is the Ich-Laut?", "answer": "The ch sound after i, e, ä, ö, ü, ei, eu, or after consonants. A palatal fricative [ç], softer and more forward. Ich, nicht, Milch." },
+        { "prompt": "How do you pronounce Buch?", "answer": "bookh — with the Ach-Laut [x]." },
+        { "prompt": "How do you pronounce Bücher?", "answer": "bü-kher — with the Ich-Laut [ç]." },
+        { "prompt": "How do you pronounce Christus?", "answer": "kris-toos — initial ch in Greek words is [k]." },
+        { "prompt": "Why does Mädchen use the Ich-Laut even after ä?", "answer": "The -chen suffix always takes the Ich-Laut, regardless of the preceding vowel." },
+        { "prompt": "Is the choice of Ach-Laut vs. Ich-Laut optional?", "answer": "No. The preceding vowel determines the sound. It is automatic." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Words with ch",
+      "instructions": "Read aloud. Check the audio. Notice which ch sound you use.",
+      "words": [
+        { "german": "Bach", "transliteration": "bakh", "gloss": "brook", "audio": "/paideia/audio/german/words/bach.mp3" },
+        { "german": "Buch", "transliteration": "bookh", "gloss": "book", "audio": "/paideia/audio/german/words/buch.mp3" },
+        { "german": "ich", "transliteration": "ikh (soft)", "gloss": "I", "audio": "/paideia/audio/german/words/ich.mp3" },
+        { "german": "nicht", "transliteration": "nikht (soft)", "gloss": "not", "audio": "/paideia/audio/german/words/nicht.mp3" },
+        { "german": "Nacht", "transliteration": "nakht", "gloss": "night", "audio": "/paideia/audio/german/words/nacht.mp3" },
+        { "german": "Licht", "transliteration": "likht (soft)", "gloss": "light", "audio": "/paideia/audio/german/words/licht.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.5 covers final devoicing in detail — the rule that makes German sound so crisp. After that, vowel length, consonant clusters, and your first full sentences."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can hear the difference between Ach-Laut and Ich-Laut and pronounce ten words with ch correctly.",
+    "credit_minutes": 45
+  }
+}

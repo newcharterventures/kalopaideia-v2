@@ -1,0 +1,123 @@
+{
+  "id": "middleenglish-capstone",
+  "lang": "middleenglish",
+  "title": "The Kalopaideia Diploma in Reading Middle English — Capstone Examination",
+  "instructions": "Three hours, printed lexicon and grammar permitted. Honor code: you affirm by submitting that you used only permitted aids. A failed examination may be retaken after thirty days.",
+  "time_limit_minutes": 180,
+  "sections": [
+    {
+      "id": "A",
+      "title": "Part A — Sight Translation (with glossary)",
+      "items": [
+        {
+          "id": "A1",
+          "type": "translate",
+          "points": 15,
+          "prompt_middleenglish": "Whan that Aprill with his shoures soote / The droghte of March hath perced to the roote, / And bathed every veyne in swich licour / Of which vertu engendred is the flour.",
+          "prompt_en": "Translate. (General Prologue to Canterbury Tales, lines 1-4)",
+          "reference": [
+            "When April with his sweet showers has pierced the drought of March to the root, and bathed every vein in such liquid from which power the flower is engendered.",
+            "When April with his sweet showers has penetrated March's drought to the root, and bathed every vein in such moisture by whose power the flower is generated.",
+            "When April's sweet showers have pierced the drought of March to the root and bathed every vein in such liquid whose virtue produces the flower."
+          ],
+          "keywords": ["April", "showers", "pierced", "drought", "March", "bathed", "vein", "liquid", "flower"],
+          "threshold": 0.35
+        },
+        {
+          "id": "A2",
+          "type": "translate",
+          "points": 15,
+          "prompt_middleenglish": "A knyght ther was, and that a worthy man, / That fro the tyme that he first bigan / To riden out, he loved chivalrye, / Trouthe and honour, fredom and curteisye.",
+          "prompt_en": "Translate. (General Prologue, lines 43-46)",
+          "reference": [
+            "There was a knight, and that a worthy man, who from the time that he first began to ride out, loved chivalry, truth and honor, generosity and courtesy.",
+            "A knight there was, and that a distinguished man, who from the time he first began to go on campaigns, loved chivalry, integrity and honor, nobility and courtesy.",
+            "There was a knight, a worthy man, who from the time he first began to ride forth loved chivalry, fidelity and honor, generosity and courtliness."
+          ],
+          "keywords": ["knight", "worthy", "ride", "chivalry", "truth", "honor", "generosity", "courtesy"],
+          "threshold": 0.35
+        },
+        {
+          "id": "A3",
+          "type": "translate",
+          "points": 12,
+          "prompt_middleenglish": "Ther hales in at the halle dor an aghlich mayster, / On the most on the molde on mesure hyghe.",
+          "prompt_en": "Translate. (Sir Gawain and the Green Knight, lines 136-137)",
+          "reference": [
+            "There hastens in at the hall door a terrible master, among the biggest on earth in height measure.",
+            "There comes rushing in at the hall door a fearsome lord, one of the tallest men on earth in measured height.",
+            "There hurries in at the hall door an awesome master, the largest on earth in stature."
+          ],
+          "keywords": ["hastens", "hall", "door", "terrible", "master", "biggest", "earth", "height"],
+          "threshold": 0.3
+        },
+        {
+          "id": "A4",
+          "type": "translate",
+          "points": 12,
+          "prompt_middleenglish": "I craue in this court a Crystemas gomen, / For hit is Yol and Nwe Yer, and here ar yep mony.",
+          "prompt_en": "Translate. (Sir Gawain, lines 283-284)",
+          "reference": [
+            "I crave in this court a Christmas game, for it is Yule and New Year, and here are many vigorous men.",
+            "I request in this court a Christmas sport, for it is Christmas and New Year, and here are many active folk.",
+            "I ask in this court for a Christmas entertainment, for it is the season and here are many spirited men."
+          ],
+          "keywords": ["crave", "court", "Christmas", "game", "Yule", "New Year", "many", "men"],
+          "threshold": 0.35
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "title": "Part B — Parsing",
+      "items": [
+        {
+          "id": "B1",
+          "type": "parse",
+          "points": 6,
+          "prompt": "Parse the form loveth. Give: person, number, tense, mood, voice, infinitive.",
+          "answer": ["third", "singular", "present", "indicative", "active", "loven or love"]
+        },
+        {
+          "id": "B2",
+          "type": "parse",
+          "points": 6,
+          "prompt": "Parse the form rood. Give: person, number, tense, mood, voice, infinitive.",
+          "answer": ["first or third", "singular", "past", "indicative", "active", "riden"]
+        },
+        {
+          "id": "B3",
+          "type": "parse",
+          "points": 6,
+          "prompt": "What is the function of the final -e in 'shoures soote'?",
+          "answer": ["plural ending on 'shoures'; adjective ending on 'soote' (weak form after noun)"]
+        },
+        {
+          "id": "B4",
+          "type": "parse",
+          "points": 6,
+          "prompt": "Parse the form were in 'if he were king'. Give: person, number, tense, mood.",
+          "answer": ["third", "singular", "past", "subjunctive"]
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "title": "Part D — Multiple Choice",
+      "items": [
+        { "id": "D1", "type": "mcq", "points": 3, "prompt": "When is the final -e in Middle English pronounced?", "choices": ["when required by meter or after a single consonant following a short vowel", "always", "never", "only at the end of a line"], "answer": "when required by meter or after a single consonant following a short vowel" },
+        { "id": "D2", "type": "mcq", "points": 3, "prompt": "Which vowel shift has NOT yet happened in Chaucer's English?", "choices": ["the Great Vowel Shift", "the loss of final -e", "the palatalization of c and g", "none"], "answer": "the Great Vowel Shift" },
+        { "id": "D3", "type": "mcq", "points": 3, "prompt": "What meter does Chaucer use in the Canterbury Tales?", "choices": ["iambic pentameter", "alliterative verse", "trochaic tetrameter", "free verse"], "answer": "iambic pentameter" },
+        { "id": "D4", "type": "mcq", "points": 3, "prompt": "What meter does the Gawain poet use?", "choices": ["alliterative verse with bob and wheel", "iambic pentameter", "heroic couplets", "blank verse"], "answer": "alliterative verse with bob and wheel" },
+        { "id": "D5", "type": "mcq", "points": 3, "prompt": "The pronoun 'hem' means:", "choices": ["them", "him", "her", "home"], "answer": "them" },
+        { "id": "D6", "type": "mcq", "points": 3, "prompt": "Which dialect does Chaucer write in?", "choices": ["London / East Midlands", "Northwest Midlands", "Northern", "Southern"], "answer": "London / East Midlands" }
+      ]
+    }
+  ],
+  "scoring": {
+    "max_points": 90,
+    "pass_mark": 0.70,
+    "honors_mark": 0.85
+  },
+  "honor_code": "I attest that the answers I have entered are my own, composed without aid beyond the materials permitted for each section of this examination. I understand that this examination is graded automatically, that the script and my signed attestation will be permanently hashed on completion, and that a passing score will issue a permanent on-chain diploma in my name."
+}

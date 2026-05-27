@@ -1,0 +1,131 @@
+{
+  "language": "welsh",
+  "display_name": "Middle Welsh",
+  "tagline": "From the Four Branches to the Mabinogion — a three-stage diploma in reading the language of medieval Welsh prose.",
+  "philosophy": "Middle Welsh is the language of the Mabinogion, the earliest prose literature in any Celtic language. It is not modern Welsh (Cymraeg today differs in spelling, vocabulary, and syntax) but it is closer to the modern language than Chaucer is to us. We teach it as a language to be read with notes. You will earn the right to sit down with Pwyll, Prince of Dyfed, and the other branches of the Mabinogi — to read them in the medieval manuscripts' spelling (or near enough) with a glossary and a grammar at your side. The challenge: Welsh syntax is verb-first, and the consonants mutate according to syntactic context. The reward: some of the strangest and most beautiful stories in medieval European literature.",
+  "duration_estimate": "5–8 months at one hour per day",
+  "method": "Reading-led, with heavy emphasis on the mutation system. You cannot parse a Welsh sentence without recognizing soft, nasal, and aspirate mutations. Every lesson contains a sentence or two from the Mabinogi. By the end of Stage 3 you will have read the opening pages of Pwyll in the original.",
+  "prerequisites": "None. No prior knowledge of any Celtic language is assumed. A willingness to tolerate grammatical complexity helps.",
+  "stages": [
+    {
+      "id": "stage-1",
+      "number": 1,
+      "name": "The Sound and the Shape",
+      "subtitle": "The unique consonant mutations, Welsh phonology (ll, dd, ch, w as vowel), reading aloud before parsing.",
+      "duration": "4–5 weeks",
+      "learning_outcomes": [
+        "Read aloud any printed Middle Welsh text with accurate reconstructed pronunciation (c. 1100–1400 CE).",
+        "Pronounce the consonants unique to Welsh: ll (voiceless lateral fricative), dd (voiced th), ch (voiceless velar fricative like German 'ach').",
+        "Recognize w and y as both consonants and vowels (w = oo in 'book'; y = schwa or ee depending on position).",
+        "Identify the three consonant mutations (soft, nasal, aspirate) by sight and understand their syntactic triggers at a basic level."
+      ],
+      "lessons": [
+        { "id": "1.1", "title": "The Alphabet and Spelling", "content": "Twenty-nine letters in the modern Welsh alphabet, but Middle Welsh spelling is not standardized. We use the White Book of Rhydderch and the Red Book of Hergest orthography, normalized in modern editions. No j, k, q, v, x, z in native Welsh words." },
+        { "id": "1.2", "title": "Vowels — Simple and Compound", "content": "Seven simple vowels: a, e, i, o, u, w (= oo), y (= schwa in final syllables, ee in stressed syllables). Diphthongs: ae, ai, au, aw, oe, oi, ow, wy, yw. Long vowels marked with circumflex in modern editions: â, ê, î, ô, û, ŵ, ŷ." },
+        { "id": "1.3", "title": "Consonants — The Familiar", "content": "B, d, g (always hard), h, l, m, n, p, r, s, t. C always hard (k). F = v in Welsh. Ff = f." },
+        { "id": "1.4", "title": "Consonants — The Unfamiliar", "content": "Ll = voiceless l, like Icelandic hl. Made by putting tongue in l-position and blowing. No English equivalent. Dd = voiced th as in 'that.' Ch = German ch as in 'Bach.' Th = voiceless th as in 'thin' (rare in native words, common in borrowings)." },
+        { "id": "1.5", "title": "Stress and Rhythm", "content": "Stress almost always on the penultimate syllable. Cárdydd (Cardiff, stress on -di-). Cymraeg (Welsh language, stress on -ra-). The rhythm is iambic by default." },
+        { "id": "1.6", "title": "Consonant Mutation — Introduction", "content": "The signature of Celtic languages. Initial consonants change depending on what precedes them. Ci (dog) becomes gi after the article: y ci (a dog) vs. y gi (the dog, feminine). Three mutation types: soft, nasal, aspirate. You will spend the rest of the course learning when each happens." },
+        { "id": "1.7", "title": "The Soft Mutation (Treiglad Meddal)", "content": "P → b, t → d, c → g, b → f, d → dd, g → ∅ (disappears), m → f, ll → l, rh → r. Triggers: after the article (feminine singular), after yn (in, predicate marker), after prepositions, after possessives, and a dozen other contexts." },
+        { "id": "1.8", "title": "The Nasal Mutation (Treiglad Trwynol)", "content": "P → mh, t → nh, c → ngh, b → m, d → n, g → ng. Triggers: after fy (my), after yn (in, with certain nouns). Rare but essential." },
+        { "id": "1.9", "title": "The Aspirate Mutation (Treiglad Llaes)", "content": "P → ph, t → th, c → ch. Triggers: after ei (her), after â (with), after tri (three, feminine), after chwe (six). Limited to voiceless stops." },
+        { "id": "1.10", "title": "First Words and Mutations", "content": "Brenin (king), pen (head, chief), tref (town), ci (dog), cath (cat), merch (daughter, girl). Practice with article: y brenin, y ben (soft mutation after feminine article), y dref, y gi, y gath, y ferch." },
+        { "id": "1.11", "title": "First Sentence", "content": "Pwyll Pendeuic Dyuet a oed yn arglwyd ar seith cantref Dyuet. — 'Pwyll, Prince of Dyfed, was lord over the seven cantrefs of Dyfed.' The opening sentence of the First Branch. Read it aloud ten times, attending to every ll and dd." }
+      ],
+      "checkpoint": {
+        "id": "stage-1-checkpoint",
+        "title": "Stage 1 Checkpoint",
+        "format": "Twenty consonants and vowels to identify by audio; ten words read aloud and recorded; twenty words to mutate (given the trigger, produce the correct mutation); five short sentences read aloud. Pass mark: 85%.",
+        "items": 55
+      }
+    },
+    {
+      "id": "stage-2",
+      "number": 2,
+      "name": "The Sentence",
+      "subtitle": "Verb-subject-object order, conjugated prepositions, the mutations in syntactic context; parsing before translating.",
+      "duration": "8–12 weeks",
+      "learning_outcomes": [
+        "Conjugate any regular verb in the present, imperfect, and preterite tenses.",
+        "Recognize and parse the conjugated prepositions (ar 'on', gan 'with', i 'to', o 'from') — unique to Celtic.",
+        "Apply the soft, nasal, and aspirate mutations in the ten most common syntactic contexts.",
+        "Translate sentences of the form Verb + Subject + Object with prepositional phrases and relative clauses.",
+        "Read one-hundred-word passages from the Mabinogi with notes."
+      ],
+      "lessons": [
+        { "id": "2.1", "title": "Verb-Subject-Object Word Order", "content": "Welsh is VSO, not SVO. 'The king sees the man' = Gwêl y brenin y gwr (lit. 'Sees the king the man'). Finite verb first, always, unless preceded by a particle." },
+        { "id": "2.2", "title": "The Verb 'To Be' — Bod", "content": "Present: wyf, wyt, mae/yw/oes, ym, ych, maent/ynt. Imperfect: oeddwn, oeddit, oedd, oeddem, oeddech, oeddynt. Irregular, essential. Used as copula and auxiliary." },
+        { "id": "2.3", "title": "Regular Verbs — Present Tense", "content": "Caru (to love): caraf, ceri, câr, carwn, carwch, carant. The endings attached to the verb stem." },
+        { "id": "2.4", "title": "Regular Verbs — Imperfect", "content": "Carwn, carit, carai, carem, carech, carent. Past continuous or habitual action." },
+        { "id": "2.5", "title": "Regular Verbs — Preterite", "content": "Cerais, ceraist, carodd, carasom, carasoch, carasant. Simple past, completed action. The most common narrative tense in the Mabinogi." },
+        { "id": "2.6", "title": "The Preverbal Particles", "content": "A (relative and interrogative particle, causes soft mutation), ni/ny (negative, causes soft mutation), y/yr (affirmative particle, no mutation). Every finite verb is preceded by one of these or stands first in the sentence." },
+        { "id": "2.7", "title": "Nouns — Gender and Number", "content": "Two genders: masculine and feminine (no neuter). Plural formed by suffix (-au, -iau, -oedd, -ion, -i, -ydd) or by internal vowel change (march 'horse' → meirch). No case system; syntax is positional." },
+        { "id": "2.8", "title": "The Definite Article", "content": "Y before consonants, yr before vowels and h, 'r after vowels. Y brenin, yr arglwydd, 'r gwr. The article causes soft mutation of feminine singular nouns: cath (cat, f.) → y gath." },
+        { "id": "2.9", "title": "Adjectives", "content": "Follow the noun. Brenin da (good king). Agree in number and sometimes gender. Soft mutation after a feminine singular noun: merch dda (good girl, from da)." },
+        { "id": "2.10", "title": "Possessive Adjectives and Mutations", "content": "Fy (my) + nasal mutation: fy mhen (my head, from pen). Dy (your, singular) + soft mutation: dy ben. Ei (his) + soft mutation: ei ben. Ei (her) + aspirate mutation: ei phen. Ein, eich, eu (our, your pl., their) + no mutation." },
+        { "id": "2.11", "title": "Conjugated Prepositions", "content": "Prepositions conjugate like verbs. Ar (on): arnaf (on me), arnat, arno, arni, arnom, arnoch, arnynt. I (to): imi, iti, iddo, iddi, inni, ichwi, iddynt. Gan (with): gennyf, gennyt, ganddo, ganddi, gennym, gennych, ganddynt. No other European language does this." },
+        { "id": "2.12", "title": "Prepositions and Mutations", "content": "Most prepositions cause soft mutation: yn (in) + Cymru → yng Nghymru (in Wales, nasal mutation before c). O (from) → o Gymru (soft). I (to) → i Gymru (soft). Heb (without) → heb gath (soft)." },
+        { "id": "2.13", "title": "The Relative Clause", "content": "Introduced by a (+ soft mutation). Y gwr a welodd y brenin — 'the man who saw the king' (lit. 'the man that saw the king'). The verb comes first in the relative clause, as in the main clause." },
+        { "id": "2.14", "title": "Demonstratives and Pronouns", "content": "Hwn, hon, hyn (this, m./f./n.). Hwnnw, honno, hynny (that). Mi, ti, ef, hi, ni, chwi, hwy (I, you, he, she, we, you pl., they — emphatic forms)." },
+        { "id": "2.15", "title": "Reading: Pwyll, Opening Paragraph (Part 1)", "content": "Pwyll Pendeuic Dyuet a oed yn arglwyd ar seith cantref Dyuet. Ac un tro yd oed yn Arberth, prif lys idaw... — First fifty words, with full gloss and grammatical commentary." },
+        { "id": "2.16", "title": "Reading: Pwyll, Opening Paragraph (Part 2)", "content": "Continuation. ...ac yn y uryt yd oed am vynyd eisted gyt ac wynt, wedi ciniaw. — 'And in his thought he was minded to sit with them after dinner.' Analysis of VSO order and mutations." },
+        { "id": "2.17", "title": "Reading: Pwyll, The Stag Hunt", "content": "Pwyll goes hunting and meets the otherworldly hounds. A chlybot lef y cwn ereill yn dyuot yn gyferbyn ac ef. — 'And he heard the cry of the other hounds coming to meet him.' Narrative preterite verbs." }
+      ],
+      "checkpoint": {
+        "id": "stage-2-checkpoint",
+        "title": "Stage 2 Checkpoint",
+        "format": "Written. Conjugate five verbs in three tenses; conjugate three prepositions; apply mutations in fifteen given contexts; translate a one-hundred-word passage from Pwyll with notes; parse twenty inflected forms. Pass mark: 80%.",
+        "items": 65
+      }
+    },
+    {
+      "id": "stage-3",
+      "number": 3,
+      "name": "The Reading",
+      "subtitle": "Pwyll, Prince of Dyfed — the opening pages of the First Branch. The capstone.",
+      "duration": "10–14 weeks",
+      "learning_outcomes": [
+        "Read and translate the first five hundred words of Pwyll Pendeuic Dyuet (from the opening to Pwyll's pact with Arawn, king of Annwfn) with notes.",
+        "Recognize and parse the literary formulas of the Mabinogi (the triads, the epithets, the narrative frame).",
+        "Discuss in writing the linguistic and literary character of Middle Welsh prose.",
+        "Conjugate irregular verbs (mynd 'to go', dod 'to come', gwneuthur 'to do') and recognize the subjunctive and imperative moods.",
+        "Translate any passage of forty or fewer words from a glossed Middle Welsh text at sight."
+      ],
+      "lessons": [
+        { "id": "3.1", "title": "Irregular Verbs — Mynd (To Go)", "content": "Present: af, ei, â, awn, ewch, ânt. Preterite: euthum, aethost, aeth, aethom, aethoch, aethant. Essential for narrative." },
+        { "id": "3.2", "title": "Irregular Verbs — Dod (To Come)", "content": "Present: deuaf, deui, daw, dewn, dewch, deuant. Preterite: deuthum, daethost, daeth, daethom, daethoch, daethant." },
+        { "id": "3.3", "title": "Irregular Verbs — Gwneuthur (To Do, To Make)", "content": "Present: gwnaf, gwnei, gwna, gwnawn, gwnewch, gwnânt. Preterite: gwneuthum, gwnaethost, gwnaeth, gwnaethom, gwnaethoch, gwnaethant. The auxiliary for periphrastic constructions." },
+        { "id": "3.4", "title": "The Subjunctive", "content": "Formed by adding -wyf, -ych, etc. to the verb stem. Used in wishes, conditions, purpose clauses, indirect commands. A fynnych chwi — 'if you wish.'" },
+        { "id": "3.5", "title": "The Imperative", "content": "Second-person singular = bare stem or stem + -a. Dos (go!), dere (come!). Plural: ewch, dewch. Negative imperative = na/nac + subjunctive." },
+        { "id": "3.6", "title": "The Verbal Noun (Infinitive)", "content": "Welsh has no infinitive. Instead, a verbal noun: caru (to love = the act of loving). Mynd (to go = the act of going). Used with prepositions and auxiliary verbs. Yr wyf yn mynd — 'I am going' (lit. 'I am in going')." },
+        { "id": "3.7", "title": "Numerals and Mutations", "content": "Un (one, f.) + soft mutation: un ferch. Dau (two, m.) + soft mutation: dau gi. Dwy (two, f.) + soft mutation. Tri (three, m.) + aspirate mutation: tri chi. Tair (three, f.) + soft mutation. Numbers from 1 to 10, with mutation patterns." },
+        { "id": "3.8", "title": "Pwyll, Lines 1–50: The Setting", "content": "Pwyll Pendeuic Dyuet a oed yn arglwyd ar seith cantref Dyuet... Close reading with attention to every mutation, every preverbal particle, every conjugated preposition." },
+        { "id": "3.9", "title": "Pwyll, Lines 51–100: The Hunt Begins", "content": "Pwyll goes to the forest of Glyn Cuch. Ac yn dyuot y gylch y llwyn, yd oed yn gwelet lle agored llyfyn yng glas y llwyn... — 'And in coming around the grove, he saw an open level place in the depth of the grove...' The otherworldly hounds appear." },
+        { "id": "3.10", "title": "Pwyll, Lines 101–150: The Otherworldly Hunter", "content": "Pwyll meets Arawn, king of Annwfn. Dialogue. The formal, courtly register of speech. A gwr, pwy wyt ti? — 'And, sir, who are you?'" },
+        { "id": "3.11", "title": "Pwyll, Lines 151–200: The Pact", "content": "Arawn proposes the exchange: Pwyll will take Arawn's shape and rule Annwfn for a year. Mi a wnaf genhyt gyfeillach... — 'I will make with you friendship...' The syntax of promises and conditions." },
+        { "id": "3.12", "title": "Pwyll, Lines 201–250: The Transformation", "content": "Arawn transforms Pwyll. Ac yna dyuot hyt yn llys Annwfyn. — 'And then to come to the court of Annwfn.' The movement from the mundane to the magical." },
+        { "id": "3.13", "title": "Literary Formulas in the Mabinogi", "content": "The triads (seith cantref, tri chantref), the epithets (Pwyll Pendeuic Dyuet, Arawn brenhin Annwfyn), the narrative formulas (Ac yna, A gwedy, Ac un tro). The oral style preserved in writing." },
+        { "id": "3.14", "title": "Middle Welsh Prose Style", "content": "Parataxis (coordination, not subordination). Short clauses joined by 'and.' Repetition and variation. Rhythm and balance. The prose feels like it wants to be spoken aloud." },
+        { "id": "3.15", "title": "The Four Branches and the Mabinogion", "content": "Pwyll is the First Branch. The others: Branwen, Manawydan, Math. Together they form the core of the Mabinogion, though modern editions add other tales. The manuscripts: the White Book of Rhydderch (c. 1350) and the Red Book of Hergest (c. 1400)." },
+        { "id": "3.16", "title": "Sight Reading Practice", "content": "Five short passages (thirty to forty words each) from the other Branches, from the tale of Culhwch ac Olwen, and from the Laws of Hywel Dda, with glosses but no grammatical notes. The student parses and translates at sight." }
+      ],
+      "checkpoint": {
+        "id": "stage-3-checkpoint",
+        "title": "Stage 3 Capstone Examination",
+        "format": "Written, three hours. Translate Pwyll lines 1–250 (opening to the pact with Arawn) with notes. Translate one forty-word sight passage from a glossed Middle Welsh text. Parse twenty inflected forms. Write a short essay (three hundred words) on the narrative style and syntax of the Mabinogi. Pass mark: 70%. Honors: 85%.",
+        "items": 50
+      }
+    }
+  ],
+  "certification": {
+    "credential_name": "The Kalopaideia Diploma in Reading Middle Welsh",
+    "credential_subtitle": "An attestation that the bearer has completed the three-stage course and passed the capstone examination.",
+    "what_it_is": "A privately-issued certificate of completion. Not an academic degree. Not a teaching license. It says: this person sat down with the Mabinogi and earned an honest reading of it.",
+    "what_is_recorded": "Student's chosen public name; the language; the date of the capstone examination; the result (Pass or Pass with Honors); the SHA-256 hash of the student's signed examination scripts.",
+    "what_is_not_recorded": "The actual examination answers; the student's email or other identifiers; anything that could identify the student against their will. The certificate is pseudonymous if the student wishes.",
+    "issuance": "On-chain on Base as an ERC-721 soulbound (non-transferable) token. One certificate per student per language. The contract is owned by Kalopaideia and the minting key is held by the proprietor. The token URI points to a permanent, IPFS-pinned JSON document signed by Kalopaideia's issuing key.",
+    "verification": "Any third party can verify a certificate at kalopaideia.com/verify/<token-id> by entering the token ID and the certificate hash. The page will display the issuance date, the language, and the result.",
+    "cost": "Included in the Akousma subscription. The on-chain gas fee at issuance is paid by Kalopaideia. The student pays nothing extra.",
+    "renewability": "None. A diploma is not a driver's license. Once earned, it stands."
+  }
+}

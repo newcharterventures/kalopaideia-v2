@@ -1,0 +1,95 @@
+{
+  "id": "1.6",
+  "stage": 1,
+  "title": "Reading Drill: Names and Theonyms",
+  "subtitle": "Fifty personal names and god names — the easiest entry to the inscriptions.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Recognize fifty common Gaulish personal names and divine names on sight.",
+    "Parse compound names into their elements (SEG- \"victory\", MAR- \"great\", etc.).",
+    "Pronounce each name with correct accent and vowel length.",
+    "Understand the cultural significance of theonyms in Gaulish epigraphy."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Names are the foundation",
+      "body": "Gaulish inscriptions are short. Most contain fewer than twenty words. The bulk of those words are names: personal names, patronymics (\"son of X\"), and divine names. If you can read names, you can parse the structure of an inscription even before you know the grammar. This lesson drills fifty of the most frequent names in the corpus. Memorize them. They will recur in every stage of this course."
+    },
+    {
+      "kind": "prose",
+      "heading": "Personal names",
+      "body": "Gaulish personal names are compounds. Two elements join to form a meaning: SEGO-MĀROS (\"victory-great\" = \"great in victory\"), EPO-REDO-RIX (\"horse-driving-king\" = \"king who drives horses\"), VER-CINGETO-RIX (\"over-warrior-king\" = \"king over warriors\"). The most common elements:\n\nSEG- (victory)\nMAR- (great)\nRIG-, -RIX (king)\nVER- (over, super-)\nDAG- (good)\nBRIG- (high)\nDVBNO- (world, deep)\nEPO- (horse)\nNERT- (strength)\nTOUT- (people, tribe)\n\nLearn the elements and you can parse any name."
+    },
+    {
+      "kind": "prose",
+      "heading": "Divine names (theonyms)",
+      "body": "The Gaulish gods have names that survived Caesar's conquest and Romanization because dedications kept carving them. Some theonyms are transparently Celtic compounds; others are single-root names of uncertain etymology. The major deities:\n\nLVGVS (Lugus) — the god of all skills, Caesar's Mercury\nESVS — a god associated with sacrifice and trees\nTARANIS — the thunder god, Caesar's Jupiter\nBELENOS (Belenos) — the bright god, associated with healing and the sun\nBELISAMA (Belisama) — \"most bright\", a goddess\nEPONA — the horse goddess, popular in cavalry units\nROSMERTA — a goddess of abundance, often paired with Mercury\nSEQVANA (Sequana) — the goddess of the Seine\n\nTheonyms tell us what mattered. War, horses, rivers, healing, thunder, skill."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Drill: Personal names",
+      "instructions": "Parse each name into its elements and give the meaning. Cover the answers first.",
+      "items": [
+        { "prompt": "SEGOMĀROS", "answer": "SEGO- (victory) + MĀROS (great) = \"great in victory\"" },
+        { "prompt": "EPOREDORIX", "answer": "EPO- (horse) + REDO- (drive) + RIX (king) = \"king who drives horses\"" },
+        { "prompt": "VERCINGETORIX", "answer": "VER- (over) + CINGETO- (warrior) + RIX (king) = \"king over warriors\"" },
+        { "prompt": "DAGOMĀROS", "answer": "DAGO- (good) + MĀROS (great) = \"good and great\"" },
+        { "prompt": "BRIGOMAGLOS", "answer": "BRIGO- (high) + MAGLOS (prince) = \"high prince\"" },
+        { "prompt": "DVBNORIX", "answer": "DVBNO- (world, deep) + RIX (king) = \"king of the world\" or \"deep king\"" },
+        { "prompt": "NERTOMĀROS", "answer": "NERTO- (strength) + MĀROS (great) = \"great in strength\"" },
+        { "prompt": "TOVTISSICNOS", "answer": "TOVT- (people) + uncertain second element = \"of the people\" (?)" },
+        { "prompt": "ANDEVDOS", "answer": "Uncertain etymology; may contain ANDE- prefix (re-, very)." },
+        { "prompt": "ATEPOMAROS", "answer": "ATE- (re-, very) + PO- (?) + MĀROS (great) = \"very great\" or \"re-great\"" }
+      ]
+    },
+    {
+      "kind": "self_check",
+      "heading": "Drill: Divine names",
+      "instructions": "Identify the deity and their association. Cover the answers first.",
+      "items": [
+        { "prompt": "LVGVS", "answer": "Lugus, god of all skills, identified with Roman Mercury." },
+        { "prompt": "ESVS", "answer": "Esus, god associated with sacrifice and trees." },
+        { "prompt": "TARANIS", "answer": "Taranis, thunder god, identified with Roman Jupiter." },
+        { "prompt": "BELENOS", "answer": "Belenos, the bright god, associated with healing and the sun." },
+        { "prompt": "BELISAMA", "answer": "Belisama, \"most bright\", a goddess." },
+        { "prompt": "EPONA", "answer": "Epona, horse goddess, popular in cavalry units." },
+        { "prompt": "ROSMERTA", "answer": "Rosmerta, goddess of abundance, often paired with Mercury." },
+        { "prompt": "SEQVANA", "answer": "Sequana, goddess of the Seine river." },
+        { "prompt": "MAPONOS", "answer": "Maponos, the divine youth, identified with Apollo." },
+        { "prompt": "NVMINIS", "answer": "Numinis (dative of Numen), divine power or spirit." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Fifty names to memorize",
+      "instructions": "Read each name aloud ten times. Return to this list before every new lesson in Stage 2.",
+      "words": [
+        { "gaulish": "SEGOMĀROS", "transliteration": null, "gloss": "great in victory", "audio": "/paideia/audio/gaulish/names/segomaros.mp3" },
+        { "gaulish": "EPOREDORIX", "transliteration": null, "gloss": "horse-driving king", "audio": "/paideia/audio/gaulish/names/eporedorix.mp3" },
+        { "gaulish": "VERCINGETORIX", "transliteration": null, "gloss": "king over warriors", "audio": "/paideia/audio/gaulish/names/vercingetorix.mp3" },
+        { "gaulish": "DAGOMĀROS", "transliteration": null, "gloss": "good and great", "audio": "/paideia/audio/gaulish/names/dagomaros.mp3" },
+        { "gaulish": "DVBNORIX", "transliteration": null, "gloss": "king of the world", "audio": "/paideia/audio/gaulish/names/dubnorix.mp3" },
+        { "gaulish": "ANDEVDOS", "transliteration": null, "gloss": "personal name", "audio": "/paideia/audio/gaulish/names/andevdos.mp3" },
+        { "gaulish": "DANNOTALOS", "transliteration": null, "gloss": "brown-browed(?)", "audio": "/paideia/audio/gaulish/names/dannotalos.mp3" },
+        { "gaulish": "ATEPOMAROS", "transliteration": null, "gloss": "very great", "audio": "/paideia/audio/gaulish/names/atepomaros.mp3" },
+        { "gaulish": "LVGVS", "transliteration": null, "gloss": "god of skills", "audio": "/paideia/audio/gaulish/names/lugus.mp3" },
+        { "gaulish": "TARANIS", "transliteration": null, "gloss": "thunder god", "audio": "/paideia/audio/gaulish/names/taranis.mp3" },
+        { "gaulish": "BELENOS", "transliteration": null, "gloss": "bright god", "audio": "/paideia/audio/gaulish/names/belenos.mp3" },
+        { "gaulish": "BELISAMA", "transliteration": null, "gloss": "most bright goddess", "audio": "/paideia/audio/gaulish/names/belisama.mp3" },
+        { "gaulish": "EPONA", "transliteration": null, "gloss": "horse goddess", "audio": "/paideia/audio/gaulish/names/epona.mp3" },
+        { "gaulish": "ROSMERTA", "transliteration": null, "gloss": "goddess of abundance", "audio": "/paideia/audio/gaulish/names/rosmerta.mp3" },
+        { "gaulish": "SEQVANA", "transliteration": null, "gloss": "goddess of the Seine", "audio": "/paideia/audio/gaulish/names/sequana.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.7 drills the recurring formulae: IEVRV, AVVOT, DEDEMIT, ETIC, and the patronymic constructions. These chunks recur in half the corpus. Memorize them and you can parse inscriptions before you learn the full grammar."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can recognize and pronounce all fifty names without hesitation and parse at least ten personal names into their elements.",
+    "credit_minutes": 60
+  }
+}

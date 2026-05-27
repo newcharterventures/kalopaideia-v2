@@ -1,0 +1,64 @@
+{
+  "id": "pwyll-opening",
+  "language": "welsh",
+  "title": "Pwyll Pendefig Dyfed — opening of the First Branch",
+  "author": "Anonymous (the Mabinogi-redactor)",
+  "date": "c. 1050–1120 (composition); preserved in the White Book of Rhydderch (c. 1350) and the Red Book of Hergest (c. 1382–1410)",
+  "meter": "Middle Welsh prose",
+  "translator": "Lady Charlotte Guest",
+  "translator_date": "1849 (public domain)",
+  "license": "Public domain. Middle Welsh text from the White/Red Book editions of Ifor Williams (1930) and earlier PD editions of John Rhys & J. G. Evans (1887). English translation from Lady Charlotte Guest, 'The Mabinogion' (1849), with light editorial smoothing where her Victorian phrasing obscures the original syntax.",
+  "source_notes": "The four Branches of the Mabinogi (Pedair Cainc y Mabinogi) are the masterpiece of medieval Welsh prose. They were composed around the end of the eleventh century, drawing on much older oral tradition. Pwyll, Prince of Dyfed, opens the First Branch with the prince's chance meeting in the forest of Glyn Cuch, his encounter with Arawn king of Annwfn (the otherworld), and the year-long exchange of identities that founds the friendship between this world and the next. Guest's 1849 translation, while Victorian in register, was the work that introduced the Mabinogion to the modern reading public and remains in the public domain.",
+  "reading_notes": "Middle Welsh prose is typically syntactically straightforward and lexically rich. The opening is a textbook example of a-bod periphrasis ('be at doing'), the standard Welsh verbal-noun construction. Note the vocabulary of rank: pendefig (prince, chief), gwyrda (good men, nobles), arglwydd (lord), and the cynnatre name Dyfed for the south-western kingdom (modern Pembrokeshire and Carmarthenshire). Soft mutation operates throughout: 'Pwyll Pendefig Dyfed' — the d- of Dyfed is unmutated because it follows a masculine noun in apposition rather than a triggering construction; 'yn Arberth' shows yn (in) + Arberth without mutation because Arberth begins with a vowel. The personal-name spelling Pwyll preserves the long w as in Modern Welsh.",
+  "status": "open",
+  "sections": [
+    {
+      "id": "section-1",
+      "title": "Pwyll at Arberth (opening paragraph)",
+      "lines": [
+        {
+          "n": 1,
+          "original": "Pwyll Pendefig Dyfed a oedd yn arglwydd ar saith cantref Dyfed.",
+          "english": "Pwyll, Prince of Dyfed, was lord over the seven cantrefs of Dyfed.",
+          "gloss": "Pwyll: personal name (the word also means 'sense, judgement, deliberation'). Pendefig Dyfed: 'Prince of Dyfed' — pendefig is a compound of pen 'head, chief' + tefig (a softened form of tywysog 'leader'). a oedd: 'was' — the relative particle a + imperfect of bod 'to be'. yn arglwydd: predicative yn + arglwydd 'lord' (literally 'high-throne-one', from ar 'over' + glwydd of unclear root). saith cantref: 'seven cantrefs' — a cantref (literally 'hundred-homesteads') was the principal administrative unit of medieval Welsh kingdoms."
+        },
+        {
+          "n": 2,
+          "original": "Ac ar amser y bu yn Arberth, prif lys iddo, y dyfu yn ei feddwl ac yn ei fryd fyned i hela.",
+          "english": "And once, when he was at Arberth, his chief court, it came into his mind and into his heart to go hunting.",
+          "gloss": "Ac: 'and' (the standard sentence-linker of Middle Welsh prose). ar amser y bu: 'on a time when he was' — y is the relative particle, bu is the preterite of bod. yn Arberth: 'at Arberth' (modern Narberth, Pembrokeshire). prif lys iddo: 'his chief court' — prif lys 'chief court' with iddo 'to him' as a possessive. y dyfu yn ei feddwl: 'it grew in his mind' — dyfu is a poetic preterite of tyfu 'to grow' (here used metaphorically for the rising of a thought). yn ei fryd: 'in his heart, in his disposition' — bryd is one of those untranslatable Welsh nouns meaning roughly 'mind, intent, heart's inclination'. fyned i hela: 'to go to hunt' — fyned (modern mynd) is the verbal noun; the soft mutation m → f after the preceding i is regular."
+        },
+        {
+          "n": 3,
+          "original": "Y rhan o'i gyfoeth a fynnai ei hela oedd Glyn Cuch.",
+          "english": "The part of his domain which he wished to hunt was Glyn Cuch.",
+          "gloss": "Y rhan: 'the part' (with definite article y). o'i gyfoeth: 'of his domain' — cyfoeth in Middle Welsh means 'lordship, territory, wealth' (the modern sense 'wealth' alone narrows the older usage). a fynnai: 'which he desired' — relative a + 3rd singular imperfect of mynnu 'to wish, will'. Glyn Cuch: 'the valley of the Cuch (river)' — glyn 'valley' is a common Welsh place-name element; the Cuch (modern Afon Cuch) forms the boundary between Pembrokeshire and Carmarthenshire."
+        }
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "The hunt and the strange hounds",
+      "lines": [
+        {
+          "n": 1,
+          "original": "Ac efe a gychwynnodd y nos honno o Arberth, ac a ddaeth hyd ym Mhenn Llwyn Diarwyd.",
+          "english": "And he set out that same night from Arberth, and came as far as Pen Llwyn Diarwyd.",
+          "gloss": "efe: emphatic pronoun 'he himself'. a gychwynnodd: 'set out' — preterite of cychwyn 'to set out' (cf. modern cychwyn). y nos honno: 'that night' (the demonstrative honno is feminine, agreeing with nos). hyd ym Mhenn: 'as far as Pen' — hyd 'until, as far as', yn 'in' with nasal mutation of P → Mh on Penn (a regular mutation after yn). Llwyn Diarwyd: 'the unwary grove' (llwyn 'grove' + diarwyd 'unguarded, unwary')."
+        },
+        {
+          "n": 2,
+          "original": "Ac yno y bu y nos honno, a thrannoeth yn ieuengoed y dydd cyfodi a wnaeth.",
+          "english": "And there he was that night, and on the morrow in the youth of the day he rose.",
+          "gloss": "yno: 'there'. y bu y nos honno: 'he was that night'. trannoeth: 'on the morrow, the next day' (a single fossilized compound: tr- 'across, after' + annoeth 'next-day'). yn ieuengoed y dydd: 'in the young-time of the day, at first light' — ieuengoed is a Middle Welsh poetic noun meaning 'youth, the early hour'. cyfodi a wnaeth: 'he rose' — literally 'rising he did', a periphrastic construction using gwneuthur 'to do' as auxiliary, very common in Middle Welsh narrative."
+        },
+        {
+          "n": 3,
+          "original": "Ac efe a glywodd lais cŵn yn ymgyfarfod âg ef.",
+          "english": "And he heard the voice of hounds meeting him.",
+          "gloss": "a glywodd: 'heard' — preterite of clywed 'to hear', with the aspirate mutation c → ch sometimes appearing in older orthography (here regularized to soft mutation a glywodd). lais: 'voice' — soft mutation of llais after the verb (object position). cŵn: 'hounds, dogs' (plural of ci). yn ymgyfarfod âg ef: 'meeting with him' — yn + verbal-noun + âg ('with') + pronoun, the standard Welsh way of expressing a continuous action involving the subject. The strange hounds that Pwyll now meets are Arawn's, and the encounter sets the whole narrative in motion."
+        }
+      ]
+    }
+  ]
+}

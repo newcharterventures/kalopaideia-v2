@@ -1,0 +1,79 @@
+{
+  "id": "2.3",
+  "stage": 2,
+  "title": "Nouns: Gender and Number",
+  "subtitle": "Singular and plural formation. Most plurals add -s (silent); nouns in -eau, -au, -eu add -x. Irregulars: œil/yeux, travail/travaux.",
+  "estimated_minutes": 45,
+  "objectives": [
+    "Form the plural of regular French nouns.",
+    "Recognize plural patterns for nouns ending in -eau, -au, -eu.",
+    "Learn common irregular plurals.",
+    "Understand that the plural -s is silent."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Regular plural formation",
+      "body": "Most French nouns form the plural by adding -s to the singular. The -s is silent.\n\nSingular → Plural:\n  le livre → les livres (the book → the books)\n  la maison → les maisons (the house → the houses)\n  un homme → des hommes (a man → men)\n\nThe plural is marked in writing but not in speech. The article and the verb are what signal plurality."
+    },
+    {
+      "kind": "prose",
+      "heading": "Nouns ending in -s, -x, -z",
+      "body": "Nouns that already end in -s, -x, or -z in the singular do not change in the plural.\n\n  le fils → les fils (the son → the sons)\n  la voix → les voix (the voice → the voices)\n  le nez → les nez (the nose → the noses)\n\nThe singular and plural forms are identical."
+    },
+    {
+      "kind": "prose",
+      "heading": "Nouns ending in -eau, -au, -eu",
+      "body": "Nouns ending in -eau, -au, or -eu add -x instead of -s in the plural.\n\n  le bateau → les bateaux (the boat → the boats)\n  le château → les châteaux (the castle → the castles)\n  le jeu → les jeux (the game → the games)\n\nThe -x is silent, like the -s."
+    },
+    {
+      "kind": "prose",
+      "heading": "Nouns ending in -al",
+      "body": "Most nouns ending in -al change to -aux in the plural.\n\n  le cheval → les chevaux (the horse → the horses)\n  le journal → les journaux (the newspaper → the newspapers)\n\nA few exceptions keep -al → -als, but they are rare."
+    },
+    {
+      "kind": "prose",
+      "heading": "Irregular plurals",
+      "body": "A handful of nouns have irregular plurals that must be memorized.\n\n  l'œil → les yeux (the eye → the eyes)\n  le travail → les travaux (the work → the works)\n  madame → mesdames (madam → madams)\n  monsieur → messieurs (sir → sirs)\n\nThese are common nouns. Learn them by ear."
+    },
+    {
+      "kind": "prose",
+      "heading": "Plural in literary French",
+      "body": "From La Fontaine's Fables:\n\n  Les animaux malades de la peste\n  (The animals sick with the plague)\n\nHere 'animaux' is the plural of 'animal'. Notice the -al → -aux pattern."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Form the plural of each noun.",
+      "items": [
+        { "prompt": "le livre → ?", "answer": "les livres" },
+        { "prompt": "la maison → ?", "answer": "les maisons" },
+        { "prompt": "le château → ?", "answer": "les châteaux" },
+        { "prompt": "le cheval → ?", "answer": "les chevaux" },
+        { "prompt": "l'œil → ?", "answer": "les yeux" },
+        { "prompt": "le fils → ?", "answer": "les fils (no change)" },
+        { "prompt": "Is the plural -s pronounced in 'les livres'?", "answer": "No. The plural -s is silent." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Nouns to practice",
+      "instructions": "Read each singular and plural form aloud.",
+      "words": [
+        { "french": "le livre, les livres", "transliteration": null, "gloss": "the book, the books", "audio": "/paideia/audio/french/words/livre-plurals.mp3" },
+        { "french": "le château, les châteaux", "transliteration": null, "gloss": "the castle, the castles", "audio": "/paideia/audio/french/words/chateau-plurals.mp3" },
+        { "french": "le cheval, les chevaux", "transliteration": null, "gloss": "the horse, the horses", "audio": "/paideia/audio/french/words/cheval-plurals.mp3" },
+        { "french": "l'œil, les yeux", "transliteration": null, "gloss": "the eye, the eyes", "audio": "/paideia/audio/french/words/oeil-plurals.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.4 covers adjectives: agreement in gender and number, and position relative to the noun."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can form the plural of twenty nouns without error.",
+    "credit_minutes": 45
+  }
+}

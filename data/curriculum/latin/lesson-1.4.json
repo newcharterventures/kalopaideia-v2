@@ -1,0 +1,71 @@
+{
+  "id": "1.4",
+  "stage": 1,
+  "title": "Stress and Quantity",
+  "subtitle": "Heavy and light syllables; the penult rule.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Identify heavy and light syllables by counting vowels and consonants.",
+    "Apply the Latin stress rule to words of two, three, or more syllables.",
+    "Distinguish stress patterns by ear.",
+    "Read aloud Latin sentences with correct stress on every word."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The penult rule",
+      "body": "Latin stress is predictable. If you know where the syllables fall and how heavy they are, you know where the stress falls. The rule:\n\n  1. In a two-syllable word, stress the first syllable.\n  2. In a word of three or more syllables, stress the penult (second-to-last syllable) if it is heavy; otherwise stress the antepenult (third-to-last).\n\nThat is the whole rule. You never need to memorize where the stress falls in a Latin word; you derive it from the shape of the word."
+    },
+    {
+      "kind": "prose",
+      "heading": "Heavy and light syllables",
+      "body": "A syllable is heavy if:\n  — it contains a long vowel or diphthong, OR\n  — it contains a short vowel followed by two or more consonants.\n\nA syllable is light if it contains a short vowel followed by at most one consonant.\n\nExamples:\n  a-MĪ-cus — three syllables. The penult (mī) has a long vowel, so it is heavy. Stress the penult: a-MĪ-cus.\n  PŎ-pu-lus — three syllables. The penult (pu) has a short vowel followed by one consonant, so it is light. Stress the antepenult: PŎ-pu-lus.\n  con-SŪL — two syllables. Stress the first: con-SŪL.\n  CŌN-sul — two syllables. Stress the first: CŌN-sul.\n\nThe distinction between populus (the people, stress on the first syllable) and pōpulus (the poplar tree, stress on the second syllable) exists only in our modern notation. The Romans wrote both the same way and relied on context. We mark the long vowel to avoid confusion."
+    },
+    {
+      "kind": "prose",
+      "heading": "Consonant clusters and syllable weight",
+      "body": "When a short vowel is followed by two consonants, the syllable becomes heavy — even if the vowel itself is short. This is called 'weight by position'.\n\ncon-FĔC-tus — three syllables. The penult (fec) has a short e, but it is followed by two consonants (ct). The syllable is heavy. Stress the penult.\n\nMon-STR-Ā-re — three syllables. The penult (trā) has a long vowel. Stress the penult.\n\nThe doubled consonants (tt, cc, ll, mm, etc.) count as two consonants for this purpose:\n  puel-LA — two syllables. Stress the first.\n  ter-RA — two syllables. Stress the first.\n\nThe clusters of stop + liquid (br, cr, dr, gr, pr, tr, bl, cl, fl, gl, pl) are treated inconsistently. Sometimes they make the syllable heavy, sometimes not. In poetry, the poet chooses. In prose, follow the general rule: if there are two consonants, the syllable is heavy."
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill",
+      "instructions": "Each word is spoken twice: once with the stress marked by volume, once at normal speed. Repeat after the recording.",
+      "audio": "/paideia/audio/latin/drills/lesson-1.4-listening.mp3"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Without looking back, mark the stressed syllable in each word. Then check your answers.",
+      "items": [
+        { "prompt": "amīcus", "answer": "a-MĪ-cus (penult heavy by long vowel)" },
+        { "prompt": "populus", "answer": "PŎ-pu-lus (penult light, stress antepenult)" },
+        { "prompt": "cōnsul", "answer": "CŌN-sul (two syllables, stress first)" },
+        { "prompt": "Cicerō", "answer": "Ci-ce-RŌ (penult heavy by long vowel)" },
+        { "prompt": "rēgīna", "answer": "rē-GĪ-na (penult heavy by long vowel)" },
+        { "prompt": "tempus", "answer": "TĔM-pus (two syllables, stress first)" },
+        { "prompt": "sententia", "answer": "sen-TEN-ti-a (penult heavy by position: nt)" },
+        { "prompt": "What is the penult?", "answer": "The second-to-last syllable." },
+        { "prompt": "When do you stress the antepenult?", "answer": "When the word has three or more syllables and the penult is light." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Sentences with stress marked",
+      "instructions": "Read each sentence aloud. The stressed syllable in each word is capitalized.",
+      "words": [
+        { "latin": "RŌ-ma in I-ta-lĭ-ā ĔST.", "transliteration": null, "gloss": "Rome is in Italy.", "audio": "/paideia/audio/latin/sentences/1.4-1.mp3" },
+        { "latin": "PŎ-pu-lus Rō-MĀ-nus MĂG-nus ĔST.", "transliteration": null, "gloss": "The Roman people is great.", "audio": "/paideia/audio/latin/sentences/1.4-2.mp3" },
+        { "latin": "A-MĪ-cus ME-us FĪ-de-lis ĔST.", "transliteration": null, "gloss": "My friend is faithful.", "audio": "/paideia/audio/latin/sentences/1.4-3.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.5 covers macrons: why we mark long vowels in textbooks, why the Romans did not, and how to read the same text with and without them."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can identify the stressed syllable in any Latin word of three or more syllables without hesitation.",
+    "credit_minutes": 55
+  }
+}

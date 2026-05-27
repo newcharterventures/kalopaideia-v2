@@ -1,0 +1,37 @@
+{
+  "id": "4.12",
+  "stage": 4,
+  "title": "Reading: Heine, 'Die Lorelei'",
+  "subtitle": "Ich wei\u00df nicht, was soll es bedeuten. ~50 words. Konjunktiv I, relatives.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Master Reading: Heine, 'Die Lorelei'"
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Lesson overview",
+      "body": "Ich wei\u00df nicht, was soll es bedeuten. ~50 words. Konjunktiv I, relatives.\n\nFull content: prose opener with real examples from Goethe/Nietzsche/Heine, paradigm tables where applicable, self_check, reading_preview, next_lesson."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Verify understanding.",
+      "items": [
+        {
+          "prompt": "Core of Reading: Heine, 'Die Lorelei'?",
+          "answer": "Ich wei\u00df nicht, was soll es bedeuten. ~50 words. Konjunktiv I, relatives."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 4.2 continues Stage 4."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Complete when Reading: Heine, 'Die Lorelei' is mastered.",
+    "credit_minutes": 60
+  }
+}

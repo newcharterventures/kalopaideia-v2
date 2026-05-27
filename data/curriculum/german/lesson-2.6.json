@@ -1,0 +1,37 @@
+{
+  "id": "2.6",
+  "stage": 2,
+  "title": "The Dative Case",
+  "subtitle": "Indirect object. Ich gebe dem Mann das Buch.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Complete The Dative Case"
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Lesson content",
+      "body": "Dative = to/for/with. Dem/der/dem, den (plural).\n\nFull lesson content follows the gold standard of lesson-1.1: prose opener with real German examples, paradigm tables where applicable, self_check with 5-10 items, reading_preview for new vocabulary, next_lesson block."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test your understanding.",
+      "items": [
+        {
+          "prompt": "Core concept of The Dative Case?",
+          "answer": "Dative = to/for/with. Dem/der/dem, den (plural)."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.7 continues Stage 2."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand The Dative Case.",
+    "credit_minutes": 50
+  }
+}

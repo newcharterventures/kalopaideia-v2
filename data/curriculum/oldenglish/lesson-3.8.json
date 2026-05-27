@@ -1,0 +1,43 @@
+{
+  "id": "3.8",
+  "stage": 3,
+  "title": "Kennings and Variation",
+  "subtitle": "Bānhūs, hronrād — metaphor and repetition.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Master Kennings and Variation.",
+    "Read and translate authentic Old English poetry and prose.",
+    "Prepare for the capstone examination."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "Kenning: a compound metaphor (bānhūs = bone-house = body; hronrād = whale-road = sea; beadoleoma = battle-light = sword). Variation: restating the same idea in different words (se cyning, se hlāford, se beaggifa = the king, the lord, the ring-giver). Both are hallmarks of Old English poetic style."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "Kennings and Variation"
+        },
+        {
+          "prompt": "Can you translate the example passage?",
+          "answer": "Work through it word by word with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson or take the capstone examination."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply Kennings and Variation to reading.",
+    "credit_minutes": 60
+  }
+}

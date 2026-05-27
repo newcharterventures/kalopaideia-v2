@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kalopaideia — Lesson</title>
+<meta name="description" content="A guided lesson in the Kalopaideia curriculum." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Cinzel:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/paideia/styles.css?v=1779378800" />
+</head>
+<body>
+
+<header class="masthead masthead-athenaeum">
+  <div class="mast-content">
+    <div class="mast-grid">
+      <div class="mast-center">
+        <h1 class="mast-name"><a href="/paideia/" aria-label="Kalopaideia home">KALOPAIDEIA</a></h1>
+      </div>
+    </div>
+    <nav class="nav mast-nav">
+      <a id="back-link" href="/paideia/greek">← Back to language</a>
+    </nav>
+  </div>
+</header>
+
+<main class="lesson-page" id="lesson-root">
+  <p><em>Loading lesson…</em></p>
+</main>
+
+<script>
+const BASE = "/paideia";
+
+function esc(s) {
+  if (s === null || s === undefined) return "";
+  return String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+function parsePath() {
+  // /paideia/<lang>/curriculum/<lessonId>
+  const parts = location.pathname.split("/").filter(Boolean);
+  // expect ["paideia", "<lang>", "curriculum", "<lessonId>"]
+  return { lang: parts[1], id: parts[3] };
+}
+
+function renderSection(s) {
+  if (s.kind === "prose") {
+    return `<section class="lesson-section">
+      ${s.heading ? `<h3>${esc(s.heading)}</h3>` : ""}
+      <div class="lesson-prose">${esc(s.body || "")}</div>
+    </section>`;
+  }
+  if (s.kind === "letter_grid") {
+    return `<section class="lesson-section">
+      ${s.heading ? `<h3>${esc(s.heading)}</h3>` : ""}
+      <div class="letter-grid-lesson">
+        ${(s.letters || []).map((l) => `
+          <div class="letter-cell-lesson">
+            <div class="lc-char">${esc(l.upper || "")} ${esc(l.lower || "")}</div>
+            <div class="lc-name">${esc(l.name || "")}</div>
+            <div class="lc-ipa">${esc(l.ipa || "")}</div>
+            <div class="lc-note">${esc(l.note || "")}</div>
+            ${l.audio ? `<button class="lc-play" data-audio="${esc(l.audio)}">▶ Listen</button>` : ""}
+          </div>
+        `).join("")}
+      </div>
+    </section>`;
+  }
+  if (s.kind === "audio_drill") {
+    return `<section class="lesson-section">
+      ${s.heading ? `<h3>${esc(s.heading)}</h3>` : ""}
+      <p>${esc(s.instructions || "")}</p>
+      ${s.audio ? `<audio controls src="${esc(s.audio)}" style="width:100%;margin-top:8px;"></audio>` : "<p><em>Audio in preparation.</em></p>"}
+    </section>`;
+  }
+  if (s.kind === "writing_drill") {
+    return `<section class="lesson-section">
+      ${s.heading ? `<h3>${esc(s.heading)}</h3>` : ""}
+      <p>${esc(s.instructions || "")}</p>
+      ${s.downloadable_pdf ? `<p><a href="${esc(s.downloadable_pdf)}" target="_blank">Download tracing sheet (PDF) →</a></p>` : ""}
+    </section>`;
+  }
+  if (s.kind === "self_check") {
+    return `<section class="lesson-section">
+      ${s.heading ? `<h3>${esc(s.heading)}</h3>` : ""}
+      <p>${esc(s.instructions || "")}</p>
+      ${(s.items || []).map((it, i) => `
+        <div class="self-check-item" data-idx="${i}">
+          <div class="self-check-prompt">${esc(it.prompt)}</div>
+          <button class="self-check-reveal">Show answer</button>
+          <div class="self-check-answer">${esc(it.answer)}</div>
+        </div>
+      `).join("")}
+    </section>`;
+  }
+  if (s.kind === "reading_preview") {
+    return `<section class="lesson-section">
+      ${s.heading ? `<h3>${esc(s.heading)}</h3>` : ""}
+      <p>${esc(s.instructions || "")}</p>
+      <ul class="reading-preview-list">
+        ${(s.words || []).map((w) => `
+          <li>
+            <strong style="font-family:'Cormorant Garamond',serif;font-size:22px;">${esc(w.greek)}</strong>
+            <span style="color:#5b4a36;margin:0 8px;">${esc(w.transliteration)}</span>
+            <span>— ${esc(w.gloss)}</span>
+            ${w.audio ? `<button class="lc-play" data-audio="${esc(w.audio)}">▶</button>` : ""}
+          </li>
+        `).join("")}
+      </ul>
+    </section>`;
+  }
+  if (s.kind === "next_lesson") {
+    return `<section class="lesson-section" style="background:#f4ecda;padding:18px 20px;border-radius:4px;">
+      <h3>${esc(s.heading || "Up next")}</h3>
+      <p>${esc(s.body || "")}</p>
+    </section>`;
+  }
+  return "";
+}
+
+async function loadAndRender() {
+  const { lang, id } = parsePath();
+  document.getElementById("back-link").href = `${BASE}/${lang}/curriculum`;
+  document.getElementById("back-link").textContent = `← Back to ${lang} curriculum`;
+
+  let lesson = null;
+  try {
+    const r = await fetch(`${BASE}/api/curriculum/${lang}/lesson/${id}`);
+    if (r.ok) lesson = await r.json();
+  } catch {}
+
+  const root = document.getElementById("lesson-root");
+  if (!lesson) {
+    root.innerHTML = `
+      <p class="lesson-eyebrow">Stage ${esc(id.split(".")[0])} · Lesson ${esc(id)}</p>
+      <h1>Lesson in preparation</h1>
+      <p class="lesson-subtitle">The full text of this lesson is being prepared. Until it ships, refer to the curriculum overview on the language page.</p>
+      <p><a href="${BASE}/${lang}/curriculum">← Back to the curriculum</a></p>
+    `;
+    return;
+  }
+
+  document.title = `${lesson.title} — Kalopaideia`;
+  const html = [];
+  html.push(`<p class="lesson-eyebrow">Stage ${esc(lesson.stage)} · Lesson ${esc(lesson.id)} · ${esc(lesson.estimated_minutes || 0)} min</p>`);
+  html.push(`<h1>${esc(lesson.title)}</h1>`);
+  if (lesson.subtitle) html.push(`<p class="lesson-subtitle">${esc(lesson.subtitle)}</p>`);
+  if (lesson.objectives?.length) {
+    html.push(`<div class="lesson-objectives">
+      <h3>Objectives</h3>
+      <ul>${lesson.objectives.map((o) => `<li>${esc(o)}</li>`).join("")}</ul>
+    </div>`);
+  }
+  for (const sec of lesson.sections || []) {
+    html.push(renderSection(sec));
+  }
+  html.push(`<div class="lesson-complete-bar">
+    <button id="complete-btn" class="lesson-complete-btn">Mark lesson complete</button>
+    <div style="margin-top:6px;font-size:13px;color:#5b4a36;" id="complete-status"></div>
+  </div>`);
+  root.innerHTML = html.join("");
+
+  // Wire audio + self-check + completion
+  root.querySelectorAll(".lc-play").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const src = btn.dataset.audio;
+      if (!src) return;
+      const a = new Audio(src);
+      a.play().catch(() => {});
+    });
+  });
+  root.querySelectorAll(".self-check-reveal").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      btn.closest(".self-check-item").classList.add("revealed");
+      btn.style.display = "none";
+    });
+  });
+  const completeBtn = document.getElementById("complete-btn");
+  const completeStatus = document.getElementById("complete-status");
+  completeBtn.addEventListener("click", async () => {
+    completeBtn.disabled = true;
+    try {
+      const r = await fetch(`${BASE}/api/curriculum/${lang}/lesson/${id}/complete`, {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ minutes: lesson.estimated_minutes || 0 }),
+      });
+      if (r.status === 401) {
+        completeStatus.innerHTML = `<a href="${BASE}/account?next=${encodeURIComponent(location.pathname)}">Sign in to track progress →</a>`;
+        completeBtn.disabled = false;
+        return;
+      }
+      const j = await r.json();
+      if (j.ok) {
+        completeBtn.textContent = "✓ Complete";
+        completeBtn.classList.add("done");
+        completeStatus.textContent = "Saved.";
+      }
+    } catch (e) {
+      completeStatus.textContent = "Could not save — try again.";
+      completeBtn.disabled = false;
+    }
+  });
+}
+
+loadAndRender();
+</script>
+</body>
+</html>

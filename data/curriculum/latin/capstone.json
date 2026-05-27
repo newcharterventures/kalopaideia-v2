@@ -1,0 +1,155 @@
+{
+  "id": "stage-5-capstone",
+  "lang": "latin",
+  "title": "The Kalopaideia Latin Examination",
+  "instructions": "Three hours, no notes for Part A; printed lexicon and grammar permitted for Part B. Honor code: you affirm by submitting that you used only permitted aids. A failed examination may be retaken after thirty days.",
+  "time_limit_minutes": 180,
+  "tracks_apply": ["track-orator", "track-general", "track-poet"],
+  "sections": [
+    {
+      "id": "A",
+      "title": "Part A — Sight Translation (no notes)",
+      "items": [
+        {
+          "id": "A1",
+          "type": "translate",
+          "points": 10,
+          "track": "track-orator",
+          "prompt_latin": "Quōusque tandem abūtēre, Catilīna, patientiā nostrā?",
+          "prompt_en": "Translate.",
+          "reference": [
+            "how long, catiline, will you abuse our patience",
+            "how long finally will you abuse our patience catiline",
+            "how long catiline will you continue to abuse our patience"
+          ],
+          "keywords": ["how long", "abuse", "patience"],
+          "threshold": 0.45
+        },
+        {
+          "id": "A2",
+          "type": "translate",
+          "points": 10,
+          "track": "track-orator",
+          "prompt_latin": "Nihilne tē nocturnum praesidium Palātī, nihil urbis vigiliae, nihil timor populī, nihil concursus bonōrum omnium, nihil hic mūnītissimus habendī senātūs locus, nihil hōrum ōra vultūsque mōvērunt?",
+          "prompt_en": "Translate.",
+          "reference": [
+            "has the night guard of the palatine moved you not at all, the city watches not at all, the fear of the people not at all, the gathering of all good men not at all, this most fortified place for holding the senate not at all, the faces and expressions of these men not at all",
+            "have these things moved you not at all: the night guard, the watches, the fear, the gathering, this fortified place, their faces"
+          ],
+          "keywords": ["night guard", "watches", "fear", "senate", "moved"],
+          "threshold": 0.4
+        },
+        {
+          "id": "A3",
+          "type": "translate",
+          "points": 10,
+          "track": "track-general",
+          "prompt_latin": "Gallia est omnis dīvīsa in partēs trēs, quārum ūnam incolunt Belgae, aliam Aquītānī, tertiam quī ipsōrum linguā Celtae, nostrā Gallī appellantur.",
+          "prompt_en": "Translate.",
+          "reference": [
+            "all gaul is divided into three parts, one of which the belgians inhabit, another the aquitani, a third those who in their own language are called celts, in ours gauls",
+            "gaul is wholly divided into three parts, of which the belgians inhabit one, the aquitani another, and those who are called celts in their language and gauls in ours inhabit a third"
+          ],
+          "keywords": ["gaul", "divided", "three parts", "belgians", "aquitani", "celts", "gauls"],
+          "threshold": 0.45
+        },
+        {
+          "id": "A4",
+          "type": "translate",
+          "points": 10,
+          "track": "track-poet",
+          "prompt_latin": "Arma virumque canō, Troiae quī prīmus ab ōrīs Ītaliam fātō profugus Lāvīniaque vēnit lītora.",
+          "prompt_en": "Translate.",
+          "reference": [
+            "i sing of arms and the man who first from the shores of troy came exiled by fate to italy and the lavinian shores",
+            "arms and the man i sing who first from troy's coasts came a fugitive by fate to italy and lavinium's shores"
+          ],
+          "keywords": ["arms", "man", "sing", "troy", "italy", "fate", "shores"],
+          "threshold": 0.5
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "title": "Part B — Parsing",
+      "items": [
+        {
+          "id": "B1",
+          "type": "parse",
+          "points": 5,
+          "prompt": "Parse the form amāvistī. Give: person, number, tense, mood, voice.",
+          "answer": ["second", "singular", "perfect", "indicative", "active"]
+        },
+        {
+          "id": "B2",
+          "type": "parse",
+          "points": 5,
+          "prompt": "Parse the form captus. Give: case (or 'participle'), number, gender, tense, voice.",
+          "answer": ["participle", "nominative", "singular", "masculine", "perfect", "passive"]
+        },
+        {
+          "id": "B3",
+          "type": "parse",
+          "points": 5,
+          "prompt": "Parse the noun form rēgis. Give: case, number, gender, lexical form.",
+          "answer": ["genitive", "singular", "masculine", "rēx"]
+        },
+        {
+          "id": "B4",
+          "type": "parse",
+          "points": 5,
+          "prompt": "Parse the form vēnisset. Give: person, number, tense, mood, voice.",
+          "answer": ["third", "singular", "pluperfect", "subjunctive", "active"]
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "title": "Part C — Composition (English → Latin)",
+      "items": [
+        {
+          "id": "C1",
+          "type": "compose",
+          "points": 8,
+          "prompt": "Render in Latin: 'Caesar is brave.'",
+          "reference": ["Caesar fortis est", "Caesar est fortis"],
+          "threshold": 0.7
+        },
+        {
+          "id": "C2",
+          "type": "compose",
+          "points": 8,
+          "prompt": "Render in Latin: 'The soldiers give weapons to the leader.'",
+          "reference": ["mīlitēs ducī arma dant", "mīlitēs arma ducī dant", "mīlitēs dant arma ducī"],
+          "threshold": 0.6
+        },
+        {
+          "id": "C3",
+          "type": "compose",
+          "points": 9,
+          "prompt": "Render in Latin: 'If Caesar were here, the enemies would flee.'",
+          "reference": ["sī Caesar adesset, hostēs fugerent", "sī Caesar adesset hostēs fugerent"],
+          "threshold": 0.55
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "title": "Part D — Multiple Choice (vocabulary and idiom)",
+      "items": [
+        { "id": "D1", "type": "mcq", "points": 2, "prompt": "What does virtūs mean?", "choices": ["courage/virtue", "war", "city", "speech"], "answer": "courage/virtue" },
+        { "id": "D2", "type": "mcq", "points": 2, "prompt": "What does urbs mean?", "choices": ["citizen", "city", "father", "people"], "answer": "city" },
+        { "id": "D3", "type": "mcq", "points": 2, "prompt": "What is the function of ut + subjunctive after a verb of commanding?", "choices": ["indirect command", "result", "purpose", "indirect statement"], "answer": "indirect command" },
+        { "id": "D4", "type": "mcq", "points": 2, "prompt": "Which mood is used in the protasis of a present contrary-to-fact condition?", "choices": ["indicative", "subjunctive (imperfect)", "subjunctive (pluperfect)", "imperative"], "answer": "subjunctive (imperfect)" },
+        { "id": "D5", "type": "mcq", "points": 2, "prompt": "The ablative absolute typically signals…", "choices": ["a circumstance or condition grammatically independent of the main sentence", "the direct object", "a purpose clause", "indirect statement"], "answer": "a circumstance or condition grammatically independent of the main sentence" },
+        { "id": "D6", "type": "mcq", "points": 2, "prompt": "Which case is used with the preposition cum to express accompaniment?", "choices": ["accusative", "genitive", "dative", "ablative"], "answer": "ablative" }
+      ]
+    }
+  ],
+  "scoring": {
+    "max_points": 95,
+    "pass_mark": 0.70,
+    "honors_mark": 0.85
+  },
+  "honor_code": "I attest that the answers I have entered are my own, composed without aid beyond the materials permitted for each section of this examination. I understand that this examination is graded automatically, that the script and my signed attestation will be permanently hashed on completion, and that a passing score will issue a permanent on-chain diploma in my name."
+}

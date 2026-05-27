@@ -1,0 +1,22 @@
+{
+  "id": "3.3",
+  "stage": 3,
+  "title": "The Perfect Active",
+  "subtitle": "amāvī, amāvistī, amāvit. The four principal parts.",
+  "estimated_minutes": 55,
+  "objectives": ["Form the perfect active from the third principal part.", "Conjugate perfect active in all persons.", "Translate perfect as simple past ('I loved', 'I have loved').", "Understand why every Latin verb has four principal parts."],
+  "sections": [
+    {"kind": "prose", "heading": "The perfect active", "body": "The perfect describes completed past action: 'I loved', 'I have loved'.\n\nEvery Latin verb has four principal parts:\n  1. Present (amō)\n  2. Infinitive (amāre)\n  3. Perfect (amāvī)\n  4. Perfect participle (amātus)\n\nPerfect active endings: -ī, -istī, -it, -imus, -istis, -ērunt\n\n  amāvī, amāvistī, amāvit, amāvimus, amāvistis, amāvērunt\n\nCaesar writes: vēnī, vīdī, vīcī. — I came, I saw, I conquered."},
+    {"kind": "self_check", "heading": "Self-check", "items": [
+      {"prompt": "Conjugate dūcō (perfect dūxī) in the perfect.", "answer": "dūxī, dūxistī, dūxit, dūximus, dūxistis, dūxērunt"},
+      {"prompt": "Translate: mīlitēs oppugnāvērunt.", "answer": "The soldiers attacked / have attacked."},
+      {"prompt": "What are the four principal parts of any Latin verb?", "answer": "Present, infinitive, perfect, perfect participle."}
+    ]},
+    {"kind": "reading_preview", "heading": "Sentences in the perfect", "words": [
+      {"latin": "Caesar Galliam vīcit.", "transliteration": null, "gloss": "Caesar conquered Gaul.", "audio": "/paideia/audio/latin/sentences/3.3-1.mp3"},
+      {"latin": "puella rosam dedīt.", "transliteration": null, "gloss": "The girl gave a rose.", "audio": "/paideia/audio/latin/sentences/3.3-2.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Lesson 3.4: pluperfect and future perfect. amāveram, amāverō."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can form and conjugate the perfect active from any third principal part.", "credit_minutes": 55}
+}

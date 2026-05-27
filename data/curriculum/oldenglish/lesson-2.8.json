@@ -1,0 +1,60 @@
+{
+  "id": "2.8",
+  "stage": 2,
+  "title": "The Past Indicative of Strong Verbs",
+  "subtitle": "Ic rād, wē ridon — ablaut in action.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Understand and apply the concepts of The Past Indicative of Strong Verbs.",
+    "Read and parse examples from authentic Old English texts.",
+    "Practice pronunciation and recognition."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The past tense of strong verbs uses a different root vowel from the present. Class I verbs (rīdan): present ī, past singular ā, past plural i. Ic rād, þū ride, hē rād, wē/gē/hīe ridon. The second principal part is the past singular, the third is the past plural."
+    },
+    {
+      "kind": "paradigm_table",
+      "heading": "Paradigm",
+      "table": {
+        "Past Indicative": {
+          "ic": "rād",
+          "þū": "ride",
+          "hē": "rād",
+          "wē/gē/hīe": "ridon"
+        }
+      }
+    },
+    {
+      "kind": "prose",
+      "heading": "Example",
+      "body": "Ic rād (I rode), þū ride (you rode), hē rād (he rode), wē ridon (we rode)."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test your understanding.",
+      "items": [
+        {
+          "prompt": "What is the main concept of this lesson?",
+          "answer": "The Past Indicative of Strong Verbs"
+        },
+        {
+          "prompt": "Can you parse the example?",
+          "answer": "Review the paradigm and example above."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson in Stage 2."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand The Past Indicative of Strong Verbs and can apply it in reading.",
+    "credit_minutes": 55
+  }
+}

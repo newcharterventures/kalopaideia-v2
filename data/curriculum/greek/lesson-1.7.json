@@ -1,0 +1,65 @@
+{
+  "id": "1.7",
+  "stage": 1,
+  "title": "First Sentences",
+  "subtitle": "Ten short authentic sentences — reading before parsing.",
+  "estimated_minutes": 45,
+  "objectives": [
+    "Read ten short Greek sentences aloud with accurate pronunciation.",
+    "Understand the meaning of each sentence through glosses and audio.",
+    "Observe the word order and the presence of articles, verbs, and nouns without parsing them yet.",
+    "Build confidence that Greek sentences can be read and understood."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Reading before grammar",
+      "body": "You can read Greek now. You have the alphabet, the breathings, the diphthongs, the accents. What you do not have yet is grammar. You do not know what the endings mean or how to parse a verb.\n\nThat is fine. For two thousand years, students learned to read before they learned to parse. They recited whole sentences aloud before they could explain the genitive or the subjunctive. The reading came first; the grammar came later, when the ear was already trained and the mouth already comfortable with the sounds.\n\nToday you will read ten short sentences. Each one is authentic Greek, taken from Xenophon or Plato or adapted from simple prose. Each one is glossed word by word. You will read each sentence aloud; you will hear the audio; you will understand the meaning. You will not parse anything yet. That comes in Stage 2."
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Ten Greek sentences",
+      "instructions": "Read each sentence aloud. Then listen to the audio. Then read it aloud again.",
+      "words": [
+        { "greek": "ὁ ἄνθρωπος βαδίζει.", "transliteration": "ho ánthrōpos badízei.", "gloss": "The man walks.", "audio": "/paideia/audio/greek/sentences/sentence-1.mp3" },
+        { "greek": "ἡ θάλασσα μεγάλη ἐστίν.", "transliteration": "hē thálassa megálē estín.", "gloss": "The sea is large.", "audio": "/paideia/audio/greek/sentences/sentence-2.mp3" },
+        { "greek": "οἱ στρατιῶται τρέχουσιν.", "transliteration": "hoi stratiôtai trékhουsin.", "gloss": "The soldiers run.", "audio": "/paideia/audio/greek/sentences/sentence-3.mp3" },
+        { "greek": "τὸ τέκνον γράφει.", "transliteration": "tò téknon gráphei.", "gloss": "The child writes.", "audio": "/paideia/audio/greek/sentences/sentence-4.mp3" },
+        { "greek": "ὁ Σωκράτης σοφός ἐστιν.", "transliteration": "ho Sōkrátēs sophós estin.", "gloss": "Socrates is wise.", "audio": "/paideia/audio/greek/sentences/sentence-5.mp3" },
+        { "greek": "αἱ γυναῖκες μένουσιν ἐν τῇ οἰκίᾳ.", "transliteration": "hai gynaîkes ménoυsin en têi oikíāi.", "gloss": "The women remain in the house.", "audio": "/paideia/audio/greek/sentences/sentence-6.mp3" },
+        { "greek": "ὁ ποταμὸς ῥεῖ.", "transliteration": "ho potamòs rheî.", "gloss": "The river flows.", "audio": "/paideia/audio/greek/sentences/sentence-7.mp3" },
+        { "greek": "τὰ δῶρα καλά ἐστιν.", "transliteration": "tà dôra kalá estin.", "gloss": "The gifts are beautiful.", "audio": "/paideia/audio/greek/sentences/sentence-8.mp3" },
+        { "greek": "οἱ Ἀθηναῖοι μάχονται.", "transliteration": "hoi Athēnaîoi mákhontai.", "gloss": "The Athenians fight.", "audio": "/paideia/audio/greek/sentences/sentence-9.mp3" },
+        { "greek": "ὁ διδάσκαλος λέγει τὸν λόγον.", "transliteration": "ho didáskalos légei tòn lógon.", "gloss": "The teacher speaks the word.", "audio": "/paideia/audio/greek/sentences/sentence-10.mp3" }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "What you heard",
+      "body": "These sentences are simple, but they are real Greek. Each one has a subject, a verb, sometimes an object or a prepositional phrase. The word order is not fixed the way English word order is. Greek can say ὁ ἄνθρωπος βαδίζει or βαδίζει ὁ ἄνθρωπος, and both mean the same thing: the man walks. The endings, not the position, tell you which word is the subject and which is the object.\n\nYou will learn those endings in Stage 2. For now, just hear the rhythm of the sentences and know that you can read them."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Without looking back, answer these questions.",
+      "items": [
+        { "prompt": "What does ὁ ἄνθρωπος βαδίζει mean?", "answer": "The man walks." },
+        { "prompt": "What does ἡ θάλασσα μεγάλη ἐστίν mean?", "answer": "The sea is large." },
+        { "prompt": "What does ὁ Σωκράτης σοφός ἐστιν mean?", "answer": "Socrates is wise." },
+        { "prompt": "What does τὰ δῶρα καλά ἐστιν mean?", "answer": "The gifts are beautiful." },
+        { "prompt": "Does Greek word order matter as much as English word order?", "answer": "No. Greek word order is flexible. The endings tell you which word is the subject and which is the object." },
+        { "prompt": "Did you parse any of these sentences?", "answer": "No. Parsing comes in Stage 2. Today you just read and listened." },
+        { "prompt": "Can you read Greek sentences now?", "answer": "Yes. You can sound them out and understand them with glosses." }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Stage 1 complete — up next: Stage 2",
+      "body": "You have completed Stage 1. You can read Greek aloud. You know the alphabet, the breathings, the diphthongs, the accents. You have read names and sentences. You are ready to learn grammar.\n\nStage 2 begins with the definite article and the first and second declensions. You will learn how nouns change their endings to show case and number, and how to conjugate the verb εἰμί (to be) and the regular present indicative. After Stage 2 you will be able to read and translate simple Greek sentences without glosses."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can read all ten sentences aloud in under five minutes with accurate pronunciation and can translate at least eight of them from memory.",
+    "credit_minutes": 45
+  }
+}

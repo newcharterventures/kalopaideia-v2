@@ -1,0 +1,45 @@
+{
+  "id": "track-poet",
+  "track_name": "The Poet",
+  "author": "Vergil",
+  "work": "Aeneid, Book I",
+  "length_words": 5800,
+  "duration_weeks": "14–18",
+  "rationale": "The greatest poem in Latin. Meter, diction, allusion. This track includes instruction in scansion (dactylic hexameter).",
+  "description": "You will read all of Aeneid Book I: the storm, the landing in Carthage, Aeneas's meeting with Dido, and his narration of the fall of Troy (which continues in Books II and III). Vergil writes in dactylic hexameter, the meter of Homer. His diction is elevated, his word order compressed, his allusions dense. This is the most challenging track, but also the most rewarding.",
+  "learning_outcomes": [
+    "Read and translate all of Aeneid Book I (c. 5,800 words of dactylic hexameter) with notes.",
+    "Scan any line of dactylic hexameter and mark the feet.",
+    "Recognize Vergil's characteristic devices: hyperbaton, enjambment, golden line, spondaic rhythm.",
+    "Translate any ten-line passage from Book I at sight without notes.",
+    "Discuss Vergil's themes (fate, pietas, imperium) and Homeric models in writing."
+  ],
+  "scansion_overview": "Dactylic hexameter is the meter of epic. Each line has six feet. A dactyl is long-short-short (— ᴗ ᴗ); a spondee is long-long (— —). The first four feet can be dactyls or spondees; the fifth is almost always a dactyl; the sixth is always a spondee (or trochee). The caesura (pause) falls in the third or fourth foot. Example:\n\nArma vi | rumque ca | nō || Troi | ae quī | prīmus ab | ōrīs\n— ᴗ ᴗ | — —  | — || — ᴗ ᴗ | — — | — ᴗ ᴗ | — ×",
+  "weekly_plan": [
+    {"week": 1, "sections": "I.1–11", "focus": "The opening: Arma virumque canō. Scansion tutorial on lines 1–4."},
+    {"week": 2, "sections": "I.12–33", "focus": "Juno's anger and the storm. Scansion practice on lines 12, 15, 21."},
+    {"week": 3, "sections": "I.34–63", "focus": "Aeolus releases the winds. Neptune calms the sea."},
+    {"week": 4, "sections": "I.64–101", "focus": "The Trojans land in Libya. Aeneas rallies his men."},
+    {"week": 5, "sections": "I.102–141", "focus": "Venus complains to Jupiter. Jupiter prophesies Roman greatness."},
+    {"week": 6, "sections": "I.142–179", "focus": "Aeneas explores the coast. The temple of Juno at Carthage."},
+    {"week": 7, "sections": "I.180–222", "focus": "Venus appears to Aeneas disguised as a huntress."},
+    {"week": 8, "sections": "I.223–253", "focus": "Venus reveals herself and promises aid."},
+    {"week": 9, "sections": "I.254–296", "focus": "Aeneas and Achates approach Carthage."},
+    {"week": 10, "sections": "I.297–334", "focus": "Dido welcomes the Trojans. The banquet."},
+    {"week": 11, "sections": "I.335–401", "focus": "Aeneas begins to tell his story."},
+    {"week": 12, "sections": "I.402–493", "focus": "The fall of Troy (introduction). Laocoon and the wooden horse."},
+    {"week": 13, "sections": "I.494–578", "focus": "Sinon's lie. The horse enters Troy."},
+    {"week": 14, "sections": "I.579–642", "focus": "The Greeks emerge. The sack begins."},
+    {"week": 15, "sections": "I.643–756", "focus": "Aeneas's escape. The end of Book I."},
+    {"week": 16, "sections": "Review I.1–400", "focus": "Read the first half again. Scan ten lines of your choice."},
+    {"week": 17, "sections": "Review I.401–756", "focus": "Read the second half again. Scan ten more lines."},
+    {"week": 18, "sections": "Capstone prep", "focus": "Sight translation and scansion drills."}
+  ],
+  "recommended_resources": [
+    "Fairclough, H. Rushton (trans.), Vergil: Aeneid (Loeb Classical Library)",
+    "Tarrant, R.J. (ed.), Vergil: Aeneid (Oxford Classical Texts)",
+    "Camps, W.A., An Introduction to Vergil's Aeneid",
+    "Williams, R.D., The Aeneid of Virgil (2 vols., commentary)"
+  ],
+  "capstone_prep": "In the final two weeks, focus on sight translation and scansion. Take random ten-line passages from Book I, translate them, and scan five lines. Practice recognizing dactyls, spondees, caesurae, and enjambment. On the capstone exam you will see one passage from Book I that you have not prepared, and you will be asked to scan two lines from it."
+}

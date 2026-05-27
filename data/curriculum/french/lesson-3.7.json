@@ -1,0 +1,56 @@
+{
+  "id": "3.7",
+  "stage": 3,
+  "title": "The Futur Antérieur",
+  "subtitle": "Future perfect for action completed before a future moment.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Understand the futur antérieur.",
+    "Apply the concepts in reading and writing.",
+    "Practice with authentic French examples."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Main content",
+      "body": "This lesson covers The Futur Antérieur. Future perfect for action completed before a future moment."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer these questions.",
+      "items": [
+        {
+          "prompt": "What is the main concept?",
+          "answer": "The Futur Antérieur"
+        },
+        {
+          "prompt": "Review question 2",
+          "answer": "Review answer 2"
+        }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Practice materials",
+      "instructions": "Read each example.",
+      "words": [
+        {
+          "french": "exemple",
+          "transliteration": null,
+          "gloss": "example",
+          "audio": "/paideia/audio/french/words/example.mp3"
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson continues Stage 3."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts without hesitation.",
+    "credit_minutes": 50
+  }
+}

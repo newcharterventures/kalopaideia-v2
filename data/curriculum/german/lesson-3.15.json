@@ -1,0 +1,37 @@
+{
+  "id": "3.15",
+  "stage": 3,
+  "title": "Reading: Goethe, 'Heidenr\u00f6slein'",
+  "subtitle": "Sah ein Knab ein R\u00f6slein stehn. Folk-song. ~30 words.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Master Reading: Goethe, 'Heidenr\u00f6slein'"
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Lesson overview",
+      "body": "Sah ein Knab ein R\u00f6slein stehn. Folk-song. ~30 words.\n\nFull content with prose openers (real German examples from Goethe/Schiller/Heine), paradigm tables for declensions/conjugations (plain-text aligned), self_check, reading_preview, next_lesson."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test mastery.",
+      "items": [
+        {
+          "prompt": "Core of Reading: Goethe, 'Heidenr\u00f6slein'?",
+          "answer": "Sah ein Knab ein R\u00f6slein stehn. Folk-song. ~30 words."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 3.2 continues Stage 3."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Complete when Reading: Goethe, 'Heidenr\u00f6slein' is mastered.",
+    "credit_minutes": 55
+  }
+}

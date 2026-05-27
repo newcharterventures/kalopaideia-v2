@@ -1,0 +1,46 @@
+{
+  "id": "3.6",
+  "stage": 3,
+  "title": "Eddaic Meter — Fornyrðislag",
+  "subtitle": "Four-stress alliterative lines.",
+  "estimated_minutes": 50,
+  "objectives": ["Scan a line of fornyrðislag.","Recognize the meter in heroic lays."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers Eddaic Meter — Fornyrðislag. Four-stress alliterative lines."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Scan a line of fornyrðislag."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Scan a line of fornyrðislag." },
+        { "prompt": "How do you apply this in practice?", "answer": "Recognize the meter in heroic lays." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "oldnorse": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/oldnorse/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on Eddaic Meter — Fornyrðislag."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in Eddaic Meter — Fornyrðislag to ten random examples.",
+    "credit_minutes": 50
+  }
+}

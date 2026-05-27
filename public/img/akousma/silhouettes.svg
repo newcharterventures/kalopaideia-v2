@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Akousma silhouettes — one icon per canonical book, intended to sit
+  behind the promo card as a faded watermark or off-edge ornament.
+
+  All shapes are pure black `currentColor` so the host page can tint
+  via opacity / fill / filter. Designed to be RECOGNIZABLE at low
+  opacity (5–15%), not photographic. Penguin Classics-style icon
+  silhouettes — the Trojan Horse, the Aeneid's Roman ship, Villon's
+  gallows, Erlkönig's rider, Inferno's Cerberus, Beowulf's dragon,
+  Canterbury's mounted knight.
+
+  No AI-traced reference, no photographic source. Hand-drawn paths,
+  public domain. Per Jae 2026-05-09.
+
+  Each <symbol> is referenced via <use href="#sil-XXX"/> in the
+  Akousma promo card.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+  <defs>
+
+    <!-- ============================================================
+         GREEK · The Iliad — the Trojan Horse, in profile.
+         A wooden horse on wheels with a small ladder hanging from
+         the belly. The defining icon of the poem's denouement.
+         ============================================================ -->
+    <symbol id="sil-iliad" viewBox="0 0 600 400">
+      <g fill="currentColor">
+        <!-- Body of the horse (rounded rectangle) -->
+        <path d="M 120 220
+                 C 120 200, 130 188, 150 188
+                 L 470 188
+                 C 490 188, 500 200, 500 220
+                 L 500 280
+                 C 500 295, 490 305, 470 305
+                 L 150 305
+                 C 130 305, 120 295, 120 280 Z"/>
+        <!-- Neck -->
+        <path d="M 460 188
+                 L 480 130
+                 L 510 100
+                 L 530 100
+                 L 540 120
+                 L 530 150
+                 L 510 175
+                 L 500 188 Z"/>
+        <!-- Head -->
+        <path d="M 540 120
+                 L 555 90
+                 L 555 75
+                 L 540 70
+                 L 525 75
+                 L 530 100 Z"/>
+        <!-- Mane -->
+        <path d="M 480 130 L 470 100 L 480 90 L 490 100 L 500 88 L 510 100" stroke="currentColor" stroke-width="3" fill="none"/>
+        <!-- Eye -->
+        <circle cx="540" cy="92" r="3" fill="var(--paper-warm,#faf3e2)"/>
+        <!-- Mouth (small slit) -->
+        <rect x="546" y="105" width="9" height="2" fill="var(--paper-warm,#faf3e2)"/>
+        <!-- Ear -->
+        <path d="M 525 75 L 528 60 L 535 75 Z"/>
+        <!-- Tail -->
+        <path d="M 120 230 L 90 220 L 70 230 L 75 245 L 95 245 L 115 250 Z"/>
+        <!-- Legs (4) — straight planks since this is the wooden statue -->
+        <rect x="170" y="305" width="22" height="55"/>
+        <rect x="240" y="305" width="22" height="55"/>
+        <rect x="360" y="305" width="22" height="55"/>
+        <rect x="430" y="305" width="22" height="55"/>
+        <!-- Wheels -->
+        <circle cx="181" cy="368" r="22"/>
+        <circle cx="251" cy="368" r="22"/>
+        <circle cx="371" cy="368" r="22"/>
+        <circle cx="441" cy="368" r="22"/>
+        <!-- Wheel hubs (small lighter circle to suggest wheel) -->
+        <circle cx="181" cy="368" r="6" fill="var(--paper-warm,#faf3e2)"/>
+        <circle cx="251" cy="368" r="6" fill="var(--paper-warm,#faf3e2)"/>
+        <circle cx="371" cy="368" r="6" fill="var(--paper-warm,#faf3e2)"/>
+        <circle cx="441" cy="368" r="6" fill="var(--paper-warm,#faf3e2)"/>
+        <!-- Trapdoor under the belly with rope ladder -->
+        <rect x="285" y="305" width="50" height="6"/>
+        <rect x="305" y="311" width="3" height="40"/>
+        <rect x="312" y="311" width="3" height="40"/>
+        <rect x="305" y="320" width="10" height="2"/>
+        <rect x="305" y="332" width="10" height="2"/>
+        <rect x="305" y="344" width="10" height="2"/>
+        <!-- Wood-grain hint (vertical stripes on body) -->
+        <g fill="var(--paper-warm,#faf3e2)">
+          <rect x="170" y="200" width="2" height="100"/>
+          <rect x="220" y="200" width="2" height="100"/>
+          <rect x="290" y="200" width="2" height="100"/>
+          <rect x="360" y="200" width="2" height="100"/>
+          <rect x="430" y="200" width="2" height="100"/>
+        </g>
+      </g>
+    </symbol>
+
+    <!-- ============================================================
+         GREEK · The Odyssey — Odysseus's ship, mast tied, sirens
+         on the rocks. A single-masted ancient Greek galley with
+         a square sail and oars below.
+         ============================================================ -->
+    <symbol id="sil-odyssey" viewBox="0 0 600 400">
+      <g fill="currentColor">
+        <!-- Hull (curved boat shape) -->
+        <path d="M 60 280
+                 C 60 240, 110 230, 180 230
+                 L 460 230
+                 C 510 230, 540 250, 540 280
+                 L 540 295
+                 C 540 320, 510 335, 460 335
+                 L 140 335
+                 C 100 335, 60 315, 60 295 Z"/>
+        <!-- Stern curve (prow up at left) -->
+        <path d="M 60 280 Q 30 220, 50 180 Q 70 200, 80 240 Z"/>
+        <!-- Bow curve (back at right rises slightly) -->
+        <path d="M 540 280 Q 565 240, 555 200 Q 540 220, 535 250 Z"/>
+        <!-- Mast -->
+        <rect x="296" y="40" width="8" height="195"/>
+        <!-- Yard (horizontal) -->
+        <rect x="200" y="60" width="200" height="5"/>
+        <!-- Square sail (filled) -->
+        <path d="M 200 60 L 400 60 L 400 180 L 300 200 L 200 180 Z"/>
+        <!-- Sail stripes for texture -->
+        <g fill="var(--paper-warm,#faf3e2)" opacity="0.5">
+          <rect x="200" y="100" width="200" height="4"/>
+          <rect x="200" y="140" width="200" height="4"/>
+        </g>
+        <!-- Rigging lines -->
+        <line x1="300" y1="40" x2="200" y2="60" stroke="currentColor" stroke-width="2"/>
+        <line x1="300" y1="40" x2="400" y2="60" stroke="currentColor" stroke-width="2"/>
+        <line x1="200" y1="60" x2="170" y2="230" stroke="currentColor" stroke-width="2"/>
+        <line x1="400" y1="60" x2="430" y2="230" stroke="currentColor" stroke-width="2"/>
+        <!-- Eye on the prow (apotropaic, classical) -->
+        <ellipse cx="80" cy="265" rx="14" ry="9" fill="var(--paper-warm,#faf3e2)"/>
+        <circle cx="80" cy="265" r="5"/>
+        <!-- Oars (rows below the hull, alternating) -->
+        <g>
+          <rect x="120" y="290" width="32" height="3" transform="rotate(15 120 290)"/>
+          <rect x="170" y="290" width="32" height="3" transform="rotate(15 170 290)"/>
+          <rect x="220" y="290" width="32" height="3" transform="rotate(15 220 290)"/>
+          <rect x="270" y="290" width="32" height="3" transform="rotate(15 270 290)"/>
+          <rect x="320" y="290" width="32" height="3" transform="rotate(15 320 290)"/>
+          <rect x="370" y="290" width="32" height="3" transform="rotate(15 370 290)"/>
+          <rect x="420" y="290" width="32" height="3" transform="rotate(15 420 290)"/>
+          <rect x="470" y="290" width="32" height="3" transform="rotate(15 470 290)"/>
+        </g>
+        <!-- Wave silhouette below -->
+        <path d="M 0 360 Q 30 350, 60 360 Q 90 370, 120 360 Q 150 350, 180 360 Q 210 370, 240 360 Q 270 350, 300 360 Q 330 370, 360 360 Q 390 350, 420 360 Q 450 370, 480 360 Q 510 350, 540 360 Q 570 370, 600 360 L 600 380 L 0 380 Z"/>
+      </g>
+    </symbol>
+
+    <!-- ============================================================
+         LATIN · The Aeneid — a Roman ship with the SPQR eagle on
+         the prow. Heavier than the Greek galley, Roman warship-style.
+         ============================================================ -->
+    <symbol id="sil-aeneid" viewBox="0 0 600 400">
+      <g fill="currentColor">
+        <!-- Hull (heavier, more rectangular) -->
+        <path d="M 50 290
+                 L 540 290
+                 L 540 320
+                 L 555 320
+                 L 555 340
+                 L 30 340
+                 L 30 320
+                 L 50 320 Z"/>
+        <!-- Mast -->
+        <rect x="296" y="40" width="8" height="250"/>
+        <!-- Yard -->
+        <rect x="180" y="70" width="240" height="5"/>
+        <!-- Square sail with Roman emblem center -->
+        <path d="M 180 70 L 420 70 L 420 200 L 300 220 L 180 200 Z"/>
+        <!-- SPQR letters on sail -->
+        <text x="300" y="150" text-anchor="middle" fill="var(--paper-warm,#faf3e2)" font-family="serif" font-weight="700" font-size="48">SPQR</text>
+        <!-- Roman eagle on the prow (simplified silhouette) -->
+        <g transform="translate(40 250)">
+          <!-- Eagle body -->
+          <path d="M 0 30 C 0 20, 8 15, 18 18 L 28 22 L 35 15 L 42 22 L 50 18 C 60 16, 65 22, 60 32 L 50 40 L 25 40 L 5 38 Z"/>
+          <!-- Eagle's spread wing -->
+          <path d="M -30 25 L -10 18 L 0 22 Q -15 30, -25 40 L -30 35 Z"/>
+        </g>
+        <!-- Rigging -->
+        <line x1="300" y1="40" x2="180" y2="70" stroke="currentColor" stroke-width="2"/>
+        <line x1="300" y1="40" x2="420" y2="70" stroke="currentColor" stroke-width="2"/>
+        <line x1="180" y1="70" x2="160" y2="290" stroke="currentColor" stroke-width="2"/>
+        <line x1="420" y1="70" x2="440" y2="290" stroke="currentColor" stroke-width="2"/>
+        <!-- Oars -->
+        <g>
+          <rect x="80"  y="295" width="35" height="3" transform="rotate(20 80 295)"/>
+          <rect x="140" y="295" width="35" height="3" transform="rotate(20 140 295)"/>
+          <rect x="200" y="295" width="35" height="3" transform="rotate(20 200 295)"/>
+          <rect x="260" y="295" width="35" height="3" transform="rotate(20 260 295)"/>
+          <rect x="320" y="295" width="35" height="3" transform="rotate(20 320 295)"/>
+          <rect x="380" y="295" width="35" height="3" transform="rotate(20 380 295)"/>
+          <rect x="440" y="295" width="35" height="3" transform="rotate(20 440 295)"/>
+        </g>
+      </g>
+    </symbol>
+
+    <!-- ============================================================
+         FRENCH · Villon — gallows with hanged figures, the
+         Ballade des pendus. Memento mori line-art.
+         ============================================================ -->
+    <symbol id="sil-villon" viewBox="0 0 600 400">
+      <g fill="currentColor">
+        <!-- Two posts -->
+        <rect x="100" y="60" width="14" height="320"/>
+        <rect x="486" y="60" width="14" height="320"/>
+        <!-- Crossbeam -->
+        <rect x="80" y="60" width="440" height="14"/>
+        <!-- Diagonal supports (top-corner braces) -->
+        <path d="M 100 75 L 140 95 L 100 105 Z"/>
+        <path d="M 500 75 L 460 95 L 500 105 Z"/>
+        <!-- Three hanging ropes -->
+        <rect x="195" y="74" width="3" height="50"/>
+        <rect x="298" y="74" width="3" height="50"/>
+        <rect x="401" y="74" width="3" height="50"/>
+        <!-- Three hanging figures (silhouette stick figures) -->
+        <g>
+          <!-- Figure 1 -->
+          <circle cx="196" cy="135" r="14"/>
+          <rect x="190" y="148" width="13" height="40"/>
+          <rect x="184" y="155" width="6" height="30" transform="rotate(15 184 170)"/>
+          <rect x="203" y="155" width="6" height="30" transform="rotate(-15 209 170)"/>
+          <rect x="188" y="186" width="5" height="34" transform="rotate(8 188 200)"/>
+          <rect x="200" y="186" width="5" height="34" transform="rotate(-8 200 200)"/>
+        </g>
+        <g>
+          <!-- Figure 2 -->
+          <circle cx="299" cy="135" r="14"/>
+          <rect x="293" y="148" width="13" height="40"/>
+          <rect x="285" y="155" width="6" height="30" transform="rotate(-12 287 170)"/>
+          <rect x="307" y="155" width="6" height="30" transform="rotate(10 307 170)"/>
+          <rect x="291" y="186" width="5" height="34" transform="rotate(-5 291 200)"/>
+          <rect x="303" y="186" width="5" height="34" transform="rotate(5 303 200)"/>
+        </g>
+        <g>
+          <!-- Figure 3 -->
+          <circle cx="402" cy="135" r="14"/>
+          <rect x="396" y="148" width="13" height="40"/>
+          <rect x="388" y="155" width="6" height="30" transform="rotate(20 388 170)"/>
+          <rect x="411" y="155" width="6" height="30" transform="rotate(-15 415 170)"/>
+          <rect x="394" y="186" width="5" height="34" transform="rotate(12 394 200)"/>
+          <rect x="406" y="186" width="5" height="34" transform="rotate(-3 406 200)"/>
+        </g>
+        <!-- Crows on the beam -->
+        <g>
+          <path d="M 150 60 L 145 50 L 155 48 L 165 55 L 158 60 Z"/>
+          <path d="M 350 60 L 345 50 L 355 48 L 365 55 L 358 60 Z"/>
+          <path d="M 450 60 L 445 50 L 455 48 L 465 55 L 458 60 Z"/>
+        </g>
+        <!-- Ground line -->
+        <rect x="0" y="378" width="600" height="3"/>
+      </g>
+    </symbol>
+
+    <!-- ============================================================
+         GERMAN · Erlkönig — horse + cloaked rider with child,
+         galloping in profile. The defining image of the ballad.
+         ============================================================ -->
+    <symbol id="sil-erlkonig" viewBox="0 0 600 400">
+      <g fill="currentColor">
+        <!-- Horse body, mid-gallop -->
+        <path d="M 130 220
+                 C 140 195, 175 188, 215 195
+                 L 380 195
+                 C 425 195, 460 200, 480 215
+                 L 510 230
+                 L 520 245
+                 L 510 260
+                 L 480 270
+                 L 380 268
+                 L 220 268
+                 L 180 280
+                 L 145 280
+                 L 130 270 Z"/>
+        <!-- Neck arched -->
+        <path d="M 480 215
+                 C 495 205, 510 190, 515 175
+                 L 540 165
+                 L 555 175
+                 L 555 195
+                 L 540 210
+                 L 510 225 Z"/>
+        <!-- Head -->
+        <path d="M 555 175
+                 L 575 165
+                 L 580 150
+                 L 575 140
+                 L 560 138
+                 L 545 145
+                 L 545 165 Z"/>
+        <!-- Mane (windswept back) -->
+        <path d="M 510 195 L 490 175 L 500 195 L 478 180 L 490 200 Z"/>
+        <!-- Eye -->
+        <circle cx="565" cy="155" r="2.5" fill="var(--paper-warm,#faf3e2)"/>
+        <!-- Tail (long, flowing back) -->
+        <path d="M 130 240 Q 100 245, 80 260 Q 95 250, 110 250 Q 90 270, 65 285 Q 90 270, 115 260 Q 100 285, 80 305 Q 105 285, 125 270 Z"/>
+        <!-- Legs (gallop pose: 2 stretched forward, 2 back) -->
+        <!-- Front-left, stretched forward -->
+        <path d="M 470 268 L 500 320 L 520 320 L 510 270 Z"/>
+        <!-- Front-right, lifted -->
+        <path d="M 440 270 L 470 305 L 460 308 L 425 275 Z"/>
+        <!-- Back-left, stretched backward -->
+        <path d="M 200 268 L 165 330 L 180 330 L 215 275 Z"/>
+        <!-- Back-right, planted -->
+        <path d="M 245 270 L 240 350 L 260 350 L 265 275 Z"/>
+        <!-- Rider — cloaked figure, child in arms -->
+        <!-- Cloak (large, billowing back) -->
+        <path d="M 280 195
+                 L 295 100
+                 L 310 80
+                 L 340 70
+                 L 380 75
+                 L 410 100
+                 L 425 195
+                 L 380 200
+                 L 305 200 Z"/>
+        <!-- Cloak's wind-swept tail (flying behind) -->
+        <path d="M 280 195 L 220 130 L 200 145 L 250 200 Z"/>
+        <!-- Rider's head -->
+        <ellipse cx="360" cy="55" rx="16" ry="20"/>
+        <!-- Child in arms (smaller bundle in front of rider) -->
+        <ellipse cx="395" cy="135" rx="22" ry="14"/>
+        <!-- Reins -->
+        <line x1="395" y1="120" x2="540" y2="170" stroke="currentColor" stroke-width="3"/>
+        <!-- Trees in background (dark forest hint) -->
+        <g opacity="0.6">
+          <rect x="20" y="150" width="6" height="200"/>
+          <path d="M 23 150 L 5 230 L 41 230 Z"/>
+          <rect x="55" y="170" width="5" height="180"/>
+          <path d="M 57 170 L 42 240 L 72 240 Z"/>
+        </g>
+        <!-- Ground line -->
+        <rect x="0" y="370" width="600" height="3"/>
+      </g>
+    </symbol>
+
+    <!-- ============================================================
+         ITALIAN · Inferno — Cerberus, three-headed hound of Hell.
+         Three dog-heads emerging from a single body.
+         ============================================================ -->
+    <symbol id="sil-inferno" viewBox="0 0 600 400">
+      <g fill="currentColor">
+        <!-- Body (squat, muscular) -->
+        <path d="M 150 240
+                 C 150 215, 180 200, 220 200
+                 L 380 200
+                 C 420 200, 450 215, 450 240
+                 L 450 290
+                 C 450 315, 420 330, 380 330
+                 L 220 330
+                 C 180 330, 150 315, 150 290 Z"/>
+        <!-- Three heads -->
+        <!-- Center head -->
+        <path d="M 270 200
+                 L 260 130
+                 L 280 110
+                 L 320 110
+                 L 340 130
+                 L 330 200 Z"/>
+        <ellipse cx="300" cy="105" rx="35" ry="30"/>
+        <!-- Left head -->
+        <path d="M 200 210
+                 L 175 145
+                 L 175 130
+                 L 200 115
+                 L 230 130
+                 L 240 145
+                 L 230 210 Z"/>
+        <ellipse cx="200" cy="120" rx="28" ry="25"/>
+        <!-- Right head -->
+        <path d="M 370 210
+                 L 360 145
+                 L 370 130
+                 L 400 115
+                 L 425 130
+                 L 425 145
+                 L 400 210 Z"/>
+        <ellipse cx="400" cy="120" rx="28" ry="25"/>
+        <!-- Snouts (small, on each head) -->
+        <path d="M 295 90 L 285 78 L 315 78 L 305 90 Z"/>
+        <path d="M 195 100 L 185 92 L 215 92 L 205 100 Z"/>
+        <path d="M 395 100 L 385 92 L 415 92 L 405 100 Z"/>
+        <!-- Eyes (pairs on each head) - in negative space -->
+        <g fill="var(--paper-warm,#faf3e2)">
+          <circle cx="290" cy="100" r="3"/>
+          <circle cx="310" cy="100" r="3"/>
+          <circle cx="190" cy="115" r="2.5"/>
+          <circle cx="210" cy="115" r="2.5"/>
+          <circle cx="390" cy="115" r="2.5"/>
+          <circle cx="410" cy="115" r="2.5"/>
+        </g>
+        <!-- Bared teeth (zigzag below each snout) -->
+        <g fill="var(--paper-warm,#faf3e2)">
+          <path d="M 288 88 L 290 92 L 292 88 L 294 92 L 296 88 L 298 92 L 300 88 L 302 92 L 304 88 L 306 92 L 308 88 L 310 92 L 312 88"/>
+          <path d="M 188 99 L 190 102 L 192 99 L 194 102 L 196 99 L 198 102 L 200 99 L 202 102 L 204 99 L 206 102 L 208 99 L 210 102 L 212 99"/>
+          <path d="M 388 99 L 390 102 L 392 99 L 394 102 L 396 99 L 398 102 L 400 99 L 402 102 L 404 99 L 406 102 L 408 99 L 410 102 L 412 99"/>
+        </g>
+        <!-- Front legs -->
+        <rect x="200" y="320" width="22" height="60"/>
+        <rect x="380" y="320" width="22" height="60"/>
+        <!-- Back legs (suggested, smaller) -->
+        <rect x="240" y="325" width="18" height="50"/>
+        <rect x="345" y="325" width="18" height="50"/>
+        <!-- Tail (serpentine, lashing) -->
+        <path d="M 450 240 Q 480 230, 510 245 Q 530 260, 540 280 Q 545 300, 535 320 L 520 318 Q 530 305, 522 290 Q 510 280, 495 270 Q 475 265, 458 260 Z"/>
+        <!-- Smoke / hellfire wisps below (dotted ground) -->
+        <g opacity="0.5">
+          <ellipse cx="120" cy="380" rx="40" ry="6"/>
+          <ellipse cx="300" cy="385" rx="80" ry="5"/>
+          <ellipse cx="480" cy="380" rx="40" ry="6"/>
+        </g>
+      </g>
+    </symbol>
+
+    <!-- ============================================================
+         OLDE ENGLISH · Beowulf — Anglo-Saxon dragon (the wyrm
+         Beowulf fights at the end of the poem).
+         ============================================================ -->
+    <symbol id="sil-beowulf" viewBox="0 0 600 400">
+      <g fill="currentColor">
+        <!-- Body, serpentine: head on right, body coiling left -->
+        <!-- Head -->
+        <path d="M 540 200
+                 L 580 180
+                 L 590 165
+                 L 580 145
+                 L 555 140
+                 L 530 150
+                 L 510 175
+                 L 510 200 Z"/>
+        <!-- Eye (negative) -->
+        <circle cx="555" cy="170" r="3" fill="var(--paper-warm,#faf3e2)"/>
+        <!-- Open jaws with fire breath -->
+        <path d="M 580 195 L 595 200 L 580 210 Z"/>
+        <!-- Fire / flame -->
+        <g>
+          <path d="M 595 200 L 570 195 Q 580 170, 600 175 Q 590 195, 580 200 Q 600 205, 590 215 Q 575 215, 595 200 Z" opacity="0.7"/>
+        </g>
+        <!-- Neck S-curve -->
+        <path d="M 510 175
+                 C 460 175, 430 200, 430 230
+                 C 430 260, 470 270, 500 250
+                 L 510 230 Z"/>
+        <!-- Body coil 1 -->
+        <path d="M 430 230
+                 C 380 230, 340 260, 340 290
+                 C 340 320, 380 330, 420 320
+                 L 430 290 Z"/>
+        <!-- Body coil 2 -->
+        <path d="M 340 290
+                 C 290 290, 250 270, 250 240
+                 C 250 210, 290 195, 320 215
+                 L 340 240 Z"/>
+        <!-- Tail tip (serpent-end, curling) -->
+        <path d="M 250 240
+                 C 220 240, 195 220, 200 195
+                 C 205 175, 230 175, 235 195
+                 L 230 215
+                 L 245 220 Z"/>
+        <!-- Wing (bat-like, raised behind) -->
+        <path d="M 500 175
+                 L 470 100
+                 L 460 90
+                 L 470 80
+                 L 500 90
+                 L 530 110
+                 L 550 130
+                 L 520 145 Z"/>
+        <path d="M 480 110 L 470 130 L 485 145 Z" fill="var(--paper-warm,#faf3e2)" opacity="0.5"/>
+        <path d="M 510 105 L 510 135 L 520 145 Z" fill="var(--paper-warm,#faf3e2)" opacity="0.5"/>
+        <!-- Spikes along the back -->
+        <g>
+          <path d="M 480 175 L 478 165 L 482 175 Z"/>
+          <path d="M 440 200 L 437 190 L 443 200 Z"/>
+          <path d="M 395 230 L 392 220 L 398 230 Z"/>
+          <path d="M 350 260 L 347 250 L 353 260 Z"/>
+          <path d="M 305 280 L 302 270 L 308 280 Z"/>
+          <path d="M 270 260 L 267 250 L 273 260 Z"/>
+        </g>
+        <!-- Front claw (one visible) -->
+        <path d="M 460 290
+                 L 450 320
+                 L 440 320
+                 L 445 295
+                 L 450 295 Z"/>
+        <path d="M 440 320 L 435 326 M 450 320 L 450 326 M 460 320 L 462 326" stroke="currentColor" stroke-width="3" fill="none"/>
+        <!-- Ground hint (treasure hoard suggested by small rectangles) -->
+        <g opacity="0.4">
+          <rect x="100" y="370" width="14" height="6"/>
+          <rect x="120" y="368" width="10" height="8"/>
+          <rect x="140" y="370" width="16" height="6"/>
+          <rect x="170" y="365" width="12" height="11"/>
+          <rect x="200" y="370" width="14" height="6"/>
+          <rect x="240" y="365" width="20" height="11"/>
+          <rect x="280" y="370" width="14" height="6"/>
+        </g>
+      </g>
+    </symbol>
+
+    <!-- ============================================================
+         MIDDLE ENGLISH · Canterbury Tales — the Knight on horseback,
+         after the Ellesmere manuscript miniature.
+         ============================================================ -->
+    <symbol id="sil-canterbury" viewBox="0 0 600 400">
+      <g fill="currentColor">
+        <!-- Horse body -->
+        <path d="M 130 235
+                 C 140 215, 175 205, 215 205
+                 L 380 205
+                 C 420 205, 455 215, 470 235
+                 L 470 290
+                 L 145 290
+                 L 130 280 Z"/>
+        <!-- Horse neck -->
+        <path d="M 470 235
+                 C 485 220, 510 200, 525 180
+                 L 535 165
+                 L 540 175
+                 L 530 195
+                 L 515 215
+                 L 495 235 Z"/>
+        <!-- Horse head -->
+        <ellipse cx="540" cy="165" rx="22" ry="14"/>
+        <path d="M 555 160 L 565 145 L 562 165 Z"/>
+        <!-- Eye -->
+        <circle cx="544" cy="158" r="2.5" fill="var(--paper-warm,#faf3e2)"/>
+        <!-- Mane (medieval style — short, bristled) -->
+        <path d="M 490 200 L 490 175 L 498 200 L 500 175 L 508 200 L 510 175 L 518 200 Z"/>
+        <!-- Tail (medieval long) -->
+        <path d="M 130 250 Q 110 265, 90 290 Q 100 275, 115 270 Q 95 295, 80 320 Q 105 295, 120 280 Z"/>
+        <!-- Legs (4, standing) -->
+        <rect x="170" y="290" width="20" height="80"/>
+        <rect x="225" y="290" width="20" height="80"/>
+        <rect x="370" y="290" width="20" height="80"/>
+        <rect x="425" y="290" width="20" height="80"/>
+        <!-- Hooves -->
+        <rect x="167" y="365" width="26" height="8"/>
+        <rect x="222" y="365" width="26" height="8"/>
+        <rect x="367" y="365" width="26" height="8"/>
+        <rect x="422" y="365" width="26" height="8"/>
+        <!-- Knight on horseback — cloaked, helmeted -->
+        <!-- Body (mounted, cloak draped) -->
+        <path d="M 270 200
+                 L 270 100
+                 L 290 80
+                 L 320 75
+                 L 350 80
+                 L 365 100
+                 L 365 200
+                 L 350 210
+                 L 285 210 Z"/>
+        <!-- Helmet (great helm with visor) -->
+        <path d="M 295 80
+                 L 295 50
+                 L 305 35
+                 L 335 35
+                 L 345 50
+                 L 345 80 Z"/>
+        <!-- Visor slit -->
+        <rect x="305" y="55" width="30" height="3" fill="var(--paper-warm,#faf3e2)"/>
+        <!-- Plume on helm -->
+        <path d="M 320 35 L 318 20 L 325 12 L 332 18 L 330 35 Z"/>
+        <!-- Lance (held vertically) -->
+        <rect x="430" y="40" width="3" height="220" transform="rotate(15 430 130)"/>
+        <!-- Lance pennant -->
+        <path d="M 470 65 L 510 70 L 510 95 L 470 90 Z" transform="rotate(15 470 80)"/>
+        <!-- Shield on left arm -->
+        <path d="M 245 130
+                 L 270 120
+                 L 270 180
+                 L 258 200
+                 L 245 180 Z"/>
+        <!-- Shield emblem (cross) -->
+        <g fill="var(--paper-warm,#faf3e2)">
+          <rect x="255" y="135" width="3" height="50"/>
+          <rect x="245" y="155" width="20" height="3"/>
+        </g>
+        <!-- Stirrup -->
+        <ellipse cx="310" cy="225" rx="14" ry="10" fill="none" stroke="currentColor" stroke-width="3"/>
+        <!-- Reins (from helm down to bridle) -->
+        <line x1="345" y1="100" x2="540" y2="155" stroke="currentColor" stroke-width="2.5"/>
+      </g>
+    </symbol>
+
+  </defs>
+</svg>

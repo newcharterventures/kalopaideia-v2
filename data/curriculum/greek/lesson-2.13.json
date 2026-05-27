@@ -1,0 +1,54 @@
+{
+  "id": "2.13",
+  "stage": 2,
+  "title": "Reading: A Day in Athens",
+  "subtitle": "A sustained passage using only Stage 2 grammar and vocabulary.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Read, parse, and translate a three-hundred-word adapted Greek narrative.",
+    "Apply all the grammar learned in Stage 2: articles, nouns, adjectives, cases, εἰμί, present indicative active.",
+    "Demonstrate reading comprehension without glosses.",
+    "Build confidence for Stage 3."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Your first sustained reading",
+      "body": "You have completed the foundational grammar of Greek: the article, the first and second declensions, the five cases, the verb εἰμί, the present indicative active of ω-verbs, and the adjectives. You can now read simple connected prose.\n\nThe passage below is adapted Greek, written to use only the vocabulary and grammar you have learned. Every word is glossed the first time it appears. Read the passage aloud first; then work through it sentence by sentence, parsing and translating.\n\nThis is the capstone of Stage 2. If you can read this passage without major difficulty, you are ready for Stage 3."
+    },
+    {
+      "kind": "prose",
+      "heading": "A Day in Athens (ἡμέρα ἐν Ἀθήναις)",
+      "body": "ἡ ἡμέρα καλή ἐστιν. ὁ ἥλιος λάμπει ἐν τῷ οὐρανῷ. οἱ ἄνθρωποι βαδίζουσιν ἐν τῇ ἀγορᾷ. ἡ ἀγορὰ μεγάλη ἐστίν. ἐν τῇ ἀγορᾷ εἰσὶν ἔμποροι καὶ πολῖται.\n\nὁ Σωκράτης ἐστὶν ἐν τῇ ἀγορᾷ. ὁ Σωκράτης φιλόσοφός ἐστιν. ὁ φιλόσοφος διαλέγεται τοῖς νεανίαις. οἱ νεανίαι ἀκούουσι τοῦ Σωκράτους. ὁ Σωκράτης λέγει περὶ τῆς ἀρετῆς. ἡ ἀρετὴ καλή ἐστιν.\n\nεἷς τῶν νεανιῶν ἐστιν ὁ Πλάτων. ὁ Πλάτων σοφός ἐστιν. ὁ Πλάτων ἐρωτᾷ τὸν Σωκράτη. τί ἐστιν ἡ ἀρετή; ὁ Σωκράτης ἀποκρίνεται. ἡ ἀρετὴ ἐπιστήμη ἐστίν. ὁ σοφὸς ἀνὴρ ἔχει τὴν ἐπιστήμην. ὁ σοφὸς ἀνὴρ ἀγαθός ἐστιν.\n\nοἱ νεανίαι θαυμάζουσι τὸν Σωκράτη. ὁ Σωκράτης διδάσκει τοὺς νεανίας. οἱ νεανίαι μανθάνουσι τὴν σοφίαν. ἡ σοφία καλή ἐστιν. ἡ σοφία ἐστὶν δῶρον τῶν θεῶν.\n\nἡ ἡμέρα τελευτᾷ. ὁ ἥλιος καταβαίνει. οἱ ἄνθρωποι ἀπέρχονται ἐκ τῆς ἀγορᾶς. ὁ Σωκράτης καὶ οἱ νεανίαι πορεύονται οἴκαδε. ἡ ἡμέρα ἀγαθὴ ἦν.\n\nGlossary (first appearance):\nἡ ἡμέρα — day\nκαλή — beautiful\nὁ ἥλιος — sun\nλάμπει — shines (3rd sg. present of λάμπω)\nἐν (+ dat.) — in\nὁ οὐρανός — sky\nβαδίζουσιν — walk (3rd pl. present of βαδίζω)\nἡ ἀγορά — marketplace\nεἰσίν — are (3rd pl. of εἰμί)\nὁ ἔμπορος — merchant\nὁ πολίτης — citizen\nφιλόσοφος — philosopher\nδιαλέγεται — converses (3rd sg. middle, you'll learn this in Stage 3; for now: 'talks with')\nοἱ νεανίαι — the young men (nom. pl.)\nἀκούουσι (+ gen.) — listen to\nλέγει — says (3rd sg. present of λέγω)\nπερί (+ gen.) — about, concerning\nἡ ἀρετή — excellence, virtue\nεἷς — one (masculine nom. sg.)\nὁ Πλάτων — Plato\nσοφός — wise\nἐρωτᾷ — asks (3rd sg. present of ἐρωτάω, contracted)\nτί — what?\nἀποκρίνεται — answers (3rd sg. middle)\nἡ ἐπιστήμη — knowledge\nἔχει — has (3rd sg. present of ἔχω)\nθαυμάζουσι — admire (3rd pl. present of θαυμάζω)\nδιδάσκει — teaches (3rd sg. present of διδάσκω)\nμανθάνουσι — learn (3rd pl. present of μανθάνω)\nἡ σοφία — wisdom\nτὸ δῶρον — gift\nοἱ θεοί — the gods\nτελευτᾷ — ends (3rd sg. present of τελευτάω, contracted)\nκαταβαίνει — goes down (3rd sg. present of καταβαίνω)\nἀπέρχονται — go away (3rd pl. middle)\nἐκ (+ gen.) — from, out of\nπορεύονται — journey, go (3rd pl. middle)\nοἴκαδε — homeward (adverb)\nἦν — was (3rd sg. imperfect of εἰμί; you'll learn this in Stage 3)"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer these questions about the passage without looking back.",
+      "items": [
+        { "prompt": "Where is Socrates?", "answer": "In the agora (marketplace)." },
+        { "prompt": "Who is Socrates talking to?", "answer": "The young men (νεανίαι)." },
+        { "prompt": "What is Socrates talking about?", "answer": "Excellence/virtue (ἀρετή)." },
+        { "prompt": "Who asks Socrates a question?", "answer": "Plato." },
+        { "prompt": "What does Socrates say virtue is?", "answer": "Knowledge (ἐπιστήμη)." },
+        { "prompt": "What do the young men do?", "answer": "They admire Socrates and learn wisdom." },
+        { "prompt": "What happens at the end of the passage?", "answer": "The day ends, the sun goes down, and everyone goes home." },
+        { "prompt": "Can you read this passage aloud with accurate pronunciation?", "answer": "(Self-assessed; read it aloud again to check.)" }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Stage 2 complete",
+      "body": "You have completed Stage 2. You can decline nouns and adjectives, conjugate the present indicative active, and read simple connected Greek prose. You understand the five cases and the two verb voices you have learned so far.\n\nStage 3 introduces the middle and passive voices, the third declension, the imperfect, the future, the aorist, and the participle. The grammar becomes more complex, but the principles remain the same. You are ready."
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next: Stage 3",
+      "body": "Lesson 3.1 introduces the middle voice: action for or upon oneself. λύομαι means 'I loose for myself' or 'I free myself'. The middle uses a different set of endings from the active, and it opens up a whole new dimension of Greek expression."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can read the entire passage aloud without stumbling and can translate at least 90% of it without consulting the glossary.",
+    "credit_minutes": 60
+  }
+}

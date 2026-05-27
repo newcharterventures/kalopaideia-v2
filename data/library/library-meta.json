@@ -1,0 +1,135 @@
+{
+  "_comment": "Per Jae 2026-05-12: cover + blurb metadata for every library work. Single source of truth — language.js reads it via /api/library/:lang. STANDING RULES (Jae 2026-05-12): every cover must be a PD image that passes ALL of these tests: (1) painterly / museum-poster quality (no archaeological photos, manuscript folios, mosaic fragments, tourist site snapshots, coins, bronze tablets); (2) NOT scary / ghoulish (no monsters, skeletons, harpies, demons, corpses, body horror); (3) NOT nightmarish (no Bosch-grade scenes; the picture should not repel a paying subscriber); (4) NOT dark-hued (no gloomy palettes; full color, bright); (5) symmetrical / classical composition (Raphael-balanced, not chaotic); (6) full color (no black-and-white engravings on their own); (7) AI images forbidden; PD only. See ~/.openclaw/workspace/skills/paideia-covers/SKILL.md for the full editorial guide.",
+  "iliad-book-1": {
+    "cover_src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Jean_Auguste_Dominique_Ingres%2C_Apotheosis_of_Homer%2C_1827.jpg/1280px-Jean_Auguste_Dominique_Ingres%2C_Apotheosis_of_Homer%2C_1827.jpg",
+    "cover_alt": "The Apotheosis of Homer — Ingres, 1827",
+    "cover_credits": "The Apotheosis of Homer by Jean-Auguste-Dominique Ingres, 1827. Louvre, Paris (PD).",
+    "blurb": "The opening of Western literature. Agamemnon takes Achilles' captive Briseis; Achilles withdraws from the war and prays for the Greeks to be destroyed. Read line by line in Homeric Greek with Samuel Butler's English prose alongside."
+  },
+  "iliad-book-2": {
+    "cover_src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Frederic-Lord-Leighton-Greek-girls-picking-up-pebbles-by-the-sea-1871.jpg/1280px-Frederic-Lord-Leighton-Greek-girls-picking-up-pebbles-by-the-sea-1871.jpg",
+    "cover_alt": "Greek Girls Picking Up Pebbles by the Sea — Frederic, Lord Leighton, 1871",
+    "cover_credits": "Greek Girls Picking Up Pebbles by the Sea by Frederic, Lord Leighton, 1871 (PD).",
+    "blurb": "Zeus sends a false dream to Agamemnon; the assembly nearly mutinies; Odysseus restores order; then the Catalogue of Ships — the ancient world's roll call of the Achaean expedition, the longest single list in Western poetry."
+  },
+  "iliad-proem": {
+    "cover_src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Anton_Raphael_Mengs_-_Parnassus_%28FondazioneTorlonia%29.jpg/1280px-Anton_Raphael_Mengs_-_Parnassus_%28FondazioneTorlonia%29.jpg",
+    "cover_alt": "Parnassus — Anton Raphael Mengs, 1761",
+    "cover_credits": "Parnassus by Anton Raphael Mengs, 1761. Fondazione Torlonia, Rome (PD).",
+    "blurb": "The first fourteen lines of the Iliad and the quarrel that breaks open. Agamemnon refuses the priest Chryses, the god sends plague, and Achilles calls the assembly. The short way into the Iliad if you've never read a hexameter aloud."
+  },
+  "odyssey-book-1": {
+    "cover_src": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Pinturicchio%2C_Return_of_Odysseus.jpg",
+    "cover_alt": "The Return of Odysseus — Pinturicchio, 1509",
+    "cover_credits": "The Return of Odysseus by Pinturicchio (Bernardino di Betto), 1509. National Gallery, London (PD).",
+    "blurb": "Athena pleads with Zeus to release Odysseus from Calypso's island. On Ithaca, Telemachus comes of age — the suitors devour his father's house and he resolves, at last, to act. The Odyssey's domestic opening, before any sea is crossed."
+  },
+  "republic-book-1": {
+    "cover_src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg/1280px-%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg",
+    "cover_alt": "The School of Athens — Raphael, 1509–1511",
+    "cover_credits": "The School of Athens by Raphael, 1509–1511. Stanza della Segnatura, Vatican (PD).",
+    "blurb": "Socrates goes down to the Piraeus, falls in with Polemarchus and Thrasymachus, and is forced into the conversation that will become the Republic. The hardest of the early dialogues — what is justice? — fought out over a single evening."
+  },
+  "sappho-1": {
+    "cover_src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Godward-In_the_Days_of_Sappho-1904.jpg/1280px-Godward-In_the_Days_of_Sappho-1904.jpg",
+    "cover_alt": "In the Days of Sappho — John William Godward, 1904",
+    "cover_credits": "In the Days of Sappho by John William Godward, 1904. J. Paul Getty Museum, Los Angeles (PD).",
+    "blurb": "The only complete poem of Sappho that survives. She summons Aphrodite to come to her — again — in the longest extant Sapphic stanza we have. Read in the Aeolic Greek with Henry Wharton's 1885 English alongside."
+  },
+  "aeneid-book-1": {
+    "cover_src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/The_Roses_of_Heliogabalus.jpg/1280px-The_Roses_of_Heliogabalus.jpg",
+    "cover_alt": "The Roses of Heliogabalus — Lawrence Alma-Tadema, 1888",
+    "cover_credits": "The Roses of Heliogabalus by Sir Lawrence Alma-Tadema, 1888. Private collection / Pérez Simón Collection, Mexico City (PD).",
+    "blurb": "Juno blows the Trojan fleet onto the African coast; Venus disguises herself as a huntress to guide Aeneas to Carthage; Dido offers shelter. The first book of the Aeneid, in Dryden's English heroic couplets alongside the Latin."
+  },
+  "aeneid-proem": {
+    "cover_src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Alma-Tadema_Unconscious_Rivals_1893.jpg/1280px-Alma-Tadema_Unconscious_Rivals_1893.jpg",
+    "cover_alt": "Unconscious Rivals — Lawrence Alma-Tadema, 1893",
+    "cover_credits": "Unconscious Rivals by Sir Lawrence Alma-Tadema, 1893. Bristol Museum & Art Gallery (PD).",
+    "blurb": "Arma virumque cano. The opening invocation and statement of the poem's argument — a hero, a sea, a city, a goddess's wrath. The shortest path into Latin epic if you want to hear what hexameter sounds like before committing to a full book."
+  },
+  "catullus-85": {
+    "cover_src": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Catullus_Reading_His_Poems_At_Lesbia%27s_House%2C_1870.jpg",
+    "cover_alt": "Catullus Reading His Poems At Lesbia's House — Alma-Tadema, 1870",
+    "cover_credits": "Catullus Reading His Poems At Lesbia's House by Sir Lawrence Alma-Tadema, 1870 (PD).",
+    "blurb": "Two lines. Odi et amo. I hate and I love — and Catullus is on the rack for it. The most concentrated poem in Latin, and arguably the most concentrated about love ever written in any language."
+  },
+  "cicero-catilinam-1": {
+    "cover_src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Lawrence_Alma-Tadema_A_Roman_Art_Lover_1.jpg/1280px-Lawrence_Alma-Tadema_A_Roman_Art_Lover_1.jpg",
+    "cover_alt": "An Audience at Agrippa's — Lawrence Alma-Tadema, 1875",
+    "cover_credits": "An Audience at Agrippa's by Sir Lawrence Alma-Tadema, 1875. Dick Institute, Kilmarnock (PD).",
+    "blurb": "Quo usque tandem abutere, Catilina, patientia nostra? November 8, 63 BCE. Cicero rises in the temple of Jupiter Stator, sees Catiline in the senate, and begins one of the most famous opening sentences in any language."
+  },
+  "ronsard-mignonne": {
+    "cover_src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Eugene_Henri_Cauchois_Stillleben_mit_Rosen_in_einer_Schale.jpg/1280px-Eugene_Henri_Cauchois_Stillleben_mit_Rosen_in_einer_Schale.jpg",
+    "cover_alt": "Still Life with Roses in a Bowl — Eugène Henri Cauchois",
+    "cover_credits": "Still Life with Roses in a Bowl by Eugène Henri Cauchois (1850–1911) (PD).",
+    "blurb": "Mignonne, allons voir si la rose. A 1553 carpe-diem ode — a young man, a young woman, a single rose at the end of an afternoon. The first stanza, in the original Middle French with a 19th-c. English verse translation alongside."
+  },
+  "villon-ballade-pendus": {
+    "cover_src": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Pierre_Auguste_Renoir_-_Roses_and_Jasmine_in_a_Delft_Vase_%2815740534374%29.jpg",
+    "cover_alt": "Roses and Jasmine in a Delft Vase — Pierre-Auguste Renoir",
+    "cover_credits": "Roses and Jasmine in a Delft Vase by Pierre-Auguste Renoir (1841–1919) (PD).",
+    "blurb": "Frères humains qui après nous vivez. Villon's Epitaph — a poem written under sentence of death and spoken by six hanged men to passersby. Read in the original Middle French with John Payne's 1878 English translation alongside."
+  },
+  "goethe-erlkoenig": {
+    "cover_src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Flaming_June%2C_by_Frederic_Lord_Leighton_%281830-1896%29.jpg/1280px-Flaming_June%2C_by_Frederic_Lord_Leighton_%281830-1896%29.jpg",
+    "cover_alt": "Flaming June — Frederic, Lord Leighton, 1895",
+    "cover_credits": "Flaming June by Frederic, Lord Leighton, 1895. Museo de Arte de Ponce, Puerto Rico (PD).",
+    "blurb": "A father rides through the night with his sick child. The Erlking calls. The child hears him; the father does not. Goethe's 1782 ballad, in the original German with Edgar Alfred Bowring's 1853 English translation alongside."
+  },
+  "heine-lorelei": {
+    "cover_src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Hans_Thoma_-_Sommer_-_Google_Art_Project.jpg/1280px-Hans_Thoma_-_Sommer_-_Google_Art_Project.jpg",
+    "cover_alt": "Sommer (Summer) — Hans Thoma, 1872",
+    "cover_credits": "Sommer (Summer) by Hans Thoma, 1872. Alte Nationalgalerie, Berlin (PD).",
+    "blurb": "Ich weiß nicht, was soll es bedeuten. Heine's 1824 song about a Rhine maiden who lures sailors to wreck on the rocks. The first two stanzas, in German with a 19th-c. English translation alongside."
+  },
+  "dante-inferno-1": {
+    "cover_src": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Henry_Holiday_-_Dante_meets_Beatrice.jpg",
+    "cover_alt": "Dante and Beatrice — Henry Holiday, 1883",
+    "cover_credits": "Dante and Beatrice by Henry Holiday, 1883. Walker Art Gallery, Liverpool (PD).",
+    "blurb": "Nel mezzo del cammin di nostra vita. Dante, at thirty-five, finds himself lost in a dark wood. A leopard, a lion, a she-wolf block the path; Virgil appears. The opening canto of the Divine Comedy, in Italian with Longfellow's 1867 English alongside."
+  },
+  "beowulf-prologue": {
+    "cover_src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Edmund_blair_leighton_accolade.jpg/1280px-Edmund_blair_leighton_accolade.jpg",
+    "cover_alt": "The Accolade — Edmund Blair Leighton, 1901",
+    "cover_credits": "The Accolade by Edmund Blair Leighton, 1901 (PD).",
+    "blurb": "Hwæt! We Gardena in geardagum… The bardic call to silence that opens Beowulf, then the praise-song of Scyld Scefing, the foundling king. The Old English prologue, with Francis Gummere's 1910 verse translation alongside."
+  },
+  "wanderer": {
+    "cover_src": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Music_Lesson_by_Lord_Frederic_Leighton.jpg",
+    "cover_alt": "The Music Lesson — Frederic, Lord Leighton, 1877",
+    "cover_credits": "The Music Lesson by Frederic, Lord Leighton, 1877. Guildhall Art Gallery, London (PD).",
+    "blurb": "An exile speaks to the cold sea after his lord is dead and his hall burned. One of the oldest elegies in English, recovered from the Exeter Book. In Old English with a 19th-c. English translation alongside."
+  },
+  "caedmons-hymn": {
+    "cover_src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Alma_Tadema_Spring.jpg/1280px-Alma_Tadema_Spring.jpg",
+    "cover_alt": "Spring — Lawrence Alma-Tadema, 1894",
+    "cover_credits": "Spring by Sir Lawrence Alma-Tadema, 1894. J. Paul Getty Museum, Los Angeles (PD).",
+    "blurb": "The earliest English poem we have. A cowherd at Whitby Abbey, unable to sing in the hall after dinner, dreams an angel commanding him to sing of Creation, wakes, and speaks these nine lines. Recorded by Bede c. 731."
+  },
+  "canterbury-prologue": {
+    "cover_src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Ford_Madox_Brown_-_Chaucer_at_the_court_of_Edward_III_-_Google_Art_Project.jpg/1280px-Ford_Madox_Brown_-_Chaucer_at_the_court_of_Edward_III_-_Google_Art_Project.jpg",
+    "cover_alt": "Chaucer at the Court of Edward III — Ford Madox Brown, 1847–1851",
+    "cover_credits": "Chaucer at the Court of Edward III by Ford Madox Brown, 1847–1851. Art Gallery of New South Wales (PD).",
+    "blurb": "Whan that Aprille with his shoures soote… The opening 42 lines of the General Prologue — April, the pilgrims gathering at the Tabard Inn in Southwark, the whole company on its way to Canterbury. Middle English with Skeat's 1894 modernization alongside."
+  },
+  "gaulish-epigraphy-primer": {
+    "cover_src": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Lawrence_Alma-Tadema_%281836-1912%29_-_Pleading_-_638_-_Guildhall_Art_Gallery.jpg",
+    "cover_alt": "Pleading — Lawrence Alma-Tadema, 1876",
+    "cover_credits": "Pleading by Sir Lawrence Alma-Tadema, 1876. Guildhall Art Gallery, London (PD).",
+    "blurb": "There is no continuous Gaulish literature — the language was extinguished by Latin around 600 CE. What survives is inscriptions: votive tablets, calendars, coins. This primer walks through twelve of them in the Gaulish (mostly in Greek and Latin script), with full epigraphic and grammatical notes."
+  },
+  "pwyll-opening": {
+    "cover_src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/John_William_Waterhouse_-_Echo_and_Narcissus_-_Google_Art_Project.jpg/1280px-John_William_Waterhouse_-_Echo_and_Narcissus_-_Google_Art_Project.jpg",
+    "cover_alt": "Echo and Narcissus — John William Waterhouse, 1903",
+    "cover_credits": "Echo and Narcissus by John William Waterhouse, 1903. Walker Art Gallery, Liverpool (PD).",
+    "blurb": "Pwyll Prince of Dyfed rides out to hunt and meets a stranger king's hounds at a kill — and through that chance encounter is bound to spend a year and a day in Annwn, the otherworld. The opening of the First Branch of the Mabinogi, in Middle Welsh with Lady Charlotte Guest's 1849 translation alongside."
+  },
+  "havamal-opening": {
+    "cover_src": "https://upload.wikimedia.org/wikipedia/commons/6/68/Hans_Andreas_Dahl_-_Norwegian_Fjord_-_1916.26.1_-_Reading_Public_Museum.jpg",
+    "cover_alt": "Norwegian Fjord — Hans Dahl, 1916",
+    "cover_credits": "Norwegian Fjord by Hans Andreas Dahl, 1916. Reading Public Museum, Pennsylvania, 1916.26.1 (PD).",
+    "blurb": "Sayings of the High One — Odin's plain counsel for a man entering a stranger's hall. Watch your back at every doorway; trust the friend who keeps his word; do not boast of your wisdom. Stanzas 1–10, in Old Norse with Henry Adams Bellows' 1923 English translation alongside."
+  }
+}

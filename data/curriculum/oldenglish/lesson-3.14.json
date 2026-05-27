@@ -1,0 +1,43 @@
+{
+  "id": "3.14",
+  "stage": 3,
+  "title": "Sight Reading Practice",
+  "subtitle": "Five passages with glosses, no grammatical notes.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Master Sight Reading Practice.",
+    "Read and translate authentic Old English poetry and prose.",
+    "Prepare for the capstone examination."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "Five short passages (twenty to thirty words each) from The Wanderer, The Seafarer, and Bede's Ecclesiastical History, with glosses but no grammatical notes. The student parses and translates at sight. This is the final test of Stage 3 competence."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "Sight Reading Practice"
+        },
+        {
+          "prompt": "Can you translate the example passage?",
+          "answer": "Work through it word by word with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson or take the capstone examination."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply Sight Reading Practice to reading.",
+    "credit_minutes": 60
+  }
+}

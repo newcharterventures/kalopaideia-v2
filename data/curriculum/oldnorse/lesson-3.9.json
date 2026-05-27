@@ -1,0 +1,46 @@
+{
+  "id": "3.9",
+  "stage": 3,
+  "title": "Hávamál, Stanzas 1–3",
+  "subtitle": "Gáttir allar, áðr gangi fram...",
+  "estimated_minutes": 60,
+  "objectives": ["Read and translate the opening stanzas of Hávamál.","Close reading and scansion."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers Hávamál, Stanzas 1–3. Gáttir allar, áðr gangi fram..."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Read and translate the opening stanzas of Hávamál."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Read and translate the opening stanzas of Hávamál." },
+        { "prompt": "How do you apply this in practice?", "answer": "Close reading and scansion." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "oldnorse": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/oldnorse/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on Hávamál, Stanzas 1–3."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in Hávamál, Stanzas 1–3 to ten random examples.",
+    "credit_minutes": 60
+  }
+}

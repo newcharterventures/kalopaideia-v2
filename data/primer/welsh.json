@@ -1,0 +1,328 @@
+{
+  "overview": "Welsh (Cymraeg) is a Celtic language of the Brythonic branch, spoken in Wales and documented from the sixth century onward. The Middle Welsh period (c. 1100–1400) produced the Mabinogion and court poetry of the Gogynfeirdd; Modern Literary Welsh (fifteenth century to present) encompasses the cynghanedd masters Dafydd ap Gwilym and Tudur Aled, as well as twentieth-century poets and prose writers such as Saunders Lewis, Kate Roberts, and R. S. Thomas. Study of Welsh offers access to a continuous literary tradition of thirteen centuries, a unique prosodic system, and a living minority language with constitutional status in the United Kingdom.",
+  "alphabet": [
+    {
+      "char": "a",
+      "name": "a",
+      "ipa": "[a, aː]",
+      "approximation": "like a in father (short or long)",
+      "notes": "Circumflex indicates length: â [aː]."
+    },
+    {
+      "char": "b",
+      "name": "bi",
+      "ipa": "[b]",
+      "approximation": "like b in bat",
+      "notes": ""
+    },
+    {
+      "char": "c",
+      "name": "ec",
+      "ipa": "[k]",
+      "approximation": "like c in cat (always hard)",
+      "notes": "Never soft as in city. Before all vowels = [k]."
+    },
+    {
+      "char": "ch",
+      "name": "èch",
+      "ipa": "[χ]",
+      "approximation": "like ch in Scottish loch or German Bach",
+      "notes": "Digraph counted as single letter. Voiceless velar fricative."
+    },
+    {
+      "char": "d",
+      "name": "di",
+      "ipa": "[d]",
+      "approximation": "like d in dog",
+      "notes": ""
+    },
+    {
+      "char": "dd",
+      "name": "èdd",
+      "ipa": "[ð]",
+      "approximation": "like th in this or breathe",
+      "notes": "Digraph counted as single letter. Voiced dental fricative."
+    },
+    {
+      "char": "e",
+      "name": "e",
+      "ipa": "[ɛ, eː]",
+      "approximation": "like e in bet (short) or é in café (long)",
+      "notes": "Circumflex indicates length: ê [eː]."
+    },
+    {
+      "char": "f",
+      "name": "èff",
+      "ipa": "[v]",
+      "approximation": "like v in vat",
+      "notes": "Single f is always [v]. Lenition of b and m."
+    },
+    {
+      "char": "ff",
+      "name": "èff",
+      "ipa": "[f]",
+      "approximation": "like f in fat",
+      "notes": "Digraph counted as single letter. Voiceless labiodental fricative."
+    },
+    {
+      "char": "g",
+      "name": "èg",
+      "ipa": "[ɡ]",
+      "approximation": "like g in get (always hard)",
+      "notes": "Never soft as in gem. Before all vowels = [ɡ]."
+    },
+    {
+      "char": "ng",
+      "name": "èng",
+      "ipa": "[ŋ]",
+      "approximation": "like ng in sing",
+      "notes": "Digraph counted as single letter. Velar nasal. Also the nasal mutation of c."
+    },
+    {
+      "char": "h",
+      "name": "hâ",
+      "ipa": "[h]",
+      "approximation": "like h in hat",
+      "notes": "Occurs initially in aspirate mutation and in borrowings."
+    },
+    {
+      "char": "i",
+      "name": "i",
+      "ipa": "[ɪ, iː]",
+      "approximation": "like i in sit (short) or ee in see (long)",
+      "notes": "Circumflex indicates length: î [iː]. Semivowel [j] before vowels."
+    },
+    {
+      "char": "j",
+      "name": "jot",
+      "ipa": "[dʒ]",
+      "approximation": "like j in judge",
+      "notes": "Found only in borrowings from English (e.g., jins, jam)."
+    },
+    {
+      "char": "l",
+      "name": "èl",
+      "ipa": "[l]",
+      "approximation": "like l in let",
+      "notes": ""
+    },
+    {
+      "char": "ll",
+      "name": "èll",
+      "ipa": "[ɬ]",
+      "approximation": "voiceless l; put tongue in position for l and blow",
+      "notes": "Digraph counted as single letter. Voiceless alveolar lateral fricative. No English equivalent."
+    },
+    {
+      "char": "m",
+      "name": "èm",
+      "ipa": "[m]",
+      "approximation": "like m in mat",
+      "notes": ""
+    },
+    {
+      "char": "n",
+      "name": "èn",
+      "ipa": "[n]",
+      "approximation": "like n in not",
+      "notes": ""
+    },
+    {
+      "char": "o",
+      "name": "o",
+      "ipa": "[ɔ, oː]",
+      "approximation": "like o in got (short) or aw in saw (long)",
+      "notes": "Circumflex indicates length: ô [oː]."
+    },
+    {
+      "char": "p",
+      "name": "pi",
+      "ipa": "[p]",
+      "approximation": "like p in pat",
+      "notes": ""
+    },
+    {
+      "char": "ph",
+      "name": "ffi",
+      "ipa": "[f]",
+      "approximation": "like f in fat",
+      "notes": "Digraph counted as single letter. Aspirate mutation of p."
+    },
+    {
+      "char": "r",
+      "name": "èr",
+      "ipa": "[r]",
+      "approximation": "trilled r, as in Spanish perro",
+      "notes": "Alveolar trill or tap. Always pronounced, never silent."
+    },
+    {
+      "char": "rh",
+      "name": "rhi",
+      "ipa": "[r̥]",
+      "approximation": "voiceless r; say r while whispering",
+      "notes": "Digraph counted as single letter. Voiceless alveolar trill. Aspirate mutation of r."
+    },
+    {
+      "char": "s",
+      "name": "ès",
+      "ipa": "[s]",
+      "approximation": "like s in sit",
+      "notes": "Always voiceless [s], never [z]."
+    },
+    {
+      "char": "t",
+      "name": "ti",
+      "ipa": "[t]",
+      "approximation": "like t in top",
+      "notes": ""
+    },
+    {
+      "char": "th",
+      "name": "thèta",
+      "ipa": "[θ]",
+      "approximation": "like th in thing or thin",
+      "notes": "Digraph counted as single letter. Voiceless dental fricative. Aspirate mutation of t."
+    },
+    {
+      "char": "u",
+      "name": "u",
+      "ipa": "[[ɨ, ɨː] (North), [ɪ, iː] (South)]",
+      "approximation": "like i in sit (South) or a neutral vowel (North)",
+      "notes": "Regional variation. Circumflex indicates length: û. Middle Welsh distinguished u from i."
+    },
+    {
+      "char": "w",
+      "name": "w",
+      "ipa": "[ʊ, uː]",
+      "approximation": "like oo in book (short) or oo in food (long)",
+      "notes": "Full vowel, not semivowel. Circumflex indicates length: ŵ [uː]. Also semivowel [w] before vowels."
+    },
+    {
+      "char": "y",
+      "name": "y",
+      "ipa": "[[ə] (obscure), [ɨ, ɨː] or [ɪ, iː] (clear)]",
+      "approximation": "like a in about (obscure) or i in sit (clear)",
+      "notes": "Full vowel. Two values: obscure [ə] in non-final syllables; clear [ɨ/ɪ] in final syllables and monosyllables. Circumflex indicates length: ŷ."
+    }
+  ],
+  "pronunciation_notes": [
+    "The digraphs ch, dd, ff, ng, ll, ph, rh, th count as single letters and occupy separate dictionary positions.",
+    "Welsh is phonetic: words are pronounced as spelled. Stress falls on the penultimate (next-to-last) syllable in native words.",
+    "The letters w and y are vowels with full syllabic status, not glides. W = [ʊ/uː]; y has two values (obscure [ə] and clear [ɨ/ɪ]).",
+    "Ll [ɬ] has no English equivalent; place the tongue as for l and blow air voicelessly around the sides of the tongue.",
+    "Initial consonants undergo mutation (lenition, nasalization, aspiration, or mixed) depending on grammatical context. The same word may begin with different consonants.",
+    "R is always trilled; rh is the voiceless trill. Double consonants are not lengthened; they represent single sounds (ff = [f], not [ff])."
+  ],
+  "grammar": {
+    "noun_system": "Welsh nouns have no case inflection. Gender is grammatical (masculine or feminine) and determines the form of the definite article (y, yr, 'r) and triggers soft mutation of feminine singular nouns after the article. Number is marked by suffixes (plurals in -au, -iau, -oedd, -on, -i, -ydd) or by internal vowel change (ablaut); some nouns are collective with singulative suffixes. Middle Welsh preserved vestigial dative forms in prepositions but lacked a full case system even then.",
+    "declensions": "Welsh has no declensional paradigm in the classical sense. Nouns are marked for number (singular/plural) and gender (masculine/feminine), but not for case. The following illustrates the typical plural formation patterns, which must be learned for each noun: **Masculine noun**: *bachgen* 'boy' (sg.) → *bechgyn* (pl.) by vowel change; **Feminine noun**: *cath* 'cat' (sg.) → *cathod* (pl.) by suffix -od. The definite article triggers soft mutation of feminine singular nouns: *cath* → *y gath* 'the cat'; masculine nouns remain unmutated: *bachgen* → *y bachgen* 'the boy'. Genitive relationships are expressed by simple juxtaposition (head noun + possessor): *tŷ'r dyn* 'the man's house' (house-the man), *pen y ci* 'the dog's head' (head the dog).",
+    "verb_system": "Welsh has two verb systems: the periphrastic (analytic) and the synthetic (inflected). The periphrastic system dominates spoken and most written Welsh, using the auxiliary *bod* 'to be' plus the verbal noun: *mae e'n mynd* 'he goes/is going' (is he in going). The synthetic system survives in formal literary registers and consists of personal endings on the verb stem, marking person, number, tense, and mood. The tenses of the synthetic conjugation include present, imperfect, preterite (past), pluperfect, future, conditional, and subjunctive. Middle Welsh used the synthetic system extensively; Modern Welsh largely restricts it to *bod* itself and to literary style.",
+    "conjugations": [
+      {
+        "name": "bod 'to be' (irregular, periphrastic present/future)",
+        "description": "The verb bod is irregular and suppletive. The present tense uses forms from multiple roots (bod-, oes-, mae-, yw-). The periphrastic present with yn + verbal noun is the normal construction for other verbs. Future forms (byddaf, etc.) also serve as habitual present in some dialects.",
+        "paradigm": {
+          "present_indicative": {
+            "1s": "rydw i / ydw i",
+            "2s": "rwyt ti / wyt ti",
+            "3sm": "mae e",
+            "3sf": "mae hi",
+            "1pl": "rydyn ni / ydyn ni",
+            "2pl": "rydych chi / ydych chi",
+            "3pl": "maen nhw"
+          },
+          "imperfect": {
+            "1s": "roeddwn i",
+            "2s": "roeddet ti",
+            "3s": "roedd e/hi",
+            "1pl": "roedden ni",
+            "2pl": "roeddech chi",
+            "3pl": "roedden nhw"
+          },
+          "future": {
+            "1s": "byddaf",
+            "2s": "byddi",
+            "3s": "bydd",
+            "1pl": "byddwn",
+            "2pl": "byddwch",
+            "3pl": "byddant"
+          }
+        }
+      },
+      {
+        "name": "canu 'to sing' (regular verb, synthetic forms)",
+        "description": "Regular verbs in the synthetic conjugation take personal endings on the stem. The present tense is rare in Modern Welsh outside literary contexts; the preterite (past) is more common. The imperfect is marked by the infix -e- and personal endings. Middle Welsh used these forms routinely; Modern Literary Welsh preserves them in formal writing.",
+        "paradigm": {
+          "present": {
+            "1s": "canaf",
+            "2s": "ceni",
+            "3s": "cân",
+            "1pl": "canwn",
+            "2pl": "cenwch",
+            "3pl": "canant"
+          },
+          "imperfect": {
+            "1s": "canwn",
+            "2s": "canit",
+            "3s": "canai",
+            "1pl": "canem",
+            "2pl": "canech",
+            "3pl": "canent"
+          },
+          "preterite": {
+            "1s": "cenais",
+            "2s": "cenaist",
+            "3s": "canodd",
+            "1pl": "canasom",
+            "2pl": "canasoch",
+            "3pl": "canasant / canodd (nhw)"
+          }
+        }
+      },
+      {
+        "name": "mynd 'to go' (irregular verb, synthetic forms)",
+        "description": "Mynd is irregular with suppletive stems: â- (present), aeth- (preterite), and ai- (imperfect from older eid-). The present tense forms are literary. Periphrastic construction: mae e'n mynd 'he goes, he is going'. The preterite is used in both literary and colloquial registers.",
+        "paradigm": {
+          "present": {
+            "1s": "af",
+            "2s": "ei",
+            "3s": "â / aiff",
+            "1pl": "awn",
+            "2pl": "ewch",
+            "3pl": "ânt"
+          },
+          "imperfect": {
+            "1s": "awn",
+            "2s": "ait",
+            "3s": "âi",
+            "1pl": "aem",
+            "2pl": "aech",
+            "3pl": "aent"
+          },
+          "preterite": {
+            "1s": "euthum",
+            "2s": "aethost",
+            "3s": "aeth",
+            "1pl": "aethom",
+            "2pl": "aethoch",
+            "3pl": "aethant / aethon (nhw)"
+          }
+        }
+      }
+    ]
+  },
+  "reading_list": [
+    "Selections from the Four Branches of the Mabinogi (Pedeir Keinc y Mabinogi), Middle Welsh prose, c. 1050–1120, ed. Ifor Williams (1930) or trans. Sioned Davies (2007) for beginners with facing translation.",
+    "Selections from Dafydd ap Gwilym (fl. 1340–1370), cywyddau in cynghanedd, ed. Thomas Parry (1952). Begin with 'Y Gwynt' (The Wind) and 'Trafferth mewn Tafarn' (Trouble in a Tavern).",
+    "Ellis Wynne, Gweledigaethau y Bardd Cwsc (Visions of the Sleeping Bard), 1703, baroque allegory, accessible early Modern Welsh prose.",
+    "Kate Roberts, O Gors y Bryniau (From the Moorland Hills), 1925, short stories, twentieth-century colloquial narrative.",
+    "Saunders Lewis, Blodeuwedd, 1948, verse drama based on the Fourth Branch, Modern Literary Welsh in strict meters and free verse.",
+    "T. Gwynn Jones, 'Ymadawiad Arthur' (The Passing of Arthur), awdl (ode) in cynghanedd, 1902, one of the great Victorian-era strict-meter poems.",
+    "R. S. Thomas, Collected Poems 1945–1990 (English), but Welsh learners should read his few Welsh-language poems and bilingual essays for style and diction.",
+    "The Book of Taliesin (Llyfr Taliesin), sixth–tenth century poems in archaic Welsh, advanced Old and Middle Welsh, ed. Marged Haycock (2007, bilingual).",
+    "The Black Book of Carmarthen (Llyfr Du Caerfyrddin), c. 1250, oldest surviving manuscript of Welsh poetry, archaic orthography, ed. A. O. H. Jarman (1982).",
+    "Medieval Welsh court poetry (Beirdd y Tywysogion, Poets of the Princes), twelfth–thirteenth century, ed. R. Geraint Gruffydd et al., in cynghanedd, historical and panegyric."
+  ],
+  "display": "Welsh",
+  "generated_at": "2026-05-11T23:27:39.793Z"
+}

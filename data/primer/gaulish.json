@@ -1,0 +1,285 @@
+{
+  "overview": "Gaulish is the Continental Celtic language attested in roughly 800 inscriptions from pre-Roman and early-Roman Gaul (modern France, northern Italy, and surrounding regions), written between the third century BCE and the third century CE. The corpus includes monumental inscriptions, curse tablets, pottery stamps, coins, and the Coligny calendar. Study of Gaulish illuminates the archaic Celtic linguistic stage shared with Old Irish and Brittonic, provides comparative data for Indo-European reconstruction, and documents a language suppressed by Latin but preserved in epigraphy and toponymy.",
+  "alphabet": [
+    {
+      "char": "A a",
+      "name": "a",
+      "ipa": "/a/",
+      "approximation": "like the a in father",
+      "notes": "Appears in all three writing systems (Greek, Etruscan-derived Lepontic, Latin). Represents both short and long /a/, though length is not marked in inscriptions."
+    },
+    {
+      "char": "B b",
+      "name": "beta / be",
+      "ipa": "/b/",
+      "approximation": "like English b",
+      "notes": "In Greek script represented by β; in Latin by B. Rare word-initially in native Gaulish words."
+    },
+    {
+      "char": "C c",
+      "name": "ce",
+      "ipa": "/k/",
+      "approximation": "like English k",
+      "notes": "Latin-alphabet inscriptions use C for /k/. Greek script uses Κ κ (kappa). Before front vowels remains /k/, not palatalized as in late Latin."
+    },
+    {
+      "char": "D d",
+      "name": "delta / de",
+      "ipa": "/d/",
+      "approximation": "like English d",
+      "notes": "Greek script δ; Latin D. Common in medial and final positions."
+    },
+    {
+      "char": "E e",
+      "name": "epsilon / e",
+      "ipa": "/e/",
+      "approximation": "like the e in bet",
+      "notes": "Greek script uses Ε ε. Represents both short /e/ and long /eː/. No systematic length distinction in orthography."
+    },
+    {
+      "char": "G g",
+      "name": "gamma / ge",
+      "ipa": "/g/",
+      "approximation": "like English g in go",
+      "notes": "Greek script Γ γ; Latin G. Common word-initially and medially. Not palatalized before front vowels."
+    },
+    {
+      "char": "I i",
+      "name": "iota / i",
+      "ipa": "/i/",
+      "approximation": "like English ee in see",
+      "notes": "Greek Ι ι; Latin I. Functions as both vowel /i/ and semivowel /j/ depending on context. Length not marked."
+    },
+    {
+      "char": "L l",
+      "name": "lambda / el",
+      "ipa": "/l/",
+      "approximation": "like English l",
+      "notes": "Greek Λ λ; Latin L. Common in all positions. Participates in consonant clusters (e.g., bl, gl)."
+    },
+    {
+      "char": "M m",
+      "name": "mu / em",
+      "ipa": "/m/",
+      "approximation": "like English m",
+      "notes": "Greek Μ μ; Latin M. Word-final -m in Latin-alphabet texts sometimes represents nasalization of preceding vowel, paralleling Old Irish treatment."
+    },
+    {
+      "char": "N n",
+      "name": "nu / en",
+      "ipa": "/n/",
+      "approximation": "like English n",
+      "notes": "Greek Ν ν; Latin N. Assimilates in place to following consonants (e.g., /m/ before labials, /ŋ/ before velars)."
+    },
+    {
+      "char": "O o",
+      "name": "omicron / o",
+      "ipa": "/o/",
+      "approximation": "like the o in go (without off-glide)",
+      "notes": "Greek Ο ο; Latin O. Represents both short and long /o/. Common in o-stem noun and verb morphology."
+    },
+    {
+      "char": "P p",
+      "name": "pi / pe",
+      "ipa": "/p/",
+      "approximation": "like English p",
+      "notes": "Greek Π π; Latin P. Relatively rare word-initially due to loss of Proto-Indo-European */p/ in many Celtic environments; more common medially and in clusters."
+    },
+    {
+      "char": "R r",
+      "name": "rho / er",
+      "ipa": "/r/",
+      "approximation": "trilled r as in Spanish perro",
+      "notes": "Greek Ρ ρ; Latin R. Likely alveolar trill [r]. Common in all positions."
+    },
+    {
+      "char": "S s",
+      "name": "sigma / es",
+      "ipa": "/s/",
+      "approximation": "like English s in sit",
+      "notes": "Greek Σ σ/ς; Latin S. Does not voice to [z] intervocalically in Gaulish. Common in inflectional endings and clusters."
+    },
+    {
+      "char": "T t",
+      "name": "tau / te",
+      "ipa": "/t/",
+      "approximation": "like English t",
+      "notes": "Greek Τ τ; Latin T. Common. In clusters with /s/ (TS) may represent an affricate [ts] or sequence [ts]; evidence ambiguous."
+    },
+    {
+      "char": "U u",
+      "name": "upsilon / u",
+      "ipa": "/u/",
+      "approximation": "like English oo in boot",
+      "notes": "Greek Υ υ; Latin V/U (not distinguished in early Latin script). Functions as vowel /u/ and semivowel /w/. Latin V in Gaulish texts is read as /w/ in most environments."
+    },
+    {
+      "char": "X x",
+      "name": "xi / ex",
+      "ipa": "/ks/",
+      "approximation": "like English x in box",
+      "notes": "Greek Ξ ξ; Latin X. Represents consonant cluster [ks]. Relatively rare in native Gaulish vocabulary."
+    },
+    {
+      "char": "Χ χ",
+      "name": "chi",
+      "ipa": "/kʰ/ or /χ/",
+      "approximation": "like German ch in Bach, or aspirated k",
+      "notes": "Greek script only. Interpretation debated: may represent aspirated [kʰ] or fricative [χ]. Used to spell native Gaulish words with velar aspiration or lenition."
+    },
+    {
+      "char": "Θ θ",
+      "name": "theta",
+      "ipa": "/tʰ/ or /θ/",
+      "approximation": "like English th in thin, or aspirated t",
+      "notes": "Greek script only. May represent dental fricative [θ] or aspirated [tʰ]. Rare in Gaulish; mostly in borrowings or names."
+    },
+    {
+      "char": "Φ φ",
+      "name": "phi",
+      "ipa": "/pʰ/ or /ɸ/",
+      "approximation": "like English f, or aspirated p",
+      "notes": "Greek script only. Likely represents bilabial fricative [ɸ] or aspirated [pʰ]. Rare; used in some Greek-influenced names."
+    },
+    {
+      "char": "Ω ω",
+      "name": "omega",
+      "ipa": "/oː/",
+      "approximation": "long o, as in English boat (without off-glide)",
+      "notes": "Greek script only. Theoretically represents long /oː/ in contrast to omicron Ο for short /o/, but length distinction not systematically maintained in Gaulish inscriptions."
+    }
+  ],
+  "pronunciation_notes": [
+    "Vowel length (short versus long vowels) was phonemic but not systematically marked in any Gaulish orthography; reconstruction depends on comparison with Old Irish and internal morphology.",
+    "The sounds written <th>, <ph>, <ch> in Greek-alphabet inscriptions are debated; they may represent aspirated stops [tʰ pʰ kʰ] or fricatives [θ ɸ χ], possibly reflecting dialectal or diachronic variation.",
+    "Word-final -m in Latin-alphabet texts may indicate nasalization of the preceding vowel rather than a true consonantal /m/, paralleling the treatment in Old Irish orthography (compare Latin accusative endings).",
+    "Gaulish preserved the Indo-European labiovelars */kʷ gʷ gʷʰ/ longer than Brittonic or Goidelic, though by the Roman period they had merged with plain velars in most dialects; some inscriptions write QU for inherited */kʷ/.",
+    "Consonant clusters are common and robust; initial clusters like /br-, dr-, gl-, tr-/ and medial clusters like /-xt-, -kt-, -mbr-/ are well attested and should be pronounced without epenthetic vowels.",
+    "Stress accent is not marked and remains uncertain; comparative evidence from Irish and Welsh suggests initial-syllable stress, but this is reconstructed, not directly attested."
+  ],
+  "grammar": {
+    "noun_system": "Gaulish nouns inflect for six cases (nominative, vocative, accusative, genitive, dative, instrumental), two numbers (singular, plural), and three genders (masculine, feminine, neuter). The case system is more archaic than that of the Insular Celtic languages, preserving distinctions lost in Old Irish and Old Welsh. Evidence for dual number is absent.",
+    "declensions": [
+      {
+        "name": "o-stem (masculine)",
+        "description": "The o-stem declension, inherited from Proto-Indo-European, is the most common and best attested. Example: *mapos 'son, boy' (cf. Welsh mab, Old Irish macc).",
+        "paradigm": {
+          "sg": {
+            "nom": "mapos",
+            "voc": "mape (uncertain; few examples)",
+            "acc": "mapon",
+            "gen": "mapi",
+            "dat": "mapui",
+            "inst": "mapu (rare; reconstructed)"
+          },
+          "pl": {
+            "nom": "mapoi",
+            "voc": "mapoi (assumed = nom.)",
+            "acc": "mapos (homophonous with sg. nom.)",
+            "gen": "mapon",
+            "dat": "mapobo / mapobos",
+            "inst": "uncertain; no clear attestation"
+          }
+        }
+      },
+      {
+        "name": "ā-stem (feminine)",
+        "description": "The ā-stem declension, also inherited from PIE, is common for feminine nouns and adjectives. Example: *toutā 'tribe, people' (cf. Old Irish túath, Welsh tud).",
+        "paradigm": {
+          "sg": {
+            "nom": "toutā",
+            "voc": "toutā (assumed = nom.)",
+            "acc": "toutan",
+            "gen": "toutās",
+            "dat": "toutāi",
+            "inst": "toutā (uncertain; few examples)"
+          },
+          "pl": {
+            "nom": "toutās",
+            "voc": "toutās (assumed = nom.)",
+            "acc": "toutās (homophonous with nom. pl.)",
+            "gen": "toutanon / toutāon",
+            "dat": "toutābo / toutābos",
+            "inst": "uncertain; no clear attestation"
+          }
+        }
+      },
+      {
+        "name": "i-stem",
+        "description": "The i-stem declension is less well attested but clearly present. Example: *turris 'tower' (Latin borrowing) and native words like *matis 'good' (adjective). Paradigm partially reconstructed from fragmentary inscriptions and comparison with Latin and Old Irish i-stems.",
+        "paradigm": {
+          "sg": {
+            "nom": "matis",
+            "voc": "mati (uncertain)",
+            "acc": "matin",
+            "gen": "matios / mateis",
+            "dat": "matī (uncertain)",
+            "inst": "mati (uncertain)"
+          },
+          "pl": {
+            "nom": "maties / matīs",
+            "voc": "uncertain",
+            "acc": "matīs",
+            "gen": "matiom",
+            "dat": "matibo",
+            "inst": "uncertain"
+          }
+        }
+      }
+    ],
+    "verb_system": "The Gaulish verb system is poorly attested, with only a handful of finite forms securely identified. The language distinguished active and middle-deponent voices, at least two conjugation classes (thematic o-stem and ā-stem), and multiple tenses or aspects, though the inventory is uncertain. Mood distinctions (indicative, subjunctive, imperative) are reconstructed on comparative grounds but lack clear epigraphic confirmation in most cases. Verb-final word order is common in inscriptions.",
+    "conjugations": [
+      {
+        "name": "o-stem / thematic conjugation (active)",
+        "description": "The thematic conjugation is reconstructed from a small number of attested forms and comparison with Old Irish and Latin. Example: *bereti 'he carries' (cf. Old Irish ·beir, Latin fert). Only third-person forms are securely attested; other persons are reconstructed.",
+        "paradigm": {
+          "present_indicative": {
+            "1s": "*berū (reconstructed; not attested)",
+            "2s": "*beresi (reconstructed; not attested)",
+            "3s": "bereti (attested in inscriptions)",
+            "1pl": "*beromis (reconstructed)",
+            "2pl": "*berete (reconstructed)",
+            "3pl": "*beronti (reconstructed; cf. Old Irish ·berat)"
+          },
+          "present_subjunctive": {
+            "note": "Subjunctive forms are entirely reconstructed; no clear Gaulish examples survive. Comparative method suggests forms like *berāt (3s subj.) based on Old Irish and Brittonic."
+          },
+          "imperative": {
+            "2s": "*bere (reconstructed; cf. Latin-style imperative)",
+            "2pl": "*berete (reconstructed)"
+          }
+        }
+      },
+      {
+        "name": "middle-deponent conjugation",
+        "description": "Middle or deponent verbs, attested in a few inscriptions (notably ieuru 'I have set up/dedicated', Lezoux plate), take medio-passive endings. The form *ieuru is analyzed as 1s perfect medio-passive of *ieg- 'to set, place'. This conjugation type is parallel to Old Irish deponent verbs.",
+        "paradigm": {
+          "perfect_middle": {
+            "1s": "ieuru (attested: 'I have set up')",
+            "2s": "*ieuso (reconstructed)",
+            "3s": "*ieuto (reconstructed; cf. Old Irish ·ráith < *prāte)",
+            "1pl": "*ieumis (reconstructed)",
+            "2pl": "*ieudwe (reconstructed)",
+            "3pl": "*ieuontor (reconstructed)"
+          },
+          "present_middle": {
+            "note": "Present middle forms are reconstructed from comparative evidence (Old Irish -ther, -thir endings) but not directly attested in Gaulish inscriptions. Expected forms would include *-tor (3s), *-ntori (3pl)."
+          }
+        }
+      }
+    ]
+  },
+  "reading_list": [
+    "Gaulish coin legends (especially DUBNO-, VERCINGETORIX, ATEKNATI): short, formulaic texts ideal for beginners; practice recognizing personal names and simple case forms.",
+    "Pottery stamps from Lezoux and Banassac (e.g., 'AVOT' genitive singular, personal names in genitive): brief, repetitive ownership or maker inscriptions; limited vocabulary but clear morphology.",
+    "The Alise-Sainte-Reine inscription (RIG L-13): short votive text in Latin script; includes recognizable theonyms (god names) and dedicatory formulae.",
+    "The Chamalières lead tablet (RIG L-100): curse tablet in Latin script, ca. 100 words; connected discourse with verb forms, vocabulary of binding and magical compulsion; some gaps and obscure lexemes.",
+    "The Lezoux plate inscription (RIG L-9): short incantation or dedication in Latin script, including the verb form 'ieuru' ('I have set up'); morphology clearer than semantics.",
+    "The Coligny calendar (RIG L-III): fragmentary bronze calendar in Latin script, listing month-names and notations (MAT, ANMAT, etc.); enormous but repetitive; requires understanding of time-reckoning vocabulary and abbreviations.",
+    "The L'Hospitalet-du-Larzac lead tablet (RIG L-98): longest connected Gaulish text (ca. 160 words), curse or legal text in Latin script; complex syntax, many hapax legomena, disputed readings; advanced.",
+    "The Gaulish glosses in classical sources (Pliny, Dioscorides, etc.): individual words cited by Greek and Roman authors with translations; useful for lexicon but no syntax; scattered across Latin and Greek texts.",
+    "The Vercelli graffito (RIG E-4): short but disputed text in Lepontic script; uncertain reading and interpretation; included for exposure to Etruscan-derived orthography."
+  ],
+  "display": "Gaulish",
+  "generated_at": "2026-05-11T23:26:13.083Z"
+}

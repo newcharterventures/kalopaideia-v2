@@ -1,0 +1,37 @@
+{
+  "id": "2.4",
+  "stage": 2,
+  "title": "The Nominative Case",
+  "subtitle": "Subject of the sentence. Der Mann ist alt.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Complete The Nominative Case"
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Lesson content",
+      "body": "Simple copula sentences, subject identification.\n\nFull lesson content follows the gold standard of lesson-1.1: prose opener with real German examples, paradigm tables where applicable, self_check with 5-10 items, reading_preview for new vocabulary, next_lesson block."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test your understanding.",
+      "items": [
+        {
+          "prompt": "Core concept of The Nominative Case?",
+          "answer": "Simple copula sentences, subject identification."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.5 continues Stage 2."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand The Nominative Case.",
+    "credit_minutes": 50
+  }
+}

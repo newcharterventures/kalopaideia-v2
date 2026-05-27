@@ -1,0 +1,68 @@
+{
+  "id": "1.3",
+  "stage": 1,
+  "title": "The Latin-Script Inscriptions",
+  "subtitle": "The Roman alphabet and Gaulish sounds — digraphs, approximations, and a funerary stone.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Read Gaulish written in the Latin alphabet.",
+    "Understand the digraph <ou> for /u:/ and <x> for /ks/ or /ss/.",
+    "Pronounce Latin-script Gaulish words with confidence.",
+    "Translate a complete Latin-script funerary inscription."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The Roman alphabet in Gaulish hands",
+      "body": "After Caesar's conquest of Gaul (58–50 BCE), Latin became the language of administration and the Roman alphabet the standard for writing. Gauls who carved inscriptions in their own language used the same letter shapes. The result: twenty-three letters (the classical Latin alphabet before J, U, and W were distinguished) adapted for Gaulish phonology. Most surviving Gaulish texts are in Latin script: the Coligny Calendar, the two great curse tablets (Larzac and Chamalières), and hundreds of funerary and votive stones."
+    },
+    {
+      "kind": "prose",
+      "heading": "The orthographic conventions",
+      "body": "Latin-script Gaulish developed consistent spelling rules:\n\n<ou> = long /u:/ (the same convention as Greek ΟΥ)\n<x> = usually /ks/, sometimes /ss/ in late texts\n<c> = always /k/ (never the soft c of Romance languages)\n<v> = /w/ (the classical Latin pronunciation, not /v/)\n\nVowel length was not consistently marked. Unlike Greek, Latin had no separate letters for long and short e or o. Context and etymology tell us which is which."
+    },
+    {
+      "kind": "prose",
+      "heading": "Reading a funerary stone",
+      "body": "Here is the complete text of a funerary inscription from Alise-Sainte-Reine (ancient Alesia, site of Caesar's siege), dating to the 1st century CE:\n\nMARTIALIS DANNOTALOS IEVRV ANDEVDDIS BRVCTOM\n\nTransliteration: MARTIALIS DANNOTALOS IEVRV ANDEVDDIS BRVCTOM\n\nGloss: Martialis Dannotalos dedicated this memorial (?) to Andevddis.\n\nParsing: MARTIALIS (nom. sg., Roman-style personal name, \"of Mars\"), DANNOTALOS (nom. sg., Gaulish name, perhaps \"brown-browed\"), IEVRV (verb, \"dedicated\" — a common formula in votive and funerary texts), ANDEVDDIS (dat. sg., personal name or deity, \"to Andevddis\"), BRVCTOM (acc. sg.?, \"memorial\" or \"magic\" — the meaning is disputed)."
+    },
+    {
+      "kind": "prose",
+      "heading": "The dative in Latin script",
+      "body": "The dative singular of -o- stem nouns ends in -ui or -u in Gaulish, but Latin-script inscriptions sometimes use -o by analogy with Latin. The dative of -ā- stems ends in -i (as we saw in Greek script). Example: LVGVS (nom.) → LVGVI or LVGVO (dat., \"to Lugus\"). The genitive singular of -o- stems ends in -i: SEGOMĀROS (nom.) → SEGOMĀRI (gen., \"of Segomaros\")."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers; check after.",
+      "items": [
+        { "prompt": "What does the digraph <ou> represent in Latin-script Gaulish?", "answer": "Long /u:/, the same sound as Greek ΟΥ." },
+        { "prompt": "Is Latin <c> ever soft (like English <s>) in Gaulish?", "answer": "No. Latin <c> is always /k/ in Gaulish, as in classical Latin." },
+        { "prompt": "What does IEVRV mean?", "answer": "\"Dedicated\" or \"set up\" — a common votive and funerary formula." },
+        { "prompt": "What case is ANDEVDDIS?", "answer": "Dative singular. The ending -is suggests a consonant-stem noun in the dative." },
+        { "prompt": "What is the genitive singular ending of -o- stem nouns in Gaulish?", "answer": "-i, as in SEGOMĀRI (\"of Segomaros\")." },
+        { "prompt": "How do we know vowel length in Latin-script Gaulish?", "answer": "We do not always know from the spelling. We infer it from Greek-script parallels, etymology, and comparison with other Celtic languages." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Common Latin-script names",
+      "instructions": "These Gaulish personal names appear in hundreds of Latin-script inscriptions. Practice reading them.",
+      "words": [
+        { "gaulish": "SEGOMĀROS", "transliteration": null, "gloss": "Segomaros (\"great victory\")", "audio": "/paideia/audio/gaulish/words/segomaros-latin.mp3" },
+        { "gaulish": "DANNOTALOS", "transliteration": null, "gloss": "Dannotalos (\"brown-browed\"?)", "audio": "/paideia/audio/gaulish/words/dannotalos.mp3" },
+        { "gaulish": "ATEPOMAROS", "transliteration": null, "gloss": "Atepomaros (\"very great\" or \"re-great\")", "audio": "/paideia/audio/gaulish/words/atepomaros.mp3" },
+        { "gaulish": "ANDEVDOS", "transliteration": null, "gloss": "Andevdos (personal name, etymology uncertain)", "audio": "/paideia/audio/gaulish/words/andevdos-word.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.4 covers the Lepontic alphabet: the Etruscan-derived script of the Cisalpine Gauls, its unique letter shapes, and a reading of the Prestino stone."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can read Latin-script Gaulish aloud and distinguish the genitive -i from the dative -ui.",
+    "credit_minutes": 50
+  }
+}

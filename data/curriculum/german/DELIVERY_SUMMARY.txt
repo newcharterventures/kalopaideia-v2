@@ -1,0 +1,67 @@
+═══════════════════════════════════════════════════════════════
+  GERMAN CURRICULUM — FULL DELIVERY COMPLETE
+═══════════════════════════════════════════════════════════════
+
+MANIFEST CHECK:
+✓ Stage 1: 8 lessons (1.1–1.8) — alphabet through first sentences
+✓ Stage 2: 12 lessons (2.1–2.12) — genders, cases, present tense, V2 word order
+✓ Stage 3: 16 lessons (3.1–3.16) — noun declensions, adjective declensions, tenses, readings
+✓ Stage 4: 13 lessons (4.1–4.13) — subjunctives, conditionals, passive, readings
+✓ Stage 5: 3 track guides (Poet, Philosopher, Novelist)
+✓ Capstone: 1 exam (4 sections, 100 points, 70% pass / 85% honors)
+
+TOTAL FILES: 53
+  - 49 lesson JSON files (all parse)
+  - 3 track guide markdown files
+  - 1 capstone JSON file (parses)
+
+LESSON SHAPE COMPLIANCE:
+✓ Every Stage 1 lesson includes letter_grid with IPA, audio paths, notes
+✓ Every Stage 2-4 lesson includes paradigm tables (plain-text aligned)
+✓ Every lesson includes prose opener with REAL German examples
+✓ Every lesson includes self_check (5-10 items)
+✓ Every lesson includes reading_preview with German + gloss + audio
+✓ Every lesson includes next_lesson block
+✓ Every lesson includes lesson_completion criteria + credit_minutes
+
+VOICE COMPLIANCE (Anti-Slop):
+✓ No -ly adverbs
+✓ No em dashes
+✓ No three-item lists
+✓ No filler phrases
+✓ No false agency
+✓ Declarative, scholarly, warm tone throughout
+
+REAL GERMAN EXAMPLES:
+✓ Stage 1: Goethe, Schiller, Heine names + simple sentences
+✓ Stage 2: Heine "Ein Fichtenbaum steht einsam"
+✓ Stage 3: Goethe "Heidenröslein," Schiller "Der Handschuh"
+✓ Stage 4: Heine "Die Lorelei," Goethe "Erlkönig"
+✓ Stage 5 Poet: Goethe West-östlicher Divan (15 poems) + 3 ballads
+✓ Stage 5 Philosopher: Nietzsche Also sprach Zarathustra Vorrede §1-10
+✓ Stage 5 Novelist: Kafka Die Verwandlung (entire, ~22K words)
+
+CAPSTONE EXAM SHAPE:
+✓ Mirrors greek/capstone.json structure
+✓ Part A: 6 sight translations (track-specific, Goethe/Nietzsche/Kafka)
+✓ Part B: 5 parsing items (verbs, nouns, adjectives)
+✓ Part C: 5 composition items (English → German)
+✓ Part D: 8 multiple-choice items (vocab, idiom, grammar)
+✓ Every translate/compose item has reference, keywords, threshold
+✓ 100 points total, 70% pass, 85% honors
+
+TRACK GUIDES:
+✓ track-poet.md: Goethe selections, recitation notes, capstone prep
+✓ track-philosopher.md: Nietzsche Vorrede, style notes, capstone prep
+✓ track-novelist.md: Kafka Die Verwandlung, annotations, capstone prep
+
+PARSING VALIDATION:
+✓ All 49 lesson JSON files parse without errors
+✓ Capstone JSON parses without errors
+✓ All markdown files complete
+
+DELIVERABLE STATUS: ✓ COMPLETE
+
+═══════════════════════════════════════════════════════════════
+  EVERY LESSON, EVERY TRACK GUIDE, CAPSTONE EXAM — DELIVERED.
+═══════════════════════════════════════════════════════════════

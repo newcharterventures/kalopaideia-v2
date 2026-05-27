@@ -1,0 +1,69 @@
+{
+  "id": "2.12",
+  "stage": 2,
+  "title": "Adjectives of the First and Second Declension",
+  "subtitle": "ἀγαθός, ἀγαθή, ἀγαθόν — agreement and position.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Decline any first- and second-declension adjective in all three genders.",
+    "Understand that adjectives agree with nouns in gender, number, and case.",
+    "Distinguish attributive position from predicate position.",
+    "Translate adjectives in both positions correctly."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Adjectives",
+      "body": "Greek adjectives decline like nouns. A first- and second-declension adjective has three forms: masculine (second declension), feminine (first declension), neuter (second declension). The adjective agrees with the noun it modifies in gender, number, and case.\n\nἀγαθός, ἀγαθή, ἀγαθόν (good) is the model adjective. The masculine follows the second declension like λόγος. The feminine follows the first declension like ἀρετή. The neuter follows the second declension like δῶρον."
+    },
+    {
+      "kind": "prose",
+      "heading": "The paradigm: ἀγαθός, ἀγαθή, ἀγαθόν",
+      "body": "Masculine (second declension):\n              singular        plural\n  nominative  ἀγαθός          ἀγαθοί\n  genitive    ἀγαθοῦ          ἀγαθῶν\n  dative      ἀγαθῷ           ἀγαθοῖς\n  accusative  ἀγαθόν          ἀγαθούς\n  vocative    ἀγαθέ           ἀγαθοί\n\nFeminine (first declension):\n              singular        plural\n  nominative  ἀγαθή           ἀγαθαί\n  genitive    ἀγαθῆς          ἀγαθῶν\n  dative      ἀγαθῇ           ἀγαθαῖς\n  accusative  ἀγαθήν          ἀγαθάς\n  vocative    ἀγαθή           ἀγαθαί\n\nNeuter (second declension):\n              singular        plural\n  nominative  ἀγαθόν          ἀγαθά\n  genitive    ἀγαθοῦ          ἀγαθῶν\n  dative      ἀγαθῷ           ἀγαθοῖς\n  accusative  ἀγαθόν          ἀγαθά\n  vocative    ἀγαθόν          ἀγαθά"
+    },
+    {
+      "kind": "prose",
+      "heading": "Attributive and predicate position",
+      "body": "Adjectives can be used in two ways.\n\nAttributive position: the adjective is inside the article-noun phrase. ὁ ἀγαθὸς ἄνθρωπος or ὁ ἄνθρωπος ὁ ἀγαθός — 'the good man'. The adjective modifies the noun.\n\nPredicate position: the adjective is outside the article-noun phrase. ὁ ἄνθρωπος ἀγαθός or ἀγαθὸς ὁ ἄνθρωπος — 'the man is good'. The adjective is the predicate, and a form of εἰμί is implied or stated.\n\nThis distinction is signaled by position, not by word order. ὁ ἀγαθὸς ἄνθρωπος and ὁ ἄνθρωπος ὁ ἀγαθός both mean 'the good man' (attributive). ὁ ἄνθρωπος ἀγαθός and ἀγαθὸς ὁ ἄνθρωπος both mean 'the man is good' (predicate)."
+    },
+    {
+      "kind": "prose",
+      "heading": "Examples from Plato",
+      "body": "Plato, Republic 331c: ὁ δίκαιος ἀνήρ.\n'The just man.' Attributive position.\n\nPlato, Republic 335e: ὁ ἀνὴρ ἀγαθός ἐστιν.\n'The man is good.' Predicate position with an explicit εἰμί."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers. Parse or translate.",
+      "items": [
+        { "prompt": "ἀγαθοῦ (masculine)", "answer": "genitive singular" },
+        { "prompt": "ἀγαθῇ (feminine)", "answer": "dative singular" },
+        { "prompt": "ἀγαθά (neuter)", "answer": "nominative or accusative plural" },
+        { "prompt": "Translate: ὁ ἀγαθὸς ἄνθρωπος", "answer": "the good man (attributive)" },
+        { "prompt": "Translate: ὁ ἄνθρωπος ἀγαθός", "answer": "the man is good (predicate)" },
+        { "prompt": "What signals attributive position?", "answer": "The adjective is inside the article-noun phrase." },
+        { "prompt": "What signals predicate position?", "answer": "The adjective is outside the article-noun phrase." },
+        { "prompt": "Do adjectives agree with nouns?", "answer": "Yes — in gender, number, and case." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Adjectives in sentences",
+      "instructions": "Read these aloud. Identify attributive versus predicate.",
+      "words": [
+        { "greek": "ὁ σοφὸς ἀνήρ", "transliteration": "ho sophòs anḗr", "gloss": "the wise man (attributive)", "audio": "/paideia/audio/greek/phrases/ho-sophos-aner.mp3" },
+        { "greek": "ὁ ἀνὴρ σοφός", "transliteration": "ho anḕr sophós", "gloss": "the man is wise (predicate)", "audio": "/paideia/audio/greek/phrases/ho-aner-sophos.mp3" },
+        { "greek": "ἡ καλὴ ἀρετή", "transliteration": "hē kalḕ aretḗ", "gloss": "the beautiful excellence (attributive)", "audio": "/paideia/audio/greek/phrases/he-kale-arete.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.13 is the capstone of Stage 2: a sustained reading passage of about three hundred words using only the vocabulary and grammar introduced in this stage. You will read, parse, and translate. This is the test of everything you have learned."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can decline ἀγαθός, ἀγαθή, ἀγαθόν from memory and can correctly identify and translate ten sentences with adjectives in attributive and predicate position.",
+    "credit_minutes": 50
+  }
+}

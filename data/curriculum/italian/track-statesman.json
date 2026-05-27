@@ -1,0 +1,78 @@
+{
+  "id": "track-statesman",
+  "stage": 5,
+  "track_name": "The Statesman",
+  "author": "Niccolò Machiavelli",
+  "texts": "Il Principe, capitoli I–VII",
+  "estimated_weeks": "10–14",
+  "rationale": "The most famous work of political philosophy in Italian. Humanist prose of the early cinquecento, closer to modern Italian than Dante but still requiring notes. Chapters I–VII cover the types of principalities and the figure of Cesare Borgia. The student learns to read argumentative prose and to recognize the rhetorical strategies of Renaissance humanism.",
+  "learning_outcomes": [
+    "Read Il Principe, chapters I–VII, in the original with notes.",
+    "Recognize humanist prose forms (Latinate syntax, periodic sentences).",
+    "Translate any fifty-word passage from the assigned chapters at sight with notes.",
+    "Discuss Machiavelli's rhetorical strategies and argumentative structure in writing."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Why Machiavelli?",
+      "body": "Niccolò Machiavelli (1469–1527) wrote Il Principe (The Prince) in 1513, two hundred years after Dante. His Italian is humanist prose: learned, Latinate in syntax, but written in the vernacular. Machiavelli wanted to be read, not by clerics who knew Latin, but by princes and statesmen who read Italian.\n\nThe Prince is a manual of power. It is not a moral tract. Machiavelli describes what works, not what should work. Chapters I–VII establish the taxonomy of states and introduce Cesare Borgia, the model prince who gained power through virtù (skill, strength, cunning) and lost it through fortuna (luck, circumstance)."
+    },
+    {
+      "kind": "prose",
+      "heading": "Chapters I–VII",
+      "body": "Chapter I: The types of principalities (hereditary, new, mixed).\n\nChapter II: Hereditary principalities (easy to hold if the prince does not provoke hatred).\n\nChapter III: Mixed principalities (the difficulty of holding newly-acquired territories).\n\nChapter IV: Why the kingdom of Darius did not rebel after Alexander's death.\n\nChapter V: How to govern cities that lived under their own laws before conquest.\n\nChapter VI: New principalities acquired by one's own arms and virtù (Moses, Cyrus, Romulus, Theseus).\n\nChapter VII: New principalities acquired by the arms of others and by fortune — the example of Cesare Borgia.\n\nThese seven chapters are about 8,000 words of Italian prose. They are the core of the argument."
+    },
+    {
+      "kind": "humanist_prose_forms",
+      "heading": "Humanist prose forms",
+      "items": [
+        {
+          "form": "periodic sentences",
+          "explanation": "Long sentences with multiple subordinate clauses, often delaying the main verb. Latin influence.",
+          "example": "E perché questo è uno di quegli arcani della guerra, che merita di essere riguardato con diligenza, voglio discorrerne alquanto diffusamente."
+        },
+        {
+          "form": "e for ed",
+          "explanation": "Conjunction. Modern: e (and). Before a vowel, Machiavelli sometimes uses ed (euphonic d).",
+          "example": "ed è (and it is)"
+        },
+        {
+          "form": "quegli for quelli",
+          "explanation": "Demonstrative pronoun. Modern: quelli (those). Humanist: quegli.",
+          "example": "quegli stati (those states)"
+        },
+        {
+          "form": "imperadore for imperatore",
+          "explanation": "Spelling variant. Modern: imperatore (emperor). Machiavelli: imperadore.",
+          "example": "lo imperadore (the emperor)"
+        },
+        {
+          "form": "el for il",
+          "explanation": "Definite article. Modern: il. Machiavelli sometimes writes el, a Florentine dialect form.",
+          "example": "el principe (the prince)"
+        }
+      ]
+    },
+    {
+      "kind": "reading_assignment",
+      "heading": "Your reading assignment",
+      "body": "Read chapters I–VII of Il Principe in the original Italian with full notes and glosses. Work through them at your own pace. Audio recordings of each paragraph are available.\n\nWhen you finish, you will sit the capstone examination. Part of the examination will ask you to translate a fifty-word passage from one of these chapters at sight."
+    },
+    {
+      "kind": "recommended_editions",
+      "heading": "Recommended editions",
+      "items": [
+        "Harvey C. Mansfield, The Prince (University of Chicago Press, 1998) — facing-page translation, philosophical introduction.",
+        "Peter Bondanella, The Prince (Oxford World's Classics, 2005) — translation with historical notes.",
+        "Quentin Skinner and Russell Price, The Prince (Cambridge, 1988) — scholarly edition, contextual essays.",
+        "Luigi Firpo, Il Principe (Einaudi, 1961) — Italian critical edition with extensive commentary (Italian only)."
+      ]
+    },
+    {
+      "kind": "next_step",
+      "heading": "When you are ready",
+      "body": "When you have read chapters I–VII and feel prepared, proceed to the capstone examination. You may retake the examination after thirty days if you do not pass on the first attempt."
+    }
+  ]
+}

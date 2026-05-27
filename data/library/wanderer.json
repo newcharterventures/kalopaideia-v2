@@ -1,0 +1,68 @@
+{
+  "id": "wanderer",
+  "language": "oldenglish",
+  "title": "The Wanderer",
+  "author": "Anonymous",
+  "date": "c. 9th-10th century CE",
+  "meter": "Alliterative verse, four-stress line",
+  "translator": "R. K. Gordon",
+  "translator_date": "1926 (public domain)",
+  "license": "Public domain",
+  "source_notes": "Old English text from the Exeter Book (late 10th c.). Translation by R. K. Gordon, 'Anglo-Saxon Poetry' (1926). Edition following the Klaeber/Krapp-Dobbie tradition.",
+  "reading_notes": "The Wanderer is the most famous Old English elegy. A lone exile, his lord dead, his kinsmen scattered, speaks of memory, solitude, and the passing of all worldly glory. The poem moves from a personal lament into a universal meditation on mutability, ending with a Christian frame. Its closing question, 'Hwær cwom mearg? Hwær cwom mago?' ('Where is the horse? where the rider?') echoes through medieval poetry and was famously reworked by Tolkien.",
+  "status": "open",
+  "sections": [
+    {
+      "id": "prologue",
+      "title": "Prologue & Opening Lament (lines 1-11)",
+      "lines": [
+        { "n": 1, "original": "Oft him anhaga are gebideð,", "english": "Often the solitary one finds grace for himself,", "gloss": "Oft = 'often'; him = 'for himself' (reflexive dative); anhaga = 'solitary one, lone-dweller' (nominative, compound an + haga); are = 'grace, favor' (accusative); gebideð = 'awaits, experiences' (3rd singular of gebidan)." },
+        { "n": 2, "original": "metudes miltse, þeah þe he modcearig", "english": "the mercy of the Lord, though he, sorrowful of heart,", "gloss": "metudes = 'of the Creator' (genitive of metod); miltse = 'mercy' (accusative of milts); þeah þe = 'although' (conj.); he = 'he'; modcearig = 'sorrowful in mind' (compound mod + cearig, nominative)." },
+        { "n": 3, "original": "geond lagulade longe sceolde", "english": "across the water-way has long had to", "gloss": "geond = 'across, throughout' (prep. + accusative); lagulade = 'water-way, sea-path' (accusative; kenning); longe = 'long' (adverb); sceolde = 'had to, must' (past of sculan)." },
+        { "n": 4, "original": "hreran mid hondum hrimcealde sæ,", "english": "stir with his hands the ice-cold sea,", "gloss": "hreran = 'to stir, move' (infinitive); mid hondum = 'with hands' (dative plural); hrimcealde = 'frost-cold' (accusative, compound); sæ = 'sea' (accusative)." },
+        { "n": 5, "original": "wadan wræclastas. Wyrd bið ful aræd!", "english": "tread the paths of exile. Fate is full fixed!", "gloss": "wadan = 'to go, tread' (infinitive); wræclastas = 'exile-paths, tracks of exile' (accusative plural, compound wræc + last); Wyrd = 'fate, what happens' (nominative); bið = 'is' (habitual); ful aræd = 'fully fixed, determined'." },
+        { "n": 6, "original": "Swa cwæð eardstapa, earfeþa gemyndig,", "english": "So spoke the wanderer, mindful of hardships,", "gloss": "Swa = 'thus'; cwæð = 'spoke' (past of cweðan); eardstapa = 'earth-stepper, wanderer' (nominative; kenning); earfeþa = 'of hardships' (genitive plural); gemyndig = 'mindful' (nominative + genitive object)." },
+        { "n": 7, "original": "wraþra wælsleahta, winemæga hryres:", "english": "of fierce slaughters, the fall of dear kinsmen:", "gloss": "wraþra = 'of cruel, fierce' (genitive plural); wælsleahta = 'of slaughters' (genitive plural, compound wæl + sleaht); winemæga = 'of beloved kinsmen' (genitive plural, compound wine + mæg); hryres = 'of fall, ruin' (genitive)." },
+        { "n": 8, "original": "\"Oft ic sceolde ana uhtna gehwylce", "english": "\"Often I have had to alone at each dawn", "gloss": "Oft = 'often'; ic = 'I'; sceolde = 'had to' (past of sculan); ana = 'alone' (nominative singular); uhtna = 'of dawns' (genitive plural); gehwylce = 'at each' (dative, distributive)." },
+        { "n": 9, "original": "mine ceare cwiþan. Nis nu cwicra nan", "english": "lament my sorrow. There is now none living", "gloss": "mine = 'my' (accusative); ceare = 'sorrow, care' (accusative); cwiþan = 'to lament' (infinitive); Nis = 'is not' (ne + is); nu = 'now'; cwicra = 'of the living' (genitive plural); nan = 'none' (nominative)." },
+        { "n": 10, "original": "þe ic him modsefan minne durre", "english": "to whom I would dare to tell my inmost thought,", "gloss": "þe = 'to whom' (relative); ic = 'I'; him = 'to him' (dative); modsefan = 'mind, spirit' (accusative of modsefa); minne = 'my' (accusative masculine); durre = 'dare' (subjunctive of durran)." },
+        { "n": 11, "original": "sweotule asecgan. Ic to soþe wat", "english": "openly speak. I know for truth", "gloss": "sweotule = 'clearly, openly' (adverb); asecgan = 'to speak out' (infinitive); Ic = 'I'; to soþe = 'for truth' (prep. + dative); wat = 'know' (1st singular of witan)." }
+      ]
+    },
+    {
+      "id": "exile",
+      "title": "The Exile's Journey (lines 12-29)",
+      "lines": [
+        { "n": 12, "original": "þæt biþ in eorle indryhten þeaw,", "english": "that it is a noble custom in a man", "gloss": "þæt = 'that'; biþ = 'is'; in eorle = 'in a man' (dative); indryhten = 'noble' (nominative adjective); þeaw = 'custom, habit' (nominative)." },
+        { "n": 13, "original": "þæt he his ferðlocan fæste binde,", "english": "to bind fast his spirit-chamber,", "gloss": "þæt = 'that'; he = 'he'; his = 'his'; ferðlocan = 'mind-enclosure, breast' (accusative compound kenning); fæste = 'firmly' (adverb); binde = 'bind' (subjunctive of bindan)." },
+        { "n": 14, "original": "healde his hordcofan, hycge swa he wille.", "english": "keep his treasure-chamber, think as he will.", "gloss": "healde = 'keep' (subjunctive); hordcofan = 'treasure-chamber' (accusative, metaphor for heart); hycge = 'think' (subjunctive of hycgan); swa he wille = 'as he will'." },
+        { "n": 15, "original": "Ne mæg werig mod wyrde wiðstondan,", "english": "The weary mind cannot withstand fate,", "gloss": "Ne mæg = 'cannot' (ne + mæg); werig = 'weary' (nominative); mod = 'mind, heart' (nominative); wyrde = 'fate' (dative object of withstond); wiðstondan = 'to withstand' (infinitive + dative)." },
+        { "n": 16, "original": "ne se hreo hyge helpe gefremman.", "english": "nor the troubled heart bring help.", "gloss": "ne = 'nor'; se = 'the' (nominative masculine); hreo = 'troubled, stormy' (nominative); hyge = 'heart, mind' (nominative); helpe = 'help' (accusative); gefremman = 'to bring about' (infinitive)." },
+        { "n": 17, "original": "Forðon domgeorne dreorigne oft", "english": "Therefore those eager for glory often", "gloss": "Forðon = 'therefore'; domgeorne = 'eager for glory' (nominative plural, compound dom + georn); dreorigne = 'sad, dreary' (accusative masculine); oft = 'often'." },
+        { "n": 18, "original": "in hyra breostcofan bindað fæste;", "english": "bind fast in their breast-chamber (a sorrowful thought);", "gloss": "in hyra = 'in their' (dative); breostcofan = 'breast-chamber' (dative singular compound); bindað = 'bind' (3rd plural of bindan); fæste = 'firmly'." },
+        { "n": 19, "original": "swa ic modsefan minne sceolde,", "english": "so have I, too, had to bind my mind,", "gloss": "swa = 'so'; ic = 'I'; modsefan = 'spirit' (accusative); minne = 'my' (accusative); sceolde = 'had to' (past of sculan)." },
+        { "n": 20, "original": "oft earmcearig, eðle bidæled,", "english": "often wretched, deprived of my homeland,", "gloss": "oft = 'often'; earmcearig = 'wretchedly sorrowful' (nominative compound); eðle = 'from homeland' (dative of separation); bidæled = 'deprived' (past participle + dative)." },
+        { "n": 21, "original": "freomægum feor feterum sælan,", "english": "far from noble kinsmen, fasten it in fetters,", "gloss": "freomægum = 'from noble kinsmen' (dative plural compound); feor = 'far'; feterum = 'with fetters' (dative plural); sælan = 'to bind' (infinitive)." },
+        { "n": 22, "original": "siþþan geara iu goldwine minne", "english": "since long years ago my lord of gold", "gloss": "siþþan = 'since'; geara iu = 'long ago' (idiom); goldwine = 'gold-friend, lord' (accusative singular compound kenning); minne = 'my' (accusative masculine)." },
+        { "n": 23, "original": "hrusan heolstre biwrah, ond ic hean þonan", "english": "earth's darkness enwrapped, and I, abject, thence", "gloss": "hrusan = 'of earth' (dative); heolstre = 'with darkness, shadow' (dative); biwrah = 'covered, enwrapped' (past of bewreon); ond = 'and'; ic = 'I'; hean = 'humbled, abject' (nominative); þonan = 'thence, from there'." },
+        { "n": 24, "original": "wod wintercearig ofer waþema gebind,", "english": "went, winter-desolate, over the waves' binding,", "gloss": "wod = 'went, waded' (past of wadan); wintercearig = 'winter-sorrowful' (nominative compound); ofer = 'over' (+accusative); waþema = 'of waves' (genitive plural); gebind = 'binding, expanse' (accusative)." },
+        { "n": 25, "original": "sohte sele dreorig sinces bryttan,", "english": "dreary sought the hall of a giver of treasure,", "gloss": "sohte = 'sought' (past of secan); sele = 'hall' (accusative); dreorig = 'sad'; sinces = 'of treasure' (genitive); bryttan = 'of a dispenser, giver' (genitive of brytta)." },
+        { "n": 26, "original": "hwær ic feor oþþe neah findan meahte", "english": "where far or near I might find", "gloss": "hwær = 'where'; ic = 'I'; feor = 'far'; oþþe = 'or'; neah = 'near'; findan = 'to find' (infinitive); meahte = 'might' (past of magan)." },
+        { "n": 27, "original": "þone þe in meoduhealle min mine wisse,", "english": "one who in the mead-hall might know my own,", "gloss": "þone = 'him' (accusative demonstrative); þe = 'who' (relative); in meoduhealle = 'in the mead-hall' (dative singular compound); min mine wisse = 'who might know mine' (archaic, with genitive; idiomatic 'know my affairs')." },
+        { "n": 28, "original": "oþþe mec freondleasne frefran wolde,", "english": "or who would comfort me, friendless,", "gloss": "oþþe = 'or'; mec = 'me' (accusative); freondleasne = 'friendless' (accusative masculine); frefran = 'to comfort' (infinitive); wolde = 'would' (past of willan)." },
+        { "n": 29, "original": "wenian mid wynnum. Wat se þe cunnað", "english": "treat me with joys. He knows, who has tried,", "gloss": "wenian = 'to entertain, treat' (infinitive); mid wynnum = 'with joys' (dative plural); Wat = 'knows' (3rd singular of witan); se þe = 'he who' (relative); cunnað = 'tries, experiences' (3rd singular of cunnian)." }
+      ]
+    },
+    {
+      "id": "ubi-sunt",
+      "title": "Where Are They Gone? (lines 92-96 — the famous 'ubi sunt' passage)",
+      "lines": [
+        { "n": 92, "original": "Hwær cwom mearg? Hwær cwom mago? Hwær cwom maþþumgyfa?", "english": "Where is the horse gone? where the rider? where the giver of treasure?", "gloss": "Hwær = 'where'; cwom = 'came, has gone' (past of cuman, idiom for 'is now'); mearg = 'horse' (nominative); mago = 'young man, warrior' (nominative); maþþumgyfa = 'treasure-giver' (nominative compound)." },
+        { "n": 93, "original": "Hwær cwom symbla gesetu? Hwær sindon seledreamas?", "english": "Where are the feast-seats? where are the hall-joys?", "gloss": "Hwær = 'where'; cwom = 'has gone'; symbla = 'of feasts' (genitive plural); gesetu = 'seats' (nominative plural); sindon = 'are' (3rd plural of beon); seledreamas = 'hall-joys' (nominative plural compound)." },
+        { "n": 94, "original": "Eala beorht bune! Eala byrnwiga!", "english": "Alas, the bright cup! alas, the mailed warrior!", "gloss": "Eala = 'Alas!' (interjection); beorht = 'bright'; bune = 'cup, drinking vessel' (nominative singular, vocative exclamation); byrnwiga = 'mailed warrior' (nominative compound)." },
+        { "n": 95, "original": "Eala þeodnes þrym! Hu seo þrag gewat,", "english": "Alas, the glory of the prince! How that time has passed,", "gloss": "Eala = 'Alas'; þeodnes = 'of the prince' (genitive); þrym = 'glory' (nominative); Hu = 'how'; seo = 'that' (feminine); þrag = 'time, period' (nominative); gewat = 'has departed' (past of gewitan)." },
+        { "n": 96, "original": "genap under nihthelm, swa heo no wære.", "english": "darkened under the helm of night, as if it had never been.", "gloss": "genap = 'grew dark' (past of genipan); under = 'under' (+dative); nihthelm = 'helm of night, darkness' (dative singular compound); swa = 'as if'; heo = 'it' (referring to þrag); no wære = 'had not been' (subjunctive, negative)." }
+      ]
+    }
+  ]
+}

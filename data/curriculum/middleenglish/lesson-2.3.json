@@ -1,0 +1,43 @@
+{
+  "id": "2.3",
+  "stage": 2,
+  "title": "The Past Tense — Strong Verbs",
+  "subtitle": "Riden → rood, singen → sang — ablaut survives.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Master The Past Tense — Strong Verbs.",
+    "Read and translate authentic Middle English texts.",
+    "Prepare for sustained reading in Stage 3."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "Riden becomes rood (singular) or riden (plural). Singen becomes sang or sungen. The old ablaut patterns survive from Old English but simplified. Seven classes reduced to irregular verbs. You learn them one by one."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "The Past Tense — Strong Verbs"
+        },
+        {
+          "prompt": "Can you apply this to reading?",
+          "answer": "Work through examples with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand The Past Tense — Strong Verbs.",
+    "credit_minutes": 55
+  }
+}

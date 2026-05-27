@@ -1,0 +1,23 @@
+{
+  "id": "2.11",
+  "stage": 2,
+  "title": "The Third Declension — Consonant Stems",
+  "subtitle": "rēx, lūx, miles, pater, soror. The genitive reveals the stem.",
+  "estimated_minutes": 55,
+  "objectives": ["Decline third-declension consonant-stem nouns in all cases.", "Recognize that the genitive singular reveals the stem.", "Understand that third-declension nouns can be masculine, feminine, or neuter.", "Translate sentences with third-declension nouns as subjects and objects."],
+  "sections": [
+    {"kind": "prose", "heading": "The third declension: consonant stems", "body": "The third declension is the largest and most varied. Nouns can be masculine, feminine, or neuter. The nominative singular can end in almost any letter. The genitive singular always ends in -is, and reveals the stem.\n\nParadigm: rēx, rēgis (king, masc.):\n\n          Singular    Plural\n  Nom.    rēx         rēgēs\n  Gen.    rēgis       rēgum\n  Dat.    rēgī        rēgibus\n  Acc.    rēgem       rēgēs\n  Abl.    rēge        rēgibus\n\nThe stem is rēg-. The nominative singular (rēx) is formed by adding -s, which causes the g to become x (g + s → x).\n\nCaesar writes: mīles fortis. — A brave soldier.\nCicero writes: pater patriae. — Father of the fatherland."},
+    {"kind": "prose", "heading": "Common third-declension nouns", "body": "miles, militis (m.) — soldier\npater, patris (m.) — father\nmāter, mātris (f.) — mother\nsoror, sorōris (f.) — sister\nlūx, lūcis (f.) — light\nvōx, vōcis (f.) — voice\nnōmen, nōminis (n.) — name\ncorpus, corporis (n.) — body"},
+    {"kind": "self_check", "heading": "Self-check", "items": [
+      {"prompt": "Decline dux, ducis (leader, m.) in the singular.", "answer": "dux, ducis, ducī, ducem, duce"},
+      {"prompt": "What does the genitive singular of a third-declension noun tell you?", "answer": "The stem, to which you add the other case endings."},
+      {"prompt": "Translate: rēgēs mīlitēs dūcunt.", "answer": "The kings lead the soldiers."}
+    ]},
+    {"kind": "reading_preview", "heading": "Sentences with third-declension nouns", "words": [
+      {"latin": "rēx populōs regit.", "transliteration": null, "gloss": "The king rules the peoples.", "audio": "/paideia/audio/latin/sentences/2.11-1.mp3"},
+      {"latin": "mīlitēs ducem laudant.", "transliteration": null, "gloss": "The soldiers praise the leader.", "audio": "/paideia/audio/latin/sentences/2.11-2.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Lesson 2.12: the third declension, i-stems. civis, mare, animal."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can decline any third-declension consonant-stem noun.", "credit_minutes": 55}
+}

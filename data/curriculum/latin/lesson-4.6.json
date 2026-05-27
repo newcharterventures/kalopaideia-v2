@@ -1,0 +1,20 @@
+{
+  "id": "4.6",
+  "stage": 4,
+  "title": "Cum-Clauses",
+  "subtitle": "cum + subjunctive: when, since, although. The most useful conjunction.",
+  "estimated_minutes": 55,
+  "objectives": ["Recognize circumstantial cum clauses with subjunctive.", "Translate as 'when', 'since', or 'although' based on context.", "Distinguish temporal cum (with indicative) from circumstantial cum (with subjunctive)."],
+  "sections": [
+    {"kind": "prose", "heading": "Cum-clauses", "body": "cum + subjunctive expresses circumstance:\n\ncum temporal: when\ncum causal: since, because\ncum concessive: although\n\nCaesar writes: cum Caesar in Galliam pervēnisset, duae factiōnēs erant. — When Caesar had arrived in Gaul, there were two factions.\n\nCum with indicative = 'when' (simple time). Cum with subjunctive = 'when' (circumstantial), 'since', or 'although'."},
+    {"kind": "self_check", "heading": "Self-check", "items": [
+      {"prompt": "Translate: cum hostēs appropinquārent, mīlitēs pugnāvērunt.", "answer": "When the enemies were approaching, the soldiers fought."},
+      {"prompt": "Translate: cum Caesar fortis esset, eum timēbant.", "answer": "Since Caesar was brave, they feared him."}
+    ]},
+    {"kind": "reading_preview", "heading": "Sentences", "words": [
+      {"latin": "cum Caesar haec audīvisset, legiōnēs dūxit.", "transliteration": null, "gloss": "When Caesar had heard these things, he led the legions.", "audio": "/paideia/audio/latin/sentences/4.6-1.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Lesson 4.7: conditions. Six types of conditional sentences."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can recognize and translate cum-clauses.", "credit_minutes": 55}
+}

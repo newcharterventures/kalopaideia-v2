@@ -1,0 +1,72 @@
+{
+  "id": "2.1",
+  "stage": 2,
+  "title": "The Definite Article",
+  "subtitle": "le, la, l', les. Gender in French nouns: masculine and feminine. The article as the gateway to the noun.",
+  "estimated_minutes": 45,
+  "objectives": [
+    "Recognize the four forms of the definite article: le, la, l', les.",
+    "Understand that all French nouns have grammatical gender.",
+    "Apply the correct article form based on gender and number.",
+    "Apply élision with le and la before vowels."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The definite article",
+      "body": "The definite article in French corresponds to 'the' in English. But where English has one form, French has four: le (masculine singular), la (feminine singular), l' (elided before vowels), and les (plural).\n\nGender is not optional in French. Every noun is either masculine or feminine, and the article must match. There is no neuter. The gender is arbitrary: 'le livre' (the book) is masculine, 'la table' (the table) is feminine. You must learn the gender with the noun."
+    },
+    {
+      "kind": "prose",
+      "heading": "The forms",
+      "body": "Masculine singular: le\n- le roi (the king)\n- le pain (the bread)\n- le livre (the book)\n\nFeminine singular: la\n- la reine (the queen)\n- la table (the table)\n- la maison (the house)\n\nBefore a vowel or silent h: l'\n- l'homme (the man, masculine)\n- l'école (the school, feminine)\n- l'ami (the friend, can be masculine or feminine)\n\nPlural (both genders): les\n- les rois (the kings)\n- les reines (the queens)\n- les hommes (the men)\n- les écoles (the schools)"
+    },
+    {
+      "kind": "prose",
+      "heading": "Gender is grammatical, not natural",
+      "body": "In French, gender is a property of the word, not the thing. 'Le soleil' (the sun) is masculine; 'la lune' (the moon) is feminine. But there is nothing inherently masculine about the sun or feminine about the moon. The gender is inherited from Latin (sol, luna) and fossilized in the grammar.\n\nFor people and animals, grammatical gender often aligns with biological sex: 'le père' (the father), 'la mère' (the mother). But even here, some nouns are fixed: 'une personne' is always feminine, even when referring to a man."
+    },
+    {
+      "kind": "prose",
+      "heading": "How to learn gender",
+      "body": "Learn the article with the noun. Never memorize 'roi' alone; memorize 'le roi'. Never memorize 'table' alone; memorize 'la table'. The article is part of the noun.\n\nPractice from Molière, Act I of Le Misanthrope:\n\n  Le monde par vos soins ne se changera pas.\n  (The world will not change by your efforts.)\n\nHere 'le monde' is masculine. You learn it by hearing it."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer without looking back.",
+      "items": [
+        { "prompt": "What are the four forms of the definite article?", "answer": "le, la, l', les" },
+        { "prompt": "When do you use l' instead of le or la?", "answer": "Before a vowel or silent h." },
+        { "prompt": "Is 'livre' (book) masculine or feminine?", "answer": "Masculine. Le livre." },
+        { "prompt": "Is 'table' masculine or feminine?", "answer": "Feminine. La table." },
+        { "prompt": "What is the plural article for both genders?", "answer": "les" },
+        { "prompt": "Does 'les' distinguish between masculine and feminine?", "answer": "No. 'les' is used for both." },
+        { "prompt": "What does 'l'homme' mean?", "answer": "The man (masculine)." },
+        { "prompt": "Why is 'une personne' always feminine?", "answer": "Because grammatical gender is fixed. It does not change based on the biological sex of the referent." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Nouns to practice",
+      "instructions": "Read each aloud with its article.",
+      "words": [
+        { "french": "le roi", "transliteration": null, "gloss": "the king", "audio": "/paideia/audio/french/words/le-roi.mp3" },
+        { "french": "la reine", "transliteration": null, "gloss": "the queen", "audio": "/paideia/audio/french/words/la-reine.mp3" },
+        { "french": "l'homme", "transliteration": null, "gloss": "the man", "audio": "/paideia/audio/french/words/l-homme.mp3" },
+        { "french": "l'école", "transliteration": null, "gloss": "the school", "audio": "/paideia/audio/french/words/l-ecole.mp3" },
+        { "french": "les livres", "transliteration": null, "gloss": "the books", "audio": "/paideia/audio/french/words/les-livres.mp3" },
+        { "french": "les maisons", "transliteration": null, "gloss": "the houses", "audio": "/paideia/audio/french/words/les-maisons.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.2 covers the indefinite and partitive articles: un, une, des; du, de la, de l'. The partitive is the marker of unspecified quantity in French."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can assign the correct article (le, la, l', les) to twenty nouns without hesitation.",
+    "credit_minutes": 45
+  }
+}

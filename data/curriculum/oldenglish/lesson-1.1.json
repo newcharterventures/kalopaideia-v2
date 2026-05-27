@@ -1,0 +1,109 @@
+{
+  "id": "1.1",
+  "stage": 1,
+  "title": "The Alphabet",
+  "subtitle": "Twenty-four letters borrowed from Latin plus four Germanic holdovers.",
+  "estimated_minutes": 40,
+  "objectives": [
+    "Recognize the twenty-four basic letters of Old English orthography.",
+    "Distinguish the four additional letters (æ, þ, ð, ƿ) from their Latin counterparts.",
+    "Understand that Old English uses no j, no v, and no q in native words.",
+    "Begin to associate the written forms with the sounds they represent."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Where we begin",
+      "body": "Old English is written in the Latin alphabet, but not quite the Latin alphabet you know. The scribes who first put Anglo-Saxon speech to parchment borrowed the twenty-three letters of Latin (there was no w in Latin) and added four more to capture the sounds Latin lacked. You will recognize twenty of the letters at once. The other four require attention."
+    },
+    {
+      "kind": "prose",
+      "heading": "What is missing",
+      "body": "Three letters of modern English are absent from Old English orthography: j, q, and v. The j did not exist as a separate letter in Latin (it was a variant form of i). The v was a variant form of u. The q appeared in Latin but was not needed for Germanic words; Old English used c and cw where Latin used q. When you see a j in a modern edition of an Old English text, the manuscript had an i."
+    },
+    {
+      "kind": "letter_grid",
+      "heading": "The twenty-four basic letters",
+      "letters": [
+        { "upper": "A", "lower": "a", "name": "a", "ipa": "[a] or [ɑː]", "audio": "/paideia/audio/oldenglish/letters/a.mp3", "note": "Short or long. Short as in 'cat,' long as in 'father.'" },
+        { "upper": "B", "lower": "b", "name": "b", "ipa": "[b]", "audio": "/paideia/audio/oldenglish/letters/b.mp3", "note": "As in modern English 'boy.'" },
+        { "upper": "C", "lower": "c", "name": "c", "ipa": "[k] or [tʃ]", "audio": "/paideia/audio/oldenglish/letters/c.mp3", "note": "Always hard [k] before a, o, u, consonants. Before e, i, y it palatalized to [tʃ] (as in 'church')." },
+        { "upper": "D", "lower": "d", "name": "d", "ipa": "[d]", "audio": "/paideia/audio/oldenglish/letters/d.mp3", "note": "As in 'dog.'" },
+        { "upper": "E", "lower": "e", "name": "e", "ipa": "[e] or [eː]", "audio": "/paideia/audio/oldenglish/letters/e.mp3", "note": "Short as in 'met,' long as in French 'été.'" },
+        { "upper": "F", "lower": "f", "name": "f", "ipa": "[f] or [v]", "audio": "/paideia/audio/oldenglish/letters/f.mp3", "note": "Voiceless [f] at the start or end of a word; voiced [v] between vowels." },
+        { "upper": "G", "lower": "g", "name": "g", "ipa": "[ɡ], [ɣ], or [j]", "audio": "/paideia/audio/oldenglish/letters/g.mp3", "note": "Complex. Stop [ɡ] initially before a, o, u. Fricative [ɣ] (like Spanish 'lago') between vowels. Palatalized [j] (like 'yes') before e, i, y." },
+        { "upper": "H", "lower": "h", "name": "h", "ipa": "[h] or [x]", "audio": "/paideia/audio/oldenglish/letters/h.mp3", "note": "Aspirate [h] before a vowel. Guttural [x] (like German 'ach') before consonants or at word-end." },
+        { "upper": "I", "lower": "i", "name": "i", "ipa": "[i] or [iː]", "audio": "/paideia/audio/oldenglish/letters/i.mp3", "note": "Short or long. As in 'sit' or 'machine.'" },
+        { "upper": "L", "lower": "l", "name": "l", "ipa": "[l]", "audio": "/paideia/audio/oldenglish/letters/l.mp3", "note": "As in 'let.'" },
+        { "upper": "M", "lower": "m", "name": "m", "ipa": "[m]", "audio": "/paideia/audio/oldenglish/letters/m.mp3", "note": "As in 'man.'" },
+        { "upper": "N", "lower": "n", "name": "n", "ipa": "[n]", "audio": "/paideia/audio/oldenglish/letters/n.mp3", "note": "As in 'no.'" },
+        { "upper": "O", "lower": "o", "name": "o", "ipa": "[o] or [oː]", "audio": "/paideia/audio/oldenglish/letters/o.mp3", "note": "Short or long. Short as in 'lot,' long as in 'boat.'" },
+        { "upper": "P", "lower": "p", "name": "p", "ipa": "[p]", "audio": "/paideia/audio/oldenglish/letters/p.mp3", "note": "As in 'pin.'" },
+        { "upper": "R", "lower": "r", "name": "r", "ipa": "[r]", "audio": "/paideia/audio/oldenglish/letters/r.mp3", "note": "Trilled, as in Scottish or Spanish." },
+        { "upper": "S", "lower": "s", "name": "s", "ipa": "[s] or [z]", "audio": "/paideia/audio/oldenglish/letters/s.mp3", "note": "Voiceless [s] at the start or end. Voiced [z] between vowels." },
+        { "upper": "T", "lower": "t", "name": "t", "ipa": "[t]", "audio": "/paideia/audio/oldenglish/letters/t.mp3", "note": "As in 'top.'" },
+        { "upper": "U", "lower": "u", "name": "u", "ipa": "[u] or [uː]", "audio": "/paideia/audio/oldenglish/letters/u.mp3", "note": "Short or long. As in 'put' or 'boot.'" },
+        { "upper": "X", "lower": "x", "name": "x", "ipa": "[ks]", "audio": "/paideia/audio/oldenglish/letters/x.mp3", "note": "Rare. Represents [ks] as in 'axe.'" },
+        { "upper": "Y", "lower": "y", "name": "y", "ipa": "[y] or [yː]", "audio": "/paideia/audio/oldenglish/letters/y.mp3", "note": "Front rounded vowel. Like German ü in 'über' or French u in 'tu.'" }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "The four additional letters",
+      "body": "Four letters appear in Old English that do not appear in the modern English alphabet. Three are borrowed from the runic alphabet (þ, ð, ƿ); one is a Latin ligature (æ). You must learn to recognize them and reproduce them. Modern printed editions retain them; modern typists often substitute th for þ and ð, w for ƿ, and ae for æ, but we will not. The letters matter."
+    },
+    {
+      "kind": "letter_grid",
+      "heading": "Æ, Þ, Ð, Ƿ",
+      "letters": [
+        { "upper": "Æ", "lower": "æ", "name": "ash", "ipa": "[æ]", "audio": "/paideia/audio/oldenglish/letters/ash.mp3", "note": "The vowel in modern 'cat' or 'hat.' A ligature of a and e." },
+        { "upper": "Þ", "lower": "þ", "name": "thorn", "ipa": "[θ] or [ð]", "audio": "/paideia/audio/oldenglish/letters/thorn.mp3", "note": "Both voiceless 'th' (as in 'thin') and voiced 'th' (as in 'this'). Scribes used þ and ð interchangeably." },
+        { "upper": "Ð", "lower": "ð", "name": "eth", "ipa": "[θ] or [ð]", "audio": "/paideia/audio/oldenglish/letters/eth.mp3", "note": "Identical in sound to þ. Scribes chose between them by preference or manuscript tradition." },
+        { "upper": "Ƿ", "lower": "ƿ", "name": "wynn", "ipa": "[w]", "audio": "/paideia/audio/oldenglish/letters/wynn.mp3", "note": "The sound of modern 'w.' Looks like p but is not. From the rune *wynn*." }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Why the old letters matter",
+      "body": "Replacing æ with ae, þ with th, and ƿ with w makes Old English look like modern English with strange spelling. It is not. It is a different language. The letters remind you of that. When you see þæt, you see an Old English word. When you see 'thaet,' you see a transliteration. We read the language, not the transliteration."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the right column. Name each letter and its sound.",
+      "items": [
+        { "prompt": "æ", "answer": "ash, the vowel in 'cat'" },
+        { "prompt": "þ", "answer": "thorn, the 'th' sound (voiced or voiceless)" },
+        { "prompt": "ð", "answer": "eth, identical to thorn" },
+        { "prompt": "ƿ", "answer": "wynn, the 'w' sound" },
+        { "prompt": "y", "answer": "front rounded vowel, like German ü" },
+        { "prompt": "c", "answer": "[k] before a, o, u; [tʃ] before e, i, y" },
+        { "prompt": "g", "answer": "stop, fricative, or palatal depending on position" },
+        { "prompt": "h", "answer": "[h] before vowels, [x] before consonants or at word-end" },
+        { "prompt": "What three letters of modern English are absent from Old English?", "answer": "j, q, v" },
+        { "prompt": "Why are þ and ð both present if they represent the same sounds?", "answer": "Scribal tradition. Different scriptoria preferred one or the other; some used both." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "First words",
+      "instructions": "You can read these now. Sound them out before checking the audio.",
+      "words": [
+        { "oldenglish": "hūs", "transliteration": "hūs", "gloss": "house", "audio": "/paideia/audio/oldenglish/words/hus.mp3" },
+        { "oldenglish": "mann", "transliteration": "mann", "gloss": "man", "audio": "/paideia/audio/oldenglish/words/mann.mp3" },
+        { "oldenglish": "wīf", "transliteration": "wīf", "gloss": "woman, wife", "audio": "/paideia/audio/oldenglish/words/wif.mp3" },
+        { "oldenglish": "sǣ", "transliteration": "sǣ", "gloss": "sea", "audio": "/paideia/audio/oldenglish/words/sae.mp3" },
+        { "oldenglish": "word", "transliteration": "word", "gloss": "word", "audio": "/paideia/audio/oldenglish/words/word.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.2 covers the four special letters in detail and introduces the concept of vowel length. After that you will begin reading your first Old English sentences."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can name all twenty-eight letters (24 + 4) and their sounds without hesitation.",
+    "credit_minutes": 40
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "1.1",
+  "stage": 1,
+  "title": "The Alphabet and Spelling Chaos",
+  "subtitle": "26 letters plus yogh — no fixed spelling.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Master The Alphabet and Spelling Chaos.",
+    "Read and translate authentic Middle English texts.",
+    "Prepare for sustained reading in Stage 3."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "Middle English uses the twenty-six letters of modern English, plus the yogh (ȝ) in some manuscripts. Spelling varies wildly by scribe. The same word appears as 'though,' 'thogh,' 'þogh,' 'þow.' You learn to recognize patterns, not rules. The letters thorn (þ) and eth (ð) disappear gradually; scribes use 'th' instead. The yogh (ȝ) represents 'y' or guttural 'gh.'"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "The Alphabet and Spelling Chaos"
+        },
+        {
+          "prompt": "Can you apply this to reading?",
+          "answer": "Work through examples with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand The Alphabet and Spelling Chaos.",
+    "credit_minutes": 50
+  }
+}

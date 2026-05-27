@@ -1,0 +1,110 @@
+{
+  "id": "1.1",
+  "stage": 1,
+  "title": "The Alphabet",
+  "subtitle": "Twenty-seven letters. The Latin alphabet plus þ, ð, æ, ǫ.",
+  "estimated_minutes": 40,
+  "objectives": [
+    "Recognize all twenty-seven letters of the Old Norse alphabet in print.",
+    "Distinguish þ (thorn) from ð (eth), and æ (ash) from ordinary a and e.",
+    "Understand that ǫ (o-ogonek) is a distinct vowel, neither o nor a.",
+    "Trace each letter by hand."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Where we are starting",
+      "body": "Old Norse uses the Latin alphabet with four additions: þ (thorn), ð (eth), æ (ash), and ǫ (o-ogonek, sometimes printed as ö with a tail). Medieval manuscripts used variant spellings and abbreviations; modern editions normalize them. We use the normalized forms.\n\nThe alphabet you are learning is the one used in Iceland around 1200 CE, the age of Snorri Sturluson and the composition of most Icelandic sagas. Modern Icelandic preserves these letters and adds a few more."
+    },
+    {
+      "kind": "letter_grid",
+      "heading": "The twenty-seven letters",
+      "letters": [
+        { "upper": "A", "lower": "a", "name": "a", "ipa": "[a]", "audio": "/paideia/audio/oldnorse/letters/a.mp3", "note": "As in father." },
+        { "upper": "Á", "lower": "á", "name": "á (long a)", "ipa": "[aː]", "audio": "/paideia/audio/oldnorse/letters/a-long.mp3", "note": "Long a. Length is phonemic." },
+        { "upper": "B", "lower": "b", "name": "b", "ipa": "[b]", "audio": "/paideia/audio/oldnorse/letters/b.mp3", "note": "As in boy." },
+        { "upper": "D", "lower": "d", "name": "d", "ipa": "[d]", "audio": "/paideia/audio/oldnorse/letters/d.mp3", "note": "As in dog." },
+        { "upper": "Ð", "lower": "ð", "name": "ð (eth)", "ipa": "[ð]", "audio": "/paideia/audio/oldnorse/letters/eth.mp3", "note": "Voiced th, as in that. Interchangeable with þ in many positions." },
+        { "upper": "E", "lower": "e", "name": "e", "ipa": "[e]", "audio": "/paideia/audio/oldnorse/letters/e.mp3", "note": "As in met." },
+        { "upper": "É", "lower": "é", "name": "é (long e)", "ipa": "[eː]", "audio": "/paideia/audio/oldnorse/letters/e-long.mp3", "note": "Long e." },
+        { "upper": "F", "lower": "f", "name": "f", "ipa": "[f]", "audio": "/paideia/audio/oldnorse/letters/f.mp3", "note": "As in father. Between vowels or before voiced consonants, becomes [v]." },
+        { "upper": "G", "lower": "g", "name": "g", "ipa": "[ɡ]", "audio": "/paideia/audio/oldnorse/letters/g.mp3", "note": "Always hard, as in go." },
+        { "upper": "H", "lower": "h", "name": "h", "ipa": "[h]", "audio": "/paideia/audio/oldnorse/letters/h.mp3", "note": "As in house." },
+        { "upper": "I", "lower": "i", "name": "i", "ipa": "[i]", "audio": "/paideia/audio/oldnorse/letters/i.mp3", "note": "As in machine." },
+        { "upper": "Í", "lower": "í", "name": "í (long i)", "ipa": "[iː]", "audio": "/paideia/audio/oldnorse/letters/i-long.mp3", "note": "Long i." },
+        { "upper": "J", "lower": "j", "name": "j", "ipa": "[j]", "audio": "/paideia/audio/oldnorse/letters/j.mp3", "note": "Like English y in yes." },
+        { "upper": "K", "lower": "k", "name": "k", "ipa": "[k]", "audio": "/paideia/audio/oldnorse/letters/k.mp3", "note": "As in skin (unaspirated)." },
+        { "upper": "L", "lower": "l", "name": "l", "ipa": "[l]", "audio": "/paideia/audio/oldnorse/letters/l.mp3", "note": "As in let." },
+        { "upper": "M", "lower": "m", "name": "m", "ipa": "[m]", "audio": "/paideia/audio/oldnorse/letters/m.mp3", "note": "As in man." },
+        { "upper": "N", "lower": "n", "name": "n", "ipa": "[n]", "audio": "/paideia/audio/oldnorse/letters/n.mp3", "note": "As in no." },
+        { "upper": "O", "lower": "o", "name": "o", "ipa": "[o]", "audio": "/paideia/audio/oldnorse/letters/o.mp3", "note": "As in note (short)." },
+        { "upper": "Ó", "lower": "ó", "name": "ó (long o)", "ipa": "[oː]", "audio": "/paideia/audio/oldnorse/letters/o-long.mp3", "note": "Long o." },
+        { "upper": "Ǫ", "lower": "ǫ", "name": "ǫ (o-ogonek)", "ipa": "[ɔ]", "audio": "/paideia/audio/oldnorse/letters/o-ogonek.mp3", "note": "Back rounded vowel, between o and a. Like the vowel in English caught." },
+        { "upper": "P", "lower": "p", "name": "p", "ipa": "[p]", "audio": "/paideia/audio/oldnorse/letters/p.mp3", "note": "Unaspirated, as in spin." },
+        { "upper": "R", "lower": "r", "name": "r", "ipa": "[r]", "audio": "/paideia/audio/oldnorse/letters/r.mp3", "note": "Trilled r, as in Spanish or Italian." },
+        { "upper": "S", "lower": "s", "name": "s", "ipa": "[s]", "audio": "/paideia/audio/oldnorse/letters/s.mp3", "note": "Always voiceless, as in sing." },
+        { "upper": "T", "lower": "t", "name": "t", "ipa": "[t]", "audio": "/paideia/audio/oldnorse/letters/t.mp3", "note": "Unaspirated, as in stop." },
+        { "upper": "Þ", "lower": "þ", "name": "þ (thorn)", "ipa": "[θ]", "audio": "/paideia/audio/oldnorse/letters/thorn.mp3", "note": "Voiceless th, as in thin. Interchangeable with ð in many positions." },
+        { "upper": "U", "lower": "u", "name": "u", "ipa": "[u]", "audio": "/paideia/audio/oldnorse/letters/u.mp3", "note": "As in put." },
+        { "upper": "Ú", "lower": "ú", "name": "ú (long u)", "ipa": "[uː]", "audio": "/paideia/audio/oldnorse/letters/u-long.mp3", "note": "Long u." },
+        { "upper": "V", "lower": "v", "name": "v", "ipa": "[v]", "audio": "/paideia/audio/oldnorse/letters/v.mp3", "note": "As in vine. Often interchangeable with f between vowels." },
+        { "upper": "Y", "lower": "y", "name": "y", "ipa": "[y]", "audio": "/paideia/audio/oldnorse/letters/y.mp3", "note": "High front rounded vowel, as in French tu or German ü." },
+        { "upper": "Ý", "lower": "ý", "name": "ý (long y)", "ipa": "[yː]", "audio": "/paideia/audio/oldnorse/letters/y-long.mp3", "note": "Long y." },
+        { "upper": "Æ", "lower": "æ", "name": "æ (ash)", "ipa": "[æ]", "audio": "/paideia/audio/oldnorse/letters/ae.mp3", "note": "As in English cat. Always long." }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Þ and ð — thorn and eth",
+      "body": "Both letters represent the th-sounds. Þ (thorn) is voiceless, like thin. Ð (eth) is voiced, like that. In practice, medieval scribes often used them interchangeably, and modern editions follow manuscript habits. You will see words spelled with both: maðr and maþr (man) are the same word. For pronunciation, context determines voice: between vowels, usually voiced; after a voiceless consonant, voiceless."
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill",
+      "instructions": "Each special letter (þ, ð, æ, ǫ) is spoken in isolation, then in three words. Listen first; say each aloud after the recording.",
+      "audio": "/paideia/audio/oldnorse/drills/lesson-1.1-listening.mp3"
+    },
+    {
+      "kind": "writing_drill",
+      "heading": "Writing drill",
+      "instructions": "Trace each of the four special letters ten times. Pay attention to the stroke that distinguishes ð from d (the crossbar), þ from p (the ascender through the bowl), æ from ae (the ligature), ǫ from o (the tail).",
+      "downloadable_pdf": "/paideia/curriculum/oldnorse/handouts/lesson-1.1-tracing.pdf"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Without looking back, identify each letter. Cover the answers; check yourself after.",
+      "items": [
+        { "prompt": "Þ", "answer": "thorn, voiceless th (as in thin)" },
+        { "prompt": "Ð", "answer": "eth, voiced th (as in that)" },
+        { "prompt": "Æ", "answer": "ash, as in English cat" },
+        { "prompt": "Ǫ", "answer": "o-ogonek, back rounded vowel (as in caught)" },
+        { "prompt": "Ý", "answer": "long y (as in French tu, held longer)" },
+        { "prompt": "What is the difference between a and á?", "answer": "Length. á is long, a is short. The difference is phonemic: mál (speech) vs mal (bag)." },
+        { "prompt": "Which vowel is unique to Old Norse among Germanic languages?", "answer": "Ǫ (o-ogonek). It merged with ö in later Icelandic but was distinct in the saga age." },
+        { "prompt": "Are þ and ð interchangeable?", "answer": "In spelling, often yes (medieval scribes varied). In pronunciation, context determines which th-sound to use." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "First words in Old Norse",
+      "instructions": "You can already read these. Try aloud, then check against the audio.",
+      "words": [
+        { "oldnorse": "maðr", "transliteration": "maðr", "gloss": "man", "audio": "/paideia/audio/oldnorse/words/madr.mp3" },
+        { "oldnorse": "kona", "transliteration": "kona", "gloss": "woman", "audio": "/paideia/audio/oldnorse/words/kona.mp3" },
+        { "oldnorse": "skip", "transliteration": "skip", "gloss": "ship", "audio": "/paideia/audio/oldnorse/words/skip.mp3" },
+        { "oldnorse": "land", "transliteration": "land", "gloss": "land", "audio": "/paideia/audio/oldnorse/words/land.mp3" },
+        { "oldnorse": "goð", "transliteration": "goð", "gloss": "gods", "audio": "/paideia/audio/oldnorse/words/god.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.2 covers þ, ð, æ, ǫ in detail — the four letters not found in modern English. After 1.2 you will recognize them without hesitation."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can name all twenty-seven letters in random order in under ninety seconds.",
+    "credit_minutes": 40
+  }
+}

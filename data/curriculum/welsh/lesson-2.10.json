@@ -1,0 +1,46 @@
+{
+  "id": "2.10",
+  "stage": 2,
+  "title": "Possessive Adjectives and Mutations",
+  "subtitle": "Fy + nasal, dy + soft, ei (his) + soft, ei (her) + aspirate.",
+  "estimated_minutes": 50,
+  "objectives": ["Use possessive adjectives with correct mutations.","Distinguish ei (his) from ei (her) by mutation."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers Possessive Adjectives and Mutations. Fy + nasal, dy + soft, ei (his) + soft, ei (her) + aspirate."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Use possessive adjectives with correct mutations."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Use possessive adjectives with correct mutations." },
+        { "prompt": "How do you apply this in practice?", "answer": "Distinguish ei (his) from ei (her) by mutation." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "welsh": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/welsh/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on Possessive Adjectives and Mutations."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in Possessive Adjectives and Mutations to ten random examples.",
+    "credit_minutes": 50
+  }
+}

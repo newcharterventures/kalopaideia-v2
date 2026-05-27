@@ -1,0 +1,65 @@
+{
+  "id": "2.10",
+  "stage": 2,
+  "title": "The Verb εἰμί",
+  "subtitle": "The most common verb in Greek — to be.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Conjugate εἰμί in the present indicative: all persons, both numbers.",
+    "Understand that εἰμί is used for existence, predication, and identity.",
+    "Recognize the forms εἰμί, εἶ, ἐστί, ἐσμέν, ἐστέ, εἰσί on sight.",
+    "Translate sentences with εἰμί into natural English."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The verb εἰμί",
+      "body": "εἰμί (I am) is the most common verb in Greek prose. It is irregular. The present indicative forms do not follow the regular pattern of thematic verbs (which you will learn in the next lesson). You must memorize them.\n\nεἰμί is used to express existence ('there is'), predication ('Socrates is wise'), and identity ('Socrates is the teacher'). It links a subject to a predicate noun or adjective. ὁ Σωκράτης σοφός ἐστιν — 'Socrates is wise.' σοφός is a predicate adjective in the nominative, agreeing with the subject."
+    },
+    {
+      "kind": "prose",
+      "heading": "The present indicative of εἰμί",
+      "body": "  singular\n  1st   εἰμί        I am\n  2nd   εἶ          you are\n  3rd   ἐστί(ν)     he/she/it is\n\n  plural\n  1st   ἐσμέν       we are\n  2nd   ἐστέ        you (plural) are\n  3rd   εἰσί(ν)     they are\n\nThe third person forms ἐστί and εἰσί add a movable ν when the next word begins with a vowel or when the verb ends a sentence. ἐστὶν ἀνήρ — 'there is a man.' εἰσὶν ἄνθρωποι — 'there are men.'\n\nThe verb is often enclitic (it leans on the preceding word and loses its accent). In practice, you will often see ἐστιν written without an accent when it is not the first word in its clause."
+    },
+    {
+      "kind": "prose",
+      "heading": "Examples from Plato",
+      "body": "Plato, Apology 20c: σοφὸς γάρ εἰμι.\n'For I am wise.' γάρ is a postpositive particle ('for'); the word order is flexible.\n\nPlato, Crito 43b: Σωκράτης ἐστὶν ὁ σοφώτατος.\n'Socrates is the wisest.' ὁ σοφώτατος is a superlative adjective in the nominative, agreeing with the subject Σωκράτης."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers. Give the requested form or answer the question.",
+      "items": [
+        { "prompt": "First person singular", "answer": "εἰμί (I am)" },
+        { "prompt": "Second person singular", "answer": "εἶ (you are)" },
+        { "prompt": "Third person singular", "answer": "ἐστί(ν) (he/she/it is)" },
+        { "prompt": "First person plural", "answer": "ἐσμέν (we are)" },
+        { "prompt": "Second person plural", "answer": "ἐστέ (you are)" },
+        { "prompt": "Third person plural", "answer": "εἰσί(ν) (they are)" },
+        { "prompt": "When do you add the movable ν?", "answer": "When the next word begins with a vowel or when the verb ends a sentence." },
+        { "prompt": "Translate: ὁ Σωκράτης σοφός ἐστιν.", "answer": "Socrates is wise." },
+        { "prompt": "Translate: εἰσὶν ἄνθρωποι.", "answer": "There are men." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Sentences with εἰμί",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "ὁ Σωκράτης σοφός ἐστιν.", "transliteration": "ho Sōkrátēs sophós estin.", "gloss": "Socrates is wise.", "audio": "/paideia/audio/greek/sentences/sokrates-sophos.mp3" },
+        { "greek": "εἰμὶ ἄνθρωπος.", "transliteration": "eimì ánthrōpos.", "gloss": "I am a man.", "audio": "/paideia/audio/greek/sentences/eimi-anthropos.mp3" },
+        { "greek": "ἐσμὲν φίλοι.", "transliteration": "esmèn phíloi.", "gloss": "We are friends.", "audio": "/paideia/audio/greek/sentences/esmen-philoi.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.11 introduces the present indicative active of regular ω-verbs: λύω, λύεις, λύει, λύομεν, λύετε, λύουσι. These are the thematic verbs, and they follow a predictable pattern. Once you have this conjugation, you have the foundation for all Greek verb forms."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can conjugate εἰμί from memory in under thirty seconds and can translate ten sentences with εἰμί without error.",
+    "credit_minutes": 50
+  }
+}

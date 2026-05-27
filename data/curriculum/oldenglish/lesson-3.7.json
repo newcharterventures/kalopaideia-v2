@@ -1,0 +1,43 @@
+{
+  "id": "3.7",
+  "stage": 3,
+  "title": "Old English Poetic Meter",
+  "subtitle": "Alliterative verse — four stresses, caesura, no end-rhyme.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Master Old English Poetic Meter.",
+    "Read and translate authentic Old English poetry and prose.",
+    "Prepare for the capstone examination."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "Old English poetry is alliterative. Each line has four primary stresses divided by a caesura (mid-line pause). The first three stresses alliterate; the fourth does not. Alliteration is on the first sound of the stressed syllable. Vowels alliterate with any vowel. No end-rhyme. Example from Beowulf: 'Hwæt! Wē Gār-Dena / in gēardagum' — three g-sounds alliterate (Gār, gēardagum) across the caesura."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "Old English Poetic Meter"
+        },
+        {
+          "prompt": "Can you translate the example passage?",
+          "answer": "Work through it word by word with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson or take the capstone examination."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply Old English Poetic Meter to reading.",
+    "credit_minutes": 60
+  }
+}

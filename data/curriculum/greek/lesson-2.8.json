@@ -1,0 +1,63 @@
+{
+  "id": "2.8",
+  "stage": 2,
+  "title": "The Dative",
+  "subtitle": "The case of the indirect object, instrument, location, and time.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Understand the dative as the case of the indirect object.",
+    "Use the dative to express instrument, location, and time when.",
+    "Recognize the dative after prepositions and with certain verbs.",
+    "Translate dative constructions into natural English."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The dative case",
+      "body": "The dative is the case of the indirect object. When you give something to someone, the recipient is in the dative. δίδωμι τὸ δῶρον τῷ ἀνθρώπῳ — 'I give the gift to the man.' τῷ ἀνθρώπῳ is dative.\n\nThe dative also marks the instrument (the means by which something is done), the location (where something happens), and the time when (the point in time at which something occurs). Greek uses the bare dative for these without a preposition, though English often adds 'with', 'at', or 'in'."
+    },
+    {
+      "kind": "prose",
+      "heading": "Uses of the dative",
+      "body": "Indirect object: δίδωμι τὸ βιβλίον τῷ παιδί — 'I give the book to the child.'\n\nInstrument: τῷ ξίφει κτείνει — 'He kills with the sword.' (dative of means)\n\nLocation: ἐν τῇ πόλει — 'in the city.' The preposition ἐν takes the dative.\n\nTime when: τῇ ἡμέρᾳ — 'on the day.' The bare dative marks the time when.\n\nDative of possession: ἐστί μοι βιβλίον — 'There is to me a book' = 'I have a book.' Greek expresses possession with the dative of the possessor and the verb εἰμί.\n\nDative after certain verbs: πιστεύω τῷ λόγῳ — 'I trust the word.' The verb πιστεύω takes its object in the dative."
+    },
+    {
+      "kind": "prose",
+      "heading": "Examples from Xenophon",
+      "body": "Anabasis I.2.1: ἐντεῦθεν ἐξελαύνει διὰ τῆς Λυδίας σταθμοὺς τρεῖς.\n'From there he marches through Lydia three stages.' διὰ τῆς Λυδίας — 'through Lydia'. The preposition διά with the genitive means 'through'; with the accusative it means 'because of'.\n\nPlato, Crito 43a: τῇ ὑστεραίᾳ ἥξει.\n'On the next day it will come.' τῇ ὑστεραίᾳ is dative of time when."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers. Answer each question or translate each phrase.",
+      "items": [
+        { "prompt": "What is the primary use of the dative?", "answer": "Indirect object — the recipient of the action." },
+        { "prompt": "How do you translate δίδωμι τὸ δῶρον τῷ ἀνθρώπῳ?", "answer": "'I give the gift to the man.'" },
+        { "prompt": "What does the dative of means express?", "answer": "The instrument or means by which something is done." },
+        { "prompt": "Which case does the preposition ἐν take?", "answer": "Dative." },
+        { "prompt": "What does the bare dative express when used for time?", "answer": "Time when — the point in time at which something happens." },
+        { "prompt": "How does Greek express 'I have a book'?", "answer": "ἐστί μοι βιβλίον — 'there is to me a book' (dative of possession)" },
+        { "prompt": "Translate: τῷ ξίφει κτείνει", "answer": "He kills with the sword." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Dative constructions",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "δίδωμι τὸ δῶρον τῷ παιδί.", "transliteration": "dídōmi tò dôron tôi paidí.", "gloss": "I give the gift to the child.", "audio": "/paideia/audio/greek/sentences/didomi-doron.mp3" },
+        { "greek": "ἐν τῇ πόλει", "transliteration": "en têi pólei", "gloss": "in the city", "audio": "/paideia/audio/greek/phrases/en-te-polei.mp3" },
+        { "greek": "τῇ ἡμέρᾳ", "transliteration": "têi hēmérāi", "gloss": "on the day", "audio": "/paideia/audio/greek/phrases/te-hemera-time.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.9 introduces the vocative case. The vocative is the case of direct address. When you call out to someone, you use the vocative. It is the simplest case, and in many nouns it is identical to the nominative."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can identify and translate five different uses of the dative in random Greek sentences.",
+    "credit_minutes": 50
+  }
+}

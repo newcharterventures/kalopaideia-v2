@@ -1,0 +1,66 @@
+{
+  "id": "4.4",
+  "stage": 4,
+  "title": "The Infinitive",
+  "subtitle": "λύειν, λῦσαι — the verbal noun.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Form the present, aorist, and future infinitives in all voices.",
+    "Understand the infinitive as a verbal noun with tense and voice but no person.",
+    "Use the infinitive as subject, object, complement, and in indirect statement.",
+    "Translate infinitives into natural English."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The infinitive",
+      "body": "The infinitive is the verbal noun. λύειν means 'to loose' or 'the act of loosing'. The infinitive has tense (present, aorist, future, perfect) and voice (active, middle, passive) but no person or number. It does not take a subject in the nominative; its subject (if expressed) is in the accusative (this is called accusative and infinitive construction, used in indirect statement).\n\nThe infinitive is used as the subject or object of a verb, as a complement (completing the meaning of another verb), and in indirect statement."
+    },
+    {
+      "kind": "prose",
+      "heading": "Infinitive forms",
+      "body": "Present active: λύειν (to loose, to be loosing)\nAorist active: λῦσαι (to have loosed, to loose)\nFuture active: λύσειν (to be about to loose)\n\nPresent middle/passive: λύεσθαι (to loose oneself / to be loosed)\nAorist middle: λύσασθαι (to have loosed oneself)\nAorist passive: λυθῆναι (to have been loosed)\nFuture middle: λύσεσθαι (to be about to loose oneself)\nFuture passive: λυθήσεσθαι (to be about to be loosed)\n\nThe present and aorist infinitives are most common. The future infinitive is less common. The perfect infinitive exists but is rare."
+    },
+    {
+      "kind": "prose",
+      "heading": "Uses of the infinitive",
+      "body": "Subject: λύειν ἐστὶ καλόν — 'To loose is noble' or 'Loosing is noble.'\n\nObject: βούλομαι λύειν — 'I wish to loose.'\n\nComplement: δοκεῖ λύειν — 'He seems to be loosing.' Many verbs (δοκέω, φαίνομαι, μέλλω, δύναμαι) take a supplementary infinitive.\n\nIndirect statement (accusative and infinitive): φησὶ Σωκράτη σοφὸν εἶναι — 'He says that Socrates is wise.' Σωκράτη is accusative (subject of the infinitive), σοφόν is accusative (predicate adjective agreeing with the subject), εἶναι is the infinitive of εἰμί."
+    },
+    {
+      "kind": "prose",
+      "heading": "From Plato",
+      "body": "Plato, Apology 29b: οὐ παύσομαι φιλοσοφῶν.\n'I will not cease philosophizing.' φιλοσοφῶν is the present active participle, but the infinitive construction is parallel: οὐ παύσομαι could take the infinitive φιλοσοφεῖν (to philosophize)."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Give the form or translate.",
+      "items": [
+        { "prompt": "Present active infinitive of λύω", "answer": "λύειν" },
+        { "prompt": "Aorist active infinitive of λύω", "answer": "λῦσαι" },
+        { "prompt": "Aorist passive infinitive of λύω", "answer": "λυθῆναι" },
+        { "prompt": "Translate: βούλομαι λύειν.", "answer": "I wish to loose." },
+        { "prompt": "Translate: φησὶ Σωκράτη σοφὸν εἶναι.", "answer": "He says that Socrates is wise." },
+        { "prompt": "What case is the subject of an infinitive in indirect statement?", "answer": "Accusative." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Infinitive in sentences",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "βούλομαι λύειν τοὺς αἰχμαλώτους.", "transliteration": "boúlomai lýein toùs aichmalṓtous.", "gloss": "I wish to free the prisoners.", "audio": "/paideia/audio/greek/sentences/boulomai-lyein.mp3" },
+        { "greek": "φησὶ Σωκράτη σοφὸν εἶναι.", "transliteration": "phēsì Sōkrátē sophòn eînai.", "gloss": "He says that Socrates is wise.", "audio": "/paideia/audio/greek/sentences/phesi-sokrate.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 4.5 introduces conditions, part one: simple particular (εἰ + indicative, indicative) and contrary-to-fact (εἰ + imperfect/aorist, ἄν + same). Greek has six common condition types, and you will learn the first two here."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can form and recognize the present, aorist, and future infinitives of any ω-verb and can translate infinitives in subject, object, complement, and indirect statement uses.",
+    "credit_minutes": 55
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "3.6",
+  "stage": 3,
+  "title": "Sir Gawain — Dialect and Spelling",
+  "subtitle": "Northwest Midlands, not London.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Master Sir Gawain — Dialect and Spelling.",
+    "Read and translate authentic Middle English texts.",
+    "Prepare for the capstone examination."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "Northwest Midlands dialect, c. 1380–1400. Spelling differs from Chaucer: quen (when), quyl (while), schulde (should), -3 (yogh) for -gh or -y. Pronunciation differs slightly. The Gawain poet writes in a more conservative dialect than Chaucer."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "Sir Gawain — Dialect and Spelling"
+        },
+        {
+          "prompt": "Can you apply this to reading?",
+          "answer": "Work through examples with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand Sir Gawain — Dialect and Spelling.",
+    "credit_minutes": 60
+  }
+}

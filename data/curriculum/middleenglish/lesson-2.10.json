@@ -1,0 +1,43 @@
+{
+  "id": "2.10",
+  "stage": 2,
+  "title": "Adjectives",
+  "subtitle": "No inflection except weak forms — simpler than Old English.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Master Adjectives.",
+    "Read and translate authentic Middle English texts.",
+    "Prepare for sustained reading in Stage 3."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "No inflection except occasional weak forms after 'the' (the yonge sonne, the olde man). Comparatives: -er, -est. Irregular: good/bettre/beste, yvel/worse/worste. The elaborate Old English adjective declension is gone."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "Adjectives"
+        },
+        {
+          "prompt": "Can you apply this to reading?",
+          "answer": "Work through examples with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand Adjectives.",
+    "credit_minutes": 55
+  }
+}

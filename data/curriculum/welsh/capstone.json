@@ -1,0 +1,128 @@
+{
+  "id": "stage-3-capstone",
+  "lang": "welsh",
+  "title": "The Kalopaideia Middle Welsh Examination",
+  "instructions": "Three hours, no notes for Part A; printed lexicon and grammar permitted for Part B. Honor code: you affirm by submitting that you used only permitted aids. A failed examination may be retaken after thirty days.",
+  "time_limit_minutes": 180,
+  "tracks_apply": null,
+  "sections": [
+    {
+      "id": "A",
+      "title": "Part A — Sight Translation (no notes)",
+      "items": [
+        {
+          "id": "A1",
+          "type": "translate",
+          "points": 10,
+          "track": null,
+          "prompt_welsh": "Pwyll Pendeuic Dyuet a oed yn arglwyd ar seith cantref Dyuet.",
+          "prompt_en": "Translate (Pwyll, opening sentence).",
+          "reference": [
+            "pwyll prince of dyfed was lord over the seven cantrefs of dyfed",
+            "pwyll chief of dyfed was lord of the seven cantrefs of dyfed",
+            "pwyll prince dyfed was a lord over seven cantrefs of dyfed"
+          ],
+          "keywords": ["pwyll", "prince", "dyfed", "lord", "seven", "cantrefs"],
+          "threshold": 0.45
+        },
+        {
+          "id": "A2",
+          "type": "translate",
+          "points": 10,
+          "track": null,
+          "prompt_welsh": "Ac yn dyuot y gylch y llwyn, yd oed yn gwelet lle agored llyfyn yng glas y llwyn.",
+          "prompt_en": "Translate (Pwyll, the hunt scene).",
+          "reference": [
+            "and in coming around the grove, he saw an open level place in the depth of the grove",
+            "and as he came around the thicket, he was seeing a level open place in the depth of the grove",
+            "and coming around the copse, he saw a flat clearing in the heart of the wood"
+          ],
+          "keywords": ["coming", "around", "grove", "saw", "open", "level", "place"],
+          "threshold": 0.4
+        },
+        {
+          "id": "A3",
+          "type": "translate",
+          "points": 10,
+          "track": null,
+          "prompt_welsh": "A gwr, pwy wyt ti?",
+          "prompt_en": "Translate (Pwyll, dialogue with Arawn).",
+          "reference": [
+            "and sir, who are you",
+            "and man, who are you",
+            "and lord, who art thou"
+          ],
+          "keywords": ["sir", "man", "who", "you"],
+          "threshold": 0.5
+        },
+        {
+          "id": "A4",
+          "type": "translate",
+          "points": 10,
+          "track": null,
+          "prompt_welsh": "Mi a wnaf genhyt gyfeillach.",
+          "prompt_en": "Translate (Arawn's promise to Pwyll).",
+          "reference": [
+            "i will make with you friendship",
+            "i will make friendship with you",
+            "i shall make alliance with you"
+          ],
+          "keywords": ["will", "make", "with", "you", "friendship"],
+          "threshold": 0.45
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "title": "Part B — Parsing and Mutation",
+      "items": [
+        {
+          "id": "B1",
+          "type": "parse",
+          "points": 5,
+          "prompt": "Parse the form caraf. Give: person, number, tense, mood.",
+          "answer": ["first", "singular", "present", "indicative"]
+        },
+        {
+          "id": "B2",
+          "type": "parse",
+          "points": 5,
+          "prompt": "Parse the form aeth. Give: person, number, tense, mood, lexical form.",
+          "answer": ["third", "singular", "preterite", "indicative", "mynd"]
+        },
+        {
+          "id": "B3",
+          "type": "parse",
+          "points": 5,
+          "prompt": "Identify the mutation in 'y ferch' (from merch). Type and trigger?",
+          "answer": ["soft mutation", "after article with feminine noun"]
+        },
+        {
+          "id": "B4",
+          "type": "parse",
+          "points": 5,
+          "prompt": "Identify the mutation in 'fy mhen' (from pen). Type and trigger?",
+          "answer": ["nasal mutation", "after fy (my)"]
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "title": "Part D — Multiple Choice (vocabulary and grammar)",
+      "items": [
+        { "id": "D1", "type": "mcq", "points": 2, "prompt": "What does brenin mean?", "choices": ["king", "prince", "lord", "chief"], "answer": "king" },
+        { "id": "D2", "type": "mcq", "points": 2, "prompt": "What does merch mean?", "choices": ["daughter", "woman", "girl", "all of these"], "answer": "all of these" },
+        { "id": "D3", "type": "mcq", "points": 2, "prompt": "What is the word order in Welsh?", "choices": ["SVO", "SOV", "VSO", "VOS"], "answer": "VSO" },
+        { "id": "D4", "type": "mcq", "points": 2, "prompt": "Which mutation does 'fy' (my) trigger?", "choices": ["soft", "nasal", "aspirate", "none"], "answer": "nasal" },
+        { "id": "D5", "type": "mcq", "points": "2", "prompt": "Which mutation does 'ei' (her) trigger?", "choices": ["soft", "nasal", "aspirate", "none"], "answer": "aspirate" },
+        { "id": "D6", "type": "mcq", "points": 2, "prompt": "What is unique to Celtic prepositions?", "choices": ["they decline like nouns", "they conjugate like verbs", "they never mutate", "they take no objects"], "answer": "they conjugate like verbs" }
+      ]
+    }
+  ],
+  "scoring": {
+    "max_points": 72,
+    "pass_mark": 0.70,
+    "honors_mark": 0.85
+  },
+  "honor_code": "I attest that the answers I have entered are my own, composed without aid beyond the materials permitted for each section of this examination. I understand that this examination is graded automatically, that the script and my signed attestation will be permanently hashed on completion, and that a passing score will issue a permanent on-chain diploma in my name."
+}

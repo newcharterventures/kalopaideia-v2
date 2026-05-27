@@ -1,0 +1,66 @@
+{
+  "id": "2.6",
+  "stage": 2,
+  "title": "Weak Nouns",
+  "subtitle": "Guma, sunne, ēage — the -an declension.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Understand and apply the concepts of Weak Nouns.",
+    "Read and parse examples from authentic Old English texts.",
+    "Practice pronunciation and recognition."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "Weak nouns are simpler than strong nouns. Most forms end in -an. Three genders, but the pattern is similar across all three. The weak declension includes many common nouns (guma 'man', nama 'name', sunne 'sun', ēage 'eye', ēare 'ear')."
+    },
+    {
+      "kind": "paradigm_table",
+      "heading": "Paradigm",
+      "table": {
+        "singular": {
+          "Nom": "guma",
+          "Acc": "guman",
+          "Gen": "guman",
+          "Dat": "guman"
+        },
+        "plural": {
+          "Nom": "guman",
+          "Acc": "guman",
+          "Gen": "gumena",
+          "Dat": "gumum"
+        }
+      }
+    },
+    {
+      "kind": "prose",
+      "heading": "Example",
+      "body": "Guma (man): se guma (nom), þone guman (acc), þæs guman (gen), þǣm guman (dat)."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test your understanding.",
+      "items": [
+        {
+          "prompt": "What is the main concept of this lesson?",
+          "answer": "Weak Nouns"
+        },
+        {
+          "prompt": "Can you parse the example?",
+          "answer": "Review the paradigm and example above."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson in Stage 2."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand Weak Nouns and can apply it in reading.",
+    "credit_minutes": 55
+  }
+}

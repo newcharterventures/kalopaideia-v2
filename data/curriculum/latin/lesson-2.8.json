@@ -1,0 +1,22 @@
+{
+  "id": "2.8",
+  "stage": 2,
+  "title": "The Present Indicative Active — Fourth and Mixed",
+  "subtitle": "audiō, capiō. The -iō verbs and the i-stem class.",
+  "estimated_minutes": 50,
+  "objectives": ["Conjugate fourth-conjugation verbs (audiō).", "Conjugate third-conjugation i-stem verbs (capiō).", "Distinguish fourth from third i-stem by infinitive.", "Translate sentences with all four conjugations."],
+  "sections": [
+    {"kind": "prose", "heading": "Fourth conjugation and third i-stem", "body": "The fourth conjugation has infinitives in -īre: audīre (to hear). Theme vowel: -ī- (long i).\n\nFourth conjugation:\n  audiō, audīs, audit, audīmus, audītis, audiunt\n\nThe third conjugation i-stem verbs (also called 'mixed' conjugation) look like fourth but have infinitives in -ĕre: capere (to take, to seize).\n\nThird i-stem:\n  capiō, capis, capit, capimus, capitis, capiunt\n\nCaesar writes: oppidum capiunt. — They seize the town.\nCicero writes: verba audīmus. — We hear the words."},
+    {"kind": "self_check", "heading": "Self-check", "items": [
+      {"prompt": "Conjugate sentiō (to feel, 4th) in all persons.", "answer": "sentiō, sentīs, sentit, sentīmus, sentītis, sentiunt"},
+      {"prompt": "Conjugate faciō (to do/make, 3rd i-stem) in all persons.", "answer": "faciō, facis, facit, facimus, facitis, faciunt"},
+      {"prompt": "What distinguishes 4th from 3rd i-stem?", "answer": "Infinitive: 4th ends in -īre (long i), 3rd i-stem ends in -ĕre (short e)."}
+    ]},
+    {"kind": "reading_preview", "heading": "Sentences", "words": [
+      {"latin": "mīlitēs oppidum capiunt.", "transliteration": null, "gloss": "The soldiers seize the town.", "audio": "/paideia/audio/latin/sentences/2.8-1.mp3"},
+      {"latin": "puella cantum audit.", "transliteration": null, "gloss": "The girl hears the song.", "audio": "/paideia/audio/latin/sentences/2.8-2.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Lesson 2.9: the verb sum. sum, es, est, sumus, estis, sunt."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can conjugate audiō and capiō and distinguish them by infinitive.", "credit_minutes": 50}
+}

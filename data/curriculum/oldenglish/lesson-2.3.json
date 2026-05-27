@@ -1,0 +1,66 @@
+{
+  "id": "2.3",
+  "stage": 2,
+  "title": "Strong Nouns — Masculine a-Stems",
+  "subtitle": "Stān, dæg, hlāf — the largest class.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Understand and apply the concepts of Strong Nouns — Masculine a-Stems.",
+    "Read and parse examples from authentic Old English texts.",
+    "Practice pronunciation and recognition."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The strong masculine a-stem declension is the most common noun pattern in Old English. These nouns end in a consonant in the nominative singular. Most masculine nouns belong to this class."
+    },
+    {
+      "kind": "paradigm_table",
+      "heading": "Paradigm",
+      "table": {
+        "singular": {
+          "Nom": "stān",
+          "Acc": "stān",
+          "Gen": "stānes",
+          "Dat": "stāne"
+        },
+        "plural": {
+          "Nom": "stānas",
+          "Acc": "stānas",
+          "Gen": "stāna",
+          "Dat": "stānum"
+        }
+      }
+    },
+    {
+      "kind": "prose",
+      "heading": "Example",
+      "body": "Stān (stone): se stān (the stone, nom), þone stān (acc), þæs stānes (gen), þǣm stāne (dat). Plural: þā stānas (nom/acc), þāra stāna (gen), þǣm stānum (dat)."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test your understanding.",
+      "items": [
+        {
+          "prompt": "What is the main concept of this lesson?",
+          "answer": "Strong Nouns — Masculine a-Stems"
+        },
+        {
+          "prompt": "Can you parse the example?",
+          "answer": "Review the paradigm and example above."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson in Stage 2."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand Strong Nouns — Masculine a-Stems and can apply it in reading.",
+    "credit_minutes": 55
+  }
+}

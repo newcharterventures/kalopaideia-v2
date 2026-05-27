@@ -1,0 +1,52 @@
+{
+  "id": "4.12",
+  "stage": 4,
+  "title": "Reading: Lysias 1, On the Murder of Eratosthenes, §§1–10",
+  "subtitle": "Conversational Attic prose — the everyday rhythm of the spoken language.",
+  "estimated_minutes": 90,
+  "objectives": [
+    "Read, parse, and translate the opening of Lysias 1.",
+    "Recognize the conversational style of forensic oratory.",
+    "Understand the narrative voice and the legal context.",
+    "Build confidence for reading sustained Attic prose beyond Plato and Xenophon."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Lysias 1: On the Murder of Eratosthenes",
+      "body": "Lysias was a logographer, a speechwriter for Athenian courts. His clients were ordinary people, and his language is the language of everyday Athenian speech. Lysias 1 is a defense speech for a man named Euphiletus, who killed his wife's lover and is now on trial for murder.\n\nThe opening sections introduce Euphiletus and his domestic situation. The syntax is simpler than Plato, the vocabulary is more concrete, and the style is more direct. This is the Greek of the law courts, not the Greek of philosophy. But it is still Attic prose, and it is still beautiful.\n\nRead it aloud. Hear the voice of an Athenian husband telling his story to a jury."
+    },
+    {
+      "kind": "prose",
+      "heading": "Lysias 1.6-7 (excerpt)",
+      "body": "ἐγὼ γάρ, ὦ Ἀθηναῖοι, ἐπειδὴ ἔδοξέ μοι γῆμαι καὶ γυναῖκα ἠγαγόμην εἰς τὴν οἰκίαν, τὸν μὲν ἄλλον χρόνον οὕτω διεκείμην ὥστε μήτε λυπεῖν μήτε λίαν ἐπ' ἐκείνῃ εἶναι ὅ τι ἂν βούληται πράττειν· ἐφύλαττον δὲ ὡς οἷόν τε ἦν, καὶ προσεῖχον τὸν νοῦν ὥσπερ εἰκὸς ἦν. ἐπειδὴ δέ μοι παιδίον γίγνεται, ἐπίστευον ἤδη καὶ πάντα τὰ ἐμαυτοῦ ἐκείνῃ παρεδίδουν, ἡγούμενος ταύτην οἰκειότητα μεγίστην εἶναι.\n\nGloss (abridged):\nἐγώ — I\nἐπειδή — when\nἔδοξέ μοι — it seemed good to me (aor. of δοκέω + dat.)\nγῆμαι — to marry (aor. inf. of γαμέω)\nγυναῖκα ἠγαγόμην — I brought a wife (aor. mid. of ἄγω)\nεἰς τὴν οἰκίαν — into the house\nτὸν μὲν ἄλλον χρόνον — for the rest of the time\nοὕτω διεκείμην — I was so disposed (imperf. mid. of διάκειμαι)\nὥστε μήτε λυπεῖν — so as neither to annoy\nμήτε λίαν ἐπ' ἐκείνῃ εἶναι — nor to be too much upon her\nὅ τι ἂν βούληται πράττειν — whatever she might wish to do (pres. opt. + ἄν = potential)\nἐφύλαττον — I was watching (imperf.)\nὡς οἷόν τε ἦν — as far as possible\nπροσεῖχον τὸν νοῦν — I paid attention (imperf.)\nὥσπερ εἰκὸς ἦν — as was fitting\nἐπειδὴ δέ — but when\nπαιδίον γίγνεται — a child is born (pres. of γίγνομαι)\nἐπίστευον — I trusted (imperf.)\nπάντα τὰ ἐμαυτοῦ — all my things\nπαρεδίδουν — I handed over (imperf.)\nἡγούμενος — thinking (pres. part. of ἡγέομαι)\nταύτην οἰκειότητα μεγίστην εἶναι — this intimacy to be greatest (acc. + inf.)\n\nTranslation:\nFor I, men of Athens, when it seemed good to me to marry and I brought a wife into my house, for the rest of the time I was so disposed as neither to annoy her nor to be too much upon her about whatever she might wish to do. I was watching as far as possible and paying attention as was fitting. But when a child was born to me, I trusted already and handed over all my things to her, thinking this intimacy to be the greatest."
+    },
+    {
+      "kind": "prose",
+      "heading": "What you have done",
+      "body": "You have read Lysias. You have crossed from the high style of Plato to the conversational style of the law courts. The grammar is the same. The vocabulary is different, but not radically so. You recognized the subjunctives, the optatives, the infinitives, the participles, the conditions, the indirect statement. You have the tools.\n\nStage 4 is complete. You can read Xenophon, Plato, Lysias, and the New Testament. You have the grammar of classical Greek. The rest is vocabulary, idiom, and practice. You are ready for Stage 5: the capstone."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer these questions without looking back.",
+      "items": [
+        { "prompt": "Who is the speaker?", "answer": "Euphiletus (implied by the first-person narrative)." },
+        { "prompt": "What did the speaker do when he decided to marry?", "answer": "He brought a wife into his house." },
+        { "prompt": "How was the speaker disposed toward his wife?", "answer": "He tried neither to annoy her nor to be too much upon her about what she wished to do." },
+        { "prompt": "What changed after a child was born?", "answer": "He trusted his wife and handed over all his things to her." },
+        { "prompt": "What did he think this intimacy was?", "answer": "The greatest." },
+        { "prompt": "What is the mood of βούληται?", "answer": "Subjunctive (ἂν + subj. = potential or indefinite)." }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Stage 4 complete — up next: Stage 5",
+      "body": "Stage 4 is complete. You have learned the subjunctive, optative, imperative, infinitive, conditions, indirect statement, and the perfect system. You have read Plato and Lysias. You are no longer an intermediate reader. You are an advanced reader of Greek.\n\nStage 5 is the capstone: sustained reading of a major author. Choose your track (Plato, Xenophon, or the Gospel of Mark) and read a complete book with commentary. After Stage 5 you will hold the Kalopaideia Diploma in Classical Greek."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can read the passage aloud with accurate pronunciation and can translate at least 80% of it without consulting the gloss.",
+    "credit_minutes": 90
+  }
+}

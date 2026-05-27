@@ -1,0 +1,43 @@
+{
+  "id": "2.4",
+  "stage": 2,
+  "title": "The Past Participle",
+  "subtitle": "Riden, y-riden, sungen — optional y- prefix.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Master The Past Participle.",
+    "Read and translate authentic Middle English texts.",
+    "Prepare for sustained reading in Stage 3."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "Strong verbs: y- prefix optional (riden or y-riden), vowel change from infinitive (sungen, comen, goon → gon). Weak verbs: loved. The y- prefix (from Old English ge-) is falling out of use in Chaucer's London dialect but survives in the West Midlands."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "The Past Participle"
+        },
+        {
+          "prompt": "Can you apply this to reading?",
+          "answer": "Work through examples with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand The Past Participle.",
+    "credit_minutes": 55
+  }
+}

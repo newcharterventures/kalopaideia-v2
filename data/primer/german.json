@@ -1,0 +1,873 @@
+{
+  "overview": "German is a West Germanic language and the principal literary medium of Central European thought from the Enlightenment through modernity. The works of Goethe, Schiller, Kant, Hegel, Nietzsche, Mann, and Kafka exist in German. Mastery of German opens direct access to philosophy, literature, and scholarship that shaped contemporary intellectual culture.",
+  "alphabet": [
+    {
+      "char": "a",
+      "name": "a",
+      "ipa": "[aː] / [a]",
+      "approximation": "long: like 'a' in 'father'; short: like 'u' in 'but'",
+      "notes": "Length depends on syllable structure; long before single consonants, short before clusters."
+    },
+    {
+      "char": "ä",
+      "name": "a-Umlaut",
+      "ipa": "[ɛː] / [ɛ]",
+      "approximation": "long: like 'ai' in 'fair'; short: like 'e' in 'bed'",
+      "notes": "Umlaut of a; represents fronting. Sometimes written ae in older texts or absence of umlaut type."
+    },
+    {
+      "char": "b",
+      "name": "be",
+      "ipa": "[b] / [p]",
+      "approximation": "like 'b' in 'boat'",
+      "notes": "Devoiced to [p] at syllable end or before voiceless consonants."
+    },
+    {
+      "char": "c",
+      "name": "tse",
+      "ipa": "[ts] / [k]",
+      "approximation": "before e/i: 'ts' in 'cats'; elsewhere: 'k' in 'cat'",
+      "notes": "Rare in native German words; appears in loanwords and the digraph ch."
+    },
+    {
+      "char": "d",
+      "name": "de",
+      "ipa": "[d] / [t]",
+      "approximation": "like 'd' in 'dog'",
+      "notes": "Devoiced to [t] at syllable end or before voiceless consonants."
+    },
+    {
+      "char": "e",
+      "name": "e",
+      "ipa": "[eː] / [ɛ] / [ə]",
+      "approximation": "long: like 'ay' in 'bay'; short: like 'e' in 'bed'; unstressed: schwa",
+      "notes": "Final unstressed -e is schwa [ə]. Stressed e varies by length."
+    },
+    {
+      "char": "f",
+      "name": "ef",
+      "ipa": "[f]",
+      "approximation": "like 'f' in 'fish'",
+      "notes": ""
+    },
+    {
+      "char": "g",
+      "name": "ge",
+      "ipa": "[ɡ] / [k] / [ç] / [x]",
+      "approximation": "like 'g' in 'go'",
+      "notes": "Devoiced to [k] word-finally. In suffix -ig, pronounced [ç] word-finally. Before s, often silent in some regions."
+    },
+    {
+      "char": "h",
+      "name": "ha",
+      "ipa": "[[h] / ∅]",
+      "approximation": "like 'h' in 'house'",
+      "notes": "Silent after vowels, where it marks vowel length. Pronounced only at syllable onset."
+    },
+    {
+      "char": "i",
+      "name": "i",
+      "ipa": "[iː] / [ɪ]",
+      "approximation": "long: like 'ee' in 'see'; short: like 'i' in 'bit'",
+      "notes": "Length depends on syllable structure."
+    },
+    {
+      "char": "j",
+      "name": "jot",
+      "ipa": "[j]",
+      "approximation": "like 'y' in 'yes'",
+      "notes": ""
+    },
+    {
+      "char": "k",
+      "name": "ka",
+      "ipa": "[k]",
+      "approximation": "like 'k' in 'kite'",
+      "notes": ""
+    },
+    {
+      "char": "l",
+      "name": "el",
+      "ipa": "[l]",
+      "approximation": "like 'l' in 'light'",
+      "notes": "Clear l in all positions, not velarized as in English 'call'."
+    },
+    {
+      "char": "m",
+      "name": "em",
+      "ipa": "[m]",
+      "approximation": "like 'm' in 'mother'",
+      "notes": ""
+    },
+    {
+      "char": "n",
+      "name": "en",
+      "ipa": "[n]",
+      "approximation": "like 'n' in 'night'",
+      "notes": ""
+    },
+    {
+      "char": "o",
+      "name": "o",
+      "ipa": "[oː] / [ɔ]",
+      "approximation": "long: like 'o' in 'vote'; short: like 'o' in 'off'",
+      "notes": "Length depends on syllable structure."
+    },
+    {
+      "char": "ö",
+      "name": "o-Umlaut",
+      "ipa": "[øː] / [œ]",
+      "approximation": "long: purse lips for 'o' and say 'ay'; short: purse lips for 'o' and say 'e'",
+      "notes": "Umlaut of o; front rounded vowel. Sometimes written oe in older texts."
+    },
+    {
+      "char": "p",
+      "name": "pe",
+      "ipa": "[p]",
+      "approximation": "like 'p' in 'spin'",
+      "notes": "Unaspirated in most positions."
+    },
+    {
+      "char": "q",
+      "name": "ku",
+      "ipa": "[kv]",
+      "approximation": "always in digraph qu, like 'kv'",
+      "notes": "Never occurs alone; always followed by u."
+    },
+    {
+      "char": "r",
+      "name": "er",
+      "ipa": "[ʁ] / [ʀ] / [r]",
+      "approximation": "uvular trill or fricative, like French r",
+      "notes": "Standard pronunciation is uvular [ʁ]. Apical [r] occurs in southern dialects. Vocalizes to [ɐ] after vowels in some positions."
+    },
+    {
+      "char": "s",
+      "name": "es",
+      "ipa": "[z] / [s]",
+      "approximation": "before vowels: 'z' in 'zoo'; elsewhere: 's' in 'sit'",
+      "notes": "Voiced [z] before vowels and between vowels. Voiceless [s] elsewhere."
+    },
+    {
+      "char": "ß",
+      "name": "Eszett, scharfes S",
+      "ipa": "[s]",
+      "approximation": "like 's' in 'sit'",
+      "notes": "Represents voiceless [s] after long vowels and diphthongs. Never begins a word. Sometimes replaced by ss in Switzerland. Uppercase form ẞ introduced in 2017 but optional."
+    },
+    {
+      "char": "t",
+      "name": "te",
+      "ipa": "[t]",
+      "approximation": "like 't' in 'stop'",
+      "notes": "Unaspirated in most positions."
+    },
+    {
+      "char": "u",
+      "name": "u",
+      "ipa": "[uː] / [ʊ]",
+      "approximation": "long: like 'oo' in 'boot'; short: like 'oo' in 'book'",
+      "notes": "Length depends on syllable structure."
+    },
+    {
+      "char": "ü",
+      "name": "u-Umlaut",
+      "ipa": "[yː] / [ʏ]",
+      "approximation": "long: purse lips for 'oo' and say 'ee'; short: purse lips and say 'i'",
+      "notes": "Umlaut of u; front rounded vowel. Sometimes written ue in older texts."
+    },
+    {
+      "char": "v",
+      "name": "fau",
+      "ipa": "[f] / [v]",
+      "approximation": "usually 'f' in 'fish'; in loanwords: 'v' in 'voice'",
+      "notes": "Native German words use [f]; Romance loanwords use [v]."
+    },
+    {
+      "char": "w",
+      "name": "ve",
+      "ipa": "[v]",
+      "approximation": "like 'v' in 'voice'",
+      "notes": ""
+    },
+    {
+      "char": "x",
+      "name": "iks",
+      "ipa": "[ks]",
+      "approximation": "like 'x' in 'box'",
+      "notes": "Rare in native words."
+    },
+    {
+      "char": "y",
+      "name": "ypsilon",
+      "ipa": "[yː] / [ʏ] / [j]",
+      "approximation": "as vowel: like ü; as consonant: like 'y' in 'yes'",
+      "notes": "Appears in loanwords. As vowel, pronounced like ü."
+    },
+    {
+      "char": "z",
+      "name": "tset",
+      "ipa": "[ts]",
+      "approximation": "like 'ts' in 'cats'",
+      "notes": "Always voiceless affricate."
+    },
+    {
+      "char": "ch",
+      "name": "digraph ch",
+      "ipa": "[ç] / [x]",
+      "approximation": "after e/i/ä/ö/ü: soft ich-Laut (like h in 'huge'); after a/o/u/au: hard ach-Laut (like Scottish 'loch')",
+      "notes": "Two distinct sounds conditioned by preceding vowel. The ich-Laut [ç] is a voiceless palatal fricative; the ach-Laut [x] is a voiceless velar fricative."
+    },
+    {
+      "char": "sch",
+      "name": "digraph sch",
+      "ipa": "[ʃ]",
+      "approximation": "like 'sh' in 'ship'",
+      "notes": "Single sound, voiceless postalveolar fricative."
+    },
+    {
+      "char": "ei",
+      "name": "diphthong ei",
+      "ipa": "[aɪ]",
+      "approximation": "like 'i' in 'nice' or 'ay' in 'say'",
+      "notes": "Diphthong from a to i. Also spelled ai in some words."
+    },
+    {
+      "char": "au",
+      "name": "diphthong au",
+      "ipa": "[aʊ]",
+      "approximation": "like 'ow' in 'cow'",
+      "notes": "Diphthong from a to u."
+    },
+    {
+      "char": "eu/äu",
+      "name": "diphthong eu/äu",
+      "ipa": "[ɔʏ]",
+      "approximation": "like 'oy' in 'boy'",
+      "notes": "Diphthong from open-o to u. Spelled eu or äu (the latter when derived from au by umlaut)."
+    }
+  ],
+  "pronunciation_notes": [
+    "Vowel length is phonemic: long vowels occur in open syllables or before single consonants, short vowels before consonant clusters. A doubled vowel (aa, ee, oo) or vowel plus h marks length.",
+    "The letter r is pronounced as a uvular fricative [ʁ] or trill [ʀ] before vowels, but often vocalizes to [ɐ] after vowels (especially in -er endings).",
+    "The digraph ch represents two sounds: [ç] (ich-Laut) after front vowels (e, i, ä, ö, ü) and [x] (ach-Laut) after back vowels (a, o, u, au). Initial ch- in loanwords may be [k] or [ʃ].",
+    "The voiced consonants b, d, g are devoiced to [p], [t], [k] at the end of syllables or words (Auslautverhärtung).",
+    "The letter s is voiced [z] before vowels and between vowels, but voiceless [s] elsewhere. The ß (sharp-s) is always voiceless [s] and appears only after long vowels and diphthongs.",
+    "German is a stress-timed language with primary stress on the root syllable (usually the first syllable of the stem). Prefixes like be-, ge-, er-, ver-, zer- are unstressed."
+  ],
+  "grammar": {
+    "noun_system": "German nouns inflect for three genders (masculine, feminine, neuter), two numbers (singular, plural), and four cases (nominative, accusative, genitive, dative). Case endings on the noun itself are often minimal; case is marked more clearly on the definite article (der, die, das) and adjectives. Gender is not predictable and must be learned for each noun.",
+    "declensions": [
+      {
+        "name": "Definite Article",
+        "description": "The definite article der/die/das declines for case, gender, and number. It serves as the paradigm for demonstrative and relative pronouns.",
+        "paradigm": {
+          "sg": {
+            "masculine": "nom: der, acc: den, gen: des, dat: dem",
+            "feminine": "nom: die, acc: die, gen: der, dat: der",
+            "neuter": "nom: das, acc: das, gen: des, dat: dem"
+          },
+          "pl": {
+            "all_genders": "nom: die, acc: die, gen: der, dat: den"
+          }
+        }
+      },
+      {
+        "name": "Strong Masculine Noun (der Tag, 'the day')",
+        "description": "Masculine nouns often add -(e)s in the genitive singular and -e or -∅ in the plural nominative/accusative. Dative plural adds -n if not already present.",
+        "paradigm": {
+          "sg": {
+            "nom": "der Tag",
+            "acc": "den Tag",
+            "gen": "des Tages / des Tags",
+            "dat": "dem Tag / dem Tage"
+          },
+          "pl": {
+            "nom": "die Tage",
+            "acc": "die Tage",
+            "gen": "der Tage",
+            "dat": "den Tagen"
+          }
+        }
+      },
+      {
+        "name": "Feminine Noun (die Frau, 'the woman')",
+        "description": "Feminine nouns are typically unmarked in the singular. Plural formation varies widely (e.g., -en, -e, umlaut). Dative plural adds -n.",
+        "paradigm": {
+          "sg": {
+            "nom": "die Frau",
+            "acc": "die Frau",
+            "gen": "der Frau",
+            "dat": "der Frau"
+          },
+          "pl": {
+            "nom": "die Frauen",
+            "acc": "die Frauen",
+            "gen": "der Frauen",
+            "dat": "den Frauen"
+          }
+        }
+      },
+      {
+        "name": "Neuter Noun (das Buch, 'the book')",
+        "description": "Neuter nouns inflect like masculine in the singular (genitive -(e)s). Plural varies; many take -er with umlaut.",
+        "paradigm": {
+          "sg": {
+            "nom": "das Buch",
+            "acc": "das Buch",
+            "gen": "des Buches / des Buchs",
+            "dat": "dem Buch / dem Buche"
+          },
+          "pl": {
+            "nom": "die Bücher",
+            "acc": "die Bücher",
+            "gen": "der Bücher",
+            "dat": "den Büchern"
+          }
+        }
+      }
+    ],
+    "verb_system": "German verbs inflect for person, number, tense, mood, and voice. The principal tenses are present and simple past (preterite); compound tenses (perfect, pluperfect, future) use auxiliaries (haben, sein, werden). Mood includes indicative, subjunctive (Konjunktiv I and II), and imperative. Voice is active or passive (formed with werden plus past participle).",
+    "conjugations": [
+      {
+        "name": "Strong Verb: sehen ('to see')",
+        "description": "Strong verbs exhibit vowel gradation (Ablaut) in the stem. Present tense shows stem vowel change in 2nd and 3rd singular. Simple past formed by stem vowel change, not suffix. Past participle takes ge- prefix and -en suffix.",
+        "paradigm": {
+          "present_indicative": {
+            "1s": "ich sehe",
+            "2s": "du siehst",
+            "3s": "er/sie/es sieht",
+            "1p": "wir sehen",
+            "2p": "ihr seht",
+            "3p": "sie sehen"
+          },
+          "simple_past_preterite": {
+            "1s": "ich sah",
+            "2s": "du sahst",
+            "3s": "er/sie/es sah",
+            "1p": "wir sahen",
+            "2p": "ihr saht",
+            "3p": "sie sahen"
+          },
+          "past_participle": "gesehen (with haben: ich habe gesehen)"
+        }
+      },
+      {
+        "name": "Weak Verb: machen ('to make, do')",
+        "description": "Weak verbs form simple past with -te suffix and past participle with ge- prefix and -t suffix. No stem vowel change. Regular throughout.",
+        "paradigm": {
+          "present_indicative": {
+            "1s": "ich mache",
+            "2s": "du machst",
+            "3s": "er/sie/es macht",
+            "1p": "wir machen",
+            "2p": "ihr macht",
+            "3p": "sie machen"
+          },
+          "simple_past_preterite": {
+            "1s": "ich machte",
+            "2s": "du machtest",
+            "3s": "er/sie/es machte",
+            "1p": "wir machten",
+            "2p": "ihr machtet",
+            "3p": "sie machten"
+          },
+          "past_participle": "gemacht (with haben: ich habe gemacht)"
+        }
+      },
+      {
+        "name": "Irregular Verb: sein ('to be')",
+        "description": "Sein is highly irregular and suppletive. It serves as the copula and as auxiliary for intransitive verbs of motion and change of state in perfect tenses.",
+        "paradigm": {
+          "present_indicative": {
+            "1s": "ich bin",
+            "2s": "du bist",
+            "3s": "er/sie/es ist",
+            "1p": "wir sind",
+            "2p": "ihr seid",
+            "3p": "sie sind"
+          },
+          "simple_past_preterite": {
+            "1s": "ich war",
+            "2s": "du warst",
+            "3s": "er/sie/es war",
+            "1p": "wir waren",
+            "2p": "ihr wart",
+            "3p": "sie waren"
+          },
+          "past_participle": "gewesen (ich bin gewesen)"
+        }
+      }
+    ],
+    "reference": {
+      "title": "Grammar Reference Card",
+      "description": "Quick reference for grammatical terminology",
+      "sections": [
+        {
+          "category": "Cases",
+          "terms": [
+            {
+              "term": "Nominative (Nominativ)",
+              "definition": "Subject of the verb. The 'who' or 'what' doing the action. Example: Der Mann (the man)."
+            },
+            {
+              "term": "Accusative (Akkusativ)",
+              "definition": "Direct object. The 'what' or 'whom' receiving the action. Example: den Mann (the man)."
+            },
+            {
+              "term": "Dative (Dativ)",
+              "definition": "Indirect object ('to' or 'for'). Example: dem Mann (to the man)."
+            },
+            {
+              "term": "Genitive (Genitiv)",
+              "definition": "Possession ('of'). Example: des Mannes (of the man)."
+            }
+          ]
+        },
+        {
+          "category": "Number",
+          "terms": [
+            {
+              "term": "Singular (Singular)",
+              "definition": "One person or thing."
+            },
+            {
+              "term": "Plural (Plural)",
+              "definition": "More than one person or thing."
+            }
+          ]
+        },
+        {
+          "category": "Gender",
+          "terms": [
+            {
+              "term": "Masculine (maskulin, m.)",
+              "definition": "Grammatical gender. Articles: der (nom.), den (acc.), dem (dat.), des (gen.)."
+            },
+            {
+              "term": "Feminine (feminin, f.)",
+              "definition": "Grammatical gender. Articles: die (nom./acc.), der (dat./gen.)."
+            },
+            {
+              "term": "Neuter (neutrum, n.)",
+              "definition": "Grammatical gender. Articles: das (nom./acc.), dem (dat.), des (gen.)."
+            }
+          ]
+        },
+        {
+          "category": "Declension",
+          "terms": [
+            {
+              "term": "Declension (Deklination)",
+              "definition": "The pattern of case endings for nouns, adjectives, and articles."
+            },
+            {
+              "term": "Strong Declension",
+              "definition": "Adjective endings used when no article is present."
+            },
+            {
+              "term": "Weak Declension",
+              "definition": "Adjective endings used after definite article (der, die, das)."
+            },
+            {
+              "term": "Mixed Declension",
+              "definition": "Adjective endings used after indefinite article (ein, eine)."
+            }
+          ]
+        },
+        {
+          "category": "Tenses",
+          "terms": [
+            {
+              "term": "Present (Präsens)",
+              "definition": "Action happening now or habitually. 'I love' = ich liebe."
+            },
+            {
+              "term": "Simple Past (Präteritum)",
+              "definition": "Action in the past (narrative). 'I loved' = ich liebte."
+            },
+            {
+              "term": "Present Perfect (Perfekt)",
+              "definition": "Completed action (conversational past). 'I have loved' = ich habe geliebt."
+            },
+            {
+              "term": "Past Perfect (Plusquamperfekt)",
+              "definition": "Action completed before another past action. 'I had loved' = ich hatte geliebt."
+            },
+            {
+              "term": "Future (Futur I)",
+              "definition": "Action that will happen. 'I will love' = ich werde lieben."
+            },
+            {
+              "term": "Future Perfect (Futur II)",
+              "definition": "Action completed before a future time. 'I will have loved' = ich werde geliebt haben."
+            }
+          ]
+        },
+        {
+          "category": "Mood",
+          "terms": [
+            {
+              "term": "Indicative (Indikativ)",
+              "definition": "States facts or asks questions."
+            },
+            {
+              "term": "Subjunctive I (Konjunktiv I)",
+              "definition": "Indirect speech, wishes."
+            },
+            {
+              "term": "Subjunctive II (Konjunktiv II)",
+              "definition": "Hypothetical situations, polite requests."
+            },
+            {
+              "term": "Imperative (Imperativ)",
+              "definition": "Gives commands. 'Love!' = Liebe! (sg.), Liebt! (pl.)."
+            }
+          ]
+        },
+        {
+          "category": "Voice",
+          "terms": [
+            {
+              "term": "Active (Aktiv)",
+              "definition": "Subject performs the action. 'I love her.'"
+            },
+            {
+              "term": "Passive (Passiv)",
+              "definition": "Subject receives the action. 'I am loved.'"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "reading_list": [
+    "Grimm, Kinder- und Hausmärchen (selections): simple narrative prose, accessible vocabulary.",
+    "Goethe, Die Leiden des jungen Werthers: epistolary novel, straightforward syntax, Sturm und Drang sentiment.",
+    "Schiller, Wilhelm Tell (selections): dramatic verse, moderately complex syntax.",
+    "Nietzsche, Also sprach Zarathustra (Book I): aphoristic and poetic prose, philosophical vocabulary, archaic constructions.",
+    "Kafka, Die Verwandlung: modernist narrative, clear syntax, existential themes.",
+    "Kant, Kritik der reinen Vernunft (Prefaces and Introduction): highly subordinated sentences, technical philosophical terminology.",
+    "Goethe, Faust (Part I): dramatic verse, wide stylistic range, older German forms.",
+    "Hegel, Phänomenologie des Geistes (Preface): dense dialectical prose, extreme syntactic complexity.",
+    "Thomas Mann, Der Zauberberg: long, intricate sentences, extensive vocabulary, modernist irony.",
+    "Hölderlin, selected poems: compressed syntax, neoclassical diction, hermetic late style.",
+    "Rilke, Duineser Elegien: late-Rilke syntax, dense imagery, philosophical vocabulary, angelic register.",
+    "Rilke, Sonette an Orpheus: lyric compression, mythic allusion, metrical variety.",
+    "Rilke, Neue Gedichte (selections): Dinggedicht, precise imagery, varied meters, middle-period mastery.",
+    "Rilke, Das Stunden-Buch (selections): devotional lyric, rhymed quatrains, early Rilke cadence."
+  ],
+  "display": "German",
+  "generated_at": "2026-04-21T06:28:10.523Z",
+  "numbers": {
+    "overview": "German forms compound numbers by placing units before tens, joined by 'und' (e.g. 'einundzwanzig' for 21). The number 'eins' drops its final 's' when used in compounds. Ordinal numbers decline like adjectives and require appropriate endings based on case, gender, and definiteness.",
+    "cardinals": [
+      {
+        "value": 0,
+        "word": "null",
+        "ipa": "/nʊl/",
+        "pronunciation": "nool",
+        "note": ""
+      },
+      {
+        "value": 1,
+        "word": "eins",
+        "ipa": "/aɪns/",
+        "pronunciation": "eyens",
+        "note": "becomes 'ein' in compounds and when used as article"
+      },
+      {
+        "value": 2,
+        "word": "zwei",
+        "ipa": "/tsvaɪ/",
+        "pronunciation": "tsvye",
+        "note": "'zwo' sometimes used to distinguish from 'drei' in speech"
+      },
+      {
+        "value": 3,
+        "word": "drei",
+        "ipa": "/dʁaɪ/",
+        "pronunciation": "drye",
+        "note": ""
+      },
+      {
+        "value": 4,
+        "word": "vier",
+        "ipa": "/fiːɐ/",
+        "pronunciation": "feer",
+        "note": ""
+      },
+      {
+        "value": 5,
+        "word": "fünf",
+        "ipa": "/fʏnf/",
+        "pronunciation": "fuenf",
+        "note": ""
+      },
+      {
+        "value": 6,
+        "word": "sechs",
+        "ipa": "/zɛks/",
+        "pronunciation": "zeks",
+        "note": ""
+      },
+      {
+        "value": 7,
+        "word": "sieben",
+        "ipa": "/ˈziːbən/",
+        "pronunciation": "ZEE-ben",
+        "note": ""
+      },
+      {
+        "value": 8,
+        "word": "acht",
+        "ipa": "/axt/",
+        "pronunciation": "ahkt",
+        "note": ""
+      },
+      {
+        "value": 9,
+        "word": "neun",
+        "ipa": "/nɔʏn/",
+        "pronunciation": "noyn",
+        "note": ""
+      },
+      {
+        "value": 10,
+        "word": "zehn",
+        "ipa": "/tseːn/",
+        "pronunciation": "tsayn",
+        "note": ""
+      },
+      {
+        "value": 11,
+        "word": "elf",
+        "ipa": "/ɛlf/",
+        "pronunciation": "elf",
+        "note": ""
+      },
+      {
+        "value": 12,
+        "word": "zwölf",
+        "ipa": "/tsvœlf/",
+        "pronunciation": "tsvolf",
+        "note": ""
+      },
+      {
+        "value": 13,
+        "word": "dreizehn",
+        "ipa": "/ˈdʁaɪtsеːn/",
+        "pronunciation": "DRYE-tsayn",
+        "note": ""
+      },
+      {
+        "value": 14,
+        "word": "vierzehn",
+        "ipa": "/ˈfiːɐtsеːn/",
+        "pronunciation": "FEER-tsayn",
+        "note": ""
+      },
+      {
+        "value": 15,
+        "word": "fünfzehn",
+        "ipa": "/ˈfʏnftsеːn/",
+        "pronunciation": "FUENF-tsayn",
+        "note": ""
+      },
+      {
+        "value": 16,
+        "word": "sechzehn",
+        "ipa": "/ˈzɛçtsеːn/",
+        "pronunciation": "ZEKH-tsayn",
+        "note": "'sechs' drops 's' in compound"
+      },
+      {
+        "value": 17,
+        "word": "siebzehn",
+        "ipa": "/ˈziːptsеːn/",
+        "pronunciation": "ZEEP-tsayn",
+        "note": "'sieben' drops 'en' in compound"
+      },
+      {
+        "value": 18,
+        "word": "achtzehn",
+        "ipa": "/ˈaxttsеːn/",
+        "pronunciation": "AHKT-tsayn",
+        "note": ""
+      },
+      {
+        "value": 19,
+        "word": "neunzehn",
+        "ipa": "/ˈnɔʏntsеːn/",
+        "pronunciation": "NOYN-tsayn",
+        "note": ""
+      },
+      {
+        "value": 20,
+        "word": "zwanzig",
+        "ipa": "/ˈtsvantsɪç/",
+        "pronunciation": "TSVAHN-tsikh",
+        "note": ""
+      },
+      {
+        "value": 30,
+        "word": "dreißig",
+        "ipa": "/ˈdʁaɪsɪç/",
+        "pronunciation": "DRYE-sikh",
+        "note": ""
+      },
+      {
+        "value": 40,
+        "word": "vierzig",
+        "ipa": "/ˈfiːɐtsɪç/",
+        "pronunciation": "FEER-tsikh",
+        "note": ""
+      },
+      {
+        "value": 50,
+        "word": "fünfzig",
+        "ipa": "/ˈfʏnftsɪç/",
+        "pronunciation": "FUENF-tsikh",
+        "note": ""
+      },
+      {
+        "value": 60,
+        "word": "sechzig",
+        "ipa": "/ˈzɛçtsɪç/",
+        "pronunciation": "ZEKH-tsikh",
+        "note": "'sechs' drops 's' in compound"
+      },
+      {
+        "value": 70,
+        "word": "siebzig",
+        "ipa": "/ˈziːptsɪç/",
+        "pronunciation": "ZEEP-tsikh",
+        "note": "'sieben' drops 'en' in compound"
+      },
+      {
+        "value": 80,
+        "word": "achtzig",
+        "ipa": "/ˈaxtsɪç/",
+        "pronunciation": "AHKT-tsikh",
+        "note": ""
+      },
+      {
+        "value": 90,
+        "word": "neunzig",
+        "ipa": "/ˈnɔʏntsɪç/",
+        "pronunciation": "NOYN-tsikh",
+        "note": ""
+      },
+      {
+        "value": 100,
+        "word": "hundert",
+        "ipa": "/ˈhʊndɐt/",
+        "pronunciation": "HOON-dert",
+        "note": ""
+      },
+      {
+        "value": 1000,
+        "word": "tausend",
+        "ipa": "/ˈtaʊznt/",
+        "pronunciation": "TOW-zent",
+        "note": ""
+      },
+      {
+        "value": 1000000,
+        "word": "eine Million",
+        "ipa": "/ˈaɪnə mɪliˈoːn/",
+        "pronunciation": "EYE-neh mil-ee-OHN",
+        "note": "feminine noun, takes plural 'Millionen'"
+      }
+    ],
+    "ordinals": [
+      {
+        "rank": 1,
+        "word": "erste",
+        "ipa": "/ˈeːɐstə/",
+        "pronunciation": "AIR-steh",
+        "meaning": "first",
+        "note": "declines like adjective: erster/erste/erstes"
+      },
+      {
+        "rank": 2,
+        "word": "zweite",
+        "ipa": "/ˈtsvaɪtə/",
+        "pronunciation": "TSVYE-teh",
+        "meaning": "second",
+        "note": "declines like adjective"
+      },
+      {
+        "rank": 3,
+        "word": "dritte",
+        "ipa": "/ˈdʁɪtə/",
+        "pronunciation": "DRIT-teh",
+        "meaning": "third",
+        "note": "declines like adjective"
+      },
+      {
+        "rank": 4,
+        "word": "vierte",
+        "ipa": "/ˈfiːɐtə/",
+        "pronunciation": "FEER-teh",
+        "meaning": "fourth",
+        "note": "declines like adjective"
+      },
+      {
+        "rank": 5,
+        "word": "fünfte",
+        "ipa": "/ˈfʏnftə/",
+        "pronunciation": "FUENF-teh",
+        "meaning": "fifth",
+        "note": "declines like adjective"
+      },
+      {
+        "rank": 6,
+        "word": "sechste",
+        "ipa": "/ˈzɛkstə/",
+        "pronunciation": "ZEKS-teh",
+        "meaning": "sixth",
+        "note": "declines like adjective"
+      },
+      {
+        "rank": 7,
+        "word": "siebte",
+        "ipa": "/ˈziːptə/",
+        "pronunciation": "ZEEP-teh",
+        "meaning": "seventh",
+        "note": "declines like adjective; 'sieben' drops 'en'"
+      },
+      {
+        "rank": 8,
+        "word": "achte",
+        "ipa": "/ˈaxtə/",
+        "pronunciation": "AHK-teh",
+        "meaning": "eighth",
+        "note": "declines like adjective"
+      },
+      {
+        "rank": 9,
+        "word": "neunte",
+        "ipa": "/ˈnɔʏntə/",
+        "pronunciation": "NOYN-teh",
+        "meaning": "ninth",
+        "note": "declines like adjective"
+      },
+      {
+        "rank": 10,
+        "word": "zehnte",
+        "ipa": "/ˈtseːntə/",
+        "pronunciation": "TSAYN-teh",
+        "meaning": "tenth",
+        "note": "declines like adjective"
+      }
+    ],
+    "teaching_notes": [
+      "Compound numbers from 21 to 99 reverse the English order: the unit comes first, followed by 'und', then the ten (e.g. 'einundzwanzig' = one-and-twenty for 21).",
+      "The numbers 'sechs' and 'sieben' undergo contraction when forming compounds: 'sechs' loses its final 's' (sechzehn, sechzig) and 'sieben' loses 'en' (siebzehn, siebzig).",
+      "Cardinal 'eins' becomes 'ein' in compounds and when used attributively before nouns, where it declines like the indefinite article.",
+      "All ordinal numbers decline like adjectives and require the appropriate weak or strong endings depending on the article and case.",
+      "In written abbreviations, ordinals are formed with a period: '1.' (erste), '2.' (zweite), etc."
+    ]
+  }
+}

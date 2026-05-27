@@ -1,0 +1,43 @@
+{
+  "id": "3.12",
+  "stage": 3,
+  "title": "Alliterative Vocabulary",
+  "subtitle": "Five synonyms for 'man' in fifty lines.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Master Alliterative Vocabulary.",
+    "Read and translate authentic Middle English texts.",
+    "Prepare for the capstone examination."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "Gawain's poet loves rare and archaic words (burne = man, lede = man, hathel = hero, renk = man, tulk = man). Five synonyms for 'man' in fifty lines. The lexical richness of the alliterative tradition. This is not Chaucer's vocabulary; this is the older, northern poetic register."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "Alliterative Vocabulary"
+        },
+        {
+          "prompt": "Can you apply this to reading?",
+          "answer": "Work through examples with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand Alliterative Vocabulary.",
+    "credit_minutes": 60
+  }
+}

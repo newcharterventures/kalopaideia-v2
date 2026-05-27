@@ -1,0 +1,67 @@
+{
+  "id": "3.6",
+  "stage": 3,
+  "title": "The Second Aorist",
+  "subtitle": "ἔλαβον, ἦλθον, εἶδον — the strong aorist.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Recognize the second aorist as a separate stem, learned individually for each verb.",
+    "Conjugate common second aorist verbs: λαμβάνω, ἔρχομαι, ὁράω.",
+    "Understand that the second aorist has thematic endings like the imperfect but means completed action.",
+    "Distinguish first aorist from second aorist by form."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The second aorist",
+      "body": "The second aorist is the strong aorist. It does not have the sigma infix of the first aorist. Instead, it uses a different stem and thematic endings that look like the imperfect.\n\nThe second aorist must be learned verb by verb. Common second aorists:\n\nλαμβάνω (I take) → ἔλαβον (I took)\nἔρχομαι (I come, I go) → ἦλθον (I came, I went)\nὁράω (I see) → εἶδον (I saw)\nλέγω (I say) → εἶπον (I said)\n\nThe second aorist looks like the imperfect in form (augment + thematic endings), but it means completed action like the first aorist."
+    },
+    {
+      "kind": "prose",
+      "heading": "The second aorist indicative active: ἔλαβον (I took)",
+      "body": "  singular\n  1st   ἔλαβον      I took\n  2nd   ἔλαβες      you took\n  3rd   ἔλαβε(ν)    he/she/it took\n\n  plural\n  1st   ἐλάβομεν    we took\n  2nd   ἐλάβετε     you (plural) took\n  3rd   ἔλαβον      they took\n\nThe endings are -ον, -ες, -ε(ν), -ομεν, -ετε, -ον — identical to the imperfect active endings. The stem λαβ- is the aorist stem, distinct from the present stem λαμβαν-."
+    },
+    {
+      "kind": "prose",
+      "heading": "Other common second aorists",
+      "body": "ἔρχομαι (I come) → ἦλθον (I came)\n  ἦλθον, ἦλθες, ἦλθε, ἤλθομεν, ἤλθετε, ἦλθον\n\nὁράω (I see) → εἶδον (I saw)\n  εἶδον, εἶδες, εἶδε, εἴδομεν, εἴδετε, εἶδον\n\nλέγω (I say) → εἶπον (I said)\n  εἶπον, εἶπες, εἶπε, εἴπομεν, εἴπετε, εἶπον\n\nγιγνώσκω (I know) → ἔγνων (I learned, I came to know)\n  ἔγνων, ἔγνως, ἔγνω, ἔγνωμεν, ἔγνωτε, ἔγνωσαν\n\nThese must be memorized. Most Greek verbs have first aorists; a few dozen common verbs have second aorists."
+    },
+    {
+      "kind": "prose",
+      "heading": "From Xenophon",
+      "body": "Anabasis I.1.1: ἦλθον οἱ στρατιῶται.\n'The soldiers came.' ἦλθον is the second aorist of ἔρχομαι."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer or translate.",
+      "items": [
+        { "prompt": "What is the second aorist of λαμβάνω?", "answer": "ἔλαβον" },
+        { "prompt": "What is the second aorist of ἔρχομαι?", "answer": "ἦλθον" },
+        { "prompt": "What is the second aorist of ὁράω?", "answer": "εἶδον" },
+        { "prompt": "Do second aorists have the sigma infix?", "answer": "No." },
+        { "prompt": "Do second aorists look like the imperfect?", "answer": "Yes, in form — but they mean completed action." },
+        { "prompt": "Translate: ἔλαβον τὸ δῶρον.", "answer": "I took the gift." },
+        { "prompt": "Translate: εἶδον τὸν ἄνδρα.", "answer": "I saw the man." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Second aorist in sentences",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "ἔλαβον τὸ δῶρον.", "transliteration": "élabon tò dôron.", "gloss": "I took the gift.", "audio": "/paideia/audio/greek/sentences/elabon-doron.mp3" },
+        { "greek": "ἦλθον εἰς τὴν πόλιν.", "transliteration": "êlthon eis tḕn pólin.", "gloss": "I came into the city.", "audio": "/paideia/audio/greek/sentences/elthon-polin.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 3.7 introduces the third declension consonant stems: ὁ φύλαξ (guard), ὁ γέρων (old man), ἡ ἐλπίς (hope). The third declension is more varied than the first and second, and the nominative is often disguised. The genitive reveals the stem."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can recognize and conjugate the five common second aorists listed in this lesson and can distinguish first from second aorist by form.",
+    "credit_minutes": 55
+  }
+}

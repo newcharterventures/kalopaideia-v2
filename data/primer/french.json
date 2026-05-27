@@ -1,0 +1,801 @@
+{
+  "overview": "French is a Romance language descended from the Latin spoken in Gaul, attaining literary maturity in the twelfth century and reaching classical refinement in the seventeenth. The language of Molière, Racine, Voltaire, Flaubert, and Proust offers access to one of Europe's richest literary traditions. Mastery of French phonetics, orthography, and verbal morphology opens centuries of drama, philosophy, and narrative prose.",
+  "alphabet": [
+    {
+      "char": "a",
+      "name": "a",
+      "ipa": "/a/",
+      "approximation": "like 'a' in 'father'",
+      "notes": "Before nasal consonants (an, am), becomes nasalized /ã/."
+    },
+    {
+      "char": "b",
+      "name": "bé",
+      "ipa": "/b/",
+      "approximation": "like 'b' in 'bat'",
+      "notes": ""
+    },
+    {
+      "char": "c",
+      "name": "cé",
+      "ipa": "/k/ or /s/",
+      "approximation": "before a, o, u: 'k'; before e, i, y: 's'",
+      "notes": "With cedilla (ç), always /s/."
+    },
+    {
+      "char": "d",
+      "name": "dé",
+      "ipa": "/d/",
+      "approximation": "like 'd' in 'dog'",
+      "notes": ""
+    },
+    {
+      "char": "e",
+      "name": "e",
+      "ipa": "/ə/, /e/, /ɛ/",
+      "approximation": "unstressed schwa; with accent aigu é: /e/ as in 'day'; with grave è or circumflex ê: /ɛ/ as in 'bed'",
+      "notes": "Final -e often silent. Before nasal consonants (en, em), nasalized /ã/."
+    },
+    {
+      "char": "f",
+      "name": "effe",
+      "ipa": "/f/",
+      "approximation": "like 'f' in 'fat'",
+      "notes": ""
+    },
+    {
+      "char": "g",
+      "name": "gé",
+      "ipa": "/ɡ/ or /ʒ/",
+      "approximation": "before a, o, u: hard 'g' as in 'go'; before e, i, y: /ʒ/ as in 'measure'",
+      "notes": ""
+    },
+    {
+      "char": "h",
+      "name": "hache",
+      "ipa": "[silent]",
+      "approximation": "not pronounced",
+      "notes": "H aspiré prevents liaison; h muet permits it."
+    },
+    {
+      "char": "i",
+      "name": "i",
+      "ipa": "/i/",
+      "approximation": "like 'ee' in 'see'",
+      "notes": "Before nasal consonants (in, im), nasalized /ɛ̃/."
+    },
+    {
+      "char": "j",
+      "name": "ji",
+      "ipa": "/ʒ/",
+      "approximation": "like 's' in 'measure'",
+      "notes": ""
+    },
+    {
+      "char": "k",
+      "name": "ka",
+      "ipa": "/k/",
+      "approximation": "like 'k' in 'kite'",
+      "notes": "Rare; mostly in loanwords."
+    },
+    {
+      "char": "l",
+      "name": "elle",
+      "ipa": "/l/",
+      "approximation": "like 'l' in 'lamp'",
+      "notes": ""
+    },
+    {
+      "char": "m",
+      "name": "emme",
+      "ipa": "/m/",
+      "approximation": "like 'm' in 'man'",
+      "notes": ""
+    },
+    {
+      "char": "n",
+      "name": "enne",
+      "ipa": "/n/",
+      "approximation": "like 'n' in 'no'",
+      "notes": ""
+    },
+    {
+      "char": "o",
+      "name": "o",
+      "ipa": "/o/ or /ɔ/",
+      "approximation": "closed /o/ as in 'go'; open /ɔ/ as in 'ought'",
+      "notes": "Before nasal consonants (on, om), nasalized /ɔ̃/."
+    },
+    {
+      "char": "p",
+      "name": "pé",
+      "ipa": "/p/",
+      "approximation": "like 'p' in 'pat'",
+      "notes": ""
+    },
+    {
+      "char": "q",
+      "name": "cu",
+      "ipa": "/k/",
+      "approximation": "always followed by u; together /k/",
+      "notes": "The u is silent; qu = /k/."
+    },
+    {
+      "char": "r",
+      "name": "erre",
+      "ipa": "/ʁ/",
+      "approximation": "uvular fricative, guttural French 'r'",
+      "notes": "Produced in the back of the throat."
+    },
+    {
+      "char": "s",
+      "name": "esse",
+      "ipa": "/s/ or /z/",
+      "approximation": "initially and doubled: /s/; between vowels: /z/",
+      "notes": ""
+    },
+    {
+      "char": "t",
+      "name": "té",
+      "ipa": "/t/",
+      "approximation": "like 't' in 'top'",
+      "notes": "In -tion, pronounced /s/."
+    },
+    {
+      "char": "u",
+      "name": "u",
+      "ipa": "/y/",
+      "approximation": "rounded front vowel; say 'ee' with rounded lips",
+      "notes": "Before nasal consonants (un, um), nasalized /œ̃/."
+    },
+    {
+      "char": "v",
+      "name": "vé",
+      "ipa": "/v/",
+      "approximation": "like 'v' in 'van'",
+      "notes": ""
+    },
+    {
+      "char": "w",
+      "name": "double vé",
+      "ipa": "/v/ or /w/",
+      "approximation": "in French words: /v/; in loanwords: /w/",
+      "notes": "Rare."
+    },
+    {
+      "char": "x",
+      "name": "ixe",
+      "ipa": "/ks/ or /gz/",
+      "approximation": "/ks/ as in 'tax'; /gz/ as in 'exact'",
+      "notes": ""
+    },
+    {
+      "char": "y",
+      "name": "i grec",
+      "ipa": "/i/ or /j/",
+      "approximation": "vowel /i/ or semivowel /j/ as in 'yes'",
+      "notes": ""
+    },
+    {
+      "char": "z",
+      "name": "zède",
+      "ipa": "/z/",
+      "approximation": "like 'z' in 'zoo'",
+      "notes": ""
+    },
+    {
+      "char": "Accents: é è ê ë à ù û ô î ï ç",
+      "name": "Diacritical marks",
+      "ipa": "[varies]",
+      "approximation": "accent aigu (é) indicates /e/; accent grave (è, à, ù) indicates /ɛ/ or distinguishes homophones; accent circonflexe (ê, â, etc.) marks historical vowel lengthening or lost consonant; tréma (ë, ï) indicates separate syllabification; cédille (ç) softens c to /s/",
+      "notes": "Accents are orthographically and phonetically essential. The circumflex often marks a lost 's' from Latin (forêt < forest)."
+    }
+  ],
+  "pronunciation_notes": [
+    "Final consonants are generally silent except c, r, f, l (the 'CaReFuL' rule), though exceptions abound.",
+    "Liaison: a silent final consonant is pronounced when the following word begins with a vowel or mute h (les‿enfants /le.z‿ɑ̃.fɑ̃/).",
+    "Nasal vowels /ɑ̃/ (an, en), /ɛ̃/ (in, ain, ein), /ɔ̃/ (on), /œ̃/ (un) occur when a vowel precedes n or m in the same syllable. The n or m is not separately pronounced.",
+    "The letter 'e' without accent is often a schwa /ə/ or silent in final position. With acute accent (é), it is tense /e/; with grave (è) or circumflex (ê), it is open /ɛ/.",
+    "The letter 'r' is uvular /ʁ/, pronounced as a voiced fricative in the back of the throat, not trilled as in Spanish or Italian.",
+    "Stress in French falls on the final syllable of a phonological phrase, not on individual words as in English."
+  ],
+  "grammar": {
+    "noun_system": "French nouns have grammatical gender (masculine or feminine) but no case inflection. Number (singular and plural) is marked, though often the distinction appears only in writing and in liaison contexts. Definiteness and gender are indicated by articles: le (masc. sg.), la (fem. sg.), les (pl.), un (masc. sg. indef.), une (fem. sg. indef.), des (pl. indef.).",
+    "declensions": "French nouns do not decline by case. Gender and number determine agreement of articles, adjectives, and past participles. The masculine singular article is 'le', feminine singular 'la', plural (both genders) 'les'. For example: le livre (the book, masc. sg.), la table (the table, fem. sg.), les livres (the books, pl.), les tables (the tables, pl.). Adjectives agree in gender and number: un livre intéressant, une table intéressante, des livres intéressants, des tables intéressantes. No case endings exist; grammatical function is shown by word order and prepositions (de for 'of', à for 'to').",
+    "verb_system": "French verbs conjugate for tense (present, imperfect, future, conditional, preterite/simple past, etc.), mood (indicative, subjunctive, imperative), and person/number. The preterite (passé simple) is the narrative past tense in literary prose; the compound perfect (passé composé) is used in speech and modern writing. Voice (active, passive, reflexive) is marked by auxiliary verbs and pronouns. Literary French preserves the full conjugation of the passé simple and the imperfect subjunctive.",
+    "conjugations": [
+      {
+        "name": "First conjugation (-er verbs): parler (to speak)",
+        "description": "The largest and most regular class. Infinitive ends in -er. The present stem is formed by dropping -er; the preterite and imperfect follow regular patterns.",
+        "paradigm": {
+          "present_indicative": {
+            "1s": "je parle",
+            "2s": "tu parles",
+            "3s": "il/elle parle",
+            "1p": "nous parlons",
+            "2p": "vous parlez",
+            "3p": "ils/elles parlent"
+          },
+          "imperfect_indicative": {
+            "1s": "je parlais",
+            "2s": "tu parlais",
+            "3s": "il/elle parlait",
+            "1p": "nous parlions",
+            "2p": "vous parliez",
+            "3p": "ils/elles parlaient"
+          },
+          "preterite_passé_simple": {
+            "1s": "je parlai",
+            "2s": "tu parlas",
+            "3s": "il/elle parla",
+            "1p": "nous parlâmes",
+            "2p": "vous parlâtes",
+            "3p": "ils/elles parlèrent"
+          },
+          "future": {
+            "1s": "je parlerai",
+            "2s": "tu parleras",
+            "3s": "il/elle parlera",
+            "1p": "nous parlerons",
+            "2p": "vous parlerez",
+            "3p": "ils/elles parleront"
+          }
+        }
+      },
+      {
+        "name": "Second conjugation (-ir verbs): finir (to finish)",
+        "description": "Verbs in -ir with present participle in -issant. The present stem adds -iss- in plural forms. Preterite and future are regular.",
+        "paradigm": {
+          "present_indicative": {
+            "1s": "je finis",
+            "2s": "tu finis",
+            "3s": "il/elle finit",
+            "1p": "nous finissons",
+            "2p": "vous finissez",
+            "3p": "ils/elles finissent"
+          },
+          "imperfect_indicative": {
+            "1s": "je finissais",
+            "2s": "tu finissais",
+            "3s": "il/elle finissait",
+            "1p": "nous finissions",
+            "2p": "vous finissiez",
+            "3p": "ils/elles finissaient"
+          },
+          "preterite_passé_simple": {
+            "1s": "je finis",
+            "2s": "tu finis",
+            "3s": "il/elle finit",
+            "1p": "nous finîmes",
+            "2p": "vous finîtes",
+            "3p": "ils/elles finirent"
+          },
+          "future": {
+            "1s": "je finirai",
+            "2s": "tu finiras",
+            "3s": "il/elle finira",
+            "1p": "nous finirons",
+            "2p": "vous finirez",
+            "3p": "ils/elles finiront"
+          }
+        }
+      },
+      {
+        "name": "Third conjugation irregular: être (to be)",
+        "description": "The copula, highly irregular and essential for compound tenses and passive voice.",
+        "paradigm": {
+          "present_indicative": {
+            "1s": "je suis",
+            "2s": "tu es",
+            "3s": "il/elle est",
+            "1p": "nous sommes",
+            "2p": "vous êtes",
+            "3p": "ils/elles sont"
+          },
+          "imperfect_indicative": {
+            "1s": "j'étais",
+            "2s": "tu étais",
+            "3s": "il/elle était",
+            "1p": "nous étions",
+            "2p": "vous étiez",
+            "3p": "ils/elles étaient"
+          },
+          "preterite_passé_simple": {
+            "1s": "je fus",
+            "2s": "tu fus",
+            "3s": "il/elle fut",
+            "1p": "nous fûmes",
+            "2p": "vous fûtes",
+            "3p": "ils/elles furent"
+          },
+          "future": {
+            "1s": "je serai",
+            "2s": "tu seras",
+            "3s": "il/elle sera",
+            "1p": "nous serons",
+            "2p": "vous serez",
+            "3p": "ils/elles seront"
+          }
+        }
+      },
+      {
+        "name": "Third conjugation irregular: avoir (to have)",
+        "description": "The primary auxiliary verb for compound tenses. Irregular in all tenses.",
+        "paradigm": {
+          "present_indicative": {
+            "1s": "j'ai",
+            "2s": "tu as",
+            "3s": "il/elle a",
+            "1p": "nous avons",
+            "2p": "vous avez",
+            "3p": "ils/elles ont"
+          },
+          "imperfect_indicative": {
+            "1s": "j'avais",
+            "2s": "tu avais",
+            "3s": "il/elle avait",
+            "1p": "nous avions",
+            "2p": "vous aviez",
+            "3p": "ils/elles avaient"
+          },
+          "preterite_passé_simple": {
+            "1s": "j'eus",
+            "2s": "tu eus",
+            "3s": "il/elle eut",
+            "1p": "nous eûmes",
+            "2p": "vous eûtes",
+            "3p": "ils/elles eurent"
+          },
+          "future": {
+            "1s": "j'aurai",
+            "2s": "tu auras",
+            "3s": "il/elle aura",
+            "1p": "nous aurons",
+            "2p": "vous aurez",
+            "3p": "ils/elles auront"
+          }
+        }
+      }
+    ],
+    "reference": {
+      "title": "Grammar Reference Card",
+      "description": "Quick reference for grammatical terminology",
+      "sections": [
+        {
+          "category": "Number",
+          "terms": [
+            {
+              "term": "Singular (singulier)",
+              "definition": "One person or thing."
+            },
+            {
+              "term": "Plural (pluriel)",
+              "definition": "More than one person or thing. Usually formed by adding -s."
+            }
+          ]
+        },
+        {
+          "category": "Gender",
+          "terms": [
+            {
+              "term": "Masculine (masculin, m.)",
+              "definition": "Grammatical gender. Articles: le (def.), un (indef.)."
+            },
+            {
+              "term": "Feminine (féminin, f.)",
+              "definition": "Grammatical gender. Articles: la (def.), une (indef.)."
+            }
+          ]
+        },
+        {
+          "category": "Tenses",
+          "terms": [
+            {
+              "term": "Present (présent)",
+              "definition": "Action happening now or habitually. 'I love' = j'aime."
+            },
+            {
+              "term": "Imperfect (imparfait)",
+              "definition": "Ongoing or habitual past action. 'I was loving' = j'aimais."
+            },
+            {
+              "term": "Simple Past (passé simple)",
+              "definition": "Completed past action (literary). 'I loved' = j'aimai."
+            },
+            {
+              "term": "Compound Past (passé composé)",
+              "definition": "Completed past action (conversational). 'I loved' = j'ai aimé."
+            },
+            {
+              "term": "Pluperfect (plus-que-parfait)",
+              "definition": "Action completed before another past action. 'I had loved' = j'avais aimé."
+            },
+            {
+              "term": "Future (futur simple)",
+              "definition": "Action that will happen. 'I will love' = j'aimerai."
+            },
+            {
+              "term": "Future Perfect (futur antérieur)",
+              "definition": "Action completed before a future time. 'I will have loved' = j'aurai aimé."
+            }
+          ]
+        },
+        {
+          "category": "Mood",
+          "terms": [
+            {
+              "term": "Indicative (indicatif)",
+              "definition": "States facts or asks questions."
+            },
+            {
+              "term": "Subjunctive (subjonctif)",
+              "definition": "Expresses doubt, emotion, necessity, or possibility. Often after que."
+            },
+            {
+              "term": "Conditional (conditionnel)",
+              "definition": "Expresses hypothetical situations or polite requests. 'I would love' = j'aimerais."
+            },
+            {
+              "term": "Imperative (impératif)",
+              "definition": "Gives commands. 'Love!' = Aime! (sg.), Aimez! (pl.)."
+            }
+          ]
+        },
+        {
+          "category": "Person",
+          "terms": [
+            {
+              "term": "1st person singular (1s)",
+              "definition": "'I' — je. Example: j'aime 'I love'."
+            },
+            {
+              "term": "2nd person singular (2s)",
+              "definition": "'You' (familiar) — tu. Example: tu aimes 'you love'."
+            },
+            {
+              "term": "3rd person singular (3s)",
+              "definition": "'He/she/it' — il/elle/on. Example: il aime 'he loves'."
+            },
+            {
+              "term": "1st person plural (1p)",
+              "definition": "'We' — nous. Example: nous aimons 'we love'."
+            },
+            {
+              "term": "2nd person plural (2p)",
+              "definition": "'You' (formal/plural) — vous. Example: vous aimez 'you love'."
+            },
+            {
+              "term": "3rd person plural (3p)",
+              "definition": "'They' — ils/elles. Example: ils aiment 'they love'."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "reading_list": [
+    "Molière, Le Tartuffe (1664) — Classical alexandrine verse comedy with accessible syntax.",
+    "Voltaire, Candide (1759) — Philosophical tale in clear, ironic prose; essential Enlightenment text.",
+    "Racine, Phèdre (1677) — Tragic verse drama; rigorous alexandrines, elevated diction.",
+    "Madame de La Fayette, La Princesse de Clèves (1678) — Early psychological novel, elegant classical prose.",
+    "Balzac, Le Père Goriot (1835) — Realist novel, dense social observation, nineteenth-century narrative style.",
+    "Flaubert, Madame Bovary (1857) — Masterpiece of stylistic precision, ironic free indirect discourse.",
+    "Baudelaire, Les Fleurs du mal (1857) — Symbolist poetry, complex imagery, philosophical depth.",
+    "Stendhal, Le Rouge et le Noir (1830) — Psychological realism, nuanced narrative voice.",
+    "Proust, Du côté de chez Swann (1913) — Opening volume of À la recherche du temps perdu; intricate syntax, long periods, profound meditation on memory.",
+    "Montaigne, Essais (selections) (1580–1592) — Renaissance French, exploratory prose; challenging but foundational for modern French style."
+  ],
+  "display": "French",
+  "generated_at": "2026-04-21T06:26:45.505Z",
+  "numbers": {
+    "overview": "French uses a decimal system with base-10 counting through 69, after which it switches to a vigesimal (base-20) system. The numbers 70-79 are expressed as 60+10 through 60+19 (soixante-dix, soixante et onze, etc.), while 80-99 use four-twenties (quatre-vingts) plus additional units. Belgium and Switzerland use septante, octante/huitante, and nonante for 70, 80, and 90 respectively.",
+    "cardinals": [
+      {
+        "value": 0,
+        "word": "zéro",
+        "ipa": "/zeʁo/",
+        "pronunciation": "zay-ROH",
+        "note": ""
+      },
+      {
+        "value": 1,
+        "word": "un",
+        "ipa": "/œ̃/",
+        "pronunciation": "uhn",
+        "note": "masculine; une /yn/ (oon) for feminine"
+      },
+      {
+        "value": 2,
+        "word": "deux",
+        "ipa": "/dø/",
+        "pronunciation": "duh",
+        "note": ""
+      },
+      {
+        "value": 3,
+        "word": "trois",
+        "ipa": "/tʁwa/",
+        "pronunciation": "trwah",
+        "note": ""
+      },
+      {
+        "value": 4,
+        "word": "quatre",
+        "ipa": "/katʁ/",
+        "pronunciation": "KAH-truh",
+        "note": ""
+      },
+      {
+        "value": 5,
+        "word": "cinq",
+        "ipa": "/sɛ̃k/",
+        "pronunciation": "sank",
+        "note": ""
+      },
+      {
+        "value": 6,
+        "word": "six",
+        "ipa": "/sis/",
+        "pronunciation": "seess",
+        "note": ""
+      },
+      {
+        "value": 7,
+        "word": "sept",
+        "ipa": "/sɛt/",
+        "pronunciation": "set",
+        "note": ""
+      },
+      {
+        "value": 8,
+        "word": "huit",
+        "ipa": "/ɥit/",
+        "pronunciation": "weet",
+        "note": ""
+      },
+      {
+        "value": 9,
+        "word": "neuf",
+        "ipa": "/nœf/",
+        "pronunciation": "nuhf",
+        "note": ""
+      },
+      {
+        "value": 10,
+        "word": "dix",
+        "ipa": "/dis/",
+        "pronunciation": "deess",
+        "note": ""
+      },
+      {
+        "value": 11,
+        "word": "onze",
+        "ipa": "/ɔ̃z/",
+        "pronunciation": "ohnz",
+        "note": ""
+      },
+      {
+        "value": 12,
+        "word": "douze",
+        "ipa": "/duz/",
+        "pronunciation": "dooz",
+        "note": ""
+      },
+      {
+        "value": 13,
+        "word": "treize",
+        "ipa": "/tʁɛz/",
+        "pronunciation": "trehz",
+        "note": ""
+      },
+      {
+        "value": 14,
+        "word": "quatorze",
+        "ipa": "/katɔʁz/",
+        "pronunciation": "kah-TORZ",
+        "note": ""
+      },
+      {
+        "value": 15,
+        "word": "quinze",
+        "ipa": "/kɛ̃z/",
+        "pronunciation": "kanz",
+        "note": ""
+      },
+      {
+        "value": 16,
+        "word": "seize",
+        "ipa": "/sɛz/",
+        "pronunciation": "sehz",
+        "note": ""
+      },
+      {
+        "value": 17,
+        "word": "dix-sept",
+        "ipa": "/dis.sɛt/",
+        "pronunciation": "deess-SET",
+        "note": ""
+      },
+      {
+        "value": 18,
+        "word": "dix-huit",
+        "ipa": "/diz.ɥit/",
+        "pronunciation": "deez-WEET",
+        "note": ""
+      },
+      {
+        "value": 19,
+        "word": "dix-neuf",
+        "ipa": "/diz.nœf/",
+        "pronunciation": "deez-NUHF",
+        "note": ""
+      },
+      {
+        "value": 20,
+        "word": "vingt",
+        "ipa": "/vɛ̃/",
+        "pronunciation": "van",
+        "note": ""
+      },
+      {
+        "value": 30,
+        "word": "trente",
+        "ipa": "/tʁɑ̃t/",
+        "pronunciation": "trahnt",
+        "note": ""
+      },
+      {
+        "value": 40,
+        "word": "quarante",
+        "ipa": "/kaʁɑ̃t/",
+        "pronunciation": "kah-RAHNT",
+        "note": ""
+      },
+      {
+        "value": 50,
+        "word": "cinquante",
+        "ipa": "/sɛ̃kɑ̃t/",
+        "pronunciation": "san-KAHNT",
+        "note": ""
+      },
+      {
+        "value": 60,
+        "word": "soixante",
+        "ipa": "/swasɑ̃t/",
+        "pronunciation": "swah-SAHNT",
+        "note": ""
+      },
+      {
+        "value": 70,
+        "word": "soixante-dix",
+        "ipa": "/swasɑ̃t.dis/",
+        "pronunciation": "swah-SAHNT-deess",
+        "note": "literally 'sixty-ten'"
+      },
+      {
+        "value": 80,
+        "word": "quatre-vingts",
+        "ipa": "/katʁə.vɛ̃/",
+        "pronunciation": "KAH-truh-van",
+        "note": "literally 'four-twenties'; loses -s when followed by another number"
+      },
+      {
+        "value": 90,
+        "word": "quatre-vingt-dix",
+        "ipa": "/katʁə.vɛ̃.dis/",
+        "pronunciation": "KAH-truh-van-deess",
+        "note": "literally 'four-twenties-ten'"
+      },
+      {
+        "value": 100,
+        "word": "cent",
+        "ipa": "/sɑ̃/",
+        "pronunciation": "sahn",
+        "note": ""
+      },
+      {
+        "value": 1000,
+        "word": "mille",
+        "ipa": "/mil/",
+        "pronunciation": "meel",
+        "note": ""
+      },
+      {
+        "value": 1000000,
+        "word": "un million",
+        "ipa": "/œ̃ mi.ljɔ̃/",
+        "pronunciation": "uhn mee-LYOHN",
+        "note": ""
+      }
+    ],
+    "ordinals": [
+      {
+        "rank": 1,
+        "word": "premier",
+        "ipa": "/pʁə.mje/",
+        "pronunciation": "pruh-MYAY",
+        "meaning": "first",
+        "note": "masculine; première /pʁə.mjɛʁ/ for feminine"
+      },
+      {
+        "rank": 2,
+        "word": "deuxième",
+        "ipa": "/dø.zjɛm/",
+        "pronunciation": "duh-ZYEM",
+        "meaning": "second",
+        "note": "also second(e) /sə.gɔ̃(d)/"
+      },
+      {
+        "rank": 3,
+        "word": "troisième",
+        "ipa": "/tʁwa.zjɛm/",
+        "pronunciation": "trwah-ZYEM",
+        "meaning": "third",
+        "note": ""
+      },
+      {
+        "rank": 4,
+        "word": "quatrième",
+        "ipa": "/ka.tʁi.jɛm/",
+        "pronunciation": "kah-tree-YEM",
+        "meaning": "fourth",
+        "note": ""
+      },
+      {
+        "rank": 5,
+        "word": "cinquième",
+        "ipa": "/sɛ̃.kjɛm/",
+        "pronunciation": "san-KYEM",
+        "meaning": "fifth",
+        "note": ""
+      },
+      {
+        "rank": 6,
+        "word": "sixième",
+        "ipa": "/si.zjɛm/",
+        "pronunciation": "see-ZYEM",
+        "meaning": "sixth",
+        "note": ""
+      },
+      {
+        "rank": 7,
+        "word": "septième",
+        "ipa": "/sɛ.tjɛm/",
+        "pronunciation": "set-YEM",
+        "meaning": "seventh",
+        "note": ""
+      },
+      {
+        "rank": 8,
+        "word": "huitième",
+        "ipa": "/ɥi.tjɛm/",
+        "pronunciation": "wee-TYEM",
+        "meaning": "eighth",
+        "note": ""
+      },
+      {
+        "rank": 9,
+        "word": "neuvième",
+        "ipa": "/nœ.vjɛm/",
+        "pronunciation": "nuh-VYEM",
+        "meaning": "ninth",
+        "note": ""
+      },
+      {
+        "rank": 10,
+        "word": "dixième",
+        "ipa": "/di.zjɛm/",
+        "pronunciation": "dee-ZYEM",
+        "meaning": "tenth",
+        "note": ""
+      }
+    ],
+    "teaching_notes": [
+      "Only un agrees with gender: un homme (one man), une femme (one woman). All other cardinal numbers are invariable except vingt and cent, which take -s in the plural when multiplied (quatre-vingts, deux cents) but lose it when followed by another number (quatre-vingt-trois).",
+      "Numbers 21-69 use et (and) only with 1: vingt et un, trente et un, but vingt-deux, trente-trois. Numbers 70-99 never use et except in soixante et onze (71) and quatre-vingt-onze (91).",
+      "The vigesimal system for 70-99 requires mental addition: 75 is soixante-quinze (60+15), 97 is quatre-vingt-dix-sept (4×20+17). Belgian and Swiss French avoid this with septante (70), huitante/octante (80), and nonante (90).",
+      "Ordinals are formed by adding -ième to the cardinal number, dropping any final -e: quatre → quatrième. Only premier/première is irregular. Use second(e) for 'second' when there are only two items total.",
+      "Mille is invariable (never milles), while million and milliard are nouns that take -s in the plural and require de before another noun: deux millions d'habitants (two million inhabitants)."
+    ]
+  }
+}

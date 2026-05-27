@@ -1,0 +1,22 @@
+{
+  "id": "3.2",
+  "stage": 3,
+  "title": "The Future",
+  "subtitle": "amābō / regam. Two patterns.",
+  "estimated_minutes": 50,
+  "objectives": ["Conjugate the future in first/second conjugations (-bō, -bis, -bit).", "Conjugate the future in third/fourth conjugations (-am, -ēs, -et).", "Translate future tense as 'will' or 'shall'.", "Distinguish the two future patterns by conjugation."],
+  "sections": [
+    {"kind": "prose", "heading": "The future tense", "body": "The future has two patterns. First/second conjugations use -b-; third/fourth use -ā-/-ē-.\n\nFirst conjugation future:\n  amābō, amābis, amābit, amābimus, amābitis, amābunt\n\nThird conjugation future:\n  regam, regēs, reget, regēmus, regētis, regent\n\nCaesar writes: hostēs oppugnābunt. — The enemies will attack.\nCicero writes: tē dēfendam. — I shall defend you."},
+    {"kind": "self_check", "heading": "Self-check", "items": [
+      {"prompt": "Conjugate laudō in the future.", "answer": "laudābō, laudābis, laudābit, laudābimus, laudābitis, laudābunt"},
+      {"prompt": "Conjugate dūcō (3rd) in the future.", "answer": "dūcam, dūcēs, dūcet, dūcēmus, dūcētis, dūcent"},
+      {"prompt": "Translate: puella rosās amābit.", "answer": "The girl will love roses."}
+    ]},
+    {"kind": "reading_preview", "heading": "Sentences in the future", "words": [
+      {"latin": "servī dominōs laudābunt.", "transliteration": null, "gloss": "The slaves will praise the masters.", "audio": "/paideia/audio/latin/sentences/3.2-1.mp3"},
+      {"latin": "rēx populōs reget.", "transliteration": null, "gloss": "The king will rule the peoples.", "audio": "/paideia/audio/latin/sentences/3.2-2.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Lesson 3.3: the perfect active. amāvī, amāvistī, amāvit. The four principal parts."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can conjugate the future in all conjugations.", "credit_minutes": 50}
+}

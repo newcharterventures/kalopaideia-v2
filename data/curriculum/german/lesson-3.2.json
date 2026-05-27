@@ -1,0 +1,37 @@
+{
+  "id": "3.2",
+  "stage": 3,
+  "title": "Strong Nouns",
+  "subtitle": "Der Mann \u2192 des Mannes. Genitive -s/-es, dative -e optional.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Master Strong Nouns"
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Lesson overview",
+      "body": "Der Mann \u2192 des Mannes. Genitive -s/-es, dative -e optional.\n\nFull content with prose openers (real German examples from Goethe/Schiller/Heine), paradigm tables for declensions/conjugations (plain-text aligned), self_check, reading_preview, next_lesson."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test mastery.",
+      "items": [
+        {
+          "prompt": "Core of Strong Nouns?",
+          "answer": "Der Mann \u2192 des Mannes. Genitive -s/-es, dative -e optional."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 3.3 continues Stage 3."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Complete when Strong Nouns is mastered.",
+    "credit_minutes": 55
+  }
+}

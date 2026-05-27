@@ -1,0 +1,48 @@
+{
+  "id": "2.10",
+  "stage": 2,
+  "title": "Adjectives — Strong and Weak",
+  "subtitle": "Gōd cyning, se gōda cyning.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Understand and apply the concepts of Adjectives — Strong and Weak.",
+    "Read and parse examples from authentic Old English texts.",
+    "Practice pronunciation and recognition."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "Old English adjectives decline in two patterns: strong (when used without an article or after a demonstrative) and weak (after the definite article). The strong declension has distinct forms for all three genders; the weak declension is simpler. Example: gōd cyning (a good king, strong), se gōda cyning (the good king, weak)."
+    },
+    {
+      "kind": "prose",
+      "heading": "Example",
+      "body": "Strong: gōd mann (nom), gōdne mann (acc). Weak: se gōda mann (nom), þone gōdan mann (acc)."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test your understanding.",
+      "items": [
+        {
+          "prompt": "What is the main concept of this lesson?",
+          "answer": "Adjectives — Strong and Weak"
+        },
+        {
+          "prompt": "Can you parse the example?",
+          "answer": "Review the paradigm and example above."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson in Stage 2."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand Adjectives — Strong and Weak and can apply it in reading.",
+    "credit_minutes": 55
+  }
+}

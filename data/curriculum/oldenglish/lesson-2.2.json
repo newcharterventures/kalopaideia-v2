@@ -1,0 +1,78 @@
+{
+  "id": "2.2",
+  "stage": 2,
+  "title": "The Definite Article",
+  "subtitle": "Se, sēo, þæt — seventeen forms, the key to every noun.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Understand and apply the concepts of The Definite Article.",
+    "Read and parse examples from authentic Old English texts.",
+    "Practice pronunciation and recognition."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The definite article in Old English declines for case, number, and gender. Three genders (masculine, feminine, neuter), two numbers (singular, plural), four cases. Not all combinations have distinct forms, but you must learn all seventeen. The article often disambiguates the case of a noun when the noun ending is ambiguous."
+    },
+    {
+      "kind": "paradigm_table",
+      "heading": "Paradigm",
+      "table": {
+        "Masculine": {
+          "Nom": "se",
+          "Acc": "þone",
+          "Gen": "þæs",
+          "Dat": "þǣm / þām"
+        },
+        "Feminine": {
+          "Nom": "sēo",
+          "Acc": "þā",
+          "Gen": "þǣre / þære",
+          "Dat": "þǣre / þære"
+        },
+        "Neuter": {
+          "Nom": "þæt",
+          "Acc": "þæt",
+          "Gen": "þæs",
+          "Dat": "þǣm / þām"
+        },
+        "Plural (all genders)": {
+          "Nom": "þā",
+          "Acc": "þā",
+          "Gen": "þāra / þǣra",
+          "Dat": "þǣm / þām"
+        }
+      }
+    },
+    {
+      "kind": "prose",
+      "heading": "Example",
+      "body": "se cyning (the king, nom), þone cyning (the king, acc), þæs cyninges (of the king, gen), þǣm cyninge (to/for the king, dat)"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test your understanding.",
+      "items": [
+        {
+          "prompt": "What is the main concept of this lesson?",
+          "answer": "The Definite Article"
+        },
+        {
+          "prompt": "Can you parse the example?",
+          "answer": "Review the paradigm and example above."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson in Stage 2."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand The Definite Article and can apply it in reading.",
+    "credit_minutes": 55
+  }
+}

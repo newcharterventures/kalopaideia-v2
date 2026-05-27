@@ -1,0 +1,20 @@
+{
+  "id": "4.5",
+  "stage": 4,
+  "title": "Indirect Command",
+  "subtitle": "imperō / rogō ut + subjunctive.",
+  "estimated_minutes": 50,
+  "objectives": ["Recognize indirect command with verbs of commanding/asking + ut/nē.", "Translate as 'that', 'to', or infinitive in English.", "Understand the difference between direct command (imperative) and indirect (ut + subj.)."],
+  "sections": [
+    {"kind": "prose", "heading": "Indirect command", "body": "Indirect commands follow verbs of commanding, asking, persuading, urging. They use ut + subjunctive (nē for negative).\n\nrex imperāvit ut mīlitēs venīrent. — The king ordered that the soldiers come / ordered the soldiers to come.\ntē rogō nē discēdās. — I ask you not to depart.\n\nCommon verbs: imperō, rogō, moneō, hortor, persuādeō, petō.\n\nCaesar writes: legiōnibus imperāvit nē proelium committerent. — He ordered the legions not to engage in battle."},
+    {"kind": "self_check", "heading": "Self-check", "items": [
+      {"prompt": "Translate: dux mīlitibus imperāvit ut fortiter pugnārent.", "answer": "The leader ordered the soldiers to fight bravely."},
+      {"prompt": "Translate: tē moneō ut taceas.", "answer": "I warn you to be silent."}
+    ]},
+    {"kind": "reading_preview", "heading": "Sentences", "words": [
+      {"latin": "Caesar legiōnibus imperāvit ut castra mūnīrent.", "transliteration": null, "gloss": "Caesar ordered the legions to fortify the camp.", "audio": "/paideia/audio/latin/sentences/4.5-1.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Lesson 4.6: cum-clauses. cum + subjunctive for when, since, although."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can recognize and translate indirect commands.", "credit_minutes": 50}
+}

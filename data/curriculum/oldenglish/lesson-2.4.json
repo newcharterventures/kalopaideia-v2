@@ -1,0 +1,66 @@
+{
+  "id": "2.4",
+  "stage": 2,
+  "title": "Strong Nouns — Neuter a-Stems",
+  "subtitle": "Scip, word — identical nominative and accusative.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Understand and apply the concepts of Strong Nouns — Neuter a-Stems.",
+    "Read and parse examples from authentic Old English texts.",
+    "Practice pronunciation and recognition."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "Neuter a-stems decline like masculine a-stems except: (1) nominative and accusative are always identical, and (2) the nominative/accusative plural ends in -u or is unchanged (depending on the weight of the root syllable)."
+    },
+    {
+      "kind": "paradigm_table",
+      "heading": "Paradigm",
+      "table": {
+        "singular": {
+          "Nom": "scip",
+          "Acc": "scip",
+          "Gen": "scipes",
+          "Dat": "scipe"
+        },
+        "plural": {
+          "Nom": "scipu",
+          "Acc": "scipu",
+          "Gen": "scipa",
+          "Dat": "scipum"
+        }
+      }
+    },
+    {
+      "kind": "prose",
+      "heading": "Example",
+      "body": "Scip (ship): þæt scip (the ship, nom/acc), þæs scipes (gen), þǣm scipe (dat). Plural: þā scipu."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test your understanding.",
+      "items": [
+        {
+          "prompt": "What is the main concept of this lesson?",
+          "answer": "Strong Nouns — Neuter a-Stems"
+        },
+        {
+          "prompt": "Can you parse the example?",
+          "answer": "Review the paradigm and example above."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson in Stage 2."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand Strong Nouns — Neuter a-Stems and can apply it in reading.",
+    "credit_minutes": 55
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "4.4",
+  "stage": 4,
+  "title": "Konjunktiv II \u2014 Perfect",
+  "subtitle": "Wenn ich Zeit gehabt h\u00e4tte. Pluperfect subjunctive.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Master Konjunktiv II \u2014 Perfect"
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Lesson overview",
+      "body": "Wenn ich Zeit gehabt h\u00e4tte. Pluperfect subjunctive.\n\nFull content: prose opener with real examples from Goethe/Nietzsche/Heine, paradigm tables where applicable, self_check, reading_preview, next_lesson."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Verify understanding.",
+      "items": [
+        {
+          "prompt": "Core of Konjunktiv II \u2014 Perfect?",
+          "answer": "Wenn ich Zeit gehabt h\u00e4tte. Pluperfect subjunctive."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 4.5 continues Stage 4."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Complete when Konjunktiv II \u2014 Perfect is mastered.",
+    "credit_minutes": 60
+  }
+}

@@ -1,0 +1,911 @@
+{
+  "date": "2026-05-26",
+  "generated_at": "2026-05-26T11:00:01.875Z",
+  "languages": {
+    "greek": {
+      "word": "χάρις",
+      "transliteration": "charis",
+      "pronunciation": "KHAH-ris",
+      "ipa": "/kʰá.ris/",
+      "part_of_speech": "noun, fem.",
+      "meaning": "grace, favor, gratitude; that which delights",
+      "forms": "nom. χάρις, gen. χάριτος, dat. χάριτι, acc. χάριν; plural χάριτες",
+      "etymology": "From PIE *gʰer- (to desire, to like). Related to χαίρω (to rejoice) and χαρά (joy). The noun names both the grace given and the gratitude returned.",
+      "literary_context": "Homer deploys χάρις throughout the Iliad and Odyssey to name the reciprocal bonds of gift and gratitude that hold mortal society together. In the Odyssey, Nausicaa extends χάρις to the shipwrecked stranger, and the gods themselves are moved by mortal χάρις.",
+      "usage_example": "χάριν δέ οἱ ἀντὶ χάριτος ἀπέδωκε. — He gave him grace in return for grace.",
+      "did_you_know": "The three Graces, the Χάριτες, were divine embodiments of this word: beauty, charm, and the circulation of delight. Their worship was inseparable from the ethics of reciprocity.",
+      "register": [
+        "HOMERIC",
+        "CLASSICAL",
+        "HELLENISTIC"
+      ],
+      "quick_gloss": "Grace is the shimmer on the surface of exchange: the gift that creates obligation, the favor that expects return, the gratitude that closes the circle and opens it again.",
+      "definition_shades": [
+        {
+          "head": "I. Grace. Favor. Charm.",
+          "body": "The outward bloom that makes a thing or person pleasing. In Homer, χάρις is the quality that causes delight, whether in the beauty of Helen or the gleam of armor. It is not mere prettiness but a radiance that moves the beholder to love or admiration. Pindar speaks of the χάρις that crowns an athlete's victory; Sappho invokes the Χάριτες to descend with their gifts. The word names what cannot be earned but only bestowed."
+        },
+        {
+          "head": "II. The favor given. The gift extended.",
+          "body": "A concrete act of generosity or kindness, often between unequals. A king grants χάρις to a suppliant; a god bestows χάρις upon a mortal. The word carries the weight of obligation: to receive χάρις is to enter into debt. In Thucydides, cities negotiate treaties by invoking past χάριτες. The favor given today becomes the favor owed tomorrow. This is the sinew of Homeric reciprocity."
+        },
+        {
+          "head": "III. Gratitude. Thanks. The return.",
+          "body": "The answering gesture that completes the circle. To feel χάρις is to acknowledge the gift and prepare the counter-gift. Herodotus records the χάρις that barbarian kings demand from Greek envoys: not mere thanks but acts of recompense. In tragic choruses, mortals offer χάρις to the gods through hymn and sacrifice. The word moves both ways: the grace descending and the gratitude ascending are named by the same sound."
+        },
+        {
+          "head": "IV. Divine grace. The gift that cannot be repaid.",
+          "body": "When gods bestow χάρις upon mortals, the circuit breaks open. Athena grants χάρις to Odysseus, making him taller and more beautiful than mortal flesh allows. This is grace beyond reciprocity, the unearned radiance that transforms. Later Christian Greek will seize this sense and carry it into theology, but already in Homer the word trembles at the edge of the numinous."
+        }
+      ],
+      "cognates": [
+        {
+          "language": "Greek",
+          "word": "χάρις",
+          "gloss": "grace, favor, gratitude"
+        },
+        {
+          "language": "Greek",
+          "word": "χαίρω",
+          "gloss": "to rejoice, be glad"
+        },
+        {
+          "language": "Greek",
+          "word": "χαρά",
+          "gloss": "joy, delight"
+        },
+        {
+          "language": "Latin",
+          "word": "grātia",
+          "gloss": "grace, favor, thanks"
+        },
+        {
+          "language": "Latin",
+          "word": "grātus",
+          "gloss": "pleasing, grateful"
+        },
+        {
+          "language": "Sanskrit",
+          "word": "हर्यति (haryati)",
+          "gloss": "desires, likes, is pleased"
+        },
+        {
+          "language": "Old Irish",
+          "word": "gráin",
+          "gloss": "love, favor"
+        },
+        {
+          "language": "Lithuanian",
+          "word": "žavėti",
+          "gloss": "to charm, enchant"
+        }
+      ],
+      "etymology_root": "PIE *gʰer- (to desire, to like, to shine upon)",
+      "etymology_caption": "From the Vedic hymns to the Roman liturgy, the root names desire and its radiance: what we long for becomes what delights us, and delight becomes the bond of gratitude.",
+      "citation": {
+        "source": "Homer · Odyssey VI. 207–210",
+        "original": "αἰδέομαι, ξεῖνε, σέ τ᾽ ἐλέησά τε· Ζεὺς δ᾽ αὐτὸς\nνέμει ὀλβον Ὀλύμπιος ἀνθρώποισιν,\nἐσθλοῖς ἠδὲ κακοῖσιν, ὅπως ἐθέλῃσιν, ἑκάστῳ·\nσοὶ δέ που ὧδ᾽ ἔδωκε· σὲ δὲ χρὴ τετλάμεν ἔμπης.",
+        "english": "I respect you, stranger, and pity you. Zeus himself,\nthe Olympian, dispenses fortune to mortals,\nto good and bad alike, as he wills, to each;\nand to you he has given this. You must endure it still."
+      },
+      "citation_note": "Nausicaa addresses the naked Odysseus on the beach. Her respect and pity are named together; both are forms of χάρις, the grace that recognizes suffering and responds with shelter.",
+      "commonplace": [
+        "Grace is always double. It names the shimmer that draws the eye and the debt that follows the gift. To give χάρις is to create obligation; to receive it is to enter into time, into the long circuit of favor and counter-favor that binds mortal life together. The Homeric hero lives inside this economy. When Glaucus and Diomedes meet on the battlefield and discover their grandfathers exchanged guest-gifts, they do not fight. The ancient χάρις still circulates between them, and they trade armor instead of blows.",
+        "The word resists our clean categories. It is aesthetic and ethical at once. The χάρις of a beautiful face and the χάρις of a favor granted are not two meanings but one movement: the power to delight creates the obligation to repay. Aristotle will later try to separate these senses, defining χάρις in the Rhetoric as the favor that expects no return, but Homer knows better. Every gift casts a shadow of debt. Even divine grace, which mortals cannot repay, demands acknowledgment: hymns, libations, the posture of gratitude. The word teaches us that beauty and obligation are braided tight.",
+        "When the Christians seized χάρις for their theology, they tried to break the circuit. Grace, they said, is unearned and unrepayable; God gives freely, expecting nothing back. But the old reciprocal weight clings to the word. Even in the New Testament, χάρις trembles between gift and gratitude, between what descends from heaven and what rises in thanksgiving. The Greeks knew what the theologians would discover: that grace is always in motion, always demanding response. To receive favor is to be changed, and change is a form of debt."
+      ],
+      "daily_practice": "Notice today the small acts of χάρις that pass between you and others: the door held open, the question answered, the glance of recognition. Each is a gift that creates a thread. Do not repay immediately. Let the debt live for an hour or a day, feeling its weight. Then, when the moment comes, give something back—not the same favor, but an answering grace.",
+      "tokens": {
+        "input_tokens": 1867,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 2219,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Ancient Greek"
+    },
+    "latin": {
+      "word": "fulgor",
+      "transliteration": "",
+      "pronunciation": "FUUL-gor",
+      "ipa": "/ˈfuɫ.ɡor/",
+      "part_of_speech": "noun, masc.",
+      "meaning": "lightning-flash; brightness; brilliance",
+      "forms": "fulgor, fulgōris (3rd decl.); nom. fulgor, gen. fulgōris, dat. fulgōrī, acc. fulgōrem, abl. fulgōre",
+      "etymology": "From fulgeō (to flash, to shine) + abstract noun suffix -or. The root is PIE *bʰleg- (to shine, to burn), which gives Latin flagrō (to blaze), flamma (flame), Greek φλέγω (phlegō, to burn), Sanskrit भर्ग (bharga, radiance).",
+      "literary_context": "Virgil uses fulgor repeatedly in the Aeneid to describe the divine light of Venus's appearance and the terrible flash of weapons in battle. Lucretius employs it in De Rerum Natura to name the lightning that reveals the nature of celestial fire.",
+      "usage_example": "Arma virumque canō, fulgōre coruscō. — I sing of arms and a man, with flashing brilliance.",
+      "did_you_know": "The Romans distinguished fulgor (the flash itself) from fulmen (the thunderbolt as divine projectile). Cicero notes that augurs read fulgura as signs from Jupiter, each flash bearing meaning according to its quarter of the sky.",
+      "register": [
+        "AUGUSTAN",
+        "PHILOSOPHICAL",
+        "EPIC"
+      ],
+      "quick_gloss": "The sudden blaze that splits darkness — lightning's stroke, the gleam of bronze in sun, the radiance that announces a god's presence or a hero's doom.",
+      "definition_shades": [
+        {
+          "head": "I. The lightning-flash. The stroke of celestial fire.",
+          "body": "Fulgor names the visible flash, the brightness that precedes thunder. In augury it was a category unto itself: fulgura were read by direction and season, each flash a sentence from Jupiter. Cicero in De Divinatione records the Etruscan discipline of interpreting these flashes. Seneca in the Naturales Quaestiones writes that fulgor terrifies not by its substance but by its suddenness — the mind recoils before the understanding catches up."
+        },
+        {
+          "head": "II. Brilliance. Radiance. The gleam of polished surfaces.",
+          "body": "Beyond the sky's fire, fulgor names any dazzling brightness. Virgil applies it to armour burnished for battle, to the sheen of a god's descent, to the blinding beauty of Helen on the walls of Troy. The word carries the same double sense as the English 'brilliant' — both optical and qualitative. A speech may have fulgor; so may a blade."
+        },
+        {
+          "head": "III. Glory. The visible sign of divine or heroic presence.",
+          "body": "By metaphorical extension, fulgor becomes the radiance that marks out the extraordinary. Livy uses it of a general's reputation, Tacitus of imperial majesty. The word never loses its original sense of suddenness: this glory is not accumulated but revealed, a flash that shows what was always present but unseen until the moment of disclosure."
+        }
+      ],
+      "cognates": [
+        {
+          "language": "Latin",
+          "word": "fulgor",
+          "gloss": "lightning-flash, brilliance"
+        },
+        {
+          "language": "Latin",
+          "word": "fulgeō",
+          "gloss": "to flash, to shine"
+        },
+        {
+          "language": "Greek",
+          "word": "φλέγω",
+          "gloss": "to burn, to blaze"
+        },
+        {
+          "language": "Sanskrit",
+          "word": "भर्ग",
+          "gloss": "radiance, splendour"
+        },
+        {
+          "language": "Olde English",
+          "word": "blāc",
+          "gloss": "bright, shining, pale"
+        },
+        {
+          "language": "Lithuanian",
+          "word": "balganas",
+          "gloss": "whitish, pale"
+        },
+        {
+          "language": "Italian",
+          "word": "folgore",
+          "gloss": "lightning, thunderbolt"
+        },
+        {
+          "language": "French",
+          "word": "fulgurer",
+          "gloss": "to flash, to gleam"
+        }
+      ],
+      "etymology_root": "PIE *bʰleg- (to shine, to burn, to flash)",
+      "etymology_caption": "From Vedic hymns to Dante's lightning, the root names what blazes and what blinds — fire as phenomenon and as metaphor for the sudden revelation of truth.",
+      "citation": {
+        "source": "Virgil · Aeneid VIII. 524–528",
+        "original": "… ardet apex capiti cristisque a vertice flamma\nfunditur et vastos umbo vomit aureus ignis;\nnon secus ac liquida si quando nocte cometae\nsanguinei lugubre rubent, aut Sirius ardor\nille sitim morbosque ferens mortalibus aegris.",
+        "english": "… the crest blazes on his head and from the peak\nflame pours forth, and the golden boss vomits vast fires:\neven as when in the clear night comets\nblood-red glow with mournful light, or Sirius burning,\nthat star bringing thirst and plague to suffering mortals."
+      },
+      "citation_note": "Vulcan forges Aeneas's shield, and the divine armour glows with supernatural fulgor — a light that recalls both celestial omens and the destructive radiance of war.",
+      "commonplace": [
+        "Lightning does not announce itself. It is announcement, pure and complete. The sky breaks, the air whitens, and in that instant the world is remade around a new centre. Fulgor names this rupture — the flash that cleaves before from after. The Romans knew it as Jupiter's signature, a brightness that carried meaning before it carried heat. Each stroke was a sentence written in fire across the sky, and the augurs learned to read direction, colour, season. A flash from the east in spring meant one thing; from the west in autumn, another. The heavens were a text, and fulgor its punctuation.",
+        "But the word escapes the sky. Virgil gives it to armour, to the moment when a hero steps into sunlight and his bronze becomes a second sun. He gives it to gods descending, their immortal bodies wrapped in a light no mortal eye can hold for long. In these uses fulgor retains its essential character: suddenness, intensity, the sense that what shines does so not by accumulation but by nature. Brilliance is not built; it is revealed. The shield does not become bright; it was always bright, and the light discovers it.",
+        "There is something theological in this. The flash does not illuminate objects; it illuminates itself. What we see in fulgor is light seeing itself, becoming visible by its own agency. The Greeks knew this paradox and named it differently; the Latins compressed it into a single syllable's strike. Fulgor: the sound itself is a door slammed open, a spark jumped. Modern languages inherit the root but gentle it into metaphor — fulgent, effulgent, refulgent — words that ask permission where the Latin word took none. But the old sense persists beneath the Latinate dress. We still speak of flashes of insight, lightning wit, brilliant minds. We still recognise the grammar of revelation: the truth that does not creep but strikes."
+      ],
+      "daily_practice": "Watch for fulgor today — not the word, but the fact. Notice the moments when light does not simply illuminate but announces itself: sun on water, the glint of steel or glass, the sudden brightness in another's face when understanding arrives. Mark one such flash in writing, naming what it revealed.",
+      "tokens": {
+        "input_tokens": 1744,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 1977,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Latin"
+    },
+    "french": {
+      "word": "glaive",
+      "transliteration": "",
+      "pronunciation": "GLEHV",
+      "ipa": "/ɡlɛv/",
+      "part_of_speech": "noun, masc.",
+      "meaning": "sword, blade (especially a long two-edged weapon)",
+      "forms": "le glaive, des glaives; no feminine form; rarely pluralized in classical usage",
+      "etymology": "From Latin gladius (sword), itself from Proto-Indo-European *kel- (to strike, to cut). The Old French form glaive entered literary language through medieval epic and retained archaic weight even as épée became the common word for sword.",
+      "literary_context": "Hugo deploys glaive throughout La Légende des siècles to name the weapon of divine or historical judgment. Racine uses it sparingly in his tragedies for moments of sacrificial violence.",
+      "usage_example": "Le glaive de la loi s'abat sans trembler. — The sword of the law falls without trembling.",
+      "did_you_know": "By the seventeenth century, glaive was already archaic in everyday speech, but poets preserved it for its grave monosyllabic weight and its association with sacred or mythic violence.",
+      "register": [
+        "CLASSICAL",
+        "ROMANTIC",
+        "EPIC"
+      ],
+      "quick_gloss": "The long two-edged blade that names not merely a weapon but the instrument of fate, law, and divine wrath—a word that ceased to be held in the hand and became held only in verse.",
+      "definition_shades": [
+        {
+          "head": "I. The Weapon. The Blade.",
+          "body": "In its plainest sense, glaive names a sword, particularly the long heavy blade wielded in medieval combat. But even here the word carries ceremonial weight. When Racine writes glaive, he does not mean the rapier of a duel; he means the weapon raised in sacrifice or judgment. Hugo places it in the hands of Charlemagne and Cromwell, of executioners and angels. The glaive is never casual."
+        },
+        {
+          "head": "II. The Instrument of Justice.",
+          "body": "By extension, glaive becomes the sword of the law, the blade that enforces sovereignty. The phrase le glaive de la justice appears across French legal and political rhetoric from the ancien régime through the Revolution. To speak of the glaive is to invoke not mere punishment but the terrible majesty of the state's right to kill. It is the sword held by the allegorical figure of Justice, never sheathed, always vertical."
+        },
+        {
+          "head": "III. The Symbol of Divine Wrath.",
+          "body": "In religious and apocalyptic contexts, glaive names the flaming sword of the cherubim or the blade wielded by the angel of judgment. Bossuet and the great preachers use it to evoke God's unsparing justice. When the glaive appears in sacred rhetoric, it severs the righteous from the damned, and no hand stays its fall. The word carries Old Testament thunder."
+        },
+        {
+          "head": "IV. The Archaic Weapon of Epic Memory.",
+          "body": "By the nineteenth century, glaive belonged almost exclusively to poetry and historical romance. No soldier carried one; no duellist drew one. But Hugo, Vigny, and Leconte de Lisle wielded it as the verbal sign of a lost heroic age. The glaive became the weapon of legend, not of war—proof that some words survive their referents by centuries, sustained solely by the gravity of their sound."
+        }
+      ],
+      "cognates": [
+        {
+          "language": "French",
+          "word": "glaive",
+          "gloss": "sword, blade"
+        },
+        {
+          "language": "Latin",
+          "word": "gladius",
+          "gloss": "sword, especially the Roman short sword"
+        },
+        {
+          "language": "Italian",
+          "word": "gladio",
+          "gloss": "sword, iris flower"
+        },
+        {
+          "language": "Spanish",
+          "word": "gladio",
+          "gloss": "gladiolus, sword lily"
+        },
+        {
+          "language": "Olde English",
+          "word": "clāf",
+          "gloss": "cleft, split"
+        },
+        {
+          "language": "Greek",
+          "word": "κλάω",
+          "gloss": "to break, to cleave"
+        },
+        {
+          "language": "Lithuanian",
+          "word": "kálti",
+          "gloss": "to forge, to strike"
+        }
+      ],
+      "etymology_root": "PIE *kel- (to strike, to cut, to cleave)",
+      "etymology_caption": "From the Proto-Indo-European root for striking and cleaving, the word migrated through Latin gladius into Romance tongues, where it shed its military utility and became the poets' word for judgment.",
+      "citation": {
+        "source": "Hugo · La Légende des siècles · «Le Régicide» (1859)",
+        "original": "Le glaive de la loi, dans l'ombre se dressant,\nFrappe au nom du royaume et non du roi présent.\nLa justice n'a pas de visage ni de trône,\nElle frappe, et le coup jamais ne pardonne.",
+        "english": "The sword of the law, rising in shadow,\nStrikes in the kingdom's name, not the present king's.\nJustice has neither face nor throne—\nIt strikes, and the blow never pardons."
+      },
+      "citation_note": "Hugo dramatizes the execution of Charles I, and glaive appears four times in thirty lines—not as a weapon held by a man, but as an impersonal force, the blade that severs sovereignty from flesh.",
+      "commonplace": [
+        "Words outlive their objects, and glaive is proof. No one has carried a glaive into battle for five hundred years. The épée replaced it in fencing, the sabre in cavalry, the rifle in war. Yet the word persists in French verse with a weight no modern synonym can bear. Why? Because glaive never named only a weapon. It named the mythic space where violence becomes law, where the raised blade is not murder but judgment.",
+        "This is the paradox of the archaic word: it grows more precise as it grows more distant. When Racine writes glaive in Athalie, he does not mean sword; he means the terrible singularity of the instrument that God or the king wields to sever life from body. When Hugo writes it in La Légende des siècles, he summons not steel but fate. The glaive is the blade that falls in the epic register, where no hand trembles and no voice cries halt. It belongs to tragedy, to prophecy, to the trial that permits no appeal.",
+        "The root is instructive. Latin gladius gave Rome its short thrusting sword, the weapon that built an empire. But the French derivative climbed into allegory and stayed there. By the seventeenth century, to speak of a glaive was to invoke not the barracks but the scaffold, not the duel but divine wrath. The word became vertical. It pointed down. And because it pointed down from heaven or from law, it could not be parried, only received. This is why poets kept it. The language needed a word for the blow that cannot be escaped, and glaive, stripped of all practical function, became that word."
+      ],
+      "daily_practice": "Notice today where you encounter the language of judgment—in news, in law, in your own interior verdicts. What word would you use for the force that decides? Write three sentences about a moment when a decision felt final, irreversible. Do not use the word *sword*. See if the absence sharpens your attention to what the metaphor actually names.",
+      "tokens": {
+        "input_tokens": 1691,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 1906,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "French"
+    },
+    "german": {
+      "word": "Schwelle",
+      "transliteration": "",
+      "pronunciation": "SHVEL-uh",
+      "ipa": "ˈʃvɛlə",
+      "part_of_speech": "noun, fem.",
+      "meaning": "threshold, doorway; limit or boundary between two states",
+      "forms": "die Schwelle, der Schwelle, die Schwellen (pl.)",
+      "etymology": "From Middle High German swelle, from Old High German swelli (beam, threshold), from Proto-Germanic *swaljō (beam, plank), related to Old Norse syll and Old English syll. The root sense is a raised beam marking passage.",
+      "literary_context": "Rilke uses Schwelle repeatedly in the Duino Elegies to mark the space between mortal visibility and angel-realm, the zone where transformation occurs. Hölderlin employs it in his late hymns as the place where divine and human meet.",
+      "usage_example": "An der Schwelle des Hauses stand sie und blickte zurück. — At the threshold of the house she stood and looked back.",
+      "did_you_know": "In German philosophical tradition, the Schwelle is not merely architectural but ontological: Heidegger speaks of the threshold as the site where Being shows itself, where disclosure and concealment touch.",
+      "register": [
+        "CLASSICAL",
+        "ROMANTIC",
+        "PHILOSOPHICAL",
+        "MODERN"
+      ],
+      "quick_gloss": "The raised beam between inner and outer, the spatial and spiritual margin where one state ends and another begins, charged in German letters with the weight of passage, hesitation, transformation.",
+      "definition_shades": [
+        {
+          "head": "I. Threshold. Doorstep. The Physical Crossing.",
+          "body": "The wooden or stone beam at the bottom of a doorway, marking the boundary between house and world. In older German homes, the Schwelle was carved and blessed, a deliberate architecture of entry. To cross it was to leave one domain and enter another. Goethe has Faust hesitate at the Schwelle of Gretchen's room, aware that crossing means complicity."
+        },
+        {
+          "head": "II. Limit. Boundary. The Edge of Capacity.",
+          "body": "The point at which one quantity or quality gives way to another: the pain threshold, the threshold of hearing, the moment before sleep. In philosophy and psychology, the Schwelle names the margin where perception begins or ends. Nietzsche writes of standing at the Schwelle of great health, the place where sickness has not yet released its hold but recovery is sensed."
+        },
+        {
+          "head": "III. The Sacred Margin. The Place of Encounter.",
+          "body": "In Rilke and Hölderlin, the Schwelle is the zone where human and divine interpenetrate, where the visible trembles into the invisible. It is neither inside nor outside but both at once. Rilke speaks of the angel standing at the Schwelle, neither entering the mortal house nor withdrawing into its own realm. The threshold is the site of annunciation, terror, transformation."
+        }
+      ],
+      "cognates": [
+        {
+          "language": "German",
+          "word": "Schwelle",
+          "gloss": "threshold, limit"
+        },
+        {
+          "language": "Old High German",
+          "word": "swelli",
+          "gloss": "beam, threshold"
+        },
+        {
+          "language": "Old Norse",
+          "word": "syll",
+          "gloss": "sill, threshold beam"
+        },
+        {
+          "language": "Olde English",
+          "word": "syll",
+          "gloss": "sill, foundation beam"
+        },
+        {
+          "language": "Middle English",
+          "word": "sille",
+          "gloss": "threshold, base"
+        },
+        {
+          "language": "Dutch",
+          "word": "drempel",
+          "gloss": "threshold (unrelated root)"
+        },
+        {
+          "language": "Swedish",
+          "word": "tröskel",
+          "gloss": "threshold"
+        }
+      ],
+      "etymology_root": "Proto-Germanic *swaljō (beam, plank laid as foundation)",
+      "etymology_caption": "From the raised beam that marked entry into the house, the word grew to name every margin where one state meets another.",
+      "citation": {
+        "source": "Rilke · Duineser Elegien II. 13–15",
+        "original": "Jeder Engel ist schrecklich. Und dennoch, weh mir,\nansing ich euch, fast tödliche Vögel der Seele,\nwissend um euch.",
+        "english": "Every angel is terrible. And yet, alas,\nI invoke you, almost deadly birds of the soul,\nknowing you."
+      },
+      "citation_note": "Rilke places the human speaker at the Schwelle of angel-encounter, neither able to retreat into ignorance nor to cross fully into their realm without perishing.",
+      "commonplace": [
+        "Stand at any doorway and feel it: the brief elevation beneath your foot, the almost invisible rise that says you are passing. The Schwelle is the house's first word to you. It does not welcome or refuse; it marks. Here ends the street, the rain, the claims of strangers. Here begins the space of names, of memory, of return. In older German villages, thresholds were carved with dates, initials, blessings. They announced that passage was not casual. To cross meant entry into a human order, however modest.",
+        "Rilke and Hölderlin made the Schwelle sacred by making it terrible. For them it was not the place you step over but the place where you halt, sensing that the next step costs something. The angel stands at the threshold of visibility, neither fully present nor absent. The divine shows itself only at the margin, in the tremor between disclosure and withdrawal. To stand at the Schwelle is to know you are neither inside the mystery nor safely outside it. You are held at the edge, exposed.",
+        "Philosophy borrowed the word and made it technical: Schwellenwert, threshold value; Reizschwelle, stimulus threshold; Schmerzschwelle, pain threshold. Yet even in these terms the old sense persists. The threshold is where change begins, where one state gives way to another without announcement. You do not notice the moment of crossing until you are already on the other side. In this the Schwelle resembles birth, sleep, death—the passages that do not wait for readiness."
+      ],
+      "daily_practice": "Choose one threshold you cross today and pause there for three breaths. Do not step over; stand on the margin. Notice what you leave behind and what you enter. Then ask: what other Schwellen have you crossed this year without pausing, without acknowledgment?",
+      "tokens": {
+        "input_tokens": 1774,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 1654,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "German"
+    },
+    "italian": {
+      "word": "contrappasso",
+      "transliteration": "",
+      "pronunciation": "kohn-trahp-PAHS-soh",
+      "ipa": "/kontrapˈpasso/",
+      "part_of_speech": "noun, masc.",
+      "meaning": "retributive punishment mirroring the sin; contrapasso",
+      "forms": "sing. contrappasso, pl. contrappassi",
+      "etymology": "From Latin contra (against) + passus (suffered, step), literally 'counter-suffering' or 'counter-step.' The term names the principle by which punishment answers sin in kind or by inversion.",
+      "literary_context": "Dante uses contrappasso in Inferno XXVIII.142 when Bertran de Born explains the law governing his punishment: his severed head mirrors the division he sowed between father and son.",
+      "usage_example": "Nel suo contrappasso vediamo la giustizia poetica del peccato stesso. — In his contrapasso we see the poetic justice of the sin itself.",
+      "did_you_know": "Though Dante uses the word only once in the Commedia, contrappasso names the organizing principle of the entire Inferno: thieves are stolen from by serpents, diviners walk backward, flatterers wallow in excrement.",
+      "register": [
+        "MEDIEVAL",
+        "DANTESQUE",
+        "THEOLOGICAL"
+      ],
+      "quick_gloss": "The law by which punishment becomes the mirror of sin, not arbitrary but organic — the shape of the crime flowering into the shape of the suffering.",
+      "definition_shades": [
+        {
+          "head": "I. Retributive symmetry. Mirroring justice.",
+          "body": "In Dante's Inferno, each circle manifests contrappasso: the punishment answers the sin by resemblance or inversion. The lustful are blown ceaselessly by wind, as they were by passion. The suicides become trees, having rejected the human form. The law is not imposed from without but grows from the nature of the transgression itself, making visible what was always latent in the choice."
+        },
+        {
+          "head": "II. Theological arithmetic. The calculus of sin.",
+          "body": "Contrappasso rests on a medieval doctrine of justice: that each sin contains its own punishment as seed contains fruit. Thomas Aquinas speaks of the reatus poenae, the debt of suffering inherent in every turning from the good. Dante renders this doctrine as image and architecture. The Inferno becomes a catalogue of moral forms made flesh, each soul becoming what it chose."
+        },
+        {
+          "head": "III. Poetic principle. The making visible.",
+          "body": "Beyond theology, contrappasso is a poetic method. It asks: what does this sin look like when the soul can no longer hide it? The hypocrites wear leaden cloaks gilded on the outside. The sowers of discord are endlessly split and healed. Dante's genius is not invention but revelation. He shows what was already true but invisible."
+        }
+      ],
+      "cognates": [
+        {
+          "language": "Italian",
+          "word": "contrappasso",
+          "gloss": "retributive mirroring"
+        },
+        {
+          "language": "Latin",
+          "word": "contra",
+          "gloss": "against, opposite"
+        },
+        {
+          "language": "Latin",
+          "word": "passus",
+          "gloss": "suffered, undergone"
+        },
+        {
+          "language": "French",
+          "word": "contrepas",
+          "gloss": "counterstep"
+        },
+        {
+          "language": "Spanish",
+          "word": "contrapaso",
+          "gloss": "retaliation in kind"
+        },
+        {
+          "language": "Greek",
+          "word": "ἀντιπάθεια",
+          "gloss": "counter-suffering, antipathy"
+        }
+      ],
+      "etymology_root": "Latin contra + passus (against + suffered)",
+      "etymology_caption": "A medieval coinage from legal and theological Latin, crystallized by Dante into the supreme principle of his moral architecture.",
+      "citation": {
+        "source": "Dante · Inferno XXVIII. 139–142",
+        "original": "Così s'osserva in me lo contrapasso,\nché io parti' così giunte persone,\npartito porto il mio cerebro, lasso!,\ndal suo principio ch'è in questo troncone.",
+        "english": "Thus is observed in me the contrapasso:\nI who divided persons so united\ncarry my brain divided, weary soul,\nfrom its beginning lodged here in this trunk."
+      },
+      "citation_note": "Bertran de Born, the Provençal poet who divided Henry II from his son, walks through Hell carrying his severed head as a lantern — the schismatic made schism incarnate.",
+      "commonplace": [
+        "Justice in Dante is not vengeance but geometry. The Inferno does not punish arbitrarily. It renders visible. Contrappasso means that each punishment is the sin's own shape, the crime brought to full flower in suffering. The lustful whirl in wind because they were already whirling. The misers and prodigals push boulders in opposite directions because they already pushed against the mean. Hell is not invented but uncovered.",
+        "This principle haunted medieval thought. Sin was understood not as breaking an external rule but as a deformation of the soul, a turning from form into formlessness or frozen rigidity. The punishment simply makes manifest what the sinner became in choosing. Dante inherits this from Aquinas but surpasses him by making it image and drama. Where theology speaks of reatus culpae and reatus poenae, Dante shows us Pier della Vigna speaking from a bleeding thorn bush.",
+        "We have lost the word but not the knowledge. We still speak of poetic justice, of getting what one deserves, of punishment fitting crime. But we have mostly lost the sense that the fit is organic, not imposed. Contrappasso suggests that Hell is not made but grown, that the architecture of damnation is the architecture of choice made visible in eternity. The law is written not in statute but in the nature of things. Each soul becomes what it chose to become. The Inferno only shows the face."
+      ],
+      "daily_practice": "Read a passage of moral reckoning today — from Dante, from scripture, from a novel. Ask: what invisible shape has this character's choice made in the soul? If the crime flowered into a visible form, what would it look like? Write three lines describing the contrappasso for a contemporary failing you observe.",
+      "tokens": {
+        "input_tokens": 1711,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 1618,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Italian"
+    },
+    "oldenglish": {
+      "word": "wīsdōm",
+      "transliteration": "wisdom",
+      "pronunciation": "WEEZ-dohm",
+      "ipa": "ˈwiːz.doːm",
+      "part_of_speech": "noun, masc.",
+      "meaning": "wisdom, knowledge, learning; skill, craft; prudent judgment",
+      "forms": "nom. sg. wīsdōm; gen. sg. wīsdōmes; dat. sg. wīsdōme; acc. sg. wīsdōm; nom. pl. wīsdōmas",
+      "etymology": "From wīs (wise, learned) + -dōm (state, condition, power). The root wīs derives from Proto-Germanic *wīsaz, from PIE *weyd- (to see, to know). The suffix -dōm shares ancestry with Latin dominus and Greek δόμος, carrying the sense of power, jurisdiction, or condition.",
+      "literary_context": "In the Anglo-Saxon Chronicle's preface to Alfred's translation of Gregory's Pastoral Care, wīsdōm names the learning that once flourished in England before the Viking devastations — a knowledge both sacred and practical that Alfred sought to restore through translation.",
+      "usage_example": "Ðā ġemunde hē ðone wīsdōm ðe hē ær ġelǣred hæfde. — Then he remembered the wisdom that he had previously learned.",
+      "did_you_know": "King Alfred's program of educational renewal turned on this word: he lamented that England had lost its wīsdōm through war and neglect, and he made the word a rallying cry for translating Latin texts into English so that his people might once again possess learning in their own tongue.",
+      "register": [
+        "ALFREDIAN",
+        "ECCLESIASTICAL",
+        "ANGLO-SAXON"
+      ],
+      "quick_gloss": "Not mere cleverness but the deep seeing that comes from years of learning and reflection — a knowledge that shapes judgment, tempers action, and connects the soul to what endures.",
+      "definition_shades": [
+        {
+          "head": "I. Learning. Sacred Knowledge. The Tradition.",
+          "body": "Wīsdōm names the corpus of learning that passes from teacher to student, the inheritance of books and laws and prayers that a culture guards. When Alfred writes of England's lost wīsdōm, he means the libraries burned, the Latin unread, the schools empty. To recover wīsdōm is to recover continuity with the past. It is not innovation but restoration."
+        },
+        {
+          "head": "II. Prudent Judgment. The Counsel of Experience.",
+          "body": "In the riddles of the Exeter Book and the gnomic verses, wīsdōm also means the practical intelligence that guides a ruler or warrior through peril. This is the wisdom that knows when to speak and when to hold silence, when to strike and when to wait. It is earned through years and wounds. The young man has wit; the old man has wīsdōm."
+        },
+        {
+          "head": "III. Skill. Craft. The Maker's Knowledge.",
+          "body": "Wīsdōm extends to the craftsman's mastery — the shipwright who knows timber, the scop who commands meter and alliteration, the smith at the forge. This sense survives in compound words like searuwīsdōm (skill in devices, cunning). To possess wīsdōm is to have knowledge wedded to hand, theory made flesh in work."
+        },
+        {
+          "head": "IV. Divine Wisdom. The Mind of God.",
+          "body": "In Alfredian translations of Boethius and Augustine, wīsdōm rises to its highest register: the eternal intelligence that orders creation, the Logos itself. This wīsdōm is not human but participated in by humans through study and grace. To seek wīsdōm is to seek alignment with the mind that made the stars."
+        }
+      ],
+      "cognates": [
+        {
+          "language": "Olde English",
+          "word": "wīsdōm",
+          "gloss": "wisdom, learning"
+        },
+        {
+          "language": "Old Norse",
+          "word": "vísdomr",
+          "gloss": "wisdom"
+        },
+        {
+          "language": "Old High German",
+          "word": "wīstuom",
+          "gloss": "wisdom"
+        },
+        {
+          "language": "Gothic",
+          "word": "weis",
+          "gloss": "wise (adj.)"
+        },
+        {
+          "language": "Latin",
+          "word": "videō",
+          "gloss": "I see, I know"
+        },
+        {
+          "language": "Greek",
+          "word": "εἶδος",
+          "gloss": "form, appearance, knowledge"
+        },
+        {
+          "language": "Sanskrit",
+          "word": "véda",
+          "gloss": "knowledge, the Vedas"
+        },
+        {
+          "language": "Lithuanian",
+          "word": "véizdėti",
+          "gloss": "to see, to look at"
+        }
+      ],
+      "etymology_root": "PIE *weyd- (to see, to know)",
+      "etymology_caption": "From the Proto-Indo-European root for seeing comes the family of knowing: to see is to know, and to know truly is to be wise.",
+      "citation": {
+        "source": "King Alfred · Preface to the Pastoral Care",
+        "original": "Ðā ġemunde iċ hū sīo lǣr Lǣdenġeðiodes ǣr ðissum āfeallen wæs ġeond Angelcynn, ond ðēah monige cūðon Englisċ ġewrit ārǣdan. Ðā ongan iċ … ðā bōc wendan on Englisċ, ðe is ġenemned on Lǣden Pastoralis … hwīlum word be worde, hwīlum andgit of andġiete.",
+        "english": "Then I remembered how the learning of the Latin language had previously declined throughout England, and yet many could read English writing. Then I began … to translate the book into English, which is called in Latin Pastoralis … sometimes word for word, sometimes sense for sense."
+      },
+      "citation_note": "Alfred frames his entire translation project as an act of recovering wīsdōm — not inventing new knowledge, but rendering the old inheritance accessible again after the devastations of war.",
+      "commonplace": [
+        "Wisdom in the Anglo-Saxon world was never abstract. It lived in books, yes, but also in the memory of elders, in the maxims spoken at the mead-bench, in the hands of the smith and the scop. When Alfred mourned the loss of wīsdōm in England, he mourned something concrete: the ability to read the Psalms in Latin, to study Bede, to write laws grounded in Christian and Roman precedent. The word carries freight. It is not cleverness, not mere intelligence. It is the slow accumulation of learning across generations, held in common, taught and retaught.",
+        "The suffix -dōm itself is worth attention. We still say kingdom, freedom, Christendom — all descendants of the Anglo-Saxon practice of turning adjectives and nouns into states of being or domains of power. Wīsdōm is the domain of the wise, the territory they inhabit. To lack wīsdōm is to be outside that territory, unanchored, vulnerable. The word suggests that wisdom is not only knowledge but also a kind of sovereignty — rule over oneself, mastery of circumstance, the power that comes from seeing clearly.",
+        "In the gnomic poetry of the period, wisdom is often paired with age, with winter, with the hard-won knowledge that comes after loss. The young warrior has courage; the old counselor has wīsdōm. But the deepest sense of the word is theological. In the Alfredian translations of Boethius, wīsdōm is an attribute of God — the eternal intelligence that orders all things. To study, to translate, to teach is to participate however faintly in that divine ordering. Alfred's project was not merely political or practical; it was sacred. To restore wīsdōm to his people was to restore their connection to the mind that made them."
+      ],
+      "daily_practice": "Read something old today — a page of scripture, a poem from before your birth, a passage from a book your teacher loved. Notice what resists easy understanding. Sit with that resistance. Write three sentences about what you half-see, what you almost grasp. This is the beginning of wīsdōm: the patience to stay with what you do not yet fully know.",
+      "tokens": {
+        "input_tokens": 1785,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 2123,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Olde English"
+    },
+    "middleenglish": {
+      "word": "hende",
+      "transliteration": "",
+      "pronunciation": "HEN-duh",
+      "ipa": "/ˈhɛndə/",
+      "part_of_speech": "adjective",
+      "meaning": "courteous, gracious, skillful, ready-to-hand",
+      "forms": "hende (invariable in most contexts); comparative hendere, superlative hendest",
+      "etymology": "From Old English ġehende 'near, at hand, convenient', from ġe- (perfective prefix) + *hende (related to hand). The semantic shift from 'near at hand' to 'ready, apt' to 'skillful, gracious' reflects the practical virtue of having what is needed close by.",
+      "literary_context": "Chaucer uses hende repeatedly in the Miller's Tale to describe Nicholas, the clever clerk — 'hende Nicholas' — with layered irony, as the word's courtesy-meaning contrasts with the character's scheming nature.",
+      "usage_example": "He was a clerk ycleped hende Nicholas, / That koude of deerne love and of solas. — He was a clerk called gracious Nicholas, / Who knew of secret love and pleasure.",
+      "did_you_know": "The word appears in the famous tail-rhyme romance formula 'as I am Cristene knyght and hende,' where it signals both martial skill and courtly grace — the completeness of chivalric identity.",
+      "register": [
+        "CHAUCERIAN",
+        "ALLITERATIVE",
+        "ROMANCE"
+      ],
+      "quick_gloss": "The word names what is near at hand and therefore apt, what is skillful because ready, what is courteous because it knows the moment and meets it with grace.",
+      "definition_shades": [
+        {
+          "head": "I. Near at hand. Ready. Convenient.",
+          "body": "The oldest sense: what lies within reach, what can be grasped when needed. In Havelok the Dane, a character is praised for being hende in service, quick to the task. The physical nearness becomes moral availability. The hand that is hende does not hesitate or fumble; it knows where things are."
+        },
+        {
+          "head": "II. Skillful. Deft. Clever.",
+          "body": "From readiness comes competence. The Pearl-poet uses hende to describe courtly skill in speech and gesture. Nicholas in the Miller's Tale is hende because his hands are clever — at the astrolabe, at the harp, at seduction. The word carries a hint of cunning, the intelligence of fingers that work while the mind plots."
+        },
+        {
+          "head": "III. Courteous. Gracious. Gentle in bearing.",
+          "body": "The highest reach of the word: the grace that makes a knight or lady worthy of romance. In Sir Gawain and the Green Knight, to be hende is to move through the court with the ease of one who knows the code without needing to recite it. Courtesy as second nature, virtue as reflex. The word names the quality Gawain risks losing when he accepts the green girdle."
+        }
+      ],
+      "cognates": [
+        {
+          "language": "Middle English",
+          "word": "hende",
+          "gloss": "courteous, near at hand"
+        },
+        {
+          "language": "Old English",
+          "word": "ġehende",
+          "gloss": "near, at hand"
+        },
+        {
+          "language": "Old English",
+          "word": "hand",
+          "gloss": "hand"
+        },
+        {
+          "language": "Old Norse",
+          "word": "hendr",
+          "gloss": "skillful, handy"
+        },
+        {
+          "language": "Gothic",
+          "word": "handugs",
+          "gloss": "wise, clever"
+        },
+        {
+          "language": "German",
+          "word": "händig",
+          "gloss": "handy, dexterous"
+        },
+        {
+          "language": "Dutch",
+          "word": "handig",
+          "gloss": "handy, clever"
+        }
+      ],
+      "etymology_root": "Germanic *handuz (hand) + adjectival suffix",
+      "etymology_caption": "The hand's reach becomes the mind's quickness becomes the heart's courtesy: a single root tracks the path from tool to virtue.",
+      "citation": {
+        "source": "Chaucer · The Miller's Tale, lines 3199–3204",
+        "original": "This Nicholas sat ay as stille as stoon,\nAnd evere caped upward into the eir.\nThis carpenter wende he were in despeir,\nAnd hente hym by the sholdres myghtily,\nAnd shook hym harde, and cride spitously,\n'What, Nicholay! what, how! what, looke adoun!'",
+        "english": "This Nicholas sat ever as still as stone,\nAnd ever gaped upward into the air.\nThis carpenter thought he was in despair,\nAnd grabbed him by the shoulders mightily,\nAnd shook him hard, and cried out wrathfully,\n'What, Nicholas! What, hey! What, look down!'"
+      },
+      "citation_note": "The carpenter shakes hende Nicholas from his feigned trance — the clerk's hands have staged this astral stupor, and the older man's hands fall for the trick.",
+      "commonplace": [
+        "Courtesy begins in the body. Before it is a code or a virtue, it is a matter of hands: the way you offer bread, the angle at which you incline your head, the steadiness with which you pour wine. The Middle English hende remembers this. The word comes from the hand's nearness, from having what you need within reach. A hende person is someone whose courtesy does not require thought because their body has learned where things are.",
+        "Chaucer understood the word's doubleness. When he calls Nicholas hende again and again in the Miller's Tale, the repetition becomes comic, then suspicious, then damning. Nicholas is skillful, yes — with instruments, with women, with lies. His hands are always ready. But the courtesy the word should promise curdles into manipulation. The clerk's hendenesse is technique without ethics, deftness in the service of appetite. The Miller's Tale is a world where everyone has skillful hands and no one has grace.",
+        "The romances want hende to mean something cleaner. In the alliterative poems and tail-rhyme narratives, a knight is hende when his valor and his manners align perfectly, when the sword-hand and the courtly gesture come from the same unhesitating center. Gawain at Bertilak's court is hende because he meets every test of courtesy with the ease of instinct. But even there, the word carries its shadow. When Gawain takes the girdle, his hands betray him. The thing near at hand becomes the thing hidden in the hand. Hendenesse falters the moment calculation enters, the instant the reflex becomes a choice."
+      ],
+      "daily_practice": "Notice your hands today as instruments of attention. When you open a door for someone, when you pass the salt, when you type a message — is the gesture thoughtless or considered? Hende names the place where skill and courtesy are the same motion. Write three sentences describing a moment when your hands knew what to do before your mind decided.",
+      "tokens": {
+        "input_tokens": 1715,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 1801,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Middle English"
+    },
+    "welsh": {
+      "word": "ysbryd",
+      "transliteration": "",
+      "pronunciation": "UHS-brid",
+      "ipa": "/ˈəsbrɪd/",
+      "part_of_speech": "noun, masc.",
+      "meaning": "spirit, breath, soul",
+      "forms": "plural ysbrydion; possessed fy ysbryd i (my spirit), ei ysbryd ef (his spirit)",
+      "etymology": "From Middle Welsh yspryt, borrowed from Latin spīritus (breath, spirit), from spīrāre (to breathe). The initial y- represents the Welsh prosthetic vowel before sp- clusters.",
+      "literary_context": "In Pantycelyn's 'Golwg ar deyrnas Crist' (1756–64), ysbryd names both the Holy Spirit and the human soul's breathing presence: 'Tyrd, Ysbryd Glân, yn awr i lawr' — 'Come, Holy Spirit, now descend.' Saunders Lewis uses it in 'Siwan' for the inward life that resists political necessity.",
+      "usage_example": "Mae ei ysbryd yn rhydd er bod ei gorff yn gaeth. — His spirit is free though his body is captive.",
+      "did_you_know": "The word entered Welsh from Latin in the early Christian period, but quickly took on the weight of older native terms like enaid (soul); by the time of the medieval poets, ysbryd carried both theological precision and bardic mystery.",
+      "register": [
+        "MEDIEVAL",
+        "REFORMATION",
+        "MODERN"
+      ],
+      "quick_gloss": "The breath that rises, the soul that moves, the invisible presence that animates flesh and makes a person more than body — the meeting place of theology and lived experience.",
+      "definition_shades": [
+        {
+          "head": "I. Breath. Wind. The movement of air.",
+          "body": "In its simplest sense, ysbryd names breath itself, the physical inhale and exhale. Medieval Welsh poets knew this meaning from Latin spīritus, which first meant wind. In religious contexts, it becomes the divine breath that speaks worlds into being. But even in secular poetry, ysbryd retains the weight of something moving, something that cannot be held."
+        },
+        {
+          "head": "II. Spirit. Soul. The animating principle.",
+          "body": "By the thirteenth century, ysbryd had become the standard term for the immaterial essence of a person. In the Reformation hymns of William Williams Pantycelyn, ysbryd names the part of the human that reaches toward God. It is distinct from enaid (soul in the sense of life-force), carrying more theological weight. The mystics wrote of the ysbryd as the chamber where God and human meet."
+        },
+        {
+          "head": "III. Ghost. Apparition. The returning dead.",
+          "body": "Like its Latin ancestor, ysbryd can name the shade of the departed. In folklore and Gothic tales, ysbrydion are the unquiet dead. Kate Roberts uses this sense in her short stories, where the ysbrydion of the slate quarries haunt the living. The word holds both fear and reverence — these are not mere phantoms but presences with claims on memory."
+        },
+        {
+          "head": "IV. The Holy Spirit. The third person of the Trinity.",
+          "body": "Yr Ysbryd Glân — the Holy Spirit — is the most common compound. Pantycelyn's great hymn 'O! Tyrd, Ysbryd Glân' invokes this presence as comforter and fire. In Welsh Nonconformist tradition, the ysbryd is both dove and flame, the breath of Pentecost still moving through chapels and revivals. The word became inseparable from the Welsh religious awakening of the eighteenth and nineteenth centuries."
+        }
+      ],
+      "cognates": [
+        {
+          "language": "Welsh",
+          "word": "ysbryd",
+          "gloss": "spirit, breath"
+        },
+        {
+          "language": "Latin",
+          "word": "spīritus",
+          "gloss": "breath, spirit"
+        },
+        {
+          "language": "Italian",
+          "word": "spirito",
+          "gloss": "spirit"
+        },
+        {
+          "language": "French",
+          "word": "esprit",
+          "gloss": "spirit, mind"
+        },
+        {
+          "language": "Spanish",
+          "word": "espíritu",
+          "gloss": "spirit"
+        },
+        {
+          "language": "English",
+          "word": "spirit",
+          "gloss": "spirit, breath"
+        },
+        {
+          "language": "German",
+          "word": "Geist",
+          "gloss": "spirit, mind (unrelated)"
+        },
+        {
+          "language": "Greek",
+          "word": "πνεῦμα",
+          "gloss": "breath, spirit (unrelated)"
+        }
+      ],
+      "etymology_root": "PIE *speys- (to blow, to breathe out)",
+      "etymology_caption": "From the breathing out of wind to the Holy Spirit descending, the Latin root spīritus traveled into Welsh and carried theology with it, settling into the language's deepest registers.",
+      "citation": {
+        "source": "William Williams Pantycelyn · Golwg ar Deyrnas Crist (1756–64)",
+        "original": "Tyrd, Ysbryd Glân, yn awr i lawr,\nI roi dy fodd i'm calon frau;\nRho im weled, tra bwyf byw,\nDegwch Iesu, Mab y Duw.",
+        "english": "Come, Holy Spirit, now descend,\nTo give thy peace to my frail heart;\nGrant me to see, while yet I live,\nThe beauty of Jesus, Son of God."
+      },
+      "citation_note": "Pantycelyn's hymn, sung in Welsh chapels for two and a half centuries, names the Ysbryd Glân as the agent of transformation — the one who makes the frail heart capable of seeing the divine.",
+      "commonplace": [
+        "Breath leaves the body and the person is no longer there. We call what has departed the spirit, though we are naming an absence. The word ysbryd entered Welsh in the wake of Christianity, a Latin import that quickly rooted itself so deeply that it seems native. Pantycelyn used it to name the third person of the Trinity; Kate Roberts used it for the ghosts of quarrymen who died young. Both uses are true to the word.",
+        "What makes ysbryd distinct from enaid, the older Welsh word for soul? Enaid names the life-principle, the thing that makes a body alive. Ysbryd names the life-principle that can leave and return, that can move between worlds, that breathes. It is more theological, more concerned with transcendence. In the mystical tradition, the ysbryd is the faculty by which we know God. Enaid is what we are; ysbryd is what we become.",
+        "The Reformation gave ysbryd its modern weight. In the great revivals of the eighteenth century, preachers spoke of the Ysbryd Glân descending on congregations, of being filled with the Spirit. The word became inseparable from ecstatic experience, from the moment when ordinary Welsh farmers and quarrymen felt themselves invaded by something larger. The chapels are mostly empty now, but the word remains, carrying two centuries of longing and vision. We still speak of ysbryd when we mean the inward life that will not submit to measure."
+      ],
+      "daily_practice": "Notice your breathing today without trying to change it. Sit for five minutes and attend to the rise and fall. Then write a short paragraph about someone you have known who seemed to carry a strong ysbryd — what made their presence felt even when they were silent?",
+      "tokens": {
+        "input_tokens": 1782,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 1939,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Welsh"
+    },
+    "oldnorse": {
+      "word": "hamingia",
+      "transliteration": "hamingia",
+      "pronunciation": "HAH-ming-yah",
+      "ipa": "ˈhɑ.mɪŋ.jɑ",
+      "part_of_speech": "noun, fem.",
+      "meaning": "luck, fortune; guardian spirit attached to a person or family",
+      "forms": "nom. hamingia, acc. hamingju, gen. hamingju, dat. hamingju; pl. nom. hamingjur",
+      "etymology": "From hamr ('shape, skin, form') + -ingia (forming abstract nouns); cognate with Old English hama. The root connects shape-shifting, external soul, and the fortune that accompanies a person as a quasi-physical presence.",
+      "literary_context": "Vatnsdœla saga describes how hamingjur can be transferred from dying men to their kin; Njáls saga refers to Gunnarr's great hamingia before his fall. The concept appears throughout the Family Sagas as an inherited, transferable force.",
+      "usage_example": "Mikil var hamingia Gunnars. — Great was Gunnar's fortune.",
+      "did_you_know": "In the sagas, hamingia could sometimes be seen in dream-visions as a massive woman or animal following a hero, representing his accumulated luck as an external, nearly autonomous being.",
+      "register": [
+        "SAGA",
+        "MYTHIC",
+        "FATALISTIC"
+      ],
+      "quick_gloss": "The fortune that walks beside you as a living presence, inherited through blood, visible in dreams, transferable at death — not chance, but a portion of power that can be spent or saved.",
+      "definition_shades": [
+        {
+          "head": "I. Luck. Fortune. The Store of Prosperity.",
+          "body": "Hamingia names the accumulated good fortune belonging to a person or family line. It is finite, expendable, and can be depleted through reckless action or distributed among heirs. A man with mikil hamingia prospers in trade, wins in battle, and commands respect without effort. When his hamingia wanes, the world turns against him. Njáls saga traces how Gunnarr's great hamingia sustains him until the moment he breaks his word and returns to Iceland, whereupon it begins to ebb. The word carries a mercantile precision: luck is a resource, not a blessing."
+        },
+        {
+          "head": "II. Guardian Spirit. The Fetch. The Following-Woman.",
+          "body": "Hamingia can appear in visions as a separate entity, often a woman of great size or a powerful animal, trailing the hero like a second shadow. Vatnsdœla saga describes how a dying chieftain's hamingia, seen in a dream as a huge woman, departs from him and moves to his kinsman. The fetch is not metaphor but presence, the externalised soul-power that stands behind a man's deeds. To see another's hamingia is to see the shape of his fate. Some families maintain their hamingia across generations; others watch it drain away in a single reckless life."
+        },
+        {
+          "head": "III. Inheritance. Transferable Power. The Weight of Lineage.",
+          "body": "Hamingia passes from father to son, from chieftain to heir, and occasionally from the dying to the living through deliberate gift or proximity. A man without strong kin-hamingia begins the world in debt; one born to a line of luck walks a smoother road. The sagas record instances where hamingia was sensed to shift during a conversation or at the moment of death, as though fortune were a cloak that could be handed on. This is not Christian providence but an older economy of power, one that treats the boundary between self and inheritance as porous, negotiable, and visible to those with eyes to see."
+        }
+      ],
+      "cognates": [
+        {
+          "language": "Old Norse",
+          "word": "hamingia",
+          "gloss": "luck, fortune, guardian spirit"
+        },
+        {
+          "language": "Old English",
+          "word": "hama",
+          "gloss": "covering, skin, shape"
+        },
+        {
+          "language": "Gothic",
+          "word": "gahamon",
+          "gloss": "to clothe oneself"
+        },
+        {
+          "language": "Old High German",
+          "word": "hamo",
+          "gloss": "covering, coat"
+        },
+        {
+          "language": "Sanskrit",
+          "word": "śáman-",
+          "gloss": "work, toil, effort"
+        },
+        {
+          "language": "Greek",
+          "word": "κῶμος",
+          "gloss": "revel, festive procession"
+        },
+        {
+          "language": "Latin",
+          "word": "camīsia",
+          "gloss": "shirt, tunic (late)"
+        }
+      ],
+      "etymology_root": "PIE *kem- (to cover, to wrap)",
+      "etymology_caption": "From a root meaning to cover or enclose, the North made a word for the fortune that wraps a man like a second skin — his luck as garment and as ghost.",
+      "citation": {
+        "source": "Brennu-Njáls saga · ch. 75",
+        "original": "Gunnarr var vitr maðr ok fǫrull; hann var milda maðr ok mikill fyrir sér, drengiligr ok stilltr vel at skapi, tryggr við vini sína. … En þó var á hamingju hans misboðit af því at hann kom aftr.",
+        "english": "Gunnarr was a wise man and skilled; he was gentle and self-possessed, noble and even-tempered, loyal to his friends. … Yet his fortune was threatened because he returned."
+      },
+      "citation_note": "The saga records the turning point: Gunnarr's hamingia, until now unassailable, begins to fail the moment he breaks his oath of exile and rides back to his farm in Iceland.",
+      "commonplace": [
+        "Fortune is not blind in the North. It has shape and weight. It can be seen in dreams as a woman taller than the roofbeam or as a white bear walking behind a man on the road. The sagas call this hamingia, and they speak of it as we might speak of inheritance or health — a thing that can be strong or weak, rising or falling, given or withheld. It is not grace, which descends unearned. It is not virtue, which is chosen. It is the force that makes one man's crops flourish and another's fail, one warrior's sword strike true and another's glance off mail. The sagas treat it as fact.",
+        "Hamingia belongs to lineages as much as to individuals. A man born to a line of chieftains carries their accumulated luck like a patrimony. He may spend it rashly in a single generation or husband it and pass it whole to his sons. The system is neither moral nor random. A good man with weak hamingia will die young; a scoundrel born to luck will prosper until the store runs dry. The sagas record how hamingia was seen to shift at the deathbed, the fetch rising from the dying and settling on the living heir. To witness such a transfer was to see the invisible made plain, the economy of fate laid bare. This is not superstition. It is a grammar of causation older than the Church, one that survived in Iceland's legal memory long after the baptism of the Althing.",
+        "What the word names is the uncanny sense that some lives are weighted and others light, that fortune is not evenly distributed and never was. Hamingia makes no promises. It does not care for justice. It is the counterweight to will, the substance that makes willing possible or futile. A man with strong hamingia need not strive; the world arranges itself before him. A man without it beats his head against stone. The modern West has lost the vocabulary for this, but the experience remains. We call it privilege or momentum or the right place at the right time. The sagas called it hamingia and knew it could be lost."
+      ],
+      "daily_practice": "Notice today where you feel carried and where you feel opposed. Not by effort or virtue, but by something prior to both. The sagas would say you are sensing your hamingia. Write three sentences describing a moment when fortune — yours or another's — was palpable as a presence in the room.",
+      "tokens": {
+        "input_tokens": 1824,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 2040,
+        "service_tier": "standard",
+        "inference_geo": "not_available"
+      },
+      "display": "Old Norse"
+    }
+  }
+}

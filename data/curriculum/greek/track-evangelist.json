@@ -1,0 +1,53 @@
+{
+  "id": "track-evangelist",
+  "track_name": "The Evangelist",
+  "text_title": "The Gospel of Mark, in Koine",
+  "text_subtitle": "The shortest and earliest Gospel, c. 11,300 words — the bridge to the New Testament.",
+  "estimated_weeks": 14,
+  "rationale": "The Gospel of Mark is the shortest and earliest Gospel. Koine, not Attic, but the bridge is short. Opens the entire New Testament to the student. The vocabulary is simpler than Plato, the syntax is clearer, and the narrative is urgent. This is where students learn to read the Greek New Testament.",
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Why Mark?",
+      "body": "Mark is the earliest Gospel, written around 65-70 CE. It is the shortest, the most direct, and the most urgent. Mark writes in Koine Greek, the common dialect of the eastern Mediterranean, but the grammar is almost identical to Attic. The differences are minor: some sound changes, some vocabulary shifts, a preference for parataxis (coordination with καί) over hypotaxis (subordination with participles). But the structure is the same.\n\nMark's vocabulary is simpler than Plato's. His sentences are shorter. His narrative moves fast. He uses εὐθύς ('immediately') forty-one times. The Gospel reads like an eyewitness account told in haste.\n\nOnce you have read Mark, you can read the other Gospels, the Acts of the Apostles, and the Pauline letters. You will have the Greek New Testament."
+    },
+    {
+      "kind": "prose",
+      "heading": "Reading schedule",
+      "body": "Week 1-2: Mark 1 (John the Baptist; the baptism and temptation of Jesus; the calling of the disciples)\nWeek 3-4: Mark 2-3 (Healings and controversies; the choosing of the Twelve)\nWeek 5-6: Mark 4-5 (Parables; the stilling of the storm; the Gerasene demoniac; Jairus's daughter)\nWeek 7-8: Mark 6-7 (The feeding of the five thousand; Jesus walks on water; more healings)\nWeek 9-10: Mark 8-10 (Peter's confession; the Transfiguration; teachings on discipleship; the journey to Jerusalem)\nWeek 11-12: Mark 11-13 (The entry into Jerusalem; the cleansing of the temple; the Olivet discourse)\nWeek 13-14: Mark 14-16 (The Last Supper; the arrest, trial, and crucifixion; the resurrection)\n\nRead each chapter aloud. Compare Mark's account with the parallel passages in Matthew and Luke (if you have them). Write a short essay (500 words) on Mark's literary style or on a theological theme in the Gospel."
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Key passages with full glosses",
+      "instructions": "These passages are the heart of Mark's Gospel. Master these and you will master Mark.",
+      "words": [
+        { "greek": "ἀρχὴ τοῦ εὐαγγελίου Ἰησοῦ Χριστοῦ υἱοῦ θεοῦ.", "transliteration": "arkhḕ toû euangelíou Iēsoû Khristoû hyioû theoû.", "gloss": "The beginning of the gospel of Jesus Christ, the Son of God. (Mark 1:1)" },
+        { "greek": "καὶ εὐθὺς ἀναβαίνων ἐκ τοῦ ὕδατος εἶδεν σχιζομένους τοὺς οὐρανοὺς καὶ τὸ πνεῦμα ὡς περιστερὰν καταβαῖνον εἰς αὐτόν.", "transliteration": "kaì euthỳs anabaínōn ek toû hýdatos eîden skhizoménous toùs ouranoùs kaì tò pneûma hōs peristeràn katabaînon eis autón.", "gloss": "And immediately coming up out of the water, he saw the heavens being torn open and the Spirit like a dove descending upon him. (Mark 1:10)" },
+        { "greek": "σὺ εἶ ὁ Χριστός.", "transliteration": "sỳ eî ho Khristós.", "gloss": "You are the Christ. (Mark 8:29, Peter's confession)" },
+        { "greek": "ἠγέρθη, οὐκ ἔστιν ὧδε.", "transliteration": "ēgérthē, ouk éstin hôde.", "gloss": "He has been raised; he is not here. (Mark 16:6)" }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Vocabulary clusters",
+      "body": "εὐαγγέλιον, κηρύσσω, διδάσκω — gospel, to proclaim, to teach\nβασιλεία τοῦ θεοῦ — kingdom of God\nυἱὸς τοῦ ἀνθρώπου, υἱὸς τοῦ θεοῦ — Son of Man, Son of God\nμαθητής, ἀκολουθέω — disciple, to follow\nθεραπεύω, σώζω — to heal, to save\nπαραβολή, λόγος — parable, word\nσταυρός, σταυρόω — cross, to crucify\nἐγείρω, ἀνίστημι — to raise, to rise\n\nThese are the words of the Gospel. Learn them in Mark and you will read the entire New Testament with ease."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Discussion questions",
+      "instructions": "Answer these in writing after completing Mark.",
+      "items": [
+        { "prompt": "What is the first word of Mark's Gospel?", "answer": "ἀρχή (beginning)" },
+        { "prompt": "What does Mark emphasize about Jesus's ministry?", "answer": "Urgency, action, power — Jesus moves quickly, heals, teaches, confronts opposition." },
+        { "prompt": "What is Peter's confession at Caesarea Philippi?", "answer": "σὺ εἶ ὁ Χριστός — 'You are the Christ.'" },
+        { "prompt": "How does Mark's Gospel end?", "answer": "With the resurrection (the women at the tomb, the angel's announcement)." },
+        { "prompt": "What is Mark's literary style?", "answer": "(Student must construct an analysis: parataxis, simple vocabulary, frequent use of εὐθύς, vivid details.)" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "After Mark",
+      "body": "Once you have completed the Gospel of Mark, you are ready for the capstone examination. You will translate a fifty-word passage from Mark at sight, without notes. You will parse ten forms. You will compose five Greek sentences. You will pass, and you will hold the Kalopaideia Diploma in Classical Greek, track Evangelist."
+    }
+  ]
+}

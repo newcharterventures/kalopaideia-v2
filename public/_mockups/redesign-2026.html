@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kalopaideia — Redesign mockups (May 2026)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+SC:wght@400;500;600;700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;1,6..96,400&family=Cinzel:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --paper:        #fdfaf3;
+    --paper-soft:   #f6f0e2;
+    --paper-deep:   #ece4d0;
+    --ink:          #1a1410;
+    --ink-soft:     #2d2418;
+    --ink-muted:    #5c4d38;
+    --rule:         #2d2418;
+    --gold:         #a07e2a;
+    --crimson:      #8b1f1f;
+    --olive:        #4a5c2e;
+    --byz-blue:     #1a3a6e;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: #1f1813;
+    color: var(--ink);
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  /* ============== Mockup chrome ============== */
+  .mock-toc {
+    position: fixed; top: 0; left: 0; right: 0;
+    background: #0f0a07;
+    color: #c9b88f;
+    padding: 10px 24px;
+    border-bottom: 1px solid #2a1f15;
+    z-index: 1000;
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    display: flex;
+    gap: 28px;
+    align-items: center;
+  }
+  .mock-toc a {
+    color: #c9b88f;
+    text-decoration: none;
+    border-bottom: 1px dotted transparent;
+    padding-bottom: 1px;
+    transition: border 0.2s;
+  }
+  .mock-toc a:hover { border-bottom-color: #c9b88f; }
+  .mock-toc strong { color: #f3e6c4; font-weight: 600; }
+
+  .mock-section {
+    background: var(--paper);
+    margin: 60px 0 0;
+    padding: 40px 0 80px;
+    box-shadow: 0 -1px 0 rgba(0,0,0,0.4);
+    position: relative;
+  }
+  .mock-label {
+    position: absolute;
+    top: 14px;
+    left: 24px;
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+  }
+  .mock-label .num {
+    color: var(--crimson);
+    font-weight: 700;
+  }
+  .mock-caption {
+    max-width: 1200px;
+    margin: 24px auto 0;
+    padding: 0 24px;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--ink-muted);
+    line-height: 1.5;
+  }
+
+  /* ============================================================
+     VARIATION 1 — "THE CODEX"
+     Engraved nameplate, Greek epigraph cartouche, left rail with
+     book showcase. Inspired by NYRB Classics + Hoefler nameplates.
+     ============================================================ */
+  .v1 .layout {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 48px;
+  }
+
+  .v1 .masthead {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 18px 0 28px;
+    border-bottom: 3px double var(--ink);
+    margin-bottom: 32px;
+    position: relative;
+  }
+  .v1 .mast-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--ink);
+  }
+  .v1 .mast-meta-left { font-style: italic; font-family: 'Cormorant Garamond', serif; font-size: 12px; letter-spacing: 0.04em; text-transform: none; }
+  .v1 .mast-meta-right { letter-spacing: 0.18em; }
+  .v1 .mast-title {
+    font-family: 'Bodoni Moda', 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: clamp(48px, 7.5vw, 96px);
+    line-height: 0.92;
+    margin: 22px 0 14px;
+    letter-spacing: -0.012em;
+    color: var(--ink);
+    font-style: italic;
+  }
+  .v1 .mast-greek {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 22px;
+    color: var(--ink-muted);
+    letter-spacing: 0.04em;
+    margin: 0 0 8px;
+  }
+  .v1 .mast-tag {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--crimson);
+    margin: 4px 0 0;
+  }
+  .v1 .mast-nav {
+    margin-top: 22px;
+    padding-top: 14px;
+    border-top: 1px solid var(--ink);
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .v1 .mast-nav a {
+    color: var(--ink);
+    text-decoration: none;
+    padding-bottom: 4px;
+    border-bottom: 1px solid transparent;
+    transition: border 0.2s;
+  }
+  .v1 .mast-nav a:hover { border-bottom-color: var(--crimson); }
+  .v1 .mast-nav .lang { font-style: normal; }
+  .v1 .mast-nav .util { color: var(--ink-muted); font-style: italic; font-family: 'Cormorant Garamond', serif; text-transform: none; letter-spacing: 0.04em; font-size: 14px; }
+
+  /* Left rail: bookstore */
+  .v1 .rail {
+    border-right: 1px solid var(--rule);
+    padding-right: 28px;
+  }
+  .v1 .rail-head {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 8px;
+    margin-bottom: 18px;
+  }
+  .v1 .rail-section { margin-bottom: 36px; }
+  .v1 .book {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    gap: 14px;
+    padding: 14px 0;
+    border-bottom: 1px dotted rgba(45,36,24,0.35);
+    align-items: start;
+  }
+  .v1 .book-cover {
+    width: 64px;
+    height: 96px;
+    background: var(--paper-deep);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ink);
+    font-family: 'Bodoni Moda', serif;
+    font-size: 8px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding: 6px;
+    line-height: 1.2;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15), inset 0 0 0 1px rgba(0,0,0,0.1);
+  }
+  .v1 .book-cover.crimson { background: var(--crimson); color: #f4e8c5; }
+  .v1 .book-cover.olive { background: var(--olive); color: #efe7c5; }
+  .v1 .book-cover.blue { background: var(--byz-blue); color: #efe2bb; }
+  .v1 .book-cover.gold { background: var(--gold); color: #221a08; }
+  .v1 .book-cover.cream { background: #f0e6cf; color: var(--ink); }
+  .v1 .book-cover .br { font-size: 7px; letter-spacing: 0.15em; opacity: 0.85; margin-bottom: 4px; }
+  .v1 .book-cover .ti { font-size: 8.5px; font-style: italic; line-height: 1.15; }
+  .v1 .book-cover .au { font-size: 7px; letter-spacing: 0.05em; margin-top: 4px; opacity: 0.85; text-transform: uppercase; letter-spacing: 0.18em; }
+  .v1 .book-info { font-size: 14px; line-height: 1.35; }
+  .v1 .book-title { font-family: 'Bodoni Moda', serif; font-weight: 600; color: var(--ink); display: block; }
+  .v1 .book-author { font-style: italic; color: var(--ink-muted); font-size: 13px; display: block; margin: 1px 0 4px; }
+  .v1 .book-price-row { display: flex; justify-content: space-between; align-items: baseline; margin-top: 6px; }
+  .v1 .book-price { font-family: 'Cinzel', serif; font-size: 12px; color: var(--ink); letter-spacing: 0.08em; }
+  .v1 .book-buy {
+    font-family: 'Cinzel', serif;
+    font-size: 9.5px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--crimson);
+    text-decoration: none;
+    border-bottom: 1px solid var(--crimson);
+    padding-bottom: 1px;
+  }
+  .v1 .rail-link {
+    display: block;
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    text-decoration: none;
+    text-align: center;
+    margin-top: 14px;
+    padding: 10px;
+    border: 1px solid var(--ink);
+    transition: background 0.2s;
+  }
+  .v1 .rail-link:hover { background: var(--ink); color: var(--paper); }
+
+  .v1 .rail-card {
+    background: var(--paper-soft);
+    padding: 20px 18px;
+    border: 1px solid var(--rule);
+    margin-bottom: 24px;
+  }
+  .v1 .rail-card-eyebrow {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--crimson);
+    margin-bottom: 6px;
+  }
+  .v1 .rail-card-title {
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 1.15;
+    color: var(--ink);
+    margin: 0 0 6px;
+  }
+  .v1 .rail-card-meta {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 13px;
+    color: var(--ink-muted);
+    margin: 0 0 12px;
+    line-height: 1.4;
+  }
+  .v1 .rail-card-link {
+    font-family: 'Cinzel', serif;
+    font-size: 10.5px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 1px;
+  }
+
+  .v1 .content-stub {
+    padding: 18px 0;
+    color: var(--ink-muted);
+    font-style: italic;
+    font-size: 14px;
+    border-top: 1px dotted rgba(45,36,24,0.35);
+    border-bottom: 1px dotted rgba(45,36,24,0.35);
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  /* ============================================================
+     VARIATION 2 — "THE ATHENAEUM"
+     Cinzel/Roman-capitals nameplate. Asymmetric three-line
+     masthead. Left rail = bookshop carousel + reading list.
+     ============================================================ */
+  .v2 { background: #faf6ec; }
+  .v2 .layout {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 48px;
+  }
+  .v2 .masthead {
+    grid-column: 1 / -1;
+    padding: 28px 0 24px;
+    border-bottom: 1px solid var(--ink);
+    margin-bottom: 36px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: end;
+    gap: 24px;
+  }
+  .v2 .mast-left {
+    text-align: left;
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    line-height: 1.6;
+  }
+  .v2 .mast-left .vol {
+    display: block;
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: none;
+    color: var(--ink);
+    margin-top: 4px;
+  }
+  .v2 .mast-center {
+    text-align: center;
+  }
+  .v2 .mast-name {
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    font-size: clamp(38px, 5.4vw, 70px);
+    letter-spacing: 0.04em;
+    line-height: 1;
+    color: var(--ink);
+    margin: 0;
+    display: block;
+  }
+  .v2 .mast-rule {
+    display: block;
+    width: 56px;
+    height: 1px;
+    background: var(--ink);
+    margin: 14px auto 12px;
+    position: relative;
+  }
+  .v2 .mast-rule::before, .v2 .mast-rule::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    width: 7px;
+    height: 7px;
+    background: var(--ink);
+    transform: rotate(45deg);
+  }
+  .v2 .mast-rule::before { left: -14px; }
+  .v2 .mast-rule::after { right: -14px; }
+  .v2 .mast-greek {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    color: var(--ink-soft);
+    display: block;
+  }
+  .v2 .mast-right {
+    text-align: right;
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    line-height: 1.6;
+  }
+  .v2 .mast-right .latin {
+    display: block;
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: none;
+    color: var(--ink);
+    margin-top: 4px;
+  }
+  .v2 .mast-nav {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    padding-top: 18px;
+    border-top: 1px solid var(--ink-muted);
+    margin-top: 18px;
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .v2 .mast-nav a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 4px;
+  }
+  .v2 .mast-nav a:hover { border-bottom-color: var(--gold); }
+  .v2 .mast-nav .util { color: var(--ink-muted); font-style: italic; font-family: 'Cormorant Garamond', serif; text-transform: none; letter-spacing: 0.04em; font-size: 14px; }
+
+  .v2 .rail-head {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .v2 .rail-head-cta {
+    font-size: 9px;
+    letter-spacing: 0.22em;
+    color: var(--gold);
+    text-decoration: none;
+    border-bottom: 1px solid var(--gold);
+  }
+
+  .v2 .feature-book {
+    text-align: center;
+    margin-bottom: 28px;
+  }
+  .v2 .feature-cover {
+    width: 160px;
+    height: 240px;
+    margin: 0 auto 14px;
+    background: var(--byz-blue);
+    color: #efe2bb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18), inset 0 0 0 2px rgba(255,255,255,0.08);
+    text-align: center;
+    font-family: 'Bodoni Moda', serif;
+    line-height: 1.2;
+  }
+  .v2 .feature-cover .imp {
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 0.32em;
+    margin-bottom: 12px;
+    opacity: 0.85;
+    text-transform: uppercase;
+  }
+  .v2 .feature-cover .ti {
+    font-style: italic;
+    font-size: 17px;
+    margin-bottom: 14px;
+    line-height: 1.18;
+  }
+  .v2 .feature-cover .ornament {
+    font-size: 14px;
+    margin: 8px 0;
+    color: var(--gold);
+  }
+  .v2 .feature-cover .au {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin-top: 10px;
+    opacity: 0.82;
+  }
+  .v2 .feature-eyebrow {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--crimson);
+    margin-bottom: 4px;
+  }
+  .v2 .feature-title { font-family: 'Bodoni Moda', serif; font-weight: 600; font-size: 18px; line-height: 1.2; color: var(--ink); margin: 0 0 4px; }
+  .v2 .feature-meta { font-style: italic; font-family: 'Cormorant Garamond', serif; color: var(--ink-muted); font-size: 13px; margin: 0 0 10px; }
+  .v2 .feature-buy {
+    display: inline-block;
+    padding: 8px 22px;
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    background: var(--ink);
+    color: var(--paper);
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .v2 .feature-buy:hover { background: var(--gold); }
+
+  .v2 .stack {
+    margin-bottom: 28px;
+  }
+  .v2 .stack-row {
+    display: flex;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px dotted rgba(45,36,24,0.3);
+    align-items: center;
+  }
+  .v2 .stack-row:last-child { border-bottom: 0; }
+  .v2 .spine {
+    width: 26px;
+    height: 60px;
+    flex-shrink: 0;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cinzel', serif;
+    font-size: 7px;
+    letter-spacing: 0.05em;
+    color: rgba(255,255,255,0.85);
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-transform: uppercase;
+    overflow: hidden;
+  }
+  .v2 .spine.crimson { background: var(--crimson); }
+  .v2 .spine.olive { background: var(--olive); }
+  .v2 .spine.blue { background: var(--byz-blue); }
+  .v2 .spine.gold { background: var(--gold); color: #221a08; }
+  .v2 .spine.dark { background: var(--ink); }
+  .v2 .stack-info { flex: 1; font-size: 13px; line-height: 1.3; }
+  .v2 .stack-title { font-family: 'Bodoni Moda', serif; font-weight: 600; color: var(--ink); display: block; }
+  .v2 .stack-meta { font-style: italic; color: var(--ink-muted); font-size: 12px; }
+  .v2 .stack-price { font-family: 'Cinzel', serif; font-size: 11px; color: var(--ink); letter-spacing: 0.08em; flex-shrink: 0; }
+
+  /* Reading list pills */
+  .v2 .reading-list {
+    background: #f4ecd8;
+    border: 1px solid var(--rule);
+    padding: 16px 18px;
+  }
+  .v2 .reading-list ul { list-style: none; padding: 0; margin: 0; }
+  .v2 .reading-list li {
+    padding: 7px 0;
+    border-bottom: 1px dotted rgba(45,36,24,0.3);
+    font-size: 13px;
+  }
+  .v2 .reading-list li:last-child { border-bottom: 0; }
+  .v2 .reading-list a { color: var(--ink); text-decoration: none; display: flex; justify-content: space-between; align-items: baseline; }
+  .v2 .reading-list a strong { font-family: 'Bodoni Moda', serif; font-weight: 600; }
+  .v2 .reading-list a em { font-style: italic; color: var(--ink-muted); font-family: 'Cormorant Garamond', serif; }
+
+  /* ============================================================
+     VARIATION 3 — "THE FOLIO"
+     Broadsheet-style masthead with full-width bilingual rule.
+     Left rail = "Imprint" hero block + small grid + new arrivals.
+     ============================================================ */
+  .v3 { background: #fcf8ec; }
+  .v3 .layout {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 56px;
+  }
+  .v3 .masthead {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 22px 0 20px;
+    border-top: 4px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+    margin-bottom: 4px;
+    position: relative;
+  }
+  .v3 .masthead-strip {
+    grid-column: 1 / -1;
+    padding: 8px 0;
+    border-bottom: 4px solid var(--ink);
+    margin-bottom: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+  }
+  .v3 .strip-issue { color: var(--crimson); font-weight: 600; }
+  .v3 .strip-motto { font-style: italic; font-family: 'Cormorant Garamond', serif; font-size: 14px; letter-spacing: 0.04em; text-transform: none; color: var(--ink); }
+  .v3 .strip-date { letter-spacing: 0.18em; }
+
+  .v3 .mast-eyebrow {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.45em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: 12px;
+  }
+  .v3 .mast-name {
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 800;
+    font-size: clamp(54px, 8vw, 110px);
+    line-height: 0.9;
+    letter-spacing: -0.018em;
+    color: var(--ink);
+    margin: 0;
+    text-transform: uppercase;
+    font-stretch: condensed;
+  }
+  .v3 .mast-greek {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 24px;
+    color: var(--ink-soft);
+    letter-spacing: 0.04em;
+    margin: 14px 0 4px;
+  }
+  .v3 .mast-tag {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+  }
+
+  .v3 .nav-rule {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+    padding: 14px 0 20px;
+    border-bottom: 1px solid var(--ink);
+    margin-bottom: 32px;
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+  .v3 .nav-rule a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 6px;
+  }
+  .v3 .nav-rule a:hover { border-bottom-color: var(--crimson); }
+  .v3 .nav-rule .util { color: var(--ink-muted); }
+
+  /* Left rail: Imprint hero card */
+  .v3 .imprint {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 26px 22px 22px;
+    margin-bottom: 28px;
+    text-align: center;
+    position: relative;
+  }
+  .v3 .imprint::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    border: 1px solid var(--gold);
+    pointer-events: none;
+  }
+  .v3 .imprint-mark {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.4em;
+    color: var(--gold);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    position: relative;
+  }
+  .v3 .imprint-name {
+    font-family: 'Bodoni Moda', serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1.05;
+    margin: 0 0 14px;
+    color: var(--paper);
+    position: relative;
+  }
+  .v3 .imprint-rule {
+    width: 30px;
+    height: 1px;
+    background: var(--gold);
+    margin: 0 auto 14px;
+    position: relative;
+  }
+  .v3 .imprint-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(253,250,243,0.85);
+    margin: 0 0 18px;
+    font-style: italic;
+    position: relative;
+  }
+  .v3 .imprint-cta {
+    display: inline-block;
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-decoration: none;
+    border: 1px solid var(--gold);
+    padding: 9px 18px;
+    transition: background 0.2s, color 0.2s;
+    position: relative;
+  }
+  .v3 .imprint-cta:hover { background: var(--gold); color: var(--ink); }
+
+  .v3 .arrivals-head {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 8px;
+    margin-bottom: 14px;
+  }
+  .v3 .arr-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+  .v3 .arr {
+    text-align: left;
+  }
+  .v3 .arr-cover {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 10px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.18), inset 0 0 0 1px rgba(255,255,255,0.05);
+    font-family: 'Bodoni Moda', serif;
+    line-height: 1.15;
+  }
+  .v3 .arr-cover .ti { font-style: italic; font-size: 13px; }
+  .v3 .arr-cover .au { font-family: 'Cinzel', serif; font-size: 8px; letter-spacing: 0.22em; text-transform: uppercase; margin-top: 8px; opacity: 0.8; }
+  .v3 .arr-cover.crimson { background: var(--crimson); color: #f4e8c5; }
+  .v3 .arr-cover.olive { background: var(--olive); color: #efe7c5; }
+  .v3 .arr-cover.gold { background: var(--gold); color: #221a08; }
+  .v3 .arr-cover.dark { background: var(--ink); color: var(--paper); }
+  .v3 .arr-title { font-family: 'Bodoni Moda', serif; font-weight: 600; font-size: 13px; line-height: 1.2; margin: 0; color: var(--ink); }
+  .v3 .arr-meta { font-style: italic; font-family: 'Cormorant Garamond', serif; font-size: 12px; color: var(--ink-muted); margin: 2px 0 0; }
+  .v3 .arr-price { font-family: 'Cinzel', serif; font-size: 11px; color: var(--ink); letter-spacing: 0.06em; margin-top: 4px; display: block; }
+
+  .v3 .all-link {
+    display: block;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 10.5px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--ink);
+    text-decoration: none;
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+    padding: 12px;
+  }
+  .v3 .all-link:hover { background: var(--ink); color: var(--paper); }
+
+  /* Generic content stub for showing where word cards would land */
+  .content-stub-box {
+    background: var(--paper-soft);
+    border: 1px dashed var(--rule);
+    padding: 60px 30px;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--ink-muted);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .content-stub-box strong {
+    display: block;
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-style: normal;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="mock-toc">
+  <strong>Kalopaideia · Redesign Mockups · May 9 2026</strong>
+  <a href="#v1">I — The Codex</a>
+  <a href="#v2">II — The Athenaeum</a>
+  <a href="#v3">III — The Folio</a>
+  <a href="/paideia/" style="margin-left:auto">← Live site</a>
+</div>
+
+<!-- ====================================================== -->
+<!-- VARIATION 1 — THE CODEX                                -->
+<!-- ====================================================== -->
+<section id="v1" class="mock-section v1">
+  <div class="mock-label"><span class="num">I</span> · The Codex — Engraved nameplate, scholarly cartouche, NYRB-flavoured bookstore rail</div>
+
+  <div class="layout">
+    <header class="masthead">
+      <div class="mast-meta">
+        <span class="mast-meta-left">Saturday, the ninth of May, in the year MMXXVI</span>
+        <span class="mast-meta-right">Volume LXXXVI · Number 132</span>
+      </div>
+
+      <h1 class="mast-title">Kalopaideia</h1>
+      <p class="mast-greek">καλο · παιδεία &nbsp;·&nbsp; the cultivation of mind through classical letters</p>
+      <p class="mast-tag">A Daily Book of Words · Founded 2026</p>
+
+      <nav class="mast-nav">
+        <a class="lang" href="#">Greek</a>
+        <a class="lang" href="#">Latin</a>
+        <a class="lang" href="#">French</a>
+        <a class="lang" href="#">German</a>
+        <a class="lang" href="#">Italian</a>
+        <a class="lang" href="#">Olde English</a>
+        <a class="lang" href="#">Middle English</a>
+        <a class="util" href="#">Bookstore</a>
+        <a class="util" href="#">About</a>
+      </nav>
+    </header>
+
+    <aside class="rail">
+      <!-- Today's lesson card -->
+      <div class="rail-card">
+        <div class="rail-card-eyebrow">Today's Lesson</div>
+        <h3 class="rail-card-title">Trasmutare</h3>
+        <p class="rail-card-meta">Italian · verb · "to transmute, to change in nature"<br/>From Dante's <em>Paradiso</em>, II.37.</p>
+        <a class="rail-card-link" href="#">Read today's edition →</a>
+      </div>
+
+      <!-- Bookstore -->
+      <div class="rail-section">
+        <div class="rail-head">From the Bookstore</div>
+
+        <div class="book">
+          <div class="book-cover crimson">
+            <div class="br">LODESTAR</div>
+            <div class="ti">The Divine Comedy</div>
+            <div class="au">Dante</div>
+          </div>
+          <div class="book-info">
+            <span class="book-title">The Divine Comedy</span>
+            <span class="book-author">Dante Alighieri · Longfellow trans.</span>
+            <div class="book-price-row">
+              <span class="book-price">$0.99</span>
+              <a class="book-buy" href="#">Buy →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="book">
+          <div class="book-cover olive">
+            <div class="br">LODESTAR</div>
+            <div class="ti">The Canterbury Tales</div>
+            <div class="au">Chaucer</div>
+          </div>
+          <div class="book-info">
+            <span class="book-title">The Canterbury Tales</span>
+            <span class="book-author">Geoffrey Chaucer · ed. Skeat</span>
+            <div class="book-price-row">
+              <span class="book-price">$0.99</span>
+              <a class="book-buy" href="#">Buy →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="book">
+          <div class="book-cover blue">
+            <div class="br">LODESTAR</div>
+            <div class="ti">The Aeneid</div>
+            <div class="au">Virgil</div>
+          </div>
+          <div class="book-info">
+            <span class="book-title">The Aeneid</span>
+            <span class="book-author">Virgil · Dryden 1697</span>
+            <div class="book-price-row">
+              <span class="book-price">$0.99</span>
+              <a class="book-buy" href="#">Buy →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="book">
+          <div class="book-cover gold">
+            <div class="br">LODESTAR</div>
+            <div class="ti">Beowulf</div>
+            <div class="au">Anonymous</div>
+          </div>
+          <div class="book-info">
+            <span class="book-title">Beowulf</span>
+            <span class="book-author">Old English · Tolkien trans.</span>
+            <div class="book-price-row">
+              <span class="book-price">$0.99</span>
+              <a class="book-buy" href="#">Buy →</a>
+            </div>
+          </div>
+        </div>
+
+        <a class="rail-link" href="#">Browse the Library →</a>
+      </div>
+
+      <!-- Reading list -->
+      <div class="rail-section">
+        <div class="rail-head">By Tradition</div>
+        <div class="content-stub">Greek · Latin · French · German · Italian · Olde · Middle</div>
+      </div>
+    </aside>
+
+    <main>
+      <div class="content-stub-box">
+        <strong>Today's Edition</strong>
+        Seven word-cards land here, one per language, in the canonical order — each with audio, IPA, etymology, literary citation, and cultural vignette.
+      </div>
+    </main>
+  </div>
+
+  <p class="mock-caption"><strong>Direction.</strong> Classical book-of-record voice. The masthead is a single italic Bodoni nameplate cradled between a date line and a Volume/Number cartouche, anchored above the bilingual epigraph "καλο · παιδεία · the cultivation of mind." Beneath it, the language nav reads as a small-caps run-on rather than separate buttons. The left rail is a working bookstore — today's word card on top, then the imprint's title list with mini covers and one-tap buy. Spirit: <em>NYRB Classics meets Hoefler nameplate.</em></p>
+</section>
+
+<!-- ====================================================== -->
+<!-- VARIATION 2 — THE ATHENAEUM                            -->
+<!-- ====================================================== -->
+<section id="v2" class="mock-section v2">
+  <div class="mock-label"><span class="num">II</span> · The Athenaeum — Roman-capitals nameplate, three-column ledger masthead, bookstore as carousel</div>
+
+  <div class="layout">
+    <header class="masthead">
+      <div class="mast-left">
+        <span>Issue №&nbsp;132</span>
+        <span class="vol">Volume Eighty-six</span>
+      </div>
+      <div class="mast-center">
+        <h1 class="mast-name">KALOPAIDEIA</h1>
+        <span class="mast-rule"></span>
+        <span class="mast-greek">καλὴ παιδεία — the cultivation of mind through classical letters</span>
+      </div>
+      <div class="mast-right">
+        <span>The Ninth of May</span>
+        <span class="latin">Anno Domini MMXXVI</span>
+      </div>
+
+      <nav class="mast-nav">
+        <a href="#">Greek</a>
+        <a href="#">Latin</a>
+        <a href="#">French</a>
+        <a href="#">German</a>
+        <a href="#">Italian</a>
+        <a href="#">Olde English</a>
+        <a href="#">Middle English</a>
+        <a class="util" href="#">Bookshop</a>
+        <a class="util" href="#">About</a>
+      </nav>
+    </header>
+
+    <aside>
+      <!-- Featured book -->
+      <div class="feature-book">
+        <div class="rail-head">Lodestar Editions <a class="rail-head-cta" href="#">Shop all →</a></div>
+        <div class="feature-cover">
+          <div class="imp">LODESTAR EDITIONS</div>
+          <div class="ti">Inferno</div>
+          <div class="ornament">❦</div>
+          <div class="au">Dante Alighieri</div>
+        </div>
+        <div class="feature-eyebrow">May Featured Edition</div>
+        <h3 class="feature-title">The Divine Comedy: Inferno</h3>
+        <p class="feature-meta">Italian-English parallel · 752 pages · with Longfellow's translation and a new commissioned introduction</p>
+        <a class="feature-buy" href="#">Buy · $0.99</a>
+      </div>
+
+      <!-- Stack of spines -->
+      <div class="stack">
+        <div class="rail-head">Recent Imprints <a class="rail-head-cta" href="#">All titles →</a></div>
+        <div class="stack-row">
+          <div class="spine olive">CANTERBURY TALES · CHAUCER</div>
+          <div class="stack-info">
+            <span class="stack-title">The Canterbury Tales</span>
+            <span class="stack-meta">Geoffrey Chaucer · Skeat ed.</span>
+          </div>
+          <span class="stack-price">$0.99</span>
+        </div>
+        <div class="stack-row">
+          <div class="spine blue">THE AENEID · VIRGIL</div>
+          <div class="stack-info">
+            <span class="stack-title">The Aeneid</span>
+            <span class="stack-meta">Virgil · Dryden 1697</span>
+          </div>
+          <span class="stack-price">$0.99</span>
+        </div>
+        <div class="stack-row">
+          <div class="spine dark">THE ODYSSEY · HOMER</div>
+          <div class="stack-info">
+            <span class="stack-title">The Odyssey</span>
+            <span class="stack-meta">Homer · Pope's translation</span>
+          </div>
+          <span class="stack-price">$0.99</span>
+        </div>
+        <div class="stack-row">
+          <div class="spine gold">BEOWULF · ANONYMOUS</div>
+          <div class="stack-info">
+            <span class="stack-title">Beowulf</span>
+            <span class="stack-meta">Olde English · Tolkien trans.</span>
+          </div>
+          <span class="stack-price">$0.99</span>
+        </div>
+        <div class="stack-row">
+          <div class="spine crimson">FAUST · GOETHE</div>
+          <div class="stack-info">
+            <span class="stack-title">Faust, Part I</span>
+            <span class="stack-meta">Goethe · Bayard Taylor trans.</span>
+          </div>
+          <span class="stack-price">$0.99</span>
+        </div>
+      </div>
+
+      <!-- Reading list -->
+      <div class="reading-list">
+        <div class="rail-head">Begin Your Reading</div>
+        <ul>
+          <li><a href="#"><strong>Greek</strong><em>Homer →</em></a></li>
+          <li><a href="#"><strong>Latin</strong><em>Virgil →</em></a></li>
+          <li><a href="#"><strong>French</strong><em>Baudelaire →</em></a></li>
+          <li><a href="#"><strong>German</strong><em>Goethe →</em></a></li>
+          <li><a href="#"><strong>Italian</strong><em>Dante →</em></a></li>
+          <li><a href="#"><strong>Olde English</strong><em>Beowulf →</em></a></li>
+          <li><a href="#"><strong>Middle English</strong><em>Chaucer →</em></a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <main>
+      <div class="content-stub-box">
+        <strong>Today's Edition</strong>
+        Word-cards in the new canonical order land here. Same content model — pronunciation, IPA, etymology, literary context, in-use sample with audio, did-you-know — but with the Athenaeum masthead and a working bookshop rail to the left.
+      </div>
+    </main>
+  </div>
+
+  <p class="mock-caption"><strong>Direction.</strong> An athenaeum reading-room voice. The nameplate is a single line of letterspaced Roman capitals (Cinzel) flanked by a left-hand <em>Issue / Volume</em> ledger and a right-hand <em>Date / Anno</em> ledger — the symmetric three-column masthead used by serious quarterlies. A diamond-anchored rule beneath. The left rail leads with a single hero "Edition of the Month" (large cover, prominent buy button, $0.99 anchor), then a stack of spines for recent imprints, then a "begin your reading" pillared list pairing each language with a doorway author. Spirit: <em>The Paris Review meets Aldine bookshop.</em></p>
+</section>
+
+<!-- ====================================================== -->
+<!-- VARIATION 3 — THE FOLIO                                -->
+<!-- ====================================================== -->
+<section id="v3" class="mock-section v3">
+  <div class="mock-label"><span class="num">III</span> · The Folio — Broadsheet masthead, full-caps nameplate, Imprint hero card on the rail</div>
+
+  <div class="layout">
+    <div class="masthead-strip">
+      <span class="strip-issue">Vol. LXXXVI · No. 132</span>
+      <span class="strip-motto"><em>καλὴ παιδεία</em> — the cultivation of mind</span>
+      <span class="strip-date">Saturday · 9 May MMXXVI</span>
+    </div>
+
+    <header class="masthead">
+      <div class="mast-eyebrow">A Daily Book of Words · Seven Tongues</div>
+      <h1 class="mast-name">Kalopaideia</h1>
+      <p class="mast-greek">"παιδεία οὐ τὸ πληροῦν τὸ ἀγγεῖον, ἀλλὰ τὸ ἀνάπτειν φῶς"</p>
+      <p class="mast-tag">— Plutarch (attrib.)</p>
+    </header>
+
+    <nav class="nav-rule">
+      <a href="#">Greek</a>
+      <a href="#">Latin</a>
+      <a href="#">French</a>
+      <a href="#">German</a>
+      <a href="#">Italian</a>
+      <a href="#">Olde English</a>
+      <a href="#">Middle English</a>
+      <a class="util" href="#">Bookshop</a>
+      <a class="util" href="#">About</a>
+    </nav>
+
+    <aside>
+      <!-- Imprint hero -->
+      <div class="imprint">
+        <div class="imprint-mark">Lodestar Editions</div>
+        <h3 class="imprint-name">The Imprint</h3>
+        <span class="imprint-rule"></span>
+        <p class="imprint-text">Twenty classics. Public-domain texts. Newly commissioned introductions. One scholar's pocket library, set in cloth-bound digital form. Each $0.99.</p>
+        <a class="imprint-cta" href="#">Enter the Bookshop →</a>
+      </div>
+
+      <!-- Recent arrivals grid -->
+      <div class="arrivals-head">Recent Arrivals</div>
+      <div class="arr-grid">
+        <div class="arr">
+          <div class="arr-cover crimson">
+            <div class="ti">Inferno</div>
+            <div class="au">Dante</div>
+          </div>
+          <h4 class="arr-title">Inferno</h4>
+          <p class="arr-meta">Dante · Longfellow tr.</p>
+          <span class="arr-price">$0.99</span>
+        </div>
+        <div class="arr">
+          <div class="arr-cover olive">
+            <div class="ti">Canterbury Tales</div>
+            <div class="au">Chaucer</div>
+          </div>
+          <h4 class="arr-title">Canterbury Tales</h4>
+          <p class="arr-meta">Chaucer · Skeat ed.</p>
+          <span class="arr-price">$0.99</span>
+        </div>
+        <div class="arr">
+          <div class="arr-cover gold">
+            <div class="ti">The Aeneid</div>
+            <div class="au">Virgil</div>
+          </div>
+          <h4 class="arr-title">The Aeneid</h4>
+          <p class="arr-meta">Virgil · Dryden 1697</p>
+          <span class="arr-price">$0.99</span>
+        </div>
+        <div class="arr">
+          <div class="arr-cover dark">
+            <div class="ti">Beowulf</div>
+            <div class="au">Anonymous</div>
+          </div>
+          <h4 class="arr-title">Beowulf</h4>
+          <p class="arr-meta">Olde English · Tolkien</p>
+          <span class="arr-price">$0.99</span>
+        </div>
+      </div>
+
+      <a class="all-link" href="#">All Lodestar Editions →</a>
+    </aside>
+
+    <main>
+      <div class="content-stub-box">
+        <strong>Today's Edition</strong>
+        Seven word-cards in the canonical order, with audio, IPA, etymology, literary context, and cultural vignettes — exactly as today, but now under a broadsheet masthead and beside a working imprint.
+      </div>
+    </main>
+  </div>
+
+  <p class="mock-caption"><strong>Direction.</strong> Broadsheet voice — the masthead Jae's American Sentinel uses, adapted for a learned daily. A red <em>Vol/No</em> on the left, the <em>καλὴ παιδεία</em> motto in italic across the middle, and the date on the right, all sitting on a heavy four-point rule. Beneath, the nameplate runs in condensed Bodoni capitals; under that, a Plutarch epigraph — "education is not the filling of a vessel but the kindling of a flame." The left rail leads with a black-and-gold <em>Imprint</em> hero card framing Lodestar Editions as a publishing house, then a 2×2 cover grid of recent arrivals at $0.99 each, then a single "all editions" link. Spirit: <em>American Sentinel meets Penguin Classics shopfront.</em></p>
+</section>
+
+<div style="background:#0f0a07; color:#c9b88f; padding: 32px; text-align: center; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 14px; line-height: 1.6;">
+  Three directions. Tell me which to ship — or mix &amp; match (Codex masthead + Folio rail; Athenaeum hero + Codex booklist).<br/>
+  Each variation reorders the languages to the canonical Greek · Latin · French · German · Italian · Olde · Middle and includes a working <strong>Bookshop</strong> link in the nav so commerce becomes a first-class section, not an afterthought.<br/>
+  <span style="color:#7a6643">— C., May 9 2026</span>
+</div>
+
+</body>
+</html>

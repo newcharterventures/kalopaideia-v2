@@ -1,0 +1,70 @@
+{
+  "id": "2.11",
+  "stage": 2,
+  "title": "The Present Indicative Active of ω-Verbs",
+  "subtitle": "λύω, λύεις, λύει — the foundation of the verb system.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Conjugate any regular ω-verb in the present indicative active.",
+    "Understand the thematic vowel ο/ε and its role in conjugation.",
+    "Recognize the personal endings -ω, -εις, -ει, -ομεν, -ετε, -ουσι.",
+    "Translate present indicative active verbs in context."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The thematic verb",
+      "body": "Most Greek verbs are thematic verbs. They are called thematic because they insert a thematic vowel (ο or ε) between the stem and the personal ending. The thematic vowel is ο before μ and ν; it is ε everywhere else.\n\nThe present tense expresses action happening now or action happening habitually. λύω means 'I am loosing' or 'I loose'. Greek does not distinguish 'I loose' from 'I am loosing' the way English does. Context tells you whether the action is momentary or ongoing."
+    },
+    {
+      "kind": "prose",
+      "heading": "The present indicative active: λύω (I loose, I free)",
+      "body": "  singular\n  1st   λύω         I loose\n  2nd   λύεις       you loose\n  3rd   λύει        he/she/it looses\n\n  plural\n  1st   λύομεν      we loose\n  2nd   λύετε       you (plural) loose\n  3rd   λύουσι(ν)   they loose\n\nThe stem is λυ-. The thematic vowel is ο/ε. The personal endings are -ω, -εις, -ει, -ομεν, -ετε, -ουσι(ν).\n\nThe third person plural adds a movable ν: λύουσιν when the next word begins with a vowel or at the end of a sentence."
+    },
+    {
+      "kind": "prose",
+      "heading": "Other examples",
+      "body": "παύω (I stop): παύω, παύεις, παύει, παύομεν, παύετε, παύουσι(ν)\n\nγράφω (I write): γράφω, γράφεις, γράφει, γράφομεν, γράφετε, γράφουσι(ν)\n\nλέγω (I say, I speak): λέγω, λέγεις, λέγει, λέγομεν, λέγετε, λέγουσι(ν)\n\nThe pattern is universal. Once you know it, you can conjugate any regular ω-verb in the present indicative active."
+    },
+    {
+      "kind": "prose",
+      "heading": "A sentence from Xenophon",
+      "body": "Anabasis I.1.2: οἱ δὲ παῖδες παιδεύονται.\n'And the boys are educated.' παιδεύονται is third person plural middle/passive (you will learn the middle in Stage 3). The active form would be παιδεύουσι — 'they educate.'"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers. Conjugate or answer.",
+      "items": [
+        { "prompt": "First person singular of λύω", "answer": "λύω" },
+        { "prompt": "Second person singular of λύω", "answer": "λύεις" },
+        { "prompt": "Third person singular of λύω", "answer": "λύει" },
+        { "prompt": "First person plural of λύω", "answer": "λύομεν" },
+        { "prompt": "Second person plural of λύω", "answer": "λύετε" },
+        { "prompt": "Third person plural of λύω", "answer": "λύουσι(ν)" },
+        { "prompt": "What is the thematic vowel?", "answer": "ο before μ and ν; ε everywhere else." },
+        { "prompt": "Translate: γράφω τὸν λόγον.", "answer": "I write the word." },
+        { "prompt": "Translate: λέγουσι τὴν ἀλήθειαν.", "answer": "They speak the truth." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Present active verbs in sentences",
+      "instructions": "Read these aloud.",
+      "words": [
+        { "greek": "λύω τοὺς αἰχμαλώτους.", "transliteration": "lýō toùs aichmalṓtous.", "gloss": "I free the prisoners.", "audio": "/paideia/audio/greek/sentences/lyo-aichmalotous.mp3" },
+        { "greek": "γράφεις τὸν λόγον.", "transliteration": "grápheis tòn lógon.", "gloss": "You write the word.", "audio": "/paideia/audio/greek/sentences/grapheis-logon.mp3" },
+        { "greek": "λέγουσι τὴν ἀλήθειαν.", "transliteration": "légousi tḕn alḗtheian.", "gloss": "They speak the truth.", "audio": "/paideia/audio/greek/sentences/legousi-aletheian.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.12 introduces adjectives of the first and second declension: ἀγαθός, ἀγαθή, ἀγαθόν. Adjectives agree with nouns in gender, number, and case. They can be used attributively (the good man) or predicatively (the man is good). The distinction is marked by position."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark the lesson complete when you can conjugate any regular ω-verb in the present indicative active from memory in under sixty seconds and can translate ten present-tense sentences without error.",
+    "credit_minutes": 55
+  }
+}

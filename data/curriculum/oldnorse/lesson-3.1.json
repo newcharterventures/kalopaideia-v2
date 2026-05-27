@@ -1,0 +1,46 @@
+{
+  "id": "3.1",
+  "stage": 3,
+  "title": "i-Stem and u-Stem Nouns",
+  "subtitle": "Gestr, sonr — minor classes, common words.",
+  "estimated_minutes": 45,
+  "objectives": ["Decline an i-stem noun (gestr).","Decline a u-stem noun (sonr)."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers i-Stem and u-Stem Nouns. Gestr, sonr — minor classes, common words."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Decline an i-stem noun (gestr)."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Decline an i-stem noun (gestr)." },
+        { "prompt": "How do you apply this in practice?", "answer": "Decline a u-stem noun (sonr)." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "oldnorse": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/oldnorse/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on i-Stem and u-Stem Nouns."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in i-Stem and u-Stem Nouns to ten random examples.",
+    "credit_minutes": 45
+  }
+}

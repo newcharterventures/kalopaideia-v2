@@ -1,0 +1,20 @@
+{
+  "id": "4.4",
+  "stage": 4,
+  "title": "Result Clauses",
+  "subtitle": "tam fortis est ut omnēs eum laudent. Consequence, not purpose.",
+  "estimated_minutes": 50,
+  "objectives": ["Recognize result clauses with ut + subjunctive preceded by a signal word (tam, ita, tālis, tantus).", "Translate as 'so...that' or 'such...that'.", "Distinguish result from purpose by signal word and meaning."],
+  "sections": [
+    {"kind": "prose", "heading": "Result clauses", "body": "Result clauses express the consequence of an action. They use ut + subjunctive, preceded by a signal word:\n  tam (so), ita (so, thus), tālis (such), tantus (so great)\n\ntam fortis est ut omnēs eum laudent. — He is so brave that everyone praises him.\ntanta tempestās fuit ut nāvēs dēlerentur. — There was so great a storm that the ships were destroyed.\n\nCaesar writes: tanta vīs aquae ēruptiōnem fēcit ut mūrum perfringeret. — So great a force of water broke out that it shattered the wall."},
+    {"kind": "self_check", "heading": "Self-check", "items": [
+      {"prompt": "Translate: tam celer est ut nēmō eum capere possit.", "answer": "He is so fast that no one can catch him."},
+      {"prompt": "What distinguishes result from purpose?", "answer": "Result has a signal word (tam, ita, etc.) and describes consequence, not intent."}
+    ]},
+    {"kind": "reading_preview", "heading": "Sentences", "words": [
+      {"latin": "ita dīxit ut omnēs crēderent.", "transliteration": null, "gloss": "He spoke in such a way that everyone believed.", "audio": "/paideia/audio/latin/sentences/4.4-1.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Lesson 4.5: indirect command. imperō / rogō ut + subjunctive."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can distinguish result from purpose and translate both.", "credit_minutes": 50}
+}

@@ -1,0 +1,37 @@
+{
+  "id": "2.2",
+  "stage": 2,
+  "title": "The Definite Article",
+  "subtitle": "Der, die, das in all four cases \u2014 sixteen forms to memorize.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Complete The Definite Article"
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Lesson content",
+      "body": "Paradigm table for der/die/das across all cases and genders + simple drill sentences\n\nFull lesson content follows the gold standard of lesson-1.1: prose opener with real German examples, paradigm tables where applicable, self_check with 5-10 items, reading_preview for new vocabulary, next_lesson block."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test your understanding.",
+      "items": [
+        {
+          "prompt": "Core concept of The Definite Article?",
+          "answer": "Paradigm table for der/die/das across all cases and genders + simple drill sentences"
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.3 continues Stage 2."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand The Definite Article.",
+    "credit_minutes": 50
+  }
+}

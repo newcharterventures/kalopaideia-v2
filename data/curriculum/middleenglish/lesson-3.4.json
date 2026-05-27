@@ -1,0 +1,43 @@
+{
+  "id": "3.4",
+  "stage": 3,
+  "title": "Chaucer's Vocabulary — Layers",
+  "subtitle": "Germanic core, French overlay, Latin learned words.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Master Chaucer's Vocabulary — Layers.",
+    "Read and translate authentic Middle English texts.",
+    "Prepare for the capstone examination."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "Germanic core (go, come, good, man, wife). French overlay (courtesy, honour, service, gentle, royal). Latin learned words (devout, compassion, conscience, piteous). You learn to hear the register. The high style uses French and Latin; the low style uses Germanic words."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "Chaucer's Vocabulary — Layers"
+        },
+        {
+          "prompt": "Can you apply this to reading?",
+          "answer": "Work through examples with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand Chaucer's Vocabulary — Layers.",
+    "credit_minutes": 60
+  }
+}

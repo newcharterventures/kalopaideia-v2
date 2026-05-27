@@ -1,0 +1,43 @@
+{
+  "id": "3.4",
+  "stage": 3,
+  "title": "Pronouns — Personal and Demonstrative",
+  "subtitle": "Ic, þū, hē, hēo, hit, wē, gē, hīe.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Master Pronouns — Personal and Demonstrative.",
+    "Read and translate authentic Old English poetry and prose.",
+    "Prepare for the capstone examination."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "Personal pronouns decline for case. Ic, mē, mīn (I, me, my). Þū, þē, þīn (you sg., you, your). Hē, hine, his (he, him, his). Hēo, hīe, hire (she, her, her). Hit, hit, his (it, it, its). Wē, ūs, ūre (we, us, our). Gē, ēow, ēower (you pl., you, your). Hīe, hīe, hiera (they, them, their). Demonstrative þes, þēos, þis (this) versus se, sēo, þæt (that / the)."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "Pronouns — Personal and Demonstrative"
+        },
+        {
+          "prompt": "Can you translate the example passage?",
+          "answer": "Work through it word by word with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson or take the capstone examination."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply Pronouns — Personal and Demonstrative to reading.",
+    "credit_minutes": 60
+  }
+}

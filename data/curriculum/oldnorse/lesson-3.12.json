@@ -1,0 +1,46 @@
+{
+  "id": "3.12",
+  "stage": 3,
+  "title": "Völuspá, Stanzas 1–3",
+  "subtitle": "Hljóðs bið ek allar helgar kindir...",
+  "estimated_minutes": 60,
+  "objectives": ["Read the opening of Völuspá.","Begin the creation poem."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers Völuspá, Stanzas 1–3. Hljóðs bið ek allar helgar kindir..."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Read the opening of Völuspá."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Read the opening of Völuspá." },
+        { "prompt": "How do you apply this in practice?", "answer": "Begin the creation poem." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "oldnorse": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/oldnorse/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on Völuspá, Stanzas 1–3."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in Völuspá, Stanzas 1–3 to ten random examples.",
+    "credit_minutes": 60
+  }
+}

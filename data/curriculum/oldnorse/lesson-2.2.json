@@ -1,0 +1,46 @@
+{
+  "id": "2.2",
+  "stage": 2,
+  "title": "The Three Genders",
+  "subtitle": "Masculine, feminine, neuter — grammatical, not natural.",
+  "estimated_minutes": 40,
+  "objectives": ["Recognize that every noun has a grammatical gender.","Memorize gender with each new noun."],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Introduction",
+      "body": "This lesson covers The Three Genders. Masculine, feminine, neuter — grammatical, not natural."
+    },
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "The key insight: Recognize that every noun has a grammatical gender."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test yourself without looking back.",
+      "items": [
+        { "prompt": "What is the main concept in this lesson?", "answer": "Recognize that every noun has a grammatical gender." },
+        { "prompt": "How do you apply this in practice?", "answer": "Memorize gender with each new noun." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Examples",
+      "instructions": "Practice with these examples.",
+      "words": [
+        { "oldnorse": "example", "transliteration": "example", "gloss": "example word", "audio": "/paideia/audio/oldnorse/words/example.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "The next lesson builds on The Three Genders."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply the concepts in The Three Genders to ten random examples.",
+    "credit_minutes": 40
+  }
+}

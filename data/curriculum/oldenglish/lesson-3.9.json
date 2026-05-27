@@ -1,0 +1,43 @@
+{
+  "id": "3.9",
+  "stage": 3,
+  "title": "Caedmon's Hymn — Lines 1–5",
+  "subtitle": "Nū sculon herigean heofonrīces Weard...",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Master Caedmon's Hymn — Lines 1–5.",
+    "Read and translate authentic Old English poetry and prose.",
+    "Prepare for the capstone examination."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "Nū sculon herigean heofonrīces Weard,\nMetodes meahte and his mōdgeþanc,\nweorc Wuldorfæder, swā hē wundra gehwæs,\nēce Drihten, ōr onstealde.\n\nTranslation: 'Now we must praise the Guardian of the heavenly kingdom, the might of the Creator and his thought, the work of the Father of glory, as he, eternal Lord, established the beginning of every wonder.'\n\nThis is the first half of Caedmon's Hymn, the oldest surviving Old English poem (c. 658–680 CE). Nine lines total."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "Caedmon's Hymn — Lines 1–5"
+        },
+        {
+          "prompt": "Can you translate the example passage?",
+          "answer": "Work through it word by word with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson or take the capstone examination."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can apply Caedmon's Hymn — Lines 1–5 to reading.",
+    "credit_minutes": 60
+  }
+}

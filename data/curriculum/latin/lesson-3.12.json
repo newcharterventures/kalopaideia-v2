@@ -1,0 +1,20 @@
+{
+  "id": "3.12",
+  "stage": 3,
+  "title": "The Ablative Absolute",
+  "subtitle": "Caesare duce — with Caesar as leader. Latin's compact alternative to subordinate clauses.",
+  "estimated_minutes": 55,
+  "objectives": ["Recognize the ablative absolute construction.", "Translate ablative absolutes with 'with X being', 'when X was', 'since X is', etc.", "Understand that the ablative absolute is grammatically independent of the main sentence.", "Use participles in ablative absolutes."],
+  "sections": [
+    {"kind": "prose", "heading": "The ablative absolute", "body": "The ablative absolute is a noun (or pronoun) + participle (or adjective/noun), both in the ablative, grammatically independent of the main sentence.\n\nCaesare duce — with Caesar (as) leader, when Caesar was leader\nCaesare interfectō — Caesar having been killed, when Caesar was killed\nhīs dictīs — these things having been said\n\nCaesar writes: hīs rēbus cognitīs, Caesar exercitum dūxit. — These things having been learned, Caesar led the army.\nCicero writes: Caesare cōnsule. — When Caesar was consul."},
+    {"kind": "self_check", "heading": "Self-check", "items": [
+      {"prompt": "Translate: urbe captā.", "answer": "The city having been captured / when the city was captured."},
+      {"prompt": "Translate: hostibus victīs.", "answer": "The enemies having been conquered / with the enemies conquered."}
+    ]},
+    {"kind": "reading_preview", "heading": "Sentences", "words": [
+      {"latin": "urbe captā, mīlitēs discessērunt.", "transliteration": null, "gloss": "The city having been captured, the soldiers departed.", "audio": "/paideia/audio/latin/sentences/3.12-1.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Lesson 3.13: reading Caesar, De Bello Gallico I.1. Gallia est omnis dīvīsa..."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can recognize and translate ablative absolute constructions.", "credit_minutes": 55}
+}

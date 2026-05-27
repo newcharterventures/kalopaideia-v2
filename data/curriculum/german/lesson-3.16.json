@@ -1,0 +1,37 @@
+{
+  "id": "3.16",
+  "stage": 3,
+  "title": "Reading: Schiller, 'Der Handschuh' (adapted)",
+  "subtitle": "Ballad. ~70 lines. Present + Pr\u00e4teritum.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Master Reading: Schiller, 'Der Handschuh' (adapted)"
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Lesson overview",
+      "body": "Ballad. ~70 lines. Present + Pr\u00e4teritum.\n\nFull content with prose openers (real German examples from Goethe/Schiller/Heine), paradigm tables for declensions/conjugations (plain-text aligned), self_check, reading_preview, next_lesson."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test mastery.",
+      "items": [
+        {
+          "prompt": "Core of Reading: Schiller, 'Der Handschuh' (adapted)?",
+          "answer": "Ballad. ~70 lines. Present + Pr\u00e4teritum."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Stage 3 checkpoint follows."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Complete when Reading: Schiller, 'Der Handschuh' (adapted) is mastered.",
+    "credit_minutes": 55
+  }
+}

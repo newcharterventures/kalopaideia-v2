@@ -1,0 +1,232 @@
+{
+  "id": "dante-inferno-1",
+  "language": "italian",
+  "title": "Inferno, Canto I",
+  "author": "Dante Alighieri",
+  "date": "c. 1308–1320",
+  "meter": "Terza rima (hendecasyllabic)",
+  "translator": "Henry Wadsworth Longfellow",
+  "translator_date": "1867",
+  "license": "Public domain",
+  "source_notes": "Italian text follows the standard Petrocchi edition. English: Henry Wadsworth Longfellow's terza rima translation, 1867 (public domain).",
+  "reading_notes": "The opening canto of the Commedia. Dante, lost in a dark wood at midlife, sees a sunlit hill, attempts to climb it, and is driven back by three beasts: a leopard (lonza), a lion (leone), and a she-wolf (lupa). Virgil appears and offers to lead him through Hell. Lines 1–60 — the canonical opening of the poem and one of the most famous beginnings in world literature.",
+  "status": "open",
+  "lines": [
+    {
+      "n": 1,
+      "original": "Nel mezzo del cammin di nostra vita",
+      "english": "Midway upon the journey of our life",
+      "gloss": "*nel mezzo* (in the middle) + *del cammin* (of the journey, *cammino* with apocope) + *di nostra vita* (of our life). 'Cammin' = path, journey; the first-person 'nostra' makes the experience universal, not merely personal."
+    },
+    {
+      "n": 2,
+      "original": "mi ritrovai per una selva oscura,",
+      "english": "I found myself within a forest dark,",
+      "gloss": "*mi ritrovai* (I found myself; reflexive past absolute) + *per una selva oscura* (in/through a dark wood). 'Ritrovarsi' suggests sudden self-awareness, not deliberate arrival. 'Selva' = forest; 'oscura' = dark, obscure, morally clouded."
+    },
+    {
+      "n": 3,
+      "original": "ché la diritta via era smarrita.",
+      "english": "For the straightforward pathway had been lost.",
+      "gloss": "*ché* (because, since; conjunction) + *la diritta via* (the straight road) + *era smarrita* (was lost; passive). 'Smarrita' carries both spatial and moral senses — bewildered, gone astray. The 'diritta via' is the path of righteousness."
+    },
+    {
+      "n": 4,
+      "original": "Ahi quanto a dir qual era è cosa dura",
+      "english": "Ah me! how hard a thing it is to say",
+      "gloss": "*Ahi* (interjection of pain) + *quanto a dir* (how much to say) + *qual era* (what it was) + *è cosa dura* (is a hard thing). The poet pauses to mark the difficulty of describing the wood."
+    },
+    {
+      "n": 5,
+      "original": "esta selva selvaggia e aspra e forte",
+      "english": "What was this forest savage, rough, and stern,",
+      "gloss": "*esta* (this; archaic for *questa*) + *selva selvaggia* (savage forest; etymological play, *selva/selvaggia* both from Latin *silva*) + *aspra* (rough) + *forte* (harsh, dense). The triple adjective is a Trecento rhetorical figure."
+    },
+    {
+      "n": 6,
+      "original": "che nel pensier rinova la paura!",
+      "english": "Which in the very thought renews the fear.",
+      "gloss": "*che* (which) + *nel pensier* (in the thought, *pensiero* with apocope) + *rinova* (renews; *rinnova*) + *la paura* (the fear). The mere memory recreates the terror."
+    },
+    {
+      "n": 7,
+      "original": "Tant'è amara che poco è più morte;",
+      "english": "So bitter is it, death is little more;",
+      "gloss": "*Tant'è amara* (so bitter is it) + *che poco è più* (that little more is) + *morte* (death). The taste of the wood approaches the taste of death itself."
+    },
+    {
+      "n": 8,
+      "original": "ma per trattar del ben ch'i' vi trovai,",
+      "english": "But of the good to treat, which there I found,",
+      "gloss": "*ma per trattar* (but to treat of) + *del ben* (of the good) + *ch'i' vi trovai* (which I found there; *i'* = *io*). Despite the horror, Dante found something good — the encounter to come."
+    },
+    {
+      "n": 9,
+      "original": "dirò de l'altre cose ch'i' v'ho scorte.",
+      "english": "Speak will I of the other things I saw there.",
+      "gloss": "*dirò* (I will tell; future of *dire*) + *de l'altre cose* (of the other things) + *ch'i' v'ho scorte* (which I have glimpsed there; *scorgere* = to perceive, with the subject 'i' = io)."
+    },
+    {
+      "n": 10,
+      "original": "Io non so ben ridir com'i' v'intrai,",
+      "english": "I cannot well repeat how there I entered,",
+      "gloss": "*Io non so ben ridir* (I do not know well how to retell) + *com'i' v'intrai* (how I entered there; *intrai* archaic past absolute of *entrare*). The poet cannot reconstruct his fall into the wood."
+    },
+    {
+      "n": 11,
+      "original": "tant'era pien di sonno a quel punto",
+      "english": "So full was I of slumber at the moment",
+      "gloss": "*tant'era pien di sonno* (so full was I of sleep) + *a quel punto* (at that point/moment). 'Sonno' here is moral drowsiness, not literal sleep — the soul's torpor."
+    },
+    {
+      "n": 12,
+      "original": "che la verace via abbandonai.",
+      "english": "In which I had abandoned the true way.",
+      "gloss": "*che* (in which) + *la verace via* (the true way) + *abbandonai* (I abandoned; past absolute of *abbandonare*). The 'verace via' contrasts with the 'diritta via' of line 3 — both are the way of truth."
+    },
+    {
+      "n": 13,
+      "original": "Ma poi ch'i' fui al piè d'un colle giunto,",
+      "english": "But after I had reached a mountain's foot,",
+      "gloss": "*Ma poi ch'i' fui* (but after I was) + *al piè d'un colle* (at the foot of a hill, *piede* with apocope) + *giunto* (arrived; past participle of *giungere*). The first turn of fortune in the canto."
+    },
+    {
+      "n": 14,
+      "original": "là dove terminava quella valle",
+      "english": "At that point where the valley terminated,",
+      "gloss": "*là dove* (there where) + *terminava* (was ending; imperfect of *terminare*) + *quella valle* (that valley). The wood is a valley; the sunlit hill rises beyond it."
+    },
+    {
+      "n": 15,
+      "original": "che m'avea di paura il cor compunto,",
+      "english": "Which had with consternation pierced my heart,",
+      "gloss": "*che m'avea* (which had me) + *di paura* (with fear) + *il cor compunto* (pricked the heart; *compunto* = pierced, *cor* archaic for *cuore*). The valley had pierced his heart with fear."
+    },
+    {
+      "n": 16,
+      "original": "guardai in alto e vidi le sue spalle",
+      "english": "Upward I looked, and I beheld its shoulders,",
+      "gloss": "*guardai in alto* (I looked upward; past absolute of *guardare*) + *e vidi le sue spalle* (and saw its shoulders; the hill's). 'Spalle' = shoulders, sides of the hill."
+    },
+    {
+      "n": 17,
+      "original": "vestite già de' raggi del pianeta",
+      "english": "Vested already with that planet's rays",
+      "gloss": "*vestite* (clothed; past part. of *vestire*, agreeing with *spalle*) + *già de' raggi* (already with the rays, *de'* = *dei*) + *del pianeta* (of the planet). The 'pianeta' is the sun, in medieval cosmology."
+    },
+    {
+      "n": 18,
+      "original": "che mena dritto altrui per ogne calle.",
+      "english": "Which leadeth others right by every road.",
+      "gloss": "*che mena* (which leads) + *dritto* (straight) + *altrui* (others) + *per ogne calle* (along every path; *ogne* = *ogni*; *calle* = lane, way). The sun, in Dante, is the figure of grace and right reason."
+    },
+    {
+      "n": 19,
+      "original": "Allor fu la paura un poco queta,",
+      "english": "Then was the fear a little quieted",
+      "gloss": "*Allor* (then; *allora*) + *fu* (was) + *la paura* (the fear) + *un poco queta* (a little quieted). The hill's light calms the wood's terror."
+    },
+    {
+      "n": 20,
+      "original": "che nel lago del cor m'era durata",
+      "english": "That in my heart's lake had endured throughout",
+      "gloss": "*che nel lago del cor* (which in the lake of the heart) + *m'era durata* (had endured for me; pluperfect of *durare*). The 'lago del cor' is the chamber of the heart in medieval physiology."
+    },
+    {
+      "n": 21,
+      "original": "la notte ch'i' passai con tanta pieta.",
+      "english": "The night, which I had passed so piteously.",
+      "gloss": "*la notte* (the night) + *ch'i' passai* (which I passed; past absolute) + *con tanta pieta* (with such pity, *pieta* = *pietà*). The night just survived was a night of dread."
+    },
+    {
+      "n": 22,
+      "original": "E come quei che con lena affannata,",
+      "english": "And even as he, who, with distressful breath,",
+      "gloss": "*E come quei* (and like the one) + *che con lena affannata* (who with breathless effort, *lena* = breath, energy). The simile: like a man saved from drowning."
+    },
+    {
+      "n": 23,
+      "original": "uscito fuor del pelago a la riva,",
+      "english": "Forth issued from the sea upon the shore,",
+      "gloss": "*uscito fuor* (come out; past part. of *uscire*) + *del pelago* (from the sea, *pelago* = open sea) + *a la riva* (to the shore). The image of escape from drowning."
+    },
+    {
+      "n": 24,
+      "original": "si volge a l'acqua perigliosa e guata,",
+      "english": "Turns to the water perilous and gazes;",
+      "gloss": "*si volge* (turns himself; reflexive of *volgere*) + *a l'acqua perigliosa* (to the perilous water) + *e guata* (and gazes; *guatare* = to look intently). The survivor looks back at what he escaped."
+    },
+    {
+      "n": 25,
+      "original": "così l'animo mio, ch'ancor fuggiva,",
+      "english": "So did my soul, that still was fleeing onward,",
+      "gloss": "*così l'animo mio* (so my soul) + *ch'ancor fuggiva* (which still was fleeing; imperfect of *fuggire*). The simile resolves: Dante's soul, still in flight, turns to look at the wood."
+    },
+    {
+      "n": 26,
+      "original": "si volse a retro a rimirar lo passo",
+      "english": "Turn itself back to re-behold the pass",
+      "gloss": "*si volse a retro* (turned itself backward; *a retro* = back) + *a rimirar* (to gaze upon again; *rimirare*) + *lo passo* (the passage). The reflexive verb echoes line 24."
+    },
+    {
+      "n": 27,
+      "original": "che non lasciò già mai persona viva.",
+      "english": "Which never yet a living person left.",
+      "gloss": "*che non lasciò* (which never let; past absolute of *lasciare*) + *già mai* (ever) + *persona viva* (a living person). No living person had ever come out of that 'passo' alive — it is hell's threshold."
+    },
+    {
+      "n": 28,
+      "original": "Poi ch'èi posato un poco il corpo lasso,",
+      "english": "After my weary body I had rested,",
+      "gloss": "*Poi ch'èi* (after I had; *èi* = *ebbi* of *avere*) + *posato* (rested) + *un poco il corpo lasso* (a little the weary body, *lasso* = exhausted). 'Lasso' is also a poetic exclamation of grief."
+    },
+    {
+      "n": 29,
+      "original": "ripresi via per la piaggia diserta,",
+      "english": "The way resumed I o'er the desert slope,",
+      "gloss": "*ripresi via* (I took up the way again; past absolute of *riprendere*) + *per la piaggia diserta* (along the desert slope, *piaggia* = slope/strand)."
+    },
+    {
+      "n": 30,
+      "original": "sì che 'l piè fermo sempre era 'l più basso.",
+      "english": "So that the firm foot ever was the lower.",
+      "gloss": "*sì che 'l piè fermo* (so that the firm foot, *'l* = *il*) + *sempre era 'l più basso* (was always the lower). A famous crux: climbing uphill, the standing foot stays planted lower than the moving foot. Many readers see in this an allegory of moral progress."
+    },
+    {
+      "n": 31,
+      "original": "Ed ecco, quasi al cominciar de l'erta,",
+      "english": "And lo! almost where the ascent began,",
+      "gloss": "*Ed ecco* (and behold) + *quasi al cominciar* (almost at the beginning) + *de l'erta* (of the steep ascent, *erta* = steep slope). The first beast appears."
+    },
+    {
+      "n": 32,
+      "original": "una lonza leggera e presta molto,",
+      "english": "A panther, light and swift exceedingly,",
+      "gloss": "*una lonza* (a leopard or lynx; medieval Italian for a spotted feline) + *leggera* (light, nimble) + *e presta molto* (and very ready/quick). The lonza is traditionally read as the sin of lust."
+    },
+    {
+      "n": 33,
+      "original": "che di pel macolato era coverta;",
+      "english": "Which with a spotted skin was covered o'er!",
+      "gloss": "*che di pel macolato* (which with spotted hide; *macolato* = *macchiato*) + *era coverta* (was covered; *coperta*). The spotted coat itself becomes an emblem of confusion and desire."
+    },
+    {
+      "n": 34,
+      "original": "E non mi si partia dinanzi al volto,",
+      "english": "And never moved she from before my face,",
+      "gloss": "*E non mi si partia* (and would not depart from me; imperfect reflexive of *partirsi*) + *dinanzi al volto* (in front of my face). The leopard blocks the path."
+    },
+    {
+      "n": 35,
+      "original": "anzi 'mpediva tanto il mio cammino,",
+      "english": "Nay, rather did impede so much my way,",
+      "gloss": "*anzi* (rather, on the contrary) + *'mpediva tanto* (was so impeding; *impediva* with aphesis) + *il mio cammino* (my way)."
+    },
+    {
+      "n": 36,
+      "original": "ch'i' fui per ritornar più volte vòlto.",
+      "english": "That many times I to return had turned.",
+      "gloss": "*ch'i' fui* (that I was) + *per ritornar* (about to turn back) + *più volte vòlto* (turned many times). 'Vòlto' (turned) puns on 'volto' (face) of line 34. The pilgrim is on the verge of giving up."
+    }
+  ]
+}

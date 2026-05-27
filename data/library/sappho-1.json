@@ -1,0 +1,20 @@
+{
+  "id": "sappho-1",
+  "language": "greek",
+  "title": "Fragment 1 — Hymn to Aphrodite (opening)",
+  "author": "Sappho of Lesbos",
+  "date": "c. 600 BCE",
+  "meter": "Sapphic stanza",
+  "translator": "Henry Thornton Wharton",
+  "translator_date": "1885",
+  "license": "Public domain",
+  "source_notes": "Greek text (Aeolic dialect) preserved by Dionysius of Halicarnassus; English translation by H. T. Wharton, 1885.",
+  "reading_notes": "The only Sappho poem preserved complete. Sappho opens by invoking Aphrodite, addressing her with honorifics and then begging her not to break her heart. The Aeolic dialect (not Attic) differs in many forms — ποικιλόθρον᾽ where Attic would have different spelling.",
+  "status": "open",
+  "lines": [
+    { "n": 1, "original": "ποικιλόθρον᾽ ἀθάνατ᾽ Ἀφρόδιτα,", "english": "Immortal Aphrodite on your embroidered throne,", "gloss": "ποικιλόθρον᾽ = 'many-patterned-throne' (vocative, compound epithet, elided for ποικιλόθρονε); ἀθάνατ᾽ = 'immortal' (vocative, elided); Ἀφρόδιτα = 'Aphrodite' (vocative, Aeolic for Ἀφροδίτη)." },
+    { "n": 2, "original": "παῖ Δίος δολόπλοκε, λίσσομαί σε,", "english": "Daughter of Zeus, weaver of wiles, I beg you,", "gloss": "παῖ = 'child, daughter' (vocative of παῖς); Δίος = 'of Zeus' (genitive); δολόπλοκε = 'weaver of wiles' (vocative compound); λίσσομαι = 'I beseech' (1st sg. present middle); σε = 'thee' (accusative)." },
+    { "n": 3, "original": "μή μ᾽ ἄσαισι μηδ᾽ ὀνίαισι δάμνα,", "english": "do not, I pray, with griefs or sorrows break my heart,", "gloss": "μή = 'not' (with imperative, prohibition); μ᾽ = 'me' (accusative, elided); ἄσαισι = 'with satieties, distresses' (dative plural, Aeolic); μηδ᾽ = 'nor' (elided); ὀνίαισι = 'with sorrows' (dative plural); δάμνα = 'subdue, tame!' (imperative of δάμνημι)." },
+    { "n": 4, "original": "πότνια, θῦμον,", "english": "lady, my spirit,", "gloss": "πότνια = 'lady, mistress' (vocative); θῦμον = 'spirit, heart' (accusative of θυμός; Aeolic vowel)." }
+  ]
+}

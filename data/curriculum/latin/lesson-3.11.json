@@ -1,0 +1,21 @@
+{
+  "id": "3.11",
+  "stage": 3,
+  "title": "The Future Active and the Gerundive",
+  "subtitle": "amātūrus / amandus. Intention versus obligation.",
+  "estimated_minutes": 50,
+  "objectives": ["Form the future active participle (-ūrus).", "Form the gerundive (-ndus).", "Translate future active as 'about to X'.", "Translate gerundive as 'must be X-ed' or 'to be X-ed'."],
+  "sections": [
+    {"kind": "prose", "heading": "Future active and gerundive", "body": "Future active: perfect stem + -ūrus, -a, -um:\n  amātūrus — about to love\n\nGerundive: present stem + -ndus, -a, -um:\n  amandus — must be loved, to be loved\n\nCaesar writes: moritūrus tē salūtat. — He who is about to die salutes you.\nCato writes: Carthāgō dēlenda est. — Carthage must be destroyed."},
+    {"kind": "self_check", "heading": "Self-check", "items": [
+      {"prompt": "Form the future participle of dūcō (dūxī).", "answer": "ductūrus, -a, -um — about to lead"},
+      {"prompt": "Form the gerundive of dūcō.", "answer": "dūcendus, -a, -um — to be led"},
+      {"prompt": "Translate: Carthāgō dēlenda est.", "answer": "Carthage must be destroyed."}
+    ]},
+    {"kind": "reading_preview", "heading": "Sentences", "words": [
+      {"latin": "vir ventūrus est.", "transliteration": null, "gloss": "The man is about to come.", "audio": "/paideia/audio/latin/sentences/3.11-1.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Lesson 3.12: the ablative absolute. Caesare duce, Caesare interfectō."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can form and translate both future participles and gerundives.", "credit_minutes": 50}
+}

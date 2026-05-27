@@ -1,0 +1,73 @@
+{
+  "id": "1.5",
+  "stage": 1,
+  "title": "Gaulish Phonology",
+  "subtitle": "The reconstructed sound system — vowels, diphthongs, consonants, and accent.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Pronounce the five short and five long vowels of Gaulish.",
+    "Distinguish the six diphthongs: ai, ei, oi, au, eu, ou.",
+    "Recognize lenition in compounds and after certain particles.",
+    "Understand the probable initial accent of Gaulish words."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The vowel system",
+      "body": "Gaulish had five vowel qualities, each of which could be short or long:\n\nShort: a, e, i, o, u\nLong: ā, ē, ī, ō, ū\n\nLength was phonemic: it distinguished words. Greek-script Gaulish could mark vowel length (epsilon vs. eta for /e/ vs. /ē/, omicron vs. omega for /o/ vs. /ō/). Latin script could not. The long /ū/ was written <ou> in both scripts, as we have seen. Pronunciation: the vowels were pure, not diphthongized as in English. /a/ is the a of father, /e/ the e of met, /i/ the i of machine, /o/ the o of Spanish todo, /u/ the oo of boot. Hold each twice as long for the long versions."
+    },
+    {
+      "kind": "prose",
+      "heading": "The diphthongs",
+      "body": "Gaulish had six diphthongs, all falling (the first element is more prominent):\n\nai — as in English eye, but with a pure /a/ start\nei — as in English day, but with a pure /e/ start\noi — as in English boy\nau — as in English cow, but with a pure /a/ start\neu — as in Spanish deuda or German Leute\nou — /o/ + /u/, as in English no + oo\n\nExamples: MAPONOS (/maponos/, \"divine youth\"), DEDEMIT (/dedemit/, \"he gave\"), IEVRV (/jewru/, \"dedicated\")."
+    },
+    {
+      "kind": "prose",
+      "heading": "The consonants",
+      "body": "Stops: p, t, k (voiceless); b, d, g (voiced). All are unaspirated. The /p/ was rare in inherited Gaulish words but appears in compounds and loans.\n\nFricatives: s, x. The /s/ was common. The /x/ (written <ch> in modern transcription) was a velar fricative like German ch in Buch or Scottish loch; it appears in the god-name LVXTVS and in some late inscriptions.\n\nNasals: m, n. The /m/ appears at the start of many words (MAPONOS, MĀRKOM). The /n/ appears everywhere.\n\nLiquids: l, r. The /l/ was probably clear (not velarized). The /r/ was probably trilled.\n\nSemivowels: w, j (written <u> and <i> in Latin script when consonantal). Example: IEVRV begins with /j/."
+    },
+    {
+      "kind": "prose",
+      "heading": "Lenition",
+      "body": "Gaulish had consonant mutation (lenition) in certain environments, though the evidence is patchy. Lenition softened stops after certain particles or in compound words:\n\np → b (rare)\nt → d\nk → g\n\nExample: the prefix *ate- (\"re-, very\") + *māros (\"great\") → ATEMAROS, but sometimes ATEBAROS if lenition applied. Scholars disagree on the extent and conditioning of Gaulish lenition. The phenomenon is clearer in the later Insular Celtic languages (Irish, Welsh) descended from related dialects."
+    },
+    {
+      "kind": "prose",
+      "heading": "Accent",
+      "body": "Gaulish accent was probably on the first syllable of the word, like in modern Czech or Finnish. This is inferred from the patterns of vowel reduction and syncope in compound words. Latin had penultimate or antepenultimate accent; Greek had variable accent marked orthographically. Gaulish inscriptions never mark accent. When reading Gaulish aloud, stress the first syllable unless evidence suggests otherwise. Example: SEGOMĀROS is stressed SEgomāros, not segoMĀros."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover the answers; check after.",
+      "items": [
+        { "prompt": "How many short vowels did Gaulish have? How many long?", "answer": "Five short (a, e, i, o, u) and five long (ā, ē, ī, ō, ū)." },
+        { "prompt": "What is the diphthong in IEVRV?", "answer": "The first syllable has /je/ (semivowel j + vowel e), and the second has /eu/. So IEVRV = /jewru/." },
+        { "prompt": "Which Gaulish consonant was rare in inherited words?", "answer": "/p/. It appears in compounds and loanwords but was not common in native Gaulish roots." },
+        { "prompt": "What is lenition?", "answer": "A sound change that softens consonants (voiceless stops become voiced) in certain environments, such as after prefixes or particles." },
+        { "prompt": "Where was Gaulish word accent probably located?", "answer": "On the first syllable, like Czech or Finnish." },
+        { "prompt": "Which scripts could mark vowel length in Gaulish?", "answer": "Greek (epsilon vs. eta, omicron vs. omega). Latin could not." },
+        { "prompt": "How is the long /ū/ written in Gaulish?", "answer": "<ou> in both Greek and Latin script." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Pronouncing Gaulish names",
+      "instructions": "These names contain diphthongs and consonant clusters. Practice reading them aloud with initial accent.",
+      "words": [
+        { "gaulish": "EPOREDORIX", "transliteration": null, "gloss": "Eporedorix (\"horse-king\", EPoreDorix)", "audio": "/paideia/audio/gaulish/words/eporedorix.mp3" },
+        { "gaulish": "BRIXTOM", "transliteration": null, "gloss": "Brixtom (\"magic\" or \"spell\", BRIXtom)", "audio": "/paideia/audio/gaulish/words/brixtom.mp3" },
+        { "gaulish": "ΤΟΥΤΙΟΥΣ", "transliteration": "TOOUTIOUṢ", "gloss": "tooutiouṣ (\"citizen\", TOOutious)", "audio": "/paideia/audio/gaulish/words/tooutious.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.6 is a reading drill on names and theonyms: fifty of the most common personal names and god names in the Gaulish corpus. Memorize these and you can read half of any inscription."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can pronounce all five vowels, all six diphthongs, and stress the first syllable of Gaulish words.",
+    "credit_minutes": 50
+  }
+}

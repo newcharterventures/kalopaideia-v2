@@ -1,0 +1,25 @@
+{
+  "id": "caedmons-hymn",
+  "language": "oldenglish",
+  "title": "Cædmon's Hymn",
+  "author": "Cædmon (as preserved by Bede)",
+  "date": "c. 658-680 CE",
+  "meter": "Alliterative verse",
+  "translator": "A. S. Cook",
+  "translator_date": "1898",
+  "license": "Public domain",
+  "source_notes": "West Saxon version preserved in the Old English Bede, MS Cambridge Kk.3.18 and others. Translation by Albert S. Cook, 1898.",
+  "reading_notes": "The earliest datable Old English poem. According to Bede, Cædmon was an illiterate lay brother at Whitby who received the gift of poetry in a dream. Nine lines celebrating God as the creator, Bede preserves them in his 'Ecclesiastical History'. A perfect first Old English text.",
+  "status": "open",
+  "lines": [
+    { "n": 1, "original": "Nu sculon herigean heofonrices Weard,", "english": "Now must we praise the Guardian of Heaven,", "gloss": "Nu = 'now'; sculon = 'must, shall' (modal, 1st plural of sculan); herigean = 'to praise' (infinitive of herian); heofonrices = 'of the heavenly kingdom' (genitive compound); Weard = 'guardian, warden' (accusative singular)." },
+    { "n": 2, "original": "Meotodes meahte and his modgeþanc,", "english": "the might of the Creator and his mind-thought,", "gloss": "Meotodes = 'of the Creator' (genitive singular); meahte = 'might, power' (accusative singular); and = 'and'; his = 'his'; modgeþanc = 'mind-thought, intention' (accusative)." },
+    { "n": 3, "original": "weorc Wuldor-Fæder, swa he wundra gehwæs,", "english": "the work of the Father of Glory, as he of every wonder,", "gloss": "weorc = 'work, deed' (accusative singular); Wuldor-Fæder = 'Father of Glory' (genitive compound); swa = 'as, in the way that'; he = 'he'; wundra = 'of wonders' (genitive plural); gehwæs = 'of each' (genitive of gehwilc)." },
+    { "n": 4, "original": "ece Drihten, or onstealde.", "english": "the eternal Lord, established the beginning.", "gloss": "ece = 'eternal' (nominative); Drihten = 'Lord' (nominative); or = 'beginning, origin' (accusative singular); onstealde = 'established, set up' (past singular of onstellan)." },
+    { "n": 5, "original": "He ærest sceop eorðan bearnum", "english": "He first shaped for the sons of earth", "gloss": "He = 'he'; ærest = 'first'; sceop = 'shaped, created' (past singular of scieppan); eorðan = 'of the earth' (genitive singular); bearnum = 'for the sons' (dative plural of bearn)." },
+    { "n": 6, "original": "heofon to hrofe, halig Scyppend;", "english": "heaven as a roof, the holy Creator;", "gloss": "heofon = 'heaven' (accusative singular); to hrofe = 'as a roof, for a roof' (dative of purpose); halig = 'holy' (nominative); Scyppend = 'Creator' (nominative)." },
+    { "n": 7, "original": "þa middangeard monncynnes Weard,", "english": "then middle-earth, the Guardian of mankind,", "gloss": "þa = 'then'; middangeard = 'middle-earth, the world' (accusative singular); monncynnes = 'of mankind' (genitive singular compound); Weard = 'Guardian' (nominative)." },
+    { "n": 8, "original": "ece Drihten, æfter teode", "english": "the eternal Lord, afterwards adorned,", "gloss": "ece Drihten = 'eternal Lord' (nominative); æfter = 'afterwards'; teode = 'adorned, fashioned' (past singular of teon)." },
+    { "n": 9, "original": "firum foldan, Frea ælmihtig.", "english": "the earth for men, the Lord almighty.", "gloss": "firum = 'for men' (dative plural, poetic); foldan = 'the earth' (accusative singular); Frea = 'Lord' (nominative, poetic); ælmihtig = 'almighty' (nominative)." }
+  ]
+}

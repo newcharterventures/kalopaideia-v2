@@ -1,0 +1,84 @@
+{
+  "date": "2026-05-11",
+  "generated_at": "2026-05-11T11:01:32.259Z",
+  "vignettes": {
+    "greek": {
+      "title": "Aristotle's Lyceum and Peripatetic Teaching",
+      "body": "In 335 BCE, Aristotle returned to Athens and established his school in the Lyceum, a gymnasium sacred to Apollo Lykeios near the Ilissos river. Unlike Plato's Academy with its focus on mathematics and ideal forms, Aristotle's students pursued empirical investigation across natural sciences, ethics, and politics. The school earned the name Peripatetic because Aristotle conducted discussions while walking the covered walkways (peripatos) of the gymnasium grounds. Morning lectures addressed advanced topics in philosophy for committed students; afternoon sessions opened to the general public. His lecture notes on ethics, compiled as the Nicomachean Ethics and named for his son Nicomachus, explored how genuine happiness emerges not from fleeting pleasures but from activity aligned with virtue. The Lyceum amassed significant research collections, including biological specimens and constitutional documents from 158 Greek city-states, establishing a model for systematic inquiry that would influence scholarly institutions for centuries.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Athens_Aristotle%27s_Lyceum.jpg/1280px-Athens_Aristotle%27s_Lyceum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Ad Meskens\nYou are free to use this picture for any purpose as long as you credit its author, Ad Meskens.\nExample:  © Ad Meskens / Wikimedia Commons\n  If you use this work outside of the Wikimedia projects, a message or a copy is very much appreciated.\n\n\tThis image is not in the public domain. A statement such as \"From Wikimedia Commons\" or similar is not by itself sufficient. If you do not provide clear attribution to the author you do not comply with the terms of the file's license and you may not use this file. If you are unable or unwilling to provide attribution you should contact Ad Meskens to negotiate a different license. / Wikimedia Commons (CC BY-SA 4.0)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Athens_Aristotle%27s_Lyceum.jpg",
+        "width": 1200,
+        "height": 858
+      },
+      "image_query": "Aristotle Lyceum Athens"
+    },
+    "latin": {
+      "title": "Cicero's Lost Daughter and Consolatio Genre",
+      "body": "In February 45 BCE, Cicero's beloved daughter Tullia died in childbirth at age thirty. The orator, who had consoled countless others through rhetoric, found himself devastated. He retreated to his villa at Astura and attempted to write himself out of grief, composing a *Consolatio* addressed to himself—now lost except for fragments. The work broke with Greek precedent by making the author both consoler and consoled. Cicero also planned an ambitious shrine to Tullia, a *fanum* that would achieve something like deification for her memory, though it was never built. His letters to Atticus from this period reveal a man testing the limits of Stoic philosophy against raw paternal loss. From this crucible emerged the *Tusculan Disputations*, where he argued that the wise man could master grief through reason, though his own letters suggest he never fully believed it.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Cicero-bust-1.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Derrick Andes / Wikimedia Commons (CC BY-SA 4.0)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Cicero-bust-1.png",
+        "width": 1200,
+        "height": 1599
+      },
+      "image_query": "Cicero bust Roman"
+    },
+    "french": {
+      "title": "The Comédie-Française's Nightly Ritual",
+      "body": "Each evening before curtain at the Comédie-Française, founded by Louis XIV in 1680, the régisseur carried a flambeau across the stage in ritual inspection. This torch-lit walk served a practical purpose—checking trap doors, scenery placement, the condition of floorboards—but acquired ceremonial weight over centuries. The company, which premiered Racine's Phèdre in 1677, maintained unbroken tenure in Paris through revolution and empire. When the troupe moved to the Salle Richelieu in 1799, the torch ceremony continued. Actors spoke of the flambeau as embodying theatrical tradition itself, its flame passing from Molière's era through the Romantic upheavals of Hugo and Dumas. The ritual persisted into the electric age, though the torch became symbolic rather than functional, a nod to the literal illumination that once made performance possible and the figurative light of dramatic art.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Comedie-Francaise_interior_painting.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "anonymous / Wikimedia Commons (Public domain)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Comedie-Francaise_interior_painting.jpg",
+        "width": 1200,
+        "height": 857
+      },
+      "image_query": "Comédie-Française theater interior"
+    },
+    "german": {
+      "title": "Goethe's Garden at the Gartenhaus",
+      "body": "In 1776, the young Duke Karl August gave Goethe a small cottage with a garden along the Ilm River outside Weimar's walls. The poet retreated there almost daily, studying plant morphology and conducting botanical experiments among his vegetables and fruit trees. He sketched leaf formations, noting how a single archetypal form expressed itself through endless variations. This direct observation of nature became central to his scientific method and aesthetic philosophy. The garden served as his laboratory for what he later called Anschauung, intuitive perception through sustained looking. Here he drafted portions of Iphigenie and composed poems while tending roses. The modest Gartenhaus, preserved today with its writing desk and simple furnishings, embodied his conviction that wisdom emerged not from abstract speculation but from patient attention to the living world. His botanical studies, dismissed by some contemporaries as amateur dabbling, anticipated principles of comparative morphology and influenced Romantic naturalists across Europe.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Weimar_-_2016-09-22_-_Goethes_Gartenhaus_%28022%29.jpg/1280px-Weimar_-_2016-09-22_-_Goethes_Gartenhaus_%28022%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Tsungam / Wikimedia Commons (CC BY-SA 4.0)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Weimar_-_2016-09-22_-_Goethes_Gartenhaus_(022).jpg",
+        "width": 1200,
+        "height": 822
+      },
+      "image_query": "Goethe Gartenhaus Weimar"
+    },
+    "italian": {
+      "title": "Guido Guinizelli's Gentle Heart",
+      "body": "Guido Guinizelli, a Bolognese judge and poet who died around 1276, wrote the manifesto of the Dolce Stil Novo in his canzone 'Al cor gentil rempaira sempre amore.' Against the courtly tradition that made nobility a matter of lineage and wealth, Guinizelli argued that true gentilezza resided in the heart's capacity for love and virtue. Love takes shelter only in the noble heart, he wrote, as naturally as a bird returns to the green forest. The poem compares this spiritual nobility to a jewel refined by the sun's rays, insisting that bloodline means nothing without inner refinement. Dante later called him 'il padre mio' in Purgatorio XXVI, acknowledging the older poet's transformation of Italian love poetry from courtly game to philosophical inquiry. Guinizelli's radical idea that nobility springs from character rather than birth became foundational for Florentine poets like Cavalcanti and Dante himself.",
+      "image": null,
+      "image_query": "Guido Guinizelli medieval manuscript"
+    },
+    "oldenglish": {
+      "title": "The Wanderer's Winter Seascapes",
+      "body": "The Exeter Book, copied around 970 in a West Saxon scriptorium, preserves The Wanderer among its elegiac treasures. The poem's anonymous speaker navigates a landscape where physical and emotional suffering merge: icy waves, frost-locked cliffs, ruined halls. Anglo-Saxon poets cultivated this fusion of external weather and internal state, using compound words like wintercearig (winter-sorrowful) to bind cold and grief. The exile rows through hrimcealde sǣ (frost-cold sea), seeking a lord who might grant him a place in the hall. His solitude reflects the social reality of lordless retainers after battle or political upheaval, men stripped of the gift-giving economy that defined identity. The poem survives on folios 76v-78r, its ink still dark against vellum, testimony to monastic scribes who recognized in this pagan-inflected Christian meditation something worth preserving about loss, memory, and the search for wisdom amid ruin.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Eala_Earendel_engla_beorhtast_-_Exeter_Book_folio_9v_top_two_lines.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Chiswick Chap / Wikimedia Commons (Public domain)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Eala_Earendel_engla_beorhtast_-_Exeter_Book_folio_9v_top_two_lines.jpg",
+        "width": 1200,
+        "height": 174
+      },
+      "image_query": "Exeter Book manuscript"
+    },
+    "middleenglish": {
+      "title": "The Tabard Inn and Southwark Hospitality",
+      "body": "The Tabard Inn in Southwark, where Chaucer assembles his Canterbury pilgrims around 1387, was a real establishment owned by Harry Bailly, who appears as the Host in the Tales. Southwark, outside London's jurisdiction across the Thames, housed inns catering to pilgrims heading southeast to Canterbury along Watling Street. These hostelries provided more than beds: they were social clearinghouses where strangers formed temporary traveling companies for safety and entertainment. The yard architecture, with galleries overlooking a central courtyard, created natural amphitheaters for storytelling and performance. Innkeepers like Bailly profited by organizing these groups, sometimes joining as guides. The journey to Becket's shrine took three or four days, and pilgrims contracted their fellowship at the outset, agreeing to shared meals and mutual protection. This voluntary association of unequals—knight and miller, prioress and wife of Bath—gave Chaucer his narrative frame and mirrored the complex social negotiations of late fourteenth-century England.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/The_Angel_Inn-Geograph-2979537-by-Chris-Talbot.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Chris Talbot / Wikimedia Commons (CC BY-SA 2.0)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:The_Angel_Inn-Geograph-2979537-by-Chris-Talbot.jpg",
+        "width": 1200,
+        "height": 900
+      },
+      "image_query": "medieval inn courtyard"
+    }
+  }
+}

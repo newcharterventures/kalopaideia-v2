@@ -1,0 +1,16 @@
+{
+  "name": "Kalopaideia",
+  "short_name": "Kalopaideia",
+  "description": "A daily classical languages education — Ancient Greek, Latin, French, German, Italian, Olde English, Middle English.",
+  "start_url": "/paideia/",
+  "scope": "/paideia/",
+  "display": "standalone",
+  "background_color": "#fdfaf3",
+  "theme_color": "#1a1410",
+  "orientation": "any",
+  "icons": [
+    { "src": "/paideia/img/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/paideia/img/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/paideia/img/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

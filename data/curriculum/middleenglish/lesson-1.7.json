@@ -1,0 +1,43 @@
+{
+  "id": "1.7",
+  "stage": 1,
+  "title": "Ten Common Words",
+  "subtitle": "hir, hem, swich, yif, eek — high-frequency Middle English.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Master Ten Common Words.",
+    "Read and translate authentic Middle English texts.",
+    "Prepare for sustained reading in Stage 3."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "hir (her, their), hem (them), swich (such), yif (if), eek (also), biforn (before), wyf (wife, woman), knyght (knight), soothly (truly), ful (very, full). Practice pronunciation and spelling recognition. These appear on every page of Chaucer."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "Ten Common Words"
+        },
+        {
+          "prompt": "Can you apply this to reading?",
+          "answer": "Work through examples with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand Ten Common Words.",
+    "credit_minutes": 50
+  }
+}

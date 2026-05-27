@@ -1,0 +1,25 @@
+{
+  "id": "4.12",
+  "stage": 4,
+  "title": "Reading: Vergil, Aeneid I.1–11",
+  "subtitle": "Arma virumque canō. The opening of the Aeneid. First exposure to dactylic hexameter.",
+  "estimated_minutes": 60,
+  "objectives": ["Read the opening lines of the Aeneid.", "Recognize dactylic hexameter rhythm.", "Understand epic diction and word order.", "Appreciate Vergil's compressed, allusive style."],
+  "sections": [
+    {"kind": "prose", "heading": "The opening of the Aeneid", "body": "Arma virumque canō, Troiae quī prīmus ab ōrīs\nĪtaliam fātō profugus Lāvīniaque vēnit\nlītora, multum ille et terrīs iactātus et altō\nvī superum, saevae memorem Iūnōnis ob īram,\nmulta quoque et bellō passus, dum conderet urbem\nīnferretque deōs Latiō, genus unde Latīnum\nAlbānīque patrēs atque altae moenia Rōmae.\n\n(Gloss: arma — arms, war; vir — man; canō, -ere — to sing; Troia, -ae — Troy; quī — who; prīmus — first; ōra, -ae — shore, coast; fātum, -ī — fate; profugus — exiled, fugitive; Lāvinius — Lavinian; lītus, lītoris (n.) — shore; multum — much; ille — that (man); terra, -ae — land; iactō, -āre — to toss, drive; altum, -ī — the deep, sea; vīs, -is (f.) — force, violence; superī, -ōrum — the gods above; saevus — cruel; memor, -oris — mindful; Iūnō, -ōnis — Juno; ob — because of; īra, -ae — anger; passus (from patior) — having suffered; dum — until; condō, -ere — to found; īnferō, -ferre — to bring in; Latium, -iī — Latium; genus, generis (n.) — race, stock; unde — from which; Latīnus — Latin; Albānus — Alban; pater, patris — father (pl. senators, forefathers); altus — high; moenia, -ium (n. pl.) — walls.)"},
+    {"kind": "prose", "heading": "Translation guide", "body": "I sing of arms and the man, who first from the shores of Troy came exiled by fate to Italy and the Lavinian shores — much tossed on lands and sea by the force of the gods above, because of the mindful anger of cruel Juno, and having suffered much also in war, until he could found a city and bring his gods into Latium, from which (came) the Latin race and the Alban fathers and the walls of lofty Rome.\n\nThis is one sentence. Vergil delays the main verb ('canō') and immediately launches into a relative clause describing the man (Aeneas). Notice the compressed word order, the interwoven phrases, the alliteration (multum...memorem, altae...Albānī)."},
+    {"kind": "self_check", "heading": "Comprehension", "items": [
+      {"prompt": "Who is the 'man' Vergil sings of?", "answer": "Aeneas (though not named here)."},
+      {"prompt": "Where did he come from?", "answer": "The shores of Troy."},
+      {"prompt": "Where did he go?", "answer": "Italy, the Lavinian shores."},
+      {"prompt": "Why was he exiled?", "answer": "By fate."},
+      {"prompt": "Which god opposed him?", "answer": "Juno."},
+      {"prompt": "What did he found?", "answer": "A city (Lavinium), from which came the Latin race and Rome."}
+    ]},
+    {"kind": "reading_preview", "heading": "Read aloud", "words": [
+      {"latin": "Arma virumque canō, Troiae quī prīmus ab ōrīs...", "transliteration": null, "gloss": "I sing of arms and the man, who first from the shores of Troy...", "audio": "/paideia/audio/latin/sentences/4.12-1.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Stage 4 complete. Stage 5: choose your track (Orator, General, or Poet) and read an entire work."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can read and understand Vergil's opening lines.", "credit_minutes": 60}
+}

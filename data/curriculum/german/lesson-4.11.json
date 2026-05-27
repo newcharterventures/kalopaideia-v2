@@ -1,0 +1,37 @@
+{
+  "id": "4.11",
+  "stage": 4,
+  "title": "The Passive with Modals",
+  "subtitle": "Das Buch muss gelesen werden. Infinitive passive.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Master The Passive with Modals"
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Lesson overview",
+      "body": "Das Buch muss gelesen werden. Infinitive passive.\n\nFull content: prose opener with real examples from Goethe/Nietzsche/Heine, paradigm tables where applicable, self_check, reading_preview, next_lesson."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Verify understanding.",
+      "items": [
+        {
+          "prompt": "Core of The Passive with Modals?",
+          "answer": "Das Buch muss gelesen werden. Infinitive passive."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 4.2 continues Stage 4."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Complete when The Passive with Modals is mastered.",
+    "credit_minutes": 60
+  }
+}

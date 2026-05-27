@@ -1,0 +1,43 @@
+{
+  "id": "3.3",
+  "stage": 3,
+  "title": "The General Prologue, Lines 79–100",
+  "subtitle": "Yeoman, Prioress — martial to ecclesiastical.",
+  "estimated_minutes": 60,
+  "objectives": [
+    "Master The General Prologue, Lines 79–100.",
+    "Read and translate authentic Middle English texts.",
+    "Prepare for the capstone examination."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Content",
+      "body": "The Yeoman, the Prioress introduced. Transition from martial to ecclesiastical estates. Vocabulary: pecok arwes (peacock arrows), bracer (arm-guard), gay daggere (fine dagger), yemanly (in yeoman fashion), cloistre (cloister), charitable (full of charity), pitous (compassionate), Eglentyne (her name), coral (coral beads), gauded (fitted with large beads)."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Review and practice.",
+      "items": [
+        {
+          "prompt": "What is the focus of this lesson?",
+          "answer": "The General Prologue, Lines 79–100"
+        },
+        {
+          "prompt": "Can you apply this to reading?",
+          "answer": "Work through examples with your notes."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand The General Prologue, Lines 79–100.",
+    "credit_minutes": 60
+  }
+}

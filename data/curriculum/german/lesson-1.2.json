@@ -1,0 +1,100 @@
+{
+  "id": "1.2",
+  "stage": 1,
+  "title": "The Alphabet, Part Two",
+  "subtitle": "N through Z, plus Ü and ß — the final sixteen.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Recognize N through Z, plus Ü and ß.",
+    "Pronounce V as [f], W as [v], Z as [ts].",
+    "Distinguish Ü from U and from the diphthong eu.",
+    "Recognize the ß (Eszett) and know when it appears."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The second half",
+      "body": "This lesson completes the alphabet. Fourteen letters remain, plus two special characters: the umlaut Ü and the ß. Three letters will surprise English speakers. V sounds like [f]. W sounds like [v]. Z sounds like [ts]. These are not exceptions — they are the rule. Once learned, they stay learned."
+    },
+    {
+      "kind": "letter_grid",
+      "heading": "Letters N through Z, plus Ü and ß",
+      "letters": [
+        { "upper": "N", "lower": "n", "name": "enn", "ipa": "[n]", "audio": "/paideia/audio/german/letters/n.mp3", "note": "Like English n." },
+        { "upper": "O", "lower": "o", "name": "oh", "ipa": "[o] or [oː]", "audio": "/paideia/audio/german/letters/o.mp3", "note": "Short [o] as in got (but without the English [ɑ] coloring), or long [oː] as in go. Offen (short), Boot (long)." },
+        { "upper": "Ö", "lower": "ö", "name": "oh-umlaut", "ipa": "[œ] or [øː]", "audio": "/paideia/audio/german/letters/oe.mp3", "note": "A front rounded vowel. Say [e] but round your lips as for [o]. Göttlich, schön. No English equivalent." },
+        { "upper": "P", "lower": "p", "name": "pay", "ipa": "[p]", "audio": "/paideia/audio/german/letters/p.mp3", "note": "Like English p." },
+        { "upper": "Q", "lower": "q", "name": "koo", "ipa": "[k]", "audio": "/paideia/audio/german/letters/q.mp3", "note": "Always followed by u, pronounced [kv]. Quelle = kvell-uh. Rare." },
+        { "upper": "R", "lower": "r", "name": "err", "ipa": "[ʁ] or [r]", "audio": "/paideia/audio/german/letters/r.mp3", "note": "The German R is uvular [ʁ], a guttural sound made in the back of the throat, or rolled [r] in southern dialects. After a vowel it often vocalizes to [ɐ]." },
+        { "upper": "S", "lower": "s", "name": "ess", "ipa": "[z] or [s]", "audio": "/paideia/audio/german/letters/s.mp3", "note": "Voiced [z] before a vowel: sagen (zah-gen). Voiceless [s] at the end or before a consonant: das (dahs), ist (ist)." },
+        { "upper": "ß", "lower": "ß", "name": "Eszett, scharfes S", "ipa": "[s]", "audio": "/paideia/audio/german/letters/eszett.mp3", "note": "A ligature of long s + z. Always voiceless [s]. Appears after long vowels and diphthongs: Straße, groß. After short vowels, write ss: Fluss. Swiss German writes ss everywhere." },
+        { "upper": "T", "lower": "t", "name": "tay", "ipa": "[t]", "audio": "/paideia/audio/german/letters/t.mp3", "note": "Like English t." },
+        { "upper": "U", "lower": "u", "name": "oo", "ipa": "[u] or [uː]", "audio": "/paideia/audio/german/letters/u.mp3", "note": "Short or long, like the oo in boot. Mutter (short), Buch (long)." },
+        { "upper": "Ü", "lower": "ü", "name": "oo-umlaut", "ipa": "[y] or [yː]", "audio": "/paideia/audio/german/letters/ue.mp3", "note": "A front rounded vowel. Say [i] but round your lips as for [u]. Über, Tür. No English equivalent. French u in lune is the same sound." },
+        { "upper": "V", "lower": "v", "name": "fow", "ipa": "[f] or [v]", "audio": "/paideia/audio/german/letters/v.mp3", "note": "Usually [f]: Vater (fah-ter), Vogel (foh-gel). In foreign borrowings, sometimes [v]: Violine." },
+        { "upper": "W", "lower": "w", "name": "vay", "ipa": "[v]", "audio": "/paideia/audio/german/letters/w.mp3", "note": "Always [v], never [w]. Wasser (vah-ser), Welt (velt)." },
+        { "upper": "X", "lower": "x", "name": "ix", "ipa": "[ks]", "audio": "/paideia/audio/german/letters/x.mp3", "note": "Like English x. Rare in native words." },
+        { "upper": "Y", "lower": "y", "name": "üpsilon", "ipa": "[y] or [yː]", "audio": "/paideia/audio/german/letters/y.mp3", "note": "In German words, pronounced like Ü: Physik = fü-zeek. In foreign words, sometimes [i] or [j]." },
+        { "upper": "Z", "lower": "z", "name": "tset", "ipa": "[ts]", "audio": "/paideia/audio/german/letters/z.mp3", "note": "Always [ts], like the ts in cats. Zeit (tsait), zu (tsoo). Never like English z." }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "The three surprises",
+      "body": "V = [f]. Vater is pronounced fah-ter. Vogel is foh-gel. This is the old Germanic pronunciation, preserved in German and lost in English.\n\nW = [v]. Wasser is vah-ser. Wein is vine (the drink, not the plant). The letter W in German does the work that V does in English.\n\nZ = [ts]. Zeit is tsait. Zu is tsoo. This is the same sound as the final consonant cluster in English cats or hits. German spells it with a single letter."
+    },
+    {
+      "kind": "prose",
+      "heading": "The Eszett",
+      "body": "The ß (called Eszett or scharfes S, 'sharp s') is a ligature — a fusion of two letters into one glyph. It descends from the long s (ſ) + z. It appears after long vowels and diphthongs:\n\n  Straße (street) — long a\n  groß (great) — long o\n  außen (outside) — diphthong au\n\nAfter short vowels, German writes ss:\n\n  Fluss (river) — short u\n  müssen (must) — short ü\n\nThe Swiss abolished the ß in 1938 and write ss everywhere. Austrian and German writers still use it. You will see both in printed texts."
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill",
+      "instructions": "Each of the sixteen letters (including Ö, Ü, and ß) is spoken three times. Listen, then repeat.",
+      "audio": "/paideia/audio/german/drills/lesson-1.2-listening.mp3"
+    },
+    {
+      "kind": "writing_drill",
+      "heading": "Writing drill",
+      "instructions": "Print each letter ten times. The ß has no separate upper-case form in traditional typography; in all caps, write SS. Modern German has introduced a capital ẞ, but it is not yet universal.",
+      "downloadable_pdf": "/paideia/curriculum/german/handouts/lesson-1.2-tracing.pdf"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Answer without looking back.",
+      "items": [
+        { "prompt": "What sound does the letter V make in German?", "answer": "[f]. Vater = fah-ter." },
+        { "prompt": "What sound does the letter W make in German?", "answer": "[v]. Wasser = vah-ser." },
+        { "prompt": "What sound does the letter Z make in German?", "answer": "[ts]. Zeit = tsait." },
+        { "prompt": "When does German use ß instead of ss?", "answer": "After long vowels and diphthongs. Straße (long a), but Fluss (short u)." },
+        { "prompt": "How do you pronounce Ü?", "answer": "Say [i] but round your lips. A front rounded vowel. Like French u in lune." },
+        { "prompt": "How do you pronounce Ö?", "answer": "Say [e] but round your lips. A front rounded vowel. No English equivalent." },
+        { "prompt": "What is the German R sound?", "answer": "Uvular [ʁ], a guttural sound from the back of the throat, or a rolled [r] in southern dialects." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Words with the new letters",
+      "instructions": "Read these aloud, then check the audio.",
+      "words": [
+        { "german": "Vater", "transliteration": "fah-ter", "gloss": "father", "audio": "/paideia/audio/german/words/vater.mp3" },
+        { "german": "Wasser", "transliteration": "vah-ser", "gloss": "water", "audio": "/paideia/audio/german/words/wasser.mp3" },
+        { "german": "Zeit", "transliteration": "tsait", "gloss": "time", "audio": "/paideia/audio/german/words/zeit.mp3" },
+        { "german": "Straße", "transliteration": "shtrah-suh", "gloss": "street", "audio": "/paideia/audio/german/words/strasse.mp3" },
+        { "german": "schön", "transliteration": "shern", "gloss": "beautiful", "audio": "/paideia/audio/german/words/schoen.mp3" },
+        { "german": "über", "transliteration": "ü-ber", "gloss": "over, above", "audio": "/paideia/audio/german/words/ueber.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.3 covers the three umlauts together — Ä, Ö, Ü — and the historical reason they exist. After that, the consonant clusters: ch, sch, ng, pf, and the rest."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can pronounce V, W, Z, ß, Ü, Ö without hesitation and can read ten random German words aloud with correct sounds.",
+    "credit_minutes": 50
+  }
+}

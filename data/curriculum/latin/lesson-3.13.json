@@ -1,0 +1,23 @@
+{
+  "id": "3.13",
+  "stage": 3,
+  "title": "Reading: Caesar, De Bello Gallico I.1",
+  "subtitle": "Gallia est omnis dīvīsa in partēs trēs. The most famous opening sentence.",
+  "estimated_minutes": 60,
+  "objectives": ["Read and translate Caesar's opening paragraph.", "Recognize all grammatical forms in context.", "Understand Caesar's direct, military prose style.", "Build confidence reading authentic Latin."],
+  "sections": [
+    {"kind": "prose", "heading": "Caesar's opening", "body": "Gallia est omnis dīvīsa in partēs trēs, quārum ūnam incolunt Belgae, aliam Aquītānī, tertiam quī ipsōrum linguā Celtae, nostrā Gallī appellantur. Hī omnēs linguā, īnstitūtīs, lēgibus inter sē differunt. Gallōs ab Aquītānīs Garumna flūmen, ā Belgīs Mātrona et Sēquana dīvidit.\n\nGloss:\nomnis — all, whole\ndīvīdō, -ere, dīvīsī, dīvīsus — to divide\npars, partis (f.) — part\nquārum — of which (gen. pl. fem.)\nūnus, -a, -um — one\nincolō, -ere — to inhabit\nalter, -a, -um — another, other\ntertius, -a, -um — third\nquī — who\nipse, -a, -um — self, themselves\nlinguā — language (abl. of means)\nappellō, -āre — to call\nhī — these\nīnstitūtum, -ī (n.) — custom, institution\nlēx, lēgis (f.) — law\ninter sē — among themselves\ndifferō, differre — to differ\nflūmen, flūminis (n.) — river\ndīvidō — separates"},
+    {"kind": "prose", "heading": "Translation guide", "body": "Gallia est omnis dīvīsa — Gaul is wholly divided (perfect passive participle + est forms perfect passive)\nin partēs trēs — into three parts\nquārum — of which (refers to 'parts')\nūnam incolunt Belgae — the Belgians inhabit one\naliam Aquītānī — the Aquitani (inhabit) another\ntertiam quī... — a third (those) who...\nipsōrum linguā Celtae — in their own language Celts\nnostrā Gallī appellantur — in ours (are) called Gauls\n\nRead the paragraph aloud three times. Do not translate word-for-word. Let the rhythm emerge."},
+    {"kind": "self_check", "heading": "Comprehension", "items": [
+      {"prompt": "Into how many parts is Gaul divided?", "answer": "Three."},
+      {"prompt": "Name the three peoples.", "answer": "Belgians, Aquitani, Gauls (Celts)."},
+      {"prompt": "What divides the Gauls from the Belgians?", "answer": "The rivers Matrona and Sequana."},
+      {"prompt": "What three things do these peoples differ in?", "answer": "Language, customs, laws."}
+    ]},
+    {"kind": "reading_preview", "heading": "Read aloud", "words": [
+      {"latin": "Gallia est omnis dīvīsa in partēs trēs.", "transliteration": null, "gloss": "All Gaul is divided into three parts.", "audio": "/paideia/audio/latin/sentences/3.13-1.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Lesson 3.14: reading Eutropius, Breviarium I.1–7. The founding of Rome."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can read and understand Caesar's opening paragraph.", "credit_minutes": 60}
+}

@@ -1,0 +1,73 @@
+{
+  "id": "1.4",
+  "stage": 1,
+  "title": "Stress and the Grave Accent",
+  "subtitle": "Where the stress falls, and when Italian marks it.",
+  "estimated_minutes": 40,
+  "objectives": [
+    "Apply the default stress rule: second-to-last syllable.",
+    "Recognize when stress falls on the final syllable (marked with grave accent).",
+    "Identify antepenultimate stress (third-from-last) in common exceptions."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The default pattern",
+      "body": "In Italian, stress falls on the second-to-last syllable (the penult) unless marked otherwise. parola (word): pa-RO-la; finestra (window): fi-NE-stra; ragazzo (boy): ra-GAZ-zo. This is the unmarked pattern. Most Italian words follow it. When you see a new word with no written accent, assume penultimate stress."
+    },
+    {
+      "kind": "prose",
+      "heading": "Final stress: the grave accent",
+      "body": "When stress falls on the final syllable, Italian marks it with a grave accent: città (city), perché (why, because), virtù (virtue). The grave accent is the only written stress mark in standard Italian orthography. It appears on the final vowel when that vowel is stressed. Compare: parla (he speaks, stress on first syllable, PAR-la); parlerà (he will speak, stress on final a, par-le-RÀ). The accent tells you to break the default rule."
+    },
+    {
+      "kind": "prose",
+      "heading": "Antepenultimate stress",
+      "body": "A few words stress the third-from-last syllable (the antepenult). These are learned as exceptions. Examples: tavola (table): TA-vo-la; medico (doctor): ME-di-co; sabato (Saturday): SA-ba-to. No written accent marks this pattern. You learn it by hearing the word."
+    },
+    {
+      "kind": "prose",
+      "heading": "From Leopardi",
+      "body": "Giacomo Leopardi, L'infinito: Sempre caro mi fu quest'ermo colle. Stress: SEM-pre (antepenult exception), CA-ro (penult default), er-mo (penult), COL-le (penult). Dante, Inferno V: Amor, ch'al cor gentil ratto s'apprende. Amor: a-MOR (final stress, but no written accent in older Italian; modern usage would write Amor in isolation, but poetic usage often omits the accent when context is clear)."
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill",
+      "instructions": "Ten words spoken with stress marked. Repeat each, matching the stress.",
+      "audio": "/paideia/audio/italian/drills/lesson-1.4-stress.mp3"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Cover answers; check after.",
+      "items": [
+        { "prompt": "Where does stress fall by default in Italian?", "answer": "On the second-to-last syllable (the penult)." },
+        { "prompt": "When does Italian use a grave accent?", "answer": "When stress falls on the final syllable." },
+        { "prompt": "Mark stress: parola, città, tavola.", "answer": "pa-RO-la, cit-TÀ, TA-vo-la." },
+        { "prompt": "Why does città have a written accent?", "answer": "Because stress falls on the final syllable, breaking the default rule." },
+        { "prompt": "Does antepenultimate stress get marked with an accent?", "answer": "No. You learn it by hearing the word." }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Words to stress",
+      "instructions": "Read aloud; mark the stress in your mind.",
+      "words": [
+        { "italian": "parola", "transliteration": null, "gloss": "word", "audio": "/paideia/audio/italian/words/parola.mp3" },
+        { "italian": "città", "transliteration": null, "gloss": "city", "audio": "/paideia/audio/italian/words/citta.mp3" },
+        { "italian": "perché", "transliteration": null, "gloss": "why, because", "audio": "/paideia/audio/italian/words/perche.mp3" },
+        { "italian": "tavola", "transliteration": null, "gloss": "table", "audio": "/paideia/audio/italian/words/tavola.mp3" },
+        { "italian": "ragazzo", "transliteration": null, "gloss": "boy", "audio": "/paideia/audio/italian/words/ragazzo.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.5 covers diphthongs and triphthongs: where two or three vowels combine in one syllable."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can stress any new Italian word by applying the default rule and recognizing the grave accent.",
+    "credit_minutes": 40
+  }
+}

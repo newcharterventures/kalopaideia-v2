@@ -1,0 +1,67 @@
+{
+  "id": "2.5",
+  "stage": 2,
+  "title": "Regular -er Verbs",
+  "subtitle": "parler: je parle, tu parles, il parle, nous parlons, vous parlez, ils parlent. The most common verb pattern in French.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Conjugate any regular -er verb in the present indicative.",
+    "Recognize the six persons: je, tu, il/elle, nous, vous, ils/elles.",
+    "Understand that the -e, -es, -e, -ent endings are silent.",
+    "Apply correct liaison where needed."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The -er verbs",
+      "body": "The largest class of French verbs end in -er in the infinitive. These verbs follow a regular pattern in the present tense.\n\nInfinitive: parler (to speak)\n\nPresent indicative:\n  je parle       (I speak)\n  tu parles      (you speak, familiar)\n  il/elle parle  (he/she speaks)\n  nous parlons   (we speak)\n  vous parlez    (you speak, formal/plural)\n  ils/elles parlent (they speak)\n\nThe endings -e, -es, -e, and -ent are all silent. Only the nous and vous forms have audible endings: -ons, -ez."
+    },
+    {
+      "kind": "prose",
+      "heading": "The paradigm table",
+      "body": "             parler (to speak)\n\n  je         parl-e      [paʁl]\n  tu         parl-es     [paʁl]\n  il/elle    parl-e      [paʁl]\n  nous       parl-ons    [paʁlɔ̃]\n  vous       parl-ez     [paʁle]\n  ils/elles  parl-ent    [paʁl]\n\nNotice that je, tu, il, and ils all sound the same: [paʁl]. The distinction is made by the subject pronoun, not the verb form."
+    },
+    {
+      "kind": "prose",
+      "heading": "Other common -er verbs",
+      "body": "aimer (to love, to like)\n  j'aime, tu aimes, il aime, nous aimons, vous aimez, ils aiment\n\ndonner (to give)\n  je donne, tu donnes, il donne, nous donnons, vous donnez, ils donnent\n\nchanter (to sing)\n  je chante, tu chantes, il chante, nous chantons, vous chantez, ils chantent\n\nAll follow the same pattern. Learn one, and you know thousands."
+    },
+    {
+      "kind": "prose",
+      "heading": "Practice from Molière",
+      "body": "From Le Misanthrope:\n\n  Je veux qu'on soit sincère.\n  (I want one to be sincere.)\n\nHere 'veux' is irregular (from vouloir), but the pattern extends: sincere speech is what the speaker wants."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Conjugate the verb.",
+      "items": [
+        { "prompt": "parler: nous ?", "answer": "parlons" },
+        { "prompt": "aimer: je ?", "answer": "aime" },
+        { "prompt": "donner: ils ?", "answer": "donnent" },
+        { "prompt": "Are the endings -e, -es, -e, -ent pronounced?", "answer": "No. They are silent." },
+        { "prompt": "Which two forms have audible endings?", "answer": "nous and vous: -ons, -ez." },
+        { "prompt": "Conjugate 'chanter' for 'vous'.", "answer": "chantez" }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Verbs to practice",
+      "instructions": "Conjugate each verb aloud in all six persons.",
+      "words": [
+        { "french": "parler", "transliteration": null, "gloss": "to speak", "audio": "/paideia/audio/french/words/parler-conj.mp3" },
+        { "french": "aimer", "transliteration": null, "gloss": "to love, to like", "audio": "/paideia/audio/french/words/aimer-conj.mp3" },
+        { "french": "donner", "transliteration": null, "gloss": "to give", "audio": "/paideia/audio/french/words/donner-conj.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.6 covers regular -ir and -re verbs: finir and vendre, the second and third conjugations."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can conjugate five -er verbs in the present tense without error.",
+    "credit_minutes": 55
+  }
+}

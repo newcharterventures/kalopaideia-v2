@@ -1,0 +1,20 @@
+{
+  "id": "3.6",
+  "stage": 3,
+  "title": "The Fourth Declension",
+  "subtitle": "manus, manūs. The u-stems.",
+  "estimated_minutes": 45,
+  "objectives": ["Decline fourth-declension nouns in all cases.", "Recognize -ūs nominative singular as fourth-declension marker.", "Translate sentences with fourth-declension nouns."],
+  "sections": [
+    {"kind": "prose", "heading": "The fourth declension", "body": "Fourth-declension nouns end in -us (masc.) or -ū (neut.). Paradigm:\n\n  Nom. manus, Gen. manūs, Dat. manuī, Acc. manum, Abl. manū\n  Plural: manūs, manuum, manibus, manūs, manibus\n\nCommon nouns: manus (hand, f.), exercitus (army, m.), domus (house, f. irregular)."},
+    {"kind": "self_check", "heading": "Self-check", "items": [
+      {"prompt": "Decline exercitus in singular.", "answer": "exercitus, exercitūs, exercituī, exercitum, exercitū"},
+      {"prompt": "Translate: mīlitēs manibus pugnant.", "answer": "The soldiers fight with hands."}
+    ]},
+    {"kind": "reading_preview", "heading": "Sentences", "words": [
+      {"latin": "exercitus magnus est.", "transliteration": null, "gloss": "The army is large.", "audio": "/paideia/audio/latin/sentences/3.6-1.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Lesson 3.7: the fifth declension. rēs, diēs."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can decline any fourth-declension noun.", "credit_minutes": 45}
+}

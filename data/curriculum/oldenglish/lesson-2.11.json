@@ -1,0 +1,48 @@
+{
+  "id": "2.11",
+  "stage": 2,
+  "title": "Prepositions and Case Government",
+  "subtitle": "On, fram, mid, tō — each takes its own case.",
+  "estimated_minutes": 55,
+  "objectives": [
+    "Understand and apply the concepts of Prepositions and Case Government.",
+    "Read and parse examples from authentic Old English texts.",
+    "Practice pronunciation and recognition."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Core concept",
+      "body": "Prepositions in Old English govern specific cases. Most take the dative. Some take the accusative when motion is involved. A few take the genitive. You must learn the case for each preposition. Common prepositions: on + dat/acc (on, in, onto), fram + dat (from), mid + dat/inst (with), tō + dat (to), þurh + acc (through), ofer + acc/dat (over)."
+    },
+    {
+      "kind": "prose",
+      "heading": "Example",
+      "body": "On þǣm hūse (in the house, dat — location). On þæt hūs (onto the house, acc — motion)."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Test your understanding.",
+      "items": [
+        {
+          "prompt": "What is the main concept of this lesson?",
+          "answer": "Prepositions and Case Government"
+        },
+        {
+          "prompt": "Can you parse the example?",
+          "answer": "Review the paradigm and example above."
+        }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Continue to the next lesson in Stage 2."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you understand Prepositions and Case Government and can apply it in reading.",
+    "credit_minutes": 55
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "language": "french",
+  "display_name": "Classical French",
+  "tagline": "From pronunciation to Flaubert — a five-stage course in the literary French of Racine, Pascal, Baudelaire, and the Grand Siècle.",
+  "philosophy": "Kalopaideia teaches French for readers, not tourists. This is the language of Racine and Molière, of Pascal and La Rochefoucauld, of Flaubert and Baudelaire. We begin with the sounds — liaison, élision, the nasal vowels, the silent letters that trip every beginner. Then we move to sentences, always drawn from real texts. Grammar is introduced when the student has already met the form in living prose or verse. Every stage ends with reading.",
+  "duration_estimate": "12–18 months at one hour per day",
+  "method": "Reading-led, inspired by the natural method but adapted for a language still spoken. We use authentic literary texts from the seventeenth through nineteenth centuries. The student learns to read the canon, not to order coffee.",
+  "prerequisites": "None. The course assumes only that the student can read English and is willing to memorize vocabulary. No prior linguistic training is required.",
+  "stages": [
+    {
+      "id": "stage-1",
+      "number": 1,
+      "name": "The Sound and the Shape",
+      "subtitle": "Pronunciation, liaison, élision, the nasal vowels, the silent letters. French as it is spoken aloud.",
+      "duration": "4–6 weeks",
+      "learning_outcomes": [
+        "Pronounce any printed French text with accurate reconstructed seventeenth-century pronunciation.",
+        "Recognize and produce all thirty-six phonemes of Classical French, including the four nasal vowels and the three front rounded vowels.",
+        "Apply liaison and élision rules in connected speech.",
+        "Read aloud a passage from Racine or Molière with correct stress and intonation."
+      ],
+      "lessons": [
+        { "id": "1.1", "title": "The Vowels", "content": "The fifteen vowel phonemes. Front unrounded: i, é, è, e muet. Front rounded: u, eu, œ. Back rounded: ou, o, ô. Nasal: an, in, on, un. Audio drill on each inside a real French word." },
+        { "id": "1.2", "title": "The Consonants", "content": "The twenty-one consonants. The r as uvular fricative. The gn as palatal nasal. The distinction between s and ss, between c and ç." },
+        { "id": "1.3", "title": "Silent Letters", "content": "Final consonants usually silent: petit, grand, beaucoup. The exceptions: final c, r, f, l often sounded (parc, cœur, neuf, fil). The silent h and the aspirated h." },
+        { "id": "1.4", "title": "Liaison", "content": "Linking the final consonant of one word to the initial vowel of the next. les amis [lez‿ami]. Obligatory, forbidden, and optional liaisons." },
+        { "id": "1.5", "title": "Élision", "content": "Dropping the final vowel before a word beginning with a vowel or mute h. le + ami = l'ami. la + école = l'école. The apostrophe as notation." },
+        { "id": "1.6", "title": "Stress and Intonation", "content": "French stress falls on the final syllable of a phrase, not on individual words. The rising and falling contours of declarative and interrogative sentences." },
+        { "id": "1.7", "title": "Reading the Names", "content": "First connected reading: fifty French proper names from literature and history. Molière, Racine, Pascal, Versailles, Rousseau, Voltaire. The student reads each aloud before moving on." },
+        { "id": "1.8", "title": "First Sentences", "content": "Ten short sentences with full audio and glosses. Le roi est mort. La reine arrive. Je suis français. The student learns to read before parsing." }
+      ],
+      "checkpoint": {
+        "id": "stage-1-checkpoint",
+        "title": "Stage 1 Checkpoint",
+        "format": "Oral and written. Twenty words dictated; ten sentences read aloud and recorded; five liaison and élision exercises; five nasal vowel identification tasks. Pass mark: 85%.",
+        "items": 40
+      }
+    },
+    {
+      "id": "stage-2",
+      "number": 2,
+      "name": "The Sentence",
+      "subtitle": "Articles, nouns, adjectives, regular verbs, subject pronouns, negation. The basic French sentence.",
+      "duration": "8–10 weeks",
+      "learning_outcomes": [
+        "Form and recognize singular and plural nouns with the definite, indefinite, and partitive articles.",
+        "Conjugate regular -er, -ir, and -re verbs in the present indicative.",
+        "Apply adjective agreement in gender and number.",
+        "Construct basic affirmative, negative, and interrogative sentences."
+      ],
+      "lessons": [
+        { "id": "2.1", "title": "The Definite Article", "content": "le, la, l', les. Gender in French nouns: masculine and feminine. The article as the gateway to the noun." },
+        { "id": "2.2", "title": "The Indefinite and Partitive Articles", "content": "un, une, des. du, de la, de l', des. The partitive as the marker of unspecified quantity: du pain, de l'eau." },
+        { "id": "2.3", "title": "Nouns: Gender and Number", "content": "Singular and plural formation. Most plurals add -s (silent); nouns in -eau, -au, -eu add -x. Irregulars: œil/yeux, travail/travaux." },
+        { "id": "2.4", "title": "Adjectives: Agreement", "content": "Masculine and feminine, singular and plural. bon/bonne/bons/bonnes. Position: most adjectives follow the noun; a handful precede (petit, grand, beau, jeune, vieux, bon, mauvais)." },
+        { "id": "2.5", "title": "Regular -er Verbs", "content": "parler: je parle, tu parles, il parle, nous parlons, vous parlez, ils parlent. The most common verb pattern in French." },
+        { "id": "2.6", "title": "Regular -ir and -re Verbs", "content": "finir: je finis, tu finis, il finit, nous finissons, vous finissez, ils finissent. vendre: je vends, tu vends, il vend, nous vendons, vous vendez, ils vendent." },
+        { "id": "2.7", "title": "The Verbs Être and Avoir", "content": "être: je suis, tu es, il est, nous sommes, vous êtes, ils sont. avoir: j'ai, tu as, il a, nous avons, vous avez, ils ont. The two auxiliary verbs, irregular and mandatory." },
+        { "id": "2.8", "title": "Subject Pronouns", "content": "je, tu, il, elle, nous, vous, ils, elles. The distinction between tu and vous: singular familiar versus plural or formal." },
+        { "id": "2.9", "title": "Negation", "content": "ne ... pas, ne ... jamais, ne ... rien, ne ... plus. The two-part negative framing the verb: Je ne parle pas." },
+        { "id": "2.10", "title": "Questions", "content": "Three ways to ask: intonation (Tu viens?), est-ce que (Est-ce que tu viens?), inversion (Viens-tu?). The last is literary and formal." },
+        { "id": "2.11", "title": "Prepositions", "content": "à, de, en, dans, sur, sous, avec, pour, sans, chez. Contractions: à + le = au; à + les = aux; de + le = du; de + les = des." },
+        { "id": "2.12", "title": "Reading: La Fontaine, Fables (selections)", "content": "Le Corbeau et le Renard, La Cigale et la Fourmi. Short, simple verse fables. The student's first sustained literary text in French." }
+      ],
+      "checkpoint": {
+        "id": "stage-2-checkpoint",
+        "title": "Stage 2 Checkpoint",
+        "format": "Written. Twenty nouns to pluralize and gender-mark; ten verb forms to conjugate; a fifty-word passage to translate; ten English sentences to render in French. Pass mark: 80%.",
+        "items": 60
+      }
+    },
+    {
+      "id": "stage-3",
+      "number": 3,
+      "name": "The Tenses",
+      "subtitle": "Passé composé, imparfait, plus-que-parfait, futur, conditionnel, participles. The architecture of French time.",
+      "duration": "10–12 weeks",
+      "learning_outcomes": [
+        "Conjugate any regular verb in the passé composé, imparfait, plus-que-parfait, futur simple, and conditionnel.",
+        "Distinguish between completed and ongoing past actions (passé composé versus imparfait).",
+        "Form and use the present and past participles.",
+        "Read adapted passages from nineteenth-century prose with notes."
+      ],
+      "lessons": [
+        { "id": "3.1", "title": "The Passé Composé", "content": "Compound past tense for completed actions. j'ai parlé, tu as parlé, il a parlé. Most verbs take avoir; a small set take être (aller, venir, arriver, partir, naître, mourir, and the reflexives)." },
+        { "id": "3.2", "title": "Agreement in the Passé Composé", "content": "With être, the past participle agrees with the subject: elle est arrivée, ils sont partis. With avoir and a preceding direct object: la lettre que j'ai écrite." },
+        { "id": "3.3", "title": "The Imparfait", "content": "Imperfect for ongoing, habitual, or background actions in the past. je parlais, tu parlais, il parlait. The narrative backdrop against which completed actions occur." },
+        { "id": "3.4", "title": "Passé Composé versus Imparfait", "content": "A fundamental distinction in French prose. Hier, il pleuvait (ongoing) quand je suis arrivé (completed). The interplay of the two past tenses." },
+        { "id": "3.5", "title": "The Plus-que-parfait", "content": "Pluperfect for action completed before another past action. j'avais parlé, tu avais parlé, il avait parlé. J'avais déjà mangé quand il est arrivé." },
+        { "id": "3.6", "title": "The Futur Simple", "content": "je parlerai, tu parleras, il parlera. The stem + -ai, -as, -a, -ons, -ez, -ont endings." },
+        { "id": "3.7", "title": "The Futur Antérieur", "content": "Future perfect for action completed before a future moment. j'aurai parlé. Quand j'aurai fini, je partirai." },
+        { "id": "3.8", "title": "The Conditionnel", "content": "je parlerais, tu parlerais, il parlerait. The conditional mood for hypothetical or polite statements. Je voudrais un café." },
+        { "id": "3.9", "title": "The Present Participle", "content": "en parlant, en finissant, en voyant. The gerund as a way to express manner or simultaneity. Il chante en marchant." },
+        { "id": "3.10", "title": "The Past Participle", "content": "parlé, fini, vendu. Already met in the passé composé; now as an adjective. un livre écrit par Hugo." },
+        { "id": "3.11", "title": "Object Pronouns", "content": "Direct: me, te, le, la, nous, vous, les. Indirect: me, te, lui, nous, vous, leur. Placement before the conjugated verb: Je le vois. Je lui parle." },
+        { "id": "3.12", "title": "Reflexive Verbs", "content": "se laver, se lever, s'habiller. The pronoun as both subject and object: Je me lave. Nous nous levons. Passé composé with être: Je me suis lavé(e)." },
+        { "id": "3.13", "title": "Reading: Maupassant, La Parure (adapted)", "content": "A three-hundred-word extract. Simple prose, clear narrative, rich in passé composé and imparfait." },
+        { "id": "3.14", "title": "Reading: Hugo, Les Misérables (adapted)", "content": "The opening description of Monseigneur Bienvenu. Sustained imparfait for scene-setting." }
+      ],
+      "checkpoint": {
+        "id": "stage-3-checkpoint",
+        "title": "Stage 3 Checkpoint",
+        "format": "Written. Parse twenty inflected forms; translate a one-hundred-word passage at sight; compose five French sentences from English prompts. Pass mark: 75%.",
+        "items": 75
+      }
+    },
+    {
+      "id": "stage-4",
+      "number": 4,
+      "name": "The Subjunctive and the Subtle",
+      "subtitle": "The subjunctive mood, conditional sentences, indirect discourse, pronoun placement, the irregular verbs.",
+      "duration": "12–16 weeks",
+      "learning_outcomes": [
+        "Form and translate the present and past subjunctive of any regular verb.",
+        "Recognize the subjunctive in clauses of necessity, doubt, emotion, and will.",
+        "Translate conditional sentences in all three types (real, hypothetical present, hypothetical past).",
+        "Parse and translate indirect discourse with tense sequence."
+      ],
+      "lessons": [
+        { "id": "4.1", "title": "The Present Subjunctive", "content": "que je parle, que tu parles, qu'il parle, que nous parlions, que vous parliez, qu'ils parlent. The mood of doubt, necessity, desire." },
+        { "id": "4.2", "title": "When to Use the Subjunctive", "content": "After verbs of wishing, fearing, doubting: je veux que tu viennes. After impersonal expressions: il faut que, il est nécessaire que. After conjunctions: bien que, pour que, avant que." },
+        { "id": "4.3", "title": "The Past Subjunctive", "content": "que j'aie parlé, que tu aies parlé. The compound subjunctive formed with avoir or être in the subjunctive plus the past participle." },
+        { "id": "4.4", "title": "The Imperfect and Pluperfect Subjunctive", "content": "que je parlasse, que j'eusse parlé. Literary forms, rare in modern French but common in seventeenth- and eighteenth-century prose. Found in Racine, Pascal, Voltaire." },
+        { "id": "4.5", "title": "Conditional Sentences, Type One", "content": "Si + present, future. Si tu viens, je serai content. Real condition." },
+        { "id": "4.6", "title": "Conditional Sentences, Type Two", "content": "Si + imparfait, conditionnel. Si tu venais, je serais content. Hypothetical present." },
+        { "id": "4.7", "title": "Conditional Sentences, Type Three", "content": "Si + plus-que-parfait, conditionnel passé. Si tu étais venu, j'aurais été content. Hypothetical past." },
+        { "id": "4.8", "title": "Indirect Discourse", "content": "Tense shifts in reported speech. Il dit qu'il vient. Il a dit qu'il venait. Il dit qu'il viendra. Il a dit qu'il viendrait." },
+        { "id": "4.9", "title": "Pronoun Order", "content": "When two object pronouns occur, the order is fixed: me/te/se/nous/vous, then le/la/les, then lui/leur, then y, then en. Je le lui donne." },
+        { "id": "4.10", "title": "The Passive Voice", "content": "être + past participle. La lettre est écrite par le roi. Rare in French; the active with on is preferred: On écrit la lettre." },
+        { "id": "4.11", "title": "The Irregular Verbs", "content": "aller, venir, faire, dire, prendre, voir, pouvoir, vouloir, devoir, savoir. The most common verbs in French, each with its own pattern. Must be memorized." },
+        { "id": "4.12", "title": "Reading: Pascal, Pensées (selections)", "content": "Le silence éternel de ces espaces infinis m'effraie. Short, aphoristic prose. Subjunctives, conditionals, and rhetorical questions." },
+        { "id": "4.13", "title": "Reading: Racine, Phèdre, Act I, Scene 3", "content": "Classical alexandrine verse. The subjunctive in elevated speech. Liaison and élision in recitation." }
+      ],
+      "checkpoint": {
+        "id": "stage-4-checkpoint",
+        "title": "Stage 4 Checkpoint",
+        "format": "Written. A one-hundred-and-fifty-word sight passage from a chosen prose author (Pascal, La Rochefoucauld, or Voltaire), with parsing and translation. Five composition prompts in English to render in French. Pass mark: 75%.",
+        "items": 50
+      }
+    },
+    {
+      "id": "stage-5",
+      "number": 5,
+      "name": "The Author",
+      "subtitle": "Sustained reading of a major author. The capstone.",
+      "duration": "12–24 weeks",
+      "learning_outcomes": [
+        "Read a complete short work of a major French author in the original.",
+        "Translate any fifty-word passage from the chosen author at sight.",
+        "Discuss the literary and stylistic character of the chosen text in writing.",
+        "Recognize and explain the chief features of Classical versus Romantic prose, verse drama versus prose narrative."
+      ],
+      "tracks": [
+        {
+          "id": "track-moralist",
+          "name": "The Moralist",
+          "text": "Pascal, Pensées (selections, c. 8,000 words) and La Rochefoucauld, Maximes (selections, c. 4,000 words).",
+          "rationale": "The distilled essence of French prose. Short, aphoristic, devastating. The moralist tradition from the seventeenth century. Introduces the philosophical vocabulary and the subjunctive in all its forms."
+        },
+        {
+          "id": "track-novelist",
+          "name": "The Novelist",
+          "text": "Flaubert, Un Cœur Simple (entire, c. 12,000 words).",
+          "rationale": "The most perfect short story in French. Prose at its highest pitch. Every sentence has been weighed. The student finishes the course having read a complete Flaubert tale."
+        },
+        {
+          "id": "track-poet",
+          "name": "The Poet",
+          "text": "Baudelaire, Les Fleurs du Mal: Spleen et Idéal (selections, c. 5,000 words).",
+          "rationale": "The greatest lyric poetry in nineteenth-century French. Alexandrine verse, rich imagery, the vocabulary of modernity and melancholy. Opens the door to Rimbaud and Verlaine."
+        }
+      ],
+      "capstone_examination": {
+        "id": "stage-5-capstone",
+        "title": "The Kalopaideia French Examination",
+        "format": "Two parts, taken in sequence. Part one: a written examination of three hours. A fifty-word passage from the chosen author to translate at sight without notes; a one-hundred-word passage from the chosen author with notes; ten English sentences to render in French; ten parsing questions. Part two: an oral examination of thirty minutes, conducted in writing for now. The student reads a previously-prepared one-hundred-word passage aloud, then answers five questions in English about its language and content.",
+        "pass_mark": "70% on each part",
+        "honors_mark": "85% on each part — recorded on the certificate"
+      }
+    }
+  ],
+  "certification": {
+    "credential_name": "The Kalopaideia Diploma in Classical French",
+    "credential_subtitle": "An attestation that the bearer has completed the five-stage course and passed the capstone examination.",
+    "what_it_is": "A privately-issued certificate of completion. Not an academic degree. It says: this person sat down with the language for a year or two and earned an honest reading of Pascal or Flaubert.",
+    "what_is_recorded": "Student's chosen public name; the language; the date of the capstone examination; the track (Moralist, Novelist, Poet); the result (Pass or Pass with Honors); the SHA-256 hash of the student's signed examination scripts.",
+    "what_is_not_recorded": "The actual examination answers; the student's email or other identifiers; anything that could identify the student against their will. The certificate is pseudonymous if the student wishes.",
+    "issuance": "On-chain on the Ethereum mainnet as an ERC-721 soulbound (non-transferable) token. One certificate per student per language. The contract is owned by Kalopaideia and the minting key is held by the proprietor. The token URI points to a permanent, IPFS-pinned JSON document signed by Kalopaideia's issuing key.",
+    "verification": "Any third party can verify a certificate at kalopaideia.com/verify/<token-id> by entering the token ID and the certificate hash. The page will display the issuance date, the language, the track, and the result.",
+    "cost": "Included in the Akousma subscription. The on-chain gas fee at issuance is paid by Kalopaideia. The student pays nothing extra.",
+    "first_of_its_kind": "We believe this is the first blockchain-issued credential for completion of a classical-language curriculum. The certificate is irrevocable: once minted, it cannot be withdrawn. If a student is later found to have cheated, a separate revocation token is minted that publicly cross-references the first; the original remains on-chain.",
+    "renewability": "None. A diploma in French is not a driver's licence. Once earned, it stands."
+  },
+  "policies": {
+    "honor_code": "All examinations are taken under the Kalopaideia honor code. The student attests, by signing the examination, that no aid was used beyond the materials permitted in the examination instructions. A student found in breach forfeits the right to be examined again for one calendar year.",
+    "retakes": "A failed checkpoint may be retaken after seven days; a failed capstone after thirty days. There is no limit to the number of retakes.",
+    "withdrawal": "The student may withdraw at any time. Progress is preserved indefinitely. No refund is offered for the subscription, which is month-to-month.",
+    "accommodations": "The capstone may be taken in untimed form for any student who requests it. The oral component may be waived for students who are deaf or non-speaking."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "4.11",
+  "stage": 4,
+  "title": "Reading: Cicero, Pro Archia §§1–5",
+  "subtitle": "Periodic prose at its height. First exposure to Ciceronian style.",
+  "estimated_minutes": 60,
+  "objectives": ["Read extended Ciceronian prose.", "Understand periodic sentence structure.", "Recognize rhetorical devices (anaphora, tricolon, etc.).", "Build stamina for long, complex sentences."],
+  "sections": [
+    {"kind": "prose", "heading": "Cicero defending the poet Archias", "body": "Sī quid est in mē ingenī, iūdicēs, quod sentiō quam sit exiguum, aut sī qua exercitātiō dīcendī, in quā mē nōn īnfitior mediocriter esse versātum, aut sī hūiusce reī ratiō aliqua ab optimārum artium studiīs ac disciplīnā prōfecta, ā quā ego nūllum cōnfiteor aetātis meae tempus abhorruisse, eārum rērum omnium vel in prīmīs hic A. Licinius frūctum ā mē repetere prope suō iūre dēbet.\n\n(Gloss: sī quid — if there is anything; ingenium — talent; iūdex, iūdicis — judge, juror; sentiō — I perceive; quam — how; exiguus — small; exercitātiō, -ōnis — practice; dīcō, dīcere — to speak; nōn īnfitior — I do not deny; mediocriter — moderately; versor, -ārī — to be engaged in; hūiusce — of this; ratiō, -ōnis — method, theory; aliqua — some; optimus — best; ars, artis — art, skill; studium, -iī — study; disciplīna, -ae — training; prōfectus, -a, -um — derived; nūllum...tempus — no time; aetās, -ātis — age, life; abhorreō, -ēre — to shrink from; eārum rērum omnium — of all these things; vel in prīmīs — especially; frūctus, -ūs — fruit, benefit; repetō, -ere — to seek; prope — nearly; suō iūre — by his own right; dēbeō, -ēre — to owe, ought.)"},
+    {"kind": "prose", "heading": "Translation guide", "body": "This is one sentence. Cicero delays the main verb ('dēbet') until the very end. The structure:\n\nIf [there is anything of talent in me], or if [there is any practice of speaking], or if [any theory of this thing has come from the study of the best arts] — of all these things, this A. Licinius ought by his own right to seek the fruit from me especially.\n\nRead it aloud three times. Do not parse every clause. Let the rhythm build to the final verb."},
+    {"kind": "self_check", "heading": "Comprehension", "items": [
+      {"prompt": "What three things does Cicero say he might possess?", "answer": "Talent, practice in speaking, and theory derived from the liberal arts."},
+      {"prompt": "Who should claim the benefit of these things?", "answer": "Archias (A. Licinius)."},
+      {"prompt": "What is the main verb?", "answer": "dēbet (ought)."}
+    ]},
+    {"kind": "reading_preview", "heading": "Read aloud", "words": [
+      {"latin": "Sī quid est in mē ingenī...", "transliteration": null, "gloss": "If there is any talent in me...", "audio": "/paideia/audio/latin/sentences/4.11-1.mp3"}
+    ]},
+    {"kind": "next_lesson", "heading": "Up next", "body": "Lesson 4.12: reading Vergil, Aeneid I.1–11. Arma virumque canō. First exposure to dactylic hexameter."}
+  ],
+  "lesson_completion": {"criteria": "Mark complete when you can read and understand the Cicero passage.", "credit_minutes": 60}
+}

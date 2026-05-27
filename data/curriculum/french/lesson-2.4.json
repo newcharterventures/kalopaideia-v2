@@ -1,0 +1,69 @@
+{
+  "id": "2.4",
+  "stage": 2,
+  "title": "Adjectives: Agreement",
+  "subtitle": "Masculine and feminine, singular and plural. bon/bonne/bons/bonnes. Position: most adjectives follow the noun; a handful precede.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Form the feminine of regular adjectives by adding -e.",
+    "Form the plural of adjectives by adding -s.",
+    "Recognize irregular feminine and plural forms.",
+    "Apply correct adjective position: most follow the noun, a few precede."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "Adjective agreement",
+      "body": "French adjectives agree with the noun they modify in gender (masculine/feminine) and number (singular/plural).\n\nMasculine singular → Feminine singular: add -e\n  petit → petite (small)\n  grand → grande (big)\n\nIf the masculine form already ends in -e, no change:\n  jeune → jeune (young)\n\nSingular → Plural: add -s\n  petit → petits\n  petite → petites\n\nComplete paradigm for 'bon' (good):\n  Masculine singular: bon\n  Feminine singular: bonne\n  Masculine plural: bons\n  Feminine plural: bonnes"
+    },
+    {
+      "kind": "prose",
+      "heading": "Irregular feminines",
+      "body": "Some adjectives have irregular feminine forms.\n\n  -eux → -euse: heureux → heureuse (happy)\n  -er → -ère: cher → chère (dear, expensive)\n  -f → -ve: actif → active (active)\n  -on, -en → double consonant + e: bon → bonne, ancien → ancienne\n\nThese patterns are common. Learn them by seeing them in context."
+    },
+    {
+      "kind": "prose",
+      "heading": "Adjective position",
+      "body": "Most French adjectives follow the noun:\n\n  un livre intéressant (an interesting book)\n  une maison blanche (a white house)\n\nA small set of common adjectives precede the noun. The mnemonic is BAGS: Beauty, Age, Goodness, Size.\n\n  Beauty: beau, joli (beautiful, pretty)\n  Age: jeune, vieux, nouveau (young, old, new)\n  Goodness: bon, mauvais (good, bad)\n  Size: petit, grand, gros (small, big, large)\n\nExamples:\n  un petit garçon (a small boy)\n  une belle maison (a beautiful house)\n  un vieux livre (an old book)\n\nSome adjectives change meaning depending on position:\n  un homme grand (a tall man) vs. un grand homme (a great man)\n  une voiture chère (an expensive car) vs. une chère amie (a dear friend)"
+    },
+    {
+      "kind": "prose",
+      "heading": "Practice from Racine",
+      "body": "From Phèdre, Act I:\n\n  Noble et brillant auteur d'une triste famille\n  (Noble and brilliant author of a sad family)\n\nHere 'noble', 'brillant', and 'triste' all modify nouns. 'Triste' precedes 'famille' for emphasis, though it could follow."
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "instructions": "Form the correct adjective form.",
+      "items": [
+        { "prompt": "un livre (intéressant, m.sg.) → une maison (?)", "answer": "intéressante" },
+        { "prompt": "un garçon (petit, m.sg.) → une fille (?)", "answer": "petite" },
+        { "prompt": "un homme (bon, m.sg.) → une femme (?)", "answer": "bonne" },
+        { "prompt": "Does 'petit' come before or after the noun?", "answer": "Before. It is a BAGS adjective (Size)." },
+        { "prompt": "Does 'intéressant' come before or after the noun?", "answer": "After. Most adjectives follow the noun." },
+        { "prompt": "What is the feminine of 'heureux'?", "answer": "heureuse" },
+        { "prompt": "What is the plural of 'petite'?", "answer": "petites" }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Phrases to practice",
+      "instructions": "Read each aloud. Notice agreement and position.",
+      "words": [
+        { "french": "un petit garçon", "transliteration": null, "gloss": "a small boy", "audio": "/paideia/audio/french/words/un-petit-garcon.mp3" },
+        { "french": "une belle maison", "transliteration": null, "gloss": "a beautiful house", "audio": "/paideia/audio/french/words/une-belle-maison.mp3" },
+        { "french": "un livre intéressant", "transliteration": null, "gloss": "an interesting book", "audio": "/paideia/audio/french/words/un-livre-interessant.mp3" },
+        { "french": "une femme heureuse", "transliteration": null, "gloss": "a happy woman", "audio": "/paideia/audio/french/words/une-femme-heureuse.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 2.5 introduces regular -er verbs, the most common verb pattern in French: parler, aimer, donner."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can make adjectives agree in gender and number and place them correctly relative to the noun.",
+    "credit_minutes": 50
+  }
+}

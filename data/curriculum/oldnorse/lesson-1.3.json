@@ -1,0 +1,84 @@
+{
+  "id": "1.3",
+  "stage": 1,
+  "title": "Vowels — Long and Short",
+  "subtitle": "Nine vowels. Length is phonemic.",
+  "estimated_minutes": 50,
+  "objectives": [
+    "Distinguish long vowels from short vowels by sight and sound.",
+    "Pronounce y and ø correctly (front rounded vowels).",
+    "Understand that vowel length distinguishes meaning: mál ≠ mal."
+  ],
+  "sections": [
+    {
+      "kind": "prose",
+      "heading": "The nine vowels",
+      "body": "Old Norse has nine vowel qualities: a, e, i, o, u, y, æ, ø, ǫ. Each (except æ, which is always long) can be short or long. Long vowels are marked with an acute accent in modern editions: á, é, í, ó, ú, ý. Ø can be written ö in some editions; we use ø to avoid confusion with ǫ.\n\nLength is phonemic. Mál (speech) and mal (bag) are different words. Fór (went) and for (before) are different words. You must train your ear to hear the difference and your eye to see the accent mark."
+    },
+    {
+      "kind": "letter_grid",
+      "heading": "Short and long vowels",
+      "letters": [
+        { "upper": "A", "lower": "a", "name": "a (short)", "ipa": "[a]", "audio": "/paideia/audio/oldnorse/vowels/a-short.mp3", "note": "As in father (short)." },
+        { "upper": "Á", "lower": "á", "name": "á (long)", "ipa": "[aː]", "audio": "/paideia/audio/oldnorse/vowels/a-long.mp3", "note": "As in father (held longer)." },
+        { "upper": "E", "lower": "e", "name": "e (short)", "ipa": "[e]", "audio": "/paideia/audio/oldnorse/vowels/e-short.mp3", "note": "As in met." },
+        { "upper": "É", "lower": "é", "name": "é (long)", "ipa": "[eː]", "audio": "/paideia/audio/oldnorse/vowels/e-long.mp3", "note": "As in met (held longer)." },
+        { "upper": "I", "lower": "i", "name": "i (short)", "ipa": "[i]", "audio": "/paideia/audio/oldnorse/vowels/i-short.mp3", "note": "As in machine (short)." },
+        { "upper": "Í", "lower": "í", "name": "í (long)", "ipa": "[iː]", "audio": "/paideia/audio/oldnorse/vowels/i-long.mp3", "note": "As in machine (held longer)." },
+        { "upper": "O", "lower": "o", "name": "o (short)", "ipa": "[o]", "audio": "/paideia/audio/oldnorse/vowels/o-short.mp3", "note": "As in note (short)." },
+        { "upper": "Ó", "lower": "ó", "name": "ó (long)", "ipa": "[oː]", "audio": "/paideia/audio/oldnorse/vowels/o-long.mp3", "note": "As in note (held longer)." },
+        { "upper": "U", "lower": "u", "name": "u (short)", "ipa": "[u]", "audio": "/paideia/audio/oldnorse/vowels/u-short.mp3", "note": "As in put." },
+        { "upper": "Ú", "lower": "ú", "name": "ú (long)", "ipa": "[uː]", "audio": "/paideia/audio/oldnorse/vowels/u-long.mp3", "note": "As in put (held longer)." },
+        { "upper": "Y", "lower": "y", "name": "y (short)", "ipa": "[y]", "audio": "/paideia/audio/oldnorse/vowels/y-short.mp3", "note": "High front rounded. As in French tu or German ü." },
+        { "upper": "Ý", "lower": "ý", "name": "ý (long)", "ipa": "[yː]", "audio": "/paideia/audio/oldnorse/vowels/y-long.mp3", "note": "Long y." },
+        { "upper": "Ø", "lower": "ø", "name": "ø", "ipa": "[ø]", "audio": "/paideia/audio/oldnorse/vowels/oe.mp3", "note": "Mid front rounded. As in French peu or German ö." }
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Y and ø — front rounded vowels",
+      "body": "English has no front rounded vowels. French and German do. Y = high front rounded (like French tu, German über). Ø = mid front rounded (like French peu, German schön).\n\nTo pronounce y: say English ee as in see, then round your lips without moving your tongue. To pronounce ø: say English ay as in say, then round your lips.\n\nCommon words with y: mýrr (mire), dýr (animal), fyr (fire). Common words with ø: øx (axe), søkkva (to sink), øl (ale — but also spelled ǫl)."
+    },
+    {
+      "kind": "audio_drill",
+      "heading": "Listening drill — long vs short",
+      "instructions": "Listen to pairs of words that differ only in vowel length. Repeat each pair.",
+      "audio": "/paideia/audio/oldnorse/drills/lesson-1.3-listening.mp3"
+    },
+    {
+      "kind": "self_check",
+      "heading": "Self-check",
+      "items": [
+        { "prompt": "What is the difference between mál and mal?", "answer": "Vowel length. Mál (long á) = speech. Mal (short a) = bag." },
+        { "prompt": "How do you pronounce y?", "answer": "Say ee (as in see), then round your lips. High front rounded vowel, as in French tu." },
+        { "prompt": "How do you pronounce ø?", "answer": "Say ay (as in say), then round your lips. Mid front rounded vowel, as in French peu." },
+        { "prompt": "Is vowel length phonemic in Old Norse?", "answer": "Yes. It distinguishes word meanings." },
+        { "prompt": "Which vowel is always long?", "answer": "Æ (ash)." },
+        { "prompt": "Read aloud: fór", "answer": "for (long o) — past tense of fara (to go)" },
+        { "prompt": "Read aloud: for", "answer": "for (short o) — preposition meaning 'before'" },
+        { "prompt": "Read aloud: dýr", "answer": "deer (with front rounded y, like French tu)" }
+      ]
+    },
+    {
+      "kind": "reading_preview",
+      "heading": "Minimal pairs to practice",
+      "words": [
+        { "oldnorse": "mál", "transliteration": "mál", "gloss": "speech", "audio": "/paideia/audio/oldnorse/words/mal-long.mp3" },
+        { "oldnorse": "mal", "transliteration": "mal", "gloss": "bag", "audio": "/paideia/audio/oldnorse/words/mal-short.mp3" },
+        { "oldnorse": "fór", "transliteration": "fór", "gloss": "went", "audio": "/paideia/audio/oldnorse/words/for-long.mp3" },
+        { "oldnorse": "for", "transliteration": "for", "gloss": "before", "audio": "/paideia/audio/oldnorse/words/for-short.mp3" },
+        { "oldnorse": "ís", "transliteration": "ís", "gloss": "ice", "audio": "/paideia/audio/oldnorse/words/is-long.mp3" },
+        { "oldnorse": "ek", "transliteration": "ek", "gloss": "I", "audio": "/paideia/audio/oldnorse/words/ek.mp3" }
+      ]
+    },
+    {
+      "kind": "next_lesson",
+      "heading": "Up next",
+      "body": "Lesson 1.4 covers diphthongs — au, ei, ey, and the rare ǫu."
+    }
+  ],
+  "lesson_completion": {
+    "criteria": "Mark complete when you can distinguish long from short vowels in ten random words by ear.",
+    "credit_minutes": 50
+  }
+}
