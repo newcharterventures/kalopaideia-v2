@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Commissioner:wght@300;400;500;600&family=GFS+Didot&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="/paideia/curriculum-atelier.css?v=13" />
+<link rel="stylesheet" href="/paideia/curriculum-atelier.css?v=14" />
 <style>
   :root {
     --ink-4: #a3937a;
@@ -39,10 +39,12 @@
   .chrome .pron-pill {
     appearance: none; background: transparent;
     border: 1px solid var(--rule); color: var(--ink-2);
-    padding: 6px 12px;
+    /* Jae 2026-05-27: tightened so desktop nav doesn't wrap. */
+    padding: 5px 10px;
     font-family: var(--sans); font-size: 10px;
-    font-weight: 500; letter-spacing: .22em; text-transform: uppercase;
+    font-weight: 500; letter-spacing: .14em; text-transform: uppercase;
     cursor: pointer;
+    white-space: nowrap;
   }
   .chrome .pron-pill:hover { border-color: var(--ink); color: var(--ink); }
   .pron-popover {
@@ -153,7 +155,9 @@
   /* --- In-page stepper (horizontal anchors for the 8 sub-steps) --- */
   .stepper {
     position: sticky; top: 80px; z-index: 30;
-    background: rgba(253, 250, 243, .94); backdrop-filter: blur(8px);
+    /* Jae 2026-05-27: fully opaque so content scrolling beneath the chrome
+       can't bleed through the gap between chrome and stepper. */
+    background: var(--paper);
     margin: 0 0 32px; padding: 14px 0;
     display: flex; gap: 4px; flex-wrap: wrap; align-items: center;
     border-bottom: 1px solid var(--rule-soft);
@@ -536,6 +540,9 @@
     .check-prompt.letter .gr { font-size: 96px; }
     .completion-bar { grid-template-columns: 1fr; padding: 12px 24px; }
     .completion-bar .center { display: none; }
+    /* Jae 2026-05-27: stepper sits flush under the mobile chrome (~56px tall)
+       so no transparent gap can show content scrolling past beneath. */
+    .stepper { top: 56px; }
   }
 </style>
 </head>
@@ -1023,78 +1030,80 @@ function stepListen() {
     </section>
   `;
 }
+// Rewritten 2026-05-27 (Jae) — the previous wireListen rebuilt the
+// whole #step-listen section on every audio start/stop/end, which made
+// 'Play all three' destroy its own click handlers mid-chain. New design:
+// no DOM rebuild during playback. Pass-card classes are toggled in place;
+// playText fires its onEnd callback to advance the chain.
 function wireListen(root) {
-  const passes = root.querySelectorAll("#step-listen .drill-pass");
+  root = root || document;
+  const sec = root.querySelector("#step-listen");
+  if (!sec) return;
+  const passes = sec.querySelectorAll(".drill-pass");
+  const allBtn = sec.querySelector("#drill-all");
+
   const lg = (state.lesson?.sections || []).find((s) => s.kind === "letter_grid");
   const letters = lg?.letters || [];
+  if (!letters.length) {
+    console.warn("[listen-drill] no letter_grid letters — nothing to play. state.lesson:", state.lesson);
+  }
   const passTexts = [
     letters.map((l) => `${l.upper} ${l.lower}`).join(", "),
     letters.map((l) => l.name).join(", "),
     letters.map((l) => `α${l.lower}α`).join(", "),
   ];
 
-  const playOne = (i) => {
+  // Apply class state to the three pass-cards based on state.drillPlaying / state.drillPlayed
+  function paintPasses() {
+    passes.forEach((b, idx) => {
+      b.classList.toggle("active", state.drillPlaying === idx);
+      b.classList.toggle("played", state.drillPlayed.has(idx));
+    });
+  }
+
+  function stopDrill() {
     stopAudio();
+    state.drillPlaying = -1;
+    paintPasses();
+  }
+
+  function playPass(i, onDone) {
+    if (i < 0 || i >= passTexts.length || !passTexts[i]) { if (onDone) onDone(); return; }
     state.drillPlaying = i;
     state.drillPlayed.add(i);
-    // Use the dedicated all-pill as the visual host for state.
-    const host = document.getElementById("drill-all");
-    if (!host) return;
-    playText(host, passTexts[i], () => {
+    paintPasses();
+    if (!allBtn) return;
+    playText(allBtn, passTexts[i], () => {
       state.drillPlaying = -1;
-      const sec = document.getElementById("step-listen");
-      if (sec) sec.outerHTML = stepListen();
-      wireListen(document);
+      paintPasses();
+      if (onDone) onDone();
     });
-    // Re-paint to show active pass
-    const sec = document.getElementById("step-listen");
-    if (sec) sec.outerHTML = stepListen();
-    wireListen(document);
-  };
+  }
 
+  // Single pass: toggle on/off
   passes.forEach((b) => {
     b.addEventListener("click", () => {
       const i = +b.dataset.pass;
-      if (state.drillPlaying === i) {
-        stopAudio();
-        state.drillPlaying = -1;
-        const sec = document.getElementById("step-listen");
-        if (sec) sec.outerHTML = stepListen();
-        wireListen(document);
-        return;
-      }
-      playOne(i);
+      if (state.drillPlaying === i) { stopDrill(); return; }
+      stopAudio();
+      playPass(i);
     });
   });
 
-  const all = root.querySelector("#step-listen #drill-all") || document.getElementById("drill-all");
-  if (all) all.addEventListener("click", () => {
-    if (state.drillPlaying >= 0) {
-      stopAudio();
-      state.drillPlaying = -1;
-      const sec = document.getElementById("step-listen");
-      if (sec) sec.outerHTML = stepListen();
-      wireListen(document);
-      return;
-    }
-    const chain = (n) => {
-      if (n >= passTexts.length) {
-        state.drillPlaying = -1;
-        const sec = document.getElementById("step-listen");
-        if (sec) sec.outerHTML = stepListen();
-        wireListen(document);
-        return;
+  // Play all three: chain three passes
+  if (allBtn) {
+    allBtn.addEventListener("click", () => {
+      if (state.drillPlaying >= 0) { stopDrill(); return; }
+      function chain(n) {
+        if (n >= passTexts.length) { stopDrill(); return; }
+        playPass(n, () => chain(n + 1));
       }
-      state.drillPlaying = n;
-      state.drillPlayed.add(n);
-      const sec = document.getElementById("step-listen");
-      if (sec) sec.outerHTML = stepListen();
-      wireListen(document);
-      const host = document.getElementById("drill-all");
-      if (host) playText(host, passTexts[n], () => chain(n + 1));
-    };
-    chain(0);
-  });
+      chain(0);
+    });
+  }
+
+  // Initial paint reflects current state (e.g. if we re-enter the step)
+  paintPasses();
 }
 
 function stepWrite() {
@@ -1509,6 +1518,18 @@ async function boot() {
   MANIFEST = manifest;
   state.lesson = lesson;
   resolveStageContext(manifest);
+
+  // Diagnostic for the 'empty letter strip' bug (Jae 2026-05-27): if the
+  // lesson fetch failed or the letter_grid section is missing, log it so
+  // the next debugging round has a console trail.
+  if (!lesson) {
+    console.warn('[lesson] fetch returned null/undefined for', LANG, LESSON_ID, '— page will render empty');
+  } else {
+    const lg = (lesson.sections || []).find(s => s.kind === 'letter_grid');
+    if (lg && (!lg.letters || !lg.letters.length)) {
+      console.warn('[lesson] letter_grid section has no letters for', LANG, LESSON_ID, lg);
+    }
+  }
   // Fallback: if the manifest didn't return anything, scaffold the rail
   // with at least the current lesson so the page still renders.
   if (!STAGE_LESSONS.length) {

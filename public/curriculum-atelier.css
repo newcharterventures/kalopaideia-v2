@@ -72,7 +72,18 @@ img { max-width: 100%; height: auto; display: block; }
   font-family: var(--body); font-style: italic;
   font-size: 13px; color: var(--ink-3);
 }
-.chrome nav { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
+.chrome nav {
+  display: flex; align-items: center;
+  /* Jae 2026-05-27: tighter gap + nowrap so desktop nav stays on one row
+     even with the PRONUNCIATION pill. The hamburger drawer takes over below 720px. */
+  gap: 18px;
+  flex-wrap: nowrap;
+}
+.chrome nav a,
+.chrome nav .cur-label,
+.chrome .tag {
+  white-space: nowrap; /* prevent multi-line wrapping of any nav item or the Greek tag */
+}
 .chrome .cur-label {
   font-family: var(--sans); font-size: 11px;
   letter-spacing: .32em; text-transform: uppercase;

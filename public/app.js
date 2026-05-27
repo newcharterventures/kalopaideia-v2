@@ -7,22 +7,36 @@ const BASE = "/paideia";
 // page now shows nine cards on a regular day.
 const LANG_ORDER = ["greek", "latin", "french", "german", "italian", "oldenglish", "middleenglish", "welsh", "oldnorse"];
 const LANG_META = {
-  latin:         { name: "Latin",          tagline: "Classical Roman letters" },
-  greek:         { name: "Greek",          tagline: "Ancient Hellenic letters" },
-  italian:       { name: "Italian",        tagline: "Trecento &amp; Renaissance letters" },
+  // Taglines: Title Case to match the prototype's editorial register (Jae 2026-05-21).
+  latin:         { name: "Latin",          tagline: "Classical Roman Letters" },
+  greek:         { name: "Greek",          tagline: "Ancient Hellenic Letters" },
+  italian:       { name: "Italian",        tagline: "Trecento &amp; Renaissance Letters" },
   french:        { name: "French",         tagline: "Literary French" },
   german:        { name: "German",         tagline: "Letters &amp; Philosophy" },
-  oldenglish:    { name: "Olde English",   tagline: "Anglo-Saxon poetry" },
-  middleenglish: { name: "Middle English", tagline: "Chaucer &amp; the Pearl-poet" },
-  // Phase 1 additions — metadata only, not yet in daily rotation:
-  gaulish:       { name: "Gaulish",        tagline: "Continental Celtic inscriptions", category: "celtic" },
-  welsh:         { name: "Welsh",          tagline: "Middle Welsh &amp; the modern bardd", category: "celtic" },
-  oldnorse:      { name: "Old Norse",      tagline: "The saga-language of Iceland",       category: "germanic" },
+  oldenglish:    { name: "Olde English",   tagline: "Anglo-Saxon Poetry" },
+  middleenglish: { name: "Middle English", tagline: "Chaucer &amp; the Pearl-Poet" },
+  gaulish:       { name: "Gaulish",        tagline: "Continental Celtic Inscriptions", category: "celtic" },
+  welsh:         { name: "Welsh",          tagline: "Middle Welsh &amp; the Modern Bardd", category: "celtic" },
+  oldnorse:      { name: "Old Norse",      tagline: "The Saga-Language of Iceland",       category: "germanic" },
 };
 
 function esc(s) {
   if (s === null || s === undefined) return "";
   return String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+// Procedural 36-bar waveform matching the prototype's listen card.
+// Same algorithm as paideia-prototype-v2/index.html ~1293–1302.
+// Used by both the right-rail "Hear the word" card AND the In Literature
+// "Hear the passage" card beneath the citation. Per Jae 2026-05-21:
+// the citation should use the same elegant card pattern as the headword.
+function buildWaveformBars() {
+  let out = '';
+  for (let i = 0; i < 36; i++) {
+    const h = 4 + 16 * Math.abs(Math.sin(i * 0.7) + Math.cos(i * 0.31));
+    out += `<div class="bar" style="height:${h.toFixed(1)}px"${i < 13 ? ' data-active="1"' : ''}></div>`;
+  }
+  return out;
 }
 
 /**
@@ -87,19 +101,32 @@ function issueLines(iso) {
 }
 
 function renderWord(langKey, entry, date) {
-  const hasAudio = true; // audio is generated per language
-  const audioPath = `${BASE}/audio/${date}/${langKey}.mp3`;
+  // Per Jae 2026-05-20 v2 design migration: emit the new prototype
+  // structure (left panel = department row → hero → quick gloss →
+  // numbered sections i/ii/iii/iv). Where the prototype expects
+  // richer data than our current word generator produces (cognate
+  // grid, multiple definition shades, citation view-toggle, editorial
+  // commonplace, daily-practice prompt), we render the live-data
+  // equivalent and DROP the richer-only chrome until the generator
+  // is upgraded in Phase 1.5.
+  //
+  // Preserves all existing DOM hooks: .word-card, .headword,
+  // .audio-btn[data-audio], .pronunciation — don't rename these;
+  // app.js wires up audio playback against them later in the file.
 
-  const transliteration = entry.transliteration
-    ? `<div class="transliteration">${esc(entry.transliteration)}</div>` : "";
+  const audioPath = `${BASE}/audio/${date}/${langKey}.mp3`;
+  const meta = LANG_META[langKey] || { name: langKey, tagline: "" };
+  const langDisplay = entry.display || meta.name || langKey;
+  const posLine = esc(entry.part_of_speech || "");
+  const transliteration = entry.transliteration ? esc(entry.transliteration) : "";
 
   // "In Use" section: original sentence + Listen button after it, then
   // translation on its OWN line below (no audio for the English).
-  // Per Jae 2026-05-09: the audio belongs only to the foreign-language
-  // sentence; the translation is a silent subtitle. Original/translation
-  // separator may be em-dash (—), en-dash (–), or ASCII hyphen with
+  // Separator may be em-dash (—), en-dash (–), or ASCII hyphen with
   // spaces ( - ); accept all three so prompt variants render correctly.
-  let usage = "";
+  let usageOriginal = "";
+  let usageTranslation = "";
+  let sentenceAudio = "";
   if (entry.usage_example) {
     const ue = entry.usage_example;
     let original = ue, translation = "";
@@ -109,61 +136,430 @@ function renderWord(langKey, entry, date) {
       original = ue.slice(0, idx).trim();
       translation = ue.slice(idx + splitMatch[0].length).trim();
     }
-    const sentenceAudio = `${BASE}/api/word-audio/${langKey}/${encodeURIComponent(original)}.mp3`;
-    usage = `<div class="detail-section in-use">
-         <div class="detail-label">In Use</div>
-         <p class="detail-body italic in-use-original">${esc(original)} <button class="audio-btn inline-audio-btn" data-audio="${sentenceAudio}" aria-label="Listen to sentence">▶</button></p>
-         ${translation ? `<p class="detail-body in-use-translation">${esc(translation)}</p>` : ""}
-       </div>`;
+    usageOriginal = original;
+    usageTranslation = translation;
+    sentenceAudio = `${BASE}/api/word-audio/${langKey}/${encodeURIComponent(original)}.mp3`;
   }
 
-  // Per Jae 2026-05-12: ship the V3 "Illuminated" header treatment
-  // (chosen from /paideia/word-header-mockup.html). The four identity
-  // lines — POS · headword+audio · transliteration · meaning — are
-  // wrapped in <section class="word-header"> framed by a double-bronze
-  // rule above and below, with a three-diamond ornament between
-  // transliteration and meaning. Pronunciation bar + everything below
-  // stays unchanged.
-  const posLine = esc(entry.part_of_speech || "");
+  // Numbered section helper — mirrors the prototype's .section-mark
+  // (numeral + line + label).
+  const sectionMark = (numeral, label) => `
+    <div class="section-mark">
+      <span class="numeral">${numeral}</span>
+      <div class="line"></div>
+      <span class="lbl">${esc(label)}</span>
+    </div>`;
+
+  // Definitions section. v2 schema (per Jae 2026-05-20) provides
+  // entry.definition_shades as an array of {head, body} objects.
+  // Falls back to single-shade rendering from `meaning` + `forms`
+  // for archive days generated before the schema upgrade.
+  let definitionsBlock = "";
+  if (Array.isArray(entry.definition_shades) && entry.definition_shades.length) {
+    const romanize = ['I.', 'II.', 'III.', 'IV.', 'V.', 'VI.'];
+    const shadeHtml = entry.definition_shades.map((s, i) => `
+      <div class="shade">
+        <div class="n">${romanize[i] || ((i + 1) + '.')}</div>
+        <div>
+          <div class="head">${esc(s.head || '')}</div>
+          ${s.body ? `<p class="body">${esc(s.body)}</p>` : ""}
+        </div>
+      </div>`).join('');
+    definitionsBlock = `
+      ${sectionMark('i.', 'Definitions')}
+      <div class="shades">${shadeHtml}</div>`;
+  } else if (entry.meaning) {
+    definitionsBlock = `
+      ${sectionMark('i.', 'Definitions')}
+      <div class="shades">
+        <div class="shade">
+          <div class="n">I.</div>
+          <div>
+            <div class="head">${esc(entry.meaning)}</div>
+            ${entry.forms ? `<p class="body">${esc(entry.forms)}</p>` : ""}
+          </div>
+        </div>
+      </div>`;
+  }
+
+  // Etymology section. v2 schema provides:
+  //   etymology_root  — short root + gloss line above the cognate grid
+  //   cognates[]      — array of {language, word, gloss}
+  //   etymology_caption — short editorial line below the grid
+  // Falls back to plain etymology text when absent.
+  let etymologyBlock = "";
+  if (Array.isArray(entry.cognates) && entry.cognates.length) {
+    const langName = (LANG_META[langKey] || {}).name || langKey;
+    const cognateRows = entry.cognates.map((c, i) => {
+      const isActive = (c.language || '').toLowerCase() === langName.toLowerCase();
+      return `
+        <div class="cognate-row${isActive ? ' active' : ''}">
+          <div class="lang">${esc(c.language || '')}</div>
+          <div class="word">${esc(c.word || '')}</div>
+          <div class="gloss">${esc(c.gloss || '')}</div>
+        </div>`;
+    }).join('');
+    etymologyBlock = `
+      ${sectionMark('ii.', 'Etymology')}
+      ${entry.etymology_root ? `<p class="ety-intro">From ${esc(entry.etymology_root)}.${entry.etymology ? ' ' + esc(entry.etymology) : ''}</p>` : entry.etymology ? `<p class="ety-intro">${esc(entry.etymology)}</p>` : ""}
+      <div class="cognate-label">The cognate strand · across the ten tongues</div>
+      <div class="cognate-grid">${cognateRows}</div>
+      ${entry.etymology_caption ? `<p class="ety-note">⤷ ${esc(entry.etymology_caption)}</p>` : ""}`;
+  } else if (entry.etymology) {
+    etymologyBlock = `
+      ${sectionMark('ii.', 'Etymology')}
+      <p class="ety-intro">${esc(entry.etymology)}</p>`;
+  }
+
+  // Literature section. v2 schema provides entry.citation = {source,
+  // original, english} plus entry.citation_note. The site renders these
+  // side-by-side with a Greek/English/Both toggle, or falls back to
+  // the older literary_context + usage_example shape.
+  let literatureBlock = "";
+  const citation = entry.citation || null;
+  if (citation && citation.original) {
+    // Toggle label is the LANGUAGE NAME (Greek / Latin / French / ...), not the
+    // word "Original". Matches the prototype which hard-codes "Greek" because
+    // the prototype only shows Greek; for our 9-language site we use the
+    // language's display name dynamically.
+    const sourceLangLabel = (LANG_META[langKey] || {}).name || "Original";
+    literatureBlock = `
+      ${sectionMark('iii.', 'In Literature')}
+      <div class="cit-header">
+        <div class="cit-source">${esc(citation.source || '')}</div>
+        <div class="segmented" data-seg>
+          <button data-view="greek">${esc(sourceLangLabel)}</button>
+          <button data-view="english">English</button>
+          <button data-view="both" class="active">Both</button>
+        </div>
+      </div>
+      <div class="cit-body both" data-cit-body>
+        <div class="cit-greek">${esc(citation.original)}</div>
+        ${citation.english ? `<div class="cit-english">${esc(citation.english)}</div>` : ""}
+      </div>
+      <!-- Hear the passage card — sits BELOW the citation in the original
+           language section. Same listen-card visual treatment as the
+           right-rail "Hear the word" card so the design language stays
+           coherent. Per Jae 2026-05-21. -->
+      <div class="cit-listen rail-section">
+        <div class="listen-card">
+          <div class="lbl">Hear the passage</div>
+          <p class="copy"><em>Read aloud in ${esc(sourceLangLabel)}.</em></p>
+          <div class="controls">
+            <button class="audio-btn play-btn cit-play" data-audio="${BASE}/api/word-audio/${langKey}/${encodeURIComponent(citation.original.replace(/\n/g, ' '))}.mp3" aria-label="Listen to the passage in ${esc(sourceLangLabel)}">
+              <svg viewBox="0 0 16 16" width="11" height="11"><path d="M4.5 2.6v10.8L13 8z" fill="currentColor"/></svg>
+            </button>
+            <div class="waveform" data-waveform>${buildWaveformBars()}</div>
+          </div>
+        </div>
+      </div>
+      ${entry.citation_note ? `<p class="cit-note">${esc(entry.citation_note)}</p>` : ""}`;
+  } else if (entry.literary_context || usageOriginal) {
+    literatureBlock = `
+      ${sectionMark('iii.', 'In Literature')}
+      ${entry.literary_context ? `<p class="cit-note" style="margin-top:0">${esc(entry.literary_context)}</p>` : ""}
+      ${usageOriginal ? `
+        <div class="cit-body both">
+          <div class="cit-greek">${esc(usageOriginal)} <button class="audio-btn inline-audio-btn play-btn" data-audio="${sentenceAudio}" aria-label="Listen to sentence"><svg viewBox="0 0 16 16" width="11" height="11"><path d="M4.5 2.6v10.8L13 8z" fill="currentColor"/></svg></button></div>
+          ${usageTranslation ? `<div class="cit-english">${esc(usageTranslation)}</div>` : ""}
+        </div>` : ""}
+    `;
+  }
+
+  // Commonplace / Editor's Note section. v2 schema provides
+  // entry.commonplace as an array of paragraphs (an editorial essay
+  // signed by The Editor). Falls back to did_you_know when absent.
+  let editorBlock = "";
+  const commonplaceParas = Array.isArray(entry.commonplace) && entry.commonplace.length
+    ? entry.commonplace
+    : (entry.did_you_know ? [entry.did_you_know] : []);
+  if (commonplaceParas.length) {
+    const first = commonplaceParas[0].trim();
+    const dropChar = first.charAt(0);
+    const firstRest = first.slice(1);
+    const restParas = commonplaceParas.slice(1).map(p => `<p>${esc(p)}</p>`).join('');
+    editorBlock = `
+      ${sectionMark('iv.', 'Commonplace')}
+      <div class="commonplace">
+        <div class="drop">${esc(dropChar)}</div>
+        <div class="body">
+          <p>${esc(firstRest)}</p>
+          ${restParas}
+          <div class="signed">
+            <svg viewBox="0 0 20 20" width="13" height="13" style="color:var(--ink-3-proto)"><path d="M16.5 2.5C13 4 7 6 4.5 11.5c-.6 1.3-1 3-1 6 2-3 4-4 6-4.5C13 12 16 9 17 6c.3-1 .2-2-.5-3.5z" fill="none" stroke="currentColor" stroke-width="1"/><path d="M9 11l-5 6" stroke="currentColor" stroke-width="1" stroke-linecap="round"/></svg>
+            — The Editor
+          </div>
+        </div>
+      </div>`;
+  }
+
   return `
     <div class="word-card" data-lang="${langKey}">
-      <section class="word-header">
-        ${posLine ? `<div class="pos-eyebrow">${posLine}</div>` : ""}
-        <div class="headword-row">
-          <h3 class="headword">${esc(entry.word)}</h3>
-          <button class="audio-btn" data-audio="${audioPath}" aria-label="Pronounce ${esc(entry.word)}">▶</button>
+      <!-- Department -->
+      <div class="department-row">
+        <div class="ornament-row">
+          <span class="line"></span>
+          <span class="diamond"></span>
+          <span class="line"></span>
         </div>
-        ${transliteration}
-        <div class="ornament"><span></span><span></span><span></span></div>
-        <div class="meaning">${esc(entry.meaning || "")}</div>
-      </section>
-      <div class="pronunciation"><b>Say:</b> ${esc(entry.pronunciation || "")} <b style="margin-left:12px">IPA:</b> ${esc(entry.ipa || "")}</div>
-      ${(typeof LetterPhonetics !== 'undefined') ? LetterPhonetics.renderHtml(entry.word, langKey, esc) : ''}
+        <div class="dept-line">${esc(langDisplay)}${posLine ? `<span class="sep">◆</span>${posLine}` : ""}</div>
+        <div class="dept-sub">${esc(meta.tagline || "")}</div>
+      </div>
 
-      ${entry.forms ? `<div class="detail-section"><div class="detail-label">Forms</div><p class="detail-body">${esc(entry.forms)}</p></div>` : ""}
-      ${entry.etymology ? `<div class="detail-section"><div class="detail-label">Etymology</div><p class="detail-body">${esc(entry.etymology)}</p></div>` : ""}
-      ${entry.literary_context ? `<div class="detail-section"><div class="detail-label">In Literature</div><p class="detail-body">${esc(entry.literary_context)}</p></div>` : ""}
-      ${usage}
-      ${entry.did_you_know ? `<div class="detail-section"><div class="detail-label">Did You Know</div><p class="detail-body">${esc(entry.did_you_know)}</p></div>` : ""}
+      <!-- Hero — matches prototype paideia-prototype-v2/index.html lines ~957–995.
+           Headword in headword-wrap; hero-meta row with transliteration ◆ play ◆ IPA;
+           register-line BELOW with register tags only (no "Say:" prefix — the
+           prototype omits it); annot-toggle prompt for the click-to-read-the-marks affordance. -->
+      <div class="hero">
+        <div class="headword-wrap">
+          <span class="headword">${esc(entry.word)}</span>
+        </div>
+        <div class="hero-meta">
+          ${transliteration ? `<div class="transliteration-h">${transliteration}</div>` : ""}
+          ${transliteration ? `<span class="diamond" style="opacity:.5"></span>` : ""}
+          <button class="audio-btn play-btn" data-audio="${audioPath}" aria-label="Pronounce ${esc(entry.word)}">
+            <svg viewBox="0 0 16 16" width="11" height="11"><path d="M4.5 2.6v10.8L13 8z" fill="currentColor"/></svg>
+          </button>
+          ${entry.ipa ? `<span class="diamond" style="opacity:.5"></span><div class="ipa">${esc(entry.ipa)}</div>` : ""}
+        </div>
+        ${Array.isArray(entry.register) && entry.register.length
+          ? `<div class="register-line">${entry.register.map(esc).join(' · ')}</div>`
+          : (entry.pronunciation ? `<div class="register-line">Say: ${esc(entry.pronunciation)}</div>` : "")}
+        <button class="annot-toggle" type="button">— click the word, or here, to read the marks</button>
+      </div>
+
+      <!-- Quick gloss — v2 schema uses entry.quick_gloss; falls back to entry.meaning -->
+      ${(entry.quick_gloss || entry.meaning) ? `
+        <div class="quick-gloss">
+          <div class="ornament-row">
+            <span class="line"></span>
+            <span class="diamond"></span>
+            <span class="line"></span>
+          </div>
+          <p><em>“${esc(entry.quick_gloss || entry.meaning)}”</em></p>
+        </div>` : ""}
+
+      <!-- Letter-by-letter phonetics breakdown DISABLED 2026-05-21 per Jae feedback:
+           prototype doesn't show this row, so hide it for visual parity.
+           Module is still loaded for potential re-enable as a Phase 1.5 feature. -->
+      ${/* (typeof LetterPhonetics !== 'undefined') ? LetterPhonetics.renderHtml(entry.word, langKey, esc) : */ ''}
+
+      ${definitionsBlock}
+      ${etymologyBlock}
+      ${literatureBlock}
+      ${editorBlock}
+
+      <!-- Hidden pronunciation block for backward compat with any external CSS/JS
+           that targets .pronunciation. Visually replaced by the .register-line
+           inside .hero above. -->
+      <div class="pronunciation" style="display:none">Say: ${esc(entry.pronunciation || "")} IPA: ${esc(entry.ipa || "")}</div>
     </div>
   `;
 }
 
-function renderCulture(vignette) {
-  if (!vignette) return `<div class="culture-card"><div class="culture-text"><em class="culture-body">Cultural vignette in preparation.</em></div></div>`;
-  const img = vignette.image
-    ? `<div class="culture-image-wrap">
-         <img class="culture-image" src="${esc(vignette.image.url)}" alt="${esc(vignette.title)}" loading="lazy" />
-         <span class="culture-credit">${esc(vignette.image.credit)}</span>
-       </div>`
-    : "";
-  return `
-    <div class="culture-card">
-      ${img}
-      <div class="culture-text">
-        <h3 class="culture-title">${esc(vignette.title)}</h3>
-        <p class="culture-body">${esc(vignette.body)}</p>
+// Per-language seed lists for the right-rail "Related" + "Daily Practice"
+// sections. Used when the daily-word entry doesn't yet carry related[] or
+// daily_practice fields (most of the archive). Once the v2 generator is
+// running with the richer schema, entry.related and entry.daily_practice
+// take precedence.
+const RELATED_SEED = {
+  greek:         [['ψυχή', 'psychḗ', 'cold breath-soul; what departs at death'],
+                  ['φρένες', 'phrénes', 'the diaphragm; the seat of thought'],
+                  ['λόγος', 'lógos', 'word, reason, account'],
+                  ['ἀρετή', 'aretḗ', 'excellence, virtue'],
+                  ['ποιητής', 'poiētḗs', 'maker, poet']],
+  latin:         [['anima', 'anima', 'breath, soul'],
+                  ['animus', 'animus', 'mind, spirit, courage'],
+                  ['ratio', 'ratio', 'reason, calculation'],
+                  ['virtus', 'virtus', 'manly excellence, courage'],
+                  ['otium', 'otium', 'cultured leisure']],
+  french:        [['âme', 'âme', 'soul'],
+                  ['esprit', 'esprit', 'mind, wit'],
+                  ['raison', 'raison', 'reason'],
+                  ['cœur', 'cœur', 'heart'],
+                  ['volonté', 'volonté', 'will']],
+  german:        [['Seele', 'Seele', 'soul'],
+                  ['Geist', 'Geist', 'spirit, mind, ghost'],
+                  ['Vernunft', 'Vernunft', 'reason'],
+                  ['Sehnsucht', 'Sehnsucht', 'longing without object'],
+                  ['Wille', 'Wille', 'will']],
+  italian:       [['anima', 'anima', 'soul'],
+                  ['cuore', 'cuore', 'heart'],
+                  ['mente', 'mente', 'mind'],
+                  ['ragione', 'ragione', 'reason'],
+                  ['sprezzatura', 'sprezzatura', 'studied carelessness']],
+  oldenglish:    [['mod', 'mod', 'heart-mind, courage'],
+                  ['sāwol', 'sāwol', 'soul'],
+                  ['wyrd', 'wyrd', 'fate, what is woven'],
+                  ['ferhð', 'ferhð', 'life, spirit'],
+                  ['hyge', 'hyge', 'thought, mind']],
+  middleenglish: [['herte', 'herte', 'heart'],
+                  ['soule', 'soule', 'soul'],
+                  ['wit', 'wit', 'mind, understanding'],
+                  ['corage', 'corage', 'heart, spirit'],
+                  ['gentilesse', 'gentilesse', 'nobility of soul']],
+  welsh:         [['enaid', 'enaid', 'soul'],
+                  ['calon', 'calon', 'heart'],
+                  ['ysbryd', 'ysbryd', 'spirit'],
+                  ['hiraeth', 'hiraeth', 'longing for what is lost'],
+                  ['awen', 'awen', 'poetic inspiration']],
+  oldnorse:      [['hugr', 'hugr', 'mind, mood, thought'],
+                  ['sjál', 'sjál', 'soul'],
+                  ['vilji', 'vilji', 'will'],
+                  ['móðr', 'móðr', 'courage, wrath'],
+                  ['hjarta', 'hjarta', 'heart']],
+};
+
+const PRACTICE_SEED = {
+  greek:         'Notice where today’s word lives in your body. Then write three lines describing the room around you, as though your breath were the witness.',
+  latin:         'Read today’s word aloud three times, slowly. Then write one sentence in English that names something it points to in your day.',
+  french:        'Take this word with you on a short walk. When you return, write one paragraph in your own voice that uses it once — not as a quotation, but as a thought.',
+  german:        'Sit with this word for one minute, eyes closed, before reading further. Then write one sentence about what it stirred.',
+  italian:       'Speak the word three times. Listen to how the vowels open. Then write one line of prose that earns the word’s music.',
+  oldenglish:    'Read today’s word aloud as it would have been read in a hall — slow, weighted, low. Write three lines describing what it summons in you.',
+  middleenglish: 'Read the word as Chaucer would have read it. Then write one couplet, anything, that holds it.',
+  welsh:         'Speak the word aloud, paying attention to the ll, ch, or dd. Then write one sentence about a place that holds its meaning.',
+  oldnorse:      'Sit with the word as you would with an old saga — unhurried. Write three short lines that name what the word carries.',
+};
+
+function renderCulture(vignette, entry, langKey, date) {
+  // v2 design: the right-rail. Three cards in vertical order:
+  //   Plate I — Cultural vignette (was already shipped)
+  //   Related words — in the headword's language
+  //   Hear the word — listen card with daily-word audio
+  //   Daily practice — meditative prompt
+  // Per Jae 2026-05-21 feedback: do NOT drop these sections. Use
+  // entry-provided data when present (richer v2 schema), fall back to
+  // per-language seed lists when the entry was generated under the
+  // older schema.
+
+  const meta = LANG_META[langKey] || { name: langKey, tagline: "" };
+  const langName = meta.name || langKey;
+  const audioPath = date && langKey ? `${BASE}/audio/${date}/${langKey}.mp3` : null;
+
+  // ----- Culture plate (unchanged) -----
+  let culturePlate;
+  if (!vignette) {
+    culturePlate = `
+      <figure class="culture-figure" style="margin:0">
+        <div class="culture-plate">
+          <div class="plate-num">Plate I · The Cultural Vignette</div>
+        </div>
+        <p class="culture-body"><em>Cultural vignette in preparation.</em></p>
+      </figure>`;
+  } else {
+    const img = vignette.image
+      ? `<img class="culture-img" src="${esc(vignette.image.url)}" alt="${esc(vignette.title || "")}" loading="lazy" />
+         <div class="culture-credit">${esc(vignette.image.credit)}</div>`
+      : "";
+    culturePlate = `
+      <figure class="culture-figure" style="margin:0">
+        <div class="culture-plate">
+          <div class="plate-num">Plate I · The Cultural Vignette</div>
+          ${img}
+        </div>
+        ${vignette.title ? `<h3 class="culture-title">${esc(vignette.title)}</h3>` : ""}
+        <p class="culture-body">${esc(vignette.body || "")}</p>
+      </figure>`;
+  }
+
+  // ----- Related words -----
+  // Pick the best per-entry data source so the section actually changes
+  // day to day (Jae 2026-05-27 — the static seed was firing for every
+  // word because no entry actually populates the v2 `related` field).
+  // Priority:
+  //   1. entry.related        — v2 schema (rare, kept for forward compat)
+  //   2. entry.cognates       — v2 enriched entries: {language, word, gloss}
+  //   3. entry.definition_shades — the senses ladder, recast as related ideas
+  //   4. RELATED_SEED[langKey] — last-resort static fallback
+  let related = [];
+  let relatedLabel = `Related · in ${esc(langName)}`;
+
+  if (Array.isArray(entry && entry.related) && entry.related.length) {
+    related = entry.related.map(r => [r.word || "", r.transliteration || r.tr || "", r.gloss || ""]);
+  } else if (Array.isArray(entry && entry.cognates) && entry.cognates.length) {
+    // Cognates are cross-language. Drop the headword's own row (some
+    // entries list themselves as the first cognate). Same-language
+    // siblings sort first; cross-language pairs follow.
+    const headWord = (entry.word || "").trim();
+    const headLang = (LANG_META[langKey] && LANG_META[langKey].name) || langKey;
+    const filtered = entry.cognates.filter(c => {
+      const w = (c.word || "").trim();
+      return w && w !== headWord;
+    });
+    const sameLang = filtered.filter(c => (c.language || "").toLowerCase() === headLang.toLowerCase());
+    const otherLang = filtered.filter(c => (c.language || "").toLowerCase() !== headLang.toLowerCase());
+    const picked = sameLang.concat(otherLang).slice(0, 5);
+    related = picked.map(c => [c.word || "", c.language || "", c.gloss || ""]);
+    relatedLabel = sameLang.length === picked.length
+      ? `Related · in ${esc(langName)}`
+      : `Cognates · across languages`;
+  } else if (Array.isArray(entry && entry.definition_shades) && entry.definition_shades.length) {
+    // No cognates? Re-use the senses ladder as a 'related senses' list.
+    // Strip leading 'I. ', 'II. ', etc., from each head so the chips read
+    // cleanly. The body becomes the gloss; the head becomes the word.
+    const headWord = (entry.word || "").trim();
+    related = entry.definition_shades.slice(0, 5).map(s => {
+      const head = String(s.head || "").replace(/^[IVX]+\.\s*/i, "").trim();
+      const body = String(s.body || "").replace(/\s+/g, " ").trim().slice(0, 120);
+      return [headWord, head, body];
+    });
+    relatedLabel = `Senses · the word in shades`;
+  } else {
+    related = RELATED_SEED[langKey] || [];
+  }
+
+  const relatedHtml = related.length ? `
+    <div class="rail-section">
+      <div class="rail-section-label">${relatedLabel}</div>
+      <div class="related">
+        ${related.map(([w, tr, gl]) => `
+          <div class="row">
+            <div>
+              <div class="word">${esc(w)}</div>
+              ${tr ? `<div class="tr">${esc(tr)}</div>` : ""}
+            </div>
+            <div class="gloss">${esc(gl)}</div>
+          </div>`).join("")}
       </div>
+    </div>` : "";
+
+  // ----- Listen card -----
+  // 36-bar waveform via the shared buildWaveformBars() helper. Same
+  // pattern used by the In Literature "Hear the passage" card.
+  const listenHtml = audioPath ? `
+    <div class="rail-section">
+      <div class="listen-card">
+        <div class="lbl">Hear the word</div>
+        <p class="copy"><em>The daily reading, in restored ${esc(langName)} pronunciation.</em></p>
+        <div class="controls">
+          <button class="audio-btn play-btn" data-audio="${audioPath}" aria-label="Play">
+            <svg viewBox="0 0 16 16" width="11" height="11"><path d="M4.5 2.6v10.8L13 8z" fill="currentColor"/></svg>
+          </button>
+          <div class="waveform" data-waveform>${buildWaveformBars()}</div>
+        </div>
+      </div>
+    </div>` : "";
+
+  // ----- Daily practice -----
+  const practice = (entry && entry.daily_practice)
+    ? String(entry.daily_practice).trim()
+    : (PRACTICE_SEED[langKey] || "");
+  const practiceHtml = practice ? `
+    <div class="rail-section">
+      <div class="practice-card">
+        <div class="tab">Daily Practice</div>
+        <p><em>${esc(practice)}</em></p>
+        <a href="#" class="open-journal-btn" data-open-journal data-lang="${esc(langKey)}">Open in journal →</a>
+      </div>
+    </div>` : "";
+
+  return `
+    <div class="right-rail">
+      ${culturePlate}
+      ${relatedHtml}
+      ${listenHtml}
+      ${practiceHtml}
     </div>
   `;
 }
@@ -174,14 +570,14 @@ function renderCulture(vignette) {
 function renderSection(langKey, entry, culture, date) {
   const meta = LANG_META[langKey] || { name: langKey, tagline: "" };
   return `
-    <section class="lang-section" id="${langKey}">
+    <section class="lang-section" id="${langKey}" data-lang-section="${langKey}">
       <div class="lang-header">
         <div class="lang-name">${meta.name}</div>
         <div class="lang-tagline">${meta.tagline}</div>
       </div>
       <div class="word-block">
         ${renderWord(langKey, entry, date)}
-        ${renderCulture(culture)}
+        ${renderCulture(culture, entry, langKey, date)}
       </div>
       ${renderAkousmaCard(langKey)}
     </section>
@@ -249,6 +645,136 @@ if (!window.__headwordFitWired) {
   }, { passive: true });
 }
 
+// Wire the Greek/English/Both view-toggle in the In Literature citation
+// section (one per language section). Each section has a [data-seg] div
+// with three <button data-view="greek|english|both">; clicking sets the
+// active class and adds matching class to the sibling [data-cit-body].
+// Lazy-load the journal modal (HTML + JS) on first "Open in journal" click.
+// The CSS is preloaded via <link> in index.html; the markup + behaviour
+// arrive only when needed.
+let __journalLoaded = false;
+let __journalLoading = null;
+async function ensureJournalLoaded() {
+  if (__journalLoaded) return;
+  if (__journalLoading) return __journalLoading;
+  __journalLoading = (async () => {
+    try {
+      const mount = document.getElementById('journal-modal-mount');
+      if (!mount) return;
+      // Inject the modal HTML
+      const r = await fetch(`${BASE}/journal-modal.html?v=1779328917`);
+      if (!r.ok) throw new Error('journal-modal.html fetch failed: ' + r.status);
+      mount.innerHTML = await r.text();
+      // Load the modal JS (an IIFE that wires up its own listeners)
+      await new Promise((res, rej) => {
+        const s = document.createElement('script');
+        s.src = `${BASE}/journal-modal.js?v=1779328917`;
+        s.onload = res;
+        s.onerror = () => rej(new Error('journal-modal.js load failed'));
+        document.body.appendChild(s);
+      });
+      __journalLoaded = true;
+    } catch (e) {
+      console.error('[journal] lazy-load failed', e);
+    }
+  })();
+  return __journalLoading;
+}
+
+// Build the journal-modal ENTRY payload from the cached today.json data for a
+// given language. Splits usage_example on em/en/hyphen dashes (same logic as
+// the In Literature renderer). Returns null if data isn't loaded yet.
+function buildJournalEntry(langKey) {
+  const issue = window.__paideiaToday;
+  if (!issue || !issue.languages || !issue.languages[langKey]) return null;
+  const entry = issue.languages[langKey];
+  const meta = LANG_META[langKey] || {};
+  // Split usage_example into original / english if present
+  let usageOriginal = '', usageEnglish = '';
+  if (entry.usage_example) {
+    const ue = entry.usage_example;
+    const splitMatch = ue.match(/\s+[—–]\s+|\s+-\s+/);
+    if (splitMatch) {
+      const idx = ue.indexOf(splitMatch[0]);
+      usageOriginal = ue.slice(0, idx).trim();
+      usageEnglish = ue.slice(idx + splitMatch[0].length).trim();
+    } else {
+      usageOriginal = ue.trim();
+    }
+  }
+  const today = issue.date || new Date().toISOString().slice(0,10);
+  const dateObj = new Date(today);
+  const monthName = dateObj.toLocaleString('en-US', { month: 'long', timeZone: 'UTC' });
+  const day = dateObj.getUTCDate();
+  const year = dateObj.getUTCFullYear();
+  const prettyDate = `${monthName} ${day}, ${year}`;
+  // Issue number from issueLines if available
+  let issueNum = '';
+  try {
+    const lines = (typeof issueLines === 'function') ? issueLines(today) : null;
+    if (lines && lines.issue) issueNum = String(lines.issue).replace(/[^\d]/g, '');
+  } catch {}
+  return {
+    langName: meta.name || langKey,
+    word: entry.word || '',
+    transliteration: entry.transliteration || '',
+    meaning: entry.meaning || '',
+    definition_shades: Array.isArray(entry.definition_shades) ? entry.definition_shades : [],
+    citation: entry.citation || null,
+    usage_original: usageOriginal,
+    usage_english: usageEnglish,
+    issueDate: prettyDate,
+    issueNumber: issueNum,
+    dailyPractice: entry.daily_practice || (typeof PRACTICE_SEED !== 'undefined' ? (PRACTICE_SEED[langKey] || '') : ''),
+    storageKey: `kp-journal-${today}-${langKey}`,
+  };
+}
+
+function wireOpenJournal() {
+  // Delegate from document so the handler covers buttons added by future
+  // section re-renders too. Idempotent: only attaches once.
+  if (document.__journalDelegateWired) return;
+  document.__journalDelegateWired = true;
+  document.addEventListener('click', async (e) => {
+    const btn = e.target.closest('[data-open-journal]');
+    if (!btn) return;
+    e.preventDefault();
+    const langKey = btn.getAttribute('data-lang') || 'greek';
+    await ensureJournalLoaded();
+    if (typeof window.__paideiaOpenJournal === 'function') {
+      const entryPayload = buildJournalEntry(langKey);
+      if (entryPayload) {
+        window.__paideiaOpenJournal(entryPayload);
+      } else {
+        // Data not loaded yet — open with whatever the modal already has
+        window.__paideiaOpenJournal();
+      }
+    } else {
+      const overlay = document.getElementById('kp-journal');
+      if (overlay) overlay.classList.add('open');
+    }
+  });
+}
+
+function wireCitationToggles() {
+  document.querySelectorAll("[data-seg]").forEach((seg) => {
+    if (seg.dataset.wired === "1") return;
+    seg.dataset.wired = "1";
+    const body = seg.closest(".word-card")?.querySelector("[data-cit-body]");
+    const buttons = seg.querySelectorAll("button[data-view]");
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const view = btn.getAttribute("data-view");
+        buttons.forEach((b) => b.classList.toggle("active", b === btn));
+        if (body) {
+          body.classList.remove("greek", "english", "both");
+          body.classList.add(view);
+        }
+      });
+    });
+  });
+}
+
 function wireAudio() {
   document.querySelectorAll(".audio-btn").forEach((btn) => {
     if (btn.dataset.wired === "1") return; // already wired
@@ -308,6 +834,10 @@ async function load() {
     const res = await fetch(`${BASE}/api/today`);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const issue = await res.json();
+    // Cache for the journal modal — when the user clicks "Open in journal"
+    // on a specific language section, we look up that language here so the
+    // modal opens with the correct headword / definitions / citation.
+    window.__paideiaToday = issue;
 
     // Athenaeum masthead: populate the three ledger lines.
     document.getElementById("today-date").textContent = formatDate(issue.date);
@@ -335,6 +865,8 @@ async function load() {
       .join("");
     document.getElementById("sections").innerHTML = html;
     wireAudio();
+    wireCitationToggles();
+    wireOpenJournal();
     fitHeadwords();
     fetchAkousmaCount();
 
@@ -433,8 +965,11 @@ async function loadMoreArchive() {
     }
   }
   
-  // Re-wire audio buttons (idempotent — wireAudio re-attaches by class)
+  // Re-wire audio buttons and citation toggles (idempotent — both attach
+  // a wired-flag so duplicates don't fire)
   wireAudio();
+  wireCitationToggles();
+  wireOpenJournal();
   fitHeadwords();
   // Re-populate the dynamic Akousma count on any newly-rendered cards.
   fetchAkousmaCount();
