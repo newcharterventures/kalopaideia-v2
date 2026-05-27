@@ -388,6 +388,7 @@ function renderStages(manifest, lang, progress) {
     const fillColor = isCurrent ? 'var(--wine)' : (si < currentStageIdx ? 'var(--gilt)' : 'var(--rule)');
 
     // Lessons table (matches prototype: id-cell, title-cell, min-cell)
+    // Now uses <button> for inline toggle preview (ported from prototype v2).
     const lessonsHtml = stageLessons.map((lesson, li) => {
       const isLessonDone = completedSet.has(lesson.id);
       const isLessonCurrent = isCurrent && (li === completedInStage);
@@ -400,12 +401,12 @@ function renderStages(manifest, lang, progress) {
       const badge = lesson.is_reading || lesson.isReading
         ? ' <span class="badge">READING</span>' : '';
       return `
-        <a class="lesson-row ${li === 0 ? 'first' : ''} ${isLessonCurrent ? 'current' : ''}" href="/paideia/${esc(lang)}/curriculum/${esc(lesson.id || '')}">
+        <button class="lesson-row ${li === 0 ? 'first' : ''} ${isLessonCurrent ? 'current' : ''}" type="button" data-lesson-toggle="${si}-${li}" data-lesson-id="${esc(lesson.id || '')}" data-lang="${esc(lang)}">
           <span class="id-cell">${idIcon} ${esc(lesson.id || '')}</span>
           <span class="title-cell">${esc(lesson.title || '')}${badge}</span>
           <span class="min-cell">${minutes}</span>
-          <span class="toggle">›</span>
-        </a>`;
+          <span class="toggle">+</span>
+        </button>`;
     }).join('');
 
     // Cover painting for this stage (rotate through the palette vignettes)
@@ -452,7 +453,9 @@ function renderStages(manifest, lang, progress) {
                 <div class="checkpoint-row">
                   <span class="checkpoint-pill">CHECKPOINT ${esc(s.number || si + 1)}</span>
                   <span class="checkpoint-note">opens upon completion</span>
-                </div>` : ''}
+                  <button class="checkpoint-toggle" type="button" data-cp-toggle="${si}">auto-graded · see sample questions ↗</button>
+                </div>
+                <div data-checkpoint-preview="${si}"></div>` : ''}
             </div>
           </div>
           ${coverFig}
@@ -565,6 +568,8 @@ function fillDiploma(manifest, palette) {
   fillDiploma(manifest, palette);
   renderAudioTeaser(lang);
   wirePlayPills(document);
+  wireLessonToggles(lang, manifest);
+  wireCheckpointToggles(lang);
 })();
 
 // ===================================================================
@@ -588,6 +593,315 @@ function renderAudioTeaser(lang) {
   document.getElementById("teaser-line").textContent = data.line;
   document.getElementById("teaser-caption").textContent = data.caption;
   wrap.style.display = "";
+}
+
+// ===================================================================
+// LESSON PREVIEW (inline expansion on click)
+// Ported from paideia-prototype-v2/curriculum.html (toggleLesson +
+// lessonDetailHTML). Shows description, sample line, key vocabulary,
+// and HEAR IT / BEGIN LESSON buttons inline below the row.
+// ===================================================================
+
+// Per-lesson preview data, keyed by [lang][lesson.id]. For lessons
+// without an entry, falls back to the manifest's lesson.content as the
+// description. Greek samples ported from prototype v2.
+const LESSON_PREVIEWS = {
+  greek: {
+    "1.1":  { desc: "We meet the first half of the alphabet — α β γ δ ε ζ η θ ι κ λ μ — reading each letter aloud, with its name, before any words.",
+              sample: "Α α &nbsp;&nbsp; Β β &nbsp;&nbsp; Γ γ &nbsp;&nbsp; Δ δ &nbsp;&nbsp; Ε ε",
+              vocab: [["α","alpha"],["β","beta"],["γ","gamma"],["δ","delta"],["ε","epsilon"]] },
+    "1.2":  { desc: "The second half of the alphabet — ν ξ ο π ρ σ/ς τ υ φ χ ψ ω — with the two forms of sigma and the long vowel ω.",
+              sample: "Ν ν &nbsp;&nbsp; Ξ ξ &nbsp;&nbsp; Ο ο &nbsp;&nbsp; Π π &nbsp;&nbsp; Ω ω",
+              vocab: [["ν","nu"],["ξ","xi"],["ο","omicron"],["π","pi"],["ω","omega"]] },
+    "1.3":  { desc: "The seven diphthongs that fuse two vowels into one sound. The ear learns them long before the eye stops noticing both letters.",
+              sample: "αι · ει · οι · αυ · ευ · ου",
+              vocab: [["αι","like 'eye'"],["ει","like 'eight'"],["οι","like 'boy'"],["αυ","like 'cow'"],["ου","like 'who'"]] },
+    "1.4":  { desc: "Breathings: the smooth ᾿ and the rough ῾. A small mark above a vowel that decides whether the word begins with h.",
+              sample: "ἄλφα &nbsp;·&nbsp; ἁρμονία",
+              vocab: [["ἄνθρωπος","human"],["ἁρμονία","harmony"]] },
+    "1.5":  { desc: "Accent: acute, grave, circumflex. The pitch of the spoken language, frozen into three marks above the syllable.",
+              sample: "λόγος &nbsp;·&nbsp; ποιητής &nbsp;·&nbsp; γῆ",
+              vocab: [["λόγος","word, reason"],["ποιητής","poet"],["γῆ","earth, land"]] },
+    "1.6":  { desc: "Reading whole words for the first time. Names from history and myth — the alphabet doing its first piece of real work.",
+              sample: "Σωκράτης &nbsp;·&nbsp; Πλάτων &nbsp;·&nbsp; Ἀχιλλεύς &nbsp;·&nbsp; Ἀθῆναι",
+              vocab: [["Σωκράτης","Socrates"],["Πλάτων","Plato"],["Ἀθῆναι","Athens"]] },
+    "1.7":  { desc: "A first complete sentence — read with attention to breathings and accent, then said aloud from memory.",
+              sample: "ὁ Σωκράτης φιλόσοφός ἐστιν.",
+              vocab: [["ὁ / ἡ / τό","the (m/f/n)"],["φιλόσοφος","philosopher"],["ἐστιν","is"]] },
+  },
+};
+
+function getLessonPreview(lang, lesson) {
+  const bank = LESSON_PREVIEWS[lang] || {};
+  const banked = bank[lesson.id];
+  if (banked) return banked;
+  // Fallback: use manifest content as description; no sample, no vocab.
+  return { desc: lesson.content || lesson.subtitle || lesson.title || "", sample: "", vocab: null };
+}
+
+function lessonDetailHTML(lang, lesson) {
+  const p = getLessonPreview(lang, lesson);
+  const minutes = lesson.duration_minutes || lesson.min || 12;
+  let sample = "";
+  if (p.sample) {
+    sample = `<div class="sample-block">
+                <div class="label">SAMPLE</div>
+                <div class="greek">${p.sample}</div>
+              </div>`;
+  }
+  let vocab = "";
+  if (p.vocab && p.vocab.length) {
+    vocab = `<div class="vocab-row">
+               <div class="label">KEY VOCABULARY</div>
+               <div class="vocab-chips">${
+                 p.vocab.map((v) => `<span class="vocab-chip"><span class="gl">${esc(v[0])}</span><span class="en">${esc(v[1])}</span></span>`).join("")
+               }</div>
+             </div>`;
+  }
+  return `<div class="lesson-detail">
+            <p>${esc(p.desc)}</p>
+            ${sample}
+            ${vocab}
+            <div class="lesson-actions">
+              <button class="play-pill" data-pill="lesson" type="button">
+                <span class="glyph"><svg viewBox="0 0 16 16" width="9" height="9"><path d="M4.5 2.6v10.8L13 8z" fill="currentColor"/></svg></span>
+                HEAR IT
+              </button>
+              <a class="btn-ink" href="/paideia/${esc(lang)}/curriculum/${esc(lesson.id || '')}">BEGIN LESSON →</a>
+              <span class="meta">${minutes} min · audio + recitation</span>
+            </div>
+          </div>`;
+}
+
+const _openLessons = new Set();
+
+function wireLessonToggles(lang, manifest) {
+  // Build a quick lookup: { '<si>-<li>': lessonObj }
+  const lookup = {};
+  (manifest.stages || []).forEach((s, si) => {
+    (s.lessons || []).forEach((l, li) => {
+      lookup[`${si}-${li}`] = l;
+    });
+  });
+
+  document.querySelectorAll("[data-lesson-toggle]").forEach((btn) => {
+    if (btn.dataset.lessonWired) return;
+    btn.dataset.lessonWired = "1";
+    btn.addEventListener("click", (e) => {
+      // Allow Ctrl/Cmd-click to skip preview and jump straight to the lesson.
+      if (e.ctrlKey || e.metaKey || e.shiftKey) {
+        const id = btn.dataset.lessonId;
+        if (id) window.location.href = `/paideia/${lang}/curriculum/${id}`;
+        return;
+      }
+      e.preventDefault();
+      const k = btn.dataset.lessonToggle;
+      const lesson = lookup[k];
+      if (!lesson) return;
+      const toggleSpan = btn.querySelector(".toggle");
+      if (_openLessons.has(k)) {
+        _openLessons.delete(k);
+        btn.classList.remove("open");
+        if (toggleSpan) toggleSpan.textContent = "+";
+        const next = btn.nextElementSibling;
+        if (next && next.classList.contains("lesson-detail")) next.remove();
+      } else {
+        _openLessons.add(k);
+        btn.classList.add("open");
+        if (toggleSpan) toggleSpan.textContent = "−";
+        const tpl = document.createElement("template");
+        tpl.innerHTML = lessonDetailHTML(lang, lesson).trim();
+        const detail = tpl.content.firstElementChild;
+        btn.after(detail);
+        wirePlayPills(detail);
+      }
+    });
+  });
+}
+
+// ===================================================================
+// CHECKPOINT SAMPLE QUESTIONS (inline expansion on toggle)
+// Ported from paideia-prototype-v2/curriculum.html (CHECKPOINT_BANK
+// + renderCheckpoint). Shows 4-5 sample questions per checkpoint with
+// full grading interactivity: MCQ buttons, text input, score, and reset.
+// ===================================================================
+
+const CHECKPOINT_BANK = {
+  greek: {
+    0: { title: "Checkpoint I — The Sound and the Shape",
+         blurb: "Five questions test recognition of the alphabet, breathings, and pitch accent. Pass with 4 of 5.",
+         qs: [
+           { kind: "mcq",  prompt: "Which letter is theta?", opts: ["α","θ","ψ","σ"], answer: 1, hint: "The aspirated dental — from Phoenician ṭēth." },
+           { kind: "mcq",  prompt: "Which word carries a circumflex?", opts: ["λόγος","ποιητής","γῆ","ἀρχή"], answer: 2, hint: "Look for the wave-shaped accent ῀ over a long vowel." },
+           { kind: "type", prompt: "Transliterate λόγος into the Roman alphabet.", answer: "logos", hint: "Long o in the antepenult; final s is sigma at word's end (ς)." },
+           { kind: "mcq",  prompt: "ἁρμονία takes which breathing?", opts: ["smooth (no h-)","rough (h-)","neither","both"], answer: 1, hint: "The dot opens to the right — h- before the vowel." },
+           { kind: "type", prompt: "Write the Greek for 'human' (nominative sg.).", answer: "ἄνθρωπος", hint: "Smooth breathing + acute on the antepenult; ω in the second syllable.", accept: ["άνθρωπος","ανθρωπος"] },
+         ] },
+    1: { title: "Checkpoint II — The Sentence",
+         blurb: "Six questions test the article, the first two declensions, and the present indicative.",
+         qs: [
+           { kind: "mcq",  prompt: "Dative singular neuter of the article?", opts: ["τοῦ","τῷ","τό","τόν"], answer: 1, hint: "Same form as masculine dative — context disambiguates." },
+           { kind: "type", prompt: "Decline λόγος in the genitive singular.", answer: "λόγου", hint: "Second declension masc. -ος → -ου.", accept: ["λογου"] },
+           { kind: "mcq",  prompt: "ἡ μήτηρ is what gender?", opts: ["masculine","feminine","neuter","common"], answer: 1 },
+           { kind: "type", prompt: "Conjugate γράφω in the 3rd person plural.", answer: "γράφουσι(ν)", hint: "Present indicative active ending: -ουσι(ν).", accept: ["γράφουσι","γράφουσιν","γραφουσι","γραφουσιν"] },
+           { kind: "mcq",  prompt: "Which adjective agrees with τὸν ἄνθρωπον?", opts: ["ἀγαθή","ἀγαθόν","ἀγαθόν (neut.)","ἀγαθούς"], answer: 1, hint: "Masculine accusative singular." },
+           { kind: "mcq",  prompt: "εἰμί, 2nd singular?", opts: ["εἰμί","εἶ","ἐστί","ἐσμέν"], answer: 1 },
+         ] },
+    2: { title: "Checkpoint III — The Verbs and the Reading",
+         blurb: "Six questions on voices, the past tenses, the third declension, and the participle.",
+         qs: [
+           { kind: "type", prompt: "Imperfect of λύω, 1st singular?", answer: "ἔλυον", hint: "Augment ἐ-; imperfect ending -ον.", accept: ["ελυον"] },
+           { kind: "mcq",  prompt: "λυόμενος is which form?", opts: ["aorist active participle","present mid/pass participle","perfect active participle","aorist mid participle"], answer: 1 },
+           { kind: "type", prompt: "First aorist of λύω, 1st singular?", answer: "ἔλυσα", hint: "-σα is the aorist marker.", accept: ["ελυσα"] },
+           { kind: "mcq",  prompt: "ὁ φύλαξ — third declension stem ends in?", opts: ["a vowel","-σ","a consonant (κ/γ/χ)","a labial"], answer: 2 },
+           { kind: "mcq",  prompt: "Genitive absolute uses what case for the noun and the participle?", opts: ["nominative","genitive","dative","accusative"], answer: 1 },
+           { kind: "type", prompt: "Translate 'I was being freed' into Greek (1 sg.).", answer: "ἐλυόμην", hint: "Imperfect middle/passive 1st sg.: ἐ- + λυ- + -όμην.", accept: ["ελυομην"] },
+         ] },
+    3: { title: "Checkpoint IV — The Mood and the Mind",
+         blurb: "Six questions on the moods, conditions, indirect statement, and the perfect system.",
+         qs: [
+           { kind: "mcq",  prompt: "Subjunctive of εἰμί, 1st singular?", opts: ["ὦ","ἦν","εἴην","ἔσομαι"], answer: 0 },
+           { kind: "mcq",  prompt: "Present unreal condition ('if I were freeing, …') — protasis uses?", opts: ["εἰ + indicative","ἐάν + subjunctive","εἰ + optative","εἰ + imperfect indicative"], answer: 3, hint: "Past-form indicative for unreal time." },
+           { kind: "type", prompt: "Perfect active 1st singular of λύω?", answer: "λέλυκα", hint: "Reduplication λε-; -κα suffix.", accept: ["λελυκα"] },
+           { kind: "mcq",  prompt: "Indirect statement after a verb of saying — most common construction?", opts: ["ὅτι + indicative","accusative + infinitive","ἵνα + subjunctive","participle + accusative"], answer: 0 },
+           { kind: "type", prompt: "Aorist imperative active 2 sg. of λύω?", answer: "λῦσον", hint: "Distinctive -σον ending.", accept: ["λυσον"] },
+           { kind: "mcq",  prompt: "Optative is most often the mood of?", opts: ["fact","command","wish or remote possibility","direct question"], answer: 2 },
+         ] },
+  },
+};
+
+const _openCheckpoints = new Set();
+
+function wireCheckpointToggles(lang) {
+  document.querySelectorAll("[data-cp-toggle]").forEach((btn) => {
+    if (btn.dataset.cpWired) return;
+    btn.dataset.cpWired = "1";
+    btn.addEventListener("click", () => {
+      const si = +btn.dataset.cpToggle;
+      const wrap = document.querySelector(`[data-checkpoint-preview="${si}"]`);
+      if (!wrap) return;
+      if (_openCheckpoints.has(si)) {
+        _openCheckpoints.delete(si);
+        wrap.innerHTML = "";
+        btn.classList.remove("open");
+        btn.textContent = "auto-graded · see sample questions ↗";
+      } else {
+        _openCheckpoints.add(si);
+        btn.classList.add("open");
+        btn.textContent = "auto-graded · hide sample questions ↑";
+        renderCheckpoint(lang, si, wrap);
+      }
+    });
+  });
+}
+
+function renderCheckpoint(lang, si, wrap) {
+  const bank = CHECKPOINT_BANK[lang] || CHECKPOINT_BANK.greek || {};
+  const data = bank[si] || bank[0];
+  if (!data) return;
+  const passing = Math.ceil(data.qs.length * 0.7);
+  const cpState = { answers: {}, graded: false };
+
+  function grade(qi) {
+    const q = data.qs[qi];
+    const a = cpState.answers[qi];
+    if (a === undefined || a === "") return null;
+    if (q.kind === "mcq") return a === q.answer;
+    const norm = (s) => String(s).trim().toLowerCase().replace(/[()·]/g, "").replace(/\s+/g, "");
+    if (norm(a) === norm(q.answer)) return true;
+    if (q.accept) return q.accept.some((x) => norm(a) === norm(x));
+    return false;
+  }
+
+  function renderQ(q, qi, result) {
+    const cls = result === true ? "right" : result === false ? "wrong" : "";
+    let body;
+    if (q.kind === "mcq") {
+      body = '<div class="cp-opts">' +
+        q.opts.map((o, oi) => {
+          const selected = cpState.answers[qi] === oi;
+          const isAnswer = cpState.graded && oi === q.answer;
+          const isWrong = cpState.graded && selected && oi !== q.answer;
+          let optClass = "cp-opt" + (cpState.graded ? " locked" : "");
+          if (isAnswer) optClass += " correct";
+          else if (isWrong) optClass += " incorrect";
+          else if (selected) optClass += " selected";
+          return `<button type="button" class="${optClass}">${esc(o)}</button>`;
+        }).join("") +
+      "</div>";
+    } else {
+      const val = cpState.answers[qi] || "";
+      body = '<div class="cp-text-row">' +
+               `<input class="cp-input" type="text" placeholder="your answer in Greek" value="${esc(val)}"${cpState.graded ? " readonly" : ""}/>` +
+               (cpState.graded
+                 ? `<span class="cp-text-feedback ${result === true ? "right" : "wrong"}">${result === true ? "✓ " : "✗ "}correct: <span class="answer">${esc(q.answer)}</span></span>`
+                 : "") +
+             "</div>";
+    }
+    const hint = cpState.graded && q.hint
+      ? `<div class="hint"><span class="note">note · </span>${esc(q.hint)}</div>`
+      : "";
+    return `<div class="cp-q ${cls}" data-q="${qi}">
+              <div class="prompt"><span class="num">${qi + 1}.</span><span class="ptext">${esc(q.prompt)}</span></div>
+              ${body}${hint}
+            </div>`;
+  }
+
+  function paint() {
+    const score = data.qs.reduce((s, _, i) => s + (grade(i) === true ? 1 : 0), 0);
+    wrap.innerHTML =
+      '<div class="checkpoint-preview">' +
+        '<div class="cp-header">' +
+          '<div>' +
+            '<div class="lbl">SAMPLE CHECKPOINT · AUTO-GRADED</div>' +
+            `<div class="title">${esc(data.title)}</div>` +
+          '</div>' +
+          `<div class="blurb">${esc(data.blurb)}</div>` +
+        '</div>' +
+        '<div class="cp-questions">' +
+          data.qs.map((q, qi) => renderQ(q, qi, cpState.graded ? grade(qi) : null)).join("") +
+        '</div>' +
+        '<div class="cp-grade-row">' +
+          (cpState.graded
+            ? `<span class="cp-result ${score >= passing ? "pass" : "retake"}">${score >= passing ? "✓ PASSED" : "RETAKE NEEDED"} &nbsp;·&nbsp; <span class="lining">${score}</span> / <span class="lining">${data.qs.length}</span></span>` +
+              '<button type="button" class="cp-reset">RESET</button>'
+            : `<button type="button" class="cp-grade"${Object.keys(cpState.answers).length < data.qs.length ? ' disabled style="opacity:.45; cursor:not-allowed"' : ""}>GRADE MY ANSWERS</button>`) +
+          `<span class="cp-threshold">${cpState.graded
+            ? (score >= passing ? `Pass threshold: ${passing} of ${data.qs.length}.` : `Need ${passing} of ${data.qs.length} to pass.`)
+            : `In the actual checkpoint, all ${data.qs.length} are graded together. Pass with ${passing} of ${data.qs.length}.`}</span>` +
+        '</div>' +
+      '</div>';
+
+    // Wire question controls
+    data.qs.forEach((q, qi) => {
+      if (q.kind === "mcq") {
+        wrap.querySelectorAll(`[data-q="${qi}"] .cp-opt`).forEach((b, oi) => {
+          b.addEventListener("click", () => { if (!cpState.graded) { cpState.answers[qi] = oi; paint(); } });
+        });
+      } else {
+        const inp = wrap.querySelector(`[data-q="${qi}"] .cp-input`);
+        if (inp) inp.addEventListener("input", () => { cpState.answers[qi] = inp.value; });
+      }
+    });
+    const gradeBtn = wrap.querySelector(".cp-grade");
+    if (gradeBtn) gradeBtn.addEventListener("click", () => {
+      data.qs.forEach((q, qi) => {
+        if (q.kind === "type") {
+          const inp = wrap.querySelector(`[data-q="${qi}"] .cp-input`);
+          if (inp) cpState.answers[qi] = inp.value;
+        }
+      });
+      if (Object.keys(cpState.answers).length < data.qs.length) return;
+      cpState.graded = true;
+      paint();
+    });
+    const resetBtn = wrap.querySelector(".cp-reset");
+    if (resetBtn) resetBtn.addEventListener("click", () => {
+      cpState.answers = {}; cpState.graded = false; paint();
+    });
+  }
+
+  paint();
 }
 
 function wirePlayPills(root) {
