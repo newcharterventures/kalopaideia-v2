@@ -12,7 +12,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/paideia/img/favicon-16.png?v=1777151780" />
 
 <!-- Atelier tokens (palette + display fonts) shared with curriculum / lesson pages. -->
-<link rel="stylesheet" href="/paideia/curriculum-atelier.css?v=12" />
+<link rel="stylesheet" href="/paideia/curriculum-atelier.css?v=13" />
 <!-- The existing patron CTA stylesheet — also Atelier-token aligned. -->
 <link rel="stylesheet" href="/paideia/components/support-epic.css?v=1" />
 
@@ -233,7 +233,10 @@
     <span class="name">KALOPAIDEIA</span>
     <span class="tag">καλὴ παιδεία</span>
   </a>
-  <nav>
+  <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="chrome-nav">
+    <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+  </button>
+  <nav id="chrome-nav">
     <a class="sc" href="/paideia/greek/curriculum">THE CURRICULUM</a>
     <a class="sc" href="/paideia/akousma">AKOUSMA</a>
     <a class="sc" href="/paideia/commonplace.html">COMMONPLACE</a>
@@ -346,6 +349,22 @@
 </footer>
 
 <script src="/paideia/components/support-epic.js?v=1"></script>
+
+<script>
+// Mobile nav hamburger toggle (added 2026-05-27 by Jae).
+(function(){
+  var btn = document.querySelector('.chrome .nav-toggle');
+  var chrome = document.querySelector('.chrome');
+  if (!btn || !chrome) return;
+  btn.addEventListener('click', function(){
+    var open = chrome.classList.toggle('nav-open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  document.querySelectorAll('.chrome nav a').forEach(function(a){
+    a.addEventListener('click', function(){ chrome.classList.remove('nav-open'); btn.setAttribute('aria-expanded','false'); });
+  });
+})();
+</script>
 
 </body>
 </html>
