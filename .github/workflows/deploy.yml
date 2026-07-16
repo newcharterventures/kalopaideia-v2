@@ -1,0 +1,69 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main, stage, dev]
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Which environment to deploy (dev, stage, main)'
+        required: true
+        type: choice
+        options: [dev, stage, main]
+
+concurrency:
+  # Serialize deploys per branch — no two deploys on the same env at once.
+  group: deploy-${{ github.ref_name || github.event.inputs.environment }}
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Deploy ${{ github.ref_name || github.event.inputs.environment }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Resolve environment
+        id: env
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "target=${{ github.event.inputs.environment }}" >> $GITHUB_OUTPUT
+          else
+            echo "target=${{ github.ref_name }}" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          # Pin host key to prevent MITM without prompting
+          echo "${{ secrets.DEPLOY_HOST }} ${{ secrets.DEPLOY_HOST_KEY }}" > ~/.ssh/known_hosts
+
+      - name: Deploy to ${{ steps.env.outputs.target }}
+        run: |
+          ssh -i ~/.ssh/deploy_key \
+              -o BatchMode=yes \
+              -o ConnectTimeout=15 \
+              ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} \
+              ${{ steps.env.outputs.target }}
+
+      - name: Health check (public URL)
+        run: |
+          case "${{ steps.env.outputs.target }}" in
+            main)  URL="https://newcharterventures.com/paideia/" ;;
+            stage) URL="https://newcharterventures.com/paideia-stage/" ;;
+            dev)   URL="https://newcharterventures.com/paideia-dev/" ;;
+          esac
+          echo "Checking $URL"
+          for i in 1 2 3; do
+            CODE=$(curl -s -o /dev/null -w "%{http_code}" --max-time 10 "$URL")
+            if [ "$CODE" = "200" ]; then
+              echo "✓ $URL → 200"
+              exit 0
+            fi
+            echo "try $i: $CODE, retry in 3s"
+            sleep 3
+          done
+          echo "✗ $URL returned $CODE after 3 tries"
+          exit 1
