@@ -85,7 +85,7 @@ function enforceLibraryAccess(req, textId) {
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
 const PORT = 3026;
-const BASE = "/paideia";
+const BASE = process.env.BASE_PATH || "/paideia";
 
 const VALID_LANGS = [
   "latin", "greek", "french", "german", "oldenglish", "middleenglish", "italian",
