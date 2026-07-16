@@ -53,7 +53,7 @@
     {
       "char": "h",
       "name": "hache",
-      "ipa": "silent",
+      "ipa": "[silent]",
       "approximation": "not pronounced",
       "notes": "H aspiré prevents liaison; h muet permits it."
     },
@@ -186,7 +186,7 @@
     {
       "char": "Accents: é è ê ë à ù û ô î ï ç",
       "name": "Diacritical marks",
-      "ipa": "varies",
+      "ipa": "[varies]",
       "approximation": "accent aigu (é) indicates /e/; accent grave (è, à, ù) indicates /ɛ/ or distinguishes homophones; accent circonflexe (ê, â, etc.) marks historical vowel lengthening or lost consonant; tréma (ë, ï) indicates separate syllabification; cédille (ç) softens c to /s/",
       "notes": "Accents are orthographically and phonetically essential. The circumflex often marks a lost 's' from Latin (forêt < forest)."
     }

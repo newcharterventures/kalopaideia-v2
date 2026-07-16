@@ -56,10 +56,22 @@ async function writeCache(lang, word, entry) {
   await fs.writeFile(path.join(dir, `${slug(word)}.json`), JSON.stringify(entry, null, 2));
 }
 
+// Wikimedia's User-Agent policy (https://meta.wikimedia.org/wiki/User-Agent_policy)
+// requires a descriptive UA with contact information. Anonymous or generic UAs
+// are subject to rate-limiting or soft blocking.
+const WIKT_UA = "Kalopaideia/1.0 (https://newcharterventures.com/paideia/; info@newcharterventures.com) node-fetch";
+
 async function queryWiktionary(lang, word) {
   try {
     const url = `https://en.wiktionary.org/api/rest_v1/page/definition/${encodeURIComponent(word)}`;
-    const res = await fetch(url, { timeout: 10000 });
+    const res = await fetch(url, {
+      timeout: 10000,
+      headers: {
+        "User-Agent": WIKT_UA,
+        "Accept": "application/json",
+        "Api-User-Agent": WIKT_UA,
+      },
+    });
     if (!res.ok) return null;
     const data = await res.json();
     const langKey = WIKT_LANG[lang] || lang;
@@ -69,6 +81,7 @@ async function queryWiktionary(lang, word) {
     const def = entries[0];
     return {
       source: "wiktionary",
+      source_url: `https://en.wiktionary.org/wiki/${encodeURIComponent(word)}`,
       part_of_speech: def.partOfSpeech,
       definitions: (def.definitions || []).slice(0, 3).map((d) => ({
         text: stripHtml(d.definition || ""),
@@ -159,11 +172,14 @@ export async function lookupWord(lang, rawWord, contextLine, contextEnglish) {
       const lemmaEntry = await queryWiktionary(lang, lemma);
       if (lemmaEntry && lemmaEntry.definitions && lemmaEntry.definitions.length > 0) {
         // Keep the original inflection pointer as a form note, and append the lemma's meanings.
+        // Note: this is an adaptation under CC BY-SA 4.0 §3(a)(1)(B) ("indicate if changes were made").
         entry = {
           source: "wiktionary",
+          source_url: `https://en.wiktionary.org/wiki/${encodeURIComponent(lemma)}`,
           part_of_speech: entry.part_of_speech || lemmaEntry.part_of_speech,
           form: entry.definitions[0].text,
           lemma,
+          adapted: true,
           definitions: lemmaEntry.definitions,
         };
       }

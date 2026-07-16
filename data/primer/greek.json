@@ -4,175 +4,175 @@
     {
       "char": "Α α",
       "name": "alpha",
-      "ipa": "a aː",
+      "ipa": "[a aː]",
       "approximation": "like the a in father (short or long)",
       "notes": "Can be short (ᾰ) or long (ᾱ). Length is lexically determined and marked in pedagogy but not in standard texts."
     },
     {
       "char": "Β β",
       "name": "beta",
-      "ipa": "b",
+      "ipa": "[b]",
       "approximation": "like b in boy",
       "notes": ""
     },
     {
       "char": "Γ γ",
       "name": "gamma",
-      "ipa": "ɡ",
+      "ipa": "[ɡ]",
       "approximation": "like g in go (always hard)",
       "notes": "Before γ, κ, χ, or ξ, pronounced like ng in sing."
     },
     {
       "char": "Δ δ",
       "name": "delta",
-      "ipa": "d",
+      "ipa": "[d]",
       "approximation": "like d in dog",
       "notes": ""
     },
     {
       "char": "Ε ε",
       "name": "epsilon",
-      "ipa": "e",
+      "ipa": "[e]",
       "approximation": "like e in met",
       "notes": "Always short."
     },
     {
       "char": "Ζ ζ",
       "name": "zeta",
-      "ipa": "zd",
+      "ipa": "[zd]",
       "approximation": "like sd in wisdom (voiced)",
       "notes": "Probably a cluster, not a simple fricative in Classical period."
     },
     {
       "char": "Η η",
       "name": "eta",
-      "ipa": "ɛː",
+      "ipa": "[ɛː]",
       "approximation": "like a in air, but longer",
       "notes": "Always long. Distinct from epsilon."
     },
     {
       "char": "Θ θ",
       "name": "theta",
-      "ipa": "tʰ",
+      "ipa": "[tʰ]",
       "approximation": "like t in top with strong aspiration",
       "notes": "Not the English th sound; an aspirated voiceless stop."
     },
     {
       "char": "Ι ι",
       "name": "iota",
-      "ipa": "i iː",
+      "ipa": "[i iː]",
       "approximation": "like i in machine (short or long)",
       "notes": "Can be short (ῐ) or long (ῑ)."
     },
     {
       "char": "Κ κ",
       "name": "kappa",
-      "ipa": "k",
+      "ipa": "[k]",
       "approximation": "like k in skin (unaspirated)",
       "notes": ""
     },
     {
       "char": "Λ λ",
       "name": "lambda",
-      "ipa": "l",
+      "ipa": "[l]",
       "approximation": "like l in let",
       "notes": ""
     },
     {
       "char": "Μ μ",
       "name": "mu",
-      "ipa": "m",
+      "ipa": "[m]",
       "approximation": "like m in man",
       "notes": ""
     },
     {
       "char": "Ν ν",
       "name": "nu",
-      "ipa": "n",
+      "ipa": "[n]",
       "approximation": "like n in net",
       "notes": ""
     },
     {
       "char": "Ξ ξ",
       "name": "xi",
-      "ipa": "ks",
+      "ipa": "[ks]",
       "approximation": "like x in fox",
       "notes": ""
     },
     {
       "char": "Ο ο",
       "name": "omicron",
-      "ipa": "o",
+      "ipa": "[o]",
       "approximation": "like o in obey (British short o)",
       "notes": "Always short."
     },
     {
       "char": "Π π",
       "name": "pi",
-      "ipa": "p",
+      "ipa": "[p]",
       "approximation": "like p in spin (unaspirated)",
       "notes": ""
     },
     {
       "char": "Ρ ρ",
       "name": "rho",
-      "ipa": "r",
+      "ipa": "[r]",
       "approximation": "like trilled r in Spanish",
       "notes": "Word-initial rho takes rough breathing (ῥ)."
     },
     {
       "char": "Σ σ/ς",
       "name": "sigma",
-      "ipa": "s",
+      "ipa": "[s]",
       "approximation": "like s in sit",
       "notes": "ς is used in word-final position; σ elsewhere."
     },
     {
       "char": "Τ τ",
       "name": "tau",
-      "ipa": "t",
+      "ipa": "[t]",
       "approximation": "like t in stop (unaspirated)",
       "notes": ""
     },
     {
       "char": "Υ υ",
       "name": "upsilon",
-      "ipa": "y yː",
+      "ipa": "[y yː]",
       "approximation": "like French u or German ü (short or long)",
       "notes": "Can be short (ῠ) or long (ῡ). Not the English sound in 'you'."
     },
     {
       "char": "Φ φ",
       "name": "phi",
-      "ipa": "pʰ",
+      "ipa": "[pʰ]",
       "approximation": "like p in pot with strong aspiration",
       "notes": "Not the English f sound; an aspirated voiceless stop."
     },
     {
       "char": "Χ χ",
       "name": "chi",
-      "ipa": "kʰ",
+      "ipa": "[kʰ]",
       "approximation": "like k in kite with strong aspiration",
       "notes": "Not the English ch or German/Scottish ch; an aspirated voiceless stop."
     },
     {
       "char": "Ψ ψ",
       "name": "psi",
-      "ipa": "ps",
+      "ipa": "[ps]",
       "approximation": "like ps in lapse",
       "notes": ""
     },
     {
       "char": "Ω ω",
       "name": "omega",
-      "ipa": "ɔː",
+      "ipa": "[ɔː]",
       "approximation": "like aw in law, but longer",
       "notes": "Always long. Distinct from omicron."
     },
     {
       "char": "◌́ ◌̀ ◌͂ ◌̓ ◌̔ ◌̈ ι",
       "name": "Accents and breathings",
-      "ipa": "tonal accent marks and aspiration markers",
+      "ipa": "[tonal accent marks and aspiration markers]",
       "approximation": "pitch and aspiration distinctions",
       "notes": "The acute (´) marks high pitch on the ultima, penult, or antepenult. The grave (`) replaces the acute on the ultima before another word without intervening punctuation. The circumflex (͂) marks a falling pitch on long vowels or diphthongs of the ultima or penult. Every word beginning with a vowel or rho takes a breathing: smooth ( ̓) for no aspiration, rough ( ̔) for h-sound (transcribed as h). Diaeresis (¨) marks that a vowel does not form a diphthong with a preceding vowel. Iota subscript (ι written under ᾳ ῃ ῳ) represents an etymological iota in long-vowel diphthongs, unpronounced in the Classical period but written as full-size iota (adscript) in capitals (ΑΙ ΗΙ ΩΙ). Accentuation follows complex rules: recessive accent in verbs, persistent accent in nouns and adjectives, with restrictions based on syllable length and position."
     }

@@ -1,0 +1,909 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kalopaideia · Your Commonplace Book</title>
+<meta name="description" content="Your commonplace book — twenty-seven days of words, one a day, and what you wrote with them in your hand." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Commissioner:wght@300;400;500;600&family=GFS+Didot&family=Cinzel:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+
+<style>
+:root {
+  /* Live-site Paideia palette (kept for masthead, nav, structure) */
+  --paper: #fdfaf3;
+  --paper-deep: #f6f0e2;
+  --paper-shadow: #ece4d0;
+  --ink: #231c14;
+  --ink-soft: #4a3d2c;
+  --ink-muted: #7a6a54;
+  --rule: #c8b892;
+  --rule-soft: #d6c9a6;
+  --accent: #7a3322;
+  --accent-soft: #a85242;
+  --gold: #a07a2c;
+  --gold-deep: #7d5d12;
+
+  --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-ui: "Inter", -apple-system, system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body {
+  margin: 0; padding: 0;
+  background: var(--paper); color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+a { color: var(--ink); text-decoration: none; }
+a:hover { color: var(--accent); }
+::selection { background: var(--accent); color: var(--paper); }
+
+/* =========================================================
+   LIVE SITE MASTHEAD + NAV (verbatim from v2)
+   ========================================================= */
+.masthead {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 16px 32px 0;
+}
+.masthead.masthead-athenaeum {
+  position: relative;
+  overflow: hidden;
+  padding: 28px 32px 22px;
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 1px solid var(--ink);
+}
+.masthead.masthead-athenaeum .mast-content { position: relative; z-index: 1; }
+.masthead.masthead-athenaeum .mast-eyebrow {
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
+  letter-spacing: 0.45em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin-bottom: 12px;
+  padding-top: 28px;
+}
+.masthead.masthead-athenaeum .mast-grid { display: block; padding-bottom: 0; border-bottom: 0; }
+.masthead.masthead-athenaeum .mast-name {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  font-size: clamp(48px, 7vw, 96px);
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 0;
+}
+.masthead.masthead-athenaeum .mast-name a { color: inherit; text-decoration: none; transition: opacity 0.15s ease; }
+.masthead.masthead-athenaeum .mast-name a:hover { opacity: 0.78; }
+.masthead.masthead-athenaeum .mast-greek {
+  display: block;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-style: italic;
+  font-size: clamp(15px, 1.7vw, 22px);
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+  margin: 14px 0 4px;
+}
+.masthead.masthead-athenaeum .mast-greek em { font-style: italic; color: var(--accent); }
+.masthead.masthead-athenaeum .mast-ledger {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 22px;
+  padding-top: 16px;
+  border-top: 1px solid var(--ink-muted);
+  text-align: left;
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  line-height: 1.7;
+}
+.masthead.masthead-athenaeum .mast-ledger .ledger-left,
+.masthead.masthead-athenaeum .mast-ledger .ledger-right { display: flex; flex-direction: column; }
+.masthead.masthead-athenaeum .mast-ledger .ledger-right { align-items: flex-end; }
+.masthead.masthead-athenaeum .mast-ledger .mast-vol,
+.masthead.masthead-athenaeum .mast-ledger .mast-anno {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-style: italic;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  color: var(--ink);
+  margin-top: 4px;
+}
+.masthead.masthead-athenaeum .mast-ledger .mast-issue { color: var(--accent); }
+
+.nav {
+  border-top: 1px solid var(--rule);
+  border-bottom: 3px double var(--rule);
+  padding: 12px 0;
+  display: flex; justify-content: center;
+  align-items: baseline;
+  gap: 32px; flex-wrap: wrap;
+}
+.nav a {
+  font-family: var(--font-ui);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 12px; font-weight: 500;
+  color: var(--ink);
+}
+.nav a:hover { color: var(--accent); }
+
+.masthead.masthead-athenaeum .mast-nav {
+  position: relative;
+  z-index: 1;
+  margin-top: 18px;
+  padding: 12px 0 0;
+  gap: 28px;
+}
+.masthead.masthead-athenaeum .mast-nav a.util {
+  color: var(--ink-muted);
+  font-style: italic;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  text-transform: none;
+  letter-spacing: 0.04em;
+  font-size: 14px;
+}
+
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 36px 32px 60px;
+}
+
+/* =========================================================
+   COMMONPLACE INDEX — Claude Design palette, scoped
+   ========================================================= */
+.kp-cp-scope {
+  /* Commonplace palette — matched to the live site (Jae 2026-05-19):
+   * was Claude Design's warmer parchment (#F5EFDD / #FBF6E6 / #F0E8D2);
+   * now uses the same paper/ink stack the rest of Paideia uses. */
+  --bg: #fdfaf3;          /* live-site --paper */
+  --paper-c: #fdfaf3;     /* same paper, no card-jump */
+  --card: #f6f0e2;        /* live-site --paper-deep */
+  --ink-c: #231c14;       /* live-site --ink */
+  --ink-2: #4a3d2c;       /* live-site --ink-soft */
+  --ink-3: #7a6a54;       /* live-site --ink-muted */
+  --wine: #7a3322;        /* live-site --accent */
+  --gilt: #7d5d12;        /* live-site --gold-deep */
+  --rule-c: rgba(35, 28, 20, 0.22);
+  --rule-soft-c: rgba(35, 28, 20, 0.10);
+  --display: "Cormorant Garamond", "GFS Didot", "EB Garamond", Georgia, serif;
+  --body-c: "EB Garamond", "Cormorant Garamond", Georgia, serif;
+  --sans-c: "Commissioner", "Helvetica Neue", Arial, sans-serif;
+}
+
+.kp-cp-scope .kp-smallcaps {
+  font-family: var(--sans-c);
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: .22em;
+}
+.kp-cp-scope .lining { font-variant-numeric: lining-nums; }
+.kp-cp-scope .kp-ornament-row { display: flex; align-items: center; gap: 12px; }
+.kp-cp-scope .kp-line {
+  flex: 1; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--rule-c) 12%, var(--rule-c) 88%, transparent);
+}
+.kp-cp-scope .diamond {
+  width: 6px; height: 6px; background: var(--gilt);
+  transform: rotate(45deg); display: inline-block;
+}
+
+/* Hero */
+.kp-cp-hero { text-align: center; padding: 12px 0 4px; }
+.kp-cp-hero .eyebrow {
+  font-family: var(--sans-c);
+  font-weight: 500;
+  letter-spacing: .32em;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: var(--wine);
+}
+.kp-cp-hero h1 {
+  font-family: var(--display);
+  font-style: italic; font-weight: 500;
+  font-size: clamp(48px, 5.5vw, 76px);
+  line-height: 1.05; color: var(--ink-c);
+  margin: 14px 0 8px;
+}
+.kp-cp-hero p {
+  font-family: var(--body-c); font-style: italic;
+  font-size: 18px; color: var(--ink-2);
+  max-width: 52ch; margin: 4px auto 0;
+  line-height: 1.45;
+}
+
+/* Stats */
+.kp-cp-stats {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 36px;
+  padding: 24px 0;
+  border-top: 1px solid var(--rule-c);
+  border-bottom: 1px solid var(--rule-c);
+  margin: 28px 0 36px;
+}
+.kp-cp-stats .stat {
+  text-align: center;
+  padding: 4px 0;
+  border-right: 1px solid var(--rule-soft-c);
+}
+.kp-cp-stats .stat:last-child { border-right: 0; }
+.kp-cp-stats .stat .v {
+  font-family: var(--display);
+  font-size: 48px; font-weight: 500;
+  color: var(--ink-c); line-height: 1;
+  font-variant-numeric: lining-nums;
+}
+.kp-cp-stats .stat .l {
+  font-family: var(--sans-c); font-weight: 500;
+  font-size: 11px; letter-spacing: .28em;
+  text-transform: uppercase;
+  color: var(--ink-3); margin-top: 8px;
+}
+
+/* Filter bar */
+.kp-cp-filter {
+  background: var(--card);
+  /* Per Jae 2026-05-19: full box around the filter panel (was just
+   * top + bottom rules with a -32px bleed). Sides now flush with the
+   * entry-card grid below and the stats strip above. */
+  border: 1px solid var(--rule-c);
+  padding: 18px 20px;
+  position: sticky; top: 0; z-index: 5;
+  transition: box-shadow .25s ease, border-color .25s ease;
+}
+.kp-cp-filter.stuck {
+  /* When pinned to the top on scroll: a soft warm shadow + slightly
+   * darker border to read as a separate floating layer. */
+  border-color: rgba(35, 28, 20, 0.32);
+  box-shadow: 0 6px 18px rgba(60, 40, 20, 0.10);
+}
+.kp-cp-filter-row1 {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 18px; align-items: center;
+  margin-bottom: 14px;
+}
+.kp-cp-filter-row1 .label {
+  font-family: var(--sans-c); font-weight: 500;
+  letter-spacing: .32em; text-transform: uppercase;
+  font-size: 11px; color: var(--ink-2);
+}
+.kp-cp-search {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--paper-c);
+  padding: 8px 14px;
+  border: 1px solid var(--rule-c);
+  flex: 1; max-width: 480px;
+}
+.kp-cp-search input {
+  appearance: none; background: transparent;
+  border: 0; outline: 0; width: 100%;
+  font-family: var(--body-c); font-style: italic;
+  font-size: 14.5px; color: var(--ink-c);
+}
+.kp-cp-search input::placeholder { color: var(--ink-3); }
+.kp-cp-search button {
+  appearance: none; background: transparent;
+  border: 0; color: var(--ink-3); cursor: pointer;
+  font-size: 16px;
+}
+.kp-cp-sort {
+  display: flex; align-items: center; gap: 10px;
+}
+.kp-cp-sort .label {
+  font-family: var(--sans-c); font-weight: 500;
+  font-size: 10px; letter-spacing: .28em;
+  text-transform: uppercase; color: var(--ink-3);
+}
+.kp-cp-sort select {
+  appearance: none;
+  background: var(--paper-c);
+  border: 1px solid var(--rule-c);
+  padding: 7px 28px 7px 12px;
+  font-family: var(--body-c); font-style: italic;
+  font-size: 14px; color: var(--ink-c);
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 8 8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 2l3 3 3-3' fill='none' stroke='%231f1a12' stroke-width='1.2' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 8px;
+}
+
+.kp-cp-chips-row {
+  display: flex; gap: 24px;
+  flex-wrap: wrap; align-items: flex-start;
+}
+.kp-cp-chipgroup {
+  display: flex; align-items: center;
+  gap: 8px; flex-wrap: wrap;
+}
+.kp-cp-chipgroup .lbl {
+  font-family: var(--sans-c); font-weight: 500;
+  font-size: 10px; letter-spacing: .28em;
+  text-transform: uppercase;
+  color: var(--ink-3); margin-right: 4px;
+}
+.kp-cp-chip {
+  appearance: none; background: transparent;
+  border: 1px solid var(--rule-c);
+  padding: 5px 12px;
+  font-family: var(--sans-c); font-size: 11px; font-weight: 500;
+  letter-spacing: .04em;
+  color: var(--ink-2); cursor: pointer; transition: all .15s;
+  border-radius: 0;
+  text-transform: capitalize;
+}
+.kp-cp-chip.italic { font-style: italic; }
+.kp-cp-chip:hover { color: var(--ink-c); border-color: var(--ink-c); }
+.kp-cp-chip.on { background: var(--ink-c); color: var(--bg); border-color: var(--ink-c); }
+
+.kp-cp-count {
+  margin-top: 14px;
+  font-family: var(--body-c); font-style: italic;
+  font-size: 13px; color: var(--ink-3);
+}
+.kp-cp-count .lining { color: var(--ink-c); }
+
+/* Entry grid */
+.kp-cp-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 28px;
+}
+.kp-cp-card {
+  display: block;
+  padding: 24px 26px 22px;
+  background: var(--paper-c);
+  border: 1px solid var(--rule-c);
+  text-decoration: none;
+  color: inherit;
+  transition: all .2s;
+  position: relative;
+}
+.kp-cp-card:hover {
+  border-color: var(--gilt);
+  box-shadow: 0 4px 18px rgba(60,40,20,.08);
+  transform: translateY(-1px);
+}
+.kp-cp-card[data-today="true"] {
+  background: var(--card);
+  border-color: var(--wine);
+  border-left-width: 3px;
+}
+.kp-cp-card[data-today="true"]:hover { border-color: var(--wine); }
+
+.kp-cp-card .meta {
+  display: flex; align-items: baseline; justify-content: space-between;
+  gap: 10px; margin-bottom: 8px;
+}
+.kp-cp-card .meta-date {
+  font-family: var(--sans-c); font-weight: 500;
+  letter-spacing: .28em; text-transform: uppercase;
+  font-size: 11px; color: var(--ink-3);
+}
+.kp-cp-card .meta-date.today {
+  color: var(--wine);
+  display: inline-flex; align-items: center; gap: 6px;
+}
+.kp-cp-card .today-dot {
+  width: 5px; height: 5px; border-radius: 50%;
+  background: var(--wine);
+  box-shadow: 0 0 0 3px rgba(122,42,31,.18);
+  display: inline-block;
+}
+.kp-cp-card .meta-words {
+  font-family: var(--body-c); font-style: italic;
+  font-size: 12px; color: var(--ink-3);
+}
+
+.kp-cp-card .word-row {
+  display: flex; align-items: baseline;
+  gap: 12px; margin-bottom: 6px;
+}
+.kp-cp-card .word {
+  font-family: var(--display);
+  font-size: 32px; color: var(--ink-c); line-height: 1;
+  letter-spacing: -.005em;
+}
+.kp-cp-card .tr {
+  font-family: var(--body-c); font-style: italic;
+  font-size: 15px; color: var(--ink-3);
+}
+.kp-cp-card .lang-line {
+  font-family: var(--sans-c); font-weight: 500;
+  letter-spacing: .28em; text-transform: uppercase;
+  font-size: 11px; color: var(--wine);
+  margin-bottom: 14px;
+}
+.kp-cp-card .excerpt {
+  font-family: var(--body-c); font-style: italic;
+  font-size: 14.5px; line-height: 1.6;
+  color: var(--ink-c); margin: 0 0 16px;
+}
+.kp-cp-card .excerpt.placeholder { color: var(--ink-3); }
+
+.kp-cp-card .tags-row {
+  display: flex; flex-wrap: wrap; gap: 6px;
+  padding-top: 12px;
+  border-top: 1px solid var(--rule-soft-c);
+}
+.kp-cp-tag {
+  font-family: var(--body-c); font-style: italic;
+  font-size: 12px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: rgba(159,132,63,.12);
+  color: var(--ink-2);
+}
+.kp-cp-tag[data-kind="mood"] {
+  background: rgba(122,42,31,.10);
+  color: var(--wine);
+}
+.kp-cp-tag[data-kind="tag"] { color: var(--ink-3); }
+
+.kp-cp-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 80px 0;
+  font-family: var(--display); font-style: italic;
+  font-size: 24px; color: var(--ink-3);
+}
+
+.kp-cp-back {
+  margin-top: 48px;
+  display: flex; justify-content: center;
+}
+.kp-cp-back a {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 12px 22px;
+  border: 1px solid var(--rule-c);
+  color: var(--ink-c); text-decoration: none;
+  font-family: var(--sans-c); font-weight: 500;
+  font-size: 11px; letter-spacing: .28em;
+  text-transform: uppercase;
+  transition: all .2s;
+}
+.kp-cp-back a:hover {
+  border-color: var(--wine);
+  color: var(--wine);
+}
+
+/* AKOUSMA + footer */
+.akousma-band {
+  background: var(--paper-deep);
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  padding: 36px 32px;
+  text-align: center;
+  max-width: 1280px;
+  margin: 24px auto 0;
+}
+.akousma-mark {
+  font-family: 'Cinzel', serif;
+  letter-spacing: .4em;
+  font-size: 13px;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+.akousma-band h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 28px;
+  margin: 0 0 8px;
+}
+.akousma-band p {
+  font-family: var(--font-body);
+  color: var(--ink-soft);
+  max-width: 640px;
+  margin: 0 auto 18px;
+  font-size: 16px;
+}
+.akousma-band .cta {
+  display: inline-block;
+  padding: 10px 22px;
+  background: var(--accent);
+  color: var(--paper);
+  font-family: var(--font-ui);
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  font-size: 12px;
+  font-weight: 600;
+}
+.foot {
+  border-top: 1px solid var(--rule);
+  padding: 28px 32px;
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--ink-muted);
+  font-size: 13px;
+}
+.foot-title {
+  font-family: 'Cinzel', serif;
+  letter-spacing: .3em;
+  font-size: 14px;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+
+@media (max-width: 720px) {
+  .kp-cp-stats { grid-template-columns: repeat(2, 1fr); }
+  .kp-cp-stats .stat:nth-child(2) { border-right: 0; }
+  .kp-cp-grid { grid-template-columns: 1fr; }
+  .kp-cp-filter-row1 {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== MASTHEAD ===== -->
+<header class="masthead masthead-athenaeum">
+  <div class="mast-content">
+    <div class="mast-grid">
+      <div class="mast-center">
+        <div class="mast-eyebrow">A daily book of words · ten tongues</div>
+        <h1 class="mast-name"><a href="/paideia/" aria-label="Kalopaideia home">KALOPAIDEIA</a></h1>
+        <span class="mast-greek"><em>καλὴ παιδεία</em> — the cultivation of mind through classical letters</span>
+      </div>
+    </div>
+    <div class="mast-ledger">
+      <div class="ledger-left">
+        <span class="mast-issue">Issue №&nbsp;139</span>
+        <span class="mast-vol">Volume I</span>
+      </div>
+      <div class="ledger-right">
+        <span class="mast-day">Tuesday · May 19, 2026</span>
+        <span class="mast-anno">Anno Domini MMXXVI</span>
+      </div>
+    </div>
+    <nav class="nav mast-nav">
+      <a href="/paideia/greek">Greek</a>
+      <a href="/paideia/latin">Latin</a>
+      <a href="/paideia/french">French</a>
+      <a href="/paideia/german">German</a>
+      <a href="/paideia/italian">Italian</a>
+      <a href="/paideia/oldenglish">Olde English</a>
+      <a href="/paideia/middleenglish">Middle English</a>
+      <a class="util" href="/paideia/akousma">The Akousma</a>
+      <a class="util" href="/paideia/curriculum.html">Curriculum</a>
+      <a class="util" href="/paideia/commonplace.html">Commonplace</a>
+      <a class="util" href="/paideia/support.html">Support</a>
+      <a class="util" href="/paideia/account">Sign in</a>
+      <a class="util" href="/paideia/about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== MAIN ===== -->
+<main class="kp-cp-scope">
+
+  <!-- Honest banner: the index below uses sample data; user-specific commonplace ships next -->
+  <div style="max-width:880px; margin:24px auto 0; padding:14px 20px; background:#efe9dc; border:1px solid #c8b892; border-left:3px solid #a07a2c; font-family:'Cormorant Garamond',serif; font-style:italic; color:#4a3d2c;">
+    <strong style="font-style:normal">Preview.</strong> The Commonplace is the personal journal you keep alongside the daily word — a place to write a few lines each morning and look back later at what the words moved you to say. The entries shown below are sample data so you can see the shape. Your own commonplace begins as soon as it ships in the coming weeks. <a href="/paideia/support.html" style="color:#7a3322; text-decoration:underline">Become a sponsor</a> to help fund the work.
+  </div>
+
+  <!-- Hero -->
+  <section class="kp-cp-hero">
+    <div class="eyebrow">Your Commonplace Book</div>
+    <h1>What you have kept</h1>
+    <p>Twenty-seven days of words, one a day — and what you wrote with them in your hand.</p>
+    <div class="kp-ornament-row" style="max-width:260px; margin:22px auto 0">
+      <span class="kp-line"></span>
+      <span class="diamond"></span>
+      <span class="kp-line"></span>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <div class="kp-cp-stats" id="kp-stats"></div>
+
+  <!-- Filter bar -->
+  <div id="kp-filter-sentinel" style="height:1px"></div>
+  <div class="kp-cp-filter" id="kp-filter">
+    <div class="kp-cp-filter-row1">
+      <div class="label">FILTER</div>
+      <div class="kp-cp-search">
+        <svg viewBox="0 0 16 16" width="14" height="14" style="color:var(--ink-3)"><circle cx="7" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+        <input id="kp-q" type="text" placeholder="search the book — by word, language, or what you wrote" />
+        <button id="kp-q-clear" aria-label="Clear" style="display:none">×</button>
+      </div>
+      <div class="kp-cp-sort">
+        <span class="label">SORT</span>
+        <select id="kp-sort">
+          <option value="newest">Newest first</option>
+          <option value="oldest">Oldest first</option>
+          <option value="longest">Longest</option>
+          <option value="shortest">Shortest</option>
+          <option value="lang">By tongue</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="kp-cp-chips-row">
+      <div class="kp-cp-chipgroup" id="kp-langgroup">
+        <span class="lbl">TONGUE</span>
+      </div>
+      <div class="kp-cp-chipgroup" id="kp-moodgroup">
+        <span class="lbl">MOOD</span>
+      </div>
+    </div>
+
+    <div class="kp-cp-count" id="kp-count"></div>
+  </div>
+
+  <!-- Grid -->
+  <div class="kp-cp-grid" id="kp-grid"></div>
+
+  <!-- Back link -->
+  <div class="kp-cp-back">
+    <a href="/paideia/">
+      <svg viewBox="0 0 12 12" width="10" height="10"><path d="M8 2L3 6l5 4" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Today's word — θυμός
+    </a>
+  </div>
+</main>
+
+<!-- Akousma band -->
+<aside class="akousma-band">
+  <div class="akousma-mark">ΑΚΟΥΣΜΑ</div>
+  <h2>The Audio Library of Kalopaideia</h2>
+  <p>One canonical work from each tradition · line-by-line audio in the original tongue · parallel English translation · scholarly notes · all for $12.99 a month.</p>
+  <a class="cta" href="#">Begin a Free Trial →</a>
+</aside>
+
+<!-- Footer -->
+<footer class="colophon">
+  <div class="name">KALOPAIDEIA</div>
+  <div class="tagline"><em>καλὴ παιδεία</em> <span class="sep">·</span> the cultivation of mind through classical letters</div>
+  <div class="est">EST. MMXXIV <span class="sep">·</span> ATHENS &amp; OXFORD &amp; ELSEWHERE <span class="sep">·</span> <span class="imprint">NEW CHARTER VENTURES</span></div>
+  <div class="legal">
+    Anno Domini MMXXVI <span class="sep">·</span>
+    <a href="/paideia/about.html">About</a> <span class="sep">·</span>
+    <a href="/paideia/contact.html">Contact</a> <span class="sep">·</span>
+    <a href="/paideia/credits.html">Credits</a> <span class="sep">·</span>
+    <a href="/paideia/terms.html">Terms</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // ============================================================
+  // Commonplace index — Claude Design handoff (kp-commonplace.jsx)
+  // ============================================================
+
+  const ALL = [
+    { issue:139, date:"Tue, May 19", iso:"2026-05-19", lang:"Greek",         word:"θυμός",          tr:"thymos",         words:0,    minutes:0, today:true,  mood:[],                              tags:["draft"],                       excerpt:"" },
+    { issue:138, date:"Mon, May 18", iso:"2026-05-18", lang:"Latin",         word:"fūror",          tr:"furor",          words:284,  minutes:6,             mood:["agitated","contemplative"],    tags:["evening","at home"],           excerpt:"Furor sits behind the breastbone. When it climbs, it climbs without warning — yesterday a small thing started it; today it has burnt itself out and I am tired, but lighter. The Romans were right about the storm and the wreckage that follows." },
+    { issue:137, date:"Sun, May 17", iso:"2026-05-17", lang:"Greek",         word:"ψυχή",           tr:"psychḗ",         words:188,  minutes:4,             mood:["calm","melancholic"],          tags:["train","morning"],             excerpt:"I sat with the word on the train, watching my breath leave the window as a small fog. The cold breath, Homer says, that goes out at death. I am still warm." },
+    { issue:136, date:"Sat, May 16", iso:"2026-05-16", lang:"Latin",         word:"sapientia",      tr:"sapientia",      words:142,  minutes:3,             mood:["contemplative"],               tags:["library"],                     excerpt:"Wisdom not as facts but as a relation to time. To know the day, to sit with it." },
+    { issue:135, date:"Fri, May 15", iso:"2026-05-15", lang:"German",        word:"Sehnsucht",      tr:"Sehnsucht",      words:312,  minutes:7,             mood:["longing","melancholic"],       tags:["evening","reading"],           excerpt:"Hard to write about a German word in English. The longing without an object — for a country one has not yet seen." },
+    { issue:134, date:"Thu, May 14", iso:"2026-05-14", lang:"Olde English",  word:"wyrd",           tr:"wyrd",           words:226,  minutes:5,             mood:["contemplative"],               tags:["dream","morning"],             excerpt:"Fate or weave. The thread of the day that is being made by what I do in it. I noticed today I was already weaving when I thought I was choosing." },
+    { issue:133, date:"Wed, May 13", iso:"2026-05-13", lang:"French",        word:"flâner",         tr:"flâner",         words:208,  minutes:5,             mood:["calm","joyful"],               tags:["afternoon","park"],            excerpt:"To wander without purpose is its own purpose. The afternoon was kind to me; the city did not ask where I was going." },
+    { issue:132, date:"Tue, May 12", iso:"2026-05-12", lang:"Italian",       word:"sprezzatura",    tr:"sprezzatura",    words:172,  minutes:4,             mood:["hopeful"],                      tags:["conversation"],                excerpt:"The art of making the difficult look easy. Today I watched a waiter carry six glasses across a crowded room and place them without a sound; the sprezzatura is everywhere when you start looking." },
+    { issue:131, date:"Mon, May 11", iso:"2026-05-11", lang:"Greek",         word:"ἀρετή",          tr:"aretḗ",          words:264,  minutes:6,             mood:["hopeful","contemplative"],      tags:["morning","at home"],           excerpt:"Excellence is not an act but a habit, says Aristotle. I tried this morning to practise one small excellence: a slow, attentive coffee, before the day made its claim on me." },
+    { issue:130, date:"Sun, May 10", iso:"2026-05-10", lang:"Latin",         word:"otium",          tr:"otium",          words:138,  minutes:3,             mood:["calm"],                         tags:["garden","afternoon"],          excerpt:"A leisure that is the condition of thought, not its opposite. The Romans had a word for this; we have only 'productivity.'" },
+    { issue:129, date:"Sat, May  9", iso:"2026-05-09", lang:"Olde English",  word:"eft",            tr:"eft",            words:96,   minutes:2,             mood:["contemplative"],                tags:["short"],                       excerpt:"'Again, afterward.' A word from old verse meaning the return — the way a thing comes back to itself." },
+    { issue:128, date:"Fri, May  8", iso:"2026-05-08", lang:"Middle English",word:"wanhope",        tr:"wanhope",        words:312,  minutes:7,             mood:["melancholic"],                  tags:["evening","memory"],            excerpt:"A medieval word for despair — literally, 'lacking hope.' I sat with it without trying to argue with it. The word is honest in a way modern English isn't; it names what is missing without naming the missing thing." },
+    { issue:127, date:"Thu, May  7", iso:"2026-05-07", lang:"French",        word:"dépaysement",    tr:"dépaysement",    words:248,  minutes:6,             mood:["longing"],                      tags:["transit","afternoon"],         excerpt:"The disorientation of being away from one's country — but I felt it on the bus home, watching a familiar street become unfamiliar in late light." },
+    { issue:126, date:"Wed, May  6", iso:"2026-05-06", lang:"Greek",         word:"κλέος",          tr:"kléos",          words:204,  minutes:5,             mood:["restless"],                     tags:["reading"],                     excerpt:"Glory. What is said of one after one has died. Homer's heroes choose it; we mostly do not get to choose." },
+    { issue:125, date:"Tue, May  5", iso:"2026-05-05", lang:"Latin",         word:"gravitas",       tr:"gravitas",       words:176,  minutes:4,             mood:["calm"],                         tags:["morning","at home"],           excerpt:"Weight. Not seriousness for its own sake, but the seriousness of weighing things." },
+    { issue:124, date:"Mon, May  4", iso:"2026-05-04", lang:"Olde English",  word:"mōd",            tr:"mōd",            words:218,  minutes:5,             mood:["agitated","contemplative"],     tags:["dream"],                       excerpt:"The Anglo-Saxon heart-mind. Where modern English split mind and mood, the old word held both." },
+    { issue:123, date:"Sun, May  3", iso:"2026-05-03", lang:"German",        word:"Waldeinsamkeit", tr:"Waldeinsamkeit", words:268,  minutes:6,             mood:["calm","longing"],               tags:["garden","afternoon"],          excerpt:"The solitude of being in the forest. A specific solitude — not loneliness, not seclusion, but the particular silence that trees make together." },
+    { issue:122, date:"Sat, May  2", iso:"2026-05-02", lang:"Italian",       word:"fiero",          tr:"fiero",          words:140,  minutes:3,             mood:["joyful"],                       tags:["short"],                       excerpt:"The flush of triumph at having done a hard thing. Distinct from pride: it is the body's report." },
+    { issue:121, date:"Fri, May  1", iso:"2026-05-01", lang:"Greek",         word:"φιλία",          tr:"philía",         words:286,  minutes:6,             mood:["hopeful"],                      tags:["conversation","evening"],      excerpt:"The friendship that is its own end, not the means to another. Aristotle's third kind, the kind that lasts because each loves the other for who they are." },
+    { issue:120, date:"Thu, Apr 30", iso:"2026-04-30", lang:"Latin",         word:"pietās",         tr:"pietās",         words:194,  minutes:4,             mood:["contemplative"],                tags:["memory"],                      excerpt:"Not 'piety' in the narrow modern sense — the broader Roman duty toward one's family, gods, country. The bond, before there was a word for it." },
+    { issue:119, date:"Wed, Apr 29", iso:"2026-04-29", lang:"French",        word:"ennui",          tr:"ennui",          words:158,  minutes:4,             mood:["melancholic","restless"],       tags:["afternoon"],                   excerpt:"Boredom that is also a kind of suffering. It has weight. The French knew this before the English did." },
+    { issue:118, date:"Tue, Apr 28", iso:"2026-04-28", lang:"Olde English",  word:"glædness",       tr:"glædness",       words:108,  minutes:2,             mood:["joyful"],                       tags:["morning"],                     excerpt:"The cheerful brightness of an Anglo-Saxon mead-hall — the word from which our 'gladness' comes, with all its warmth intact." },
+    { issue:117, date:"Mon, Apr 27", iso:"2026-04-27", lang:"Middle English",word:"wrethful",       tr:"wrethful",       words:184,  minutes:4,             mood:["agitated"],                     tags:["short"],                       excerpt:"'Wrathful.' A word for an old anger, the kind that broods rather than flares." },
+    { issue:116, date:"Sun, Apr 26", iso:"2026-04-26", lang:"Greek",         word:"λόγος",          tr:"lógos",          words:340,  minutes:8,             mood:["contemplative"],                tags:["reading","evening"],           excerpt:"Reason, word, principle, account. The hardest Greek word to translate because it is also the most everyday: it just means the saying of a thing, the way we name a thing into being." },
+    { issue:115, date:"Sat, Apr 25", iso:"2026-04-25", lang:"German",        word:"Fernweh",        tr:"Fernweh",        words:226,  minutes:5,             mood:["longing","restless"],           tags:["afternoon","memory"],          excerpt:"The opposite of Heimweh — homesickness for far places. A pain that is also a pull." },
+    { issue:114, date:"Fri, Apr 24", iso:"2026-04-24", lang:"Latin",         word:"labor",          tr:"labor",          words:202,  minutes:5,             mood:["calm"],                         tags:["morning"],                     excerpt:"Work as exertion, the bending of the body and the breath. Distinct from opus, which is the work as a finished thing." },
+    { issue:113, date:"Thu, Apr 23", iso:"2026-04-23", lang:"Olde English",  word:"wynn",           tr:"wynn",           words:124,  minutes:3,             mood:["joyful"],                       tags:["short","at home"],             excerpt:"Joy. A small bright word from old verse — also the name of a rune. A word that is itself a kind of light." },
+  ];
+
+  const LANGS = ['Greek','Latin','French','German','Italian','Olde English','Middle English'];
+  const MOODS = ['calm','agitated','longing','hopeful','restless','melancholic','contemplative','joyful'];
+
+  const TOTAL_WORDS = ALL.reduce((s, e) => s + (e.words || 0), 0);
+  const LANG_COUNT  = new Set(ALL.map(e => e.lang)).size;
+
+  // ---- DOM refs ----
+  const statsEl   = document.getElementById('kp-stats');
+  const langGroup = document.getElementById('kp-langgroup');
+  const moodGroup = document.getElementById('kp-moodgroup');
+  const grid      = document.getElementById('kp-grid');
+  const countEl   = document.getElementById('kp-count');
+  const qInput    = document.getElementById('kp-q');
+  const qClear    = document.getElementById('kp-q-clear');
+  const sortSel   = document.getElementById('kp-sort');
+
+  // ---- state ----
+  const state = { q: '', lang: 'All', mood: 'All', sort: 'newest' };
+
+  // ---- Stats ----
+  function renderStats() {
+    statsEl.innerHTML = '';
+    const stats = [
+      { v: ALL.length,                    l: 'entries' },
+      { v: LANG_COUNT,                    l: 'tongues' },
+      { v: TOTAL_WORDS.toLocaleString(),  l: 'words written' },
+      { v: 27,                            l: 'day streak' },
+    ];
+    stats.forEach(s => {
+      const el = document.createElement('div');
+      el.className = 'stat';
+      el.innerHTML = '<div class="v">' + s.v + '</div><div class="l">' + s.l.toUpperCase() + '</div>';
+      statsEl.appendChild(el);
+    });
+  }
+
+  // ---- Chip groups ----
+  function renderChips() {
+    function makeChips(group, opts, key, italic) {
+      // Keep the label, drop existing chip buttons
+      group.querySelectorAll('.kp-cp-chip').forEach(n => n.remove());
+      opts.forEach(o => {
+        const b = document.createElement('button');
+        b.className = 'kp-cp-chip' + (italic ? ' italic' : '') + (state[key] === o ? ' on' : '');
+        b.textContent = o;
+        b.addEventListener('click', () => {
+          state[key] = o;
+          render();
+        });
+        group.appendChild(b);
+      });
+    }
+    makeChips(langGroup, ['All'].concat(LANGS), 'lang', false);
+    makeChips(moodGroup, ['All'].concat(MOODS), 'mood', true);
+  }
+
+  // ---- Filter / sort ----
+  function filteredEntries() {
+    let list = ALL.slice();
+    if (state.lang !== 'All') list = list.filter(e => e.lang === state.lang);
+    if (state.mood !== 'All') list = list.filter(e => e.mood.includes(state.mood));
+    const qq = state.q.trim().toLowerCase();
+    if (qq) {
+      list = list.filter(e =>
+        e.word.toLowerCase().includes(qq) ||
+        e.tr.toLowerCase().includes(qq) ||
+        e.lang.toLowerCase().includes(qq) ||
+        (e.excerpt || '').toLowerCase().includes(qq) ||
+        e.tags.some(t => t.toLowerCase().includes(qq)) ||
+        e.mood.some(m => m.toLowerCase().includes(qq))
+      );
+    }
+    if (state.sort === 'newest')   list.sort((a,b) => b.issue - a.issue);
+    if (state.sort === 'oldest')   list.sort((a,b) => a.issue - b.issue);
+    if (state.sort === 'longest')  list.sort((a,b) => b.words - a.words);
+    if (state.sort === 'shortest') list.sort((a,b) => a.words - b.words);
+    if (state.sort === 'lang')     list.sort((a,b) => a.lang.localeCompare(b.lang) || b.issue - a.issue);
+    return list;
+  }
+
+  // ---- Grid ----
+  function renderGrid() {
+    const list = filteredEntries();
+    grid.innerHTML = '';
+    if (list.length === 0) {
+      const empty = document.createElement('div');
+      empty.className = 'kp-cp-empty';
+      empty.textContent = 'No entries match these filters.';
+      grid.appendChild(empty);
+    } else {
+      list.forEach(e => grid.appendChild(card(e)));
+    }
+    countEl.innerHTML = 'Showing <span class="lining">' + list.length + '</span> of <span class="lining">' + ALL.length + '</span> entries';
+  }
+
+  function escapeHTML(s) {
+    return String(s).replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
+  }
+
+  function card(e) {
+    const a = document.createElement('a');
+    a.href = './';
+    a.className = 'kp-cp-card';
+    if (e.today) a.setAttribute('data-today', 'true');
+
+    let metaDate;
+    if (e.today) {
+      metaDate = '<span class="meta-date today"><span class="today-dot"></span>TODAY · DRAFT</span>';
+    } else {
+      metaDate = '<span class="meta-date">' + escapeHTML(e.date.toUpperCase()) + ' · Nº <span class="lining">' + e.issue + '</span></span>';
+    }
+    const metaWords = e.today
+      ? '<span class="meta-words">in progress</span>'
+      : '<span class="meta-words">' + e.minutes + ' min · ' + e.words + ' words</span>';
+
+    let excerptHTML = '';
+    if (e.excerpt) {
+      const trimmed = e.excerpt.length > 240 ? e.excerpt.slice(0, 240).trim() + '…' : e.excerpt;
+      excerptHTML = '<p class="excerpt">"' + escapeHTML(trimmed) + '"</p>';
+    } else if (e.today) {
+      excerptHTML = '<p class="excerpt placeholder">Begin writing today\u2019s entry →</p>';
+    }
+
+    let tagsHTML = '';
+    e.mood.forEach(m => { tagsHTML += '<span class="kp-cp-tag" data-kind="mood">' + escapeHTML(m) + '</span>'; });
+    e.tags.forEach(t => { tagsHTML += '<span class="kp-cp-tag" data-kind="tag">#' + escapeHTML(t) + '</span>'; });
+
+    a.innerHTML =
+      '<div class="meta">' + metaDate + metaWords + '</div>' +
+      '<div class="word-row">' +
+        '<span class="word">' + escapeHTML(e.word) + '</span>' +
+        '<span class="tr">' + escapeHTML(e.tr) + '</span>' +
+      '</div>' +
+      '<div class="lang-line">' + escapeHTML(e.lang.toUpperCase()) + '</div>' +
+      excerptHTML +
+      '<div class="tags-row">' + tagsHTML + '</div>';
+    return a;
+  }
+
+  // ---- Main render ----
+  function render() {
+    renderChips();
+    renderGrid();
+  }
+
+  // ---- Event wiring ----
+  qInput.addEventListener('input', () => {
+    state.q = qInput.value;
+    qClear.style.display = state.q ? 'inline-flex' : 'none';
+    renderGrid();
+  });
+  qClear.addEventListener('click', () => {
+    state.q = '';
+    qInput.value = '';
+    qClear.style.display = 'none';
+    renderGrid();
+  });
+  sortSel.addEventListener('change', () => {
+    state.sort = sortSel.value;
+    renderGrid();
+  });
+
+  // ---- Sticky-shadow on scroll ----
+  // IntersectionObserver watches a 1px sentinel placed directly above the
+  // filter bar. When the sentinel scrolls off-screen, the filter is
+  // pinned and we add `.stuck` for a soft shadow + darker border.
+  const filterEl  = document.getElementById('kp-filter');
+  const sentinel  = document.getElementById('kp-filter-sentinel');
+  if ('IntersectionObserver' in window && filterEl && sentinel) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(en => {
+        filterEl.classList.toggle('stuck', en.intersectionRatio === 0);
+      });
+    }, { threshold: [0, 1] });
+    io.observe(sentinel);
+  }
+
+  // ---- Initial render ----
+  renderStats();
+  render();
+})();
+</script>
+</body>
+</html>

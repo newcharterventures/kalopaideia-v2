@@ -1,33 +1,195 @@
 {
   "overview": "Middle English is the language of England between roughly 1150 and 1500 — the period that begins after the Norman Conquest had reshaped English vocabulary and ends as Caxton's printing press began standardizing it. Inflection collapsed dramatically from the four-case Old English system; word order grew fixed; thousands of French and Latin loans entered the lexicon; the Great Vowel Shift began in the late fourteenth century. The literary high point is the late fourteenth century: Chaucer's Canterbury Tales (c. 1387–1400) in the East Midland dialect that became the basis for modern standard English, the Pearl-poet's alliterative Sir Gawain and the Green Knight (c. 1375–1400) in the North-West Midlands, William Langland's Piers Plowman, the mystical writings of Julian of Norwich, and Malory's late-fifteenth-century Le Morte d'Arthur.",
   "alphabet": [
-    { "char": "a", "name": "a",     "ipa": "a / aː",   "approximation": "like 'a' in 'father' (long) or Italian 'a' (short)", "notes": "Long ā in 'name', 'tale'; short a in 'cat', 'man'. Length distinguished phonemically." },
-    { "char": "b", "name": "be",    "ipa": "b",        "approximation": "like English 'b'",          "notes": "As in modern English." },
-    { "char": "c", "name": "ce",    "ipa": "k / s",    "approximation": "'k' before a/o/u, 's' before e/i", "notes": "Following Norman scribal practice; word-initial 'c' before 'i' or 'e' is /s/ ('citee', 'cercle')." },
-    { "char": "d", "name": "de",    "ipa": "d",        "approximation": "like English 'd'",          "notes": "As in modern English." },
-    { "char": "e", "name": "e",     "ipa": "e / ɛ / ə","approximation": "'ay' (closed long), 'eh' (short), or 'uh' (final)", "notes": "Long ē in 'sweete' /eː/; short e in 'bed' /ɛ/; final unstressed -e is the 'reduced' vowel /ə/, often pronounced in Chaucerian scansion." },
-    { "char": "f", "name": "ef",    "ipa": "f / v",    "approximation": "'f' or 'v' between vowels",  "notes": "Voicing between vowels persists from Old English in some words." },
-    { "char": "g", "name": "ge",    "ipa": "ɡ / dʒ",   "approximation": "'g' before a/o/u, 'j' before e/i", "notes": "Hard g in 'good', 'gilde'; soft g in 'gentil' (from French)." },
-    { "char": "h", "name": "ha",    "ipa": "h",        "approximation": "like English 'h'",          "notes": "Aspirated word-initially; sometimes silent in Romance loans." },
-    { "char": "i", "name": "i",     "ipa": "i / iː / j","approximation": "'i' or 'ee'",              "notes": "Long ī in 'tyme' (note 'y' is just an alternative spelling for ī in many positions); short i in 'sittë'." },
-    { "char": "k", "name": "ka",    "ipa": "k",        "approximation": "like English 'k'",          "notes": "Used after Norman scribal habits where Old English used 'c' (knight, knew — k once pronounced)." },
-    { "char": "l", "name": "el",    "ipa": "l",        "approximation": "like English 'l'",          "notes": "Sometimes 'dark' before consonants." },
-    { "char": "m", "name": "em",    "ipa": "m",        "approximation": "like English 'm'",          "notes": "As modern English." },
-    { "char": "n", "name": "en",    "ipa": "n",        "approximation": "like English 'n'",          "notes": "As modern English; assimilates before /k/, /ɡ/." },
-    { "char": "o", "name": "o",     "ipa": "o / ɔ / oː / uː","approximation": "'oh' (long), 'aw' (open), or 'oo' (close-long)", "notes": "Spelling -oo- usually marks the long /oː/ ('roote'); single o in 'open' is short /ɔ/." },
-    { "char": "p", "name": "pe",    "ipa": "p",        "approximation": "like English 'p'",          "notes": "Unaspirated like Romance languages, generally." },
-    { "char": "q", "name": "qu",    "ipa": "kw",       "approximation": "'kw'",                       "notes": "Always followed by 'u' ('queene', 'quod')." },
-    { "char": "r", "name": "er",    "ipa": "r",        "approximation": "rolled or tapped",          "notes": "Always pronounced — never silent as in modern non-rhotic English. Tap or trill." },
-    { "char": "s", "name": "es",    "ipa": "s / z",    "approximation": "'s' or 'z'",                "notes": "Voiced between vowels; voiceless initially and finally." },
-    { "char": "t", "name": "te",    "ipa": "t",        "approximation": "like English 't'",          "notes": "As modern; unaspirated." },
-    { "char": "u/v","name": "u/v",  "ipa": "u / uː / v","approximation": "'oo' (vowel) or 'v' (consonant)", "notes": "U and v are interchangeable scribal variants — the choice is positional, not phonemic. Same letter in this period." },
-    { "char": "w", "name": "wynn",  "ipa": "w",        "approximation": "like English 'w'",          "notes": "Old English wynn (ƿ) had been replaced by 'w' (literally 'double-u')." },
-    { "char": "x", "name": "ex",    "ipa": "ks",       "approximation": "'ks'",                       "notes": "Rare except in Greek loans and a few proper nouns." },
-    { "char": "y", "name": "y",     "ipa": "i / iː / j","approximation": "alternative spelling for i", "notes": "Often interchangeable with 'i' ('tyme'/'time', 'lyf'/'lif'); sometimes a consonant /j/." },
-    { "char": "z", "name": "zed",   "ipa": "z",        "approximation": "'z'",                       "notes": "Rare; often replaced by 's'." },
-    { "char": "þ", "name": "thorn", "ipa": "θ / ð",    "approximation": "'th' (voiceless) or 'th' (voiced)", "notes": "Survives in Chaucer's manuscripts and the Pearl-poet, gradually replaced by 'th'. Pronunciation determined by position (voiced between vowels, voiceless elsewhere)." },
-    { "char": "ȝ", "name": "yogh",  "ipa": "ɣ / j / x","approximation": "soft 'gh', 'y', or German 'ch'", "notes": "Old English /ɣ/ or /j/. By Chaucer's time partly replaced by 'gh' (knight, night) or 'y'. Common in the Pearl-poet's manuscripts." },
-    { "char": "æ", "name": "ash",   "ipa": "æ",        "approximation": "'a' as in 'cat'",           "notes": "Increasingly rare in Middle English; survives in some northern manuscripts and in conservative spellings." }
+    {
+      "char": "a",
+      "name": "a",
+      "ipa": "[a / aː]",
+      "approximation": "like 'a' in 'father' (long) or Italian 'a' (short)",
+      "notes": "Long ā in 'name', 'tale'; short a in 'cat', 'man'. Length distinguished phonemically."
+    },
+    {
+      "char": "b",
+      "name": "be",
+      "ipa": "[b]",
+      "approximation": "like English 'b'",
+      "notes": "As in modern English."
+    },
+    {
+      "char": "c",
+      "name": "ce",
+      "ipa": "[k / s]",
+      "approximation": "'k' before a/o/u, 's' before e/i",
+      "notes": "Following Norman scribal practice; word-initial 'c' before 'i' or 'e' is /s/ ('citee', 'cercle')."
+    },
+    {
+      "char": "d",
+      "name": "de",
+      "ipa": "[d]",
+      "approximation": "like English 'd'",
+      "notes": "As in modern English."
+    },
+    {
+      "char": "e",
+      "name": "e",
+      "ipa": "[e / ɛ / ə]",
+      "approximation": "'ay' (closed long), 'eh' (short), or 'uh' (final)",
+      "notes": "Long ē in 'sweete' /eː/; short e in 'bed' /ɛ/; final unstressed -e is the 'reduced' vowel /ə/, often pronounced in Chaucerian scansion."
+    },
+    {
+      "char": "f",
+      "name": "ef",
+      "ipa": "[f / v]",
+      "approximation": "'f' or 'v' between vowels",
+      "notes": "Voicing between vowels persists from Old English in some words."
+    },
+    {
+      "char": "g",
+      "name": "ge",
+      "ipa": "[ɡ / dʒ]",
+      "approximation": "'g' before a/o/u, 'j' before e/i",
+      "notes": "Hard g in 'good', 'gilde'; soft g in 'gentil' (from French)."
+    },
+    {
+      "char": "h",
+      "name": "ha",
+      "ipa": "[h]",
+      "approximation": "like English 'h'",
+      "notes": "Aspirated word-initially; sometimes silent in Romance loans."
+    },
+    {
+      "char": "i",
+      "name": "i",
+      "ipa": "[i / iː / j]",
+      "approximation": "'i' or 'ee'",
+      "notes": "Long ī in 'tyme' (note 'y' is just an alternative spelling for ī in many positions); short i in 'sittë'."
+    },
+    {
+      "char": "k",
+      "name": "ka",
+      "ipa": "[k]",
+      "approximation": "like English 'k'",
+      "notes": "Used after Norman scribal habits where Old English used 'c' (knight, knew — k once pronounced)."
+    },
+    {
+      "char": "l",
+      "name": "el",
+      "ipa": "[l]",
+      "approximation": "like English 'l'",
+      "notes": "Sometimes 'dark' before consonants."
+    },
+    {
+      "char": "m",
+      "name": "em",
+      "ipa": "[m]",
+      "approximation": "like English 'm'",
+      "notes": "As modern English."
+    },
+    {
+      "char": "n",
+      "name": "en",
+      "ipa": "[n]",
+      "approximation": "like English 'n'",
+      "notes": "As modern English; assimilates before /k/, /ɡ/."
+    },
+    {
+      "char": "o",
+      "name": "o",
+      "ipa": "[o / ɔ / oː / uː]",
+      "approximation": "'oh' (long), 'aw' (open), or 'oo' (close-long)",
+      "notes": "Spelling -oo- usually marks the long /oː/ ('roote'); single o in 'open' is short /ɔ/."
+    },
+    {
+      "char": "p",
+      "name": "pe",
+      "ipa": "[p]",
+      "approximation": "like English 'p'",
+      "notes": "Unaspirated like Romance languages, generally."
+    },
+    {
+      "char": "q",
+      "name": "qu",
+      "ipa": "[kw]",
+      "approximation": "'kw'",
+      "notes": "Always followed by 'u' ('queene', 'quod')."
+    },
+    {
+      "char": "r",
+      "name": "er",
+      "ipa": "[r]",
+      "approximation": "rolled or tapped",
+      "notes": "Always pronounced — never silent as in modern non-rhotic English. Tap or trill."
+    },
+    {
+      "char": "s",
+      "name": "es",
+      "ipa": "[s / z]",
+      "approximation": "'s' or 'z'",
+      "notes": "Voiced between vowels; voiceless initially and finally."
+    },
+    {
+      "char": "t",
+      "name": "te",
+      "ipa": "[t]",
+      "approximation": "like English 't'",
+      "notes": "As modern; unaspirated."
+    },
+    {
+      "char": "u/v",
+      "name": "u/v",
+      "ipa": "[u / uː / v]",
+      "approximation": "'oo' (vowel) or 'v' (consonant)",
+      "notes": "U and v are interchangeable scribal variants — the choice is positional, not phonemic. Same letter in this period."
+    },
+    {
+      "char": "w",
+      "name": "wynn",
+      "ipa": "[w]",
+      "approximation": "like English 'w'",
+      "notes": "Old English wynn (ƿ) had been replaced by 'w' (literally 'double-u')."
+    },
+    {
+      "char": "x",
+      "name": "ex",
+      "ipa": "[ks]",
+      "approximation": "'ks'",
+      "notes": "Rare except in Greek loans and a few proper nouns."
+    },
+    {
+      "char": "y",
+      "name": "y",
+      "ipa": "[i / iː / j]",
+      "approximation": "alternative spelling for i",
+      "notes": "Often interchangeable with 'i' ('tyme'/'time', 'lyf'/'lif'); sometimes a consonant /j/."
+    },
+    {
+      "char": "z",
+      "name": "zed",
+      "ipa": "[z]",
+      "approximation": "'z'",
+      "notes": "Rare; often replaced by 's'."
+    },
+    {
+      "char": "þ",
+      "name": "thorn",
+      "ipa": "[θ / ð]",
+      "approximation": "'th' (voiceless) or 'th' (voiced)",
+      "notes": "Survives in Chaucer's manuscripts and the Pearl-poet, gradually replaced by 'th'. Pronunciation determined by position (voiced between vowels, voiceless elsewhere)."
+    },
+    {
+      "char": "ȝ",
+      "name": "yogh",
+      "ipa": "[ɣ / j / x]",
+      "approximation": "soft 'gh', 'y', or German 'ch'",
+      "notes": "Old English /ɣ/ or /j/. By Chaucer's time partly replaced by 'gh' (knight, night) or 'y'. Common in the Pearl-poet's manuscripts."
+    },
+    {
+      "char": "æ",
+      "name": "ash",
+      "ipa": "[æ]",
+      "approximation": "'a' as in 'cat'",
+      "notes": "Increasingly rare in Middle English; survives in some northern manuscripts and in conservative spellings."
+    }
   ],
   "pronunciation_notes": [
     "Final unstressed -e was usually pronounced as a schwa /ə/ in Chaucerian verse — 'sweete' is two syllables, 'wende' two syllables, 'longe' two syllables. By the time of Caxton (c. 1480) this final -e had largely been lost, which is why later printers often retained it as a silent letter only. To scan Chaucer correctly, give -e its syllable.",
@@ -60,31 +222,169 @@
   "numbers": {
     "overview": "Middle English numerals are mostly inherited from Old English with phonological changes. Cardinals from one through ten: oon (or 'on'), two, three, foure, fyve, six, sevene, eighte, nyne, ten. Compound forms work as in modern English: eleven, twelve, thirtene… twenty, thirty, fourty… hundred, thousand. The Old English '-tig' suffix for tens has become '-ty'. Spelling varies wildly — 'fyve', 'fife', 'fyf' all appear; modern editors often regularize, but original manuscripts will not.",
     "cardinals": [
-      { "value": 0,  "word": "no thing",   "ipa": "noː ˈθing",  "pronunciation": "NOH thing",      "note": "Zero as a concept entered English with Arabic numerals via Italian commercial mathematics; the Middle English period mostly does without it." },
-      { "value": 1,  "word": "oon",        "ipa": "oːn",         "pronunciation": "OHN",            "note": "Also written 'on', 'one'. Long ō. The unrounded form 'an' / 'a' became the indefinite article." },
-      { "value": 2,  "word": "two",        "ipa": "twoː",        "pronunciation": "TWOH",           "note": "The 'w' was pronounced — silent only after the Great Vowel Shift." },
-      { "value": 3,  "word": "three",      "ipa": "θreː",        "pronunciation": "THREH",          "note": "Also spelled 'thre'. From Old English þrēo." },
-      { "value": 4,  "word": "foure",      "ipa": "ˈfoːurə",     "pronunciation": "FOH-uh-reh",     "note": "Often disyllabic in Chaucer's verse — 'fou-re'." },
-      { "value": 5,  "word": "fyve",       "ipa": "fiːvə",       "pronunciation": "FEE-veh",        "note": "Long ī ('y' is just a spelling variant). Final -e pronounced as schwa." },
-      { "value": 6,  "word": "six",        "ipa": "siks",        "pronunciation": "SIKS",           "note": "From Old English siex." },
-      { "value": 7,  "word": "sevene",     "ipa": "ˈsɛvənə",     "pronunciation": "SEH-veh-neh",    "note": "Three syllables in Chaucer's metre." },
-      { "value": 8,  "word": "eighte",     "ipa": "ˈɛiçtə",      "pronunciation": "EYE-khteh",      "note": "The 'gh' is /ç/ — the German 'ich' sound. Disyllabic." },
-      { "value": 9,  "word": "nyne",       "ipa": "ˈniːnə",      "pronunciation": "NEE-neh",        "note": "Long ī; final -e pronounced." },
-      { "value": 10, "word": "ten",        "ipa": "tɛn",         "pronunciation": "TEHN",           "note": "From Old English tīen." },
-      { "value": 11, "word": "eleven",     "ipa": "əˈlɛvən",     "pronunciation": "eh-LEH-ven",     "note": "From Old English endleofan, lit. 'one left' (over ten)." },
-      { "value": 12, "word": "twelve",     "ipa": "twɛlvə",      "pronunciation": "TWEL-veh",       "note": "From Old English twelf, lit. 'two left' (over ten)." },
-      { "value": 20, "word": "twenty",     "ipa": "ˈtwɛnti",     "pronunciation": "TWEHN-tee",      "note": "From OE twēntig, 'two-tens'." },
-      { "value": 30, "word": "thritty",    "ipa": "ˈθrɪtti",     "pronunciation": "THRIT-tee",      "note": "Doublet 'thirty' is a metathesis already common." },
-      { "value": 100,"word": "hundred",    "ipa": "ˈhundrəd",    "pronunciation": "HOON-dred",      "note": "From OE hundred. Note 'an hundred' with article." },
-      { "value": 1000,"word":"thousand",   "ipa": "ˈθuːzand",    "pronunciation": "THOO-zand",      "note": "Long ū. From OE þūsend." }
+      {
+        "value": 0,
+        "word": "no thing",
+        "ipa": "noː ˈθing",
+        "pronunciation": "NOH thing",
+        "note": "Zero as a concept entered English with Arabic numerals via Italian commercial mathematics; the Middle English period mostly does without it."
+      },
+      {
+        "value": 1,
+        "word": "oon",
+        "ipa": "oːn",
+        "pronunciation": "OHN",
+        "note": "Also written 'on', 'one'. Long ō. The unrounded form 'an' / 'a' became the indefinite article."
+      },
+      {
+        "value": 2,
+        "word": "two",
+        "ipa": "twoː",
+        "pronunciation": "TWOH",
+        "note": "The 'w' was pronounced — silent only after the Great Vowel Shift."
+      },
+      {
+        "value": 3,
+        "word": "three",
+        "ipa": "θreː",
+        "pronunciation": "THREH",
+        "note": "Also spelled 'thre'. From Old English þrēo."
+      },
+      {
+        "value": 4,
+        "word": "foure",
+        "ipa": "ˈfoːurə",
+        "pronunciation": "FOH-uh-reh",
+        "note": "Often disyllabic in Chaucer's verse — 'fou-re'."
+      },
+      {
+        "value": 5,
+        "word": "fyve",
+        "ipa": "fiːvə",
+        "pronunciation": "FEE-veh",
+        "note": "Long ī ('y' is just a spelling variant). Final -e pronounced as schwa."
+      },
+      {
+        "value": 6,
+        "word": "six",
+        "ipa": "siks",
+        "pronunciation": "SIKS",
+        "note": "From Old English siex."
+      },
+      {
+        "value": 7,
+        "word": "sevene",
+        "ipa": "ˈsɛvənə",
+        "pronunciation": "SEH-veh-neh",
+        "note": "Three syllables in Chaucer's metre."
+      },
+      {
+        "value": 8,
+        "word": "eighte",
+        "ipa": "ˈɛiçtə",
+        "pronunciation": "EYE-khteh",
+        "note": "The 'gh' is /ç/ — the German 'ich' sound. Disyllabic."
+      },
+      {
+        "value": 9,
+        "word": "nyne",
+        "ipa": "ˈniːnə",
+        "pronunciation": "NEE-neh",
+        "note": "Long ī; final -e pronounced."
+      },
+      {
+        "value": 10,
+        "word": "ten",
+        "ipa": "tɛn",
+        "pronunciation": "TEHN",
+        "note": "From Old English tīen."
+      },
+      {
+        "value": 11,
+        "word": "eleven",
+        "ipa": "əˈlɛvən",
+        "pronunciation": "eh-LEH-ven",
+        "note": "From Old English endleofan, lit. 'one left' (over ten)."
+      },
+      {
+        "value": 12,
+        "word": "twelve",
+        "ipa": "twɛlvə",
+        "pronunciation": "TWEL-veh",
+        "note": "From Old English twelf, lit. 'two left' (over ten)."
+      },
+      {
+        "value": 20,
+        "word": "twenty",
+        "ipa": "ˈtwɛnti",
+        "pronunciation": "TWEHN-tee",
+        "note": "From OE twēntig, 'two-tens'."
+      },
+      {
+        "value": 30,
+        "word": "thritty",
+        "ipa": "ˈθrɪtti",
+        "pronunciation": "THRIT-tee",
+        "note": "Doublet 'thirty' is a metathesis already common."
+      },
+      {
+        "value": 100,
+        "word": "hundred",
+        "ipa": "ˈhundrəd",
+        "pronunciation": "HOON-dred",
+        "note": "From OE hundred. Note 'an hundred' with article."
+      },
+      {
+        "value": 1000,
+        "word": "thousand",
+        "ipa": "ˈθuːzand",
+        "pronunciation": "THOO-zand",
+        "note": "Long ū. From OE þūsend."
+      }
     ],
     "ordinals": [
-      { "value": 1,  "word": "firste",     "ipa": "ˈfirstə",     "pronunciation": "FEER-steh",      "note": "Final -e usually pronounced." },
-      { "value": 2,  "word": "secounde",   "ipa": "ˈsekuːndə",   "pronunciation": "SEH-koon-deh",   "note": "From Old French segund / Latin secundus." },
-      { "value": 3,  "word": "thridde",    "ipa": "ˈθriddə",     "pronunciation": "THREE-deh",      "note": "Metathesis to 'third' was already in progress." },
-      { "value": 4,  "word": "ferthe",     "ipa": "ˈfɛrθə",      "pronunciation": "FEHR-theh",      "note": "Modern 'fourth'." },
-      { "value": 5,  "word": "fyfthe",     "ipa": "ˈfifθə",      "pronunciation": "FIFTH-eh",       "note": "Final -e pronounced." },
-      { "value": 10, "word": "tenthe",     "ipa": "ˈtɛnθə",      "pronunciation": "TEN-theh",       "note": "Regular formation." }
+      {
+        "value": 1,
+        "word": "firste",
+        "ipa": "ˈfirstə",
+        "pronunciation": "FEER-steh",
+        "note": "Final -e usually pronounced."
+      },
+      {
+        "value": 2,
+        "word": "secounde",
+        "ipa": "ˈsekuːndə",
+        "pronunciation": "SEH-koon-deh",
+        "note": "From Old French segund / Latin secundus."
+      },
+      {
+        "value": 3,
+        "word": "thridde",
+        "ipa": "ˈθriddə",
+        "pronunciation": "THREE-deh",
+        "note": "Metathesis to 'third' was already in progress."
+      },
+      {
+        "value": 4,
+        "word": "ferthe",
+        "ipa": "ˈfɛrθə",
+        "pronunciation": "FEHR-theh",
+        "note": "Modern 'fourth'."
+      },
+      {
+        "value": 5,
+        "word": "fyfthe",
+        "ipa": "ˈfifθə",
+        "pronunciation": "FIFTH-eh",
+        "note": "Final -e pronounced."
+      },
+      {
+        "value": 10,
+        "word": "tenthe",
+        "ipa": "ˈtɛnθə",
+        "pronunciation": "TEN-theh",
+        "note": "Regular formation."
+      }
     ],
     "teaching_notes": "When reading Middle English verse aloud, the most important rule is to pronounce final unstressed -e as a schwa /ə/, except where it would be elided before a following vowel or 'h' + vowel. This is what makes Chaucer's iambic pentameter scan: 'And smal-e fou-les ma-ken me-lo-dy-e' has ten syllables only if the final -es and -e are sounded. The same convention holds for syllabic -es endings ('hous-es', 'cham-bres'). Numerals follow the same rule: 'sev-e-ne' is three syllables, 'eigh-te' is two, 'fif-te' is two."
   },

@@ -4,182 +4,182 @@
     {
       "char": "a",
       "name": "a",
-      "ipa": "ɑ / æ",
+      "ipa": "[ɑ / æ]",
       "approximation": "like 'a' in 'father' or 'a' in 'cat'",
       "notes": "Short /æ/ or long /ɑː/. Length typically marked by macron in modern editions (ā = long)."
     },
     {
       "char": "æ",
       "name": "ash",
-      "ipa": "æ / æː",
+      "ipa": "[æ / æː]",
       "approximation": "like 'a' in 'cat'",
       "notes": "Distinct phoneme, short or long (ǣ). Not a digraph but a single letter descended from Latin ligature."
     },
     {
       "char": "b",
       "name": "bē",
-      "ipa": "b",
+      "ipa": "[b]",
       "approximation": "like 'b' in 'bet'",
       "notes": ""
     },
     {
       "char": "c",
       "name": "cē",
-      "ipa": "k / tʃ",
+      "ipa": "[k / tʃ]",
       "approximation": "like 'k' in 'keep' or 'ch' in 'church'",
       "notes": "Palatalized to [tʃ] before front vowels (i, e, æ) and after front vowels before t. Otherwise [k]."
     },
     {
       "char": "d",
       "name": "dē",
-      "ipa": "d",
+      "ipa": "[d]",
       "approximation": "like 'd' in 'dog'",
       "notes": ""
     },
     {
       "char": "ð",
       "name": "eth",
-      "ipa": "θ / ð",
+      "ipa": "[θ / ð]",
       "approximation": "like 'th' in 'thing' or 'this'",
       "notes": "Used interchangeably with þ (thorn) in manuscripts. Voiced [ð] between vowels, voiceless [θ] elsewhere. Distribution not phonemic."
     },
     {
       "char": "e",
       "name": "e",
-      "ipa": "e / eː",
+      "ipa": "[e / eː]",
       "approximation": "like 'e' in 'met' (short) or 'a' in 'gate' (long)",
       "notes": "Short [e] or long [eː]. Long e is a close-mid vowel."
     },
     {
       "char": "f",
       "name": "ef",
-      "ipa": "f / v",
+      "ipa": "[f / v]",
       "approximation": "like 'f' in 'fat' or 'v' in 'vat'",
       "notes": "Voiceless [f] initially and finally; voiced [v] between vowels."
     },
     {
       "char": "g",
       "name": "gē",
-      "ipa": "ɡ / j / ɣ",
+      "ipa": "[ɡ / j / ɣ]",
       "approximation": "like 'g' in 'go', 'y' in 'yes', or a guttural fricative",
       "notes": "Palatalized to [j] before/after front vowels. Fricative [ɣ] between back vowels. Stop [ɡ] initially and after n."
     },
     {
       "char": "h",
       "name": "hā",
-      "ipa": "h / x",
+      "ipa": "[h / x]",
       "approximation": "like 'h' in 'hat' or 'ch' in Scottish 'loch'",
       "notes": "Voiceless glottal [h] initially; velar fricative [x] after back vowels, palatal [ç] after front vowels."
     },
     {
       "char": "i",
       "name": "i",
-      "ipa": "i / iː",
+      "ipa": "[i / iː]",
       "approximation": "like 'i' in 'sit' (short) or 'ee' in 'see' (long)",
       "notes": "Short [i] or long [iː]."
     },
     {
       "char": "l",
       "name": "el",
-      "ipa": "l",
+      "ipa": "[l]",
       "approximation": "like 'l' in 'let'",
       "notes": ""
     },
     {
       "char": "m",
       "name": "em",
-      "ipa": "m",
+      "ipa": "[m]",
       "approximation": "like 'm' in 'met'",
       "notes": ""
     },
     {
       "char": "n",
       "name": "en",
-      "ipa": "n",
+      "ipa": "[n]",
       "approximation": "like 'n' in 'net'",
       "notes": ""
     },
     {
       "char": "o",
       "name": "o",
-      "ipa": "o / oː",
+      "ipa": "[o / oː]",
       "approximation": "like 'o' in 'hot' (short) or 'o' in 'note' (long)",
       "notes": "Short [o] or long [oː]."
     },
     {
       "char": "p",
       "name": "pē",
-      "ipa": "p",
+      "ipa": "[p]",
       "approximation": "like 'p' in 'pet'",
       "notes": ""
     },
     {
       "char": "r",
       "name": "er",
-      "ipa": "r",
+      "ipa": "[r]",
       "approximation": "trilled 'r'",
       "notes": "Alveolar trill [r], not the modern English approximant."
     },
     {
       "char": "s",
       "name": "es",
-      "ipa": "s / z",
+      "ipa": "[s / z]",
       "approximation": "like 's' in 'sit' or 'z' in 'zero'",
       "notes": "Voiceless [s] initially and finally; voiced [z] between vowels."
     },
     {
       "char": "t",
       "name": "tē",
-      "ipa": "t",
+      "ipa": "[t]",
       "approximation": "like 't' in 'top'",
       "notes": ""
     },
     {
       "char": "þ",
       "name": "thorn",
-      "ipa": "θ / ð",
+      "ipa": "[θ / ð]",
       "approximation": "like 'th' in 'thing' or 'this'",
       "notes": "Used interchangeably with ð. Voiced [ð] between vowels, voiceless [θ] elsewhere."
     },
     {
       "char": "u",
       "name": "u",
-      "ipa": "u / uː",
+      "ipa": "[u / uː]",
       "approximation": "like 'u' in 'put' (short) or 'oo' in 'food' (long)",
       "notes": "Short [u] or long [uː]."
     },
     {
       "char": "ƿ",
       "name": "wynn",
-      "ipa": "w",
+      "ipa": "[w]",
       "approximation": "like 'w' in 'wet'",
       "notes": "Replaced by 'w' (double-u) in later manuscripts and modern editions. Runic origin."
     },
     {
       "char": "w",
       "name": "wen",
-      "ipa": "w",
+      "ipa": "[w]",
       "approximation": "like 'w' in 'wet'",
       "notes": "Modern replacement for runic ƿ (wynn). Standard in modern editions of Old English texts."
     },
     {
       "char": "x",
       "name": "ex",
-      "ipa": "ks",
+      "ipa": "[ks]",
       "approximation": "like 'x' in 'box'",
       "notes": "Rare; primarily in Latin loanwords."
     },
     {
       "char": "y",
       "name": "y",
-      "ipa": "y / yː",
+      "ipa": "[y / yː]",
       "approximation": "like German 'ü' in 'über'",
       "notes": "Front rounded vowel, short [y] or long [yː]. Not a consonant in Old English."
     },
     {
       "char": "ȝ",
       "name": "yogh",
-      "ipa": "ɡ / j / ɣ",
+      "ipa": "[ɡ / j / ɣ]",
       "approximation": "variant form of 'g'",
       "notes": "Later scribal form of insular g, used primarily in Middle English manuscripts. In Old English contexts, represents same sounds as g."
     }

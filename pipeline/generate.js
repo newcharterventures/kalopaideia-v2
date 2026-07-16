@@ -78,22 +78,48 @@ function systemPromptFor(lang) {
 Draw from: ${lang.focus}.
 
 You must output a JSON object with these exact keys:
+
+# Identity (legacy fields, keep)
 - "word": the headword (use proper diacritics; for Greek use polytonic accents; for Olde English use thorn/eth/ash as in Beowulf).
 - "transliteration": a Latin-alphabet romanization if the script is non-Latin (empty string for languages using Latin alphabet).
 - "pronunciation": an approximate English-phonetic pronunciation guide (e.g., "roh-MAH-nus").
 - "ipa": IPA transcription for the word.
 - "part_of_speech": single word or short phrase ("noun, masc.", "verb, 1st conj.", etc.).
-- "meaning": one-line English gloss.
+- "meaning": one-line English gloss (short, the quick-glance definition).
 - "forms": inflection/conjugation info for this language (short, readable).
 - "etymology": root and origin, tracing to earlier forms when relevant.
 - "literary_context": one or two sentences naming a specific classical/literary appearance of this word, with the author/work.
 - "usage_example": a short phrase or sentence in the language showing the word in use, plus its English translation — format: "Original. — English translation."
 - "did_you_know": one interesting historical, etymological, or literary detail (1-2 sentences).
 
+# V2 schema (Jae 2026-05-20): the richer fields the new homepage layout shows.
+# These are REQUIRED additions — they drive the two-panel reading experience.
+
+- "register": ARRAY of 2–4 short register tags in caps (e.g. ["HOMERIC", "CLASSICAL", "LATE ANTIQUE"], or for Latin ["AUGUSTAN", "SILVER", "ECCLESIASTICAL"]). Tags describe the historical/stylistic periods or registers in which the word lives. For modern languages, use sensible analogues (e.g. French: ["CLASSICAL", "ROMANTIC", "MODERN"]; German: ["GOETHEAN", "PHILOSOPHICAL", "MODERN"]).
+
+- "quick_gloss": ONE italic sentence that captures the word's essential weight — the kind of line a great editor would set in italics above a long entry. Longer and more atmospheric than "meaning"; typically 18–40 words.
+
+- "definition_shades": ARRAY of 2–4 distinct senses of the word, in numbered Roman order I, II, III, IV. Each shade is an object with two keys: "head" (a short bold heading naming the sense, like "Breath. Spirit. Life.") and "body" (a paragraph of 2–4 sentences explaining the sense with at least one literary or historical example).
+
+- "cognates": ARRAY of 6–10 objects, each with three keys — "language" (the language name as a short label like "Greek", "Latin", "Sanskrit", "Italian", "French", "German", "Olde English", "Middle English", "Old Norse", "Lithuanian"), "word" (the cognate word in that language's native script with diacritics), and "gloss" (a 2–6 word English gloss). Trace the headword's Proto-Indo-European or other parent-root strand across as many of Paideia's living traditions as fits honestly. Include the headword's own language as the first row. Do not invent cognates; if a true cognate doesn't exist for a language, omit that row rather than fake one.
+
+- "etymology_root": ONE short string naming the deepest root with its asterisk and gloss (e.g. "PIE *dʰewh₂- (to smoke, to rise as vapour)"). This is the row above the cognate grid.
+
+- "etymology_caption": ONE short editorial line below the cognate grid summarising what the cognates show (e.g. "Across two and a half thousand years, the same root names the smoke that rises and the soul that rises with it.").
+
+- "citation": an object with three keys for the In Literature section — "source" (a short citation header like "Homer · Iliad I. 192–194"), "original" (the passage in the headword's native script, 2–4 lines, with proper diacritics), and "english" (a parallel English translation matching line-by-line). The site renders these side-by-side or toggled.
+
+- "citation_note": ONE sentence below the citation explaining the moment (e.g. "Achilles deliberates whether to slay Agamemnon. The hero's reason and his θυμός are named in the same breath; both are at the table.").
+
+- "commonplace": ARRAY of 2–3 paragraphs forming an editorial reflection on the word, signed by an unnamed editor. This is the IV. section of the page — a meditative essay that situates the word in lived experience and in the literary tradition. The first paragraph should open with a strong word; the site will set its first letter as a drop-cap. 250–400 words total. Voice: meditative, learned, unhurried; no slop, no cliché.
+
+- "daily_practice": ONE italic prompt of 2–4 sentences inviting the reader to attend to the word in their day. Concrete, embodied, philosophical. Example: "Where, in your body, do you feel your θυμός today? Notice it without naming. Then write three lines describing the room around you, as though your breath were the witness."
+
 HARD RULES:
 - Choose a word that is NOT one of the most common 50 words in this language. It should be educational — something a serious student would want to learn, not a beginner basic.
 - For today's selection, try to pick a word connected to a theme or work that rewards attention.
 - No slop: no adverbs in -ly, no em dashes, no "in today's world," no filler. Plain precise English.
+- The cognate strand must be philologically honest. Better to list 6 true cognates than 10 with a fake.
 - Output ONLY valid JSON. No prose before or after. No code fences.
 - Use ASCII straight quotes in the JSON structure. Diacritics, accents, and special letters in Greek/Olde English/etc. are REQUIRED inside string values.`;
 }
@@ -102,7 +128,7 @@ async function generateOne(lang, usedWords) {
   const recent = usedWords.length ? `\n\nAvoid these recently-used words:\n${usedWords.join(", ")}` : "";
   const response = await client.messages.create({
     model: MODEL,
-    max_tokens: 1500,
+    max_tokens: 4000,
     system: systemPromptFor(lang),
     messages: [{ role: "user", content: `Generate today's ${lang.display} word for Paideia.${recent}\n\nOutput JSON only.` }],
   });

@@ -7,6 +7,13 @@ import { fileURLToPath } from "url";
 import { lookupWord } from "./pipeline/word-lookup.js";
 import { buildCommerce } from "./lib/commerce.js";
 import {
+  checkAudioRequest,
+  checkAudioSynth,
+  recordAudioRequest,
+  validateAudioInput,
+  getAudioRateLimitStats,
+} from "./lib/rate-limit-audio.js";
+import {
   hasStoaAccess,
   getAnalyticsPrefs,
   setAnalyticsPrefs,
@@ -17,6 +24,7 @@ import {
   exportAnalyticsForUser,
   getAnalyticsSummary,
   getAdminAnalyticsSummary,
+  getPatronSummary,
 } from "./lib/commerce-db.js";
 
 const ADMIN_EMAIL = process.env.ADMIN_EMAIL || "jae@newcharterventures.com";
@@ -36,6 +44,21 @@ function _requireAdmin(req, res, next) {
 }
 import { stoaById } from "./lib/commerce-catalog.js";
 import { isConfigured as stripeConfigured } from "./lib/commerce-stripe.js";
+import {
+  loadManifest as loadCurriculumManifest,
+  loadLesson as loadCurriculumLesson,
+  scoreExam,
+  attachDb as attachCurriculumDb,
+  markLessonComplete,
+  getProgress as getCurriculumProgress,
+  recordCheckpoint,
+  recordCapstone,
+  getCapstoneRecord,
+  markCertMinted,
+  getCertByTokenId,
+} from "./lib/curriculum.js";
+import { mintDiploma, isLive as mintIsLive, chainName as mintChainName } from "./lib/mint-base.js";
+import Database from "better-sqlite3";
 
 // Per Jae 2026-05-09: subscription pricing is $11.99/mo for both sites.
 // Paideia's audio/library content can be paywalled with the same
@@ -104,6 +127,10 @@ const commerce = buildCommerce({ basePath: BASE });
 app.use(BASE, express.urlencoded({ extended: false }));
 app.use(BASE, commerce);
 
+// Block the archived mockups dir from being web-reachable. Files moved
+// here by the v2-migration cleanup 2026-05-20 are kept as a reference
+// but should never be served. Returns 404 silently.
+app.use(`${BASE}/_mockups`, (_req, res) => res.status(404).end());
 app.use(BASE, express.static(path.join(__dirname, "public")));
 app.use(BASE, express.json({ limit: "100kb" }));
 app.use(`${BASE}/audio`, express.static(path.join(__dirname, "data", "audio")));
@@ -407,19 +434,41 @@ app.get(`${BASE}/api/library/:lang`, async (req, res) => {
   }
 });
 
-// Word-pronunciation audio (on-demand TTS, cached)
+// Word-pronunciation audio (on-demand TTS, cached).
+//
+// Rate-limited per the 2026-05-20 audio remediation plan
+// (paideia/docs/AUDIO-REMEDIATION.md). The route serves the same URL
+// for two surfaces:
+//   * single-word pronunciations (reader tap-to-define, language page)
+//   * full-sentence daily-word audio (app.js, language.js)
+// We therefore cannot strictly allowlist words — instead we cap by IP
+// (separate budgets for cache hits vs synth) and validate input shape.
 app.get(`${BASE}/api/word-audio/:lang/:word.mp3`, async (req, res) => {
   const lang = String(req.params.lang).toLowerCase();
   if (!VALID_LANGS.includes(lang)) return res.status(404).end();
-  const word = decodeURIComponent(req.params.word).trim();
-  if (!word) return res.status(400).end();
+
+  // Input validation: shape, length, control chars
+  let decoded;
+  try { decoded = decodeURIComponent(req.params.word); }
+  catch { return res.status(400).json({ error: "invalid_input" }); }
+  const inputErr = validateAudioInput(decoded);
+  if (inputErr) return res.status(inputErr.status).json({ error: inputErr.error });
+  const word = decoded.trim();
+
+  // Per-IP daily total cap (covers cache hits + misses)
+  const total = checkAudioRequest(req);
+  if (!total.ok) {
+    res.setHeader("Retry-After", String(total.retryAfterSec));
+    return res.status(total.status).json({ error: "rate_limited", reason: total.reason });
+  }
 
   const hash = crypto.createHash("sha1").update(word).digest("hex").slice(0, 16);
   const outPath = path.join(__dirname, "data", "word-audio", lang, `${hash}.mp3`);
 
-  // If cached, serve immediately with proper headers
+  // Cache hit — cheap path. Count toward per-IP total, not synth.
   try {
     await fs.access(outPath);
+    recordAudioRequest(req, { synth: false });
     const stat = await fs.stat(outPath);
     res.setHeader('Accept-Ranges', 'bytes');
     res.setHeader('Content-Length', stat.size);
@@ -427,7 +476,15 @@ app.get(`${BASE}/api/word-audio/:lang/:word.mp3`, async (req, res) => {
     return res.sendFile(outPath);
   } catch {}
 
-  // Generate
+  // Cache miss — synth gate. Check per-IP synth budget + global cap.
+  const synth = checkAudioSynth(req);
+  if (!synth.ok) {
+    res.setHeader("Retry-After", String(synth.retryAfterSec));
+    return res.status(synth.status).json({ error: "rate_limited", reason: synth.reason });
+  }
+  // Record the synth attempt up front so a hung TTS doesn't escape the cap.
+  recordAudioRequest(req, { synth: true });
+
   await new Promise((resolve) => {
     const proc = spawn("python3", [
       path.join(__dirname, "pipeline", "word-audio.py"), lang, word,
@@ -450,6 +507,29 @@ app.get(`${BASE}/api/word-audio/:lang/:word.mp3`, async (req, res) => {
     return res.sendFile(outPath);
   } catch {
     return res.status(500).end();
+  }
+});
+
+// Admin-only diagnostics for the audio rate limiter
+app.get(`${BASE}/api/admin/audio-rate-stats`, _requireAdmin, (_req, res) => {
+  res.json(getAudioRateLimitStats());
+});
+
+// Patron summary — public endpoint that powers the progress bar on the
+// /support page. No auth (the numbers are not sensitive: aggregate
+// counts and dollars only, no PII).
+// Per Jae 2026-05-20: both sites share the patron_events table written
+// by Mansion's Stripe webhook; this is just a read into the shared DB.
+app.get(`${BASE}/api/patrons/summary`, (req, res) => {
+  const site = String(req.query.site || "kalopaideia").toLowerCase();
+  if (site !== "kalopaideia" && site !== "mansion") {
+    return res.status(400).json({ error: "unknown site" });
+  }
+  try {
+    res.json(getPatronSummary(site));
+  } catch (e) {
+    console.error("[patrons/summary]", e);
+    res.status(500).json({ error: "internal" });
   }
 });
 
@@ -739,5 +819,241 @@ app.get(`${BASE}/api/category/:slug`, async (req, res) => {
   if (!cat) return res.status(404).json({ error: "Unknown category." });
   res.json(cat);
 });
+
+// ============================================================
+// Curriculum & Diploma
+// ============================================================
+
+// Attach the same SQLite DB the commerce layer uses, so curriculum tables
+// live beside the subscription/access tables.
+const _curDb = new Database(path.join(__dirname, "data", "sessions.db"));
+attachCurriculumDb(_curDb);
+
+function _requireUserCur(req, res, next) {
+  if (!req.user || !req.user.email) {
+    return res.status(401).json({ error: "sign in required" });
+  }
+  next();
+}
+
+// Curriculum manifest for a language.
+app.get(`${BASE}/api/curriculum/:lang`, async (req, res) => {
+  const lang = String(req.params.lang || "").toLowerCase();
+  if (!VALID_LANGS.includes(lang)) return res.status(404).json({ error: "unknown language" });
+  const m = await loadCurriculumManifest(lang);
+  if (!m) return res.status(404).json({ error: "no curriculum yet" });
+  res.json(m);
+});
+
+// Capstone exam spec (without the answer keys).
+app.get(`${BASE}/api/curriculum/:lang/capstone-spec`, async (req, res) => {
+  const lang = String(req.params.lang || "").toLowerCase();
+  if (!VALID_LANGS.includes(lang)) return res.status(404).json({ error: "unknown language" });
+  const examPath = path.join(__dirname, "data", "curriculum", lang, `capstone.json`);
+  try {
+    const exam = JSON.parse(await fs.readFile(examPath, "utf8"));
+    // Strip answer keys so they aren't leaked to the client.
+    const safe = JSON.parse(JSON.stringify(exam));
+    for (const sec of safe.sections || []) {
+      for (const it of sec.items || []) {
+        delete it.answer;
+        delete it.reference;
+        delete it.keywords;
+        delete it.threshold;
+      }
+    }
+    res.json(safe);
+  } catch {
+    res.status(404).json({ error: "capstone not found" });
+  }
+});
+
+// Per-lesson detail.
+app.get(`${BASE}/api/curriculum/:lang/lesson/:id`, async (req, res) => {
+  const lang = String(req.params.lang || "").toLowerCase();
+  if (!VALID_LANGS.includes(lang)) return res.status(404).json({ error: "unknown language" });
+  const id = String(req.params.id || "").replace(/[^0-9.]/g, "");
+  const lesson = await loadCurriculumLesson(lang, id);
+  if (!lesson) return res.status(404).json({ error: "lesson not found" });
+  res.json(lesson);
+});
+
+// Mark a lesson complete (requires sign-in).
+app.post(`${BASE}/api/curriculum/:lang/lesson/:id/complete`, _requireUserCur, (req, res) => {
+  const lang = String(req.params.lang || "").toLowerCase();
+  if (!VALID_LANGS.includes(lang)) return res.status(404).json({ error: "unknown language" });
+  const id = String(req.params.id || "").replace(/[^0-9.]/g, "");
+  const minutes = Number(req.body?.minutes || 0);
+  markLessonComplete(req.user.email, lang, id, minutes);
+  res.json({ ok: true });
+});
+
+// Progress summary for a language. Returns an empty progress shape for
+// anonymous users so the curriculum page can render in a logged-out state.
+app.get(`${BASE}/api/curriculum/:lang/progress`, (req, res) => {
+  const lang = String(req.params.lang || "").toLowerCase();
+  if (!VALID_LANGS.includes(lang)) return res.status(404).json({ error: "unknown language" });
+  if (!req.user || !req.user.email) {
+    return res.json({ lessons: {}, checkpoints: {}, capstone: null, anonymous: true });
+  }
+  res.json(getCurriculumProgress(req.user.email, lang));
+});
+
+// Submit a checkpoint exam (Stage 1–4).
+app.post(`${BASE}/api/curriculum/:lang/checkpoint/:cid`, _requireUserCur, async (req, res) => {
+  const lang = String(req.params.lang || "").toLowerCase();
+  if (!VALID_LANGS.includes(lang)) return res.status(404).json({ error: "unknown language" });
+  const cid = String(req.params.cid || "").replace(/[^a-z0-9-]/gi, "");
+  const examPath = path.join(__dirname, "data", "curriculum", lang, `${cid}.json`);
+  let exam;
+  try { exam = JSON.parse(await fs.readFile(examPath, "utf8")); }
+  catch { return res.status(404).json({ error: "checkpoint not found" }); }
+  const responses = req.body?.responses || {};
+  // Flatten sectioned exams into a single items array for scoring.
+  const items = exam.items || (exam.sections || []).flatMap((s) => s.items || []);
+  const result = scoreExam({ items }, responses);
+  const passMark = exam.scoring?.pass_mark || 0.75;
+  const passed = result.score >= passMark;
+  const rec = recordCheckpoint(req.user.email, lang, cid, result.score, passed, responses, result.results);
+  res.json({ score: result.score, passed, pass_mark: passMark, attempt_no: rec.attempt_no, results: result.results });
+});
+
+// Submit the capstone exam (Stage 5).
+app.post(`${BASE}/api/curriculum/:lang/capstone`, _requireUserCur, async (req, res) => {
+  const lang = String(req.params.lang || "").toLowerCase();
+  if (!VALID_LANGS.includes(lang)) return res.status(404).json({ error: "unknown language" });
+  const examPath = path.join(__dirname, "data", "curriculum", lang, `capstone.json`);
+  let exam;
+  try { exam = JSON.parse(await fs.readFile(examPath, "utf8")); }
+  catch { return res.status(404).json({ error: "capstone not found" }); }
+
+  const trackId = String(req.body?.track_id || "");
+  const responses = req.body?.responses || {};
+  const honorCode = !!req.body?.honor_code_accepted;
+  const publicName = String(req.body?.public_name || "").trim().slice(0, 64);
+  if (!honorCode) return res.status(400).json({ error: "honor_code_required" });
+  if (!publicName) return res.status(400).json({ error: "public_name_required" });
+
+  // Sectioned exam: filter items by track if any.
+  const items = (exam.sections || []).flatMap((s) => s.items || [])
+    .filter((it) => !it.track || it.track === trackId);
+  const result = scoreExam({ items }, responses);
+  const passMark = exam.scoring?.pass_mark || 0.70;
+  const honorsMark = exam.scoring?.honors_mark || 0.85;
+  const passed = result.score >= passMark;
+  const honors = result.score >= honorsMark;
+
+  const cap = recordCapstone(req.user.email, lang, trackId, result.score, passed, honors, responses, result.results);
+
+  let mint = null;
+  if (passed) {
+    const manifest = await loadCurriculumManifest(lang);
+    const tracks = manifest?.stages?.find((s) => s.tracks)?.tracks || [];
+    const track = tracks.find((t) => t.id === trackId);
+    try {
+      mint = await mintDiploma({
+        publicName,
+        userEmail: req.user.email,
+        lang,
+        displayName: manifest?.display_name || lang,
+        trackId,
+        trackName: track?.name || null,
+        honors,
+        scriptHash: cap.script_hash,
+        scorePct: result.score,
+      });
+      markCertMinted(req.user.email, lang, cap.attempt_no, mint.tokenId, mint.txHash);
+    } catch (err) {
+      console.error("diploma mint failed:", err);
+      mint = { error: "mint_failed", detail: String(err.message || err) };
+    }
+  }
+
+  res.json({
+    score: result.score,
+    passed,
+    honors,
+    pass_mark: passMark,
+    honors_mark: honorsMark,
+    attempt_no: cap.attempt_no,
+    script_hash: cap.script_hash,
+    diploma: mint,
+    chain: mintChainName(),
+    chain_live: mintIsLive(),
+  });
+});
+
+// Public verify endpoint — anyone can look up a diploma by token id.
+app.get(`${BASE}/api/verify/:tokenId`, (req, res) => {
+  const tokenId = String(req.params.tokenId || "").replace(/[^0-9a-fA-F]/g, "");
+  if (!tokenId) return res.status(400).json({ error: "bad token id" });
+  let row = null;
+  try { row = getCertByTokenId(tokenId); } catch {}
+  // If no DB row, fall back to on-disk cert record (covers dry-run mints
+  // and certs produced before the verify endpoint indexed them).
+  if (!row) {
+    const certFile = path.join(__dirname, "data", "curriculum", "certs", `${tokenId}.json`);
+    return fs.readFile(certFile, "utf8").then((raw) => {
+      const rec = JSON.parse(raw);
+      res.json({
+        token_id: tokenId,
+        chain: rec.chain,
+        contract: rec.contract,
+        tx_hash: rec.txHash,
+        minted_at: rec.mintedAt,
+        public_name: rec.publicName,
+        language: rec.displayName,
+        track: rec.trackName,
+        honors: rec.honors,
+        score_pct: rec.scorePct,
+        script_hash: rec.scriptHash,
+        metadata: rec.metadata,
+      });
+    }).catch(() => res.status(404).json({ error: "not_found" }));
+  }
+  // Re-load the IPFS-pinned (or local-dry-run) record for full metadata.
+  const certFile = path.join(__dirname, "data", "curriculum", "certs", `${tokenId}.json`);
+  fs.readFile(certFile, "utf8").then((raw) => {
+    const rec = JSON.parse(raw);
+    res.json({
+      token_id: tokenId,
+      chain: rec.chain,
+      contract: rec.contract,
+      tx_hash: rec.txHash,
+      minted_at: rec.mintedAt,
+      public_name: rec.publicName,
+      language: rec.displayName,
+      track: rec.trackName,
+      honors: rec.honors,
+      score_pct: rec.scorePct,
+      script_hash: rec.scriptHash,
+      metadata: rec.metadata,
+    });
+  }).catch(() => {
+    // Fall back to just the DB record if the on-disk metadata is missing.
+    res.json({
+      token_id: tokenId,
+      language: row.lang,
+      track: row.track_id,
+      honors: !!row.honors,
+      score_pct: row.score,
+      minted_at: row.cert_minted_at,
+      tx_hash: row.cert_tx_hash,
+      script_hash: row.script_hash,
+    });
+  });
+});
+
+// Curriculum tab page (delegates rendering to language.html — same shell).
+for (const lang of VALID_LANGS) {
+  // The curriculum is a SEPARATE section from the rest of Kalopaideia.
+  // Its own page, its own design, its own bar at the top.
+  app.get(`${BASE}/${lang}/curriculum`, (_req, res) => res.sendFile(path.join(__dirname, "public", "curriculum.html")));
+  app.get(`${BASE}/${lang}/curriculum/:lessonId`, (_req, res) => res.sendFile(path.join(__dirname, "public", "lesson.html")));
+  app.get(`${BASE}/${lang}/capstone`, (_req, res) => res.sendFile(path.join(__dirname, "public", "capstone.html")));
+}
+
+app.get(`${BASE}/verify`, (_req, res) => res.sendFile(path.join(__dirname, "public", "verify.html")));
+app.get(`${BASE}/verify/:tokenId`, (_req, res) => res.sendFile(path.join(__dirname, "public", "verify.html")));
 
 app.listen(PORT, () => console.log(`Paideia on :${PORT}${BASE}`));

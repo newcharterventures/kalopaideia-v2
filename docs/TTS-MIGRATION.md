@@ -55,31 +55,65 @@ never exhaust.
 ## Languages live today
 
 Confirmed from the on-disk corpus (`data/today.json`,
-`data/library/*.json`, `pipeline/voices.py`) on 2026-05-20:
+`data/library/*.json`, `pipeline/voices.py`) on 2026-05-20.
 
-**9 languages currently in production** (daily-word rotation + library
-content + alphabet audio):
+**Voice cast — authoritative** (per Jae's 2026-04-25 audition,
+reaffirmed 2026-05-20 when Claude Design proposed a male-only cast).
+Female-led, with the one male voice on Middle English where Ryan's
+gutturals reproduce the consonantal attack of c.1380 London.
 
-| Language | Voice today (edge-tts) | Azure equivalent | Native support? |
-|---|---|---|---|
-| Greek (Ancient/Koine) | `de-DE-SeraphinaMultilingualNeural` | identical | ❌ Substitute |
-| Latin (Classical) | `it-IT-IsabellaNeural` | identical | ❌ Substitute (Italian voice, ecclesiastical) |
-| French | `fr-FR-VivienneMultilingualNeural` | identical | ✅ Native |
-| German | `de-DE-SeraphinaMultilingualNeural` | identical | ✅ Native |
-| Italian | `it-IT-IsabellaNeural` | identical | ✅ Native |
-| Welsh (Middle + Modern) | `cy-GB-NiaNeural` | identical | ✅ Native (Modern; passable for Middle) |
-| Old English | `en-GB-SoniaNeural` (pitch-lifted) | identical | ❌ Substitute |
-| Middle English | `en-GB-RyanNeural` | identical | ❌ Substitute (heavily preprocessed) |
-| Old Norse | `is-IS-GudrunNeural` | identical | ❌ Substitute (Modern Icelandic) |
+| Language | Profile | Voice (Azure ID) | Rate / pitch | Native support? |
+|---|---|---|---|---|
+| Greek | Ancient / Homeric | `de-DE-SeraphinaMultilingualNeural` | −15% / −3 Hz | 🟡 Substitute (Modern Greek floor + SSML) |
+| Greek | Koine (NT / Septuagint) | _same base + Koine SSML profile_ | TBD | 🟡 Forward placeholder — no live Koine works yet |
+| Latin | Classical (Dido gravitas) | `it-IT-IsabellaNeural` | −18% / −8 Hz | 🟡 Substitute (Italian voice) |
+| French | Literary | `fr-FR-VivienneMultilingualNeural` | −8% / +1 Hz | ✅ Native |
+| German | Goethean / philosophical | `de-DE-SeraphinaMultilingualNeural` | −10% / −1 Hz | ✅ Native |
+| Italian | Tuscan inheritance | `it-IT-IsabellaNeural` | −10% / 0 Hz | ✅ Native |
+| Welsh | Middle + Modern | `cy-GB-NiaNeural` | −10% / 0 Hz | ✅ Native (Modern; passable for Middle) |
+| Old English | Elvish-lifted Sonia | `en-GB-SoniaNeural` | −10% / +5 Hz | 🟡 Substitute (en-GB + ash/eth/thorn lexicon) |
+| Middle English | Ryan + ME phonetics | `en-GB-RyanNeural` | −15% / −2 Hz | 🟡 Substitute (yogh/gh restored, final-e schwa) |
+| Old Norse | Saga register | `is-IS-GudrunNeural` | −15% / −2 Hz | 🟡 Substitute (Modern Icelandic) |
+| English (modern) | Translations of English originals | `en-GB-RyanNeural` (default) / `en-US-AndrewNeural` (alt) | tbd | ✅ Native — added 2026-05-20 |
 
 **1 language alphabet-only, no daily rotation**: Gaulish (falls back to
 the French voice for Latin-alphabet inscriptions, Greek voice for
 Gallo-Greek). Not part of the live TTS migration scope.
 
-**Total: 10 voice-mappings on disk; 9 are active in the daily-word
-rotation.** When Opus said "7 languages live" earlier they were
-counting a tighter scope (excluding Welsh, Old Norse, and Gaulish);
-counting the daily-word generator's actual languages, it's 9.
+**Total: 9 live profiles + 1 alphabet-only (Gaulish) + 1 forward
+placeholder (Koine Greek) + 1 added 2026-05-20 (Modern English, for
+translations of English-original works like Shakespeare or Milton if
+they enter the library).**
+
+### Why we kept the female-led cast (decision log 2026-05-20)
+
+Claude Design's TTS playbook proposed an all-male cast (Nestoras,
+Diego, Conrad, Henri, Ryan, Gunnar). We considered the proposal and
+rejected the cast swap for two reasons:
+
+1. **Voice continuity is the entire reason we chose Azure.** edge-tts
+   wraps the SAME voices Azure sells. Migrating to Azure with
+   identical voice IDs means listeners hear no change. Swapping the
+   cast on the same day undoes that promise.
+2. **The current cast was auditioned.** Jae picked Isabella for Latin
+   (Dido gravitas), Seraphina for Greek (Pythian weight), Vivienne for
+   French (literary lilt), Sonia-lifted for Old English (Elvish dignity
+   without modern lilt), Gudrun for Old Norse (Icelandic preserves the
+   thorn/eth phonology). Each pick is documented in `voices.py`
+   comments with the audition date and rationale.
+
+What we DID adopt from Claude Design's audio playbook:
+
+- **A/B canary phase** before full cutover (§ Migration phases below)
+- **Per-language telemetry** (chars_billed, cache_hit_ratio,
+  per-language consumption split)
+- **Scheduler priority** (5-tier queue when free tier approaches the
+  soft cap)
+- **Koine Greek as a separate SSML profile** (forward placeholder for
+  when NT / Septuagint texts enter the library)
+- **Modern English row** (for translations of English-original works
+  if we add Shakespeare, Milton, etc. to Akousma)
+- **Voice consent / licensing check** added to Jae's open decisions
 
 ## Classical-language fidelity roadmap (the honest part)
 
@@ -255,6 +289,61 @@ the portal stops the bleeding even if our app doesn't notice.
 
 Neither cap should ever fire in normal operation. Both should exist.
 
+### Migration phases (Claude Design 2026-05-20, adopted)
+
+Low-risk phased cutover. The existing edge-tts cache is preserved
+throughout — we never regenerate audio that already exists.
+
+**Phase 1 — Shim** (1 day): `tts_backend.py` already exposes
+`TTS_BACKEND=edge|azure|both` selection via env var (shipped earlier
+today). Both paths speak the same `synth(text, lang, context, out_path)`
+interface. ✅ Done.
+
+**Phase 2 — Canary** (1 week, starts when AZURE_SPEECH_KEY lands):
+set `TTS_BACKEND=both` so every NEW synthesis renders through BOTH
+edge-tts and Azure for the audition window. The edge-tts file is the
+live one served to users; the Azure file is dropped at
+`<out>.azure.mp3` for side-by-side listening. Run
+`pipeline/audition-azure.py` to generate the 20-passage continuity
+test. Listen, confirm indistinguishable, log any discrepancies.
+
+**Phase 3 — Cutover** (1 day): flip `TTS_BACKEND=azure` in the
+production systemd Environment line. New synthesis routes exclusively
+through Azure. edge-tts code path stays in `tts_backend.py` for one
+release as a dev-only fallback, then removed.
+
+**Phase 4 — Reconciliation** (ongoing): re-tag the existing cache
+manifest so edge-tts files are attributed to the matching Azure voice
+ID. **No regeneration.** Files keep playing exactly as they always
+have; only the metadata catches up.
+
+### Telemetry & scheduler priority (Claude Design 2026-05-20, adopted)
+
+When the free tier approaches the soft cap, the scheduler should
+favor user-visible content over backfill. Five-tier priority order:
+
+1. **Today's daily-word audio** (must ship same day; user-facing)
+2. **Canonical works without audio yet** (Iliad, Aeneid, etc. that
+   are linked from the homepage / Akousma catalog)
+3. **Newly added library books** (within 24 hours of ingestion)
+4. **Backfill for the long tail** (older library lines, less-trafficked)
+5. **Re-renders triggered by voice/lexicon updates** (NEVER blocks the
+   above tiers)
+
+Telemetry the system records every day:
+
+- `chars_billed` (synthesis cost — cache misses only)
+- `chars_cached` (cache hits — zero Azure cost)
+- `cache_hit_ratio` = cached / (cached + billed)
+- **Per-language consumption split** (so we can see which language
+  is eating the budget — expected: Latin and Greek dominate)
+- Monthly burn-down graph (chars_billed vs. 500K free-tier ceiling)
+
+Admin diagnostics endpoint:
+`GET /paideia/api/admin/tts-stats` (already in tts_backend.py as
+`getAudioRateLimitStats` for the rate-limit table; extend with the
+Azure usage table queries).
+
 ### Caching principle: audio is permanent
 
 Every file generated through Azure (or edge-tts, historically) is
@@ -351,3 +440,17 @@ Before flipping production to Azure, run a side-by-side diff:
 4. **Local-inference roadmap.** When MS-02 is online, who picks the
    classical-language voice corpora (Daitz, Bagby, Allen, others)?
    That's its own project; doesn't block the Aug-18 sunset.
+5. **Voice consent / licensing** (Claude Design 2026-05-20). Confirm
+   Azure's terms permit redistribution of generated audio inside a
+   paid app/site. Spot-check on the S0 tier was yes; **re-verify
+   before launch** as a formal step in the legal pre-launch review.
+   Cross-references the EU PD lawyer memo at build week 12 — ask the
+   lawyer to cover Azure ToS as a one-line confirmation in the same
+   memo.
+6. **Old English audition** (Claude Design 2026-05-20). Claude
+   Design's playbook suggested Icelandic (`is-IS-GunnarNeural`) as
+   the Old English base voice on phonological grounds. Our current
+   pick is `en-GB-SoniaNeural` pitch-lifted (per Jae 2026-04-25
+   audition). Worth a listener test with a medievalist before we
+   ship to settle whether Icelandic-base is genuinely better for OE.
+   Doesn't block the sunset; defer to a Phase 1.5 audition pass.

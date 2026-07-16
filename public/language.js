@@ -17,8 +17,37 @@ const LANG_META = {
 };
 
 function currentLang() {
+  // First check ?lang=… for backward-compat with stale links like
+  // /paideia/language.html?lang=greek. If a recognizable lang appears
+  // there, redirect to the canonical clean URL /paideia/<lang>.
+  const qsLang = new URLSearchParams(location.search).get("lang");
+  if (qsLang) {
+    const clean = qsLang.toLowerCase().replace(/[^a-z]/g, "");
+    if (clean) {
+      // Hard redirect to the canonical URL. Preserves any hash.
+      const target = `${BASE}/${clean}${location.hash || ""}`;
+      if (location.pathname !== `${BASE}/${clean}`) {
+        location.replace(target);
+        return clean; // unreachable, but keeps callers safe pre-redirect
+      }
+      return clean;
+    }
+  }
   const parts = location.pathname.split("/").filter(Boolean);
+  // Path may be /paideia/<lang>, /paideia/<lang>/, /paideia/<lang>/curriculum,
+  // or /paideia/<lang>/curriculum/<lesson>. Pick the first part that matches
+  // a known language code.
+  for (const p of parts) {
+    const clean = p.toLowerCase().replace(/[^a-z]/g, "");
+    if (LANG_META && LANG_META[clean]) return clean;
+  }
   return parts[parts.length - 1].toLowerCase();
+}
+
+function urlSubsection() {
+  // Returns 'curriculum' | 'capstone' | null based on the path.
+  const parts = location.pathname.split("/").filter(Boolean);
+  return parts.find((p) => p === "curriculum" || p === "capstone") || null;
 }
 
 function esc(s) {
@@ -125,11 +154,11 @@ function renderAlphabet(primer, lang) {
     const isWide = charLen > 4 || notesLen > 180;
     return `
       <div class="alphabet-cell${isWide ? " wide" : ""}">
-        <button class="letter-btn" data-audio="${BASE}/alphabet-audio/${lang}/${idx}.mp3" aria-label="Pronounce ${esc(entry.char)}">
+        <button class="letter-btn" data-audio="${BASE}/alphabet-audio/${lang}/${idx}.mp3?v=2" aria-label="Pronounce ${esc(entry.char)}">
           <span class="letter-char">${esc(entry.char)}</span>
         </button>
         <div class="letter-name">${esc(entry.name || "")}</div>
-        <div class="letter-ipa">${esc(entry.ipa || "")}</div>
+        <div class="letter-ipa">${esc(entry.ipa || "")}<button class="letter-play" data-audio="${BASE}/alphabet-audio/${lang}/${idx}.mp3?v=2" aria-label="Pronounce ${esc(entry.char)}"><svg viewBox="0 0 24 24"><polygon points="8,5 19,12 8,19" fill="currentColor"/></svg></button></div>
         <div class="letter-approx">${esc(entry.approximation || "")}</div>
         ${entry.notes ? `<div class="letter-notes">${esc(entry.notes)}</div>` : ""}
       </div>
@@ -309,7 +338,7 @@ function cellHtml(value, lang) {
   // Return a span that we upgrade later into a clickable audio link.
   if (!value || !value.trim()) return "";
   const pronValue = addPronunciation(value, lang);
-  return `<span class="para-val" data-val="${esc(value)}">${pronValue}</span>`;
+  return `<span class="para-val" data-val="${esc(value)}">${pronValue}<span class="para-play" aria-hidden="true"><svg viewBox="0 0 24 24" width="9" height="9"><polygon points="8,5 19,12 8,19" fill="currentColor"/></svg></span></span>`;
 }
 
 function paradigmTable(paradigm, lang) {
@@ -395,7 +424,7 @@ function bookmarksForLang(lang) {
 // EVERY book in the language, with two render states:
 //   - Subscriber (or anyone for the gateway work): "Open in Reader →" CTA,
 //     plus a resume bar if they have saved progress.
-//   - Non-subscriber: cover + blurb + "Subscribe — $11.99/month" CTA. Gated
+//   - Non-subscriber: cover + blurb + "Subscribe — $12.99 / month" CTA. Gated
 //     to "Subscribe — coming soon" until Stripe is configured.
 // The single promotional Akousma ad card that used to lead this section
 // has been removed. The site is the library now, not an ad for one book.
@@ -438,18 +467,53 @@ async function renderLibraryAndReading(primer, lang) {
 
   sections.push(`<p class="library-intro">Sentence-by-sentence parallel-text readers. Each work opens in its original language alongside an English translation, with a word-by-word gloss on click and audio for every line.</p>`);
 
+  // The Curriculum promo card — a quiet but unmistakable signal that
+  // there is a guided course behind this language, not just books.
+  sections.push(`
+    <a class="curriculum-promo" href="${BASE}/${lang}/curriculum">
+      <div class="cp-eyebrow">The Curriculum</div>
+      <div class="cp-title">A guided ${esc(LANG_META[lang]?.name || lang)} course, in five stages</div>
+      <div class="cp-sub">From the alphabet to the masters. Capstone examination. On-chain diploma.</div>
+      <div class="cp-cta">Enter the Curriculum →</div>
+    </a>
+  `);
+
   // Subscriber status banner at the top of the library.
   if (isSubscriber) {
-    sections.push(`<div class="library-sub-banner library-sub-banner-active"><b>The Akousma · Active.</b> Every work below is open to you.</div>`);
+    sections.push(`<div class="akv2-sub-banner akv2-sub-banner-active"><b>The Akousma · Active.</b> Every work below is open to you.</div>`);
   } else if (isSignedIn) {
-    sections.push(`<div class="library-sub-banner"><b>Signed in.</b> The gateway work below is open to you forever. Subscribe to The Akousma to open everything else — here and at <a href="https://newcharterventures.com/mansion/wanderings/akousma">The Reading Mansion</a>.</div>`);
+    sections.push(`<div class="akv2-sub-banner"><b>Signed in.</b> The gateway work below is open to you forever. Subscribe to The Akousma to open everything else — here and at <a href="https://newcharterventures.com/mansion/wanderings/akousma">The Reading Mansion</a>.</div>`);
   } else {
-    sections.push(`<div class="library-sub-banner"><b>Not signed in.</b> <a href="${BASE}/login">Sign in</a> to open the gateway work and save your progress. Subscribe to The Akousma to open the rest — $11.99 a month, every work, present and future.</div>`);
+    sections.push(`<div class="akv2-sub-banner"><b>Not signed in.</b> <a href="${BASE}/login">Sign in</a> to open the gateway work and save your progress. Subscribe to The Akousma to open the rest — $12.99 a month, every work, present and future.</div>`);
   }
 
-  // Continue Reading from local bookmarks (always shown to anyone who has
-  // saved progress on this device, regardless of sub state — it's a UX
-  // continuation hint, not an entitlement).
+  // Per Jae 2026-05-13: cover-art book grid must render BEFORE the Continue
+  // Reading list. The library IS the product; bookmarks are a continuation
+  // hint. Greek and Latin had accumulated enough bookmarks that the inline
+  // resume list was burying the actual cover-art cards below the fold.
+  if (!libraryTexts.length) {
+    sections.push(`<p class="library-empty"><em>The ${esc(LANG_META[lang]?.name || lang)} library is still being prepared.</em></p>`);
+  } else {
+    sections.push(`<h4 class="pane-subheading">The Library</h4>`);
+    sections.push(`<div class="akousma-v2-grid">`);
+    // Sort: gateway first, then matched (in reading-list order), then unmatched.
+    const sorted = libraryTexts.slice().sort((a, b) => {
+      if (a.is_gateway && !b.is_gateway) return -1;
+      if (!a.is_gateway && b.is_gateway) return 1;
+      const ai = matchedByLibId.has(a.id) ? matchedByLibId.get(a.id).difficulty : 999;
+      const bi = matchedByLibId.has(b.id) ? matchedByLibId.get(b.id).difficulty : 999;
+      return ai - bi;
+    });
+    for (const t of sorted) {
+      const match = matchedByLibId.get(t.id);
+      sections.push(bookCardHtml(t, { isSubscriber, isSignedIn, difficulty: match ? match.difficulty : null, description: match ? match.description : null }));
+    }
+    sections.push(`</div>`);
+  }
+
+  // Continue Reading from local bookmarks. Rendered AFTER the library grid
+  // so the cover-art books are the first thing the visitor sees; bookmarks
+  // are a resume aid below.
   const bookmarks = bookmarksForLang(lang);
   if (bookmarks.length) {
     sections.push(`<h4 class="pane-subheading">Continue Reading</h4>`);
@@ -473,26 +537,6 @@ async function renderLibraryAndReading(primer, lang) {
       `);
     }
     sections.push(`</ul>`);
-  }
-
-  if (!libraryTexts.length) {
-    sections.push(`<p class="library-empty"><em>The ${esc(LANG_META[lang]?.name || lang)} library is still being prepared.</em></p>`);
-  } else {
-    sections.push(`<h4 class="pane-subheading">The Library</h4>`);
-    sections.push(`<div class="library-book-grid">`);
-    // Sort: gateway first, then matched (in reading-list order), then unmatched.
-    const sorted = libraryTexts.slice().sort((a, b) => {
-      if (a.is_gateway && !b.is_gateway) return -1;
-      if (!a.is_gateway && b.is_gateway) return 1;
-      const ai = matchedByLibId.has(a.id) ? matchedByLibId.get(a.id).difficulty : 999;
-      const bi = matchedByLibId.has(b.id) ? matchedByLibId.get(b.id).difficulty : 999;
-      return ai - bi;
-    });
-    for (const t of sorted) {
-      const match = matchedByLibId.get(t.id);
-      sections.push(bookCardHtml(t, { isSubscriber, isSignedIn, difficulty: match ? match.difficulty : null, description: match ? match.description : null }));
-    }
-    sections.push(`</div>`);
   }
 
   // Reading-list entries that have NO matching library text ("preparing")
@@ -530,69 +574,76 @@ async function renderLibraryAndReading(primer, lang) {
 // links to the reader directly. Gateway works (Odyssey Book 1) bypass
 // the subscription gate entirely.
 function bookCardHtml(t, ctx) {
+  // New: Claude Design's prototype card vocabulary (.akv2-card), with the
+  // lightened-cream palette to match the main Kalopaideia site. Per Jae
+  // 2026-05-21. The CTA logic and access gating are unchanged.
   const { isSubscriber, isSignedIn, difficulty, description } = ctx;
   const hasAccess = isSubscriber || t.is_gateway;
   const stripeReady = !!(window.__STRIPE_READY__);
+
   const cover = t.cover_src
-    ? `<img class="book-card-cover-img" src="${esc(t.cover_src)}" alt="${esc(t.cover_alt || t.title)}" loading="lazy" />`
-    : `<div class="book-card-cover-placeholder"><span class="book-card-cover-mark">Κ</span><span class="book-card-cover-sub">AKOUSMA</span></div>`;
+    ? `<img src="${esc(t.cover_src)}" alt="${esc(t.cover_alt || t.title)}" loading="lazy" />`
+    : `<div class="akv2-card-cover-placeholder"><span class="akv2-card-cover-mark">Κ</span><span class="akv2-card-cover-sub">AKOUSMA</span></div>`;
   const credits = t.cover_credits
-    ? `<p class="book-card-credits">${esc(t.cover_credits)}</p>` : '';
+    ? `<p class="akv2-card-credits">${esc(t.cover_credits)}</p>` : '';
   const blurb = t.blurb
-    ? `<p class="book-card-blurb">${esc(t.blurb)}</p>`
-    : `<p class="book-card-blurb book-card-blurb-empty"><em>Blurb in preparation.</em></p>`;
-  const meta = `${esc(t.author || '')}${t.date ? ' · ' + esc(t.date) : ''}`;
-  const trans = t.translator
-    ? `tr. ${esc(t.translator)}${t.translator_date ? ', ' + esc(t.translator_date) : ''} · ${t.lines_count} lines`
-    : `${t.lines_count} lines`;
+    ? `<p class="akv2-card-blurb">${esc(t.blurb)}</p>`
+    : `<p class="akv2-card-blurb akv2-card-blurb-empty">Blurb in preparation.</p>`;
+  const author = `${esc(t.author || '')}${t.date ? ' · ' + esc(t.date) : ''}`;
+  const metaLeft = `${(t.lines_count || 0)} lines`;
+  const metaRight = t.translator
+    ? `tr. ${esc(t.translator)}${t.translator_date ? ', ' + esc(t.translator_date) : ''}`
+    : '';
   const difficultyBadge = difficulty
-    ? `<span class="book-card-difficulty">Reading list № ${difficulty}</span>` : '';
+    ? `<span class="akv2-card-reading-badge">Reading № ${difficulty}</span>` : '';
   const gatewayBadge = t.is_gateway
-    ? `<span class="book-card-gateway">Free — the gateway</span>` : '';
+    ? `<span class="akv2-card-gateway-badge">Free — the gateway</span>` : '';
+  const langLabel = (t.language || '').toUpperCase();
 
   let cta;
-  // Per Jae 2026-05-12: The Akousma is an AUDIO library. CTAs say
-  // "listen", not "read". Buttons: Open & Listen / Subscribe to listen
-  // / Sign in to listen.
+  // Per Jae 2026-05-12: The Akousma is an AUDIO library. CTAs say "listen",
+  // not "read". Buttons: Open & Listen / Subscribe to listen / Sign in to listen.
   if (hasAccess) {
     cta = `
-      <a class="book-card-btn" href="${BASE}/read/${esc(t.id)}">Open &amp; Listen →</a>
+      <a class="akv2-card-btn" href="${BASE}/read/${esc(t.id)}">Open &amp; Listen →</a>
       ${t.is_gateway && !isSubscriber
-        ? '<p class="book-card-cta-note">Open to everyone. Subscribe to The Akousma to open the rest.</p>'
+        ? '<span class="akv2-card-cta-note">Open to everyone. Subscribe to The Akousma to open the rest.</span>'
         : ''}
     `;
   } else if (isSignedIn) {
     cta = stripeReady
       ? `<form method="POST" action="${BASE}/checkout/all-access" style="display:inline;">
-           <button class="book-card-btn" type="submit">Subscribe to listen — $11.99/month</button>
+           <button class="akv2-card-btn" type="submit">Subscribe to listen — $12.99 / month</button>
          </form>
-         <p class="book-card-cta-note">One subscription opens every work in The Akousma, here and at The Reading Mansion.</p>`
-      : `<button class="book-card-btn" type="button" disabled>Subscribe — coming soon</button>
-         <p class="book-card-cta-note">Subscription will open every work in The Akousma. Stripe wiring underway.</p>`;
+         <span class="akv2-card-cta-note">One subscription opens every work in The Akousma, here and at The Reading Mansion.</span>`
+      : `<button class="akv2-card-btn" type="button" disabled>Subscribe — coming soon</button>
+         <span class="akv2-card-cta-note">Subscription will open every work in The Akousma. Stripe wiring underway.</span>`;
   } else {
     cta = `
-      <a class="book-card-btn" href="${BASE}/login?next=${encodeURIComponent('/paideia/' + currentLang())}">Sign in to listen</a>
-      <p class="book-card-cta-note">${t.is_gateway ? 'This work is free for any signed-in listener.' : 'Sign in, then subscribe to The Akousma — $11.99 a month, every work.'}</p>
+      <a class="akv2-card-btn" href="${BASE}/login?next=${encodeURIComponent('/paideia/' + currentLang())}">Sign in to listen</a>
+      <span class="akv2-card-cta-note">${t.is_gateway ? 'This work is free for any signed-in listener.' : 'Sign in, then subscribe to The Akousma — $12.99 a month, every work.'}</span>
     `;
   }
 
+  const innerLink = hasAccess ? `<a href="${BASE}/read/${esc(t.id)}" aria-label="Open ${esc(t.title)}">${cover}</a>` : cover;
+
   return `
-    <article class="book-card${t.is_gateway ? ' book-card-gateway-row' : ''}${hasAccess ? '' : ' book-card-locked'}">
-      <div class="book-card-cover">
-        ${hasAccess
-          ? `<a href="${BASE}/read/${esc(t.id)}" aria-label="Open ${esc(t.title)}">${cover}</a>`
-          : cover}
+    <article class="akv2-card${t.is_gateway ? ' akv2-card-gateway' : ''}${hasAccess ? '' : ' akv2-card-locked'}">
+      <div class="akv2-card-head">
+        <span class="akv2-card-lang">${esc(langLabel)}</span>
+        ${gatewayBadge}${difficultyBadge}
       </div>
-      <div class="book-card-body">
-        <div class="book-card-badges">${gatewayBadge}${difficultyBadge}</div>
-        <h5 class="book-card-title">${esc(t.title)}</h5>
-        <p class="book-card-meta">${meta}</p>
-        <p class="book-card-trans">${trans}</p>
-        ${blurb}
-        ${description ? `<p class="book-card-reading-note"><em>On the reading list:</em> ${esc(description)}</p>` : ''}
-        <div class="book-card-cta">${cta}</div>
-        ${credits}
+      <div class="akv2-card-cover">${innerLink}</div>
+      <h3 class="akv2-card-title">${esc(t.title)}</h3>
+      <p class="akv2-card-author">${author}</p>
+      ${blurb}
+      ${description ? `<p class="akv2-card-reading-note">${esc(description)}</p>` : ''}
+      <div class="akv2-card-meta">
+        <span class="lining">${metaLeft}</span>
+        ${metaRight ? `<span>${metaRight}</span>` : ''}
       </div>
+      <div class="akv2-card-cta">${cta}</div>
+      ${credits}
     </article>
   `;
 }
@@ -649,6 +700,119 @@ function formatAgo(ms) {
   return `${d}d ago`;
 }
 
+// === Curriculum ===
+
+let _curriculumLoaded = false;
+async function renderCurriculum(lang) {
+  if (_curriculumLoaded) return;
+  _curriculumLoaded = true;
+  const pane = document.getElementById("pane-curriculum");
+  if (!pane) return;
+  pane.innerHTML = `<p class="loading"><em>Loading curriculum…</em></p>`;
+
+  let manifest = null;
+  let progress = null;
+  try {
+    const m = await fetch(`${BASE}/api/curriculum/${lang}`);
+    if (m.ok) manifest = await m.json();
+  } catch {}
+  try {
+    const p = await fetch(`${BASE}/api/curriculum/${lang}/progress`);
+    if (p.ok) progress = await p.json();
+  } catch {}
+
+  if (!manifest) {
+    pane.innerHTML = `
+      <h3 class="pane-heading">Curriculum</h3>
+      <p class="grammar-para"><em>A guided curriculum for ${esc(LANG_META[lang]?.name || lang)} is in preparation.</em></p>`;
+    return;
+  }
+
+  const cert = manifest.certification || {};
+  const stages = manifest.stages || [];
+  const totalLessons = stages.reduce((n, s) => n + (s.lessons?.length || 0), 0);
+  const doneLessons = progress?.lessons ? Object.keys(progress.lessons).length : 0;
+  const pct = totalLessons === 0 ? 0 : Math.round((doneLessons / totalLessons) * 100);
+  const capstone = progress?.capstone;
+
+  const html = [];
+  html.push(`
+    <div class="curriculum-header">
+      <h3 class="pane-heading">${esc(manifest.display_name)} — Curriculum</h3>
+      <p class="curriculum-tagline">${esc(manifest.tagline || "")}</p>
+      <div class="curriculum-meta">
+        <span><strong>Duration:</strong> ${esc(manifest.duration_estimate || "—")}</span>
+        <span><strong>Method:</strong> ${esc(manifest.method || "—")}</span>
+      </div>
+      <div class="curriculum-progress">
+        <div class="curriculum-progress-bar"><div class="curriculum-progress-fill" style="width:${pct}%"></div></div>
+        <span class="curriculum-progress-label">${doneLessons} / ${totalLessons} lessons complete (${pct}%)</span>
+      </div>
+      ${capstone && capstone.passed ? `
+        <div class="curriculum-diploma-banner">
+          <strong>Diploma issued</strong>
+          ${capstone.honors ? " (with Honors)" : ""}
+          — Token <code>${esc(String(capstone.cert_token_id || "pending"))}</code>
+          <a class="diploma-verify-link" href="${BASE}/verify/${esc(String(capstone.cert_token_id || ""))}">Verify</a>
+        </div>` : ""}
+    </div>
+    <div class="curriculum-philosophy">${esc(manifest.philosophy || "").split("\n\n").map((p) => `<p>${esc(p)}</p>`).join("")}</div>
+  `);
+
+  for (const stage of stages) {
+    const lessons = stage.lessons || [];
+    const stageDone = lessons.filter((l) => progress?.lessons?.[l.id]).length;
+    const cpDone = progress?.checkpoints?.[stage.checkpoint?.id]?.passed;
+    html.push(`
+      <section class="curriculum-stage">
+        <header class="curriculum-stage-head">
+          <h4 class="curriculum-stage-name">Stage ${stage.number} — ${esc(stage.name)}</h4>
+          <span class="curriculum-stage-count">${stageDone}/${lessons.length} lessons · ${esc(stage.duration || "—")}</span>
+        </header>
+        <p class="curriculum-stage-subtitle">${esc(stage.subtitle || "")}</p>
+        <ol class="curriculum-lesson-list">
+          ${lessons.map((l) => {
+            const done = !!progress?.lessons?.[l.id];
+            return `<li class="curriculum-lesson ${done ? "done" : ""}">
+              <a href="${BASE}/${lang}/curriculum/${esc(l.id)}">
+                <span class="lesson-check">${done ? "✓" : "·"}</span>
+                <span class="lesson-num">${esc(l.id)}</span>
+                <span class="lesson-title">${esc(l.title)}</span>
+              </a>
+              <span class="lesson-body">${esc(l.content || "")}</span>
+            </li>`;
+          }).join("")}
+        </ol>
+        ${stage.checkpoint ? `
+          <div class="curriculum-checkpoint ${cpDone ? "passed" : ""}">
+            <strong>Checkpoint:</strong> ${esc(stage.checkpoint.title)}
+            ${cpDone ? "<span class='cp-status passed'>passed</span>" : (stageDone === lessons.length && lessons.length > 0 ? `<a href="${BASE}/${lang}/curriculum/${esc(stage.checkpoint.id)}">Take the checkpoint →</a>` : "<span class='cp-status locked'>complete the lessons above to unlock</span>")}
+          </div>` : ""}
+        ${stage.tracks ? `
+          <div class="curriculum-tracks">
+            <h5 class="curriculum-tracks-head">Three tracks for the capstone:</h5>
+            <ul class="curriculum-track-list">
+              ${stage.tracks.map((t) => `<li><strong>${esc(t.name)}</strong> — ${esc(t.text)}<br><span class="track-rationale">${esc(t.rationale)}</span></li>`).join("")}
+            </ul>
+            ${stage.capstone_examination ? `<div class="curriculum-capstone-cta"><a class="capstone-link" href="${BASE}/${lang}/capstone">Sit the capstone examination →</a></div>` : ""}
+          </div>` : ""}
+      </section>
+    `);
+  }
+
+  html.push(`
+    <section class="curriculum-certification">
+      <h4 class="pane-subheading">${esc(cert.credential_name || "Certification")}</h4>
+      <p>${esc(cert.what_it_is || "")}</p>
+      <p><strong>Issuance:</strong> ${esc(cert.issuance || "")}</p>
+      <p><strong>Verification:</strong> <a href="${BASE}/verify">${BASE}/verify</a></p>
+      <p><strong>Cost:</strong> ${esc(cert.cost || "Included in the Akousma subscription.")}</p>
+    </section>
+  `);
+
+  pane.innerHTML = html.join("");
+}
+
 // === Tabs ===
 function wireTabs() {
   document.querySelectorAll(".primer-tab").forEach((tab) => {
@@ -671,9 +835,11 @@ function wireTabs() {
 // === Letter audio ===
 let currentAudio = null;
 function wireLetterAudio() {
-  document.querySelectorAll(".letter-btn").forEach((btn) => {
-    btn.addEventListener("click", () => {
+  document.querySelectorAll(".letter-btn, .letter-play").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
       if (currentAudio) { currentAudio.pause(); currentAudio = null; }
+      document.querySelectorAll(".letter-btn.playing, .letter-play.playing").forEach((b) => b.classList.remove("playing"));
       const src = btn.dataset.audio;
       if (!src) return;
       if (window.Analytics) {
@@ -683,7 +849,10 @@ function wireLetterAudio() {
         });
       }
       const audio = new Audio(src);
-      audio.play().catch(() => {});
+      btn.classList.add("playing");
+      audio.addEventListener("ended", () => btn.classList.remove("playing"));
+      audio.addEventListener("error", () => btn.classList.remove("playing"));
+      audio.play().catch(() => btn.classList.remove("playing"));
       currentAudio = audio;
     });
   });
@@ -878,6 +1047,10 @@ async function load() {
       try { await renderLibraryAndReading(data.primer, lang); } catch (e) { console.error("renderLibraryAndReading failed", e); }
       try { wireLetterAudio(); } catch (e) { console.error("wireLetterAudio failed", e); }
       try { wireParadigmAudio(lang); } catch (e) { console.error("wireParadigmAudio failed", e); }
+
+      // If the URL was /paideia/<lang>/curriculum, auto-switch tabs.
+      // Curriculum is now its own dedicated page at /paideia/<lang>/curriculum,
+// no in-page tab to switch to. Falls through cleanly.
     }
 
     const entriesEl = document.getElementById("entries");

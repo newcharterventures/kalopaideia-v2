@@ -2,23 +2,22 @@
 """
 Generate a TTS MP3 for a single word in a given language.
 Called by the server on-demand. Caches to data/word-audio/<lang>/<sha1>.mp3
+
+Backend (edge-tts vs Azure Speech) is selected by env var TTS_BACKEND.
+See pipeline/tts_backend.py for details. CLI signature unchanged so
+the server's spawn() in server.js keeps working.
 """
 import asyncio
 import hashlib
 import sys
 from pathlib import Path
 
-try:
-    import edge_tts
-except ImportError:
-    print("edge-tts not installed", file=sys.stderr)
-    sys.exit(1)
-
 ROOT = Path(__file__).resolve().parent.parent
 AUDIO_DIR = ROOT / "data" / "word-audio"
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from voices import speak_kwargs, add_prosody_hints, preprocess_for_tts  # noqa
+from voices import speak_kwargs  # noqa  (validates lang_key)
+from tts_backend import synth, TTSBackendError
 
 
 def value_hash(value: str) -> str:
@@ -28,16 +27,6 @@ def value_hash(value: str) -> str:
 def detect_context(text: str) -> str:
     # Single word -> headword. Multi-word with spaces -> sentence.
     return "sentence" if (" " in text.strip()) else "headword"
-
-
-async def speak(text: str, lang_key: str, out_path: Path):
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    ctx = detect_context(text)
-    text = preprocess_for_tts(text, lang_key)
-    text = add_prosody_hints(text) if ctx == "sentence" else text
-    kw = speak_kwargs(lang_key, context=ctx)
-    communicate = edge_tts.Communicate(text, **kw)
-    await communicate.save(str(out_path))
 
 
 async def main():
@@ -56,7 +45,11 @@ async def main():
     if out.exists():
         print(str(out))
         return
-    await speak(word, lang, out)
+    try:
+        await synth(word, lang, detect_context(word), out)
+    except TTSBackendError as e:
+        print(f"tts_backend error: {e}", file=sys.stderr)
+        sys.exit(1)
     # Validate that generation succeeded
     if not out.exists() or out.stat().st_size == 0:
         print(f"generation failed: empty output", file=sys.stderr)

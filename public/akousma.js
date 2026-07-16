@@ -335,7 +335,7 @@ function renderAkousmaCard(langKey, index) {
           </div>
           <div class="akousma-cta">
             <div class="akousma-cta-eyebrow">Full Library Access</div>
-            <div class="akousma-cta-price"><span>$</span>11<span class="cents">.99</span></div>
+            <div class="akousma-cta-price"><span>$</span>12<span class="cents">.99</span></div>
             <div class="akousma-cta-period">per month · cancel anytime</div>
             <form method="POST" action="/paideia/checkout/all-access" style="margin:0;">
               <button class="akousma-cta-button" type="submit">Begin Listening →</button>

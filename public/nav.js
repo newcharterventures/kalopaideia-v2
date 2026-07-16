@@ -37,9 +37,12 @@
   ];
 
   const UTILITY = [
-    { href: "/paideia/akousma",     label: "The Akousma", util: true },
-    { href: "/paideia/account",     label: "Sign in",     util: true },
-    { href: "/paideia/about.html",  label: "About",       util: true },
+    { href: "/paideia/akousma",          label: "The Akousma", util: true },
+    { href: "/paideia/curriculum.html",  label: "Curriculum",  util: true },
+    { href: "/paideia/commonplace.html", label: "Commonplace", util: true },
+    { href: "/paideia/support.html",     label: "Support",     util: true },
+    { href: "/paideia/account",          label: "Sign in",     util: true },
+    { href: "/paideia/about.html",       label: "About",       util: true },
   ];
 
   function renderHtml() {
@@ -130,21 +133,39 @@
     panel.style.top = top + "px";
   }
 
-  // Click-to-toggle for ALL pointer types. First click opens the panel,
-  // second click on the same toggle navigates to the category landing page.
-  // Desktop hover also works via :hover/:focus-within in CSS; we still
-  // run positioning on pointerenter so the panel renders in the right spot.
-  // Per Jae 2026-05-12: panel must escape masthead's overflow: hidden, so
-  // it uses position: fixed and JS computes the placement.
+  // Mobile detection — use coarse pointer + small viewport as the canonical
+  // signal. matchMedia is supported in every browser we care about.
+  function isMobile() {
+    if (!window.matchMedia) return false;
+    return window.matchMedia("(max-width: 760px)").matches
+        || window.matchMedia("(pointer: coarse)").matches;
+  }
+
+  // Per Jae 2026-05-13: on mobile, the dropdown UX was broken — the inline
+  // panel rendered as if open, the parent label didn't navigate, and the
+  // tap target was too small. Mobile users now get a direct link to the
+  // category landing page (/paideia/celtic, /paideia/germanic) which itself
+  // lists the children. Desktop keeps the hover/click dropdown.
   function wireDropdownToggles() {
     const dds = document.querySelectorAll(".nav-dd");
+    const mobile = isMobile();
     dds.forEach((dd) => {
       const t = dd.querySelector(".nav-dd-toggle");
       if (!t) return;
-      // Hover (mouse): position the panel and set .open so pointer-events
-      // stays "auto" even if the cursor briefly leaves the toggle on the
-      // way to a menu item. .open is removed on pointerleave of the whole
-      // .nav-dd (which contains both toggle and panel as DOM descendants).
+      if (mobile) {
+        // Strip the caret on mobile — the link goes straight to the page.
+        const caret = t.querySelector(".nav-dd-caret");
+        if (caret) caret.remove();
+        // Defensively close any state, remove the panel from the DOM so it
+        // can never render inline.
+        dd.classList.remove("open");
+        const panel = dd.querySelector(".nav-dd-panel");
+        if (panel) panel.remove();
+        // No click handler: native <a href> navigation just works.
+        return;
+      }
+      // Desktop: hover positions the panel and sets .open so the cursor
+      // can cross from toggle to menu items without dropping :hover.
       dd.addEventListener("pointerenter", () => {
         positionPanel(dd);
         dd.classList.add("open");
@@ -154,13 +175,8 @@
       });
       // Click on the toggle: first click opens, second click navigates.
       t.addEventListener("click", (e) => {
-        // Allow modified clicks (⌘/Ctrl/middle/Shift) to pass through so
-        // users can open the category page in a new tab.
         if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
-        // If the panel is already open, second click navigates to the
-        // landing page ("All Celtic" / "All Germanic" behavior).
         if (dd.classList.contains("open")) return;
-        // First click: open the panel and swallow the navigation.
         e.preventDefault();
         document.querySelectorAll(".nav-dd.open").forEach((other) => {
           if (other !== dd) other.classList.remove("open");
@@ -169,6 +185,7 @@
         positionPanel(dd);
       });
     });
+    if (mobile) return;  // desktop-only listeners below
     // Click outside any dropdown closes them.
     document.addEventListener("click", (e) => {
       if (e.target.closest(".nav-dd")) return;

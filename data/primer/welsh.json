@@ -186,7 +186,7 @@
     {
       "char": "u",
       "name": "u",
-      "ipa": "[ɨ, ɨː] (North), [ɪ, iː] (South)",
+      "ipa": "[[ɨ, ɨː] (North), [ɪ, iː] (South)]",
       "approximation": "like i in sit (South) or a neutral vowel (North)",
       "notes": "Regional variation. Circumflex indicates length: û. Middle Welsh distinguished u from i."
     },
@@ -200,7 +200,7 @@
     {
       "char": "y",
       "name": "y",
-      "ipa": "[ə] (obscure), [ɨ, ɨː] or [ɪ, iː] (clear)",
+      "ipa": "[[ə] (obscure), [ɨ, ɨː] or [ɪ, iː] (clear)]",
       "approximation": "like a in about (obscure) or i in sit (clear)",
       "notes": "Full vowel. Two values: obscure [ə] in non-final syllables; clear [ɨ/ɪ] in final syllables and monosyllables. Circumflex indicates length: ŷ."
     }

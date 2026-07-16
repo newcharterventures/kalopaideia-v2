@@ -6,7 +6,7 @@
 <title>Kalopaideia Reader</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cinzel:wght@400;500;600;700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;1,6..96,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Cinzel:wght@400;500;600;700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;1,6..96,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <!-- Favicons + PWA -->
 <link rel="icon" type="image/png" sizes="32x32" href="/paideia/img/favicon-32.png?v=1777151780" />
 <link rel="icon" type="image/png" sizes="16x16" href="/paideia/img/favicon-16.png?v=1777151780" />
@@ -18,10 +18,12 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="default" />
 <meta name="apple-mobile-web-app-title" content="Kalopaideia" />
-<meta name="theme-color" content="#1a1410" />
-<link rel="stylesheet" href="/paideia/styles.css?v=1778577662" />
+<meta name="theme-color" content="#faf7f2" />
+<link rel="stylesheet" href="/paideia/styles.css?v=1779378800" />
+<link rel="stylesheet" href="/paideia/v2-design.css?v=1779378800" />
+<link rel="stylesheet" href="/paideia/akousma-v2.css?v=1779378800" />
 </head>
-<body>
+<body class="akousma-reader-v2 view-both">
 <header class="masthead masthead-athenaeum">
   <img class="mast-watermark" src="/paideia/img/masthead/temple-ruin.svg" alt="" aria-hidden="true" />
   <div class="mast-content">
@@ -57,54 +59,139 @@
   </div>
 </header>
 
-<!-- Per-page section heading. Reader.js populates the title at runtime. -->
-<div class="page-heading">
-  <h2 class="page-heading-name" id="reader-section-label">Reader</h2>
-  <p class="page-heading-sub"><em>Legere</em> — to read</p>
-</div>
 <main class="reader-main">
-  <div id="reader-loading" class="center">Opening the book…</div>
+  <div id="reader-loading" class="akv2-loading">Opening the book…</div>
+
   <article id="reader" style="display:none">
-    <header class="reader-header">
-      <h1 class="reader-title" id="reader-title"></h1>
-      <div class="reader-meta">
-        <div class="reader-author" id="reader-author"></div>
-        <div class="reader-trans" id="reader-trans"></div>
+
+    <!-- Work header (eyebrow / ornament / series / title / subline / byline) -->
+    <header class="akv2-work-head">
+      <div class="eyebrow">THE AUDIO LIBRARY OF KALOPAIDEIA</div>
+      <div class="ornament-row">
+        <span class="line"></span>
+        <span class="diamond"></span>
+        <span class="line"></span>
       </div>
-      <div class="reader-notes" id="reader-notes"></div>
+      <div class="series" id="reader-author"></div>
+      <h1 class="title" id="reader-title"></h1>
+      <div class="subline" id="reader-subline"></div>
+      <div class="byline" id="reader-trans"></div>
+      <div class="byline" id="reader-notes" style="margin-top:6px"></div>
     </header>
 
-    <div class="reader-crumb" id="section-crumb"></div>
+    <!-- Sticky player bar -->
+    <div class="akv2-player" id="player">
+      <div class="transport">
+        <button class="akv2-icon-btn" id="prev-btn" aria-label="Previous line">
+          <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+            <path d="M5 3v10M11 4l-5 4 5 4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="akv2-play-btn" id="play-btn" aria-label="Play current line">
+          <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true">
+            <path d="M5 2.6v10.8L13.5 8z" fill="currentColor"/>
+          </svg>
+        </button>
+        <button class="akv2-icon-btn" id="next-btn" aria-label="Next line">
+          <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+            <path d="M11 3v10M5 4l5 4-5 4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
 
-    <div class="reader-mode-tabs">
-      <button class="reader-mode-tab active" id="mode-chapters" data-mode="chapters" style="display:none">Chapters</button>
-      <button class="reader-mode-tab" data-mode="session">Session (10 lines)</button>
-      <button class="reader-mode-tab" data-mode="single">Line by line</button>
+      <div class="progress-wrap">
+        <div class="progress-meta">
+          <div class="line-title">
+            <span class="lining">Line <span id="line-current">1</span></span>
+            <span class="of">of <span class="lining" id="line-total">0</span></span>
+          </div>
+          <div class="akv2-mode-tabs" role="tablist" aria-label="Reading mode">
+            <button class="akv2-mode-tab" id="mode-chapters" data-mode="chapters" style="display:none" role="tab">Chapters</button>
+            <button class="akv2-mode-tab active" data-mode="session" role="tab">Session</button>
+            <button class="akv2-mode-tab" data-mode="single" role="tab">Line</button>
+          </div>
+        </div>
+        <div class="scrubber" id="scrubber" aria-hidden="true">
+          <div class="fill" id="scrub-fill"></div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="akv2-segmented" role="tablist" aria-label="Display language">
+          <button data-view="greek"   class="" type="button">GR</button>
+          <button data-view="english" class="" type="button">EN</button>
+          <button data-view="both"    class="active" type="button">Both</button>
+        </div>
+      </div>
     </div>
 
-    <div class="reader-progress">
-      <span id="line-current">1</span> / <span id="line-total">0</span>
+    <!-- Breadcrumb (when inside a section) -->
+    <div class="akv2-crumb" id="section-crumb"></div>
+
+    <!-- 3-col reader grid -->
+    <div class="akv2-reader-grid">
+
+      <!-- Left: ToC -->
+      <aside class="akv2-toc" id="toc-host">
+        <div class="akv2-toc-label">Table of Contents</div>
+        <div class="akv2-toc-list" id="toc-list"></div>
+      </aside>
+
+      <!-- Center: parallel-text reader -->
+      <section>
+        <div class="akv2-reader-head" id="reader-head">
+          <div></div>
+          <div class="col-lbl gr-lbl" id="col-gr-lbl">Original</div>
+          <div class="col-lbl en-lbl" id="col-en-lbl">English Translation</div>
+        </div>
+        <div id="reader-body"></div>
+      </section>
+
+      <!-- Right: notes + save -->
+      <aside class="akv2-notes">
+        <div class="akv2-notes-card">
+          <div class="akv2-pane-label">Scholarly Note</div>
+          <div class="line-sub">on line <span class="lining" id="note-line-n">—</span></div>
+          <div class="body" id="note-body"><div class="none">Tap a line to read its note.</div></div>
+        </div>
+        <div class="akv2-save-card">
+          <div class="lbl-sm">Save to Commonplace</div>
+          <p>Keep a passage in your book — every line is its own quotation, ready to bookmark.</p>
+          <button class="akv2-keep-btn" id="keep-btn" type="button">+ Keep this line</button>
+        </div>
+      </aside>
+
     </div>
 
-    <div id="reader-body"></div>
+    <!-- Working alongside (loaded from /api/library/all) -->
+    <section class="akv2-alongside" id="alongside-host" hidden>
+      <div class="akv2-alongside-head">
+        <h2>Working alongside</h2>
+        <a id="alongside-browse" href="/paideia/greek">Browse the full library →</a>
+      </div>
+      <div class="akousma-v2-grid" id="alongside-grid"></div>
+    </section>
+
   </article>
 </main>
-<footer class="foot">
-  <div class="foot-inner">
-    <div class="foot-title">Kalopaideia</div>
-    <p class="foot-copyright">
-      © 2026 New Charter Ventures &middot; All rights reserved
-      &middot; <a href="/paideia/about.html">About</a>
-      &middot; <a href="/paideia/contact.html">Contact</a>
-      &middot; <a href="/paideia/terms.html">Terms</a>
-    </p>
+
+<footer class="colophon">
+  <div class="name">KALOPAIDEIA</div>
+  <div class="tagline"><em>καλὴ παιδεία</em> <span class="sep">·</span> the cultivation of mind through classical letters</div>
+  <div class="est">EST. MMXXIV <span class="sep">·</span> ATHENS &amp; OXFORD &amp; ELSEWHERE <span class="sep">·</span> <span class="imprint">NEW CHARTER VENTURES</span></div>
+  <div class="legal">
+    Anno Domini MMXXVI <span class="sep">·</span>
+    <a href="/paideia/about.html">About</a> <span class="sep">·</span>
+    <a href="/paideia/contact.html">Contact</a> <span class="sep">·</span>
+    <a href="/paideia/credits.html">Credits</a> <span class="sep">·</span>
+    <a href="/paideia/terms.html">Terms</a>
   </div>
 </footer>
-<script type="module" src="/paideia/reader.js?v=1777566229"></script>
+
+<script type="module" src="/paideia/reader.js?v=1779378800"></script>
 <script src="/paideia/analytics.js?v=1778800000" defer></script>
 <script>
-  // Populate the C-masthead Issue / Vol / Day / Anno on this page.
-  // Mirror of the same block in language.html. Per Jae 2026-05-09.
+  // Populate the C-masthead Issue / Vol / Day / Anno.
   (function () {
     var iso = new Date().toISOString().slice(0, 10);
     var parts = iso.split('-').map(Number);
@@ -126,6 +213,6 @@
     set('anno-line',  'Anno Domini ' + toRoman(parts[0]));
   })();
 </script>
-<script src="/paideia/nav.js?v=1778561010"></script>
+<script src="/paideia/nav.js?v=1778651397"></script>
 </body>
 </html>

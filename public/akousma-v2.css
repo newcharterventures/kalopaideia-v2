@@ -1,0 +1,1080 @@
+/* ============================================================
+ * akousma-v2.css — Claude Design's prototype, with the lightened
+ * palette that matches Kalopaideia's main site (#faf7f2 cream).
+ *
+ * Scope: applied to two surfaces only —
+ *   1. The /paideia/<lang> library grid (book cards re-skinned
+ *      to the prototype's .alongside-card vocabulary).
+ *   2. The /paideia/read/:id reader (entire page rebuilt around
+ *      the prototype's chrome → work-head → player → reader-grid
+ *      → alongside → subscribe → colophon structure).
+ *
+ * To avoid bleeding into other pages, the reader styles are
+ * scoped to body.akousma-reader-v2 and the library card styles
+ * are scoped to .akousma-v2-grid.
+ *
+ * Per Jae 2026-05-21: palette is lighter than prototype's parchment
+ * — it must match the rest of the main Kalopaideia site cream so
+ * /paideia/<lang> doesn't suddenly feel like a different brand
+ * when the visitor moves from the daily-word page into the
+ * library tab.
+ * ============================================================ */
+
+:root {
+  /* Lightened parchment — matches the main Kalopaideia cream */
+  --akv2-bg:      #faf7f2;
+  --akv2-paper:   #fbf6e9;
+  --akv2-card:    #f3ead4;
+  --akv2-ink:     #1f1a12;
+  --akv2-ink-2:   #5C4D3A;
+  --akv2-ink-3:   #8C7C66;
+  --akv2-wine:    #7A2A1F;
+  --akv2-gilt:    #9F843F;
+  --akv2-rule:        rgba(31, 26, 18, 0.18);
+  --akv2-rule-soft:   rgba(31, 26, 18, 0.09);
+
+  --akv2-display: "Cormorant Garamond", "GFS Didot", Georgia, serif;
+  --akv2-body:    "EB Garamond", "Cormorant Garamond", Georgia, serif;
+  --akv2-sans:    "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ============================================================
+ * Section 1 — Library grid cards (.akousma-v2-grid)
+ * Used on every /paideia/<lang> library tab.
+ * Replaces the heavier .book-card with the prototype's quieter
+ * .alongside-card pattern, sized up to carry a cover image.
+ * ============================================================ */
+.akousma-v2-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin: 32px 0 56px;
+}
+
+.akv2-card {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background: var(--akv2-paper);
+  border: 1px solid var(--akv2-rule);
+  padding: 24px 26px 22px;
+  transition: border-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+.akv2-card:hover {
+  border-color: var(--akv2-gilt);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(60, 40, 20, 0.06);
+}
+.akv2-card.akv2-card-locked {
+  background: linear-gradient(180deg, var(--akv2-paper) 0%, var(--akv2-card) 100%);
+}
+.akv2-card.akv2-card-gateway {
+  border-left: 3px solid var(--akv2-gilt);
+}
+
+.akv2-card-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+  min-height: 22px;
+}
+.akv2-card-lang {
+  font-family: var(--akv2-sans);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--akv2-wine);
+}
+.akv2-card-gateway-badge,
+.akv2-card-reading-badge {
+  font-family: var(--akv2-sans);
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border: 1px solid var(--akv2-rule);
+  color: var(--akv2-ink-3);
+  background: transparent;
+}
+.akv2-card-gateway-badge {
+  color: var(--akv2-gilt);
+  border-color: var(--akv2-gilt);
+}
+
+.akv2-card-cover {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  background: var(--akv2-card);
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+.akv2-card-cover a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.akv2-card-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: var(--akv2-card);
+  display: block;
+}
+.akv2-card-cover-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: linear-gradient(135deg, var(--akv2-card) 0%, var(--akv2-paper) 100%);
+}
+.akv2-card-cover-mark {
+  font-family: var(--akv2-display);
+  font-style: italic;
+  font-size: 72px;
+  line-height: 1;
+  color: var(--akv2-gilt);
+}
+.akv2-card-cover-sub {
+  font-family: var(--akv2-sans);
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.36em;
+  color: var(--akv2-ink-3);
+}
+
+.akv2-card-title {
+  font-family: var(--akv2-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.18;
+  color: var(--akv2-ink);
+  margin: 0 0 4px;
+}
+.akv2-card-author {
+  font-family: var(--akv2-body);
+  font-style: italic;
+  font-size: 15px;
+  color: var(--akv2-ink-2);
+  margin: 0 0 12px;
+}
+.akv2-card-blurb {
+  font-family: var(--akv2-body);
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--akv2-ink-2);
+  margin: 0 0 14px;
+}
+.akv2-card-blurb-empty { color: var(--akv2-ink-3); font-style: italic; }
+
+.akv2-card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin: 12px 0 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--akv2-rule-soft);
+  font-family: var(--akv2-body);
+  font-style: italic;
+  font-size: 13px;
+  color: var(--akv2-ink-3);
+}
+.akv2-card-meta .lining { font-variant-numeric: lining-nums; }
+
+.akv2-card-reading-note {
+  font-family: var(--akv2-body);
+  font-style: italic;
+  font-size: 13.5px;
+  color: var(--akv2-ink-2);
+  margin: 0 0 14px;
+  padding-left: 12px;
+  border-left: 2px solid var(--akv2-rule-soft);
+}
+
+.akv2-card-cta {
+  margin-top: auto;
+  padding-top: 4px;
+}
+.akv2-card-btn {
+  display: inline-block;
+  font-family: var(--akv2-sans);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  padding: 11px 18px;
+  background: var(--akv2-ink);
+  color: var(--akv2-bg);
+  border: 1px solid var(--akv2-ink);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+}
+.akv2-card-btn:hover {
+  background: var(--akv2-wine);
+  border-color: var(--akv2-wine);
+  color: var(--akv2-bg);
+}
+.akv2-card-btn[disabled] {
+  background: transparent;
+  color: var(--akv2-ink-3);
+  border-color: var(--akv2-rule);
+  cursor: not-allowed;
+}
+.akv2-card-btn-secondary {
+  background: transparent;
+  color: var(--akv2-ink);
+  border: 1px solid var(--akv2-rule);
+}
+.akv2-card-btn-secondary:hover {
+  background: transparent;
+  color: var(--akv2-wine);
+  border-color: var(--akv2-wine);
+}
+.akv2-card-cta-note {
+  display: block;
+  margin: 10px 0 0;
+  font-family: var(--akv2-body);
+  font-style: italic;
+  font-size: 12.5px;
+  color: var(--akv2-ink-3);
+  line-height: 1.5;
+}
+.akv2-card-credits {
+  margin: 12px 0 0;
+  font-family: var(--akv2-sans);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--akv2-ink-3);
+  line-height: 1.5;
+}
+
+/* Library masthead banner — sub-status row */
+.akv2-sub-banner {
+  background: var(--akv2-paper);
+  border: 1px solid var(--akv2-rule);
+  border-left: 3px solid var(--akv2-gilt);
+  padding: 16px 22px;
+  margin: 0 0 24px;
+  font-family: var(--akv2-body);
+  font-style: italic;
+  font-size: 15px;
+  color: var(--akv2-ink-2);
+  line-height: 1.5;
+}
+.akv2-sub-banner b {
+  font-family: var(--akv2-sans);
+  font-style: normal;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--akv2-ink);
+  margin-right: 8px;
+}
+.akv2-sub-banner.akv2-sub-banner-active {
+  border-left-color: #2d6a1f;
+}
+.akv2-sub-banner.akv2-sub-banner-active b { color: #2d6a1f; }
+.akv2-sub-banner a {
+  color: var(--akv2-wine);
+  text-decoration: underline;
+  text-decoration-color: var(--akv2-rule);
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 1100px) {
+  .akousma-v2-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 720px) {
+  .akousma-v2-grid { grid-template-columns: 1fr; gap: 20px; }
+  .akv2-card { padding: 20px 22px; }
+}
+
+/* ============================================================
+ * Section 2 — Reader page (body.akousma-reader-v2)
+ *
+ * Full prototype layout, lightened palette:
+ *   - chrome (existing site masthead remains; we add a band below)
+ *   - work-head (eyebrow / ornament / series / title / subline / byline)
+ *   - sticky player bar
+ *   - 3-col reader-grid: ToC | parallel-text reader | notes
+ *   - reader-footer (continue reading)
+ *   - alongside (3-card library grid linking to other works)
+ *
+ * Scoped to body.akousma-reader-v2 so it cannot leak.
+ * ============================================================ */
+
+body.akousma-reader-v2 {
+  background: var(--akv2-bg);
+  color: var(--akv2-ink);
+  font-family: var(--akv2-body);
+  font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+}
+body.akousma-reader-v2 ::selection {
+  background: var(--akv2-wine);
+  color: var(--akv2-bg);
+}
+body.akousma-reader-v2 .lining { font-variant-numeric: lining-nums; }
+
+body.akousma-reader-v2 .reader-main {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 48px 60px;
+}
+
+/* Per Jae 2026-05-21: the reader-grid was too tight at the prototype's
+ * widths. Bump the inner column widths so Greek breathes the way it does
+ * in Claude Design's mockup. */
+.akv2-reader-grid { gap: 56px; }
+@media (max-width: 1280px) {
+  body.akousma-reader-v2 .reader-main { padding: 0 32px 56px; }
+}
+
+/* Work header */
+.akv2-work-head {
+  padding: 56px 0 32px;
+  text-align: center;
+}
+.akv2-work-head .eyebrow {
+  font-family: var(--akv2-sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: var(--akv2-wine);
+}
+.akv2-work-head .ornament-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  max-width: 520px;
+  margin: 18px auto 0;
+}
+.akv2-work-head .ornament-row .line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--akv2-rule) 12%, var(--akv2-rule) 88%, transparent);
+}
+.akv2-work-head .ornament-row .diamond {
+  width: 6px;
+  height: 6px;
+  background: var(--akv2-gilt);
+  transform: rotate(45deg);
+}
+.akv2-work-head .series {
+  font-family: var(--akv2-display);
+  font-style: italic;
+  font-size: 18px;
+  color: var(--akv2-ink-2);
+  margin-top: 20px;
+}
+.akv2-work-head .title {
+  font-family: var(--akv2-display);
+  font-weight: 500;
+  font-size: clamp(48px, 7vw, 96px);
+  line-height: 1.04;
+  color: var(--akv2-ink);
+  margin: 6px 0 6px;
+  letter-spacing: -0.005em;
+}
+.akv2-work-head .subline {
+  font-family: var(--akv2-display);
+  font-style: italic;
+  font-size: clamp(20px, 2.4vw, 30px);
+  color: var(--akv2-ink);
+  margin: 0 0 14px;
+}
+.akv2-work-head .subline .sep { color: var(--akv2-gilt); margin: 0 10px; }
+.akv2-work-head .subline .book-subtitle { color: var(--akv2-ink-2); }
+.akv2-work-head .byline {
+  font-family: var(--akv2-body);
+  font-style: italic;
+  font-size: 15px;
+  color: var(--akv2-ink-3);
+  margin-top: 10px;
+}
+.akv2-work-head .byline .reader-name { color: var(--akv2-ink-2); }
+.akv2-work-head .byline .sep { color: var(--akv2-gilt); margin: 0 8px; }
+
+/* Player bar (sticky) */
+.akv2-player {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 24px;
+  align-items: center;
+  padding: 18px 24px;
+  background: var(--akv2-card);
+  border: 1px solid var(--akv2-gilt);
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  transition: box-shadow 0.25s ease;
+}
+.akv2-player.stuck {
+  box-shadow: 0 8px 24px rgba(60, 40, 20, 0.10);
+}
+.akv2-player .transport {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.akv2-icon-btn {
+  appearance: none;
+  background: transparent;
+  border: 1px solid var(--akv2-rule);
+  width: 38px;
+  height: 38px;
+  color: var(--akv2-ink-2);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+.akv2-icon-btn:hover {
+  color: var(--akv2-wine);
+  border-color: var(--akv2-wine);
+}
+.akv2-play-btn {
+  appearance: none;
+  background: var(--akv2-ink);
+  color: var(--akv2-bg);
+  border: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+.akv2-play-btn:hover { transform: scale(1.04); }
+.akv2-player .progress-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+.akv2-player .progress-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.akv2-player .line-title {
+  font-family: var(--akv2-display);
+  font-style: italic;
+  font-size: 16px;
+  color: var(--akv2-ink);
+}
+.akv2-player .line-title .of { color: var(--akv2-ink-3); margin-left: 6px; }
+.akv2-player .time {
+  font-family: var(--akv2-sans);
+  font-size: 11.5px;
+  color: var(--akv2-ink-3);
+  letter-spacing: 0.05em;
+}
+.akv2-player .time .sep { margin: 0 8px; color: var(--akv2-rule); }
+.akv2-player .scrubber {
+  position: relative;
+  height: 6px;
+  background: var(--akv2-rule-soft);
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.akv2-player .fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0%;
+  background: var(--akv2-wine);
+  transition: width 0.15s linear;
+}
+.akv2-player .controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.akv2-ctrl-btn {
+  appearance: none;
+  background: transparent;
+  border: 1px solid var(--akv2-rule);
+  padding: 8px 12px;
+  font-family: var(--akv2-sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--akv2-ink-2);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.akv2-ctrl-btn:hover {
+  color: var(--akv2-wine);
+  border-color: var(--akv2-wine);
+}
+.akv2-segmented {
+  display: inline-flex;
+  border: 1px solid var(--akv2-rule);
+}
+.akv2-segmented button {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  border-left: 1px solid var(--akv2-rule);
+  padding: 8px 12px;
+  font-family: var(--akv2-sans);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--akv2-ink-2);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.akv2-segmented button:first-child { border-left: 0; }
+.akv2-segmented button.active {
+  background: var(--akv2-ink);
+  color: var(--akv2-bg);
+}
+
+/* Reader grid (3 cols). Per Jae 2026-05-21 round 2: middle column was
+ * being squeezed by the 220+320 side rails at 1380px width — only ~700px
+ * left for two parallel-text columns. Trimmed ToC to 200px, notes rail
+ * to 280px, kept generous gap. Added right-padding so the ✻ marker
+ * (which lives at right:-22px on each row) has its own gutter and is
+ * never clipped by the notes column. */
+.akv2-reader-grid {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr) 280px;
+  gap: 56px;
+  margin-top: 36px;
+  align-items: flex-start;
+  padding-right: 28px;
+}
+
+.akv2-toc {
+  position: sticky;
+  top: 100px;
+}
+.akv2-toc-label,
+.akv2-pane-label {
+  font-family: var(--akv2-sans);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--akv2-ink-2);
+  margin-bottom: 14px;
+}
+.akv2-toc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.akv2-toc-book {
+  padding: 10px 0 10px 12px;
+  border-left: 1px solid var(--akv2-rule-soft);
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+.akv2-toc-book:hover { border-left-color: var(--akv2-gilt); }
+.akv2-toc-book.active { border-left: 2px solid var(--akv2-wine); padding-left: 11px; }
+.akv2-toc-book .n {
+  font-family: var(--akv2-display);
+  font-style: italic;
+  font-size: 18px;
+  color: var(--akv2-ink-3);
+  font-weight: 500;
+  margin-right: 8px;
+}
+.akv2-toc-book.active .n { color: var(--akv2-wine); }
+.akv2-toc-book .t {
+  font-family: var(--akv2-body);
+  font-style: italic;
+  font-size: 13.5px;
+  color: var(--akv2-ink-2);
+  line-height: 1.35;
+}
+.akv2-toc-book.active .t { color: var(--akv2-ink); }
+.akv2-toc-book .mins {
+  display: block;
+  font-family: var(--akv2-sans);
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--akv2-ink-3);
+  margin-top: 2px;
+}
+
+.akv2-toc-viewall {
+  padding: 12px 0 0 12px;
+}
+.akv2-toc-viewall a {
+  font-family: var(--akv2-sans);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  color: var(--akv2-wine);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Reader column */
+.akv2-reader-head {
+  display: grid;
+  grid-template-columns: 48px 1fr 1fr;
+  gap: 24px;
+  padding: 0 0 14px;
+  border-bottom: 1px solid var(--akv2-rule);
+  margin-bottom: 8px;
+}
+.akv2-reader-head .col-lbl {
+  font-family: var(--akv2-sans);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--akv2-ink-2);
+}
+body.view-gr .akv2-reader-head,
+body.view-en .akv2-reader-head { grid-template-columns: 48px 1fr; }
+
+.akv2-line-row {
+  display: grid;
+  grid-template-columns: 48px 1fr 1fr;
+  gap: 32px;
+  padding: 22px 28px 24px 16px;
+  border-left: 2px solid transparent;
+  transition: background 0.25s, border-color 0.2s, opacity 0.25s;
+  cursor: pointer;
+  position: relative;
+}
+body.view-gr .akv2-line-row,
+body.view-en .akv2-line-row { grid-template-columns: 48px 1fr; }
+.akv2-line-row.current {
+  border-left: 2px solid var(--akv2-wine);
+  background: rgba(159, 132, 63, 0.07);
+}
+.akv2-line-row.finished { opacity: 0.58; }
+.akv2-line-row:hover:not(.current) { background: rgba(31, 26, 18, 0.025); }
+
+.akv2-line-row .ln {
+  font-family: var(--akv2-body);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--akv2-ink-3);
+  padding-top: 4px;
+}
+.akv2-line-row.current .ln { color: var(--akv2-wine); }
+
+.akv2-line-row .gr {
+  font-family: var(--akv2-display);
+  font-style: italic;
+  font-size: 22px;
+  line-height: 1.7;
+  color: var(--akv2-ink);
+}
+body.view-en .akv2-line-row .gr { display: none; }
+body.view-gr .akv2-line-row .en { display: none; }
+
+.akv2-line-row .en {
+  font-family: var(--akv2-body);
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--akv2-ink-2);
+}
+.akv2-line-row.current .en { color: var(--akv2-ink); }
+
+/* Per Jae 2026-05-21 — Claude Design's scholar-note marker (✻).
+ * A small wine-bordered circle pinned to the OUTSIDE right edge of
+ * the line row, in the grid's right-padding gutter. Click it to focus
+ * the notes panel. Active row inverts the marker to wine fill. */
+.akv2-note-marker {
+  position: absolute;
+  right: -26px;
+  top: 22px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--akv2-paper);
+  color: var(--akv2-wine);
+  border: 1px solid var(--akv2-wine);
+  font-family: var(--akv2-display);
+  font-style: italic;
+  font-size: 12px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
+  user-select: none;
+  box-shadow: 0 1px 3px rgba(60, 40, 20, 0.08);
+}
+.akv2-note-marker:hover { transform: scale(1.08); }
+.akv2-line-row.current .akv2-note-marker {
+  background: var(--akv2-wine);
+  color: var(--akv2-bg);
+}
+/* On mobile the notes panel stacks below the lines and the right-gutter
+ * disappears. Move the marker inline so it stays inside the row. */
+@media (max-width: 1100px) {
+  .akv2-note-marker {
+    position: static;
+    display: inline-flex;
+    margin: 0 0 0 8px;
+    vertical-align: middle;
+  }
+}
+
+.akv2-line-row .word {
+  cursor: pointer;
+  transition: color 0.15s;
+}
+.akv2-line-row .word:hover {
+  color: var(--akv2-wine);
+  text-decoration: underline;
+  text-decoration-color: var(--akv2-gilt);
+  text-underline-offset: 3px;
+}
+
+.akv2-line-audio {
+  appearance: none;
+  background: transparent;
+  border: 1px solid var(--akv2-rule);
+  width: 28px;
+  height: 28px;
+  margin-top: 6px;
+  cursor: pointer;
+  color: var(--akv2-ink-2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  transition: all 0.15s;
+}
+.akv2-line-audio:hover { color: var(--akv2-wine); border-color: var(--akv2-wine); }
+.akv2-line-audio.playing { background: var(--akv2-wine); color: var(--akv2-bg); border-color: var(--akv2-wine); }
+
+/* Reader footer */
+.akv2-reader-footer {
+  margin-top: 28px;
+  padding: 18px 0 0;
+  border-top: 1px solid var(--akv2-rule);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.akv2-reader-footer .lbl {
+  font-family: var(--akv2-body);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--akv2-ink-3);
+}
+.akv2-reader-footer button {
+  appearance: none;
+  background: transparent;
+  border: 1px solid var(--akv2-rule);
+  padding: 10px 18px;
+  font-family: var(--akv2-sans);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--akv2-ink-2);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.akv2-reader-footer button:hover {
+  color: var(--akv2-wine);
+  border-color: var(--akv2-wine);
+}
+.akv2-reader-footer button[disabled] {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Notes panel */
+.akv2-notes {
+  position: sticky;
+  top: 100px;
+}
+.akv2-notes-card {
+  padding: 18px 20px 20px;
+  border: 1px solid var(--akv2-rule);
+  background: var(--akv2-paper);
+}
+.akv2-notes-card .line-sub {
+  font-family: var(--akv2-body);
+  font-style: italic;
+  font-size: 12.5px;
+  color: var(--akv2-ink-3);
+}
+.akv2-notes-card .body {
+  font-family: var(--akv2-body);
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--akv2-ink-2);
+  margin: 10px 0 0;
+}
+.akv2-notes-card .none {
+  padding: 22px 0 8px;
+  text-align: center;
+  font-family: var(--akv2-body);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--akv2-ink-3);
+}
+
+.akv2-save-card {
+  margin-top: 20px;
+  padding: 16px 20px;
+  background: var(--akv2-card);
+  border-left: 2px solid var(--akv2-gilt);
+}
+.akv2-save-card .lbl-sm {
+  font-family: var(--akv2-sans);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--akv2-ink-2);
+  margin-bottom: 8px;
+}
+.akv2-save-card p {
+  font-family: var(--akv2-body);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--akv2-ink);
+  line-height: 1.5;
+  margin: 0 0 12px;
+}
+.akv2-keep-btn {
+  appearance: none;
+  background: transparent;
+  border: 1px solid var(--akv2-ink-2);
+  padding: 8px 14px;
+  font-family: var(--akv2-sans);
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--akv2-ink);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.akv2-keep-btn:hover { background: var(--akv2-ink); color: var(--akv2-bg); }
+.akv2-keep-btn.kept { background: var(--akv2-ink); color: var(--akv2-bg); }
+
+/* Working alongside (reader-page bottom band) */
+.akv2-alongside {
+  margin-top: 80px;
+  padding: 40px 0 0;
+  border-top: 1px solid var(--akv2-rule);
+}
+.akv2-alongside-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.akv2-alongside-head h2 {
+  font-family: var(--akv2-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 34px;
+  color: var(--akv2-ink);
+  margin: 0;
+}
+.akv2-alongside-head a {
+  font-family: var(--akv2-sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--akv2-wine);
+  text-decoration: none;
+}
+
+/* Reader-mode tabs (chapters / session / line-by-line) */
+.akv2-mode-tabs {
+  display: flex;
+  gap: 4px;
+  border: 1px solid var(--akv2-rule);
+  align-self: start;
+}
+.akv2-mode-tab {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  border-right: 1px solid var(--akv2-rule);
+  padding: 8px 14px;
+  font-family: var(--akv2-sans);
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--akv2-ink-2);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.akv2-mode-tab:last-child { border-right: 0; }
+.akv2-mode-tab:hover { color: var(--akv2-wine); }
+.akv2-mode-tab.active { background: var(--akv2-ink); color: var(--akv2-bg); }
+
+/* Loading / empty */
+.akv2-loading {
+  padding: 80px 0;
+  text-align: center;
+  font-family: var(--akv2-body);
+  font-style: italic;
+  font-size: 16px;
+  color: var(--akv2-ink-3);
+}
+
+/* Crumb */
+.akv2-crumb {
+  margin: 24px 0 0;
+  font-family: var(--akv2-sans);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--akv2-ink-3);
+}
+.akv2-crumb button {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  color: var(--akv2-wine);
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .akv2-reader-grid {
+    grid-template-columns: 180px minmax(0, 1fr);
+    gap: 36px;
+    padding-right: 0;
+  }
+  .akv2-notes {
+    grid-column: 1 / -1;
+    position: static;
+    margin-top: 32px;
+  }
+}
+@media (max-width: 760px) {
+  body.akousma-reader-v2 .reader-main { padding: 0 20px 40px; }
+  .akv2-reader-grid { grid-template-columns: 1fr; gap: 28px; padding-right: 0; }
+  .akv2-toc, .akv2-notes { position: static; }
+  .akv2-toc { display: none; } /* hidden on phone — the mode tabs are the chapter switcher */
+  .akv2-player { grid-template-columns: 1fr; gap: 14px; padding: 14px 16px; position: static; }
+  .akv2-player .controls { justify-content: flex-end; }
+  .akv2-line-row { padding: 18px 4px 18px 12px; gap: 18px; grid-template-columns: 36px 1fr 1fr; }
+  .akv2-line-row .gr { font-size: 19px; line-height: 1.6; }
+  .akv2-line-row .en { font-size: 16px; line-height: 1.6; }
+  body.view-both .akv2-line-row { grid-template-columns: 36px 1fr; }
+  body.view-both .akv2-line-row .en { display: block; padding-left: 36px; padding-top: 6px; }
+  body.view-both .akv2-reader-head { grid-template-columns: 36px 1fr; }
+  body.view-both .akv2-reader-head .en-lbl { display: none; }
+  .akv2-alongside { margin-top: 56px; }
+  .akv2-work-head .title { font-size: clamp(36px, 9vw, 56px); }
+  .akv2-work-head { padding: 36px 0 24px; }
+}
+
+/* ============================================================
+ * Section 3 — Colophon footer (used site-wide)
+ *
+ * Claude Design's prototype colophon, tightened to slot "New Charter
+ * Ventures" discreetly into the EST. line so the imprint signature
+ * remains visible without breaking the Roman-numeral aesthetic.
+ * Per Jae 2026-05-21: "Use the bottom masthead as our design template."
+ * ============================================================ */
+footer.akv2-colophon {
+  padding: 36px 48px 28px;
+  text-align: center;
+  border-top: 1px solid var(--akv2-rule);
+  max-width: 1380px;
+  margin: 56px auto 0;
+  background: transparent;
+}
+footer.akv2-colophon .name {
+  font-family: var(--akv2-display);
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--akv2-ink);
+}
+footer.akv2-colophon .tagline {
+  font-family: var(--akv2-body);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--akv2-ink-3);
+  margin-top: 6px;
+  line-height: 1.55;
+}
+footer.akv2-colophon .tagline .sep {
+  color: var(--akv2-gilt);
+  margin: 0 8px;
+  font-style: normal;
+}
+footer.akv2-colophon .est {
+  font-family: var(--akv2-sans);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--akv2-ink-3);
+  margin-top: 18px;
+  line-height: 1.7;
+}
+footer.akv2-colophon .est .sep {
+  color: var(--akv2-gilt);
+  margin: 0 10px;
+}
+footer.akv2-colophon .est .imprint {
+  color: var(--akv2-ink-2);
+}
+footer.akv2-colophon .legal {
+  font-family: var(--akv2-sans);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--akv2-ink-3);
+  margin-top: 16px;
+  line-height: 1.7;
+}
+footer.akv2-colophon .legal a,
+footer.akv2-colophon .legal a:visited {
+  color: var(--akv2-ink-3);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--akv2-rule);
+}
+footer.akv2-colophon .legal a:hover { color: var(--akv2-wine); border-bottom-color: var(--akv2-wine); }
+footer.akv2-colophon .legal .sep { color: var(--akv2-gilt); margin: 0 10px; }
+@media (max-width: 760px) {
+  footer.akv2-colophon { padding: 28px 20px 24px; }
+  footer.akv2-colophon .est { letter-spacing: 0.22em; font-size: 10px; }
+  footer.akv2-colophon .legal { letter-spacing: 0.14em; font-size: 9.5px; }
+}

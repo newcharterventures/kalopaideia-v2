@@ -60,7 +60,7 @@
     {
       "char": "I i",
       "name": "ī",
-      "ipa": "[ɪ] / [iː] (vowel); [j] (consonant)",
+      "ipa": "[[ɪ] / [iː] (vowel); [j] (consonant)]",
       "approximation": "vowel short: 'i' in bit; long: 'ee' in see; consonant: 'y' in yes",
       "notes": "Functions as both vowel and consonant (consonantal i often written as j in modern editions). Vowel quantity is phonemic."
     },
@@ -144,7 +144,7 @@
     {
       "char": "U u",
       "name": "ū",
-      "ipa": "[ʊ] / [uː] (vowel); [w] (consonant)",
+      "ipa": "[[ʊ] / [uː] (vowel); [w] (consonant)]",
       "approximation": "vowel short: 'u' in put; long: 'oo' in moon; consonant: 'w' in water",
       "notes": "Functions as both vowel and consonant (consonantal u often written as v in modern editions). Vowel quantity is phonemic."
     },

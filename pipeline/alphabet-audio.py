@@ -32,12 +32,32 @@ async def speak(text: str, lang_key: str, out_path: Path):
 
 
 def text_for_letter(entry: dict) -> str:
-    """Build the phrase sent to TTS for one alphabet entry."""
-    char = entry.get("char", "")
-    # If the char is an accent/breathing placeholder, just say its name
+    """Build the phrase sent to TTS for one alphabet entry.
+
+    Option B: paired "name, sound" playback. The user hears the letter's
+    name first, then a short pause, then its phonetic value(s). This is
+    the most pedagogically explicit option — it works around Edge TTS's
+    inconsistent handling of bare glyphs (e.g. Greek υ reads as the
+    letter name 'upsilon', while ο reads as the vowel /o/).
+
+    We say:  "<name>. <sound-form>."
+    where <sound-form> is the lowercase token from `char` (e.g. α, β,
+    ο, υ). For Greek specifically, we also append a stripped-of-IPA
+    approximation when the bare glyph would otherwise be mis-read as a
+    letter name.
+    """
+    char = entry.get("char", "") or ""
+    name = (entry.get("name") or "").strip()
+    # If char is empty / a combining mark / a placeholder, just say the name.
     if not char or all(ord(c) < 32 or c in "◌" for c in char):
-        return entry.get("name", "").strip()
-    return char
+        return name
+    # Last token = lowercase glyph (matches the IPA description).
+    tokens = [t for t in char.replace("/", " ").split() if t]
+    glyph = tokens[-1] if tokens else char
+    if name and glyph and name.lower() != glyph.lower():
+        # Comma + period encourages a brief pause in the TTS rendering.
+        return f"{name}, {glyph}."
+    return glyph or name
 
 
 async def main():
