@@ -1,4 +1,4 @@
-// Paideia category landing page — renders the category description plus
+// Kalopaideia category landing page — renders the category description plus
 // a card grid of child languages. Each card links to the language page.
 
 const BASE = "/paideia";

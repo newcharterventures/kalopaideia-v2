@@ -9,7 +9,7 @@ import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
-const client = wrapAnthropic(new Anthropic(), { project: "paideia", script: "generate-onelang" });
+const client = wrapAnthropic(new Anthropic(), { project: "kalopaideia", script: "generate-onelang" });
 const MODEL = "claude-sonnet-4-5";
 
 // Same LANGUAGES table as generate.js — kept in sync for the new entries.
@@ -41,7 +41,7 @@ const LANGUAGES = {
 };
 
 function systemPromptFor(lang) {
-  return `You are the senior editor of Paideia, a site teaching the classical languages. You write a daily word post in ${lang.display}.
+  return `You are the senior editor of Kalopaideia, a site teaching the classical languages. You write a daily word post in ${lang.display}.
 
 Draw from: ${lang.focus}.
 
@@ -72,7 +72,7 @@ async function generateOne(lang, usedWords) {
     model: MODEL,
     max_tokens: 1500,
     system: systemPromptFor(lang),
-    messages: [{ role: "user", content: `Generate today's ${lang.display} word for Paideia.${recent}\n\nOutput JSON only.` }],
+    messages: [{ role: "user", content: `Generate today's ${lang.display} word for Kalopaideia.${recent}\n\nOutput JSON only.` }],
   });
   const raw = response.content[0]?.text || "";
   const cleaned = raw.replace(/^```(?:json)?\s*/, "").replace(/\s*```\s*$/, "").trim();

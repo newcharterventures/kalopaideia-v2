@@ -1,4 +1,4 @@
-// Paideia language page — primer + daily word archive
+// Kalopaideia language page — primer + daily word archive
 
 const BASE = "/paideia";
 
@@ -408,7 +408,7 @@ function matchLibraryToReading(readingEntry, libraryTexts) {
 }
 
 function getBookmarksSync() {
-  try { return JSON.parse(localStorage.getItem("paideia:bookmarks:v1") || "{}"); }
+  try { return JSON.parse(localStorage.getItem("kalopaideia:bookmarks:v1") || "{}"); }
   catch { return {}; }
 }
 

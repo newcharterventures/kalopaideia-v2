@@ -9,7 +9,7 @@ import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
-const client = wrapAnthropic(new Anthropic(), { project: "paideia", script: "culture" });
+const client = wrapAnthropic(new Anthropic(), { project: "kalopaideia", script: "culture" });
 const MODEL = "claude-sonnet-4-5";
 
 const CULTURE_PROMPTS = {
@@ -26,7 +26,7 @@ const CULTURE_PROMPTS = {
 
 function systemPrompt(langKey) {
   const focus = CULTURE_PROMPTS[langKey];
-  return `You write short cultural vignettes for Paideia, a site teaching the classical languages.
+  return `You write short cultural vignettes for Kalopaideia, a site teaching the classical languages.
 
 Today's vignette concerns ${langKey}: ${focus}.
 

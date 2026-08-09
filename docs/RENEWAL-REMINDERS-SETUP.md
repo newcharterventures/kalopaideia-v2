@@ -131,7 +131,7 @@ Expected output:
 
 ---
 
-## Step 5: Restart Paideia Service
+## Step 5: Restart Kalopaideia Service
 
 ```bash
 systemctl --user restart paideia

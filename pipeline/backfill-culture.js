@@ -21,7 +21,7 @@ const CULTURE_PROMPTS = {
 
 function systemPrompt(langKey) {
   const focus = CULTURE_PROMPTS[langKey];
-  return `You write short cultural vignettes for Paideia, a site teaching the classical languages.
+  return `You write short cultural vignettes for Kalopaideia, a site teaching the classical languages.
 
 Today's vignette concerns ${langKey}: ${focus}.
 

@@ -21,7 +21,7 @@
 (function () {
   'use strict';
 
-  // --- Site detection. Both Paideia and Mansion serve this same file at
+  // --- Site detection. Both Kalopaideia and Mansion serve this same file at
   //     /<site>/analytics.js; the path prefix tells us which one.
   function detectSite() {
     const p = (typeof location !== 'undefined' && location.pathname) || '';

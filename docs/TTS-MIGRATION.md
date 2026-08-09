@@ -249,7 +249,7 @@ Per the 2026-05-20 cost-ceiling aphorism in `MEMORY.md`:
 **every cost ceiling is only as real as the database table behind it.**
 
 Build a new SQLite table (extends the existing
-`paideia/data/audio-rate-limit.db`):
+`kalopaideia/data/audio-rate-limit.db`):
 
 ```sql
 CREATE TABLE IF NOT EXISTS azure_tts_usage (
@@ -403,7 +403,7 @@ Before flipping production to Azure, run a side-by-side diff:
   thorn, Middle English yogh, etc.). All language-specific phonetic
   normalization stays — it's what makes the modern voices passable
   for the dead languages.
-- **The rate-limit module.** `paideia/lib/rate-limit-audio.js` already
+- **The rate-limit module.** `kalopaideia/lib/rate-limit-audio.js` already
   caps client requests; it doesn't need to know about Azure.
 - **The library-text JSON shape.** No content changes; only the audio
   generation backend changes.
@@ -423,10 +423,10 @@ Before flipping production to Azure, run a side-by-side diff:
 
 ## Cross-references
 
-- `paideia/docs/INFRASTRUCTURE-akousma.md` — high-level audio architecture
-- `paideia/docs/AUDIO-REMEDIATION.md` — broader audio hardening plan
+- `kalopaideia/docs/INFRASTRUCTURE-akousma.md` — high-level audio architecture
+- `kalopaideia/docs/AUDIO-REMEDIATION.md` — broader audio hardening plan
 - `MEMORY.md` (root) — 2026-05-20 Azure decision + rate-limit aphorism
-- `paideia/pipeline/voices.py` — voice mapping table (canonical)
+- `kalopaideia/pipeline/voices.py` — voice mapping table (canonical)
 
 ## What Jae needs to decide
 

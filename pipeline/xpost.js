@@ -1,4 +1,4 @@
-// X posting for Paideia: routes Latin → @LatinateGame, Greek → @Paideion.
+// X posting for Kalopaideia: routes Latin → @LatinateGame, Greek → @Paideion.
 // French/German/Old English: skipped until those accounts exist.
 import { execSync } from "child_process";
 import fs from "fs/promises";

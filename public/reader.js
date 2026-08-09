@@ -1,4 +1,4 @@
-// Paideia reader v2 — Claude Design's prototype layout.
+// Kalopaideia reader v2 — Claude Design's prototype layout.
 // Surfaces:
 //   work-head (eyebrow / series / title / subline / byline)
 //   sticky player bar (transport + line title + view-mode segmented)

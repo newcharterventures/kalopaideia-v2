@@ -1,6 +1,6 @@
 /*
  * analytics-dashboard.js — user-facing reading-analytics dashboard.
- * Shared between Paideia and Mansion. Reads the active site from
+ * Shared between Kalopaideia and Mansion. Reads the active site from
  * #dash-root[data-site] (set by the host HTML).
  *
  * Per Jae 2026-05-12. Mirrors the Manus reference screenshot:
@@ -209,7 +209,7 @@
   }
 
   function renderSiteFilter() {
-    // Mansion users only see Mansion; Paideia users see Paideia. The summary
+    // Mansion users only see Mansion; Kalopaideia users see Kalopaideia. The summary
     // endpoint accepts `site=` so we could let users toggle to a combined
     // view if they have analytics on both sites. For v1 we lock per-site.
     return '';

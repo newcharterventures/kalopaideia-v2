@@ -1,6 +1,6 @@
 /*
  * admin-analytics.js — sitewide aggregate dashboard for the proprietor.
- * Shared by Paideia and Mansion. Reads site from #admin-dash-root[data-site].
+ * Shared by Kalopaideia and Mansion. Reads site from #admin-dash-root[data-site].
  * Per Jae 2026-05-12. Anonymized aggregates only; no per-user breakdown.
  */
 (function () {

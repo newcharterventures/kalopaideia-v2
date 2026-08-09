@@ -1,5 +1,5 @@
 /**
- * Pronunciation generation for Paideia
+ * Pronunciation generation for Kalopaideia
  * Generates IPA and approximations for words in Latin, Greek, German, French, Olde English
  */
 

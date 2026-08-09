@@ -1,4 +1,4 @@
-// Paideia bookmark store — client-side localStorage
+// Kalopaideia bookmark store — client-side localStorage
 // Tracks where the user left off in each text.
 //
 // Storage shape:
@@ -11,7 +11,7 @@
 //       updated_at: <epoch_ms>
 //   }, ... }
 
-const KEY = "paideia:bookmarks:v1";
+const KEY = "kalopaideia:bookmarks:v1";
 
 function readAll() {
   try {

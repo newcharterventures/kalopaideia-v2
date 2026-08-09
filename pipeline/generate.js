@@ -8,7 +8,7 @@ import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
-const client = wrapAnthropic(new Anthropic(), { project: "paideia", script: "generate" });
+const client = wrapAnthropic(new Anthropic(), { project: "kalopaideia", script: "generate" });
 const MODEL = "claude-sonnet-4-5";
 
 // Canonical language order per Jae 2026-05-09:
@@ -73,7 +73,7 @@ const LANGUAGES = [
 ];
 
 function systemPromptFor(lang) {
-  return `You are the senior editor of Paideia, a site teaching the classical languages. You write a daily word post in ${lang.display}.
+  return `You are the senior editor of Kalopaideia, a site teaching the classical languages. You write a daily word post in ${lang.display}.
 
 Draw from: ${lang.focus}.
 
@@ -101,7 +101,7 @@ You must output a JSON object with these exact keys:
 
 - "definition_shades": ARRAY of 2–4 distinct senses of the word, in numbered Roman order I, II, III, IV. Each shade is an object with two keys: "head" (a short bold heading naming the sense, like "Breath. Spirit. Life.") and "body" (a paragraph of 2–4 sentences explaining the sense with at least one literary or historical example).
 
-- "cognates": ARRAY of 6–10 objects, each with three keys — "language" (the language name as a short label like "Greek", "Latin", "Sanskrit", "Italian", "French", "German", "Olde English", "Middle English", "Old Norse", "Lithuanian"), "word" (the cognate word in that language's native script with diacritics), and "gloss" (a 2–6 word English gloss). Trace the headword's Proto-Indo-European or other parent-root strand across as many of Paideia's living traditions as fits honestly. Include the headword's own language as the first row. Do not invent cognates; if a true cognate doesn't exist for a language, omit that row rather than fake one.
+- "cognates": ARRAY of 6–10 objects, each with three keys — "language" (the language name as a short label like "Greek", "Latin", "Sanskrit", "Italian", "French", "German", "Olde English", "Middle English", "Old Norse", "Lithuanian"), "word" (the cognate word in that language's native script with diacritics), and "gloss" (a 2–6 word English gloss). Trace the headword's Proto-Indo-European or other parent-root strand across as many of Kalopaideia's living traditions as fits honestly. Include the headword's own language as the first row. Do not invent cognates; if a true cognate doesn't exist for a language, omit that row rather than fake one.
 
 - "etymology_root": ONE short string naming the deepest root with its asterisk and gloss (e.g. "PIE *dʰewh₂- (to smoke, to rise as vapour)"). This is the row above the cognate grid.
 
@@ -130,7 +130,7 @@ async function generateOne(lang, usedWords) {
     model: MODEL,
     max_tokens: 4000,
     system: systemPromptFor(lang),
-    messages: [{ role: "user", content: `Generate today's ${lang.display} word for Paideia.${recent}\n\nOutput JSON only.` }],
+    messages: [{ role: "user", content: `Generate today's ${lang.display} word for Kalopaideia.${recent}\n\nOutput JSON only.` }],
   });
   const raw = response.content[0]?.text || "";
   const cleaned = raw.replace(/^```(?:json)?\s*/, "").replace(/\s*```\s*$/, "").trim();
@@ -187,7 +187,7 @@ async function main() {
   // today.json symlink/convenience
   await fs.writeFile(path.join(ROOT, "data", "today.json"), JSON.stringify(out, null, 2));
 
-  console.log(`\n✅ Paideia words for ${today} written.`);
+  console.log(`\n✅ Kalopaideia words for ${today} written.`);
 }
 
 main().catch((err) => { console.error("FATAL:", err); process.exit(1); });

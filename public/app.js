@@ -1,4 +1,4 @@
-// Paideia front-end — renders today's 5-language edition
+// Kalopaideia front-end — renders today's 5-language edition
 
 const BASE = "/paideia";
 

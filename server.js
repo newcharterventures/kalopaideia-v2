@@ -61,7 +61,7 @@ import { mintDiploma, isLive as mintIsLive, chainName as mintChainName } from ".
 import Database from "better-sqlite3";
 
 // Per Jae 2026-05-09: subscription pricing is $11.99/mo for both sites.
-// Paideia's audio/library content can be paywalled with the same
+// Kalopaideia's audio/library content can be paywalled with the same
 // entitlement check as the Mansion's Stoa. The check is enabled when
 // `PAIDEIA_PAYWALL=1` in the environment; otherwise all content stays
 // free as before. Subscribers (and per-book buyers) get full access
@@ -127,11 +127,26 @@ const commerce = buildCommerce({ basePath: BASE });
 app.use(BASE, express.urlencoded({ extended: false }));
 app.use(BASE, commerce);
 
-// Block the archived mockups dir from being web-reachable. Files moved
-// here by the v2-migration cleanup 2026-05-20 are kept as a reference
-// but should never be served. Returns 404 silently.
-app.use(`${BASE}/_mockups`, (_req, res) => res.status(404).end());
+// Files moved into public/_mockups/ by the v2-migration cleanup 2026-05-20
+// were originally blocked from being served (404 silently). Per Jae
+// 2026-08-06, _mockups/ is now intentionally public — kept as a reference,
+// no longer walled off.
 app.use(BASE, express.static(path.join(__dirname, "public")));
+
+// Fallback for links that omit the /_mockups/ segment (e.g.
+// /paideia/ad-mockup-d.html instead of /paideia/_mockups/ad-mockup-d.html) —
+// redirect to the canonical path if the file exists there. Added 2026-08-06
+// after repeated "blank page" reports caused by that missing segment.
+app.use(BASE, async (req, res, next) => {
+  if (req.path.startsWith("/_mockups/")) return next();
+  const candidate = path.join(__dirname, "public", "_mockups", req.path);
+  try {
+    const stat = await fs.stat(candidate);
+    if (stat.isFile()) return res.redirect(302, `${BASE}/_mockups${req.path}`);
+  } catch {}
+  next();
+});
+
 app.use(BASE, express.json({ limit: "100kb" }));
 app.use(`${BASE}/audio`, express.static(path.join(__dirname, "data", "audio")));
 app.use(`${BASE}/alphabet-audio`, express.static(path.join(__dirname, "data", "alphabet")));
@@ -636,12 +651,12 @@ app.post(`${BASE}/api/contact`, async (req, res) => {
       const safeSubject = S.replace(/[\r\n]+/g, " ").slice(0, 200);
       const body = [
         `To: ${CONTACT_RECIPIENT}`,
-        `From: Paideia Contact <noreply@newcharterventures.com>`,
+        `From: Kalopaideia Contact <noreply@newcharterventures.com>`,
         `Reply-To: ${N} <${E}>`,
-        `Subject: [Paideia Contact] ${safeSubject}`,
+        `Subject: [Kalopaideia Contact] ${safeSubject}`,
         `Content-Type: text/plain; charset=utf-8`,
         ``,
-        `New Paideia contact form submission`,
+        `New Kalopaideia contact form submission`,
         `Received: ${submission.received_at}`,
         `From:     ${N} <${E}>`,
         `Subject:  ${safeSubject}`,
@@ -1056,4 +1071,4 @@ for (const lang of VALID_LANGS) {
 app.get(`${BASE}/verify`, (_req, res) => res.sendFile(path.join(__dirname, "public", "verify.html")));
 app.get(`${BASE}/verify/:tokenId`, (_req, res) => res.sendFile(path.join(__dirname, "public", "verify.html")));
 
-app.listen(PORT, () => console.log(`Paideia on :${PORT}${BASE}`));
+app.listen(PORT, () => console.log(`Kalopaideia on :${PORT}${BASE}`));

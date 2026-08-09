@@ -9,7 +9,7 @@ import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
-const client = wrapAnthropic(new Anthropic(), { project: "paideia", script: "culture-onelang" });
+const client = wrapAnthropic(new Anthropic(), { project: "kalopaideia", script: "culture-onelang" });
 const MODEL = "claude-sonnet-4-5";
 
 const CULTURE_PROMPTS = {
@@ -19,7 +19,7 @@ const CULTURE_PROMPTS = {
 
 function systemPrompt(langKey) {
   const focus = CULTURE_PROMPTS[langKey];
-  return `You write short cultural vignettes for Paideia, a site teaching the classical languages.
+  return `You write short cultural vignettes for Kalopaideia, a site teaching the classical languages.
 
 Today's vignette concerns ${langKey}: ${focus}.
 
@@ -39,7 +39,7 @@ HARD RULES:
 async function fetchWikimediaImage(query) {
   try {
     const url = `https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=5&gsrsearch=${encodeURIComponent(query)}&prop=imageinfo&iiprop=url|size|extmetadata&iiurlwidth=1280&origin=*`;
-    const resp = await fetch(url, { headers: { "User-Agent": "Paideia/1.0 (https://newcharterventures.com/paideia)" } });
+    const resp = await fetch(url, { headers: { "User-Agent": "Kalopaideia/1.0 (https://newcharterventures.com/paideia)" } });
     const j = await resp.json();
     if (!j.query?.pages) return null;
     const pages = Object.values(j.query.pages);

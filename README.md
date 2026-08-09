@@ -187,9 +187,9 @@ Runs on a single droplet behind nginx at `newcharterventures.com/paideia`.
 Service is managed by systemd (user unit):
 
 ```bash
-systemctl --user status paideia    # check status
-systemctl --user restart paideia   # restart
-journalctl --user -u paideia -f    # live logs
+systemctl --user status kalopaideia    # check status
+systemctl --user restart kalopaideia   # restart
+journalctl --user -u kalopaideia -f    # live logs
 ```
 
 The unit auto-restarts on crash. Nginx config lives at

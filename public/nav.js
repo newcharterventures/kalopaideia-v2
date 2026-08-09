@@ -1,4 +1,4 @@
-// Paideia shared masthead nav — one source of truth for the link list.
+// Kalopaideia shared masthead nav — one source of truth for the link list.
 // Renders into #mast-nav-slot if present (category.html). For legacy pages
 // (index.html, language.html) the nav is inlined in HTML and this script
 // can also be used to inject Celtic/Germanic dropdowns into an existing

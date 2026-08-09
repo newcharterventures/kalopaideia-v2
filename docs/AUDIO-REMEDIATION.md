@@ -1,7 +1,7 @@
 # Kalopaideia — Audio Files & Streaming Remediation
 
 _Filed 2026-05-20 applying the rules from
-`paideia/docs/INFRASTRUCTURE-akousma.md` to the current Kalopaideia
+`kalopaideia/docs/INFRASTRUCTURE-akousma.md` to the current Kalopaideia
 codebase. This is the audit + remediation plan. No code has been
 changed yet — Jae needs to sign off because some fixes change
 working UX._
@@ -47,7 +47,7 @@ pre-generating remaining lines, then remove the on-demand fallback.
 
 Spawned `word-audio.py` (edge-tts) on cache miss with no caps.
 
-**Fix landed 2026-05-20** (`paideia/lib/rate-limit-audio.js` +
+**Fix landed 2026-05-20** (`kalopaideia/lib/rate-limit-audio.js` +
 `server.js` route changes):
 
 - **Per-IP daily total** cap: 200 requests/IP/day (cache hits + misses).
@@ -198,8 +198,8 @@ Ranked by risk × ease:
 ## Decisions — APPROVED 2026-05-20
 
 1. **Word-audio hardening:** ✅ Shipped. Persistent SQLite rate limit
-   in `paideia/lib/rate-limit-audio.js` + route changes in
-   `paideia/server.js`. Verified surviving `systemctl restart`.
+   in `kalopaideia/lib/rate-limit-audio.js` + route changes in
+   `kalopaideia/server.js`. Verified surviving `systemctl restart`.
 2. **edge-tts hard sunset: 2026-08-18.** ~3 months out. Phased
    migration to **Azure Speech (paid)** starts now. Each language
    migrates as the new pipeline goes green; all 10 languages off
