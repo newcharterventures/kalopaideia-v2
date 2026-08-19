@@ -231,19 +231,30 @@ app.get(`${BASE}/api/language/:lang`, async (req, res) => {
       .sort()
       .reverse();
 
-    // Cursor pagination: ?before=YYYY-MM-DD returns entries strictly older than this date.
-    // First page omits ?before (returns newest first).
-    const before = req.query.before ? String(req.query.before).replace(/[^0-9-]/g, "") : null;
-    if (before) {
-      const beforeFile = `${before}.json`;
-      files = files.filter((f) => f < beforeFile);
+    // Numbered-page pagination (Jae 2026-08-18: replaced infinite scroll).
+    // First, collect the full list of files that actually have an entry for
+    // this language, so page counts/totals are accurate (some issues may
+    // omit a language). This directory is small enough to scan in full.
+    const matchingFiles = [];
+    for (const file of files) {
+      try {
+        const issue = JSON.parse(await fs.readFile(path.join(wordsDir, file), "utf8"));
+        if (issue.languages?.[lang]) matchingFiles.push(file);
+      } catch {}
     }
 
-    const limit = Math.min(parseInt(req.query.limit, 10) || 30, 100);
-    const entries = [];
+    const pageSize = 20;
+    const totalEntries = matchingFiles.length;
+    const totalPages = Math.max(1, Math.ceil(totalEntries / pageSize));
+    let page = parseInt(req.query.page, 10) || 1;
+    if (page < 1) page = 1;
+    if (page > totalPages) page = totalPages;
 
-    for (const file of files) {
-      if (entries.length >= limit) break;
+    const startIdx = (page - 1) * pageSize;
+    const pageFiles = matchingFiles.slice(startIdx, startIdx + pageSize);
+
+    const entries = [];
+    for (const file of pageFiles) {
       try {
         const issue = JSON.parse(await fs.readFile(path.join(wordsDir, file), "utf8"));
         const entry = issue.languages?.[lang];
@@ -264,21 +275,15 @@ app.get(`${BASE}/api/language/:lang`, async (req, res) => {
       } catch {}
     }
 
-    // Compute next cursor: oldest date in this page; client passes it as ?before to get the next page.
-    const nextBefore = entries.length === limit && entries.length > 0
-      ? entries[entries.length - 1].date
-      : null;
-    const hasMore = nextBefore !== null;
-
-    // Only load primer for the first page (saves bandwidth on infinite scroll)
+    // Only load primer for page 1 (saves bandwidth on subsequent pages)
     let primer = null;
-    if (!before) {
+    if (page === 1) {
       try {
         primer = JSON.parse(await fs.readFile(path.join(__dirname, "data", "primer", `${lang}.json`), "utf8"));
       } catch {}
     }
 
-    res.json({ language: lang, primer, entries, nextBefore, hasMore });
+    res.json({ language: lang, primer, entries, page, totalPages, totalEntries });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -812,6 +817,8 @@ app.get(`${BASE}/contact`,   (_req, res) => res.sendFile(path.join(__dirname, "p
 app.get(`${BASE}/contact/`,  (_req, res) => res.sendFile(path.join(__dirname, "public", "contact.html")));
 app.get(`${BASE}/terms`,     (_req, res) => res.sendFile(path.join(__dirname, "public", "terms.html")));
 app.get(`${BASE}/terms/`,    (_req, res) => res.sendFile(path.join(__dirname, "public", "terms.html")));
+app.get(`${BASE}/privacy`,   (_req, res) => res.sendFile(path.join(__dirname, "public", "privacy.html")));
+app.get(`${BASE}/privacy/`,  (_req, res) => res.sendFile(path.join(__dirname, "public", "privacy.html")));
 
 // Per-language section pages
 for (const lang of VALID_LANGS) {

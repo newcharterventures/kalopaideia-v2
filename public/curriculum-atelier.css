@@ -369,7 +369,7 @@ img { max-width: 100%; height: auto; display: block; }
   display: grid;
   grid-template-columns: repeat(5, 1fr) 1.2fr;
 }
-.arc .node { text-align: center; position: relative; }
+.arc .node { text-align: center; position: relative; min-width: 0; }
 .arc .circle {
   width: 30px; height: 30px;
   margin: 14px auto 0;
@@ -1391,7 +1391,13 @@ img { max-width: 100%; height: auto; display: block; }
 }
 @media (max-width: 600px) {
   .hero h1 { font-size: 48px; }
-  .arc .row { grid-template-columns: repeat(3, 1fr); row-gap: 22px; }
+  .arc { height: auto; padding: 6px 10px 18px; }
+  .arc .connector,
+  .arc .connector-fill { display: none; }
+  .arc .row { grid-template-columns: repeat(3, 1fr); row-gap: 26px; column-gap: 6px; }
+  .arc .node { padding: 0 2px; }
+  .arc .label { font-size: 11.5px; line-height: 1.3; overflow-wrap: break-word; }
+  .arc .weeks { font-size: 10px; }
   .heatmap-grid { grid-template-columns: repeat(12, 12px); gap: 3px; }
   .heatmap-cell { width: 12px; height: 12px; }
   .heatmap-months { gap: 3px; }

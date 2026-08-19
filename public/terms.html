@@ -5,118 +5,153 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Terms of Service · Kalopaideia</title>
 <meta name="description" content="Terms of Service for Kalopaideia, a publication of New Charter Ventures LLC." />
-<link rel="icon" href="/paideia/img/favicon.ico" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Commissioner:wght@300;400;500;600&family=GFS+Didot&family=Cinzel:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+<!-- Favicons + PWA -->
+<link rel="icon" type="image/png" sizes="32x32" href="/paideia/img/favicon-32.png?v=1777151780" />
+<link rel="icon" type="image/png" sizes="16x16" href="/paideia/img/favicon-16.png?v=1777151780" />
+<link rel="shortcut icon" href="/paideia/img/favicon.ico?v=1777151780" />
+<link rel="apple-touch-icon" sizes="180x180" href="/paideia/img/icon-180.png?v=1777151780" />
+<link rel="apple-touch-icon" sizes="152x152" href="/paideia/img/icon-152.png?v=1777151780" />
+<link rel="apple-touch-icon" sizes="120x120" href="/paideia/img/icon-120.png?v=1777151780" />
+<link rel="manifest" href="/paideia/manifest.webmanifest?v=1777151780" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-title" content="Kalopaideia" />
+<meta name="theme-color" content="#1a1410" />
+<link rel="stylesheet" href="/paideia/styles.css?v=1779378800" />
+<link rel="stylesheet" href="/paideia/v2-design.css?v=1779378800" />
 <style>
-  body {
-    font-family: 'Source Serif 4', serif;
-    font-size: 16px;
-    line-height: 1.7;
-    color: #1c1813;
-    background: #fdfcf9;
-    margin: 0;
-    padding: 0;
-  }
   .terms-content {
     max-width: 800px;
-    margin: 48px auto 96px;
-    padding: 0 32px;
+    margin: 40px auto 80px;
+    padding: 0 24px;
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--ink, #1c1813);
   }
-  .back-link {
-    display: inline-block;
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    margin-bottom: 32px;
-    color: #7a2e2e;
-    text-decoration: none;
-  }
-  .back-link:hover { text-decoration: underline; }
-  h1 {
-    font-family: 'Cormorant Garamond', serif;
+  .terms-content h1 {
+    font-family: var(--font-display, 'Cormorant Garamond', serif);
+    font-weight: 500;
     font-size: 42px;
-    font-weight: 600;
     margin: 0 0 16px;
     line-height: 1.2;
+    color: var(--ink, #1c1813);
   }
   .effective-date {
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 500;
-    color: #7a2e2e;
+    color: var(--accent, #7a2e2e);
     margin-bottom: 32px;
   }
-  h2 {
-    font-family: 'Cormorant Garamond', serif;
+  .terms-content h2 {
+    font-family: var(--font-display, 'Cormorant Garamond', serif);
+    font-weight: 500;
     font-size: 28px;
-    font-weight: 600;
     margin: 48px 0 24px;
-    border-top: 1px solid #e5e5e5;
+    border-top: 1px solid var(--rule, #e5e5e5);
     padding-top: 32px;
     line-height: 1.3;
+    color: var(--ink, #1c1813);
   }
-  h3 {
-    font-family: 'Cormorant Garamond', serif;
+  .terms-content h3 {
+    font-family: var(--font-display, 'Cormorant Garamond', serif);
+    font-weight: 500;
     font-size: 20px;
-    font-weight: 600;
     margin: 32px 0 16px;
     line-height: 1.4;
+    color: var(--ink, #1c1813);
   }
-  p { margin: 16px 0; }
-  strong { font-weight: 600; color: #000; }
-  em { font-style: italic; }
-  a { color: #7a2e2e; text-decoration: underline; }
-  a:hover { color: #5a1e1e; }
-  blockquote {
-    border-left: 4px solid #7a2e2e;
+  .terms-content p { margin: 16px 0; color: var(--ink-soft, #2a241d); }
+  .terms-content strong { font-weight: 600; color: var(--ink, #000); }
+  .terms-content em { font-style: italic; }
+  .terms-content a { color: var(--accent, #7a2e2e); text-decoration: underline; }
+  .terms-content a:hover { color: #5a1e1e; }
+  .terms-content blockquote {
+    border-left: 4px solid var(--accent, #7a2e2e);
     padding-left: 24px;
     margin: 24px 0;
     font-style: italic;
-    color: #4a4542;
+    color: var(--ink-muted, #4a4542);
   }
-  table {
+  .terms-content table {
     width: 100%;
     border-collapse: collapse;
     margin: 24px 0;
     font-size: 15px;
   }
-  table th, table td {
-    border: 1px solid #e5e5e5;
+  .terms-content table th, .terms-content table td {
+    border: 1px solid var(--rule, #e5e5e5);
     padding: 12px;
     text-align: left;
     vertical-align: top;
   }
-  table th {
-    background: #f4ede0;
+  .terms-content table th {
+    background: var(--paper-deep, #f4ede0);
     font-weight: 600;
   }
-  code {
-    font-family: 'Courier New', monospace;
-    background: #f4ede0;
+  .terms-content code {
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+    background: var(--paper-deep, #f4ede0);
     padding: 2px 6px;
     font-size: 14px;
   }
-  ol, ul { margin: 16px 0; padding-left: 32px; }
-  li { margin: 8px 0; }
-  .caps { text-transform: uppercase; }
+  .terms-content ol, .terms-content ul { margin: 16px 0; padding-left: 32px; }
+  .terms-content li { margin: 8px 0; }
 </style>
 </head>
 <body>
+<header class="masthead masthead-athenaeum">
+  <img class="mast-watermark" src="/paideia/img/masthead/temple-ruin.svg" alt="" aria-hidden="true" />
+  <div class="mast-content">
+    <div class="mast-grid">
+      <div class="mast-center">
+        <div class="mast-eyebrow">A daily book of words · ten tongues</div>
+        <h1 class="mast-name"><a href="/paideia/" aria-label="Kalopaideia home">KALOPAIDEIA</a></h1>
+        <span class="mast-greek"><em>καλὴ παιδεία</em> — the cultivation of mind through classical letters</span>
+      </div>
+    </div>
+    <div class="mast-ledger">
+      <div class="ledger-left">
+        <span class="mast-issue" id="issue-line">Issue №&nbsp;—</span>
+        <span class="mast-vol" id="vol-line">Volume —</span>
+      </div>
+      <div class="ledger-right">
+        <span class="mast-day" id="today-date">—</span>
+        <span class="mast-anno" id="anno-line">Anno Domini MMXXVI</span>
+      </div>
+    </div>
+    <nav class="nav mast-nav">
+      <a href="/paideia/greek">Greek</a>
+      <a href="/paideia/latin">Latin</a>
+      <a href="/paideia/french">French</a>
+      <a href="/paideia/german">German</a>
+      <a href="/paideia/italian">Italian</a>
+      <a href="/paideia/oldenglish">Olde English</a>
+      <a href="/paideia/middleenglish">Middle English</a>
+      <a class="util" href="/paideia/curriculum.html">Curriculum</a>
+      <a class="util" href="/paideia/commonplace.html">Commonplace</a>
+      <a class="util" href="/paideia/support.html">Support</a>
+      <a class="util" href="/paideia/account">Sign in</a>
+      <a class="util" href="/paideia/about.html">About</a>
+    </nav>
+  </div>
+</header>
 
+<main>
 <div class="terms-content">
-  <p class="back-link">← <a href="/paideia/">Back to Kalopaideia</a></p>
 <h1>Kalopaideia — Terms of Service</h1>
 
-<strong>Effective: May 27, 2026</strong> (revised; supersedes April 30, 2026 version).
+<p class="effective-date"><strong>Effective: May 27, 2026</strong> (revised; supersedes April 30, 2026 version).</p>
 
 <p>These Terms of Service (the <strong>"Terms"</strong>) govern your access to and use of the website at <strong>newcharterventures.com/paideia</strong> (the <strong>"Site"</strong>) and any related applications, APIs, audio streams, downloads, and services we make available (collectively, the <strong>"Service"</strong>), all operated by <strong>New Charter Ventures LLC</strong> (<strong>"we," "us," "our," "New Charter Ventures"</strong>), a New Jersey limited liability company.</p>
 
 <p>By accessing, browsing, registering for, paying for, or otherwise using the Site or Service in any manner, you agree to be bound by these Terms in full and without modification. If you do not agree, you must not use the Site or Service.</p>
 
 <blockquote><strong>PLEASE READ SECTION 22 CAREFULLY. IT REQUIRES MOST DISPUTES TO BE RESOLVED BY INDIVIDUAL BINDING ARBITRATION AND WAIVES YOUR RIGHT TO BRING OR PARTICIPATE IN A CLASS ACTION. A 30-DAY OPT-OUT IS AVAILABLE.</strong></blockquote>
-
----
 
 <h2>1. About Kalopaideia</h2>
 
@@ -128,11 +163,12 @@
 
 <p>The Site is offered at three access tiers. Each tier defines the scope of your license to access content on the Site; nothing in these Terms grants any right beyond the tier under which you are currently authorized.</p>
 
-| Tier | Eligibility | Scope of access |
-|---|---|---|
-| <strong>Visitor</strong> | Anyone who reaches the Site without signing in. | The current day's daily word in every published language; the Site's static pages (About, Contact, Terms, Credits); the public masthead and navigation; any content we expressly designate as publicly viewable. |
-| <strong>Free Member</strong> | Any person aged 13 or older with a registered account in good standing, signed in. | Everything available to a Visitor, plus the daily-word archive; the Commonplace (your private collection of saved lines); <strong>Lesson 1 of each language's Curriculum</strong>; <strong>the Akousma "gateway" work</strong> (currently <em>The Odyssey</em> Book I, subject to change at our discretion); and the first-page preview of every other Akousma work and curriculum lesson as we may make available. |
-| <strong>Subscriber</strong> | A Free Member with an active paid subscription in good standing. | All content available to Visitors and Free Members, plus the full Akousma audio library; Curriculum Lessons 2 through capstone in every published language; the auto-graded checkpoint and capstone exams; the Diploma upon passage of the capstone exam; and, while operative, equivalent classical-wing access at our sister publication, <em>The Reading Mansion</em> (newcharterventures.com/mansion). |
+<table>
+<tr><th>Tier</th><th>Eligibility</th><th>Scope of access</th></tr>
+<tr><td><strong>Visitor</strong></td><td>Anyone who reaches the Site without signing in.</td><td>The current day's daily word in every published language; the Site's static pages (About, Contact, Terms, Credits); the public masthead and navigation; any content we expressly designate as publicly viewable.</td></tr>
+<tr><td><strong>Free Member</strong></td><td>Any person aged 13 or older with a registered account in good standing, signed in.</td><td>Everything available to a Visitor, plus the daily-word archive; the Commonplace (your private collection of saved lines); <strong>Lesson 1 of each language's Curriculum</strong>; <strong>the Akousma "gateway" work</strong> (currently <em>The Odyssey</em> Book I, subject to change at our discretion); and the first-page preview of every other Akousma work and curriculum lesson as we may make available.</td></tr>
+<tr><td><strong>Subscriber</strong></td><td>A Free Member with an active paid subscription in good standing.</td><td>All content available to Visitors and Free Members, plus the full Akousma audio library; Curriculum Lessons 2 through capstone in every published language; the auto-graded checkpoint and capstone exams; the Diploma upon passage of the capstone exam; and, while operative, equivalent classical-wing access at our sister publication, <em>The Reading Mansion</em> (newcharterventures.com/mansion).</td></tr>
+</table>
 
 <h3>1.2 The free gateway and the first-page-free preview</h3>
 
@@ -144,21 +180,15 @@
 
 <p>A single active Subscription gives you access to the Akousma, the Curriculum, and the Diploma on the Site, <strong>and</strong> to the classical wing of <em>The Reading Mansion</em> operated by New Charter Ventures, while both sites are operative under common ownership. If we discontinue, sell, or restructure either site, your remaining access is limited to whichever sites we continue to operate under common ownership; we are not obligated to refund a subscription on the basis that one of the two sites is no longer operative, except as required by applicable law.</p>
 
----
-
 <h2>2. Acceptance & Modification of Terms</h2>
 
 <p>Your continued access to or use of the Site after any change to these Terms constitutes your acceptance of the modified Terms. We may revise these Terms at any time. The version of the Terms in effect at the time of your visit is the version that governs that visit. Material changes will be noted at the top of this page and, where you have an account with us and have provided a verified email address, communicated by email to that address at least <strong>seven (7) days</strong> before the change takes effect. Non-material changes (e.g., typographical corrections, clarifications, restatements that do not reduce your rights or expand your obligations) may be made without notice.</p>
 
 <p>For changes to <strong>Section 22 (Mandatory Arbitration & Class-Action Waiver)</strong> specifically, you will be given a fresh <strong>thirty (30)-day opt-out window</strong> measured from the effective date of the change, as described in Section 22.</p>
 
----
-
 <h2>3. Educational & Reference Use Only — No Professional Advice</h2>
 
 <p>All content on the Site is provided for general educational, cultural, and literary reference purposes only. Nothing on the Site constitutes legal, medical, financial, psychological, professional, or expert advice of any kind. You should not act, refrain from acting, or make any decision based on any content on the Site without first consulting an appropriately qualified, credentialed, and licensed professional. We disclaim any responsibility for any decision, action, or consequence arising from your reliance on any content of the Site.</p>
-
----
 
 <h2>4. AI-Assisted Content & Synthetic Audio</h2>
 
@@ -180,21 +210,15 @@
 
 <p>For avoidance of doubt, this Section 4.3 is a contractual restriction on you; nothing in it limits any independent rights we hold under copyright law, including the right to prevent the unauthorized reproduction of our content.</p>
 
----
-
 <h2>5. Reliance on Public Sources — No Independent Reporting</h2>
 
 <p>Kalopaideia does not employ reporters, does not maintain a newsroom, conducts no original investigative journalism, has no scene presence at any event it may reference, and does not interview any person it may name. Where the Site references public events, persons, or institutions, that reference rests entirely on publicly available third-party sources. We cannot, and do not, independently verify the underlying facts. If a third-party source proves inaccurate, our reference will inherit that inaccuracy.</p>
-
----
 
 <h2>6. AS IS — No Warranty</h2>
 
 <p>THE SITE, THE SERVICE, AND ALL CONTENT, AUDIO, ASSESSMENTS, CERTIFICATES, AND FEATURES ARE PROVIDED <strong>"AS IS"</strong> AND <strong>"AS AVAILABLE"</strong> WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. TO THE FULLEST EXTENT PERMITTED BY LAW, WE EXPRESSLY DISCLAIM ALL WARRANTIES, WHETHER STATUTORY, EXPRESS, OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, COMPLETENESS, RELIABILITY, NON-INFRINGEMENT, TITLE, QUIET ENJOYMENT, OR ARISING FROM A COURSE OF DEALING, USAGE, OR TRADE PRACTICE. WE DO NOT WARRANT THAT THE SITE WILL BE UNINTERRUPTED, SECURE, OR ERROR-FREE; THAT ANY DEFECT WILL BE CORRECTED; THAT THE SITE OR THE SERVERS THAT MAKE IT AVAILABLE ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS; OR THAT ANY CONTENT WILL REMAIN AVAILABLE OR ACCURATE FOR ANY PARTICULAR PERIOD.</p>
 
 <p>NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM US OR THROUGH THE SITE SHALL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THESE TERMS.</p>
-
----
 
 <h2>7. Limitation of Liability</h2>
 
@@ -205,8 +229,6 @@
 <p>Multiple claims do not enlarge this limit. The limitations of this Section 7 will apply even if any limited remedy fails of its essential purpose.</p>
 
 <p>Some jurisdictions do not allow the exclusion or limitation of certain damages. If those laws apply to you, some or all of the limitations in this Section may not apply, and you may have additional rights.</p>
-
----
 
 <h2>8. Indemnification</h2>
 
@@ -225,19 +247,13 @@
 
 <p>We reserve the right, at your expense, to assume the exclusive defense and control of any matter for which you are required to indemnify us, and you agree to cooperate, at your expense, with our defense of those claims. You shall not settle any matter without our prior written consent.</p>
 
----
-
 <h2>9. Republisher Doctrine, Wire-Service & Neutral Reportage</h2>
 
 <p>Where the Site references publicly reported facts about persons, institutions, or events, it does so as a republisher of those public reports. Under longstanding First Amendment doctrine, a publisher who in good faith republishes a reputable third-party report, without knowledge of falsity and without reckless disregard for the truth, is generally protected against liability arising from the underlying report's actionable content. <em>See New York Times Co. v. Sullivan</em>, 376 U.S. 254 (1964); <em>Layne v. Tribune Co.</em>, 108 Fla. 177 (1933); <em>O'Brien v. Williamson Daily News</em>, 735 F. Supp. 218 (E.D. Ky. 1990); <em>Edwards v. National Audubon Society, Inc.</em>, 556 F.2d 113 (2d Cir. 1977). We do not endorse the truth of any contested assertion that may appear within an underlying public source.</p>
 
----
-
 <h2>10. Defamation, Privacy, Publicity — Notice & Cure</h2>
 
 <p>We do not intend to defame, invade the privacy of, or violate the publicity rights of any person. Mention of any person, organization, business, or institution on the Site does not constitute endorsement, criticism, or accusation by us. If you believe that any content on the Site defames you, invades your privacy, violates your publicity right, or otherwise injures you, please write to <strong>legal@newcharterventures.com</strong> with a description of the alleged injury and the URL of the offending content. We will review such notices in good faith and, where appropriate, correct, retract, or remove the content within a reasonable time. Notice under this Section is a condition precedent to bringing any claim arising from content on the Site to the extent permitted by applicable law.</p>
-
----
 
 <h2>11. Intellectual Property</h2>
 
@@ -274,9 +290,7 @@
 
 <h3>11.7 Trademarks</h3>
 
-<strong>"Kalopaideia," "The Akousma,"</strong> <strong>"καλὴ παιδεία,"</strong> <strong>"New Charter Ventures,"</strong> <strong>"The Reading Mansion,"</strong> and the related logos are trademarks of New Charter Ventures LLC. "Wikipedia," "Wiktionary," "Wikimedia," "Wikimedia Commons," and the Wikimedia logos are trademarks of the Wikimedia Foundation, Inc., and are used here solely for nominative attribution. "Stripe" and the Stripe logos are trademarks of Stripe, Inc. "Microsoft," "Azure," and "Azure Speech" are trademarks of Microsoft Corporation. Nothing on this Site is intended to suggest affiliation with, sponsorship by, or endorsement by any third-party rights holder.
-
----
+<p><strong>"Kalopaideia," "The Akousma,"</strong> <strong>"καλὴ παιδεία,"</strong> <strong>"New Charter Ventures,"</strong> <strong>"The Reading Mansion,"</strong> and the related logos are trademarks of New Charter Ventures LLC. "Wikipedia," "Wiktionary," "Wikimedia," "Wikimedia Commons," and the Wikimedia logos are trademarks of the Wikimedia Foundation, Inc., and are used here solely for nominative attribution. "Stripe" and the Stripe logos are trademarks of Stripe, Inc. "Microsoft," "Azure," and "Azure Speech" are trademarks of Microsoft Corporation. Nothing on this Site is intended to suggest affiliation with, sponsorship by, or endorsement by any third-party rights holder.</p>
 
 <h2>12. DMCA — Copyright Takedown</h2>
 
@@ -290,8 +304,6 @@
 <p>6. A statement, under penalty of perjury, that the information in the notice is accurate, and that you are the copyright owner or authorized to act on the owner's behalf.</p>
 
 <p>We will respond to complete and credible notices in accordance with the DMCA. We may, at our discretion, also forward the notice to the person who posted the material. Counter-notices may be submitted under 17 U.S.C. § 512(g) to the same address. Repeat infringers will have their accounts terminated.</p>
-
----
 
 <h2>13. User Conduct & Acceptable Use</h2>
 
@@ -315,11 +327,11 @@
 
 <p>Violation of this Section may result in immediate suspension or termination of your account, forfeiture of any unused portion of any paid subscription (subject to applicable law), revocation of any Diploma, and any other remedy available to us at law or in equity. We will pursue available remedies, including injunctive relief and damages, for material violations.</p>
 
----
-
 <h2>14. Privacy</h2>
 
 <p>The Site collects only the minimum technical information necessary to operate: server access logs (IP address, user-agent string, request timestamps); standard browser cookies for session preferences; and, if you create an account, your name, email address, hashed password, profile preferences, reading bookmarks, Curriculum progress, capstone-exam responses and scores, Diploma issuance records, and purchase history. We do not sell, rent, or share your personal information with third parties for marketing purposes. We do not place advertising cookies, tracking pixels, or third-party analytics scripts beyond those reasonably necessary to operate and audit the Site.</p>
+
+<p>For the full detail on what we collect, why, and your rights, see our <a href="/paideia/privacy.html">Privacy Policy</a>.</p>
 
 <h3>14.1 Reading analytics</h3>
 
@@ -333,7 +345,7 @@
 
 <h3>14.3 Authentication</h3>
 
-<p>Account sign-in is provided through Supabase Auth and may, at your election, include email-password authentication, email magic-link authentication, or OAuth sign-in through Google or another identity provider. Use of OAuth providers is governed by those providers' terms and privacy policies in addition to these Terms. Cross-site single sign-on between Kalopaideia and <em>The Reading Mansion</em> is implemented as a signed token scoped to the <em>newcharterventures.com</em> domain; you may sign out at any time, which invalidates the token on both sites.</p>
+<p>Account sign-in is provided through Supabase Auth and may, at your election, include email-password authentication, email magic-link authentication, or OAuth sign-in through Google, Microsoft, Apple, or another identity provider. Use of OAuth providers is governed by those providers' terms and privacy policies in addition to these Terms. Cross-site single sign-on between Kalopaideia and <em>The Reading Mansion</em> is implemented as a signed token scoped to the <em>newcharterventures.com</em> domain; you may sign out at any time, which invalidates the token on both sites.</p>
 
 <h3>14.4 Retention</h3>
 
@@ -355,39 +367,27 @@
 
 <p>If you submit information to us via the Contact page, we will use that information solely to respond to your inquiry. You may request deletion of your submission at any time by writing to <em>info@newcharterventures.com</em>.</p>
 
----
-
 <h2>15. Children</h2>
 
 <p>The Site is not directed to children under the age of thirteen, and we do not knowingly collect personal information from children under thirteen. You must be at least <strong>thirteen (13) years of age</strong> to create an account on the Site. <strong>You must be at least eighteen (18) years of age, or the age of majority in your jurisdiction, to purchase a subscription or any individual content.</strong> By creating an account, you represent and warrant that you meet the applicable minimum age and that any information you provide is accurate.</p>
 
 <p>If we learn that we have collected personal information from a child under thirteen without verifiable parental consent in accordance with the Children's Online Privacy Protection Act, 15 U.S.C. §§ 6501–6506, we will promptly delete that information. If you believe that a child under thirteen has provided us with personal information, please write to <em>info@newcharterventures.com</em>.</p>
 
----
-
 <h2>16. Third-Party Links and Services</h2>
 
 <p>The Site may contain links to, or integrations with, third-party websites and resources (including without limitation Stripe, Supabase, Microsoft Azure, Wikimedia projects, and OAuth identity providers). We do not control, endorse, or assume responsibility for the content, privacy practices, availability, security, or terms of any third-party site or service. Your use of any third-party site or service is at your own risk and subject to that site's or service's own terms and privacy policies.</p>
-
----
 
 <h2>17. Corrections</h2>
 
 <p>If you believe any content on the Site contains a factual error, please write to <em>editor@newcharterventures.com</em>. Material errors are corrected promptly. Depending on materiality, a correction may take the form of a silent revision, a dated editor's note, or a full retraction. We aim to act on credible correction requests within seventy-two (72) hours of receipt.</p>
 
----
-
 <h2>18. Section 230 Acknowledgment</h2>
 
 <p>To the extent the Site hosts user-submitted content (e.g., submissions to the Contact page that are subsequently displayed; entries to the Commonplace that you elect to publish), we are an interactive computer service within the meaning of Section 230 of the Communications Decency Act, 47 U.S.C. § 230(c), and we expressly invoke its protections. We are not liable for the content of any such submission and reserve the right — but disclaim any obligation — to remove, edit, or moderate any submission in our sole discretion.</p>
 
----
-
 <h2>19. Force Majeure</h2>
 
 <p>We shall not be liable for any failure or delay in the performance of our obligations resulting from causes beyond our reasonable control, including but not limited to acts of God, war, terrorism, civil unrest, public-health emergencies, government action, sanctions, labor stoppages, infrastructure failures, network outages, cloud-provider outages, third-party service interruptions (including without limitation Stripe, Supabase, Microsoft Azure, AWS, or DigitalOcean outages), supply-chain interruptions, fire, flood, earthquake, or other natural disaster.</p>
-
----
 
 <h2>20. Termination & Right to Discontinue</h2>
 
@@ -409,19 +409,15 @@
 
 <p>The following Sections survive any termination of these Terms or closure of your account: 1.1 (definitions where used in surviving sections), 3 (No professional advice), 4 (AI-assisted content & synthetic audio, including the model-training prohibition), 6 (No warranty), 7 (Limitation of liability), 8 (Indemnification), 11 (Intellectual property), 13 (Acceptable use, to the extent applicable to your historical conduct), 14.4 (Retention), 22 (Arbitration & class-action waiver), 23 (Venue), and any other provision that by its nature should survive.</p>
 
----
-
 <h2>21. Governing Law & International Users</h2>
 
 <p>These Terms, and any dispute arising out of or related to them or to the Site, are governed by the laws of the <strong>State of New Jersey</strong>, without regard to its conflict-of-laws principles, and by the applicable laws of the United States. The United Nations Convention on Contracts for the International Sale of Goods does not apply.</p>
 
 <p>The Site is operated from the United States and is intended primarily for users located in the United States. If you access the Site from outside the United States, you do so on your own initiative and are responsible for compliance with the laws of the jurisdiction in which you are located. Where local consumer-protection laws grant rights that cannot be waived by contract, those rights are preserved to the extent required by such laws.</p>
 
----
-
 <h2>22. Mandatory Arbitration & Class-Action Waiver</h2>
 
-<strong>PLEASE READ THIS SECTION CAREFULLY. IT AFFECTS YOUR LEGAL RIGHTS, INCLUDING YOUR RIGHT TO FILE A LAWSUIT IN COURT AND TO HAVE A JURY TRIAL. THIS SECTION CONTAINS A 30-DAY OPT-OUT PROVISION DESCRIBED BELOW.</strong>
+<blockquote><strong>PLEASE READ THIS SECTION CAREFULLY. IT AFFECTS YOUR LEGAL RIGHTS, INCLUDING YOUR RIGHT TO FILE A LAWSUIT IN COURT AND TO HAVE A JURY TRIAL. THIS SECTION CONTAINS A 30-DAY OPT-OUT PROVISION DESCRIBED BELOW.</strong></blockquote>
 
 <h3>22.1 Scope</h3>
 
@@ -429,7 +425,7 @@
 
 <h3>22.2 Class-action and representative-action waiver</h3>
 
-<strong>YOU AND WE EACH WAIVE THE RIGHT TO PARTICIPATE IN A CLASS ACTION, CLASS ARBITRATION, OR REPRESENTATIVE ACTION OF ANY KIND.</strong> Claims may be brought only in your individual capacity, and not as a plaintiff or class member in any purported class, consolidated, or representative proceeding. The arbitrator may not consolidate more than one person's claims and may not preside over any form of representative or class proceeding. If a court of competent jurisdiction finds this class-action waiver to be unenforceable in a particular case, then that case (and only that case) shall proceed in court rather than in arbitration, and the rest of this Section 22 shall remain in force.
+<p><strong>YOU AND WE EACH WAIVE THE RIGHT TO PARTICIPATE IN A CLASS ACTION, CLASS ARBITRATION, OR REPRESENTATIVE ACTION OF ANY KIND.</strong> Claims may be brought only in your individual capacity, and not as a plaintiff or class member in any purported class, consolidated, or representative proceeding. The arbitrator may not consolidate more than one person's claims and may not preside over any form of representative or class proceeding. If a court of competent jurisdiction finds this class-action waiver to be unenforceable in a particular case, then that case (and only that case) shall proceed in court rather than in arbitration, and the rest of this Section 22 shall remain in force.</p>
 
 <h3>22.3 Pre-arbitration informal dispute resolution</h3>
 
@@ -451,37 +447,25 @@
 
 <p>This Section 22 survives any termination or expiration of these Terms or closure of your account.</p>
 
----
-
 <h2>23. Venue (for any court action permitted)</h2>
 
 <p>For any action that is permitted to proceed in court (e.g., claims for injunctive relief, in small-claims court, or by a party who has timely opted out under Section 22.6), you and we irrevocably consent to the <strong>exclusive jurisdiction and venue of the state and federal courts located in Bergen County, New Jersey</strong>, and waive any objection to that venue, including any objection based on the doctrine of <em>forum non conveniens</em>. Both parties waive any right to a jury trial in any action that proceeds in court.</p>
-
----
 
 <h2>24. No Waiver</h2>
 
 <p>Our failure to enforce any provision of these Terms is not a waiver of that provision or of any other provision. No waiver of any term shall be deemed a continuing waiver of that term or any other term. No waiver is effective unless in writing and signed by an authorized representative.</p>
 
----
-
 <h2>25. Severability</h2>
 
 <p>If any provision of these Terms is held by a court of competent jurisdiction or arbitrator to be invalid, illegal, or unenforceable, that provision shall be reformed to the minimum extent necessary to make it enforceable, and the remaining provisions shall continue in full force and effect. If reformation is not possible, the offending provision shall be severed and the remaining provisions shall continue in full force and effect.</p>
-
----
 
 <h2>26. Entire Agreement</h2>
 
 <p>These Terms, together with our Privacy Policy and any other policy or notice posted on the Site, constitute the <strong>entire agreement</strong> between you and us with respect to the Site and supersede all prior or contemporaneous agreements, understandings, communications, and proposals, whether oral or written. In the event of any conflict between these Terms and any other posted policy, these Terms control unless the other policy expressly states otherwise as to a specific subject.</p>
 
----
-
 <h2>27. Assignment</h2>
 
 <p>You may not assign or transfer these Terms or any of your rights or obligations under them. Any purported assignment in violation of this Section is void. We may assign or transfer these Terms in our sole discretion, including in connection with a merger, acquisition, reorganization, change of control, or sale of all or substantially all of our assets, without notice to you.</p>
-
----
 
 <h2>28. Payments, Subscriptions, and Refunds</h2>
 
@@ -493,12 +477,13 @@
 
 <p>We currently offer two subscription plans for the <strong>Akousma · Curriculum · Diploma · Reading-Mansion classical wing</strong> bundle:</p>
 
-| Plan | Price | Billing | Note |
-|---|---|---|---|
-| <strong>Monthly</strong> | <strong>US$12.99</strong> | Charged monthly on the same day each month | Cancel anytime; access continues through the end of the current cycle |
-| <strong>Annual</strong> | <strong>US$99.99</strong> | Charged once per year on the same calendar date | Saves approximately US$56 versus the monthly plan |
+<table>
+<tr><th>Plan</th><th>Price</th><th>Billing</th><th>Note</th></tr>
+<tr><td><strong>Monthly</strong></td><td><strong>US$12.99</strong></td><td>Charged monthly on the same day each month</td><td>Cancel anytime; access continues through the end of the current cycle</td></tr>
+<tr><td><strong>Annual</strong></td><td><strong>US$99.99</strong></td><td>Charged once per year on the same calendar date</td><td>Saves approximately US$56 versus the monthly plan</td></tr>
+</table>
 
-Plans are billed in <strong>U.S. dollars</strong> and are exclusive of any applicable taxes (see Section 28.7). A single active subscription, regardless of plan, covers a single account and grants the access described in Section 1.1.
+<p>Plans are billed in <strong>U.S. dollars</strong> and are exclusive of any applicable taxes (see Section 28.9). A single active subscription, regardless of plan, covers a single account and grants the access described in Section 1.1.</p>
 
 <h3>28.3 Automatic renewal</h3>
 
@@ -540,44 +525,79 @@ Plans are billed in <strong>U.S. dollars</strong> and are exclusive of any appli
 
 <p>A subscription is sold to, and licensed for use by, a single individual person. Concurrent use of the same account from multiple distinct devices in a manner inconsistent with single-person use, sharing of account credentials with any other person, or use of a single account on behalf of two or more persons is a material breach of these Terms and may result in immediate termination of the subscription and the account, <strong>without refund</strong>.</p>
 
----
-
 <h2>29. Export Controls and Sanctions</h2>
 
 <p>You represent and warrant that you are not located in, under the control of, or a national or resident of any country or region subject to a comprehensive U.S. embargo or sanctions program administered by the Office of Foreign Assets Control (<strong>OFAC</strong>) of the U.S. Department of the Treasury, and that you are not on any U.S. government list of restricted or prohibited parties, including the Specially Designated Nationals and Blocked Persons List, the Foreign Sanctions Evaders List, the Entity List, the Denied Persons List, or any equivalent list maintained by any other relevant jurisdiction.</p>
 
 <p>You agree not to use the Site in violation of any applicable U.S. export-control laws or regulations, including the Export Administration Regulations (15 C.F.R. Parts 730–774) and the International Traffic in Arms Regulations (22 C.F.R. Parts 120–130), or to transfer any content from the Site to a person or destination prohibited by those laws. You agree not to use any VPN, proxy, or other tool to circumvent geographic restrictions or sanctions screening on the Site (see Section 13(h)).</p>
 
----
-
 <h2>30. Accessibility</h2>
 
 <p>We endeavor to make the Site reasonably accessible to users with disabilities and to follow generally accepted accessibility principles, including, where feasible, the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA. We do not, however, warrant that the Site or any specific feature is fully accessible to every user or assistive technology. If you encounter an accessibility barrier on the Site, please write to <em>info@newcharterventures.com</em> so that we may attempt to address it.</p>
 
----
-
 <h2>31. Notices & Contact</h2>
 
-| Purpose | Email |
-|---|---|
-| General inquiries | <em>info@newcharterventures.com</em> |
-| Corrections | <em>editor@newcharterventures.com</em> |
-| Legal notices, DSA notices, defamation/privacy/publicity | <em>legal@newcharterventures.com</em> |
-| DMCA / copyright takedowns | <em>dmca@newcharterventures.com</em> |
-| Arbitration opt-out and Notice of Dispute | <em>legal@newcharterventures.com</em> |
-| Refunds and payment disputes | <em>info@newcharterventures.com</em> |
+<table>
+<tr><th>Purpose</th><th>Email</th></tr>
+<tr><td>General inquiries</td><td><em>info@newcharterventures.com</em></td></tr>
+<tr><td>Corrections</td><td><em>editor@newcharterventures.com</em></td></tr>
+<tr><td>Legal notices, DSA notices, defamation/privacy/publicity</td><td><em>legal@newcharterventures.com</em></td></tr>
+<tr><td>DMCA / copyright takedowns</td><td><em>dmca@newcharterventures.com</em></td></tr>
+<tr><td>Arbitration opt-out and Notice of Dispute</td><td><em>legal@newcharterventures.com</em></td></tr>
+<tr><td>Refunds and payment disputes</td><td><em>info@newcharterventures.com</em></td></tr>
+</table>
 
-Postal address may be obtained on written request to the <em>info</em> address above. Notices to you may be given by email to the address associated with your account, by notice posted on the Site, or by both.
+<p>Postal address may be obtained on written request to the <em>info</em> address above. Notices to you may be given by email to the address associated with your account, by notice posted on the Site, or by both.</p>
 
----
+<p><em>Last revised: <strong>May 27, 2026</strong> — tiered-access section added (Section 1.1); free gateway and first-lesson preview defined (Section 1.2); cross-site subscription scope clarified (Section 1.3); synthetic-audio licensing and no-model-training prohibitions tightened (Sections 4.2 and 4.3); Diploma intellectual property and revocation clarified (Section 11.6); acceptable-use list expanded and ironclad (Section 13); subscription pricing fixed at $12.99/mo and $99.99/yr (Section 28.2); free-preview / refund interplay clarified (Sections 28.4–28.6); no-account-sharing rule made a material term (Section 28.11); pre-arbitration notice required (Section 22.3); survival clause added (Section 20.4); VPN-circumvention prohibition added (Sections 13(h) and 29).</em></p>
 
-<em>Last revised: <strong>May 27, 2026</strong> — tiered-access section added (Section 1.1); free gateway and first-lesson preview defined (Section 1.2); cross-site subscription scope clarified (Section 1.3); synthetic-audio licensing and no-model-training prohibitions tightened (Sections 4.2 and 4.3); Diploma intellectual property and revocation clarified (Section 11.6); acceptable-use list expanded and ironclad (Section 13); subscription pricing fixed at $12.99/mo and $99.99/yr (Section 28.2); free-preview / refund interplay clarified (Sections 28.4–28.6); no-account-sharing rule made a material term (Section 28.11); pre-arbitration notice required (Section 22.3); survival clause added (Section 20.4); VPN-circumvention prohibition added (Sections 13(h) and 29).</em>
-
-<p>© New Charter Ventures LLC. All rights reserved.</p>
-<strong>Kalopaideia™</strong> is a publication of New Charter Ventures LLC, a New Jersey limited liability company.
+<p>© New Charter Ventures LLC. All rights reserved.<br />
+<strong>Kalopaideia™</strong> is a publication of New Charter Ventures LLC, a New Jersey limited liability company.</p>
 
 <blockquote><strong>Note.</strong> These Terms have been drafted to be tight and consistent with the access-tier model. They are not a substitute for counsel: have a New Jersey-licensed attorney review them — especially Sections 7 (Limitation of Liability), 8 (Indemnification), 14.5–14.7 (CCPA/CPRA, GDPR, DSA), 22 (Arbitration), and 28 (Payments) — before they go live, and any time you change pricing, add a new content tier, expand into a new jurisdiction, or accept new types of user-submitted content.</blockquote>
 </div>
+</main>
 
+<footer class="colophon">
+  <div class="name">KALOPAIDEIA</div>
+  <div class="tagline"><em>καλὴ παιδεία</em> <span class="sep">·</span> the cultivation of mind through classical letters</div>
+  <div class="est">EST. MMXXIV <span class="sep">·</span> ATHENS &amp; OXFORD &amp; ELSEWHERE <span class="sep">·</span> <span class="imprint">NEW CHARTER VENTURES</span></div>
+  <div class="legal">
+    Anno Domini MMXXVI <span class="sep">·</span>
+    <a href="/paideia/about.html">About</a> <span class="sep">·</span>
+    <a href="/paideia/contact.html">Contact</a> <span class="sep">·</span>
+    <a href="/paideia/credits.html">Credits</a> <span class="sep">·</span>
+    <a href="/paideia/terms.html">Terms</a> <span class="sep">·</span>
+    <a href="/paideia/privacy.html">Privacy</a>
+  </div>
+</footer>
+
+<script src="/paideia/nav.js?v=1778651397"></script>
+<script>
+  // Populate the Athenaeum masthead ledger (Issue / Vol / Day / Anno).
+  (function () {
+    function toRoman(num) {
+      const map = [[1000,"M"],[900,"CM"],[500,"D"],[400,"CD"],[100,"C"],[90,"XC"],[50,"L"],[40,"XL"],[10,"X"],[9,"IX"],[5,"V"],[4,"IV"],[1,"I"]];
+      let n = Math.max(0, Math.floor(num)), out = "";
+      for (const [v, s] of map) { while (n >= v) { out += s; n -= v; } }
+      return out;
+    }
+    const now = new Date();
+    const y = now.getUTCFullYear();
+    const jan1 = new Date(Date.UTC(y, 0, 1));
+    const dayOfYear = Math.floor((now - jan1) / 86400000) + 1;
+    const launchYear = 2026;
+    const volume = (y - launchYear) + 1;
+    const dayLabel = now.toLocaleDateString("en-US", { weekday: "long", year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
+    const issueEl = document.getElementById("issue-line");
+    const volEl = document.getElementById("vol-line");
+    const dayEl = document.getElementById("today-date");
+    const annoEl = document.getElementById("anno-line");
+    if (issueEl) issueEl.textContent = "Issue №\u00a0" + dayOfYear;
+    if (volEl) volEl.textContent = "Volume " + toRoman(volume);
+    if (dayEl) dayEl.textContent = dayLabel;
+    if (annoEl) annoEl.textContent = "Anno Domini " + toRoman(y);
+  })();
+</script>
 </body>
 </html>

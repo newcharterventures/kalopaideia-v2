@@ -1715,27 +1715,48 @@ main {
   color: #fff !important;
 }
 
-/* Infinite scroll states */
-.infinite-sentinel {
-  height: 1px;
-  width: 100%;
-  pointer-events: none;
+/* Numbered word-archive pager (Jae 2026-08-18: replaces infinite scroll) */
+.word-pager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin: 40px 0 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--rule, #d4c5a9);
+  font-family: var(--font-ui);
 }
-.infinite-loader,
-.infinite-end {
-  text-align: center;
-  font-family: var(--font-display);
-  font-style: italic;
+.word-pager .pager-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 34px;
+  height: 34px;
+  padding: 0 10px;
+  border-radius: 3px;
+  font-size: 13px;
+  color: var(--ink-soft);
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+.word-pager a.pager-btn:hover {
+  border-color: var(--rule, #d4c5a9);
+  color: var(--accent);
+}
+.word-pager .pager-current {
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+}
+.word-pager .pager-disabled {
   color: var(--ink-muted);
-  font-size: 14px;
-  padding: 32px 0 16px;
-  letter-spacing: 0.04em;
+  opacity: 0.4;
+  cursor: default;
 }
-.infinite-end {
-  font-size: 12px;
-  letter-spacing: 0.18em;
-  text-transform: lowercase;
-  padding: 40px 0 24px;
+.word-pager .pager-ellipsis {
+  color: var(--ink-muted);
+  padding: 0 4px;
 }
 
 /* Numbers pane */

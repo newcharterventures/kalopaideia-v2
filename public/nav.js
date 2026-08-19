@@ -37,7 +37,6 @@
   ];
 
   const UTILITY = [
-    { href: "/paideia/akousma",          label: "The Akousma", util: true },
     { href: "/paideia/curriculum.html",  label: "Curriculum",  util: true },
     { href: "/paideia/commonplace.html", label: "Commonplace", util: true },
     { href: "/paideia/support.html",     label: "Support",     util: true },

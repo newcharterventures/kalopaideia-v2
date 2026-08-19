@@ -370,6 +370,22 @@
   }
   .drill-honest .sc { display: block; color: var(--gilt); margin-bottom: 4px; font-family: var(--sans); font-size: 11px; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; font-style: normal; }
 
+  /* --- Self-recording (2026-08-17): local-only MediaRecorder, playback --- */
+  .drill-record { margin-top: 16px; padding-top: 16px; border-top: 1px dashed var(--rule-soft); display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .record-mic {
+    appearance: none; background: transparent; border: 1px solid var(--wine); color: var(--wine);
+    padding: 10px 16px; font-family: var(--sans); font-size: 11px; font-weight: 600;
+    letter-spacing: .2em; text-transform: uppercase; cursor: pointer;
+    display: inline-flex; align-items: center; gap: 8px; position: relative;
+  }
+  .record-mic:hover { background: var(--wine); color: var(--paper); }
+  .record-mic .pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--wine); flex: none; }
+  .record-mic.recording { background: var(--wine); color: var(--paper); }
+  .record-mic.recording .pulse { background: var(--paper); animation: kp-pulse 1.1s ease-in-out infinite; }
+  @keyframes kp-pulse { 0%, 100% { opacity: 1; } 50% { opacity: .25; } }
+  .record-hint { font-family: var(--body); font-style: italic; font-size: 12.5px; color: var(--ink-3); flex: 1; min-width: 200px; }
+  .record-playback audio { width: 100%; margin-top: 10px; }
+
   /* --- Writing drill --- */
   .write-card { background: var(--paper); border: 1px solid var(--rule); padding: 28px; margin: 0 0 20px; }
   .write-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 16px; }
@@ -544,6 +560,20 @@
        so no transparent gap can show content scrolling past beneath. */
     .stepper { top: 56px; }
   }
+
+  /* --- Print (2026-08-17): collapse chrome/rail/stepper/completion bar,
+     unfold every step so a lesson can be printed as one clean handout. --- */
+  @media print {
+    .chrome, .stepper, .rail, .completion-bar, .lh-crumb, .companion-plate,
+    .drill-record, .check-actions { display: none !important; }
+    .stage-shell { grid-template-columns: 1fr !important; padding: 0 !important; max-width: none !important; }
+    .content { max-width: none !important; padding: 0 !important; }
+    .lesson-head { padding: 0 0 16px !important; border-bottom: 1px solid #000; }
+    .step-block { break-inside: avoid; page-break-inside: avoid; border-top: 1px solid #ccc !important; }
+    .check-answer.hidden { display: block !important; }
+    body { background: #fff !important; color: #000 !important; }
+    a { color: #000 !important; text-decoration: none !important; }
+  }
 </style>
 </head>
 <body>
@@ -559,7 +589,6 @@
   </button>
   <nav id="chrome-nav">
     <a class="sc" id="nav-course-back" href="/paideia/greek/curriculum">← THE GREEK COURSE</a>
-    <a class="sc" href="/paideia/akousma">AKOUSMA</a>
     <a class="sc" href="/paideia/commonplace.html">COMMONPLACE</a>
     <span class="pron-wrap">
       <button class="pron-pill" id="pron-btn" type="button">PRONUNCIATION · ATTIC ▾</button>
@@ -730,6 +759,36 @@ function esc(s) {
   return String(s).replace(/[&<>"]/g, (c) => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
 }
 function ttsUrl(text) { return `${BASE}/api/word-audio/${encodeURIComponent(LANG)}/${encodeURIComponent(text)}.mp3`; }
+
+// =============================================================
+// RESUME (2026-08-17) — remembers heard letters, visited steps, and
+// the last-viewed step, per lesson, in localStorage. Local only.
+// =============================================================
+function storeKey() { return `kp:lesson:${LANG}:${LESSON_ID}`; }
+function writeStore() {
+  try {
+    localStorage.setItem(storeKey(), JSON.stringify({
+      step: state._lastStep || null,
+      heard: Array.from(state.heard),
+      visited: Array.from(state.visited),
+    }));
+  } catch (e) {}
+}
+function readStore() {
+  try {
+    const raw = localStorage.getItem(storeKey());
+    if (!raw) return;
+    const j = JSON.parse(raw);
+    if (Array.isArray(j.heard)) j.heard.forEach((i) => state.heard.add(i));
+    if (Array.isArray(j.visited)) j.visited.forEach((id) => state.visited.add(id));
+    if (j.step) state._lastStep = j.step;
+  } catch (e) {}
+}
+function resumeScroll() {
+  if (!state._lastStep) return;
+  const el = document.getElementById(`step-${state._lastStep}`);
+  if (el) setTimeout(() => el.scrollIntoView({ behavior: "auto", block: "start" }), 50);
+}
 
 // =============================================================
 // AUDIO (single shared <audio>, real /api/word-audio backing)
@@ -1010,6 +1069,7 @@ function wireLetters(root, step) {
       const cur = letters[state.letterIdx];
       if (!cur) return;
       state.heard.add(state.letterIdx);
+      writeStore();
       // patch chip immediately
       const chip = (root || document).querySelector(`${sectionSel} .letter-chip[data-idx="${state.letterIdx}"]`);
       if (chip) chip.classList.add("heard");
@@ -1118,6 +1178,13 @@ function stepListen(step) {
           <span class="sc">Honest about audio</span>
           The voice is a neural ${esc(langDisplay)} TTS, paced naturally. Use it as a guide; the writing drill below is where the letters actually take.
         </div>
+        <div class="drill-record">
+          <button class="record-mic" type="button" id="record-mic-btn">
+            <span class="pulse"></span><span class="t">Record yourself</span>
+          </button>
+          <span class="record-hint">Nothing is uploaded — this stays in your browser, for you to compare against the drill.</span>
+          <div class="record-playback" id="record-playback"></div>
+        </div>
       </div>
     </section>
   `;
@@ -1199,6 +1266,39 @@ function wireListen(root, step) {
         playPass(n, () => chain(n + 1));
       }
       chain(0);
+    });
+  }
+
+  // Self-recording (2026-08-17): local-only MediaRecorder, nothing uploaded.
+  const micBtn = sec.querySelector("#record-mic-btn");
+  const playback = sec.querySelector("#record-playback");
+  let rec = null, chunks = [], mstream = null;
+  if (micBtn) {
+    micBtn.addEventListener("click", () => {
+      if (rec && rec.state === "recording") { rec.stop(); return; }
+      if (!navigator.mediaDevices || !window.MediaRecorder) {
+        if (playback) playback.textContent = "This browser can't record audio here — read aloud along with the drill instead.";
+        return;
+      }
+      navigator.mediaDevices.getUserMedia({ audio: true }).then((s) => {
+        mstream = s; chunks = [];
+        rec = new MediaRecorder(mstream);
+        rec.ondataavailable = (e) => { if (e.data && e.data.size) chunks.push(e.data); };
+        rec.onstop = () => {
+          micBtn.classList.remove("recording");
+          const lbl = micBtn.querySelector(".t"); if (lbl) lbl.textContent = "Record again";
+          mstream.getTracks().forEach((t) => t.stop());
+          if (playback && chunks.length) {
+            const url = URL.createObjectURL(new Blob(chunks, { type: chunks[0].type || "audio/webm" }));
+            playback.innerHTML = `<audio controls src="${url}"></audio>`;
+          }
+        };
+        rec.start();
+        micBtn.classList.add("recording");
+        const lbl = micBtn.querySelector(".t"); if (lbl) lbl.textContent = "Stop recording";
+      }).catch(() => {
+        if (playback) playback.textContent = "Microphone permission declined — no matter, read aloud with the drill instead.";
+      });
     });
   }
 
@@ -1576,6 +1676,7 @@ function wireScrollSpy() {
       a.classList.toggle("current", a.dataset.step === current);
     });
     // Mark visited as we scroll
+    if (current !== state._lastStep) { state._lastStep = current; writeStore(); }
     state.visited.add(current);
     STEPS.forEach((s) => {
       const idx = STEPS.findIndex((x) => x.id === s.id);
@@ -1672,6 +1773,7 @@ function resolveStageContext(manifest) {
 }
 
 async function boot() {
+  readStore();
   // Fetch the manifest and the lesson in parallel.
   const [manifest, lesson] = await Promise.all([fetchManifest(), fetchLesson()]);
   MANIFEST = manifest;
@@ -1712,6 +1814,7 @@ async function boot() {
   renderHeader();
   renderAll();
   wirePronPopover();
+  resumeScroll();
 }
 boot();
 

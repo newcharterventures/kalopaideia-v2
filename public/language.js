@@ -611,17 +611,24 @@ function bookCardHtml(t, ctx) {
         : ''}
     `;
   } else if (isSignedIn) {
+    // Per Jae 2026-08-18: after becoming a member, the CTA should lead
+    // straight into the reader for the SPECIFIC book being advertised,
+    // not the generic /account page. checkout/all-access?next=/read/:id
+    // carries the intended destination through Stripe checkout — the
+    // success_url handler in commerce-stripe.js honors ?next when present.
+    const nextReader = encodeURIComponent(`${BASE}/read/${t.id}`);
     cta = stripeReady
-      ? `<form method="POST" action="${BASE}/checkout/all-access" style="display:inline;">
-           <button class="akv2-card-btn" type="submit">Subscribe to listen — $12.99 / month</button>
+      ? `<form method="POST" action="${BASE}/checkout/all-access?next=${nextReader}" style="display:inline;">
+           <button class="akv2-card-btn" type="submit">Become a Member — $12.99 / month</button>
          </form>
-         <span class="akv2-card-cta-note">One subscription opens every work in The Akousma, here and at The Reading Mansion.</span>`
-      : `<button class="akv2-card-btn" type="button" disabled>Subscribe — coming soon</button>
-         <span class="akv2-card-cta-note">Subscription will open every work in The Akousma. Stripe wiring underway.</span>`;
+         <span class="akv2-card-cta-note">One membership opens every work in The Akousma, here and at The Reading Mansion.</span>`
+      : `<button class="akv2-card-btn" type="button" disabled>Become a Member — coming soon</button>
+         <span class="akv2-card-cta-note">Membership will open every work in The Akousma. Stripe wiring underway.</span>`;
   } else {
+    const nextReader = encodeURIComponent(`${BASE}/read/${t.id}`);
     cta = `
       <a class="akv2-card-btn" href="${BASE}/login?next=${encodeURIComponent('/paideia/' + currentLang())}">Sign in to listen</a>
-      <span class="akv2-card-cta-note">${t.is_gateway ? 'This work is free for any signed-in listener.' : 'Sign in, then subscribe to The Akousma — $12.99 a month, every work.'}</span>
+      <span class="akv2-card-cta-note">${t.is_gateway ? 'This work is free for any signed-in listener.' : 'Sign in, then become a member — $12.99 a month, every work.'}</span>
     `;
   }
 
@@ -859,60 +866,419 @@ function wireLetterAudio() {
 }
 
 // === Daily word entries ===
+//
+// Per Jae 2026-08-18: the language-page archive entries must render with
+// EXACT feature parity to the homepage's rich v2 word card (renderWord +
+// renderCulture in app.js) — definitions ladder, etymology + cognate grid,
+// in-literature citation with Greek/English/Both toggle + "hear the
+// passage", Commonplace editorial note, and the right-rail (cultural
+// vignette, related/cognates, "hear the word", daily practice + journal
+// link). This was previously a flatter, older card shape; ported below
+// to match app.js's renderWord()/renderCulture() 1:1 (adapted for this
+// page's `row.entry` / `row.culture` / `row.date` shape instead of
+// app.js's issue.languages[k] / issue.culture[k]).
+
+// Procedural 36-bar waveform — identical algorithm to app.js's
+// buildWaveformBars(), used by the "hear the word" and "hear the
+// passage" listen cards.
+function buildWaveformBars() {
+  let out = '';
+  for (let i = 0; i < 36; i++) {
+    const h = 4 + 16 * Math.abs(Math.sin(i * 0.7) + Math.cos(i * 0.31));
+    out += `<div class="bar" style="height:${h.toFixed(1)}px"${i < 13 ? ' data-active="1"' : ''}></div>`;
+  }
+  return out;
+}
+
+// Per-language seed lists for the right-rail "Related" + "Daily Practice"
+// sections — identical to app.js's RELATED_SEED / PRACTICE_SEED. Used
+// only when an entry doesn't yet carry the richer v2 fields.
+const RELATED_SEED = {
+  greek:         [['ψυχή', 'psychṗ', 'cold breath-soul; what departs at death'],
+                  ['φρένες', 'phrénes', 'the diaphragm; the seat of thought'],
+                  ['λόγος', 'lógos', 'word, reason, account'],
+                  ['αρετή', 'aretṗ', 'excellence, virtue'],
+                  ['ποιητής', 'poiētṗs', 'maker, poet']],
+  latin:         [['anima', 'anima', 'breath, soul'],
+                  ['animus', 'animus', 'mind, spirit, courage'],
+                  ['ratio', 'ratio', 'reason, calculation'],
+                  ['virtus', 'virtus', 'manly excellence, courage'],
+                  ['otium', 'otium', 'cultured leisure']],
+  french:        [['âme', 'âme', 'soul'],
+                  ['esprit', 'esprit', 'mind, wit'],
+                  ['raison', 'raison', 'reason'],
+                  ['cœur', 'cœur', 'heart'],
+                  ['volonté', 'volonté', 'will']],
+  german:        [['Seele', 'Seele', 'soul'],
+                  ['Geist', 'Geist', 'spirit, mind, ghost'],
+                  ['Vernunft', 'Vernunft', 'reason'],
+                  ['Sehnsucht', 'Sehnsucht', 'longing without object'],
+                  ['Wille', 'Wille', 'will']],
+  italian:       [['anima', 'anima', 'soul'],
+                  ['cuore', 'cuore', 'heart'],
+                  ['mente', 'mente', 'mind'],
+                  ['ragione', 'ragione', 'reason'],
+                  ['sprezzatura', 'sprezzatura', 'studied carelessness']],
+  oldenglish:    [['mod', 'mod', 'heart-mind, courage'],
+                  ['sāwol', 'sāwol', 'soul'],
+                  ['wyrd', 'wyrd', 'fate, what is woven'],
+                  ['ferð', 'ferð', 'life, spirit'],
+                  ['hyge', 'hyge', 'thought, mind']],
+  middleenglish: [['herte', 'herte', 'heart'],
+                  ['soule', 'soule', 'soul'],
+                  ['wit', 'wit', 'mind, understanding'],
+                  ['corage', 'corage', 'heart, spirit'],
+                  ['gentilesse', 'gentilesse', 'nobility of soul']],
+  welsh:         [['enaid', 'enaid', 'soul'],
+                  ['calon', 'calon', 'heart'],
+                  ['ysbryd', 'ysbryd', 'spirit'],
+                  ['hiraeth', 'hiraeth', 'longing for what is lost'],
+                  ['awen', 'awen', 'poetic inspiration']],
+  oldnorse:      [['hugr', 'hugr', 'mind, mood, thought'],
+                  ['sjál', 'sjál', 'soul'],
+                  ['vilji', 'vilji', 'will'],
+                  ['móðr', 'móðr', 'courage, wrath'],
+                  ['hjarta', 'hjarta', 'heart']],
+};
+
+const PRACTICE_SEED = {
+  greek:         'Notice where today’s word lives in your body. Then write three lines describing the room around you, as though your breath were the witness.',
+  latin:         'Read today’s word aloud three times, slowly. Then write one sentence in English that names something it points to in your day.',
+  french:        'Take this word with you on a short walk. When you return, write one paragraph in your own voice that uses it once — not as a quotation, but as a thought.',
+  german:        'Sit with this word for one minute, eyes closed, before reading further. Then write one sentence about what it stirred.',
+  italian:       'Speak the word three times. Listen to how the vowels open. Then write one line of prose that earns the word’s music.',
+  oldenglish:    'Read today’s word aloud as it would have been read in a hall — slow, weighted, low. Write three lines describing what it summons in you.',
+  middleenglish: 'Read the word as Chaucer would have read it. Then write one couplet, anything, that holds it.',
+  welsh:         'Speak the word aloud, paying attention to the ll, ch, or dd. Then write one sentence about a place that holds its meaning.',
+  oldnorse:      'Sit with the word as you would with an old saga — unhurried. Write three short lines that name what the word carries.',
+};
+
+// Port of app.js's renderWord(langKey, entry, date) — identical logic,
+// same DOM hooks (.word-card, .headword, .audio-btn[data-audio], etc.)
+function renderWordCard(langKey, entry, date) {
+  const audioPath = `${BASE}/audio/${date}/${langKey}.mp3`;
+  const meta = LANG_META[langKey] || { name: langKey, subtitle: "" };
+  const langDisplay = entry.display || meta.name || langKey;
+  const posLine = esc(entry.part_of_speech || "");
+  const transliteration = entry.transliteration ? esc(entry.transliteration) : "";
+
+  let usageOriginal = "";
+  let usageTranslation = "";
+  let sentenceAudio = "";
+  if (entry.usage_example) {
+    const ue = entry.usage_example;
+    let original = ue, translation = "";
+    const splitMatch = ue.match(/\s+[—–]\s+|\s+-\s+/);
+    if (splitMatch) {
+      const idx = ue.indexOf(splitMatch[0]);
+      original = ue.slice(0, idx).trim();
+      translation = ue.slice(idx + splitMatch[0].length).trim();
+    }
+    usageOriginal = original;
+    usageTranslation = translation;
+    sentenceAudio = `${BASE}/api/word-audio/${langKey}/${encodeURIComponent(original)}.mp3`;
+  }
+
+  const sectionMark = (numeral, label) => `
+    <div class="section-mark">
+      <span class="numeral">${numeral}</span>
+      <div class="line"></div>
+      <span class="lbl">${esc(label)}</span>
+    </div>`;
+
+  let definitionsBlock = "";
+  if (Array.isArray(entry.definition_shades) && entry.definition_shades.length) {
+    const romanize = ['I.', 'II.', 'III.', 'IV.', 'V.', 'VI.'];
+    const shadeHtml = entry.definition_shades.map((s, i) => `
+      <div class="shade">
+        <div class="n">${romanize[i] || ((i + 1) + '.')}</div>
+        <div>
+          <div class="head">${esc(s.head || '')}</div>
+          ${s.body ? `<p class="body">${esc(s.body)}</p>` : ""}
+        </div>
+      </div>`).join('');
+    definitionsBlock = `
+      ${sectionMark('i.', 'Definitions')}
+      <div class="shades">${shadeHtml}</div>`;
+  } else if (entry.meaning) {
+    definitionsBlock = `
+      ${sectionMark('i.', 'Definitions')}
+      <div class="shades">
+        <div class="shade">
+          <div class="n">I.</div>
+          <div>
+            <div class="head">${esc(entry.meaning)}</div>
+            ${entry.forms ? `<p class="body">${esc(entry.forms)}</p>` : ""}
+          </div>
+        </div>
+      </div>`;
+  }
+
+  let etymologyBlock = "";
+  if (Array.isArray(entry.cognates) && entry.cognates.length) {
+    const langName = (LANG_META[langKey] || {}).name || langKey;
+    const cognateRows = entry.cognates.map((c) => {
+      const isActive = (c.language || '').toLowerCase() === langName.toLowerCase();
+      return `
+        <div class="cognate-row${isActive ? ' active' : ''}">
+          <div class="lang">${esc(c.language || '')}</div>
+          <div class="word">${esc(c.word || '')}</div>
+          <div class="gloss">${esc(c.gloss || '')}</div>
+        </div>`;
+    }).join('');
+    etymologyBlock = `
+      ${sectionMark('ii.', 'Etymology')}
+      ${entry.etymology_root ? `<p class="ety-intro">From ${esc(entry.etymology_root)}.${entry.etymology ? ' ' + esc(entry.etymology) : ''}</p>` : entry.etymology ? `<p class="ety-intro">${esc(entry.etymology)}</p>` : ""}
+      <div class="cognate-label">The cognate strand · across the ten tongues</div>
+      <div class="cognate-grid">${cognateRows}</div>
+      ${entry.etymology_caption ? `<p class="ety-note">⤴ ${esc(entry.etymology_caption)}</p>` : ""}`;
+  } else if (entry.etymology) {
+    etymologyBlock = `
+      ${sectionMark('ii.', 'Etymology')}
+      <p class="ety-intro">${esc(entry.etymology)}</p>`;
+  }
+
+  let literatureBlock = "";
+  const citation = entry.citation || null;
+  if (citation && citation.original) {
+    const sourceLangLabel = (LANG_META[langKey] || {}).name || "Original";
+    literatureBlock = `
+      ${sectionMark('iii.', 'In Literature')}
+      <div class="cit-header">
+        <div class="cit-source">${esc(citation.source || '')}</div>
+        <div class="segmented" data-seg>
+          <button data-view="greek">${esc(sourceLangLabel)}</button>
+          <button data-view="english">English</button>
+          <button data-view="both" class="active">Both</button>
+        </div>
+      </div>
+      <div class="cit-body both" data-cit-body>
+        <div class="cit-greek">${esc(citation.original)}</div>
+        ${citation.english ? `<div class="cit-english">${esc(citation.english)}</div>` : ""}
+      </div>
+      <div class="cit-listen rail-section">
+        <div class="listen-card">
+          <div class="lbl">Hear the passage</div>
+          <p class="copy"><em>Read aloud in ${esc(sourceLangLabel)}.</em></p>
+          <div class="controls">
+            <button class="audio-btn play-btn cit-play" data-audio="${BASE}/api/word-audio/${langKey}/${encodeURIComponent(citation.original.replace(/\n/g, ' '))}.mp3" aria-label="Listen to the passage in ${esc(sourceLangLabel)}">
+              <svg viewBox="0 0 16 16" width="11" height="11"><path d="M4.5 2.6v10.8L13 8z" fill="currentColor"/></svg>
+            </button>
+            <div class="waveform" data-waveform>${buildWaveformBars()}</div>
+          </div>
+        </div>
+      </div>
+      ${entry.citation_note ? `<p class="cit-note">${esc(entry.citation_note)}</p>` : ""}`;
+  } else if (entry.literary_context || usageOriginal) {
+    literatureBlock = `
+      ${sectionMark('iii.', 'In Literature')}
+      ${entry.literary_context ? `<p class="cit-note" style="margin-top:0">${esc(entry.literary_context)}</p>` : ""}
+      ${usageOriginal ? `
+        <div class="cit-body both">
+          <div class="cit-greek">${esc(usageOriginal)} <button class="audio-btn inline-audio-btn play-btn" data-audio="${sentenceAudio}" aria-label="Listen to sentence"><svg viewBox="0 0 16 16" width="11" height="11"><path d="M4.5 2.6v10.8L13 8z" fill="currentColor"/></svg></button></div>
+          ${usageTranslation ? `<div class="cit-english">${esc(usageTranslation)}</div>` : ""}
+        </div>` : ""}
+    `;
+  }
+
+  let editorBlock = "";
+  const commonplaceParas = Array.isArray(entry.commonplace) && entry.commonplace.length
+    ? entry.commonplace
+    : (entry.did_you_know ? [entry.did_you_know] : []);
+  if (commonplaceParas.length) {
+    const first = commonplaceParas[0].trim();
+    const dropChar = first.charAt(0);
+    const firstRest = first.slice(1);
+    const restParas = commonplaceParas.slice(1).map(p => `<p>${esc(p)}</p>`).join('');
+    editorBlock = `
+      ${sectionMark('iv.', 'Commonplace')}
+      <div class="commonplace">
+        <div class="drop">${esc(dropChar)}</div>
+        <div class="body">
+          <p>${esc(firstRest)}</p>
+          ${restParas}
+          <div class="signed">
+            <svg viewBox="0 0 20 20" width="13" height="13" style="color:var(--ink-3-proto)"><path d="M16.5 2.5C13 4 7 6 4.5 11.5c-.6 1.3-1 3-1 6 2-3 4-4 6-4.5C13 12 16 9 17 6c.3-1 .2-2-.5-3.5z" fill="none" stroke="currentColor" stroke-width="1"/><path d="M9 11l-5 6" stroke="currentColor" stroke-width="1" stroke-linecap="round"/></svg>
+            — The Editor
+          </div>
+        </div>
+      </div>`;
+  }
+
+  return `
+    <div class="word-card" data-lang="${langKey}">
+      <div class="department-row">
+        <div class="ornament-row">
+          <span class="line"></span>
+          <span class="diamond"></span>
+          <span class="line"></span>
+        </div>
+        <div class="dept-line">${esc(langDisplay)}${posLine ? `<span class="sep">◆</span>${posLine}` : ""}</div>
+        <div class="dept-sub">${esc(meta.subtitle || meta.tagline || "")}</div>
+      </div>
+
+      <div class="hero">
+        <div class="headword-wrap">
+          <span class="headword">${esc(entry.word)}</span>
+        </div>
+        <div class="hero-meta">
+          ${transliteration ? `<div class="transliteration-h">${transliteration}</div>` : ""}
+          ${transliteration ? `<span class="diamond" style="opacity:.5"></span>` : ""}
+          <button class="audio-btn play-btn" data-audio="${audioPath}" aria-label="Pronounce ${esc(entry.word)}">
+            <svg viewBox="0 0 16 16" width="11" height="11"><path d="M4.5 2.6v10.8L13 8z" fill="currentColor"/></svg>
+          </button>
+          ${entry.ipa ? `<span class="diamond" style="opacity:.5"></span><div class="ipa">${esc(entry.ipa)}</div>` : ""}
+        </div>
+        ${Array.isArray(entry.register) && entry.register.length
+          ? `<div class="register-line">${entry.register.map(esc).join(' · ')}</div>`
+          : (entry.pronunciation ? `<div class="register-line">Say: ${esc(entry.pronunciation)}</div>` : "")}
+        <button class="annot-toggle" type="button">— click the word, or here, to read the marks</button>
+      </div>
+
+      ${(entry.quick_gloss || entry.meaning) ? `
+        <div class="quick-gloss">
+          <div class="ornament-row">
+            <span class="line"></span>
+            <span class="diamond"></span>
+            <span class="line"></span>
+          </div>
+          <p><em>“${esc(entry.quick_gloss || entry.meaning)}”</em></p>
+        </div>` : ""}
+
+      ${definitionsBlock}
+      ${etymologyBlock}
+      ${literatureBlock}
+      ${editorBlock}
+
+      <div class="pronunciation" style="display:none">Say: ${esc(entry.pronunciation || "")} IPA: ${esc(entry.ipa || "")}</div>
+    </div>
+  `;
+}
+
+// Port of app.js's renderCulture(vignette, entry, langKey, date) — the
+// right-rail: cultural vignette plate, related/cognates, "hear the
+// word", daily practice + "open in journal".
+function renderCultureRail(vignette, entry, langKey, date) {
+  const meta = LANG_META[langKey] || { name: langKey, subtitle: "" };
+  const langName = meta.name || langKey;
+  const audioPath = date && langKey ? `${BASE}/audio/${date}/${langKey}.mp3` : null;
+
+  let culturePlate;
+  if (!vignette) {
+    culturePlate = `
+      <figure class="culture-figure" style="margin:0">
+        <div class="culture-plate">
+          <div class="plate-num">Plate I · The Cultural Vignette</div>
+        </div>
+        <p class="culture-body"><em>Cultural vignette in preparation.</em></p>
+      </figure>`;
+  } else {
+    const img = vignette.image
+      ? `<img class="culture-img" src="${esc(vignette.image.url)}" alt="${esc(vignette.title || "")}" loading="lazy" />
+         <div class="culture-credit">${esc(vignette.image.credit)}</div>`
+      : "";
+    culturePlate = `
+      <figure class="culture-figure" style="margin:0">
+        <div class="culture-plate">
+          <div class="plate-num">Plate I · The Cultural Vignette</div>
+          ${img}
+        </div>
+        ${vignette.title ? `<h3 class="culture-title">${esc(vignette.title)}</h3>` : ""}
+        <p class="culture-body">${esc(vignette.body || "")}</p>
+      </figure>`;
+  }
+
+  let related = [];
+  let relatedLabel = `Related · in ${esc(langName)}`;
+
+  if (Array.isArray(entry && entry.related) && entry.related.length) {
+    related = entry.related.map(r => [r.word || "", r.transliteration || r.tr || "", r.gloss || ""]);
+  } else if (Array.isArray(entry && entry.cognates) && entry.cognates.length) {
+    const headWord = (entry.word || "").trim();
+    const headLang = (LANG_META[langKey] && LANG_META[langKey].name) || langKey;
+    const filtered = entry.cognates.filter(c => {
+      const w = (c.word || "").trim();
+      return w && w !== headWord;
+    });
+    const sameLang = filtered.filter(c => (c.language || "").toLowerCase() === headLang.toLowerCase());
+    const otherLang = filtered.filter(c => (c.language || "").toLowerCase() !== headLang.toLowerCase());
+    const picked = sameLang.concat(otherLang).slice(0, 5);
+    related = picked.map(c => [c.word || "", c.language || "", c.gloss || ""]);
+    relatedLabel = sameLang.length === picked.length
+      ? `Related · in ${esc(langName)}`
+      : `Cognates · across languages`;
+  } else if (Array.isArray(entry && entry.definition_shades) && entry.definition_shades.length) {
+    const headWord = (entry.word || "").trim();
+    related = entry.definition_shades.slice(0, 5).map(s => {
+      const head = String(s.head || "").replace(/^[IVX]+\.\s*/i, "").trim();
+      const body = String(s.body || "").replace(/\s+/g, " ").trim().slice(0, 120);
+      return [headWord, head, body];
+    });
+    relatedLabel = `Senses · the word in shades`;
+  } else {
+    related = RELATED_SEED[langKey] || [];
+  }
+
+  const relatedHtml = related.length ? `
+    <div class="rail-section">
+      <div class="rail-section-label">${relatedLabel}</div>
+      <div class="related">
+        ${related.map(([w, tr, gl]) => `
+          <div class="row">
+            <div>
+              <div class="word">${esc(w)}</div>
+              ${tr ? `<div class="tr">${esc(tr)}</div>` : ""}
+            </div>
+            <div class="gloss">${esc(gl)}</div>
+          </div>`).join("")}
+      </div>
+    </div>` : "";
+
+  const listenHtml = audioPath ? `
+    <div class="rail-section">
+      <div class="listen-card">
+        <div class="lbl">Hear the word</div>
+        <p class="copy"><em>The daily reading, in restored ${esc(langName)} pronunciation.</em></p>
+        <div class="controls">
+          <button class="audio-btn play-btn" data-audio="${audioPath}" aria-label="Play">
+            <svg viewBox="0 0 16 16" width="11" height="11"><path d="M4.5 2.6v10.8L13 8z" fill="currentColor"/></svg>
+          </button>
+          <div class="waveform" data-waveform>${buildWaveformBars()}</div>
+        </div>
+      </div>
+    </div>` : "";
+
+  const practice = (entry && entry.daily_practice)
+    ? String(entry.daily_practice).trim()
+    : (PRACTICE_SEED[langKey] || "");
+  const practiceHtml = practice ? `
+    <div class="rail-section">
+      <div class="practice-card">
+        <div class="tab">Daily Practice</div>
+        <p><em>${esc(practice)}</em></p>
+        <a href="#" class="open-journal-btn" data-open-journal data-lang="${esc(langKey)}" data-date="${esc(date || '')}">Open in journal →</a>
+      </div>
+    </div>` : "";
+
+  return `
+    <div class="right-rail">
+      ${culturePlate}
+      ${relatedHtml}
+      ${listenHtml}
+      ${practiceHtml}
+    </div>
+  `;
+}
+
 function entryHtml(row) {
   const e = row.entry;
   const lang = currentLang();
-  const trans = e.transliteration ? `<div class="transliteration">${esc(e.transliteration)}</div>` : "";
-
-  // "In Use" section: original sentence + Listen button after + translation (preserves original styling)
-  let usage = "";
-  if (e.usage_example) {
-    const original = e.usage_example.split("—")[0].trim();
-    const translation = e.usage_example.includes("—")
-      ? e.usage_example.split("—").slice(1).join("—").trim() : "";
-    const sentenceAudio = `${BASE}/api/word-audio/${lang}/${encodeURIComponent(original)}.mp3`;
-    usage = `<div class="detail-section"><div class="detail-label">In Use</div>
-         <p class="detail-body italic">${esc(original)} <button class="audio-btn inline-audio-btn" data-audio="${sentenceAudio}" aria-label="Listen to sentence">▶</button>${translation ? `<span class="translation">${esc(translation)}</span>` : ""}</p>
-         </div>`;
-  }
-
-  const culture = row.culture
-    ? `<div class="culture-card">
-         ${row.culture.image ? `<img class="culture-image" src="${esc(row.culture.image.url)}" alt="${esc(row.culture.title)}" loading="lazy" /><span class="culture-credit">${esc(row.culture.image.credit)}</span>` : ""}
-         <h4 class="culture-title">${esc(row.culture.title)}</h4>
-         <p class="culture-body">${esc(row.culture.body)}</p>
-       </div>` : "";
-  const audioPath = `${BASE}/audio/${row.date}/${lang}.mp3`;
-  // Per Jae 2026-05-12: V3 "Illuminated" header treatment. Mirror of
-  // app.js's renderWord() — four identity lines wrapped in
-  // <section class="word-header"> framed by a double-bronze rule above
-  // and below. POS becomes a small-caps eyebrow at top; transliteration
-  // and meaning separated by a three-diamond ornament.
-  const posLine = esc(e.part_of_speech || "");
   return `
     <article class="lang-entry">
       <div class="entry-date">${esc(formatDate(row.date))}</div>
       <div class="word-block">
-        <div class="word-card" data-lang="${lang}">
-          <section class="word-header">
-            ${posLine ? `<div class="pos-eyebrow">${posLine}</div>` : ""}
-            <div class="headword-row">
-              <h3 class="headword">${esc(e.word)}</h3>
-              <button class="audio-btn" data-audio="${audioPath}" aria-label="Pronounce ${esc(e.word)}">▶</button>
-            </div>
-            ${trans}
-            <div class="ornament"><span></span><span></span><span></span></div>
-            <div class="meaning">${esc(e.meaning || "")}</div>
-          </section>
-          <div class="pronunciation"><b>Say:</b> ${esc(e.pronunciation || "")} <b style="margin-left:12px">IPA:</b> ${esc(e.ipa || "")}</div>
-          ${(typeof LetterPhonetics !== 'undefined') ? LetterPhonetics.renderHtml(e.word, lang, esc) : ''}
-          ${e.forms ? `<div class="detail-section"><div class="detail-label">Forms</div><p class="detail-body">${esc(e.forms)}</p></div>` : ""}
-          ${e.etymology ? `<div class="detail-section"><div class="detail-label">Etymology</div><p class="detail-body">${esc(e.etymology)}</p></div>` : ""}
-          ${e.literary_context ? `<div class="detail-section"><div class="detail-label">In Literature</div><p class="detail-body">${esc(e.literary_context)}</p></div>` : ""}
-          ${usage}
-          ${e.did_you_know ? `<div class="detail-section"><div class="detail-label">Did You Know</div><p class="detail-body">${esc(e.did_you_know)}</p></div>` : ""}
-        </div>
-        ${culture}
+        ${renderWordCard(lang, e, row.date)}
+        ${renderCultureRail(row.culture, e, lang, row.date)}
       </div>
     </article>
   `;
@@ -964,24 +1330,167 @@ if (!window.__headwordFitWired) {
   }, { passive: true });
 }
 
+// Per Jae 2026-08-18: the ported word-card / right-rail markup uses
+// SVG-icon play buttons (.play-btn, matching app.js's homepage cards),
+// while the Numbers-pane rows still use plain-text ▶/■ glyph buttons.
+// Both share the .audio-btn class, so this must NOT blindly overwrite
+// textContent — doing so would destroy the SVG icon inside .play-btn.
+// Detect an SVG child and toggle a "playing" class only in that case
+// (identical semantics to app.js's wireAudio()); otherwise fall back to
+// the original glyph-swap behavior for legacy plain-text buttons.
 function wireWordAudio() {
   document.querySelectorAll(".audio-btn").forEach((btn) => {
     if (btn.dataset.wired === "1") return;
     btn.dataset.wired = "1";
+    const hasSvg = !!btn.querySelector("svg");
     btn.addEventListener("click", () => {
-      if (currentAudio) { currentAudio.pause(); currentAudio = null; }
       const src = btn.dataset.audio;
       if (!src) return;
+      if (currentAudio) {
+        const prevBtn = currentAudio.__btn;
+        currentAudio.pause();
+        if (prevBtn) {
+          prevBtn.classList.remove("playing");
+          if (!prevBtn.querySelector("svg")) prevBtn.textContent = "▶";
+        }
+        const wasSameBtn = prevBtn === btn;
+        currentAudio = null;
+        if (wasSameBtn) return; // toggle off
+      }
       const audio = new Audio(src);
+      audio.__btn = btn;
       btn.classList.add("playing");
-      btn.textContent = "■";
-      audio.play().catch(() => {});
+      if (!hasSvg) btn.textContent = "■";
+      audio.play().catch(() => {
+        btn.classList.remove("playing");
+        if (!hasSvg) btn.textContent = "▶";
+        currentAudio = null;
+      });
       audio.addEventListener("ended", () => {
         btn.classList.remove("playing");
-        btn.textContent = "▶";
+        if (!hasSvg) btn.textContent = "▶";
+        if (currentAudio === audio) currentAudio = null;
       });
       currentAudio = audio;
     });
+  });
+}
+
+// Port of app.js's wireCitationToggles() — wires the Greek/English/Both
+// segmented control in the In Literature citation block.
+function wireCitationToggles() {
+  document.querySelectorAll("[data-seg]").forEach((seg) => {
+    if (seg.dataset.wired === "1") return;
+    seg.dataset.wired = "1";
+    const body = seg.closest(".word-card")?.querySelector("[data-cit-body]");
+    const buttons = seg.querySelectorAll("button[data-view]");
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const view = btn.getAttribute("data-view");
+        buttons.forEach((b) => b.classList.toggle("active", b === btn));
+        if (body) {
+          body.classList.remove("greek", "english", "both");
+          body.classList.add(view);
+        }
+      });
+    });
+  });
+}
+
+// Port of app.js's journal-modal lazy loader + "Open in journal" wiring.
+// The modal HTML/CSS/JS is shared with the homepage (journal-modal.html/
+// .css/.js) — loaded once, lazily, on first click.
+let __journalLoaded = false;
+let __journalLoading = null;
+async function ensureJournalLoaded() {
+  if (__journalLoaded) return;
+  if (__journalLoading) return __journalLoading;
+  __journalLoading = (async () => {
+    try {
+      const mount = document.getElementById('journal-modal-mount');
+      if (!mount) return;
+      const r = await fetch(`${BASE}/journal-modal.html?v=1779328917`);
+      if (!r.ok) throw new Error('journal-modal.html fetch failed: ' + r.status);
+      mount.innerHTML = await r.text();
+      await new Promise((res, rej) => {
+        const s = document.createElement('script');
+        s.src = `${BASE}/journal-modal.js?v=1779328917`;
+        s.onload = res;
+        s.onerror = () => rej(new Error('journal-modal.js load failed'));
+        document.body.appendChild(s);
+      });
+      __journalLoaded = true;
+    } catch (e) {
+      console.error('[journal] lazy-load failed', e);
+    }
+  })();
+  return __journalLoading;
+}
+
+// Build the journal-modal ENTRY payload for a language-page word card.
+// Mirrors app.js's buildJournalEntry() but reads the entry directly from
+// the clicked button's data attributes + the cached page data, since this
+// page doesn't have a single "today" issue object — each archive entry
+// carries its own date and entry data.
+function buildJournalEntryFromRow(langKey, date) {
+  const cache = window.__langEntryCache || {};
+  const entry = cache[date];
+  if (!entry) return null;
+  const meta = LANG_META[langKey] || {};
+  let usageOriginal = '', usageEnglish = '';
+  if (entry.usage_example) {
+    const ue = entry.usage_example;
+    const splitMatch = ue.match(/\s+[—–]\s+|\s+-\s+/);
+    if (splitMatch) {
+      const idx = ue.indexOf(splitMatch[0]);
+      usageOriginal = ue.slice(0, idx).trim();
+      usageEnglish = ue.slice(idx + splitMatch[0].length).trim();
+    } else {
+      usageOriginal = ue.trim();
+    }
+  }
+  const dateObj = new Date(date);
+  const monthName = dateObj.toLocaleString('en-US', { month: 'long', timeZone: 'UTC' });
+  const day = dateObj.getUTCDate();
+  const year = dateObj.getUTCFullYear();
+  const prettyDate = `${monthName} ${day}, ${year}`;
+  return {
+    langName: meta.name || langKey,
+    word: entry.word || '',
+    transliteration: entry.transliteration || '',
+    meaning: entry.meaning || '',
+    definition_shades: Array.isArray(entry.definition_shades) ? entry.definition_shades : [],
+    citation: entry.citation || null,
+    usage_original: usageOriginal,
+    usage_english: usageEnglish,
+    issueDate: prettyDate,
+    issueNumber: '',
+    dailyPractice: entry.daily_practice || (typeof PRACTICE_SEED !== 'undefined' ? (PRACTICE_SEED[langKey] || '') : ''),
+    storageKey: `kp-journal-${date}-${langKey}`,
+  };
+}
+
+function wireOpenJournal() {
+  if (document.__journalDelegateWired) return;
+  document.__journalDelegateWired = true;
+  document.addEventListener('click', async (e) => {
+    const btn = e.target.closest('[data-open-journal]');
+    if (!btn) return;
+    e.preventDefault();
+    const langKey = btn.getAttribute('data-lang') || currentLang();
+    const date = btn.getAttribute('data-date') || '';
+    await ensureJournalLoaded();
+    if (typeof window.__paideiaOpenJournal === 'function') {
+      const entryPayload = buildJournalEntryFromRow(langKey, date);
+      if (entryPayload) {
+        window.__paideiaOpenJournal(entryPayload);
+      } else {
+        window.__paideiaOpenJournal();
+      }
+    } else {
+      const overlay = document.getElementById('kp-journal');
+      if (overlay) overlay.classList.add('open');
+    }
   });
 }
 
@@ -1023,7 +1532,8 @@ async function load() {
   }
 
   try {
-    const res = await fetch(`${BASE}/api/language/${lang}?limit=50`);
+    const page = Math.max(1, parseInt(new URLSearchParams(location.search).get("page"), 10) || 1);
+    const res = await fetch(`${BASE}/api/language/${lang}?page=${page}`);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
 
@@ -1061,6 +1571,11 @@ async function load() {
       // each daily-word entry, ROTATING through the language's available
       // titles (e.g. Greek alternates Iliad / Odyssey / Republic / Sappho)
       // so the same cover doesn't repeat under every entry.
+      // Per Jae 2026-08-18: cache each entry by date so the "Open in
+      // journal" button (wired from the ported renderCultureRail) can
+      // look up the full entry payload later without re-fetching.
+      window.__langEntryCache = window.__langEntryCache || {};
+      data.entries.forEach((row) => { window.__langEntryCache[row.date] = row.entry; });
       const interleaved = data.entries.map(function (row, idx) {
         const ako = (typeof renderAkousmaCard === "function")
           ? renderAkousmaCard(lang, idx) : "";
@@ -1068,8 +1583,10 @@ async function load() {
       }).join("");
       entriesEl.innerHTML = interleaved;
       wireWordAudio();
+      wireCitationToggles();
+      wireOpenJournal();
       fitHeadwords();
-      setupInfiniteScroll(lang, data.nextBefore, data.hasMore);
+      renderPager(lang, data.page, data.totalPages);
     }
 
     // Populate the dynamic library count on every Akousma card just rendered.
@@ -1080,75 +1597,72 @@ async function load() {
   }
 }
 
-// Infinite scroll: when sentinel near viewport, fetch next page
-function setupInfiniteScroll(lang, nextBefore, hasMore) {
+// Numbered pagination (Jae 2026-08-18: replaces the old infinite-scroll
+// sentinel/IntersectionObserver approach). Renders Prev / page numbers /
+// Next below the entries list. Clicking a page number updates ?page= in
+// the URL (so pages are shareable/bookmarkable) and re-runs load().
+function renderPager(lang, page, totalPages) {
   const entriesEl = document.getElementById("entries");
-  // Remove any existing sentinel/loader
-  document.querySelectorAll(".infinite-sentinel, .infinite-loader, .infinite-end").forEach(el => el.remove());
+  document.querySelectorAll(".word-pager").forEach(el => el.remove());
 
-  if (!hasMore || !nextBefore) {
-    const end = document.createElement("div");
-    end.className = "infinite-end";
-    end.textContent = "· · ·  — end of archive —  · · ·";
-    entriesEl.parentNode.insertBefore(end, entriesEl.nextSibling);
-    return;
+  if (totalPages <= 1) return;
+
+  const pager = document.createElement("nav");
+  pager.className = "word-pager";
+  pager.setAttribute("aria-label", "Daily word archive pages");
+
+  function pageLink(label, targetPage, opts = {}) {
+    const disabled = opts.disabled || targetPage === page;
+    const cls = ["pager-btn"];
+    if (opts.current) cls.push("pager-current");
+    if (disabled && !opts.current) cls.push("pager-disabled");
+    if (disabled) {
+      return `<span class="${cls.join(" ")}">${label}</span>`;
+    }
+    return `<a class="${cls.join(" ")}" href="?page=${targetPage}" data-page="${targetPage}">${label}</a>`;
   }
 
-  const sentinel = document.createElement("div");
-  sentinel.className = "infinite-sentinel";
-  sentinel.dataset.before = nextBefore;
-  entriesEl.parentNode.insertBefore(sentinel, entriesEl.nextSibling);
+  const parts = [];
+  parts.push(pageLink("‹ Prev", page - 1, { disabled: page <= 1 }));
 
-  let loading = false;
-  const observer = new IntersectionObserver(async (entries) => {
-    for (const entry of entries) {
-      if (!entry.isIntersecting || loading) continue;
-      loading = true;
-      observer.unobserve(sentinel);
+  // Windowed page numbers: first, last, and a few around current.
+  const windowSize = 2;
+  const pagesToShow = new Set([1, totalPages]);
+  for (let p = page - windowSize; p <= page + windowSize; p++) {
+    if (p >= 1 && p <= totalPages) pagesToShow.add(p);
+  }
+  const sorted = [...pagesToShow].sort((a, b) => a - b);
+  let prev = null;
+  for (const p of sorted) {
+    if (prev !== null && p - prev > 1) parts.push(`<span class="pager-ellipsis">…</span>`);
+    parts.push(pageLink(String(p), p, { current: p === page }));
+    prev = p;
+  }
 
-      const loader = document.createElement("div");
-      loader.className = "infinite-loader";
-      loader.textContent = "Loading older words…";
-      entriesEl.parentNode.insertBefore(loader, sentinel);
+  parts.push(pageLink("Next ›", page + 1, { disabled: page >= totalPages }));
 
-      try {
-        const res = await fetch(`${BASE}/api/language/${lang}?limit=20&before=${encodeURIComponent(sentinel.dataset.before)}`);
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const more = await res.json();
+  pager.innerHTML = parts.join("");
+  entriesEl.parentNode.insertBefore(pager, entriesEl.nextSibling);
 
-        loader.remove();
-        sentinel.remove();
-
-        if (more.entries && more.entries.length > 0) {
-          // Same rotation as the initial load. Use the count of already-rendered
-          // entries as the starting offset so the rotation continues seamlessly
-          // across paginated loads.
-          const offset = entriesEl.querySelectorAll(".lang-entry").length;
-          const html = more.entries.map(function (row, idx) {
-            const ako = (typeof renderAkousmaCard === "function")
-              ? renderAkousmaCard(lang, offset + idx) : "";
-            return entryHtml(row) + ako;
-          }).join("");
-          entriesEl.insertAdjacentHTML("beforeend", html);
-          wireWordAudio();
-          fitHeadwords();
-          if (typeof fetchAkousmaCount === "function") fetchAkousmaCount();
-        }
-        setupInfiniteScroll(lang, more.nextBefore, more.hasMore);
-      } catch (e) {
-        console.error("Pagination failed", e);
-        loader.textContent = "Could not load more. Tap to retry.";
-        loader.style.cursor = "pointer";
-        loader.addEventListener("click", () => {
-          loader.remove();
-          setupInfiniteScroll(lang, nextBefore, hasMore);
-        });
-      }
-    }
-  }, { rootMargin: "400px" });
-
-  observer.observe(sentinel);
+  pager.querySelectorAll("a.pager-btn").forEach((a) => {
+    a.addEventListener("click", (e) => {
+      e.preventDefault();
+      const targetPage = a.dataset.page;
+      const url = new URL(location.href);
+      url.searchParams.set("page", targetPage);
+      history.pushState({}, "", url);
+      entriesEl.parentNode.insertBefore(
+        Object.assign(document.createElement("div"), { className: "center", textContent: "Loading…" }),
+        entriesEl
+      );
+      load();
+      // Scroll to the top of the archive section, not the whole page.
+      entriesEl.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
 }
+
+window.addEventListener("popstate", () => { load(); });
 
 load();
 
