@@ -2,6 +2,7 @@ import express from "express";
 import fs from "fs/promises";
 import path from "path";
 import crypto from "crypto";
+import { renderPublic } from "./scripts/render-public.js";
 import { spawn } from "child_process";
 import { fileURLToPath } from "url";
 import { lookupWord } from "./pipeline/word-lookup.js";
@@ -131,7 +132,17 @@ app.use(BASE, commerce);
 // were originally blocked from being served (404 silently). Per Jae
 // 2026-08-06, _mockups/ is now intentionally public — kept as a reference,
 // no longer walled off.
-app.use(BASE, express.static(path.join(__dirname, "public")));
+// Render public/ → public-deployed/ at startup with mtime-derived cache-bust
+// stamps (durable fix, 2026-08-19). If the render ever fails, fall back to
+// serving public/ directly — the site stays up either way.
+let deployedDir = path.join(__dirname, "public-deployed");
+try {
+  renderPublic(path.join(__dirname, "public"), deployedDir, BASE);
+} catch (err) {
+  console.error("[render-public] render failed, falling back to public/: " + err.message);
+  deployedDir = path.join(__dirname, "public");
+}
+app.use(BASE, express.static(deployedDir));
 
 // Fallback for links that omit the /_mockups/ segment (e.g.
 // /paideia/ad-mockup-d.html instead of /paideia/_mockups/ad-mockup-d.html) —
@@ -792,7 +803,7 @@ app.delete(`${BASE}/api/analytics/data`, _requireUser, (req, res) => {
 // User-facing analytics dashboard page.
 app.get(`${BASE}/analytics`, (req, res) => {
   if (!req.user) return res.redirect(`${BASE}/account?next=${encodeURIComponent(BASE + '/analytics')}`);
-  res.sendFile(path.join(__dirname, "public", "analytics.html"));
+  res.sendFile(path.join(deployedDir, "analytics.html"));
 });
 
 // Admin-only sitewide analytics. Same gate as Mansion: email match.
@@ -805,32 +816,32 @@ app.get(`${BASE}/api/admin/analytics/summary`, _requireAdmin, (req, res) => {
   }));
 });
 app.get(`${BASE}/admin/analytics`, _requireAdmin, (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "admin-analytics.html"));
+  res.sendFile(path.join(deployedDir, "admin-analytics.html"));
 });
 
-app.get(BASE, (_req, res) => res.sendFile(path.join(__dirname, "public", "index.html")));
-app.get(`${BASE}/`, (_req, res) => res.sendFile(path.join(__dirname, "public", "index.html")));
+app.get(BASE, (_req, res) => res.sendFile(path.join(deployedDir, "index.html")));
+app.get(`${BASE}/`, (_req, res) => res.sendFile(path.join(deployedDir, "index.html")));
 
 // Reader page
-app.get(`${BASE}/read/:id`, (_req, res) => res.sendFile(path.join(__dirname, "public", "reader.html")));
-app.get(`${BASE}/contact`,   (_req, res) => res.sendFile(path.join(__dirname, "public", "contact.html")));
-app.get(`${BASE}/contact/`,  (_req, res) => res.sendFile(path.join(__dirname, "public", "contact.html")));
-app.get(`${BASE}/terms`,     (_req, res) => res.sendFile(path.join(__dirname, "public", "terms.html")));
-app.get(`${BASE}/terms/`,    (_req, res) => res.sendFile(path.join(__dirname, "public", "terms.html")));
-app.get(`${BASE}/privacy`,   (_req, res) => res.sendFile(path.join(__dirname, "public", "privacy.html")));
-app.get(`${BASE}/privacy/`,  (_req, res) => res.sendFile(path.join(__dirname, "public", "privacy.html")));
+app.get(`${BASE}/read/:id`, (_req, res) => res.sendFile(path.join(deployedDir, "reader.html")));
+app.get(`${BASE}/contact`,   (_req, res) => res.sendFile(path.join(deployedDir, "contact.html")));
+app.get(`${BASE}/contact/`,  (_req, res) => res.sendFile(path.join(deployedDir, "contact.html")));
+app.get(`${BASE}/terms`,     (_req, res) => res.sendFile(path.join(deployedDir, "terms.html")));
+app.get(`${BASE}/terms/`,    (_req, res) => res.sendFile(path.join(deployedDir, "terms.html")));
+app.get(`${BASE}/privacy`,   (_req, res) => res.sendFile(path.join(deployedDir, "privacy.html")));
+app.get(`${BASE}/privacy/`,  (_req, res) => res.sendFile(path.join(deployedDir, "privacy.html")));
 
 // Per-language section pages
 for (const lang of VALID_LANGS) {
-  app.get(`${BASE}/${lang}`, (_req, res) => res.sendFile(path.join(__dirname, "public", "language.html")));
-  app.get(`${BASE}/${lang}/`, (_req, res) => res.sendFile(path.join(__dirname, "public", "language.html")));
+  app.get(`${BASE}/${lang}`, (_req, res) => res.sendFile(path.join(deployedDir, "language.html")));
+  app.get(`${BASE}/${lang}/`, (_req, res) => res.sendFile(path.join(deployedDir, "language.html")));
 }
 
 // Category landing pages (Celtic, Germanic) — Option C: categories live
 // as their own URLs but the languages under them remain flat.
 for (const cat of VALID_CATEGORIES) {
-  app.get(`${BASE}/${cat}`, (_req, res) => res.sendFile(path.join(__dirname, "public", "category.html")));
-  app.get(`${BASE}/${cat}/`, (_req, res) => res.sendFile(path.join(__dirname, "public", "category.html")));
+  app.get(`${BASE}/${cat}`, (_req, res) => res.sendFile(path.join(deployedDir, "category.html")));
+  app.get(`${BASE}/${cat}/`, (_req, res) => res.sendFile(path.join(deployedDir, "category.html")));
 }
 
 // Category API — returns metadata + child-language summaries for rendering
@@ -1070,12 +1081,12 @@ app.get(`${BASE}/api/verify/:tokenId`, (req, res) => {
 for (const lang of VALID_LANGS) {
   // The curriculum is a SEPARATE section from the rest of Kalopaideia.
   // Its own page, its own design, its own bar at the top.
-  app.get(`${BASE}/${lang}/curriculum`, (_req, res) => res.sendFile(path.join(__dirname, "public", "curriculum.html")));
-  app.get(`${BASE}/${lang}/curriculum/:lessonId`, (_req, res) => res.sendFile(path.join(__dirname, "public", "lesson.html")));
-  app.get(`${BASE}/${lang}/capstone`, (_req, res) => res.sendFile(path.join(__dirname, "public", "capstone.html")));
+  app.get(`${BASE}/${lang}/curriculum`, (_req, res) => res.sendFile(path.join(deployedDir, "curriculum.html")));
+  app.get(`${BASE}/${lang}/curriculum/:lessonId`, (_req, res) => res.sendFile(path.join(deployedDir, "lesson.html")));
+  app.get(`${BASE}/${lang}/capstone`, (_req, res) => res.sendFile(path.join(deployedDir, "capstone.html")));
 }
 
-app.get(`${BASE}/verify`, (_req, res) => res.sendFile(path.join(__dirname, "public", "verify.html")));
-app.get(`${BASE}/verify/:tokenId`, (_req, res) => res.sendFile(path.join(__dirname, "public", "verify.html")));
+app.get(`${BASE}/verify`, (_req, res) => res.sendFile(path.join(deployedDir, "verify.html")));
+app.get(`${BASE}/verify/:tokenId`, (_req, res) => res.sendFile(path.join(deployedDir, "verify.html")));
 
 app.listen(PORT, () => console.log(`Kalopaideia on :${PORT}${BASE}`));

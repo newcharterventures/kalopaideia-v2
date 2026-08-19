@@ -4167,3 +4167,24 @@ footer.colophon .legal .sep, footer.akv2-colophon .legal .sep {
   footer.colophon .est, footer.akv2-colophon .est { letter-spacing: 0.22em; font-size: 10px; }
   footer.colophon .legal, footer.akv2-colophon .legal { letter-spacing: 0.14em; font-size: 9.5px; }
 }
+
+/* Mobile typography — approved two-part fix, ported from canary 2026-08-19.
+   Palette-agnostic: fluid clamp() sizes + cognate-row stacking on phones. */
+@media (max-width: 600px) {
+  /* word-card metadata block */
+  .word-card .transliteration { font-size: clamp(14px, 4.2vw, 17px); }
+  .word-card .pos-line { font-size: 12px; letter-spacing: 0.12em; }
+  .word-card .meaning { font-size: clamp(15px, 4.4vw, 18px); line-height: 1.55; }
+  .word-card .pronunciation { font-size: 13.5px; padding: 8px 12px; }
+  /* culture prose — currently 13px fixed, uncomfortable small on phones */
+  .culture-body { font-size: clamp(15px, 4.4vw, 17px); line-height: 1.75; }
+  .culture-title { font-size: clamp(19px, 5vw, 23px); }
+  .culture-credit { font-size: 10.5px; }
+  /* definition shades + etymology (defined in v2-design.css) */
+  .shade .head { font-size: clamp(18px, 5vw, 21px); }
+  .shade .body { font-size: clamp(15px, 4.4vw, 17px); line-height: 1.6; }
+  .ety-intro { font-size: clamp(15px, 4.4vw, 17px); line-height: 1.6; }
+  .cognate-row { grid-template-columns: 1fr; gap: 4px; padding: 12px 0; }
+  .cognate-row .lang { font-size: 10px; }
+  .cognate-row .word { font-size: 18px; }
+}
