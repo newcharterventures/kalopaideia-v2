@@ -457,17 +457,26 @@
     ]
   },
   "reading_list": [
+    "Hrafnkels saga Freysgoða (short, simple, the standard first saga for learners — the true bottom rung)",
     "Viðar Hreinsson (ed.), The Complete Sagas of Icelanders (including the Þættir), five volumes (1997): modern English translations with facing-page summaries and introductions, useful for parallel reading.",
     "Brennu-Njáls saga (Njál's Saga): the most celebrated of the family sagas, sophisticated narrative and legal drama; moderately complex prose.",
     "Snorri Sturluson, Prose Edda (Edda Snorra Sturlusonar): handbook of poetics and mythology; the Gylfaginning section provides accessible mythological narrative.",
+    "Grœnlendinga saga and Eiríks saga rauða (the Vinland sagas): huge popular pull, tiny word count.",
     "Egils saga Skalla-Grímssonar (Egil's Saga): long family saga with embedded skaldic verse; the prose is relatively straightforward.",
+    "Egill's Sonatorrek and Höfuðlausn, named specifically (the two skaldic poems most readers actually want, rather than folding them into the general 'skaldic verse' entry below)",
     "Gísla saga Súrssonar: shorter outlaw saga; tight structure and emotional intensity; good for intermediate readers.",
-    "Eddic poetry (Codex Regius): the Poetic Edda poems (Völuspá, Hávamál, Atlakviða, etc.); archaic diction and mythological vocabulary; requires strong grasp of nominal and verbal morphology.",
+    "Völsunga saga (the Sigurd cycle, source for Wagner and Tolkien; likely the highest-demand Norse text after Njál)",
+    "Eddic poetry (Codex Regius): the Poetic Edda poems, led by Völuspá — the most important poem in the language — alongside Hávamál, Atlakviða, etc.; archaic diction and mythological vocabulary; requires strong grasp of nominal and verbal morphology.",
+    "Strengleikar (the Old Norse translations of Marie de France's Lais — presentable simultaneously on the French and Norse shelves)",
     "Snorri Sturluson, Heimskringla: kings' sagas from mythical origins to 1177; varied styles; extensive historical and genealogical content.",
     "Laxdœla saga: large-scale family saga with complex character psychology and interwoven plot lines; rich vocabulary.",
+    "Grettis saga, Eyrbyggja saga, Bandamanna saga",
+    "Landnámabók and Íslendingabók",
+    "Fornaldarsögur (sagas of ancient times, legendary rather than historical): Hervarar saga, Ragnars saga loðbrókar",
     "Skaldic verse (court poetry): the most linguistically and metrically complex genre; requires mastery of kennings, heiti, and dróttkvætt meter.",
     "Runic inscriptions (Younger Futhark, c. 800-1100): terse memorial and commemorative texts on stone; formulaic but useful for historical phonology and epigraphy."
   ],
+  "_reading_list_notes": "Additions per Jae's 2026-08-22 canon review. Völuspá now named explicitly as the lead Eddic poem rather than folded anonymously into 'Eddic poetry' — it is the single most important poem in the language. Hrafnkels saga added as the true bottom rung (standard first saga for learners). Strengleikar added as a deliberate cross-shelf feature: the same text presentable on both the French and Old Norse pages.",
   "display": "Old Norse",
   "generated_at": "2026-05-11T23:29:10.673Z"
 }

@@ -166,15 +166,24 @@
     "reference": "For a full treatment, consult Maurizio Dardano and Pietro Trifone, La nuova grammatica della lingua italiana (Zanichelli, 1997), or in English, Martin Maiden and Cecilia Robustelli, A Reference Grammar of Modern Italian (Routledge, 2nd ed. 2007). For literary Italian, see Bruno Migliorini's Storia della lingua italiana (1960) and Luca Serianni, Italiano (Garzanti, 1997)."
   },
   "reading_list": [
+    "The dolce stil novo predecessors: Guinizelli, Cavalcanti, the Sicilian School, and St. Francis's Cantico delle creature (the 'sweet new style' Dante himself named — the lyric school Dante and Petrarch grew out of)",
     "Boccaccio, Decameron (selected novelle from Day I and Day VI; Tuscan prose at its clearest)",
     "Dante, Vita Nuova (mixed prose and lyric, conceptually rich but linguistically gentler than the Commedia)",
     "Dante, Inferno (begin with Cantos I, III, V; the lexicon is dense but the rhythm of terza rima carries the reader)",
+    "Dante, Purgatorio and Paradiso (Inferno alone truncates the Commedia; minimum viable is Purgatorio XXVI, where Arnaut Daniel speaks in Occitan, and Paradiso XXXIII)",
     "Petrarch, Canzoniere (sonnets first — the Trecento canon's most polished verse)",
+    "Machiavelli, Il Principe (the most conspicuous absence on the original list)",
+    "Ariosto, Orlando Furioso and Tasso, Gerusalemme Liberata (the chivalric epics)",
+    "Castiglione, Il Cortegiano; Cellini, Vita",
     "Manzoni, I Promessi Sposi (the foundational nineteenth-century novel; Manzoni's revision of his own Tuscan provided the model for modern literary Italian)",
     "Leopardi, Canti (lyric poetry of the Romantic period; clear syntax over astonishing depth)",
-    "Italo Calvino, Le città invisibili (twentieth-century prose; clean sentences for a reader still finding sea legs)",
+    "Foscolo, Dei Sepolcri; Goldoni, La locandiera",
+    "Galileo, Dialogo sopra i due massimi sistemi (canonical Italian prose, not only a scientific text)",
+    "Verga, I Malavoglia (verismo, the Italian naturalist movement; the bridge from Manzoni to the modern novel)",
+    "Svevo, La coscienza di Zeno (d. 1928, public domain)",
     "Pirandello, Novelle per un anno (short stories; vernacular dialogue alongside literary prose)"
   ],
+  "_reading_list_notes": "Additions per Jae's 2026-08-22 canon review. WARNING: Italo Calvino (d. 1985) is in copyright until 2055 in life+70 jurisdictions — Le città invisibili has been REMOVED from this list and must not be queued for ingestion or narration. Svevo (d. 1928) is confirmed public domain and safely included.",
   "numbers": {
     "overview": "Italian numerals are largely transparent descendants of Latin. Cardinals from one through ten are inherited directly (uno, due, tre, quattro, cinque, sei, sette, otto, nove, dieci). Compound numbers between 11 and 19 are formed by inverting the order: undici (eleven, lit. 'one-ten'), dodici (twelve), continuing through sedici, then reversing: diciassette (seventeen), diciotto, diciannove. Tens combine cleanly: venti, trenta, quaranta… cento (100), mille (1,000). Note the elision of the final vowel before 'uno' or 'otto': ventuno, trentotto, quarantanove.",
     "cardinals": [

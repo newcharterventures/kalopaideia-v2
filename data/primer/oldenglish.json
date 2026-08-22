@@ -491,17 +491,28 @@
     }
   },
   "reading_list": [
+    "Ælfric's Colloquy (a schoolroom dialogue written to teach beginners; literally purpose-built as a first reader — should precede Maldon on the ladder)",
+    "Anglo-Saxon Chronicle, selected annals (the easiest continuous Old English prose)",
+    "Alfred's Preface to the Pastoral Care (the founding document of English prose)",
     "The Battle of Maldon (simple syntax, narrative verse, historical context accessible)",
     "Cædmon's Hymn (nine lines, liturgical, foundational to Old English literary tradition)",
     "The Dream of the Rood (religious vision poem, moderate vocabulary, first-person narration from Cross)",
+    "Deor, The Wife's Lament, Wulf and Eadwacer, The Husband's Message, The Ruin (the shorter elegies; completes the elegiac corpus alongside The Wanderer and The Seafarer; short enough to be one product unit)",
     "The Wanderer (elegy, more complex syntax, theological conclusion, moderate length)",
     "The Seafarer (elegy, dense imagery, hermit spirituality, requires attention to caesura and kennings)",
     "Riddles from the Exeter Book (varied difficulty, playful, good for building vocabulary in concrete domains)",
+    "Maxims, Charms, and the Rune Poem (odd, short, and unusually popular with readers)",
+    "Cynewulf: Elene, Juliana, Christ II (the religious-verse cluster alongside Andreas and The Dream of the Rood)",
+    "Bede, Old English Bede (Ecclesiastical History in Alfred's OE translation; prose, connects the OE and latin shelves)",
+    "Andreas (companion to the Cynewulf cluster)",
+    "Judith and The Fight at Finnsburh (the latter directly illuminates the Finn episode inside Beowulf)",
     "Beowulf, lines 1-1250 (Grendel episode: narrative foundation, formulaic diction, genealogies)",
     "Beowulf, lines 1251-2199 (Grendel's mother, lake descent, complex digressions)",
     "Beowulf, lines 2200-3182 (dragon episode, elegiac tone, dense retrospectives and tragic structure)",
+    "Wulfstan, Sermo Lupi ad Anglos",
     "The Battle of Brunanburh (verse chronicle, complex historical allusions, panegyric register)"
   ],
+  "_reading_list_notes": "Additions per Jae's 2026-08-22 canon review. Ælfric's Colloquy added as the true bottom rung — purpose-built as a beginner text, should precede Maldon. The five shorter elegies complete the elegiac corpus alongside the pre-existing Wanderer/Seafarer entries.",
   "display": "Olde English",
   "generated_at": "2026-04-21T06:29:19.868Z",
   "numbers": {

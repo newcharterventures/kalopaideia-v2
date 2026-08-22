@@ -272,14 +272,21 @@
   "reading_list": [
     "Gaulish coin legends (especially DUBNO-, VERCINGETORIX, ATEKNATI): short, formulaic texts ideal for beginners; practice recognizing personal names and simple case forms.",
     "Pottery stamps from Lezoux and Banassac (e.g., 'AVOT' genitive singular, personal names in genitive): brief, repetitive ownership or maker inscriptions; limited vocabulary but clear morphology.",
+    "The Autun spindle whorls: short flirtatious inscriptions on loom weights; trivial in scale, but the only glimpse of casual spoken Gaulish.",
     "The Alise-Sainte-Reine inscription (RIG L-13): short votive text in Latin script; includes recognizable theonyms (god names) and dedicatory formulae.",
     "The Chamalières lead tablet (RIG L-100): curse tablet in Latin script, ca. 100 words; connected discourse with verb forms, vocabulary of binding and magical compulsion; some gaps and obscure lexemes.",
     "The Lezoux plate inscription (RIG L-9): short incantation or dedication in Latin script, including the verb form 'ieuru' ('I have set up'); morphology clearer than semantics.",
+    "La Graufesenque graffiti: potters' firing lists in Gaulish, distinct from the maker's stamps above; the only surviving Gaulish administrative writing.",
+    "The Rom (Deux-Sèvres) lead tablet.",
+    "The Séraucourt (Bourges) and Genouilly stelae.",
     "The Coligny calendar (RIG L-III): fragmentary bronze calendar in Latin script, listing month-names and notations (MAT, ANMAT, etc.); enormous but repetitive; requires understanding of time-reckoning vocabulary and abbreviations.",
     "The L'Hospitalet-du-Larzac lead tablet (RIG L-98): longest connected Gaulish text (ca. 160 words), curse or legal text in Latin script; complex syntax, many hapax legomena, disputed readings; advanced.",
-    "The Gaulish glosses in classical sources (Pliny, Dioscorides, etc.): individual words cited by Greek and Roman authors with translations; useful for lexicon but no syntax; scattered across Latin and Greek texts.",
-    "The Vercelli graffito (RIG E-4): short but disputed text in Lepontic script; uncertain reading and interpretation; included for exposure to Etruscan-derived orthography."
+    "The Châteaubleau tile (discovered 1997): the longest connected Gaulish text known; its prior absence from this list was the real gap.",
+    "The Gaulish glosses in classical sources (Pliny, Dioscorides, etc.), plus Endlicher's Glossary (the Vienna glossary of Gaulish place-name elements) and Marcellus of Bordeaux's magical formulas: individual words and short formulas cited or preserved by Latin/Greek authors; useful for lexicon but limited syntax.",
+    "Cisalpine Gaulish (northern Italy, written in a north-Etruscan alphabet): the Vercelli inscription (RIG E-4, a bilingual boundary stone rather than a graffito — relabelled from the earlier description), the Todi bilingual, the Briona inscription, and the Voltino bilingual.",
+    "Lepontic (Prestino, Vergiate): earlier than and arguably a separate language from Gaulish proper; included here with that editorial caveat rather than silently omitted."
   ],
+  "_reading_list_notes": "Additions and one relabelling per Jae's 2026-08-22 canon review. The three names flagged as 'garbled in transit' (Chamalières, the Lezoux plate, L'Hospitalet-du-Larzac) were already correctly spelled in this file — no correction was needed here; the garbling happened in an intermediate copy elsewhere. The Vercelli entry is relabelled as a bilingual boundary stone in the Cisalpine Gaulish group, not a graffito, and grouped with Todi/Briona/Voltino. Lepontic (Prestino, Vergiate) is included with an explicit editorial note that it is earlier than, and arguably a separate language from, Gaulish proper.",
   "display": "Gaulish",
   "generated_at": "2026-05-11T23:26:13.083Z"
 }

@@ -208,17 +208,29 @@
     "reference": "For grammar, Fernand Mossé, A Handbook of Middle English (Johns Hopkins, 1952; trans. James A. Walker) remains the standard. For dialects, the Linguistic Atlas of Late Mediaeval English (Angus McIntosh et al., 1986) maps the variation. Larry D. Benson's introduction to The Riverside Chaucer (3rd ed., 1987) provides a clear pronunciation and grammar primer for Chaucerian usage."
   },
   "reading_list": [
+    "Harley Lyrics, plus 'Sumer is icumen in' and 'Adam lay ybounden' (shortest, easiest Middle English — the bottom rung)",
+    "The Owl and the Nightingale (early Middle English debate poem)",
+    "Wycliffite Bible, selections (the easiest continuous ME entry point; lets a reader run the same passage across Wycliffe, the Vulgate, and the Greek New Testament)",
     "Chaucer, The Canterbury Tales, General Prologue (the most-read Middle English text — start here)",
     "Chaucer, The Miller's Tale and The Wife of Bath's Prologue (vivid characterization, accessible vocabulary)",
     "Chaucer, Troilus and Criseyde (Chaucer's other masterpiece, a five-book romance in rhyme royal)",
+    "Chaucer, Boece (his Middle English prose translation of Boethius — the cross-shelf pairing with the latin De Consolatione and Alfred's Old English Boethius)",
+    "Gower, Confessio Amantis",
     "Sir Gawain and the Green Knight (anonymous, c. 1375–1400 — alliterative verse from the North-West Midlands; harder dialect but unmatched poetry)",
     "Pearl (same Pearl-poet manuscript; a dream-vision elegy of breathtaking technical perfection)",
+    "Patience and Cleanness (the other two poems in the Cotton Nero A.x manuscript alongside Gawain and Pearl; completing a single manuscript as one product unit)",
     "Julian of Norwich, A Revelation of Love (c. 1395; clear East Anglian prose, mystical theology)",
     "Margery Kempe, The Book of Margery Kempe (c. 1438; the first autobiography in English)",
+    "Richard Rolle and The Cloud of Unknowing (completes the mystics cluster beside Julian and Margery)",
+    "Ancrene Wisse; Layamon's Brut",
     "Malory, Le Morte d'Arthur (c. 1469–1470; late Middle English prose, fluent and narrative-driven; Caxton's 1485 print made it canonical)",
     "Langland, Piers Plowman (alliterative satire; harder than Chaucer but a window into late-fourteenth-century dissent)",
-    "The York and Wakefield mystery plays (dramatic Middle English; 'The Second Shepherds' Pageant' is a frequent classroom text)"
+    "Mandeville's Travels; the Paston Letters (everyday prose)",
+    "The York and Wakefield mystery plays (dramatic Middle English; 'The Second Shepherds' Pageant' is a frequent classroom text)",
+    "Everyman (morality play, distinct from the biblical-cycle mystery plays already listed)",
+    "The Scots makars: Henryson's Testament of Cresseid (answers Chaucer's Troilus and Criseyde), Dunbar, and Barbour's Brus (Middle Scots — a distinct register not otherwise represented)"
   ],
+  "_reading_list_notes": "Additions per Jae's 2026-08-22 canon review. The Wycliffite Bible added specifically to enable a cross-shelf feature: the same biblical passage rendered in Greek, Latin (Vulgate), and Middle English side by side. Everyman added as the morality-play counterpart to the existing mystery-play entry — these are distinct dramatic genres, not duplicates.",
   "numbers": {
     "overview": "Middle English numerals are mostly inherited from Old English with phonological changes. Cardinals from one through ten: oon (or 'on'), two, three, foure, fyve, six, sevene, eighte, nyne, ten. Compound forms work as in modern English: eleven, twelve, thirtene… twenty, thirty, fourty… hundred, thousand. The Old English '-tig' suffix for tens has become '-ty'. Spelling varies wildly — 'fyve', 'fife', 'fyf' all appear; modern editors often regularize, but original manuscripts will not.",
     "cardinals": [
